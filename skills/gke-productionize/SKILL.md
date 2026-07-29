@@ -26,6 +26,18 @@ metadata:
 metadata:
   hermes:
     tags: [gcp, gke, kubernetes, google-cloud, container]
+
+metadata:
+  hermes:
+    tags: [gcp, gke, kubernetes, google-cloud, container]
+
+metadata:
+  hermes:
+    tags: [gcp, gke, kubernetes, google-cloud, container]
+
+metadata:
+  hermes:
+    tags: [gcp, gke, kubernetes, google-cloud, container]
 ---
 
 **Trigger**: Use when working with GKE Productionize — Google Kubernetes Engine configuration and management.

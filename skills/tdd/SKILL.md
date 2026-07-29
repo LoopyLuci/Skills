@@ -2,9 +2,13 @@
 name: tdd
 description: Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions "red-green-refactor", or wants integration tests.
 source: mattpocock/skills
-tags: [agent, skill]
+tags: [engineering, testing, tdd, quality]
 metadata: 
 hermes: 
+
+metadata:
+  hermes:
+    tags: [engineering, testing, tdd, quality]
 ---
 
 **Trigger**: Use when developing features using test-driven development — red-green-refactor cycle, building one vertical slice at a time.

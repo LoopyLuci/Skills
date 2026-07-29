@@ -2,9 +2,13 @@
 name: google-mobile-ads-interstitial
 description: Provides instructions for implementing, integrating, or configuring
 source: google/skills
-tags: [agent, skill]
+tags: [google-ads, advertising, mobile-ads, gcp]
 metadata: 
 hermes: 
+
+metadata:
+  hermes:
+    tags: [google-ads, advertising, mobile-ads, gcp]
 ---
 
 **Trigger**: Use when implementing Google Interstitial — AdMob, Ad Manager, and related ad SDKs.

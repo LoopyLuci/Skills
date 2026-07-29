@@ -2,9 +2,13 @@
 name: grow-sustainably
 description: Evaluate business decisions through the lens of sustainable, profitable growth. Use when someone is making decisions about spending, hiring, fundraising, or scaling their business.
 source: slavingia/skills
-tags: [agent, skill]
+tags: [business, entrepreneurship, growth, sustainability]
 metadata: 
 hermes: 
+
+metadata:
+  hermes:
+    tags: [business, entrepreneurship, growth, sustainability]
 ---
 
 **Trigger**: Use when making decisions about spending, hiring, or scaling — grow without burning out or going bankrupt.

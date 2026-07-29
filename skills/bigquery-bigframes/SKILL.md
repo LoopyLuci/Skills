@@ -2,9 +2,13 @@
 name: bigquery-bigframes
 description: >-
 source: google/skills
-tags: [agent, skill]
+tags: [gcp, google-cloud, bigquery]
 metadata: 
 hermes: 
+
+metadata:
+  hermes:
+    tags: [gcp, google-cloud, bigquery]
 ---
 
 **Trigger**: Use when working with Google Cloud Bigquery Bigframes — setup, configuration, and best practices.

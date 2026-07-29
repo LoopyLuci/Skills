@@ -2,9 +2,13 @@
 name: gemini-api
 description: Use when the user asks about using Gemini in an enterprise environment or explicitly mentions Vertex AI, Google Cloud, or Agent Platform. Guides the usage of the Gemini API on Agent Platform with the Google Gen AI SDK. Covers SDK usage (Python, JS/TS, Go, Java, C#), capabilities like multimodal inputs, tools, media generation, caching, batch prediction, and Live API.
 source: google/skills
-tags: [agent, skill]
+tags: [gcp, gemini, ai, llm, google-ai]
 metadata: 
 hermes: 
+
+metadata:
+  hermes:
+    tags: [gcp, gemini, ai, llm, google-ai]
 ---
 
 **Trigger**: Use when working with the Gemini API — text generation, multimodal inputs, function calling, and safety settings.

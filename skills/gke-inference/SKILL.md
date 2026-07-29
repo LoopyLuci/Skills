@@ -2,9 +2,13 @@
 name: gke-inference
 description: >-
 source: google/skills
-tags: [agent, skill]
+tags: [gcp, gke, kubernetes, google-cloud, container]
 metadata: 
 hermes: 
+
+metadata:
+  hermes:
+    tags: [gcp, gke, kubernetes, google-cloud, container]
 ---
 
 # GKE AI/ML Inference

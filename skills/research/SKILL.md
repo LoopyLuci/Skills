@@ -2,9 +2,13 @@
 name: research
 description: Investigate a question against high-trust primary sources and capture the findings as a Markdown file in the repo. Use when the user wants a topic researched, docs or API facts gathered, or reading legwork delegated to a background agent.
 source: mattpocock/skills
-tags: [agent, skill]
+tags: [engineering, research, investigation, learning]
 metadata: 
 hermes: 
+
+metadata:
+  hermes:
+    tags: [engineering, research, investigation, learning]
 ---
 
 **Trigger**: Use when researching a topic, library, or approach — systematic investigation with documented findings.

@@ -2,9 +2,13 @@
 name: find-community
 description: Help identify and evaluate communities to build a minimalist business around. Use when someone is looking for a business idea, trying to find their community, or wondering where to start as an entrepreneur.
 source: slavingia/skills
-tags: [agent, skill]
+tags: [business, entrepreneurship, community, product-market-fit]
 metadata: 
 hermes: 
+
+metadata:
+  hermes:
+    tags: [business, entrepreneurship, community, product-market-fit]
 ---
 
 **Trigger**: Use when looking for a business idea or trying to find your community — the first step in the Minimalist Entrepreneur methodology.

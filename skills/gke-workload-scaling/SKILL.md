@@ -2,9 +2,13 @@
 name: gke-workload-scaling
 description: >-
 source: google/skills
-tags: [agent, skill]
+tags: [gcp, gke, kubernetes, google-cloud, container]
 metadata: 
 hermes: 
+
+metadata:
+  hermes:
+    tags: [gcp, gke, kubernetes, google-cloud, container]
 ---
 
 **Trigger**: Use when working with GKE Workload Scaling — Google Kubernetes Engine configuration and management.

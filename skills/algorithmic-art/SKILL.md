@@ -2,9 +2,13 @@
 name: algorithmic-art
 description: Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations.
 source: anthropics/skills
-tags: [agent, skill]
+tags: [art, generative, creative, canvas, animation]
 metadata: 
 hermes: 
+
+metadata:
+  hermes:
+    tags: [art, generative, creative, canvas, animation]
 ---
 
 **Trigger**: Use when generating algorithmic or generative art — creating visual patterns, fractals, geometric designs, or abstract animations through code.

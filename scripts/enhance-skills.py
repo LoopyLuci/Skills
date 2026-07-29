@@ -575,9 +575,16 @@ def enhance_skill(skill_name, enh):
         body = f"{body}\n\n## Verification\n{ver_text}"
         changes.append(f"added {len(all_verify)} verification steps")
     
-    # 4. Add Procedure steps
+    # 4. Add Procedure steps (must not already have a procedure-like section)
     steps = enh.get("procedure_steps")
-    if steps and not has_section(body, "Procedure") and not has_section(body, "How to") and not has_section(body, "Steps"):
+    has_procedure_section = (
+        has_section(body, "Procedure") or 
+        has_section(body, "Instructions") or 
+        has_section(body, "Steps") or
+        has_section(body, "Workflow") or
+        has_section(body, "Algorithm")
+    )
+    if steps and not has_procedure_section:
         step_text = "\n".join(f"{i+1}. {s}" for i, s in enumerate(steps))
         body = f"{body}\n\n## Procedure\n{step_text}"
         changes.append(f"added {len(steps)} procedure steps")
@@ -588,9 +595,27 @@ def enhance_skill(skill_name, enh):
     
     # Ensure at least basic hermes_tags are present
     if hermes_tags:
-        # Check if metadata.hermes.tags exists in the frontmatter
-        first_500 = content[:500]
-        if "metadata:" not in first_500 or "hermes:" not in first_500:
+        # Check if metadata.hermes.tags actually has tag values in the frontmatter
+        first_600 = content[:600]
+        # Look for a fully populated metadata.hermes.tags line
+        has_real_tags = False
+        if "metadata:" in first_600 and "hermes:" in first_600:
+            # Check that tags: follows hermes: with actual values (not empty/bare)
+            fm_section = content[3:content.find("---", 3)] if content.startswith("---") else content[:600]
+            in_hermes = False
+            for line in fm_section.split("\n"):
+                stripped = line.strip()
+                if stripped.startswith("hermes:"):
+                    in_hermes = True
+                elif in_hermes and stripped.startswith("tags:"):
+                    val = stripped.split(":", 1)[1].strip()
+                    if val and val not in ("", "[]"):
+                        has_real_tags = True
+                        break
+                elif in_hermes and not stripped.startswith(" ") and not stripped.startswith("\t"):
+                    in_hermes = False
+        
+        if not has_real_tags:
             # Insert metadata section before closing ---
             tag_line = f"\nmetadata:\n  hermes:\n    tags: [{', '.join(hermes_tags)}]"
             content_lines = content.split("\n")

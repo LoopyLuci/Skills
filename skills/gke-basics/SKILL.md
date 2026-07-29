@@ -2,9 +2,13 @@
 name: gke-basics
 description: >-
 source: google/skills
-tags: [agent, skill]
+tags: [gcp, kubernetes, gke, container, orchestration]
 metadata: 
 hermes: 
+
+metadata:
+  hermes:
+    tags: [gcp, kubernetes, gke, container, orchestration]
 ---
 
 **Trigger**: Use when working with Google Kubernetes Engine basics — cluster setup, node pools, workloads, networking, and storage fundamentals.

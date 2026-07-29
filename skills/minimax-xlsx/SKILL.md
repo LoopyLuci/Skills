@@ -26,6 +26,18 @@ metadata:
 metadata:
   hermes:
     tags: [minimax, document, xlsx, office]
+
+metadata:
+  hermes:
+    tags: [minimax, document, xlsx, office]
+
+metadata:
+  hermes:
+    tags: [minimax, document, xlsx, office]
+
+metadata:
+  hermes:
+    tags: [minimax, document, xlsx, office]
 ---
 
 **Trigger**: Use when creating, editing, or formatting XLSX documents — generation, template application, content extraction, and validation.

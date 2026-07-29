@@ -2,9 +2,13 @@
 name: brand-guidelines
 description: Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand colors or style guidelines, visual formatting, or company design standards apply.
 source: anthropics/skills
-tags: [agent, skill]
+tags: [design, brand, guidelines, identity]
 metadata: 
 hermes: 
+
+metadata:
+  hermes:
+    tags: [design, brand, guidelines, identity]
 ---
 
 **Trigger**: Use when creating or applying brand style guidelines — colors, typography, logos, spacing, voice, and visual identity rules.

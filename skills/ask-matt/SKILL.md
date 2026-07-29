@@ -2,9 +2,13 @@
 name: ask-matt
 description: Ask which skill or flow fits your situation. A router over the skills in this repo.
 source: mattpocock/skills
-tags: [agent, skill]
+tags: [engineering, guidance, mattpocock, best-practices]
 metadata: 
 hermes: 
+
+metadata:
+  hermes:
+    tags: [engineering, guidance, mattpocock, best-practices]
 ---
 
 **Trigger**: Use when asking Matt Pocock's expertise — TypeScript, React, testing, and TypeScript-adjacent topics.

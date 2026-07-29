@@ -2,9 +2,13 @@
 name: workload-manager-basics
 description: >-
 source: google/skills
-tags: [agent, skill]
+tags: [gcp, google-cloud, workload]
 metadata: 
 hermes: 
+
+metadata:
+  hermes:
+    tags: [gcp, google-cloud, workload]
 ---
 
 **Trigger**: Use when working with Google Cloud Workload Manager — setup, configuration, and best practices.

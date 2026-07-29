@@ -2,9 +2,13 @@
 name: internal-comms
 description: A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use. Claude should use this skill whenever asked to write some sort of internal communications (status reports, leadership updates, 3P updates, company newsletters, FAQs, incident reports, project updates, etc.).
 source: anthropics/skills
-tags: [agent, skill]
+tags: [communication, internal, writing, announcements]
 metadata: 
 hermes: 
+
+metadata:
+  hermes:
+    tags: [communication, internal, writing, announcements]
 ---
 
 ## When to use this skill

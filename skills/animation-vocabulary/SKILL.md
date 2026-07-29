@@ -2,38 +2,9 @@
 name: animation-vocabulary
 description: Reverse-lookup glossary that turns a vague description of a web animation or motion effect into its exact term ("the bouncy thing when a popover opens" → Pop in; "the iOS rubber-band scroll" → Rubber-banding). Use when the user asks "what's it called when…", or describes a motion effect without knowing its name and wants the right word to prompt an AI or designer with. For naming an effect, not designing or building one.
 source: emilkowalski/skills
-tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
-
-metadata:
-  hermes:
-    tags: [design, animation, vocabulary, communication, motion]
-
-metadata:
-  hermes:
-    tags: [design, animation, vocabulary, communication, motion]
-
-metadata:
-  hermes:
-    tags: [design, animation, vocabulary, communication, motion]
-
-metadata:
-  hermes:
-    tags: [design, animation, vocabulary, communication, motion]
-
-metadata:
-  hermes:
-    tags: [design, animation, vocabulary, communication, motion]
-
-metadata:
-  hermes:
-    tags: [design, animation, vocabulary, communication, motion]
-
-metadata:
-  hermes:
-    tags: [design, animation, vocabulary, communication, motion]
+tags: [design, animation, vocabulary, communication, motion]
+metadata: 
+hermes: 
 ---
 
 **Trigger**: Use when you need precise animation terminology to communicate effectively with designers, developers, or AI agents about motion design.

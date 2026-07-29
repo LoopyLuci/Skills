@@ -2,9 +2,13 @@
 name: writing-great-skills
 description: Reference for writing and editing skills well — the vocabulary and principles that make a skill predictable.
 source: mattpocock/skills
-tags: [skills, authoring, meta-skills]
+tags: [skills, authoring, meta, best-practices]
 metadata: 
 hermes: 
+
+metadata:
+  hermes:
+    tags: [skills, authoring, meta, best-practices]
 ---
 
 **Trigger**: Use when writing or editing a skill file (SKILL.md). Reference for the vocabulary and principles that make a skill predictable, useful, and reusable.

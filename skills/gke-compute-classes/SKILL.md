@@ -2,9 +2,13 @@
 name: gke-compute-classes
 description: >-
 source: google/skills
-tags: [agent, skill]
+tags: [gcp, gke, kubernetes, google-cloud, container]
 metadata: 
 hermes: 
+
+metadata:
+  hermes:
+    tags: [gcp, gke, kubernetes, google-cloud, container]
 ---
 
 <!-- disableFinding(LINE_OVER_80) -->

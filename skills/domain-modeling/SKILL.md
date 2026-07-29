@@ -2,9 +2,13 @@
 name: domain-modeling
 description: Build and sharpen a project's domain model. Use when the user wants to pin down domain terminology or a ubiquitous language, record an architectural decision, or when another skill needs to maintain the domain model.
 source: mattpocock/skills
-tags: [agent, skill]
+tags: [engineering, architecture, domain-modeling, ddd]
 metadata: 
 hermes: 
+
+metadata:
+  hermes:
+    tags: [engineering, architecture, domain-modeling, ddd]
 ---
 
 **Trigger**: Use when actively building or sharpening a project's domain model — challenge terms against the glossary, stress-test with edge-case scenarios, and update `CONTEXT.md` and ADRs inline.

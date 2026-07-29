@@ -2,9 +2,13 @@
 name: google-analytics-data-api-basics
 description: >-
 source: google/skills
-tags: [agent, skill]
+tags: [gcp, google-cloud, google]
 metadata: 
 hermes: 
+
+metadata:
+  hermes:
+    tags: [gcp, google-cloud, google]
 ---
 
 **Trigger**: Use when working with Google Cloud Google Analytics Data Api — setup, configuration, and best practices.

@@ -2,9 +2,13 @@
 name: vision-analysis
 description: >
 source: MiniMax-AI/skills
-tags: [agent, skill]
+tags: [vision, image-analysis, ai, ocr, multimodal]
 metadata: 
 hermes: 
+
+metadata:
+  hermes:
+    tags: [vision, image-analysis, ai, ocr, multimodal]
 ---
 
 **Trigger**: Use when analyzing images with AI vision models — describe content, extract text (OCR), review UI mockups, or extract chart data.

@@ -2,9 +2,13 @@
 name: pick-ui-library
 description: Pick the right library for a given frontend task from a curated, opinionated list — numbers, OTP inputs, charts, command menus, virtualization, drag and drop, toasts, state, styling, and more. Only runs when explicitly invoked; it does not trigger on its own.
 source: emilkowalski/skills
-tags: [agent, skill]
+tags: [design, frontend, ui-library, component, selection]
 metadata: 
 hermes: 
+
+metadata:
+  hermes:
+    tags: [design, frontend, ui-library, component, selection]
 ---
 
 **Trigger**: Use when choosing a UI component library for a project. Have your agent pick the right library based on trusted recommendations instead of letting AI hand-roll components or install abandoned packages.
@@ -90,3 +94,10 @@ The styling split: clsx for ad-hoc conditional classes; cva when a component has
 - Does the selected library have TypeScript definitions?
 - Was the library updated in the last 6 months?
 - Is the bundle size compatible with the project's performance budget?
+
+## Procedure
+1. Identify the project's framework: React, Vue, Svelte, or framework-agnostic.
+2. Determine the styling approach: CSS modules, Tailwind, styled-components, or vanilla CSS.
+3. Check the project's design system needs: do they need pre-built themes, or are they custom?
+4. Select from trusted libraries based on criteria: npm downloads, GitHub stars, last update, bundle size, accessibility support.
+5. Prefer libraries with built-in accessibility, TypeScript support, and tree-shaking.

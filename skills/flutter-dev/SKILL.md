@@ -2,9 +2,13 @@
 name: flutter-dev
 description: |
 source: MiniMax-AI/skills
-tags: [agent, skill]
+tags: [flutter, mobile, dart, cross-platform, ui]
 metadata: 
 hermes: 
+
+metadata:
+  hermes:
+    tags: [flutter, mobile, dart, cross-platform, ui]
 ---
 
 **Trigger**: Use when developing Flutter applications — widget patterns, state management (Riverpod/Bloc), navigation, and platform integration.

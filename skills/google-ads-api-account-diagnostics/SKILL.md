@@ -2,9 +2,13 @@
 name: google-ads-api-account-diagnostics
 description: >-
 source: google/skills
-tags: [agent, skill]
+tags: [google-ads, advertising, mobile-ads, gcp]
 metadata: 
 hermes: 
+
+metadata:
+  hermes:
+    tags: [google-ads, advertising, mobile-ads, gcp]
 ---
 
 **Trigger**: Use when implementing Google Api Account Diagnostics — AdMob, Ad Manager, and related ad SDKs.

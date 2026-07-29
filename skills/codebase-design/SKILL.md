@@ -2,9 +2,13 @@
 name: codebase-design
 description: Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface, find deepening opportunities, decide where a seam goes, make code more testable or AI-navigable, or when another skill needs the deep-module vocabulary.
 source: mattpocock/skills
-tags: [engineering, architecture, design-patterns]
+tags: [engineering, architecture, design-patterns, refactoring]
 metadata: 
 hermes: 
+
+metadata:
+  hermes:
+    tags: [engineering, architecture, design-patterns, refactoring]
 ---
 
 **Trigger**: Use when designing a module's interface, finding deepening opportunities, deciding where a seam goes, or making code more testable and AI-navigable. Shared vocabulary for designing deep modules: a lot of behaviour behind a small interface, placed at a clean seam, testable through that interface.

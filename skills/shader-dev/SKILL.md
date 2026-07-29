@@ -2,9 +2,13 @@
 name: shader-dev
 description: Comprehensive GLSL shader techniques for creating stunning visual effects — ray marching, SDF modeling, fluid simulation, particle systems, procedural generation, lighting, post-processing, and more.
 source: MiniMax-AI/skills
-tags: [agent, skill]
+tags: [shader, glsl, graphics, gpu, rendering]
 metadata: 
 hermes: 
+
+metadata:
+  hermes:
+    tags: [shader, glsl, graphics, gpu, rendering]
 ---
 
 **Trigger**: Use when developing GLSL shaders — ray marching, signed distance fields (SDFs), procedural generation, particle systems, or post-processing effects for WebGL/ShaderToy.

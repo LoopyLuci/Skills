@@ -2,9 +2,13 @@
 name: fullstack-dev
 description: |
 source: MiniMax-AI/skills
-tags: [agent, skill]
+tags: [fullstack, web, backend, api, frontend]
 metadata: 
 hermes: 
+
+metadata:
+  hermes:
+    tags: [fullstack, web, backend, api, frontend]
 ---
 
 **Trigger**: Use when developing full-stack web applications — backend architecture, API design, auth flows, database integration, and production deployment.

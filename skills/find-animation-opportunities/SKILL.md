@@ -2,9 +2,13 @@
 name: find-animation-opportunities
 description: Search a codebase or UI for places that don't animate but should, and reject everything that shouldn't. Read-only; it proposes motion with exact values, it does not implement it. Use when the user asks "what could be animated here?" or wants to "make this feel more alive". For fixing existing animations, use improve-animations or review-animations instead.
 source: emilkowalski/skills
-tags: [agent, skill]
+tags: [design, animation, ux, discovery, motion]
 metadata: 
 hermes: 
+
+metadata:
+  hermes:
+    tags: [design, animation, ux, discovery, motion]
 ---
 
 **Trigger**: Use when searching a UI for places that would genuinely benefit from motion, while also identifying what NOT to animate.

@@ -2,9 +2,13 @@
 name: ima-sdk-basics
 description: >-
 source: google/skills
-tags: [agent, skill]
+tags: [google-ads, advertising, mobile-ads, gcp]
 metadata: 
 hermes: 
+
+metadata:
+  hermes:
+    tags: [google-ads, advertising, mobile-ads, gcp]
 ---
 
 **Trigger**: Use when implementing Google Basics — AdMob, Ad Manager, and related ad SDKs.

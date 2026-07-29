@@ -2,9 +2,13 @@
 name: to-tickets
 description: Break a plan, spec, or the current conversation into a set of tracer-bullet tickets, each declaring its blocking edges, published to the configured tracker — edges as text in one file per ticket locally, or native blocking links on a real tracker.
 source: mattpocock/skills
-tags: [agent, skill]
+tags: [engineering, tickets, planning, issues, agile]
 metadata: 
 hermes: 
+
+metadata:
+  hermes:
+    tags: [engineering, tickets, planning, issues, agile]
 ---
 
 **Trigger**: Use when breaking a specification into actionable tickets or issues — creating a set of tickets that each declare their blocking dependencies.

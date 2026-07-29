@@ -2,9 +2,13 @@
 name: handoff
 description: Compact the current conversation into a handoff document for another agent to pick up.
 source: mattpocock/skills
-tags: [productivity, agent-workflow, handoff]
+tags: [productivity, agent-workflow, handoff, collaboration]
 metadata: 
 hermes: 
+
+metadata:
+  hermes:
+    tags: [productivity, agent-workflow, handoff, collaboration]
 ---
 
 **Trigger**: Use when you need to compact the current conversation into a handoff document so another agent or session can continue the work without losing context.

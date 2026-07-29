@@ -2,9 +2,13 @@
 name: minimax-pdf
 description: >
 source: MiniMax-AI/skills
-tags: [agent, skill]
+tags: [minimax, document, pdf, office]
 metadata: 
 hermes: 
+
+metadata:
+  hermes:
+    tags: [minimax, document, pdf, office]
 ---
 
 **Trigger**: Use when creating, editing, or formatting PDF documents — generation, template application, content extraction, and validation.

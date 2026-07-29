@@ -2,9 +2,13 @@
 name: google-cloud-recipe-foundation-builder
 description: >-
 source: google/skills
-tags: [agent, skill]
+tags: [gcp, google-cloud, cloud]
 metadata: 
 hermes: 
+
+metadata:
+  hermes:
+    tags: [gcp, google-cloud, cloud]
 ---
 
 **Trigger**: Use when working with Google Cloud Google Cloud Recipe Foundation Builder — setup, configuration, and best practices.
