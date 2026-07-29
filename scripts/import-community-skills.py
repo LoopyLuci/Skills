@@ -138,6 +138,22 @@ MATTPOCOCK_SUBCATS = {
     "setup-pre-commit": "misc/setup-pre-commit",
 }
 
+# Name alias map: when the same skill name exists in multiple repos,
+# the later import gets a disambiguated name.
+NAME_ALIASES = {
+    "prototype": {  # emilkowalski's wins; mattpocock's renamed
+        "mattpocock/skills": "prototype-solution",
+    },
+}
+
+
+def resolve_name(repo, skill_name):
+    """Resolve name aliases for cross-repo collisions."""
+    if skill_name in NAME_ALIASES and repo in NAME_ALIASES[skill_name]:
+        return NAME_ALIASES[skill_name][repo]
+    return skill_name
+
+
 ANTHROPICS_SKILLS_PATHS = {
     "algorithmic-art": "algorithmic-art",
     "brand-guidelines": "brand-guidelines",
@@ -292,7 +308,9 @@ def import_source(source_def, repo_name):
     
     for category, skills in source_def.items():
         for skill_name in skills:
-            target_dir = REPO_SKILLS_DIR / skill_name
+            # Resolve name collisions
+            mapped_name = resolve_name(repo_name, skill_name)
+            target_dir = REPO_SKILLS_DIR / mapped_name
             target_file = target_dir / "SKILL.md"
             
             # Skip if already exists
