@@ -1,5 +1,27 @@
-IDEA.md
-.usage.json
-.usage.json.lock
+# Hermes internal state (never commit these)
 .bundled_manifest
 .curator_state
+.curator_state.bak
+.usage.json
+.usage.json.lock
+IDEA.md
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+
+# IDE
+.idea/
+.vscode/
+*.sublime-*
