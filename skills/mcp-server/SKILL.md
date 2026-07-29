@@ -215,6 +215,10 @@ GET  /health             → health check
 | `references/build-environment-mcp.md` | Python MCP server for C/C++ build environments — 8 tools (build, test, lint, analyze, file_list, file_read, syntax_check, status) with Docker integration. Stdio transport, JSON-RPC 2.0, subprocess-based tool handlers. |
 | `references/network-tools-mcp.md` | Network security MCP server (adblocker + firewall) with 10 tools across Rust, Python, TypeScript, Swift, and Kotlin clients. Hardware capabilities discovery, event subscription model, WebSocket transport. Created from the Sentinel project. |
 | `references/fastmcp-patterns.md` | FastMCP Python library patterns — constructor/quirk API, tool/resource/prompt registration, SSE vs stdio transport, Hermes `mcp_servers` configuration for HTTP/SSE servers, testing instructions, and known issues. Created from a 50-tool Telegram bot control server. |
+| `references/cron-watcher-pattern.md` | Cron-based autonomous watcher pattern — silent-until-action background monitors that run on Hermes cron schedules, with no_agent=True watchdog mode and origin delivery. |
+| `references/mcp-auto-config.md` | MCP server auto-load configuration for Hermes Agent — configuring mcp_servers in config.yaml, YAML list format pitfalls, startup discovery sequence, and transport options. |
+| `references/windows-deployment.md` | Windows-specific MCP server deployment — orphan process cleanup, port contention, signal handlers, background watchdog pattern, and Hermes MCP config cleanup. Created from a Telegram bot control server on Windows. |
+| `references/json-extraction-pattern.md` | Multi-line JSON parser for extracting pretty-printed JSON from mixed stdout (log lines + JSON output) — brace-depth tracking technique. |
 
 ## Auto-Discovery Manifest (Hermes Agent Integration)
 

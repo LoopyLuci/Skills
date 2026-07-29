@@ -14,6 +14,8 @@ mcp = FastMCP(
     instructions="...",          # NOT "description" — that keyword is rejected
     host="127.0.0.1",            # default: 127.0.0.1
     port=8090,                   # default: 8000
+    streamable_http_path="/mcp", # default: /mcp — Streamable HTTP endpoint
+    sse_path="/sse",             # default: /sse — SSE endpoint
     # Other optional: log_level, debug, tools, dependencies, lifespan, ...
 )
 ```
@@ -24,9 +26,63 @@ mcp = FastMCP(
 |---|---|---|
 | `await mcp.run_sse_async()` | HTTP + SSE | Server runs independently; agents connect over network |
 | `await mcp.run_stdio_async()` | stdin/stdout | Hermes spawns the server as a subprocess |
-| `await mcp.run_streamable_http_async()` | Streamable HTTP | Newer SDK, check version availability |
+| `await mcp.run_streamable_http_async()` | Streamable HTTP | Newer transport — single POST endpoint, no SSE needed |
 
-**Critical:** `host` and `port` go in the **constructor**, not in the `run_*` calls. `run_sse_async()` takes only an optional `mount_path` parameter.
+**Critical:** `host` and `port` go in the **constructor**, not in the `run_*` calls. All three run methods take no host/port parameters.
+
+### Streamable HTTP Transport
+
+`run_streamable_http_async()` spawns its **own uvicorn server** internally. Key implications:
+
+- **Cannot be embedded/mounted inside another ASGI app** — calling `streamable_http_app()` to get the raw ASGI app and mounting it via `FastAPI.mount()` or `Mount()` will fail because the Streamable HTTP session manager's task group is not initialized until `run_streamable_http_async()` is called. The error is: `RuntimeError: Task group is not initialized. Make sure to use run().`
+- **Runs on its own port** — the host/port set in the constructor.
+- **Requires Accept header** — clients must send `Accept: application/json, text/event-stream` or they get `-32600: Not Acceptable`.
+- **JSON-RPC endpoint** — clients POST JSON-RPC 2.0 messages to `streamable_http_path` (default `/mcp`).
+- **Session management** — the server manages sessions internally.
+
+**Architecture:** If you need both a REST API/dashboard AND an MCP server, run them as two separate uvicorn instances on different ports, each in its own asyncio task:
+
+```python
+async def run_mcp():
+    mcp = FastMCP("Control", host="127.0.0.1", port=8090)
+    register_tools(mcp)
+    await mcp.run_streamable_http_async()
+
+async def run_dashboard():
+    app = create_fastapi_app()
+    config = uvicorn.Config(app, host="127.0.0.1", port=8080)
+    server = uvicorn.Server(config)
+    await server.serve()
+
+asyncio.gather(run_mcp(), run_dashboard())
+```
+
+**WRONG — mounting fails:**
+```python
+asgi = mcp.streamable_http_app()      # task group NOT initialized
+app = FastAPI()
+app.mount("/mcp", asgi)                # RuntimeError on request ❌
+```
+
+### Tool Organization Pattern (50+ tools)
+
+For large servers, organize by category with nested registration functions:
+
+```python
+def register_tools(mcp):
+    @mcp.tool()
+    async def bot_status() -> dict: ...
+
+    def register_services(mcp):
+        @mcp.tool()
+        async def service_list() -> list[dict]: ...
+    register_services(mcp)
+
+    def register_telemetry(mcp):
+        @mcp.tool()
+        async def telemetry_snapshot() -> dict: ...
+    register_telemetry(mcp)
+```
 
 ### Tool Registration
 
@@ -86,31 +142,55 @@ The Hermes `mcp_servers` config is a **top-level key** in `~/.hermes/config.yaml
 ```yaml
 mcp_servers:
   my-service:
-    url: "http://127.0.0.1:8090/sse"
+    url: "http://127.0.0.1:8090/sse"    # SSE transport
+    timeout: 180
+    connect_timeout: 60
+```
+
+For Streamable HTTP transport:
+
+```yaml
+mcp_servers:
+  my-service:
+    url: "http://127.0.0.1:8090/mcp"    # Streamable HTTP
     timeout: 180
     connect_timeout: 60
 ```
 
 - NOT under `mcp.servers` — that creates a wrong parallel section
-- The `/sse` path suffix is required for FastMCP SSE servers
+- SSE transport: URL must end in `/sse` (the default `sse_path`)
+- Streamable HTTP: URL matches `streamable_http_path` (default `/mcp`)
 - Use `hermes config set mcp_servers.NAME.KEY VALUE` to set keys
 - After config change, restart Hermes Agent for tools to appear
 - Tool names in Hermes: `mcp_{server_name}_{tool_name}` (hyphens → underscores)
+- **Cleanup stale entries** — if you previously created a server under an incorrect key (e.g., `mcp.servers`), remove the stale section from config.yaml manually
 
 ## Testing the Server
 
 ```bash
 # Verify SSE endpoint is live
 curl -s -o /dev/null -w "%{http_code}" http://127.0.0.1:8090/
-# Should return 200
+# SSE servers: should return 200
+
+# Verify Streamable HTTP endpoint
+curl -s -w "\nHTTP %{http_code}" http://127.0.0.1:8090/mcp -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json, text/event-stream" \
+  -d '{"jsonrpc":"2.0","method":"tools/list","id":1}'
+# Should return HTTP 200 with JSON-RPC response listing all tools
 
 # Check REST API endpoints if the server also exposes them
-curl -s http://127.0.0.1:8090/api/status | python -m json.tool
+curl -s http://127.0.0.1:8080/api/status | python -m json.tool
 ```
 
 ## Known Issues & Workarounds
 
 - **`description` parameter rejected**: FastMCP uses `instructions`, not `description`. Pass it as a string kwarg, not in the name position.
-- **`run_sse_async(host=..., port=...)` fails**: Move host/port to the constructor. `run_sse_async` only accepts `mount_path`.
+- **`run_sse_async(host=..., port=...)` fails**: Move host/port to the constructor. All `run_*` methods take no host/port parameters.
+- **Streamable HTTP cannot be embedded**: `streamable_http_app()` returns an app whose session manager task group is only initialized during `run_streamable_http_async()`. Mounting it in another ASGI app causes `RuntimeError: Task group is not initialized`.
+- **Streamable HTTP Accept header**: Clients must send `Accept: application/json, text/event-stream`. Hermes MCP client handles this automatically.
+- **Windows signal handlers**: `loop.add_signal_handler()` raises `NotImplementedError` on Windows. Catch via `(NotImplementedError, ValueError)`.
 - **Tool count verification**: 50 tools registered and verified via `list_tools()` in a production control server.
-- **Stdio vs SSE**: If using SSE, the server runs independently — handle lifecycle yourself. If using stdio, Hermes manages the subprocess.
+- **Stdio vs SSE vs Streamable HTTP**: Stdio — Hermes manages the subprocess. SSE — server runs independently, network-accessible. Streamable HTTP — same as SSE but single POST endpoint, no SSE stream.
+- **Port migration to avoid conflicts**: Default ports (8080, 8000, 3000, 5000) are commonly used. Choose high, unusual ports (e.g., 9876, 9877) for long-lived MCP infrastructure. Update both Python defaults AND the persistent YAML config file — the YAML overrides Python defaults.
+- **Python bytecode cache trap**: When changing default values in a config module, delete `__pycache__/` and any `.pyc` files. A stale `.pyc` from a prior `import` silently serves old values even after source edits.
