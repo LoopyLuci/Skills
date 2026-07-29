@@ -20,7 +20,25 @@ set -euo pipefail
 
 REPO_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 SKILLS_DIR="$REPO_DIR/skills"
-HERMES_SKILLS_DIR="${HERMES_HOME:-$HOME/.hermes}/skills"
+# Resolve Hermes skills directory (supports Windows AppData path)
+if [ -d "$HERMES_HOME/skills" ]; then
+    HERMES_SKILLS_DIR="$HERMES_HOME/skills"
+elif [ -d "$HOME/.hermes/skills" ]; then
+    HERMES_SKILLS_DIR="$HOME/.hermes/skills"
+elif [ -d "$LOCALAPPDATA/hermes/skills" ]; then
+    HERMES_SKILLS_DIR="$LOCALAPPDATA/hermes/skills"
+elif [ -d "/c/Users/$(whoami)/AppData/Local/hermes/skills" ]; then
+    HERMES_SKILLS_DIR="/c/Users/$(whoami)/AppData/Local/hermes/skills"
+else
+    # Fallback: try common Windows path
+    WIN_HOME=$(cmd /c "echo %USERPROFILE%" 2>/dev/null | tr -d '\r')
+    if [ -n "$WIN_HOME" ] && [ -d "${WIN_HOME}/AppData/Local/hermes/skills" ]; then
+        HERMES_SKILLS_DIR="${WIN_HOME}/AppData/Local/hermes/skills"
+    else
+        echo "ERROR: Cannot find Hermes skills directory"
+        exit 1
+    fi
+fi
 DRY_RUN=true
 FORCE_PUSH=false
 
@@ -59,21 +77,25 @@ updated=0
 skipped=0
 errors=0
 
-# Walk Hermes skills in category/<skill>/SKILL.md format
+# Walk Hermes skills (handles both category/skill/SKILL.md and flat skill/SKILL.md)
 while IFS= read -r skill_file; do
-    # Extract relative path from HERMES_SKILLS_DIR
-    rel_path="${skill_file#$HERMES_SKILLS_DIR/}"
-    # rel_path is like "creative/ascii-art/SKILL.md" or "blocklist-manager/SKILL.md"
-    category=""
-    skill_name=""
+    # Normalize path separators for comparison
+    norm_skill_file="$(echo "$skill_file" | sed 's|\\|/|g')"
+    norm_skills_dir="$(echo "$HERMES_SKILLS_DIR" | sed 's|\\|/|g')"
     
-    if [[ "$rel_path" == */*/* ]]; then
-        # category/skill/SKILL.md
-        category="$(echo "$rel_path" | cut -d/ -f1)"
-        skill_name="$(echo "$rel_path" | cut -d/ -f2)"
-    elif [[ "$rel_path" == */* ]]; then
-        # skill/SKILL.md (flat at root of Hermes skills)
+    # Extract the relative path under the skills directory
+    rel_path="${norm_skill_file#$norm_skills_dir/}"
+    
+    # Count path components — determine if this is category/skill/SKILL.md or just skill/SKILL.md
+    parts_count="$(echo "$rel_path" | tr '/' '\n' | wc -l)"
+    
+    skill_name=""
+    if [ "$parts_count" -eq 2 ]; then
+        # skill/SKILL.md (flat)
         skill_name="$(echo "$rel_path" | cut -d/ -f1)"
+    elif [ "$parts_count" -eq 3 ]; then
+        # category/skill/SKILL.md  
+        skill_name="$(echo "$rel_path" | cut -d/ -f2)"
     fi
     
     [ -z "$skill_name" ] && { ((errors++)) || true; continue; }
@@ -87,8 +109,9 @@ while IFS= read -r skill_file; do
         if cmp -s "$skill_file" "$target_file"; then
             # Check supporting files too
             support_changed=false
+            skill_dir="$(dirname "$skill_file")"
             for subdir in references templates scripts assets examples; do
-                src="$HERMES_SKILLS_DIR/$category/$skill_name/$subdir"
+                src="$skill_dir/$subdir"
                 dst="$target_dir/$subdir"
                 if [ -d "$src" ]; then
                     if [ ! -d "$dst" ] || ! diff -rq "$src" "$dst" >/dev/null 2>&1; then
@@ -117,8 +140,9 @@ while IFS= read -r skill_file; do
         cp "$skill_file" "$target_file"
         
         # Copy supporting directories
+        skill_dir="$(dirname "$skill_file")"
         for subdir in references templates scripts assets examples; do
-            src="$HERMES_SKILLS_DIR/$category/$skill_name/$subdir"
+            src="$skill_dir/$subdir"
             if [ -d "$src" ]; then
                 dst="$target_dir/$subdir"
                 rm -rf "$dst" 2>/dev/null || true
