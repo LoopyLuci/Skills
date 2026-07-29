@@ -3,11 +3,11 @@ name: triage
 description: Move issues and external PRs through a state machine of triage roles — categorise, verify, grill if needed, and write agent-ready briefs.
 source: mattpocock/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when triaging bugs, issues, or feature requests — categorizing, prioritizing, and assigning based on severity and impact.
 
 # Triage
 

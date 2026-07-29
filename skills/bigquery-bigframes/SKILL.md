@@ -3,11 +3,11 @@ name: bigquery-bigframes
 description: >-
 source: google/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when working with Google Cloud Bigquery Bigframes — setup, configuration, and best practices.
 
 # BigFrames (BigQuery DataFrame) basics
 BigFrames is a Python library that lets you take advantage of BigQuery

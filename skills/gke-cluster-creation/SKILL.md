@@ -3,11 +3,11 @@ name: gke-cluster-creation
 description: >-
 source: google/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when working with GKE Cluster Creation — Google Kubernetes Engine configuration and management.
 
 # GKE Cluster Creation
 

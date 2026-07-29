@@ -2,12 +2,10 @@
 name: mcp-builder
 description: Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK).
 source: anthropics/skills
-tags: [mcp, server, tool-building]
-metadata:
-  hermes:
-    tags: [mcp, server, tools, integration]
+tags: [mcp, server, tools, integration]
+metadata: 
+hermes: 
 ---
-
 
 # MCP Server Development Guide
 
@@ -239,3 +237,13 @@ Load these resources as needed during development:
   - XML format specifications
   - Example questions and answers
   - Running an evaluation with the provided scripts
+
+## Pitfalls
+- Tool name collisions: MCP tools must have unique names across all connected servers.
+- Missing error handling: every tool should return structured errors, not throw exceptions.
+- Resource URI scheme: use consistent URI patterns so clients can discover resources predictably.
+
+## Verification
+- Does every tool have a description that the LLM can understand?
+- Are all tool parameters typed with clear descriptions?
+- Does `mcp list-tools` return all expected tools?

@@ -2,12 +2,12 @@
 name: teach
 description: Teach the user a new skill or concept, within this workspace.
 source: mattpocock/skills
-tags: [productivity, teaching, education]
-metadata:
-  hermes:
-    tags: [productivity, education, teaching]
+tags: [productivity, education, teaching]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when teaching a user a new skill or concept over multiple sessions, using the current directory as a stateful teaching workspace.
 
 The user has asked you to teach them something. This is a stateful request - they intend to learn the topic over multiple sessions.
 
@@ -142,3 +142,21 @@ Glossaries, in particular, are an essential reference. Once one is created, it s
 ## `NOTES.md`
 
 The user will sometimes express preferences of how they want to be taught, or things you should keep in mind. This is the place to record those preferences, so you can refer back to them when designing lessons or working with the user.
+
+## Pitfalls
+- Overloading: limit each session to 1-2 concepts to avoid cognitive overload.
+- Assuming knowledge: ask before diving in — don't skip fundamentals.
+- No practice: theory without practice doesn't stick — always include exercises.
+
+## Verification
+- Can the user explain the concept back in their own words?
+- Did the user complete the practice exercise without hints?
+- Review saved `.teaching-session.json` — progress should be incrementing.
+
+## Procedure
+1. Assess the user's current knowledge level — ask what they already know about the topic.
+2. Break the topic into digestible lessons, each building on the previous one.
+3. For each lesson: explain the concept, show a concrete example, then have the user practice.
+4. Create a teaching workspace file (`.teaching-session.json`) to track progress across sessions.
+5. After each session, save progress and set clear expectations for the next session.
+6. Provide spaced-repetition review prompts from previous lessons.

@@ -3,11 +3,11 @@ name: gke-manifest-generation
 description: >-
 source: google/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when working with GKE Manifest Generation — Google Kubernetes Engine configuration and management.
 
 # GKE Manifest Generation Skill
 

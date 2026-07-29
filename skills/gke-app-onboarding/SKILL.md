@@ -3,11 +3,11 @@ name: gke-app-onboarding
 description: >-
 source: google/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when working with GKE App Onboarding — Google Kubernetes Engine configuration and management.
 
 # GKE App Onboarding
 

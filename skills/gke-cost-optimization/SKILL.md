@@ -3,11 +3,11 @@ name: gke-cost-optimization
 description: >-
 source: google/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when working with GKE Cost Optimization — Google Kubernetes Engine configuration and management.
 
 # GKE Cost Optimization
 

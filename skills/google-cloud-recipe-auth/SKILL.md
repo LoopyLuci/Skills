@@ -3,11 +3,11 @@ name: google-cloud-recipe-auth
 description: Provides expert guidance on authenticating and authorizing to Google Cloud services and APIs, covering human users, service identities, Application Default Credentials (ADC), and best practices for secure access.
 source: google/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when working with Google Cloud Google Cloud Recipe Auth — setup, configuration, and best practices.
 
 # Authenticating to Google Cloud
 

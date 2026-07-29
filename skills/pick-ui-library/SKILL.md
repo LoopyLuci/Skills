@@ -3,11 +3,11 @@ name: pick-ui-library
 description: Pick the right library for a given frontend task from a curated, opinionated list — numbers, OTP inputs, charts, command menus, virtualization, drag and drop, toasts, state, styling, and more. Only runs when explicitly invoked; it does not trigger on its own.
 source: emilkowalski/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when choosing a UI component library for a project. Have your agent pick the right library based on trusted recommendations instead of letting AI hand-roll components or install abandoned packages.
 
 # Picking The Right Library
 
@@ -80,3 +80,13 @@ The styling split: clsx for ad-hoc conditional classes; cva when a component has
 - **Rendering a 1,000+ row list directly** → Virtuoso before reaching for pagination hacks.
 - **A `useState`-per-component web of props for shared state** → zustand.
 - **Template-literal className ternaries three conditions deep** → clsx (or cva if it's variant-shaped).
+
+## Pitfalls
+- Hand-rolling components when a battle-tested library exists — toast, modals, tooltips should never be hand-rolled.
+- Choosing a library with no recent updates (abandoned) — check last commit date.
+- Installing a UI library with a different styling paradigm than the project uses.
+
+## Verification
+- Does the selected library have TypeScript definitions?
+- Was the library updated in the last 6 months?
+- Is the bundle size compatible with the project's performance budget?

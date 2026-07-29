@@ -3,11 +3,11 @@ name: google-mobile-ads-banner
 description: Provides instructions to implement, integrate, or configure
 source: google/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when implementing Google Banner — AdMob, Ad Manager, and related ad SDKs.
 
 # Google Mobile Ads SDK - Banner Ads
 

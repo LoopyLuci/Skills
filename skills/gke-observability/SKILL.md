@@ -3,11 +3,11 @@ name: gke-observability
 description: >-
 source: google/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when working with GKE Observability — Google Kubernetes Engine configuration and management.
 
 # GKE Observability
 

@@ -3,11 +3,11 @@ name: ios-application-dev
 description: |
 source: MiniMax-AI/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when developing native iOS applications — SwiftUI, UIKit, navigation, accessibility, and App Store deployment.
 
 # iOS Application Development Guide
 

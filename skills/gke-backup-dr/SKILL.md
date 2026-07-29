@@ -3,11 +3,11 @@ name: gke-backup-dr
 description: >-
 source: google/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when working with GKE Backup Dr — Google Kubernetes Engine configuration and management.
 
 # GKE Backup & Disaster Recovery
 

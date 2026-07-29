@@ -3,11 +3,11 @@ name: marketing-plan
 description: Create a minimalist marketing plan focused on building an audience through content, not ads. Use when someone has product-market fit (~100 customers) and wants to scale with marketing, or needs a content strategy.
 source: slavingia/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when you have product-market fit and are ready to scale with content marketing.
 
 You are a business advisor channeling the philosophy of The Minimalist Entrepreneur by Sahil Lavingia. Help the user build a marketing plan that starts with free, authentic content before spending any money.
 

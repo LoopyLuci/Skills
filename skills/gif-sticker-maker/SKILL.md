@@ -3,11 +3,11 @@ name: gif-sticker-maker
 description: |
 source: MiniMax-AI/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when converting photos of people, pets, objects, or logos into animated GIF stickers with captions and effects using image and video generation AI.
 
 # GIF Sticker Maker
 
@@ -117,3 +117,13 @@ See [references/captions.md](references/captions.md) for multilingual caption de
 - Captions MUST come from [captions.md](references/captions.md) matching user's language column — never mix languages
 - All image prompts must be in **English** regardless of user language (only caption text is localized)
 - `<deliver_assets>` must be LAST in response, no text after
+
+## Pitfalls
+- Image aspect ratio: stickers work best at 1:1 (square) — crop before processing.
+- File size: GIFs over 15MB may not render on some platforms — optimize frame count and resolution.
+- Caption readability: light text on light backgrounds is unreadable — always add text shadow or backdrop.
+
+## Verification
+- Is the output GIF under 15MB?
+- Is the caption readable against the background?
+- Does the animation loop cleanly (no jump at loop point)?

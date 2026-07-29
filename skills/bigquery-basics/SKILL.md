@@ -3,11 +3,11 @@ name: bigquery-basics
 description: >-
 source: google/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when working with Google BigQuery — querying, partitioning, clustering, cost controls, and best practices.
 
 # BigQuery Basics
 

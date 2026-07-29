@@ -3,11 +3,11 @@ name: shader-dev
 description: Comprehensive GLSL shader techniques for creating stunning visual effects — ray marching, SDF modeling, fluid simulation, particle systems, procedural generation, lighting, post-processing, and more.
 source: MiniMax-AI/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when developing GLSL shaders — ray marching, signed distance fields (SDFs), procedural generation, particle systems, or post-processing effects for WebGL/ShaderToy.
 
 # Shader Craft
 
@@ -299,3 +299,13 @@ Visual debugging methods — temporarily replace your output to diagnose issues.
 | Checker pattern (UV) | `col = vec3(mod(floor(uv.x*10.)+floor(uv.y*10.), 2.0));` | Verify UV distortion, seams |
 | Lighting only | `col = vec3(shadow);` or `col = vec3(ao);` | Isolate shadow/AO contributions |
 | Material ID | `col = palette(matId / maxMatId);` | Verify material assignment |
+
+## Pitfalls
+- Precision qualifiers: always use `highp` where available — `mediump` causes artifacts on some GPUs.
+- Branching in shaders: GPUs execute both branches — minimize conditionals. Use `mix()` and `step()` instead.
+- Texture coordinates: WebGL uses bottom-left origin, ShaderToy uses top-left — account for the difference.
+
+## Verification
+- Does the shader compile without errors on both WebGL1 and WebGL2?
+- Are there any dynamic branches that could be replaced with math functions?
+- Does the shader handle the 0-1 UV range correctly?

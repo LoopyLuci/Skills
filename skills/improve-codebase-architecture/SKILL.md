@@ -3,11 +3,11 @@ name: improve-codebase-architecture
 description: Scan a codebase for deepening opportunities, present them as a visual HTML report, then grill through whichever one you pick.
 source: mattpocock/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when scanning a codebase to improve its architecture — finding deeply entrenched issues, YAGNI violations, and structural improvements scoped to where change is landing.
 
 # Improve Codebase Architecture
 

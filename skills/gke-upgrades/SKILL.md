@@ -3,11 +3,11 @@ name: gke-upgrades
 description: >-
 source: google/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when working with GKE Upgrades — Google Kubernetes Engine configuration and management.
 
 # GKE Upgrades & Maintenance
 

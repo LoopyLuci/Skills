@@ -3,11 +3,11 @@ name: gemini-live-api
 description: >-
 source: google/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when working with the Gemini Live Api — Google's multimodal AI API.
 
 # LiveAPI Service Skill
 

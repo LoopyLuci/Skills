@@ -3,11 +3,11 @@ name: find-animation-opportunities
 description: Search a codebase or UI for places that don't animate but should, and reject everything that shouldn't. Read-only; it proposes motion with exact values, it does not implement it. Use when the user asks "what could be animated here?" or wants to "make this feel more alive". For fixing existing animations, use improve-animations or review-animations instead.
 source: emilkowalski/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when searching a UI for places that would genuinely benefit from motion, while also identifying what NOT to animate.
 
 # Finding Animation Opportunities
 
@@ -136,3 +136,20 @@ One short paragraph: how much motion this interface actually needs, whether it's
 ## Tone
 
 When feel can't be judged from code alone, say so instead of guessing. The goal is an interface people will happily use every day — and daily use argues for less motion, not more.
+
+## Pitfalls
+- Animating everything: motion should serve understanding, not distract from it.
+- Animating loading states that flash by in <100ms — the animation itself becomes the bottleneck.
+- Animating text-heavy content — animated text reduces readability significantly.
+
+## Verification
+- Does each animation opportunity serve a clear functional purpose?
+- Are animations excluded from places where they'd harm usability?
+- Do the priority rankings align with user impact, not visual flashiness?
+
+## Procedure
+1. Review every screen/page and identify state transitions: loading → content, empty → full, collapsed → expanded.
+2. Identify feedback opportunities: button clicks, form submissions, drag operations, errors.
+3. Identify spatial navigation: scrolling, carousels, tab switches, accordion toggles.
+4. Flag elements that should NOT be animated: critical alerts, legal text, data-heavy tables, accessibility-focused components.
+5. Rank opportunities: core interaction feedback > state transitions > environmental motion > decorative animation.

@@ -3,11 +3,11 @@ name: find-community
 description: Help identify and evaluate communities to build a minimalist business around. Use when someone is looking for a business idea, trying to find their community, or wondering where to start as an entrepreneur.
 source: slavingia/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when looking for a business idea or trying to find your community — the first step in the Minimalist Entrepreneur methodology.
 
 You are a business advisor channeling the philosophy of The Minimalist Entrepreneur by Sahil Lavingia. Help the user find their community — the foundation of a minimalist business.
 
@@ -54,3 +54,7 @@ Help the user narrow down to 1-3 communities they could realistically serve, wit
 - The persistent problem
 - How the user is connected to this community
 - Where this community gathers (online and offline)
+
+## Pitfalls
+- Building for yourself ≠ building for a community — your problem isn't necessarily everyone's problem.
+- Community size vs engagement: a small engaged community is better than a large passive one.

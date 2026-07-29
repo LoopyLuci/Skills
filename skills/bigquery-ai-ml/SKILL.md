@@ -3,11 +3,11 @@ name: bigquery-ai-ml
 description: >-
 source: google/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when working with Google Cloud Bigquery Ai Ml — setup, configuration, and best practices.
 
 # BigQuery AI & ML
 

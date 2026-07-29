@@ -3,11 +3,11 @@ name: google-ads-api-mcp-setup
 description: Guides developers through downloading, configuring, and installing the official open-source Google Ads MCP Server. Use this skill when a user wants to connect their AI assistant (such as Gemini, Claude Code, or Cursor) to their Google Ads account to query campaigns or retrieve reporting metrics using natural language.
 source: google/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when implementing Google Api Mcp Setup — AdMob, Ad Manager, and related ad SDKs.
 
 # Google Ads API MCP Server Installation
 

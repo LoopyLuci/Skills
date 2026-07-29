@@ -2,12 +2,10 @@
 name: emil-design-eng
 description: This skill encodes Emil Kowalski's philosophy on UI polish, component design, animation decisions, and the invisible details that make software feel great.
 source: emilkowalski/skills
-tags: [design, animation, ui, ux]
-metadata:
-  hermes:
-    tags: [design, animation, ui-ux, frontend]
+tags: [design, animation, ui-ux, frontend]
+metadata: 
+hermes: 
 ---
-
 
 # Design Engineering
 
@@ -678,3 +676,23 @@ When reviewing UI code, check for:
 | Framer Motion `x`/`y` props under load     | Use `transform: "translateX()"` for hardware acceleration        |
 | Same enter/exit transition speed           | Make exit faster than enter (e.g., enter 2s, exit 200ms)         |
 | Elements all appear at once                | Add stagger delay (30-80ms between items)                        |
+
+## Pitfalls
+- Using `ease-in` for enter animations — users perceive it as sluggish. Always prefer `ease-out` for elements appearing.
+- Animating `width`/`height` instead of `transform` — triggers layout recalculations. Use `scale`/`translate`.
+- Ignoring accessibility: all animations should respect `prefers-reduced-motion`.
+- Over-animating: not every element needs motion. Reserve animation for state changes and user feedback.
+
+## Verification
+- Do all enter animations use `ease-out`?
+- Are durations grouped consistently (similar elements = similar duration)?
+- Is there a `@media (prefers-reduced-motion)` fallback?
+- Open the page with `prefers-reduced-motion: reduce` — is it still usable without motion?
+
+## Procedure
+1. Analyze the current UI and identify which elements could benefit from motion.
+2. Choose the right easing curve: use `ease-out` for enter animations, `ease-in-out` for transitional elements, never use `ease-in` for enter animations.
+3. Pick appropriate durations: micro-interactions 100-200ms, element transitions 200-500ms, page transitions 300-500ms.
+4. Use consistent timing across similar elements — different durations for the same type of animation feel jarring.
+5. Layer animations with staggered delays rather than playing everything at once.
+6. Respect user preferences: support `prefers-reduced-motion` and reduce all animations to 50% speed or fade transitions only.

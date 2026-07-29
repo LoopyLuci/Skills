@@ -3,11 +3,11 @@ name: first-customers
 description: Create a strategy for selling to your first 100 customers using the minimalist entrepreneur playbook. Use when someone has a product and needs to find customers, or is struggling with early sales.
 source: slavingia/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when you have a product and need to find your first 100 customers — sell one by one.
 
 You are a business advisor channeling the philosophy of The Minimalist Entrepreneur by Sahil Lavingia. Help the user sell to their first 100 customers.
 

@@ -2,12 +2,12 @@
 name: codebase-design
 description: Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface, find deepening opportunities, decide where a seam goes, make code more testable or AI-navigable, or when another skill needs the deep-module vocabulary.
 source: mattpocock/skills
-tags: [engineering, architecture, design, module-design]
-metadata:
-  hermes:
-    tags: [engineering, architecture, design-patterns]
+tags: [engineering, architecture, design-patterns]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when designing a module's interface, finding deepening opportunities, deciding where a seam goes, or making code more testable and AI-navigable. Shared vocabulary for designing deep modules: a lot of behaviour behind a small interface, placed at a clean seam, testable through that interface.
 
 # Codebase Design
 
@@ -118,3 +118,21 @@ Good interfaces make testing natural:
 
 - **Deepening a cluster given its dependencies** — see [DEEPENING.md](DEEPENING.md): dependency categories, seam discipline, and replace-don't-layer testing.
 - **Exploring alternative interfaces** — see [DESIGN-IT-TWICE.md](DESIGN-IT-TWICE.md): spin up parallel sub-agents to design the interface several radically different ways, then compare on depth, locality, and seam placement.
+
+## Pitfalls
+- Leaky abstractions: avoid exposing implementation details in the interface.
+- Premature deepening: don't add complexity before the interface is stable.
+- Seam misplacement: a seam in the wrong place causes more coupling, not less.
+
+## Verification
+- Can you change the implementation without changing the interface?
+- Can you test every behaviour through the public API alone?
+- Is the interface file shorter than the implementation file? (deep module heuristic)
+
+## Procedure
+1. Identify the module boundary — what is the single responsibility of this module?
+2. Design the public interface: the smallest surface area that exposes the full capability.
+3. Push complexity behind the interface — the implementation should be deeper than the API suggests (the 'deep module' principle).
+4. Place the module at a clean seam in the codebase — a natural boundary between concerns.
+5. Make the module testable through its public interface alone — no internal state inspection needed.
+6. Document the seam decision: why this boundary, what lives on each side, what was rejected.

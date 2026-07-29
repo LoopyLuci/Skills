@@ -3,11 +3,11 @@ name: pptx-generator
 description: Generate, edit, and read PowerPoint presentations. Create from scratch with PptxGenJS (cover, TOC, content, section divider, summary slides), edit existing PPTX via XML workflows, or extract text with markitdown. Triggers: PPT, PPTX, PowerPoint, presentation, slide, deck, slides.
 source: MiniMax-AI/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when generating PowerPoint presentations programmatically — creating slides, adding charts, applying templates, and exporting.
 
 # PPTX Generator & Editor
 

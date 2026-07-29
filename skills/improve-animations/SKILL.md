@@ -6,6 +6,30 @@ tags: [agent, skill]
 metadata:
   hermes:
     tags: [agent, skill]
+
+metadata:
+  hermes:
+    tags: [design, animation, audit, optimization, motion]
+
+metadata:
+  hermes:
+    tags: [design, animation, audit, optimization, motion]
+
+metadata:
+  hermes:
+    tags: [design, animation, audit, optimization, motion]
+
+metadata:
+  hermes:
+    tags: [design, animation, audit, optimization, motion]
+
+metadata:
+  hermes:
+    tags: [design, animation, audit, optimization, motion]
+
+metadata:
+  hermes:
+    tags: [design, animation, audit, optimization, motion]
 ---
 
 

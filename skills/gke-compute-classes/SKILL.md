@@ -3,11 +3,9 @@ name: gke-compute-classes
 description: >-
 source: google/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
-
 
 <!-- disableFinding(LINE_OVER_80) -->
 

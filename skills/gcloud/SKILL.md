@@ -3,11 +3,11 @@ name: gcloud
 description: >-
 source: google/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when working with the Google Cloud CLI (`gcloud`) — authentication, resource management, configuration, and troubleshooting.
 
 # gcloud CLI Skill for AI Agents
 

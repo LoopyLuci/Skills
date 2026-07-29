@@ -3,11 +3,11 @@ name: gke-golden-path
 description: >-
 source: google/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when working with GKE Golden Path — Google Kubernetes Engine configuration and management.
 
 # GKE Golden Path Configuration
 

@@ -3,11 +3,11 @@ name: agent-platform-skill-registry
 description: >
 source: google/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when managing Skill Registry on Google Cloud's Agent Platform — Google Cloud AI and agent infrastructure.
 
 # Skill Registry
 

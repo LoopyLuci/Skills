@@ -3,11 +3,11 @@ name: react-native-dev
 description: |
 source: MiniMax-AI/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when developing React Native or Expo applications — component patterns, navigation, state management, and native module integration.
 
 # React Native & Expo Development Guide
 

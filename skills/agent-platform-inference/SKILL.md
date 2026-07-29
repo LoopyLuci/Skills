@@ -3,11 +3,11 @@ name: agent-platform-inference
 description: >-
 source: google/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when managing Inference on Google Cloud's Agent Platform — Google Cloud AI and agent infrastructure.
 
 # Agent Platform GenAI Inference Skill
 

@@ -3,11 +3,11 @@ name: google-ads-api-quickstart
 description: |
 source: google/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when implementing Google Api Quickstart — AdMob, Ad Manager, and related ad SDKs.
 
 # Google Ads API Quickstart
 This skill guides you from absolute zero to running your first successful request to retrieve campaigns.

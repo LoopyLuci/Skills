@@ -3,11 +3,11 @@ name: buddy-sings
 description: >
 source: MiniMax-AI/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when the user wants their AI pet or buddy to sing a personalized song. Creates a unique vocal identity, gathers conversation context, and generates custom music.
 
 # Buddy Sings — Let Your Claude Code Pet Sing
 
@@ -441,3 +441,12 @@ How was <name>'s performance?
   **lyrics** (what they say and how they say it).
 - All generated files go to `~/Music/minimax-gen/` with the pet name in the
   filename.
+
+## Pitfalls
+- Content safety: avoid generating songs about copyrighted characters or explicit content.
+- API quota: music generation uses API credits — inform the user before generating multiple songs.
+- Voice caching: the vocal identity is cached per pet name — generating a new pet loses the voice.
+
+## Verification
+- Was a unique vocal identity created for this pet?
+- Does the song reference the gathered context (conversation topics, recent work)?

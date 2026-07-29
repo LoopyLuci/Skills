@@ -6,6 +6,22 @@ tags: [agent, skill]
 metadata:
   hermes:
     tags: [agent, skill]
+
+metadata:
+  hermes:
+    tags: [gcp, gke, kubernetes, google-cloud, container]
+
+metadata:
+  hermes:
+    tags: [gcp, gke, kubernetes, google-cloud, container]
+
+metadata:
+  hermes:
+    tags: [gcp, gke, kubernetes, google-cloud, container]
+
+metadata:
+  hermes:
+    tags: [gcp, gke, kubernetes, google-cloud, container]
 ---
 
 

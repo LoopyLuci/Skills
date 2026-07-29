@@ -3,11 +3,11 @@ name: gke-cost-analysis
 description: >-
 source: google/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when working with GKE Cost Analysis — Google Kubernetes Engine configuration and management.
 
 # GKE Cost Analysis
 

@@ -3,11 +3,11 @@ name: minimax-music-gen
 description: >
 source: MiniMax-AI/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when generating music with AI — vocal songs, instrumentals, or covers using the MiniMax Music API.
 
 # MiniMax Music Generation Skill
 

@@ -3,11 +3,11 @@ name: fullstack-dev
 description: |
 source: MiniMax-AI/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when developing full-stack web applications — backend architecture, API design, auth flows, database integration, and production deployment.
 
 # Full-Stack Development Practices
 
@@ -1021,3 +1021,21 @@ This skill includes deep-dive references for specialized topics. Read the releva
 | Design database schema, indexes, migrations, multi-tenancy | [references/db-schema.md](references/db-schema.md) |
 | Auth flow (JWT bearer, token refresh, Next.js SSR, RBAC, middleware order) | [references/auth-flow.md](references/auth-flow.md) |
 | CORS config, env vars per environment, common CORS issues | [references/environment-management.md](references/environment-management.md) |
+
+## Pitfalls
+- Missing API contracts: define request/response shapes before writing frontend or backend code.
+- CORS misconfiguration: CORS errors appear in the browser, not the server — test early.
+- No migration strategy: schema changes without a plan block the entire team.
+
+## Verification
+- Can the frontend and backend communicate without CORS or auth errors?
+- Are all API endpoints documented (OpenAPI or similar)?
+- Is there a database migration script checked into version control?
+
+## Procedure
+1. Review requirements and design the overall architecture — frontend, backend, database, and API contracts.
+2. Design the data model and database schema — entities, relationships, indexes.
+3. Implement the backend API — REST endpoints, auth (JWT/OAuth/session), middleware, error handling.
+4. Implement real-time features if needed — SSE, WebSocket, or polling.
+5. Integrate the frontend with the backend — API clients, state management, error states.
+6. Apply production hardening — logging, monitoring, error tracking, rate limiting, security headers.

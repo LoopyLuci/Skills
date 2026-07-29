@@ -3,11 +3,11 @@ name: google-mobile-ads-rewarded
 description: Provides instructions for implementing, integrating, or configuring
 source: google/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when implementing Google Rewarded — AdMob, Ad Manager, and related ad SDKs.
 
 # Google Mobile Ads SDK - Rewarded Ads
 

@@ -3,11 +3,11 @@ name: alloydb-basics
 description: >-
 source: google/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when working with Google Cloud Alloydb — setup, configuration, and best practices.
 
 # AlloyDB Basics
 

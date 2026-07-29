@@ -3,11 +3,11 @@ name: minimax-music-playlist
 description: >
 source: MiniMax-AI/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when generating personalized music playlists — analyzing music taste, planning tracklists, and generating songs with cover art.
 
 # MiniMax Music Playlist — Personalized Playlist Generator
 

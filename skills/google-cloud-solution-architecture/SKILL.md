@@ -3,11 +3,11 @@ name: google-cloud-solution-architecture
 description: >-
 source: google/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when working with Google Cloud Google Cloud Solution Architecture — setup, configuration, and best practices.
 
 # Google Cloud solution-architecture workflow
 

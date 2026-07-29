@@ -3,11 +3,11 @@ name: agent-platform-deploy
 description: >-
 source: google/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when managing Deploy on Google Cloud's Agent Platform — Google Cloud AI and agent infrastructure.
 
 # Agent Platform Model Garden Deploy Skill
 

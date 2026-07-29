@@ -3,11 +3,11 @@ name: gke-platform-security
 description: >-
 source: google/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when working with GKE Platform Security — Google Kubernetes Engine configuration and management.
 
 # GKE Platform Security
 

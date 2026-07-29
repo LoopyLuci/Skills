@@ -3,11 +3,11 @@ name: agent-platform-endpoint-management
 description: >-
 source: google/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when managing Endpoint Management on Google Cloud's Agent Platform — Google Cloud AI and agent infrastructure.
 
 # Agent Platform Endpoint Management
 

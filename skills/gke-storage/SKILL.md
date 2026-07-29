@@ -3,11 +3,11 @@ name: gke-storage
 description: >-
 source: google/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when working with GKE Storage — Google Kubernetes Engine configuration and management.
 
 # GKE Storage
 

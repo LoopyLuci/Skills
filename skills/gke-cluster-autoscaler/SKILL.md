@@ -3,11 +3,11 @@ name: gke-cluster-autoscaler
 description: >-
 source: google/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when working with GKE Cluster Autoscaler — Google Kubernetes Engine configuration and management.
 
 # GKE Cluster Autoscaler
 

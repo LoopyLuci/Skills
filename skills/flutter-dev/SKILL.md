@@ -3,11 +3,11 @@ name: flutter-dev
 description: |
 source: MiniMax-AI/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when developing Flutter applications — widget patterns, state management (Riverpod/Bloc), navigation, and platform integration.
 
 # Flutter Development Guide
 

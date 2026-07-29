@@ -3,11 +3,11 @@ name: agent-platform-migrate-from-ai-studio
 description: >-
 source: google/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when managing Migrate From Ai Studio on Google Cloud's Agent Platform — Google Cloud AI and agent infrastructure.
 
 # Migrating from Gemini API in AI Studio to Agent Platform
 

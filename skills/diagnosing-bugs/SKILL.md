@@ -3,11 +3,11 @@ name: diagnosing-bugs
 description: Diagnosis loop for hard bugs and performance regressions. Use when the user says "diagnose"/"debug this", or reports something broken/throwing/failing/slow.
 source: mattpocock/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when diagnosing and reproducing bugs — systematic approach to finding root causes through hypothesis testing and minimal reproductions.
 
 # Diagnosing Bugs
 
@@ -138,3 +138,20 @@ Required before declaring done:
 - [ ] The hypothesis that turned out correct is stated in the commit / PR message — so the next debugger learns
 
 **Then ask: what would have prevented this bug?** If the answer involves architectural change (no good test seam, tangled callers, hidden coupling) hand off to the `/improve-codebase-architecture` skill with the specifics. Make the recommendation **after** the fix is in, not before — you have more information now than when you started.
+
+## Pitfalls
+- Fixing symptoms instead of cause: a 'fix' that doesn't address the root cause will regress.
+- Incomplete reproduction: a bug you can't consistently reproduce is a bug you can't verify as fixed.
+- Confirmation bias: don't stop at the first hypothesis that seems plausible — disprove alternatives.
+
+## Verification
+- Does the fix survive the reproduction case (before-and-after test)?
+- Are there regression tests covering the fix?
+- Was the root cause identified, not just the immediate failure?
+
+## Procedure
+1. Reproduce the bug consistently — identify the exact steps, inputs, and environment conditions.
+2. Narrow the scope — binary search through commits (git bisect), config options, or input parameters.
+3. Form a hypothesis about the root cause — the mechanism, not just the symptom.
+4. Write a minimal reproduction — the smallest code/config that still exhibits the bug.
+5. Fix at the root cause level — not just the symptom — and verify the fix with the reproduction case.

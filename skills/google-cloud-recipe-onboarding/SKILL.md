@@ -3,11 +3,11 @@ name: google-cloud-recipe-onboarding
 description: >-
 source: google/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when working with Google Cloud Google Cloud Recipe Onboarding — setup, configuration, and best practices.
 
 # Onboarding to Google Cloud
 

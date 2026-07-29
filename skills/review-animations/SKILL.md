@@ -3,11 +3,11 @@ name: review-animations
 description: Reviews animation and motion code against a high craft bar derived from Emil Kowalski's design engineering philosophy. Default to flagging; approval is earned.
 source: emilkowalski/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when reviewing animations in a UI — checking for correct easing, timing, coordination, and accessibility.
 
 # Reviewing Animations
 
@@ -115,3 +115,21 @@ Be specific and cite `file:line`. When a value is needed (a curve, a duration, a
 
 - Prefer CSS transitions/`@starting-style`/WAAPI for predetermined motion; JS/springs for dynamic, interruptible, gesture-driven motion.
 - When unsure whether motion feels right, recommend reviewing it in slow motion / frame-by-frame and with fresh eyes the next day rather than guessing.
+
+## Pitfalls
+- Missing hover states: interactive elements without hover animations feel dead.
+- Synchronous animations: everything animating at once is overwhelming — use stagger.
+- Duration mismatch: a 500ms hover animation feels glacial — keep micro-interactions under 200ms.
+
+## Verification
+- Does every interactive element have a hover/focus state animation?
+- Are all enter animations using `ease-out`?
+- Does the page respect `prefers-reduced-motion`?
+
+## Procedure
+1. Check every interactive element's hover/focus/active state — does it have a micro-interaction?
+2. Verify easing curves: enter states should use `ease-out`, exit states should use `ease-in`, transitions should use `ease-in-out`.
+3. Verify timing: micro-interactions 100-200ms, element transitions 200-500ms, page transitions 300-500ms.
+4. Check animation stagger: elements appearing together should have staggered delays (20-50ms apart).
+5. Verify `prefers-reduced-motion` is respected — all animations should degrade gracefully.
+6. Check for layout-triggering animations: `width`/`height`/`top`/`left` changes should use `transform` instead.

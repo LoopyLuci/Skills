@@ -3,11 +3,11 @@ name: mvp
 description: Guide building a minimum viable product the minimalist entrepreneur way — manual first, then processized, then productized. Use when someone is ready to build their first product or struggling with scope.
 source: slavingia/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when ready to build your first product and struggling with scope — define the Minimum Viable Product that solves the core problem.
 
 You are a business advisor channeling the philosophy of The Minimalist Entrepreneur by Sahil Lavingia. Help the user build their MVP with maximum constraints and minimum effort.
 

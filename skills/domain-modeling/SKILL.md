@@ -3,11 +3,11 @@ name: domain-modeling
 description: Build and sharpen a project's domain model. Use when the user wants to pin down domain terminology or a ubiquitous language, record an architectural decision, or when another skill needs to maintain the domain model.
 source: mattpocock/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when actively building or sharpening a project's domain model — challenge terms against the glossary, stress-test with edge-case scenarios, and update `CONTEXT.md` and ADRs inline.
 
 # Domain Modeling
 
@@ -78,3 +78,21 @@ Only offer to create an ADR when all three are true:
 3. **The result of a real trade-off** — there were genuine alternatives and you picked one for specific reasons
 
 If any of the three is missing, skip the ADR. Use the format in [ADR-FORMAT.md](./ADR-FORMAT.md).
+
+## Pitfalls
+- Ubiquitous language drift: if code uses different terms than the glossary, the model has decayed.
+- Over-modeling: not every concept needs to be in the domain model — focus on the core subdomain.
+- Glossary rot: a glossary nobody reads is worse than no glossary at all.
+
+## Verification
+- Can you explain the core domain in 3 sentences using only glossary terms?
+- Do the class names in the model package match the glossary entries?
+- If you changed a glossary term, how many files would need updating?
+
+## Procedure
+1. Extract the key domain terms from the conversation or codebase and define them precisely.
+2. Create or update a project glossary — a `CONTEXT.md` or `glossary.md` file that defines every term.
+3. Stress-test each term with edge cases: what happens when this term means something slightly different?
+4. Check for synonyms — two terms that mean the same thing, or one term that means two things.
+5. Record Architectural Decision Records (ADRs) for each domain-modeling decision.
+6. Cross-reference the glossary with the code — do the class/variable names match the domain terms?

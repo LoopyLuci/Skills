@@ -3,11 +3,11 @@ name: mmx-cli
 description: Use mmx to generate text, images, video, speech, and music via the MiniMax AI platform. Use when the user wants to create media content, chat with MiniMax models, perform web search, or manage MiniMax API resources from the terminal.
 source: MiniMax-AI/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when generating multimodal content via MiniMax APIs — text-to-speech, music, video, and image generation.
 
 # MiniMax CLI — Agent Skill Guide
 

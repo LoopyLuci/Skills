@@ -3,11 +3,9 @@ name: gke-multitenancy
 description: >-
 source: google/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
-
 
 # GKE Multi-Tenancy
 

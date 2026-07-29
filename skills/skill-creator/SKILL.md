@@ -3,11 +3,11 @@ name: skill-creator
 description: Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance analysis, or optimize a skill's description for better triggering accuracy.
 source: anthropics/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when creating custom skills for Claude or any agent-skills-compatible AI assistant. Step-by-step guide for authoring, testing, and distributing skills.
 
 # Skill Creator
 

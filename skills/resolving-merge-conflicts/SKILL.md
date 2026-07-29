@@ -3,11 +3,11 @@ name: resolving-merge-conflicts
 description: Use when you need to resolve an in-progress git merge/rebase conflict.
 source: mattpocock/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when resolving in-progress git merge or rebase conflicts — understand each side's intent and finish the operation without aborting.
 
 1. **See the current state** of the merge/rebase. Check git history, and the conflicting files.
 

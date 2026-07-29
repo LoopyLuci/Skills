@@ -2,12 +2,10 @@
 name: claude-api
 description: |-
 source: anthropics/skills
-tags: [api, claude, anthropic, llm]
-metadata:
-  hermes:
-    tags: [api, claude, llm, documentation]
+tags: [api, claude, llm, documentation]
+metadata: 
+hermes: 
 ---
-
 
 # Building LLM-Powered Applications with Claude
 
@@ -546,3 +544,12 @@ Live documentation URLs are in `shared/live-sources.md`.
 - **Server-tool errors don't raise.** Web search and web fetch errors return HTTP 200 with a `web_search_tool_result` / `web_fetch_tool_result` block whose `content` is a single error object (e.g. `{error_code: "max_uses_exceeded"}`) — not a raised exception. For web search, a success `content` is a *list*; an error `content` is an *object* — branch on that before indexing.
 - **Code execution output block type:** `code_execution_20260521` returns `bash_code_execution_tool_result` (with `.content.stdout`), **not** the legacy bare `code_execution_tool_result`. Iterate `response.content` and match on the correct type.
 - **Tool search: never defer everything.** The search tool itself must not have `defer_loading: true`, and at least one tool in `tools` must be non-deferred, or the API returns 400 `All tools have defer_loading set`.
+
+## Pitfalls
+- Rate limits: Claude API has tiered rate limits — check your usage tier before production.
+- Context window: Opus and Sonnet have different context limits — always check the model's max tokens.
+- Streaming vs non-streaming: streaming is faster for the user but harder to handle errors — implement proper error boundaries.
+
+## Verification
+- Can you make a successful API call with streaming enabled?
+- Are you handling API errors (rate limit, auth, context length) gracefully?

@@ -3,11 +3,11 @@ name: cloud-run-basics
 description: >-
 source: google/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when deploying and managing services on Google Cloud Run — containerization, scaling, networking, and CI/CD.
 
 # Cloud Run Basics
 

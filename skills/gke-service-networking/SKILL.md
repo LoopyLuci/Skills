@@ -3,11 +3,11 @@ name: gke-service-networking
 description: >-
 source: google/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when working with GKE Service Networking — Google Kubernetes Engine configuration and management.
 
 # GKE Service Networking Skill
 

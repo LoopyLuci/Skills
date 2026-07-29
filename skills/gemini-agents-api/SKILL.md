@@ -3,11 +3,11 @@ name: gemini-agents-api
 description: Manages custom Agent resources on Gemini Enterprise Agent Platform. Use when the user wants to programmatically create, configure, list, update, or delete stateful, server-managed Agent resources (including mounting files, skills, and tools) before executing conversations.
 source: google/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when working with the Gemini Agents Api — Google's multimodal AI API.
 
 # Gemini Enterprise Agent Platform - Managed Agents API Skill
 

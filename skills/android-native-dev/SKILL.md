@@ -3,11 +3,11 @@ name: android-native-dev
 description: Android native application development and UI design guide. Covers Material Design 3, Kotlin/Compose development, project configuration, accessibility, and build troubleshooting. Read this before Android native application development.
 source: MiniMax-AI/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when developing native Android applications with Kotlin and Jetpack Compose — Material Design 3, architecture, and performance.
 
 ## 1. Project Scenario Assessment
 

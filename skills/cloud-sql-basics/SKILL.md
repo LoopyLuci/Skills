@@ -3,11 +3,11 @@ name: cloud-sql-basics
 description: >-
 source: google/skills
 tags: [agent, skill]
-metadata:
-  hermes:
-    tags: [agent, skill]
+metadata: 
+hermes: 
 ---
 
+**Trigger**: Use when working with Google Cloud Cloud Sql — setup, configuration, and best practices.
 
 # Cloud SQL Basics
 
