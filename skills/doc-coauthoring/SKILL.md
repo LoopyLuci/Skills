@@ -30,8 +30,13 @@ metadata:
 metadata:
   hermes:
     tags: [writing, documents, collaboration, editing]
+
+metadata:
+  hermes:
+    tags: [writing, documents, collaboration, editing]
 ---
 
+**Trigger**: Use when co-authoring documents with AI assistance — structuring, drafting, revising, and polishing long-form content.
 
 # Doc Co-Authoring Workflow
 

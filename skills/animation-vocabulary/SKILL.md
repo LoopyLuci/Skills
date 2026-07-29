@@ -30,8 +30,13 @@ metadata:
 metadata:
   hermes:
     tags: [design, animation, vocabulary, communication, motion]
+
+metadata:
+  hermes:
+    tags: [design, animation, vocabulary, communication, motion]
 ---
 
+**Trigger**: Use when you need precise animation terminology to communicate effectively with designers, developers, or AI agents about motion design.
 
 # Animation Vocabulary
 
@@ -201,3 +206,19 @@ _A curated snapshot mirroring the project's `/vocabulary` page; keep the two in 
 - **Spatial consistency** — Animating so an element keeps its identity and position across states, so users never lose track of where things went.
 - **Hardware acceleration** — Animating transform and opacity lets the GPU keep motion smooth.
 - **Reduced motion** — Respecting the user's prefers-reduced-motion setting by toning down or removing motion.
+
+## Pitfalls
+- Using vague terms like 'smooth animation' — specify the curve, duration, and property.
+- Confusing 'animation' (declarative, CSS) with 'transition' (state-based) — they have different performance characteristics.
+- Describing motion in non-visual terms: 'make it pop' is meaningless — use 'scale 1.05 with 150ms ease-out'.
+
+## Verification
+- Can you describe every animation in 3 precise terms: property, duration, easing?
+- Does the vocabulary match what CSS/JS libraries expect (ease-out vs 'easing out')?
+
+## Procedure
+1. Use the correct easing name: `ease-out` (deceleration), `ease-in` (acceleration), `ease-in-out` (symmetrical), linear (mechanical).
+2. Name animation types precisely: enter/exit (presence), transition (state change), micro-interaction (feedback), environmental (ambient).
+3. Describe timing with duration + delay: 'fade in over 200ms with 50ms stagger' is precise.
+4. Use standard property terms: `transform: translate`, `opacity`, `scale`, `rotate`, not 'move' or 'shrink'.
+5. Describe animation curves with cubic-bezier approximations: `cubic-bezier(0.16, 1, 0.3, 1)` = aggressive ease-out.

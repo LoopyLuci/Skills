@@ -30,8 +30,13 @@ metadata:
 metadata:
   hermes:
     tags: [design, animation, audit, optimization, motion]
+
+metadata:
+  hermes:
+    tags: [design, animation, audit, optimization, motion]
 ---
 
+**Trigger**: Use when auditing all animations in a codebase — finding opportunities, prioritizing fixes, and creating execution plans.
 
 # Improving Animations
 
@@ -129,3 +134,20 @@ Finish by creating or updating `plans/README.md`: recommended execution order, d
 ## Tone
 
 State findings plainly with evidence. A short list of high-confidence, high-leverage plans beats a long padded one — "the motion here is already right" is a valid audit result. Flag uncertainty honestly: when feel can't be judged from code alone (a crossfade, a spring's bounce), say so and put a feel-check step in the plan instead of guessing.
+
+## Pitfalls
+- Auditing without prioritizing: a list of 50 animation issues is overwhelming — use triage.
+- Changing easing without testing: what looks good in dev might feel different in production.
+- Missing CSS-animated properties: not all animations use JS libraries — check pure CSS too.
+
+## Verification
+- Is there a complete animation inventory with location, type, and purpose?
+- Are fixes prioritized (P0-P3)?
+- Is each fix plan self-contained and executable by an agent?
+
+## Procedure
+1. Scan the codebase for animation-related code: CSS transitions/animations, Framer Motion variants, GSAP timelines, WAAPI calls.
+2. For each animation found, evaluate: does it serve a purpose (feedback, state change, delight) or is it decorative?
+3. Create an inventory of all animations with: location, type, duration, easing, trigger, and purpose.
+4. Prioritize fixes: P0 = broken animations, P1 = wrong easing/timing, P2 = missing interactions, P3 = polish.
+5. Generate a self-contained fix plan per priority level — each plan should be executable by an agent.

@@ -603,11 +603,17 @@ def enhance_skill(skill_name, enh):
                     break
     
     if not updated_fm:
-        # Write the body enhancements (frontmatter unchanged)
+        # Reconstruct content from original frontmatter + enhanced body
         content = f"---\n"
         for k, v in fm.items():
             content += f"{k}: {v}\n"
         content += f"---\n\n{body}"
+    else:
+        # Frontmatter was updated inline — body was also modified
+        # Reconstruct from frontmatter lines + enhanced body
+        parts = content.split("---", 2)
+        if len(parts) >= 3:
+            content = f"---{parts[1]}---\n\n{body}"
     
     # Write back
     skill_file.write_text(content.strip() + "\n", encoding="utf-8")
