@@ -1,124 +1,64 @@
 ---
-
 name: migrate-to-shoehorn
-description: Migrate test files from `as` type assertions to @total-typescript/shoehorn. Use when user mentions shoehorn, wants to replace `as` in tests, or needs partial test data.
-source: mattpocock/skills
-metadata:
-  hermes:
-    tags: [agent, skill]
-
+description: Use when migrating test files from 'as' assertions to @total-typescript/shoehorn
+tags: [TypeScript, testing, migration, shoehorn, type-safety]
+related_skills: [migrate-to-shoehorn, code-review]
 ---
 
-# Migrate to Shoehorn
+# Migrate To Shoehorn
+
+Migrate test files from `as` type assertions to @total-typescript/shoehorn for type-safe partial test data.
 
 ## Why shoehorn?
-
 `shoehorn` lets you pass partial data in tests while keeping TypeScript happy. It replaces `as` assertions with type-safe alternatives.
 
 **Test code only.** Never use shoehorn in production code.
 
-Problems with `as` in tests:
+## Migration patterns
+- Large objects with few needed properties: `as Type` -> `fromPartial()`
+- Intentionally wrong types: `as unknown as Type` -> `fromAny()`
 
-- Trained not to use it
-- Must manually specify target type
-- Double-as (`as unknown as Type`) for intentionally wrong data
-
-## Install
-
+### Install
 ```bash
-npm i @total-typescript/shoehorn
+npm install @total-typescript/shoehorn
 ```
 
-## Migration patterns
+## Common Pitfalls
 
-### Large objects with few needed properties
+- **Shoehorn in production code**: Never use shoehorn (fromPartial, fromAny) in production code. It is for test files only.
+- **Not installing the package first**: Run npm install @total-typescript/shoehorn before attempting migration.
+- **fromAny where fromPartial would work**: Use fromPartial when you have a valid partial object, fromAny only when intentionally providing wrong types.
 
-Before:
+## Code Examples
 
-```ts
+```typescript
+// BEFORE: Using as assertions
 type Request = {
   body: { id: string };
   headers: Record<string, string>;
   cookies: Record<string, string>;
-  // ...20 more properties
 };
 
-it("gets user by id", () => {
-  // Only care about body.id but must fake entire Request
-  getUser({
-    body: { id: "123" },
-    headers: {},
-    cookies: {},
-    // ...fake all 20 properties
-  });
-});
-```
-
-After:
-
-```ts
-import { fromPartial } from "@total-typescript/shoehorn";
-
-it("gets user by id", () => {
-  getUser(
-    fromPartial({
-      body: { id: "123" },
-    }),
-  );
-});
-```
-
-### `as Type` → `fromPartial()`
-
-Before:
-
-```ts
 getUser({ body: { id: "123" } } as Request);
-```
 
-After:
-
-```ts
+// AFTER: Using fromPartial
 import { fromPartial } from "@total-typescript/shoehorn";
 
 getUser(fromPartial({ body: { id: "123" } }));
-```
 
-### `as unknown as Type` → `fromAny()`
+// Intentionally wrong types
+// BEFORE:
+getUser({ body: { id: 123 } } as unknown as Request);
 
-Before:
-
-```ts
-getUser({ body: { id: 123 } } as unknown as Request); // wrong type on purpose
-```
-
-After:
-
-```ts
+// AFTER:
 import { fromAny } from "@total-typescript/shoehorn";
-
 getUser(fromAny({ body: { id: 123 } }));
 ```
 
-## When to use each
+## Verification Checklist
 
-| Function        | Use case                                           |
-| --------------- | -------------------------------------------------- |
-| `fromPartial()` | Pass partial data that still type-checks           |
-| `fromAny()`     | Pass intentionally wrong data (keeps autocomplete) |
-| `fromExact()`   | Force full object (swap with fromPartial later)    |
-
-## Workflow
-
-1. **Gather requirements** - ask user:
-   - What test files have `as` assertions causing problems?
-   - Are they dealing with large objects where only some properties matter?
-   - Do they need to pass intentionally wrong data for error testing?
-
-2. **Install and migrate**:
-   - [ ] Install: `npm i @total-typescript/shoehorn`
-   - [ ] Find test files with `as` assertions: `grep -r " as [A-Z]" --include="*.test.ts" --include="*.spec.ts"`
-   - [ ] Replace `as Type` with `fromPartial()`
-   - [ ] Replace `as unknown as Type` with `fromAny()`
-   - [ ] Add imports from `@total-typescript/shoehorn`
-   - [ ] Run type check to verify
+- [ ] @total-typescript/shoehorn installed (npm)
+- [ ] All `as Type` assertions in tests migrated to fromPartial()
+- [ ] All `as unknown as Type` migrated to fromAny()
+- [ ] Production code checked for shoehorn usage (should be none)
+- [ ] Tests still passing after migration

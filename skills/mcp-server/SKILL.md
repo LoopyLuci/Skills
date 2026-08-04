@@ -1,9 +1,7 @@
 ---
-
 name: mcp-server
 description: "Build MCP servers for AI agent tool integration."
 tags: ["mcp", "ai-agents", "protocol"]
-
 ---
 
 # MCP Server Construction

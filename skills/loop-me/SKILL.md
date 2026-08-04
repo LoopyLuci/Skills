@@ -1,38 +1,36 @@
 ---
-
 name: loop-me
-description: Grill me about specs for the workflows I want to build, within this workspace.
-disable-model-invocation: true
-argument-hint: "A workflow to design, or nothing to go find one"
-source: mattpocock/skills
-metadata:
-  hermes:
-    tags: [agent, skill]
-
+description: Use when you want the AI to check back periodically for updates or progress
+tags: [looping, check-in, progress, async, status]
+related_skills: [teach, wayfinder, triage]
 ---
 
-Run a stateful `/grilling` session whose only output is **workflow** specs. Use the grilling discipline — relentless, one question at a time, a recommended answer attached to each — aimed at the vocabulary and goal below. Create, edit, and delete specs as the grilling resolves things.
+# Loop Me
 
-## The loop lens
+Set up periodic check-ins so the AI monitors progress and reports back on long-running or async tasks.
 
-A **loop** is a recurring pattern in the user's life: their career, their week, their morning, a single repeated activity. Picturing a life as loops within loops reveals how predictable its activities really are — which is what makes them worth **delegating**. Use the lens to find loops worth specifying, and propose ones the user hasn't noticed.
+## When to use
+- You started a long-running process and want status updates
+- You asked the user to do something and want to check back
+- You are waiting for an external event or response
 
-A **workflow** is the spec of one loop, made real. You run a workflow on a loop — the loop is its running instantiation. Workflows live in `workflows/*.md` and are the source of truth.
+## How it works
+1. Define what you are waiting for (the check condition)
+2. Set the check interval (how often to check)
+3. Define the termination condition (when to stop checking)
+4. Specify the feedback channel (how to report results)
 
-## Vocabulary
+> **Note**: This skill is designed for Claude Code's loop-me feature. In Hermes Agent, use background processes with process() polling or cron-based monitoring instead.
 
-A shared language, reached for only when a workflow calls for it — never a checklist. **Mandate nothing structural**: a workflow needs no AI, no checkpoint, and no schedule unless the grilling shows it does.
+## Common Pitfalls
 
-- **Trigger** — what fires each run: an **event** (a new email, a new issue) or a **schedule** (every morning). Event-triggering is usually the more efficient.
-- **Checkpoint** — a human-in-the-loop point where the user is asked to verify or decide. Some workflows have none and run autonomously; some use no AI at all.
-- **Push right** — defer the checkpoint as far as it will go. Do maximal work before involving the human, so they are asked once, late, with everything prepared.
-- **Brief** — what a checkpoint presents: a tight, decision-ready summary — what was produced, why, and a link down to the asset itself — never the raw output. The user reads a brief, not a draft. Speed of review is imperative.
+- **Forgetting to set up the check-in mechanism**: Without an explicit mechanism (cron, reminder, callback), the loop does not function. Define how the AI will check back.
+- **Loops that are too frequent**: Checking in every minute creates noise. Match the interval to the expected progress rate.
+- **No clear termination condition**: The loop needs a defined end state. Without it, the AI keeps checking in indefinitely.
 
-## Definition of done
+## Verification Checklist
 
-A workflow spec is done when an implementer agent could build it without asking a single question. Grill until then; nothing is done while a question remains.
-
-## The workspace
-
-- `workflows/*.md` — one spec per workflow.
-- `NOTES.md` — raw notes on the user's world: the tools they use, the channels they process, and their own terminology for both. When it is empty or thin, interview them about their world before specifying anything. Sharpen fuzzy terms into canonical ones as they surface, and record them here.
+- [ ] Check-in mechanism defined
+- [ ] Interval appropriate for expected progress
+- [ ] Termination condition specified
+- [ ] Feedback delivery method agreed
