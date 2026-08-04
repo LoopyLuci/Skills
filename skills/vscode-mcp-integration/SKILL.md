@@ -651,8 +651,6 @@ async function handleRequest(
 
 See `references/vscode-chat-participant.md` for the full implementation file.
 
-**VS Code 1.109+ API changes:** See `references/vscode-1109-chat-apis.md` for the updated `provideLanguageModelResponse` signature, `createChatSessionItemController`, and agent type architecture.
-
 #### Level 2: LM Chat Provider (Native Chat Session)
 
 This is the mechanism that makes **"Hermes Agent"** appear as a selectable option in the Chat panel's `+` dropdown — alongside "New Chat" and "New Codex Session". It uses the `LanguageModelChatProvider` API combined with a `languageModelChatProviders` contribution point in `package.json`.

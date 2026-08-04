@@ -1,82 +1,81 @@
 ---
+
 name: web-artifacts-builder
-description: Use when building complex HTML artifacts with React.
-tags: [react, typescript, shadcn-ui, tailwind, html-artifacts]
-related_skills: [frontend-design, frontend-bootstrap]
+description: Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use for complex artifacts requiring state management, routing, or shadcn/ui components - not for simple single-file HTML/JSX artifacts.
+source: anthropics/skills
+tags: [web, artifacts, html, prototype, demo]
+metadata: 
+hermes: 
+
 ---
+
+**Trigger**: Use when building standalone web artifacts — HTML pages, interactive demos, prototypes, or embeddable widgets that don't need a full framework.
 
 # Web Artifacts Builder
 
-Build elaborate, multi-component HTML artifacts using React, Tailwind CSS, and shadcn/ui.
+To build powerful frontend claude.ai artifacts, follow these steps:
+1. Initialize the frontend repo using `scripts/init-artifact.sh`
+2. Develop your artifact by editing the generated code
+3. Bundle all code into a single HTML file using `scripts/bundle-artifact.sh`
+4. Display artifact to user
+5. (Optional) Test the artifact
+
+**Stack**: React 18 + TypeScript + Vite + Parcel (bundling) + Tailwind CSS + shadcn/ui
+
+## Design & Style Guidelines
+
+VERY IMPORTANT: To avoid what is often referred to as "AI slop", avoid using excessive centered layouts, purple gradients, uniform rounded corners, and Inter font.
 
 ## Quick Start
 
 ### Step 1: Initialize Project
+
+Run the initialization script to create a new React project:
 ```bash
 bash scripts/init-artifact.sh <project-name>
 cd <project-name>
 ```
 
-This creates a project with:
-- React + TypeScript (Vite)
-- Tailwind CSS 3.4.1 with shadcn/ui theming
-- Path aliases (`@/`) configured
-- 40+ shadcn/ui components pre-installed
-- Parcel configured for bundling
+This creates a fully configured project with:
+- ✅ React + TypeScript (via Vite)
+- ✅ Tailwind CSS 3.4.1 with shadcn/ui theming system
+- ✅ Path aliases (`@/`) configured
+- ✅ 40+ shadcn/ui components pre-installed
+- ✅ All Radix UI dependencies included
+- ✅ Parcel configured for bundling (via .parcelrc)
+- ✅ Node 18+ compatibility (auto-detects and pins Vite version)
 
 ### Step 2: Develop Your Artifact
-Edit the generated files following the shadcn/ui component patterns.
 
-### Step 3: Bundle to Single HTML
+To build the artifact, edit the generated files. See **Common Development Tasks** below for guidance.
+
+### Step 3: Bundle to Single HTML File
+
+To bundle the React app into a single HTML artifact:
 ```bash
 bash scripts/bundle-artifact.sh
 ```
 
-Creates `bundle.html` — a self-contained artifact with all JS, CSS, and dependencies inlined.
+This creates `bundle.html` - a self-contained artifact with all JavaScript, CSS, and dependencies inlined. This file can be directly shared in Claude conversations as an artifact.
 
-### Step 4: Share with User
-Share the bundled HTML file in conversation for viewing.
+**Requirements**: Your project must have an `index.html` in the root directory.
 
-### Step 5: Test (Optional)
-Only test if requested or if issues arise.
+**What the script does**:
+- Installs bundling dependencies (parcel, @parcel/config-default, parcel-resolver-tspaths, html-inline)
+- Creates `.parcelrc` config with path alias support
+- Builds with Parcel (no source maps)
+- Inlines all assets into single HTML using html-inline
 
-## Design Guidelines
+### Step 4: Share Artifact with User
 
-- Avoid excessive centered layouts, purple gradients, uniform rounded corners, and Inter font (hallmarks of "AI slop")
-- Use modern, distinctive design choices
+Finally, share the bundled HTML file in conversation with the user so they can view it as an artifact.
 
-## Code Example
+### Step 5: Testing/Visualizing the Artifact (Optional)
 
-```tsx
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
+Note: This is a completely optional step. Only perform if necessary or requested.
 
-export function MyComponent() {
-  return (
-    <Card className="p-6">
-      <h2 className="text-2xl font-bold mb-4">Hello World</h2>
-      <Button onClick={() => alert("Clicked!")}>Click Me</Button>
-    </Card>
-  );
-}
-```
+To test/visualize the artifact, use available tools (including other Skills or built-in tools like Playwright or Puppeteer). In general, avoid testing the artifact upfront as it adds latency between the request and when the finished artifact can be seen. Test later, after presenting the artifact, if requested or if issues arise.
 
 ## Reference
 
-- shadcn/ui components: https://ui.shadcn.com/docs/components
-
-## Common Pitfalls
-
-- ❌ **Skipping the bundle step** — React won't work as plain HTML
-- ❌ **Using Inter font by default** — Choose distinctive typefaces
-- ❌ **Overly complex components** — Keep artifacts focused and performant
-- ❌ **Not testing the bundle** — Always verify `bundle.html` works standalone
-
-## Verification Checklist
-
-- [ ] Project initializes and builds successfully
-- [ ] Bundle step produces `bundle.html` without errors
-- [ ] All dependencies included inline (no external CDN needed)
-- [ ] Components render correctly in browser
-- [ ] Design avoids "AI slop" hallmarks
-- [ ] Console has no errors
+- **shadcn/ui components**: https://ui.shadcn.com/docs/components

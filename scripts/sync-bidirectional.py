@@ -70,7 +70,10 @@ def sync_support_dirs(src_dir: Path, dst_dir: Path, copied: list, updated: list)
         dst_sub = dst_dir / sub
         if dst_sub.exists():
             # Check if source is newer
-            src_newest = max(f.stat().st_mtime for f in src_sub.rglob("*") if f.is_file())
+            src_files = [f for f in src_sub.rglob("*") if f.is_file()]
+            if not src_files:
+                continue
+            src_newest = max(f.stat().st_mtime for f in src_files)
             dst_files = [f for f in dst_sub.rglob("*") if f.is_file()]
             if dst_files:
                 dst_newest = max(f.stat().st_mtime for f in dst_files)
