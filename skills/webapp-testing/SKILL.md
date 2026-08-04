@@ -1,4 +1,5 @@
 ---
+
 name: webapp-testing
 description: Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser logs.
 source: anthropics/skills
@@ -6,9 +7,6 @@ tags: [testing, webapp, qa, automation, e2e]
 metadata: 
 hermes: 
 
-metadata:
-  hermes:
-    tags: [testing, webapp, qa, automation, e2e]
 ---
 
 **Trigger**: Use when testing web applications — manual QA checklists, automated test strategies, cross-browser testing, and accessibility validation.

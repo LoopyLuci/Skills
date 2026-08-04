@@ -1,4 +1,5 @@
 ---
+
 name: google-cloud-solution-architecture
 description: >-
 source: google/skills
@@ -6,9 +7,6 @@ tags: [gcp, google-cloud, cloud]
 metadata: 
 hermes: 
 
-metadata:
-  hermes:
-    tags: [gcp, google-cloud, cloud]
 ---
 
 **Trigger**: Use when working with Google Cloud Google Cloud Solution Architecture — setup, configuration, and best practices.

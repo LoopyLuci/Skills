@@ -1,4 +1,5 @@
 ---
+
 name: agent-platform-migrate-from-ai-studio
 description: >-
 source: google/skills
@@ -6,9 +7,6 @@ tags: [gcp, agent-platform, google-cloud, ai-platform]
 metadata: 
 hermes: 
 
-metadata:
-  hermes:
-    tags: [gcp, agent-platform, google-cloud, ai-platform]
 ---
 
 **Trigger**: Use when managing Migrate From Ai Studio on Google Cloud's Agent Platform — Google Cloud AI and agent infrastructure.

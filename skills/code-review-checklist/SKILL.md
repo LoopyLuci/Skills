@@ -1,4 +1,5 @@
 ---
+
 name: code-review-checklist
 description: "Use for code review. Correctness, security, performance."
 version: 1.1.0
@@ -9,6 +10,7 @@ metadata:
   hermes:
     tags: [programming, code-review, pr-review, quality, best-practices, security]
     related_skills: [refactoring-playbook, debugging-workflow, performance-profiling]
+
 ---
 
 # Code Review Checklist

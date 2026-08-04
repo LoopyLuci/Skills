@@ -1,4 +1,5 @@
 ---
+
 name: agent-platform-troubleshooting
 description: >-
 source: google/skills
@@ -6,9 +7,6 @@ tags: [gcp, agent-platform, google-cloud, ai-platform]
 metadata: 
 hermes: 
 
-metadata:
-  hermes:
-    tags: [gcp, agent-platform, google-cloud, ai-platform]
 ---
 
 # Agent Platform Troubleshooting

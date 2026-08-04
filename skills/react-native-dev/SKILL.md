@@ -1,4 +1,5 @@
 ---
+
 name: react-native-dev
 description: |
 source: MiniMax-AI/skills
@@ -6,9 +7,6 @@ tags: [react-native, mobile, expo, cross-platform, ui]
 metadata: 
 hermes: 
 
-metadata:
-  hermes:
-    tags: [react-native, mobile, expo, cross-platform, ui]
 ---
 
 **Trigger**: Use when developing React Native or Expo applications — component patterns, navigation, state management, and native module integration.

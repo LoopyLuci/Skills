@@ -1,4 +1,5 @@
 ---
+
 name: cloud-sql-basics
 description: >-
 source: google/skills
@@ -6,9 +7,6 @@ tags: [gcp, google-cloud, cloud]
 metadata: 
 hermes: 
 
-metadata:
-  hermes:
-    tags: [gcp, google-cloud, cloud]
 ---
 
 **Trigger**: Use when working with Google Cloud Cloud Sql — setup, configuration, and best practices.

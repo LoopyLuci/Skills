@@ -1,4 +1,5 @@
 ---
+
 name: dependency-management
 description: "Use for dependency management. Audit, update strategies."
 version: 1.1.0
@@ -9,6 +10,7 @@ metadata:
   hermes:
     tags: [programming, dependencies, packages, vulnerabilities, updates, semver]
     related_skills: [project-setup-scaffolder, code-review-checklist]
+
 ---
 
 # Dependency Management

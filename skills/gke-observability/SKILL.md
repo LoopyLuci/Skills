@@ -1,4 +1,5 @@
 ---
+
 name: gke-observability
 description: >-
 source: google/skills
@@ -6,9 +7,6 @@ tags: [gcp, gke, kubernetes, google-cloud, container]
 metadata: 
 hermes: 
 
-metadata:
-  hermes:
-    tags: [gcp, gke, kubernetes, google-cloud, container]
 ---
 
 **Trigger**: Use when working with GKE Observability — Google Kubernetes Engine configuration and management.

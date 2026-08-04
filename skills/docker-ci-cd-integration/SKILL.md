@@ -1,9 +1,12 @@
 ---
+
 name: docker-ci-cd-integration
 description: "Use when using Docker in CI/CD pipelines."
 category: docker
 tags: [docker, cicd, github-actions, gitlab-ci, pipeline]
+
 ---
+
 # Docker CI/CD Integration
 
 Using Docker in CI/CD pipelines for build, test, and deploy.

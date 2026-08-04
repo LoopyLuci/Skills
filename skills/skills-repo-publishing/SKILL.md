@@ -1,6 +1,8 @@
 ---
+
 name: skills-repo-publishing
 description: Publish agent skills as a GitHub tap for any agent to use.
+
 ---
 
 # Skills Repo Publishing

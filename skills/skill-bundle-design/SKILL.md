@@ -1,6 +1,8 @@
 ---
+
 name: skill-bundle-design
 description: Design skill bundles for recurring multi-skill workflows.
+
 ---
 
 # Skill Bundle Design

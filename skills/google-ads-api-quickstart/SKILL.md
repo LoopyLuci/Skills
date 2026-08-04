@@ -1,4 +1,5 @@
 ---
+
 name: google-ads-api-quickstart
 description: |
 source: google/skills
@@ -6,9 +7,6 @@ tags: [google-ads, advertising, mobile-ads, gcp]
 metadata: 
 hermes: 
 
-metadata:
-  hermes:
-    tags: [google-ads, advertising, mobile-ads, gcp]
 ---
 
 **Trigger**: Use when implementing Google Api Quickstart — AdMob, Ad Manager, and related ad SDKs.

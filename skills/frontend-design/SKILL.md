@@ -1,4 +1,5 @@
 ---
+
 name: frontend-design
 description: Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aesthetic direction, typography, and making choices that don't read as templated defaults.
 source: anthropics/skills
@@ -6,9 +7,6 @@ tags: [design, frontend, ui, ux, layout]
 metadata: 
 hermes: 
 
-metadata:
-  hermes:
-    tags: [design, frontend, ui, ux, layout]
 ---
 
 **Trigger**: Use when designing the frontend UI — layout, component structure, responsive behavior, and visual hierarchy.

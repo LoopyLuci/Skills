@@ -1,6 +1,8 @@
 ---
+
 name: skill-version-migration
 description: Update skills when underlying tools, APIs, or syntax change.
+
 ---
 
 # Skill Version Migration

@@ -1,4 +1,5 @@
 ---
+
 name: alloydb-basics
 description: >-
 source: google/skills
@@ -6,9 +7,6 @@ tags: [gcp, google-cloud, alloydb]
 metadata: 
 hermes: 
 
-metadata:
-  hermes:
-    tags: [gcp, google-cloud, alloydb]
 ---
 
 **Trigger**: Use when working with Google Cloud Alloydb — setup, configuration, and best practices.

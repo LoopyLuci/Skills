@@ -1,4 +1,5 @@
 ---
+
 name: gemini-live-api
 description: >-
 source: google/skills
@@ -6,9 +7,6 @@ tags: [gcp, gemini, google-ai, api]
 metadata: 
 hermes: 
 
-metadata:
-  hermes:
-    tags: [gcp, gemini, google-ai, api]
 ---
 
 **Trigger**: Use when working with the Gemini Live Api — Google's multimodal AI API.

@@ -1,4 +1,5 @@
 ---
+
 name: review-animations
 description: Reviews animation and motion code against a high craft bar derived from Emil Kowalski's design engineering philosophy. Default to flagging; approval is earned.
 source: emilkowalski/skills
@@ -6,9 +7,6 @@ tags: [design, animation, review, qa, motion]
 metadata: 
 hermes: 
 
-metadata:
-  hermes:
-    tags: [design, animation, review, qa, motion]
 ---
 
 **Trigger**: Use when reviewing animations in a UI — checking for correct easing, timing, coordination, and accessibility.

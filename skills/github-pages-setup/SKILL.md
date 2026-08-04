@@ -1,6 +1,8 @@
 ---
+
 name: github-pages-setup
 description: Deploy static sites to GitHub Pages from any branch.
+
 ---
 
 # GitHub Pages Deployment

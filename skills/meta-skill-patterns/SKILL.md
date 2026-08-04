@@ -1,4 +1,5 @@
 ---
+
 name: meta-skill-patterns
 description: "Use when designing meta-skills for creation and management."
 version: 1.0.0
@@ -8,6 +9,7 @@ metadata:
   hermes:
     tags: [skills, meta, patterns, architecture, design]
     related_skills: [skill-development-workflow, skill-architecture-planning, skill-inventory-management, skill-testing-automation]
+
 ---
 
 # Meta-Skill Patterns

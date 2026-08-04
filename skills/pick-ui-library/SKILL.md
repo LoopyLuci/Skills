@@ -1,4 +1,5 @@
 ---
+
 name: pick-ui-library
 description: Pick the right library for a given frontend task from a curated, opinionated list — numbers, OTP inputs, charts, command menus, virtualization, drag and drop, toasts, state, styling, and more. Only runs when explicitly invoked; it does not trigger on its own.
 source: emilkowalski/skills
@@ -6,9 +7,6 @@ tags: [design, frontend, ui-library, component, selection]
 metadata: 
 hermes: 
 
-metadata:
-  hermes:
-    tags: [design, frontend, ui-library, component, selection]
 ---
 
 **Trigger**: Use when choosing a UI component library for a project. Have your agent pick the right library based on trusted recommendations instead of letting AI hand-roll components or install abandoned packages.

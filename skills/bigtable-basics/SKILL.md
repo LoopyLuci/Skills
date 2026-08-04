@@ -1,4 +1,5 @@
 ---
+
 name: bigtable-basics
 description: >-
 source: google/skills
@@ -6,9 +7,6 @@ tags: [gcp, google-cloud, bigtable]
 metadata: 
 hermes: 
 
-metadata:
-  hermes:
-    tags: [gcp, google-cloud, bigtable]
 ---
 
 **Trigger**: Use when working with Google Cloud Bigtable — setup, configuration, and best practices.

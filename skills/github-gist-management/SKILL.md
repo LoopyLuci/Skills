@@ -1,6 +1,8 @@
 ---
+
 name: github-gist-management
 description: Create, edit, and manage GitHub Gists for code snippets.
+
 ---
 
 # GitHub Gist Management

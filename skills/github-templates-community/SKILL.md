@@ -1,6 +1,8 @@
 ---
+
 name: github-templates-community
 description: Set up issue/PR templates, CODEOWNERS, and community files.
+
 ---
 
 # GitHub Templates & Community Standards

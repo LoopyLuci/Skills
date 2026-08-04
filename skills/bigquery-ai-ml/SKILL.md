@@ -1,4 +1,5 @@
 ---
+
 name: bigquery-ai-ml
 description: >-
 source: google/skills
@@ -6,9 +7,6 @@ tags: [gcp, google-cloud, bigquery]
 metadata: 
 hermes: 
 
-metadata:
-  hermes:
-    tags: [gcp, google-cloud, bigquery]
 ---
 
 **Trigger**: Use when working with Google Cloud Bigquery Ai Ml — setup, configuration, and best practices.

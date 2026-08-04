@@ -1,4 +1,5 @@
 ---
+
 name: diagnosing-bugs
 description: Diagnosis loop for hard bugs and performance regressions. Use when the user says "diagnose"/"debug this", or reports something broken/throwing/failing/slow.
 source: mattpocock/skills
@@ -6,9 +7,6 @@ tags: [engineering, debugging, bug-hunting, testing]
 metadata: 
 hermes: 
 
-metadata:
-  hermes:
-    tags: [engineering, debugging, bug-hunting, testing]
 ---
 
 **Trigger**: Use when diagnosing and reproducing bugs — systematic approach to finding root causes through hypothesis testing and minimal reproductions.

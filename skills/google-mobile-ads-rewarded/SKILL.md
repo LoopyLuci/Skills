@@ -1,4 +1,5 @@
 ---
+
 name: google-mobile-ads-rewarded
 description: Provides instructions for implementing, integrating, or configuring
 source: google/skills
@@ -6,9 +7,6 @@ tags: [google-ads, advertising, mobile-ads, gcp]
 metadata: 
 hermes: 
 
-metadata:
-  hermes:
-    tags: [google-ads, advertising, mobile-ads, gcp]
 ---
 
 **Trigger**: Use when implementing Google Rewarded — AdMob, Ad Manager, and related ad SDKs.

@@ -1,4 +1,5 @@
 ---
+
 name: validate-idea
 description: Validate a business idea using the minimalist entrepreneur framework. Use when someone has a business idea and wants to test if it's worth pursuing before building anything.
 source: slavingia/skills
@@ -6,9 +7,6 @@ tags: [business, entrepreneurship, validation, lean]
 metadata: 
 hermes: 
 
-metadata:
-  hermes:
-    tags: [business, entrepreneurship, validation, lean]
 ---
 
 **Trigger**: Use when testing if a business idea is worth pursuing — before building anything, validate the problem and willingness to pay.

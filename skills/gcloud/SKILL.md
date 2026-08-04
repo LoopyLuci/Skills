@@ -1,4 +1,5 @@
 ---
+
 name: gcloud
 description: >-
 source: google/skills
@@ -6,9 +7,6 @@ tags: [gcp, gcloud, cli, cloud, google]
 metadata: 
 hermes: 
 
-metadata:
-  hermes:
-    tags: [gcp, gcloud, cli, cloud, google]
 ---
 
 **Trigger**: Use when working with the Google Cloud CLI (`gcloud`) — authentication, resource management, configuration, and troubleshooting.

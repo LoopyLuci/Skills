@@ -1,4 +1,5 @@
 ---
+
 name: wayfinder
 description: Plan a huge chunk of work — more than one agent session can hold — as a shared map of decision tickets on your issue tracker, and resolve them one at a time until the way to the destination is clear.
 source: mattpocock/skills
@@ -6,9 +7,6 @@ tags: [engineering, navigation, codebase, exploration]
 metadata: 
 hermes: 
 
-metadata:
-  hermes:
-    tags: [engineering, navigation, codebase, exploration]
 ---
 
 **Trigger**: Use when navigating an unfamiliar codebase — mapping the structure, understanding the architecture, and finding where changes should land.

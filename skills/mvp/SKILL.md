@@ -1,4 +1,5 @@
 ---
+
 name: mvp
 description: Guide building a minimum viable product the minimalist entrepreneur way — manual first, then processized, then productized. Use when someone is ready to build their first product or struggling with scope.
 source: slavingia/skills
@@ -6,9 +7,6 @@ tags: [business, entrepreneurship, mvp, lean]
 metadata: 
 hermes: 
 
-metadata:
-  hermes:
-    tags: [business, entrepreneurship, mvp, lean]
 ---
 
 **Trigger**: Use when ready to build your first product and struggling with scope — define the Minimum Viable Product that solves the core problem.

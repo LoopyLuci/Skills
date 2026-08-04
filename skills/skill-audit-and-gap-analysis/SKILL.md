@@ -1,4 +1,5 @@
 ---
+
 name: skill-audit-and-gap-analysis
 description: "Skill audit: review, find gaps, draft skills."
 version: 1.0.0
@@ -9,6 +10,7 @@ metadata:
   hermes:
     tags: [skills, audit, gap-analysis, meta, curation]
     related_skills: [workflow-automation-skill, hermes-agent-skill-authoring]
+
 ---
 
 # Skill Audit & Gap Analysis

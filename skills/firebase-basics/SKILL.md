@@ -1,4 +1,5 @@
 ---
+
 name: firebase-basics
 description: Use this skill whenever you are working on a project that uses Firebase products or services, especially for mobile or web apps.
 source: google/skills
@@ -6,9 +7,6 @@ tags: [gcp, firebase, backend, serverless]
 metadata: 
 hermes: 
 
-metadata:
-  hermes:
-    tags: [gcp, firebase, backend, serverless]
 ---
 
 **Trigger**: Use when setting up or configuring Firebase — Firestore, Authentication, Cloud Functions, Hosting, and Security Rules.

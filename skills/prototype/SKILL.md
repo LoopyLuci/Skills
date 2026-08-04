@@ -1,4 +1,5 @@
 ---
+
 name: prototype
 description: Build a throwaway prototype to answer a design question. Use when the user wants to sanity-check whether a state model or logic feels right, or explore what a UI should look like.
 source: mattpocock/skills
@@ -6,9 +7,6 @@ tags: [design, prototype, ui, ux, testing]
 metadata: 
 hermes: 
 
-metadata:
-  hermes:
-    tags: [design, prototype, ui, ux, testing]
 ---
 
 **Trigger**: Use when building multiple versions of a UI component or page to compare different approaches — creates a switcher to cycle through variants.

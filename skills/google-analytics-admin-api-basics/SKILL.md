@@ -1,4 +1,5 @@
 ---
+
 name: google-analytics-admin-api-basics
 description: >-
 source: google/skills
@@ -6,9 +7,6 @@ tags: [gcp, google-cloud, google]
 metadata: 
 hermes: 
 
-metadata:
-  hermes:
-    tags: [gcp, google-cloud, google]
 ---
 
 **Trigger**: Use when working with Google Cloud Google Analytics Admin Api — setup, configuration, and best practices.

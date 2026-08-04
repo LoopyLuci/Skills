@@ -1,4 +1,5 @@
 ---
+
 name: company-values
 description: Help define company values and culture for a minimalist business. Use when someone is setting up their company culture, preparing to hire, or wanting to codify what their company stands for.
 source: slavingia/skills
@@ -6,9 +7,6 @@ tags: [business, entrepreneurship, culture, hiring]
 metadata: 
 hermes: 
 
-metadata:
-  hermes:
-    tags: [business, entrepreneurship, culture, hiring]
 ---
 
 **Trigger**: Use when defining company culture, preparing to hire, or making decisions that should align with core values.

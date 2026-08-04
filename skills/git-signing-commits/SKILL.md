@@ -1,6 +1,8 @@
 ---
+
 name: git-signing-commits
 description: Sign commits and tags with GPG or SSH keys for verification.
+
 ---
 
 # Git Signing Commits

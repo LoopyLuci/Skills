@@ -1,4 +1,5 @@
 ---
+
 name: marketing-plan
 description: Create a minimalist marketing plan focused on building an audience through content, not ads. Use when someone has product-market fit (~100 customers) and wants to scale with marketing, or needs a content strategy.
 source: slavingia/skills
@@ -6,9 +7,6 @@ tags: [business, entrepreneurship, marketing, growth]
 metadata: 
 hermes: 
 
-metadata:
-  hermes:
-    tags: [business, entrepreneurship, marketing, growth]
 ---
 
 **Trigger**: Use when you have product-market fit and are ready to scale with content marketing.

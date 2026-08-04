@@ -1,4 +1,5 @@
 ---
+
 name: pricing
 description: Help figure out pricing for a product or service using minimalist entrepreneur principles. Use when someone is setting prices, considering price changes, or struggling with what to charge.
 source: slavingia/skills
@@ -6,9 +7,6 @@ tags: [business, entrepreneurship, pricing, monetization]
 metadata: 
 hermes: 
 
-metadata:
-  hermes:
-    tags: [business, entrepreneurship, pricing, monetization]
 ---
 
 **Trigger**: Use when setting prices for a product or considering price changes — based on The Minimalist Entrepreneur methodology.

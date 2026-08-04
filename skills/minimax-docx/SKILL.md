@@ -1,4 +1,5 @@
 ---
+
 name: minimax-docx
 description: >
 source: MiniMax-AI/skills
@@ -6,9 +7,6 @@ tags: [minimax, document, docx, office]
 metadata: 
 hermes: 
 
-metadata:
-  hermes:
-    tags: [minimax, document, docx, office]
 ---
 
 **Trigger**: Use when creating, editing, or formatting DOCX documents — generation, template application, content extraction, and validation.

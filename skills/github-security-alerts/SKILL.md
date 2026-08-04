@@ -1,6 +1,8 @@
 ---
+
 name: github-security-alerts
 description: Manage Dependabot, secret scanning, and code scanning.
+
 ---
 
 # GitHub Security & Alerts

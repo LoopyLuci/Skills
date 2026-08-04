@@ -1,4 +1,5 @@
 ---
+
 name: agent-platform-prompt-management
 description: >-
 source: google/skills
@@ -6,9 +7,6 @@ tags: [gcp, agent-platform, google-cloud, ai-platform]
 metadata: 
 hermes: 
 
-metadata:
-  hermes:
-    tags: [gcp, agent-platform, google-cloud, ai-platform]
 ---
 
 **Trigger**: Use when managing Prompt Management on Google Cloud's Agent Platform — Google Cloud AI and agent infrastructure.

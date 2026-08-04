@@ -1,4 +1,5 @@
 ---
+
 name: to-spec
 description: Turn the current conversation into a spec and publish it to the project issue tracker — no interview, just synthesis of what you've already discussed.
 source: mattpocock/skills
@@ -6,9 +7,6 @@ tags: [engineering, specification, planning, prd]
 metadata: 
 hermes: 
 
-metadata:
-  hermes:
-    tags: [engineering, specification, planning, prd]
 ---
 
 **Trigger**: Use when creating a specification document (PRD) for a feature or project — structured planning before implementation.
