@@ -1,8 +1,6 @@
 ---
-
 name: github-labels-milestones
 description: Manage labels, milestones, and saved replies for repos.
-
 ---
 
 # GitHub Labels & Milestones

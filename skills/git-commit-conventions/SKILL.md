@@ -1,8 +1,6 @@
 ---
-
 name: git-commit-conventions
 description: Write conventional, searchable commit messages with types.
-
 ---
 
 # Git Commit Conventions

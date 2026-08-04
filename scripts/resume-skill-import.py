@@ -101,25 +101,33 @@ def enhance_frontmatter(content, skill_name, source_repo):
         fm = ""
         body = content
 
-    # Parse existing frontmatter into an ordered list of (key, value) pairs,
-    # preserving comments and blank lines. We keep the original structure and
-    # only rewrite the name/source/metadata keys.
+    # Parse existing frontmatter, dropping the entire old metadata block
+    # (all indented sub-lines under `metadata:`) and rewriting name/source.
     kept_lines = []
     existing_name = ""
-    dropped_metadata = False
-    for raw_line in fm.split("\n"):
-        stripped = raw_line.strip()
+    i = 0
+    fm_rows = fm.split("\n")
+    while i < len(fm_rows):
+        line = fm_rows[i]
+        stripped = line.strip()
         if stripped.startswith("name:"):
             existing_name = stripped.split(":", 1)[1].strip().strip('"').strip("'")
-            continue  # we'll rewrite name below
-        if stripped.startswith("source:"):
+            i += 1
             continue  # rewrite below
-        if stripped.startswith("metadata:") or stripped.startswith("  hermes:") or stripped.startswith("    tags:") or stripped.startswith("    category:"):
-            if not dropped_metadata:
-                # mark — we'll skip the whole metadata block; first occurrence
-                dropped_metadata = True
+        if stripped.startswith("source:"):
+            i += 1
+            continue  # rewrite below
+        if stripped == "metadata:" or stripped.startswith("metadata:"):
+            # Drop this line and all following indented lines (the whole block)
+            i += 1
+            while i < len(fm_rows):
+                nl = fm_rows[i]
+                if nl.strip() and not nl.startswith(" ") and not nl.startswith("\t"):
+                    break  # hit next top-level key
+                i += 1
             continue
-        kept_lines.append(raw_line)
+        kept_lines.append(line)
+        i += 1
 
     target_name = existing_name or skill_name
     enh = ENHANCEMENTS.get(skill_name, {})
@@ -142,6 +150,15 @@ def enhance_frontmatter(content, skill_name, source_repo):
     new_fm = "\n".join(new_fm_lines)
 
     return new_fm + "\n\n" + body.strip() + "\n"
+
+
+def restore_skill(skill_name: str, content: str, source_repo: str) -> str:
+    """Re-apply Hermes frontmatter to existing skill content.
+
+    Use when restoring a backed-up or pre-existing skill into the user store:
+    re-runs the same enhancement (idempotent) so restored skills match the
+    canonical format. Delegates to enhance_frontmatter."""
+    return enhance_frontmatter(content, skill_name, source_repo)
 
 
 def main():

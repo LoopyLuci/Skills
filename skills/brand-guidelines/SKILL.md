@@ -1,80 +1,66 @@
 ---
-
 name: brand-guidelines
-description: Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand colors or style guidelines, visual formatting, or company design standards apply.
-source: anthropics/skills
-tags: [design, brand, guidelines, identity]
-metadata: 
-hermes: 
-
+description: Use when applying brand colors and typography to artifacts.
+tags: [branding, design-systems, visual-identity, typography]
+related_skills: [theme-factory, frontend-design]
 ---
-
-**Trigger**: Use when creating or applying brand style guidelines — colors, typography, logos, spacing, voice, and visual identity rules.
 
 # Anthropic Brand Styling
 
-## Overview
+Apply Anthropic's official brand colors and typography to any artifact — slide decks, documents, HTML pages, or visual assets.
 
-To access Anthropic's official brand identity and style resources, use this skill.
+## Brand Colors
 
-**Keywords**: branding, corporate identity, visual identity, post-processing, styling, brand colors, typography, Anthropic brand, visual formatting, visual design
+### Main Colors
+| Name | Hex | Usage |
+|------|-----|-------|
+| Dark | `#141413` | Primary text and dark backgrounds |
+| Light | `#faf9f5` | Light backgrounds and text on dark |
+| Mid Gray | `#b0aea5` | Secondary elements |
+| Light Gray | `#e8e6dc` | Subtle backgrounds |
 
-## Brand Guidelines
+### Accent Colors
+| Name | Hex | Usage |
+|------|-----|-------|
+| Orange | `#d97757` | Primary accent |
+| Blue | `#6a9bcc` | Secondary accent |
+| Green | `#788c5d` | Tertiary accent |
 
-### Colors
+## Typography
 
-**Main Colors:**
-
-- Dark: `#141413` - Primary text and dark backgrounds
-- Light: `#faf9f5` - Light backgrounds and text on dark
-- Mid Gray: `#b0aea5` - Secondary elements
-- Light Gray: `#e8e6dc` - Subtle backgrounds
-
-**Accent Colors:**
-
-- Orange: `#d97757` - Primary accent
-- Blue: `#6a9bcc` - Secondary accent
-- Green: `#788c5d` - Tertiary accent
-
-### Typography
-
-- **Headings**: Poppins (with Arial fallback)
-- **Body Text**: Lora (with Georgia fallback)
-- **Note**: Fonts should be pre-installed in your environment for best results
-
-## Features
-
-### Smart Font Application
-
-- Applies Poppins font to headings (24pt and larger)
-- Applies Lora font to body text
-- Automatically falls back to Arial/Georgia if custom fonts unavailable
-- Preserves readability across all systems
-
-### Text Styling
-
-- Headings (24pt+): Poppins font
-- Body text: Lora font
-- Smart color selection based on background
-- Preserves text hierarchy and formatting
-
-### Shape and Accent Colors
-
-- Non-text shapes use accent colors
-- Cycles through orange, blue, and green accents
-- Maintains visual interest while staying on-brand
-
-## Technical Details
+| Role | Font | Fallback |
+|------|------|----------|
+| Headings | Poppins | Arial |
+| Body Text | Lora | Georgia |
 
 ### Font Management
+- Use system-installed Poppins and Lora fonts when available
+- Automatic fallback to Arial (headings) and Georgia (body)
+- No font installation required
 
-- Uses system-installed Poppins and Lora fonts when available
-- Provides automatic fallback to Arial (headings) and Georgia (body)
-- No font installation required - works with existing system fonts
-- For best results, pre-install Poppins and Lora fonts in your environment
+## Code Example: Brand CSS
 
-### Color Application
+```css
+:root {
+  --brand-dark: #141413;
+  --brand-light: #faf9f5;
+  --brand-orange: #d97757;
+  --brand-blue: #6a9bcc;
+  --brand-green: #788c5d;
+  --font-heading: 'Poppins', Arial, sans-serif;
+  --font-body: 'Lora', Georgia, serif;
+}
+```
 
-- Uses RGB color values for precise brand matching
-- Applied via python-pptx's RGBColor class
-- Maintains color fidelity across different systems
+## Common Pitfalls
+
+- ❌ **Forgetting font fallbacks** — Always specify Arial/Georgia
+- ❌ **Using 8-digit hex colors** — Alpha in hex corrupts PPTX files
+- ❌ **Low contrast** — Brand light gray on white is hard to read
+
+## Verification Checklist
+
+- [ ] All colors use exact hex values from brand palette
+- [ ] Typography uses correct fonts with proper fallbacks
+- [ ] Accent colors cycle properly (orange → blue → green)
+- [ ] Text has sufficient contrast against its background
