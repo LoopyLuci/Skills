@@ -1,5 +1,4 @@
 ---
-
 name: agent-platform-eval-flywheel
 description: >-
 source: google/skills
@@ -7,6 +6,9 @@ tags: [gcp, agent-platform, google-cloud, ai-platform]
 metadata: 
 hermes: 
 
+metadata:
+  hermes:
+    tags: [gcp, agent-platform, google-cloud, ai-platform]
 ---
 
 # Agent Platform Eval Flywheel Skill

@@ -1,5 +1,4 @@
 ---
-
 name: claude-api
 description: |-
 source: anthropics/skills
@@ -7,6 +6,9 @@ tags: [api, claude, anthropic, llm, documentation]
 metadata: 
 hermes: 
 
+metadata:
+  hermes:
+    tags: [api, claude, anthropic, llm, documentation]
 ---
 
 # Building LLM-Powered Applications with Claude

@@ -1,5 +1,4 @@
 ---
-
 name: agent-platform-alert-configuration
 description: >-
 source: google/skills
@@ -7,6 +6,9 @@ tags: [gcp, agent-platform, google-cloud, ai-platform]
 metadata: 
 hermes: 
 
+metadata:
+  hermes:
+    tags: [gcp, agent-platform, google-cloud, ai-platform]
 ---
 
 **Trigger**: Use when managing Alert Configuration on Google Cloud's Agent Platform — Google Cloud AI and agent infrastructure.

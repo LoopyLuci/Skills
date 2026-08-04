@@ -1,5 +1,4 @@
 ---
-
 name: buddy-sings
 description: >
 source: MiniMax-AI/skills
@@ -7,6 +6,9 @@ tags: [fun, pet, music, minimax, personality]
 metadata: 
 hermes: 
 
+metadata:
+  hermes:
+    tags: [fun, pet, music, minimax, personality]
 ---
 
 **Trigger**: Use when the user wants their AI pet or buddy to sing a personalized song. Creates a unique vocal identity, gathers conversation context, and generates custom music.

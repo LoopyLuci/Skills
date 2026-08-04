@@ -1,5 +1,4 @@
 ---
-
 name: bigquery-basics
 description: >-
 source: google/skills
@@ -7,6 +6,9 @@ tags: [gcp, bigquery, analytics, sql, data-warehouse]
 metadata: 
 hermes: 
 
+metadata:
+  hermes:
+    tags: [gcp, bigquery, analytics, sql, data-warehouse]
 ---
 
 **Trigger**: Use when working with Google BigQuery — querying, partitioning, clustering, cost controls, and best practices.
