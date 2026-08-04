@@ -1,8 +1,6 @@
 ---
-
 name: skill-cross-agent-portability
 description: Make skills work across Hermes, Codex, and other agents.
-
 ---
 
 # Skill Cross-Agent Portability
