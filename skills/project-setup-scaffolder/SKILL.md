@@ -1,5 +1,4 @@
 ---
-
 name: project-setup-scaffolder
 description: "Use for project scaffolding. Folder structure, lint, CI."
 version: 1.1.0
@@ -10,7 +9,6 @@ metadata:
   hermes:
     tags: [programming, project-setup, scaffolding, boilerplate, configuration, tooling]
     related_skills: [dependency-management, code-review-checklist, codebase-onboarding]
-
 ---
 
 # Project Setup Scaffolder

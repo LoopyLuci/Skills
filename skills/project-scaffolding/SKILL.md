@@ -1,8 +1,6 @@
 ---
-
 name: project-scaffolding
 description: "Generate project templates with lint CI and structure"
-
 ---
 
 # Project Scaffolding
