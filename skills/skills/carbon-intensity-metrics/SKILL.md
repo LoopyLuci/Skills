@@ -1,0 +1,53 @@
+---
+name: carbon-intensity-metrics
+description: "Use when measuring carbon intensity."
+version: 1.0.0
+author: Hermes Agent
+license: MIT
+platforms: [linux, macos, windows]
+metadata:
+  hermes:
+    tags: [climatetech, carbon-intensity, metrics, emissions]
+    related_skills: [general]
+---
+
+## Overview
+Measure carbon intensity metrics across operations and value chains.
+
+## When to Use
+- "Carbon Intensity Metrics design and implementation"
+- "Best practices for Carbon Intensity Metrics"
+- "Carbon Intensity Metrics optimization and scaling"
+- "Carbon Intensity Metrics troubleshooting and validation"
+
+## Key Approaches
+1. Define clear requirements and specifications
+2. Choose appropriate frameworks and tools
+3. Implement with modular, maintainable structure
+4. Write comprehensive tests and validate
+5. Document architecture and decisions
+6. Monitor and iterate based on feedback
+
+## Common Pitfalls
+1. **Not accounting for constraints** — resource limitations
+2. **Ignoring industry standards** — no best practices followed
+3. **Poor stakeholder alignment** — conflicting requirements
+4. **Inadequate testing** — no validation of functions
+5. **Not documenting decisions** — lost knowledge transfer
+6. **Over-engineering** — complex where simple suffices
+7. **No rollback plan** — deployment failures
+8. **Insufficient monitoring** — no observability
+9. **Not planning for growth** — scalability issues
+10. **Missing validation** — no quality checks
+
+## Verification Checklist
+- [ ] Requirements defined and validated
+- [ ] Standards and best practices applied
+- [ ] Design reviewed with stakeholders
+- [ ] Implementation plan with milestones
+- [ ] Testing strategy defined
+- [ ] Documentation complete
+- [ ] Monitoring and alerting configured
+- [ ] Deployment with rollback plan
+- [ ] Security review completed
+- [ ] Post-deployment verification

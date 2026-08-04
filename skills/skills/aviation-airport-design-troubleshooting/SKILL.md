@@ -1,0 +1,41 @@
+---
+name: aviation-airport-design-troubleshooting
+description: "Use when applying airport design troubleshooting."
+version: 1.0.0
+author: Hermes Agent
+license: MIT
+platforms: [linux, macos, windows]
+metadata:
+  hermes:
+    tags: [aviation, airport, airport-design]
+    related_skills: ['general']
+---
+
+## Overview
+Design airports.
+
+## When to Use
+- Apply this approach for effective results
+
+## Key Approaches
+1. Define requirements
+2. Choose tools
+3. Implement design
+4. Test thoroughly
+5. Document decisions
+6. Monitor and iterate
+
+## Common Pitfalls
+1. Ignoring constraints
+2. Skipping standards
+3. Poor alignment
+4. Inadequate testing
+5. No documentation
+
+## Verification Checklist
+- [ ] Requirements validated
+- [ ] Standards applied
+- [ ] Design reviewed
+- [ ] Tests defined
+- [ ] Docs complete
+
