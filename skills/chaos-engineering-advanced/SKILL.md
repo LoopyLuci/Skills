@@ -1,5 +1,4 @@
 ---
-
 name: chaos-engineering-advanced
 description: "Use when implementing advanced chaos engineering patterns."
 version: 1.0.0
@@ -9,7 +8,6 @@ metadata:
   hermes:
     tags: [chaos-engineering, resilience, Litmus, Gremlin, game-day, fault-injection]
     related_skills: [chaos-engineering, site-reliability-engineering, incident-management-on-call, error-budgets-slos]
-
 ---
 
 # Advanced Chaos Engineering

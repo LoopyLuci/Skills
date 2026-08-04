@@ -1,36 +1,60 @@
 ---
-
 name: google-mobile-ads-get-started
-description: Provides instructions for integrating the Google Mobile Ads (GMA)
-  SDK. Use this skill when the user wants to get started with, install,
-  integrate, set up, or configure the SDK for AdMob or Ad Manager, GMA Next-Gen
-  SDK or mobile ads framework in an Android, iOS, or Unity application.
-  version: 1.1.0
-  category: GoogleAds
-source: google/skills
-metadata:
-  hermes:
-    tags: [agent, skill]
-
+description: Use when integrating Google Mobile Ads SDK into Android, iOS, or Unity apps.
+tags: [android, ios, unity, google-mobile-ads, sdk-setup, admob]
+related_skills: [google-mobile-ads-banner, google-mobile-ads-interstitial, google-mobile-ads-rewarded]
 ---
 
-# Google Mobile Ads SDK - Install
+# Google Mobile Ads SDK — Getting Started
 
-## Workflow
+Provides instructions for integrating the Google Mobile Ads (GMA) SDK for AdMob or Ad Manager in Android, iOS, or Unity applications.
 
-1.  **Determine the user's platform**: Identify if the project is Android, iOS,
-    or Unity. If unclear, ask before proceeding.
+## Implementation Steps
 
-2. **Read the platform guide** for implementation details:
-    - Android: `references/android-get-started.md`
-    - iOS: `references/ios-get-started.md`
-    - Unity: `references/unity-get-started.md`
+1. Determine platform (Android / iOS / Unity)
+2. Add the SDK dependency
+3. Set the application identifier
+4. Initialize the SDK
+5. Verify the integration
+6. Select an ad format to continue
 
-3. **Follow these steps in order**:
-   - [ ] Add the SDK dependency
-   - [ ] Set the application identifier
-   - [ ] Initialize the SDK
-   - [ ] Verify the integration
+## Code Example (Android — build.gradle.kts)
 
-4. After the SDK is successfully installed, ask the user to select an ad format
-   to continue the integration.
+```kotlin
+dependencies {
+    implementation("com.google.android.gms:play-services-ads:23.0.0")
+}
+```
+
+## Code Example (iOS — CocoaPods)
+
+```ruby
+pod 'Google-Mobile-Ads-SDK'
+```
+
+## Code Example (Initialization — Android)
+
+```kotlin
+import com.google.android.gms.ads.MobileAds
+
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        MobileAds.initialize(this) { }
+    }
+}
+```
+
+## Common Pitfalls
+
+- **Missing app ID**: Add `com.google.android.gms.ads.APPLICATION_ID` meta-data in AndroidManifest.xml
+- **SDK not initialized**: Call `MobileAds.initialize()` before loading any ads
+- **Wrong platform guide**: Android, iOS, and Unity have different setup steps — follow the correct one
+
+## Verification Checklist
+
+- [ ] SDK dependency added to build file
+- [ ] Application ID configured in manifest / Info.plist
+- [ ] SDK initialization code added
+- [ ] Build succeeds without errors
+- [ ] Ad format selected for next steps

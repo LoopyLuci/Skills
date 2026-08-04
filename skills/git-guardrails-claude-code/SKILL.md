@@ -1,103 +1,40 @@
 ---
-
 name: git-guardrails-claude-code
-description: Set up Claude Code hooks to block dangerous git commands (push, reset --hard, clean, branch -D, etc.) before they execute. Use when user wants to prevent destructive git operations, add git safety hooks, or block git push/reset in Claude Code.
-source: mattpocock/skills
-tags: [engineering, git, claude-code, safety, guardrails]
-metadata: 
-hermes: 
-
+description: Use when adding git safety hooks to prevent destructive operations in Claude Code
+tags: [git, safety, hooks, Claude-Code, guardrails]
+related_skills: [setup-pre-commit, git-hooks-workflow, git-config-essentials]
 ---
 
-**Trigger**: Use when configuring git guardrails for Claude Code or other AI coding agents — preventing accidental commits, force-pushes, or destructive operations.
+# Git Guardrails Claude Code
 
-# Setup Git Guardrails
+Set up Claude Code hooks that block dangerous git commands (push, reset --hard, clean, branch -D) before they execute.
 
-Sets up a PreToolUse hook that intercepts and blocks dangerous git commands before Claude executes them.
-
-## What Gets Blocked
-
-- `git push` (all variants including `--force`)
+## What gets blocked
+- `git push` (all variants including --force)
 - `git reset --hard`
 - `git clean -f` / `git clean -fd`
 - `git branch -D`
 - `git checkout .` / `git restore .`
 
-When blocked, Claude sees a message telling it that it does not have authority to access these commands.
+## Setup steps
+1. Ask scope: project-only (.claude/settings.json) or all projects (~/.claude/settings.json)
+2. Copy the hook script to the appropriate location
+3. Make it executable (chmod +x)
+4. Add PreToolUse hook to settings.json
+5. Verify by triggering a blocked command
 
-## Steps
+> **Note**: This skill is designed for Claude Code's hook system. For Hermes Agent, adapt to use git config aliases or pre-commit hooks instead.
 
-### 1. Ask scope
+## Common Pitfalls
 
-Ask the user: install for **this project only** (`.claude/settings.json`) or **all projects** (`~/.claude/settings.json`)?
+- **Missing execute permission on the hook script**: The block-dangerous-git.sh script must be chmod +x or it silently won't run.
+- **Installing globally when project-only is appropriate**: Global hooks affect all Claude Code sessions. Only install globally if the user explicitly wants that.
+- **Not testing the guardrails after installation**: Verify by triggering one of the blocked commands and confirming it is intercepted.
 
-### 2. Copy the hook script
+## Verification Checklist
 
-The bundled script is at: [scripts/block-dangerous-git.sh](scripts/block-dangerous-git.sh)
-
-Copy it to the target location based on scope:
-
-- **Project**: `.claude/hooks/block-dangerous-git.sh`
-- **Global**: `~/.claude/hooks/block-dangerous-git.sh`
-
-Make it executable with `chmod +x`.
-
-### 3. Add hook to settings
-
-Add to the appropriate settings file:
-
-**Project** (`.claude/settings.json`):
-
-```json
-{
-  "hooks": {
-    "PreToolUse": [
-      {
-        "matcher": "Bash",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "\"$CLAUDE_PROJECT_DIR\"/.claude/hooks/block-dangerous-git.sh"
-          }
-        ]
-      }
-    ]
-  }
-}
-```
-
-**Global** (`~/.claude/settings.json`):
-
-```json
-{
-  "hooks": {
-    "PreToolUse": [
-      {
-        "matcher": "Bash",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "~/.claude/hooks/block-dangerous-git.sh"
-          }
-        ]
-      }
-    ]
-  }
-}
-```
-
-If the settings file already exists, merge the hook into existing `hooks.PreToolUse` array — don't overwrite other settings.
-
-### 4. Ask about customization
-
-Ask if user wants to add or remove any patterns from the blocked list. Edit the copied script accordingly.
-
-### 5. Verify
-
-Run a quick test:
-
-```bash
-echo '{"tool_input":{"command":"git push origin main"}}' | <path-to-script>
-```
-
-Should exit with code 2 and print a BLOCKED message to stderr.
+- [ ] Scope confirmed (project or global)
+- [ ] Hook script copied to correct location
+- [ ] chmod +x applied to hook script
+- [ ] Hook added to settings.json (PreToolUse)
+- [ ] Guardrails verified with a test command

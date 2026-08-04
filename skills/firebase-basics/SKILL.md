@@ -1,110 +1,46 @@
 ---
-
 name: firebase-basics
-description: Use this skill whenever you are working on a project that uses Firebase products or services, especially for mobile or web apps.
-source: google/skills
-tags: [gcp, firebase, backend, serverless]
-metadata: 
-hermes: 
-
+description: Use when working with Firebase products and services for mobile/web apps.
+tags: [firebase, google-cloud, mobile, web, backend, cli]
+related_skills: [google-cloud-recipe-auth, gemini-api]
 ---
-
-**Trigger**: Use when setting up or configuring Firebase — Firestore, Authentication, Cloud Functions, Hosting, and Security Rules.
 
 # Firebase Basics
 
-### **CRITICAL** Mandatory prerequisites
+Provides the foundational workflow for setting up and configuring Firebase projects using the Firebase CLI.
 
-Before attempting to fulfill any user request regarding Firebase, you **MUST**
-follow these steps in order. Do not proceed to implementation until these are
-completed. Failure to follow these instructions may result in using outdated
-patterns and lack of access to essential reference materials.
+## Prerequisites
 
-1.  **Leverage the planning phase**
+- Node.js / NPM installed
+- Firebase project (or create one)
 
-    If you use a planning mode (e.g., maintaining a `task.md` file), you
-    **MUST** include a task to check and install `firebase/agent-skills` as your
-    very first item.
+## Quick Start
 
-2.  **Ensure NPM is installed.**
+1. **Install Agent Skills for Firebase**: `npx -y skills add firebase/agent-skills -y`
+2. **Log in**: `npx -y firebase-tools@latest login`
+3. **Set active project**: `npx -y firebase-tools@latest use <PROJECT_ID>`
 
-    ```bash
-    ## Check if NPM is installed
-    npm --version
-    ```
+## Code Example: Creating a Firebase Project
 
-    If NPM is not installed, guide the user to download and install the
-    LTS version from https://nodejs.org/en/download.
+```bash
+# Create a new project
+npx -y firebase-tools@latest projects:create my-app-project --display-name "My App"
 
-    Then, request the user to manually install Node.js and to reply with a
-    confirmation that the installation is finished. **Stop and wait** for the
-    user's confirmation.
+# List existing projects
+npx -y firebase-tools@latest projects:list
+```
 
-3.  **Verify and install Agent Skills for Firebase**
+## Common Pitfalls
 
-    You **MUST** ensure the full set of skills is installed to avoid using
-    outdated patterns. Run this command:
+- **Missing NPM**: Firebase CLI requires Node.js — verify with `npm --version` first
+- **Not logged in**: Run `firebase login` before any project operations
+- **No active project**: Set active project with `firebase use --add <PROJECT_ID>`
+- **Outdated CLI**: Use `npx -y firebase-tools@latest` to always get the latest version
 
-    ```bash
-    npx -y skills add firebase/agent-skills -y
-    ```
+## Verification Checklist
 
-    *If the skills are already installed, this command will ensure they are up
-    to date. Do not skip this step.*
-
-## Quick start
-
-After completing the mandatory prerequisites above, proceed with these steps to
-set up your environment:
-
-1.  **Log in to the Firebase CLI.**
-
-    Run this command:
-
-    ```bash
-    npx -y firebase-tools@latest login
-    ```
-
-    Then, ask the user to complete the login flow in the browser.
-
-2.  **Set an active project for the CLI.**
-
-    Most Firebase tasks require an active project context. Check the current
-    project for the Firebase CLI by running this command:
-
-    ```bash
-    npx -y firebase-tools@latest use
-    ```
-
-    - If the command outputs `Active Project: <PROJECT_ID>`, you can proceed
-      with your task.
-
-    - If the command does *not* output an active project, ask the user if they
-      have an existing Firebase project ID.
-
-      - If yes: Set the ID as the active project and add a default alias by
-        running:
-
-        ```bash
-        npx -y firebase-tools@latest use --add <PROJECT_ID>
-        ```
-
-      - If no: Create a new Firebase project by running:
-
-        ```bash
-        npx -y firebase-tools@latest projects:create <PROJECT_ID> --display-name <DISPLAY_NAME>
-        ```
-
-## Reference directory
-
-- [Firebase core concepts](references/core-concepts.md)
-- [Firebase CLI usage](references/cli-usage.md)
-- [Firebase client library usage](references/client-library-usage.md)
-- [Firebase CLI and MCP server](references/mcp-usage.md)
-- [Firebase IaC usage](references/iac-usage.md)
-- [Firebase security-related features](references/iam-security.md)
-- [Additional Published Skills](references/additional-skills.md)
-
-If you need product information that's not found in these references, check the
-other skills for Firebase that you have installed, or use the `search_documents`
-tool of the Developer Knowledge MCP server.
+- [ ] NPM installed: `npm --version`
+- [ ] Firebase CLI accessible: `npx firebase-tools --version`
+- [ ] Logged in: `npx firebase-tools login`
+- [ ] Active project set: `npx firebase-tools use`
+- [ ] Firebase skills installed: `npx skills add firebase/agent-skills -y`

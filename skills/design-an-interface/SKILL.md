@@ -1,100 +1,69 @@
 ---
-
 name: design-an-interface
-description: Generate multiple radically different interface designs for a module using parallel sub-agents. Use when user wants to design an API, explore interface options, compare module shapes, or mentions "design it twice".
-source: mattpocock/skills
-metadata:
-  hermes:
-    tags: [agent, skill]
-
+description: Use when designing an API, exploring interface options, or comparing module shapes
+tags: [design, architecture, API, sub-agents, review]
+related_skills: [codebase-design, improve-codebase-architecture, to-spec]
 ---
 
-# Design an Interface
+# Design An Interface
 
-Based on "Design It Twice" from "A Philosophy of Software Design": your first idea is unlikely to be the best. Generate multiple radically different designs, then compare.
+Generate multiple radically different interface designs for a module using parallel sub-agents. Based on "Design It Twice" from "A Philosophy of Software Design": your first idea is unlikely to be the best.
 
 ## Workflow
 
 ### 1. Gather Requirements
-
 Before designing, understand:
-
-- [ ] What problem does this module solve?
-- [ ] Who are the callers? (other modules, external users, tests)
-- [ ] What are the key operations?
-- [ ] Any constraints? (performance, compatibility, existing patterns)
-- [ ] What should be hidden inside vs exposed?
-
-Ask: "What does this module need to do? Who will use it?"
+- What problem does this module solve?
+- Who are the callers? (other modules, external users, tests)
+- What are the key operations?
+- Any constraints? (performance, compatibility, existing patterns)
+- What should be hidden inside vs exposed?
 
 ### 2. Generate Designs (Parallel Sub-Agents)
+Spawn 3+ sub-agents simultaneously. Each must produce a radically different approach.
 
-Spawn 3+ sub-agents simultaneously using Task tool. Each must produce a **radically different** approach.
-
-```
-Prompt template for each sub-agent:
-
-Design an interface for: [module description]
-
-Requirements: [gathered requirements]
-
-Constraints for this design: [assign a different constraint to each agent]
+Assign each agent a different constraint:
 - Agent 1: "Minimize method count - aim for 1-3 methods max"
 - Agent 2: "Maximize flexibility - support many use cases"
 - Agent 3: "Optimize for the most common case"
-- Agent 4: "Take inspiration from [specific paradigm/library]"
-
-Output format:
-1. Interface signature (types/methods)
-2. Usage example (how caller uses it)
-3. What this design hides internally
-4. Trade-offs of this approach
-```
+- Agent 4: "Take inspiration from a specific paradigm/library"
 
 ### 3. Present Designs
+Show each design with its interface signature, usage examples, hidden complexity, and trade-offs.
 
-Show each design with:
+### 4. Compare and Select
+Compare designs side by side. Ask: which is deepest? Easiest to use? Most maintainable? Pick one or hybridize.
 
-1. **Interface signature** - types, methods, params
-2. **Usage examples** - how callers actually use it in practice
-3. **What it hides** - complexity kept internal
+> **Note**: This skill is deprecated in the original source. Consider using `codebase-design` for deep module vocabulary instead.
 
-Present designs sequentially so user can absorb each approach before comparison.
+## Common Pitfalls
 
-### 4. Compare Designs
+- **Over-designing before understanding requirements**: Jumping to interface designs without first gathering requirements leads to designs that don't solve the actual problem. Always complete the requirements checklist first.
+- **Sub-agent designs too similar**: If spawned sub-agents produce similar designs, you lose the benefit of radical comparison. Enforce different constraints per agent.
+- **Ignoring what callers actually need**: Designing interfaces without understanding who calls them and how leads to mismatched abstractions.
 
-After showing all designs, compare them on:
+## Code Examples
 
-- **Interface simplicity**: fewer methods, simpler params
-- **General-purpose vs specialized**: flexibility vs focus
-- **Implementation efficiency**: does shape allow efficient internals?
-- **Depth**: small interface hiding significant complexity (good) vs large interface with thin implementation (bad)
-- **Ease of correct use** vs **ease of misuse**
+```typescript
+// Minimal interface approach
+interface UserStore {
+  get(id: string): Promise<User>;
+  set(user: User): Promise<void>;
+}
 
-Discuss trade-offs in prose, not tables. Highlight where designs diverge most.
+// Flexible approach
+interface UserStore {
+  find(query: UserQuery): Promise<User[]>;
+  findOne(query: UserQuery): Promise<User | null>;
+  create(data: CreateUserDTO): Promise<User>;
+  update(id: string, data: Partial<User>): Promise<User>;
+  delete(id: string): Promise<void>;
+}
+```
 
-### 5. Synthesize
+## Verification Checklist
 
-Often the best design combines insights from multiple options. Ask:
-
-- "Which design best fits your primary use case?"
-- "Any elements from other designs worth incorporating?"
-
-## Evaluation Criteria
-
-From "A Philosophy of Software Design":
-
-**Interface simplicity**: Fewer methods, simpler params = easier to learn and use correctly.
-
-**General-purpose**: Can handle future use cases without changes. But beware over-generalization.
-
-**Implementation efficiency**: Does interface shape allow efficient implementation? Or force awkward internals?
-
-**Depth**: Small interface hiding significant complexity = deep module (good). Large interface with thin implementation = shallow module (avoid).
-
-## Anti-Patterns
-
-- Don't let sub-agents produce similar designs - enforce radical difference
-- Don't skip comparison - the value is in contrast
-- Don't implement - this is purely about interface shape
-- Don't evaluate based on implementation effort
+- [ ] Requirements gathered before design started
+- [ ] At least 3 radically different designs generated
+- [ ] Each design has interface signature, usage example, hidden complexity, and trade-offs
+- [ ] User has compared designs and selected one

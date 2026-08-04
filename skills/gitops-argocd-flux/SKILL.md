@@ -1,5 +1,4 @@
 ---
-
 name: gitops-argocd-flux
 description: "Use when implementing GitOps with ArgoCD or Flux."
 version: 1.0.0
@@ -9,7 +8,6 @@ metadata:
   hermes:
     tags: [GitOps, ArgoCD, Flux, Kubernetes, declarative, continuous-delivery]
     related_skills: [kubernetes-deployment, ci-cd-pipeline-setup, continuous-integration-advanced, terraform-module-patterns]
-
 ---
 
 # GitOps with ArgoCD and Flux
