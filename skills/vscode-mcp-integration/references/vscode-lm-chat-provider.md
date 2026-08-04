@@ -28,7 +28,7 @@ The VS Code native chat integration uses a **dual-level** approach:
   "languageModelChatProviders": [
     {
       "vendor": "hermes",
-      "icon": "$(comment-discussion)",
+      "icon": "./assets/hermes-icon.svg",
       "name": "Hermes Agent",
       "description": "AI coding assistant with full VS Code tool access"
     }

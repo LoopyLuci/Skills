@@ -1,81 +1,101 @@
 ---
+
 name: pick-ui-library
-description: Use when picking the right library for a frontend task.
-tags: [ui-libraries, frontend, react, components, tools]
-related_skills: [frontend-design, emil-design-eng]
+description: Pick the right library for a given frontend task from a curated, opinionated list — numbers, OTP inputs, charts, command menus, virtualization, drag and drop, toasts, state, styling, and more. Only runs when explicitly invoked; it does not trigger on its own.
+source: emilkowalski/skills
+tags: [design, frontend, ui-library, component, selection]
+metadata: 
+hermes: 
+
 ---
+
+**Trigger**: Use when choosing a UI component library for a project. Have your agent pick the right library based on trusted recommendations instead of letting AI hand-roll components or install abandoned packages.
 
 # Picking The Right Library
 
-A curated, opinionated list of frontend libraries. When invoked with a task, match to the list and recommend.
+A lookup skill. When invoked with a task ("I need toasts", "what should I use for drag and drop?"), match the task to the curated list below and recommend the library. These are deliberate, taste-driven picks — don't substitute alternatives outside this list unless the user asks for one or the task genuinely isn't covered.
 
-## How to Use
+## How to use this
 
-1. **Identify the task**, not the library the user named
-2. **Check what's already installed** in `package.json`
-3. **Recommend one library**, state what it's for in one sentence
-4. If the task isn't covered, say so explicitly
+1. **Identify the task**, not the library the user named. "I need to show a dropdown" is a UI-primitives task (base-ui), even if they asked about something else.
+2. **Check what's already installed.** Look at `package.json` first. If the project already uses a listed library, use it. If it uses a competitor (e.g. react-window instead of Virtuoso), flag the recommendation but don't churn the dependency without being asked.
+3. **Recommend one library**, state what it's for in one sentence, and install/wire it up if that's part of the request. Don't present a menu of options when the list has a clear answer.
+4. If the task isn't covered by the list, say so explicitly and recommend from your own knowledge — but be clear you've left the curated list.
 
-## The List
+## The list
 
-### UI Components & Primitives
+### UI components & primitives
+
 | Task | Library |
-|---|---|
-| Unstyled, accessible UI components (dialogs, popovers, menus, selects) | [base-ui](https://base-ui.com) |
+| --- | --- |
+| Unstyled, accessible UI components (dialogs, popovers, menus, selects…) | [base-ui](https://base-ui.com) |
 | Command menus (⌘K palettes) | [cmdk](https://cmdk.paco.me) |
 | Toasts / notifications | [Sonner](https://sonner.emilkowal.ski) |
-| OTP / verification code inputs | [input-otp](https://input-otp.rodz.dev) |
-| Customizable GUIs / control panels | [Leva](https://github.com/pmndrs/leva) |
+| One-time password / verification code inputs | [input-otp](https://input-otp.rodz.dev) |
+| Customizable GUIs / control panels | [Leva](https://github.com/pmndrs/leva) — [dialkit](https://joshpuckett.me/dialkit) is an alternative |
 
-### Motion & Visuals
+### Motion & visuals
+
 | Task | Library |
-|---|---|
-| General-purpose animation | [motion](https://motion.dev) (Framer Motion) |
-| Animating numbers (counters, stats) | [NumberFlow](https://number-flow.barvian.me) |
+| --- | --- |
+| General-purpose animation (springs, layout animations, enter/exit) | [motion](https://motion.dev) (Framer Motion) |
+| Animating numbers (counters, prices, stats) | [NumberFlow](https://number-flow.barvian.me) |
 | Animated text components | [torph](https://torph.lochie.me/) |
 | 3D globes | [Cobe](https://cobe.vercel.app) |
-| Dynamic OG images | [Satori](https://github.com/vercel/satori) |
+| Dynamic OG images (HTML/CSS → SVG/PNG) | [Satori](https://github.com/vercel/satori) |
 | Syntax highlighting | [shiki](https://shiki.style) |
 
+Reach for motion when you need springs, layout animations, exit animations, or gesture-driven values. A simple hover or fade doesn't need it — plain CSS transitions are the right tool there.
+
 ### Charts
-| Task | Library |
-|---|---|
-| Real-time / streaming charts | [Liveline](https://github.com/benjtaylor/liveline) |
-| General charts | [recharts](https://recharts.org) |
 
-### Interaction & Performance
 | Task | Library |
-|---|---|
+| --- | --- |
+| Real-time / streaming charts | [Liveline](https://github.com/benjitaylor/liveline) |
+| General charts (static or interactive dashboards) | [recharts](https://recharts.org) |
+
+The split: if data points arrive live and the chart scrolls with time, use Liveline. Everything else is recharts.
+
+### Interaction & performance
+
+| Task | Library |
+| --- | --- |
 | Drag and drop | [dnd kit](https://dndkit.com) |
-| Virtualization (long lists) | [Virtuoso](https://virtuoso.dev) |
+| Virtualization (long lists, large tables) | [Virtuoso](https://virtuoso.dev) |
 
-### State & Styling
+### State & styling
+
 | Task | Library |
-|---|---|
+| --- | --- |
 | State management | [zustand](https://zustand.docs.pmnd.rs) |
-| Conditional className strings | [clsx](https://github.com/lukeed/clsx) |
-| Type-safe variant styling | [cva](https://cva.style) |
-| Theme switching (no flash) | [next-themes](https://github.com/pacocoursey/next-themes) |
+| Constructing `className` strings conditionally | [clsx](https://github.com/lukeed/clsx) |
+| Type-safe, variant-driven styling for Tailwind | [cva](https://cva.style) |
+| Theme switching / dark mode (no flash on load) | [next-themes](https://github.com/pacocoursey/next-themes) |
 
-## Common Mismatches to Catch
+The styling split: clsx for ad-hoc conditional classes; cva when a component has real variants (size, intent, state) that deserve a typed API. They compose — cva uses clsx-style inputs internally.
 
-- Toasts built by hand → Sonner
-- `<div>`-based dropdown with manual focus → base-ui
-- Animating numbers via re-render → NumberFlow
-- 1,000+ row list rendered directly → Virtuoso
-- `useState` web of props → zustand
+## Common mismatches to catch
 
-## Common Pitfalls
+- **Toasts built by hand or with a modal library** → Sonner exists for exactly this.
+- **A `<div>`-based dropdown/dialog with manual focus handling** → base-ui, which handles accessibility, focus trapping, and dismissal.
+- **Animating a number by re-rendering text** → NumberFlow handles digit transitions properly.
+- **Rendering a 1,000+ row list directly** → Virtuoso before reaching for pagination hacks.
+- **A `useState`-per-component web of props for shared state** → zustand.
+- **Template-literal className ternaries three conditions deep** → clsx (or cva if it's variant-shaped).
 
-- ❌ **Presenting a menu of options** — Recommend one library
-- ❌ **Ignoring what's already installed** — Check package.json first
-- ❌ **Churning dependencies unnecessarily** — Use existing libraries
-- ❌ **Recommending outside the list without flagging it** — Say when you've left the curated list
+## Pitfalls
+- Hand-rolling components when a battle-tested library exists — toast, modals, tooltips should never be hand-rolled.
+- Choosing a library with no recent updates (abandoned) — check last commit date.
+- Installing a UI library with a different styling paradigm than the project uses.
 
-## Verification Checklist
+## Verification
+- Does the selected library have TypeScript definitions?
+- Was the library updated in the last 6 months?
+- Is the bundle size compatible with the project's performance budget?
 
-- [ ] Task correctly identified (not the library the user named)
-- [ ] `package.json` checked for existing dependencies
-- [ ] One library recommended with clear reason
-- [ ] If outside curated list, explicitly flagged
-- [ ] Installation/wiring provided if part of request
+## Procedure
+1. Identify the project's framework: React, Vue, Svelte, or framework-agnostic.
+2. Determine the styling approach: CSS modules, Tailwind, styled-components, or vanilla CSS.
+3. Check the project's design system needs: do they need pre-built themes, or are they custom?
+4. Select from trusted libraries based on criteria: npm downloads, GitHub stars, last update, bundle size, accessibility support.
+5. Prefer libraries with built-in accessibility, TypeScript support, and tree-shaking.
