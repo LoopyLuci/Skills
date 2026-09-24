@@ -1,6 +1,6 @@
 # LoopyLuci Skills
 
-A curated collection of **1,028+ AI agent skills** built for [Hermes Agent](https://hermes-agent.nousresearch.com/) and compatible with any agent that supports the [agentskills.io](https://agentskills.io/) open standard.
+A curated collection of **9,500+ AI agent skills** built for [Hermes Agent](https://hermes-agent.nousresearch.com/) and compatible with any agent that supports the [agentskills.io](https://agentskills.io/) open standard.
 
 These skills cover: software development, ML/AI, networking, security, creative tools, productivity, DevOps, system administration, and more — designed to be loaded on-demand by AI agents.
 
@@ -80,11 +80,12 @@ LoopyLuci/Skills/
 │   │   └── SKILL.md
 │   ├── kubernetes-deployment/
 │   │   └── SKILL.md
-│   ├── ... 1,028+ skills
+│   ├── ... 9,500+ skills
 ├── scripts/
-│   └── sync-from-hermes.sh        # Sync script (maintainer use)
-├── README.md                      # This file
-└── .gitignore
+│   ├── sync-from-hermes.sh        # One-way sync (Hermes → Repo)
+│   ├── sync-bidirectional.py      # Two-way sync (Hermes ↔ Repo)
+│   ├── sync-skills-fast.py        # Fast bulk sync
+│   └── ...                        # More utilities
 ```
 
 ---
