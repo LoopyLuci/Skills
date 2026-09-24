@@ -1,14 +1,13 @@
 ---
 name: beauty-device-development-troubleshooting
-description: "Use when applying beauty device development troubleshoot."
+description: Use when applying beauty device development troubleshoot.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [beauty, devices, beauty-device-development]
-    related_skills: ['general']
 ---
 
 # Beauty Device Development Troubleshooting

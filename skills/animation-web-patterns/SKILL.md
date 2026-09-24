@@ -1,13 +1,13 @@
 ---
 name: animation-web-patterns
-description: "Use when implementing web animations and transitions."
+description: Use when implementing web animations and transitions.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [animation, CSS-animations, Web-API, transitions, GSAP, motion]
-    related_skills: [responsive-web-design-patterns, web-component-design, frontend-bootstrap, web-accessibility-practices]
+    tags: [animation, css-animations, web-api, transitions, gsap, motion]
 ---
 
 # Animation Web Patterns

@@ -1,14 +1,13 @@
 ---
 name: aerospace-eng-design
-description: "Use when designing aerospace solutions."
+description: Use when designing aerospace solutions.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aerospace, aircraft, propulsion, structures]
-    related_skills: [general]
 ---
 
 # Aerospace Eng Design

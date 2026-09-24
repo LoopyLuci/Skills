@@ -1,14 +1,13 @@
 ---
 name: aerospace-systems-analysis-implementation
-description: "Use when applying aerospace analysis implementation."
+description: Use when applying aerospace analysis implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aerospace, analysis, aerospace-eng-analysis]
-    related_skills: [general]
 ---
 
 # Aerospace Systems Analysis Implementation

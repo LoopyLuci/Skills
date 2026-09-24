@@ -1,14 +1,13 @@
 ---
 name: domain-modeling-deep-best-practices
-description: "Use when applying domain modeling best practices."
+description: Use when applying domain modeling best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [programming, ddd]
-    related_skills: ['domain-modeling']
 ---
 
 # Domain Modeling Deep Best Practices

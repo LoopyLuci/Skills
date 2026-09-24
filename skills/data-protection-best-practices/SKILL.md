@@ -1,14 +1,13 @@
 ---
 name: data-protection-best-practices
-description: "Use when applying data protection best practices."
+description: Use when applying data protection best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, data-protection, encryption]
-    related_skills: [general]
 ---
 
 # Data Protection Best Practices

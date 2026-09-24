@@ -1,14 +1,13 @@
 ---
 name: python-error-hardening
-description: "Elevate excepts to typed errors, isolate test singletons."
+description: Elevate excepts to typed errors, isolate test singletons.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-tags: [python, error-handling, testing, refactoring]
+platforms: [any]
 metadata:
   hermes:
-    category: software-development
-    related_skills: [webbuilder-desktop-app]
+    tags: [python, error-handling, testing, refactoring]
 ---
 
 # Python Error Hardening

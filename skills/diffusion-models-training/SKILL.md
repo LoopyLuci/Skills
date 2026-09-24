@@ -1,14 +1,13 @@
 ---
 name: diffusion-models-training
-description: "Use when training diffusion models."
+description: Use when training diffusion models.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [deep-learning, diffusion-models, generative, training]
-    related_skills: ['generative-models']
 ---
 
 # Diffusion Models Training

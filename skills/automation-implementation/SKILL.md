@@ -1,14 +1,13 @@
 ---
 name: automation-implementation
-description: "Use when implementing automation projects."
+description: Use when implementing automation projects.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [automation, robotics, plc, scada]
-    related_skills: [general]
 ---
 
 # Automation Implementation

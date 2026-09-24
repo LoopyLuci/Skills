@@ -1,14 +1,13 @@
 ---
 name: blockchain-security-implementation-best-practices
-description: "Use when applying blockchain security implementation bes."
+description: Use when applying blockchain security implementation bes.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [blockchain, security]
-    related_skills: ['blockchain-security-implementation']
 ---
 
 # Blockchain Security Implementation Best Practices

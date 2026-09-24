@@ -1,13 +1,13 @@
 ---
 name: android-cast-airplay-streaming
-version: 1.0.0
-author: Hermes Agent
-license: MIT
 description: Stream audio to Chromecast and AirPlay from Android.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [android, chromecast, airplay, raop, streaming, kotlin]
-    related_skills: [android-audio-device-control]
 ---
 
 # Casting and AirPlay from Android

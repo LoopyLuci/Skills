@@ -2,12 +2,12 @@
 name: swarm-robotics-multi-agent
 description: Decentralized coordination, consensus algorithms, formation control, and emergent behavior
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["swarm", "multi-agent"]
+    tags: [swarm, multi-agent]
 ---
 
 # Swarm Robotics Multi Agent

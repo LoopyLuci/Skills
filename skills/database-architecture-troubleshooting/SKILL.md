@@ -1,14 +1,13 @@
 ---
 name: database-architecture-troubleshooting
-description: "Use when for database architecture troubleshooting."
+description: Use when for database architecture troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, architecture, design, scaling]
-    related_skills: [general]
 ---
 
 # Database Architecture Troubleshooting

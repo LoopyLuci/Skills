@@ -1,14 +1,13 @@
 ---
 name: dependency-scanning-snyk
-description: "Use when scanning deps with Snyk."
+description: Use when scanning deps with Snyk.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, devsecops, snyk-dependency]
-    related_skills: [general]
 ---
 
 # Dependency Scanning Snyk

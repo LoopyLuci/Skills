@@ -1,6 +1,13 @@
 ---
 name: github-codespaces-config
 description: Configure dev containers and dotfiles for GitHub Codespaces.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [github, codespaces, config]
 ---
 
 # GitHub Codespaces Configuration

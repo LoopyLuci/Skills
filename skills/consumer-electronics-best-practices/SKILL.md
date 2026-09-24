@@ -1,14 +1,13 @@
 ---
 name: consumer-electronics-best-practices
-description: "Use when applying consumer electronics best practices."
+description: Use when applying consumer electronics best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [electronics, consumer, consumer-electronics-design]
-    related_skills: [general]
 ---
 
 # Consumer Electronics Best Practices

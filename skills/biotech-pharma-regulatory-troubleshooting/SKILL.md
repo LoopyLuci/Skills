@@ -1,14 +1,13 @@
 ---
 name: biotech-pharma-regulatory-troubleshooting
-description: "Use when applying pharmaceutical regulation troubleshoot."
+description: Use when applying pharmaceutical regulation troubleshoot.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, pharma-regulatory]
-    related_skills: ['']
 ---
 
 # Biotech Pharma Regulatory Troubleshooting

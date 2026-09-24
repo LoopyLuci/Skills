@@ -1,9 +1,13 @@
 ---
 name: onnx-model-export
-description: "Use when exporting models to ONNX format."
+description: Use when exporting models to ONNX format.
 version: 1.0.0
-author: Hermes Agent
-tags: ["onnx", "export", "inference", "optimization", "opset"]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [onnx, export, inference, optimization, opset]
 ---
 
 # Onnx Model Export

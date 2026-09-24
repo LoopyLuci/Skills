@@ -2,12 +2,12 @@
 name: electrochemistry-energy
 description: Batteries, fuel cells, and electrochemistry
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["electrochemistry", "energy"]
+    tags: [electrochemistry, energy]
 ---
 
 # Electrochemistry Energy

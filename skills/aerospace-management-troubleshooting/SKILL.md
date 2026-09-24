@@ -1,14 +1,13 @@
 ---
 name: aerospace-management-troubleshooting
-description: "Use when applying aerospace management troubleshooting."
+description: Use when applying aerospace management troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aerospace, management, aerospace-eng-management]
-    related_skills: [general]
 ---
 
 # Aerospace Management Troubleshooting

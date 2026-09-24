@@ -2,12 +2,12 @@
 name: civic-technology-design
 description: Government digital services, user-centered design for public, and civic tech stack
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["civic-tech", "gov"]
+    tags: [civic-tech, gov]
 ---
 
 # Civic Technology Design

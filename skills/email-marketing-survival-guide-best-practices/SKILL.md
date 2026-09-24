@@ -1,14 +1,13 @@
 ---
 name: email-marketing-survival-guide-best-practices
-description: "Use when applying email survival guide best practices."
+description: Use when applying email survival guide best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, deliverability, spam-filter]
-    related_skills: [general]
 ---
 
 # Email Marketing Survival Guide Best Practices

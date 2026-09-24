@@ -1,14 +1,13 @@
 ---
 name: entomology-fundamentals
-description: "Use when applying entomology fundamentals."
+description: Use when applying entomology fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [entomology, insects, bugs, pest]
-    related_skills: [general]
 ---
 
 # Entomology Fundamentals

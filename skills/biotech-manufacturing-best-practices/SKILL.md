@@ -1,14 +1,13 @@
 ---
 name: biotech-manufacturing-best-practices
-description: "Use when applying biotech manufacturing best practices."
+description: Use when applying biotech manufacturing best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: [biotech, manufacturing, cGMP]
-    related_skills: [general]
+    tags: [biotech, manufacturing, cgmp]
 ---
 
 # Biotech Manufacturing Best Practices

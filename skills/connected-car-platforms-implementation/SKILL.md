@@ -1,14 +1,13 @@
 ---
 name: connected-car-platforms-implementation
-description: "Use when applying connected car platforms implementation."
+description: Use when applying connected car platforms implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [auto, connected]
-    related_skills: ['general']
 ---
 
 # Connected Car Platforms Implementation

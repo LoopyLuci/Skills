@@ -1,14 +1,13 @@
 ---
 name: autonomous-vehicle-planning-fundamentals
-description: "Use when applying av planning fundamentals."
+description: Use when applying av planning fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [auto, av, autonomous-vehicle]
-    related_skills: ['general']
 ---
 
 # Autonomous Vehicle Planning Fundamentals

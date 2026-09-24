@@ -1,14 +1,13 @@
 ---
 name: crs-compliance-troubleshooting
-description: "Use when applying crs troubleshooting."
+description: Use when applying crs troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, tax, crs]
-    related_skills: [general]
 ---
 
 # Crs Compliance Troubleshooting

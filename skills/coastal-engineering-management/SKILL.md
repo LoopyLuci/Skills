@@ -2,12 +2,12 @@
 name: coastal-engineering-management
 description: Coastal protection, erosion control, and shoreline management
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["coastal", "engineering"]
+    tags: [coastal, engineering]
 ---
 
 # Coastal Engineering Management

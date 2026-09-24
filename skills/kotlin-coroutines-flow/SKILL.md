@@ -1,9 +1,13 @@
 ---
 name: kotlin-coroutines-flow
-description: "Use when using Kotlin coroutines."
+description: Use when using Kotlin coroutines.
 version: 1.0.0
-author: Hermes Agent
-tags: ["kotlin", "coroutines", "flow", "channel", "async"]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [kotlin, coroutines, flow, channel, async]
 ---
 
 # Kotlin Coroutines Flow

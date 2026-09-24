@@ -1,9 +1,15 @@
 ---
 name: knowledge-management-systems
-description: "Use when designing knowledge bases for AI systems."
-category: mlops
-tags: [knowledge-management, knowledge-base, wiki, documentation]
+description: Use when designing knowledge bases for AI systems.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [knowledge-management, knowledge-base, wiki, documentation]
 ---
+
 # Knowledge Management Systems
 
 Designing knowledge bases for AI systems and human teams.

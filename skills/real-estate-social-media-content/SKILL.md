@@ -1,14 +1,13 @@
 ---
 name: real-estate-social-media-content
-description: "Social media content for real estate. 30-day calendar."
-version: 2.0.0
-author: Hermes Agent
+description: Social media content for real estate. 30-day calendar.
+version: 1.0.0
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [real-estate, social-media, content-planning, marketing]
-    related_skills: [real-estate-listing-copywriting, real-estate-market-intel]
 ---
 
 # Real Estate Social Media Content

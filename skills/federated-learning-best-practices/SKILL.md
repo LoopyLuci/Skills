@@ -1,14 +1,13 @@
 ---
 name: federated-learning-best-practices
-description: "Use when applying federated learning best practices."
+description: Use when applying federated learning best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ai, ml, federated-learning]
-    related_skills: [general]
 ---
 
 # Federated Learning Best Practices

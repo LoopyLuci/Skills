@@ -1,14 +1,13 @@
 ---
 name: aerospace-research-dev-implementation
-description: "Use when applying aerospace r&d implementation."
+description: Use when applying aerospace r&d implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aerospace, r&d, research]
-    related_skills: ['general']
 ---
 
 # Aerospace Research Dev Implementation

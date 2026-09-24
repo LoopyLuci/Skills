@@ -1,14 +1,13 @@
 ---
 name: content-marketing-calendar-implementation
-description: "Use when applying content marketing calendar implementat."
+description: Use when applying content marketing calendar implementat.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, content-marketing-calendar]
-    related_skills: ['']
 ---
 
 # Content Marketing Calendar Implementation

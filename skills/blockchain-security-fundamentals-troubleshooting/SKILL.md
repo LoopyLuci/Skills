@@ -1,14 +1,13 @@
 ---
 name: blockchain-security-fundamentals-troubleshooting
-description: "Use when applying blockchain security fundamentals troub."
+description: Use when applying blockchain security fundamentals troub.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [blockchain, security]
-    related_skills: ['blockchain-security-fundamentals']
 ---
 
 # Blockchain Security Fundamentals Troubleshooting

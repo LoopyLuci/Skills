@@ -1,8 +1,13 @@
 ---
 name: codebase-design
 description: Use when designing module interfaces, finding deepening opportunities, or making code testable
-tags: [design, architecture, modules, depth, interfaces]
-related_skills: [design-an-interface, improve-codebase-architecture, domain-driven-design-tactical]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [design, architecture, modules, depth, interfaces]
 ---
 
 # Codebase Design

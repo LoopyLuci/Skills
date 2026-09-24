@@ -2,12 +2,12 @@
 name: organic-synthesis-methods
 description: Synthetic methods, retrosynthesis, and reaction mechanisms
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["organic", "synthetic"]
+    tags: [organic, synthetic]
 ---
 
 # Organic Synthesis Methods

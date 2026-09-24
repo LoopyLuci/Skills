@@ -1,14 +1,13 @@
 ---
 name: chemical-fluid-flow
-description: "Use when analyzing fluid flow."
+description: Use when analyzing fluid flow.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [chem, fluids, fluid-flow]
-    related_skills: [general]
 ---
 
 # Chemical Fluid Flow

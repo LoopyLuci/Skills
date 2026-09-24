@@ -1,6 +1,13 @@
 ---
 name: skill-trigger-condition-design
 description: Write clear trigger conditions that fire at the right time.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [skill, trigger, condition]
 ---
 
 # Skill Trigger Condition Design

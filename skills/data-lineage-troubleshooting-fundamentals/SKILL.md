@@ -1,14 +1,13 @@
 ---
 name: data-lineage-troubleshooting-fundamentals
-description: "Use when applying data lineage troubleshooting fundament."
+description: Use when applying data lineage troubleshooting fundament.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, lineage]
-    related_skills: ['data-lineage-troubleshooting']
 ---
 
 # Data Lineage Troubleshooting Fundamentals

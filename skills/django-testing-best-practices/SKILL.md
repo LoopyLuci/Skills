@@ -1,14 +1,13 @@
 ---
 name: django-testing-best-practices
-description: "Use when applying django testing best practices."
+description: Use when applying django testing best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, django, testing, pytest]
-    related_skills: [general]
 ---
 
 # Django Testing Best Practices

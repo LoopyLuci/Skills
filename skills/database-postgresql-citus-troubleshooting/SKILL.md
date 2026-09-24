@@ -1,14 +1,13 @@
 ---
 name: database-postgresql-citus-troubleshooting
-description: "Use when applying postgresql citus troubleshooting."
+description: Use when applying postgresql citus troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, postgresql, citus, sharding]
-    related_skills: [general]
 ---
 
 # Database Postgresql Citus Troubleshooting

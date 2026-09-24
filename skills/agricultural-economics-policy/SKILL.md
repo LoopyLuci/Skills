@@ -2,12 +2,12 @@
 name: agricultural-economics-policy
 description: Farm economics, subsidies, trade policy, and commodity markets
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["economics", "policy"]
+    tags: [economics, policy]
 ---
 
 # Agricultural Economics Policy

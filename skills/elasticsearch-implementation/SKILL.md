@@ -1,14 +1,13 @@
 ---
 name: elasticsearch-implementation
-description: "Use when applying elasticsearch implementation."
+description: Use when applying elasticsearch implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, elasticsearch, search, elasticsearch-dev]
-    related_skills: [general]
 ---
 
 # Elasticsearch Implementation

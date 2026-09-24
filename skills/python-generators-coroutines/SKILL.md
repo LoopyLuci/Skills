@@ -1,13 +1,13 @@
 ---
 name: python-generators-coroutines
-description: "Use when implementing Python generators and coroutines."
+description: Use when implementing Python generators and coroutines.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [python, generators, yield, coroutines, send, yield-from]
-    related_skills: [python-async-patterns, python-decorators-advanced, data-pipeline-streaming]
 ---
 
 # Python Generators and Coroutines

@@ -1,14 +1,13 @@
 ---
 name: aws-cloudwatch-best-practices-deep-best-practices
-description: "Use when applying cloudwatch best practices."
+description: Use when applying cloudwatch best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, monitoring]
-    related_skills: ['aws-cloudwatch-best-practices']
 ---
 
 # Aws Cloudwatch Best Practices Deep Best Practices

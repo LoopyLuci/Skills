@@ -1,14 +1,13 @@
 ---
 name: biotech-bioinformatics-implementation
-description: "Use when applying bioinformatics implementation."
+description: Use when applying bioinformatics implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, bioinformatics]
-    related_skills: ['']
 ---
 
 # Biotech Bioinformatics Implementation

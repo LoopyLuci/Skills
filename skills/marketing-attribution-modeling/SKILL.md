@@ -1,13 +1,13 @@
 ---
 name: marketing-attribution-modeling
-description: "Use when implementing marketing attribution and ROI models."
+description: Use when implementing marketing attribution and ROI models.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [marketing-attribution, ROI, multi-touch, first-touch, last-touch, data-driven]
-    related_skills: [demand-generation, revenue-operations-revops, website-analytics-tracking, digital-marketing-strategy]
+    tags: [marketing-attribution, roi, multi-touch, first-touch, last-touch, data-driven]
 ---
 
 # Marketing Attribution Modeling

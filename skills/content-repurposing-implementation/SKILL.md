@@ -1,14 +1,13 @@
 ---
 name: content-repurposing-implementation
-description: "Use when applying content repurposing implementation."
+description: Use when applying content repurposing implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, content-repurposing]
-    related_skills: ['']
 ---
 
 # Content Repurposing Implementation

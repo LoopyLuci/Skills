@@ -1,14 +1,13 @@
 ---
 name: twitter-x-strategy
-description: "Use when creating X/Twitter threads and engagement."
+description: Use when creating X/Twitter threads and engagement.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [twitter, x, social-media, threads, engagement]
-    related_skills: [social-media-strategy, social-media-content-calendar]
 ---
 
 # Twitter X Strategy

@@ -2,12 +2,12 @@
 name: medical-imaging-ai
 description: DICOM, PACS, AI-assisted diagnosis, image segmentation, and radiology workflows
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["imaging", "radiology"]
+    tags: [imaging, radiology]
 ---
 
 # Medical Imaging Ai

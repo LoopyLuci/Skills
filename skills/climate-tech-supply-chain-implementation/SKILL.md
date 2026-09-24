@@ -1,14 +1,13 @@
 ---
 name: climate-tech-supply-chain-implementation
-description: "Use when applying climate supply chain implementation."
+description: Use when applying climate supply chain implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, supply, sustainable-supply-chain]
-    related_skills: [general]
 ---
 
 # Climate Tech Supply Chain Implementation

@@ -1,14 +1,13 @@
 ---
 name: criminal-law
-description: "Use when practicing criminal law."
+description: Use when practicing criminal law.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [legal, criminal, criminal-law]
-    related_skills: [general]
 ---
 
 # Criminal Law

@@ -1,14 +1,13 @@
 ---
 name: construction-project-management
-description: "Use when managing construction projects."
+description: Use when managing construction projects.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [construction, project-management, scheduling, budgeting]
-    related_skills: [general]
 ---
 
 # Construction Project Management

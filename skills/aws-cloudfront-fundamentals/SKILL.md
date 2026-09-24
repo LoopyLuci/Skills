@@ -1,14 +1,13 @@
 ---
 name: aws-cloudfront-fundamentals
-description: "Use when applying aws cloudfront fundamentals."
+description: Use when applying aws cloudfront fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, cloudfront, cdn, caching]
-    related_skills: [general]
 ---
 
 # Aws Cloudfront Fundamentals

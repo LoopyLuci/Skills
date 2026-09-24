@@ -1,14 +1,13 @@
 ---
 name: feature-store-implementation-deep-troubleshooting
-description: "Use when applying feature store implementation troublesh."
+description: Use when applying feature store implementation troublesh.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, data-science]
-    related_skills: ['feature-store-implementation']
 ---
 
 # Feature Store Implementation Deep Troubleshooting

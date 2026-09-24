@@ -1,14 +1,13 @@
 ---
 name: customer-success-fundamentals-deep-fundamentals
-description: "Use when applying customer success fundamentals fundamen."
+description: Use when applying customer success fundamentals fundamen.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [sales, customer-success-fundamentals]
-    related_skills: ['']
 ---
 
 # Customer Success Fundamentals Deep Fundamentals

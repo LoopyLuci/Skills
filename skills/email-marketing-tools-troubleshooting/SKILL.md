@@ -1,14 +1,13 @@
 ---
 name: email-marketing-tools-troubleshooting
-description: "Use when applying email marketing tools troubleshooting."
+description: Use when applying email marketing tools troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, tools, marketing]
-    related_skills: [general]
 ---
 
 # Email Marketing Tools Troubleshooting

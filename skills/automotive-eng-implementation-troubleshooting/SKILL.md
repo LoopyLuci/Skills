@@ -1,14 +1,13 @@
 ---
 name: automotive-eng-implementation-troubleshooting
-description: "Use when applying automotive implementation troubleshoot."
+description: Use when applying automotive implementation troubleshoot.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, automotive, implementation]
-    related_skills: [general]
 ---
 
 # Automotive Eng Implementation Troubleshooting

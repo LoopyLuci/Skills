@@ -1,14 +1,13 @@
 ---
 name: encryption-key-management
-description: "Use when managing encryption keys."
+description: Use when managing encryption keys.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, crypto, key-management]
-    related_skills: [general]
 ---
 
 # Encryption Key Management

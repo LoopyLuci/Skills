@@ -1,8 +1,13 @@
 ---
 name: algorithmic-art
 description: Use when creating p5.js generative art or animations.
-tags: [generative-art, p5js, creative-coding, procedural-generation]
-related_skills: [canvas-design, p5js]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [generative-art, p5js, creative-coding, procedural-generation]
 ---
 
 # Algorithmic Art

@@ -1,13 +1,13 @@
 ---
 name: oauth-authentication-patterns
-description: "Use when implementing OAuth 2.0 and OpenID Connect auth."
+description: Use when implementing OAuth 2.0 and OpenID Connect auth.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [oauth, openid-connect, authentication, authorization, JWT, SSO]
-    related_skills: [web-security-patterns, cryptography-implementation-patterns, api-design-rest-graphql, identity-access-management]
+    tags: [oauth, openid-connect, authentication, authorization, jwt, sso]
 ---
 
 # Oauth Authentication Patterns

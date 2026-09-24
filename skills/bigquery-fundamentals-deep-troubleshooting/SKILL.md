@@ -1,14 +1,13 @@
 ---
 name: bigquery-fundamentals-deep-troubleshooting
-description: "Use when applying bigquery fundamentals troubleshooting."
+description: Use when applying bigquery fundamentals troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, bigquery]
-    related_skills: ['bigquery-fundamentals']
 ---
 
 # Bigquery Fundamentals Deep Troubleshooting

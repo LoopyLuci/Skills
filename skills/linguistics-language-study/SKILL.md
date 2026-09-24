@@ -2,12 +2,12 @@
 name: linguistics-language-study
 description: Syntax, phonology, sociolinguistics, and language documentation
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["linguistics", "language"]
+    tags: [linguistics, language]
 ---
 
 # Linguistics Language Study

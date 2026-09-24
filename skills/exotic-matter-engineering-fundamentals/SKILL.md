@@ -1,14 +1,13 @@
 ---
 name: exotic-matter-engineering-fundamentals
-description: "Use when applying exotic matter engineering fundamentals."
+description: Use when applying exotic matter engineering fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [physics, quantum, exotic]
-    related_skills: [general]
 ---
 
 # Exotic Matter Engineering Fundamentals

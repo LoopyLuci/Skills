@@ -1,14 +1,13 @@
 ---
 name: feature-store-design-deep-implementation
-description: "Use when applying feature store design implementation."
+description: Use when applying feature store design implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, ml-feature-store]
-    related_skills: ['feature-store-design']
 ---
 
 # Feature Store Design Deep Implementation

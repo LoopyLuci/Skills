@@ -1,13 +1,13 @@
 ---
 name: list-building-email-growth
-description: "Use when growing email lists and lead generation strategies."
+description: Use when growing email lists and lead generation strategies.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [email-list, lead-generation, opt-in, list-building, subscribers, growth]
-    related_skills: [email-marketing-campaigns, marketing-funnel-design, content-writing-seo-copy, digital-marketing-strategy]
 ---
 
 # List Building Email Growth

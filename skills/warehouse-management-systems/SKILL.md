@@ -2,12 +2,12 @@
 name: warehouse-management-systems
 description: WMS operations, slotting, picking strategies, and automation
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["warehouse", "wms"]
+    tags: [warehouse, wms]
 ---
 
 # Warehouse Management Systems

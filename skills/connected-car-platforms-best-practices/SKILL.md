@@ -1,14 +1,13 @@
 ---
 name: connected-car-platforms-best-practices
-description: "Use when applying connected car platforms best practices."
+description: Use when applying connected car platforms best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [auto, connected]
-    related_skills: ['general']
 ---
 
 # Connected Car Platforms Best Practices

@@ -1,14 +1,13 @@
 ---
 name: causal-inference-fundamentals
-description: "Use when learning causal inference fundamentals."
+description: Use when learning causal inference fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, causal-inference, causality]
-    related_skills: [general]
 ---
 
 # Causal Inference Fundamentals

@@ -1,14 +1,13 @@
 ---
 name: backend-csharp-best-practices-deep-troubleshooting
-description: "Use when applying c# backend best practices troubleshoot."
+description: Use when applying c# backend best practices troubleshoot.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, csharp]
-    related_skills: ['backend-csharp-best-practices']
 ---
 
 # Backend Csharp Best Practices Deep Troubleshooting

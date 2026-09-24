@@ -1,14 +1,13 @@
 ---
 name: election-administration-implementation
-description: "Use when applying election administration implementation."
+description: Use when applying election administration implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [gov, election, election-security]
-    related_skills: [general]
 ---
 
 # Election Administration Implementation

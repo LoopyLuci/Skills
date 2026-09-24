@@ -1,12 +1,13 @@
 ---
-
 name: minimax-music-playlist
-description: >
-source: MiniMax-AI/skills
-tags: [minimax, music, playlist, audio, generation]
-metadata: 
-hermes: 
-
+description: Skill for minimax music playlist
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [minimax, music, playlist, audio, generation]
 ---
 
 **Trigger**: Use when generating personalized music playlists — analyzing music taste, planning tracklists, and generating songs with cover art.

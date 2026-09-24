@@ -1,14 +1,13 @@
 ---
 name: fashion-supply-chain
-description: "Use when managing fashion supply chains."
+description: Use when managing fashion supply chains.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, supply-chain, sourcing, manufacturing]
-    related_skills: [supply-chain-optimization]
 ---
 
 # Fashion Supply Chain

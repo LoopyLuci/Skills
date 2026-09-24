@@ -1,8 +1,13 @@
 ---
 name: docker-compose-patterns
-description: "Use when orchestrating multi-service Docker environments."
-category: docker
-tags: [docker, compose, orchestration, yaml]
+description: Use when orchestrating multi-service Docker environments.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [docker, compose, orchestration, yaml]
 ---
 
 # Docker Compose Patterns

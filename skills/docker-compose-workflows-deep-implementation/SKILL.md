@@ -1,14 +1,13 @@
 ---
 name: docker-compose-workflows-deep-implementation
-description: "Use when applying docker compose workflows implementation."
+description: Use when applying docker compose workflows implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, docker]
-    related_skills: ['docker-compose-workflows']
 ---
 
 # Docker Compose Workflows Deep Implementation

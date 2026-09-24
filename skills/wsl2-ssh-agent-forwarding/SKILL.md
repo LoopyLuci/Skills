@@ -1,9 +1,15 @@
 ---
 name: wsl2-ssh-agent-forwarding
-description: "Use when forwarding SSH agent to WSL2."
-category: software-development
-tags: [wsl2, ssh, agent, forwarding, authentication]
+description: Use when forwarding SSH agent to WSL2.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [wsl2, ssh, agent, forwarding, authentication]
 ---
+
 # WSL2 SSH Agent Forwarding
 
 Forwarding SSH agent from Windows to WSL2.

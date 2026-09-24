@@ -1,14 +1,13 @@
 ---
 name: climate-carbon-offset-best-practices
-description: "Use when applying carbon offsets best practices."
+description: Use when applying carbon offsets best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, offsets, carbon-offset-standards]
-    related_skills: ['']
 ---
 
 # Climate Carbon Offset Best Practices

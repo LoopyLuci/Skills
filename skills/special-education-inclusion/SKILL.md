@@ -2,12 +2,12 @@
 name: special-education-inclusion
 description: IEPs, accommodations, differentiated instruction, and Universal Design for Learning
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["special-ed", "inclusion"]
+    tags: [special-ed, inclusion]
 ---
 
 # Special Education Inclusion

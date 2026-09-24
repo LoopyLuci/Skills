@@ -2,12 +2,12 @@
 name: ux-research-testing
 description: Usability testing, heuristic evaluation, journey mapping, and accessibility audits
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["ux", "research"]
+    tags: [ux, research]
 ---
 
 # Ux Research Testing

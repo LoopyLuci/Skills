@@ -1,14 +1,13 @@
 ---
 name: civil-eng-analysis-troubleshooting
-description: "Use when applying civil analysis troubleshooting."
+description: Use when applying civil analysis troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, civil, analysis, civil-eng-analysis]
-    related_skills: [general]
 ---
 
 # Civil Eng Analysis Troubleshooting

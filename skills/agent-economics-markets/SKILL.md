@@ -1,13 +1,13 @@
 ---
 name: agent-economics-markets
-description: "Use when designing agent economies and market systems."
+description: Use when designing agent economies and market systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [agent-economics, markets, auctions, pricing, resource-allocation, token-economy]
-    related_skills: [agent-negotiation-strategies, multi-agent-collaboration-patterns, agent-evaluation-metrics, agent-cost-optimization]
 ---
 
 # Agent Economics Markets

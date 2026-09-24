@@ -1,13 +1,13 @@
 ---
 name: feature-engineering-automation
-description: "Use when automating feature engineering for ML models."
+description: Use when automating feature engineering for ML models.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [feature-engineering, automated-features, feature-tools, feature-store, feature-selection]
-    related_skills: [ml-pipeline-design, data-augmentation-techniques, embedding-models-patterns, ml-experiment-tracking]
 ---
 
 # Feature Engineering Automation

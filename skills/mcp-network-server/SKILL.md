@@ -1,9 +1,13 @@
 ---
 name: mcp-network-server
-title: MCP Network Server
 description: Use when exposing network tools via Model Context Protocol.
-category: networking
-tags: [mcp, protocol, agent, tools, network, rust]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [mcp, protocol, agent, tools, network, rust]
 ---
 
 # MCP Network Server

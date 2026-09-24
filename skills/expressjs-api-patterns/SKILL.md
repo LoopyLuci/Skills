@@ -1,13 +1,13 @@
 ---
 name: expressjs-api-patterns
-description: "Use when building APIs with Express.js."
+description: Use when building APIs with Express.js.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [express, node, API, middleware, routing, error-handling]
-    related_skills: [api-design-rest-graphql, api-testing-patterns, swagger-openapi-patterns]
+    tags: [express, node, api, middleware, routing, error-handling]
 ---
 
 # Express.js API Patterns

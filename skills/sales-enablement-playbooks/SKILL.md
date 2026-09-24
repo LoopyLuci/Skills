@@ -1,13 +1,13 @@
 ---
 name: sales-enablement-playbooks
-description: "Use when building sales enablement content and playbooks."
+description: Use when building sales enablement content and playbooks.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [sales-enablement, playbooks, objection-handling, battle-cards, sales-training]
-    related_skills: [crm-sales-pipeline, competitive-intelligence-analysis, product-management-roadmap, pricing-strategy-optimization]
 ---
 
 # Sales Enablement Playbooks

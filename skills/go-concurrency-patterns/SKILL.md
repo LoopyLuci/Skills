@@ -1,13 +1,13 @@
 ---
 name: go-concurrency-patterns
-description: "Use when implementing Go concurrency patterns."
+description: Use when implementing Go concurrency patterns.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [go, goroutines, channels, select, sync, concurrency, pipeline]
-    related_skills: [message-queue-patterns, concurrency-parallelism, data-pipeline-streaming]
 ---
 
 # Go Concurrency Patterns

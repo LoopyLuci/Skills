@@ -2,12 +2,12 @@
 name: blockchain-security-auditing
 description: Smart contract auditing, formal verification, and bug bounties
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["security", "auditing"]
+    tags: [security, auditing]
 ---
 
 # Blockchain Security Auditing

@@ -2,12 +2,12 @@
 name: paper-crafts-bookbinding
 description: Paper crafts, card making, and bookbinding
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["paper", "bookbinding"]
+    tags: [paper, bookbinding]
 ---
 
 # Paper Crafts Bookbinding

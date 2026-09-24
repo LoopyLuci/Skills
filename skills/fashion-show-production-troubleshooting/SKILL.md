@@ -1,14 +1,13 @@
 ---
 name: fashion-show-production-troubleshooting
-description: "Use when applying fashion show production troubleshooting."
+description: Use when applying fashion show production troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, events, runway-show-production]
-    related_skills: ['general']
 ---
 
 # Fashion Show Production Troubleshooting

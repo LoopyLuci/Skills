@@ -1,14 +1,13 @@
 ---
 name: figma-design-system-deep-best-practices
-description: "Use when applying figma design system best practices."
+description: Use when applying figma design system best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [design, figma]
-    related_skills: ['figma-design-system']
 ---
 
 # Figma Design System Deep Best Practices

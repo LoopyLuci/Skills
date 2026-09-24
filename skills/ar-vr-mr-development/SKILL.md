@@ -1,14 +1,13 @@
 ---
 name: ar-vr-mr-development
-description: "Use when building AR/VR/MR applications."
+description: Use when building AR/VR/MR applications.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ar-vr, mr, spatial, mixed-reality]
-    related_skills: ['webxr-ar-vr-development']
 ---
 
 # Ar Vr Mr Development

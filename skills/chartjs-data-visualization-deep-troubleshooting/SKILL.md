@@ -1,14 +1,13 @@
 ---
 name: chartjs-data-visualization-deep-troubleshooting
-description: "Use when applying chart.js viz troubleshooting."
+description: Use when applying chart.js viz troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [design, data-viz]
-    related_skills: ['chartjs-data-visualization']
 ---
 
 # Chartjs Data Visualization Deep Troubleshooting

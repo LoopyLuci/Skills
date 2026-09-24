@@ -1,13 +1,13 @@
 ---
 name: product-analytics-instrumentation
-description: "Use when implementing product analytics and user tracking."
+description: Use when implementing product analytics and user tracking.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [product-analytics, user-tracking, events, funnel, retention, cohorts, AARRR]
-    related_skills: [website-analytics-tracking, saas-metrics-reporting, business-metrics-kpis, customer-feedback-surveys]
+    tags: [product-analytics, user-tracking, events, funnel, retention, cohorts, aarrr]
 ---
 
 # Product Analytics Instrumentation

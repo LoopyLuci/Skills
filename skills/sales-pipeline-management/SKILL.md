@@ -1,12 +1,13 @@
 ---
 name: sales-pipeline-management
-description: "Use when managing sales pipelines."
+description: Use when managing sales pipelines.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["sales", "pipeline", "CRM", "stages", "forecasting"]
+    tags: [sales, pipeline, crm, stages, forecasting]
 ---
 
 # Sales Pipeline Management

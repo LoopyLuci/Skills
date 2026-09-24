@@ -1,14 +1,13 @@
 ---
 name: android-apk-cli-build-deep-troubleshooting
-description: "Use when applying android apk cli build troubleshooting."
+description: Use when applying android apk cli build troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mobile, android]
-    related_skills: ['android-apk-cli-build']
 ---
 
 # Android Apk Cli Build Deep Troubleshooting

@@ -2,14 +2,12 @@
 name: multi-provider-ai-integration
 description: Integrate multiple AI providers via live model discovery.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [windows, macos, linux]
+platforms: [any]
 metadata:
   hermes:
     tags: [ai, llm, multi-provider, live-discovery, model-routing, openai, anthropic, openrouter, xai, ollama]
-    category: software-development
-    related_skills: [llama-cpp, huggingface-hub]
 ---
 
 # Multi-Provider AI Integration

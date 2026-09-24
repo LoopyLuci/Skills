@@ -1,14 +1,13 @@
 ---
 name: ceramic-matrix-composites
-description: "Use when working with CMCs."
+description: Use when working with CMCs.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [materials-science, cmc, ceramic-composites, high-temp]
-    related_skills: [general]
 ---
 
 # Ceramic Matrix Composites

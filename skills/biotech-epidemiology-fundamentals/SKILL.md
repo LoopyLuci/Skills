@@ -1,14 +1,13 @@
 ---
 name: biotech-epidemiology-fundamentals
-description: "Use when applying epidemiology fundamentals."
+description: Use when applying epidemiology fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, epidemiology]
-    related_skills: ['']
 ---
 
 # Biotech Epidemiology Fundamentals

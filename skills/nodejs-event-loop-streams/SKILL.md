@@ -1,12 +1,13 @@
 ---
 name: nodejs-event-loop-streams
-description: "Use when implementing Node.js streams."
+description: Use when implementing Node.js streams.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["nodejs", "streams", "event-loop", "backpressure", "pipeline"]
+    tags: [nodejs, streams, event-loop, backpressure, pipeline]
 ---
 
 # Nodejs Event Loop Streams

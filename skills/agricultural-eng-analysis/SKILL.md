@@ -1,14 +1,13 @@
 ---
 name: agricultural-eng-analysis
-description: "Use when for agricultural eng analysis."
+description: Use when for agricultural eng analysis.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, management, general]
-    related_skills: [general]
 ---
 
 # Agricultural Eng Analysis

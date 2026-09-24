@@ -1,14 +1,13 @@
 ---
 name: beauty-skincare-formulation-deep-implementation
-description: "Use when applying skincare formulation implementation."
+description: Use when applying skincare formulation implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [beauty, skincare]
-    related_skills: ['']
 ---
 
 # Beauty Skincare Formulation Deep Implementation

@@ -1,14 +1,13 @@
 ---
 name: charitable-giving-tax-strategy
-description: "Use when planning charitable giving strategies."
+description: Use when planning charitable giving strategies.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [nonprofit, taxation, charitable-giving, tax-planning]
-    related_skills: [general]
 ---
 
 # Charitable Giving Tax Strategy

@@ -1,14 +1,13 @@
 ---
 name: azure-sql-fundamentals
-description: "Use when applying azure sql fundamentals."
+description: Use when applying azure sql fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, azure, sql, database]
-    related_skills: [general]
 ---
 
 # Azure Sql Fundamentals

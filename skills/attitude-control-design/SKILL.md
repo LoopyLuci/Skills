@@ -1,14 +1,13 @@
 ---
 name: attitude-control-design
-description: "Use when designing attitude control systems."
+description: Use when designing attitude control systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [space, attitude-control, adcs, reaction-wheels]
-    related_skills: [general]
 ---
 
 # Attitude Control Design

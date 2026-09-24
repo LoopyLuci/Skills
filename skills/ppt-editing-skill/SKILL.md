@@ -1,8 +1,13 @@
 ---
 name: ppt-editing-skill
 description: Use when editing existing PowerPoint presentations via XML manipulation.
-tags: [pptx, powerpoint, editing, template, xml, python]
-related_skills: [ppt-orchestra-skill, slide-making-skill, content-page-generator]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [pptx, powerpoint, editing, template, xml, python]
 ---
 
 # PPTX Editing Skill

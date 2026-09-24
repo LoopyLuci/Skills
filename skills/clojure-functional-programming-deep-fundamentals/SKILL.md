@@ -1,14 +1,13 @@
 ---
 name: clojure-functional-programming-deep-fundamentals
-description: "Use when applying clojure functional fundamentals."
+description: Use when applying clojure functional fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [language, clojure]
-    related_skills: ['clojure-functional-programming']
 ---
 
 # Clojure Functional Programming Deep Fundamentals

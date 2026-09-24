@@ -1,12 +1,13 @@
 ---
 name: javascript-modern-array-methods
-description: "Use when using JS array methods."
+description: Use when using JS array methods.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["javascript", "arrays", "map", "filter", "reduce", "find"]
+    tags: [javascript, arrays, map, filter, reduce, find]
 ---
 
 # Javascript Modern Array Methods

@@ -1,14 +1,13 @@
 ---
 name: customer-success-retention-deep-best-practices
-description: "Use when applying customer retention best practices."
+description: Use when applying customer retention best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [sales, customer-success-retention]
-    related_skills: ['']
 ---
 
 # Customer Success Retention Deep Best Practices

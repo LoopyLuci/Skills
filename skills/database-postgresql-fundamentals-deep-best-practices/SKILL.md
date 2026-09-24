@@ -1,14 +1,13 @@
 ---
 name: database-postgresql-fundamentals-deep-best-practices
-description: "Use when applying postgresql fundamentals best practices."
+description: Use when applying postgresql fundamentals best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, postgres]
-    related_skills: ['postgres-fundamentals']
 ---
 
 # Database Postgresql Fundamentals Deep Best Practices

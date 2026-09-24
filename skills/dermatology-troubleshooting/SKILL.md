@@ -1,14 +1,13 @@
 ---
 name: dermatology-troubleshooting
-description: "Use when applying dermatology troubleshooting."
+description: Use when applying dermatology troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [healthcare, dermatology, medicine]
-    related_skills: [general]
 ---
 
 # Dermatology Troubleshooting

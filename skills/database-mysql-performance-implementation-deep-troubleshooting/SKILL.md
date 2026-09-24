@@ -1,14 +1,13 @@
 ---
 name: database-mysql-performance-implementation-deep-troubleshooting
-description: "Use when applying mysql performance implementation troub."
+description: Use when applying mysql performance implementation troub.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, mysql]
-    related_skills: ['mysql-optimization-implementation']
 ---
 
 # Database Mysql Performance Implementation Deep Troubleshooting

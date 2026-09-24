@@ -1,14 +1,13 @@
 ---
 name: building-efficiency-troubleshooting
-description: "Use when applying building efficiency troubleshooting."
+description: Use when applying building efficiency troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [energy, building, building-energy-efficiency]
-    related_skills: [general]
 ---
 
 # Building Efficiency Troubleshooting

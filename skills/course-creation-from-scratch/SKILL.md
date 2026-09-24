@@ -1,14 +1,13 @@
 ---
 name: course-creation-from-scratch
-description: "Use when creating courses. Planning through launch."
+description: Use when creating courses. Planning through launch.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [education, course-creation, curriculum, learning-design, online-teaching]
-    related_skills: [online-course-creation, marketing-strategy-framework]
 ---
 
 # Course Creation From Scratch

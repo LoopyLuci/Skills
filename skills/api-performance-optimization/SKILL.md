@@ -1,14 +1,13 @@
 ---
 name: api-performance-optimization
-description: "Use when optimizing API performance."
+description: Use when optimizing API performance.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [api, api-performance, caching, latency]
-    related_skills: ['performance-optimization']
 ---
 
 # Api Performance Optimization

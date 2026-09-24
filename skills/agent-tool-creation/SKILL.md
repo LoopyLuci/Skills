@@ -1,13 +1,13 @@
 ---
 name: agent-tool-creation
-description: "Use when designing and building tools for AI agents."
+description: Use when designing and building tools for AI agents.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [tool-creation, agent-tools, function-calling, tool-schema, agent-integration]
-    related_skills: [tool-augmented-agents, agent-framework-design, mcp-server-development, tool-augmented-models-training]
 ---
 
 # Agent Tool Creation

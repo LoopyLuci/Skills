@@ -2,12 +2,12 @@
 name: technical-writing-documentation
 description: API docs, user guides, knowledge bases, and docs-as-code workflows
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["technical-writing", "docs"]
+    tags: [technical-writing, docs]
 ---
 
 # Technical Writing Documentation

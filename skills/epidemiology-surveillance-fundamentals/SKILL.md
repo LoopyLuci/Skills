@@ -1,14 +1,13 @@
 ---
 name: epidemiology-surveillance-fundamentals
-description: "Use when applying epi surveillance fundamentals."
+description: Use when applying epi surveillance fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [medicine, public-health, epidemiology]
-    related_skills: [general]
 ---
 
 # Epidemiology Surveillance Fundamentals

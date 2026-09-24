@@ -1,14 +1,13 @@
 ---
 name: blog-analytics-interpreter-implementation
-description: "Use when applying blog analytics interpreter implementat."
+description: Use when applying blog analytics interpreter implementat.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, blog-analytics-interpreter]
-    related_skills: ['']
 ---
 
 # Blog Analytics Interpreter Implementation

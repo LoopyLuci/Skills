@@ -1,9 +1,15 @@
 ---
 name: agent-evaluation-metrics
-description: "Use when evaluating AI agent performance."
-category: mlops
-tags: [agents, evaluation, metrics, benchmarking, performance]
+description: Use when evaluating AI agent performance.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [agents, evaluation, metrics, benchmarking, performance]
 ---
+
 # Agent Evaluation Metrics
 
 Measuring and evaluating AI agent performance systematically.

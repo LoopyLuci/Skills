@@ -2,12 +2,12 @@
 name: food-science-product-development
 description: Product formulation, shelf-life testing, sensory evaluation, and scale-up
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["food-science", "r&d"]
+    tags: [food-science, r&d]
 ---
 
 # Food Science Product Development

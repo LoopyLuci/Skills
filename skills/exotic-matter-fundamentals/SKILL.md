@@ -1,14 +1,13 @@
 ---
 name: exotic-matter-fundamentals
-description: "Use when applying exotic matter fundamentals."
+description: Use when applying exotic matter fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [physics, quantum, exotic]
-    related_skills: [general]
 ---
 
 # Exotic Matter Fundamentals

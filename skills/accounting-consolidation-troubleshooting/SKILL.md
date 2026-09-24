@@ -1,14 +1,13 @@
 ---
 name: accounting-consolidation-troubleshooting
-description: "Use when applying consolidation troubleshooting."
+description: Use when applying consolidation troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [accounting, consolidation, finance, multi-entity]
-    related_skills: [general]
 ---
 
 # Accounting Consolidation Troubleshooting

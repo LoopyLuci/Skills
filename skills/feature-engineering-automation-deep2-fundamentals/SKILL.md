@@ -1,14 +1,13 @@
 ---
 name: feature-engineering-automation-deep2-fundamentals
-description: "Use when applying feature engineering automation fundame."
+description: Use when applying feature engineering automation fundame.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, ml-feature-engineering]
-    related_skills: ['feature-engineering-automation']
 ---
 
 # Feature Engineering Automation Deep2 Fundamentals

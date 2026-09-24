@@ -1,14 +1,13 @@
 ---
 name: agent-evaluation-metrics-deep-implementation
-description: "Use when applying agent evaluation metrics implementation."
+description: Use when applying agent evaluation metrics implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agents, testing]
-    related_skills: ['agent-evaluation-metrics']
 ---
 
 # Agent Evaluation Metrics Deep Implementation

@@ -1,6 +1,13 @@
 ---
 name: skill-loading-strategy
 description: Progressively load skills to minimize context token waste.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [skill, loading, strategy]
 ---
 
 # Skill Loading Strategy

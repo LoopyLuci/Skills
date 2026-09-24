@@ -1,14 +1,13 @@
 ---
 name: agent-safety-alignment-deep-implementation
-description: "Use when applying agent safety alignment implementation."
+description: Use when applying agent safety alignment implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agents, safety]
-    related_skills: ['agent-safety-alignment']
 ---
 
 # Agent Safety Alignment Deep Implementation

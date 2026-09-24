@@ -1,14 +1,13 @@
 ---
 name: biomedical-eng-optimization-best-practices
-description: "Use when applying biomedical optimization best practices."
+description: Use when applying biomedical optimization best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, biomedical, optimization]
-    related_skills: [general]
 ---
 
 # Biomedical Eng Optimization Best Practices

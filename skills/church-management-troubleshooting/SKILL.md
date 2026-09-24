@@ -1,14 +1,13 @@
 ---
 name: church-management-troubleshooting
-description: "Use when applying church management troubleshooting."
+description: Use when applying church management troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [spiritual, management]
-    related_skills: ['faith-community-management']
 ---
 
 # Church Management Troubleshooting

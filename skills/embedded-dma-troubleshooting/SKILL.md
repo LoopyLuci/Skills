@@ -1,14 +1,13 @@
 ---
 name: embedded-dma-troubleshooting
-description: "Use when applying dma programming troubleshooting."
+description: Use when applying dma programming troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [embedded, dma, data-transfer, performance]
-    related_skills: [general]
 ---
 
 # Embedded Dma Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: content-marketing-workflow-best-practices
-description: "Use when applying content marketing workflow best practi."
+description: Use when applying content marketing workflow best practi.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, content-marketing-workflow]
-    related_skills: ['']
 ---
 
 # Content Marketing Workflow Best Practices

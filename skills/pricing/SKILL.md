@@ -1,8 +1,13 @@
 ---
 name: pricing
 description: Use when setting or adjusting prices for a product or service
-tags: [pricing, revenue, business-model, monetization]
-related_skills: [mvp, first-customers, grow-sustainably]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [pricing, revenue, business-model, monetization]
 ---
 
 # Pricing

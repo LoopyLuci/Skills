@@ -1,12 +1,13 @@
 ---
 name: android-jetpack-compose
-description: "Use when building UIs with Jetpack Compose."
+description: Use when building UIs with Jetpack Compose.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["android", "compose", "jetpack", "declarative-UI"]
+    tags: [android, compose, jetpack, declarative-ui]
 ---
 
 # Android Jetpack Compose

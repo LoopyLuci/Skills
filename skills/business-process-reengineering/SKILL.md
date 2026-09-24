@@ -1,14 +1,13 @@
 ---
 name: business-process-reengineering
-description: "Use when reengineering business processes."
+description: Use when reengineering business processes.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: ['b', 'p', 'r', ',', ' ', 'r', 'e', 'd', 'e', 's', 'i', 'g', 'n']
-    related_skills: [general]
+    tags: [b, p, r, , ,  , r, e, d, e, s, i, g, n]
 ---
 
 # Business Process Reengineering

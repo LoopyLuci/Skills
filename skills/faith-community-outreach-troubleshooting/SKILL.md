@@ -1,14 +1,13 @@
 ---
 name: faith-community-outreach-troubleshooting
-description: "Use when applying faith community outreach troubleshooting."
+description: Use when applying faith community outreach troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [spiritual, outreach]
-    related_skills: ['faith-community-outreach']
 ---
 
 # Faith Community Outreach Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: aws-cloudfront-fundamentals-deep-troubleshooting
-description: "Use when applying cloudfront fundamentals troubleshooting."
+description: Use when applying cloudfront fundamentals troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, cdn]
-    related_skills: ['aws-cloudfront-fundamentals']
 ---
 
 # Aws Cloudfront Fundamentals Deep Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: computer-vision-objects
-description: "Use when detecting objects in CV."
+description: Use when detecting objects in CV.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [computer-vision, object-detection]
-    related_skills: ['computer-vision-techniques']
 ---
 
 # Computer Vision Objects

@@ -1,14 +1,13 @@
 ---
 name: dask-fundamentals
-description: "Use when applying dask fundamentals."
+description: Use when applying dask fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [python, dask, parallel, big-data]
-    related_skills: [general]
 ---
 
 # Dask Fundamentals

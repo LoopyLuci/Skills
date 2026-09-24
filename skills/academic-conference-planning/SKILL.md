@@ -1,14 +1,13 @@
 ---
 name: academic-conference-planning
-description: "Use when planning academic conferences."
+description: Use when planning academic conferences.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [research, conference-planning, events]
-    related_skills: [general]
 ---
 
 # Academic Conference Planning

@@ -1,14 +1,13 @@
 ---
 name: backend-elixir-impl-fundamentals
-description: "Use when applying backend elixir implementation fundamen."
+description: Use when applying backend elixir implementation fundamen.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, elixir, backend-elixir-implementation]
-    related_skills: [general]
 ---
 
 # Backend Elixir Impl Fundamentals

@@ -1,13 +1,13 @@
 ---
 name: android-audio-device-control
-version: 1.0.0
-author: Hermes
-license: MIT
 description: Control Android audio devices, routing, codecs, volume.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [android, audio, bluetooth, usb, kotlin]
-    related_skills: [android-audio-dsp-equalizer, android-toolchain-provisioning]
 ---
 
 # Android Audio Device Control

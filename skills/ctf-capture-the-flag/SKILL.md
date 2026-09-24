@@ -2,12 +2,12 @@
 name: ctf-capture-the-flag
 description: Jeopardy/AWD CTF formats, crypto challenges, web exploitation, and writeup standards
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["ctf", "competition"]
+    tags: [ctf, competition]
 ---
 
 # Ctf Capture The Flag

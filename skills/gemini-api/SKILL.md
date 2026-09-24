@@ -1,8 +1,13 @@
 ---
 name: gemini-api
 description: Use when using the Gemini API on Agent Platform with Google Gen AI SDK.
-tags: [gemini, api, google-cloud, vertex-ai, sdk, llm, ai]
-related_skills: [gemini-agents-api, gemini-interactions-api, google-cloud-recipe-auth]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [gemini, api, google-cloud, vertex-ai, sdk, llm, ai]
 ---
 
 # Gemini API in Agent Platform

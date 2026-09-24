@@ -1,9 +1,15 @@
 ---
 name: wsl2-filesystem-bridge
-description: "Use when navigating files between Windows and WSL2."
-category: software-development
-tags: [wsl2, filesystem, windows, paths, interoperability]
+description: Use when navigating files between Windows and WSL2.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [wsl2, filesystem, windows, paths, interoperability]
 ---
+
 # WSL2 Filesystem Bridge
 
 Navigating files between Windows and WSL2.

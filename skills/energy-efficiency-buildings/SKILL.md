@@ -2,12 +2,12 @@
 name: energy-efficiency-buildings
 description: Building energy modeling, retrofits, commissioning, and energy codes
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["efficiency", "buildings"]
+    tags: [efficiency, buildings]
 ---
 
 # Energy Efficiency Buildings

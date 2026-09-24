@@ -1,14 +1,13 @@
 ---
 name: edge-orchestration
-description: "Use when orchestrating edge workloads."
+description: Use when orchestrating edge workloads.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [edge-computing, orchestration, kubernetes, k3s]
-    related_skills: ['docker-compose-prod']
 ---
 
 # Edge Orchestration

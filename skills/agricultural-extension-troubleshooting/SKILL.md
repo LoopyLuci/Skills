@@ -1,14 +1,13 @@
 ---
 name: agricultural-extension-troubleshooting
-description: "Use when applying ag extension troubleshooting."
+description: Use when applying ag extension troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agriculture, education, extension]
-    related_skills: [general]
 ---
 
 # Agricultural Extension Troubleshooting

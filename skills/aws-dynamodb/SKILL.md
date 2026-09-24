@@ -1,12 +1,13 @@
 ---
 name: aws-dynamodb
-description: "Use when implementing aws dynamodb."
+description: Use when implementing aws dynamodb.
 version: 1.0.0
-author: "Skill Genesis Model"
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["aws", "dynamodb"]
+    tags: [aws, dynamodb]
 ---
 
 # Aws Dynamodb

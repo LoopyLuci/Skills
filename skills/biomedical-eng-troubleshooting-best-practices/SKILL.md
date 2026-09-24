@@ -1,14 +1,13 @@
 ---
 name: biomedical-eng-troubleshooting-best-practices
-description: "Use when applying biomedical troubleshooting best practi."
+description: Use when applying biomedical troubleshooting best practi.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, biomedical, troubleshooting]
-    related_skills: [general]
 ---
 
 # Biomedical Eng Troubleshooting Best Practices

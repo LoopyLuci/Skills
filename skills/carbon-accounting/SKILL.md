@@ -1,14 +1,13 @@
 ---
 name: carbon-accounting
-description: "Use when doing carbon accounting."
+description: Use when doing carbon accounting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climatetech, carbon-accounting, ghg, scopes]
-    related_skills: ['carbon-accounting-standards']
 ---
 
 # Carbon Accounting

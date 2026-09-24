@@ -1,14 +1,13 @@
 ---
 name: fan-out-pattern
-description: "Use when implementing fan-out."
+description: Use when implementing fan-out.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [architecture, fan-out, pub-sub, messaging]
-    related_skills: [general]
 ---
 
 # Fan Out Pattern

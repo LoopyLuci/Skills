@@ -1,14 +1,13 @@
 ---
 name: docker-troubleshooting-best-practices
-description: "Use when applying docker troubleshooting best practices."
+description: Use when applying docker troubleshooting best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [docker, troubleshooting, docker-troubleshooting]
-    related_skills: [general]
 ---
 
 # Docker Troubleshooting Best Practices

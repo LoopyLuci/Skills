@@ -2,12 +2,12 @@
 name: food-safety-hacccp
 description: HACCP, food safety plans, sanitation, and regulatory compliance
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["food-safety", "haccp"]
+    tags: [food-safety, haccp]
 ---
 
 # Food Safety Hacccp

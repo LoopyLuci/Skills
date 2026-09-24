@@ -1,14 +1,13 @@
 ---
 name: energy-policy-fundamentals
-description: "Use when applying energy policy fundamentals."
+description: Use when applying energy policy fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [energy, policy, energy-policy]
-    related_skills: [general]
 ---
 
 # Energy Policy Fundamentals

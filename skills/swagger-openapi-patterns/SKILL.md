@@ -1,13 +1,13 @@
 ---
 name: swagger-openapi-patterns
-description: "Use when designing APIs with OpenAPI/Swagger."
+description: Use when designing APIs with OpenAPI/Swagger.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [OpenAPI, Swagger, API-design, REST, specification, codegen]
-    related_skills: [api-design-and-documentation, api-testing-patterns, api-rate-limiting, graphql-api-implementation]
+    tags: [openapi, swagger, api-design, rest, specification, codegen]
 ---
 
 # OpenAPI/Swagger Patterns

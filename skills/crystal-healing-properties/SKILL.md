@@ -1,14 +1,13 @@
 ---
 name: crystal-healing-properties
-description: "Use when applying crystal healing."
+description: Use when applying crystal healing.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [esoteric, crystals, healing, metaphysical]
-    related_skills: [general]
 ---
 
 # Crystal Healing Properties

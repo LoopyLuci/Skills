@@ -1,13 +1,13 @@
 ---
 name: kubernetes-pod-design
-description: "Use when designing Kubernetes pod configurations."
+description: Use when designing Kubernetes pod configurations.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [kubernetes, pods, containers, probes, resources, init-containers]
-    related_skills: [kubernetes-deployment, container-security-hardening, gitops-argocd-flux]
 ---
 
 # Kubernetes Pod Design

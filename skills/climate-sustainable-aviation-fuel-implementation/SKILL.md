@@ -1,14 +1,13 @@
 ---
 name: climate-sustainable-aviation-fuel-implementation
-description: "Use when applying climate sustainable aviation fuel impl."
+description: Use when applying climate sustainable aviation fuel impl.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, environment]
-    related_skills: ['']
 ---
 
 # Climate Sustainable Aviation Fuel Implementation

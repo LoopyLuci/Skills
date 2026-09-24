@@ -1,14 +1,13 @@
 ---
 name: azure-iam-fundamentals
-description: "Use when applying azure iam fundamentals."
+description: Use when applying azure iam fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, azure, iam, rbac]
-    related_skills: [general]
 ---
 
 # Azure Iam Fundamentals

@@ -1,14 +1,13 @@
 ---
 name: cargo-windows-workflow-deep-best-practices
-description: "Use when applying cargo windows workflow best practices."
+description: Use when applying cargo windows workflow best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [language, rust, windows]
-    related_skills: ['cargo-windows-workflow']
 ---
 
 # Cargo Windows Workflow Deep Best Practices

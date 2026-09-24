@@ -1,14 +1,13 @@
 ---
 name: civil-eng-strategy-implementation
-description: "Use when applying civil strategy implementation."
+description: Use when applying civil strategy implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, civil, strategy]
-    related_skills: [general]
 ---
 
 # Civil Eng Strategy Implementation

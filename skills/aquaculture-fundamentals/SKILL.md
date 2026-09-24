@@ -1,14 +1,13 @@
 ---
 name: aquaculture-fundamentals
-description: "Use when applying aquaculture fundamentals."
+description: Use when applying aquaculture fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [food, agriculture, aquaculture]
-    related_skills: [general]
 ---
 
 # Aquaculture Fundamentals

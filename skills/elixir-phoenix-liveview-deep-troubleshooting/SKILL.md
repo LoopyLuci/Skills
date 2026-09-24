@@ -1,14 +1,13 @@
 ---
 name: elixir-phoenix-liveview-deep-troubleshooting
-description: "Use when applying elixir liveview troubleshooting."
+description: Use when applying elixir liveview troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [language, elixir]
-    related_skills: ['elixir-phoenix-liveview']
 ---
 
 # Elixir Phoenix Liveview Deep Troubleshooting

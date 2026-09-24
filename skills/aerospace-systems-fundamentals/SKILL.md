@@ -1,14 +1,13 @@
 ---
 name: aerospace-systems-fundamentals
-description: "Use when applying aerospace systems fundamentals."
+description: Use when applying aerospace systems fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, aerospace, aerospace-systems-engineering]
-    related_skills: [general]
 ---
 
 # Aerospace Systems Fundamentals

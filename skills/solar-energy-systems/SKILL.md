@@ -2,12 +2,12 @@
 name: solar-energy-systems
 description: PV design, inverters, net metering, utility-scale, and solar economics
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["solar", "pv"]
+    tags: [solar, pv]
 ---
 
 # Solar Energy Systems

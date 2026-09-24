@@ -1,13 +1,13 @@
 ---
 name: performance-budgeting-web
-description: "Use when setting performance budgets for web projects."
+description: Use when setting performance budgets for web projects.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [performance-budget, web-perf, Lighthouse, Core-Web-Vitals, bundle-size]
-    related_skills: [responsive-web-design-patterns, web-accessibility-practices, frontend-bootstrap, caching-strategies]
+    tags: [performance-budget, web-perf, lighthouse, core-web-vitals, bundle-size]
 ---
 
 # Performance Budgeting for Web

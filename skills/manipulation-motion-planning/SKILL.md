@@ -2,12 +2,12 @@
 name: manipulation-motion-planning
 description: MoveIt, IK, trajectory planning, grasp planning, and collision checking
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["manipulation", "moveit"]
+    tags: [manipulation, moveit]
 ---
 
 # Manipulation Motion Planning

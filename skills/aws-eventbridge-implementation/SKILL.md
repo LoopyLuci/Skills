@@ -1,14 +1,13 @@
 ---
 name: aws-eventbridge-implementation
-description: "Use when applying aws eventbridge implementation."
+description: Use when applying aws eventbridge implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, eventbridge, events, event-bus]
-    related_skills: [general]
 ---
 
 # Aws Eventbridge Implementation

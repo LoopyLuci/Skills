@@ -1,14 +1,13 @@
 ---
 name: climate-carbon-intensity-best-practices
-description: "Use when applying carbon intensity metrics best practices."
+description: Use when applying carbon intensity metrics best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, metrics, carbon-intensity-metrics]
-    related_skills: ['']
 ---
 
 # Climate Carbon Intensity Best Practices

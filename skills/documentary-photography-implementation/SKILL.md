@@ -1,14 +1,13 @@
 ---
 name: documentary-photography-implementation
-description: "Use when applying documentary photography implementation."
+description: Use when applying documentary photography implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [media, photo, documentary]
-    related_skills: [general]
 ---
 
 # Documentary Photography Implementation

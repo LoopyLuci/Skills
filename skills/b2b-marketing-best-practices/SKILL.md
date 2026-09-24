@@ -1,14 +1,13 @@
 ---
 name: b2b-marketing-best-practices
-description: "Use when applying b2b marketing best practices."
+description: Use when applying b2b marketing best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, b2b, b2b-marketing]
-    related_skills: [general]
 ---
 
 # B2b Marketing Best Practices

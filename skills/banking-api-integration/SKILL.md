@@ -1,14 +1,13 @@
 ---
 name: banking-api-integration
-description: "Use when integrating banking APIs. PSD2, Open Banking."
+description: Use when integrating banking APIs. PSD2, Open Banking.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [banking, fintech, api-integration, open-banking, psd2]
-    related_skills: [fintech-payment-systems, fraud-detection-ml]
 ---
 
 # Banking Api Integration

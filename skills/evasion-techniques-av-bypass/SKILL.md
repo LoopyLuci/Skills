@@ -1,13 +1,13 @@
 ---
 name: evasion-techniques-av-bypass
-description: "Use when bypassing AV/EDR detection."
+description: Use when bypassing AV/EDR detection.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [AV-bypass, EDR-evasion, shellcode, process-injection, syscall, XOR-encrypt]
-    related_skills: [exploit-development-basics, command-control-c2-infrastructure, binary-exploitation-rop, red-team-operations]
+    tags: [av-bypass, edr-evasion, shellcode, process-injection, syscall, xor-encrypt]
 ---
 
 # Evasion Techniques and AV Bypass

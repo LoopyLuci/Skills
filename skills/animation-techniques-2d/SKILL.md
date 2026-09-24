@@ -1,14 +1,13 @@
 ---
 name: animation-techniques-2d
-description: "Use when creating 2D animation."
+description: Use when creating 2D animation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [animation, 2d-animation, frame-by-frame]
-    related_skills: ['animation-web-patterns']
 ---
 
 # Animation Techniques 2d

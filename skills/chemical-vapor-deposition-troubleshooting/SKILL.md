@@ -1,14 +1,13 @@
 ---
 name: chemical-vapor-deposition-troubleshooting
-description: "Use when applying cvd troubleshooting."
+description: Use when applying cvd troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [materials, semiconductor, cvd]
-    related_skills: [general]
 ---
 
 # Chemical Vapor Deposition Troubleshooting

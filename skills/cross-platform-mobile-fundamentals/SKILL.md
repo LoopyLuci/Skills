@@ -1,14 +1,13 @@
 ---
 name: cross-platform-mobile-fundamentals
-description: "Use when applying cross platform mobile fundamentals."
+description: Use when applying cross platform mobile fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mobile, cross-platform, react-native, flutter]
-    related_skills: [general]
 ---
 
 # Cross Platform Mobile Fundamentals

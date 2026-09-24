@@ -1,14 +1,13 @@
 ---
 name: embedded-mbedtls-best-practices
-description: "Use when applying mbed tls best practices."
+description: Use when applying mbed tls best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [embedded, crypto, mbedtls, tls]
-    related_skills: [general]
 ---
 
 # Embedded Mbedtls Best Practices

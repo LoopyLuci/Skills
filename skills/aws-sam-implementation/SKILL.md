@@ -1,14 +1,13 @@
 ---
 name: aws-sam-implementation
-description: "Use when applying aws sam implementation."
+description: Use when applying aws sam implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, sam, serverless, cloudformation]
-    related_skills: [general]
 ---
 
 # Aws Sam Implementation

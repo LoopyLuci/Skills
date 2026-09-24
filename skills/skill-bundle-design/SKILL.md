@@ -1,6 +1,13 @@
 ---
 name: skill-bundle-design
 description: Design skill bundles for recurring multi-skill workflows.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [skill, bundle, design]
 ---
 
 # Skill Bundle Design

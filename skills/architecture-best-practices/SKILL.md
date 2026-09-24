@@ -1,14 +1,13 @@
 ---
 name: architecture-best-practices
-description: "Use when applying architecture best practices."
+description: Use when applying architecture best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [creative, arch, architecture-fundamentals]
-    related_skills: [general]
 ---
 
 # Architecture Best Practices

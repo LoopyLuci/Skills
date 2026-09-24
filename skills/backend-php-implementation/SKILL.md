@@ -1,14 +1,13 @@
 ---
 name: backend-php-implementation
-description: "Use when applying php backend implementation."
+description: Use when applying php backend implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, php, laravel, symfony]
-    related_skills: [general]
 ---
 
 # Backend Php Implementation

@@ -1,12 +1,13 @@
 ---
 name: prometheus-metrics-collection
-description: "Use when collecting metrics with Prometheus."
+description: Use when collecting metrics with Prometheus.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["prometheus", "metrics", "exporters", "recording-rules"]
+    tags: [prometheus, metrics, exporters, recording-rules]
 ---
 
 # Prometheus Metrics Collection

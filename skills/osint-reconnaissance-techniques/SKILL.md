@@ -1,13 +1,13 @@
 ---
 name: osint-reconnaissance-techniques
-description: "Use when performing OSINT and reconnaissance."
+description: Use when performing OSINT and reconnaissance.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [OSINT, reconnaissance, passive-recon, subdomain-enum, Google-dorking, Shodan]
-    related_skills: [bug-bounty-methodology, network-scanning-enumeration, penetration-testing-methodology, social-engineering-phishing]
+    tags: [osint, reconnaissance, passive-recon, subdomain-enum, google-dorking, shodan]
 ---
 
 # OSINT and Reconnaissance Techniques

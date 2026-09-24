@@ -1,14 +1,13 @@
 ---
 name: email-marketing-reporting-dashboard
-description: "Use when building email dashboards."
+description: Use when building email dashboards.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, marketing, dashboard, analytics]
-    related_skills: [general]
 ---
 
 # Email Marketing Reporting Dashboard

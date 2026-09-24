@@ -1,14 +1,13 @@
 ---
 name: agent-ensembles-voting-deep-fundamentals
-description: "Use when applying agent ensemble voting fundamentals."
+description: Use when applying agent ensemble voting fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agents, ensembles]
-    related_skills: ['agent-ensembles-voting']
 ---
 
 # Agent Ensembles Voting Deep Fundamentals

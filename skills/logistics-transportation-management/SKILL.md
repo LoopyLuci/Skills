@@ -2,12 +2,12 @@
 name: logistics-transportation-management
 description: Carrier management, freight modes, 3PL/4PL, and TMS
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["logistics", "transportation"]
+    tags: [logistics, transportation]
 ---
 
 # Logistics Transportation Management

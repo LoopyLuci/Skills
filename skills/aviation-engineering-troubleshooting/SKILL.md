@@ -1,14 +1,13 @@
 ---
 name: aviation-engineering-troubleshooting
-description: "Use when applying aviation engineering troubleshooting."
+description: Use when applying aviation engineering troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, aerospace, aerospace-eng-design]
-    related_skills: [general]
 ---
 
 # Aviation Engineering Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: biotech-eng-analysis-best-practices
-description: "Use when applying biotech analysis best practices."
+description: Use when applying biotech analysis best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, engineering, biotech-eng-analysis]
-    related_skills: [general]
 ---
 
 # Biotech Eng Analysis Best Practices

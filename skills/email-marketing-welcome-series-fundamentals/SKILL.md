@@ -1,14 +1,13 @@
 ---
 name: email-marketing-welcome-series-fundamentals
-description: "Use when applying welcome email series fundamentals."
+description: Use when applying welcome email series fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, onboarding, welcome-series]
-    related_skills: [general]
 ---
 
 # Email Marketing Welcome Series Fundamentals

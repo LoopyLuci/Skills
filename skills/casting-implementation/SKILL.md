@@ -1,14 +1,13 @@
 ---
 name: casting-implementation
-description: "Use when applying casting implementation."
+description: Use when applying casting implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mfg, casting, die-casting]
-    related_skills: [general]
 ---
 
 # Casting Implementation

@@ -1,13 +1,13 @@
 ---
 name: meta-learning-few-shot
-description: "Use when implementing meta-learning and few-shot learning."
+description: Use when implementing meta-learning and few-shot learning.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [meta-learning, few-shot, MAML, prototypical, pytorch]
-    related_skills: [self-supervised-learning, transfer-learning, custom-training-loops, llm-fine-tuning-lora]
+    tags: [meta-learning, few-shot, maml, prototypical, pytorch]
 ---
 
 # Meta Learning Few Shot

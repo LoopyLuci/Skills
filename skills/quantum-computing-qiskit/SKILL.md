@@ -1,13 +1,13 @@
 ---
 name: quantum-computing-qiskit
-description: "Use when implementing quantum algorithms with Qiskit."
+description: Use when implementing quantum algorithms with Qiskit.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [quantum-computing, Qiskit, quantum-algorithms, qubits, gates, circuits]
-    related_skills: [algorithm-design-techniques, cryptography-implementation-patterns, compiler-interpreter-basics]
+    tags: [quantum-computing, qiskit, quantum-algorithms, qubits, gates, circuits]
 ---
 
 # Quantum Computing with Qiskit

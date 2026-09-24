@@ -1,14 +1,13 @@
 ---
 name: digital-transformation-troubleshooting
-description: "Use when applying digital transformation troubleshooting."
+description: Use when applying digital transformation troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [consulting, digital, digital-transformation]
-    related_skills: [general]
 ---
 
 # Digital Transformation Troubleshooting

@@ -1,6 +1,13 @@
 ---
 name: telegram-delivery-troubleshooting
-description: "Fix Telegram file delivery when MEDIA protocol fails to send"
+description: Fix Telegram file delivery when MEDIA protocol fails to send
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [telegram, delivery, troubleshooting]
 ---
 
 # Telegram Delivery Troubleshooting

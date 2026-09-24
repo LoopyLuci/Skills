@@ -2,12 +2,12 @@
 name: robot-perception-vision
 description: Camera calibration, object detection, point cloud processing, and sensor fusion
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["perception", "vision"]
+    tags: [perception, vision]
 ---
 
 # Robot Perception Vision

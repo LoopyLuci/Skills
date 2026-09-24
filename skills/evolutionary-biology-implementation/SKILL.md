@@ -1,14 +1,13 @@
 ---
 name: evolutionary-biology-implementation
-description: "Use when implementing evolutionary biology projects."
+description: Use when implementing evolutionary biology projects.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [evolutionary-biology, evolution, genetics]
-    related_skills: [general]
 ---
 
 # Evolutionary Biology Implementation

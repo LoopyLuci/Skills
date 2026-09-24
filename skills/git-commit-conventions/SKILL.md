@@ -1,6 +1,13 @@
 ---
 name: git-commit-conventions
 description: Write conventional, searchable commit messages with types.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [git, commit, conventions]
 ---
 
 # Git Commit Conventions

@@ -2,12 +2,12 @@
 name: wellness-spa-retreats
 description: Wellness travel, spa retreats, mindfulness, and health tourism
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["wellness", "retreats"]
+    tags: [wellness, retreats]
 ---
 
 # Wellness Spa Retreats

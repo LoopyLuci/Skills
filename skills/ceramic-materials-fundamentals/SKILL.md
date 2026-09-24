@@ -1,14 +1,13 @@
 ---
 name: ceramic-materials-fundamentals
-description: "Use when applying ceramic materials fundamentals."
+description: Use when applying ceramic materials fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [materials, ceramic, ceramic-materials-science]
-    related_skills: [general]
 ---
 
 # Ceramic Materials Fundamentals

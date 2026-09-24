@@ -1,9 +1,15 @@
 ---
 name: python-advanced-patterns
-description: "Use when writing advanced Python: async, decorators, metaprog."
-category: mlops
-tags: [python, advanced, async, decorators, metaprogramming]
+description: Use when writing advanced Python: async, decorators, metaprog.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [python, advanced, async, decorators, metaprogramming]
 ---
+
 # Python Advanced Patterns
 
 Advanced Python: async/await, decorators, context managers, metaprogramming, descriptors.

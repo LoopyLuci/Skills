@@ -1,14 +1,13 @@
 ---
 name: chip-dfm-implementation
-description: "Use when applying chip dfm implementation."
+description: Use when applying chip dfm implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [semiconductor, dfm, design-for-manufacturing]
-    related_skills: ['general']
 ---
 
 # Chip Dfm Implementation

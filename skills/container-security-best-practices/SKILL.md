@@ -1,14 +1,13 @@
 ---
 name: container-security-best-practices
-description: "Use when for container security best practices."
+description: Use when for container security best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, containers, docker, kubernetes]
-    related_skills: [general]
 ---
 
 # Container Security Best Practices

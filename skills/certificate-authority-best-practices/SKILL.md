@@ -1,14 +1,13 @@
 ---
 name: certificate-authority-best-practices
-description: "Use when applying certificate authority best practices."
+description: Use when applying certificate authority best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, ca, certificates, tls]
-    related_skills: [general]
 ---
 
 # Certificate Authority Best Practices

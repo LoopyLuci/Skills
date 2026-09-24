@@ -1,13 +1,13 @@
 ---
 name: ddos-mitigation-strategies
-description: "Use when implementing DDoS protection and mitigation."
+description: Use when implementing DDoS protection and mitigation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [ddos, mitigation, protection, volumetric, scrubbing, rate-limiting]
-    related_skills: [waf-web-application-firewall, security-incident-response, network-ids-ips-patterns, bgp-routing-patterns]
 ---
 
 # Ddos Mitigation Strategies

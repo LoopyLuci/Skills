@@ -1,14 +1,13 @@
 ---
 name: creative-writing-fundamentals
-description: "Use when applying creative writing fundamentals."
+description: Use when applying creative writing fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [writing, creative, creative-writing]
-    related_skills: [general]
 ---
 
 # Creative Writing Fundamentals

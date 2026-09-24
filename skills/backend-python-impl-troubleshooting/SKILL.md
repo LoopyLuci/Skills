@@ -1,14 +1,13 @@
 ---
 name: backend-python-impl-troubleshooting
-description: "Use when applying backend python implementation troubles."
+description: Use when applying backend python implementation troubles.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, python, backend-python-implementation]
-    related_skills: [general]
 ---
 
 # Backend Python Impl Troubleshooting

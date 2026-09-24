@@ -1,14 +1,13 @@
 ---
 name: django-testing-implementation
-description: "Use when applying django testing implementation."
+description: Use when applying django testing implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, django, testing, pytest]
-    related_skills: [general]
 ---
 
 # Django Testing Implementation

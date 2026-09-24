@@ -1,8 +1,13 @@
 ---
 name: prototype
 description: Use when building throwaway prototypes to answer specific design questions
-tags: [prototyping, experimentation, design, exploration, quick]
-related_skills: [to-spec, spike, design-an-interface]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [prototyping, experimentation, design, exploration, quick]
 ---
 
 # Prototype

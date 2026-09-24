@@ -1,14 +1,13 @@
 ---
 name: agent-cost-optimization-deep-troubleshooting
-description: "Use when applying agent cost optimization troubleshooting."
+description: Use when applying agent cost optimization troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agents, cost]
-    related_skills: ['agent-cost-optimization']
 ---
 
 # Agent Cost Optimization Deep Troubleshooting

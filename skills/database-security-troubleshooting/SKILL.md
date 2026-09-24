@@ -1,14 +1,13 @@
 ---
 name: database-security-troubleshooting
-description: "Use when for database security troubleshooting."
+description: Use when for database security troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, security, encryption, access-control]
-    related_skills: [general]
 ---
 
 # Database Security Troubleshooting

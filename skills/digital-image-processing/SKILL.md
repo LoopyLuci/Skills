@@ -1,14 +1,13 @@
 ---
 name: digital-image-processing
-description: "Use when processing digital images."
+description: Use when processing digital images.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [media, image-processing, filters]
-    related_skills: [general]
 ---
 
 # Digital Image Processing

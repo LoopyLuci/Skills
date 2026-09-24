@@ -1,14 +1,13 @@
 ---
 name: feature-store-optimization-deep-troubleshooting
-description: "Use when applying feature store optimization troubleshoo."
+description: Use when applying feature store optimization troubleshoo.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, data-science]
-    related_skills: ['feature-store-optimization']
 ---
 
 # Feature Store Optimization Deep Troubleshooting

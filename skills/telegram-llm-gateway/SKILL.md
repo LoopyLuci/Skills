@@ -1,6 +1,13 @@
 ---
 name: telegram-llm-gateway
-description: "Use Telegram as frontend for LLM queries via Hermes agent"
+description: Use Telegram as frontend for LLM queries via Hermes agent
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [telegram, llm, gateway]
 ---
 
 # Telegram LLM Gateway

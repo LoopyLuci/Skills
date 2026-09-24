@@ -2,12 +2,12 @@
 name: sociology-research
 description: Qualitative/quantitative methods, social theory, and survey design
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["sociology", "research"]
+    tags: [sociology, research]
 ---
 
 # Sociology Research

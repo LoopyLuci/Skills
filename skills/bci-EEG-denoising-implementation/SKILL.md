@@ -1,14 +1,13 @@
 ---
 name: bci-EEG-denoising-implementation
-description: "Use when applying bci eeg denoising implementation."
+description: Use when applying bci eeg denoising implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neuro, bci, brain-computer-interface-applications]
-    related_skills: ['']
 ---
 
 # Bci Eeg Denoising Implementation

@@ -1,14 +1,13 @@
 ---
 name: construction-waste-reduction-troubleshooting
-description: "Use when applying construction waste reduction troublesh."
+description: Use when applying construction waste reduction troublesh.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [waste, construction]
-    related_skills: ['general']
 ---
 
 # Construction Waste Reduction Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: embedded-systems-design-implementation
-description: "Use when applying embedded systems design implementation."
+description: Use when applying embedded systems design implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [electronics, embedded, embedded-systems-design]
-    related_skills: [general]
 ---
 
 # Embedded Systems Design Implementation

@@ -1,14 +1,13 @@
 ---
 name: backend-go-impl-implementation
-description: "Use when applying backend go implementation implementation."
+description: Use when applying backend go implementation implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, go, backend-go-implementation]
-    related_skills: [general]
 ---
 
 # Backend Go Impl Implementation

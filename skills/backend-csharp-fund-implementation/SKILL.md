@@ -1,14 +1,13 @@
 ---
 name: backend-csharp-fund-implementation
-description: "Use when applying backend c# fundamentals implementation."
+description: Use when applying backend c# fundamentals implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, csharp, backend-csharp-fundamentals]
-    related_skills: [general]
 ---
 
 # Backend Csharp Fund Implementation

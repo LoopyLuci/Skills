@@ -1,13 +1,13 @@
 ---
 name: debugging-techniques-advanced
-description: "Use when doing advanced debugging and root cause analysis."
+description: Use when doing advanced debugging and root cause analysis.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [debugging, reverse-debugging, rr, gdb, post-mortem, tracing]
-    related_skills: [systematic-debugging, advanced-version-control-git, performance-optimization, node-inspect-debugger]
 ---
 
 # Debugging Techniques Advanced

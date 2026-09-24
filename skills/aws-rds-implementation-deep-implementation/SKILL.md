@@ -1,14 +1,13 @@
 ---
 name: aws-rds-implementation-deep-implementation
-description: "Use when applying aws rds implementation implementation."
+description: Use when applying aws rds implementation implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, rds]
-    related_skills: ['aws-rds-implementation']
 ---
 
 # Aws Rds Implementation Deep Implementation

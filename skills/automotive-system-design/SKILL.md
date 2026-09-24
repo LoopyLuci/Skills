@@ -1,14 +1,13 @@
 ---
 name: automotive-system-design
-description: "Use when designing automotive systems."
+description: Use when designing automotive systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [automotive, system-design, engineering, architecture]
-    related_skills: [general]
 ---
 
 # Automotive System Design

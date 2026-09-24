@@ -1,13 +1,13 @@
 ---
 name: upsell-cross-sell-strategies
-description: "Use when implementing upsell and cross-sell strategies."
+description: Use when implementing upsell and cross-sell strategies.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [upsell, cross-sell, expansion-revenue, account-growth, product-bundles]
-    related_skills: [customer-success-retention, product-led-growth, sales-enablement-playbooks, crm-sales-pipeline]
 ---
 
 # Upsell Cross Sell Strategies

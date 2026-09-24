@@ -1,14 +1,13 @@
 ---
 name: adverse-event-reporting-fundamentals
-description: "Use when applying ae reporting fundamentals."
+description: Use when applying ae reporting fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, pharma, pharmacovigilance]
-    related_skills: [general]
 ---
 
 # Adverse Event Reporting Fundamentals

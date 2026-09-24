@@ -1,14 +1,13 @@
 ---
 name: causal-inference-troubleshooting
-description: "Use when troubleshooting causal inference."
+description: Use when troubleshooting causal inference.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, causal-inference, causality]
-    related_skills: [general]
 ---
 
 # Causal Inference Troubleshooting

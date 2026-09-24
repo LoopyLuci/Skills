@@ -1,14 +1,13 @@
 ---
 name: database-postgresql-partitioning-best-practices--fundamentals
-description: "Use when applying postgresql partitioning fundamentals."
+description: Use when applying postgresql partitioning fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, postgres]
-    related_skills: ['postgres-partitioning-best-practices']
 ---
 
 # Database Postgresql Partitioning Best Practices Fundamentals

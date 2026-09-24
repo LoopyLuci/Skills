@@ -1,14 +1,13 @@
 ---
 name: dti-best-practices
-description: "Use when applying dti best practices."
+description: Use when applying dti best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neurotech, imaging, dti]
-    related_skills: [general]
 ---
 
 # Dti Best Practices

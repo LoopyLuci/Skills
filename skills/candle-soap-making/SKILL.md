@@ -2,12 +2,12 @@
 name: candle-soap-making
 description: Candle making, soap making, and natural product formulation
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["candles", "soap"]
+    tags: [candles, soap]
 ---
 
 # Candle Soap Making

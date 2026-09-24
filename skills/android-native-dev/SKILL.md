@@ -1,8 +1,13 @@
 ---
 name: android-native-dev
 description: Use when developing Android native apps with Kotlin, Compose, and Material Design 3.
-tags: [android, kotlin, jetpack-compose, material-design, mobile-development]
-related_skills: [fullstack-dev-api-design, fullstack-dev-db-schema, google-mobile-ads-get-started]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [android, kotlin, jetpack-compose, material-design, mobile-development]
 ---
 
 # Android Native Development

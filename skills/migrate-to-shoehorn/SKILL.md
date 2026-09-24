@@ -1,8 +1,13 @@
 ---
 name: migrate-to-shoehorn
 description: Use when migrating test files from 'as' assertions to @total-typescript/shoehorn
-tags: [TypeScript, testing, migration, shoehorn, type-safety]
-related_skills: [migrate-to-shoehorn, code-review]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [typescript, testing, migration, shoehorn, type-safety]
 ---
 
 # Migrate To Shoehorn

@@ -1,14 +1,13 @@
 ---
 name: fashion-model-management-deep-fundamentals
-description: "Use when applying model management fundamentals."
+description: Use when applying model management fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [beauty, models]
-    related_skills: ['']
 ---
 
 # Fashion Model Management Deep Fundamentals

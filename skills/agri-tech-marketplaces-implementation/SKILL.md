@@ -1,14 +1,13 @@
 ---
 name: agri-tech-marketplaces-implementation
-description: "Use when applying agri marketplaces implementation."
+description: Use when applying agri marketplaces implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agri, marketplace, agri-marketplaces]
-    related_skills: ['']
 ---
 
 # Agri Tech Marketplaces Implementation

@@ -1,14 +1,13 @@
 ---
 name: email-marketing-drip-troubleshooting
-description: "Use when applying email drip campaigns troubleshooting."
+description: Use when applying email drip campaigns troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, automation, drip-campaigns]
-    related_skills: [general]
 ---
 
 # Email Marketing Drip Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: biochemistry-design
-description: "Use when designing biochemistry solutions."
+description: Use when designing biochemistry solutions.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biochemistry, proteins, enzymes, metabolism]
-    related_skills: [general]
 ---
 
 # Biochemistry Design

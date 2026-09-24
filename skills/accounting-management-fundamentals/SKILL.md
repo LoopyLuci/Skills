@@ -1,14 +1,13 @@
 ---
 name: accounting-management-fundamentals
-description: "Use when applying management accounting fundamentals."
+description: Use when applying management accounting fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [accounting, finance, management, accounting-management]
-    related_skills: [general]
 ---
 
 # Accounting Management Fundamentals

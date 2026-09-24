@@ -1,14 +1,13 @@
 ---
 name: agri-tech-vertical-farming-fundamentals
-description: "Use when applying vertical farming fundamentals."
+description: Use when applying vertical farming fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agri, vertical, vertical-farming]
-    related_skills: ['']
 ---
 
 # Agri Tech Vertical Farming Fundamentals

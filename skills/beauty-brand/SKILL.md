@@ -1,14 +1,13 @@
 ---
 name: beauty-brand
-description: "Use when building beauty brands."
+description: Use when building beauty brands.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [beauty, brand, beauty-brand-strategy]
-    related_skills: [general]
 ---
 
 # Beauty Brand

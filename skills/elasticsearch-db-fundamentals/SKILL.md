@@ -1,14 +1,13 @@
 ---
 name: elasticsearch-db-fundamentals
-description: "Use when for elasticsearch fundamentals."
+description: Use when for elasticsearch fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, elasticsearch, search, lucene]
-    related_skills: [general]
 ---
 
 # Elasticsearch Db Fundamentals

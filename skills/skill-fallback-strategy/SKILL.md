@@ -1,6 +1,13 @@
 ---
 name: skill-fallback-strategy
 description: Recover when no skill matches or the loaded one fails.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [skill, fallback, strategy]
 ---
 
 # Skill Fallback Strategy

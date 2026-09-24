@@ -2,12 +2,12 @@
 name: community-organizing-advocacy
 description: Grassroots organizing, coalition building, policy advocacy, and civic engagement
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["organizing", "advocacy"]
+    tags: [organizing, advocacy]
 ---
 
 # Community Organizing Advocacy

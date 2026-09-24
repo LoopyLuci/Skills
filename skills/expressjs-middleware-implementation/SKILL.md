@@ -1,14 +1,13 @@
 ---
 name: expressjs-middleware-implementation
-description: "Use when applying express.js middleware implementation."
+description: Use when applying express.js middleware implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, expressjs, middleware, nodejs]
-    related_skills: [general]
 ---
 
 # Expressjs Middleware Implementation

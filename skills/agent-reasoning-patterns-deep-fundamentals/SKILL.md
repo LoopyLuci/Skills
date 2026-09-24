@@ -1,14 +1,13 @@
 ---
 name: agent-reasoning-patterns-deep-fundamentals
-description: "Use when applying agent reasoning patterns fundamentals."
+description: Use when applying agent reasoning patterns fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agents, reasoning]
-    related_skills: ['agent-reasoning-patterns']
 ---
 
 # Agent Reasoning Patterns Deep Fundamentals

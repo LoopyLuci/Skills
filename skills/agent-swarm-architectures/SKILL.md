@@ -1,9 +1,15 @@
 ---
 name: agent-swarm-architectures
-description: "Use when designing agent swarm topology and communication."
-category: mlops
-tags: [agents, swarms, architecture, topology, communication]
+description: Use when designing agent swarm topology and communication.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [agents, swarms, architecture, topology, communication]
 ---
+
 # Agent Swarm Architectures
 
 Designing topology, communication, and coordination patterns for agent swarms.

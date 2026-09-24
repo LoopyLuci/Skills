@@ -1,14 +1,13 @@
 ---
 name: embedded-zephyr-implementation
-description: "Use when applying zephyr rtos implementation."
+description: Use when applying zephyr rtos implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [embedded, zephyr, rtos, iot]
-    related_skills: [general]
 ---
 
 # Embedded Zephyr Implementation

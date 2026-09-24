@@ -1,14 +1,13 @@
 ---
 name: crypto-tokenomics-implementation
-description: "Use when applying token economics design implementation."
+description: Use when applying token economics design implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [crypto, tokenomics, tokenomics-design]
-    related_skills: ['']
 ---
 
 # Crypto Tokenomics Implementation

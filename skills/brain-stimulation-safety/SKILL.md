@@ -1,14 +1,13 @@
 ---
 name: brain-stimulation-safety
-description: "Use when ensuring brain stimulation safety."
+description: Use when ensuring brain stimulation safety.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neurotech, brain-stimulation, safety, tms, tdcs]
-    related_skills: ['neurotech-clinical-trials']
 ---
 
 # Brain Stimulation Safety

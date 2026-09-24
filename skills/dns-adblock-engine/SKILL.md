@@ -1,9 +1,13 @@
 ---
 name: dns-adblock-engine
-title: DNS Ad-Blocking Engine
 description: Use when building DNS ad-blocking with blocklist matching.
-category: networking
-tags: [dns, adblock, hickory, rust, blocklist, filtering]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [dns, adblock, hickory, rust, blocklist, filtering]
 ---
 
 # DNS Ad-Blocking Engine

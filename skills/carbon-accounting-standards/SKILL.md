@@ -1,14 +1,13 @@
 ---
 name: carbon-accounting-standards
-description: "Use when doing carbon accounting. GHG, scopes, reporting."
+description: Use when doing carbon accounting. GHG, scopes, reporting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climatetech, carbon-accounting, ghg-protocol, scope-123]
-    related_skills: [climate-risk-assessment, sustainability-reporting]
 ---
 
 # Carbon Accounting Standards

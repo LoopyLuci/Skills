@@ -1,14 +1,13 @@
 ---
 name: agri-tech-finance-implementation
-description: "Use when applying agricultural finance implementation."
+description: Use when applying agricultural finance implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agri, finance, agricultural-finance]
-    related_skills: ['']
 ---
 
 # Agri Tech Finance Implementation

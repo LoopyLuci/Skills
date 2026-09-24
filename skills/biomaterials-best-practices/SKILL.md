@@ -1,14 +1,13 @@
 ---
 name: biomaterials-best-practices
-description: "Use when applying biomaterials best practices."
+description: Use when applying biomaterials best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [materials, biomedical, biomaterials-engineering]
-    related_skills: [general]
 ---
 
 # Biomaterials Best Practices

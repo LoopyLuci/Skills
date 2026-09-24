@@ -1,14 +1,13 @@
 ---
 name: embedded-linux-troubleshooting
-description: "Use when applying embedded linux troubleshooting."
+description: Use when applying embedded linux troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [electronics, embedded, embedded-linux-development]
-    related_skills: [general]
 ---
 
 # Embedded Linux Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: farm-robotics-implementation
-description: "Use when applying farm robotics implementation."
+description: Use when applying farm robotics implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agri, robotics, agricultural-robotics]
-    related_skills: [general]
 ---
 
 # Farm Robotics Implementation

@@ -1,14 +1,13 @@
 ---
 name: electrical-eng-analysis-implementation
-description: "Use when applying elect eng analysis implementation."
+description: Use when applying elect eng analysis implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, electrical, analysis, electrical-eng-analysis]
-    related_skills: [general]
 ---
 
 # Electrical Eng Analysis Implementation

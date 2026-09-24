@@ -1,13 +1,13 @@
 ---
 name: social-media-advertising
-description: "Use when creating and managing social media ad campaigns."
+description: Use when creating and managing social media ad campaigns.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [social-media, advertising, paid-social, facebook-ads, linkedin-ads, targeting]
-    related_skills: [social-media-content-planning, ppc-advertising-management, digital-marketing-strategy, conversion-rate-optimization]
 ---
 
 # Social Media Advertising

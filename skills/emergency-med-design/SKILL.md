@@ -1,14 +1,13 @@
 ---
 name: emergency-med-design
-description: "Use when designing emergency medicine solutions."
+description: Use when designing emergency medicine solutions.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [emergency, trauma, urgent-care, hospital]
-    related_skills: [general]
 ---
 
 # Emergency Med Design

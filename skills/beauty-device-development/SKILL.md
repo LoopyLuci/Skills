@@ -1,14 +1,13 @@
 ---
 name: beauty-device-development
-description: "Use when inventing beauty devices."
+description: Use when inventing beauty devices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, beauty-devices, beauty-tech, hardware]
-    related_skills: [general]
 ---
 
 # Beauty Device Development

@@ -1,14 +1,13 @@
 ---
 name: bioinformatics-scripts-implementation
-description: "Use when applying bioinformatics scripts implementation."
+description: Use when applying bioinformatics scripts implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [bioinformatics, programming, scripts]
-    related_skills: [general]
 ---
 
 # Bioinformatics Scripts Implementation

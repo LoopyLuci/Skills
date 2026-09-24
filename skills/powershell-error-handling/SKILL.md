@@ -1,9 +1,15 @@
 ---
 name: powershell-error-handling
-description: "Use when handling errors in PowerShell scripts."
-category: software-development
-tags: [powershell, errors, try-catch, error-handling]
+description: Use when handling errors in PowerShell scripts.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [powershell, errors, try-catch, error-handling]
 ---
+
 # PowerShell Error Handling
 
 Proper error handling patterns for PowerShell scripts.

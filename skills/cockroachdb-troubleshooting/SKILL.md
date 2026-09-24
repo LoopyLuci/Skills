@@ -1,14 +1,13 @@
 ---
 name: cockroachdb-troubleshooting
-description: "Use when for cockroachdb troubleshooting."
+description: Use when for cockroachdb troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, cockroachdb, distributed-sql, postgres]
-    related_skills: [general]
 ---
 
 # Cockroachdb Troubleshooting

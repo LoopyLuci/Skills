@@ -1,14 +1,13 @@
 ---
 name: agent-ethics-alignment-deep-fundamentals
-description: "Use when applying agent ethics alignment fundamentals."
+description: Use when applying agent ethics alignment fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agents, ethics]
-    related_skills: ['agent-ethics-alignment']
 ---
 
 # Agent Ethics Alignment Deep Fundamentals

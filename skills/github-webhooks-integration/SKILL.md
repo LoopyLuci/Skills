@@ -1,6 +1,13 @@
 ---
 name: github-webhooks-integration
 description: Set up webhooks, handle events, and build integrations.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [github, webhooks, integration]
 ---
 
 # GitHub Webhooks Integration

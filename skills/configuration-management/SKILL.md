@@ -1,14 +1,13 @@
 ---
 name: configuration-management
-description: "Use when managing configuration."
+description: Use when managing configuration.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, config-management, ansible, puppet]
-    related_skills: ['ansible-playbook-design']
 ---
 
 # Configuration Management

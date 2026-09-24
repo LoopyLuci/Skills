@@ -1,14 +1,13 @@
 ---
 name: exotic-matter-engineering-troubleshooting
-description: "Use when applying exotic matter engineering troubleshoot."
+description: Use when applying exotic matter engineering troubleshoot.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [physics, quantum, exotic]
-    related_skills: [general]
 ---
 
 # Exotic Matter Engineering Troubleshooting

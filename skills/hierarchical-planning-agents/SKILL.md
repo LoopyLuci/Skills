@@ -1,13 +1,13 @@
 ---
 name: hierarchical-planning-agents
-description: "Use when implementing hierarchical planning for agents."
+description: Use when implementing hierarchical planning for agents.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [hierarchical-planning, HTN, task-decomposition, STRIPS, PDDL, subgoals]
-    related_skills: [agent-planning-algorithms, agent-task-decomposition, multi-agent-collaboration-patterns, advanced-reasoning-patterns]
+    tags: [hierarchical-planning, htn, task-decomposition, strips, pddl, subgoals]
 ---
 
 # Hierarchical Planning Agents

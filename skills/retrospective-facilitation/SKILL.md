@@ -1,9 +1,13 @@
 ---
 name: retrospective-facilitation
-description: "Use when facilitating retrospectives."
+description: Use when facilitating retrospectives.
 version: 1.0.0
-author: Hermes Agent
-tags: ["retrospective", "agile", "facilitation", "continuous-improvement"]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [retrospective, agile, facilitation, continuous-improvement]
 ---
 
 # Retrospective Facilitation

@@ -1,14 +1,13 @@
 ---
 name: chip-deposition-implementation
-description: "Use when applying chip deposition implementation."
+description: Use when applying chip deposition implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [semiconductor, deposition, deposition]
-    related_skills: ['general']
 ---
 
 # Chip Deposition Implementation

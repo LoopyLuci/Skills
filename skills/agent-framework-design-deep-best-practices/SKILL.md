@@ -1,14 +1,13 @@
 ---
 name: agent-framework-design-deep-best-practices
-description: "Use when applying agent framework design best practices."
+description: Use when applying agent framework design best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agents, architecture]
-    related_skills: ['agent-framework-design']
 ---
 
 # Agent Framework Design Deep Best Practices

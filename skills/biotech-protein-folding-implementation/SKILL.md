@@ -1,14 +1,13 @@
 ---
 name: biotech-protein-folding-implementation
-description: "Use when applying protein folding implementation."
+description: Use when applying protein folding implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, protein]
-    related_skills: ['']
 ---
 
 # Biotech Protein Folding Implementation

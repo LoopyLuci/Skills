@@ -1,14 +1,13 @@
 ---
 name: commercial-photography-best-practices
-description: "Use when applying commercial photography best practices."
+description: Use when applying commercial photography best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [media, photo, commercial]
-    related_skills: [general]
 ---
 
 # Commercial Photography Best Practices

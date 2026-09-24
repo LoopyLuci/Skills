@@ -1,14 +1,13 @@
 ---
 name: edge-monitoring-observability
-description: "Use when monitoring edge systems."
+description: Use when monitoring edge systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [edge-computing, observability, edge-monitoring, metrics]
-    related_skills: ['prometheus-metrics-collection']
 ---
 
 # Edge Monitoring Observability

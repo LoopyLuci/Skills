@@ -1,14 +1,13 @@
 ---
 name: distributed-sql-troubleshooting
-description: "Use when applying distributed sql databases troubleshoot."
+description: Use when applying distributed sql databases troubleshoot.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, distributed-sql, cockroachdb, yugabyte]
-    related_skills: [general]
 ---
 
 # Distributed Sql Troubleshooting

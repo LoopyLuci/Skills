@@ -1,13 +1,13 @@
 ---
 name: product-launch-planning
-description: "Use when planning and executing product launches."
+description: Use when planning and executing product launches.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [product-launch, launch-planning, release, announcement, launch-day]
-    related_skills: [go-to-market-strategy, product-management-roadmap, sales-enablement-playbooks, digital-marketing-strategy]
 ---
 
 # Product Launch Planning

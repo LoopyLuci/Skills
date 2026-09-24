@@ -1,14 +1,13 @@
 ---
 name: aws-zero-trust
-description: "Use when implementing AWS zero trust."
+description: Use when implementing AWS zero trust.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, aws, zero-trust-security-best-practices]
-    related_skills: [general]
 ---
 
 # Aws Zero Trust

@@ -1,14 +1,13 @@
 ---
 name: agentic-ai-best-practices
-description: "Use when applying agentic ai best practices."
+description: Use when applying agentic ai best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ai, agent, agent-framework-design]
-    related_skills: [general]
 ---
 
 # Agentic Ai Best Practices

@@ -1,14 +1,13 @@
 ---
 name: charging-infrastructure-best-practices
-description: "Use when applying charging infrastructure best practices."
+description: Use when applying charging infrastructure best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [auto, ev, charging-infrastructure]
-    related_skills: ['general']
 ---
 
 # Charging Infrastructure Best Practices

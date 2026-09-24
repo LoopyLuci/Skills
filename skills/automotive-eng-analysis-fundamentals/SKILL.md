@@ -1,14 +1,13 @@
 ---
 name: automotive-eng-analysis-fundamentals
-description: "Use when applying automotive analysis fundamentals."
+description: Use when applying automotive analysis fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, automotive, analysis, automotive-eng-analysis]
-    related_skills: [general]
 ---
 
 # Automotive Eng Analysis Fundamentals

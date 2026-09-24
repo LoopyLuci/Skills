@@ -1,13 +1,13 @@
 ---
 name: local-seo-google-business
-description: "Use when optimizing local SEO and Google Business Profile."
+description: Use when optimizing local SEO and Google Business Profile.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [local-seo, google-business-profile, maps, GBP, local-search, citations]
-    related_skills: [seo-search-engine-optimization, website-analytics-tracking, digital-marketing-strategy, cms-website-management]
+    tags: [local-seo, google-business-profile, maps, gbp, local-search, citations]
 ---
 
 # Local Seo Google Business

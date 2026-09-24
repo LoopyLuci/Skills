@@ -1,14 +1,13 @@
 ---
 name: agri-tech-data-analytics-troubleshooting
-description: "Use when applying agricultural data analytics troublesho."
+description: Use when applying agricultural data analytics troublesho.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agri, analytics, agricultural-data]
-    related_skills: ['']
 ---
 
 # Agri Tech Data Analytics Troubleshooting

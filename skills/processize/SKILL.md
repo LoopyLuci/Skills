@@ -1,8 +1,13 @@
 ---
 name: processize
 description: Use when turning a product idea into a manual-first process
-tags: [process, manual-first, automation, mvp, validation]
-related_skills: [mvp, validate-idea, find-community]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [process, manual-first, automation, mvp, validation]
 ---
 
 # Processize

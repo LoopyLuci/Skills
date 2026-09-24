@@ -1,8 +1,13 @@
 ---
-
 name: skills-repo-publishing
 description: Publish agent skills as a GitHub tap for any agent to use.
-
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [skills, repo, publishing]
 ---
 
 # Skills Repo Publishing

@@ -1,9 +1,15 @@
 ---
 name: visual-studio-builds-cli
-description: "Use when building VS solutions from command line."
-category: software-development
-tags: [visual-studio, msbuild, cli, build, automation]
+description: Use when building VS solutions from command line.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [visual-studio, msbuild, cli, build, automation]
 ---
+
 # Visual Studio Builds CLI
 
 Building Visual Studio solutions and projects from command line.

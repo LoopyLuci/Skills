@@ -1,15 +1,13 @@
 ---
 name: github
-description: "GitHub via gh CLI: PRs, issues, reviews, repos, auth."
-version: 2.0.0
-author: Ben Barclay (benbarclay), Hermes Agent
+description: GitHub via gh CLI: PRs, issues, reviews, repos, auth.
+version: 1.0.0
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [github, gh, git, pull-requests, issues, code-review, repos, auth, ci]
-    category: software-development
-    related_skills: [codebase-inspection, requesting-code-review]
 ---
 
 # GitHub

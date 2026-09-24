@@ -1,15 +1,13 @@
 ---
 name: docx
-description: "Create, read, edit Word .docx documents and templates."
+description: Create, read, edit Word .docx documents and templates.
 version: 1.0.0
-author: Anthropic (adapted by Nous Research)
-license: Proprietary. LICENSE.txt has complete terms
-platforms: [linux, macos, windows]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [Word, DOCX, Documents, Office, Productivity]
-    category: productivity
-    related_skills: [pdf, xlsx, powerpoint, ocr-and-documents]
+    tags: [word, docx, documents, office, productivity]
 ---
 
 # DOCX Skill

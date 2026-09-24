@@ -1,14 +1,13 @@
 ---
 name: biotech-purification-troubleshooting
-description: "Use when applying biotech purification troubleshooting."
+description: Use when applying biotech purification troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, purification, purification]
-    related_skills: ['general']
 ---
 
 # Biotech Purification Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: faith-community-outreach
-description: "Use when expanding faith community outreach."
+description: Use when expanding faith community outreach.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [religious, outreach, community-ministry, evangelism]
-    related_skills: [general]
 ---
 
 # Faith Community Outreach

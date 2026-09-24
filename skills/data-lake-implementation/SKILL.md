@@ -1,14 +1,13 @@
 ---
 name: data-lake-implementation
-description: "Use when implementing data lake."
+description: Use when implementing data lake.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, data-lake, storage, analytics]
-    related_skills: [general]
 ---
 
 # Data Lake Implementation

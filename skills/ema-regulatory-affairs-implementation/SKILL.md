@@ -1,14 +1,13 @@
 ---
 name: ema-regulatory-affairs-implementation
-description: "Use when applying ema regulatory implementation."
+description: Use when applying ema regulatory implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, pharma, ema]
-    related_skills: [general]
 ---
 
 # Ema Regulatory Affairs Implementation

@@ -1,14 +1,13 @@
 ---
 name: ceramic-materials-science
-description: "Use when studying ceramic materials."
+description: Use when studying ceramic materials.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [materials-science, ceramics, high-temp, structural]
-    related_skills: [general]
 ---
 
 # Ceramic Materials Science

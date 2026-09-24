@@ -1,14 +1,13 @@
 ---
 name: fan-out-pattern-deep-implementation
-description: "Use when applying fan-out pattern implementation."
+description: Use when applying fan-out pattern implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [programming, parallelism]
-    related_skills: ['fan-out-pattern']
 ---
 
 # Fan Out Pattern Deep Implementation

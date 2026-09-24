@@ -1,14 +1,13 @@
 ---
 name: dentistry-fundamentals-deep-implementation
-description: "Use when applying dentistry fundamentals implementation."
+description: Use when applying dentistry fundamentals implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [healthcare, dentistry]
-    related_skills: ['dentistry-fundamentals']
 ---
 
 # Dentistry Fundamentals Deep Implementation

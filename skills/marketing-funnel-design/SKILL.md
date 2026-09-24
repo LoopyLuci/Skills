@@ -1,13 +1,13 @@
 ---
 name: marketing-funnel-design
-description: "Use when designing marketing funnels and conversion paths."
+description: Use when designing marketing funnels and conversion paths.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [marketing, funnel, conversion, lead-generation, sales-funnel, AIDA]
-    related_skills: [crm-sales-pipeline, ab-testing-experimentation, email-marketing-campaigns, conversion-rate-optimization]
+    tags: [marketing, funnel, conversion, lead-generation, sales-funnel, aida]
 ---
 
 # Marketing Funnel Design

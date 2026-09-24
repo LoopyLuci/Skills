@@ -1,14 +1,13 @@
 ---
 name: embedded-modbus-implementation
-description: "Use when applying modbus protocol implementation."
+description: Use when applying modbus protocol implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [embedded, modbus, industrial, comms]
-    related_skills: [general]
 ---
 
 # Embedded Modbus Implementation

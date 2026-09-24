@@ -2,12 +2,12 @@
 name: bird-aviary-care
 description: Parrot and companion bird care, enrichment, and nutrition
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["bird", "avian"]
+    tags: [bird, avian]
 ---
 
 # Bird Aviary Care

@@ -1,7 +1,13 @@
 ---
 name: rust-workspace-development
 description: Rust workspace setup and cargo debugging on Windows.
-trigger: Use when the user asks to build, scaffold, or fix a Rust workspace; install Rust dependencies on Windows; resolve cargo check/test failures across multiple crates; set up projects using Tauri, Axum, ed25519, rand, wasmtime, llama.cpp, or Vulkan SDK; or build ML content identification systems with audio fingerprinting, neural networks, and self-learning pipelines.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [rust, workspace, development]
 ---
 
 # Rust Workspace Development

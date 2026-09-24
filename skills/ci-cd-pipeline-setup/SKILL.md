@@ -1,6 +1,13 @@
 ---
 name: ci-cd-pipeline-setup
-description: "GitHub Actions matrix builds caching and conditional deploys"
+description: GitHub Actions matrix builds caching and conditional deploys
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [ci, cd, pipeline]
 ---
 
 # CI/CD Pipeline Setup

@@ -1,12 +1,13 @@
 ---
 name: svelte-reactivity-stores
-description: "Use when implementing Svelte stores."
+description: Use when implementing Svelte stores.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["svelte", "stores", "reactivity", "writable", "derived"]
+    tags: [svelte, stores, reactivity, writable, derived]
 ---
 
 # Svelte Reactivity Stores

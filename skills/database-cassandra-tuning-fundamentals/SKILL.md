@@ -1,14 +1,13 @@
 ---
 name: database-cassandra-tuning-fundamentals
-description: "Use when applying cassandra tuning fundamentals."
+description: Use when applying cassandra tuning fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, cassandra, tuning, performance]
-    related_skills: [general]
 ---
 
 # Database Cassandra Tuning Fundamentals

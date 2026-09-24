@@ -1,14 +1,13 @@
 ---
 name: construction-safety
-description: "Use when ensuring construction safety."
+description: Use when ensuring construction safety.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [construction, safety, construction-safety-management]
-    related_skills: [general]
 ---
 
 # Construction Safety

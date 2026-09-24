@@ -2,12 +2,12 @@
 name: materials-characterization
 description: XRD, SEM, TEM, and materials characterization techniques
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["characterization", "microscopy"]
+    tags: [characterization, microscopy]
 ---
 
 # Materials Characterization

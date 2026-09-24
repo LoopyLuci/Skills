@@ -2,12 +2,12 @@
 name: motion-graphics-animation
 description: After Effects, Lottie, kinetic typography, and motion principles
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["motion", "animation"]
+    tags: [motion, animation]
 ---
 
 # Motion Graphics Animation

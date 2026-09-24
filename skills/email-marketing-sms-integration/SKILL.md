@@ -1,14 +1,13 @@
 ---
 name: email-marketing-sms-integration
-description: "Use when connecting email-SMS."
+description: Use when connecting email-SMS.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, marketing, sms, integration]
-    related_skills: [general]
 ---
 
 # Email Marketing Sms Integration

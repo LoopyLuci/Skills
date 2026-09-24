@@ -1,14 +1,13 @@
 ---
 name: emergency-med-analysis-best-practices
-description: "Use when applying emergency med analysis best practices."
+description: Use when applying emergency med analysis best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [medicine, emergency, emergency-med-analysis]
-    related_skills: [general]
 ---
 
 # Emergency Med Analysis Best Practices

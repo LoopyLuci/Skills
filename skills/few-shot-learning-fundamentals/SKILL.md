@@ -1,14 +1,13 @@
 ---
 name: few-shot-learning-fundamentals
-description: "Use when applying few-shot learning fundamentals."
+description: Use when applying few-shot learning fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ai, ml, few-shot-prompting-advanced]
-    related_skills: [general]
 ---
 
 # Few Shot Learning Fundamentals

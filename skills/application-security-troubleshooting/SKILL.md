@@ -1,14 +1,13 @@
 ---
 name: application-security-troubleshooting
-description: "Use when troubleshooting app security."
+description: Use when troubleshooting app security.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, app-security, vulnerability]
-    related_skills: [general]
 ---
 
 # Application Security Troubleshooting

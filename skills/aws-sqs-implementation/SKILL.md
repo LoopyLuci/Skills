@@ -1,14 +1,13 @@
 ---
 name: aws-sqs-implementation
-description: "Use when applying aws sqs implementation."
+description: Use when applying aws sqs implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, sqs, queueing, messaging]
-    related_skills: [general]
 ---
 
 # Aws Sqs Implementation

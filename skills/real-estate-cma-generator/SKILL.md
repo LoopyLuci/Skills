@@ -1,14 +1,13 @@
 ---
 name: real-estate-cma-generator
-description: "Comparative market analysis. Comps, adjustments, pricing."
-version: 2.0.0
-author: Hermes Agent
+description: Comparative market analysis. Comps, adjustments, pricing.
+version: 1.0.0
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [real-estate, cma, pricing, comparative-market-analysis, valuation]
-    related_skills: [real-estate-property-analysis, real-estate-market-intel]
 ---
 
 # Real Estate Cma Generator

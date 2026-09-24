@@ -1,14 +1,13 @@
 ---
 name: faith-based-charity-management
-description: "Use when managing faith-based charities."
+description: Use when managing faith-based charities.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [religious, charity, nonprofit, social-services]
-    related_skills: [general]
 ---
 
 # Faith Based Charity Management

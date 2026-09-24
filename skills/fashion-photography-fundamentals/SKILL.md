@@ -1,14 +1,13 @@
 ---
 name: fashion-photography-fundamentals
-description: "Use when applying fashion photography fundamentals."
+description: Use when applying fashion photography fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [media, photo, fashion-photography]
-    related_skills: [general]
 ---
 
 # Fashion Photography Fundamentals

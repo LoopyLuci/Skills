@@ -1,14 +1,13 @@
 ---
 name: ai-security-implementation
-description: "Use when for ai security implementation."
+description: Use when for ai security implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ai, security, adversarial-ml, model-security]
-    related_skills: [general]
 ---
 
 # Ai Security Implementation

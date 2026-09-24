@@ -1,14 +1,13 @@
 ---
 name: adult-learning-principles
-description: "Use when applying adult learning theory."
+description: Use when applying adult learning theory.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [education, adult-learning, andragogy]
-    related_skills: [general]
 ---
 
 # Adult Learning Principles

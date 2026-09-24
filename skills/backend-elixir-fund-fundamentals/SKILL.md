@@ -1,14 +1,13 @@
 ---
 name: backend-elixir-fund-fundamentals
-description: "Use when applying backend elixir fundamentals fundamentals."
+description: Use when applying backend elixir fundamentals fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, elixir, backend-elixir-fundamentals]
-    related_skills: [general]
 ---
 
 # Backend Elixir Fund Fundamentals

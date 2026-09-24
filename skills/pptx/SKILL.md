@@ -1,8 +1,13 @@
 ---
 name: pptx
 description: Use when creating, editing, or reading PowerPoint files.
-tags: [powerpoint, presentations, slides, pptx]
-related_skills: [theme-factory, brand-guidelines]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [powerpoint, presentations, slides, pptx]
 ---
 
 # PPTX Creation, Editing, and Analysis

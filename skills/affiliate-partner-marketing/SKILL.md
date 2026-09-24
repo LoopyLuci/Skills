@@ -2,12 +2,12 @@
 name: affiliate-partner-marketing
 description: Affiliate programs, partner recruitment, tracking, and payout structures
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["affiliate", "partnerships"]
+    tags: [affiliate, partnerships]
 ---
 
 # Affiliate Partner Marketing

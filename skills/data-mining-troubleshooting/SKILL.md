@@ -1,14 +1,13 @@
 ---
 name: data-mining-troubleshooting
-description: "Use when applying data mining troubleshooting."
+description: Use when applying data mining troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, mining, data-mining]
-    related_skills: [general]
 ---
 
 # Data Mining Troubleshooting

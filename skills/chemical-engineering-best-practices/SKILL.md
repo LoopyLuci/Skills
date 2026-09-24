@@ -1,14 +1,13 @@
 ---
 name: chemical-engineering-best-practices
-description: "Use when applying chemical engineering best practices."
+description: Use when applying chemical engineering best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, chemical, cheme, chemical-eng-design]
-    related_skills: [general]
 ---
 
 # Chemical Engineering Best Practices

@@ -1,14 +1,13 @@
 ---
 name: data-viz-best-practices-deep-implementation
-description: "Use when applying data visualization best practices impl."
+description: Use when applying data visualization best practices impl.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [design, data-viz]
-    related_skills: ['data-visualization-practices']
 ---
 
 # Data Viz Best Practices Deep Implementation

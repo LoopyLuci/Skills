@@ -1,8 +1,13 @@
 ---
-
 name: github-actions-reusable
 description: Share workflows and actions to avoid duplication.
-
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [github, actions, reusable]
 ---
 
 # GitHub Actions Reusable Workflows

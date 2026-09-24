@@ -1,14 +1,13 @@
 ---
 name: database-replication-troubleshooting
-description: "Use when for database replication troubleshooting."
+description: Use when for database replication troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, replication, high-availability, cluster]
-    related_skills: [general]
 ---
 
 # Database Replication Troubleshooting

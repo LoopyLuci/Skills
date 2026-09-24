@@ -1,14 +1,13 @@
 ---
 name: eeg-signal-processing-fundamentals
-description: "Use when applying eeg processing fundamentals."
+description: Use when applying eeg processing fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neurotech, eeg, eeg-signal-processing]
-    related_skills: [general]
 ---
 
 # Eeg Signal Processing Fundamentals

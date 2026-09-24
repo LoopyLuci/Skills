@@ -1,14 +1,13 @@
 ---
 name: biotech-biosensors-best-practices
-description: "Use when applying biosensors best practices."
+description: Use when applying biosensors best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, biosensors]
-    related_skills: ['']
 ---
 
 # Biotech Biosensors Best Practices

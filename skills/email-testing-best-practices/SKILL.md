@@ -1,14 +1,13 @@
 ---
 name: email-testing-best-practices
-description: "Use when applying email testing best practices."
+description: Use when applying email testing best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, testing, qa]
-    related_skills: [general]
 ---
 
 # Email Testing Best Practices

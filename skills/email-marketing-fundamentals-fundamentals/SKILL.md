@@ -1,14 +1,13 @@
 ---
 name: email-marketing-fundamentals-fundamentals
-description: "Use when applying email marketing fundamentals fundament."
+description: Use when applying email marketing fundamentals fundament.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, marketing, email-marketing-fundamentals]
-    related_skills: [general]
 ---
 
 # Email Marketing Fundamentals Fundamentals

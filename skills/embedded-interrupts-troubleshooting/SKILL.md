@@ -1,14 +1,13 @@
 ---
 name: embedded-interrupts-troubleshooting
-description: "Use when applying interrupt handling troubleshooting."
+description: Use when applying interrupt handling troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [embedded, interrupts, isr, real-time]
-    related_skills: [general]
 ---
 
 # Embedded Interrupts Troubleshooting

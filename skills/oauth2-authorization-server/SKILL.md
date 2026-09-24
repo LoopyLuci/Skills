@@ -1,12 +1,13 @@
 ---
 name: oauth2-authorization-server
-description: "Use when building OAuth2 authorization servers."
+description: Use when building OAuth2 authorization servers.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["oauth2", "authorization-server", "JWT", "scopes", "clients"]
+    tags: [oauth2, authorization-server, jwt, scopes, clients]
 ---
 
 # Oauth2 Authorization Server

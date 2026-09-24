@@ -1,14 +1,13 @@
 ---
 name: android-security-best-practices
-description: "Use when applying android security best practices."
+description: Use when applying android security best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mobile, android, security, pentest]
-    related_skills: [general]
 ---
 
 # Android Security Best Practices

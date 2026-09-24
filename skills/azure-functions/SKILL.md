@@ -1,14 +1,13 @@
 ---
 name: azure-functions
-description: "Use when using Azure Functions."
+description: Use when using Azure Functions.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, azure, azure-functions-serverless]
-    related_skills: [general]
 ---
 
 # Azure Functions

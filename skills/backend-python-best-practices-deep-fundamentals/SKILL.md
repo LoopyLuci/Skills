@@ -1,14 +1,13 @@
 ---
 name: backend-python-best-practices-deep-fundamentals
-description: "Use when applying python backend best practices fundamen."
+description: Use when applying python backend best practices fundamen.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, python]
-    related_skills: ['backend-python-best-practices']
 ---
 
 # Backend Python Best Practices Deep Fundamentals

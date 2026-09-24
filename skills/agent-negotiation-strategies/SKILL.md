@@ -1,13 +1,13 @@
 ---
 name: agent-negotiation-strategies
-description: "Use when implementing agent negotiation and bargaining."
+description: Use when implementing agent negotiation and bargaining.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [negotiation, bargaining, auctions, game-theory, multi-agent, agreement]
-    related_skills: [agent-communication-languages, multi-agent-collaboration-patterns, agent-economics-markets, agent-reasoning-patterns]
 ---
 
 # Agent Negotiation Strategies

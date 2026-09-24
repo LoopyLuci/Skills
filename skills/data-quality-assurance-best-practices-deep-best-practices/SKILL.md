@@ -1,14 +1,13 @@
 ---
 name: data-quality-assurance-best-practices-deep-best-practices
-description: "Use when applying data quality assurance best practices."
+description: Use when applying data quality assurance best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, data-quality]
-    related_skills: ['data-quality-assurance-best-practices']
 ---
 
 # Data Quality Assurance Best Practices Deep Best Practices

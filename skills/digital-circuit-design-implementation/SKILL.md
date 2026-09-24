@@ -1,14 +1,13 @@
 ---
 name: digital-circuit-design-implementation
-description: "Use when applying digital circuits implementation."
+description: Use when applying digital circuits implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [electronics, circuit, digital-circuit-design]
-    related_skills: [general]
 ---
 
 # Digital Circuit Design Implementation

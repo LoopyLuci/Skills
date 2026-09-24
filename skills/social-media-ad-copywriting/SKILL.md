@@ -1,14 +1,13 @@
 ---
 name: social-media-ad-copywriting
-description: "Use when writing social media ad copy."
+description: Use when writing social media ad copy.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [social-media, ads, copywriting, ppc, advertising]
-    related_skills: [social-media-strategy, social-media-analytics]
 ---
 
 # Social Media Ad Copywriting

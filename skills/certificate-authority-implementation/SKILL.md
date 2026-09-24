@@ -1,14 +1,13 @@
 ---
 name: certificate-authority-implementation
-description: "Use when applying certificate authority implementation."
+description: Use when applying certificate authority implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, ca, certificates, tls]
-    related_skills: [general]
 ---
 
 # Certificate Authority Implementation

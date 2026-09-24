@@ -1,14 +1,13 @@
 ---
 name: aws-vpc-implementation-deep-implementation
-description: "Use when applying aws vpc implementation implementation."
+description: Use when applying aws vpc implementation implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, aws]
-    related_skills: ['aws-vpc-implementation']
 ---
 
 # Aws Vpc Implementation Deep Implementation

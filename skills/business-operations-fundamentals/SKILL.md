@@ -1,14 +1,13 @@
 ---
 name: business-operations-fundamentals
-description: "Use when applying business operations fundamentals."
+description: Use when applying business operations fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, operations, operations-management]
-    related_skills: [general]
 ---
 
 # Business Operations Fundamentals

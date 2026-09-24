@@ -1,9 +1,15 @@
 ---
 name: docker-buildx-multiarch
-description: "Use when building multi-architecture Docker images."
-category: docker
-tags: [docker, buildx, multiarch, cross-platform, arm]
+description: Use when building multi-architecture Docker images.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [docker, buildx, multiarch, cross-platform, arm]
 ---
+
 # Docker Buildx Multi-Architecture
 
 Building multi-architecture Docker images with Buildx.

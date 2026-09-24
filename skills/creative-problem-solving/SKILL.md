@@ -1,14 +1,13 @@
 ---
 name: creative-problem-solving
-description: "Use when applying creative problem-solving."
+description: Use when applying creative problem-solving.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: ['c', 'r', 'e', 'a', 't', 'i', 'v', 'e', '-', 'p', 'r', 'o', 'b', 'l', 'e', 'm', '-', 's', 'o', 'l', 'v', 'i', 'n', 'g', ',', ' ', 'i', 'd', 'e', 'a', 't', 'i', 'o', 'n']
-    related_skills: [general]
+    tags: [c, r, e, a, t, i, v, e, -, p, r, o, b, l, e, m, -, s, o, l, v, i, n, g, , ,  , i, d, e, a, t, i, o, n]
 ---
 
 # Creative Problem Solving

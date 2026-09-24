@@ -1,14 +1,13 @@
 ---
 name: climate-adaptation-planning
-description: "Use when planning climate adaptation. Risks, solutions."
+description: Use when planning climate adaptation. Risks, solutions.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climatetech, climate-adaptation, resilience, planning]
-    related_skills: [climate-risk-assessment, climate-resilience-planning]
 ---
 
 # Climate Adaptation Planning

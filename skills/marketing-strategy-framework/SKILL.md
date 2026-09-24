@@ -1,14 +1,13 @@
 ---
 name: marketing-strategy-framework
-description: "Use when building marketing strategy. SWOT, RACE, budgets."
+description: Use when building marketing strategy. SWOT, RACE, budgets.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, strategy, planning, go-to-market, growth]
-    related_skills: [competitor-analysis, brand-identity-development, marketing-analytics-dashboard]
 ---
 
 # Marketing Strategy Framework

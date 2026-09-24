@@ -1,14 +1,13 @@
 ---
 name: email-marketing-dashboard-best-practices
-description: "Use when applying email dashboard best practices."
+description: Use when applying email dashboard best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, dashboard, analytics]
-    related_skills: [general]
 ---
 
 # Email Marketing Dashboard Best Practices

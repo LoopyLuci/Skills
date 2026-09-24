@@ -1,14 +1,13 @@
 ---
 name: chip-verification-methodology-best-practices
-description: "Use when applying chip verification methodology best pra."
+description: Use when applying chip verification methodology best pra.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [semiconductor, verification, verification-methodology]
-    related_skills: ['general']
 ---
 
 # Chip Verification Methodology Best Practices

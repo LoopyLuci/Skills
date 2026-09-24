@@ -1,14 +1,13 @@
 ---
 name: edge-security-hardening
-description: "Use when hardening edge devices."
+description: Use when hardening edge devices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [edge-computing, security-hardening, device-security, threat-modeling]
-    related_skills: ['container-security-hardening']
 ---
 
 # Edge Security Hardening

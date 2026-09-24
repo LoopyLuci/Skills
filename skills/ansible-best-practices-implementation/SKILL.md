@@ -1,14 +1,13 @@
 ---
 name: ansible-best-practices-implementation
-description: "Use when applying ansible best practices implementation."
+description: Use when applying ansible best practices implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, ansible, best-practices, ansible-best-practices]
-    related_skills: [general]
 ---
 
 # Ansible Best Practices Implementation

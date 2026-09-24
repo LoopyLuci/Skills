@@ -1,13 +1,13 @@
 ---
 name: customer-success-retention
-description: "Use when building customer success and retention programs."
+description: Use when building customer success and retention programs.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [customer-success, retention, churn, onboarding, customer-health, NPS]
-    related_skills: [crm-sales-pipeline, email-marketing-campaigns, business-metrics-kpis, customer-segmentation-analysis]
+    tags: [customer-success, retention, churn, onboarding, customer-health, nps]
 ---
 
 # Customer Success Retention

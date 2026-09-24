@@ -1,14 +1,13 @@
 ---
 name: angular-development-deep-implementation
-description: "Use when applying angular development implementation."
+description: Use when applying angular development implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [web, frontend]
-    related_skills: ['angular-development']
 ---
 
 # Angular Development Deep Implementation

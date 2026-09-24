@@ -1,15 +1,13 @@
 ---
 name: session-librarian
-description: "Organize sessions by prompt: find, rename, archive, prune."
+description: Organize sessions by prompt: find, rename, archive, prune.
 version: 1.0.0
-author: Hermes Agent + Teknium
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: [Sessions, Organization, Cleanup, Library, Productivity]
-    category: productivity
-    related_skills: [weekly-review-planning]
+    tags: [sessions, organization, cleanup, library, productivity]
 ---
 
 # Session Librarian

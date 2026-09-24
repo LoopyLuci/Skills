@@ -1,12 +1,13 @@
 ---
 name: pandas-data-manipulation
-description: "Use when manipulating data with Pandas."
+description: Use when manipulating data with Pandas.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["pandas", "dataframe", "groupby", "merge", "reshape"]
+    tags: [pandas, dataframe, groupby, merge, reshape]
 ---
 
 # Pandas Data Manipulation

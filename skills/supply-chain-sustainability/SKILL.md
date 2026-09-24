@@ -2,12 +2,12 @@
 name: supply-chain-sustainability
 description: Scope 3 emissions, ethical sourcing, circularity, and ESG reporting
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["sustainability", "scope3"]
+    tags: [sustainability, scope3]
 ---
 
 # Supply Chain Sustainability

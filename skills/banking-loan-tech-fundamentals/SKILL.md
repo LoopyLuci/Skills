@@ -1,14 +1,13 @@
 ---
 name: banking-loan-tech-fundamentals
-description: "Use when applying loan tech fundamentals."
+description: Use when applying loan tech fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, lending, lending-tech]
-    related_skills: [general]
 ---
 
 # Banking Loan Tech Fundamentals

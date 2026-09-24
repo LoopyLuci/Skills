@@ -1,14 +1,13 @@
 ---
 name: content-marketing-calendar-troubleshooting
-description: "Use when applying content marketing calendar troubleshoo."
+description: Use when applying content marketing calendar troubleshoo.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, content-marketing-calendar]
-    related_skills: ['']
 ---
 
 # Content Marketing Calendar Troubleshooting

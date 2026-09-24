@@ -1,13 +1,13 @@
 ---
 name: dimensionality-reduction
-description: "Use when implementing dimensionality reduction techniques."
+description: Use when implementing dimensionality reduction techniques.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [dimensionality-reduction, PCA, t-SNE, UMAP, feature-extraction, manifold-learning]
-    related_skills: [feature-engineering-automation, data-visualization-practices, embeddings-visualization, anomaly-detection-ml]
+    tags: [dimensionality-reduction, pca, t-sne, umap, feature-extraction, manifold-learning]
 ---
 
 # Dimensionality Reduction

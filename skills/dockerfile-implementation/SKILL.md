@@ -1,14 +1,13 @@
 ---
 name: dockerfile-implementation
-description: "Use when applying dockerfile implementation."
+description: Use when applying dockerfile implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [docker, dockerfile, dockerfile-optimization]
-    related_skills: [general]
 ---
 
 # Dockerfile Implementation

@@ -2,14 +2,12 @@
 name: webbuilder-desktop-app
 description: Build PyQt5 desktop web builders with AI chat, multi-provider integration, and HTML export.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [windows, macos, linux]
+platforms: [any]
 metadata:
   hermes:
     tags: [pyqt5, webbuilder, ai-chat, multi-provider, desktop-app, html-export]
-    category: software-development
-    related_skills: [desktop-app-development, test-driven-development]
 ---
 
 # WebBuilder Desktop App Development

@@ -1,14 +1,13 @@
 ---
 name: aws-security-architecture
-description: "Use when architecting AWS security."
+description: Use when architecting AWS security.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, aws, application-security-architecture]
-    related_skills: [general]
 ---
 
 # Aws Security Architecture

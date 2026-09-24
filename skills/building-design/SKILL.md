@@ -1,14 +1,13 @@
 ---
 name: building-design
-description: "Use when designing buildings."
+description: Use when designing buildings.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [construction, design, building-design]
-    related_skills: [general]
 ---
 
 # Building Design

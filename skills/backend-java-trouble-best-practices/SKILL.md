@@ -1,14 +1,13 @@
 ---
 name: backend-java-trouble-best-practices
-description: "Use when applying backend java troubleshooting best prac."
+description: Use when applying backend java troubleshooting best prac.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, java, backend-java-troubleshooting]
-    related_skills: [general]
 ---
 
 # Backend Java Trouble Best Practices

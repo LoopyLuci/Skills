@@ -1,14 +1,13 @@
 ---
 name: e-governance-best-practices
-description: "Use when applying e-governance best practices."
+description: Use when applying e-governance best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [gov, digital, e-governance-platforms]
-    related_skills: [general]
 ---
 
 # E Governance Best Practices

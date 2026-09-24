@@ -2,12 +2,12 @@
 name: insurance-data-analytics
 description: Predictive modeling, telematics, IoT, and advanced analytics in insurance
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["analytics", "insurtech"]
+    tags: [analytics, insurtech]
 ---
 
 # Insurance Data Analytics

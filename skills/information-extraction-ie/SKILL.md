@@ -2,12 +2,12 @@
 name: information-extraction-ie
 description: Named entity recognition, relation extraction, and event extraction
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["ie", "ner"]
+    tags: [ie, ner]
 ---
 
 # Information Extraction Ie

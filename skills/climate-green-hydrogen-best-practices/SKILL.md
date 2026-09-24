@@ -1,14 +1,13 @@
 ---
 name: climate-green-hydrogen-best-practices
-description: "Use when applying green hydrogen production best practices."
+description: Use when applying green hydrogen production best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, hydrogen, green-hydrogen-production]
-    related_skills: ['']
 ---
 
 # Climate Green Hydrogen Best Practices

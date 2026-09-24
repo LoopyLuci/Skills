@@ -1,6 +1,13 @@
 ---
 name: audit-logging
-description: "Structured audit logging who what when and tamper evidence"
+description: Structured audit logging who what when and tamper evidence
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [audit, logging]
 ---
 
 # Audit Logging
@@ -27,3 +34,16 @@ logger.info("user.action",
 - Source IP
 - Success/failure
 - Before/after state for mutations
+
+## Trigger
+
+Activate this skill when the user mentions:
+- audit, logging workflows or issues
+- Building, fixing, or optimizing audit logging
+
+
+## Core Concepts
+
+- Domain fundamentals and best practices
+- Key tools and methodologies
+- Quality standards and common patterns

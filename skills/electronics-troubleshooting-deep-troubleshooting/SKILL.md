@@ -1,14 +1,13 @@
 ---
 name: electronics-troubleshooting-deep-troubleshooting
-description: "Use when applying electronics troubleshoot troubleshooting."
+description: Use when applying electronics troubleshoot troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [electronics, troubleshooting, troubleshooting]
-    related_skills: ['general']
 ---
 
 # Electronics Troubleshooting Deep Troubleshooting

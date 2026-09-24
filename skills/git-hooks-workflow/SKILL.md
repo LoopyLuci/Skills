@@ -1,6 +1,13 @@
 ---
 name: git-hooks-workflow
 description: Automate checks with client-side git hooks.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [git, hooks, workflow]
 ---
 
 # Git Hooks Workflow

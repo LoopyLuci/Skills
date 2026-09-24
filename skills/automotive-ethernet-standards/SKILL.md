@@ -1,14 +1,13 @@
 ---
 name: automotive-ethernet-standards
-description: "Use when designing auto ethernet."
+description: Use when designing auto ethernet.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [automotive, ethernet, networking]
-    related_skills: [general]
 ---
 
 # Automotive Ethernet Standards

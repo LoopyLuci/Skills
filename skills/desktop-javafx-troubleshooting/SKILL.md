@@ -1,14 +1,13 @@
 ---
 name: desktop-javafx-troubleshooting
-description: "Use when applying javafx desktop troubleshooting."
+description: Use when applying javafx desktop troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [desktop, javafx, java]
-    related_skills: [general]
 ---
 
 # Desktop Javafx Troubleshooting

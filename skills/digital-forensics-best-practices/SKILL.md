@@ -1,14 +1,13 @@
 ---
 name: digital-forensics-best-practices
-description: "Use when for digital forensics best practices."
+description: Use when for digital forensics best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, forensics, investigation]
-    related_skills: [general]
 ---
 
 # Digital Forensics Best Practices

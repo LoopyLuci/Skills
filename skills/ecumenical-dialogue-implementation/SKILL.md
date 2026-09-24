@@ -1,14 +1,13 @@
 ---
 name: ecumenical-dialogue-implementation
-description: "Use when applying interfaith dialogue implementation."
+description: Use when applying interfaith dialogue implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [spiritual, dialogue]
-    related_skills: ['interfaith-dialogue-facilitation']
 ---
 
 # Ecumenical Dialogue Implementation

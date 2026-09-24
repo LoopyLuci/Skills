@@ -1,14 +1,13 @@
 ---
 name: biotech-eng-optimization-fundamentals
-description: "Use when applying biotech optimization fundamentals."
+description: Use when applying biotech optimization fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, engineering, optimization]
-    related_skills: [general]
 ---
 
 # Biotech Eng Optimization Fundamentals

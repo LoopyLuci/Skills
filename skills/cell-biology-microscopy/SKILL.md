@@ -1,14 +1,13 @@
 ---
 name: cell-biology-microscopy
-description: "Use when doing cell biology microscopy."
+description: Use when doing cell biology microscopy.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biology, cell-biology, microscopy]
-    related_skills: [general]
 ---
 
 # Cell Biology Microscopy

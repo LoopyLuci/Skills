@@ -1,14 +1,13 @@
 ---
 name: embedded-systems-design
-description: "Use when designing embedded systems."
+description: Use when designing embedded systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [electronics, embedded, firmware, microcontroller]
-    related_skills: [general]
 ---
 
 # Embedded Systems Design

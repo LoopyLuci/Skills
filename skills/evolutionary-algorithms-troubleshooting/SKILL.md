@@ -1,14 +1,13 @@
 ---
 name: evolutionary-algorithms-troubleshooting
-description: "Use when applying evolutionary algorithms troubleshooting."
+description: Use when applying evolutionary algorithms troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ai, optimization, evolutionary-computing]
-    related_skills: [general]
 ---
 
 # Evolutionary Algorithms Troubleshooting

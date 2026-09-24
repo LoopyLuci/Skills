@@ -1,13 +1,13 @@
 ---
 name: advanced-reasoning-patterns
-description: "Use when implementing CoT, ToT, GoT, and ReAct patterns."
+description: Use when implementing CoT, ToT, GoT, and ReAct patterns.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [reasoning, chain-of-thought, tree-of-thought, react, prompt-engineering]
-    related_skills: [agent-reasoning-patterns, prompt-engineering-patterns, agent-framework-design, tool-augmented-agents]
 ---
 
 # Advanced Reasoning Patterns

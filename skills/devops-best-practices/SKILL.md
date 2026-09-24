@@ -1,14 +1,13 @@
 ---
 name: devops-best-practices
-description: "Use when applying devops best practices."
+description: Use when applying devops best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, devops-fundamentals, culture, automation]
-    related_skills: [general]
 ---
 
 # Devops Best Practices

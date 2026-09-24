@@ -1,14 +1,13 @@
 ---
 name: database-redis-best-practices
-description: "Use when applying redis best practices."
+description: Use when applying redis best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, redis, caching, in-memory]
-    related_skills: [general]
 ---
 
 # Database Redis Best Practices

@@ -1,14 +1,13 @@
 ---
 name: academic-research
-description: "Use when doing academic research."
+description: Use when doing academic research.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [education, research, academic-research-methods]
-    related_skills: [general]
 ---
 
 # Academic Research

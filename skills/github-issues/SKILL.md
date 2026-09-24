@@ -1,14 +1,13 @@
 ---
 name: github-issues
-description: "Create, triage, label, assign GitHub issues via gh or REST."
-version: 1.1.0
-author: Hermes Agent
+description: Create, triage, label, assign GitHub issues via gh or REST.
+version: 1.0.0
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: [GitHub, Issues, Project-Management, Bug-Tracking, Triage]
-    related_skills: [github-auth, github-pr-workflow]
+    tags: [github, issues, project-management, bug-tracking, triage]
 ---
 
 # GitHub Issues Management

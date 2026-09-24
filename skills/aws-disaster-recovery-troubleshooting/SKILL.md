@@ -1,14 +1,13 @@
 ---
 name: aws-disaster-recovery-troubleshooting
-description: "Use when applying aws disaster recovery troubleshooting."
+description: Use when applying aws disaster recovery troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, disaster-recovery, dr, backup]
-    related_skills: [general]
 ---
 
 # Aws Disaster Recovery Troubleshooting

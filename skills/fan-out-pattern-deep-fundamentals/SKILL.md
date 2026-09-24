@@ -1,14 +1,13 @@
 ---
 name: fan-out-pattern-deep-fundamentals
-description: "Use when applying fan-out pattern fundamentals."
+description: Use when applying fan-out pattern fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [programming, parallelism]
-    related_skills: ['fan-out-pattern']
 ---
 
 # Fan Out Pattern Deep Fundamentals

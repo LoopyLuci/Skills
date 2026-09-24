@@ -1,8 +1,13 @@
 ---
 name: marketing-plan
 description: Use when creating a content marketing plan after product-market fit
-tags: [marketing, content, audience, social-media, email]
-related_skills: [first-customers, find-community, mvp]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [marketing, content, audience, social-media, email]
 ---
 
 # Marketing Plan

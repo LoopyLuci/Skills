@@ -1,14 +1,13 @@
 ---
 name: astrodynamics-troubleshooting
-description: "Use when applying astrodynamics troubleshooting."
+description: Use when applying astrodynamics troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [space, orbital, astrodynamics-calculations]
-    related_skills: [general]
 ---
 
 # Astrodynamics Troubleshooting

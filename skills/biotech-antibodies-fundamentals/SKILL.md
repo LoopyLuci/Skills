@@ -1,14 +1,13 @@
 ---
 name: biotech-antibodies-fundamentals
-description: "Use when applying monoclonal antibodies fundamentals."
+description: Use when applying monoclonal antibodies fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, antibodies]
-    related_skills: ['']
 ---
 
 # Biotech Antibodies Fundamentals

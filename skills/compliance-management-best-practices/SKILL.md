@@ -1,14 +1,13 @@
 ---
 name: compliance-management-best-practices
-description: "Use when applying compliance management best practices."
+description: Use when applying compliance management best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [compliance, governance, compliance-management]
-    related_skills: [general]
 ---
 
 # Compliance Management Best Practices

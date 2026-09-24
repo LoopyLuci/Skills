@@ -1,14 +1,13 @@
 ---
 name: compensation-design-troubleshooting
-description: "Use when applying compensation design troubleshooting."
+description: Use when applying compensation design troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [hr, compensation, compensation-structures-design]
-    related_skills: [general]
 ---
 
 # Compensation Design Troubleshooting

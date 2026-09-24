@@ -1,13 +1,13 @@
 ---
 name: agentic-models-from-scratch
-description: "Use when building custom agentic AI models from scratch."
+description: Use when building custom agentic AI models from scratch.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [agents, agentic, foundation-model, architecture, training]
-    related_skills: [custom-neural-architecture-design, agent-framework-design, tool-augmented-models-training, rlhf-implementation-guide, agent-reasoning-patterns]
 ---
 
 # Agentic Models From Scratch

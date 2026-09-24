@@ -1,14 +1,13 @@
 ---
 name: climate-tech-startup-funding
-description: "Use when funding climate startups. VC, grants, policy."
+description: Use when funding climate startups. VC, grants, policy.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climatetech, climate-startups, venture-capital, funding]
-    related_skills: [climate-tech-patents, sustainable-finance-taxonomies]
 ---
 
 # Climate Tech Startup Funding

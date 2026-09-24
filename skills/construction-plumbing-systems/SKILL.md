@@ -1,14 +1,13 @@
 ---
 name: construction-plumbing-systems
-description: "Use when designing plumbing systems."
+description: Use when designing plumbing systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [construction, plumbing, piping, fixtures]
-    related_skills: [general]
 ---
 
 # Construction Plumbing Systems

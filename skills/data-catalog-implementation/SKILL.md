@@ -1,14 +1,13 @@
 ---
 name: data-catalog-implementation
-description: "Use when implementing data catalog."
+description: Use when implementing data catalog.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data-governance, catalog, metadata]
-    related_skills: [general]
 ---
 
 # Data Catalog Implementation

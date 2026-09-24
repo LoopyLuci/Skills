@@ -1,14 +1,13 @@
 ---
 name: fastapi-authentication-fundamentals
-description: "Use when applying fastapi auth fundamentals."
+description: Use when applying fastapi auth fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, fastapi, auth, python]
-    related_skills: [general]
 ---
 
 # Fastapi Authentication Fundamentals

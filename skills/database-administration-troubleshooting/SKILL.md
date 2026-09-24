@@ -1,14 +1,13 @@
 ---
 name: database-administration-troubleshooting
-description: "Use when for database administration troubleshooting."
+description: Use when for database administration troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, dba, administration, maintenance]
-    related_skills: [general]
 ---
 
 # Database Administration Troubleshooting

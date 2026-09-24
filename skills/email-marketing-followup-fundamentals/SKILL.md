@@ -1,14 +1,13 @@
 ---
 name: email-marketing-followup-fundamentals
-description: "Use when applying email follow-up fundamentals."
+description: Use when applying email follow-up fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, follow-up, sales]
-    related_skills: [general]
 ---
 
 # Email Marketing Followup Fundamentals

@@ -1,14 +1,13 @@
 ---
 name: climatology-troubleshooting
-description: "Use when troubleshooting climatology issues."
+description: Use when troubleshooting climatology issues.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climatology, climate, weather, change]
-    related_skills: [general]
 ---
 
 # Climatology Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: crispro-cas9-nickase-best-practices
-description: "Use when applying crispro cas9 nickase best practices."
+description: Use when applying crispro cas9 nickase best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, crispr, crispr-gene-editing]
-    related_skills: ['']
 ---
 
 # Crispro Cas9 Nickase Best Practices

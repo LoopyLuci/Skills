@@ -1,14 +1,13 @@
 ---
 name: electric-grid-fundamentals
-description: "Use when applying electric grids fundamentals."
+description: Use when applying electric grids fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [energy, grid, smart-grid-optimization]
-    related_skills: [general]
 ---
 
 # Electric Grid Fundamentals

@@ -1,14 +1,13 @@
 ---
 name: backend-csharp-best-troubleshooting
-description: "Use when applying backend c# best troubleshooting."
+description: Use when applying backend c# best troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, csharp, backend-csharp-best-practices]
-    related_skills: [general]
 ---
 
 # Backend Csharp Best Troubleshooting

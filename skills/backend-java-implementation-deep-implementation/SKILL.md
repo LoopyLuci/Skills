@@ -1,14 +1,13 @@
 ---
 name: backend-java-implementation-deep-implementation
-description: "Use when applying java backend implementation implementa."
+description: Use when applying java backend implementation implementa.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, java]
-    related_skills: ['backend-java-implementation']
 ---
 
 # Backend Java Implementation Deep Implementation

@@ -1,14 +1,13 @@
 ---
 name: banking-risk-tech-implementation
-description: "Use when applying banking risk tech implementation."
+description: Use when applying banking risk tech implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, risk, banking-risk]
-    related_skills: [general]
 ---
 
 # Banking Risk Tech Implementation

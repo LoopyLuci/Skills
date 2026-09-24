@@ -2,12 +2,12 @@
 name: tv-production-management
 description: TV production, budgeting, scheduling, and post-production
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["tv", "production"]
+    tags: [tv, production]
 ---
 
 # Tv Production Management

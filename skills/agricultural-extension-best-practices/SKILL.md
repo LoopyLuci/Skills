@@ -1,14 +1,13 @@
 ---
 name: agricultural-extension-best-practices
-description: "Use when applying ag extension best practices."
+description: Use when applying ag extension best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agriculture, education, extension]
-    related_skills: [general]
 ---
 
 # Agricultural Extension Best Practices

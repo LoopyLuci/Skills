@@ -1,14 +1,13 @@
 ---
 name: email-list-building-troubleshooting
-description: "Use when applying email list building troubleshooting."
+description: Use when applying email list building troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, marketing, list-building-email-growth]
-    related_skills: [general]
 ---
 
 # Email List Building Troubleshooting

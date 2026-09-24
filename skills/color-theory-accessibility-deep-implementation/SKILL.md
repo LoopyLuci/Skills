@@ -1,14 +1,13 @@
 ---
 name: color-theory-accessibility-deep-implementation
-description: "Use when applying color theory accessibility implementat."
+description: Use when applying color theory accessibility implementat.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [design, color]
-    related_skills: ['color-theory-accessibility']
 ---
 
 # Color Theory Accessibility Deep Implementation

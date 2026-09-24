@@ -1,15 +1,13 @@
 ---
 name: powerpoint
-description: "Create, read, edit .pptx decks, slides, notes, templates."
-version: 2.0.0
-author: Anthropic (adapted by Nous Research)
-license: Proprietary. LICENSE.txt has complete terms
-platforms: [linux, macos, windows]
+description: Create, read, edit .pptx decks, slides, notes, templates.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [PowerPoint, PPTX, Presentations, Office, Productivity]
-    category: productivity
-    related_skills: [docx, xlsx, pdf]
+    tags: [powerpoint, pptx, presentations, office, productivity]
 ---
 
 # Powerpoint Skill

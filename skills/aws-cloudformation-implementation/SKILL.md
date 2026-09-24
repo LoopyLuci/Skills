@@ -1,14 +1,13 @@
 ---
 name: aws-cloudformation-implementation
-description: "Use when applying aws cloudformation implementation."
+description: Use when applying aws cloudformation implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, cloudformation, iac, templates]
-    related_skills: [general]
 ---
 
 # Aws Cloudformation Implementation

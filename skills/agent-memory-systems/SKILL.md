@@ -1,9 +1,15 @@
 ---
 name: agent-memory-systems
-description: "Use when implementing memory for AI agents."
-category: mlops
-tags: [agents, memory, context, retrieval, vector-db]
+description: Use when implementing memory for AI agents.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [agents, memory, context, retrieval, vector-db]
 ---
+
 # Agent Memory Systems
 
 Implementing memory architectures for AI agents.

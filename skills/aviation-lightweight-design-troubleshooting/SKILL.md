@@ -1,14 +1,13 @@
 ---
 name: aviation-lightweight-design-troubleshooting
-description: "Use when applying lightweight design troubleshooting."
+description: Use when applying lightweight design troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, weight, lightweight]
-    related_skills: ['general']
 ---
 
 # Aviation Lightweight Design Troubleshooting

@@ -1,22 +1,13 @@
 ---
-
 name: google-cloud-solution-agentic-analytics-spark-knowledge-catalog
-  category: BigDataAndAnalytics
-description: >-
-  Discovers requirements and generates guidance to design and deploy a governed,
-  secure agentic-analytics solution for data that's distributed across Google
-  Cloud, other cloud providers, or on-premises. Data that's outside Google Cloud
-  (such as data from Databricks, Snowflake, Salesforce, SAP, or Oracle systems)
-  is accessed through federation mechanisms such as Apache Iceberg, other
-  "zero-copy ETL" methods, or remote query push-down. Use this skill when
-  designing an architecture for efficient analytics across large volumes of
-  structured and unstructured data that's located in multiple systems and
-  environments, including other cloud providers and on-premises.
-source: google/skills
+description: Skill for google cloud solution agentic analytics spark knowledge catalog
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [agent, skill]
-
 ---
 
 # Agentic analytics across cloud providers and data types

@@ -1,9 +1,13 @@
 ---
 name: python-orchestrator
-title: Python Orchestrator
 description: Use when orchestrating Sentinel from Python scripts.
-category: networking
-tags: [python, orchestration, cli, api, scripting, integration]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [python, orchestration, cli, api, scripting, integration]
 ---
 
 # Python Orchestrator

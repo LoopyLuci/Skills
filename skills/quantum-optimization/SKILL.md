@@ -2,12 +2,12 @@
 name: quantum-optimization
 description: Quantum annealing, QAOA for combinatorial optimization, and D-Wave workflows
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["optimization", "annealing"]
+    tags: [optimization, annealing]
 ---
 
 # Quantum Optimization

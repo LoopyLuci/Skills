@@ -1,9 +1,13 @@
 ---
 name: jupyter-notebook-best-practices
-description: "Use when building Jupyter notebooks."
+description: Use when building Jupyter notebooks.
 version: 1.0.0
-author: Hermes Agent
-tags: ["jupyter", "notebooks", "reproducibility", "visualization"]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [jupyter, notebooks, reproducibility, visualization]
 ---
 
 # Jupyter Notebook Best Practices

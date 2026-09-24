@@ -1,14 +1,13 @@
 ---
 name: backend-elixir-impl-troubleshooting
-description: "Use when applying backend elixir implementation troubles."
+description: Use when applying backend elixir implementation troubles.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, elixir, backend-elixir-implementation]
-    related_skills: [general]
 ---
 
 # Backend Elixir Impl Troubleshooting

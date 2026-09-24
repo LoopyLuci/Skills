@@ -1,14 +1,13 @@
 ---
 name: network-and-service-troubleshooting
-description: "Diagnose flapping services and deployment issues."
+description: Diagnose flapping services and deployment issues.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [debugging, troubleshooting, networking, bots, deployment, infrastructure, root-cause]
-    related_skills: [systematic-debugging]
 ---
 
 # Network and Service Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: brain-computer-implementation
-description: "Use when applying brain-computer implementation."
+description: Use when applying brain-computer implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neurotech, bci, neural-interface-design]
-    related_skills: [general]
 ---
 
 # Brain Computer Implementation

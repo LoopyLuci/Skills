@@ -2,12 +2,12 @@
 name: telemedicine-virtual-care
 description: Telehealth platforms, remote patient monitoring, digital front door, and licensure
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["telehealth", "virtual"]
+    tags: [telehealth, virtual]
 ---
 
 # Telemedicine Virtual Care

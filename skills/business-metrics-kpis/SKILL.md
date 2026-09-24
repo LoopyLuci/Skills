@@ -1,13 +1,13 @@
 ---
 name: business-metrics-kpis
-description: "Use when defining and tracking business metrics and KPIs."
+description: Use when defining and tracking business metrics and KPIs.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [kpis, metrics, dashboards, business-intelligence, reporting, OKRs]
-    related_skills: [crm-sales-pipeline, digital-marketing-strategy, website-analytics-tracking, conversion-rate-optimization]
+    tags: [kpis, metrics, dashboards, business-intelligence, reporting, okrs]
 ---
 
 # Business Metrics Kpis

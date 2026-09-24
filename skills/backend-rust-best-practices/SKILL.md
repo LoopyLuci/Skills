@@ -1,14 +1,13 @@
 ---
 name: backend-rust-best-practices
-description: "Use when applying rust backend best practices."
+description: Use when applying rust backend best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, rust, webassembly, performance]
-    related_skills: [general]
 ---
 
 # Backend Rust Best Practices

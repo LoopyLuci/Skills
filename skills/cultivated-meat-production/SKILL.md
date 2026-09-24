@@ -1,14 +1,13 @@
 ---
 name: cultivated-meat-production
-description: "Use when producing cultivated meat."
+description: Use when producing cultivated meat.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [food-tech, cultivated-meat, biotech, lab-grown]
-    related_skills: [general]
 ---
 
 # Cultivated Meat Production

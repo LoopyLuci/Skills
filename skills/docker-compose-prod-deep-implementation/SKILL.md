@@ -1,14 +1,13 @@
 ---
 name: docker-compose-prod-deep-implementation
-description: "Use when applying docker compose production implementation."
+description: Use when applying docker compose production implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, docker]
-    related_skills: ['docker-compose-prod']
 ---
 
 # Docker Compose Prod Deep Implementation

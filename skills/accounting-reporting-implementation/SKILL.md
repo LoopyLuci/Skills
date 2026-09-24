@@ -1,14 +1,13 @@
 ---
 name: accounting-reporting-implementation
-description: "Use when applying financial reporting implementation."
+description: Use when applying financial reporting implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [accounting, reporting, finance, financial-reporting]
-    related_skills: [general]
 ---
 
 # Accounting Reporting Implementation

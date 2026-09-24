@@ -1,14 +1,13 @@
 ---
 name: banking-api-integration-implementation
-description: "Use when applying banking apis implementation."
+description: Use when applying banking apis implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, api, banking-api-integration]
-    related_skills: [general]
 ---
 
 # Banking Api Integration Implementation

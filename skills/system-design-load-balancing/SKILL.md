@@ -1,12 +1,13 @@
 ---
 name: system-design-load-balancing
-description: "Use when designing load balancers."
+description: Use when designing load balancers.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["system-design", "load-balancing", "reverse-proxy", "HA"]
+    tags: [system-design, load-balancing, reverse-proxy, ha]
 ---
 
 # System Design Load Balancing

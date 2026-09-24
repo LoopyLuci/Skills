@@ -1,13 +1,13 @@
 ---
 name: skill-cross-reference-mapper
-description: "Use when mapping skill dependencies and cross-references."
+description: Use when mapping skill dependencies and cross-references.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [skill-cross-reference, dependency-map, graph, relationships, meta]
-    related_skills: [skill-inventory-management, skill-quality-standards, meta-skill-patterns]
 ---
 
 # Skill Cross-Reference Mapper

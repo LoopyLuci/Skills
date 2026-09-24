@@ -1,14 +1,13 @@
 ---
 name: academic-peer-review
-description: "Use when conducting peer review."
+description: Use when conducting peer review.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [research, peer-review, academic, evaluation]
-    related_skills: [general]
 ---
 
 # Academic Peer Review

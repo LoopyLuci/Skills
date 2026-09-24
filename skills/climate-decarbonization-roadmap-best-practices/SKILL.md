@@ -1,14 +1,13 @@
 ---
 name: climate-decarbonization-roadmap-best-practices
-description: "Use when applying decarbonization roadmapping best pract."
+description: Use when applying decarbonization roadmapping best pract.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, decarbonization, decarbonization-roadmapping]
-    related_skills: ['']
 ---
 
 # Climate Decarbonization Roadmap Best Practices

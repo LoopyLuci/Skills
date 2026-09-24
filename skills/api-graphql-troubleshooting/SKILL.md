@@ -1,14 +1,13 @@
 ---
 name: api-graphql-troubleshooting
-description: "Use when applying graphql api troubleshooting."
+description: Use when applying graphql api troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [api, graphql, graphql-development, graphql-api-implementation]
-    related_skills: [general]
 ---
 
 # Api Graphql Troubleshooting

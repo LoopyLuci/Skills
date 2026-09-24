@@ -1,14 +1,13 @@
 ---
 name: email-marketing-open-rate-fundamentals
-description: "Use when applying email open rate fundamentals."
+description: Use when applying email open rate fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, analytics, open-rate]
-    related_skills: [general]
 ---
 
 # Email Marketing Open Rate Fundamentals

@@ -1,12 +1,13 @@
 ---
 name: content-marketing-calendar
-description: "Use when building content calendars."
+description: Use when building content calendars.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["content", "marketing", "calendar", "editorial", "strategy"]
+    tags: [content, marketing, calendar, editorial, strategy]
 ---
 
 # Content Marketing Calendar

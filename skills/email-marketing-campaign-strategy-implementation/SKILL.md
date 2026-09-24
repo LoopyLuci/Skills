@@ -1,14 +1,13 @@
 ---
 name: email-marketing-campaign-strategy-implementation
-description: "Use when applying email campaign strategy implementation."
+description: Use when applying email campaign strategy implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, strategy, campaigns]
-    related_skills: [general]
 ---
 
 # Email Marketing Campaign Strategy Implementation

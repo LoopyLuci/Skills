@@ -1,14 +1,13 @@
 ---
 name: data-preprocessing-best-practices
-description: "Use when applying data preprocessing best practices."
+description: Use when applying data preprocessing best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, preprocessing, data-cleaning-patterns]
-    related_skills: [general]
 ---
 
 # Data Preprocessing Best Practices

@@ -1,14 +1,13 @@
 ---
 name: application-security-optimization
-description: "Use when optimizing app security systems."
+description: Use when optimizing app security systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, app-security, vulnerability]
-    related_skills: [general]
 ---
 
 # Application Security Optimization

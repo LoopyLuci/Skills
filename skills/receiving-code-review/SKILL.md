@@ -1,8 +1,13 @@
 ---
 name: receiving-code-review
 description: Use when receiving and integrating feedback from code reviews
-tags: [code-review, feedback, pull-request, quality]
-related_skills: [finishing-a-development-branch, code-review-checklist]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [code-review, feedback, pull-request, quality]
 ---
 
 # Receiving Code Review

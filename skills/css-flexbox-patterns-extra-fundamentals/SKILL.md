@@ -1,14 +1,13 @@
 ---
 name: css-flexbox-patterns-extra-fundamentals
-description: "Use when applying css flexbox fundamentals."
+description: Use when applying css flexbox fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [web, css]
-    related_skills: ['css-flexbox-patterns']
 ---
 
 # Css Flexbox Patterns Extra Fundamentals

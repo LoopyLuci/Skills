@@ -1,14 +1,13 @@
 ---
 name: climate-risk-assessment-fundamentals
-description: "Use when applying climate risk assessment fundamentals."
+description: Use when applying climate risk assessment fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, risk, climate-risk-assessment]
-    related_skills: [general]
 ---
 
 # Climate Risk Assessment Fundamentals

@@ -1,14 +1,13 @@
 ---
 name: banking-customer-onboarding-implementation
-description: "Use when applying banking onboarding implementation."
+description: Use when applying banking onboarding implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, customer, bank-onboarding]
-    related_skills: [general]
 ---
 
 # Banking Customer Onboarding Implementation

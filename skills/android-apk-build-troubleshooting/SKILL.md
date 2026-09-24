@@ -1,14 +1,13 @@
 ---
 name: android-apk-build-troubleshooting
-description: "Use when applying android apk build troubleshooting."
+description: Use when applying android apk build troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mobile, android, apk, android-apk-cli-build]
-    related_skills: [general]
 ---
 
 # Android Apk Build Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: backend-php-trouble-fundamentals
-description: "Use when applying backend php troubl fundamentals."
+description: Use when applying backend php troubl fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, php, backend-php-troubleshooting]
-    related_skills: [general]
 ---
 
 # Backend Php Trouble Fundamentals

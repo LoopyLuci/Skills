@@ -1,14 +1,13 @@
 ---
 name: android-app-performance
-description: "Use when optimizing Android app performance."
+description: Use when optimizing Android app performance.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mobile, android, performance-optimization, profiling]
-    related_skills: ['mobile-performance-profiling']
 ---
 
 # Android App Performance

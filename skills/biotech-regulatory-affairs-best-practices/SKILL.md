@@ -1,14 +1,13 @@
 ---
 name: biotech-regulatory-affairs-best-practices
-description: "Use when applying biotech regulatory affairs best practi."
+description: Use when applying biotech regulatory affairs best practi.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, regulatory, regulatory-affairs]
-    related_skills: [general]
 ---
 
 # Biotech Regulatory Affairs Best Practices

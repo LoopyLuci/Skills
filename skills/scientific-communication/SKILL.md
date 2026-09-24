@@ -2,12 +2,12 @@
 name: scientific-communication
 description: Conference presentations, posters, science communication, and public engagement
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["communication", "outreach"]
+    tags: [communication, outreach]
 ---
 
 # Scientific Communication

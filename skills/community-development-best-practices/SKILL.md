@@ -1,14 +1,13 @@
 ---
 name: community-development-best-practices
-description: "Use when applying community development best practices."
+description: Use when applying community development best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [npo, community, community-engagement-strategies]
-    related_skills: [general]
 ---
 
 # Community Development Best Practices

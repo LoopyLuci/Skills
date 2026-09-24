@@ -1,14 +1,13 @@
 ---
 name: database-postgresql-replication-fundamentals
-description: "Use when applying postgresql replication fundamentals."
+description: Use when applying postgresql replication fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, postgresql, replication, ha]
-    related_skills: [general]
 ---
 
 # Database Postgresql Replication Fundamentals

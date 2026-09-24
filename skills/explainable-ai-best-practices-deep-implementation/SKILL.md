@@ -1,14 +1,13 @@
 ---
 name: explainable-ai-best-practices-deep-implementation
-description: "Use when applying explainable ai implementation."
+description: Use when applying explainable ai implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, xai]
-    related_skills: ['explainable-ai-xai-patterns']
 ---
 
 # Explainable Ai Best Practices Deep Implementation

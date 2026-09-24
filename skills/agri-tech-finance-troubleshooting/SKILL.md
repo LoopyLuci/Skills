@@ -1,14 +1,13 @@
 ---
 name: agri-tech-finance-troubleshooting
-description: "Use when applying agricultural finance troubleshooting."
+description: Use when applying agricultural finance troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agri, finance, agricultural-finance]
-    related_skills: ['']
 ---
 
 # Agri Tech Finance Troubleshooting

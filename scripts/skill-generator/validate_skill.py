@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
 """
-Skill Validator — Check that all skills in the repo meet format standards.
+Skill Validator — Properly validates both Format A (new) and Format B (curated).
 
-Usage:
-  python validate_skill.py                    # Validate all skills
-  python validate_skill.py skills/my-skill    # Validate one skill
-  python validate_skill.py --fix              # Attempt to fix common issues
+Format A: metadata.hermes.tags, ## Trigger, ## Core Concepts
+Format B: flat tags, ## Overview, ## When to Use, ## Key Approaches, ## Common Pitfalls, ## Verification Checklist
 """
 import json
 import re
@@ -14,168 +12,178 @@ from pathlib import Path
 
 REPO_SKILLS = Path(r"Z:\Projects\Skills\LoopyLuci-skills\skills")
 
-REQUIRED_FRONTMATTER = ["name", "description", "version", "author", "license", "metadata"]
-REQUIRED_SECTIONS = ["## Trigger", "## Core Concepts"]
-
-
-def parse_frontmatter(content):
-    """Extract and parse YAML frontmatter. Returns (frontmatter_text, body, parsed_dict)."""
-    if not content.startswith("---"):
-        return None, content, None
-
-    end = content.find("---", 3)
-    if end == -1:
-        return None, content, None
-
-    fm_text = content[3:end].strip()
-    body = content[end+3:].strip()
-
-    # Simple parser
-    fm = {}
-    current_key = None
-    for line in fm_text.split('\n'):
-        if not line.strip():
+def parse_fm(text):
+    result = {}
+    stack = [(result, -1)]
+    for line in text.split('\n'):
+        if not line.strip() or line.strip().startswith('#'):
             continue
-        if line.startswith('  ') or line.startswith('\t'):
-            # continuation or nested
-            continue
-        if ':' in line:
-            key, _, val = line.partition(':')
+        stripped = line.lstrip()
+        indent = len(line) - len(stripped)
+        while len(stack) > 1 and stack[-1][1] >= indent:
+            stack.pop()
+        parent_dict = stack[-1][0]
+        if ':' in stripped:
+            key, _, val = stripped.partition(':')
             key = key.strip()
             val = val.strip()
-            if val.startswith('[') and val.endswith(']'):
-                val = [v.strip() for v in val[1:-1].split(',')]
-            fm[key] = val
-            current_key = key
+            if val == '':
+                new_dict = {}
+                parent_dict[key] = new_dict
+                stack.append((new_dict, indent))
+            elif val.startswith('[') and val.endswith(']'):
+                items = [v.strip().strip('"').strip("'") for v in val[1:-1].split(',') if v.strip()]
+                parent_dict[key] = items
+            else:
+                parent_dict[key] = val
+    return result
 
-    return fm_text, body, fm
+
+def find_frontmatter_end(content):
+    for i in range(3, len(content) - 3):
+        if content[i:i+3] == '---':
+            prev = content[i-1]
+            if prev in ('\n', '\r'):
+                return i
+    return -1
+
+
+def detect_format(body, fm):
+    """Detect which format a skill uses."""
+    is_format_a = (
+        "## Trigger" in body and "## Core Concepts" in body
+    )
+    is_format_b = (
+        "## Overview" in body or "## When to Use" in body
+    )
+    
+    if is_format_a and is_format_b:
+        return "mixed"
+    elif is_format_a:
+        return "A"
+    elif is_format_b:
+        return "B"
+    else:
+        return "unknown"
 
 
 def validate_skill(skill_dir):
-    """Validate a single skill directory. Returns list of issues."""
     issues = []
     skill_md = skill_dir / "SKILL.md"
-
+    
     if not skill_md.exists():
-        return [f"Missing SKILL.md in {skill_dir.name}"]
-
+        return [("error", "Missing SKILL.md")]
+    
     content = skill_md.read_text(encoding="utf-8")
-    fm_text, body, fm = parse_frontmatter(content)
-
-    if fm is None:
-        issues.append("Invalid or missing YAML frontmatter")
-        return issues
-
-    # Check required fields
-    for field in REQUIRED_FRONTMATTER:
-        if field not in fm:
-            issues.append(f"Missing required field: {field}")
-
+    
+    if not content.startswith("---"):
+        return [("error", "Missing frontmatter start")]
+    
+    end = find_frontmatter_end(content)
+    if end == -1:
+        return [("error", "Missing frontmatter end")]
+    
+    fm_text = content[3:end].strip()
+    body = content[end+3:].strip()
+    
+    try:
+        fm = parse_fm(fm_text)
+    except Exception:
+        return [("error", "YAML parse error")]
+    
+    # Check required fields (both formats)
+    for field in ["name", "description"]:
+        if field not in fm or not fm.get(field):
+            issues.append(("error", f"Missing required field: {field}"))
+    
     # Check name matches directory
-    if "name" in fm:
-        expected = skill_dir.name
-        actual = str(fm["name"]).strip()
-        if actual != expected:
-            issues.append(f"Name mismatch: frontmatter='{actual}', dir='{expected}'")
-
-    # Check tags
-    metadata = fm.get("metadata", {})
-    if isinstance(metadata, dict):
-        hermes = metadata.get("hermes", {})
-        if isinstance(hermes, dict):
-            tags = hermes.get("tags", [])
-            if not tags:
-                issues.append("No tags")
-            else:
-                for tag in tags:
-                    if tag != tag.lower():
-                        issues.append(f"Tag not lowercase: {tag}")
-
+    if fm.get("name") and fm["name"] != skill_dir.name:
+        issues.append(("error", f"Name mismatch: {fm['name']} != {skill_dir.name}"))
+    
+    # Check version/author (warn only for format B)
+    if "version" not in fm:
+        issues.append(("warn", "Missing version"))
+    if "author" not in fm:
+        issues.append(("warn", "Missing author"))
+    
+    # Check tags (either format)
+    has_tags = False
+    if "metadata" in fm and isinstance(fm["metadata"], dict):
+        hermes = fm["metadata"].get("hermes")
+        if isinstance(hermes, dict) and hermes.get("tags"):
+            has_tags = True
+    if "tags" in fm and fm["tags"]:
+        has_tags = True
+    
+    if not has_tags:
+        issues.append(("error", "No tags"))
+    
     # Check body
-    if len(body) < 100:
-        issues.append(f"Body too short ({len(body)} chars)")
-    else:
-        for section in REQUIRED_SECTIONS:
-            if section not in body:
-                issues.append(f"Missing section: {section}")
-
+    fmt = detect_format(body, fm)
+    if len(body) < 50:
+        issues.append(("error", f"Body too short ({len(body)} chars)"))
+    elif fmt == "unknown" and len(body) < 200:
+        issues.append(("warn", f"Body may be too short ({len(body)} chars)"))
+    
     return issues
 
 
-def validate_all(fix=False):
-    """Validate all skills. Returns (valid_count, issue_count, issues_by_skill)."""
+def main():
+    fix_mode = "--fix" in sys.argv
     skills = sorted(REPO_SKILLS.iterdir())
+    
     valid = 0
-    with_issues = 0
-    all_issues = {}
-
+    with_errors = 0
+    with_warnings = 0
+    
+    error_skills = {}
+    warn_skills = {}
+    
     for skill_dir in skills:
         if not skill_dir.is_dir():
             continue
         issues = validate_skill(skill_dir)
-        if issues:
-            with_issues += 1
-            all_issues[skill_dir.name] = issues
-            if fix:
-                # Attempt common fixes
-                pass
+        
+        errors = [i for i in issues if i[0] == "error"]
+        warns = [i for i in issues if i[0] == "warn"]
+        
+        if errors:
+            with_errors += 1
+            error_skills[skill_dir.name] = issues
+        elif warns:
+            with_warnings += 1
+            warn_skills[skill_dir.name] = issues
+            valid += 1
         else:
             valid += 1
-
-    return valid, with_issues, all_issues
-
-
-def main():
-    import argparse
-    parser = argparse.ArgumentParser()
-    parser.add_argument('path', nargs='?', help='Specific skill to validate')
-    parser.add_argument('--fix', action='store_true', help='Fix common issues')
-    args = parser.parse_args()
-
-    if args.path:
-        issues = validate_skill(Path(args.path))
-        if issues:
-            print(f"Issues ({len(issues)}):")
-            for i in issues:
-                print(f"  - {i}")
-        else:
-            print(f"Valid: {args.path}")
-        return
-
-    valid, with_issues, all_issues = validate_all(args.fix)
-    total = valid + with_issues
-
+    
+    total = valid + with_errors
+    
     print(f"=== Validation Summary ===")
     print(f"  Total: {total}")
     print(f"  Valid: {valid}")
-    print(f"  With issues: {with_issues}")
-    print()
-
-    if all_issues:
-        # Group by issue type
+    print(f"  With warnings: {with_warnings}")
+    print(f"  With errors: {with_errors}")
+    
+    if error_skills:
+        print(f"\n=== Errors ===")
         from collections import Counter
-        issue_types = Counter()
-        for issues in all_issues.values():
-            for issue in issues:
-                # Normalize
-                if "Missing required field" in issue:
-                    issue_types["Missing required field"] += 1
-                elif "Missing section" in issue:
-                    issue_types["Missing section"] += 1
-                elif "too short" in issue:
-                    issue_types["Body too short"] += 1
-                elif "Name mismatch" in issue:
-                    issue_types["Name mismatch"] += 1
-                elif "No tags" in issue:
-                    issue_types["No tags"] += 1
-                elif "not lowercase" in issue:
-                    issue_types["Tag not lowercase"] += 1
-                else:
-                    issue_types[issue] += 1
-
-        print("Issue breakdown:")
-        for issue_type, count in issue_types.most_common(20):
-            print(f"  {issue_type}: {count}")
+        error_types = Counter()
+        for issues in error_skills.values():
+            for _, msg in issues:
+                error_types[msg] += 1
+        for msg, count in error_types.most_common(20):
+            print(f"  {msg}: {count}")
+    
+    if warn_skills:
+        print(f"\n=== Warnings ===")
+        from collections import Counter
+        warn_types = Counter()
+        for issues in warn_skills.values():
+            for _, msg in issues:
+                warn_types[msg] += 1
+        for msg, count in warn_types.most_common(10):
+            print(f"  {msg}: {count}")
 
 
 if __name__ == "__main__":

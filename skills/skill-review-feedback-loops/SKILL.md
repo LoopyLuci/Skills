@@ -1,13 +1,13 @@
 ---
 name: skill-review-feedback-loops
-description: "Use when implementing skill review and feedback processes."
+description: Use when implementing skill review and feedback processes.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [meta, skill-review, feedback, quality-assurance, iteration, improvement]
-    related_skills: [skill-quality-standards, skill-testing-framework, skill-maintenance-lifecycle, code-review-checklist]
 ---
 
 # Skill Review Feedback Loops

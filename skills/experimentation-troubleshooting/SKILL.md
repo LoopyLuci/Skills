@@ -1,14 +1,13 @@
 ---
 name: experimentation-troubleshooting
-description: "Use when troubleshooting experimentation."
+description: Use when troubleshooting experimentation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [experimentation, ab-testing, experimentation]
-    related_skills: [general]
 ---
 
 # Experimentation Troubleshooting

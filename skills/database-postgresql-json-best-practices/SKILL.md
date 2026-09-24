@@ -1,14 +1,13 @@
 ---
 name: database-postgresql-json-best-practices
-description: "Use when applying postgresql json best practices."
+description: Use when applying postgresql json best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, postgresql, json, document]
-    related_skills: [general]
 ---
 
 # Database Postgresql Json Best Practices

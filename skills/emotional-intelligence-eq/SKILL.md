@@ -2,12 +2,12 @@
 name: emotional-intelligence-eq
 description: EQ development, empathy, self-awareness, and social skills
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["eq", "emotions"]
+    tags: [eq, emotions]
 ---
 
 # Emotional Intelligence Eq

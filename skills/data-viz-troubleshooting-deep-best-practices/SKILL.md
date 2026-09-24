@@ -1,14 +1,13 @@
 ---
 name: data-viz-troubleshooting-deep-best-practices
-description: "Use when applying data viz troubleshooting best practices."
+description: Use when applying data viz troubleshooting best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [design, data-viz]
-    related_skills: ['data-viz-troubleshooting']
 ---
 
 # Data Viz Troubleshooting Deep Best Practices

@@ -2,12 +2,12 @@
 name: endurance-cardio-training
 description: Zone training, periodization, and programming for running/cycling
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["endurance", "cardio"]
+    tags: [endurance, cardio]
 ---
 
 # Endurance Cardio Training

@@ -1,14 +1,13 @@
 ---
 name: dark-matter-fundamentals
-description: "Use when applying dark matter fundamentals."
+description: Use when applying dark matter fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [physics, astronomy, astrophysics]
-    related_skills: [general]
 ---
 
 # Dark Matter Fundamentals

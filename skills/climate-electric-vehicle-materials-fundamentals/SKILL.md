@@ -1,14 +1,13 @@
 ---
 name: climate-electric-vehicle-materials-fundamentals
-description: "Use when applying climate electric vehicle materials fun."
+description: Use when applying climate electric vehicle materials fun.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, environment]
-    related_skills: ['']
 ---
 
 # Climate Electric Vehicle Materials Fundamentals

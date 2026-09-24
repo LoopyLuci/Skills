@@ -1,14 +1,13 @@
 ---
 name: docker-image-optimization-deep-best-practices
-description: "Use when applying docker image optimization best practices."
+description: Use when applying docker image optimization best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, docker]
-    related_skills: ['docker-image-optimization']
 ---
 
 # Docker Image Optimization Deep Best Practices

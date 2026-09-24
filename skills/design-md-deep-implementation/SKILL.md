@@ -1,14 +1,13 @@
 ---
 name: design-md-deep-implementation
-description: "Use when applying design.md token spec implementation."
+description: Use when applying design.md token spec implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [design, design-md]
-    related_skills: ['design-md']
 ---
 
 # Design Md Deep Implementation

@@ -1,14 +1,13 @@
 ---
 name: cognitive-state-monitoring
-description: "Use when monitoring cognitive states. EEG, fNIRS."
+description: Use when monitoring cognitive states. EEG, fNIRS.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neurotech, cognitive-monitoring, eeg, fnirs, ml]
-    related_skills: [eeg-signal-processing, mental-health-monitoring]
 ---
 
 # Cognitive State Monitoring

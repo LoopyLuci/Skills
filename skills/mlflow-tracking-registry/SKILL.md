@@ -1,12 +1,13 @@
 ---
 name: mlflow-tracking-registry
-description: "Use when using MLflow tracking."
+description: Use when using MLflow tracking.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["mlflow", "tracking", "registry", "experiments", "models"]
+    tags: [mlflow, tracking, registry, experiments, models]
 ---
 
 # Mlflow Tracking Registry

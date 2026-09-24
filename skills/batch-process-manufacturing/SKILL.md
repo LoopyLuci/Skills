@@ -1,14 +1,13 @@
 ---
 name: batch-process-manufacturing
-description: "Use when managing batch processes."
+description: Use when managing batch processes.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [manufacturing, batch-processing, pharmaceutical, chemicals]
-    related_skills: [general]
 ---
 
 # Batch Process Manufacturing

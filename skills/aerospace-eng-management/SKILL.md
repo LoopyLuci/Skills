@@ -1,14 +1,13 @@
 ---
 name: aerospace-eng-management
-description: "Use when managing aerospace operations."
+description: Use when managing aerospace operations.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aerospace, aircraft, propulsion, structures]
-    related_skills: [general]
 ---
 
 # Aerospace Eng Management

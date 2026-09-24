@@ -1,14 +1,13 @@
 ---
 name: digital-health-troubleshooting
-description: "Use when applying digital health troubleshooting."
+description: Use when applying digital health troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, medicine, digital-health]
-    related_skills: [general]
 ---
 
 # Digital Health Troubleshooting

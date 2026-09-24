@@ -2,12 +2,12 @@
 name: unreal-engine-5
 description: Unreal Engine 5 C++ and Blueprints, Niagara VFX, World Partition, MetaSounds, and Lumen GI
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["unreal", "cpp", "game-dev"]
+    tags: [unreal, cpp, game-dev]
 ---
 
 # Unreal Engine 5

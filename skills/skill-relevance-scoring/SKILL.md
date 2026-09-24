@@ -1,6 +1,13 @@
 ---
 name: skill-relevance-scoring
 description: Score and rank skills by relevance to the current task.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [skill, relevance, scoring]
 ---
 
 # Skill Relevance Scoring

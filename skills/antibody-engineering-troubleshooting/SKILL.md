@@ -1,14 +1,13 @@
 ---
 name: antibody-engineering-troubleshooting
-description: "Use when applying antibody engineering troubleshooting."
+description: Use when applying antibody engineering troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, pharma, antibody-engineering]
-    related_skills: [general]
 ---
 
 # Antibody Engineering Troubleshooting

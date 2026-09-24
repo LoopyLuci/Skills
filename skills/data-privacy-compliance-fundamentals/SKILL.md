@@ -1,14 +1,13 @@
 ---
 name: data-privacy-compliance-fundamentals
-description: "Use when applying privacy compliance fundamentals."
+description: Use when applying privacy compliance fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [compliance, privacy, data-protection-compliance]
-    related_skills: [general]
 ---
 
 # Data Privacy Compliance Fundamentals

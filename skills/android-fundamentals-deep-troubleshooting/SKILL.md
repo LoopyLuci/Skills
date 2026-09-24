@@ -1,14 +1,13 @@
 ---
 name: android-fundamentals-deep-troubleshooting
-description: "Use when applying android fundamentals troubleshooting."
+description: Use when applying android fundamentals troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mobile, android]
-    related_skills: ['mobile-android-fundamentals']
 ---
 
 # Android Fundamentals Deep Troubleshooting

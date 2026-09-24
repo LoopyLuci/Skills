@@ -1,14 +1,13 @@
 ---
 name: algorithmic-trading-strategies
-description: "Use when building algo trading. Backtesting, execution."
+description: Use when building algo trading. Backtesting, execution.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [trading, finance, backtesting, quantitative, algo-trading]
-    related_skills: [banking-api-integration, financial-modeling-python]
 ---
 
 # Algorithmic Trading Strategies

@@ -2,12 +2,12 @@
 name: orbital-mechanics-astrodynamics
 description: Keplerian orbits, Hohmann transfers, station-keeping, and orbital perturbations
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["orbital", "astrodynamics"]
+    tags: [orbital, astrodynamics]
 ---
 
 # Orbital Mechanics Astrodynamics

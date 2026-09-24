@@ -1,14 +1,13 @@
 ---
 name: data-analytics-fundamentals
-description: "Use when learning data analytics fundamentals."
+description: Use when learning data analytics fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data-analytics, analysis, python]
-    related_skills: [general]
 ---
 
 # Data Analytics Fundamentals

@@ -1,14 +1,13 @@
 ---
 name: deep-learning-best-practices-deep-fundamentals
-description: "Use when applying deep learning best practices fundament."
+description: Use when applying deep learning best practices fundament.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, ml-deep-learning-best-practices]
-    related_skills: ['']
 ---
 
 # Deep Learning Best Practices Deep Fundamentals

@@ -1,14 +1,13 @@
 ---
 name: aviation-safety-best-practices
-description: "Use when applying aviation safety best practices."
+description: Use when applying aviation safety best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, safety, aviation-safety]
-    related_skills: [general]
 ---
 
 # Aviation Safety Best Practices

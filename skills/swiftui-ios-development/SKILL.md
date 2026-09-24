@@ -1,13 +1,13 @@
 ---
 name: swiftui-ios-development
-description: "Use when building iOS apps with SwiftUI."
+description: Use when building iOS apps with SwiftUI.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [SwiftUI, iOS, Swift, Apple, Combine, CoreData, SwiftData]
-    related_skills: [flutter-mobile-development, react-native-patterns, kotlin-android-development, webxr-ar-vr-development]
+    tags: [swiftui, ios, swift, apple, combine, coredata, swiftdata]
 ---
 
 # SwiftUI iOS Development

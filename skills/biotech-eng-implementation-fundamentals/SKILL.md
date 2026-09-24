@@ -1,14 +1,13 @@
 ---
 name: biotech-eng-implementation-fundamentals
-description: "Use when applying biotech implementation fundamentals."
+description: Use when applying biotech implementation fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, engineering, implementation]
-    related_skills: [general]
 ---
 
 # Biotech Eng Implementation Fundamentals

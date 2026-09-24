@@ -1,14 +1,13 @@
 ---
 name: biotech-toxicology-troubleshooting
-description: "Use when applying toxicology troubleshooting."
+description: Use when applying toxicology troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, toxicology]
-    related_skills: ['']
 ---
 
 # Biotech Toxicology Troubleshooting

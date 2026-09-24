@@ -1,14 +1,13 @@
 ---
 name: automotive-functional-safety
-description: "Use when ensuring automotive safety."
+description: Use when ensuring automotive safety.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [automotive, iso26262, safety, risk]
-    related_skills: [general]
 ---
 
 # Automotive Functional Safety

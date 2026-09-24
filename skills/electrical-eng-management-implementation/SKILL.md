@@ -1,14 +1,13 @@
 ---
 name: electrical-eng-management-implementation
-description: "Use when applying elect eng management implementation."
+description: Use when applying elect eng management implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, electrical, management]
-    related_skills: [general]
 ---
 
 # Electrical Eng Management Implementation

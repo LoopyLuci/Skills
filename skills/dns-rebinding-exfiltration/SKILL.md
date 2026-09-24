@@ -1,13 +1,13 @@
 ---
 name: dns-rebinding-exfiltration
-description: "Use when performing DNS-based attacks and exfiltration."
+description: Use when performing DNS-based attacks and exfiltration.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [DNS, rebinding, exfiltration, DNS-tunnel, dnscat2, iodine, data-exfil]
-    related_skills: [port-redirection-tunneling, command-control-c2-infrastructure, evasion-techniques-av-bypass, network-sniffing-packet-capture]
+    tags: [dns, rebinding, exfiltration, dns-tunnel, dnscat2, iodine, data-exfil]
 ---
 
 # DNS Rebinding and Exfiltration

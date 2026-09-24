@@ -1,14 +1,13 @@
 ---
 name: ballast-water-management
-description: "Use when managing ballast water. Treatment, regulations."
+description: Use when managing ballast water. Treatment, regulations.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [maritime, ballast-water, imo-2020, compliance]
-    related_skills: [general]
 ---
 
 # Ballast Water Management

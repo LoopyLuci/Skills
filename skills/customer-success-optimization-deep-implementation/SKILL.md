@@ -1,14 +1,13 @@
 ---
 name: customer-success-optimization-deep-implementation
-description: "Use when applying customer success optimization implemen."
+description: Use when applying customer success optimization implemen.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [sales, customer-success-optimization]
-    related_skills: ['']
 ---
 
 # Customer Success Optimization Deep Implementation

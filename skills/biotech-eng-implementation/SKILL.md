@@ -1,14 +1,13 @@
 ---
 name: biotech-eng-implementation
-description: "Use when for biotech eng implementation."
+description: Use when for biotech eng implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, management, general]
-    related_skills: [general]
 ---
 
 # Biotech Eng Implementation

@@ -2,12 +2,12 @@
 name: typography-typesetting
 description: Type selection, hierarchy, pairing, kerning, and responsive type scales
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["typography", "typesetting"]
+    tags: [typography, typesetting]
 ---
 
 # Typography Typesetting

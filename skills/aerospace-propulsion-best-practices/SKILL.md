@@ -1,14 +1,13 @@
 ---
 name: aerospace-propulsion-best-practices
-description: "Use when applying aerospace propulsion best practices."
+description: Use when applying aerospace propulsion best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aerospace, propulsion, rocket-propulsion-systems]
-    related_skills: [general]
 ---
 
 # Aerospace Propulsion Best Practices

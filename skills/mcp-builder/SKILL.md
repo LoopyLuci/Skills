@@ -1,8 +1,13 @@
 ---
 name: mcp-builder
 description: Use when building MCP servers for AI agent tools.
-tags: [mcp, model-context-protocol, api, typescript, python]
-related_skills: [mcp-server-development, hermes-mcp-server-integration]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [mcp, model-context-protocol, api, typescript, python]
 ---
 
 # MCP Server Development Guide

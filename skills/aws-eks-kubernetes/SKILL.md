@@ -1,14 +1,13 @@
 ---
 name: aws-eks-kubernetes
-description: "Use when using AWS EKS."
+description: Use when using AWS EKS.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, aws, aws-eks]
-    related_skills: [general]
 ---
 
 # Aws Eks Kubernetes

@@ -1,14 +1,13 @@
 ---
 name: chip-dft-best-practices
-description: "Use when applying chip dft best practices."
+description: Use when applying chip dft best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [semiconductor, dft, design-for-test]
-    related_skills: ['general']
 ---
 
 # Chip Dft Best Practices

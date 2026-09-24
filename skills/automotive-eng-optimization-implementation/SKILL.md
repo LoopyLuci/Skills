@@ -1,14 +1,13 @@
 ---
 name: automotive-eng-optimization-implementation
-description: "Use when applying automotive optimization implementation."
+description: Use when applying automotive optimization implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, automotive, optimization]
-    related_skills: [general]
 ---
 
 # Automotive Eng Optimization Implementation

@@ -2,12 +2,12 @@
 name: product-launch-gtm
 description: Go-to-market strategy, beta programs, launch checklists, and adoption metrics
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["launch", "gtm"]
+    tags: [launch, gtm]
 ---
 
 # Product Launch Gtm

@@ -1,14 +1,13 @@
 ---
 name: eeg-feature-extraction-fundamentals
-description: "Use when applying eeg feature extraction fundamentals."
+description: Use when applying eeg feature extraction fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neurotech, eeg, signal-processing]
-    related_skills: [general]
 ---
 
 # Eeg Feature Extraction Fundamentals

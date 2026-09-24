@@ -1,14 +1,13 @@
 ---
 name: backend-python-best-best-practices
-description: "Use when applying backend python best best practices."
+description: Use when applying backend python best best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, python, backend-python-best-practices]
-    related_skills: [general]
 ---
 
 # Backend Python Best Best Practices

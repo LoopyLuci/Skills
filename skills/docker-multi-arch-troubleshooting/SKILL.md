@@ -1,14 +1,13 @@
 ---
 name: docker-multi-arch-troubleshooting
-description: "Use when applying docker multi-arch troubleshooting."
+description: Use when applying docker multi-arch troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, docker, multi-arch, docker-multi-arch-builds]
-    related_skills: [general]
 ---
 
 # Docker Multi Arch Troubleshooting

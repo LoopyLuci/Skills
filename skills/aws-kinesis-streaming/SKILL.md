@@ -1,14 +1,13 @@
 ---
 name: aws-kinesis-streaming
-description: "Use when using AWS Kinesis."
+description: Use when using AWS Kinesis.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, aws, aws-kinesis]
-    related_skills: [general]
 ---
 
 # Aws Kinesis Streaming

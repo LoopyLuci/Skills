@@ -1,14 +1,13 @@
 ---
 name: family-medicine-analysis-best-practices
-description: "Use when applying family med analysis best practices."
+description: Use when applying family med analysis best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [medicine, family, family-medicine-analysis]
-    related_skills: [general]
 ---
 
 # Family Medicine Analysis Best Practices

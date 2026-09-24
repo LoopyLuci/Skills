@@ -1,14 +1,13 @@
 ---
 name: batch-processing-implementation
-description: "Use when applying batch processing implementation."
+description: Use when applying batch processing implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, batch, batch-process-manufacturing]
-    related_skills: [general]
 ---
 
 # Batch Processing Implementation

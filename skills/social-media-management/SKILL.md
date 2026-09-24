@@ -2,12 +2,12 @@
 name: social-media-management
 description: Platform strategy, community management, scheduling, and social listening
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["social-media", "community"]
+    tags: [social-media, community]
 ---
 
 # Social Media Management

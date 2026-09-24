@@ -1,14 +1,13 @@
 ---
 name: broadcast-engineering-implementation
-description: "Use when applying broadcast engineering implementation."
+description: Use when applying broadcast engineering implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [media, broadcast, broadcast-engineering]
-    related_skills: ['general']
 ---
 
 # Broadcast Engineering Implementation

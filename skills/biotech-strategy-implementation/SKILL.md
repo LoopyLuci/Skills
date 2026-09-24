@@ -1,14 +1,13 @@
 ---
 name: biotech-strategy-implementation
-description: "Use when applying biotech strategy implementation."
+description: Use when applying biotech strategy implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, strategy, strategy]
-    related_skills: [general]
 ---
 
 # Biotech Strategy Implementation

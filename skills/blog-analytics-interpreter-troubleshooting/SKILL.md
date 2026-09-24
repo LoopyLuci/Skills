@@ -1,14 +1,13 @@
 ---
 name: blog-analytics-interpreter-troubleshooting
-description: "Use when applying blog analytics interpreter troubleshoo."
+description: Use when applying blog analytics interpreter troubleshoo.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, blog-analytics-interpreter]
-    related_skills: ['']
 ---
 
 # Blog Analytics Interpreter Troubleshooting

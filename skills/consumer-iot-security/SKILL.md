@@ -1,14 +1,13 @@
 ---
 name: consumer-iot-security
-description: "Use when securing consumer IoT devices."
+description: Use when securing consumer IoT devices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [consumer-tech, iot-security, privacy, authentication]
-    related_skills: [general]
 ---
 
 # Consumer Iot Security

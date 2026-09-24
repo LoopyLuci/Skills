@@ -2,12 +2,12 @@
 name: genomics-bioinformatics-pipeline
 description: NGS pipelines, variant calling, annotation, and clinical genomics
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["genomics", "ngs"]
+    tags: [genomics, ngs]
 ---
 
 # Genomics Bioinformatics Pipeline

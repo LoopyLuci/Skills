@@ -1,14 +1,13 @@
 ---
 name: e-governance-platforms
-description: "Use when building e-governance platforms."
+description: Use when building e-governance platforms.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [govtech, e-governance, digital-government, services]
-    related_skills: [general]
 ---
 
 # E Governance Platforms

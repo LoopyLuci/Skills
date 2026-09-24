@@ -1,14 +1,13 @@
 ---
 name: aws-cloudwatch
-description: "Use when using AWS CloudWatch."
+description: Use when using AWS CloudWatch.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, cloudwatch, monitoring, logs]
-    related_skills: [general]
 ---
 
 # Aws Cloudwatch

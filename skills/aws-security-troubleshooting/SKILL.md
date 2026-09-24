@@ -1,14 +1,13 @@
 ---
 name: aws-security-troubleshooting
-description: "Use when troubleshooting AWS security."
+description: Use when troubleshooting AWS security.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, aws, aws-security-troubleshooting]
-    related_skills: [general]
 ---
 
 # Aws Security Troubleshooting

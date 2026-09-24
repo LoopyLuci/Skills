@@ -1,13 +1,13 @@
 ---
 name: physics-informed-neural-networks
-description: "Use when building physics-informed neural networks."
+description: Use when building physics-informed neural networks.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [PINNs, physics-informed, PDE, scientific-ML, neural-operator, simulation]
-    related_skills: [custom-training-loops, custom-loss-activation-functions, transformer-architectures, timeseries-foundation-models]
+    tags: [pinns, physics-informed, pde, scientific-ml, neural-operator, simulation]
 ---
 
 # Physics-Informed Neural Networks

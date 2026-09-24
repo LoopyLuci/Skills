@@ -1,14 +1,13 @@
 ---
 name: brain-computer-commerce-fundamentals
-description: "Use when applying bci commerce fundamentals."
+description: Use when applying bci commerce fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neurotech, bci, brain-computer-commerce]
-    related_skills: [general]
 ---
 
 # Brain Computer Commerce Fundamentals

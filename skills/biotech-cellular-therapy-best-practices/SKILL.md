@@ -1,14 +1,13 @@
 ---
 name: biotech-cellular-therapy-best-practices
-description: "Use when applying cellular therapy best practices."
+description: Use when applying cellular therapy best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, cell-therapy]
-    related_skills: ['']
 ---
 
 # Biotech Cellular Therapy Best Practices

@@ -1,14 +1,13 @@
 ---
 name: aws-rds-best-practices-deep-implementation
-description: "Use when applying aws rds implementation."
+description: Use when applying aws rds implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, rds]
-    related_skills: ['aws-rds-best-practices']
 ---
 
 # Aws Rds Best Practices Deep Implementation

@@ -1,14 +1,13 @@
 ---
 name: aws-iam-policy
-description: "Use when writing AWS IAM policies."
+description: Use when writing AWS IAM policies.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, aws, aws-iam-policy-writing]
-    related_skills: [general]
 ---
 
 # Aws Iam Policy

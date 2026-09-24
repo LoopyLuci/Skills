@@ -1,14 +1,13 @@
 ---
 name: blogging-fundamentals
-description: "Use when applying blogging fundamentals."
+description: Use when applying blogging fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [blog, writing, blog-post-outliner]
-    related_skills: [general]
 ---
 
 # Blogging Fundamentals

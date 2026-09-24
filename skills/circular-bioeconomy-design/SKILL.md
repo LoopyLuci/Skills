@@ -1,14 +1,13 @@
 ---
 name: circular-bioeconomy-design
-description: "Use when designing circular bioeconomies."
+description: Use when designing circular bioeconomies.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cross-domain, circular-bioeconomy, biotech, sustainability]
-    related_skills: [circular-economy-business-models]
 ---
 
 # Circular Bioeconomy Design

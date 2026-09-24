@@ -2,12 +2,12 @@
 name: sustainable-fashion-circular
 description: Sustainable materials, circular fashion, and ethical production
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["sustainable", "circular"]
+    tags: [sustainable, circular]
 ---
 
 # Sustainable Fashion Circular

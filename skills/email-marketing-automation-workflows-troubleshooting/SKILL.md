@@ -1,14 +1,13 @@
 ---
 name: email-marketing-automation-workflows-troubleshooting
-description: "Use when applying email workflows troubleshooting."
+description: Use when applying email workflows troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, automation, workflows]
-    related_skills: [general]
 ---
 
 # Email Marketing Automation Workflows Troubleshooting

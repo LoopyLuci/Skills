@@ -2,12 +2,12 @@
 name: decentralized-finance-defi-protocols
 description: Lending, DMs, yield farming, and DeFi primitives
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["defi", "protocols"]
+    tags: [defi, protocols]
 ---
 
 # Decentralized Finance Defi Protocols

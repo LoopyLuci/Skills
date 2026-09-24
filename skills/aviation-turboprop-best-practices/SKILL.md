@@ -1,14 +1,13 @@
 ---
 name: aviation-turboprop-best-practices
-description: "Use when applying turboprop engines best practices."
+description: Use when applying turboprop engines best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, engines, turbofan]
-    related_skills: ['general']
 ---
 
 # Aviation Turboprop Best Practices

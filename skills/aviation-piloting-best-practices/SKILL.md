@@ -1,14 +1,13 @@
 ---
 name: aviation-piloting-best-practices
-description: "Use when applying aviation piloting best practices."
+description: Use when applying aviation piloting best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, piloting, piloting]
-    related_skills: ['general']
 ---
 
 # Aviation Piloting Best Practices

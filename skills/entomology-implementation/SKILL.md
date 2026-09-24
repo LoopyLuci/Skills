@@ -1,14 +1,13 @@
 ---
 name: entomology-implementation
-description: "Use when implementing entomology projects."
+description: Use when implementing entomology projects.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [entomology, insects, bugs, pest]
-    related_skills: [general]
 ---
 
 # Entomology Implementation

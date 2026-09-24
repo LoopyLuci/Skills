@@ -1,14 +1,13 @@
 ---
 name: azure-kubernetes-troubleshooting
-description: "Use when applying azure aks troubleshooting."
+description: Use when applying azure aks troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, azure, aks, kubernetes]
-    related_skills: [general]
 ---
 
 # Azure Kubernetes Troubleshooting

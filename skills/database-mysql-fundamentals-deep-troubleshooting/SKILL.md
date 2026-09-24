@@ -1,14 +1,13 @@
 ---
 name: database-mysql-fundamentals-deep-troubleshooting
-description: "Use when applying mysql fundamentals troubleshooting."
+description: Use when applying mysql fundamentals troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, mysql]
-    related_skills: ['mysql-fundamentals']
 ---
 
 # Database Mysql Fundamentals Deep Troubleshooting

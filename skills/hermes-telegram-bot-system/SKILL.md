@@ -1,7 +1,13 @@
 ---
 name: hermes-telegram-bot-system
-description: "Use when managing the Hermes Telegram Bot control system."
-tags: [hermes, telegram, mcp, bot, service-management, dashboard, telemetry]
+description: Use when managing the Hermes Telegram Bot control system.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [hermes, telegram, mcp, bot, service-management, dashboard, telemetry]
 ---
 
 # Hermes Telegram Bot Control System

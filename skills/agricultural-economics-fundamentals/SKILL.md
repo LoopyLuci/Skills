@@ -1,14 +1,13 @@
 ---
 name: agricultural-economics-fundamentals
-description: "Use when applying agricultural economics fundamentals."
+description: Use when applying agricultural economics fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agri, economics, agricultural-economics]
-    related_skills: [general]
 ---
 
 # Agricultural Economics Fundamentals

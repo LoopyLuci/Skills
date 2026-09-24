@@ -2,14 +2,12 @@
 name: desktop-app-development
 description: Build native desktop apps for web building platforms.
 version: 1.0.0
-author: LoopyLuci
+author: LoopyLuci Community
 license: MIT
-platforms: [windows, macos, linux]
+platforms: [any]
 metadata:
   hermes:
     tags: [desktop, pyqt5, electron, tauri, gui, drag-and-drop, native]
-    category: software-development
-    related_skills: [agentic-platform-development]
 ---
 
 # Desktop App Development for Web Builders

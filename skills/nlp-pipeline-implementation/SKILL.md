@@ -1,13 +1,13 @@
 ---
 name: nlp-pipeline-implementation
-description: "Use when building end-to-end NLP processing pipelines."
+description: Use when building end-to-end NLP processing pipelines.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [nlp, pipeline, text-processing, tokenization, NER, parsing, classification]
-    related_skills: [nlp-techniques, rag-system-design, text-summarization-systems, question-answering-systems]
+    tags: [nlp, pipeline, text-processing, tokenization, ner, parsing, classification]
 ---
 
 # Nlp Pipeline Implementation

@@ -1,14 +1,13 @@
 ---
 name: agent-memory-systems-deep-troubleshooting
-description: "Use when applying agent memory systems troubleshooting."
+description: Use when applying agent memory systems troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agents, memory]
-    related_skills: ['agent-memory-systems']
 ---
 
 # Agent Memory Systems Deep Troubleshooting

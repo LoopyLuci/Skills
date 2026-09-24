@@ -1,6 +1,13 @@
 ---
 name: github-repo-settings
 description: Configure branch protection, visibility, and collaborators.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [github, repo, settings]
 ---
 
 # GitHub Repo Settings

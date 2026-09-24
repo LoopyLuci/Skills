@@ -1,13 +1,13 @@
 ---
 name: speech-recognition-systems
-description: "Use when building speech recognition and ASR systems."
+description: Use when building speech recognition and ASR systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [speech-recognition, ASR, Whisper, wav2vec, CTC, transducers, audio]
-    related_skills: [text-to-speech-engines, audio-processing-deep-learning, dialogue-systems-conversational-ai, multi-modal-models-vision-language]
+    tags: [speech-recognition, asr, whisper, wav2vec, ctc, transducers, audio]
 ---
 
 # Speech Recognition Systems

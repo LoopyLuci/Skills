@@ -1,14 +1,13 @@
 ---
 name: farm-management-software-troubleshooting
-description: "Use when applying farm management troubleshooting."
+description: Use when applying farm management troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agri, software, farm-management-software]
-    related_skills: [general]
 ---
 
 # Farm Management Software Troubleshooting

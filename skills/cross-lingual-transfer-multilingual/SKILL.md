@@ -2,12 +2,12 @@
 name: cross-lingual-transfer-multilingual
 description: Multilingual models, cross-lingual transfer, and language universals
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["multilingual", "cross-lingual"]
+    tags: [multilingual, cross-lingual]
 ---
 
 # Cross Lingual Transfer Multilingual

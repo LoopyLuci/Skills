@@ -1,14 +1,13 @@
 ---
 name: e2e-testing-troubleshooting
-description: "Use when applying end-to-end testing troubleshooting."
+description: Use when applying end-to-end testing troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [testing, e2e, end-to-end]
-    related_skills: [general]
 ---
 
 # E2e Testing Troubleshooting

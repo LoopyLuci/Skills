@@ -1,14 +1,13 @@
 ---
 name: ai-security-fundamentals
-description: "Use when for ai security fundamentals."
+description: Use when for ai security fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ai, security, adversarial-ml, model-security]
-    related_skills: [general]
 ---
 
 # Ai Security Fundamentals

@@ -1,8 +1,13 @@
 ---
-
 name: github-gist-management
 description: Create, edit, and manage GitHub Gists for code snippets.
-
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [github, gist, management]
 ---
 
 # GitHub Gist Management

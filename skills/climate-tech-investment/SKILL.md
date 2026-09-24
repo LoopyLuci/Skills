@@ -1,14 +1,13 @@
 ---
 name: climate-tech-investment
-description: "Use when investing in climate tech."
+description: Use when investing in climate tech.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, climate-tech, impact-investing]
-    related_skills: ['renewable-energy-financial-modeling']
 ---
 
 # Climate Tech Investment

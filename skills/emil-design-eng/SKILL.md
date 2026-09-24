@@ -1,8 +1,13 @@
 ---
 name: emil-design-eng
 description: Use when applying Emil Kowalski's animation philosophy.
-tags: [animation, ui-design, css, motion, frontend]
-related_skills: [apple-design, animation-vocabulary, review-animations]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [animation, ui-design, css, motion, frontend]
 ---
 
 # Design Engineering

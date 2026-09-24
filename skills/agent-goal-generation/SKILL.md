@@ -1,13 +1,13 @@
 ---
 name: agent-goal-generation
-description: "Use when implementing goal generation for AI agents."
+description: Use when implementing goal generation for AI agents.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [agent-goals, goal-generation, subgoal, decomposition, intrinsic-motivation]
-    related_skills: [agent-planning-algorithms, hierarchical-planning-agents, agent-reasoning-patterns, agent-environment-interaction]
 ---
 
 # Agent Goal Generation

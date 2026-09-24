@@ -1,14 +1,13 @@
 ---
 name: fastapi-testing-fundamentals
-description: "Use when applying fastapi testing fundamentals."
+description: Use when applying fastapi testing fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, fastapi, testing, pytest]
-    related_skills: [general]
 ---
 
 # Fastapi Testing Fundamentals

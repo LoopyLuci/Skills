@@ -1,6 +1,13 @@
 ---
 name: cross-platform-messaging
-description: "Send messages across Telegram Discord WhatsApp and email"
+description: Send messages across Telegram Discord WhatsApp and email
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [cross, platform, messaging]
 ---
 
 # Cross-Platform Messaging

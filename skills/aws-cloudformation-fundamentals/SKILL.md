@@ -1,14 +1,13 @@
 ---
 name: aws-cloudformation-fundamentals
-description: "Use when applying aws cloudformation fundamentals."
+description: Use when applying aws cloudformation fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, cloudformation, iac, templates]
-    related_skills: [general]
 ---
 
 # Aws Cloudformation Fundamentals

@@ -1,13 +1,13 @@
 ---
 name: federated-learning-cross-device
-description: "Use when implementing cross-device federated learning."
+description: Use when implementing cross-device federated learning.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [federated-learning, cross-device, privacy, FL, Flower, TFF, aggregation]
-    related_skills: [edge-ai-tinyml, differential-privacy-training, on-device-ml-optimization, data-synthesis-generation]
+    tags: [federated-learning, cross-device, privacy, fl, flower, tff, aggregation]
 ---
 
 # Cross-Device Federated Learning

@@ -1,14 +1,13 @@
 ---
 name: affiliate-marketing-troubleshooting
-description: "Use when applying affiliate marketing troubleshooting."
+description: Use when applying affiliate marketing troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, affiliate-marketing, affiliate-marketing-fundamentals]
-    related_skills: [general]
 ---
 
 # Affiliate Marketing Troubleshooting

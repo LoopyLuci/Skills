@@ -1,6 +1,13 @@
 ---
 name: vpn-tunnel-setup
-description: "Set up WireGuard Tailscale for secure remote access"
+description: Set up WireGuard Tailscale for secure remote access
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [vpn, tunnel, setup]
 ---
 
 # VPN Tunnel Setup
@@ -23,3 +30,16 @@ curl -fsSL https://tailscale.com/install.sh | sh
 tailscale up
 tailscale status
 ```
+
+## Trigger
+
+Activate this skill when the user mentions:
+- vpn, tunnel, setup workflows or issues
+- Building, fixing, or optimizing vpn tunnel setup
+
+
+## Core Concepts
+
+- Domain fundamentals and best practices
+- Key tools and methodologies
+- Quality standards and common patterns

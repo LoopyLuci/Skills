@@ -1,14 +1,13 @@
 ---
 name: fashion-e-commerce
-description: "Use when building fashion e-commerce platforms."
+description: Use when building fashion e-commerce platforms.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, e-commerce, online-retail]
-    related_skills: [general]
 ---
 
 # Fashion E Commerce

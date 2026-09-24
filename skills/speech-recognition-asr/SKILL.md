@@ -2,12 +2,12 @@
 name: speech-recognition-asr
 description: Automatic speech recognition, CTC, and end-to-end ASR
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["asr", "speech"]
+    tags: [asr, speech]
 ---
 
 # Speech Recognition Asr

@@ -1,14 +1,13 @@
 ---
 name: consumer-ux-design
-description: "Use when designing consumer UX."
+description: Use when designing consumer UX.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [consumer-tech, ux-design, user-experience, prototyping]
-    related_skills: [general]
 ---
 
 # Consumer Ux Design

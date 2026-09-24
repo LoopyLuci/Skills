@@ -1,14 +1,13 @@
 ---
 name: desktop-flutter-best-practices
-description: "Use when applying flutter desktop best practices."
+description: Use when applying flutter desktop best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [desktop, flutter, dart]
-    related_skills: [general]
 ---
 
 # Desktop Flutter Best Practices

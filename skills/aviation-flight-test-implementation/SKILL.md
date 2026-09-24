@@ -1,14 +1,13 @@
 ---
 name: aviation-flight-test-implementation
-description: "Use when applying flight testing implementation."
+description: Use when applying flight testing implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, testing, flight-test]
-    related_skills: ['general']
 ---
 
 # Aviation Flight Test Implementation

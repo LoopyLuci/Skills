@@ -1,12 +1,13 @@
 ---
 name: python-context-managers
-description: "Use when implementing context managers."
+description: Use when implementing context managers.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["python", "contextlib", "context-manager", "with-statement"]
+    tags: [python, contextlib, context-manager, with-statement]
 ---
 
 # Python Context Managers

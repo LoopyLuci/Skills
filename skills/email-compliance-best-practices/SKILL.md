@@ -1,14 +1,13 @@
 ---
 name: email-compliance-best-practices
-description: "Use when applying email compliance best practices."
+description: Use when applying email compliance best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, legal, compliance, gdpr]
-    related_skills: [general]
 ---
 
 # Email Compliance Best Practices

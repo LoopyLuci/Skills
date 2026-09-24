@@ -1,14 +1,13 @@
 ---
 name: agent-task-decomposition-deep-fundamentals
-description: "Use when applying agent task decomposition fundamentals."
+description: Use when applying agent task decomposition fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agents, tasks]
-    related_skills: ['agent-task-decomposition']
 ---
 
 # Agent Task Decomposition Deep Fundamentals

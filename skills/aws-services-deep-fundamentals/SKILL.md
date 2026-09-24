@@ -1,14 +1,13 @@
 ---
 name: aws-services-deep-fundamentals
-description: "Use when applying aws services fundamentals."
+description: Use when applying aws services fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, aws]
-    related_skills: ['aws-services']
 ---
 
 # Aws Services Deep Fundamentals

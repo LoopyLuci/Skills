@@ -1,14 +1,13 @@
 ---
 name: content-marketing-management-troubleshooting
-description: "Use when applying content marketing management troublesh."
+description: Use when applying content marketing management troublesh.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, content-marketing-management]
-    related_skills: ['']
 ---
 
 # Content Marketing Management Troubleshooting

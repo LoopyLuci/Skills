@@ -1,14 +1,13 @@
 ---
 name: backend-php-fund-best-practices
-description: "Use when applying backend php fundamentals best practices."
+description: Use when applying backend php fundamentals best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, php, backend-php-fundamentals]
-    related_skills: [general]
 ---
 
 # Backend Php Fund Best Practices

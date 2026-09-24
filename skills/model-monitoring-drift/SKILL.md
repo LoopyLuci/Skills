@@ -1,13 +1,13 @@
 ---
 name: model-monitoring-drift
-description: "Use when monitoring ML models for drift and degradation."
+description: Use when monitoring ML models for drift and degradation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [model-monitoring, drift-detection, data-drift, concept-drift, ML-observability]
-    related_skills: [model-registry-management, ml-pipeline-design, anomaly-detection-ml, ml-experiment-tracking]
+    tags: [model-monitoring, drift-detection, data-drift, concept-drift, ml-observability]
 ---
 
 # Model Monitoring Drift

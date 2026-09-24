@@ -1,14 +1,13 @@
 ---
 name: faith-community-mentoring-troubleshooting
-description: "Use when applying community mentoring troubleshooting."
+description: Use when applying community mentoring troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [spiritual, mentoring]
-    related_skills: ['mentoring-junior-developers']
 ---
 
 # Faith Community Mentoring Troubleshooting

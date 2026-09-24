@@ -1,14 +1,13 @@
 ---
 name: film-production-implementation
-description: "Use when applying film production implementation."
+description: Use when applying film production implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [media, film, filmmaking-pre-production]
-    related_skills: [general]
 ---
 
 # Film Production Implementation

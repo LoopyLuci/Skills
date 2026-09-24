@@ -1,14 +1,13 @@
 ---
 name: docker-containerization
-description: "Use when containerizing apps."
+description: Use when containerizing apps.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, docker, containerization]
-    related_skills: [general]
 ---
 
 # Docker Containerization

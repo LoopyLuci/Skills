@@ -1,14 +1,13 @@
 ---
 name: customer-journey-best-practices
-description: "Use when applying customer journey best practices."
+description: Use when applying customer journey best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, ux, customer-journey-mapping]
-    related_skills: [general]
 ---
 
 # Customer Journey Best Practices

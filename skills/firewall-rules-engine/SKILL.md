@@ -1,9 +1,13 @@
 ---
 name: firewall-rules-engine
-title: Firewall Rules Engine
 description: Use when implementing L3/L4 stateful firewall rules.
-category: networking
-tags: [firewall, rules, stateful, nftables, wfp, rust]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [firewall, rules, stateful, nftables, wfp, rust]
 ---
 
 # Firewall Rules Engine

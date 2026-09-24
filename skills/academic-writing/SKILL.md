@@ -1,14 +1,13 @@
 ---
 name: academic-writing
-description: "Use when writing academic papers."
+description: Use when writing academic papers.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [education, writing, academic-writing]
-    related_skills: [general]
 ---
 
 # Academic Writing

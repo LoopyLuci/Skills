@@ -1,14 +1,13 @@
 ---
 name: engine-control-unit-design
-description: "Use when designing engine ECUs."
+description: Use when designing engine ECUs.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [automotive, ecu, embedded, engine]
-    related_skills: [general]
 ---
 
 # Engine Control Unit Design

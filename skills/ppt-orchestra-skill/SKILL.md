@@ -1,8 +1,13 @@
 ---
 name: ppt-orchestra-skill
 description: Use when orchestrating multi-slide PowerPoint creation — compile, QA, and verify.
-tags: [pptx, powerpoint, orchestration, compilation, pptxgenjs, qa]
-related_skills: [slide-making-skill, ppt-editing-skill, content-page-generator]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [pptx, powerpoint, orchestration, compilation, pptxgenjs, qa]
 ---
 
 # PPTX Orchestra Skill

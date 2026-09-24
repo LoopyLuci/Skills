@@ -1,14 +1,13 @@
 ---
 name: corporate-financial-modeling
-description: "Use when modeling corporate finances."
+description: Use when modeling corporate finances.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: ['f', 'i', 'n', 'a', 'n', 'c', 'i', 'a', 'l', '-', 'm', 'o', 'd', 'e', 'l', 'i', 'n', 'g', ',', ' ', 'c', 'o', 'r', 'p', 'o', 'r', 'a', 't', 'e']
-    related_skills: ['financial-modeling-python']
+    tags: [f, i, n, a, n, c, i, a, l, -, m, o, d, e, l, i, n, g, , ,  , c, o, r, p, o, r, a, t, e]
 ---
 
 # Corporate Financial Modeling

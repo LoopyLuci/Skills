@@ -2,12 +2,12 @@
 name: crypto-trading-analysis
 description: On-chain analysis, technical analysis, and risk management
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["crypto", "trading"]
+    tags: [crypto, trading]
 ---
 
 # Crypto Trading Analysis

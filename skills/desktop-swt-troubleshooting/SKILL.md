@@ -1,14 +1,13 @@
 ---
 name: desktop-swt-troubleshooting
-description: "Use when applying swt desktop troubleshooting."
+description: Use when applying swt desktop troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [desktop, swt, java, gui]
-    related_skills: [general]
 ---
 
 # Desktop Swt Troubleshooting

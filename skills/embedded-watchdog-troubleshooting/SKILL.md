@@ -1,14 +1,13 @@
 ---
 name: embedded-watchdog-troubleshooting
-description: "Use when applying watchdog timers troubleshooting."
+description: Use when applying watchdog timers troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [embedded, watchdog, timer, safety]
-    related_skills: [general]
 ---
 
 # Embedded Watchdog Troubleshooting

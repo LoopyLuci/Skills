@@ -1,14 +1,13 @@
 ---
 name: agri-robotics-troubleshooting
-description: "Use when applying agricultural robotics troubleshooting."
+description: Use when applying agricultural robotics troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agri, robotics, agricultural-robotics]
-    related_skills: ['general']
 ---
 
 # Agri Robotics Troubleshooting

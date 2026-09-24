@@ -1,14 +1,13 @@
 ---
 name: wordpress-development
-description: "Use when developing WordPress. Themes, plugins."
+description: Use when developing WordPress. Themes, plugins.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [wordpress, php, themes, plugins, development]
-    related_skills: [blog-publishing-workflow, landing-page-builder]
 ---
 
 # Wordpress Development

@@ -1,14 +1,13 @@
 ---
 name: biotech-epidemiology-implementation
-description: "Use when applying epidemiology implementation."
+description: Use when applying epidemiology implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, epidemiology]
-    related_skills: ['']
 ---
 
 # Biotech Epidemiology Implementation

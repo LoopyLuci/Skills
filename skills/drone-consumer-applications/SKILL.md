@@ -1,14 +1,13 @@
 ---
 name: drone-consumer-applications
-description: "Use when building consumer drones."
+description: Use when building consumer drones.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [consumer-tech, drones, quadcopter, uav]
-    related_skills: [general]
 ---
 
 # Drone Consumer Applications

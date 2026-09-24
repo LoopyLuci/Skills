@@ -1,13 +1,13 @@
 ---
 name: social-media-content-planning
-description: "Use when planning and scheduling social media content."
+description: Use when planning and scheduling social media content.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [social-media, content, scheduling, calendar, strategy, platforms]
-    related_skills: [social-media-analytics, content-writing-seo-copy, email-marketing-campaigns, digital-marketing-strategy]
 ---
 
 # Social Media Content Planning

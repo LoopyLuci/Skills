@@ -1,14 +1,13 @@
 ---
 name: aws-kafka-troubleshooting
-description: "Use when applying aws kafka troubleshooting."
+description: Use when applying aws kafka troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, kafka, msk, streaming]
-    related_skills: [general]
 ---
 
 # Aws Kafka Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: chip-design-best-practices
-description: "Use when applying chip design best practices."
+description: Use when applying chip design best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [semiconductor, design, chip-design]
-    related_skills: ['general']
 ---
 
 # Chip Design Best Practices

@@ -1,8 +1,13 @@
 ---
 name: fullstack-dev-api-design
 description: Use when designing REST API endpoints, choosing HTTP methods, implementing pagination, or writing OpenAPI specs.
-tags: [api, rest, graphql, grpc, openapi, backend, design]
-related_skills: [fullstack-dev-db-schema, android-native-dev]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [api, rest, graphql, grpc, openapi, backend, design]
 ---
 
 # API Design Guidelines

@@ -1,12 +1,13 @@
 ---
 name: nodejs-package-module-patterns
-description: "Use when designing Node.js packages."
+description: Use when designing Node.js packages.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["nodejs", "modules", "npm", "package-design", "exports"]
+    tags: [nodejs, modules, npm, package-design, exports]
 ---
 
 # Nodejs Package Module Patterns

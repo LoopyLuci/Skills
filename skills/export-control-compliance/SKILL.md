@@ -1,14 +1,13 @@
 ---
 name: export-control-compliance
-description: "Use when ensuring export control compliance."
+description: Use when ensuring export control compliance.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: [legal, export-control, itar, EAR]
-    related_skills: [general]
+    tags: [legal, export-control, itar, ear]
 ---
 
 # Export Control Compliance

@@ -1,14 +1,13 @@
 ---
 name: aws-ec2-implementation-deep-best-practices
-description: "Use when applying aws ec2 implementation best practices."
+description: Use when applying aws ec2 implementation best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, ec2]
-    related_skills: ['aws-ec2-implementation']
 ---
 
 # Aws Ec2 Implementation Deep Best Practices

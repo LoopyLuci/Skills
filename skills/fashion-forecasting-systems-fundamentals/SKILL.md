@@ -1,14 +1,13 @@
 ---
 name: fashion-forecasting-systems-fundamentals
-description: "Use when applying fashion forecasting fundamentals."
+description: Use when applying fashion forecasting fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, forecasting, fashion-trend-forecasting]
-    related_skills: ['general']
 ---
 
 # Fashion Forecasting Systems Fundamentals

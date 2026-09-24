@@ -1,12 +1,13 @@
 ---
 name: aspnet-core-web-api
-description: "Use when building ASP.NET Core APIs."
+description: Use when building ASP.NET Core APIs.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["aspnet-core", "dotnet", "C#", "Web-API", "middleware"]
+    tags: [aspnet-core, dotnet, c#, web-api, middleware]
 ---
 
 # Aspnet Core Web Api

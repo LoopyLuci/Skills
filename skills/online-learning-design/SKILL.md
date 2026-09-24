@@ -2,12 +2,12 @@
 name: online-learning-design
 description: Course authoring, LMS management, engagement strategies, and learning analytics
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["elearning", "lms"]
+    tags: [elearning, lms]
 ---
 
 # Online Learning Design

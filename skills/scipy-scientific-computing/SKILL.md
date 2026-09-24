@@ -1,9 +1,13 @@
 ---
 name: scipy-scientific-computing
-description: "Use when computing with SciPy."
+description: Use when computing with SciPy.
 version: 1.0.0
-author: Hermes Agent
-tags: ["scipy", "optimization", "signal", "statistics", "sparse"]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [scipy, optimization, signal, statistics, sparse]
 ---
 
 # Scipy Scientific Computing

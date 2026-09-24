@@ -1,8 +1,13 @@
 ---
 name: shader-dev
 description: Use when creating GLSL shaders for real-time visual effects
-tags: [shader, glsl, webgl, ray-marching, procedural, graphics]
-related_skills: [three-js-3d-web, animation-web-patterns]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [shader, glsl, webgl, ray-marching, procedural, graphics]
 ---
 
 # Shader Craft

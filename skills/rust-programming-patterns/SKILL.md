@@ -1,9 +1,15 @@
 ---
 name: rust-programming-patterns
-description: "Use when writing production Rust: ownership, traits, error-handling."
-category: software-development
-tags: [rust, programming, ownership, traits, error-handling]
+description: Use when writing production Rust: ownership, traits, error-handling.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [rust, programming, ownership, traits, error-handling]
 ---
+
 # Rust Programming Patterns
 
 Production Rust patterns: ownership, borrowing, traits, error handling, async.

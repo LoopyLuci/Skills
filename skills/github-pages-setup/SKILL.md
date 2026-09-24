@@ -1,6 +1,13 @@
 ---
 name: github-pages-setup
 description: Deploy static sites to GitHub Pages from any branch.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [github, pages, setup]
 ---
 
 # GitHub Pages Deployment

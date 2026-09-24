@@ -1,14 +1,13 @@
 ---
 name: dependency-audit-implementation
-description: "Use when applying dependency audit implementation."
+description: Use when applying dependency audit implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [programming, dependency-audit, security]
-    related_skills: [general]
 ---
 
 # Dependency Audit Implementation

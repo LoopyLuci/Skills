@@ -1,9 +1,15 @@
 ---
 name: windows-service-management
-description: "Use when managing Windows services via PS/batch."
-category: software-development
-tags: [windows, services, powershell, service-control]
+description: Use when managing Windows services via PS/batch.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [windows, services, powershell, service-control]
 ---
+
 # Windows Service Management
 
 Managing Windows services with PowerShell and batch.

@@ -1,14 +1,13 @@
 ---
 name: biotech-clinical-trials-deep-fundamentals
-description: "Use when applying clinical trials fundamentals."
+description: Use when applying clinical trials fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, clinical-trials]
-    related_skills: ['']
 ---
 
 # Biotech Clinical Trials Deep Fundamentals

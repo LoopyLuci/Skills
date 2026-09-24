@@ -1,14 +1,13 @@
 ---
 name: customer-segmentation-fundamentals
-description: "Use when applying segmentation fundamentals."
+description: Use when applying segmentation fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, segmentation, customer-segmentation-analysis]
-    related_skills: [general]
 ---
 
 # Customer Segmentation Fundamentals

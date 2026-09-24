@@ -1,7 +1,13 @@
 ---
 name: local-p2p-app
-description: >-
-  Build LAN P2P apps with discovery, PIN pairing, streaming.
+description: Skill for local p2p app
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [local, p2p, app]
 ---
 
 # Building Local P2P Applications

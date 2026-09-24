@@ -1,14 +1,13 @@
 ---
 name: angular-troubleshooting-deep-implementation
-description: "Use when applying angular troubleshooting implementation."
+description: Use when applying angular troubleshooting implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [web, frontend]
-    related_skills: ['frontend-angular-troubleshooting']
 ---
 
 # Angular Troubleshooting Deep Implementation

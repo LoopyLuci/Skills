@@ -1,14 +1,13 @@
 ---
 name: consumer-electronics-implementation
-description: "Use when applying consumer electronics implementation."
+description: Use when applying consumer electronics implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [electronics, consumer, consumer-electronics-design]
-    related_skills: [general]
 ---
 
 # Consumer Electronics Implementation

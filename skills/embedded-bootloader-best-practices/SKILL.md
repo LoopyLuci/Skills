@@ -1,14 +1,13 @@
 ---
 name: embedded-bootloader-best-practices
-description: "Use when applying bootloader design best practices."
+description: Use when applying bootloader design best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [embedded, bootloader, firmware, startup]
-    related_skills: [general]
 ---
 
 # Embedded Bootloader Best Practices

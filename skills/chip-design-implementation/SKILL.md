@@ -1,14 +1,13 @@
 ---
 name: chip-design-implementation
-description: "Use when applying chip design implementation."
+description: Use when applying chip design implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [semiconductor, design, chip-design]
-    related_skills: ['general']
 ---
 
 # Chip Design Implementation

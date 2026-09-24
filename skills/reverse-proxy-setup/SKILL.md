@@ -1,6 +1,13 @@
 ---
 name: reverse-proxy-setup
-description: "Configure Nginx Caddy Traefik for SSL and routing"
+description: Configure Nginx Caddy Traefik for SSL and routing
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [reverse, proxy, setup]
 ---
 
 # Reverse Proxy Setup

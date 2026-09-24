@@ -1,14 +1,13 @@
 ---
 name: faith-community-financial-management
-description: "Use when managing faith community finances."
+description: Use when managing faith community finances.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [religious, church-finances, stewardship, budgeting]
-    related_skills: [nonprofit-accounting]
 ---
 
 # Faith Community Financial Management

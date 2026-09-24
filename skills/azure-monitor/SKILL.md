@@ -1,14 +1,13 @@
 ---
 name: azure-monitor
-description: "Use when monitoring Azure."
+description: Use when monitoring Azure.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, azure, azure-monitor]
-    related_skills: [general]
 ---
 
 # Azure Monitor

@@ -1,8 +1,13 @@
 ---
 name: review-animations
 description: Use when reviewing animation code against a high craft bar.
-tags: [animation, code-review, motion, performance, accessibility]
-related_skills: [emil-design-eng, apple-design, improve-animations]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [animation, code-review, motion, performance, accessibility]
 ---
 
 # Reviewing Animations

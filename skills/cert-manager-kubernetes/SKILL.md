@@ -1,9 +1,13 @@
 ---
 name: cert-manager-kubernetes
-description: "Use when managing certs in K8s."
+description: Use when managing certs in K8s.
 version: 1.0.0
-author: Hermes Agent
-tags: ["cert-manager", "kubernetes", "certificates", "ACME"]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [cert-manager, kubernetes, certificates, acme]
 ---
 
 # Cert Manager Kubernetes

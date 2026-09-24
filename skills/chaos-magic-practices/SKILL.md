@@ -1,14 +1,13 @@
 ---
 name: chaos-magic-practices
-description: "Use when practicing chaos magic techniques."
+description: Use when practicing chaos magic techniques.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [esoteric, chaos-magic, sigils, manifestation]
-    related_skills: [general]
 ---
 
 # Chaos Magic Practices

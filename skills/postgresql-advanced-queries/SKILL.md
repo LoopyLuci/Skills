@@ -1,13 +1,13 @@
 ---
 name: postgresql-advanced-queries
-description: "Use when writing advanced PostgreSQL queries."
+description: Use when writing advanced PostgreSQL queries.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [postgresql, SQL, CTEs, window-functions, jsonb, full-text-search]
-    related_skills: [sql-advanced-patterns, database-design-patterns, data-modeling-foundations]
+    tags: [postgresql, sql, ctes, window-functions, jsonb, full-text-search]
 ---
 
 # Advanced PostgreSQL Queries

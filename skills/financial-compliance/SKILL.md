@@ -1,14 +1,13 @@
 ---
 name: financial-compliance
-description: "Use when ensuring financial compliance."
+description: Use when ensuring financial compliance.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, compliance, compliance-fundamentals]
-    related_skills: [general]
 ---
 
 # Financial Compliance

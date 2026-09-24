@@ -2,12 +2,12 @@
 name: qgis-open-source-gis
 description: QGIS processing, styling, labeling, print layouts, and plugin development
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["qgis", "gis"]
+    tags: [qgis, gis]
 ---
 
 # Qgis Open Source Gis

@@ -1,14 +1,13 @@
 ---
 name: container-security-implementation-deep-fundamentals
-description: "Use when applying container security implementation fund."
+description: Use when applying container security implementation fund.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, security]
-    related_skills: ['container-security-implementation']
 ---
 
 # Container Security Implementation Deep Fundamentals

@@ -1,14 +1,13 @@
 ---
 name: azure-storage-troubleshooting
-description: "Use when applying azure storage troubleshooting."
+description: Use when applying azure storage troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, azure, blob, file-storage]
-    related_skills: [general]
 ---
 
 # Azure Storage Troubleshooting

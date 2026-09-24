@@ -1,14 +1,13 @@
 ---
 name: cloud-pen-test
-description: "Use when testing cloud security."
+description: Use when testing cloud security.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, pentest, cloud-penetration]
-    related_skills: [general]
 ---
 
 # Cloud Pen Test

@@ -1,14 +1,13 @@
 ---
 name: email-marketing-platform-comparison
-description: "Use when comparing email platforms."
+description: Use when comparing email platforms.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, marketing, platform, comparison]
-    related_skills: [general]
 ---
 
 # Email Marketing Platform Comparison

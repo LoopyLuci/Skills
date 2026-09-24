@@ -1,14 +1,13 @@
 ---
 name: biotech-pharma-qms-troubleshooting
-description: "Use when applying pharmaceutical quality troubleshooting."
+description: Use when applying pharmaceutical quality troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, pharma-qms]
-    related_skills: ['']
 ---
 
 # Biotech Pharma Qms Troubleshooting

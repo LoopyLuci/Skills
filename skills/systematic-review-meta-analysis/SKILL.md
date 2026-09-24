@@ -2,12 +2,12 @@
 name: systematic-review-meta-analysis
 description: PRISMA, search strategy, screening, quality assessment, and meta-analysis
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["review", "evidence"]
+    tags: [review, evidence]
 ---
 
 # Systematic Review Meta Analysis

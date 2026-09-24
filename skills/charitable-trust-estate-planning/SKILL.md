@@ -2,12 +2,12 @@
 name: charitable-trust-estate-planning
 description: Donor-advised funds, charitable remainder trusts, and estate planning for giving
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["charitable", "estate"]
+    tags: [charitable, estate]
 ---
 
 # Charitable Trust Estate Planning

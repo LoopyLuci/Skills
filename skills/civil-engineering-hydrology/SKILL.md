@@ -1,14 +1,13 @@
 ---
 name: civil-engineering-hydrology
-description: "Use when doing civil hydrology engineering."
+description: Use when doing civil hydrology engineering.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [construction, hydrology, water-resources, drainage]
-    related_skills: [municipal-water-infrastructure]
 ---
 
 # Civil Engineering Hydrology

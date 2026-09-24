@@ -1,13 +1,13 @@
 ---
 name: customer-feedback-surveys
-description: "Use when designing surveys and managing customer feedback."
+description: Use when designing surveys and managing customer feedback.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [customer-feedback, surveys, NPS, CSAT, CES, VOC, voice-of-customer]
-    related_skills: [customer-success-retention, product-management-roadmap, saas-metrics-reporting, business-metrics-kpis]
+    tags: [customer-feedback, surveys, nps, csat, ces, voc, voice-of-customer]
 ---
 
 # Customer Feedback Surveys

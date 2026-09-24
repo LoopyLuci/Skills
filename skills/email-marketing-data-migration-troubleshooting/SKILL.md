@@ -1,14 +1,13 @@
 ---
 name: email-marketing-data-migration-troubleshooting
-description: "Use when applying email data migration troubleshooting."
+description: Use when applying email data migration troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, data, migration]
-    related_skills: [general]
 ---
 
 # Email Marketing Data Migration Troubleshooting

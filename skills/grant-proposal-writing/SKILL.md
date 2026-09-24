@@ -2,12 +2,12 @@
 name: grant-proposal-writing
 description: Needs statement, methodology, evaluation plans, and funder alignment
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["grants", "proposals"]
+    tags: [grants, proposals]
 ---
 
 # Grant Proposal Writing

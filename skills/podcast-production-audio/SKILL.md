@@ -2,12 +2,12 @@
 name: podcast-production-audio
 description: Recording, editing, distribution, and monetization of podcasts
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["podcast", "audio"]
+    tags: [podcast, audio]
 ---
 
 # Podcast Production Audio

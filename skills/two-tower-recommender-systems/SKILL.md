@@ -1,13 +1,13 @@
 ---
 name: two-tower-recommender-systems
-description: "Use when building two-tower recommendation models."
+description: Use when building two-tower recommendation models.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [recommender-systems, two-tower, retrieval, candidate-generation, softmax, YouTube-DNN]
-    related_skills: [recommender-systems-building, embedding-models-patterns, vector-search-indexing, custom-training-loops]
+    tags: [recommender-systems, two-tower, retrieval, candidate-generation, softmax, youtube-dnn]
 ---
 
 # Two-Tower Recommender Systems

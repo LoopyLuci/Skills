@@ -1,13 +1,13 @@
 ---
 name: chaos-engineering-advanced
-description: "Use when implementing advanced chaos engineering patterns."
+description: Use when implementing advanced chaos engineering patterns.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [chaos-engineering, resilience, Litmus, Gremlin, game-day, fault-injection]
-    related_skills: [chaos-engineering, site-reliability-engineering, incident-management-on-call, error-budgets-slos]
+    tags: [chaos-engineering, resilience, litmus, gremlin, game-day, fault-injection]
 ---
 
 # Advanced Chaos Engineering

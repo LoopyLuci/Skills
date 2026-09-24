@@ -1,14 +1,13 @@
 ---
 name: django-authentication-implementation
-description: "Use when applying django auth implementation."
+description: Use when applying django auth implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, django, auth, python]
-    related_skills: [general]
 ---
 
 # Django Authentication Implementation

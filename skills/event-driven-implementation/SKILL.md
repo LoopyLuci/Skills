@@ -1,14 +1,13 @@
 ---
 name: event-driven-implementation
-description: "Use when applying event-driven architecture implementation."
+description: Use when applying event-driven architecture implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [architecture, event-driven, messaging, events]
-    related_skills: [general]
 ---
 
 # Event Driven Implementation

@@ -1,14 +1,13 @@
 ---
 name: civil-eng-fundamentals-best-practices
-description: "Use when applying civil fundamentals best practices."
+description: Use when applying civil fundamentals best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, civil, fundamentals]
-    related_skills: [general]
 ---
 
 # Civil Eng Fundamentals Best Practices

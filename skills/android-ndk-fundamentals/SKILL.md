@@ -1,14 +1,13 @@
 ---
 name: android-ndk-fundamentals
-description: "Use when applying android ndk fundamentals."
+description: Use when applying android ndk fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mobile, android, ndk, native]
-    related_skills: [general]
 ---
 
 # Android Ndk Fundamentals

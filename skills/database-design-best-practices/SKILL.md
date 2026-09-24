@@ -1,14 +1,13 @@
 ---
 name: database-design-best-practices
-description: "Use when for database schema design best practices."
+description: Use when for database schema design best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, schema-design, modeling]
-    related_skills: [general]
 ---
 
 # Database Design Best Practices

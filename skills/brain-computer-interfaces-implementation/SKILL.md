@@ -1,14 +1,13 @@
 ---
 name: brain-computer-interfaces-implementation
-description: "Use when applying brain-computer interfaces implementation."
+description: Use when applying brain-computer interfaces implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neuro, bci, brain-computer-interface-applications]
-    related_skills: [general]
 ---
 
 # Brain Computer Interfaces Implementation

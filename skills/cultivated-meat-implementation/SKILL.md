@@ -1,14 +1,13 @@
 ---
 name: cultivated-meat-implementation
-description: "Use when applying cultivated meat implementation."
+description: Use when applying cultivated meat implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [food, biotech, cultivated-meat-production]
-    related_skills: [general]
 ---
 
 # Cultivated Meat Implementation

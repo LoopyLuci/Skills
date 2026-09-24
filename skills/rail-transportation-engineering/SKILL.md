@@ -2,12 +2,12 @@
 name: rail-transportation-engineering
 description: Rail infrastructure, signaling, rolling stock, and operations
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["rail", "engineering"]
+    tags: [rail, engineering]
 ---
 
 # Rail Transportation Engineering

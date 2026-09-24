@@ -1,14 +1,13 @@
 ---
 name: api-security-implementation
-description: "Use when for api security implementation."
+description: Use when for api security implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, api-security, auth]
-    related_skills: [general]
 ---
 
 # Api Security Implementation

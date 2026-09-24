@@ -1,14 +1,13 @@
 ---
 name: fcra-compliance-best-practices
-description: "Use when applying fcra compliance best practices."
+description: Use when applying fcra compliance best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [legal, us, fcra]
-    related_skills: [general]
 ---
 
 # Fcra Compliance Best Practices

@@ -1,14 +1,13 @@
 ---
 name: crypto-layer2-scaling-best-practices
-description: "Use when applying layer 2 scaling best practices."
+description: Use when applying layer 2 scaling best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [crypto, layer2, blockchain-development-solidity]
-    related_skills: ['']
 ---
 
 # Crypto Layer2 Scaling Best Practices

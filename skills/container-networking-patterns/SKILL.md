@@ -1,13 +1,13 @@
 ---
 name: container-networking-patterns
-description: "Use when designing container and Kubernetes networking."
+description: Use when designing container and Kubernetes networking.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [container-networking, kubernetes, docker, CNI, service-mesh, overlay]
-    related_skills: [service-mesh-patterns, api-gateway-load-balancing, docker-networking-troubleshoot, dns-implementation-patterns]
+    tags: [container-networking, kubernetes, docker, cni, service-mesh, overlay]
 ---
 
 # Container Networking Patterns

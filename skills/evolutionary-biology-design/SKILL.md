@@ -1,14 +1,13 @@
 ---
 name: evolutionary-biology-design
-description: "Use when designing evolutionary biology solutions."
+description: Use when designing evolutionary biology solutions.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [evolutionary-biology, evolution, genetics]
-    related_skills: [general]
 ---
 
 # Evolutionary Biology Design

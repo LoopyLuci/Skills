@@ -1,13 +1,13 @@
 ---
 name: skill-genesis-model
-description: "Use when running the autonomous skill discovery AI model."
+description: Use when running the autonomous skill discovery AI model.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [skill-genesis, AI-model, autonomous, discovery, creation, agent]
-    related_skills: [skill-factory-system, agentic-models-from-scratch, tool-augmented-agents, advanced-reasoning-patterns]
+    tags: [skill-genesis, ai-model, autonomous, discovery, creation, agent]
 ---
 
 # Skill Genesis Model — Autonomous Skill Discovery & Creation AI

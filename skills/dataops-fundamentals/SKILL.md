@@ -1,14 +1,13 @@
 ---
 name: dataops-fundamentals
-description: "Use when learning dataops fundamentals."
+description: Use when learning dataops fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [dataops, data-pipeline, etl, ci-cd]
-    related_skills: [general]
 ---
 
 # Dataops Fundamentals

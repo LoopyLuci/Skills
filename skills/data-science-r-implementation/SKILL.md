@@ -1,14 +1,13 @@
 ---
 name: data-science-r-implementation
-description: "Use when for data science r implementation."
+description: Use when for data science r implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data-science, r, statistics, ggplot2]
-    related_skills: [general]
 ---
 
 # Data Science R Implementation

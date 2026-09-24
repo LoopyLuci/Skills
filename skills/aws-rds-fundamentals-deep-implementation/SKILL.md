@@ -1,14 +1,13 @@
 ---
 name: aws-rds-fundamentals-deep-implementation
-description: "Use when applying aws rds fundamentals implementation."
+description: Use when applying aws rds fundamentals implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, rds]
-    related_skills: ['aws-rds-fundamentals']
 ---
 
 # Aws Rds Fundamentals Deep Implementation

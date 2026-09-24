@@ -1,14 +1,13 @@
 ---
 name: blockchain-defi-development-deep-troubleshooting
-description: "Use when applying defi development troubleshooting."
+description: Use when applying defi development troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [blockchain, defi]
-    related_skills: ['defi-smart-contracts']
 ---
 
 # Blockchain Defi Development Deep Troubleshooting

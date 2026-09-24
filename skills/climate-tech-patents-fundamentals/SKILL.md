@@ -1,14 +1,13 @@
 ---
 name: climate-tech-patents-fundamentals
-description: "Use when applying climate tech patents fundamentals."
+description: Use when applying climate tech patents fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, ip, climate-tech-patents]
-    related_skills: [general]
 ---
 
 # Climate Tech Patents Fundamentals

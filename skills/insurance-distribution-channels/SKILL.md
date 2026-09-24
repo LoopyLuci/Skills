@@ -2,12 +2,12 @@
 name: insurance-distribution-channels
 description: Agents, brokers, bancassurance, digital, and embedded insurance
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["distribution", "channels"]
+    tags: [distribution, channels]
 ---
 
 # Insurance Distribution Channels

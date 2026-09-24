@@ -1,14 +1,13 @@
 ---
 name: angular-routing-fundamentals
-description: "Use when applying angular routing fundamentals."
+description: Use when applying angular routing fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [frontend, angular, router, navigation]
-    related_skills: [general]
 ---
 
 # Angular Routing Fundamentals

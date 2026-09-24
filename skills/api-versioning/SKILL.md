@@ -1,14 +1,13 @@
 ---
 name: api-versioning
-description: "Use when versioning APIs."
+description: Use when versioning APIs.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [api, versioning, rest, backward-compat]
-    related_skills: [general]
 ---
 
 # Api Versioning

@@ -1,14 +1,13 @@
 ---
 name: biotech-process-optimization-fundamentals
-description: "Use when applying biotech process optimization fundament."
+description: Use when applying biotech process optimization fundament.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, optimization, optimization]
-    related_skills: [general]
 ---
 
 # Biotech Process Optimization Fundamentals

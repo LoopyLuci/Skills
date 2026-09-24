@@ -1,14 +1,13 @@
 ---
 name: faith-community-fundamentals
-description: "Use when applying faith communities fundamentals."
+description: Use when applying faith communities fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [religion, community, faith-community-management]
-    related_skills: [general]
 ---
 
 # Faith Community Fundamentals

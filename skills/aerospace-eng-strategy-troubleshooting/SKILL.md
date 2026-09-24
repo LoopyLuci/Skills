@@ -1,14 +1,13 @@
 ---
 name: aerospace-eng-strategy-troubleshooting
-description: "Use when applying aerospace strategy troubleshooting."
+description: Use when applying aerospace strategy troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, aerospace, strategy]
-    related_skills: [general]
 ---
 
 # Aerospace Eng Strategy Troubleshooting

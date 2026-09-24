@@ -1,14 +1,13 @@
 ---
 name: climate-renewable-energy-fundamentals
-description: "Use when applying renewable energy systems fundamentals."
+description: Use when applying renewable energy systems fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, renewable, renewable-energy-design]
-    related_skills: ['']
 ---
 
 # Climate Renewable Energy Fundamentals

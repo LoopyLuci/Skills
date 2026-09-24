@@ -1,14 +1,13 @@
 ---
 name: aws-cost-optimization-best-practices
-description: "Use when applying aws cost optimization best practices."
+description: Use when applying aws cost optimization best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, cost-optimization, cost, finops]
-    related_skills: [general]
 ---
 
 # Aws Cost Optimization Best Practices

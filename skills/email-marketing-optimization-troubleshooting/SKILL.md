@@ -1,14 +1,13 @@
 ---
 name: email-marketing-optimization-troubleshooting
-description: "Use when applying email optimization troubleshooting."
+description: Use when applying email optimization troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, optimization, ab-testing]
-    related_skills: [general]
 ---
 
 # Email Marketing Optimization Troubleshooting

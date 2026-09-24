@@ -1,14 +1,13 @@
 ---
 name: eeg-analysis-fundamentals
-description: "Use when applying eeg analysis fundamentals."
+description: Use when applying eeg analysis fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neurotech, eeg, eeg-analysis]
-    related_skills: [general]
 ---
 
 # Eeg Analysis Fundamentals

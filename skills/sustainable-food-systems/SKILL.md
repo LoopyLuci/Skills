@@ -2,12 +2,12 @@
 name: sustainable-food-systems
 description: Local food, food waste reduction, regenerative agriculture, and food justice
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["sustainable", "food-systems"]
+    tags: [sustainable, food-systems]
 ---
 
 # Sustainable Food Systems

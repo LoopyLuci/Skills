@@ -1,9 +1,15 @@
 ---
 name: self-supervised-learning
-description: "Use when implementing self-supervised learning methods."
-category: mlops
-tags: [self-supervised, contrastive, pre-training, ssl, simclr]
+description: Use when implementing self-supervised learning methods.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [self-supervised, contrastive, pre-training, ssl, simclr]
 ---
+
 # Self-Supervised Learning
 
 Pre-training methods that learn from unlabeled data.

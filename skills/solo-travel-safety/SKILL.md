@@ -2,12 +2,12 @@
 name: solo-travel-safety
 description: Solo travel planning, safety, budgeting, and community
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["solo-travel", "safety"]
+    tags: [solo-travel, safety]
 ---
 
 # Solo Travel Safety

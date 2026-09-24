@@ -1,8 +1,13 @@
 ---
-
 name: skill-version-migration
 description: Update skills when underlying tools, APIs, or syntax change.
-
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [skill, version, migration]
 ---
 
 # Skill Version Migration

@@ -1,9 +1,15 @@
 ---
 name: windows-network-config
-description: "Use when configuring Windows network adapters and DNS."
-category: software-development
-tags: [windows, networking, dns, ip, adapter, configuration]
+description: Use when configuring Windows network adapters and DNS.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [windows, networking, dns, ip, adapter, configuration]
 ---
+
 # Windows Network Configuration
 
 Configuring network adapters, IP, DNS, and routing on Windows.

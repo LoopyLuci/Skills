@@ -1,14 +1,13 @@
 ---
 name: agroforestry-fundamentals
-description: "Use when applying agroforestry fundamentals."
+description: Use when applying agroforestry fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agriculture, forestry, agroforestry]
-    related_skills: [general]
 ---
 
 # Agroforestry Fundamentals

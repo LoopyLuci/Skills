@@ -1,14 +1,13 @@
 ---
 name: agri-voltaics-integration
-description: "Use when integrating agriculture and solar."
+description: Use when integrating agriculture and solar.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cross-domain, agri-voltaics, dual-use, solar-farming]
-    related_skills: [renewable-energy-design]
 ---
 
 # Agri Voltaics Integration

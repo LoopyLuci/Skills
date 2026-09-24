@@ -1,13 +1,13 @@
 ---
 name: semi-supervised-learning
-description: "Use when applying semi-supervised learning techniques."
+description: Use when applying semi-supervised learning techniques.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [semi-supervised, pseudo-labeling, consistency-regularization, self-training, label-propagation]
-    related_skills: [self-supervised-learning, active-learning-strategies, data-augmentation-techniques, transfer-learning-patterns]
 ---
 
 # Semi Supervised Learning

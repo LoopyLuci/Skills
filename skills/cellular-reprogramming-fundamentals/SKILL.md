@@ -1,14 +1,13 @@
 ---
 name: cellular-reprogramming-fundamentals
-description: "Use when applying cell reprogramming fundamentals."
+description: Use when applying cell reprogramming fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, genetics]
-    related_skills: [general]
 ---
 
 # Cellular Reprogramming Fundamentals

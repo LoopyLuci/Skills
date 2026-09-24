@@ -1,13 +1,13 @@
 ---
 name: content-repurposing-distribution
-description: "Use when repurposing content across multiple channels."
+description: Use when repurposing content across multiple channels.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [content-repurposing, distribution, content-marketing, multi-channel, content-strategy]
-    related_skills: [content-writing-seo-copy, blog-building-content-strategy, social-media-content-planning, digital-marketing-strategy]
 ---
 
 # Content Repurposing Distribution

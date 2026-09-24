@@ -1,14 +1,13 @@
 ---
 name: android-native-dev-deep-troubleshooting
-description: "Use when applying android native development troubleshoo."
+description: Use when applying android native development troubleshoo.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mobile, android]
-    related_skills: ['android-native-dev']
 ---
 
 # Android Native Dev Deep Troubleshooting

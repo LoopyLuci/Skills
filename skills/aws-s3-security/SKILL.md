@@ -1,14 +1,13 @@
 ---
 name: aws-s3-security
-description: "Use when securing AWS S3."
+description: Use when securing AWS S3.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, aws, aws-s3]
-    related_skills: [general]
 ---
 
 # Aws S3 Security

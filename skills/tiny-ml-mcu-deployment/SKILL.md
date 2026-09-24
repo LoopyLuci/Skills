@@ -1,13 +1,13 @@
 ---
 name: tiny-ml-mcu-deployment
-description: "Use when deploying ML on microcontrollers (MCUs)."
+description: Use when deploying ML on microcontrollers (MCUs).
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [TinyML, MCU, microcontroller, TFLite-Micro, Arduino, ESP32, CMSIS-NN]
-    related_skills: [edge-ai-tinyml, on-device-ml-optimization, iot-security-framework, model-compression-techniques]
+    tags: [tinyml, mcu, microcontroller, tflite-micro, arduino, esp32, cmsis-nn]
 ---
 
 # TinyML — ML on Microcontrollers

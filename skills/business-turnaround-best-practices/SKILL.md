@@ -1,14 +1,13 @@
 ---
 name: business-turnaround-best-practices
-description: "Use when applying business turnaround best practices."
+description: Use when applying business turnaround best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [consulting, crisis, business-turnaround]
-    related_skills: [general]
 ---
 
 # Business Turnaround Best Practices

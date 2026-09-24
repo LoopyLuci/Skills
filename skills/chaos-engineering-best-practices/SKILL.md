@@ -1,14 +1,13 @@
 ---
 name: chaos-engineering-best-practices
-description: "Use when applying chaos engineering best practices."
+description: Use when applying chaos engineering best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [testing, chaos-engineering, resilience]
-    related_skills: [general]
 ---
 
 # Chaos Engineering Best Practices

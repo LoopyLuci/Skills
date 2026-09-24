@@ -1,13 +1,13 @@
 ---
 name: online-learning-systems
-description: "Use when building models that learn incrementally."
+description: Use when building models that learn incrementally.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [online-learning, incremental-learning, streaming-ml, river, vowpal-wabbit]
-    related_skills: [continual-lifelong-learning, active-learning-strategies, data-pipeline-streaming, model-monitoring-drift]
 ---
 
 # Online Learning Systems

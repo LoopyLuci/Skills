@@ -1,14 +1,13 @@
 ---
 name: differential-privacy-fundamentals
-description: "Use when applying differential privacy fundamentals."
+description: Use when applying differential privacy fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [privacy, differential-privacy, data-anonymization]
-    related_skills: [general]
 ---
 
 # Differential Privacy Fundamentals

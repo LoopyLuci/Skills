@@ -1,14 +1,13 @@
 ---
 name: docker-multi-arch-implementation
-description: "Use when applying docker multi-arch implementation."
+description: Use when applying docker multi-arch implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, docker, multi-arch, docker-multi-arch-builds]
-    related_skills: [general]
 ---
 
 # Docker Multi Arch Implementation

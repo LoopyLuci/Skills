@@ -2,12 +2,12 @@
 name: pottery-ceramics
 description: Wheel throwing, hand-building, glazing, and kiln firing
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["pottery", "ceramics"]
+    tags: [pottery, ceramics]
 ---
 
 # Pottery Ceramics

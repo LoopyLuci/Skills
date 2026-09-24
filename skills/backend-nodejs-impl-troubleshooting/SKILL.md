@@ -1,14 +1,13 @@
 ---
 name: backend-nodejs-impl-troubleshooting
-description: "Use when applying backend node implementation troublesho."
+description: Use when applying backend node implementation troublesho.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, nodejs, backend-nodejs-implementation]
-    related_skills: [general]
 ---
 
 # Backend Nodejs Impl Troubleshooting

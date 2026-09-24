@@ -1,14 +1,13 @@
 ---
 name: fastapi-deployment-troubleshooting
-description: "Use when applying fastapi deployment troubleshooting."
+description: Use when applying fastapi deployment troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, fastapi, deployment, uvicorn]
-    related_skills: [general]
 ---
 
 # Fastapi Deployment Troubleshooting

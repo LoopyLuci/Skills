@@ -2,12 +2,12 @@
 name: robot-slam-mapping
 description: SLAM algorithms, occupancy grid mapping, loop closure, and multi-session mapping
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["slam", "mapping"]
+    tags: [slam, mapping]
 ---
 
 # Robot Slam Mapping

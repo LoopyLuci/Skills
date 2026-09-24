@@ -1,14 +1,13 @@
 ---
 name: content-distribution-troubleshooting
-description: "Use when applying cdn troubleshooting."
+description: Use when applying cdn troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [media, cdn, cdn-caching]
-    related_skills: ['general']
 ---
 
 # Content Distribution Troubleshooting

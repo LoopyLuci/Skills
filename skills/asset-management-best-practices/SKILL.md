@@ -1,14 +1,13 @@
 ---
 name: asset-management-best-practices
-description: "Use when applying asset management best practices."
+description: Use when applying asset management best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, investment, asset-management-fundamentals]
-    related_skills: [general]
 ---
 
 # Asset Management Best Practices

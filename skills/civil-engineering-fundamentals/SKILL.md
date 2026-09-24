@@ -1,14 +1,13 @@
 ---
 name: civil-engineering-fundamentals
-description: "Use when applying civil engineering fundamentals."
+description: Use when applying civil engineering fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, civil, infrastructure, civil-eng-design]
-    related_skills: [general]
 ---
 
 # Civil Engineering Fundamentals

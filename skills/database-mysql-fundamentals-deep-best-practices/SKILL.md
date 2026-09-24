@@ -1,14 +1,13 @@
 ---
 name: database-mysql-fundamentals-deep-best-practices
-description: "Use when applying mysql fundamentals best practices."
+description: Use when applying mysql fundamentals best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, mysql]
-    related_skills: ['mysql-fundamentals']
 ---
 
 # Database Mysql Fundamentals Deep Best Practices

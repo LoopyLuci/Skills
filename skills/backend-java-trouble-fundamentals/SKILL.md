@@ -1,14 +1,13 @@
 ---
 name: backend-java-trouble-fundamentals
-description: "Use when applying backend java troubleshooting fundament."
+description: Use when applying backend java troubleshooting fundament.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, java, backend-java-troubleshooting]
-    related_skills: [general]
 ---
 
 # Backend Java Trouble Fundamentals

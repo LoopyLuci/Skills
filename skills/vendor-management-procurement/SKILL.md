@@ -1,13 +1,13 @@
 ---
 name: vendor-management-procurement
-description: "Use when managing vendor relationships and procurement."
+description: Use when managing vendor relationships and procurement.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [vendor-management, procurement, supplier, contract, RFP, vendor-evaluation]
-    related_skills: [contract-management-basics, business-continuity-planning, financial-modeling-budgeting, legal-compliance-business]
+    tags: [vendor-management, procurement, supplier, contract, rfp, vendor-evaluation]
 ---
 
 # Vendor Management Procurement

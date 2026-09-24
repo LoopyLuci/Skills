@@ -1,6 +1,13 @@
 ---
 name: github-actions-matrix
 description: Run test/config combos in parallel with matrix strategy.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [github, actions, matrix]
 ---
 
 # GitHub Actions Matrix Builds

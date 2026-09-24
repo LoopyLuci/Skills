@@ -1,13 +1,13 @@
 ---
 name: continuous-integration-advanced
-description: "Use when implementing advanced CI/CD pipelines."
+description: Use when implementing advanced CI/CD pipelines.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [CI-CD, continuous-integration, GitHub-Actions, pipelines, automation, testing]
-    related_skills: [ci-cd-pipeline-setup, mlops-pipeline-ci-cd, testing-pyramid-practice, performance-budgeting-web]
+    tags: [ci-cd, continuous-integration, github-actions, pipelines, automation, testing]
 ---
 
 # Advanced CI/CD Pipelines

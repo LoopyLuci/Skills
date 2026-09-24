@@ -1,9 +1,13 @@
 ---
 name: traffic-historical
-title: Traffic Historical Analysis
 description: Use when storing and querying historical traffic data.
-category: networking
-tags: [traffic, historical, storage, timeseries, query, analytics]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [traffic, historical, storage, timeseries, query, analytics]
 ---
 
 # Traffic Historical Analysis

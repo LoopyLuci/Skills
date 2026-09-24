@@ -1,7 +1,13 @@
 ---
 name: docker-dev-environments
-description: "Docker build environments with MCP for AI agent control."
-tags: [docker, devops, mcp, build-environments, ai-agents]
+description: Docker build environments with MCP for AI agent control.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [docker, devops, mcp, build-environments, ai-agents]
 ---
 
 # Docker Development Environments with MCP Integration

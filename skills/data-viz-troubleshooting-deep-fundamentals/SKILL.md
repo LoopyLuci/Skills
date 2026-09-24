@@ -1,14 +1,13 @@
 ---
 name: data-viz-troubleshooting-deep-fundamentals
-description: "Use when applying data viz troubleshooting fundamentals."
+description: Use when applying data viz troubleshooting fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [design, data-viz]
-    related_skills: ['data-viz-troubleshooting']
 ---
 
 # Data Viz Troubleshooting Deep Fundamentals

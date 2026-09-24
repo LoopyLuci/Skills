@@ -1,13 +1,13 @@
 ---
 name: timeseries-forecasting-ml
-description: "Use when building time series forecasting systems."
+description: Use when building time series forecasting systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [timeseries, forecasting, ARIMA, Prophet, LSTM, transformers, temporal]
-    related_skills: [anomaly-detection-ml, data-augmentation-techniques, ml-pipeline-design, custom-neural-architecture-design]
+    tags: [timeseries, forecasting, arima, prophet, lstm, transformers, temporal]
 ---
 
 # Timeseries Forecasting Ml

@@ -1,14 +1,13 @@
 ---
 name: biodegradable-materials-best-practices
-description: "Use when applying biodegradable materials best practices."
+description: Use when applying biodegradable materials best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [materials, eco, biodegradable-materials]
-    related_skills: [general]
 ---
 
 # Biodegradable Materials Best Practices

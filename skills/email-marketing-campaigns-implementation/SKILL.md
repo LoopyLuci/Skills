@@ -1,14 +1,13 @@
 ---
 name: email-marketing-campaigns-implementation
-description: "Use when applying email marketing campaigns implementation."
+description: Use when applying email marketing campaigns implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, marketing, email-marketing-campaigns]
-    related_skills: [general]
 ---
 
 # Email Marketing Campaigns Implementation

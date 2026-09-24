@@ -1,12 +1,13 @@
 ---
 name: linux-performance-tuning
-description: "Use when tuning Linux performance."
+description: Use when tuning Linux performance.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["linux", "performance", "sysctl", "ulimit", "tuned"]
+    tags: [linux, performance, sysctl, ulimit, tuned]
 ---
 
 # Linux Performance Tuning

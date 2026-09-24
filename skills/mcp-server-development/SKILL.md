@@ -1,14 +1,13 @@
 ---
 name: mcp-server-development
-description: "Build custom MCP servers. Use when user wants agentic tools."
+description: Build custom MCP servers. Use when user wants agentic tools.
 version: 1.0.0
-author: Hermes Agent + User
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mcp, python, server-building, agent-tools, hermes-integration, sqlite, custom-tools]
-    related_skills: [hermes-agent]
 ---
 
 # Mcp Server Development

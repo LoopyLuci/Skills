@@ -1,14 +1,13 @@
 ---
 name: access-control-security-fundamentals
-description: "Use when for access control fundamentals."
+description: Use when for access control fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, access-control, rbac, abac]
-    related_skills: [general]
 ---
 
 # Access Control Security Fundamentals

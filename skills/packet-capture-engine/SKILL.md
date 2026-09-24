@@ -1,9 +1,13 @@
 ---
 name: packet-capture-engine
-title: Packet Capture Engine
 description: Use when capturing raw packets across platforms with pcap.
-category: networking
-tags: [packet, capture, pcap, npcap, rust, cross-platform]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [packet, capture, pcap, npcap, rust, cross-platform]
 ---
 
 # Packet Capture Engine

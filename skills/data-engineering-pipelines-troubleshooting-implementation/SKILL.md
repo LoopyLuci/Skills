@@ -1,14 +1,13 @@
 ---
 name: data-engineering-pipelines-troubleshooting-implementation
-description: "Use when applying data engineering troubleshooting imple."
+description: Use when applying data engineering troubleshooting imple.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, data-eng-troubleshooting]
-    related_skills: ['']
 ---
 
 # Data Engineering Pipelines Troubleshooting Implementation

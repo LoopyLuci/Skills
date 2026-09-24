@@ -1,13 +1,13 @@
 ---
 name: multi-agent-reinforcement-learning
-description: "Use when designing multi-agent RL systems and environments."
+description: Use when designing multi-agent RL systems and environments.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [reinforcement-learning, multi-agent, MARL, cooperation, competition]
-    related_skills: [reinforcement-learning, deep-reinforcement-learning, hierarchical-swarm-architectures, swarm-communication-protocols]
+    tags: [reinforcement-learning, multi-agent, marl, cooperation, competition]
 ---
 
 # Multi Agent Reinforcement Learning

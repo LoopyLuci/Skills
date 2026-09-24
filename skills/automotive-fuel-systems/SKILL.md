@@ -1,14 +1,13 @@
 ---
 name: automotive-fuel-systems
-description: "Use when designing fuel systems."
+description: Use when designing fuel systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [automotive, fuel, injection, engine]
-    related_skills: [general]
 ---
 
 # Automotive Fuel Systems

@@ -1,14 +1,13 @@
 ---
 name: dev-sec-ops-fundamentals
-description: "Use when learning devsecops fundamentals."
+description: Use when learning devsecops fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, security, devsecops, ci-cd]
-    related_skills: [general]
 ---
 
 # Dev Sec Ops Fundamentals

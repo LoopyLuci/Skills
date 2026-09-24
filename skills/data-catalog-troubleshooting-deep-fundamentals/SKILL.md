@@ -1,14 +1,13 @@
 ---
 name: data-catalog-troubleshooting-deep-fundamentals
-description: "Use when applying data catalog troubleshooting fundament."
+description: Use when applying data catalog troubleshooting fundament.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, data-catalog]
-    related_skills: ['data-catalog-troubleshooting']
 ---
 
 # Data Catalog Troubleshooting Deep Fundamentals

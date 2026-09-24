@@ -1,14 +1,13 @@
 ---
 name: azure-kubernetes
-description: "Use when using Azure AKS."
+description: Use when using Azure AKS.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, azure, azure-kubernetes]
-    related_skills: [general]
 ---
 
 # Azure Kubernetes

@@ -1,14 +1,13 @@
 ---
 name: content-marketing-implementation-fundamentals
-description: "Use when applying content marketing implementation funda."
+description: Use when applying content marketing implementation funda.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, content-marketing-implementation]
-    related_skills: ['']
 ---
 
 # Content Marketing Implementation Fundamentals

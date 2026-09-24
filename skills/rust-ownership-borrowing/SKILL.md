@@ -1,13 +1,13 @@
 ---
 name: rust-ownership-borrowing
-description: "Use when understanding Rust ownership and borrowing."
+description: Use when understanding Rust ownership and borrowing.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [rust, ownership, borrowing, lifetimes, references, memory-safety]
-    related_skills: [rust-programming-patterns, go-concurrency-patterns, type-system-design-theory]
 ---
 
 # Rust Ownership and Borrowing

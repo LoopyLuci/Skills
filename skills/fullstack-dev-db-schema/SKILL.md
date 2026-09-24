@@ -1,8 +1,13 @@
 ---
 name: fullstack-dev-db-schema
 description: Use when designing relational database schemas, indexes, migrations, and data models.
-tags: [database, schema, sql, postgresql, migration, indexing, data-modeling]
-related_skills: [fullstack-dev-api-design, android-native-dev]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [database, schema, sql, postgresql, migration, indexing, data-modeling]
 ---
 
 # Database Schema Design

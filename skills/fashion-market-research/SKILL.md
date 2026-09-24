@@ -1,14 +1,13 @@
 ---
 name: fashion-market-research
-description: "Use when researching fashion markets."
+description: Use when researching fashion markets.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, market-research, trend-analysis, consumers]
-    related_skills: [general]
 ---
 
 # Fashion Market Research

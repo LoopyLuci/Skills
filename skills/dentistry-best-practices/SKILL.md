@@ -1,14 +1,13 @@
 ---
 name: dentistry-best-practices
-description: "Use when applying dentistry best practices."
+description: Use when applying dentistry best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [medicine, healthcare, dentistry]
-    related_skills: ['dentistry-fundamentals']
 ---
 
 # Dentistry Best Practices

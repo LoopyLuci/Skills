@@ -1,14 +1,13 @@
 ---
 name: backend-nodejs-best-practices-deep-troubleshooting
-description: "Use when applying node.js backend best practices trouble."
+description: Use when applying node.js backend best practices trouble.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, nodejs]
-    related_skills: ['backend-nodejs-best-practices']
 ---
 
 # Backend Nodejs Best Practices Deep Troubleshooting

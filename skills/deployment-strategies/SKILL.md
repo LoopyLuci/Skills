@@ -1,14 +1,13 @@
 ---
 name: deployment-strategies
-description: "Use when implementing deployment strategies."
+description: Use when implementing deployment strategies.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, deployment, blue-green, canary, rollout]
-    related_skills: ['gitops-argocd-flux']
 ---
 
 # Deployment Strategies

@@ -1,14 +1,13 @@
 ---
 name: database-postgresql-partitioning-troubleshooting
-description: "Use when applying postgresql partitioning troubleshooting."
+description: Use when applying postgresql partitioning troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, postgresql, partitioning, scale]
-    related_skills: [general]
 ---
 
 # Database Postgresql Partitioning Troubleshooting

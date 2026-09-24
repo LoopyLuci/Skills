@@ -1,14 +1,13 @@
 ---
 name: construction-scheduling
-description: "Use when scheduling construction."
+description: Use when scheduling construction.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [construction, scheduling, construction-scheduling-software]
-    related_skills: [general]
 ---
 
 # Construction Scheduling

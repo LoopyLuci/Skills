@@ -1,14 +1,13 @@
 ---
 name: beauty-influencer-marketing
-description: "Use when doing beauty influencer marketing."
+description: Use when doing beauty influencer marketing.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, influencer-marketing, beauty, social-media]
-    related_skills: [influencer-marketing]
 ---
 
 # Beauty Influencer Marketing

@@ -1,13 +1,13 @@
 ---
 name: real-estate-market-analysis
-description: "Use when analyzing real estate markets and valuations."
+description: Use when analyzing real estate markets and valuations.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [real-estate, market-analysis, comps, valuation, CMA, investment]
-    related_skills: [real-estate-crm-leads, crm-sales-pipeline, business-metrics-kpis, digital-marketing-strategy]
+    tags: [real-estate, market-analysis, comps, valuation, cma, investment]
 ---
 
 # Real Estate Market Analysis

@@ -2,12 +2,12 @@
 name: confidence-self-esteem
 description: Confidence building, self-esteem, and assertiveness
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["confidence", "self-esteem"]
+    tags: [confidence, self-esteem]
 ---
 
 # Confidence Self Esteem

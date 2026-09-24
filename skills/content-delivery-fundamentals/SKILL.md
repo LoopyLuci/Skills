@@ -1,14 +1,13 @@
 ---
 name: content-delivery-fundamentals
-description: "Use when applying cdn fundamentals."
+description: Use when applying cdn fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [architecture, cdn, caching, cloudfront]
-    related_skills: [general]
 ---
 
 # Content Delivery Fundamentals

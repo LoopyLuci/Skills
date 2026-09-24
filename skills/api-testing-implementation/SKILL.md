@@ -1,14 +1,13 @@
 ---
 name: api-testing-implementation
-description: "Use when applying api testing implementation."
+description: Use when applying api testing implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [api, testing, contract, rest]
-    related_skills: [general]
 ---
 
 # Api Testing Implementation

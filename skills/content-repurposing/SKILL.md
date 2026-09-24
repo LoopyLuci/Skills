@@ -1,14 +1,13 @@
 ---
 name: content-repurposing
-description: "Use when repurposing content. Blog to multi-format."
+description: Use when repurposing content. Blog to multi-format.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [content, repurposing, distribution, multi-format, marketing]
-    related_skills: [blog-publishing-workflow, newsletter-creation, blog-analytics-interpreter]
 ---
 
 # Content Repurposing

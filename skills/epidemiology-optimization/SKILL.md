@@ -1,14 +1,13 @@
 ---
 name: epidemiology-optimization
-description: "Use when optimizing epidemiology systems."
+description: Use when optimizing epidemiology systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [epidemiology, disease, public-health, outbreak]
-    related_skills: [general]
 ---
 
 # Epidemiology Optimization

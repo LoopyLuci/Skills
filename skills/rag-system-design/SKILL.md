@@ -1,9 +1,15 @@
 ---
 name: rag-system-design
-description: "Use when building retrieval-augmented generation systems."
-category: mlops
-tags: [rag, retrieval, llm, embeddings, vector-db]
+description: Use when building retrieval-augmented generation systems.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [rag, retrieval, llm, embeddings, vector-db]
 ---
+
 # RAG System Design
 
 Designing retrieval-augmented generation systems for LLMs.

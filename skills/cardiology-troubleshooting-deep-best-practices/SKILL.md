@@ -1,14 +1,13 @@
 ---
 name: cardiology-troubleshooting-deep-best-practices
-description: "Use when applying cardiology troubleshooting best practi."
+description: Use when applying cardiology troubleshooting best practi.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [healthcare, cardiology]
-    related_skills: ['cardiology-troubleshooting']
 ---
 
 # Cardiology Troubleshooting Deep Best Practices

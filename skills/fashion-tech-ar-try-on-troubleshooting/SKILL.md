@@ -1,14 +1,13 @@
 ---
 name: fashion-tech-ar-try-on-troubleshooting
-description: "Use when applying fashion ar try on troubleshooting."
+description: Use when applying fashion ar try on troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, beauty]
-    related_skills: ['']
 ---
 
 # Fashion Tech Ar Try On Troubleshooting

@@ -2,12 +2,12 @@
 name: tabletop-rpg-worldbuilding
 description: Worldbuilding, campaign design, encounter balancing, and RPG systems
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["rpg", "worldbuilding"]
+    tags: [rpg, worldbuilding]
 ---
 
 # Tabletop Rpg Worldbuilding

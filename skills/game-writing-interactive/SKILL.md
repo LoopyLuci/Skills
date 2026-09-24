@@ -2,12 +2,12 @@
 name: game-writing-interactive
 description: Branching narrative, environmental storytelling, lore, and writer's room
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["game-writing", "narrative"]
+    tags: [game-writing, narrative]
 ---
 
 # Game Writing Interactive

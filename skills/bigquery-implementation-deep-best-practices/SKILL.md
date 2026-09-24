@@ -1,14 +1,13 @@
 ---
 name: bigquery-implementation-deep-best-practices
-description: "Use when applying bigquery implementation best practices."
+description: Use when applying bigquery implementation best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, bigquery]
-    related_skills: ['bigquery-implementation']
 ---
 
 # Bigquery Implementation Deep Best Practices

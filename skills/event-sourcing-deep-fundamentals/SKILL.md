@@ -1,14 +1,13 @@
 ---
 name: event-sourcing-deep-fundamentals
-description: "Use when applying event sourcing fundamentals."
+description: Use when applying event sourcing fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [programming, patterns]
-    related_skills: ['event-sourcing']
 ---
 
 # Event Sourcing Deep Fundamentals

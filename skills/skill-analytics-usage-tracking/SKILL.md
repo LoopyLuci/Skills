@@ -1,13 +1,13 @@
 ---
 name: skill-analytics-usage-tracking
-description: "Use when tracking skill usage and performance analytics."
+description: Use when tracking skill usage and performance analytics.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [meta, skill-analytics, usage-tracking, performance, metrics, dashboards]
-    related_skills: [skill-inventory-management, skill-maintenance-lifecycle, skill-review-feedback-loops, business-metrics-kpis]
 ---
 
 # Skill Analytics Usage Tracking

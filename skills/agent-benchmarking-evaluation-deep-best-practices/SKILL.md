@@ -1,14 +1,13 @@
 ---
 name: agent-benchmarking-evaluation-deep-best-practices
-description: "Use when applying agent benchmarking best practices."
+description: Use when applying agent benchmarking best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agents, testing]
-    related_skills: ['agent-benchmarking-evaluation']
 ---
 
 # Agent Benchmarking Evaluation Deep Best Practices

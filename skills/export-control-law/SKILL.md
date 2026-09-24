@@ -1,14 +1,13 @@
 ---
 name: export-control-law
-description: "Use when applying export control."
+description: Use when applying export control.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [legal, export, export-control-compliance]
-    related_skills: [general]
 ---
 
 # Export Control Law

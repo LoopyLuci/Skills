@@ -1,14 +1,13 @@
 ---
 name: aws-sns-troubleshooting
-description: "Use when applying aws sns troubleshooting."
+description: Use when applying aws sns troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, sns, notifications, pub-sub]
-    related_skills: [general]
 ---
 
 # Aws Sns Troubleshooting

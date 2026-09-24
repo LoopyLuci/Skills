@@ -2,12 +2,12 @@
 name: multimedia-storytelling
 description: Video, audio, interactive, and cross-platform storytelling
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["multimedia", "storytelling"]
+    tags: [multimedia, storytelling]
 ---
 
 # Multimedia Storytelling

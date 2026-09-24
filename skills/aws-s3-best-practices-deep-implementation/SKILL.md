@@ -1,14 +1,13 @@
 ---
 name: aws-s3-best-practices-deep-implementation
-description: "Use when applying aws s3 implementation."
+description: Use when applying aws s3 implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, s3]
-    related_skills: ['aws-s3-best-practices']
 ---
 
 # Aws S3 Best Practices Deep Implementation

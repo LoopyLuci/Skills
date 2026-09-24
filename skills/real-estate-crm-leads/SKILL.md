@@ -1,13 +1,13 @@
 ---
 name: real-estate-crm-leads
-description: "Use when managing real estate leads and clients."
+description: Use when managing real estate leads and clients.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [real-estate, crm, leads, property, clients, pipeline]
-    related_skills: [crm-sales-pipeline, real-estate-market-analysis, email-marketing-campaigns, business-metrics-kpis]
 ---
 
 # Real Estate Crm Leads

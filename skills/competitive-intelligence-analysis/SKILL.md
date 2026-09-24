@@ -1,13 +1,13 @@
 ---
 name: competitive-intelligence-analysis
-description: "Use when researching competitors and market positioning."
+description: Use when researching competitors and market positioning.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [competitive-intelligence, market-research, competitor-analysis, positioning, SWOT]
-    related_skills: [pricing-strategy-optimization, product-management-roadmap, digital-marketing-strategy, saas-metrics-reporting]
+    tags: [competitive-intelligence, market-research, competitor-analysis, positioning, swot]
 ---
 
 # Competitive Intelligence Analysis

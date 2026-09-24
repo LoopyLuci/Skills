@@ -1,14 +1,13 @@
 ---
 name: digital-logic-implementation
-description: "Use when applying digital logic implementation."
+description: Use when applying digital logic implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [electronics, digital, digital-logic]
-    related_skills: [general]
 ---
 
 # Digital Logic Implementation

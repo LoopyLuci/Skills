@@ -1,14 +1,13 @@
 ---
 name: ci-cd-optimization-implementation
-description: "Use when applying ci/cd optimization implementation."
+description: Use when applying ci/cd optimization implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, optimization, ci-cd, performance]
-    related_skills: [general]
 ---
 
 # Ci Cd Optimization Implementation

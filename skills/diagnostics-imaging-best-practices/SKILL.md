@@ -1,14 +1,13 @@
 ---
 name: diagnostics-imaging-best-practices
-description: "Use when applying diagnostics imaging best practices."
+description: Use when applying diagnostics imaging best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, medical-imaging, diagnostics]
-    related_skills: [general]
 ---
 
 # Diagnostics Imaging Best Practices

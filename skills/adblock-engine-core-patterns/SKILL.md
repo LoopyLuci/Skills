@@ -1,13 +1,13 @@
 ---
 name: adblock-engine-core-patterns
-description: "Use when building core adblock engine architecture."
+description: Use when building core adblock engine architecture.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [adblock, filtering, engine, architecture, networking]
-    related_skills: [blocklist-manager, dns-adblock-engine, url-content-filter, pattern-matching-engine, custom-blocking-rules-compiler]
 ---
 
 # Adblock Engine Core Patterns

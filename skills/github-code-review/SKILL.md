@@ -1,14 +1,13 @@
 ---
 name: github-code-review
-description: "Review PRs: diffs, inline comments via gh or REST."
-version: 1.1.0
-author: Hermes Agent
+description: Review PRs: diffs, inline comments via gh or REST.
+version: 1.0.0
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: [GitHub, Code-Review, Pull-Requests, Git, Quality]
-    related_skills: [github-auth, github-pr-workflow]
+    tags: [github, code-review, pull-requests, git, quality]
 ---
 
 # GitHub Code Review

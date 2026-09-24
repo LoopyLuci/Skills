@@ -1,14 +1,13 @@
 ---
 name: blog-guest-posting-best-practices
-description: "Use when applying guest posting outreach best practices."
+description: Use when applying guest posting outreach best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, guest-posting-outreach]
-    related_skills: ['']
 ---
 
 # Blog Guest Posting Best Practices

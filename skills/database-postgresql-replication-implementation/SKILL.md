@@ -1,14 +1,13 @@
 ---
 name: database-postgresql-replication-implementation
-description: "Use when applying postgresql replication implementation."
+description: Use when applying postgresql replication implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, postgresql, replication, ha]
-    related_skills: [general]
 ---
 
 # Database Postgresql Replication Implementation

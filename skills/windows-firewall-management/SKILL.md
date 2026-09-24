@@ -1,9 +1,15 @@
 ---
 name: windows-firewall-management
-description: "Use when configuring Windows Firewall via PowerShell."
-category: software-development
-tags: [windows, firewall, networking, security, powershell]
+description: Use when configuring Windows Firewall via PowerShell.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [windows, firewall, networking, security, powershell]
 ---
+
 # Windows Firewall Management
 
 Configuring Windows Defender Firewall with PowerShell.

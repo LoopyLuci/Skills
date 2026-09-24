@@ -1,12 +1,13 @@
 ---
 name: kafka-producer-consumer
-description: "Use when implementing Kafka producers."
+description: Use when implementing Kafka producers.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["kafka", "producer", "consumer", "avro", "schema-registry"]
+    tags: [kafka, producer, consumer, avro, schema-registry]
 ---
 
 # Kafka Producer Consumer

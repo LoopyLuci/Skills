@@ -1,14 +1,13 @@
 ---
 name: building-code-compliance
-description: "Use when ensuring code compliance."
+description: Use when ensuring code compliance.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [construction, legal, building-code]
-    related_skills: [general]
 ---
 
 # Building Code Compliance

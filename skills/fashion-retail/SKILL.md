@@ -1,14 +1,13 @@
 ---
 name: fashion-retail
-description: "Use when managing fashion retail."
+description: Use when managing fashion retail.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, retail, retail-experience-design]
-    related_skills: [general]
 ---
 
 # Fashion Retail

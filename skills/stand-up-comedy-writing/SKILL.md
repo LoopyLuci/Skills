@@ -2,12 +2,12 @@
 name: stand-up-comedy-writing
 description: Joke writing, stage presence, material development, and performance
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["stand-up", "comedy"]
+    tags: [stand-up, comedy]
 ---
 
 # Stand Up Comedy Writing

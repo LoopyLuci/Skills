@@ -1,14 +1,13 @@
 ---
 name: electronic-data-capture-troubleshooting
-description: "Use when applying edc troubleshooting."
+description: Use when applying edc troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, medicine, edc]
-    related_skills: [general]
 ---
 
 # Electronic Data Capture Troubleshooting

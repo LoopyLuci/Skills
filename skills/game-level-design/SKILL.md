@@ -2,12 +2,12 @@
 name: game-level-design
 description: Blockout, pacing, player flow, encounter design, environmental storytelling, and playtesting
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["level-design", "environment"]
+    tags: [level-design, environment]
 ---
 
 # Game Level Design

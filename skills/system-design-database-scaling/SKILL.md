@@ -1,12 +1,13 @@
 ---
 name: system-design-database-scaling
-description: "Use when designing database scaling."
+description: Use when designing database scaling.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["system-design", "database", "sharding", "replication"]
+    tags: [system-design, database, sharding, replication]
 ---
 
 # System Design Database Scaling

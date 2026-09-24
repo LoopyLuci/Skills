@@ -2,12 +2,12 @@
 name: ux-writing-microcopy
 description: Button labels, error messages, onboarding, and content design systems
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["ux-writing", "content-design"]
+    tags: [ux-writing, content-design]
 ---
 
 # Ux Writing Microcopy

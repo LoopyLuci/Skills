@@ -2,12 +2,12 @@
 name: supply-chain-visibility-tracking
 description: Real-time visibility, EDI, track-and-trace, and control towers
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["visibility", "tracking"]
+    tags: [visibility, tracking]
 ---
 
 # Supply Chain Visibility Tracking

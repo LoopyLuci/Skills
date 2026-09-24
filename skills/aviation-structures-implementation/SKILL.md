@@ -1,14 +1,13 @@
 ---
 name: aviation-structures-implementation
-description: "Use when applying aviation structures implementation."
+description: Use when applying aviation structures implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, structures, aerospace-eng-design]
-    related_skills: ['general']
 ---
 
 # Aviation Structures Implementation

@@ -1,14 +1,13 @@
 ---
 name: ai-governance-fundamentals
-description: "Use when for ai governance fundamentals."
+description: Use when for ai governance fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ai, governance, policy, regulation]
-    related_skills: [general]
 ---
 
 # Ai Governance Fundamentals

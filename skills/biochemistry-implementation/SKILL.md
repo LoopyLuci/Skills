@@ -1,14 +1,13 @@
 ---
 name: biochemistry-implementation
-description: "Use when implementing biochemistry projects."
+description: Use when implementing biochemistry projects.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biochemistry, proteins, enzymes, metabolism]
-    related_skills: [general]
 ---
 
 # Biochemistry Implementation

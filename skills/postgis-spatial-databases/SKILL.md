@@ -2,12 +2,12 @@
 name: postgis-spatial-databases
 description: Spatial indexing, PostGIS functions, raster support, and query optimization
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["postgis", "sql"]
+    tags: [postgis, sql]
 ---
 
 # Postgis Spatial Databases

@@ -1,14 +1,13 @@
 ---
 name: customer-segmentation-troubleshooting
-description: "Use when applying segmentation troubleshooting."
+description: Use when applying segmentation troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, segmentation, customer-segmentation-analysis]
-    related_skills: [general]
 ---
 
 # Customer Segmentation Troubleshooting

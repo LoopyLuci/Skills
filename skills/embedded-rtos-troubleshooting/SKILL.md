@@ -1,14 +1,13 @@
 ---
 name: embedded-rtos-troubleshooting
-description: "Use when applying embedded rtos troubleshooting."
+description: Use when applying embedded rtos troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [electronics, embedded, embedded-freertos]
-    related_skills: [general]
 ---
 
 # Embedded Rtos Troubleshooting

@@ -2,12 +2,12 @@
 name: real-estate-development
 description: Site selection, entitlements, construction, and project delivery
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["development", "construction"]
+    tags: [development, construction]
 ---
 
 # Real Estate Development

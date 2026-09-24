@@ -1,14 +1,13 @@
 ---
 name: email-marketing-ROI-fundamentals
-description: "Use when applying email roi fundamentals."
+description: Use when applying email roi fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, roi, measurement, analytics]
-    related_skills: [general]
 ---
 
 # Email Marketing Roi Fundamentals

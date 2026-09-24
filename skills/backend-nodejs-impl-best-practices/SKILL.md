@@ -1,14 +1,13 @@
 ---
 name: backend-nodejs-impl-best-practices
-description: "Use when applying backend node implementation best pract."
+description: Use when applying backend node implementation best pract.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, nodejs, backend-nodejs-implementation]
-    related_skills: [general]
 ---
 
 # Backend Nodejs Impl Best Practices

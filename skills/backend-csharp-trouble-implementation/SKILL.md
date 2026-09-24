@@ -1,14 +1,13 @@
 ---
 name: backend-csharp-trouble-implementation
-description: "Use when applying backend c# troubl implementation."
+description: Use when applying backend c# troubl implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, csharp, backend-csharp-troubleshooting]
-    related_skills: [general]
 ---
 
 # Backend Csharp Trouble Implementation

@@ -1,14 +1,13 @@
 ---
 name: aws-cloudfront-troubleshooting-implementation
-description: "Use when applying cloudfront troubleshooting implementat."
+description: Use when applying cloudfront troubleshooting implementat.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, cdn]
-    related_skills: ['aws-cloudfront-troubleshooting']
 ---
 
 # Aws Cloudfront Troubleshooting Implementation

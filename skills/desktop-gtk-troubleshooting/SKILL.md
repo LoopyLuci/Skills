@@ -1,14 +1,13 @@
 ---
 name: desktop-gtk-troubleshooting
-description: "Use when applying gtk desktop troubleshooting."
+description: Use when applying gtk desktop troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [desktop, gtk, linux, c]
-    related_skills: [general]
 ---
 
 # Desktop Gtk Troubleshooting

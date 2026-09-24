@@ -1,14 +1,13 @@
 ---
 name: admet-implementation
-description: "Use when applying admet assays implementation."
+description: Use when applying admet assays implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, pharma, admet]
-    related_skills: [general]
 ---
 
 # Admet Implementation

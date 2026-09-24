@@ -1,14 +1,13 @@
 ---
 name: broadcast-engineering-fundamentals
-description: "Use when applying broadcast engineering fundamentals."
+description: Use when applying broadcast engineering fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [media, broadcast, broadcast-engineering]
-    related_skills: ['general']
 ---
 
 # Broadcast Engineering Fundamentals

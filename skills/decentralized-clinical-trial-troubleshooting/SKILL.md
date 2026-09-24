@@ -1,14 +1,13 @@
 ---
 name: decentralized-clinical-trial-troubleshooting
-description: "Use when applying dct troubleshooting."
+description: Use when applying dct troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, medicine, dcx]
-    related_skills: [general]
 ---
 
 # Decentralized Clinical Trial Troubleshooting

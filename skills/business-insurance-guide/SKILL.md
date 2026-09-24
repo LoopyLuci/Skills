@@ -1,13 +1,13 @@
 ---
 name: business-insurance-guide
-description: "Use when evaluating business insurance options."
+description: Use when evaluating business insurance options.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [insurance, business-risk, liability, coverage, claims]
-    related_skills: [business-continuity-planning, legal-compliance-business, financial-modeling-budgeting]
 ---
 
 # Business Insurance Guide

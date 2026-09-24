@@ -1,14 +1,13 @@
 ---
 name: ansible-playbook-design-deep-fundamentals
-description: "Use when applying ansible playbook design fundamentals."
+description: Use when applying ansible playbook design fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, ansible]
-    related_skills: ['ansible-playbook-design']
 ---
 
 # Ansible Playbook Design Deep Fundamentals

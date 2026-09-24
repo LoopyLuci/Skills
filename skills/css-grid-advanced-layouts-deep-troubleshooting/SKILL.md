@@ -1,14 +1,13 @@
 ---
 name: css-grid-advanced-layouts-deep-troubleshooting
-description: "Use when applying css grid layouts troubleshooting."
+description: Use when applying css grid layouts troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [design, css]
-    related_skills: ['css-grid-advanced-layouts']
 ---
 
 # Css Grid Advanced Layouts Deep Troubleshooting

@@ -1,13 +1,13 @@
 ---
 name: database-design-patterns
-description: "Use when designing database schemas and migrations."
+description: Use when designing database schemas and migrations.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [database, sql, nosql, schema, indexing, migration, postgresql]
-    related_skills: [sql-query-optimization, data-structures-algorithms, system-design-patterns, api-design-rest-graphql]
 ---
 
 # Database Design Patterns

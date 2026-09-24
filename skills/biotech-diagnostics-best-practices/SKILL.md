@@ -1,14 +1,13 @@
 ---
 name: biotech-diagnostics-best-practices
-description: "Use when applying diagnostic development best practices."
+description: Use when applying diagnostic development best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, diagnostics]
-    related_skills: ['']
 ---
 
 # Biotech Diagnostics Best Practices

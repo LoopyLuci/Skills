@@ -1,9 +1,15 @@
 ---
 name: agent-task-decomposition
-description: "Use when decomposing tasks for multi-agent execution."
-category: mlops
-tags: [agents, task-decomposition, planning, sub-tasks]
+description: Use when decomposing tasks for multi-agent execution.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [agents, task-decomposition, planning, sub-tasks]
 ---
+
 # Agent Task Decomposition
 
 Breaking complex tasks into manageable subtasks for agent execution.

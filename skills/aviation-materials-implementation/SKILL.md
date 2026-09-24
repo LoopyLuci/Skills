@@ -1,14 +1,13 @@
 ---
 name: aviation-materials-implementation
-description: "Use when applying aviation materials implementation."
+description: Use when applying aviation materials implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, materials, lightweight-materials]
-    related_skills: ['general']
 ---
 
 # Aviation Materials Implementation

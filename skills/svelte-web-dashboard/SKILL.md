@@ -1,9 +1,13 @@
 ---
 name: svelte-web-dashboard
-title: Svelte Web Dashboard
 description: Use when building the Sentinel web UI with Svelte 5.
-category: networking
-tags: [svelte, frontend, ui, dashboard, typescript, vite]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [svelte, frontend, ui, dashboard, typescript, vite]
 ---
 
 # Svelte Web Dashboard

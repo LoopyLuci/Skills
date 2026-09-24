@@ -1,14 +1,13 @@
 ---
 name: cold-chain-logistics
-description: "Use when managing cold chain logistics. Temperature control."
+description: Use when managing cold chain logistics. Temperature control.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cold-chain, logistics, temperature-control, food-safety, pharma]
-    related_skills: [supply-chain-optimization, food-tech-supply-chain]
 ---
 
 # Cold Chain Logistics

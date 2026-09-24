@@ -2,12 +2,12 @@
 name: catering-food-service-events
 description: Event catering, menu planning, and food service logistics
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["catering", "food-service"]
+    tags: [catering, food-service]
 ---
 
 # Catering Food Service Events

@@ -1,14 +1,13 @@
 ---
 name: ballast-water-implementation
-description: "Use when applying ballast water implementation."
+description: Use when applying ballast water implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [maritime, environment, ballast-water-management]
-    related_skills: [general]
 ---
 
 # Ballast Water Implementation

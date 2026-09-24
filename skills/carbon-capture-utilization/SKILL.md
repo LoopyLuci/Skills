@@ -1,14 +1,13 @@
 ---
 name: carbon-capture-utilization
-description: "Use when implementing carbon capture. CCUS, DAC."
+description: Use when implementing carbon capture. CCUS, DAC.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climatetech, carbon-capture, ccus, dac, utilization]
-    related_skills: [carbon-accounting-standards]
 ---
 
 # Carbon Capture Utilization

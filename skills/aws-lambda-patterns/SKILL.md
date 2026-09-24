@@ -1,12 +1,13 @@
 ---
 name: aws-lambda-patterns
-description: "Use when building AWS Lambda functions."
+description: Use when building AWS Lambda functions.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["aws", "lambda", "serverless", "event-driven"]
+    tags: [aws, lambda, serverless, event-driven]
 ---
 
 # Aws Lambda Patterns

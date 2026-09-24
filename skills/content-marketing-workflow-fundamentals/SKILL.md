@@ -1,14 +1,13 @@
 ---
 name: content-marketing-workflow-fundamentals
-description: "Use when applying content marketing workflow fundamentals."
+description: Use when applying content marketing workflow fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, content-marketing-workflow]
-    related_skills: ['']
 ---
 
 # Content Marketing Workflow Fundamentals

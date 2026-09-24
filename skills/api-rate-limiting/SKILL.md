@@ -1,13 +1,13 @@
 ---
 name: api-rate-limiting
-description: "Use when implementing API rate limiting and throttling."
+description: Use when implementing API rate limiting and throttling.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [rate-limiting, throttling, API, token-bucket, leaky-bucket, quota, Redis]
-    related_skills: [api-design-rest-graphql, ddos-mitigation-strategies, caching-strategies, api-gateway-load-balancing]
+    tags: [rate-limiting, throttling, api, token-bucket, leaky-bucket, quota, redis]
 ---
 
 # Api Rate Limiting

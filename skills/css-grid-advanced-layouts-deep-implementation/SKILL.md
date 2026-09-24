@@ -1,14 +1,13 @@
 ---
 name: css-grid-advanced-layouts-deep-implementation
-description: "Use when applying css grid layouts implementation."
+description: Use when applying css grid layouts implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [design, css]
-    related_skills: ['css-grid-advanced-layouts']
 ---
 
 # Css Grid Advanced Layouts Deep Implementation

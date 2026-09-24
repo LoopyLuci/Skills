@@ -1,15 +1,13 @@
 ---
 name: evaluating-llms-harness
-description: "lm-eval-harness: benchmark LLMs (MMLU, GSM8K, etc.)."
-version: 1.0.1
-author: Orchestra Research
+description: lm-eval-harness: benchmark LLMs (MMLU, GSM8K, etc.).
+version: 1.0.0
+author: LoopyLuci Community
 license: MIT
-dependencies: [lm-eval, transformers, vllm]
-platforms: [linux, macos]
+platforms: [any]
 metadata:
   hermes:
-    tags: [Evaluation, LM Evaluation Harness, Benchmarking, MMLU, HumanEval, GSM8K, EleutherAI, Model Quality, Academic Benchmarks, Industry Standard]
-
+    tags: [evaluation, lm evaluation harness, benchmarking, mmlu, humaneval, gsm8k, eleutherai, model quality, academic benchmarks, industry standard]
 ---
 
 # lm-evaluation-harness - LLM Benchmarking
@@ -493,6 +491,3 @@ code execution.
 - Docs: https://github.com/EleutherAI/lm-evaluation-harness/tree/main/docs
 - Task library: 60+ tasks including MMLU, GSM8K, HumanEval, TruthfulQA, HellaSwag, ARC, WinoGrande, etc.
 - Leaderboard: https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard (uses this harness)
-
-
-

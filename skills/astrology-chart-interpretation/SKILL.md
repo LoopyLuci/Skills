@@ -1,14 +1,13 @@
 ---
 name: astrology-chart-interpretation
-description: "Use when interpreting astrology charts."
+description: Use when interpreting astrology charts.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [esoteric, astrology, chart-interpretation, horoscope]
-    related_skills: [general]
 ---
 
 # Astrology Chart Interpretation

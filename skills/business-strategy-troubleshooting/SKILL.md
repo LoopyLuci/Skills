@@ -1,14 +1,13 @@
 ---
 name: business-strategy-troubleshooting
-description: "Use when applying business strategy troubleshooting."
+description: Use when applying business strategy troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, strategy, business-strategy]
-    related_skills: [general]
 ---
 
 # Business Strategy Troubleshooting

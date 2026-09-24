@@ -1,14 +1,13 @@
 ---
 name: desalination-best-practices
-description: "Use when applying desalination best practices."
+description: Use when applying desalination best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [maritime, desalination]
-    related_skills: ['general']
 ---
 
 # Desalination Best Practices

@@ -1,13 +1,13 @@
 ---
 name: business-continuity-planning
-description: "Use when designing business continuity and disaster plans."
+description: Use when designing business continuity and disaster plans.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [business-continuity, disaster-recovery, BCP, DRP, RTO, RPO, failover]
-    related_skills: [security-incident-response, certificate-management-pki, remote-team-management, data-pipeline-streaming]
+    tags: [business-continuity, disaster-recovery, bcp, drp, rto, rpo, failover]
 ---
 
 # Business Continuity Planning

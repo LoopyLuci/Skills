@@ -1,14 +1,13 @@
 ---
 name: aws-network-security
-description: "Use when securing AWS networks."
+description: Use when securing AWS networks.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, aws, network-security-best-practices]
-    related_skills: [general]
 ---
 
 # Aws Network Security

@@ -1,14 +1,13 @@
 ---
 name: database-security-fundamentals
-description: "Use when for database security fundamentals."
+description: Use when for database security fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, security, encryption, access-control]
-    related_skills: [general]
 ---
 
 # Database Security Fundamentals

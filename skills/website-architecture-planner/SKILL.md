@@ -1,14 +1,13 @@
 ---
 name: website-architecture-planner
-description: "Use when planning site structure. IA, sitemaps."
+description: Use when planning site structure. IA, sitemaps.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [website, information-architecture, sitemap, wireframe, planning]
-    related_skills: [static-site-generator-workflow, wordpress-development]
 ---
 
 # Website Architecture Planner

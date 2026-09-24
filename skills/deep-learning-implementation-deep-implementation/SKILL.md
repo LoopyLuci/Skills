@@ -1,14 +1,13 @@
 ---
 name: deep-learning-implementation-deep-implementation
-description: "Use when applying deep learning implementation implement."
+description: Use when applying deep learning implementation implement.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, ml-deep-learning-implementation]
-    related_skills: ['']
 ---
 
 # Deep Learning Implementation Deep Implementation

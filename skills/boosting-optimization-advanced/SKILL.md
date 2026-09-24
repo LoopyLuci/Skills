@@ -1,13 +1,13 @@
 ---
 name: boosting-optimization-advanced
-description: "Use when optimizing gradient boosting performance."
+description: Use when optimizing gradient boosting performance.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [boosting, XGBoost, LightGBM, CatBoost, optimization, hyperparameter-tuning]
-    related_skills: [boosting-algorithms-deep, hyperparameter-optimization-ml, feature-engineering-automation, random-forest-advanced]
+    tags: [boosting, xgboost, lightgbm, catboost, optimization, hyperparameter-tuning]
 ---
 
 # Advanced Boosting Optimization

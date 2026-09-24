@@ -1,14 +1,13 @@
 ---
 name: biomedical-eng-implementation-implementation
-description: "Use when applying biomedical implementation implementation."
+description: Use when applying biomedical implementation implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, biomedical, implementation]
-    related_skills: [general]
 ---
 
 # Biomedical Eng Implementation Implementation

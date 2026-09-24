@@ -1,14 +1,13 @@
 ---
 name: embedded-adc-fundamentals
-description: "Use when applying adc programming fundamentals."
+description: Use when applying adc programming fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [embedded, adc, analog, digital]
-    related_skills: [general]
 ---
 
 # Embedded Adc Fundamentals

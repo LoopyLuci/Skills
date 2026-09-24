@@ -1,14 +1,13 @@
 ---
 name: banking-digital-transformation-troubleshooting
-description: "Use when applying banking digital transformation trouble."
+description: Use when applying banking digital transformation trouble.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, digital, digital-transformation]
-    related_skills: [general]
 ---
 
 # Banking Digital Transformation Troubleshooting

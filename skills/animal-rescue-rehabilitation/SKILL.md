@@ -2,12 +2,12 @@
 name: animal-rescue-rehabilitation
 description: Animal rescue, rehabilitation, and release programs
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["rescue", "rehabilitation"]
+    tags: [rescue, rehabilitation]
 ---
 
 # Animal Rescue Rehabilitation

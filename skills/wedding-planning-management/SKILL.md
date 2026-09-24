@@ -2,12 +2,12 @@
 name: wedding-planning-management
 description: Wedding coordination, vendor management, and day-of logistics
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["wedding", "coordination"]
+    tags: [wedding, coordination]
 ---
 
 # Wedding Planning Management

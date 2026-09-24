@@ -1,13 +1,13 @@
 ---
 name: blockchain-development-solidity
-description: "Use when developing blockchain and Solidity smart contracts."
+description: Use when developing blockchain and Solidity smart contracts.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [blockchain, Solidity, smart-contracts, Ethereum, EVM, Web3, DeFi]
-    related_skills: [defi-smart-contracts, zero-knowledge-proofs, tokenomics-design, web3-integration]
+    tags: [blockchain, solidity, smart-contracts, ethereum, evm, web3, defi]
 ---
 
 # Blockchain and Solidity Development

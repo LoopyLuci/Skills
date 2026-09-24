@@ -1,9 +1,15 @@
 ---
 name: powershell-active-directory
-description: "Use when managing AD via PowerShell."
-category: software-development
-tags: [powershell, active-directory, ad, domain, users]
+description: Use when managing AD via PowerShell.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [powershell, active-directory, ad, domain, users]
 ---
+
 # PowerShell Active Directory
 
 Managing Active Directory with PowerShell.

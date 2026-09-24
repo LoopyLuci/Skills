@@ -1,6 +1,13 @@
 ---
 name: embedding-strategies
-description: "Choose chunking overlap model selection for embeddings"
+description: Choose chunking overlap model selection for embeddings
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [embedding, strategies]
 ---
 
 # Embedding Strategies

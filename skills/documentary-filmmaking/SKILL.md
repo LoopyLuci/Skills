@@ -2,12 +2,12 @@
 name: documentary-filmmaking
 description: Documentary production, archival research, and impact campaigns
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["documentary", "film"]
+    tags: [documentary, film]
 ---
 
 # Documentary Filmmaking

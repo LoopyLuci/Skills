@@ -1,14 +1,13 @@
 ---
 name: color-theory-fundamentals
-description: "Use when applying color theory fundamentals."
+description: Use when applying color theory fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [design, color, color-theory-accessibility]
-    related_skills: [general]
 ---
 
 # Color Theory Fundamentals

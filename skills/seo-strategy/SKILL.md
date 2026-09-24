@@ -1,14 +1,13 @@
 ---
 name: seo-strategy
-description: "Use when building SEO. Keywords, on-page, technical."
+description: Use when building SEO. Keywords, on-page, technical.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [seo, search-engine-optimization, content, keywords, technical-seo]
-    related_skills: [content-marketing-workflow, marketing-analytics-dashboard, competitor-analysis]
 ---
 
 # Seo Strategy

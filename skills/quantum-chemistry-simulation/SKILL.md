@@ -2,12 +2,12 @@
 name: quantum-chemistry-simulation
 description: Molecular Hamiltonian, VQE for chemistry, active space selection, and basis sets
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["chemistry", "simulation"]
+    tags: [chemistry, simulation]
 ---
 
 # Quantum Chemistry Simulation

@@ -2,12 +2,12 @@
 name: spacecraft-systems-engineering
 description: Spacecraft buses, subsystems, mission lifecycle, and systems engineering V-model
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["spacecraft", "systems"]
+    tags: [spacecraft, systems]
 ---
 
 # Spacecraft Systems Engineering

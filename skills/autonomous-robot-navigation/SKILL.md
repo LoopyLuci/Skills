@@ -1,14 +1,13 @@
 ---
 name: autonomous-robot-navigation
-description: "Use when navigating autonomous robots."
+description: Use when navigating autonomous robots.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [robotics, navigation, slam]
-    related_skills: ['slam-simultaneous-localization']
 ---
 
 # Autonomous Robot Navigation

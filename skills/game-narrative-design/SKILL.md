@@ -2,12 +2,12 @@
 name: game-narrative-design
 description: Branching dialogue, quest systems, lore databases, writer's room tools, and narrative scripting
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["narrative", "writing"]
+    tags: [narrative, writing]
 ---
 
 # Game Narrative Design

@@ -1,14 +1,13 @@
 ---
 name: carbon-intensity-metrics
-description: "Use when measuring carbon intensity."
+description: Use when measuring carbon intensity.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climatetech, carbon-intensity, metrics, emissions]
-    related_skills: [general]
 ---
 
 # Carbon Intensity Metrics

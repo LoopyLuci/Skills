@@ -1,14 +1,13 @@
 ---
 name: backend-go-trouble-fundamentals
-description: "Use when applying backend go troubleshooting fundamentals."
+description: Use when applying backend go troubleshooting fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, go, backend-go-troubleshooting]
-    related_skills: [general]
 ---
 
 # Backend Go Trouble Fundamentals

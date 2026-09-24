@@ -1,9 +1,15 @@
 ---
 name: data-structures-algorithms
-description: "Use when implementing data structures and algorithms."
-category: software-development
-tags: [data-structures, algorithms, dsa, programming]
+description: Use when implementing data structures and algorithms.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [data-structures, algorithms, dsa, programming]
 ---
+
 # Data Structures & Algorithms
 
 Common data structures and algorithms for production code and interviews.

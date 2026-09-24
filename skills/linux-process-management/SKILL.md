@@ -1,12 +1,13 @@
 ---
 name: linux-process-management
-description: "Use when managing Linux processes."
+description: Use when managing Linux processes.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["linux", "processes", "ps", "top", "systemd", "signals"]
+    tags: [linux, processes, ps, top, systemd, signals]
 ---
 
 # Linux Process Management

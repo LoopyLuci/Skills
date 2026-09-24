@@ -1,14 +1,13 @@
 ---
 name: agent-safety-alignment-deep-fundamentals
-description: "Use when applying agent safety alignment fundamentals."
+description: Use when applying agent safety alignment fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agents, safety]
-    related_skills: ['agent-safety-alignment']
 ---
 
 # Agent Safety Alignment Deep Fundamentals

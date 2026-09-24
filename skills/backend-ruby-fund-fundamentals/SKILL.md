@@ -1,14 +1,13 @@
 ---
 name: backend-ruby-fund-fundamentals
-description: "Use when applying backend ruby fundamentals fundamentals."
+description: Use when applying backend ruby fundamentals fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, ruby, backend-ruby-fundamentals]
-    related_skills: [general]
 ---
 
 # Backend Ruby Fund Fundamentals

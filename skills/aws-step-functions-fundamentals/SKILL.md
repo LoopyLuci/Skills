@@ -1,14 +1,13 @@
 ---
 name: aws-step-functions-fundamentals
-description: "Use when applying aws step functions fundamentals."
+description: Use when applying aws step functions fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, step-functions, sfn, workflow]
-    related_skills: [general]
 ---
 
 # Aws Step Functions Fundamentals

@@ -1,12 +1,13 @@
 ---
 name: figma-design-system
-description: "Use when building Figma design systems."
+description: Use when building Figma design systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["figma", "design-system", "components", "variants", "tokens"]
+    tags: [figma, design-system, components, variants, tokens]
 ---
 
 # Figma Design System

@@ -1,14 +1,13 @@
 ---
 name: api-gateway-configuration
-description: "Use when configuring API gateways."
+description: Use when configuring API gateways.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, api-gateway, ingress, routing]
-    related_skills: ['nginx-reverse-proxy-config']
 ---
 
 # Api Gateway Configuration

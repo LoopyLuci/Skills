@@ -2,12 +2,12 @@
 name: blended-family-step-parenting
 description: Blended families, co-parenting, and step-parenting strategies
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["blended-family", "co-parenting"]
+    tags: [blended-family, co-parenting]
 ---
 
 # Blended Family Step Parenting

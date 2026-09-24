@@ -1,6 +1,13 @@
 ---
 name: skill-combination-techniques
 description: Stack and chain multiple skills for complex tasks.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [skill, combination, techniques]
 ---
 
 # Skill Combination Techniques

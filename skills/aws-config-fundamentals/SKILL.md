@@ -1,14 +1,13 @@
 ---
 name: aws-config-fundamentals
-description: "Use when applying aws config fundamentals."
+description: Use when applying aws config fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, config, compliance, auditing]
-    related_skills: [general]
 ---
 
 # Aws Config Fundamentals

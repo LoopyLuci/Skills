@@ -1,14 +1,13 @@
 ---
 name: educational-outreach-programs
-description: "Use when designing educational outreach."
+description: Use when designing educational outreach.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [education, outreach, community-engagement]
-    related_skills: [general]
 ---
 
 # Educational Outreach Programs

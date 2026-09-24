@@ -1,14 +1,13 @@
 ---
 name: backend-ruby-trouble-fundamentals
-description: "Use when applying backend ruby troubleshooting fundament."
+description: Use when applying backend ruby troubleshooting fundament.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, ruby, backend-ruby-troubleshooting]
-    related_skills: [general]
 ---
 
 # Backend Ruby Trouble Fundamentals

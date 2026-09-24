@@ -1,14 +1,13 @@
 ---
 name: bioinformatics-scripts-troubleshooting
-description: "Use when applying bioinformatics scripts troubleshooting."
+description: Use when applying bioinformatics scripts troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [bioinformatics, programming, scripts]
-    related_skills: [general]
 ---
 
 # Bioinformatics Scripts Troubleshooting

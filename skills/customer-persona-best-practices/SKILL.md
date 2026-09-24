@@ -1,14 +1,13 @@
 ---
 name: customer-persona-best-practices
-description: "Use when applying customer personas best practices."
+description: Use when applying customer personas best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, persona, customer]
-    related_skills: [general]
 ---
 
 # Customer Persona Best Practices

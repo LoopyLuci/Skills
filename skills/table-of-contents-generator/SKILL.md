@@ -1,8 +1,13 @@
 ---
 name: table-of-contents-generator
 description: Use when creating table of contents slides for PowerPoint presentations with PptxGenJS.
-tags: [pptx, powerpoint, presentation, toc, table-of-contents, pptxgenjs]
-related_skills: [cover-page-generator, content-page-generator, section-divider-generator]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [pptx, powerpoint, presentation, toc, table-of-contents, pptxgenjs]
 ---
 
 # Table of Contents Generator

@@ -1,14 +1,13 @@
 ---
 name: cloud-security-implementation-deep-fundamentals
-description: "Use when applying cloud security implementation fundamen."
+description: Use when applying cloud security implementation fundamen.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, security]
-    related_skills: ['cloud-security-implementation']
 ---
 
 # Cloud Security Implementation Deep Fundamentals

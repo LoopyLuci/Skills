@@ -2,12 +2,12 @@
 name: game-asset-creation
 description: Concept art, 3D modeling, texturing, rigging, and game-ready optimization
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["game-dev", "art"]
+    tags: [game-dev, art]
 ---
 
 # Game Asset Creation

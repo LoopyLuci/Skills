@@ -1,14 +1,13 @@
 ---
 name: computer-vision-segmentation
-description: "Use when segmenting images."
+description: Use when segmenting images.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [computer-vision, segmentation, unet]
-    related_skills: [general]
 ---
 
 # Computer Vision Segmentation

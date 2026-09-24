@@ -1,12 +1,13 @@
 ---
 name: javascript-error-handling-patterns
-description: "Use when handling JS errors."
+description: Use when handling JS errors.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["javascript", "errors", "try-catch", "error-classes"]
+    tags: [javascript, errors, try-catch, error-classes]
 ---
 
 # Javascript Error Handling Patterns

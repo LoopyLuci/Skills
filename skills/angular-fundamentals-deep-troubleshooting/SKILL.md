@@ -1,14 +1,13 @@
 ---
 name: angular-fundamentals-deep-troubleshooting
-description: "Use when applying angular fundamentals troubleshooting."
+description: Use when applying angular fundamentals troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [web, frontend]
-    related_skills: ['frontend-angular-fundamentals']
 ---
 
 # Angular Fundamentals Deep Troubleshooting

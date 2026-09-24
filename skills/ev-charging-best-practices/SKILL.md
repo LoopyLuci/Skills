@@ -1,14 +1,13 @@
 ---
 name: ev-charging-best-practices
-description: "Use when applying ev charging best practices."
+description: Use when applying ev charging best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [energy, ev, electric-vehicle-charging-network]
-    related_skills: [general]
 ---
 
 # Ev Charging Best Practices

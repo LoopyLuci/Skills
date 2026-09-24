@@ -1,14 +1,13 @@
 ---
 name: aws-batch-best-practices
-description: "Use when applying aws batch best practices."
+description: Use when applying aws batch best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, batch, compute, jobs]
-    related_skills: [general]
 ---
 
 # Aws Batch Best Practices

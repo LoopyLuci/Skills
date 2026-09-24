@@ -1,14 +1,13 @@
 ---
 name: ca-management
-description: "Use when managing certificate authorities."
+description: Use when managing certificate authorities.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, crypto, certificate-authority]
-    related_skills: [general]
 ---
 
 # Ca Management

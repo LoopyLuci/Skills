@@ -1,6 +1,13 @@
 ---
 name: docker-compose-workflows
-description: "Multi service local dev with Docker Compose networking volumes"
+description: Multi service local dev with Docker Compose networking volumes
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [docker, compose, workflows]
 ---
 
 # Docker Compose Workflows
@@ -27,3 +34,16 @@ docker compose logs -f      # Follow logs
 docker compose down -v      # Stop + remove volumes
 docker compose restart      # Restart services
 ```
+
+## Trigger
+
+Activate this skill when the user mentions:
+- docker, compose, workflows workflows or issues
+- Building, fixing, or optimizing docker compose workflows
+
+
+## Core Concepts
+
+- Domain fundamentals and best practices
+- Key tools and methodologies
+- Quality standards and common patterns

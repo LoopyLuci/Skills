@@ -1,14 +1,13 @@
 ---
 name: edge-data-governance
-description: "Use when governing edge data."
+description: Use when governing edge data.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [edge-computing, data-governance, privacy, compliance]
-    related_skills: ['consent-management-skills']
 ---
 
 # Edge Data Governance

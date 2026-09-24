@@ -1,13 +1,13 @@
 ---
 name: red-team-operations
-description: "Use when planning and executing red team operations."
+description: Use when planning and executing red team operations.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [red-team, C2, evasion, opsec, stealth, persistent-access, breach-sim]
-    related_skills: [penetration-testing-methodology, command-control-c2-infrastructure, lateral-movement-pivoting, evasion-techniques-av-bypass]
+    tags: [red-team, c2, evasion, opsec, stealth, persistent-access, breach-sim]
 ---
 
 # Red Team Operations

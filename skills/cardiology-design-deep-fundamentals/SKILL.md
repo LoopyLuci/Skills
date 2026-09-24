@@ -1,14 +1,13 @@
 ---
 name: cardiology-design-deep-fundamentals
-description: "Use when applying cardiology design fundamentals."
+description: Use when applying cardiology design fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [healthcare, cardiology]
-    related_skills: ['cardiology-design']
 ---
 
 # Cardiology Design Deep Fundamentals

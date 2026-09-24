@@ -1,14 +1,13 @@
 ---
 name: aws-iam-best-practices-deep-implementation
-description: "Use when applying aws iam implementation."
+description: Use when applying aws iam implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, aws]
-    related_skills: ['aws-iam']
 ---
 
 # Aws Iam Best Practices Deep Implementation

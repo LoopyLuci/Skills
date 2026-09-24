@@ -1,8 +1,13 @@
 ---
-
 name: github-projects-management
 description: Manage GitHub Projects for issue/PR tracking and planning.
-
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [github, projects, management]
 ---
 
 # GitHub Projects Management

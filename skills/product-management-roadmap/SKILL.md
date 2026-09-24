@@ -1,13 +1,13 @@
 ---
 name: product-management-roadmap
-description: "Use when managing products and building roadmaps."
+description: Use when managing products and building roadmaps.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [product-management, roadmap, backlog, prioritization, RICE, user-stories, sprints]
-    related_skills: [saas-metrics-reporting, project-management-workflows, customer-feedback-surveys, competitive-intelligence-analysis]
+    tags: [product-management, roadmap, backlog, prioritization, rice, user-stories, sprints]
 ---
 
 # Product Management Roadmap

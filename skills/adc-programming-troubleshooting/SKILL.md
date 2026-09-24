@@ -1,14 +1,13 @@
 ---
 name: adc-programming-troubleshooting
-description: "Use when applying adc programming troubleshooting."
+description: Use when applying adc programming troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [electronics, adc]
-    related_skills: ['general']
 ---
 
 # Adc Programming Troubleshooting

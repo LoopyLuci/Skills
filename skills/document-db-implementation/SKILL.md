@@ -1,14 +1,13 @@
 ---
 name: document-db-implementation
-description: "Use when applying document databases implementation."
+description: Use when applying document databases implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, document-db, mongodb, couchdb]
-    related_skills: [general]
 ---
 
 # Document Db Implementation

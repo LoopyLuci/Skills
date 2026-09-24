@@ -1,14 +1,13 @@
 ---
 name: documentary-implementation
-description: "Use when applying documentary implementation."
+description: Use when applying documentary implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [media, film, documentary]
-    related_skills: [general]
 ---
 
 # Documentary Implementation

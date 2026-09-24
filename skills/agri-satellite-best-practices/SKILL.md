@@ -1,14 +1,13 @@
 ---
 name: agri-satellite-best-practices
-description: "Use when applying agricultural satellites best practices."
+description: Use when applying agricultural satellites best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agri, satellite, earth-observation]
-    related_skills: ['general']
 ---
 
 # Agri Satellite Best Practices

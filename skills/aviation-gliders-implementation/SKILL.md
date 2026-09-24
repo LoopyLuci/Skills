@@ -1,14 +1,13 @@
 ---
 name: aviation-gliders-implementation
-description: "Use when applying glider ops implementation."
+description: Use when applying glider ops implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, glider, gliders]
-    related_skills: ['general']
 ---
 
 # Aviation Gliders Implementation

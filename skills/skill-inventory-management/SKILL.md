@@ -1,13 +1,13 @@
 ---
 name: skill-inventory-management
-description: "Use when auditing, pruning, or consolidating skills."
+description: Use when auditing, pruning, or consolidating skills.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [skills, meta, inventory, audit, lifecycle, pruning]
-    related_skills: [skill-development-workflow, skill-discovery, skill-architecture-planning, skill-testing-automation, meta-skill-patterns]
 ---
 
 # Skill Inventory Management

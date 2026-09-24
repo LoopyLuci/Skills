@@ -1,14 +1,13 @@
 ---
 name: bci-device-approval
-description: "Use when gaining BCI device regulatory approval."
+description: Use when gaining BCI device regulatory approval.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neurotech, bci-regulation, fda, medical-device]
-    related_skills: ['neurotech-clinical-trials', ' brain-stimulation-safety']
 ---
 
 # Bci Device Approval

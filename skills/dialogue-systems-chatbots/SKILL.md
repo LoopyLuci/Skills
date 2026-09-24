@@ -2,12 +2,12 @@
 name: dialogue-systems-chatbots
 description: Task-oriented dialogue, conversational AI, and chatbot design
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["dialogue", "conversational"]
+    tags: [dialogue, conversational]
 ---
 
 # Dialogue Systems Chatbots

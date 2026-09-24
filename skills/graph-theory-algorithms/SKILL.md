@@ -1,9 +1,15 @@
 ---
 name: graph-theory-algorithms
-description: "Use when implementing graph algorithms for network analysis."
-category: software-development
-tags: [graph, algorithms, bfs, dfs, shortest-path, network]
+description: Use when implementing graph algorithms for network analysis.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [graph, algorithms, bfs, dfs, shortest-path, network]
 ---
+
 # Graph Theory Algorithms
 
 Graph algorithms for network analysis, pathfinding, and optimization.

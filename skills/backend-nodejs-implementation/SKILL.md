@@ -1,14 +1,13 @@
 ---
 name: backend-nodejs-implementation
-description: "Use when applying node.js backend implementation."
+description: Use when applying node.js backend implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, nodejs, javascript]
-    related_skills: [general]
 ---
 
 # Backend Nodejs Implementation

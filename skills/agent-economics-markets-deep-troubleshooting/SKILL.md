@@ -1,14 +1,13 @@
 ---
 name: agent-economics-markets-deep-troubleshooting
-description: "Use when applying agent economics markets troubleshooting."
+description: Use when applying agent economics markets troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agents, economics]
-    related_skills: ['agent-economics-markets']
 ---
 
 # Agent Economics Markets Deep Troubleshooting

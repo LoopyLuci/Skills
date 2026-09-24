@@ -1,14 +1,13 @@
 ---
 name: python-package-build
-description: "Build+verify Python pkgs: CLI/GUI/TUI, async, xplat."
+description: Build+verify Python pkgs: CLI/GUI/TUI, async, xplat.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [python, packaging, pyproject, cross-platform, verification, desktop-app, setuptools]
-    related_skills: [test-driven-development, systematic-debugging, service-orchestration]
 ---
 
 # Python Package Build

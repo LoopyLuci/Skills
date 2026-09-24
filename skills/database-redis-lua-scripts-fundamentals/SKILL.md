@@ -1,14 +1,13 @@
 ---
 name: database-redis-lua-scripts-fundamentals
-description: "Use when applying redis lua scripts fundamentals."
+description: Use when applying redis lua scripts fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, redis, lua, scripting]
-    related_skills: [general]
 ---
 
 # Database Redis Lua Scripts Fundamentals

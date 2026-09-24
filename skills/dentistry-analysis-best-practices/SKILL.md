@@ -1,14 +1,13 @@
 ---
 name: dentistry-analysis-best-practices
-description: "Use when applying dentistry analysis best practices."
+description: Use when applying dentistry analysis best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [medicine, dentistry, dentistry-analysis]
-    related_skills: [general]
 ---
 
 # Dentistry Analysis Best Practices

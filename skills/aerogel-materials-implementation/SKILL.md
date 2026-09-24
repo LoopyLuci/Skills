@@ -1,14 +1,13 @@
 ---
 name: aerogel-materials-implementation
-description: "Use when applying aerogel materials implementation."
+description: Use when applying aerogel materials implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [materials, aerogel, aerogel-insulation-applications]
-    related_skills: [general]
 ---
 
 # Aerogel Materials Implementation

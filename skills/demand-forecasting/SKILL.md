@@ -1,14 +1,13 @@
 ---
 name: demand-forecasting
-description: "Use when forecasting demand."
+description: Use when forecasting demand.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, demand-forecasting, prediction]
-    related_skills: ['demand-generation-webinars']
 ---
 
 # Demand Forecasting

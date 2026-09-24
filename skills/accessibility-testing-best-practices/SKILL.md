@@ -1,14 +1,13 @@
 ---
 name: accessibility-testing-best-practices
-description: "Use when applying accessibility testing best practices."
+description: Use when applying accessibility testing best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [testing, accessibility, axe, wcag]
-    related_skills: [general]
 ---
 
 # Accessibility Testing Best Practices

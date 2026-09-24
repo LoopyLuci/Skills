@@ -1,14 +1,13 @@
 ---
 name: fashion-retail-analytics
-description: "Use when analyzing fashion retail data."
+description: Use when analyzing fashion retail data.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, retail, analytics, demand-forecasting]
-    related_skills: [general]
 ---
 
 # Fashion Retail Analytics

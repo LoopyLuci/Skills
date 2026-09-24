@@ -1,14 +1,13 @@
 ---
 name: brand-strategy-implementation
-description: "Use when applying brand strategy implementation."
+description: Use when applying brand strategy implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, brand, brand-strategy-development]
-    related_skills: [general]
 ---
 
 # Brand Strategy Implementation

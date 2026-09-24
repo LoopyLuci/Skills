@@ -1,14 +1,13 @@
 ---
 name: backend-go-implementation-deep-troubleshooting
-description: "Use when applying go backend implementation troubleshoot."
+description: Use when applying go backend implementation troubleshoot.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, go]
-    related_skills: ['backend-go-implementation']
 ---
 
 # Backend Go Implementation Deep Troubleshooting

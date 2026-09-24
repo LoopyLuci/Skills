@@ -1,14 +1,13 @@
 ---
 name: emergency-medicine-fundamentals
-description: "Use when applying emergency medicine fundamentals."
+description: Use when applying emergency medicine fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [medicine, healthcare, emergency]
-    related_skills: ['emergency-med-implementation']
 ---
 
 # Emergency Medicine Fundamentals

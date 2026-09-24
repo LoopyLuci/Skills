@@ -2,12 +2,12 @@
 name: fact-checking-verification
 description: Fact-checking methodology, source verification, and debunking
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["fact-checking", "verification"]
+    tags: [fact-checking, verification]
 ---
 
 # Fact Checking Verification

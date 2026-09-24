@@ -1,14 +1,13 @@
 ---
 name: expressjs-authentication-troubleshooting
-description: "Use when applying express.js auth troubleshooting."
+description: Use when applying express.js auth troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, expressjs, auth, jwt]
-    related_skills: [general]
 ---
 
 # Expressjs Authentication Troubleshooting

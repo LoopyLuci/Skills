@@ -2,12 +2,12 @@
 name: chess-strategy-tactics
 description: Opening theory, middlegame strategy, endgame technique, and tactical patterns
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["chess", "strategy"]
+    tags: [chess, strategy]
 ---
 
 # Chess Strategy Tactics

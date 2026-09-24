@@ -1,14 +1,13 @@
 ---
 name: civil-eng-fundamentals-implementation
-description: "Use when applying civil fundamentals implementation."
+description: Use when applying civil fundamentals implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, civil, fundamentals]
-    related_skills: [general]
 ---
 
 # Civil Eng Fundamentals Implementation

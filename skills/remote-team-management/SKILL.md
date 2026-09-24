@@ -1,13 +1,13 @@
 ---
 name: remote-team-management
-description: "Use when managing remote and distributed teams."
+description: Use when managing remote and distributed teams.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [remote-work, distributed-teams, async-communication, remote-culture, hybrid]
-    related_skills: [project-management-workflows, performance-review-systems, community-management-engagement, async-communication-patterns]
 ---
 
 # Remote Team Management

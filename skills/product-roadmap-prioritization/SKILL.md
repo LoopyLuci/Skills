@@ -1,12 +1,13 @@
 ---
 name: product-roadmap-prioritization
-description: "Use when prioritizing product roadmaps."
+description: Use when prioritizing product roadmaps.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["roadmap", "prioritization", "RICE", "impact-effort"]
+    tags: [roadmap, prioritization, rice, impact-effort]
 ---
 
 # Product Roadmap Prioritization

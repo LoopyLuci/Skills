@@ -1,14 +1,13 @@
 ---
 name: data-science-fundamentals-troubleshooting
-description: "Use when applying data science fundamentals troubleshoot."
+description: Use when applying data science fundamentals troubleshoot.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data-science, fundamentals, data-science-fundamentals]
-    related_skills: [general]
 ---
 
 # Data Science Fundamentals Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: fda-regulatory-affairs-fundamentals
-description: "Use when applying fda regulatory fundamentals."
+description: Use when applying fda regulatory fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, pharma, regulatory-affairs]
-    related_skills: [general]
 ---
 
 # Fda Regulatory Affairs Fundamentals

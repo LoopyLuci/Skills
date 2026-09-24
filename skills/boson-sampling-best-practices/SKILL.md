@@ -1,14 +1,13 @@
 ---
 name: boson-sampling-best-practices
-description: "Use when applying boson sampling best practices."
+description: Use when applying boson sampling best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [quantum, computing, boson-sampling-systems]
-    related_skills: [general]
 ---
 
 # Boson Sampling Best Practices

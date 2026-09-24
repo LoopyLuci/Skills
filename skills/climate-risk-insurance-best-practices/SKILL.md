@@ -1,14 +1,13 @@
 ---
 name: climate-risk-insurance-best-practices
-description: "Use when applying climate risk insurance best practices."
+description: Use when applying climate risk insurance best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, insurance, climate-risk-insurance]
-    related_skills: [general]
 ---
 
 # Climate Risk Insurance Best Practices

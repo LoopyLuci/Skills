@@ -1,14 +1,13 @@
 ---
 name: email-newsletter-troubleshooting
-description: "Use when applying email newsletter troubleshooting."
+description: Use when applying email newsletter troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, publishing, newsletter]
-    related_skills: [general]
 ---
 
 # Email Newsletter Troubleshooting

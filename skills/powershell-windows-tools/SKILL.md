@@ -1,8 +1,13 @@
 ---
 name: powershell-windows-tools
-description: "Use when building PS admin tools. BOM, UAC, PS5/7, exit."
-category: software-development
-tags: [powershell, windows, admin-tools, system-management, cli, uac-elevation, ps5-compat, ps7-compat]
+description: Use when building PS admin tools. BOM, UAC, PS5/7, exit.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [powershell, windows, admin-tools, system-management, cli, uac-elevation, ps5-compat, ps7-compat]
 ---
 
 # PowerShell Windows Tools

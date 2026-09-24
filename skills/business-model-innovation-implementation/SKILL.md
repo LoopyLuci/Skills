@@ -1,14 +1,13 @@
 ---
 name: business-model-innovation-implementation
-description: "Use when applying business model innovation implementation."
+description: Use when applying business model innovation implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [consulting, innovation, business-model]
-    related_skills: [general]
 ---
 
 # Business Model Innovation Implementation

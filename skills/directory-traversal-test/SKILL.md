@@ -1,14 +1,13 @@
 ---
 name: directory-traversal-test
-description: "Use when testing directory traversal."
+description: Use when testing directory traversal.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, pentest, dir-traversal]
-    related_skills: [general]
 ---
 
 # Directory Traversal Test

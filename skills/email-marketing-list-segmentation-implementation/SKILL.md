@@ -1,14 +1,13 @@
 ---
 name: email-marketing-list-segmentation-implementation
-description: "Use when applying email list segmentation implementation."
+description: Use when applying email list segmentation implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, segmentation, targeting]
-    related_skills: [general]
 ---
 
 # Email Marketing List Segmentation Implementation

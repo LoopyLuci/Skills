@@ -1,14 +1,13 @@
 ---
 name: conservation-optimization
-description: "Use when optimizing conservation systems."
+description: Use when optimizing conservation systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [conservation, biodiversity, protection, sustainability]
-    related_skills: [general]
 ---
 
 # Conservation Optimization

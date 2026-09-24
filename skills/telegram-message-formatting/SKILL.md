@@ -1,6 +1,13 @@
 ---
 name: telegram-message-formatting
-description: "Format messages for Telegram Markdown bold italic links code"
+description: Format messages for Telegram Markdown bold italic links code
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [telegram, message, formatting]
 ---
 
 # Telegram Message Formatting

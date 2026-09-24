@@ -1,14 +1,13 @@
 ---
 name: color-grading-implementation
-description: "Use when applying color grading implementation."
+description: Use when applying color grading implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [media, video, film-video-color-grading]
-    related_skills: [general]
 ---
 
 # Color Grading Implementation

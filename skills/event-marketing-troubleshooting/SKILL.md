@@ -1,14 +1,13 @@
 ---
 name: event-marketing-troubleshooting
-description: "Use when applying event marketing troubleshooting."
+description: Use when applying event marketing troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, event, webinar-strategy-and-delivery]
-    related_skills: [general]
 ---
 
 # Event Marketing Troubleshooting

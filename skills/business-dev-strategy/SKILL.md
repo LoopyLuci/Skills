@@ -1,14 +1,13 @@
 ---
 name: business-dev-strategy
-description: "Use when for business development strategy."
+description: Use when for business development strategy.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, management, general]
-    related_skills: [general]
 ---
 
 # Business Dev Strategy

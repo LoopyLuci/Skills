@@ -1,14 +1,13 @@
 ---
 name: api-testing-contracts-best-practices
-description: "Use when applying api contract testing best practices."
+description: Use when applying api contract testing best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [testing, api-testing-contracts, contract]
-    related_skills: [general]
 ---
 
 # Api Testing Contracts Best Practices

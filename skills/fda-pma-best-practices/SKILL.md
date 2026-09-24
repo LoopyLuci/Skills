@@ -1,14 +1,13 @@
 ---
 name: fda-pma-best-practices
-description: "Use when applying fda pma best practices."
+description: Use when applying fda pma best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, pharma, fda-pma]
-    related_skills: [general]
 ---
 
 # Fda Pma Best Practices

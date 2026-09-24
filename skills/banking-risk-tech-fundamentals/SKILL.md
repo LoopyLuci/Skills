@@ -1,14 +1,13 @@
 ---
 name: banking-risk-tech-fundamentals
-description: "Use when applying banking risk tech fundamentals."
+description: Use when applying banking risk tech fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, risk, banking-risk]
-    related_skills: [general]
 ---
 
 # Banking Risk Tech Fundamentals

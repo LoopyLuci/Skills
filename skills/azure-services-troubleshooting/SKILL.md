@@ -1,14 +1,13 @@
 ---
 name: azure-services-troubleshooting
-description: "Use when applying azure services troubleshooting."
+description: Use when applying azure services troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, azure, microsoft, az]
-    related_skills: [general]
 ---
 
 # Azure Services Troubleshooting

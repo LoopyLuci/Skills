@@ -1,14 +1,13 @@
 ---
 name: email-personalization-implementation
-description: "Use when applying email personalization implementation."
+description: Use when applying email personalization implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, marketing, personalization]
-    related_skills: [general]
 ---
 
 # Email Personalization Implementation

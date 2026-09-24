@@ -1,14 +1,13 @@
 ---
 name: chemical-eng-analysis-implementation
-description: "Use when applying chemical analysis implementation."
+description: Use when applying chemical analysis implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, chemical, analysis, chemical-eng-analysis]
-    related_skills: [general]
 ---
 
 # Chemical Eng Analysis Implementation

@@ -2,12 +2,12 @@
 name: last-mile-delivery-logistics
 description: Route optimization, delivery models, gig economy, and urban logistics
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["last-mile", "delivery"]
+    tags: [last-mile, delivery]
 ---
 
 # Last Mile Delivery Logistics

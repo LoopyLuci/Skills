@@ -1,14 +1,13 @@
 ---
 name: dyson-sphere-troubleshooting
-description: "Use when applying dyson sphere troubleshooting."
+description: Use when applying dyson sphere troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [space, physics, megastructure]
-    related_skills: [general]
 ---
 
 # Dyson Sphere Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: corporate-finance-advisory-best-practices
-description: "Use when applying corporate finance advisory best practi."
+description: Use when applying corporate finance advisory best practi.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [consulting, finance, corporate-finance]
-    related_skills: [general]
 ---
 
 # Corporate Finance Advisory Best Practices

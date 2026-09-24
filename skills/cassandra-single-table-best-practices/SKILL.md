@@ -1,14 +1,13 @@
 ---
 name: cassandra-single-table-best-practices
-description: "Use when for cassandra data modeling best practices."
+description: Use when for cassandra data modeling best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, cassandra, single-table, nosql]
-    related_skills: [general]
 ---
 
 # Cassandra Single Table Best Practices

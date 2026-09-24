@@ -1,14 +1,13 @@
 ---
 name: ecog-processing-implementation
-description: "Use when applying ecog processing implementation."
+description: Use when applying ecog processing implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neurotech, ecog, signal-processing]
-    related_skills: [general]
 ---
 
 # Ecog Processing Implementation

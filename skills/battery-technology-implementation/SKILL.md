@@ -1,14 +1,13 @@
 ---
 name: battery-technology-implementation
-description: "Use when applying battery technology implementation."
+description: Use when applying battery technology implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [energy, battery, battery-technology]
-    related_skills: [general]
 ---
 
 # Battery Technology Implementation

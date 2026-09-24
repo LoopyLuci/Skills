@@ -1,14 +1,13 @@
 ---
 name: backend-go-implementation-deep-fundamentals
-description: "Use when applying go backend implementation fundamentals."
+description: Use when applying go backend implementation fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, go]
-    related_skills: ['backend-go-implementation']
 ---
 
 # Backend Go Implementation Deep Fundamentals

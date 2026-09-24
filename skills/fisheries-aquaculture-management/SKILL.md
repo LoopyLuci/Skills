@@ -2,12 +2,12 @@
 name: fisheries-aquaculture-management
 description: Fisheries science, aquaculture systems, and seafood supply chain
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["fisheries", "aquaculture"]
+    tags: [fisheries, aquaculture]
 ---
 
 # Fisheries Aquaculture Management

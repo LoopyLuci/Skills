@@ -1,14 +1,13 @@
 ---
 name: bioinformatics-management-best-practices
-description: "Use when applying bioinfo management best practices."
+description: Use when applying bioinfo management best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [medicine, bioinfo, bioinformatics-management]
-    related_skills: [general]
 ---
 
 # Bioinformatics Management Best Practices

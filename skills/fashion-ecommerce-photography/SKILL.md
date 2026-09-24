@@ -1,14 +1,13 @@
 ---
 name: fashion-ecommerce-photography
-description: "Use when shooting fashion ecommerce photos."
+description: Use when shooting fashion ecommerce photos.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, ecommerce, photography, product-photos]
-    related_skills: [general]
 ---
 
 # Fashion Ecommerce Photography

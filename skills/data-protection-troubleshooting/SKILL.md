@@ -1,14 +1,13 @@
 ---
 name: data-protection-troubleshooting
-description: "Use when applying data protection troubleshooting."
+description: Use when applying data protection troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, data-protection, encryption]
-    related_skills: [general]
 ---
 
 # Data Protection Troubleshooting

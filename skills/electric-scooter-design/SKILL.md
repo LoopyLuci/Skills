@@ -1,14 +1,13 @@
 ---
 name: electric-scooter-design
-description: "Use when designing electric scooters."
+description: Use when designing electric scooters.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [consumer-tech, e-scooter, micromobility, electric-vehicle]
-    related_skills: [general]
 ---
 
 # Electric Scooter Design

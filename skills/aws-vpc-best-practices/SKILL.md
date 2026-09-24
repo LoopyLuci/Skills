@@ -1,14 +1,13 @@
 ---
 name: aws-vpc-best-practices
-description: "Use when applying aws vpc best practices."
+description: Use when applying aws vpc best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, vpc, networking, cloud]
-    related_skills: [general]
 ---
 
 # Aws Vpc Best Practices

@@ -1,14 +1,13 @@
 ---
 name: elixir-phoenix-liveview-deep-implementation
-description: "Use when applying elixir liveview implementation."
+description: Use when applying elixir liveview implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [language, elixir]
-    related_skills: ['elixir-phoenix-liveview']
 ---
 
 # Elixir Phoenix Liveview Deep Implementation

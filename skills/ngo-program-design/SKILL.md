@@ -2,12 +2,12 @@
 name: ngo-program-design
 description: Needs assessment, program design, M&E frameworks, and adaptive management
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["ngo", "program"]
+    tags: [ngo, program]
 ---
 
 # Ngo Program Design

@@ -1,14 +1,13 @@
 ---
 name: blockchain-tokenomics-design-deep-best-practices
-description: "Use when applying token economics design best practices."
+description: Use when applying token economics design best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [blockchain, tokenomics]
-    related_skills: ['tokenomics-design']
 ---
 
 # Blockchain Tokenomics Design Deep Best Practices

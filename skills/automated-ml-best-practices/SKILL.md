@@ -1,14 +1,13 @@
 ---
 name: automated-ml-best-practices
-description: "Use when for automl best practices."
+description: Use when for automl best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, automl, auto-ml, hyperparameter-tuning]
-    related_skills: [general]
 ---
 
 # Automated Ml Best Practices

@@ -2,12 +2,12 @@
 name: virtual-hybrid-event-production
 description: Virtual event platforms, hybrid production, and engagement
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["virtual", "hybrid"]
+    tags: [virtual, hybrid]
 ---
 
 # Virtual Hybrid Event Production

@@ -1,14 +1,13 @@
 ---
 name: bioinformatics-pipelines-implementation
-description: "Use when applying bioinformatics pipelines implementation."
+description: Use when applying bioinformatics pipelines implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [bioinformatics, data, pipelines]
-    related_skills: [general]
 ---
 
 # Bioinformatics Pipelines Implementation

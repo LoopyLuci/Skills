@@ -1,13 +1,13 @@
 ---
 name: skill-testing-framework
-description: "Use when creating testable skill content and patterns."
+description: Use when creating testable skill content and patterns.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [meta, skill-testing, framework, automation, validation, CI]
-    related_skills: [skill-test-generation, skill-code-validation, skill-quality-standards, skill-testing-automation]
+    tags: [meta, skill-testing, framework, automation, validation, ci]
 ---
 
 # Skill Testing Framework

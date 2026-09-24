@@ -1,14 +1,13 @@
 ---
 name: crispr-cpf1-cas12-implementation
-description: "Use when applying crispr cpf1 cas12 implementation."
+description: Use when applying crispr cpf1 cas12 implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, crispr, crispr-gene-editing]
-    related_skills: ['']
 ---
 
 # Crispr Cpf1 Cas12 Implementation

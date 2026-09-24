@@ -1,13 +1,13 @@
 ---
 name: skill-test-generation
-description: "Use when generating test cases for skills."
+description: Use when generating test cases for skills.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [skill-testing, test-generation, validation, meta, quality]
-    related_skills: [skill-code-validation, skill-quality-standards, skill-testing-automation]
 ---
 
 # Skill Test Generation

@@ -1,14 +1,13 @@
 ---
 name: apple-design-deep-fundamentals
-description: "Use when applying apple design fundamentals."
+description: Use when applying apple design fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [design, apple]
-    related_skills: ['apple-design']
 ---
 
 # Apple Design Deep Fundamentals

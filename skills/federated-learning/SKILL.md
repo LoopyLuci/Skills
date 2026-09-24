@@ -1,9 +1,15 @@
 ---
 name: federated-learning
-description: "Use when implementing federated learning systems."
-category: mlops
-tags: [federated-learning, privacy, distributed, flower]
+description: Use when implementing federated learning systems.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [federated-learning, privacy, distributed, flower]
 ---
+
 # Federated Learning
 
 Training ML models across decentralized data without sharing raw data.

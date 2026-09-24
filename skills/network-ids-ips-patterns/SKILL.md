@@ -1,13 +1,13 @@
 ---
 name: network-ids-ips-patterns
-description: "Use when implementing intrusion detection and prevention."
+description: Use when implementing intrusion detection and prevention.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [network-security, IDS, IPS, intrusion-detection, suricata, snort]
-    related_skills: [pattern-matching-engine, deep-packet-inspection-engine, port-scanner-detection, packet-capture-engine, firewall-rules-engine]
+    tags: [network-security, ids, ips, intrusion-detection, suricata, snort]
 ---
 
 # Network Ids Ips Patterns

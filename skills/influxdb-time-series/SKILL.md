@@ -1,9 +1,13 @@
 ---
 name: influxdb-time-series
-description: "Use when storing time series in InfluxDB."
+description: Use when storing time series in InfluxDB.
 version: 1.0.0
-author: Hermes Agent
-tags: ["influxdb", "time-series", "flux", "measurements"]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [influxdb, time-series, flux, measurements]
 ---
 
 # Influxdb Time Series

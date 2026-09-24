@@ -1,14 +1,13 @@
 ---
 name: enzyme-design-best-practices
-description: "Use when applying enzyme design best practices."
+description: Use when applying enzyme design best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, enzymes, enzyme-design]
-    related_skills: ['general']
 ---
 
 # Enzyme Design Best Practices

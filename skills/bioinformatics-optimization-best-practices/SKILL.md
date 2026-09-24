@@ -1,14 +1,13 @@
 ---
 name: bioinformatics-optimization-best-practices
-description: "Use when applying bioinfo optimization best practices."
+description: Use when applying bioinfo optimization best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [medicine, bioinfo, bioinformatics-optimization]
-    related_skills: [general]
 ---
 
 # Bioinformatics Optimization Best Practices

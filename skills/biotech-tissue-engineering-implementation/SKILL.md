@@ -1,14 +1,13 @@
 ---
 name: biotech-tissue-engineering-implementation
-description: "Use when applying tissue engineering implementation."
+description: Use when applying tissue engineering implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, tissue-eng]
-    related_skills: ['']
 ---
 
 # Biotech Tissue Engineering Implementation

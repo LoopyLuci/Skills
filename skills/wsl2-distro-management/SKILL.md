@@ -1,9 +1,15 @@
 ---
 name: wsl2-distro-management
-description: "Use when managing WSL2 distributions: import, export, backup."
-category: software-development
-tags: [wsl2, linux, distro, windows, backup]
+description: Use when managing WSL2 distributions: import, export, backup.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [wsl2, linux, distro, windows, backup]
 ---
+
 # WSL2 Distro Management
 
 Managing WSL2 distributions: import, export, register, unregister, backup.

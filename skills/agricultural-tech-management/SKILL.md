@@ -1,14 +1,13 @@
 ---
 name: agricultural-tech-management
-description: "Use when managing agritech operations."
+description: Use when managing agritech operations.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agri-tech, agriculture, farming, precision]
-    related_skills: [general]
 ---
 
 # Agricultural Tech Management

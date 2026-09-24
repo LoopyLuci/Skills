@@ -2,12 +2,12 @@
 name: dna-testing-analysis
 description: DNA testing, ethnicity estimates, and genetic genealogy
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["dna", "genetics"]
+    tags: [dna, genetics]
 ---
 
 # Dna Testing Analysis

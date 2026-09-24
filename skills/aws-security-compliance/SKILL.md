@@ -1,14 +1,13 @@
 ---
 name: aws-security-compliance
-description: "Use when ensuring AWS compliance."
+description: Use when ensuring AWS compliance.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, aws, compliance-security-best-practices]
-    related_skills: [general]
 ---
 
 # Aws Security Compliance

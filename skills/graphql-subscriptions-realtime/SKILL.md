@@ -1,12 +1,13 @@
 ---
 name: graphql-subscriptions-realtime
-description: "Use when implementing GraphQL subs."
+description: Use when implementing GraphQL subs.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["graphql", "subscriptions", "websocket", "realtime"]
+    tags: [graphql, subscriptions, websocket, realtime]
 ---
 
 # Graphql Subscriptions Realtime

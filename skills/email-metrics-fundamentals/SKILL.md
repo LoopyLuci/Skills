@@ -1,14 +1,13 @@
 ---
 name: email-metrics-fundamentals
-description: "Use when applying email metrics fundamentals."
+description: Use when applying email metrics fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, marketing, analytics]
-    related_skills: [general]
 ---
 
 # Email Metrics Fundamentals

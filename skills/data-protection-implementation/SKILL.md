@@ -1,14 +1,13 @@
 ---
 name: data-protection-implementation
-description: "Use when applying data protection implementation."
+description: Use when applying data protection implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, data-protection, encryption]
-    related_skills: [general]
 ---
 
 # Data Protection Implementation

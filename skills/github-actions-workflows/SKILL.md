@@ -1,8 +1,13 @@
 ---
-
 name: github-actions-workflows
 description: Author CI/CD workflows — triggers, jobs, steps, and runners.
-
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [github, actions, workflows]
 ---
 
 # GitHub Actions Workflows

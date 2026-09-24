@@ -1,12 +1,13 @@
 ---
 name: react-routing
-description: "Use when implementing react routing."
+description: Use when implementing react routing.
 version: 1.0.0
-author: "Skill Genesis Model"
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["react", "routing"]
+    tags: [react, routing]
 ---
 
 # React Routing

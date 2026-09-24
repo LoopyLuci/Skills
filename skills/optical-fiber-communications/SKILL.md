@@ -2,12 +2,12 @@
 name: optical-fiber-communications
 description: DWDM, fiber optics, optical transport, and PON
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["optical", "fiber"]
+    tags: [optical, fiber]
 ---
 
 # Optical Fiber Communications

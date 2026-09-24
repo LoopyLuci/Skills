@@ -1,9 +1,13 @@
 ---
 name: clojure-rule-engine
-title: Clojure Rule Engine
 description: Use when implementing rule-based filtering logic in Clojure.
-category: networking
-tags: [clojure, rules, engine, clara, lisp, reasoning]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [clojure, rules, engine, clara, lisp, reasoning]
 ---
 
 # Clojure Rule Engine

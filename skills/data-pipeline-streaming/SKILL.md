@@ -1,13 +1,13 @@
 ---
 name: data-pipeline-streaming
-description: "Use when building streaming and batch data pipelines."
+description: Use when building streaming and batch data pipelines.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [data-pipeline, ETL, streaming, Kafka, Spark, Flink, batch]
-    related_skills: [message-queue-patterns, event-driven-architecture, etl-pipeline-design, feature-engineering-automation]
+    tags: [data-pipeline, etl, streaming, kafka, spark, flink, batch]
 ---
 
 # Data Pipeline Streaming

@@ -1,14 +1,13 @@
 ---
 name: affiliate-program-management
-description: "Use when managing affiliate programs. Tracking, payout."
+description: Use when managing affiliate programs. Tracking, payout.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [affiliate, program, management, tracking, commissions, payout]
-    related_skills: [affiliate-marketing, affiliate-program-setup]
 ---
 
 # Affiliate Program Management

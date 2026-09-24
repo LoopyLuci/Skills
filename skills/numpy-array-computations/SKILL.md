@@ -1,12 +1,13 @@
 ---
 name: numpy-array-computations
-description: "Use when computing with NumPy arrays."
+description: Use when computing with NumPy arrays.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["numpy", "broadcasting", "vectorization", "linear-algebra"]
+    tags: [numpy, broadcasting, vectorization, linear-algebra]
 ---
 
 # Numpy Array Computations

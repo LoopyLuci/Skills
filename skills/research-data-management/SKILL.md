@@ -2,12 +2,12 @@
 name: research-data-management
 description: Data management plans, FAIR principles, metadata standards, and repositories
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["rdm", "fair"]
+    tags: [rdm, fair]
 ---
 
 # Research Data Management

@@ -2,12 +2,12 @@
 name: game-ai-behavior-trees
 description: Behavior trees, utility AI, GOAP, finite state machines for NPCs, and procedural generation
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["game-ai", "npc"]
+    tags: [game-ai, npc]
 ---
 
 # Game Ai Behavior Trees

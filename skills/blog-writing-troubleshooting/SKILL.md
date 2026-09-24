@@ -1,14 +1,13 @@
 ---
 name: blog-writing-troubleshooting
-description: "Use when applying blog writing troubleshooting."
+description: Use when applying blog writing troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [writing, blog, blog-post-outliner]
-    related_skills: [general]
 ---
 
 # Blog Writing Troubleshooting

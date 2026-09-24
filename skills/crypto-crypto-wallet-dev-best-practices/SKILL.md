@@ -1,14 +1,13 @@
 ---
 name: crypto-crypto-wallet-dev-best-practices
-description: "Use when applying wallet development best practices."
+description: Use when applying wallet development best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [crypto, wallet, blockchain-development-solidity]
-    related_skills: ['']
 ---
 
 # Crypto Crypto Wallet Dev Best Practices

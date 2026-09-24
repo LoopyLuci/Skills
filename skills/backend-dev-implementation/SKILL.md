@@ -1,14 +1,13 @@
 ---
 name: backend-dev-implementation
-description: "Use when implementing backend development."
+description: Use when implementing backend development.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, node, python, api]
-    related_skills: [general]
 ---
 
 # Backend Dev Implementation

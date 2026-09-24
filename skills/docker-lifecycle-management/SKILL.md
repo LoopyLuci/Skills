@@ -1,9 +1,15 @@
 ---
 name: docker-lifecycle-management
-description: "Use when managing container/image/volume/network lifecycles."
-category: docker
-tags: [docker, containers, images, volumes, networks, cli]
+description: Use when managing container/image/volume/network lifecycles.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [docker, containers, images, volumes, networks, cli]
 ---
+
 # Docker Lifecycle Management
 
 Complete reference for Docker container, image, volume, and network operations.

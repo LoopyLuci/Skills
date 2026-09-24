@@ -1,14 +1,13 @@
 ---
 name: climate-tech-investment-fundamentals
-description: "Use when applying climate tech investment fundamentals."
+description: Use when applying climate tech investment fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, finance, climate-tech-investment]
-    related_skills: [general]
 ---
 
 # Climate Tech Investment Fundamentals

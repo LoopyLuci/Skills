@@ -1,18 +1,13 @@
 ---
 name: computer-use
 description: |
-  Drive the user's desktop in the background — clicking, typing,
-  scrolling, dragging — without stealing the cursor, keyboard focus,
-  or switching virtual desktops / Spaces. Cross-platform: macOS,
-  Windows, Linux. Works with any tool-capable model. Load this skill
-  whenever the `computer_use` tool is available.
-version: 2.0.0
-platforms: [macos, windows, linux]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [computer-use, desktop, automation, gui, cross-platform]
-    category: desktop
-    related_skills: []
 ---
 
 # Computer Use (universal, any-model, cross-platform)

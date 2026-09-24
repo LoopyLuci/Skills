@@ -1,14 +1,13 @@
 ---
 name: backend-csharp-implementation-deep-troubleshooting
-description: "Use when applying c# backend implementation troubleshoot."
+description: Use when applying c# backend implementation troubleshoot.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, csharp]
-    related_skills: ['backend-csharp-implementation']
 ---
 
 # Backend Csharp Implementation Deep Troubleshooting

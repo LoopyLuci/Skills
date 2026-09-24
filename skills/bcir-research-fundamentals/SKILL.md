@@ -1,14 +1,13 @@
 ---
 name: bcir-research-fundamentals
-description: "Use when applying bcir research fundamentals."
+description: Use when applying bcir research fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neurotech, bci, bcir]
-    related_skills: [general]
 ---
 
 # Bcir Research Fundamentals

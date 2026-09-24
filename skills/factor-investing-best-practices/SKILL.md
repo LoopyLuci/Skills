@@ -1,14 +1,13 @@
 ---
 name: factor-investing-best-practices
-description: "Use when applying factor investing best practices."
+description: Use when applying factor investing best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, investing, factor-investing]
-    related_skills: [general]
 ---
 
 # Factor Investing Best Practices

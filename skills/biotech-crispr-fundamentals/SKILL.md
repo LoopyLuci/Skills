@@ -1,14 +1,13 @@
 ---
 name: biotech-crispr-fundamentals
-description: "Use when applying crispr gene editing fundamentals."
+description: Use when applying crispr gene editing fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, crispr]
-    related_skills: ['']
 ---
 
 # Biotech Crispr Fundamentals

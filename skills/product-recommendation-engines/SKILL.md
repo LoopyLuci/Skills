@@ -2,12 +2,12 @@
 name: product-recommendation-engines
 description: Collaborative filtering, personalization, and recommendation systems
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["recommendation", "personalization"]
+    tags: [recommendation, personalization]
 ---
 
 # Product Recommendation Engines

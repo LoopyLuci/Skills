@@ -1,14 +1,13 @@
 ---
 name: content-marketing-fundamentals-fundamentals
-description: "Use when applying content marketing fundamentals fundame."
+description: Use when applying content marketing fundamentals fundame.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, content-marketing-fundamentals]
-    related_skills: ['']
 ---
 
 # Content Marketing Fundamentals Fundamentals

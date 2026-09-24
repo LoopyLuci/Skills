@@ -1,14 +1,13 @@
 ---
 name: boson-sampling-implementation
-description: "Use when applying boson sampling implementation."
+description: Use when applying boson sampling implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [quantum, computing, boson-sampling-systems]
-    related_skills: [general]
 ---
 
 # Boson Sampling Implementation

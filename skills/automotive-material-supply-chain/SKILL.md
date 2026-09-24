@@ -1,14 +1,13 @@
 ---
 name: automotive-material-supply-chain
-description: "Use when managing auto material supply."
+description: Use when managing auto material supply.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [automotive, materials-supply, commodity-risk, sourcing]
-    related_skills: [general]
 ---
 
 # Automotive Material Supply Chain

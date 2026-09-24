@@ -1,14 +1,13 @@
 ---
 name: blockchain-nft-development
-description: "Use when creating NFTs."
+description: Use when creating NFTs.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [blockchain, nft, tokens, metadata]
-    related_skills: [general]
 ---
 
 # Blockchain Nft Development

@@ -2,12 +2,12 @@
 name: culinary-arts-techniques
 description: Knife skills, cooking methods, plating, and flavor profiles
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["culinary", "techniques"]
+    tags: [culinary, techniques]
 ---
 
 # Culinary Arts Techniques

@@ -1,14 +1,13 @@
 ---
 name: freelance-business-operations
-description: "Freelance ops: pricing, onboarding, invoices."
+description: Freelance ops: pricing, onboarding, invoices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [freelance, business, operations, pricing, clients]
-    related_skills: [personal-brand-building, workflow-automation-skill, legal-and-compliance-basics]
 ---
 
 # Freelance Business Operations

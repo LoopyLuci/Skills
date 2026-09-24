@@ -1,14 +1,13 @@
 ---
 name: autonomous-vehicle-planning-troubleshooting
-description: "Use when applying av planning troubleshooting."
+description: Use when applying av planning troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [auto, av, autonomous-vehicle]
-    related_skills: ['general']
 ---
 
 # Autonomous Vehicle Planning Troubleshooting

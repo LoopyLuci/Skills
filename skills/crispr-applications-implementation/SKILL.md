@@ -1,14 +1,13 @@
 ---
 name: crispr-applications-implementation
-description: "Use when applying crispr applications implementation."
+description: Use when applying crispr applications implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, crispr, crispr-applications]
-    related_skills: [general]
 ---
 
 # Crispr Applications Implementation

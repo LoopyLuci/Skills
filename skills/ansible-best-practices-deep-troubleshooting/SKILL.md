@@ -1,14 +1,13 @@
 ---
 name: ansible-best-practices-deep-troubleshooting
-description: "Use when applying ansible best practices troubleshooting."
+description: Use when applying ansible best practices troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, ansible]
-    related_skills: ['ansible-best-practices']
 ---
 
 # Ansible Best Practices Deep Troubleshooting

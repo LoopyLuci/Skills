@@ -1,14 +1,13 @@
 ---
 name: docker-compose-prod-deep2-best-practices
-description: "Use when applying docker compose prod best practices."
+description: Use when applying docker compose prod best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devop]
-    related_skills: ['']
 ---
 
 # Docker Compose Prod Deep2 Best Practices

@@ -1,7 +1,13 @@
 ---
 name: soniccore-redmi-jbl-debug
-title: SonicCore Redmi/JBL MIUI Debug
 description: Debug SonicCore JBL routing errors on Xiaomi/MIUI/HyperOS.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [soniccore, redmi, jbl]
 ---
 
 # SonicCore Redmi + JBL MIUI Debug Skill

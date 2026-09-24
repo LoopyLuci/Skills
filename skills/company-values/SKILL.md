@@ -1,8 +1,13 @@
 ---
 name: company-values
 description: Use when defining company values and culture for a business
-tags: [values, culture, hiring, minimalist-business]
-related_skills: [find-community, grow-sustainably, processize]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [values, culture, hiring, minimalist-business]
 ---
 
 # Company Values

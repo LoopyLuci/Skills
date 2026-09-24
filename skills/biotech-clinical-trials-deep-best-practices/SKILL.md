@@ -1,14 +1,13 @@
 ---
 name: biotech-clinical-trials-deep-best-practices
-description: "Use when applying clinical trials best practices."
+description: Use when applying clinical trials best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, clinical-trials]
-    related_skills: ['']
 ---
 
 # Biotech Clinical Trials Deep Best Practices

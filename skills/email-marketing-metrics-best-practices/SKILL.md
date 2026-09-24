@@ -1,14 +1,13 @@
 ---
 name: email-marketing-metrics-best-practices
-description: "Use when applying email metrics best practices."
+description: Use when applying email metrics best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, analytics, metrics]
-    related_skills: [general]
 ---
 
 # Email Marketing Metrics Best Practices

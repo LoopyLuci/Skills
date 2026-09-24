@@ -2,12 +2,12 @@
 name: food-photography-styling
 description: Styling, lighting, color theory, and composition for food
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["food", "styling"]
+    tags: [food, styling]
 ---
 
 # Food Photography Styling

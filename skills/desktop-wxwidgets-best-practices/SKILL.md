@@ -1,14 +1,13 @@
 ---
 name: desktop-wxwidgets-best-practices
-description: "Use when applying wxwidgets desktop best practices."
+description: Use when applying wxwidgets desktop best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [desktop, wxwidgets, cpp, cross-platform]
-    related_skills: [general]
 ---
 
 # Desktop Wxwidgets Best Practices

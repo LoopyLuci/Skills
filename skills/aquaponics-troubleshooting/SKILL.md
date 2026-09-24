@@ -1,14 +1,13 @@
 ---
 name: aquaponics-troubleshooting
-description: "Use when applying aquaponics troubleshooting."
+description: Use when applying aquaponics troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agri, growing, aquaponics]
-    related_skills: [general]
 ---
 
 # Aquaponics Troubleshooting

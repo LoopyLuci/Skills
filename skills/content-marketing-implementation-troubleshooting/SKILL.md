@@ -1,14 +1,13 @@
 ---
 name: content-marketing-implementation-troubleshooting
-description: "Use when applying content marketing implementation troub."
+description: Use when applying content marketing implementation troub.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, content-marketing-implementation]
-    related_skills: ['']
 ---
 
 # Content Marketing Implementation Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: cybersecurity-troubleshooting
-description: "Use when troubleshooting cybersecurity."
+description: Use when troubleshooting cybersecurity.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, cybersecurity, infosec]
-    related_skills: [general]
 ---
 
 # Cybersecurity Troubleshooting

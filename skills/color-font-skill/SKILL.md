@@ -1,8 +1,13 @@
 ---
 name: color-font-skill
 description: Use when selecting color palettes and font pairings for PowerPoint presentations.
-tags: [pptx, powerpoint, design, color-palette, typography, fonts]
-related_skills: [cover-page-generator, content-page-generator, slide-making-skill]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [pptx, powerpoint, design, color-palette, typography, fonts]
 ---
 
 # Color Palette & Font Selection for PPTX

@@ -2,12 +2,12 @@
 name: quantum-cryptography
 description: BB84, E91, QKD protocols, post-quantum crypto, and quantum random number generation
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["crypto", "qkd"]
+    tags: [crypto, qkd]
 ---
 
 # Quantum Cryptography

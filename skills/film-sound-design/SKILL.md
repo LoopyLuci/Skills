@@ -1,14 +1,13 @@
 ---
 name: film-sound-design
-description: "Use when designing film audio."
+description: Use when designing film audio.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [filmmaking, sound-design, audio, mixing]
-    related_skills: ['songsee']
 ---
 
 # Film Sound Design

@@ -1,14 +1,13 @@
 ---
 name: emotional-intelligence-applications
-description: "Use when applying emotional intelligence."
+description: Use when applying emotional intelligence.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: ['e', 'm', 'o', 't', 'i', 'o', 'n', 'a', 'l', '-', 'i', 'n', 't', 'e', 'l', 'l', 'i', 'g', 'e', 'n', 'c', 'e', ',', ' ', 'l', 'e', 'a', 'd', 'e', 'r', 's', 'h', 'i', 'p']
-    related_skills: [general]
+    tags: [e, m, o, t, i, o, n, a, l, -, i, n, t, e, l, l, i, g, e, n, c, e, , ,  , l, e, a, d, e, r, s, h, i, p]
 ---
 
 # Emotional Intelligence Applications

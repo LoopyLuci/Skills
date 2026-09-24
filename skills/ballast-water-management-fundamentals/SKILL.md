@@ -1,14 +1,13 @@
 ---
 name: ballast-water-management-fundamentals
-description: "Use when applying ballast water management fundamentals."
+description: Use when applying ballast water management fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [maritime, ballast]
-    related_skills: ['general']
 ---
 
 # Ballast Water Management Fundamentals

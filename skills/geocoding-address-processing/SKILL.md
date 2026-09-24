@@ -2,12 +2,12 @@
 name: geocoding-address-processing
 description: Forward/reverse geocoding, address standardization, and geocoding APIs
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["geocoding", "addresses"]
+    tags: [geocoding, addresses]
 ---
 
 # Geocoding Address Processing

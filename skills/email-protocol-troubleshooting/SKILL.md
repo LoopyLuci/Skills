@@ -1,14 +1,13 @@
 ---
 name: email-protocol-troubleshooting
-description: "Use when applying email protocol troubleshooting."
+description: Use when applying email protocol troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, smtp, imap, pop3]
-    related_skills: [general]
 ---
 
 # Email Protocol Troubleshooting

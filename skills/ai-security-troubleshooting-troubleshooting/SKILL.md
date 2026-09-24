@@ -1,14 +1,13 @@
 ---
 name: ai-security-troubleshooting-troubleshooting
-description: "Use when applying ai security troubleshooting troublesho."
+description: Use when applying ai security troubleshooting troublesho.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ai-security, security]
-    related_skills: ['ai-security-troubleshooting']
 ---
 
 # Ai Security Troubleshooting Troubleshooting

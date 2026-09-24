@@ -1,14 +1,13 @@
 ---
 name: backend-go-best-fundamentals
-description: "Use when applying backend go best fundamentals."
+description: Use when applying backend go best fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, go, backend-go-best-practices]
-    related_skills: [general]
 ---
 
 # Backend Go Best Fundamentals

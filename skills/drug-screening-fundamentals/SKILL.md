@@ -1,14 +1,13 @@
 ---
 name: drug-screening-fundamentals
-description: "Use when applying drug screening fundamentals."
+description: Use when applying drug screening fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, pharma, screening]
-    related_skills: [general]
 ---
 
 # Drug Screening Fundamentals

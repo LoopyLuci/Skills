@@ -2,12 +2,12 @@
 name: sound-design-for-media
 description: Foley, field recording, sound effects, and audio post-production for film/games
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["sound-design", "media"]
+    tags: [sound-design, media]
 ---
 
 # Sound Design For Media

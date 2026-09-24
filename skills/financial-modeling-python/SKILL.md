@@ -1,14 +1,13 @@
 ---
 name: financial-modeling-python
-description: "Use when building financial models. Python, DCF, valuation."
+description: Use when building financial models. Python, DCF, valuation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, financial-modeling, python, valuation, dcf]
-    related_skills: [banking-api-integration, algorithmic-trading-strategies]
 ---
 
 # Financial Modeling Python

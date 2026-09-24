@@ -1,14 +1,13 @@
 ---
 name: aviation-composites-fundamentals
-description: "Use when applying aviation composites fundamentals."
+description: Use when applying aviation composites fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, composites, composite-materials]
-    related_skills: ['general']
 ---
 
 # Aviation Composites Fundamentals

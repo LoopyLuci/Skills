@@ -2,12 +2,12 @@
 name: exotic-pet-medicine
 description: Exotic animal husbandry, common conditions, and veterinary care
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["exotic", "veterinary"]
+    tags: [exotic, veterinary]
 ---
 
 # Exotic Pet Medicine

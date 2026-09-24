@@ -1,8 +1,13 @@
 ---
 name: obsidian-vault
 description: Use when searching, creating, or managing notes in an Obsidian vault
-tags: [obsidian, notes, knowledge, vault, wikilinks]
-related_skills: [note-taking, ubiquitous-language, domain-modeling]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [obsidian, notes, knowledge, vault, wikilinks]
 ---
 
 # Obsidian Vault

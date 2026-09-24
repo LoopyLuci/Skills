@@ -1,14 +1,13 @@
 ---
 name: feature-engineering-auto-troubleshooting
-description: "Use when applying auto feature engineering troubleshooting."
+description: Use when applying auto feature engineering troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, feature-engineering, feature-engineering-automation]
-    related_skills: [general]
 ---
 
 # Feature Engineering Auto Troubleshooting

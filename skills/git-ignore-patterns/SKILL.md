@@ -1,6 +1,13 @@
 ---
 name: git-ignore-patterns
 description: Write effective .gitignore files to keep repos clean.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [git, ignore, patterns]
 ---
 
 # Git Ignore Patterns

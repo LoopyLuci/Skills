@@ -1,12 +1,13 @@
 ---
 name: css-grid-advanced-layouts
-description: "Use when building layouts with CSS Grid."
+description: Use when building layouts with CSS Grid.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["css-grid", "layout", "auto-placement", "subgrid"]
+    tags: [css-grid, layout, auto-placement, subgrid]
 ---
 
 # Css Grid Advanced Layouts

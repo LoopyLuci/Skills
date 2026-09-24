@@ -1,14 +1,13 @@
 ---
 name: aws-vpc-best-practices-deep-implementation
-description: "Use when applying aws vpc implementation."
+description: Use when applying aws vpc implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, aws]
-    related_skills: ['aws-vpc']
 ---
 
 # Aws Vpc Best Practices Deep Implementation

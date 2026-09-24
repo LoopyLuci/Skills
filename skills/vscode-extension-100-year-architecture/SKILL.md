@@ -2,12 +2,12 @@
 name: vscode-extension-100-year-architecture
 description: Use for 100-year VS Code extensions. 12 survival patterns.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [vscode, extension, 100-year, architecture, patterns, future-proof]
-    related_skills: [hermes-agent-skill-authoring]
 ---
 
 # Vscode Extension 100 Year Architecture

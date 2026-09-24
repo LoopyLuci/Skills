@@ -1,14 +1,13 @@
 ---
 name: ai-agent-integration-workflow
-description: "AI agents: use cases, deployment, analytics."
+description: AI agents: use cases, deployment, analytics.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ai, agents, chatbot, integration, automation]
-    related_skills: [workflow-automation-skill, community-building, ecommerce-store-setup]
 ---
 
 # Ai Agent Integration Workflow

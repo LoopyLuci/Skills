@@ -2,12 +2,12 @@
 name: product-roadmapping-strategy
 description: Roadmap frameworks, outcome-based roadmapping, prioritization, and stakeholder alignment
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["roadmap", "strategy"]
+    tags: [roadmap, strategy]
 ---
 
 # Product Roadmapping Strategy

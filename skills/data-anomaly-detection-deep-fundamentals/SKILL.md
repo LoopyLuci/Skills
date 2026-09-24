@@ -1,14 +1,13 @@
 ---
 name: data-anomaly-detection-deep-fundamentals
-description: "Use when applying data anomaly detection fundamentals."
+description: Use when applying data anomaly detection fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, anomaly-detection]
-    related_skills: ['data-anomaly-detection']
 ---
 
 # Data Anomaly Detection Deep Fundamentals

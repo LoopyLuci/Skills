@@ -1,14 +1,13 @@
 ---
 name: clinical-data-management-implementation
-description: "Use when applying clinical data mgmt implementation."
+description: Use when applying clinical data mgmt implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [medicine, data, clinical-trials]
-    related_skills: [general]
 ---
 
 # Clinical Data Management Implementation

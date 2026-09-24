@@ -1,14 +1,13 @@
 ---
 name: content-delivery-troubleshooting
-description: "Use when applying cdn troubleshooting."
+description: Use when applying cdn troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [architecture, cdn, caching, cloudfront]
-    related_skills: [general]
 ---
 
 # Content Delivery Troubleshooting

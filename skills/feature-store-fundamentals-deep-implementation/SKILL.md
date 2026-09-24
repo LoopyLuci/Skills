@@ -1,14 +1,13 @@
 ---
 name: feature-store-fundamentals-deep-implementation
-description: "Use when applying feature store fundamentals implementat."
+description: Use when applying feature store fundamentals implementat.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, data-science]
-    related_skills: ['feature-store-fundamentals']
 ---
 
 # Feature Store Fundamentals Deep Implementation

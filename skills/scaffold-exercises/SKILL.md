@@ -1,8 +1,13 @@
 ---
 name: scaffold-exercises
 description: Use when creating exercise directory structures with problems, solutions, and explainers
-tags: [scaffolding, exercises, education, structure, linting]
-related_skills: [teach, setup-matt-pocock-skills, writing-great-skills]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [scaffolding, exercises, education, structure, linting]
 ---
 
 # Scaffold Exercises

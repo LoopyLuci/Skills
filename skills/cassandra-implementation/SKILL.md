@@ -1,14 +1,13 @@
 ---
 name: cassandra-implementation
-description: "Use when for cassandra implementation."
+description: Use when for cassandra implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, cassandra, nosql, distributed]
-    related_skills: [general]
 ---
 
 # Cassandra Implementation

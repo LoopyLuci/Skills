@@ -1,14 +1,13 @@
 ---
 name: air-traffic-control-best-practices
-description: "Use when applying air traffic control best practices."
+description: Use when applying air traffic control best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, atc, air-traffic-control]
-    related_skills: [general]
 ---
 
 # Air Traffic Control Best Practices

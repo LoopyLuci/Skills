@@ -2,12 +2,12 @@
 name: edge-computing-industrial
 description: Edge ML, local data processing, Kubernetes at the edge, and offline resilience
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["edge", "kubernetes"]
+    tags: [edge, kubernetes]
 ---
 
 # Edge Computing Industrial

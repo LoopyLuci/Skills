@@ -1,14 +1,13 @@
 ---
 name: content-marketing-workflow
-description: "Use when planning content marketing. Personas, calendars."
+description: Use when planning content marketing. Personas, calendars.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [content-marketing, strategy, distribution, planning]
-    related_skills: [seo-strategy, email-marketing-campaigns, marketing-analytics-dashboard]
 ---
 
 # Content Marketing Workflow

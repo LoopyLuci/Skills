@@ -1,14 +1,13 @@
 ---
 name: automotive-eng-implementation-fundamentals
-description: "Use when applying automotive implementation fundamentals."
+description: Use when applying automotive implementation fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, automotive, implementation]
-    related_skills: [general]
 ---
 
 # Automotive Eng Implementation Fundamentals

@@ -1,14 +1,13 @@
 ---
 name: epidemiology-infectious-disease
-description: "Use when studying infectious disease epi."
+description: Use when studying infectious disease epi.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [medicine, epidemiology, infectious-disease]
-    related_skills: [general]
 ---
 
 # Epidemiology Infectious Disease

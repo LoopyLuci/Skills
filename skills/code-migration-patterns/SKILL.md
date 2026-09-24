@@ -1,6 +1,13 @@
 ---
 name: code-migration-patterns
-description: "Safe code migration rename split deprecate and refactor"
+description: Safe code migration rename split deprecate and refactor
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [code, migration, patterns]
 ---
 
 # Code Migration Patterns

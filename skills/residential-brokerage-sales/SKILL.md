@@ -2,12 +2,12 @@
 name: residential-brokerage-sales
 description: Buyer/seller representation, contracts, negotiation, and transaction management
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["residential", "brokerage"]
+    tags: [residential, brokerage]
 ---
 
 # Residential Brokerage Sales

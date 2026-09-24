@@ -1,14 +1,13 @@
 ---
 name: email-marketing-onboarding-troubleshooting
-description: "Use when applying email onboarding troubleshooting."
+description: Use when applying email onboarding troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, onboarding, welcome]
-    related_skills: [general]
 ---
 
 # Email Marketing Onboarding Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: digital-twin-manufacturing
-description: "Use when building manufacturing digital twins."
+description: Use when building manufacturing digital twins.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: [manufacturing, digital-twins, simulation, IoT]
-    related_skills: [general]
+    tags: [manufacturing, digital-twins, simulation, iot]
 ---
 
 # Digital Twin Manufacturing

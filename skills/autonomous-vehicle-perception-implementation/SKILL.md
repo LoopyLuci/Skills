@@ -1,14 +1,13 @@
 ---
 name: autonomous-vehicle-perception-implementation
-description: "Use when applying av perception implementation."
+description: Use when applying av perception implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [auto, av, autonomous-driving-perception]
-    related_skills: ['general']
 ---
 
 # Autonomous Vehicle Perception Implementation

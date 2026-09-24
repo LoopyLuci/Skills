@@ -1,14 +1,13 @@
 ---
 name: blogging-best-practices
-description: "Use when applying blogging best practices."
+description: Use when applying blogging best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [blog, writing, blog-post-outliner]
-    related_skills: [general]
 ---
 
 # Blogging Best Practices

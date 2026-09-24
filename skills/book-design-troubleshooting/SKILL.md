@@ -1,14 +1,13 @@
 ---
 name: book-design-troubleshooting
-description: "Use when applying book design troubleshooting."
+description: Use when applying book design troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [design, book, publishing]
-    related_skills: [general]
 ---
 
 # Book Design Troubleshooting

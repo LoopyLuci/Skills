@@ -1,6 +1,13 @@
 ---
 name: load-testing
-description: "Benchmark APIs with locust ramp up concurrency and breakpoints"
+description: Benchmark APIs with locust ramp up concurrency and breakpoints
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [load, testing]
 ---
 
 # Load Testing
@@ -28,3 +35,16 @@ locust -f locustfile.py --host=http://localhost:8000
 - P50/P95/P99 latency
 - Error rate
 - Concurrent users
+
+## Trigger
+
+Activate this skill when the user mentions:
+- load, testing workflows or issues
+- Building, fixing, or optimizing load testing
+
+
+## Core Concepts
+
+- Domain fundamentals and best practices
+- Key tools and methodologies
+- Quality standards and common patterns

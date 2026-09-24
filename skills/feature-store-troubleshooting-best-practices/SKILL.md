@@ -1,14 +1,13 @@
 ---
 name: feature-store-troubleshooting-best-practices
-description: "Use when applying feature store troubleshooting best pra."
+description: Use when applying feature store troubleshooting best pra.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, data-science]
-    related_skills: ['feature-store-troubleshooting']
 ---
 
 # Feature Store Troubleshooting Best Practices

@@ -1,13 +1,13 @@
 ---
 name: monorepo-management
-description: "Use when managing monorepo structures and tooling."
+description: Use when managing monorepo structures and tooling.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [monorepo, nx, turborepo, lerna, pnpm, workspace, build-system]
-    related_skills: [git-for-windows, ci-cd-pipeline-setup, project-scaffolding, dependency-management]
 ---
 
 # Monorepo Management

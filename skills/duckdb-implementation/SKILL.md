@@ -1,14 +1,13 @@
 ---
 name: duckdb-implementation
-description: "Use when for duckdb implementation."
+description: Use when for duckdb implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, duckdb, analytics, embedded]
-    related_skills: [general]
 ---
 
 # Duckdb Implementation

@@ -1,14 +1,13 @@
 ---
 name: data-lineage-fundamentals
-description: "Use when learning data lineage fundamentals."
+description: Use when learning data lineage fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data-governance, lineage, tracking, etl]
-    related_skills: [general]
 ---
 
 # Data Lineage Fundamentals

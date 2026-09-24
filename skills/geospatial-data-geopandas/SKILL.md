@@ -2,12 +2,12 @@
 name: geospatial-data-geopandas
 description: GeoPandas, spatial joins, projections, geometry operations, and mapping
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["geopandas", "python"]
+    tags: [geopandas, python]
 ---
 
 # Geospatial Data Geopandas

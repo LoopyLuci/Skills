@@ -1,12 +1,13 @@
 ---
-
 name: subagent-driven-development
 description: Use when executing implementation plans with independent tasks in the current session
-source: hermes/superpowers
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [agent, skill]
-
 ---
 
 # Subagent-Driven Development

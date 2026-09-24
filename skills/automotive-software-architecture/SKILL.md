@@ -1,14 +1,13 @@
 ---
 name: automotive-software-architecture
-description: "Use when designing automotive software."
+description: Use when designing automotive software.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [automotive, automotive-software, architecture, engineering]
-    related_skills: [general]
 ---
 
 # Automotive Software Architecture

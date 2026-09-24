@@ -1,14 +1,13 @@
 ---
 name: cardiology-fundamentals-deep-fundamentals
-description: "Use when applying cardiology fundamentals fundamentals."
+description: Use when applying cardiology fundamentals fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [healthcare, cardiology]
-    related_skills: ['cardiology-fundamentals']
 ---
 
 # Cardiology Fundamentals Deep Fundamentals

@@ -1,14 +1,13 @@
 ---
 name: finance-trading-analysis
-description: "Use when for finance trading analysis."
+description: Use when for finance trading analysis.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, investing, trading]
-    related_skills: [general]
 ---
 
 # Finance Trading Analysis

@@ -1,14 +1,13 @@
 ---
 name: agricultural-engineering-best-practices
-description: "Use when applying agricultural engineering best practices."
+description: Use when applying agricultural engineering best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, ag, farming, agricultural-eng-design]
-    related_skills: [general]
 ---
 
 # Agricultural Engineering Best Practices

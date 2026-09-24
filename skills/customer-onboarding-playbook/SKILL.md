@@ -1,12 +1,13 @@
 ---
 name: customer-onboarding-playbook
-description: "Use when building onboarding playbooks."
+description: Use when building onboarding playbooks.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["onboarding", "customer-success", "activation", "adoption"]
+    tags: [onboarding, customer-success, activation, adoption]
 ---
 
 # Customer Onboarding Playbook

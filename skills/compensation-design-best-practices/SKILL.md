@@ -1,14 +1,13 @@
 ---
 name: compensation-design-best-practices
-description: "Use when applying compensation design best practices."
+description: Use when applying compensation design best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [hr, compensation, compensation-structures-design]
-    related_skills: [general]
 ---
 
 # Compensation Design Best Practices

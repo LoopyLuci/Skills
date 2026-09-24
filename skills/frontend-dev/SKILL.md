@@ -1,13 +1,14 @@
 ---
 name: frontend-dev
 description: |
-source: MiniMax-AI/skills
-tags: [agent, skill]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [agent, skill]
 ---
-
 
 # Frontend Studio
 

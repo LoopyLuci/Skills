@@ -1,14 +1,13 @@
 ---
 name: aws-security
-description: "Use when securing AWS."
+description: Use when securing AWS.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, aws, aws-iam-best-practices]
-    related_skills: [general]
 ---
 
 # Aws Security

@@ -1,14 +1,13 @@
 ---
 name: container-security-impl
-description: "Use when implementing container security."
+description: Use when implementing container security.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, containers, container-security-implementation]
-    related_skills: [general]
 ---
 
 # Container Security Impl

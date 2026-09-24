@@ -1,9 +1,13 @@
 ---
 name: traffic-analyzer
-title: Traffic Analyzer
 description: Use when analyzing traffic patterns and protocol mix.
-category: networking
-tags: [traffic, analysis, protocol, patterns, stats, rust]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [traffic, analysis, protocol, patterns, stats, rust]
 ---
 
 # Traffic Analyzer

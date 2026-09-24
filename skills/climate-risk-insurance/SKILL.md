@@ -1,14 +1,13 @@
 ---
 name: climate-risk-insurance
-description: "Use when insuring climate risks. Catastrophe models."
+description: Use when insuring climate risks. Catastrophe models.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climatetech, insurance, climate-risk, catastrophe-modeling]
-    related_skills: [climate-risk-assessment, insurtech-risk-modeling]
 ---
 
 # Climate Risk Insurance

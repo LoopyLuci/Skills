@@ -1,13 +1,13 @@
 ---
 name: api-gateway-load-balancing
-description: "Use when designing API gateway and load balancing patterns."
+description: Use when designing API gateway and load balancing patterns.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [api-gateway, load-balancing, reverse-proxy, traffic-management]
-    related_skills: [api-design-rest-graphql, proxy-server-engine, service-mesh-patterns, traffic-shaper]
 ---
 
 # Api Gateway Load Balancing

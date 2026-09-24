@@ -1,14 +1,13 @@
 ---
 name: clickhouse-implementation
-description: "Use when for clickhouse implementation."
+description: Use when for clickhouse implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, clickhouse, analytics, olap]
-    related_skills: [general]
 ---
 
 # Clickhouse Implementation

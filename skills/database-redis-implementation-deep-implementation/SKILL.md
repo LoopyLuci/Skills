@@ -1,14 +1,13 @@
 ---
 name: database-redis-implementation-deep-implementation
-description: "Use when applying redis implementation implementation."
+description: Use when applying redis implementation implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, redis]
-    related_skills: ['redis-implementation']
 ---
 
 # Database Redis Implementation Deep Implementation

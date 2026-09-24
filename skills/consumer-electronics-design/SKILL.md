@@ -1,14 +1,13 @@
 ---
 name: consumer-electronics-design
-description: "Use when designing consumer electronics."
+description: Use when designing consumer electronics.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [consumer-tech, electronics, hardware, pcb]
-    related_skills: [general]
 ---
 
 # Consumer Electronics Design

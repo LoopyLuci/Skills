@@ -2,12 +2,12 @@
 name: journalism-news-reporting
 description: Inverted pyramid, sourcing, fact-checking, and news writing standards
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["journalism", "reporting"]
+    tags: [journalism, reporting]
 ---
 
 # Journalism News Reporting

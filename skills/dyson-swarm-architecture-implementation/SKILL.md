@@ -1,14 +1,13 @@
 ---
 name: dyson-swarm-architecture-implementation
-description: "Use when applying dyson swarm architecture implementation."
+description: Use when applying dyson swarm architecture implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [space, engineering, distributed-systems]
-    related_skills: ['']
 ---
 
 # Dyson Swarm Architecture Implementation

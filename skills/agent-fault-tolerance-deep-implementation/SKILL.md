@@ -1,14 +1,13 @@
 ---
 name: agent-fault-tolerance-deep-implementation
-description: "Use when applying agent fault tolerance implementation."
+description: Use when applying agent fault tolerance implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agents, reliability]
-    related_skills: ['agent-fault-tolerance']
 ---
 
 # Agent Fault Tolerance Deep Implementation

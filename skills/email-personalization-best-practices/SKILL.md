@@ -1,14 +1,13 @@
 ---
 name: email-personalization-best-practices
-description: "Use when applying email personalization best practices."
+description: Use when applying email personalization best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, marketing, personalization]
-    related_skills: [general]
 ---
 
 # Email Personalization Best Practices

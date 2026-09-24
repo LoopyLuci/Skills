@@ -2,12 +2,12 @@
 name: academic-writing-publishing
 description: Manuscript structure, peer review response, journal selection, and citation management
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["academic", "writing"]
+    tags: [academic, writing]
 ---
 
 # Academic Writing Publishing

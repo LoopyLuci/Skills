@@ -1,14 +1,13 @@
 ---
 name: energy-storage-deep-best-practices
-description: "Use when applying energy storage best practices."
+description: Use when applying energy storage best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, storage]
-    related_skills: ['general']
 ---
 
 # Energy Storage Deep Best Practices

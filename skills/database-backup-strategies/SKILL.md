@@ -1,6 +1,13 @@
 ---
 name: database-backup-strategies
-description: "Automated backup and restore for PostgreSQL MySQL SQLite"
+description: Automated backup and restore for PostgreSQL MySQL SQLite
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [database, backup, strategies]
 ---
 
 # Database Backup Strategies
@@ -29,3 +36,16 @@ sqlite3 mydb.db ".restore mydb.backup"
 # Keep 7 days, remove older
 0 4 * * * find /backups -name "*.dump" -mtime +7 -delete
 ```
+
+## Trigger
+
+Activate this skill when the user mentions:
+- database, backup, strategies workflows or issues
+- Building, fixing, or optimizing database backup strategies
+
+
+## Core Concepts
+
+- Domain fundamentals and best practices
+- Key tools and methodologies
+- Quality standards and common patterns

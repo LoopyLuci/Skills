@@ -1,12 +1,13 @@
 ---
-
-name: mmx-cli
+name: minimax-multimodal-toolkit
 description: Use mmx to generate text, images, video, speech, and music via the MiniMax AI platform. Use when the user wants to create media content, chat with MiniMax models, perform web search, or manage MiniMax API resources from the terminal.
-source: MiniMax-AI/skills
-tags: [minimax, multimodal, tts, music, video, image]
-metadata: 
-hermes: 
-
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [minimax, multimodal, tts, music, video, image]
 ---
 
 **Trigger**: Use when generating multimodal content via MiniMax APIs — text-to-speech, music, video, and image generation.

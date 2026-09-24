@@ -1,14 +1,13 @@
 ---
 name: building-energy-modeling
-description: "Use when modeling building energy performance."
+description: Use when modeling building energy performance.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [construction, energy-modeling, simulation, efficiency]
-    related_skills: [building-energy-efficiency]
 ---
 
 # Building Energy Modeling

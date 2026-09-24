@@ -1,14 +1,13 @@
 ---
 name: crypto-smart-contract-audit-fundamentals
-description: "Use when applying smart contract auditing fundamentals."
+description: Use when applying smart contract auditing fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [crypto, audit, blockchain-smart-contracts]
-    related_skills: ['']
 ---
 
 # Crypto Smart Contract Audit Fundamentals

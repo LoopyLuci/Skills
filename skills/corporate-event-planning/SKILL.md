@@ -2,12 +2,12 @@
 name: corporate-event-planning
 description: Conferences, meetings, product launches, and corporate gatherings
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["corporate", "conferences"]
+    tags: [corporate, conferences]
 ---
 
 # Corporate Event Planning

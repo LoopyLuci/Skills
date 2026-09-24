@@ -2,12 +2,12 @@
 name: solidity-smart-contracts
 description: Solidity, contract security, testing, and deployment
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["solidity", "smart-contracts"]
+    tags: [solidity, smart-contracts]
 ---
 
 # Solidity Smart Contracts

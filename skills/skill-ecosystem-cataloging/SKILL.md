@@ -1,13 +1,13 @@
 ---
 name: skill-ecosystem-cataloging
-description: "Use when cataloging and organizing skill ecosystems."
+description: Use when cataloging and organizing skill ecosystems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [meta, skill-ecosystem, cataloging, organization, taxonomy, mapping]
-    related_skills: [skill-architecture-patterns, skill-gap-analysis, skill-inventory-management, skill-discovery-techniques]
 ---
 
 # Skill Ecosystem Cataloging

@@ -1,14 +1,13 @@
 ---
 name: customer-success-fundamentals-implementation
-description: "Use when applying customer success fundamentals implemen."
+description: Use when applying customer success fundamentals implemen.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [sales, customer-success-retention]
-    related_skills: ['']
 ---
 
 # Customer Success Fundamentals Implementation

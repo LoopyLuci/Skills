@@ -1,14 +1,13 @@
 ---
 name: distributed-tracing-fundamentals
-description: "Use when applying distributed tracing fundamentals."
+description: Use when applying distributed tracing fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [monitoring, tracing, jaeger, opentelemetry]
-    related_skills: [general]
 ---
 
 # Distributed Tracing Fundamentals

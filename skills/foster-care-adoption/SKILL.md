@@ -2,12 +2,12 @@
 name: foster-care-adoption
 description: Foster care, adoption process, and supporting children in care
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["foster", "adoption"]
+    tags: [foster, adoption]
 ---
 
 # Foster Care Adoption

@@ -1,14 +1,13 @@
 ---
 name: database-redis-troubleshooting-deep-best-practices
-description: "Use when applying redis troubleshooting best practices."
+description: Use when applying redis troubleshooting best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, redis]
-    related_skills: ['redis-troubleshooting']
 ---
 
 # Database Redis Troubleshooting Deep Best Practices

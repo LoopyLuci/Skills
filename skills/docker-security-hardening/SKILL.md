@@ -1,9 +1,15 @@
 ---
 name: docker-security-hardening
-description: "Use when hardening Docker containers and images."
-category: docker
-tags: [docker, security, hardening, scanning]
+description: Use when hardening Docker containers and images.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [docker, security, hardening, scanning]
 ---
+
 # Docker Security Hardening
 
 Hardening containers and images.

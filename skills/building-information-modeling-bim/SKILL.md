@@ -1,14 +1,13 @@
 ---
 name: building-information-modeling-bim
-description: "Use when modeling buildings with BIM."
+description: Use when modeling buildings with BIM.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [construction, bim, building-model, architecture]
-    related_skills: [general]
 ---
 
 # Building Information Modeling Bim

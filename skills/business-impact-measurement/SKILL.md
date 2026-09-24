@@ -1,14 +1,13 @@
 ---
 name: business-impact-measurement
-description: "Use when measuring business impact. KPIs, ROI, value."
+description: Use when measuring business impact. KPIs, ROI, value.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: ['business-impact', 'measurement', 'kpi', 'roi']
-    related_skills: ['data-driven-decision-making', 'marketing-analytics-dashboard']
+    tags: [business-impact, measurement, kpi, roi]
 ---
 
 # Business Impact Measurement

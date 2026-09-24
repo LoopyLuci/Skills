@@ -1,14 +1,13 @@
 ---
 name: circular-design-fundamentals
-description: "Use when applying circular design fundamentals."
+description: Use when applying circular design fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [waste, circular-design]
-    related_skills: ['general']
 ---
 
 # Circular Design Fundamentals

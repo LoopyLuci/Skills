@@ -1,14 +1,13 @@
 ---
 name: aviation-law
-description: "Use when practicing aviation law."
+description: Use when practicing aviation law.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [legal, aviation, aviation-law]
-    related_skills: [general]
 ---
 
 # Aviation Law

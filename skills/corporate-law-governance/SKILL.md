@@ -2,12 +2,12 @@
 name: corporate-law-governance
 description: Board resolutions, shareholder agreements, M&A, and entity management
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["corporate", "governance"]
+    tags: [corporate, governance]
 ---
 
 # Corporate Law Governance

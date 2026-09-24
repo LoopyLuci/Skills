@@ -1,12 +1,13 @@
 ---
 name: langchain-chains-patterns
-description: "Use when building LangChain chains."
+description: Use when building LangChain chains.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["langchain", "chains", "LLMChain", "RouterChain"]
+    tags: [langchain, chains, llmchain, routerchain]
 ---
 
 # Langchain Chains Patterns

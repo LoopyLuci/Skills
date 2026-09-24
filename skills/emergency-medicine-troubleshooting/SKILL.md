@@ -1,14 +1,13 @@
 ---
 name: emergency-medicine-troubleshooting
-description: "Use when applying emergency medicine troubleshooting."
+description: Use when applying emergency medicine troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [medicine, healthcare, emergency]
-    related_skills: ['emergency-med-implementation']
 ---
 
 # Emergency Medicine Troubleshooting

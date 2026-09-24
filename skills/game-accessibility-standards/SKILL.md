@@ -2,12 +2,12 @@
 name: game-accessibility-standards
 description: Xbox/PlayStation/Steam accessibility guidelines, remappable controls, screen reader, and colorblind modes
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["accessibility", "inclusive"]
+    tags: [accessibility, inclusive]
 ---
 
 # Game Accessibility Standards

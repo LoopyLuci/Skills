@@ -1,14 +1,13 @@
 ---
 name: django-rest-api-fundamentals
-description: "Use when applying django rest api fundamentals."
+description: Use when applying django rest api fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, django, python, api]
-    related_skills: [general]
 ---
 
 # Django Rest Api Fundamentals

@@ -2,12 +2,12 @@
 name: cartography-map-design
 description: Visual hierarchy, typography, color schemes, projections, and thematic mapping
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["cartography", "design"]
+    tags: [cartography, design]
 ---
 
 # Cartography Map Design

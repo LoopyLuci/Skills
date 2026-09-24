@@ -1,13 +1,13 @@
 ---
 name: causal-inference-advanced
-description: "Use when implementing advanced causal inference in ML."
+description: Use when implementing advanced causal inference in ML.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [causal-inference, DAG, do-calculus, instrumental-variables, double-ML, heterogeneous-effects]
-    related_skills: [causal-inference-ml, ab-testing-experimentation, deep-reinforcement-learning, model-interpretability-deep]
+    tags: [causal-inference, dag, do-calculus, instrumental-variables, double-ml, heterogeneous-effects]
 ---
 
 # Advanced Causal Inference

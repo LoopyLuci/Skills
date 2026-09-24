@@ -1,14 +1,13 @@
 ---
 name: banking-loan-tech-implementation
-description: "Use when applying loan tech implementation."
+description: Use when applying loan tech implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, lending, lending-tech]
-    related_skills: [general]
 ---
 
 # Banking Loan Tech Implementation

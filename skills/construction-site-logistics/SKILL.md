@@ -1,14 +1,13 @@
 ---
 name: construction-site-logistics
-description: "Use when planning construction logistics."
+description: Use when planning construction logistics.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [construction, site-logistics, scheduling, delivery]
-    related_skills: [general]
 ---
 
 # Construction Site Logistics

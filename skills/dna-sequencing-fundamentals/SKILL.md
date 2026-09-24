@@ -1,14 +1,13 @@
 ---
 name: dna-sequencing-fundamentals
-description: "Use when applying dna sequencing fundamentals."
+description: Use when applying dna sequencing fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, genomics, genomics-data-processing]
-    related_skills: [general]
 ---
 
 # Dna Sequencing Fundamentals

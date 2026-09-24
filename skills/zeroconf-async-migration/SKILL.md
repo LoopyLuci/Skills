@@ -1,6 +1,13 @@
 ---
 name: zeroconf-async-migration
-description: "Fix zeroconf async API thread safety and registration issues"
+description: Fix zeroconf async API thread safety and registration issues
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [zeroconf, async, migration]
 ---
 
 # Zeroconf Async Migration

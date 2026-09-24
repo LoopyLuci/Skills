@@ -2,12 +2,12 @@
 name: speech-writing-oratory
 description: Structure, rhetoric, storytelling, and delivery for speeches
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["speech", "oratory"]
+    tags: [speech, oratory]
 ---
 
 # Speech Writing Oratory

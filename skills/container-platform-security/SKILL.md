@@ -1,14 +1,13 @@
 ---
 name: container-platform-security
-description: "Use when securing container platforms."
+description: Use when securing container platforms.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, container-security, k8s-security]
-    related_skills: ['container-security-hardening']
 ---
 
 # Container Platform Security

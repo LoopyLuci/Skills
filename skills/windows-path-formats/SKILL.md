@@ -1,6 +1,13 @@
 ---
 name: windows-path-formats
-description: "MSYS vs Windows paths for curl git Python and tools"
+description: MSYS vs Windows paths for curl git Python and tools
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [windows, path, formats]
 ---
 
 # Windows Path Formats (MSYS/git-bash)

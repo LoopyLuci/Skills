@@ -1,14 +1,13 @@
 ---
 name: accounting-financial-planning-implementation
-description: "Use when applying financial planning implementation."
+description: Use when applying financial planning implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, accounting-fundamentals]
-    related_skills: ['']
 ---
 
 # Accounting Financial Planning Implementation

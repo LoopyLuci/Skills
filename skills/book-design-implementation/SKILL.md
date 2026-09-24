@@ -1,14 +1,13 @@
 ---
 name: book-design-implementation
-description: "Use when applying book design implementation."
+description: Use when applying book design implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [design, book, publishing]
-    related_skills: [general]
 ---
 
 # Book Design Implementation

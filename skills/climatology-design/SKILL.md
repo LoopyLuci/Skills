@@ -1,14 +1,13 @@
 ---
 name: climatology-design
-description: "Use when designing climatology solutions."
+description: Use when designing climatology solutions.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climatology, climate, weather, change]
-    related_skills: [general]
 ---
 
 # Climatology Design

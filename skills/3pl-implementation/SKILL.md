@@ -1,14 +1,13 @@
 ---
 name: 3pl-implementation
-description: "Use when applying 3pl services implementation."
+description: Use when applying 3pl services implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [logistics, 3pl, third-party]
-    related_skills: [general]
 ---
 
 # 3pl Implementation

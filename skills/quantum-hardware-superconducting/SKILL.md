@@ -2,12 +2,12 @@
 name: quantum-hardware-superconducting
 description: Transmon qubits, coherence times, gate fidelities, and cryogenic control
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["hardware", "superconducting"]
+    tags: [hardware, superconducting]
 ---
 
 # Quantum Hardware Superconducting

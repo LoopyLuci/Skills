@@ -1,14 +1,13 @@
 ---
 name: 3d-modeling-best-practices
-description: "Use when applying 3d modeling best practices."
+description: Use when applying 3d modeling best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [media, 3d, 3d-modeling-techniques]
-    related_skills: [general]
 ---
 
 # 3d Modeling Best Practices

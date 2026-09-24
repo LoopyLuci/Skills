@@ -1,14 +1,13 @@
 ---
 name: civil-engineering-troubleshooting
-description: "Use when applying civil engineering troubleshooting."
+description: Use when applying civil engineering troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, civil, infrastructure, civil-eng-design]
-    related_skills: [general]
 ---
 
 # Civil Engineering Troubleshooting

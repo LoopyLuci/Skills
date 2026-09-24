@@ -2,12 +2,12 @@
 name: ui-design-systems
 description: Component libraries, design tokens, atomic design, and Figma-to-code handoff
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["ui", "design-system"]
+    tags: [ui, design-system]
 ---
 
 # Ui Design Systems

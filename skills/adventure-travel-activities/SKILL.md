@@ -2,12 +2,12 @@
 name: adventure-travel-activities
 description: Adventure sports, expeditions, gear, and risk management
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["adventure", "expeditions"]
+    tags: [adventure, expeditions]
 ---
 
 # Adventure Travel Activities

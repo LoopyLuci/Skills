@@ -1,13 +1,13 @@
 ---
 name: graphql-api-implementation
-description: "Use when implementing GraphQL APIs and servers."
+description: Use when implementing GraphQL APIs and servers.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [graphql, API, schema, resolvers, Apollo, Relay, federation]
-    related_skills: [api-design-rest-graphql, microservices-decomposition, api-testing-patterns, oauth-authentication-patterns]
+    tags: [graphql, api, schema, resolvers, apollo, relay, federation]
 ---
 
 # Graphql Api Implementation

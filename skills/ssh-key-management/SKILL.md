@@ -1,6 +1,13 @@
 ---
 name: ssh-key-management
-description: "Generate deploy and rotate SSH keys agents and hardening"
+description: Generate deploy and rotate SSH keys agents and hardening
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [ssh, key, management]
 ---
 
 # SSH Key Management
@@ -31,3 +38,16 @@ Host myserver
     IdentityFile ~/.ssh/id_ed25519
     Port 2222
 ```
+
+## Trigger
+
+Activate this skill when the user mentions:
+- ssh, key, management workflows or issues
+- Building, fixing, or optimizing ssh key management
+
+
+## Core Concepts
+
+- Domain fundamentals and best practices
+- Key tools and methodologies
+- Quality standards and common patterns

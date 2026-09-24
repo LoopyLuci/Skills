@@ -1,6 +1,13 @@
 ---
 name: skill-routing-decision
 description: Choose the right skill for any task at any moment.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [skill, routing, decision]
 ---
 
 # Skill Routing Decision

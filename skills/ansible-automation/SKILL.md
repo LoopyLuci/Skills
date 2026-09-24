@@ -1,14 +1,13 @@
 ---
 name: ansible-automation
-description: "Use when automating with Ansible."
+description: Use when automating with Ansible.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, ansible, automation]
-    related_skills: [general]
 ---
 
 # Ansible Automation

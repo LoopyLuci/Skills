@@ -2,12 +2,12 @@
 name: fashion-design-sketching
 description: Fashion illustration, design development, and collection planning
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["fashion-design", "illustration"]
+    tags: [fashion-design, illustration]
 ---
 
 # Fashion Design Sketching

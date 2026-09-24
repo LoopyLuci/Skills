@@ -1,14 +1,13 @@
 ---
 name: fermentation-technology-troubleshooting
-description: "Use when applying fermentation technology troubleshooting."
+description: Use when applying fermentation technology troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, bioprocess, fermentation]
-    related_skills: [general]
 ---
 
 # Fermentation Technology Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: content-marketing-optimization-implementation
-description: "Use when applying content marketing optimization impleme."
+description: Use when applying content marketing optimization impleme.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, content-marketing-optimization]
-    related_skills: ['']
 ---
 
 # Content Marketing Optimization Implementation

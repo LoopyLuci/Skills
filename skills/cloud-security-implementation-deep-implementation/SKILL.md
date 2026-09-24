@@ -1,14 +1,13 @@
 ---
 name: cloud-security-implementation-deep-implementation
-description: "Use when applying cloud security implementation implemen."
+description: Use when applying cloud security implementation implemen.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, security]
-    related_skills: ['cloud-security-implementation']
 ---
 
 # Cloud Security Implementation Deep Implementation

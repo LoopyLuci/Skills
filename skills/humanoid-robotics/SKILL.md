@@ -2,12 +2,12 @@
 name: humanoid-robotics
 description: Balance control, whole-body control, bipedal locomotion, and human-robot interaction
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["humanoid", "locomotion"]
+    tags: [humanoid, locomotion]
 ---
 
 # Humanoid Robotics

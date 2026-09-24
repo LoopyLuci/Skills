@@ -2,12 +2,12 @@
 name: aviation-operations-management
 description: Airline ops, crew scheduling, maintenance planning, and ATC
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["aviation", "airline"]
+    tags: [aviation, airline]
 ---
 
 # Aviation Operations Management

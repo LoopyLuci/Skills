@@ -1,14 +1,13 @@
 ---
 name: exotic-state-physics-fundamentals
-description: "Use when applying exotic state physics fundamentals."
+description: Use when applying exotic state physics fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [physics, exotic, quantum-physics]
-    related_skills: ['']
 ---
 
 # Exotic State Physics Fundamentals

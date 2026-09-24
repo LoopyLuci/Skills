@@ -1,14 +1,13 @@
 ---
 name: beauty-emerging-technologies
-description: "Use when exploring beauty tech innovations."
+description: Use when exploring beauty tech innovations.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, beauty-tech, innovation, emerging]
-    related_skills: [general]
 ---
 
 # Beauty Emerging Technologies

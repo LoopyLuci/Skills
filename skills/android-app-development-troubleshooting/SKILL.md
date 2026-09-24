@@ -1,14 +1,13 @@
 ---
 name: android-app-development-troubleshooting
-description: "Use when applying android app dev troubleshooting."
+description: Use when applying android app dev troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [android, mobile, android-development]
-    related_skills: [general]
 ---
 
 # Android App Development Troubleshooting

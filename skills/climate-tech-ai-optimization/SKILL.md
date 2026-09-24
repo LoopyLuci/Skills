@@ -1,14 +1,13 @@
 ---
 name: climate-tech-ai-optimization
-description: "Use when optimizing climate tech with AI."
+description: Use when optimizing climate tech with AI.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cross-domain, climate-ai, renewable-optimization, ml]
-    related_skills: [climate-risk-assessment]
 ---
 
 # Climate Tech Ai Optimization

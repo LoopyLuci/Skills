@@ -1,14 +1,13 @@
 ---
 name: biotech-regulatory-affairs-implementation
-description: "Use when applying biotech regulatory affairs implementat."
+description: Use when applying biotech regulatory affairs implementat.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, regulatory, regulatory-affairs]
-    related_skills: [general]
 ---
 
 # Biotech Regulatory Affairs Implementation

@@ -1,6 +1,13 @@
 ---
 name: git-config-essentials
 description: Configure git globally — aliases, editors, and line endings.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [git, config, essentials]
 ---
 
 # Git Config Essentials

@@ -1,14 +1,13 @@
 ---
 name: crm-onboarding-workflow
-description: "Use when setting up CRM. Data import, team onboarding."
+description: Use when setting up CRM. Data import, team onboarding.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [crm, sales, customer-management, onboarding, data-import]
-    related_skills: [real-estate-property-analysis, marketing-strategy-framework]
 ---
 
 # Crm Onboarding Workflow

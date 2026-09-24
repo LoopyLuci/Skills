@@ -1,6 +1,13 @@
 ---
 name: android-device-debugging
 description: MIUI/HyperOS Android device debugging and workarounds.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [android, device, debugging]
 ---
 
 # Android Device Debugging (OEM-specific, real devices)

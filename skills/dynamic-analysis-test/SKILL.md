@@ -1,14 +1,13 @@
 ---
 name: dynamic-analysis-test
-description: "Use when doing dynamic analysis."
+description: Use when doing dynamic analysis.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, dast, dynamic-analysis]
-    related_skills: [general]
 ---
 
 # Dynamic Analysis Test

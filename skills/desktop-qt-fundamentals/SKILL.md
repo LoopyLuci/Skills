@@ -1,14 +1,13 @@
 ---
 name: desktop-qt-fundamentals
-description: "Use when applying qt desktop fundamentals."
+description: Use when applying qt desktop fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [desktop, qt, cpp, cplusplus]
-    related_skills: [general]
 ---
 
 # Desktop Qt Fundamentals

@@ -1,14 +1,13 @@
 ---
 name: fermentation-fundamentals
-description: "Use when applying fermentation technology fundamentals."
+description: Use when applying fermentation technology fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, fermentation, fermentation-tech]
-    related_skills: ['general']
 ---
 
 # Fermentation Fundamentals

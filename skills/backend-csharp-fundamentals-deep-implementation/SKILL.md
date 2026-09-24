@@ -1,14 +1,13 @@
 ---
 name: backend-csharp-fundamentals-deep-implementation
-description: "Use when applying c# backend fundamentals implementation."
+description: Use when applying c# backend fundamentals implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, csharp]
-    related_skills: ['backend-csharp-fundamentals']
 ---
 
 # Backend Csharp Fundamentals Deep Implementation

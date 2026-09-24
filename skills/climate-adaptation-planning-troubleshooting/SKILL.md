@@ -1,14 +1,13 @@
 ---
 name: climate-adaptation-planning-troubleshooting
-description: "Use when applying climate adaptation planning troublesho."
+description: Use when applying climate adaptation planning troublesho.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, adaptation, climate-adaptation-planning]
-    related_skills: ['']
 ---
 
 # Climate Adaptation Planning Troubleshooting

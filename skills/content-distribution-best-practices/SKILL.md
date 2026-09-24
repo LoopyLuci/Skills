@@ -1,14 +1,13 @@
 ---
 name: content-distribution-best-practices
-description: "Use when applying cdn best practices."
+description: Use when applying cdn best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [media, cdn, cdn-caching]
-    related_skills: ['general']
 ---
 
 # Content Distribution Best Practices

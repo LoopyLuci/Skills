@@ -2,12 +2,12 @@
 name: public-policy-analysis
 description: Policy cycle, cost-benefit analysis, stakeholder mapping, and policy memos
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["policy", "analysis"]
+    tags: [policy, analysis]
 ---
 
 # Public Policy Analysis

@@ -1,14 +1,13 @@
 ---
 name: email-marketing-re_engagement-fundamentals
-description: "Use when applying email re-engagement fundamentals."
+description: Use when applying email re-engagement fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, engagement, re-engagement]
-    related_skills: [general]
 ---
 
 # Email Marketing Re_engagement Fundamentals

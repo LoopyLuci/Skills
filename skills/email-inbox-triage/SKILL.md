@@ -1,14 +1,13 @@
 ---
 name: email-inbox-triage
-description: "Triage an inbox: prioritize threads, draft replies safely."
-version: 0.2.0
-author: Ben Barclay (benbarclay), Hermes Agent
+description: Triage an inbox: prioritize threads, draft replies safely.
+version: 1.0.0
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: [Email, Inbox, Triage, Replies, Productivity]
-    related_skills: [himalaya, google-workspace]
+    tags: [email, inbox, triage, replies, productivity]
 ---
 
 # Email Inbox Triage

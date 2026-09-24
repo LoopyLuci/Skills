@@ -1,14 +1,13 @@
 ---
 name: agentic-web-platform
-description: "Architect MCP-first agentic web building platforms."
-version: 0.1.0
-author: Hermes Agent
+description: Architect MCP-first agentic web building platforms.
+version: 1.0.0
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mcp, agentic, web-builder, multi-agent, codegen, monorepo, architecture]
-    related_skills: [claude-code, codex, opencode]
 ---
 
 # Agentic Web Platform

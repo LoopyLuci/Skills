@@ -1,14 +1,13 @@
 ---
 name: computational-biology-management
-description: "Use when managing computational biology operations."
+description: Use when managing computational biology operations.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [computational-biology, modeling, systems-biology]
-    related_skills: [general]
 ---
 
 # Computational Biology Management

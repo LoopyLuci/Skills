@@ -1,13 +1,13 @@
 ---
 name: zero-knowledge-proofs
-description: "Use when implementing zero-knowledge proof systems."
+description: Use when implementing zero-knowledge proof systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [zero-knowledge, ZKP, zkSNARKs, zkSTARKs, circom, cryptography]
-    related_skills: [blockchain-development-solidity, cryptography-implementation-patterns, defi-smart-contracts, tokenomics-design]
+    tags: [zero-knowledge, zkp, zksnarks, zkstarks, circom, cryptography]
 ---
 
 # Zero-Knowledge Proofs

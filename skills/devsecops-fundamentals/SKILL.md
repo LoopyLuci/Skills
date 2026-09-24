@@ -1,14 +1,13 @@
 ---
 name: devsecops-fundamentals
-description: "Use when for devsecops fundamentals."
+description: Use when for devsecops fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, devsecops, ci-cd]
-    related_skills: [general]
 ---
 
 # Devsecops Fundamentals

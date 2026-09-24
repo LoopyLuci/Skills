@@ -1,14 +1,13 @@
 ---
 name: content-marketing-audit-fundamentals
-description: "Use when applying content marketing audit fundamentals."
+description: Use when applying content marketing audit fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, content-marketing-audit]
-    related_skills: ['']
 ---
 
 # Content Marketing Audit Fundamentals

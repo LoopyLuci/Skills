@@ -1,14 +1,13 @@
 ---
 name: eeg-signal-processing
-description: "Use when processing EEG signals. Preprocessing, FFT."
+description: Use when processing EEG signals. Preprocessing, FFT.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neurotech, eeg, signal-processing, preprocessing, spectral-analysis]
-    related_skills: [neural-interface-design, neurofeedback-analysis]
 ---
 
 # Eeg Signal Processing

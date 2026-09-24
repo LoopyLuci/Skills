@@ -2,12 +2,12 @@
 name: physics-game-development
 description: 2D/3D physics engines, rigidbodies, joints, cloth simulation, and deterministic physics
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["physics", "simulation"]
+    tags: [physics, simulation]
 ---
 
 # Physics Game Development

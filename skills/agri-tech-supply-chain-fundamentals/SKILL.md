@@ -1,14 +1,13 @@
 ---
 name: agri-tech-supply-chain-fundamentals
-description: "Use when applying agricultural supply chain fundamentals."
+description: Use when applying agricultural supply chain fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agri, supply, agri-supply-chain]
-    related_skills: ['']
 ---
 
 # Agri Tech Supply Chain Fundamentals

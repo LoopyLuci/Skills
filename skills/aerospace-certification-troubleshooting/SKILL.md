@@ -1,14 +1,13 @@
 ---
 name: aerospace-certification-troubleshooting
-description: "Use when applying aerospace certification troubleshooting."
+description: Use when applying aerospace certification troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aerospace, cert, certification]
-    related_skills: ['general']
 ---
 
 # Aerospace Certification Troubleshooting

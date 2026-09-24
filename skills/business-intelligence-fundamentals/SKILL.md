@@ -1,14 +1,13 @@
 ---
 name: business-intelligence-fundamentals
-description: "Use when learning business intelligence fundamentals."
+description: Use when learning business intelligence fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [bi, business-intelligence, dashboards]
-    related_skills: [general]
 ---
 
 # Business Intelligence Fundamentals

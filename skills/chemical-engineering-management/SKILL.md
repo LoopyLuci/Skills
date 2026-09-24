@@ -1,14 +1,13 @@
 ---
 name: chemical-engineering-management
-description: "Use when managing chemical engineering operations."
+description: Use when managing chemical engineering operations.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [chemical, process, reactor, separations]
-    related_skills: [general]
 ---
 
 # Chemical Engineering Management

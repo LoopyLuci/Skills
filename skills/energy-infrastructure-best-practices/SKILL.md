@@ -1,14 +1,13 @@
 ---
 name: energy-infrastructure-best-practices
-description: "Use when applying energy infrastructure best practices."
+description: Use when applying energy infrastructure best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [energy, infrastructure, infrastructure]
-    related_skills: [general]
 ---
 
 # Energy Infrastructure Best Practices

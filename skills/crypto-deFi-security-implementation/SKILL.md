@@ -1,14 +1,13 @@
 ---
 name: crypto-deFi-security-implementation
-description: "Use when applying defi security implementation."
+description: Use when applying defi security implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [crypto, defi, defi-security]
-    related_skills: ['']
 ---
 
 # Crypto Defi Security Implementation

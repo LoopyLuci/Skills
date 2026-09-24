@@ -2,12 +2,12 @@
 name: topology-geometry
 description: Algebraic topology, differential geometry, and geometric analysis
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["topology", "geometry"]
+    tags: [topology, geometry]
 ---
 
 # Topology Geometry

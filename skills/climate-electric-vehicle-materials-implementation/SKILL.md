@@ -1,14 +1,13 @@
 ---
 name: climate-electric-vehicle-materials-implementation
-description: "Use when applying climate electric vehicle materials imp."
+description: Use when applying climate electric vehicle materials imp.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, environment]
-    related_skills: ['']
 ---
 
 # Climate Electric Vehicle Materials Implementation

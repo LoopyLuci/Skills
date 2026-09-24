@@ -1,13 +1,13 @@
 ---
 name: python-decorators-advanced
-description: "Use when implementing advanced Python decorators."
+description: Use when implementing advanced Python decorators.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [python, decorators, functools, wraps, class-decorators]
-    related_skills: [python-async-patterns, clean-code-principles, cross-thread-async]
 ---
 
 # Advanced Python Decorators

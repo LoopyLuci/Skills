@@ -1,14 +1,13 @@
 ---
 name: android-app-performance-troubleshooting
-description: "Use when applying android app performance troubleshooting."
+description: Use when applying android app performance troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [android, mobile, performance, android-app-performance]
-    related_skills: [general]
 ---
 
 # Android App Performance Troubleshooting

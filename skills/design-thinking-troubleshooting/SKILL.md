@@ -1,14 +1,13 @@
 ---
 name: design-thinking-troubleshooting
-description: "Use when applying design thinking troubleshooting."
+description: Use when applying design thinking troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [design, thinking, design-thinking-process]
-    related_skills: [general]
 ---
 
 # Design Thinking Troubleshooting

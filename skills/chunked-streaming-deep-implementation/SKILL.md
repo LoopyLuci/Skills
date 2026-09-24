@@ -1,14 +1,13 @@
 ---
 name: chunked-streaming-deep-implementation
-description: "Use when applying chunked streaming implementation."
+description: Use when applying chunked streaming implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, streaming]
-    related_skills: ['chunked-streaming']
 ---
 
 # Chunked Streaming Deep Implementation

@@ -1,14 +1,13 @@
 ---
 name: android-testing-implementation
-description: "Use when applying android testing implementation."
+description: Use when applying android testing implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mobile, android, testing, junit]
-    related_skills: [general]
 ---
 
 # Android Testing Implementation

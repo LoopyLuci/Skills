@@ -1,9 +1,13 @@
 ---
 name: blazor-webassembly
-description: "Use when building Blazor WebAssembly apps."
+description: Use when building Blazor WebAssembly apps.
 version: 1.0.0
-author: Hermes Agent
-tags: ["blazor", "wasm", "C#", "razor", "components"]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [blazor, wasm, c#, razor, components]
 ---
 
 # Blazor Webassembly

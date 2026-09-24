@@ -1,8 +1,13 @@
 ---
 name: find-skills
 description: Use when searching for agent skills to extend capabilities
-tags: [skills, discovery, search, agent-capabilities]
-related_skills: [skill-discovery, skill-catalog-navigation, skills-repo-publishing]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [skills, discovery, search, agent-capabilities]
 ---
 
 # Find Skills

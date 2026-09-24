@@ -2,12 +2,12 @@
 name: actuarial-science-principles
 description: Life tables, loss models, ratemaking, and reserve analysis
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["actuarial", "ratemaking"]
+    tags: [actuarial, ratemaking]
 ---
 
 # Actuarial Science Principles

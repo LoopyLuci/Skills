@@ -1,14 +1,13 @@
 ---
 name: accounting-financial-analysis-troubleshooting
-description: "Use when applying financial analysis troubleshooting."
+description: Use when applying financial analysis troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [accounting, finance, financial-analysis, accounting-analysis]
-    related_skills: [general]
 ---
 
 # Accounting Financial Analysis Troubleshooting

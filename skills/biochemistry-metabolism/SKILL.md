@@ -1,14 +1,13 @@
 ---
 name: biochemistry-metabolism
-description: "Use when studying biochemistry metabolism."
+description: Use when studying biochemistry metabolism.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biology, biochemistry, metabolism, enzymes]
-    related_skills: [general]
 ---
 
 # Biochemistry Metabolism

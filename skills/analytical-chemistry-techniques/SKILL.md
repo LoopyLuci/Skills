@@ -1,14 +1,13 @@
 ---
 name: analytical-chemistry-techniques
-description: "Use when using analytical chemistry."
+description: Use when using analytical chemistry.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [chemistry, analytical, chromatography]
-    related_skills: [general]
 ---
 
 # Analytical Chemistry Techniques

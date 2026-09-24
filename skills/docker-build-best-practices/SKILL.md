@@ -1,14 +1,13 @@
 ---
 name: docker-build-best-practices
-description: "Use when applying docker build best practices."
+description: Use when applying docker build best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [docker, build, buildx, docker-buildx-multiarch]
-    related_skills: [general]
 ---
 
 # Docker Build Best Practices

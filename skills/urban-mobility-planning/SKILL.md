@@ -2,12 +2,12 @@
 name: urban-mobility-planning
 description: Transit planning, TOD, micromobility, and mobility-as-a-service
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["urban-mobility", "transit"]
+    tags: [urban-mobility, transit]
 ---
 
 # Urban Mobility Planning

@@ -2,12 +2,12 @@
 name: vr-game-development
 description: VR interaction, hand tracking, spatial UI, comfort options, and cross-platform deployment
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["vr", "xr"]
+    tags: [vr, xr]
 ---
 
 # Vr Game Development

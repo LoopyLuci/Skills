@@ -1,14 +1,13 @@
 ---
 name: api-versioning-implementation
-description: "Use when applying api versioning implementation."
+description: Use when applying api versioning implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [api, versioning, rest, backward]
-    related_skills: [general]
 ---
 
 # Api Versioning Implementation

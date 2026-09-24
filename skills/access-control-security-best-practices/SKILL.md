@@ -1,14 +1,13 @@
 ---
 name: access-control-security-best-practices
-description: "Use when for access control best practices."
+description: Use when for access control best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, access-control, rbac, abac]
-    related_skills: [general]
 ---
 
 # Access Control Security Best Practices

@@ -2,12 +2,12 @@
 name: bridge-card-game
 description: Bidding systems, declarer play, defense, and tournament bridge
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["bridge", "cards"]
+    tags: [bridge, cards]
 ---
 
 # Bridge Card Game

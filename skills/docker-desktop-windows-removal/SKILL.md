@@ -1,8 +1,13 @@
 ---
 name: docker-desktop-windows-removal
-description: "Use when removing all Docker traces from Windows. 7-phase."
-category: docker
-tags: [docker, windows, cleanup, removal, wsl2, registry]
+description: Use when removing all Docker traces from Windows. 7-phase.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [docker, windows, cleanup, removal, wsl2, registry]
 ---
 
 # Docker Desktop Windows Removal

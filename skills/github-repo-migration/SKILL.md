@@ -1,6 +1,13 @@
 ---
 name: github-repo-migration
 description: Migrate repos — transfer, rename, import, and export data.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [github, repo, migration]
 ---
 
 # GitHub Repo Migration

@@ -1,14 +1,13 @@
 ---
 name: aws-compliance-automation
-description: "Use when automating AWS compliance."
+description: Use when automating AWS compliance.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, aws, compliance-automation]
-    related_skills: [general]
 ---
 
 # Aws Compliance Automation

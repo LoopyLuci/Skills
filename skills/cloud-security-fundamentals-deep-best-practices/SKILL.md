@@ -1,14 +1,13 @@
 ---
 name: cloud-security-fundamentals-deep-best-practices
-description: "Use when applying cloud security fundamentals best pract."
+description: Use when applying cloud security fundamentals best pract.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, security]
-    related_skills: ['cloud-security-fundamentals']
 ---
 
 # Cloud Security Fundamentals Deep Best Practices

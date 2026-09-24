@@ -1,14 +1,13 @@
 ---
 name: biotech-manufacturing-4.0
-description: "Use when implementing biotech manufacturing 4.0."
+description: Use when implementing biotech manufacturing 4.0.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cross-domain, biotech-manufacturing, industry-4.0, automation]
-    related_skills: [pharmaceutical-gmp-manufacturing]
 ---
 
 # Biotech Manufacturing 4.0

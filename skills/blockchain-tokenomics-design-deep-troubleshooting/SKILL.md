@@ -1,14 +1,13 @@
 ---
 name: blockchain-tokenomics-design-deep-troubleshooting
-description: "Use when applying token economics design troubleshooting."
+description: Use when applying token economics design troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [blockchain, tokenomics]
-    related_skills: ['tokenomics-design']
 ---
 
 # Blockchain Tokenomics Design Deep Troubleshooting

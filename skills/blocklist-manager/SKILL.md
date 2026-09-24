@@ -1,9 +1,13 @@
 ---
 name: blocklist-manager
-title: Blocklist Manager
 description: Use when downloading and merging blocklists at scale.
-category: networking
-tags: [blocklist, download, parse, merge, scale, rust]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [blocklist, download, parse, merge, scale, rust]
 ---
 
 # Blocklist Manager

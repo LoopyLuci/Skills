@@ -1,8 +1,13 @@
 ---
-
 name: github-actions-secrets
 description: Manage secrets, environments, and variables for workflows.
-
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [github, actions, secrets]
 ---
 
 # GitHub Actions Secrets & Environments

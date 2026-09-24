@@ -1,12 +1,13 @@
 ---
 name: webassembly-basics-wasm
-description: "Use when building WebAssembly modules."
+description: Use when building WebAssembly modules.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["wasm", "webassembly", "rust", "browser", "performance"]
+    tags: [wasm, webassembly, rust, browser, performance]
 ---
 
 # Webassembly Basics Wasm

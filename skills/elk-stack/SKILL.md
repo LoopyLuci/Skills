@@ -1,14 +1,13 @@
 ---
 name: elk-stack
-description: "Use when using ELK stack."
+description: Use when using ELK stack.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [monitoring, elk, logging, elasticsearch]
-    related_skills: [general]
 ---
 
 # Elk Stack

@@ -2,12 +2,12 @@
 name: life-health-insurance
 description: Life underwriting, health insurance products, disability, and long-term care
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["life", "health"]
+    tags: [life, health]
 ---
 
 # Life Health Insurance

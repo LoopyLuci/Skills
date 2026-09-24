@@ -1,14 +1,13 @@
 ---
 name: aerospace-systems-engineering
-description: "Use when engineering aerospace systems. Safety, risk."
+description: Use when engineering aerospace systems. Safety, risk.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aerospace, systems-engineering, safety-critical, requirements]
-    related_skills: [orbital-mechanics, semiconductor-manufacturing]
 ---
 
 # Aerospace Systems Engineering

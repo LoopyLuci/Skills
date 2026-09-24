@@ -1,14 +1,13 @@
 ---
 name: embedded-pwm-implementation
-description: "Use when applying pwm programming implementation."
+description: Use when applying pwm programming implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [embedded, pwm, motor-control, signals]
-    related_skills: [general]
 ---
 
 # Embedded Pwm Implementation

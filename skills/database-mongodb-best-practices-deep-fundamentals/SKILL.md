@@ -1,14 +1,13 @@
 ---
 name: database-mongodb-best-practices-deep-fundamentals
-description: "Use when applying mongodb best practices fundamentals."
+description: Use when applying mongodb best practices fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, mongodb]
-    related_skills: ['mongodb-best-practices']
 ---
 
 # Database Mongodb Best Practices Deep Fundamentals

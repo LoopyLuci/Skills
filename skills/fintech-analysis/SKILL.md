@@ -1,14 +1,13 @@
 ---
 name: fintech-analysis
-description: "Use when for fintech analysis."
+description: Use when for fintech analysis.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, fintech, payments]
-    related_skills: [general]
 ---
 
 # Fintech Analysis

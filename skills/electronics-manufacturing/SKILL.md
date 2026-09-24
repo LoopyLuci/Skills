@@ -1,14 +1,13 @@
 ---
 name: electronics-manufacturing
-description: "Use when manufacturing electronics."
+description: Use when manufacturing electronics.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [electronics, pcb-assembly, smt, manufacturing]
-    related_skills: [general]
 ---
 
 # Electronics Manufacturing

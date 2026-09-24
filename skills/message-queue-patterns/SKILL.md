@@ -1,13 +1,13 @@
 ---
 name: message-queue-patterns
-description: "Use when implementing message queues and stream processing."
+description: Use when implementing message queues and stream processing.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [message-queue, kafka, rabbitmq, pub-sub, streaming, event-bus]
-    related_skills: [event-driven-architecture, data-pipeline-streaming, microservices-decomposition, distributed-systems-patterns]
 ---
 
 # Message Queue Patterns

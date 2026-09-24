@@ -1,14 +1,13 @@
 ---
 name: real-estate-listing-copywriting
-description: "MLS listing copy. AIDA, feature-to-benefit, A/B variants."
-version: 2.0.0
-author: Hermes Agent
+description: MLS listing copy. AIDA, feature-to-benefit, A/B variants.
+version: 1.0.0
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [real-estate, copywriting, mls, listings, marketing]
-    related_skills: [real-estate-social-media-content, real-estate-cma-generator]
 ---
 
 # Real Estate Listing Copywriting

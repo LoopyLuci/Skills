@@ -2,12 +2,12 @@
 name: newsroom-management-editing
 description: Editorial workflow, copy editing, style guides, and newsroom leadership
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["newsroom", "editing"]
+    tags: [newsroom, editing]
 ---
 
 # Newsroom Management Editing

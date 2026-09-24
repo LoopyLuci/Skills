@@ -1,14 +1,13 @@
 ---
 name: cell-biology-architecture
-description: "Use when architecting cell biology systems."
+description: Use when architecting cell biology systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cell-biology, cells, microscopy, research]
-    related_skills: [general]
 ---
 
 # Cell Biology Architecture

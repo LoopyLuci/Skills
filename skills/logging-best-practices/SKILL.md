@@ -1,6 +1,13 @@
 ---
 name: logging-best-practices
-description: "Structured logging with structlog correlation IDs and rotation"
+description: Structured logging with structlog correlation IDs and rotation
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [logging, best, practices]
 ---
 
 # Logging Best Practices
@@ -31,3 +38,16 @@ log.info("request", method="GET", path="/users", status=200)
     copytruncate
 }
 ```
+
+## Trigger
+
+Activate this skill when the user mentions:
+- logging, best, practices workflows or issues
+- Building, fixing, or optimizing logging best practices
+
+
+## Core Concepts
+
+- Domain fundamentals and best practices
+- Key tools and methodologies
+- Quality standards and common patterns

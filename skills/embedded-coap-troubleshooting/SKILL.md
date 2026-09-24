@@ -1,14 +1,13 @@
 ---
 name: embedded-coap-troubleshooting
-description: "Use when applying coap for embedded troubleshooting."
+description: Use when applying coap for embedded troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [embedded, coap, iot, protocols]
-    related_skills: [general]
 ---
 
 # Embedded Coap Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: biotechnology-analysis
-description: "Use when analyzing biotechnology data."
+description: Use when analyzing biotechnology data.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, bioprocess, fermentation, r-d]
-    related_skills: [general]
 ---
 
 # Biotechnology Analysis

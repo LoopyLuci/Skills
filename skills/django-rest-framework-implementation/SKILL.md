@@ -1,14 +1,13 @@
 ---
 name: django-rest-framework-implementation
-description: "Use when applying django rest framework implementation."
+description: Use when applying django rest framework implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, django, drf, python]
-    related_skills: [general]
 ---
 
 # Django Rest Framework Implementation

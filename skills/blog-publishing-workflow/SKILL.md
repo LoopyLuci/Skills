@@ -1,14 +1,13 @@
 ---
 name: blog-publishing-workflow
-description: "Use when managing blog publishing. Draft to publish."
+description: Use when managing blog publishing. Draft to publish.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [blog, publishing, editorial, workflow, content-management]
-    related_skills: [blog-post-outliner, blog-seo-post-optimizer, content-repurposing]
 ---
 
 # Blog Publishing Workflow

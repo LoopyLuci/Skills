@@ -1,14 +1,13 @@
 ---
 name: azure-monitor-troubleshooting
-description: "Use when applying azure monitor troubleshooting."
+description: Use when applying azure monitor troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, azure, monitoring, observability]
-    related_skills: [general]
 ---
 
 # Azure Monitor Troubleshooting

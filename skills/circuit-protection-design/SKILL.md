@@ -1,14 +1,13 @@
 ---
 name: circuit-protection-design
-description: "Use when designing circuit protection."
+description: Use when designing circuit protection.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [electronics, circuit-protection, safety]
-    related_skills: [general]
 ---
 
 # Circuit Protection Design

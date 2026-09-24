@@ -1,9 +1,15 @@
 ---
 name: windows-dev-environment-setup
-description: "Use when provisioning a Windows dev machine via script."
-category: software-development
-tags: [windows, dev-environment, provisioning, setup, automation]
+description: Use when provisioning a Windows dev machine via script.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [windows, dev-environment, provisioning, setup, automation]
 ---
+
 # Windows Dev Environment Setup
 
 One-script provisioning of a Windows development machine.

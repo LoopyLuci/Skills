@@ -1,9 +1,15 @@
 ---
 name: docker-compose-migration
-description: "Use when migrating from v1 to v2 Docker Compose."
-category: docker
-tags: [docker, compose, migration, v1, v2]
+description: Use when migrating from v1 to v2 Docker Compose.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [docker, compose, migration, v1, v2]
 ---
+
 # Docker Compose Migration
 
 Migrating from Docker Compose v1 (docker-compose) to v2 (docker compose).

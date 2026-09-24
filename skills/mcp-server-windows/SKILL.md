@@ -1,9 +1,15 @@
 ---
 name: mcp-server-windows
-description: "Use when building MCP servers for Windows environments."
-category: software-development
-tags: [mcp, server, windows, tool, agent]
+description: Use when building MCP servers for Windows environments.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [mcp, server, windows, tool, agent]
 ---
+
 # MCP Server Windows
 
 Building and deploying MCP (Model Context Protocol) servers on Windows.

@@ -1,10 +1,13 @@
 ---
 name: pyqt5-desktop-dev
-description: "Build PyQt5 apps with Qt fix and offscreen testing."
-version: 1.1.0
-author: Hermes Agent
-tags: [pyqt5, desktop, gui, qt]
-related_skills: [computer-use, desktop-app-development]
+description: Build PyQt5 apps with Qt fix and offscreen testing.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [pyqt5, desktop, gui, qt]
 ---
 
 # PyQt5 Desktop Development

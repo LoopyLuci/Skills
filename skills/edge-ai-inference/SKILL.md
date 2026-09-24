@@ -1,14 +1,13 @@
 ---
 name: edge-ai-inference
-description: "Use when deploying AI inference on edge devices."
+description: Use when deploying AI inference on edge devices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [edge-computing, edge-ai, on-device-ml, inference-optimization]
-    related_skills: ['edge-device-management']
 ---
 
 # Edge Ai Inference

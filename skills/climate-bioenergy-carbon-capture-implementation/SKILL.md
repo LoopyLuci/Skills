@@ -1,14 +1,13 @@
 ---
 name: climate-bioenergy-carbon-capture-implementation
-description: "Use when applying climate bioenergy carbon capture imple."
+description: Use when applying climate bioenergy carbon capture imple.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, environment]
-    related_skills: ['']
 ---
 
 # Climate Bioenergy Carbon Capture Implementation

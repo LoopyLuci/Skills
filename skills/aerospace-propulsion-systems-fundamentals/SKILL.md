@@ -1,14 +1,13 @@
 ---
 name: aerospace-propulsion-systems-fundamentals
-description: "Use when applying propulsion systems fundamentals."
+description: Use when applying propulsion systems fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aerospace, propulsion, propulsion]
-    related_skills: ['general']
 ---
 
 # Aerospace Propulsion Systems Fundamentals

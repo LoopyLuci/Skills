@@ -1,13 +1,13 @@
 ---
 name: transfer-learning-patterns
-description: "Use when applying transfer learning and domain adaptation."
+description: Use when applying transfer learning and domain adaptation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [transfer-learning, domain-adaptation, fine-tuning, pre-training]
-    related_skills: [self-supervised-learning, llm-fine-tuning-lora, meta-learning-few-shot, ml-pipeline-design]
 ---
 
 # Transfer Learning Patterns

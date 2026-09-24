@@ -1,14 +1,13 @@
 ---
 name: ddd-tactical-fundamentals
-description: "Use when applying ddd tactical patterns fundamentals."
+description: Use when applying ddd tactical patterns fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [architecture, ddd, domain-driven-design-tactical]
-    related_skills: [general]
 ---
 
 # Ddd Tactical Fundamentals

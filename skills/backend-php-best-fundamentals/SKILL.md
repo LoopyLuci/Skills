@@ -1,14 +1,13 @@
 ---
 name: backend-php-best-fundamentals
-description: "Use when applying backend php best fundamentals."
+description: Use when applying backend php best fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, php, backend-php-best-practices]
-    related_skills: [general]
 ---
 
 # Backend Php Best Fundamentals

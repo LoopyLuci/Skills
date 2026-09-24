@@ -1,14 +1,13 @@
 ---
 name: clickhouse-analytics-deep-best-practices
-description: "Use when applying clickhouse analytics best practices."
+description: Use when applying clickhouse analytics best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, analytics]
-    related_skills: ['clickhouse-analytics']
 ---
 
 # Clickhouse Analytics Deep Best Practices

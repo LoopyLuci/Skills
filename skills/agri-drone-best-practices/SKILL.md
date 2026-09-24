@@ -1,14 +1,13 @@
 ---
 name: agri-drone-best-practices
-description: "Use when applying agricultural drones best practices."
+description: Use when applying agricultural drones best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agri, drone, drone-crop-monitoring]
-    related_skills: ['general']
 ---
 
 # Agri Drone Best Practices

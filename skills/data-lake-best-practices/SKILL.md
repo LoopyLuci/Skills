@@ -1,14 +1,13 @@
 ---
 name: data-lake-best-practices
-description: "Use when applying data lake best practices."
+description: Use when applying data lake best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, lake, data-lake-fundamentals]
-    related_skills: [general]
 ---
 
 # Data Lake Best Practices

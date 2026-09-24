@@ -1,14 +1,13 @@
 ---
 name: backend-php-best-implementation
-description: "Use when applying backend php best implementation."
+description: Use when applying backend php best implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, php, backend-php-best-practices]
-    related_skills: [general]
 ---
 
 # Backend Php Best Implementation

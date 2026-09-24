@@ -1,9 +1,15 @@
 ---
 name: multi-agent-orchestration
-description: "Use when orchestrating multiple AI agents working together."
-category: mlops
-tags: [agents, orchestration, multi-agent, swarms, coordinator]
+description: Use when orchestrating multiple AI agents working together.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [agents, orchestration, multi-agent, swarms, coordinator]
 ---
+
 # Multi-Agent Orchestration
 
 Orchestrating multiple AI agents for complex tasks.

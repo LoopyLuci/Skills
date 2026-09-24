@@ -1,14 +1,13 @@
 ---
 name: agent-negotiation-strategies-deep-implementation
-description: "Use when applying agent negotiation implementation."
+description: Use when applying agent negotiation implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agents, negotiation]
-    related_skills: ['agent-negotiation-strategies']
 ---
 
 # Agent Negotiation Strategies Deep Implementation

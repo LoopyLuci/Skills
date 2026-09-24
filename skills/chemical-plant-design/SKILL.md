@@ -1,14 +1,13 @@
 ---
 name: chemical-plant-design
-description: "Use when designing chemical plants."
+description: Use when designing chemical plants.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [chem, plant, plant-design]
-    related_skills: [general]
 ---
 
 # Chemical Plant Design

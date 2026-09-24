@@ -1,14 +1,13 @@
 ---
 name: climate-risk-assessment
-description: "Use when conducting climate risk assessments."
+description: Use when conducting climate risk assessments.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climatetech, risk-assessment, tcfd, physical-risk]
-    related_skills: [climate-risk-insurance, sustainability-reporting]
 ---
 
 # Climate Risk Assessment

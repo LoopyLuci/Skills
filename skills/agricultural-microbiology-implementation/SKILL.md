@@ -1,14 +1,13 @@
 ---
 name: agricultural-microbiology-implementation
-description: "Use when applying agricultural micro implementation."
+description: Use when applying agricultural micro implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agri, micro, agricultural-microbiology]
-    related_skills: [general]
 ---
 
 # Agricultural Microbiology Implementation

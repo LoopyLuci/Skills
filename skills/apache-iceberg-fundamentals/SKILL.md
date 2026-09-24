@@ -1,14 +1,13 @@
 ---
 name: apache-iceberg-fundamentals
-description: "Use when for apache iceberg fundamentals."
+description: Use when for apache iceberg fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [big-data, iceberg, table-format, lakehouse]
-    related_skills: [general]
 ---
 
 # Apache Iceberg Fundamentals

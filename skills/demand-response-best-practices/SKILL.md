@@ -1,14 +1,13 @@
 ---
 name: demand-response-best-practices
-description: "Use when applying demand response best practices."
+description: Use when applying demand response best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [energy, grid, demand-response]
-    related_skills: [general]
 ---
 
 # Demand Response Best Practices

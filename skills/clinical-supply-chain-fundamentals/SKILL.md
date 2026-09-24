@@ -1,14 +1,13 @@
 ---
 name: clinical-supply-chain-fundamentals
-description: "Use when applying clinical supply chain fundamentals."
+description: Use when applying clinical supply chain fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, pharma, supply-chain]
-    related_skills: [general]
 ---
 
 # Clinical Supply Chain Fundamentals

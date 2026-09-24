@@ -1,14 +1,13 @@
 ---
 name: email-marketing-dynamic-content-best-practices
-description: "Use when applying dynamic email content best practices."
+description: Use when applying dynamic email content best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, personalization, dynamic-content]
-    related_skills: [general]
 ---
 
 # Email Marketing Dynamic Content Best Practices

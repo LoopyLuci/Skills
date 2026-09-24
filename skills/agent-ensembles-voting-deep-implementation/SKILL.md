@@ -1,14 +1,13 @@
 ---
 name: agent-ensembles-voting-deep-implementation
-description: "Use when applying agent ensemble voting implementation."
+description: Use when applying agent ensemble voting implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agents, ensembles]
-    related_skills: ['agent-ensembles-voting']
 ---
 
 # Agent Ensembles Voting Deep Implementation

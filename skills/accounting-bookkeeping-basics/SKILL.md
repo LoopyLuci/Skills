@@ -1,13 +1,13 @@
 ---
 name: accounting-bookkeeping-basics
-description: "Use when managing accounting and bookkeeping processes."
+description: Use when managing accounting and bookkeeping processes.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [accounting, bookkeeping, financial-statements, GAAP, tax, cash-basis, accrual]
-    related_skills: [financial-modeling-budgeting, business-metrics-kpis, tax-planning-small-business, business-insurance-guide]
+    tags: [accounting, bookkeeping, financial-statements, gaap, tax, cash-basis, accrual]
 ---
 
 # Accounting Bookkeeping Basics

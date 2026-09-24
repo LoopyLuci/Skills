@@ -1,14 +1,13 @@
 ---
 name: actuarial-science-models
-description: "Use when building actuarial models."
+description: Use when building actuarial models.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, actuarial, risk-modeling]
-    related_skills: ['insurtech-risk-modeling']
 ---
 
 # Actuarial Science Models

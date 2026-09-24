@@ -1,12 +1,13 @@
 ---
 name: graphql-resolver-patterns
-description: "Use when implementing GraphQL resolvers."
+description: Use when implementing GraphQL resolvers.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["graphql", "resolvers", "dataloader", "batch", "N+1"]
+    tags: [graphql, resolvers, dataloader, batch, n+1]
 ---
 
 # Graphql Resolver Patterns

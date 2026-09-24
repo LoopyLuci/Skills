@@ -2,12 +2,12 @@
 name: user-research-methods
 description: Interviews, surveys, usability testing, diary studies, and research repositories
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["research", "ux"]
+    tags: [research, ux]
 ---
 
 # User Research Methods

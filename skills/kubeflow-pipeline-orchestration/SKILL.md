@@ -1,12 +1,13 @@
 ---
 name: kubeflow-pipeline-orchestration
-description: "Use when orchestrating ML pipelines."
+description: Use when orchestrating ML pipelines.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["kubeflow", "pipelines", "components", "orchestration"]
+    tags: [kubeflow, pipelines, components, orchestration]
 ---
 
 # Kubeflow Pipeline Orchestration

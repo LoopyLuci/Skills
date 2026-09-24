@@ -1,14 +1,13 @@
 ---
 name: aws-s3-fundamentals-deep-fundamentals
-description: "Use when applying aws s3 fundamentals fundamentals."
+description: Use when applying aws s3 fundamentals fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, s3]
-    related_skills: ['aws-s3-fundamentals']
 ---
 
 # Aws S3 Fundamentals Deep Fundamentals

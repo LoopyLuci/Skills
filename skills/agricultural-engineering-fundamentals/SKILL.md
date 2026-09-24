@@ -1,14 +1,13 @@
 ---
 name: agricultural-engineering-fundamentals
-description: "Use when applying agricultural engineering fundamentals."
+description: Use when applying agricultural engineering fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, ag, farming, agricultural-eng-design]
-    related_skills: [general]
 ---
 
 # Agricultural Engineering Fundamentals

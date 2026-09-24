@@ -1,14 +1,13 @@
 ---
 name: deployment-automation
-description: "Use when automating deployments."
+description: Use when automating deployments.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: [devops, deployment-automation, CI/CD, release]
-    related_skills: ['github-actions-workflows']
+    tags: [devops, deployment-automation, ci/cd, release]
 ---
 
 # Deployment Automation

@@ -1,14 +1,13 @@
 ---
 name: community-management-troubleshooting
-description: "Use when applying community management troubleshooting."
+description: Use when applying community management troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, community, community-management-engagement]
-    related_skills: [general]
 ---
 
 # Community Management Troubleshooting

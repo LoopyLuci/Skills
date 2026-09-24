@@ -2,12 +2,12 @@
 name: marine-engineering-design
 description: Ship design, hydrodynamics, propulsion, and marine systems
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["marine", "design"]
+    tags: [marine, design]
 ---
 
 # Marine Engineering Design

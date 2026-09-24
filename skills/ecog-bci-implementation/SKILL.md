@@ -1,14 +1,13 @@
 ---
 name: ecog-bci-implementation
-description: "Use when applying ecog-based bci implementation."
+description: Use when applying ecog-based bci implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neurotech, bci, ecog]
-    related_skills: [general]
 ---
 
 # Ecog Bci Implementation

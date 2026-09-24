@@ -1,14 +1,13 @@
 ---
 name: anesthesiology-analysis-fundamentals
-description: "Use when applying anesthesiology analysis fundamentals."
+description: Use when applying anesthesiology analysis fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [medicine, anesthesiology, anesthesiology-analysis]
-    related_skills: [general]
 ---
 
 # Anesthesiology Analysis Fundamentals

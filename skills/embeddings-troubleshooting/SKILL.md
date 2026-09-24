@@ -1,14 +1,13 @@
 ---
 name: embeddings-troubleshooting
-description: "Use when applying embeddings troubleshooting."
+description: Use when applying embeddings troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, embeddings, embedding-models-patterns]
-    related_skills: [general]
 ---
 
 # Embeddings Troubleshooting

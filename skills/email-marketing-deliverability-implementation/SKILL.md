@@ -1,14 +1,13 @@
 ---
 name: email-marketing-deliverability-implementation
-description: "Use when applying email deliverability implementation."
+description: Use when applying email deliverability implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, deliverability, spam]
-    related_skills: [general]
 ---
 
 # Email Marketing Deliverability Implementation

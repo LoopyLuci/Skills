@@ -1,14 +1,13 @@
 ---
 name: bigquery-analytics
-description: "Use when querying with BigQuery."
+description: Use when querying with BigQuery.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, bigquery, analytics, data-warehouse]
-    related_skills: ['bigquery-analytics-warehouse']
 ---
 
 # Bigquery Analytics

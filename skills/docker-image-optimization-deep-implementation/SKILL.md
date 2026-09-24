@@ -1,14 +1,13 @@
 ---
 name: docker-image-optimization-deep-implementation
-description: "Use when applying docker image optimization implementation."
+description: Use when applying docker image optimization implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, docker]
-    related_skills: ['docker-image-optimization']
 ---
 
 # Docker Image Optimization Deep Implementation

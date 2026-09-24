@@ -1,14 +1,13 @@
 ---
 name: cypress-best-practices
-description: "Use when applying cypress best practices."
+description: Use when applying cypress best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [testing, cypress, e2e, web-testing]
-    related_skills: [general]
 ---
 
 # Cypress Best Practices

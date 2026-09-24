@@ -1,9 +1,13 @@
 ---
 name: ios-vpn-adblocker
-title: iOS VPN AdBlocker
 description: Use when building iOS VPN-based adblocker with Swift.
-category: networking
-tags: [ios, swift, vpn, adblock, networkextension, apple]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [ios, swift, vpn, adblock, networkextension, apple]
 ---
 
 # iOS VPN AdBlocker

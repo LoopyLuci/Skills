@@ -2,12 +2,12 @@
 name: eco-tourism-sustainable
 description: Eco-friendly travel, conservation tourism, and sustainable practices
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["eco-tourism", "sustainable"]
+    tags: [eco-tourism, sustainable]
 ---
 
 # Eco Tourism Sustainable

@@ -1,14 +1,13 @@
 ---
 name: data-science-optimization
-description: "Use when optimizing data science systems."
+description: Use when optimizing data science systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data-science, analytics, ml, python]
-    related_skills: [general]
 ---
 
 # Data Science Optimization

@@ -1,14 +1,13 @@
 ---
 name: actuarial-science-fundamentals
-description: "Use when applying actuarial science fundamentals."
+description: Use when applying actuarial science fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, insurance, actuarial-science-models]
-    related_skills: [general]
 ---
 
 # Actuarial Science Fundamentals

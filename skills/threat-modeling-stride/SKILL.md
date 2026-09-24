@@ -1,13 +1,13 @@
 ---
 name: threat-modeling-stride
-description: "Use when threat modeling systems and applications."
+description: Use when threat modeling systems and applications.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [threat-modeling, STRIDE, PASTA, attack-trees, DFD, risk-assessment]
-    related_skills: [penetration-testing-methodology, vulnerability-assessment-scanning, webapp-penetration-testing, security-incident-response]
+    tags: [threat-modeling, stride, pasta, attack-trees, dfd, risk-assessment]
 ---
 
 # Threat Modeling

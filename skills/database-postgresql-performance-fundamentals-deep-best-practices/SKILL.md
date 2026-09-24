@@ -1,14 +1,13 @@
 ---
 name: database-postgresql-performance-fundamentals-deep-best-practices
-description: "Use when applying postgresql performance fundamentals be."
+description: Use when applying postgresql performance fundamentals be.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, postgres]
-    related_skills: ['postgres-performance-fundamentals']
 ---
 
 # Database Postgresql Performance Fundamentals Deep Best Practices

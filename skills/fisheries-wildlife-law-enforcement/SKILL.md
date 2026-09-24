@@ -2,12 +2,12 @@
 name: fisheries-wildlife-law-enforcement
 description: Conservation law, enforcement, and public education
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["law-enforcement", "conservation"]
+    tags: [law-enforcement, conservation]
 ---
 
 # Fisheries Wildlife Law Enforcement

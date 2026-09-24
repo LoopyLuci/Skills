@@ -2,12 +2,12 @@
 name: volunteer-management-engagement
 description: Recruitment, training, retention, and volunteer recognition
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["volunteer", "engagement"]
+    tags: [volunteer, engagement]
 ---
 
 # Volunteer Management Engagement

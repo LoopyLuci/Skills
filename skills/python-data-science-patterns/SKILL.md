@@ -1,9 +1,15 @@
 ---
 name: python-data-science-patterns
-description: "Use when doing data science with Python: pandas, numpy, viz."
-category: mlops
-tags: [python, data-science, pandas, numpy, visualization]
+description: Use when doing data science with Python: pandas, numpy, viz.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [python, data-science, pandas, numpy, visualization]
 ---
+
 # Python Data Science Patterns
 
 Core data science patterns with pandas, numpy, matplotlib, and scikit-learn.

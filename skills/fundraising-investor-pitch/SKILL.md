@@ -1,13 +1,13 @@
 ---
 name: fundraising-investor-pitch
-description: "Use when preparing fundraising and investor presentations."
+description: Use when preparing fundraising and investor presentations.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [fundraising, investor-pitch, venture-capital, startup-funding, deck, financial-model]
-    related_skills: [financial-modeling-budgeting, saas-metrics-reporting, go-to-market-strategy, business-metrics-kpis]
 ---
 
 # Fundraising Investor Pitch

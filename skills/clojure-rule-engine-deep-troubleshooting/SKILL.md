@@ -1,14 +1,13 @@
 ---
 name: clojure-rule-engine-deep-troubleshooting
-description: "Use when applying clojure rule engine troubleshooting."
+description: Use when applying clojure rule engine troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [language, clojure]
-    related_skills: ['clojure-rule-engine']
 ---
 
 # Clojure Rule Engine Deep Troubleshooting

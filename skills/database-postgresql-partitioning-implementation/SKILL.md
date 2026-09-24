@@ -1,14 +1,13 @@
 ---
 name: database-postgresql-partitioning-implementation
-description: "Use when applying postgresql partitioning implementation."
+description: Use when applying postgresql partitioning implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, postgresql, partitioning, scale]
-    related_skills: [general]
 ---
 
 # Database Postgresql Partitioning Implementation

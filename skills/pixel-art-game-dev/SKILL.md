@@ -2,12 +2,12 @@
 name: pixel-art-game-dev
 description: Pixel-perfect rendering, palette management, tilemaps, sprite animation, and Aseprite workflows
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["pixel-art", "2d"]
+    tags: [pixel-art, 2d]
 ---
 
 # Pixel Art Game Dev

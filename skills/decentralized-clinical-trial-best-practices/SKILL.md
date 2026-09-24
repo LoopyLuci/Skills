@@ -1,14 +1,13 @@
 ---
 name: decentralized-clinical-trial-best-practices
-description: "Use when applying dct best practices."
+description: Use when applying dct best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, medicine, dcx]
-    related_skills: [general]
 ---
 
 # Decentralized Clinical Trial Best Practices

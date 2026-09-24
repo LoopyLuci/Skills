@@ -1,14 +1,13 @@
 ---
 name: clean-architecture
-description: "Use when building clean architecture."
+description: Use when building clean architecture.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [architecture, clean-architecture, hexagons]
-    related_skills: ['hexagonal-architecture']
 ---
 
 # Clean Architecture

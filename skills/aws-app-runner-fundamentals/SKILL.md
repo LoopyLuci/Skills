@@ -1,14 +1,13 @@
 ---
 name: aws-app-runner-fundamentals
-description: "Use when applying aws app runner fundamentals."
+description: Use when applying aws app runner fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, app-runner, serverless, web-apps]
-    related_skills: [general]
 ---
 
 # Aws App Runner Fundamentals

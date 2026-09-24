@@ -1,14 +1,13 @@
 ---
 name: banking-payment-tech-implementation
-description: "Use when applying payment tech implementation."
+description: Use when applying payment tech implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, payments, payment-tech]
-    related_skills: [general]
 ---
 
 # Banking Payment Tech Implementation

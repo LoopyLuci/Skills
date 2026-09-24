@@ -2,12 +2,12 @@
 name: stochastic-processes
 description: Markov chains, Poisson processes, and stochastic calculus
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["stochastic", "markov"]
+    tags: [stochastic, markov]
 ---
 
 # Stochastic Processes

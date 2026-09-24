@@ -1,14 +1,13 @@
 ---
 name: backend-ruby-trouble-troubleshooting
-description: "Use when applying backend ruby troubleshooting troublesh."
+description: Use when applying backend ruby troubleshooting troublesh.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, ruby, backend-ruby-troubleshooting]
-    related_skills: [general]
 ---
 
 # Backend Ruby Trouble Troubleshooting

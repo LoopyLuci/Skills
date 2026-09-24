@@ -1,14 +1,13 @@
 ---
 name: css-custom-properties-theming-deep-troubleshooting
-description: "Use when applying css custom properties troubleshooting."
+description: Use when applying css custom properties troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [design, css]
-    related_skills: ['css-custom-properties-theming']
 ---
 
 # Css Custom Properties Theming Deep Troubleshooting

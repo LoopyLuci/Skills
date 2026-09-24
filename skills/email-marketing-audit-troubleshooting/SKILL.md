@@ -1,14 +1,13 @@
 ---
 name: email-marketing-audit-troubleshooting
-description: "Use when applying email marketing audit troubleshooting."
+description: Use when applying email marketing audit troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, marketing, email-marketing-audit]
-    related_skills: [general]
 ---
 
 # Email Marketing Audit Troubleshooting

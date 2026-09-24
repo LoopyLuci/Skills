@@ -1,14 +1,13 @@
 ---
 name: chemical-eng-analysis
-description: "Use when for chemical engineering analysis."
+description: Use when for chemical engineering analysis.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, management, general]
-    related_skills: [general]
 ---
 
 # Chemical Eng Analysis

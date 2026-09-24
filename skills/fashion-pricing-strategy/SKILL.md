@@ -1,14 +1,13 @@
 ---
 name: fashion-pricing-strategy
-description: "Use when pricing fashion products."
+description: Use when pricing fashion products.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, pricing-strategy, wholesale-retail]
-    related_skills: ['pricing-strategy-optimization']
 ---
 
 # Fashion Pricing Strategy

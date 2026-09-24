@@ -2,12 +2,12 @@
 name: demand-forecasting-planning
 description: Statistical forecasting, S&OP, collaborative planning, and forecast accuracy
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["forecasting", "snop"]
+    tags: [forecasting, snop]
 ---
 
 # Demand Forecasting Planning

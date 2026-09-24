@@ -1,14 +1,13 @@
 ---
 name: cloud-security-fundamentals
-description: "Use when learning cloud security fundamentals."
+description: Use when learning cloud security fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, cloud-security, infosec]
-    related_skills: [general]
 ---
 
 # Cloud Security Fundamentals

@@ -1,14 +1,13 @@
 ---
 name: fashion-forecasting-systems-best-practices
-description: "Use when applying fashion forecasting best practices."
+description: Use when applying fashion forecasting best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, forecasting, fashion-trend-forecasting]
-    related_skills: ['general']
 ---
 
 # Fashion Forecasting Systems Best Practices

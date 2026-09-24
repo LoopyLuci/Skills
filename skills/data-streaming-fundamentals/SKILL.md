@@ -1,14 +1,13 @@
 ---
 name: data-streaming-fundamentals
-description: "Use when learning data streaming fundamentals."
+description: Use when learning data streaming fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data-streaming, kafka, events, real-time]
-    related_skills: [general]
 ---
 
 # Data Streaming Fundamentals

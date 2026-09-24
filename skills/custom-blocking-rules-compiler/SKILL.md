@@ -1,13 +1,13 @@
 ---
 name: custom-blocking-rules-compiler
-description: "Use when compiling custom blocking rules."
+description: Use when compiling custom blocking rules.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [blocking-rules, adblock, firewall-rules, ABP-format, rule-compiler]
-    related_skills: [adblock-engine-core-patterns, firewall-rules-engine, url-content-filter, waf-web-application-firewall]
+    tags: [blocking-rules, adblock, firewall-rules, abp-format, rule-compiler]
 ---
 
 # Custom Blocking Rules Compiler

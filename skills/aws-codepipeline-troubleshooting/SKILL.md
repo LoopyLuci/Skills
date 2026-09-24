@@ -1,14 +1,13 @@
 ---
 name: aws-codepipeline-troubleshooting
-description: "Use when applying aws codepipeline troubleshooting."
+description: Use when applying aws codepipeline troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, codepipeline, ci-cd, pipelines]
-    related_skills: [general]
 ---
 
 # Aws Codepipeline Troubleshooting

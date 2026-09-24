@@ -2,12 +2,12 @@
 name: ros2-robot-operating-system
 description: ROS 2 nodes, topics, services, actions, launch files, and DDS configuration
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["ros2", "middleware"]
+    tags: [ros2, middleware]
 ---
 
 # Ros2 Robot Operating System

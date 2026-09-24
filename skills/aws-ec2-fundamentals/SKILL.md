@@ -1,14 +1,13 @@
 ---
 name: aws-ec2-fundamentals
-description: "Use when applying aws ec2 fundamentals."
+description: Use when applying aws ec2 fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, ec2, compute, vm]
-    related_skills: [general]
 ---
 
 # Aws Ec2 Fundamentals

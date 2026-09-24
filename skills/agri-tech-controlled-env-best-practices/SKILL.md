@@ -1,14 +1,13 @@
 ---
 name: agri-tech-controlled-env-best-practices
-description: "Use when applying controlled environment agriculture bes."
+description: Use when applying controlled environment agriculture bes.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agri, cea, controlled-environment-agriculture]
-    related_skills: ['']
 ---
 
 # Agri Tech Controlled Env Best Practices

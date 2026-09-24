@@ -1,13 +1,13 @@
 ---
 name: kerberos-attacks-forge
-description: "Use when performing Kerberos attacks in AD."
+description: Use when performing Kerberos attacks in AD.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [Kerberos, golden-ticket, silver-ticket, kerberoast, ASREP-roast, DCSync, AD]
-    related_skills: [active-directory-pentesting, privilege-escalation-techniques, lateral-movement-pivoting, identity-access-management]
+    tags: [kerberos, golden-ticket, silver-ticket, kerberoast, asrep-roast, dcsync, ad]
 ---
 
 # Kerberos Attacks and Ticket Forging

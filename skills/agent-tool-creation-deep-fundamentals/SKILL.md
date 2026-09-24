@@ -1,14 +1,13 @@
 ---
 name: agent-tool-creation-deep-fundamentals
-description: "Use when applying agent tool creation fundamentals."
+description: Use when applying agent tool creation fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agents, tools]
-    related_skills: ['agent-tool-creation']
 ---
 
 # Agent Tool Creation Deep Fundamentals

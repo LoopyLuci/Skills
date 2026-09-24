@@ -1,14 +1,13 @@
 ---
 name: customer-success-optimization-deep-troubleshooting
-description: "Use when applying customer success optimization troubles."
+description: Use when applying customer success optimization troubles.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [sales, customer-success-optimization]
-    related_skills: ['']
 ---
 
 # Customer Success Optimization Deep Troubleshooting

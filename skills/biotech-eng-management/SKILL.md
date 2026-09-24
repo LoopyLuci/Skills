@@ -1,14 +1,13 @@
 ---
 name: biotech-eng-management
-description: "Use when for biotech eng management."
+description: Use when for biotech eng management.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, management, general]
-    related_skills: [general]
 ---
 
 # Biotech Eng Management

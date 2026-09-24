@@ -2,12 +2,12 @@
 name: toddler-development-play
 description: Early childhood development, play-based learning, and milestones
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["toddler", "development"]
+    tags: [toddler, development]
 ---
 
 # Toddler Development Play

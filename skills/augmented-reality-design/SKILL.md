@@ -1,14 +1,13 @@
 ---
 name: augmented-reality-design
-description: "Use when designing AR experiences."
+description: Use when designing AR experiences.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ar-vr, ar-design, spatial-mapping]
-    related_skills: ['consumer-ar-glasses-design']
 ---
 
 # Augmented Reality Design

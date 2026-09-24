@@ -1,12 +1,13 @@
 ---
 name: kubernetes-configmap
-description: "Use when implementing kubernetes configmap."
+description: Use when implementing kubernetes configmap.
 version: 1.0.0
-author: "Skill Genesis Model"
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["kubernetes", "configmap"]
+    tags: [kubernetes, configmap]
 ---
 
 # Kubernetes Configmap

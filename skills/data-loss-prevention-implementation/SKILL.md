@@ -1,14 +1,13 @@
 ---
 name: data-loss-prevention-implementation
-description: "Use when for data loss prevention implementation."
+description: Use when for data loss prevention implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, dlp, data-protection, monitoring]
-    related_skills: [general]
 ---
 
 # Data Loss Prevention Implementation

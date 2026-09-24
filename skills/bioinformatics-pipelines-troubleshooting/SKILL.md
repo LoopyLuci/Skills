@@ -1,14 +1,13 @@
 ---
 name: bioinformatics-pipelines-troubleshooting
-description: "Use when applying bioinformatics pipelines troubleshooting."
+description: Use when applying bioinformatics pipelines troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [bioinformatics, data, pipelines]
-    related_skills: [general]
 ---
 
 # Bioinformatics Pipelines Troubleshooting

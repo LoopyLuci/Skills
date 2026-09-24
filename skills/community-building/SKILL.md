@@ -1,14 +1,13 @@
 ---
 name: community-building
-description: "Community: platforms, engagement, growth, events."
+description: Community: platforms, engagement, growth, events.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [community, discord, slack, engagement, growth]
-    related_skills: [personal-brand-building, affiliate-marketing, workflow-automation-skill]
 ---
 
 # Community Building

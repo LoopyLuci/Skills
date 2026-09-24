@@ -2,12 +2,12 @@
 name: document-summarization
 description: Extractive and abstractive summarization, and evaluation metrics
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["summarization", "nlp"]
+    tags: [summarization, nlp]
 ---
 
 # Document Summarization

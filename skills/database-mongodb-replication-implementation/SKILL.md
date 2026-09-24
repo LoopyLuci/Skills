@@ -1,14 +1,13 @@
 ---
 name: database-mongodb-replication-implementation
-description: "Use when applying mongodb replication implementation."
+description: Use when applying mongodb replication implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, mongodb, replication, replica-set]
-    related_skills: [general]
 ---
 
 # Database Mongodb Replication Implementation

@@ -1,14 +1,13 @@
 ---
 name: android-performance-best-practices-deep-troubleshooting
-description: "Use when applying android performance troubleshooting."
+description: Use when applying android performance troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mobile, android]
-    related_skills: ['android-app-performance']
 ---
 
 # Android Performance Best Practices Deep Troubleshooting

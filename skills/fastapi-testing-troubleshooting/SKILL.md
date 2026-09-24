@@ -1,14 +1,13 @@
 ---
 name: fastapi-testing-troubleshooting
-description: "Use when applying fastapi testing troubleshooting."
+description: Use when applying fastapi testing troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, fastapi, testing, pytest]
-    related_skills: [general]
 ---
 
 # Fastapi Testing Troubleshooting

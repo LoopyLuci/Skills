@@ -1,14 +1,13 @@
 ---
 name: data-catalog-optimization-deep-best-practices
-description: "Use when applying data catalog optimization best practices."
+description: Use when applying data catalog optimization best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, data-catalog]
-    related_skills: ['data-catalog-optimization']
 ---
 
 # Data Catalog Optimization Deep Best Practices

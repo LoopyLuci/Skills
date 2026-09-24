@@ -1,13 +1,13 @@
 ---
 name: data-modeling-foundations
-description: "Use when designing data models and entity relationships."
+description: Use when designing data models and entity relationships.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [data-modeling, ERD, normalization, denormalization, entities, relationships]
-    related_skills: [database-design-patterns, database-schema-design, sql-advanced-patterns, etl-pipeline-design]
+    tags: [data-modeling, erd, normalization, denormalization, entities, relationships]
 ---
 
 # Data Modeling Foundations

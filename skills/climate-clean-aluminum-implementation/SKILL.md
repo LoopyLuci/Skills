@@ -1,14 +1,13 @@
 ---
 name: climate-clean-aluminum-implementation
-description: "Use when applying climate clean aluminum implementation."
+description: Use when applying climate clean aluminum implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, environment]
-    related_skills: ['']
 ---
 
 # Climate Clean Aluminum Implementation

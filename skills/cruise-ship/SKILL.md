@@ -1,14 +1,13 @@
 ---
 name: cruise-ship
-description: "Use when managing cruise ships."
+description: Use when managing cruise ships.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [travel, cruise, cruise-ship-management]
-    related_skills: [general]
 ---
 
 # Cruise Ship

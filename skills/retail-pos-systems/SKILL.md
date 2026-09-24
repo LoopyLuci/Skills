@@ -1,13 +1,13 @@
 ---
 name: retail-pos-systems
-description: "Use when managing retail operations and POS systems."
+description: Use when managing retail operations and POS systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [retail, POS, point-of-sale, inventory, store-management, omnichannel]
-    related_skills: [ecommerce-platform-management, business-metrics-kpis, crm-sales-pipeline, inventory-management]
+    tags: [retail, pos, point-of-sale, inventory, store-management, omnichannel]
 ---
 
 # Retail Pos Systems

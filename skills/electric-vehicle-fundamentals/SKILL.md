@@ -1,14 +1,13 @@
 ---
 name: electric-vehicle-fundamentals
-description: "Use when applying electric vehicles fundamentals."
+description: Use when applying electric vehicles fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [energy, ev, electric-vehicle-infrastructure]
-    related_skills: [general]
 ---
 
 # Electric Vehicle Fundamentals

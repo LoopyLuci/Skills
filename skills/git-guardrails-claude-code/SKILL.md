@@ -1,8 +1,13 @@
 ---
 name: git-guardrails-claude-code
 description: Use when adding git safety hooks to prevent destructive operations in Claude Code
-tags: [git, safety, hooks, Claude-Code, guardrails]
-related_skills: [setup-pre-commit, git-hooks-workflow, git-config-essentials]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [git, safety, hooks, claude-code, guardrails]
 ---
 
 # Git Guardrails Claude Code

@@ -2,12 +2,12 @@
 name: telecom-billing-oss-bss
 description: Rating, charging, mediation, and BSS/OSS systems
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["billing", "oss"]
+    tags: [billing, oss]
 ---
 
 # Telecom Billing Oss Bss

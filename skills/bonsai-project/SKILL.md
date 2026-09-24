@@ -1,6 +1,13 @@
 ---
 name: bonsai-project
-description: "Use when working on Project Bonsai or its components."
+description: Use when working on Project Bonsai or its components.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [bonsai, project]
 ---
 
 # Project Bonsai

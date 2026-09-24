@@ -1,14 +1,13 @@
 ---
 name: algorithms-bioinformatics-implementation
-description: "Use when applying bioinformatics algorithms implementation."
+description: Use when applying bioinformatics algorithms implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [bioinformatics, algorithms, algorithms]
-    related_skills: [general]
 ---
 
 # Algorithms Bioinformatics Implementation

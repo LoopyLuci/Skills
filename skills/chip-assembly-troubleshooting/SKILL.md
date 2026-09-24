@@ -1,14 +1,13 @@
 ---
 name: chip-assembly-troubleshooting
-description: "Use when applying chip assembly troubleshooting."
+description: Use when applying chip assembly troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [semiconductor, assembly, assembly]
-    related_skills: ['general']
 ---
 
 # Chip Assembly Troubleshooting

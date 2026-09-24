@@ -1,12 +1,13 @@
 ---
 name: typescript-namespace-modules
-description: "Use when organizing TS modules."
+description: Use when organizing TS modules.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["typescript", "modules", "namespaces", "barrels"]
+    tags: [typescript, modules, namespaces, barrels]
 ---
 
 # Typescript Namespace Modules

@@ -1,14 +1,13 @@
 ---
 name: cellular-automata-best-practices
-description: "Use when applying cellular automata best practices."
+description: Use when applying cellular automata best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [computing, cellular-automata]
-    related_skills: ['general']
 ---
 
 # Cellular Automata Best Practices

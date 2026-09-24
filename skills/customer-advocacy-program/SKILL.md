@@ -1,13 +1,13 @@
 ---
 name: customer-advocacy-program
-description: "Use when building customer advocacy and referral programs."
+description: Use when building customer advocacy and referral programs.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [customer-advocacy, referrals, testimonials, case-studies, community, champions]
-    related_skills: [customer-success-retention, loyalty-programs-crm, influencer-affiliate-programs, community-management-engagement]
 ---
 
 # Customer Advocacy Program

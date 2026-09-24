@@ -1,14 +1,13 @@
 ---
 name: desktop-wxwidgets-implementation
-description: "Use when applying wxwidgets desktop implementation."
+description: Use when applying wxwidgets desktop implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [desktop, wxwidgets, cpp, cross-platform]
-    related_skills: [general]
 ---
 
 # Desktop Wxwidgets Implementation

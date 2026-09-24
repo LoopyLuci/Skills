@@ -1,14 +1,13 @@
 ---
 name: data-catalog-troubleshooting
-description: "Use when troubleshooting data catalog."
+description: Use when troubleshooting data catalog.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data-governance, catalog, metadata]
-    related_skills: [general]
 ---
 
 # Data Catalog Troubleshooting

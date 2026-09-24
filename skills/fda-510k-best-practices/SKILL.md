@@ -1,14 +1,13 @@
 ---
 name: fda-510k-best-practices
-description: "Use when applying fda 510(k) best practices."
+description: Use when applying fda 510(k) best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, pharma, fda-510k]
-    related_skills: [general]
 ---
 
 # Fda 510k Best Practices

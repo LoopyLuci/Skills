@@ -1,9 +1,13 @@
 ---
 name: istio-service-mesh
-description: "Use when implementing Istio service mesh."
+description: Use when implementing Istio service mesh.
 version: 1.0.0
-author: Hermes Agent
-tags: ["istio", "service-mesh", "envoy", "mTLS", "telemetry"]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [istio, service-mesh, envoy, mtls, telemetry]
 ---
 
 # Istio Service Mesh

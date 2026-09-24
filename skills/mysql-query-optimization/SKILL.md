@@ -1,9 +1,13 @@
 ---
 name: mysql-query-optimization
-description: "Use when optimizing MySQL queries."
+description: Use when optimizing MySQL queries.
 version: 1.0.0
-author: Hermes Agent
-tags: ["mysql", "optimization", "indexes", "slow-query", "explain"]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [mysql, optimization, indexes, slow-query, explain]
 ---
 
 # Mysql Query Optimization

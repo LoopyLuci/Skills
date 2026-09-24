@@ -1,13 +1,13 @@
 ---
 name: flutter-mobile-development
-description: "Use when building mobile apps with Flutter."
+description: Use when building mobile apps with Flutter.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [Flutter, Dart, mobile-development, widgets, state-management, cross-platform]
-    related_skills: [react-native-patterns, swiftui-ios-development, responsive-web-design-patterns, frontend-bootstrap]
+    tags: [flutter, dart, mobile-development, widgets, state-management, cross-platform]
 ---
 
 # Flutter Mobile Development

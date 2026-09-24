@@ -1,9 +1,15 @@
 ---
 name: mixture-of-experts
-description: "Use when implementing MoE architectures for sparse models."
-category: mlops
-tags: [mixture-of-experts, moe, sparse, routing, scaling]
+description: Use when implementing MoE architectures for sparse models.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [mixture-of-experts, moe, sparse, routing, scaling]
 ---
+
 # Mixture of Experts (MoE)
 
 Implementing sparse MoE architectures for scaling models efficiently.

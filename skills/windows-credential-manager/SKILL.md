@@ -1,9 +1,15 @@
 ---
 name: windows-credential-manager
-description: "Use when storing/retrieving credentials securely on Windows."
-category: software-development
-tags: [windows, credentials, secrets, security, vault]
+description: Use when storing/retrieving credentials securely on Windows.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [windows, credentials, secrets, security, vault]
 ---
+
 # Windows Credential Manager
 
 Storing and retrieving credentials securely on Windows.

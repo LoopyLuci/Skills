@@ -1,14 +1,13 @@
 ---
 name: accounting-insurance-fundamentals
-description: "Use when applying accounting insurance fundamentals."
+description: Use when applying accounting insurance fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, accounting-fundamentals]
-    related_skills: ['']
 ---
 
 # Accounting Insurance Fundamentals

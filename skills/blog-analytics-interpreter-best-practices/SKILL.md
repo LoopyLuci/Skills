@@ -1,14 +1,13 @@
 ---
 name: blog-analytics-interpreter-best-practices
-description: "Use when applying blog analytics interpreter best practi."
+description: Use when applying blog analytics interpreter best practi.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, blog-analytics-interpreter]
-    related_skills: ['']
 ---
 
 # Blog Analytics Interpreter Best Practices

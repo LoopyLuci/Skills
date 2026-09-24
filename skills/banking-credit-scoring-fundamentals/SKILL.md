@@ -1,14 +1,13 @@
 ---
 name: banking-credit-scoring-fundamentals
-description: "Use when applying credit scoring fundamentals."
+description: Use when applying credit scoring fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, credit, credit-scoring]
-    related_skills: [general]
 ---
 
 # Banking Credit Scoring Fundamentals

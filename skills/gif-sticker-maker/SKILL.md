@@ -1,12 +1,13 @@
 ---
-
 name: gif-sticker-maker
 description: |
-source: MiniMax-AI/skills
-tags: [media, gif, sticker, image, animation, minimax]
-metadata: 
-hermes: 
-
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [media, gif, sticker, image, animation, minimax]
 ---
 
 **Trigger**: Use when converting photos of people, pets, objects, or logos into animated GIF stickers with captions and effects using image and video generation AI.

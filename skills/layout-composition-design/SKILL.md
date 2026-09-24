@@ -1,12 +1,13 @@
 ---
 name: layout-composition-design
-description: "Use when implementing layout composition."
+description: Use when implementing layout composition.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["layout", "composition", "grid", "hierarchy", "spacing"]
+    tags: [layout, composition, grid, hierarchy, spacing]
 ---
 
 # Layout Composition Design

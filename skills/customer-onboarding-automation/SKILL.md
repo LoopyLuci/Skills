@@ -1,13 +1,13 @@
 ---
 name: customer-onboarding-automation
-description: "Use when designing automated customer onboarding flows."
+description: Use when designing automated customer onboarding flows.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [customer-onboarding, automation, user-activation, time-to-value, welcome-flow]
-    related_skills: [customer-success-retention, email-marketing-campaigns, crm-sales-pipeline, marketing-automation-workflows]
 ---
 
 # Customer Onboarding Automation

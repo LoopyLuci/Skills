@@ -1,14 +1,13 @@
 ---
 name: aerospace-systems-best-practices
-description: "Use when applying aerospace systems best practices."
+description: Use when applying aerospace systems best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, aerospace, aerospace-systems-engineering]
-    related_skills: [general]
 ---
 
 # Aerospace Systems Best Practices

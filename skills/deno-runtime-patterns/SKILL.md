@@ -1,9 +1,13 @@
 ---
 name: deno-runtime-patterns
-description: "Use when using Deno runtime."
+description: Use when using Deno runtime.
 version: 1.0.0
-author: Hermes Agent
-tags: ["deno", "typescript", "permissions", "modules"]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [deno, typescript, permissions, modules]
 ---
 
 # Deno Runtime Patterns

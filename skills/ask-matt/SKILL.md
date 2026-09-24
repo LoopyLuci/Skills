@@ -1,8 +1,13 @@
 ---
 name: ask-matt
 description: Use when unsure which skill or flow fits your current situation
-tags: [routing, navigation, skills, meta, workflow]
-related_skills: [wayfinder, triage, writing-great-skills]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [routing, navigation, skills, meta, workflow]
 ---
 
 # Ask Matt

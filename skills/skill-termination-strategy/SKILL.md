@@ -1,6 +1,13 @@
 ---
 name: skill-termination-strategy
 description: Decide when to stop using a skill and switch approaches.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [skill, termination, strategy]
 ---
 
 # Skill Termination Strategy

@@ -1,14 +1,13 @@
 ---
 name: database-elasticsearch-query-implementation
-description: "Use when applying elasticsearch querying implementation."
+description: Use when applying elasticsearch querying implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, elasticsearch, querying, search]
-    related_skills: [general]
 ---
 
 # Database Elasticsearch Query Implementation

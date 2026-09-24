@@ -1,14 +1,13 @@
 ---
 name: continuous-process-control
-description: "Use when implementing continuous process control."
+description: Use when implementing continuous process control.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [manufacturing, process-control, scada, automation]
-    related_skills: [general]
 ---
 
 # Continuous Process Control

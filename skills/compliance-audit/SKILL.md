@@ -1,14 +1,13 @@
 ---
 name: compliance-audit
-description: "Use when for compliance audit."
+description: Use when for compliance audit.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, management, general]
-    related_skills: [general]
 ---
 
 # Compliance Audit

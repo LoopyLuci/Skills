@@ -2,12 +2,12 @@
 name: creativity-cultivation
 description: Creative thinking, idea generation, and creative blocks
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["creativity", "ideation"]
+    tags: [creativity, ideation]
 ---
 
 # Creativity Cultivation

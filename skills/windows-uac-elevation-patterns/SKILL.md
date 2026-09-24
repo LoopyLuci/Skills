@@ -1,9 +1,15 @@
 ---
 name: windows-uac-elevation-patterns
-description: "Use when auto-elevating scripts to admin on Windows."
-category: software-development
-tags: [windows, uac, elevation, admin, powershell, batch]
+description: Use when auto-elevating scripts to admin on Windows.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [windows, uac, elevation, admin, powershell, batch]
 ---
+
 # Windows UAC Elevation Patterns
 
 Auto-elevating scripts to Administrator on Windows.

@@ -1,14 +1,13 @@
 ---
 name: agri-satellite-troubleshooting
-description: "Use when applying agricultural satellites troubleshooting."
+description: Use when applying agricultural satellites troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agri, satellite, earth-observation]
-    related_skills: ['general']
 ---
 
 # Agri Satellite Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: clinical-trials-best-practices
-description: "Use when applying clinical trials best practices."
+description: Use when applying clinical trials best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [medicine, research, clinical-trial-design]
-    related_skills: [general]
 ---
 
 # Clinical Trials Best Practices

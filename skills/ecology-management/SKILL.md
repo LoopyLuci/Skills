@@ -1,14 +1,13 @@
 ---
 name: ecology-management
-description: "Use when managing ecology operations."
+description: Use when managing ecology operations.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ecology, ecosystems, environment, biodiversity]
-    related_skills: [general]
 ---
 
 # Ecology Management

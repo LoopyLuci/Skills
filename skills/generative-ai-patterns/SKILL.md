@@ -1,13 +1,13 @@
 ---
 name: generative-ai-patterns
-description: "Use when implementing generative AI applications."
+description: Use when implementing generative AI applications.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [generative-ai, LLM, diffusion, RAG, agent-patterns, GenAI, vector-databases]
-    related_skills: [rag-system-design, large-language-model-optimization, advanced-reasoning-patterns, few-shot-prompting-advanced]
+    tags: [generative-ai, llm, diffusion, rag, agent-patterns, genai, vector-databases]
 ---
 
 # Generative AI Patterns

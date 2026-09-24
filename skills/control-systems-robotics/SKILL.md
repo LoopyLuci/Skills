@@ -2,12 +2,12 @@
 name: control-systems-robotics
 description: PID, MPC, state-space control, trajectory tracking, and actuator control
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["control", "dynamics"]
+    tags: [control, dynamics]
 ---
 
 # Control Systems Robotics

@@ -1,14 +1,13 @@
 ---
 name: accounting-bookkeeping-best-practices
-description: "Use when applying bookkeeping best practices."
+description: Use when applying bookkeeping best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [accounting, bookkeeping, finance, accounting-bookkeeping-basics]
-    related_skills: [general]
 ---
 
 # Accounting Bookkeeping Best Practices

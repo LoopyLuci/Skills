@@ -1,14 +1,13 @@
 ---
 name: embedded-linux-development
-description: "Use when developing embedded Linux."
+description: Use when developing embedded Linux.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [electronics, embedded-linux, yocto, buildroot]
-    related_skills: [general]
 ---
 
 # Embedded Linux Development

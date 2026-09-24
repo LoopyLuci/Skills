@@ -1,14 +1,13 @@
 ---
 name: concurrency-troubleshooting
-description: "Use when troubleshooting concurrency."
+description: Use when troubleshooting concurrency.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [concurrency, threading, async, parallelism]
-    related_skills: [general]
 ---
 
 # Concurrency Troubleshooting

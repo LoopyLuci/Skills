@@ -1,9 +1,13 @@
 ---
 name: celery-task-queue
-description: "Use when implementing Celery task queues."
+description: Use when implementing Celery task queues.
 version: 1.0.0
-author: Hermes Agent
-tags: ["celery", "tasks", "redis", "rabbitmq", "beat"]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [celery, tasks, redis, rabbitmq, beat]
 ---
 
 # Celery Task Queue

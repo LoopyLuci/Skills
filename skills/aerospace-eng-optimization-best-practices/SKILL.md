@@ -1,14 +1,13 @@
 ---
 name: aerospace-eng-optimization-best-practices
-description: "Use when applying aerospace optimization best practices."
+description: Use when applying aerospace optimization best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, aerospace, optimization]
-    related_skills: [general]
 ---
 
 # Aerospace Eng Optimization Best Practices

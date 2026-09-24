@@ -1,14 +1,13 @@
 ---
 name: civil-eng-troubleshooting-implementation
-description: "Use when applying civil troubleshooting implementation."
+description: Use when applying civil troubleshooting implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, civil, troubleshooting]
-    related_skills: [general]
 ---
 
 # Civil Eng Troubleshooting Implementation

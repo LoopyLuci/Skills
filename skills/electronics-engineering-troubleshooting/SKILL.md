@@ -1,14 +1,13 @@
 ---
 name: electronics-engineering-troubleshooting
-description: "Use when applying electronics engineering troubleshooting."
+description: Use when applying electronics engineering troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, electronics, embedded, analog-circuit-design]
-    related_skills: [general]
 ---
 
 # Electronics Engineering Troubleshooting

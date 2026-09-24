@@ -1,14 +1,13 @@
 ---
 name: agent-memory-systems-deep-implementation
-description: "Use when applying agent memory systems implementation."
+description: Use when applying agent memory systems implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agents, memory]
-    related_skills: ['agent-memory-systems']
 ---
 
 # Agent Memory Systems Deep Implementation

@@ -1,14 +1,13 @@
 ---
 name: epidemiology-surveillance-best-practices
-description: "Use when applying epi surveillance best practices."
+description: Use when applying epi surveillance best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [medicine, public-health, epidemiology]
-    related_skills: [general]
 ---
 
 # Epidemiology Surveillance Best Practices

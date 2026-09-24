@@ -2,12 +2,12 @@
 name: audio-synthesis-design
 description: Subtractive, additive, FM, wavetable, and granular synthesis techniques
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["synthesis", "sound-design"]
+    tags: [synthesis, sound-design]
 ---
 
 # Audio Synthesis Design

@@ -1,13 +1,13 @@
 ---
 name: network-forensics-analysis
-description: "Use when performing network forensic and pcap analysis."
+description: Use when performing network forensic and pcap analysis.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [network-forensics, pcap, wireshark, packet-analysis, incident-investigation]
-    related_skills: [security-incident-response, threat-hunting-methods, packet-capture-engine, traffic-analyzer]
 ---
 
 # Network Forensics Analysis

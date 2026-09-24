@@ -1,14 +1,13 @@
 ---
 name: clinical-psychology
-description: "Use when doing clinical psychology."
+description: Use when doing clinical psychology.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [healthcare, psychology, clinical-psychology]
-    related_skills: [general]
 ---
 
 # Clinical Psychology

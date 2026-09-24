@@ -1,14 +1,13 @@
 ---
 name: accounting-cost-troubleshooting
-description: "Use when applying cost accounting troubleshooting."
+description: Use when applying cost accounting troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [accounting, finance, cost-accounting, managerial]
-    related_skills: [general]
 ---
 
 # Accounting Cost Troubleshooting

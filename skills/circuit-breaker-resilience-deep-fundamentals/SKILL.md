@@ -1,14 +1,13 @@
 ---
 name: circuit-breaker-resilience-deep-fundamentals
-description: "Use when applying circuit breaker pattern fundamentals."
+description: Use when applying circuit breaker pattern fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [programming, resilience]
-    related_skills: ['circuit-breaker-pattern']
 ---
 
 # Circuit Breaker Resilience Deep Fundamentals

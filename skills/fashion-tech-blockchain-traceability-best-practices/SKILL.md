@@ -1,14 +1,13 @@
 ---
 name: fashion-tech-blockchain-traceability-best-practices
-description: "Use when applying fashion blockchain traceability best p."
+description: Use when applying fashion blockchain traceability best p.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, beauty]
-    related_skills: ['']
 ---
 
 # Fashion Tech Blockchain Traceability Best Practices

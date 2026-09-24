@@ -1,9 +1,13 @@
 ---
 name: android-network-audio-streaming
+description: Route Android app audio to network speakers: DLNA, AirPlay, Cast, local HTTP serving, and PlaybackEngine PCM bridging.
 version: 1.0.0
-description: "Route Android app audio to network speakers: DLNA, AirPlay, Cast, local HTTP serving, and PlaybackEngine PCM bridging."
-tags: [android, dlna, airplay, chromecast, streaming, audio, kotlin, upnp]
-related_skills: [android-cast-airplay-streaming, android-audio-device-control]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [android, dlna, airplay, chromecast, streaming, audio, kotlin, upnp]
 ---
 
 # Android Network Audio Streaming

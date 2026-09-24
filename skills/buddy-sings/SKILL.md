@@ -1,11 +1,10 @@
 ---
 name: buddy-sings
-description: >
-source: MiniMax-AI/skills
-tags: [fun, pet, music, minimax, personality]
-metadata: 
-hermes: 
-
+description: Skill for buddy sings
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [fun, pet, music, minimax, personality]

@@ -1,14 +1,13 @@
 ---
 name: backend-dev-optimization
-description: "Use when optimizing backend development systems."
+description: Use when optimizing backend development systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, node, python, api]
-    related_skills: [general]
 ---
 
 # Backend Dev Optimization

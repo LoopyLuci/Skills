@@ -1,14 +1,13 @@
 ---
 name: automation-analysis
-description: "Use when analyzing automation data."
+description: Use when analyzing automation data.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [automation, robotics, plc, scada]
-    related_skills: [general]
 ---
 
 # Automation Analysis

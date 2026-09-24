@@ -1,14 +1,13 @@
 ---
 name: command-pattern
-description: "Use when applying command patterns."
+description: Use when applying command patterns.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [software, design, software-design-patterns]
-    related_skills: [general]
 ---
 
 # Command Pattern

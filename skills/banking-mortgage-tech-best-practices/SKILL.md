@@ -1,14 +1,13 @@
 ---
 name: banking-mortgage-tech-best-practices
-description: "Use when applying mortgage tech best practices."
+description: Use when applying mortgage tech best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, real-estate, mortgage-tech]
-    related_skills: [general]
 ---
 
 # Banking Mortgage Tech Best Practices

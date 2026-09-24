@@ -1,13 +1,13 @@
 ---
 name: self-supervised-learning-advanced
-description: "Use when implementing advanced self-supervised learning."
+description: Use when implementing advanced self-supervised learning.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [self-supervised, SSL, contrastive-learning, masked-modeling, SimCLR, MAE]
-    related_skills: [semi-supervised-learning, data-augmentation-techniques, custom-training-loops, embeddings-visualization]
+    tags: [self-supervised, ssl, contrastive-learning, masked-modeling, simclr, mae]
 ---
 
 # Advanced Self-Supervised Learning

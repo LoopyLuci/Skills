@@ -1,14 +1,13 @@
 ---
 name: aws-fargate-best-practices
-description: "Use when applying aws fargate best practices."
+description: Use when applying aws fargate best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, fargate, serverless-containers]
-    related_skills: [general]
 ---
 
 # Aws Fargate Best Practices

@@ -2,12 +2,12 @@
 name: positive-parenting-discipline
 description: Positive discipline, boundaries, and emotion coaching
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["parenting", "discipline"]
+    tags: [parenting, discipline]
 ---
 
 # Positive Parenting Discipline

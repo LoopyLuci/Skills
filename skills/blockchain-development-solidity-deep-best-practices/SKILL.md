@@ -1,14 +1,13 @@
 ---
 name: blockchain-development-solidity-deep-best-practices
-description: "Use when applying solidity development best practices."
+description: Use when applying solidity development best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [blockchain, solidity]
-    related_skills: ['blockchain-development-solidity']
 ---
 
 # Blockchain Development Solidity Deep Best Practices

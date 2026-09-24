@@ -1,13 +1,13 @@
 ---
 name: unity-development-patterns
-description: "Use when developing games with Unity engine."
+description: Use when developing games with Unity engine.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [Unity, C#, game-development, ECS, DOTS, MonoBehavior, shaders]
-    related_skills: [game-development-patterns, unreal-engine-basics, godot-game-engine, webxr-ar-vr-development]
+    tags: [unity, c#, game-development, ecs, dots, monobehavior, shaders]
 ---
 
 # Unity Development Patterns

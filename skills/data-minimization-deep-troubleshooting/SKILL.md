@@ -1,14 +1,13 @@
 ---
 name: data-minimization-deep-troubleshooting
-description: "Use when applying data minimization troubleshooting."
+description: Use when applying data minimization troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [privacy, data-minimization]
-    related_skills: ['data-minimization-framework']
 ---
 
 # Data Minimization Deep Troubleshooting

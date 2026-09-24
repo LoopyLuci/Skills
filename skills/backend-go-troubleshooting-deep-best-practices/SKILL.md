@@ -1,14 +1,13 @@
 ---
 name: backend-go-troubleshooting-deep-best-practices
-description: "Use when applying go backend troubleshooting best practi."
+description: Use when applying go backend troubleshooting best practi.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, go]
-    related_skills: ['backend-go-troubleshooting']
 ---
 
 # Backend Go Troubleshooting Deep Best Practices

@@ -1,14 +1,13 @@
 ---
 name: adverse-event-reporting-best-practices
-description: "Use when applying ae reporting best practices."
+description: Use when applying ae reporting best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, pharma, pharmacovigilance]
-    related_skills: [general]
 ---
 
 # Adverse Event Reporting Best Practices

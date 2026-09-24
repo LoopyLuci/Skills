@@ -1,9 +1,13 @@
 ---
 name: gpu-flow-visualizer
-title: GPU Flow Visualizer
 description: Use when rendering network flow graphs on GPU.
-category: networking
-tags: [gpu, visualization, flow, graph, rendering, wgpu]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [gpu, visualization, flow, graph, rendering, wgpu]
 ---
 
 # GPU Flow Visualizer

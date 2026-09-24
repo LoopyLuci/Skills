@@ -1,8 +1,13 @@
 ---
 name: doc-coauthoring
 description: Use when co-authoring docs, proposals, or technical specs.
-tags: [documentation, writing, proposals, specs, collaboration]
-related_skills: [internal-comms]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [documentation, writing, proposals, specs, collaboration]
 ---
 
 # Doc Coauthoring

@@ -2,12 +2,12 @@
 name: e-discovery-litigation-support
 description: ESI, document review, privilege logs, and litigation hold
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["ediscovery", "litigation"]
+    tags: [ediscovery, litigation]
 ---
 
 # E Discovery Litigation Support

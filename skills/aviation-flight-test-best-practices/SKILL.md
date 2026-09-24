@@ -1,14 +1,13 @@
 ---
 name: aviation-flight-test-best-practices
-description: "Use when applying flight testing best practices."
+description: Use when applying flight testing best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, testing, flight-test]
-    related_skills: ['general']
 ---
 
 # Aviation Flight Test Best Practices

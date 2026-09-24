@@ -1,14 +1,13 @@
 ---
 name: climate-decarbonization-roadmap-troubleshooting
-description: "Use when applying decarbonization roadmapping troublesho."
+description: Use when applying decarbonization roadmapping troublesho.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, decarbonization, decarbonization-roadmapping]
-    related_skills: ['']
 ---
 
 # Climate Decarbonization Roadmap Troubleshooting

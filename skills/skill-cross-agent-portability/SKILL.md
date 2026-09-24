@@ -1,6 +1,13 @@
 ---
 name: skill-cross-agent-portability
 description: Make skills work across Hermes, Codex, and other agents.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [skill, cross, agent]
 ---
 
 # Skill Cross-Agent Portability

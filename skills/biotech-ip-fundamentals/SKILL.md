@@ -1,14 +1,13 @@
 ---
 name: biotech-ip-fundamentals
-description: "Use when applying biotech intellectual property fundamen."
+description: Use when applying biotech intellectual property fundamen.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, ip, intellectual-property]
-    related_skills: [general]
 ---
 
 # Biotech Ip Fundamentals

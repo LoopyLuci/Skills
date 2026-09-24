@@ -2,12 +2,12 @@
 name: political-campaign-strategy
 description: Messaging, field operations, digital strategy, and voter targeting
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["campaign", "strategy"]
+    tags: [campaign, strategy]
 ---
 
 # Political Campaign Strategy

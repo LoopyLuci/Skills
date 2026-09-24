@@ -1,14 +1,13 @@
 ---
 name: banking-mortgage-tech-implementation
-description: "Use when applying mortgage tech implementation."
+description: Use when applying mortgage tech implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, real-estate, mortgage-tech]
-    related_skills: [general]
 ---
 
 # Banking Mortgage Tech Implementation

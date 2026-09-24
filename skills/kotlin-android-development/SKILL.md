@@ -1,13 +1,13 @@
 ---
 name: kotlin-android-development
-description: "Use when building Android apps with Kotlin."
+description: Use when building Android apps with Kotlin.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [Kotlin, Android, Jetpack-Compose, coroutines, MVVM, Room]
-    related_skills: [flutter-mobile-development, react-native-patterns, swiftui-ios-development, frontend-bootstrap]
+    tags: [kotlin, android, jetpack-compose, coroutines, mvvm, room]
 ---
 
 # Kotlin Android Development

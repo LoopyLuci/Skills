@@ -1,14 +1,13 @@
 ---
 name: digital-fashion-fundamentals
-description: "Use when applying digital fashion fundamentals."
+description: Use when applying digital fashion fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, digital, digital-art-generation]
-    related_skills: ['general']
 ---
 
 # Digital Fashion Fundamentals

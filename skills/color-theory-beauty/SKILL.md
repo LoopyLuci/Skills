@@ -1,14 +1,13 @@
 ---
 name: color-theory-beauty
-description: "Use when applying color theory to beauty."
+description: Use when applying color theory to beauty.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, color-theory, beauty, makeup]
-    related_skills: [general]
 ---
 
 # Color Theory Beauty

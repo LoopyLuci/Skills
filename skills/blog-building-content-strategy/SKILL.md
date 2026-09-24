@@ -1,13 +1,13 @@
 ---
 name: blog-building-content-strategy
-description: "Use when building blogs and planning editorial strategy."
+description: Use when building blogs and planning editorial strategy.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [blogging, content-strategy, editorial, CMS, writing, publishing]
-    related_skills: [content-writing-seo-copy, seo-search-engine-optimization, cms-website-management, digital-marketing-strategy]
+    tags: [blogging, content-strategy, editorial, cms, writing, publishing]
 ---
 
 # Blog Building Content Strategy

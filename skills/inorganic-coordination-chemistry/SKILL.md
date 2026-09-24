@@ -2,12 +2,12 @@
 name: inorganic-coordination-chemistry
 description: Coordination compounds, organometallics, and catalysis
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["inorganic", "catalysis"]
+    tags: [inorganic, catalysis]
 ---
 
 # Inorganic Coordination Chemistry

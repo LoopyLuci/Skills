@@ -1,19 +1,13 @@
 ---
 name: research-paper-writing
-title: Research Paper Writing Pipeline
-description: "Write ML papers for NeurIPS/ICML/ICLR: design→submit."
-version: 1.1.0
-author: Orchestra Research
+description: Write ML papers for NeurIPS/ICML/ICLR: design→submit.
+version: 1.0.0
+author: LoopyLuci Community
 license: MIT
-dependencies: [semanticscholar, arxiv, habanero, requests, scipy, numpy, matplotlib, SciencePlots]
-platforms: [linux, macos]
+platforms: [any]
 metadata:
   hermes:
-    tags: [Research, Paper Writing, Experiments, ML, AI, NeurIPS, ICML, ICLR, ACL, AAAI, COLM, LaTeX, Citations, Statistical Analysis]
-    category: research
-    related_skills: [arxiv, subagent-driven-development, plan]
-    requires_toolsets: [terminal, files]
-
+    tags: [research, paper writing, experiments, ml, ai, neurips, icml, iclr, acl, aaai, colm, latex, citations, statistical analysis]
 ---
 
 # Research Paper Writing Pipeline

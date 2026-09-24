@@ -1,14 +1,13 @@
 ---
 name: data-governance-best-practices-deep-troubleshooting
-description: "Use when applying data governance best practices trouble."
+description: Use when applying data governance best practices trouble.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, data-governance]
-    related_skills: ['data-governance-best-practices']
 ---
 
 # Data Governance Best Practices Deep Troubleshooting

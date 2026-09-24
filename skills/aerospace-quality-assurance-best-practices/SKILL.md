@@ -1,14 +1,13 @@
 ---
 name: aerospace-quality-assurance-best-practices
-description: "Use when applying aerospace qa best practices."
+description: Use when applying aerospace qa best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aerospace, quality, aerospace-qms]
-    related_skills: ['general']
 ---
 
 # Aerospace Quality Assurance Best Practices

@@ -2,12 +2,12 @@
 name: property-management-operations
 description: Tenant relations, maintenance, leasing, and property operations
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["management", "operations"]
+    tags: [management, operations]
 ---
 
 # Property Management Operations

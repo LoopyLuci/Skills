@@ -1,14 +1,13 @@
 ---
 name: business-analytics-implementation
-description: "Use when applying business analytics implementation."
+description: Use when applying business analytics implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, analytics, business-analytics]
-    related_skills: [general]
 ---
 
 # Business Analytics Implementation

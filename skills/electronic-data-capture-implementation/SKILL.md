@@ -1,14 +1,13 @@
 ---
 name: electronic-data-capture-implementation
-description: "Use when applying edc implementation."
+description: Use when applying edc implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, medicine, edc]
-    related_skills: [general]
 ---
 
 # Electronic Data Capture Implementation

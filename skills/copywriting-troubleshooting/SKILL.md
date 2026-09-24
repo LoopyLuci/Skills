@@ -1,14 +1,13 @@
 ---
 name: copywriting-troubleshooting
-description: "Use when applying copywriting troubleshooting."
+description: Use when applying copywriting troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [writing, copy, copywriting]
-    related_skills: [general]
 ---
 
 # Copywriting Troubleshooting

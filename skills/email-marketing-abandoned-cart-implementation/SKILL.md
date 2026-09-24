@@ -1,14 +1,13 @@
 ---
 name: email-marketing-abandoned-cart-implementation
-description: "Use when applying email abandoned cart implementation."
+description: Use when applying email abandoned cart implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, ecommerce, cart-abandonment]
-    related_skills: [general]
 ---
 
 # Email Marketing Abandoned Cart Implementation

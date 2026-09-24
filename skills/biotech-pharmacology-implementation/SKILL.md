@@ -1,14 +1,13 @@
 ---
 name: biotech-pharmacology-implementation
-description: "Use when applying pharmacology implementation."
+description: Use when applying pharmacology implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, pharmacology]
-    related_skills: ['']
 ---
 
 # Biotech Pharmacology Implementation

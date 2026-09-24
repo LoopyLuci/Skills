@@ -1,14 +1,13 @@
 ---
 name: court-technology
-description: "Use when implementing court technology systems."
+description: Use when implementing court technology systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [govtech, courts, legal-tech, case-management]
-    related_skills: [general]
 ---
 
 # Court Technology

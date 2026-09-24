@@ -1,9 +1,15 @@
 ---
 name: powershell-profiles
-description: "Use when customizing PowerShell profile scripts."
-category: software-development
-tags: [powershell, profile, customization, prompt, aliases]
+description: Use when customizing PowerShell profile scripts.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [powershell, profile, customization, prompt, aliases]
 ---
+
 # PowerShell Profiles
 
 Customizing PowerShell startup profiles.

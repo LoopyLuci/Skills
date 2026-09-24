@@ -1,14 +1,13 @@
 ---
 name: apache-spark-fundamentals
-description: "Use when for apache spark fundamentals."
+description: Use when for apache spark fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [big-data, spark, scala, python]
-    related_skills: [general]
 ---
 
 # Apache Spark Fundamentals

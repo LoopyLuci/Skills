@@ -1,14 +1,13 @@
 ---
 name: export-control-best-practices
-description: "Use when applying export control best practices."
+description: Use when applying export control best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [legal, defense, export-control]
-    related_skills: [general]
 ---
 
 # Export Control Best Practices

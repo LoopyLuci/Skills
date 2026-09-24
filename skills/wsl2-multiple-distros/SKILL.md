@@ -1,9 +1,15 @@
 ---
 name: wsl2-multiple-distros
-description: "Use when managing multiple WSL2 distributions."
-category: software-development
-tags: [wsl2, distros, multiple, management]
+description: Use when managing multiple WSL2 distributions.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [wsl2, distros, multiple, management]
 ---
+
 # WSL2 Multiple Distributions
 
 Managing multiple WSL2 distributions effectively.

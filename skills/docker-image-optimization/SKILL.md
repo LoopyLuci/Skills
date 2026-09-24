@@ -1,14 +1,13 @@
 ---
 name: docker-image-optimization
-description: "Use when optimizing Docker images."
+description: Use when optimizing Docker images.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [docker, optimization, slim-images]
-    related_skills: [general]
 ---
 
 # Docker Image Optimization

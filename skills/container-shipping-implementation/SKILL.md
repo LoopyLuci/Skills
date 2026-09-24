@@ -1,14 +1,13 @@
 ---
 name: container-shipping-implementation
-description: "Use when applying container shipping implementation."
+description: Use when applying container shipping implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marine, logistics, container-shipping]
-    related_skills: [general]
 ---
 
 # Container Shipping Implementation

@@ -2,12 +2,12 @@
 name: board-game-design-mechanics
 description: Game mechanics, prototyping, playtesting, and publishing
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["board-game", "design"]
+    tags: [board-game, design]
 ---
 
 # Board Game Design Mechanics

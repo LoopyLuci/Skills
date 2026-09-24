@@ -1,14 +1,13 @@
 ---
 name: climate-risk-disclosure-best-practices
-description: "Use when applying tcfd best practices."
+description: Use when applying tcfd best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, climate, tcfd]
-    related_skills: [general]
 ---
 
 # Climate Risk Disclosure Best Practices

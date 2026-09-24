@@ -1,14 +1,13 @@
 ---
 name: ddd-tactical-best-practices
-description: "Use when applying ddd tactical patterns best practices."
+description: Use when applying ddd tactical patterns best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [architecture, ddd, domain-driven-design-tactical]
-    related_skills: [general]
 ---
 
 # Ddd Tactical Best Practices

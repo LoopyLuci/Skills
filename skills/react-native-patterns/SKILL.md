@@ -1,13 +1,13 @@
 ---
 name: react-native-patterns
-description: "Use when building mobile apps with React Native."
+description: Use when building mobile apps with React Native.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [React-Native, mobile, JavaScript, TypeScript, Expo, native-modules]
-    related_skills: [flutter-mobile-development, swiftui-ios-development, kotlin-android-development, frontend-bootstrap]
+    tags: [react-native, mobile, javascript, typescript, expo, native-modules]
 ---
 
 # React Native Patterns

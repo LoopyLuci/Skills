@@ -1,14 +1,13 @@
 ---
 name: clinical-trial-management-best-practices
-description: "Use when applying ctms best practices."
+description: Use when applying ctms best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, medicine, ctms]
-    related_skills: [general]
 ---
 
 # Clinical Trial Management Best Practices

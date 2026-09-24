@@ -1,6 +1,13 @@
 ---
 name: terraform-module-patterns
-description: "Write reusable Terraform modules with remote state"
+description: Write reusable Terraform modules with remote state
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [terraform, module, patterns]
 ---
 
 # Terraform Module Patterns
@@ -35,3 +42,16 @@ terraform {
   }
 }
 ```
+
+## Trigger
+
+Activate this skill when the user mentions:
+- terraform, module, patterns workflows or issues
+- Building, fixing, or optimizing terraform module patterns
+
+
+## Core Concepts
+
+- Domain fundamentals and best practices
+- Key tools and methodologies
+- Quality standards and common patterns

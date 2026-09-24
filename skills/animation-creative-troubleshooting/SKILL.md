@@ -1,14 +1,13 @@
 ---
 name: animation-creative-troubleshooting
-description: "Use when applying animation troubleshooting."
+description: Use when applying animation troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [creative, animation, animation-techniques-3d]
-    related_skills: [general]
 ---
 
 # Animation Creative Troubleshooting

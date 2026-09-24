@@ -1,19 +1,13 @@
 ---
-
 name: cloud-logging-cross-project-configuration
-description: >-
-  Configure and troubleshoot Google Cloud cross-project centralized logging and read-time aggregation.
-  Use when:
-  - Setting up log routing from multiple projects/folders/organizations to a central log bucket.
-  - Creating cross-project log sinks and configuring central log buckets.
-  - Troubleshooting cross-project routing.
-  Don't use for single-project basic configurations.
-  category: CloudObservabilityAndMonitoring
-source: google/skills
+description: Skill for cloud logging cross project configuration
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [agent, skill]
-
 ---
 
 # Configuring Cross-Project Logging

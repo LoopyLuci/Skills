@@ -1,14 +1,13 @@
 ---
 name: atomic-layer-deposition-best-practices
-description: "Use when applying ald best practices."
+description: Use when applying ald best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [materials, fabrication, ald]
-    related_skills: [general]
 ---
 
 # Atomic Layer Deposition Best Practices

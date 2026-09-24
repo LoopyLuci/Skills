@@ -1,9 +1,15 @@
 ---
 name: powershell-console-ui
-description: "Use when building interactive console menus in PS."
-category: software-development
-tags: [powershell, console, ui, menu, interactive]
+description: Use when building interactive console menus in PS.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [powershell, console, ui, menu, interactive]
 ---
+
 # PowerShell Console UI
 
 Building interactive console menus and user interfaces in PowerShell.

@@ -1,13 +1,13 @@
 ---
 name: dialogue-systems-conversational-ai
-description: "Use when building conversational AI and dialogue systems."
+description: Use when building conversational AI and dialogue systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [dialogue, conversational-ai, chatbots, dialogue-management, NLU, NLG]
-    related_skills: [nlp-pipeline-implementation, rag-system-design, agent-framework-design, nlp-techniques]
+    tags: [dialogue, conversational-ai, chatbots, dialogue-management, nlu, nlg]
 ---
 
 # Dialogue Systems Conversational Ai

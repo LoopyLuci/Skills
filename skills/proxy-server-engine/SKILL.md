@@ -1,9 +1,13 @@
 ---
 name: proxy-server-engine
-title: Proxy Server Engine
 description: Use when building HTTP/SOCKS proxy with filtering.
-category: networking
-tags: [proxy, http, socks, forward, transparent, rust]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [proxy, http, socks, forward, transparent, rust]
 ---
 
 # Proxy Server Engine

@@ -1,13 +1,13 @@
 ---
 name: ml-experiment-tracking
-description: "Use when tracking ML experiments and managing runs."
+description: Use when tracking ML experiments and managing runs.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [ml-experiments, tracking, reproducibility, MLflow, W&B, metadata, versioning]
-    related_skills: [weights-and-biases, ml-pipeline-design, hyperparameter-optimization-ml, model-registry-management]
+    tags: [ml-experiments, tracking, reproducibility, mlflow, w&b, metadata, versioning]
 ---
 
 # Ml Experiment Tracking

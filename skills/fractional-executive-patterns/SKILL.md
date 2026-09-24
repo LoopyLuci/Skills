@@ -1,13 +1,13 @@
 ---
 name: fractional-executive-patterns
-description: "Use when working as a fractional executive (CxO)."
+description: Use when working as a fractional executive (CxO).
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [fractional-executive, CTO, CFO, CEO, part-time, consulting, leadership]
-    related_skills: [venture-studio-startup-incubation, product-management-roadmap, business-metrics-kpis, financial-modeling-budgeting]
+    tags: [fractional-executive, cto, cfo, ceo, part-time, consulting, leadership]
 ---
 
 # Fractional Executive Patterns

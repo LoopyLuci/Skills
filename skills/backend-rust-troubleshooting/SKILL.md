@@ -1,14 +1,13 @@
 ---
 name: backend-rust-troubleshooting
-description: "Use when applying rust backend troubleshooting."
+description: Use when applying rust backend troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, rust, webassembly, performance]
-    related_skills: [general]
 ---
 
 # Backend Rust Troubleshooting

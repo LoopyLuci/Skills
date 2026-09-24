@@ -1,14 +1,13 @@
 ---
 name: eeg-analysis-troubleshooting
-description: "Use when applying eeg analysis troubleshooting."
+description: Use when applying eeg analysis troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neurotech, eeg, eeg-analysis]
-    related_skills: [general]
 ---
 
 # Eeg Analysis Troubleshooting

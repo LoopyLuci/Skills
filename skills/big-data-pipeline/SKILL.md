@@ -1,14 +1,13 @@
 ---
 name: big-data-pipeline
-description: "Use when building big data pipelines."
+description: Use when building big data pipelines.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data-science, big-data, pipeline, etl]
-    related_skills: ['etl-pipeline-design']
 ---
 
 # Big Data Pipeline

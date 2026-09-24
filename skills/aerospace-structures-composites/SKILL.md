@@ -2,12 +2,12 @@
 name: aerospace-structures-composites
 description: Composite materials, FEA, fatigue analysis, and damage tolerance
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["structures", "composites"]
+    tags: [structures, composites]
 ---
 
 # Aerospace Structures Composites

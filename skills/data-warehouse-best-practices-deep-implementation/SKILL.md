@@ -1,14 +1,13 @@
 ---
 name: data-warehouse-best-practices-deep-implementation
-description: "Use when applying data warehouse best practices implemen."
+description: Use when applying data warehouse best practices implemen.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, data-warehousing]
-    related_skills: ['data-warehousing-best-practices']
 ---
 
 # Data Warehouse Best Practices Deep Implementation

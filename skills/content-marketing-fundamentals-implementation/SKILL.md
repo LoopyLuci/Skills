@@ -1,14 +1,13 @@
 ---
 name: content-marketing-fundamentals-implementation
-description: "Use when applying content marketing fundamentals impleme."
+description: Use when applying content marketing fundamentals impleme.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, content-marketing-fundamentals]
-    related_skills: ['']
 ---
 
 # Content Marketing Fundamentals Implementation

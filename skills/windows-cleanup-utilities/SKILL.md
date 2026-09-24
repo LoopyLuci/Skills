@@ -1,9 +1,15 @@
 ---
 name: windows-cleanup-utilities
-description: "Use when cleaning temp files and disk space on Windows."
-category: software-development
-tags: [windows, cleanup, disk, temp-files, maintenance]
+description: Use when cleaning temp files and disk space on Windows.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [windows, cleanup, disk, temp-files, maintenance]
 ---
+
 # Windows Cleanup Utilities
 
 Cleaning temporary files, caches, and reclaiming disk space on Windows.

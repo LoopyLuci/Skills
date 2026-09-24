@@ -2,12 +2,12 @@
 name: history-research-methodology
 description: Historiography, primary sources, archival research, and historical writing
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["historiography", "research"]
+    tags: [historiography, research]
 ---
 
 # History Research Methodology

@@ -1,5 +1,16 @@
-description: Use when setting up a Linux VM on Windows via Hyper-V — creating the VM, unattended installs via cidata cloud-init (Omarchy), and GPU acceleration limits on Windows 10/11 Pro.
 ---
+name: windows-hyperv-vm
+description: Use when setting up a Linux VM on Windows via Hyper-V — creating the VM, unattended installs via cidata cloud-init (Omarchy), and GPU acceleration limits on Windows 10/11 Pro.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [windows, general]
+---
+
+-
 # Windows Hyper-V VM Setup
 
 ## When to use

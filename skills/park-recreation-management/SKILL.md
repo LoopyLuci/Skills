@@ -2,12 +2,12 @@
 name: park-recreation-management
 description: Park planning, recreation management, and interpretation
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["parks", "recreation"]
+    tags: [parks, recreation]
 ---
 
 # Park Recreation Management

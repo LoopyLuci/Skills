@@ -1,13 +1,13 @@
 ---
 name: behavior-driven-development
-description: "Use when implementing BDD with Gherkin and Cucumber."
+description: Use when implementing BDD with Gherkin and Cucumber.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [BDD, behavior-driven-development, Gherkin, Cucumber, SpecFlow, executable-specifications]
-    related_skills: [test-driven-development, test-driven-workflow, code-review-checklist, api-testing-patterns]
+    tags: [bdd, behavior-driven-development, gherkin, cucumber, specflow, executable-specifications]
 ---
 
 # Behavior Driven Development

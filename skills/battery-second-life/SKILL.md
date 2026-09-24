@@ -1,14 +1,13 @@
 ---
 name: battery-second-life
-description: "Use when applying battery second life."
+description: Use when applying battery second life.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [energy, battery-second-life, ev-batteries, reuse]
-    related_skills: [general]
 ---
 
 # Battery Second Life

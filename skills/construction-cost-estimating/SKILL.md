@@ -1,14 +1,13 @@
 ---
 name: construction-cost-estimating
-description: "Use when estimating construction costs."
+description: Use when estimating construction costs.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [construction, cost-estimating, bidding, takeoffs]
-    related_skills: [general]
 ---
 
 # Construction Cost Estimating

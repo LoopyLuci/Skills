@@ -1,8 +1,13 @@
 ---
 name: improve-animations
 description: Use when auditing and planning animation improvements.
-tags: [animation, audit, motion, performance, planning]
-related_skills: [find-animation-opportunities, review-animations, emil-design-eng]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [animation, audit, motion, performance, planning]
 ---
 
 # Improving Animations

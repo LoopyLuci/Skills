@@ -1,14 +1,13 @@
 ---
 name: android-app-security-implementation
-description: "Use when applying android app security implementation."
+description: Use when applying android app security implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [android, mobile, security, android-app-security]
-    related_skills: [general]
 ---
 
 # Android App Security Implementation

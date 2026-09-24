@@ -1,6 +1,13 @@
 ---
 name: cross-thread-async
-description: "Debug asyncio callbacks from non-async threads GUI or mDNS"
+description: Debug asyncio callbacks from non-async threads GUI or mDNS
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [cross, thread, async]
 ---
 
 # Cross-Thread Async Patterns

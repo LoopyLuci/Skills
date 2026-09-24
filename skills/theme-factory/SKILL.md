@@ -1,12 +1,13 @@
 ---
-
 name: theme-factory
 description: Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set themes with colors/fonts that you can apply to any artifact that has been creating, or can generate a new theme on-the-fly.
-source: anthropics/skills
-tags: [design, theme, css, styling, brand]
-metadata: 
-hermes: 
-
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [design, theme, css, styling, brand]
 ---
 
 **Trigger**: Use when creating, modifying, or applying visual themes — color palettes, typography scales, spacing systems, and CSS design tokens.

@@ -1,14 +1,13 @@
 ---
 name: database-redis-streams-implementation
-description: "Use when applying redis streams implementation."
+description: Use when applying redis streams implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, redis, streams, pub-sub]
-    related_skills: [general]
 ---
 
 # Database Redis Streams Implementation

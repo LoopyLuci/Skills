@@ -2,12 +2,12 @@
 name: marine-environmental-compliance
 description: MARPOL, ballast water, emissions, and environmental regulations
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["compliance", "marpol"]
+    tags: [compliance, marpol]
 ---
 
 # Marine Environmental Compliance

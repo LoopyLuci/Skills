@@ -2,12 +2,12 @@
 name: newborn-care-basics
 description: Feeding, sleep, diapering, and newborn health and safety
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["newborn", "infant"]
+    tags: [newborn, infant]
 ---
 
 # Newborn Care Basics

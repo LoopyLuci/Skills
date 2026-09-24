@@ -2,12 +2,12 @@
 name: dog-training-behavior
 description: Positive reinforcement, behavior modification, and training plans
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["dog", "training"]
+    tags: [dog, training]
 ---
 
 # Dog Training Behavior

@@ -1,14 +1,13 @@
 ---
 name: bci-device-approval-implementation
-description: "Use when applying bci device approval implementation."
+description: Use when applying bci device approval implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neurotech, regulatory, bci-device-approval]
-    related_skills: [general]
 ---
 
 # Bci Device Approval Implementation

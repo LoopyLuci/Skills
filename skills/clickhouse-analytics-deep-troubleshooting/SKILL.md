@@ -1,14 +1,13 @@
 ---
 name: clickhouse-analytics-deep-troubleshooting
-description: "Use when applying clickhouse analytics troubleshooting."
+description: Use when applying clickhouse analytics troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, analytics]
-    related_skills: ['clickhouse-analytics']
 ---
 
 # Clickhouse Analytics Deep Troubleshooting

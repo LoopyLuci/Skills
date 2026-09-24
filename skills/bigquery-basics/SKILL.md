@@ -1,11 +1,10 @@
 ---
 name: bigquery-basics
-description: >-
-source: google/skills
-tags: [gcp, bigquery, analytics, sql, data-warehouse]
-metadata: 
-hermes: 
-
+description: Skill for bigquery basics
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [gcp, bigquery, analytics, sql, data-warehouse]

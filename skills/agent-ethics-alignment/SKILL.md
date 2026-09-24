@@ -1,13 +1,13 @@
 ---
 name: agent-ethics-alignment
-description: "Use when implementing ethics and alignment for agents."
+description: Use when implementing ethics and alignment for agents.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [agent-ethics, alignment, safety, guardrails, values, constraints]
-    related_skills: [agent-safety-monitoring, ai-fairness-mitigation, agent-safety-alignment, rlhf-implementation-guide]
 ---
 
 # Agent Ethics and Alignment

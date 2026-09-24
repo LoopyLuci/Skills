@@ -1,14 +1,13 @@
 ---
 name: automotive-fleet-management-software
-description: "Use when building fleet management."
+description: Use when building fleet management.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [automotive, fleet-management, software, tracking]
-    related_skills: [general]
 ---
 
 # Automotive Fleet Management Software

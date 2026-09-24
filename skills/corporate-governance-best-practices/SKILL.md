@@ -1,14 +1,13 @@
 ---
 name: corporate-governance-best-practices
-description: "Use when applying corporate governance."
+description: Use when applying corporate governance.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: ['g', 'o', 'v', 'e', 'r', 'n', 'a', 'n', 'c', 'e', ',', ' ', 'b', 'o', 'a', 'r', 'd', '-', 'm', 'a', 'n', 'a', 'g', 'e', 'm', 'e', 'n', 't']
-    related_skills: [general]
+    tags: [g, o, v, e, r, n, a, n, c, e, , ,  , b, o, a, r, d, -, m, a, n, a, g, e, m, e, n, t]
 ---
 
 # Corporate Governance Best Practices

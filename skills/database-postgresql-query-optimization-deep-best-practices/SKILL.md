@@ -1,14 +1,13 @@
 ---
 name: database-postgresql-query-optimization-deep-best-practices
-description: "Use when applying postgresql query optimization best pra."
+description: Use when applying postgresql query optimization best pra.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, postgres]
-    related_skills: ['postgresql-query-optimization']
 ---
 
 # Database Postgresql Query Optimization Deep Best Practices

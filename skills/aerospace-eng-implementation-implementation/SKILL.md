@@ -1,14 +1,13 @@
 ---
 name: aerospace-eng-implementation-implementation
-description: "Use when applying aerospace implementation implementation."
+description: Use when applying aerospace implementation implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, aerospace, implementation]
-    related_skills: [general]
 ---
 
 # Aerospace Eng Implementation Implementation

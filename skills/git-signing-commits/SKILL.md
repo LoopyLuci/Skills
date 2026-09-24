@@ -1,8 +1,13 @@
 ---
-
 name: git-signing-commits
 description: Sign commits and tags with GPG or SSH keys for verification.
-
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [git, signing, commits]
 ---
 
 # Git Signing Commits

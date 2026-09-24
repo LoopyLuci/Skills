@@ -1,14 +1,13 @@
 ---
 name: agricultural-mechanization-fundamentals
-description: "Use when applying ag mechanization fundamentals."
+description: Use when applying ag mechanization fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agri, machinery, agricultural-mechanization]
-    related_skills: [general]
 ---
 
 # Agricultural Mechanization Fundamentals

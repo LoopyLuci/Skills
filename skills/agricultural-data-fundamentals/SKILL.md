@@ -1,14 +1,13 @@
 ---
 name: agricultural-data-fundamentals
-description: "Use when applying agricultural data fundamentals."
+description: Use when applying agricultural data fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agriculture, data, analytics]
-    related_skills: [general]
 ---
 
 # Agricultural Data Fundamentals

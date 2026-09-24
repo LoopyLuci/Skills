@@ -2,12 +2,12 @@
 name: healthcare-compliance-hipaa
 description: HIPAA privacy/security, HITECH, BAA, and breach risk assessment
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["hipaa", "healthcare"]
+    tags: [hipaa, healthcare]
 ---
 
 # Healthcare Compliance Hipaa

@@ -1,14 +1,13 @@
 ---
 name: angular-testing-implementation
-description: "Use when applying angular testing implementation."
+description: Use when applying angular testing implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [frontend, angular, testing, karma]
-    related_skills: [general]
 ---
 
 # Angular Testing Implementation

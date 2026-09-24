@@ -2,12 +2,12 @@
 name: inventory-optimization
 description: Safety stock, EOQ, ABC analysis, multi-echelon, and demand-driven planning
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["inventory", "planning"]
+    tags: [inventory, planning]
 ---
 
 # Inventory Optimization

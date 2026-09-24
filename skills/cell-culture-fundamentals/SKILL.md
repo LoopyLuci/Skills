@@ -1,14 +1,13 @@
 ---
 name: cell-culture-fundamentals
-description: "Use when applying cell culture fundamentals."
+description: Use when applying cell culture fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, pharma, cell-culture]
-    related_skills: [general]
 ---
 
 # Cell Culture Fundamentals

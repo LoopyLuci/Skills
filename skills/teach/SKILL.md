@@ -1,12 +1,13 @@
 ---
-
 name: teach
 description: Teach the user a new skill or concept, within this workspace.
-source: mattpocock/skills
-tags: [productivity, education, teaching, mentoring]
-metadata: 
-hermes: 
-
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [productivity, education, teaching, mentoring]
 ---
 
 **Trigger**: Use when teaching a user a new skill or concept over multiple sessions, using the current directory as a stateful teaching workspace.

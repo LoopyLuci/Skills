@@ -1,14 +1,13 @@
 ---
 name: aerospace-certification-fundamentals
-description: "Use when applying aerospace certification fundamentals."
+description: Use when applying aerospace certification fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aerospace, cert, certification]
-    related_skills: ['general']
 ---
 
 # Aerospace Certification Fundamentals

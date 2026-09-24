@@ -1,12 +1,13 @@
 ---
 name: css-flexbox-patterns
-description: "Use when building flexbox layouts."
+description: Use when building flexbox layouts.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["css", "flexbox", "layout", "alignment", "wrapping"]
+    tags: [css, flexbox, layout, alignment, wrapping]
 ---
 
 # Css Flexbox Patterns

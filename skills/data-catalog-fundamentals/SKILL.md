@@ -1,14 +1,13 @@
 ---
 name: data-catalog-fundamentals
-description: "Use when learning data catalog fundamentals."
+description: Use when learning data catalog fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data-governance, catalog, metadata]
-    related_skills: [general]
 ---
 
 # Data Catalog Fundamentals

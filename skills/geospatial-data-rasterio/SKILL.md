@@ -2,12 +2,12 @@
 name: geospatial-data-rasterio
 description: Rasterio, xarray, GeoTIFF, COG, and multi-band analysis
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["raster", "python"]
+    tags: [raster, python]
 ---
 
 # Geospatial Data Rasterio

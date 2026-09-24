@@ -1,14 +1,13 @@
 ---
 name: banking-operations
-description: "Use when operating banks."
+description: Use when operating banks.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, banking, banking-operations-analysis]
-    related_skills: [general]
 ---
 
 # Banking Operations

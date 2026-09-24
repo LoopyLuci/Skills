@@ -1,13 +1,13 @@
 ---
 name: hr-recruiting-onboarding
-description: "Use when managing HR recruiting and employee onboarding."
+description: Use when managing HR recruiting and employee onboarding.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [HR, recruiting, hiring, onboarding, talent-acquisition, interviews]
-    related_skills: [remote-team-management, performance-review-systems, sales-compensation-planning, legal-compliance-business]
+    tags: [hr, recruiting, hiring, onboarding, talent-acquisition, interviews]
 ---
 
 # Hr Recruiting Onboarding

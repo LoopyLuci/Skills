@@ -1,14 +1,13 @@
 ---
 name: aerospace-thermal-troubleshooting
-description: "Use when applying aerospace thermal troubleshooting."
+description: Use when applying aerospace thermal troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aerospace, thermal, thermal]
-    related_skills: ['general']
 ---
 
 # Aerospace Thermal Troubleshooting

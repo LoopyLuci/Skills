@@ -1,14 +1,13 @@
 ---
 name: blog-guest-posting-troubleshooting
-description: "Use when applying guest posting outreach troubleshooting."
+description: Use when applying guest posting outreach troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, guest-posting-outreach]
-    related_skills: ['']
 ---
 
 # Blog Guest Posting Troubleshooting

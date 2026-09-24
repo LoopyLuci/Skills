@@ -1,6 +1,13 @@
 ---
 name: rust-native-development
-description: "Rust native: deterministic engines, Tauri, WASM plugins."
+description: Rust native: deterministic engines, Tauri, WASM plugins.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [rust, native, development]
 ---
 
 # Rust Native Development

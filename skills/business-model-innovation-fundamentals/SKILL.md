@@ -1,14 +1,13 @@
 ---
 name: business-model-innovation-fundamentals
-description: "Use when applying business model innovation fundamentals."
+description: Use when applying business model innovation fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [consulting, innovation, business-model]
-    related_skills: [general]
 ---
 
 # Business Model Innovation Fundamentals

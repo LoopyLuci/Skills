@@ -1,14 +1,13 @@
 ---
 name: aws-lambda-troubleshooting-best-practices
-description: "Use when applying aws lambda troubleshooting best practi."
+description: Use when applying aws lambda troubleshooting best practi.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, lambda]
-    related_skills: ['aws-lambda-troubleshooting']
 ---
 
 # Aws Lambda Troubleshooting Best Practices

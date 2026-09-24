@@ -1,14 +1,13 @@
 ---
 name: data-viz-implementation-deep-troubleshooting
-description: "Use when applying data viz implementation troubleshooting."
+description: Use when applying data viz implementation troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [design, data-viz]
-    related_skills: ['data-viz-implementation']
 ---
 
 # Data Viz Implementation Deep Troubleshooting

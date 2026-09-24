@@ -1,14 +1,13 @@
 ---
 name: cosmetic-manufacturing-gmp
-description: "Use when manufacturing cosmetics under GMP."
+description: Use when manufacturing cosmetics under GMP.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, cosmetics, gmp, manufacturing]
-    related_skills: [pharmaceutical-gmp-manufacturing]
 ---
 
 # Cosmetic Manufacturing Gmp

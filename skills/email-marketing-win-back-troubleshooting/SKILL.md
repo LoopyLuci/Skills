@@ -1,14 +1,13 @@
 ---
 name: email-marketing-win-back-troubleshooting
-description: "Use when applying win-back email troubleshooting."
+description: Use when applying win-back email troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, retention, win-back]
-    related_skills: [general]
 ---
 
 # Email Marketing Win Back Troubleshooting

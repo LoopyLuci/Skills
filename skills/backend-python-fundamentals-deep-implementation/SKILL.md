@@ -1,14 +1,13 @@
 ---
 name: backend-python-fundamentals-deep-implementation
-description: "Use when applying python backend fundamentals implementa."
+description: Use when applying python backend fundamentals implementa.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, python]
-    related_skills: ['backend-python-fundamentals']
 ---
 
 # Backend Python Fundamentals Deep Implementation

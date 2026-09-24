@@ -1,9 +1,15 @@
 ---
 name: powershell-pester-testing
-description: "Use when unit-testing PowerShell with Pester."
-category: software-development
-tags: [powershell, testing, pester, unit-test, bdd]
+description: Use when unit-testing PowerShell with Pester.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [powershell, testing, pester, unit-test, bdd]
 ---
+
 # Pester Testing for PowerShell
 
 Writing and running unit tests with Pester.

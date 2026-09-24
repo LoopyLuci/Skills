@@ -1,14 +1,13 @@
 ---
 name: electric-vehicle-infrastructure
-description: "Use when designing EV charging. Grid, billing."
+description: Use when designing EV charging. Grid, billing.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climatetech, ev-infrastructure, charging-stations]
-    related_skills: [smart-grid-optimization, renewable-energy-design]
 ---
 
 # Electric Vehicle Infrastructure

@@ -1,14 +1,13 @@
 ---
 name: climate-tech-patents
-description: "Use when filing climate tech patents. IP, strategy."
+description: Use when filing climate tech patents. IP, strategy.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climatetech, patents, intellectual-property, innovation]
-    related_skills: [climate-tech-startup-funding]
 ---
 
 # Climate Tech Patents

@@ -1,14 +1,13 @@
 ---
 name: cardiology-implementation-deep-best-practices
-description: "Use when applying cardiology implementation best practices."
+description: Use when applying cardiology implementation best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [healthcare, cardiology]
-    related_skills: ['cardiology-implementation']
 ---
 
 # Cardiology Implementation Deep Best Practices

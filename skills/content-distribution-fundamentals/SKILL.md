@@ -1,14 +1,13 @@
 ---
 name: content-distribution-fundamentals
-description: "Use when applying cdn fundamentals."
+description: Use when applying cdn fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [media, cdn, cdn-caching]
-    related_skills: ['general']
 ---
 
 # Content Distribution Fundamentals

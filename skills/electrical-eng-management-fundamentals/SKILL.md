@@ -1,14 +1,13 @@
 ---
 name: electrical-eng-management-fundamentals
-description: "Use when applying elect eng management fundamentals."
+description: Use when applying elect eng management fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, electrical, management]
-    related_skills: [general]
 ---
 
 # Electrical Eng Management Fundamentals

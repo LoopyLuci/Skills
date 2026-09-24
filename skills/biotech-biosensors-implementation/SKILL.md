@@ -1,14 +1,13 @@
 ---
 name: biotech-biosensors-implementation
-description: "Use when applying biosensors implementation."
+description: Use when applying biosensors implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, biosensors]
-    related_skills: ['']
 ---
 
 # Biotech Biosensors Implementation

@@ -1,14 +1,13 @@
 ---
 name: ansible-vault-troubleshooting-fundamentals
-description: "Use when applying ansible vault troubleshooting fundamen."
+description: Use when applying ansible vault troubleshooting fundamen.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, ansible]
-    related_skills: ['ansible-vault-troubleshooting']
 ---
 
 # Ansible Vault Troubleshooting Fundamentals

@@ -1,14 +1,13 @@
 ---
 name: aws-cdk-best-practices
-description: "Use when applying aws cdk best practices."
+description: Use when applying aws cdk best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, cdk, iac, typescript]
-    related_skills: [general]
 ---
 
 # Aws Cdk Best Practices

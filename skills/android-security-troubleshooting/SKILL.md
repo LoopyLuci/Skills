@@ -1,14 +1,13 @@
 ---
 name: android-security-troubleshooting
-description: "Use when applying android security troubleshooting."
+description: Use when applying android security troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mobile, android, security, pentest]
-    related_skills: [general]
 ---
 
 # Android Security Troubleshooting

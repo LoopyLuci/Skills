@@ -1,14 +1,13 @@
 ---
 name: closed-loop-bci-fundamentals
-description: "Use when applying closed-loop bci fundamentals."
+description: Use when applying closed-loop bci fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neurotech, bci, closed-loop]
-    related_skills: [general]
 ---
 
 # Closed Loop Bci Fundamentals

@@ -1,14 +1,13 @@
 ---
 name: agri-tech-logistics-fundamentals
-description: "Use when applying agricultural logistics fundamentals."
+description: Use when applying agricultural logistics fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agri, logistics, agri-logistics]
-    related_skills: ['']
 ---
 
 # Agri Tech Logistics Fundamentals

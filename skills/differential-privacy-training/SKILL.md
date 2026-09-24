@@ -1,13 +1,13 @@
 ---
 name: differential-privacy-training
-description: "Use when implementing differential privacy in ML training."
+description: Use when implementing differential privacy in ML training.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [differential-privacy, privacy, DP-SGD, secure-training]
-    related_skills: [adversarial-ml-robustness, federated-learning, custom-training-loops, ai-fairness-mitigation]
+    tags: [differential-privacy, privacy, dp-sgd, secure-training]
 ---
 
 # Differential Privacy Training

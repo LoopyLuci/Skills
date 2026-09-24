@@ -2,12 +2,12 @@
 name: creative-writing-fiction
 description: Plot, character, setting, dialogue, and revision techniques for fiction
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["fiction", "creative"]
+    tags: [fiction, creative]
 ---
 
 # Creative Writing Fiction

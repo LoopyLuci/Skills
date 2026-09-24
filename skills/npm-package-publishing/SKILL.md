@@ -1,9 +1,13 @@
 ---
 name: npm-package-publishing
-description: "Use when publishing npm packages."
+description: Use when publishing npm packages.
 version: 1.0.0
-author: Hermes Agent
-tags: ["npm", "publish", "package", "semantic-release", "CI"]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [npm, publish, package, semantic-release, ci]
 ---
 
 # Npm Package Publishing

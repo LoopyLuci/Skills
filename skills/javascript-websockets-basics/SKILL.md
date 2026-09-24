@@ -1,12 +1,13 @@
 ---
 name: javascript-websockets-basics
-description: "Use when using WebSockets."
+description: Use when using WebSockets.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["javascript", "websockets", "realtime", "socket.io"]
+    tags: [javascript, websockets, realtime, socket.io]
 ---
 
 # Javascript Websockets Basics

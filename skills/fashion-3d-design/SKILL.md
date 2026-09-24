@@ -1,14 +1,13 @@
 ---
 name: fashion-3d-design
-description: "Use when doing 3D fashion design."
+description: Use when doing 3D fashion design.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, 3d-design, virtual-fashion, prototyping]
-    related_skills: [general]
 ---
 
 # Fashion 3d Design

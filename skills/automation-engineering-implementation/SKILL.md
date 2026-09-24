@@ -1,14 +1,13 @@
 ---
 name: automation-engineering-implementation
-description: "Use when applying automation engineering implementation."
+description: Use when applying automation engineering implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mfg, automation, industrial-automation-systems]
-    related_skills: [general]
 ---
 
 # Automation Engineering Implementation

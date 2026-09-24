@@ -1,14 +1,13 @@
 ---
 name: cardiology-management-deep-implementation
-description: "Use when applying cardiology management implementation."
+description: Use when applying cardiology management implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [healthcare, cardiology]
-    related_skills: ['cardiology-management']
 ---
 
 # Cardiology Management Deep Implementation

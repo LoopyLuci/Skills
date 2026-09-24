@@ -1,13 +1,13 @@
 ---
 name: video-content-strategy
-description: "Use when planning and producing video content strategy."
+description: Use when planning and producing video content strategy.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [video, content-strategy, youtube, production, editing, short-form, long-form]
-    related_skills: [podcast-production-management, content-repurposing-distribution, social-media-content-planning, digital-marketing-strategy]
 ---
 
 # Video Content Strategy

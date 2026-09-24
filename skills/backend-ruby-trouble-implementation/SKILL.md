@@ -1,14 +1,13 @@
 ---
 name: backend-ruby-trouble-implementation
-description: "Use when applying backend ruby troubleshooting implement."
+description: Use when applying backend ruby troubleshooting implement.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, ruby, backend-ruby-troubleshooting]
-    related_skills: [general]
 ---
 
 # Backend Ruby Trouble Implementation

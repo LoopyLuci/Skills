@@ -1,13 +1,13 @@
 ---
 name: agent-ensembles-voting
-description: "Use when implementing multi-agent ensemble voting systems."
+description: Use when implementing multi-agent ensemble voting systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [agents, ensemble, voting, consensus, multi-agent, debate]
-    related_skills: [agent-swarm-architectures, swarm-communication-protocols, agent-reasoning-patterns, agent-evaluation-metrics]
 ---
 
 # Agent Ensembles Voting

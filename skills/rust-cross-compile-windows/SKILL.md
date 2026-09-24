@@ -1,9 +1,15 @@
 ---
 name: rust-cross-compile-windows
-description: "Use when cross-compiling Rust for or from Windows."
-category: software-development
-tags: [rust, cross-compile, windows, msvc, gnu]
+description: Use when cross-compiling Rust for or from Windows.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [rust, cross-compile, windows, msvc, gnu]
 ---
+
 # Rust Cross-Compile on Windows
 
 Cross-compiling Rust applications for and from Windows.

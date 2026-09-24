@@ -1,14 +1,13 @@
 ---
 name: customer-success-strategy-deep-troubleshooting
-description: "Use when applying customer success strategy troubleshoot."
+description: Use when applying customer success strategy troubleshoot.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [sales, customer-success-strategy]
-    related_skills: ['']
 ---
 
 # Customer Success Strategy Deep Troubleshooting

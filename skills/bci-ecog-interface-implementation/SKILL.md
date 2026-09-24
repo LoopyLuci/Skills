@@ -1,14 +1,13 @@
 ---
 name: bci-ecog-interface-implementation
-description: "Use when applying bci ecog interface implementation."
+description: Use when applying bci ecog interface implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neuro, bci, brain-computer-interface-applications]
-    related_skills: ['']
 ---
 
 # Bci Ecog Interface Implementation

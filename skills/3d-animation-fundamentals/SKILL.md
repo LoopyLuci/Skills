@@ -1,14 +1,13 @@
 ---
 name: 3d-animation-fundamentals
-description: "Use when applying 3d animation fundamentals."
+description: Use when applying 3d animation fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [media, animation, 3d-animation]
-    related_skills: [general]
 ---
 
 # 3d Animation Fundamentals

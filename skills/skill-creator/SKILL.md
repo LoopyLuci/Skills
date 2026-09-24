@@ -1,8 +1,13 @@
 ---
 name: skill-creator
 description: Use when creating or improving skills with eval testing.
-tags: [skill-creation, eval-testing, benchmarking, iteration]
-related_skills: [skill-discovery, skill-development-workflow]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [skill-creation, eval-testing, benchmarking, iteration]
 ---
 
 # Skill Creator

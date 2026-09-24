@@ -2,12 +2,12 @@
 name: payment-processing-checkout
 description: Payment gateways, fraud prevention, BNPL, and PCI compliance
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["payments", "checkout"]
+    tags: [payments, checkout]
 ---
 
 # Payment Processing Checkout

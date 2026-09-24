@@ -1,14 +1,13 @@
 ---
 name: bluetooth-le-best-practices
-description: "Use when applying bluetooth le best practices."
+description: Use when applying bluetooth le best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [electronics, wireless, bluetooth-le-device]
-    related_skills: [general]
 ---
 
 # Bluetooth Le Best Practices

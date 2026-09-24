@@ -1,14 +1,13 @@
 ---
 name: database-security-best-practices
-description: "Use when for database security best practices."
+description: Use when for database security best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, security, encryption, access-control]
-    related_skills: [general]
 ---
 
 # Database Security Best Practices

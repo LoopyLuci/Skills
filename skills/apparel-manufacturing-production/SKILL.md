@@ -2,12 +2,12 @@
 name: apparel-manufacturing-production
 description: Apparel production, quality control, and supply chain
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["manufacturing", "production"]
+    tags: [manufacturing, production]
 ---
 
 # Apparel Manufacturing Production

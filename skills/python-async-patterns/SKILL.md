@@ -1,13 +1,13 @@
 ---
 name: python-async-patterns
-description: "Use when implementing async Python patterns."
+description: Use when implementing async Python patterns.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [python, async, asyncio, coroutines, tasks, event-loop]
-    related_skills: [cross-thread-async, python-asyncio-gui-threading, data-pipeline-streaming]
 ---
 
 # Python Async Patterns

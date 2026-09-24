@@ -1,13 +1,13 @@
 ---
 name: skill-architecture-patterns
-description: "Use when designing multi-skill architectures."
+description: Use when designing multi-skill architectures.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [meta, skill-architecture, patterns, design, multi-skill, systems]
-    related_skills: [skill-architecture-planning, skill-content-optimization, skill-gap-analysis, meta-skill-patterns]
 ---
 
 # Skill Architecture Patterns

@@ -1,14 +1,13 @@
 ---
 name: data-privacy-law
-description: "Use when applying privacy law."
+description: Use when applying privacy law.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [legal, privacy, data-privacy]
-    related_skills: [general]
 ---
 
 # Data Privacy Law

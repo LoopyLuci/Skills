@@ -1,14 +1,13 @@
 ---
 name: cqrs-best-practices
-description: "Use when applying cqrs best practices."
+description: Use when applying cqrs best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [architecture, cqrs, event-sourcing]
-    related_skills: [general]
 ---
 
 # Cqrs Best Practices

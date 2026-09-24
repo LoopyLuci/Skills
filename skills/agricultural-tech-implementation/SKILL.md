@@ -1,14 +1,13 @@
 ---
 name: agricultural-tech-implementation
-description: "Use when implementing agritech projects."
+description: Use when implementing agritech projects.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agri-tech, agriculture, farming, precision]
-    related_skills: [general]
 ---
 
 # Agricultural Tech Implementation

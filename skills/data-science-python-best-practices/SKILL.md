@@ -1,14 +1,13 @@
 ---
 name: data-science-python-best-practices
-description: "Use when for data science python best practices."
+description: Use when for data science python best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data-science, python, pandas, numpy]
-    related_skills: [general]
 ---
 
 # Data Science Python Best Practices

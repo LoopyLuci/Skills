@@ -1,14 +1,13 @@
 ---
 name: discrete-manufacturing
-description: "Use when doing discrete mfg."
+description: Use when doing discrete mfg.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mfg, discrete, discrete-manufacturing]
-    related_skills: [general]
 ---
 
 # Discrete Manufacturing

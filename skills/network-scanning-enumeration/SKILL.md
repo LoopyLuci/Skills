@@ -1,13 +1,13 @@
 ---
 name: network-scanning-enumeration
-description: "Use when scanning and enumerating network targets."
+description: Use when scanning and enumerating network targets.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [network-scanning, nmap, masscan, enumeration, service-detection, fingerprinting]
-    related_skills: [vulnerability-assessment-scanning, network-sniffing-packet-capture, penetration-testing-methodology, osint-reconnaissance-techniques]
 ---
 
 # Network Scanning and Enumeration

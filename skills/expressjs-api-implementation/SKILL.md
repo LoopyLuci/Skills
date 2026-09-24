@@ -1,14 +1,13 @@
 ---
 name: expressjs-api-implementation
-description: "Use when applying express.js api implementation."
+description: Use when applying express.js api implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, expressjs, api, nodejs]
-    related_skills: [general]
 ---
 
 # Expressjs Api Implementation

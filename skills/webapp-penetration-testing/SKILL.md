@@ -1,13 +1,13 @@
 ---
 name: webapp-penetration-testing
-description: "Use when testing web application security."
+description: Use when testing web application security.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [webapp, pentest, OWASP-Top-10, Burp-Suite, SQLi-XSS, web-security]
-    related_skills: [api-penetration-testing, sql-injection-exploitation, cross-site-scripting-exploitation, web-security-patterns]
+    tags: [webapp, pentest, owasp-top-10, burp-suite, sqli-xss, web-security]
 ---
 
 # Web Application Penetration Testing

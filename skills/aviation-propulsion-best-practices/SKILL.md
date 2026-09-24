@@ -1,14 +1,13 @@
 ---
 name: aviation-propulsion-best-practices
-description: "Use when applying aviation propulsion best practices."
+description: Use when applying aviation propulsion best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, propulsion, propulsion]
-    related_skills: ['general']
 ---
 
 # Aviation Propulsion Best Practices

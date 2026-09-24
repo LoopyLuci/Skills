@@ -1,14 +1,13 @@
 ---
 name: debugging-workflow
-description: "Use for debugging. Systematic: reproduce, isolate, fix."
-version: 1.1.0
-author: Hermes Agent
+description: Use for debugging. Systematic: reproduce, isolate, fix.
+version: 1.0.0
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [programming, debugging, troubleshooting, bugs, root-cause-analysis]
-    related_skills: [code-review-checklist, refactoring-playbook, performance-profiling]
 ---
 
 # Debugging Workflow

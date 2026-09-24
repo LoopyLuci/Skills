@@ -1,13 +1,13 @@
 ---
 name: api-penetration-testing
-description: "Use when testing API security and endpoints."
+description: Use when testing API security and endpoints.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [API-pentest, REST, GraphQL, JWT, OAuth, rate-limiting, injection]
-    related_skills: [webapp-penetration-testing, sql-injection-exploitation, web-security-patterns, oauth-authentication-patterns]
+    tags: [api-pentest, rest, graphql, jwt, oauth, rate-limiting, injection]
 ---
 
 # API Penetration Testing

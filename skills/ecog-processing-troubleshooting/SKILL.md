@@ -1,14 +1,13 @@
 ---
 name: ecog-processing-troubleshooting
-description: "Use when applying ecog processing troubleshooting."
+description: Use when applying ecog processing troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neurotech, ecog, signal-processing]
-    related_skills: [general]
 ---
 
 # Ecog Processing Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: automotive-design-fundamentals
-description: "Use when applying automotive design fundamentals."
+description: Use when applying automotive design fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [auto, design, automotive-hmi-design]
-    related_skills: [general]
 ---
 
 # Automotive Design Fundamentals

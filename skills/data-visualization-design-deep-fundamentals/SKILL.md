@@ -1,14 +1,13 @@
 ---
 name: data-visualization-design-deep-fundamentals
-description: "Use when applying data viz design fundamentals."
+description: Use when applying data viz design fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [design, data-viz]
-    related_skills: ['data-visualization-design']
 ---
 
 # Data Visualization Design Deep Fundamentals

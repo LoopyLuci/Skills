@@ -1,14 +1,13 @@
 ---
 name: aws-sns-fundamentals
-description: "Use when applying aws sns fundamentals."
+description: Use when applying aws sns fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, sns, notifications, pub-sub]
-    related_skills: [general]
 ---
 
 # Aws Sns Fundamentals

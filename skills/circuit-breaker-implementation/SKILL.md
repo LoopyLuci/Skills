@@ -1,14 +1,13 @@
 ---
 name: circuit-breaker-implementation
-description: "Use when applying circuit breaker implementation."
+description: Use when applying circuit breaker implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [architecture, circuit-breaker, resilience]
-    related_skills: [general]
 ---
 
 # Circuit Breaker Implementation

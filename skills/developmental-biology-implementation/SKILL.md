@@ -1,14 +1,13 @@
 ---
 name: developmental-biology-implementation
-description: "Use when implementing developmental biology projects."
+description: Use when implementing developmental biology projects.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [developmental-biology, embryology, development]
-    related_skills: [general]
 ---
 
 # Developmental Biology Implementation

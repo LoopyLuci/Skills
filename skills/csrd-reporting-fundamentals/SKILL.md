@@ -1,14 +1,13 @@
 ---
 name: csrd-reporting-fundamentals
-description: "Use when applying csrd reporting fundamentals."
+description: Use when applying csrd reporting fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, eu, esg-reporting]
-    related_skills: [general]
 ---
 
 # Csrd Reporting Fundamentals

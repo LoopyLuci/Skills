@@ -1,14 +1,13 @@
 ---
 name: email-marketing-list-cleaning-best-practices
-description: "Use when applying email list cleaning best practices."
+description: Use when applying email list cleaning best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, hygiene, list-cleaning]
-    related_skills: [general]
 ---
 
 # Email Marketing List Cleaning Best Practices

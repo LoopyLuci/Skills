@@ -1,14 +1,13 @@
 ---
 name: django-rest-api
-description: "Use when building Django REST APIs."
+description: Use when building Django REST APIs.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, django, python, api]
-    related_skills: [general]
 ---
 
 # Django Rest Api

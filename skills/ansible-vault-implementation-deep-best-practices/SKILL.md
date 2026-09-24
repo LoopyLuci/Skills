@@ -1,14 +1,13 @@
 ---
 name: ansible-vault-implementation-deep-best-practices
-description: "Use when applying ansible vault implementation best prac."
+description: Use when applying ansible vault implementation best prac.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, ansible]
-    related_skills: ['ansible-vault-implementation']
 ---
 
 # Ansible Vault Implementation Deep Best Practices

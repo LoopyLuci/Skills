@@ -1,14 +1,13 @@
 ---
 name: codex
-description: "Delegate coding to OpenAI Codex CLI (features, PRs)."
-version: 1.0.1
-author: Hermes Agent
+description: Delegate coding to OpenAI Codex CLI (features, PRs).
+version: 1.0.0
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: [Coding-Agent, Codex, OpenAI, Code-Review, Refactoring]
-    related_skills: [claude-code, hermes-agent]
+    tags: [coding-agent, codex, openai, code-review, refactoring]
 ---
 
 # Codex CLI

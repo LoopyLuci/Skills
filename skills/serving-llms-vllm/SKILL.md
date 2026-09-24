@@ -1,15 +1,13 @@
 ---
 name: serving-llms-vllm
-description: "vLLM: high-throughput LLM serving, OpenAI API, quantization."
-version: 1.0.1
-author: Orchestra Research
+description: vLLM: high-throughput LLM serving, OpenAI API, quantization.
+version: 1.0.0
+author: LoopyLuci Community
 license: MIT
-dependencies: [vllm, torch, transformers]
-platforms: [linux, macos]
+platforms: [any]
 metadata:
   hermes:
-    tags: [vLLM, Inference Serving, PagedAttention, Continuous Batching, High Throughput, Production, OpenAI API, Quantization, Tensor Parallelism]
-
+    tags: [vllm, inference serving, pagedattention, continuous batching, high throughput, production, openai api, quantization, tensor parallelism]
 ---
 
 # vLLM - High-Performance LLM Serving
@@ -368,6 +366,3 @@ Supported platforms: NVIDIA (primary), AMD ROCm, Intel GPUs, TPUs
 - GitHub: https://github.com/vllm-project/vllm
 - Paper: "Efficient Memory Management for Large Language Model Serving with PagedAttention" (SOSP 2023)
 - Community: https://discuss.vllm.ai
-
-
-

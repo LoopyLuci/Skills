@@ -1,9 +1,15 @@
 ---
 name: functional-programming-concepts
-description: "Use when applying FP: map, reduce, monads, immutability."
-category: software-development
-tags: [functional, fp, map, reduce, monads, immutability]
+description: Use when applying FP: map, reduce, monads, immutability.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [functional, fp, map, reduce, monads, immutability]
 ---
+
 # Functional Programming Concepts
 
 Core functional programming concepts applicable across languages.

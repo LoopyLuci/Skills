@@ -1,14 +1,13 @@
 ---
 name: database-postgresql-extensions-troubleshooting
-description: "Use when applying postgresql extensions troubleshooting."
+description: Use when applying postgresql extensions troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, postgresql, extensions, contrib]
-    related_skills: [general]
 ---
 
 # Database Postgresql Extensions Troubleshooting

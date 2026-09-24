@@ -1,13 +1,13 @@
 ---
 name: marketing-automation-workflows
-description: "Use when building marketing automation systems and flows."
+description: Use when building marketing automation systems and flows.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [marketing-automation, workflows, triggers, email-automation, CRM-automation]
-    related_skills: [email-marketing-campaigns, crm-sales-pipeline, marketing-funnel-design, list-building-email-growth]
+    tags: [marketing-automation, workflows, triggers, email-automation, crm-automation]
 ---
 
 # Marketing Automation Workflows

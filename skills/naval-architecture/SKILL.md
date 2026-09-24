@@ -2,12 +2,12 @@
 name: naval-architecture
 description: Ship stability, structural design, and classification society rules
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["naval", "architecture"]
+    tags: [naval, architecture]
 ---
 
 # Naval Architecture

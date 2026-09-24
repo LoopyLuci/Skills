@@ -1,14 +1,13 @@
 ---
 name: energy-storage-deep-implementation
-description: "Use when applying energy storage implementation."
+description: Use when applying energy storage implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, storage]
-    related_skills: ['general']
 ---
 
 # Energy Storage Deep Implementation

@@ -1,14 +1,13 @@
 ---
 name: aws-iam
-description: "Use when managing AWS IAM."
+description: Use when managing AWS IAM.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, iam, permissions, security]
-    related_skills: [general]
 ---
 
 # Aws Iam

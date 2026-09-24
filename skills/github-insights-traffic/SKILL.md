@@ -1,6 +1,13 @@
 ---
 name: github-insights-traffic
 description: Analyze repo traffic, contributions, and community metrics.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [github, insights, traffic]
 ---
 
 # GitHub Insights & Traffic

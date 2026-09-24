@@ -1,14 +1,13 @@
 ---
 name: chemical-kinetics
-description: "Use when studying chemical kinetics."
+description: Use when studying chemical kinetics.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [chem, kinetics, kinetics]
-    related_skills: [general]
 ---
 
 # Chemical Kinetics

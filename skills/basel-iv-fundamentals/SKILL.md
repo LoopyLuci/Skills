@@ -1,14 +1,13 @@
 ---
 name: basel-iv-fundamentals
-description: "Use when applying basel iv fundamentals."
+description: Use when applying basel iv fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, banking, basel-iv]
-    related_skills: [general]
 ---
 
 # Basel Iv Fundamentals

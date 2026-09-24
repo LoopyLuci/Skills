@@ -1,14 +1,13 @@
 ---
 name: data-catalog-fundamentals-deep-fundamentals
-description: "Use when applying data catalog fundamentals fundamentals."
+description: Use when applying data catalog fundamentals fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, data-catalog]
-    related_skills: ['data-catalog-fundamentals']
 ---
 
 # Data Catalog Fundamentals Deep Fundamentals

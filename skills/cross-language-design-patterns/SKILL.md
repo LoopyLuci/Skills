@@ -1,13 +1,13 @@
 ---
 name: cross-language-design-patterns
-description: "Use when implementing cross-language design patterns."
+description: Use when implementing cross-language design patterns.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [design-patterns, gof, python, rust, typescript, architecture]
-    related_skills: [software-design-patterns, api-design-rest-graphql, functional-programming-concepts]
 ---
 
 # Cross Language Design Patterns

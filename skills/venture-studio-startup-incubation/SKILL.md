@@ -1,13 +1,13 @@
 ---
 name: venture-studio-startup-incubation
-description: "Use when building venture studios and startup incubation."
+description: Use when building venture studios and startup incubation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [venture-studio, startup-studio, incubation, venture-building, startup-factory]
-    related_skills: [fractional-executive-patterns, venture-capital-essentials, product-management-roadmap, go-to-market-strategy]
 ---
 
 # Venture Studio and Startup Incubation

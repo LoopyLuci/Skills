@@ -1,14 +1,13 @@
 ---
 name: cognitive-load-troubleshooting
-description: "Use when applying cognitive load assessment troubleshoot."
+description: Use when applying cognitive load assessment troubleshoot.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neuro, psychology, cognitive-load-assessment]
-    related_skills: [general]
 ---
 
 # Cognitive Load Troubleshooting

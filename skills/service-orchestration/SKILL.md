@@ -1,8 +1,13 @@
 ---
 name: service-orchestration
-description: "Auto-start, health-check, restart 2+ services from one CLI."
-category: software-development
-tags: [service-management, process-orchestration, health-checks, auto-restart, systemd, windows-scheduler, devops]
+description: Auto-start, health-check, restart 2+ services from one CLI.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [service-management, process-orchestration, health-checks, auto-restart, systemd, windows-scheduler, devops]
 ---
 
 # Service Orchestration

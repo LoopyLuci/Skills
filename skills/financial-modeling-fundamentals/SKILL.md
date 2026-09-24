@@ -1,14 +1,13 @@
 ---
 name: financial-modeling-fundamentals
-description: "Use when applying financial modeling fundamentals."
+description: Use when applying financial modeling fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, modeling, financial-modeling]
-    related_skills: [general]
 ---
 
 # Financial Modeling Fundamentals

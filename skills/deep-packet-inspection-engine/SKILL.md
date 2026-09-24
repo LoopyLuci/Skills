@@ -1,13 +1,13 @@
 ---
 name: deep-packet-inspection-engine
-description: "Use when building deep packet inspection engine patterns."
+description: Use when building deep packet inspection engine patterns.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [dpi, packet-inspection, network, protocol-analysis, security]
-    related_skills: [packet-capture-engine, pattern-matching-engine, protocol-identifier, http-https-inspector, tls-ssl-inspector]
 ---
 
 # Deep Packet Inspection Engine

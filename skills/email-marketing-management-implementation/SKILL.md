@@ -1,14 +1,13 @@
 ---
 name: email-marketing-management-implementation
-description: "Use when applying email marketing mgmt implementation."
+description: Use when applying email marketing mgmt implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, marketing, email-marketing-management]
-    related_skills: [general]
 ---
 
 # Email Marketing Management Implementation

@@ -1,12 +1,13 @@
 ---
 name: react-context
-description: "Use when implementing react context."
+description: Use when implementing react context.
 version: 1.0.0
-author: "Skill Genesis Model"
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["react", "context"]
+    tags: [react, context]
 ---
 
 # React Context

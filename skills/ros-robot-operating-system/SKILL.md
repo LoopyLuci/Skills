@@ -1,13 +1,13 @@
 ---
 name: ros-robot-operating-system
-description: "Use when building robotics applications with ROS."
+description: Use when building robotics applications with ROS.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [ROS, robotics, robot-operating-system, navigation, perception, control]
-    related_skills: [robot-control-systems, slam-simultaneous-localization, computer-vision-techniques, agent-environment-interaction]
+    tags: [ros, robotics, robot-operating-system, navigation, perception, control]
 ---
 
 # Robot Operating System (ROS)

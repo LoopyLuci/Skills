@@ -1,14 +1,13 @@
 ---
 name: data-warehouse-best-practices-deep-best-practices
-description: "Use when applying data warehouse best practices best pra."
+description: Use when applying data warehouse best practices best pra.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, data-warehousing]
-    related_skills: ['data-warehousing-best-practices']
 ---
 
 # Data Warehouse Best Practices Deep Best Practices

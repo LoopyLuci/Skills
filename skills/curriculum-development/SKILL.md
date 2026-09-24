@@ -1,14 +1,13 @@
 ---
 name: curriculum-development
-description: "Use when developing curricula."
+description: Use when developing curricula.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [education, curriculum, curriculum-development]
-    related_skills: [general]
 ---
 
 # Curriculum Development

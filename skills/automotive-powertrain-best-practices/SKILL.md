@@ -1,14 +1,13 @@
 ---
 name: automotive-powertrain-best-practices
-description: "Use when applying automotive powertrain best practices."
+description: Use when applying automotive powertrain best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [auto, engineering, vehicle-powertrain-optimization]
-    related_skills: [general]
 ---
 
 # Automotive Powertrain Best Practices

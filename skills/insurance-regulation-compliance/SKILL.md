@@ -2,12 +2,12 @@
 name: insurance-regulation-compliance
 description: NAIC, state regulation, solvency, and market conduct
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["regulation", "compliance"]
+    tags: [regulation, compliance]
 ---
 
 # Insurance Regulation Compliance

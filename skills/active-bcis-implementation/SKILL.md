@@ -1,14 +1,13 @@
 ---
 name: active-bcis-implementation
-description: "Use when applying active bcis implementation."
+description: Use when applying active bcis implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neurotech, bci, active]
-    related_skills: [general]
 ---
 
 # Active Bcis Implementation

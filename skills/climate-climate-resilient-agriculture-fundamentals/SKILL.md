@@ -1,14 +1,13 @@
 ---
 name: climate-climate-resilient-agriculture-fundamentals
-description: "Use when applying climate climate resilient agriculture ."
+description: Use when applying climate climate resilient agriculture .
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, environment]
-    related_skills: ['']
 ---
 
 # Climate Climate Resilient Agriculture Fundamentals

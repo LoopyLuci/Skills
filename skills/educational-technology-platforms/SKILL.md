@@ -1,14 +1,13 @@
 ---
 name: educational-technology-platforms
-description: "Use when building edtech platforms."
+description: Use when building edtech platforms.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [education, edtech, learning-platforms]
-    related_skills: [general]
 ---
 
 # Educational Technology Platforms

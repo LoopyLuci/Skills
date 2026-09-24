@@ -1,14 +1,13 @@
 ---
 name: application-security-architecture
-description: "Use when building secure applications."
+description: Use when building secure applications.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cybersecurity, appsec, secure-architecture, threat-modeling]
-    related_skills: ['software-design-patterns']
 ---
 
 # Application Security Architecture

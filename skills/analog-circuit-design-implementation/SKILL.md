@@ -1,14 +1,13 @@
 ---
 name: analog-circuit-design-implementation
-description: "Use when applying analog circuit design implementation."
+description: Use when applying analog circuit design implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [electronics, analog, analog-circuit-design]
-    related_skills: [general]
 ---
 
 # Analog Circuit Design Implementation

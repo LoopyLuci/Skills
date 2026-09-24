@@ -2,12 +2,12 @@
 name: product-strategy-positioning
 description: Value proposition, competitive analysis, market sizing, and pricing strategy
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["strategy", "positioning"]
+    tags: [strategy, positioning]
 ---
 
 # Product Strategy Positioning

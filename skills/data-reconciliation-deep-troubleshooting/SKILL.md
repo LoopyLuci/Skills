@@ -1,14 +1,13 @@
 ---
 name: data-reconciliation-deep-troubleshooting
-description: "Use when applying data reconciliation troubleshooting."
+description: Use when applying data reconciliation troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, dq]
-    related_skills: ['data-reconciliation']
 ---
 
 # Data Reconciliation Deep Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: business-planning-troubleshooting
-description: "Use when applying business planning troubleshooting."
+description: Use when applying business planning troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, strategy, business-planning]
-    related_skills: [general]
 ---
 
 # Business Planning Troubleshooting

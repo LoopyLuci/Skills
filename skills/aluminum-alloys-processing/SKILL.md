@@ -1,14 +1,13 @@
 ---
 name: aluminum-alloys-processing
-description: "Use when processing aluminum alloys."
+description: Use when processing aluminum alloys.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [materials-science, aluminum, metallurgy, casting]
-    related_skills: [general]
 ---
 
 # Aluminum Alloys Processing

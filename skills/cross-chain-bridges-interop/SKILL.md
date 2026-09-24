@@ -2,12 +2,12 @@
 name: cross-chain-bridges-interop
 description: Bridge protocols, cross-chain messaging, and interoperability
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["bridge", "interop"]
+    tags: [bridge, interop]
 ---
 
 # Cross Chain Bridges Interop

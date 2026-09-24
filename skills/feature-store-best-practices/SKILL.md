@@ -1,14 +1,13 @@
 ---
 name: feature-store-best-practices
-description: "Use when applying feature store best practices."
+description: Use when applying feature store best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, feature-store, ml-feature-engineering]
-    related_skills: [general]
 ---
 
 # Feature Store Best Practices

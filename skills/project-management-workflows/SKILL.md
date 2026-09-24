@@ -1,13 +1,13 @@
 ---
 name: project-management-workflows
-description: "Use when setting up project management systems and flows."
+description: Use when setting up project management systems and flows.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [project-management, workflows, agile, scrum, kanban, task-management, jira]
-    related_skills: [crm-sales-pipeline, business-metrics-kpis, cms-website-management, digital-marketing-strategy]
 ---
 
 # Project Management Workflows

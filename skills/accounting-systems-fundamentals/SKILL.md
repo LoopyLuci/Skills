@@ -1,14 +1,13 @@
 ---
 name: accounting-systems-fundamentals
-description: "Use when applying accounting systems fundamentals."
+description: Use when applying accounting systems fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, accounting-design]
-    related_skills: ['']
 ---
 
 # Accounting Systems Fundamentals

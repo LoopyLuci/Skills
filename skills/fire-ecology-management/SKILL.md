@@ -2,12 +2,12 @@
 name: fire-ecology-management
 description: Fire ecology, prescribed burn, and wildfire management
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["fire", "wildfire"]
+    tags: [fire, wildfire]
 ---
 
 # Fire Ecology Management

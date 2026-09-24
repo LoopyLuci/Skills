@@ -2,12 +2,12 @@
 name: question-answering-systems
 description: Reading comprehension, open-domain QA, and retrieval
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["qa", "reading"]
+    tags: [qa, reading]
 ---
 
 # Question Answering Systems

@@ -1,14 +1,13 @@
 ---
 name: crispr-cas12-implementation
-description: "Use when applying crispr cas12 biotech implementation."
+description: Use when applying crispr cas12 biotech implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, bio]
-    related_skills: ['']
 ---
 
 # Crispr Cas12 Implementation

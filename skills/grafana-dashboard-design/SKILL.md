@@ -1,12 +1,13 @@
 ---
 name: grafana-dashboard-design
-description: "Use when designing Grafana dashboards."
+description: Use when designing Grafana dashboards.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["grafana", "dashboards", "panels", "queries", "alerts"]
+    tags: [grafana, dashboards, panels, queries, alerts]
 ---
 
 # Grafana Dashboard Design

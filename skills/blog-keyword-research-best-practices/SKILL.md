@@ -1,14 +1,13 @@
 ---
 name: blog-keyword-research-best-practices
-description: "Use when applying blog keyword research best practices."
+description: Use when applying blog keyword research best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, blog-seo-post-optimizer]
-    related_skills: ['']
 ---
 
 # Blog Keyword Research Best Practices

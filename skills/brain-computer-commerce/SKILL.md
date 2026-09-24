@@ -1,14 +1,13 @@
 ---
 name: brain-computer-commerce
-description: "Use when bridging BCI and commerce."
+description: Use when bridging BCI and commerce.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cross-domain, bci-commerce, neurotech, consumer-tech]
-    related_skills: [neural-interface-design]
 ---
 
 # Brain Computer Commerce

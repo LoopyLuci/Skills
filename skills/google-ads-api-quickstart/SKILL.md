@@ -1,12 +1,13 @@
 ---
-
 name: google-ads-api-quickstart
 description: |
-source: google/skills
-tags: [google-ads, advertising, mobile-ads, gcp]
-metadata: 
-hermes: 
-
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [google-ads, advertising, mobile-ads, gcp]
 ---
 
 **Trigger**: Use when implementing Google Api Quickstart — AdMob, Ad Manager, and related ad SDKs.

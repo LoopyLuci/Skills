@@ -1,14 +1,13 @@
 ---
 name: astrology-progressed-moon
-description: "Use when tracking progressed moon in astrology."
+description: Use when tracking progressed moon in astrology.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [esoteric, progressed-moon, lunar-progressions, timing]
-    related_skills: [general]
 ---
 
 # Astrology Progressed Moon

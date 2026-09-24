@@ -2,12 +2,12 @@
 name: influencer-creator-marketing
 description: Creator identification, relationship management, measurement, and contracts
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["influencer", "creator"]
+    tags: [influencer, creator]
 ---
 
 # Influencer Creator Marketing

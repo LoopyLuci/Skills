@@ -1,14 +1,13 @@
 ---
 name: beauty-tech-hair-analysis-implementation
-description: "Use when applying beauty hair analysis implementation."
+description: Use when applying beauty hair analysis implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, beauty]
-    related_skills: ['']
 ---
 
 # Beauty Tech Hair Analysis Implementation

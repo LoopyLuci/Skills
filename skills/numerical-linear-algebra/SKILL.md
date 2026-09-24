@@ -2,12 +2,12 @@
 name: numerical-linear-algebra
 description: Matrix computations, eigenvalue problems, and numerical stability
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["linear-algebra", "numerical"]
+    tags: [linear-algebra, numerical]
 ---
 
 # Numerical Linear Algebra

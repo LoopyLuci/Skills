@@ -1,14 +1,13 @@
 ---
 name: docker-registry-fundamentals
-description: "Use when applying docker registry fundamentals."
+description: Use when applying docker registry fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [docker, registry, docker-registry-operations]
-    related_skills: [general]
 ---
 
 # Docker Registry Fundamentals

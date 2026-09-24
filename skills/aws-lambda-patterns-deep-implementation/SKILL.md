@@ -1,14 +1,13 @@
 ---
 name: aws-lambda-patterns-deep-implementation
-description: "Use when applying lambda patterns implementation."
+description: Use when applying lambda patterns implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, lambda]
-    related_skills: ['aws-lambda-patterns']
 ---
 
 # Aws Lambda Patterns Deep Implementation

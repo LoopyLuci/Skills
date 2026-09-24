@@ -1,13 +1,13 @@
 ---
 name: reverse-engineering-basics
-description: "Use when reverse engineering binaries and malware."
+description: Use when reverse engineering binaries and malware.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [reverse-engineering, malware-analysis, Ghidra, IDA, disassembly, decompilation]
-    related_skills: [exploit-development-basics, binary-exploitation-rop, evasion-techniques-av-bypass, threat-hunting-methods]
+    tags: [reverse-engineering, malware-analysis, ghidra, ida, disassembly, decompilation]
 ---
 
 # Reverse Engineering Basics

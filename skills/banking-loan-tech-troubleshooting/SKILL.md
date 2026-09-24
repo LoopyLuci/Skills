@@ -1,14 +1,13 @@
 ---
 name: banking-loan-tech-troubleshooting
-description: "Use when applying loan tech troubleshooting."
+description: Use when applying loan tech troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, lending, lending-tech]
-    related_skills: [general]
 ---
 
 # Banking Loan Tech Troubleshooting

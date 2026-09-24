@@ -1,13 +1,13 @@
 ---
 name: skill-quality-standards
-description: "Use when defining quality standards for skills."
+description: Use when defining quality standards for skills.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [skill-quality, standards, best-practices, review, checklist, meta]
-    related_skills: [skill-testing-automation, skill-inventory-management, meta-skill-patterns, skill-blueprint-generator]
 ---
 
 # Skill Quality Standards

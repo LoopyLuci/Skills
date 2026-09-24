@@ -1,14 +1,13 @@
 ---
 name: database-mysql-performance-fundamentals-deep-troubleshooting
-description: "Use when applying mysql performance fundamentals trouble."
+description: Use when applying mysql performance fundamentals trouble.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, mysql]
-    related_skills: ['mysql-optimization-fundamentals']
 ---
 
 # Database Mysql Performance Fundamentals Deep Troubleshooting

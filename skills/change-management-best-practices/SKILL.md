@@ -1,14 +1,13 @@
 ---
 name: change-management-best-practices
-description: "Use when applying change management best practices."
+description: Use when applying change management best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [management, change, change-management-methodologies]
-    related_skills: [general]
 ---
 
 # Change Management Best Practices

@@ -1,14 +1,13 @@
 ---
 name: aviation-nanocomposites-fundamentals
-description: "Use when applying nanocomposites fundamentals."
+description: Use when applying nanocomposites fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, nano, nanomaterials]
-    related_skills: ['general']
 ---
 
 # Aviation Nanocomposites Fundamentals

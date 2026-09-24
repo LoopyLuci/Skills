@@ -2,12 +2,12 @@
 name: subsea-engineering-rov
 description: Subsea systems, ROVs, pipelines, and underwater construction
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["subsea", "rov"]
+    tags: [subsea, rov]
 ---
 
 # Subsea Engineering Rov

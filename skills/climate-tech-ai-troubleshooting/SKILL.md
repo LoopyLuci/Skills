@@ -1,14 +1,13 @@
 ---
 name: climate-tech-ai-troubleshooting
-description: "Use when applying climate tech ai troubleshooting."
+description: Use when applying climate tech ai troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, ai, climate-tech-ai-optimization]
-    related_skills: [general]
 ---
 
 # Climate Tech Ai Troubleshooting

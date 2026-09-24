@@ -1,14 +1,13 @@
 ---
 name: aws-cli-deep-best-practices
-description: "Use when applying aws cli best practices."
+description: Use when applying aws cli best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, aws]
-    related_skills: ['aws-cli']
 ---
 
 # Aws Cli Deep Best Practices

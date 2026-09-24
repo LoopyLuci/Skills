@@ -1,14 +1,13 @@
 ---
 name: database-redis-pubsub-fundamentals
-description: "Use when applying redis pub/sub fundamentals."
+description: Use when applying redis pub/sub fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, redis, pub-sub, messaging]
-    related_skills: [general]
 ---
 
 # Database Redis Pubsub Fundamentals

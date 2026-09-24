@@ -1,14 +1,13 @@
 ---
 name: biotech-eng-management-troubleshooting
-description: "Use when applying biotech management troubleshooting."
+description: Use when applying biotech management troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, engineering, management]
-    related_skills: [general]
 ---
 
 # Biotech Eng Management Troubleshooting

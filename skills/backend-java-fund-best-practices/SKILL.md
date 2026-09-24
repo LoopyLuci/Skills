@@ -1,14 +1,13 @@
 ---
 name: backend-java-fund-best-practices
-description: "Use when applying backend java fundamentals best practices."
+description: Use when applying backend java fundamentals best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, java, backend-java-fundamentals]
-    related_skills: [general]
 ---
 
 # Backend Java Fund Best Practices

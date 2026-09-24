@@ -1,14 +1,13 @@
 ---
 name: biomedical-troubleshooting
-description: "Use when troubleshooting biomedical issues."
+description: Use when troubleshooting biomedical issues.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biomedical, bioengineering, medical-devices, bme]
-    related_skills: [general]
 ---
 
 # Biomedical Troubleshooting

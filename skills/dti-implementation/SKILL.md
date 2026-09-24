@@ -1,14 +1,13 @@
 ---
 name: dti-implementation
-description: "Use when applying dti implementation."
+description: Use when applying dti implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neurotech, imaging, dti]
-    related_skills: [general]
 ---
 
 # Dti Implementation

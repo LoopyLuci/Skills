@@ -2,12 +2,12 @@
 name: agricultural-biotechnology
 description: GMOs, gene editing, biopesticides, and biostimulants
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["biotech", "genetics"]
+    tags: [biotech, genetics]
 ---
 
 # Agricultural Biotechnology

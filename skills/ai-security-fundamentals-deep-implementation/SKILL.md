@@ -1,14 +1,13 @@
 ---
 name: ai-security-fundamentals-deep-implementation
-description: "Use when applying ai security fundamentals implementation."
+description: Use when applying ai security fundamentals implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ai-security, security]
-    related_skills: ['ai-security-fundamentals']
 ---
 
 # Ai Security Fundamentals Deep Implementation

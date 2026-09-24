@@ -1,14 +1,13 @@
 ---
 name: agri-food-tech-innovation
-description: "Use when innovating agri-food tech."
+description: Use when innovating agri-food tech.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [food-tech, agri-food, innovation, startups]
-    related_skills: [climate-tech-startup-funding]
 ---
 
 # Agri Food Tech Innovation

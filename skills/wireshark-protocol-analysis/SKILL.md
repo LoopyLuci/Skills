@@ -1,12 +1,13 @@
 ---
 name: wireshark-protocol-analysis
-description: "Use when analyzing protocols in Wireshark."
+description: Use when analyzing protocols in Wireshark.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["wireshark", "pcap", "protocol", "filter", "dissector"]
+    tags: [wireshark, pcap, protocol, filter, dissector]
 ---
 
 # Wireshark Protocol Analysis

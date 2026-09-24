@@ -2,12 +2,12 @@
 name: educational-technology-integration
 description: EdTech tools, blended learning, 1:1 programs, and digital citizenship
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["edtech", "blended-learning"]
+    tags: [edtech, blended-learning]
 ---
 
 # Educational Technology Integration

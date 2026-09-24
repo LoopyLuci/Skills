@@ -1,13 +1,13 @@
 ---
 name: franchise-management-operations
-description: "Use when managing franchise operations and systems."
+description: Use when managing franchise operations and systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [franchise, operations, franchisor, franchisee, multi-location, expansion]
-    related_skills: [retail-pos-systems, business-metrics-kpis, crm-sales-pipeline, project-management-workflows]
 ---
 
 # Franchise Management Operations

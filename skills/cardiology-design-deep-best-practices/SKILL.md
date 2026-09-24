@@ -1,14 +1,13 @@
 ---
 name: cardiology-design-deep-best-practices
-description: "Use when applying cardiology design best practices."
+description: Use when applying cardiology design best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [healthcare, cardiology]
-    related_skills: ['cardiology-design']
 ---
 
 # Cardiology Design Deep Best Practices

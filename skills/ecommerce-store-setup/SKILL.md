@@ -1,14 +1,13 @@
 ---
 name: ecommerce-store-setup
-description: "Ecommerce: platform, products, checkout, launch."
+description: Ecommerce: platform, products, checkout, launch.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ecommerce, shopify, woocommerce, online-store, selling]
-    related_skills: [affiliate-marketing, freelance-business-operations, legal-and-compliance-basics]
 ---
 
 # Ecommerce Store Setup

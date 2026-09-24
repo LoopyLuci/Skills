@@ -1,14 +1,13 @@
 ---
 name: data-analytics-best-practices
-description: "Use when applying data analytics best practices."
+description: Use when applying data analytics best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, analytics, data-analytics]
-    related_skills: [general]
 ---
 
 # Data Analytics Best Practices

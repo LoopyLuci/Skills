@@ -1,14 +1,13 @@
 ---
 name: biocatalysis-troubleshooting
-description: "Use when applying biocatalysis troubleshooting."
+description: Use when applying biocatalysis troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, chemistry, biocatalysis]
-    related_skills: [general]
 ---
 
 # Biocatalysis Troubleshooting

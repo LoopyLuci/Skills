@@ -2,12 +2,12 @@
 name: personal-productivity-systems
 description: GTD, time blocking, energy management, and personal knowledge management
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["productivity", "gtd"]
+    tags: [productivity, gtd]
 ---
 
 # Personal Productivity Systems

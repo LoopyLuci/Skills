@@ -1,14 +1,13 @@
 ---
 name: expressjs-authentication-best-practices
-description: "Use when applying express.js auth best practices."
+description: Use when applying express.js auth best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, expressjs, auth, jwt]
-    related_skills: [general]
 ---
 
 # Expressjs Authentication Best Practices

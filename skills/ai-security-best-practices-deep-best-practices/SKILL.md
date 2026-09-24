@@ -1,14 +1,13 @@
 ---
 name: ai-security-best-practices-deep-best-practices
-description: "Use when applying ai security best practices best practi."
+description: Use when applying ai security best practices best practi.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ai-security, security]
-    related_skills: ['ai-security-best-practices']
 ---
 
 # Ai Security Best Practices Deep Best Practices

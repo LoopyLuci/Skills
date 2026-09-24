@@ -2,12 +2,12 @@
 name: soil-science-management
 description: Soil health, fertility, conservation, and regenerative practices
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["soil", "regenerative"]
+    tags: [soil, regenerative]
 ---
 
 # Soil Science Management

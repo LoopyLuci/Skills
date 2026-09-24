@@ -1,14 +1,13 @@
 ---
 name: css-custom-properties-theming-extra-implementation
-description: "Use when applying css themes implementation."
+description: Use when applying css themes implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [web, css]
-    related_skills: ['css-custom-properties-theming']
 ---
 
 # Css Custom Properties Theming Extra Implementation

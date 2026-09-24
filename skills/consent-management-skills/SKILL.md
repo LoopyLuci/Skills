@@ -1,14 +1,13 @@
 ---
 name: consent-management-skills
-description: "Use when managing user consent. GDPR, CCPA, opt-out."
-version: 1.1.0
-author: Hermes Agent
+description: Use when managing user consent. GDPR, CCPA, opt-out.
+version: 1.0.0
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [consent, gdpr, ccpa, privacy, opt-in, opt-out, data-processing]
-    related_skills: [legal-and-compliance-basics, privacy-by-design-skill-authoring, data-leakage-prevention-in-skills]
 ---
 
 # Consent Management Skills

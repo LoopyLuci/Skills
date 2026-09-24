@@ -2,12 +2,12 @@
 name: improv-comedy-performance
 description: Improv games, 'yes and', scene work, and long-form improv
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["improv", "performance"]
+    tags: [improv, performance]
 ---
 
 # Improv Comedy Performance

@@ -1,14 +1,13 @@
 ---
 name: container-shipping-best-practices
-description: "Use when applying container shipping best practices."
+description: Use when applying container shipping best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marine, logistics, container-shipping]
-    related_skills: [general]
 ---
 
 # Container Shipping Best Practices

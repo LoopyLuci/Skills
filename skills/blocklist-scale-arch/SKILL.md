@@ -1,9 +1,13 @@
 ---
 name: blocklist-scale-arch
-title: Blocklist Scale Architecture
 description: Use when scaling blocklist processing to millions of rules.
-category: networking
-tags: [blocklist, scale, millions, bloom, aho-corasick, performance]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [blocklist, scale, millions, bloom, aho-corasick, performance]
 ---
 
 # Blocklist Scale Architecture

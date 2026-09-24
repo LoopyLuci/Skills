@@ -1,14 +1,13 @@
 ---
 name: blog-content-planning-best-practices
-description: "Use when applying blog content planning best practices."
+description: Use when applying blog content planning best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, blog-post-outliner]
-    related_skills: ['']
 ---
 
 # Blog Content Planning Best Practices

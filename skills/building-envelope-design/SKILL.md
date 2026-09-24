@@ -1,14 +1,13 @@
 ---
 name: building-envelope-design
-description: "Use when designing building envelopes."
+description: Use when designing building envelopes.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [construction, building-envelope, thermal-bridge, insulation]
-    related_skills: [general]
 ---
 
 # Building Envelope Design

@@ -1,13 +1,13 @@
 ---
 name: state-space-models-mamba
-description: "Use when building state space models like Mamba and S4."
+description: Use when building state space models like Mamba and S4.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [ssm, state-space, mamba, s4, sequence-models, pytorch]
-    related_skills: [transformer-architectures, attention-mechanisms-deep, custom-neural-architecture-design, neural-network-fundamentals]
 ---
 
 # State Space Models Mamba

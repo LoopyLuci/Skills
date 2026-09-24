@@ -1,14 +1,13 @@
 ---
 name: aviation-aeroclub-troubleshooting
-description: "Use when applying aviation aeroclub management troublesh."
+description: Use when applying aviation aeroclub management troublesh.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, management, club]
-    related_skills: ['general']
 ---
 
 # Aviation Aeroclub Troubleshooting

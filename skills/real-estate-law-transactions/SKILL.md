@@ -2,12 +2,12 @@
 name: real-estate-law-transactions
 description: Purchase agreements, title, escrow, and closing procedures
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["law", "transactions"]
+    tags: [law, transactions]
 ---
 
 # Real Estate Law Transactions

@@ -1,14 +1,13 @@
 ---
 name: docker-compose-fundamentals
-description: "Use when applying docker compose fundamentals."
+description: Use when applying docker compose fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [docker, compose, docker-compose-patterns]
-    related_skills: [general]
 ---
 
 # Docker Compose Fundamentals

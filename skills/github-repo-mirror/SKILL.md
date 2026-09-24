@@ -1,6 +1,13 @@
 ---
 name: github-repo-mirror
 description: Mirror repositories between GitHub, GitLab, and other hosts.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [github, repo, mirror]
 ---
 
 # GitHub Repo Mirroring

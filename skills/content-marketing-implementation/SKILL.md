@@ -1,14 +1,13 @@
 ---
 name: content-marketing-implementation
-description: "Use when for content marketing implementation."
+description: Use when for content marketing implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, management, general]
-    related_skills: [general]
 ---
 
 # Content Marketing Implementation

@@ -1,9 +1,15 @@
 ---
 name: computer-vision-techniques
-description: "Use when implementing CV: classification, detection, segmentation."
-category: mlops
-tags: [computer-vision, cnn, detection, segmentation, classification]
+description: Use when implementing CV: classification, detection, segmentation.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [computer-vision, cnn, detection, segmentation, classification]
 ---
+
 # Computer Vision Techniques
 
 Core CV techniques: classification, object detection, segmentation.

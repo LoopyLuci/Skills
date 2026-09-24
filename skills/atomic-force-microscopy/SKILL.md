@@ -1,14 +1,13 @@
 ---
 name: atomic-force-microscopy
-description: "Use when imaging with AFM."
+description: Use when imaging with AFM.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [materials-science, afm, atomic-force, nanoscale]
-    related_skills: [general]
 ---
 
 # Atomic Force Microscopy

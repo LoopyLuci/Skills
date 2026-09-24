@@ -1,14 +1,13 @@
 ---
 name: database-replication-fundamentals
-description: "Use when for database replication fundamentals."
+description: Use when for database replication fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, replication, high-availability, cluster]
-    related_skills: [general]
 ---
 
 # Database Replication Fundamentals

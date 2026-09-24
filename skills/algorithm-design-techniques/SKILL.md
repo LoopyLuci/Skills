@@ -1,9 +1,15 @@
 ---
 name: algorithm-design-techniques
-description: "Use when designing algorithms: greedy, DP, divide-conquer."
-category: software-development
-tags: [algorithms, design, greedy, dynamic-programming, backtracking]
+description: Use when designing algorithms: greedy, DP, divide-conquer.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [algorithms, design, greedy, dynamic-programming, backtracking]
 ---
+
 # Algorithm Design Techniques
 
 Core algorithm design paradigms.

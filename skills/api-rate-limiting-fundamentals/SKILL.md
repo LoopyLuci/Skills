@@ -1,14 +1,13 @@
 ---
 name: api-rate-limiting-fundamentals
-description: "Use when applying api rate limiting fundamentals."
+description: Use when applying api rate limiting fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [api, rate-limiting, throttling]
-    related_skills: [general]
 ---
 
 # Api Rate Limiting Fundamentals

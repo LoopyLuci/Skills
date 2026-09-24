@@ -1,14 +1,13 @@
 ---
 name: climate-tech-patents-best-practices
-description: "Use when applying climate tech patents best practices."
+description: Use when applying climate tech patents best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, ip, climate-tech-patents]
-    related_skills: [general]
 ---
 
 # Climate Tech Patents Best Practices

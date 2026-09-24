@@ -1,13 +1,13 @@
 ---
 name: network-automation-scripting
-description: "Use when automating network configuration and management."
+description: Use when automating network configuration and management.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [network-automation, ansible, netmiko, napalm, python-networking, infrastructure-as-code]
-    related_skills: [terraform-module-patterns, ci-cd-pipeline-setup, dns-implementation-patterns, monitoring-drift]
 ---
 
 # Network Automation Scripting

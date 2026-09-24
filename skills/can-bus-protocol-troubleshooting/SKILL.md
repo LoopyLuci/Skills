@@ -1,14 +1,13 @@
 ---
 name: can-bus-protocol-troubleshooting
-description: "Use when applying can bus protocol troubleshooting."
+description: Use when applying can bus protocol troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [electronics, can-bus]
-    related_skills: ['general']
 ---
 
 # Can Bus Protocol Troubleshooting

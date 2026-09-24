@@ -1,11 +1,10 @@
 ---
 name: agent-platform-rag-engine-management
-description: >-
-source: google/skills
-tags: [gcp, agent-platform, google-cloud, ai-platform]
-metadata: 
-hermes: 
-
+description: Skill for agent platform rag engine management
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [gcp, agent-platform, google-cloud, ai-platform]

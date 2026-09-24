@@ -1,13 +1,13 @@
 ---
 name: unreal-engine-basics
-description: "Use when developing with Unreal Engine."
+description: Use when developing with Unreal Engine.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [Unreal-Engine, C++, Blueprints, game-development, rendering, Quixel]
-    related_skills: [game-development-patterns, unity-development-patterns, three-js-3d-web, animation-web-patterns]
+    tags: [unreal-engine, c++, blueprints, game-development, rendering, quixel]
 ---
 
 # Unreal Engine Development

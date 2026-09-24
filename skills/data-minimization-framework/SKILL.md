@@ -1,14 +1,13 @@
 ---
 name: data-minimization-framework
-description: "Use when handling data. Collect only what's needed."
+description: Use when handling data. Collect only what's needed.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [privacy, data-minimization, gdpr-compliance, pii, data-governance]
-    related_skills: [privacy-by-design-skill-authoring, secure-data-handling]
 ---
 
 # Data Minimization Framework

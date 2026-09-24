@@ -1,14 +1,13 @@
 ---
 name: ci-cd-fundamentals-best-practices
-description: "Use when applying ci/cd fundamentals best practices."
+description: Use when applying ci/cd fundamentals best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, ci-cd, fundamentals, ci-cd-fundamentals]
-    related_skills: [general]
 ---
 
 # Ci Cd Fundamentals Best Practices

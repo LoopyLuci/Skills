@@ -1,14 +1,13 @@
 ---
 name: envoy-troubleshooting
-description: "Use when applying envoy proxy troubleshooting."
+description: Use when applying envoy proxy troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [kubernetes, service-mesh, envoy, envoy-proxy-configuration]
-    related_skills: [general]
 ---
 
 # Envoy Troubleshooting

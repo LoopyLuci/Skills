@@ -1,14 +1,13 @@
 ---
 name: consul-troubleshooting
-description: "Use when applying consul troubleshooting."
+description: Use when applying consul troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, consul, service-mesh, discovery]
-    related_skills: [general]
 ---
 
 # Consul Troubleshooting

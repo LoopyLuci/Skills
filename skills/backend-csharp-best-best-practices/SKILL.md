@@ -1,14 +1,13 @@
 ---
 name: backend-csharp-best-best-practices
-description: "Use when applying backend c# best best practices."
+description: Use when applying backend c# best best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, csharp, backend-csharp-best-practices]
-    related_skills: [general]
 ---
 
 # Backend Csharp Best Best Practices

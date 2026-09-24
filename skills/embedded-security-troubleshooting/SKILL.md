@@ -1,14 +1,13 @@
 ---
 name: embedded-security-troubleshooting
-description: "Use when for embedded security troubleshooting."
+description: Use when for embedded security troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, embedded, firmware, iot]
-    related_skills: [general]
 ---
 
 # Embedded Security Troubleshooting

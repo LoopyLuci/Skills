@@ -2,12 +2,12 @@
 name: astronomy-astrophysics
 description: Observational astronomy, data analysis, cosmology, and astrostatistics
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["astronomy", "physics"]
+    tags: [astronomy, physics]
 ---
 
 # Astronomy Astrophysics

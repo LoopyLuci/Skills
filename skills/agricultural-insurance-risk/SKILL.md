@@ -1,14 +1,13 @@
 ---
 name: agricultural-insurance-risk
-description: "Use when assessing ag insurance risk. Payouts, modeling."
+description: Use when assessing ag insurance risk. Payouts, modeling.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agriculture, insurance, risk-assessment, actuarial, modeling]
-    related_skills: [crop-yield-modeling, precision-agriculture]
 ---
 
 # Agricultural Insurance Risk

@@ -2,12 +2,12 @@
 name: learning-how-to-learn
 description: Learning science, memory techniques, and skill acquisition
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["learning", "metacognition"]
+    tags: [learning, metacognition]
 ---
 
 # Learning How To Learn

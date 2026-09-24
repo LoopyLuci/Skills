@@ -1,14 +1,13 @@
 ---
 name: fashion-digital-print-design
-description: "Use when designing digital fashion prints."
+description: Use when designing digital fashion prints.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, digital-print, pattern-design]
-    related_skills: [general]
 ---
 
 # Fashion Digital Print Design

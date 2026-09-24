@@ -1,12 +1,13 @@
 ---
 name: django-orm-advanced
-description: "Use when using advanced Django ORM."
+description: Use when using advanced Django ORM.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["django", "ORM", "querysets", "prefetch", "F-expressions"]
+    tags: [django, orm, querysets, prefetch, f-expressions]
 ---
 
 # Django Orm Advanced

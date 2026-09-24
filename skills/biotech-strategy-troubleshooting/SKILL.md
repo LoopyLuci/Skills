@@ -1,14 +1,13 @@
 ---
 name: biotech-strategy-troubleshooting
-description: "Use when applying biotech strategy troubleshooting."
+description: Use when applying biotech strategy troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, strategy, strategy]
-    related_skills: [general]
 ---
 
 # Biotech Strategy Troubleshooting

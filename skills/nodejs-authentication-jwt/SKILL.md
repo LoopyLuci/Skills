@@ -1,9 +1,13 @@
 ---
 name: nodejs-authentication-jwt
-description: "Use when implementing JWT auth in Node."
+description: Use when implementing JWT auth in Node.
 version: 1.0.0
-author: Hermes Agent
-tags: ["nodejs", "JWT", "auth", "passport", "sessions"]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [nodejs, jwt, auth, passport, sessions]
 ---
 
 # Nodejs Authentication Jwt

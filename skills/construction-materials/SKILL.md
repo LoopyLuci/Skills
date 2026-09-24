@@ -1,14 +1,13 @@
 ---
 name: construction-materials
-description: "Use when selecting construction materials."
+description: Use when selecting construction materials.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [construction, materials, construction-materials]
-    related_skills: [general]
 ---
 
 # Construction Materials

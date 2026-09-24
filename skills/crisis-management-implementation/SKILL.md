@@ -1,14 +1,13 @@
 ---
 name: crisis-management-implementation
-description: "Use when for crisis management implementation."
+description: Use when for crisis management implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, management, general]
-    related_skills: [general]
 ---
 
 # Crisis Management Implementation

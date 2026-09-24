@@ -1,14 +1,13 @@
 ---
 name: epidemiology
-description: "Use when studying epidemiology."
+description: Use when studying epidemiology.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [healthcare, epi, epidemiology-fundamentals]
-    related_skills: [general]
 ---
 
 # Epidemiology

@@ -1,14 +1,13 @@
 ---
 name: 3d-modeling-techniques
-description: "Use when creating 3D models."
+description: Use when creating 3D models.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [3d, 3d-modeling, rendering]
-    related_skills: [general]
 ---
 
 # 3d Modeling Techniques

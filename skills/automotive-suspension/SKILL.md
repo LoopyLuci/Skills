@@ -1,14 +1,13 @@
 ---
 name: automotive-suspension
-description: "Use when designing suspension."
+description: Use when designing suspension.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [auto, chassis, suspension]
-    related_skills: [general]
 ---
 
 # Automotive Suspension

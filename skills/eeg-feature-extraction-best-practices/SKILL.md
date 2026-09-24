@@ -1,14 +1,13 @@
 ---
 name: eeg-feature-extraction-best-practices
-description: "Use when applying eeg feature extraction best practices."
+description: Use when applying eeg feature extraction best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neurotech, eeg, signal-processing]
-    related_skills: [general]
 ---
 
 # Eeg Feature Extraction Best Practices

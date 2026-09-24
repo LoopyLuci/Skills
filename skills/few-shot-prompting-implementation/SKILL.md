@@ -1,14 +1,13 @@
 ---
 name: few-shot-prompting-implementation
-description: "Use when applying few-shot prompting implementation."
+description: Use when applying few-shot prompting implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ai, prompt, few-shot-prompting-advanced]
-    related_skills: [general]
 ---
 
 # Few Shot Prompting Implementation

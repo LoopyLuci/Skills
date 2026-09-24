@@ -1,9 +1,13 @@
 ---
 name: dynamodb-single-table
-description: "Use when designing DynamoDB single-table."
+description: Use when designing DynamoDB single-table.
 version: 1.0.0
-author: Hermes Agent
-tags: ["dynamodb", "single-table", "NoSQL", "access-patterns"]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [dynamodb, single-table, nosql, access-patterns]
 ---
 
 # Dynamodb Single Table

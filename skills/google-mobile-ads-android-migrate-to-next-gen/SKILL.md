@@ -1,8 +1,13 @@
 ---
 name: google-mobile-ads-android-migrate-to-next-gen
 description: Use when migrating Android apps from legacy GMA SDK to GMA Next-Gen SDK.
-tags: [android, google-mobile-ads, migration, gma-sdk, kotlin]
-related_skills: [google-mobile-ads-get-started, android-native-dev]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [android, google-mobile-ads, migration, gma-sdk, kotlin]
 ---
 
 # Google Mobile Ads SDK — Migration to GMA Next-Gen

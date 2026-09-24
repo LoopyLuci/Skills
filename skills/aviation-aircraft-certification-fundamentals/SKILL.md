@@ -1,14 +1,13 @@
 ---
 name: aviation-aircraft-certification-fundamentals
-description: "Use when applying aircraft certification fundamentals."
+description: Use when applying aircraft certification fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, cert, certification]
-    related_skills: ['general']
 ---
 
 # Aviation Aircraft Certification Fundamentals

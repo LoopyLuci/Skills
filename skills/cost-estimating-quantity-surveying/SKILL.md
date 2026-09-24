@@ -2,12 +2,12 @@
 name: cost-estimating-quantity-surveying
 description: Cost estimation, quantity takeoffs, and value engineering
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["estimating", "qs"]
+    tags: [estimating, qs]
 ---
 
 # Cost Estimating Quantity Surveying

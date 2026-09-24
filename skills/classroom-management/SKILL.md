@@ -2,12 +2,12 @@
 name: classroom-management
 description: Routines, behavior systems, relationships, and inclusive classroom culture
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["classroom", "management"]
+    tags: [classroom, management]
 ---
 
 # Classroom Management

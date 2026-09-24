@@ -1,14 +1,13 @@
 ---
 name: aviation-hybrid-electric-implementation
-description: "Use when applying hybrid electric aircraft implementation."
+description: Use when applying hybrid electric aircraft implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, hybrid, hybrid-electric]
-    related_skills: ['general']
 ---
 
 # Aviation Hybrid Electric Implementation

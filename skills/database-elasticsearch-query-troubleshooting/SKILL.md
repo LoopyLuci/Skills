@@ -1,14 +1,13 @@
 ---
 name: database-elasticsearch-query-troubleshooting
-description: "Use when applying elasticsearch querying troubleshooting."
+description: Use when applying elasticsearch querying troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, elasticsearch, querying, search]
-    related_skills: [general]
 ---
 
 # Database Elasticsearch Query Troubleshooting

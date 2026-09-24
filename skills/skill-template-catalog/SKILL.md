@@ -1,13 +1,13 @@
 ---
 name: skill-template-catalog
-description: "Use when selecting skill templates by category."
+description: Use when selecting skill templates by category.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [skill-templates, catalog, categories, patterns, meta, scaffolding]
-    related_skills: [skill-blueprint-generator, meta-skill-patterns, skill-quality-standards, skill-testing-automation]
 ---
 
 # Skill Template Catalog

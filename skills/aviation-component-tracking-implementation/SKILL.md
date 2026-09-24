@@ -1,14 +1,13 @@
 ---
 name: aviation-component-tracking-implementation
-description: "Use when applying component tracking implementation."
+description: Use when applying component tracking implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, tracking, supply-chain]
-    related_skills: ['general']
 ---
 
 # Aviation Component Tracking Implementation

@@ -1,14 +1,13 @@
 ---
 name: dti-fundamentals
-description: "Use when applying dti fundamentals."
+description: Use when applying dti fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neurotech, imaging, dti]
-    related_skills: [general]
 ---
 
 # Dti Fundamentals

@@ -1,14 +1,13 @@
 ---
 name: fashion-tech-digital-runway-troubleshooting
-description: "Use when applying fashion digital runway troubleshooting."
+description: Use when applying fashion digital runway troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, beauty]
-    related_skills: ['']
 ---
 
 # Fashion Tech Digital Runway Troubleshooting

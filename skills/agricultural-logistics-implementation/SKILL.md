@@ -1,14 +1,13 @@
 ---
 name: agricultural-logistics-implementation
-description: "Use when applying agri logistics implementation."
+description: Use when applying agri logistics implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agriculture, logistics, cold-chain-logistics]
-    related_skills: [general]
 ---
 
 # Agricultural Logistics Implementation

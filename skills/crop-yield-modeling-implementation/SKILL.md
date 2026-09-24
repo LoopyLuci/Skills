@@ -1,14 +1,13 @@
 ---
 name: crop-yield-modeling-implementation
-description: "Use when applying crop yield modeling implementation."
+description: Use when applying crop yield modeling implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agriculture, data, crop-yield-modeling]
-    related_skills: [general]
 ---
 
 # Crop Yield Modeling Implementation

@@ -1,14 +1,13 @@
 ---
 name: aws-lambda-optimization
-description: "Use when optimizing AWS Lambda."
+description: Use when optimizing AWS Lambda.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, aws, aws-lambda]
-    related_skills: [general]
 ---
 
 # Aws Lambda Optimization

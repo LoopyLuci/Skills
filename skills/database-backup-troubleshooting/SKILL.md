@@ -1,14 +1,13 @@
 ---
 name: database-backup-troubleshooting
-description: "Use when for database backups troubleshooting."
+description: Use when for database backups troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, backup, recovery, postgresql, mysql]
-    related_skills: [general]
 ---
 
 # Database Backup Troubleshooting

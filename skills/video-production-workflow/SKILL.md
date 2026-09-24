@@ -1,14 +1,13 @@
 ---
 name: video-production-workflow
-description: "Video: scripting, lighting, editing, YouTube SEO."
+description: Video: scripting, lighting, editing, YouTube SEO.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [video, production, youtube, content-creation, editing]
-    related_skills: [podcasting-workflow, personal-brand-building, affiliate-marketing]
 ---
 
 # Video Production Workflow

@@ -1,14 +1,13 @@
 ---
 name: cryptocurrency-funds-fundamentals
-description: "Use when applying crypto funds fundamentals."
+description: Use when applying crypto funds fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, crypto, crypto-funds]
-    related_skills: [general]
 ---
 
 # Cryptocurrency Funds Fundamentals

@@ -1,9 +1,15 @@
 ---
 name: dockerfile-optimization
-description: "Use when optimizing Docker builds: layers, cache."
-category: docker
-tags: [docker, dockerfile, build, optimization, multistage]
+description: Use when optimizing Docker builds: layers, cache.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [docker, dockerfile, build, optimization, multistage]
 ---
+
 # Dockerfile Optimization
 
 Optimizing Docker builds for speed, size, and security.

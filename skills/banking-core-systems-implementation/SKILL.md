@@ -1,14 +1,13 @@
 ---
 name: banking-core-systems-implementation
-description: "Use when applying core banking systems implementation."
+description: Use when applying core banking systems implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, banking, core-banking]
-    related_skills: [general]
 ---
 
 # Banking Core Systems Implementation

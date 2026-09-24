@@ -1,14 +1,13 @@
 ---
 name: color-grading-troubleshooting
-description: "Use when applying color grading troubleshooting."
+description: Use when applying color grading troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [media, video, film-video-color-grading]
-    related_skills: [general]
 ---
 
 # Color Grading Troubleshooting

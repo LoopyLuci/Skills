@@ -1,12 +1,13 @@
 ---
 name: react-forms
-description: "Use when implementing react forms."
+description: Use when implementing react forms.
 version: 1.0.0
-author: "Skill Genesis Model"
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["react", "forms"]
+    tags: [react, forms]
 ---
 
 # React Forms

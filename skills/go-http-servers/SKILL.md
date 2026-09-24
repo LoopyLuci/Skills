@@ -1,12 +1,13 @@
 ---
 name: go-http-servers
-description: "Use when building HTTP servers in Go."
+description: Use when building HTTP servers in Go.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["go", "http", "server", "routing", "middleware"]
+    tags: [go, http, server, routing, middleware]
 ---
 
 # Go Http Servers

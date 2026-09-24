@@ -1,14 +1,13 @@
 ---
 name: employee-retention-fundamentals
-description: "Use when applying employee retention fundamentals."
+description: Use when applying employee retention fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [hr, retention, employee-retention-strategies]
-    related_skills: [general]
 ---
 
 # Employee Retention Fundamentals

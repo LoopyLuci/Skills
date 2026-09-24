@@ -1,8 +1,13 @@
 ---
 name: google-cloud-recipe-auth
 description: Use when authenticating and authorizing to Google Cloud services and APIs.
-tags: [google-cloud, authentication, iam, service-accounts, security, adc]
-related_skills: [gke-productionize, gemini-api, firebase-basics]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [google-cloud, authentication, iam, service-accounts, security, adc]
 ---
 
 # Authenticating to Google Cloud

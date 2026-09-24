@@ -1,8 +1,13 @@
 ---
 name: google-mobile-ads-rewarded
 description: Use when implementing Google Mobile Ads rewarded ads in Android/iOS apps.
-tags: [android, ios, google-mobile-ads, rewarded-ads, monetization]
-related_skills: [google-mobile-ads-get-started, google-mobile-ads-banner, google-mobile-ads-interstitial]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [android, ios, google-mobile-ads, rewarded-ads, monetization]
 ---
 
 # Google Mobile Ads SDK — Rewarded Ads

@@ -1,6 +1,13 @@
 ---
 name: skill-gap-identification
 description: Detect when a skill is missing and request or create one.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [skill, gap, identification]
 ---
 
 # Skill Gap Identification

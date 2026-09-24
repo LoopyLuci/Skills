@@ -1,14 +1,13 @@
 ---
 name: agent-planning-algorithms-deep-implementation
-description: "Use when applying agent planning algorithms implementation."
+description: Use when applying agent planning algorithms implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agents, planning]
-    related_skills: ['agent-planning-algorithms']
 ---
 
 # Agent Planning Algorithms Deep Implementation

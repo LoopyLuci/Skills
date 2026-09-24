@@ -1,14 +1,13 @@
 ---
 name: climate-carbon-offset-fundamentals
-description: "Use when applying carbon offsets fundamentals."
+description: Use when applying carbon offsets fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, offsets, carbon-offset-standards]
-    related_skills: ['']
 ---
 
 # Climate Carbon Offset Fundamentals

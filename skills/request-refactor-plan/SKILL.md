@@ -1,8 +1,13 @@
 ---
 name: request-refactor-plan
 description: Use when planning a refactor, requesting a refactoring RFC, or breaking refactors into commits
-tags: [refactoring, planning, commits, GitHub, RFC]
-related_skills: [improve-codebase-architecture, to-spec, codebase-design]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [refactoring, planning, commits, github, rfc]
 ---
 
 # Request Refactor Plan

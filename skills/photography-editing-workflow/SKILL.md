@@ -2,12 +2,12 @@
 name: photography-editing-workflow
 description: RAW processing, color grading, compositing, and export for different media
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["photography", "editing"]
+    tags: [photography, editing]
 ---
 
 # Photography Editing Workflow

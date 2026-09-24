@@ -1,8 +1,13 @@
 ---
 name: google-mobile-ads-interstitial
 description: Use when implementing Google Mobile Ads interstitial ads in Android/iOS apps.
-tags: [android, ios, google-mobile-ads, interstitial-ads, monetization]
-related_skills: [google-mobile-ads-get-started, google-mobile-ads-banner, google-mobile-ads-rewarded]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [android, ios, google-mobile-ads, interstitial-ads, monetization]
 ---
 
 # Google Mobile Ads SDK — Interstitial Ads

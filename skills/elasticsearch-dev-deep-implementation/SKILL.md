@@ -1,14 +1,13 @@
 ---
 name: elasticsearch-dev-deep-implementation
-description: "Use when applying elasticsearch development implementation."
+description: Use when applying elasticsearch development implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, search]
-    related_skills: ['elasticsearch-dev']
 ---
 
 # Elasticsearch Dev Deep Implementation

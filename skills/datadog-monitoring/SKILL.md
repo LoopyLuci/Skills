@@ -1,14 +1,13 @@
 ---
 name: datadog-monitoring
-description: "Use when monitoring with Datadog."
+description: Use when monitoring with Datadog.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [monitoring, datadog, apms, alerts]
-    related_skills: [general]
 ---
 
 # Datadog Monitoring

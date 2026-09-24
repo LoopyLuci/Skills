@@ -1,14 +1,13 @@
 ---
 name: corporate-strategy-troubleshooting
-description: "Use when applying corporate strategy troubleshooting."
+description: Use when applying corporate strategy troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, strategy, corporate-strategy]
-    related_skills: [general]
 ---
 
 # Corporate Strategy Troubleshooting

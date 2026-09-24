@@ -1,13 +1,13 @@
 ---
 name: hyperparameter-optimization-ml
-description: "Use when optimizing hyperparameters for ML models."
+description: Use when optimizing hyperparameters for ML models.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [hyperparameter, optimization, tuning, automl, bayesian, grid-search]
-    related_skills: [neural-architecture-search, custom-training-loops, model-evaluation-metrics, ml-pipeline-design]
 ---
 
 # Hyperparameter Optimization Ml

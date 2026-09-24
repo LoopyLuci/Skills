@@ -1,14 +1,13 @@
 ---
 name: biotech-business-dev-fundamentals
-description: "Use when applying biotech business development fundament."
+description: Use when applying biotech business development fundament.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, business, business-dev]
-    related_skills: [general]
 ---
 
 # Biotech Business Dev Fundamentals

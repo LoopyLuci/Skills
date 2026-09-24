@@ -1,6 +1,13 @@
 ---
 name: skill-context-budget
 description: Manage context window usage across multiple loaded skills.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [skill, context, budget]
 ---
 
 # Skill Context Budget

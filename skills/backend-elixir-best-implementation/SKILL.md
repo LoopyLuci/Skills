@@ -1,14 +1,13 @@
 ---
 name: backend-elixir-best-implementation
-description: "Use when applying backend elixir best implementation."
+description: Use when applying backend elixir best implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, elixir, backend-elixir-best-practices]
-    related_skills: [general]
 ---
 
 # Backend Elixir Best Implementation

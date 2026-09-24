@@ -1,13 +1,13 @@
 ---
 name: dns-implementation-patterns
-description: "Use when implementing DNS servers, resolvers, and tools."
+description: Use when implementing DNS servers, resolvers, and tools.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [dns, nameserver, resolver, DNSSEC, zone, record, authoritative, recursive]
-    related_skills: [encrypted-dns-resolver, dns-cache-layer, dns-adblock-engine, dns-proxy-filter]
+    tags: [dns, nameserver, resolver, dnssec, zone, record, authoritative, recursive]
 ---
 
 # Dns Implementation Patterns

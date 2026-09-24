@@ -1,8 +1,13 @@
 ---
 name: domain-modeling
 description: Use when building or sharpening a project's domain model and recording ADRs
-tags: [DDD, domain, modeling, ADR, architecture]
-related_skills: [ubiquitous-language, codebase-design, domain-driven-design-tactical]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [ddd, domain, modeling, adr, architecture]
 ---
 
 # Domain Modeling

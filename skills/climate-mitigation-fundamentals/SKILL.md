@@ -1,14 +1,13 @@
 ---
 name: climate-mitigation-fundamentals
-description: "Use when applying climate mitigation fundamentals."
+description: Use when applying climate mitigation fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, sustainability, climate-tech]
-    related_skills: [general]
 ---
 
 # Climate Mitigation Fundamentals

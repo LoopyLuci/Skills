@@ -1,14 +1,13 @@
 ---
 name: emergency-management-implementation
-description: "Use when applying emergency management implementation."
+description: Use when applying emergency management implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [gov, emergency, emergency-management]
-    related_skills: [general]
 ---
 
 # Emergency Management Implementation

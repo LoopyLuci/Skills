@@ -1,14 +1,13 @@
 ---
 name: website-migration-guide
-description: "Use when migrating websites. Platform moves, SEO."
+description: Use when migrating websites. Platform moves, SEO.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [migration, website, hosting, platform-migration, seo]
-    related_skills: [wordpress-development, static-site-generator-workflow, seo-strategy]
 ---
 
 # Website Migration Guide

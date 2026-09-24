@@ -1,14 +1,13 @@
 ---
 name: energy-infrastructure-implementation
-description: "Use when applying energy infrastructure implementation."
+description: Use when applying energy infrastructure implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [energy, infrastructure, infrastructure]
-    related_skills: [general]
 ---
 
 # Energy Infrastructure Implementation

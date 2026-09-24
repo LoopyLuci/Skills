@@ -1,14 +1,13 @@
 ---
 name: engineering-fundamentals-best-practices
-description: "Use when applying engineering fundamentals best practices."
+description: Use when applying engineering fundamentals best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, fundamentals, systems]
-    related_skills: [general]
 ---
 
 # Engineering Fundamentals Best Practices

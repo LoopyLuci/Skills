@@ -1,14 +1,13 @@
 ---
 name: biotech-biostatistics-best-practices
-description: "Use when applying biostatistics best practices."
+description: Use when applying biostatistics best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, biostatistics]
-    related_skills: ['']
 ---
 
 # Biotech Biostatistics Best Practices

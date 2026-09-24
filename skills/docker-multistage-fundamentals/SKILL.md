@@ -1,14 +1,13 @@
 ---
 name: docker-multistage-fundamentals
-description: "Use when applying docker multistage fundamentals."
+description: Use when applying docker multistage fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [docker, multistage, buildx]
-    related_skills: [general]
 ---
 
 # Docker Multistage Fundamentals

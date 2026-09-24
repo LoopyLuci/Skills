@@ -1,14 +1,13 @@
 ---
 name: agricultural-robotics-fundamentals
-description: "Use when applying ag robotics fundamentals."
+description: Use when applying ag robotics fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agriculture, robotics]
-    related_skills: [general]
 ---
 
 # Agricultural Robotics Fundamentals

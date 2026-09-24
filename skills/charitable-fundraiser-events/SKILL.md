@@ -1,14 +1,13 @@
 ---
 name: charitable-fundraiser-events
-description: "Use when planning fundraising events."
+description: Use when planning fundraising events.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [nonprofit, fundraising-events, galas, charity-events]
-    related_skills: [general]
 ---
 
 # Charitable Fundraiser Events

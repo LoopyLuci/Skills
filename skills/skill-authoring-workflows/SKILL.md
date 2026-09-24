@@ -1,13 +1,13 @@
 ---
 name: skill-authoring-workflows
-description: "Use when designing efficient skill authoring workflows."
+description: Use when designing efficient skill authoring workflows.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [meta, skill-authoring, workflow, efficiency, templates, batch]
-    related_skills: [skill-blueprint-generator, skill-template-catalog, skill-content-optimization, skill-quality-standards]
 ---
 
 # Skill Authoring Workflows

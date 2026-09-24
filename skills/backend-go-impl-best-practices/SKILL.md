@@ -1,14 +1,13 @@
 ---
 name: backend-go-impl-best-practices
-description: "Use when applying backend go implementation best practices."
+description: Use when applying backend go implementation best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, go, backend-go-implementation]
-    related_skills: [general]
 ---
 
 # Backend Go Impl Best Practices

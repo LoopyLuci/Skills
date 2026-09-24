@@ -1,6 +1,13 @@
 ---
 name: secrets-management
-description: "Store rotate API keys env files vault and 1Password CLI"
+description: Store rotate API keys env files vault and 1Password CLI
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [secrets, management]
 ---
 
 # Secrets Management
@@ -23,3 +30,16 @@ db_url = os.environ["DATABASE_URL"]
 op item get "My API Key" --field credential
 export API_KEY=$(op item get "My API Key" --field credential)
 ```
+
+## Trigger
+
+Activate this skill when the user mentions:
+- secrets, management workflows or issues
+- Building, fixing, or optimizing secrets management
+
+
+## Core Concepts
+
+- Domain fundamentals and best practices
+- Key tools and methodologies
+- Quality standards and common patterns

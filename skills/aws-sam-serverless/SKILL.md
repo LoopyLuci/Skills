@@ -1,14 +1,13 @@
 ---
 name: aws-sam-serverless
-description: "Use when using AWS SAM."
+description: Use when using AWS SAM.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, aws, aws-sam]
-    related_skills: [general]
 ---
 
 # Aws Sam Serverless

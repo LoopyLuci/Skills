@@ -1,14 +1,13 @@
 ---
 name: bioinformatics-databases-troubleshooting
-description: "Use when applying bioinformatics dbs troubleshooting."
+description: Use when applying bioinformatics dbs troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [bioinformatics, data, databases]
-    related_skills: [general]
 ---
 
 # Bioinformatics Databases Troubleshooting

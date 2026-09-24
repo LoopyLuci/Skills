@@ -1,6 +1,13 @@
 ---
 name: git-maintenance-optimization
 description: Optimize git repos — gc, repack, and regular maintenance.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [git, maintenance, optimization]
 ---
 
 # Git Maintenance & Optimization

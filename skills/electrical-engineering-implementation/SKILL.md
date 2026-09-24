@@ -1,14 +1,13 @@
 ---
 name: electrical-engineering-implementation
-description: "Use when applying electrical engineering implementation."
+description: Use when applying electrical engineering implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, electrical, ee, electrical-eng-design]
-    related_skills: [general]
 ---
 
 # Electrical Engineering Implementation

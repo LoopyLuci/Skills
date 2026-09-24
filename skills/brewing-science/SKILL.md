@@ -1,14 +1,13 @@
 ---
 name: brewing-science
-description: "Use when applying brewing science."
+description: Use when applying brewing science.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [food, brewing, brewing]
-    related_skills: [general]
 ---
 
 # Brewing Science

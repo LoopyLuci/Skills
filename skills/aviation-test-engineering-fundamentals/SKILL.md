@@ -1,14 +1,13 @@
 ---
 name: aviation-test-engineering-fundamentals
-description: "Use when applying aviation test fundamentals."
+description: Use when applying aviation test fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, testing, testing]
-    related_skills: ['general']
 ---
 
 # Aviation Test Engineering Fundamentals

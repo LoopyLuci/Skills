@@ -1,14 +1,13 @@
 ---
 name: apache-hudi-fundamentals
-description: "Use when for apache hudi fundamentals."
+description: Use when for apache hudi fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [big-data, hudi, databricks, lakehouse]
-    related_skills: [general]
 ---
 
 # Apache Hudi Fundamentals

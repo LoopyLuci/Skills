@@ -1,14 +1,13 @@
 ---
 name: customer-success-troubleshooting
-description: "Use when applying customer success troubleshooting."
+description: Use when applying customer success troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, success, customer-success-retention]
-    related_skills: [general]
 ---
 
 # Customer Success Troubleshooting

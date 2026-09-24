@@ -1,14 +1,13 @@
 ---
 name: email-marketing-brand-identity
-description: "Use when aligning email with brand."
+description: Use when aligning email with brand.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, marketing, branding, identity]
-    related_skills: [general]
 ---
 
 # Email Marketing Brand Identity

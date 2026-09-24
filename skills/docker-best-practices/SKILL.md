@@ -1,14 +1,13 @@
 ---
 name: docker-best-practices
-description: "Use when applying docker best practices."
+description: Use when applying docker best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, docker, containers, images]
-    related_skills: [general]
 ---
 
 # Docker Best Practices

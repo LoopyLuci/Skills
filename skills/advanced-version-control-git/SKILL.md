@@ -1,13 +1,13 @@
 ---
 name: advanced-version-control-git
-description: "Use when using advanced git workflows and recovery."
+description: Use when using advanced git workflows and recovery.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [git, version-control, advanced, branching, rebase, bisect, reflog]
-    related_skills: [git-for-windows, github-pr-workflow, github-code-review, systematic-debugging]
 ---
 
 # Advanced Version Control Git

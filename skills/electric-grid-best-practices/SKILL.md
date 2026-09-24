@@ -1,14 +1,13 @@
 ---
 name: electric-grid-best-practices
-description: "Use when applying electric grids best practices."
+description: Use when applying electric grids best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [energy, grid, smart-grid-optimization]
-    related_skills: [general]
 ---
 
 # Electric Grid Best Practices

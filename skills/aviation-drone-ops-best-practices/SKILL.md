@@ -1,14 +1,13 @@
 ---
 name: aviation-drone-ops-best-practices
-description: "Use when applying drone operations best practices."
+description: Use when applying drone operations best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, drone, uas]
-    related_skills: ['general']
 ---
 
 # Aviation Drone Ops Best Practices

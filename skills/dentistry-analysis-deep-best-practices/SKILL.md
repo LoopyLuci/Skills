@@ -1,14 +1,13 @@
 ---
 name: dentistry-analysis-deep-best-practices
-description: "Use when applying dentistry analysis best practices."
+description: Use when applying dentistry analysis best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [healthcare, dentistry]
-    related_skills: ['dentistry-analysis']
 ---
 
 # Dentistry Analysis Deep Best Practices

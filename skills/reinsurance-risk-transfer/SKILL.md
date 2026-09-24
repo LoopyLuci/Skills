@@ -2,12 +2,12 @@
 name: reinsurance-risk-transfer
 description: Treaty, facultative, retrocession, and alternative risk transfer
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["reinsurance", "risk"]
+    tags: [reinsurance, risk]
 ---
 
 # Reinsurance Risk Transfer

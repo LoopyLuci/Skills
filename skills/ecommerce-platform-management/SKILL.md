@@ -1,13 +1,13 @@
 ---
 name: ecommerce-platform-management
-description: "Use when managing ecommerce platforms and online stores."
+description: Use when managing ecommerce platforms and online stores.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [ecommerce, shopify, woocommerce, online-store, product-management, checkout]
-    related_skills: [email-marketing-campaigns, conversion-rate-optimization, seo-search-engine-optimization, digital-marketing-strategy]
 ---
 
 # Ecommerce Platform Management

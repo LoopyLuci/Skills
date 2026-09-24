@@ -2,12 +2,12 @@
 name: menu-engineering-design
 description: Menu psychology, pricing strategy, profitability analysis, and menu design
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["menu", "engineering"]
+    tags: [menu, engineering]
 ---
 
 # Menu Engineering Design

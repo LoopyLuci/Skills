@@ -1,14 +1,13 @@
 ---
 name: expressjs-authentication-implementation
-description: "Use when applying express.js auth implementation."
+description: Use when applying express.js auth implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, expressjs, auth, jwt]
-    related_skills: [general]
 ---
 
 # Expressjs Authentication Implementation

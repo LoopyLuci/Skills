@@ -1,6 +1,13 @@
 ---
 name: git-history-forensics
 description: Investigate git history — blame, log, reflog, and bisect.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [git, history, forensics]
 ---
 
 # Git History Forensics

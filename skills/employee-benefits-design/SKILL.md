@@ -1,14 +1,13 @@
 ---
 name: employee-benefits-design
-description: "Use when designing employee benefits."
+description: Use when designing employee benefits.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [hr, benefits, compensation, perks]
-    related_skills: [general]
 ---
 
 # Employee Benefits Design

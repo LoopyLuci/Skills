@@ -1,12 +1,13 @@
 ---
 name: awk-text-processing
-description: "Use when processing text with awk."
+description: Use when processing text with awk.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["awk", "text-processing", "CSV", "log-analysis"]
+    tags: [awk, text-processing, csv, log-analysis]
 ---
 
 # Awk Text Processing

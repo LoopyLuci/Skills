@@ -1,14 +1,13 @@
 ---
 name: database-migration-safety
-description: "Use when safely migrating databases."
+description: Use when safely migrating databases.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, database-migration, zero-downtime, data-migration]
-    related_skills: ['database-migration-patterns']
 ---
 
 # Database Migration Safety

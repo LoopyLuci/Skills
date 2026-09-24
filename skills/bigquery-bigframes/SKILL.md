@@ -1,11 +1,10 @@
 ---
 name: bigquery-bigframes
-description: >-
-source: google/skills
-tags: [gcp, google-cloud, bigquery]
-metadata: 
-hermes: 
-
+description: Skill for bigquery bigframes
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [gcp, google-cloud, bigquery]

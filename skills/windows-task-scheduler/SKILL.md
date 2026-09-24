@@ -1,9 +1,15 @@
 ---
 name: windows-task-scheduler
-description: "Use when managing scheduled tasks on Windows."
-category: software-development
-tags: [windows, taskscheduler, scheduled-tasks, automation]
+description: Use when managing scheduled tasks on Windows.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [windows, taskscheduler, scheduled-tasks, automation]
 ---
+
 # Windows Task Scheduler
 
 Creating and managing scheduled tasks with PowerShell.

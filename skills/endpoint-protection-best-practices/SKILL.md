@@ -1,14 +1,13 @@
 ---
 name: endpoint-protection-best-practices
-description: "Use when applying endpoint protection best practices."
+description: Use when applying endpoint protection best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, endpoint, edr, antivirus]
-    related_skills: [general]
 ---
 
 # Endpoint Protection Best Practices

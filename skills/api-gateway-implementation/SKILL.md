@@ -1,14 +1,13 @@
 ---
 name: api-gateway-implementation
-description: "Use when applying api gateway implementation."
+description: Use when applying api gateway implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [architecture, api-gateway, gateway-patterns]
-    related_skills: [general]
 ---
 
 # Api Gateway Implementation

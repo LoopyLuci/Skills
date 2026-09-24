@@ -2,12 +2,12 @@
 name: container-kubernetes-security
 description: Pod security, admission control, runtime security, image scanning, and network policies
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["k8s-security", "containers"]
+    tags: [k8s-security, containers]
 ---
 
 # Container Kubernetes Security

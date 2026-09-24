@@ -1,14 +1,13 @@
 ---
 name: email-retention-implementation
-description: "Use when applying email retention implementation."
+description: Use when applying email retention implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, marketing, retention]
-    related_skills: [general]
 ---
 
 # Email Retention Implementation

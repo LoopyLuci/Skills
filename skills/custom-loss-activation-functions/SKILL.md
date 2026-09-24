@@ -1,13 +1,13 @@
 ---
 name: custom-loss-activation-functions
-description: "Use when designing custom loss functions and activations."
+description: Use when designing custom loss functions and activations.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [neural-networks, loss-functions, activations, pytorch, deep-learning]
-    related_skills: [custom-neural-architecture-design, custom-training-loops, neural-network-fundamentals, custom-optimizer-design]
 ---
 
 # Custom Loss Activation Functions

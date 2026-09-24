@@ -2,12 +2,12 @@
 name: grant-writing-funding
 description: NIH/NSF/ERC proposals, specific aims, budgets, and impact statements
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["grants", "funding"]
+    tags: [grants, funding]
 ---
 
 # Grant Writing Funding

@@ -1,9 +1,13 @@
 ---
 name: parental-controls
-title: Parental Controls
 description: Use when implementing time/age-based content filtering.
-category: networking
-tags: [parental, controls, filtering, safety, schedule, rust]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [parental, controls, filtering, safety, schedule, rust]
 ---
 
 # Parental Controls

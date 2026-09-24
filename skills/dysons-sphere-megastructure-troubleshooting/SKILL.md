@@ -1,14 +1,13 @@
 ---
 name: dysons-sphere-megastructure-troubleshooting
-description: "Use when applying dyson sphere megastructure troubleshoo."
+description: Use when applying dyson sphere megastructure troubleshoo.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [space, engineering, dyson-sphere-design]
-    related_skills: ['']
 ---
 
 # Dysons Sphere Megastructure Troubleshooting

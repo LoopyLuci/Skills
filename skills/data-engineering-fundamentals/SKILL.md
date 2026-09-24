@@ -1,14 +1,13 @@
 ---
 name: data-engineering-fundamentals
-description: "Use when learning data engineering fundamentals."
+description: Use when learning data engineering fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data-engineering, etl, data-pipeline]
-    related_skills: [general]
 ---
 
 # Data Engineering Fundamentals

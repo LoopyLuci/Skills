@@ -1,14 +1,13 @@
 ---
 name: database-mongodb-sharding-implementation
-description: "Use when applying mongodb sharding implementation."
+description: Use when applying mongodb sharding implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, mongodb, sharding, scale]
-    related_skills: [general]
 ---
 
 # Database Mongodb Sharding Implementation

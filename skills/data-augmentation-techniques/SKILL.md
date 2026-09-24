@@ -1,13 +1,13 @@
 ---
 name: data-augmentation-techniques
-description: "Use when applying data augmentation for vision, text, audio."
+description: Use when applying data augmentation for vision, text, audio.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [data-augmentation, computer-vision, nlp, audio, deep-learning]
-    related_skills: [computer-vision-techniques, nlp-techniques, self-supervised-learning, custom-training-loops]
 ---
 
 # Data Augmentation Techniques

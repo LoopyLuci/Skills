@@ -1,14 +1,13 @@
 ---
 name: cloud-native-security-troubleshooting
-description: "Use when for cloud native security troubleshooting."
+description: Use when for cloud native security troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, cloud-native, containers]
-    related_skills: [general]
 ---
 
 # Cloud Native Security Troubleshooting

@@ -2,12 +2,12 @@
 name: global-trade-compliance
 description: Customs, tariffs, free trade zones, and trade compliance
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["trade", "customs"]
+    tags: [trade, customs]
 ---
 
 # Global Trade Compliance

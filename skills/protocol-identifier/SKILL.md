@@ -1,9 +1,13 @@
 ---
 name: protocol-identifier
-title: Protocol Identifier
 description: Use when identifying app protocols with nDPI signatures.
-category: networking
-tags: [dpi, protocol, identification, ndpi, classification, rust]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [dpi, protocol, identification, ndpi, classification, rust]
 ---
 
 # Protocol Identifier

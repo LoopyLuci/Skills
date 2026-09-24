@@ -1,14 +1,13 @@
 ---
 name: android-app-development-fundamentals
-description: "Use when applying android app dev fundamentals."
+description: Use when applying android app dev fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [android, mobile, android-development]
-    related_skills: [general]
 ---
 
 # Android App Development Fundamentals

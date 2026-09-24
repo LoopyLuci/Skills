@@ -1,14 +1,13 @@
 ---
 name: cardiology-strategy-troubleshooting
-description: "Use when applying cardiology strategy troubleshooting."
+description: Use when applying cardiology strategy troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [medicine, cardiology, cardiology-management]
-    related_skills: [general]
 ---
 
 # Cardiology Strategy Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: career-development-planning
-description: "Use when planning career development."
+description: Use when planning career development.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: ['c', 'a', 'r', 'e', 'e', 'r', ',', ' ', 'm', 'e', 'n', 't', 'o', 'r', 's', 'h', 'i', 'p']
-    related_skills: [general]
+    tags: [c, a, r, e, e, r, , ,  , m, e, n, t, o, r, s, h, i, p]
 ---
 
 # Career Development Planning

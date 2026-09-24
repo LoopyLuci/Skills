@@ -1,14 +1,13 @@
 ---
 name: brain-computer-commerce-best-practices
-description: "Use when applying bci commerce best practices."
+description: Use when applying bci commerce best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neurotech, bci, brain-computer-commerce]
-    related_skills: [general]
 ---
 
 # Brain Computer Commerce Best Practices

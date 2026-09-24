@@ -2,12 +2,12 @@
 name: hydrogen-fuel-cells
 description: Green hydrogen, electrolysis, fuel cell technology, and hydrogen economy
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["hydrogen", "fuel-cell"]
+    tags: [hydrogen, fuel-cell]
 ---
 
 # Hydrogen Fuel Cells

@@ -1,14 +1,13 @@
 ---
 name: battery-thermal-management
-description: "Use when designing battery thermal systems."
+description: Use when designing battery thermal systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [automotive, ev, thermal, battery]
-    related_skills: [general]
 ---
 
 # Battery Thermal Management

@@ -1,14 +1,13 @@
 ---
 name: data-visualization-design-deep-troubleshooting
-description: "Use when applying data viz design troubleshooting."
+description: Use when applying data viz design troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [design, data-viz]
-    related_skills: ['data-visualization-design']
 ---
 
 # Data Visualization Design Deep Troubleshooting

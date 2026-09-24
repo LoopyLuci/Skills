@@ -1,14 +1,13 @@
 ---
 name: biophotonics-troubleshooting
-description: "Use when applying biophotonics troubleshooting."
+description: Use when applying biophotonics troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [optics, biomedical, biophotonics]
-    related_skills: [general]
 ---
 
 # Biophotonics Troubleshooting

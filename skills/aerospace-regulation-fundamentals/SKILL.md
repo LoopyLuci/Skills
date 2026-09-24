@@ -1,14 +1,13 @@
 ---
 name: aerospace-regulation-fundamentals
-description: "Use when applying aerospace regulation fundamentals."
+description: Use when applying aerospace regulation fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [compliance, aerospace, aerospace-regulation]
-    related_skills: [general]
 ---
 
 # Aerospace Regulation Fundamentals

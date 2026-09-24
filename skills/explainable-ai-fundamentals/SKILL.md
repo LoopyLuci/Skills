@@ -1,14 +1,13 @@
 ---
 name: explainable-ai-fundamentals
-description: "Use when for explainable ai fundamentals."
+description: Use when for explainable ai fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ai, xai, explainable-ai, interpretability]
-    related_skills: [general]
 ---
 
 # Explainable Ai Fundamentals

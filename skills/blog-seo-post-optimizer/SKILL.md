@@ -1,14 +1,13 @@
 ---
 name: blog-seo-post-optimizer
-description: "Use when optimizing blog posts for SEO. Keyword checks."
+description: Use when optimizing blog posts for SEO. Keyword checks.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [blog, seo, on-page, optimization, search]
-    related_skills: [blog-post-outliner, blog-analytics-interpreter, blog-idea-generator]
 ---
 
 # Blog Seo Post Optimizer

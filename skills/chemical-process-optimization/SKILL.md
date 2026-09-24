@@ -1,14 +1,13 @@
 ---
 name: chemical-process-optimization
-description: "Use when optimizing processes."
+description: Use when optimizing processes.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [chem, optimization, process-opt]
-    related_skills: [general]
 ---
 
 # Chemical Process Optimization

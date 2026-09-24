@@ -1,12 +1,13 @@
 ---
 name: packer-image-building
-description: "Use when building images with Packer."
+description: Use when building images with Packer.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["packer", "images", "AMI", "golden-image", "HCL"]
+    tags: [packer, images, ami, golden-image, hcl]
 ---
 
 # Packer Image Building

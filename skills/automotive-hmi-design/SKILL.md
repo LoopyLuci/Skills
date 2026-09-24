@@ -1,14 +1,13 @@
 ---
 name: automotive-hmi-design
-description: "Use when designing automotive HMIs."
+description: Use when designing automotive HMIs.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [automotive, hmi, human-machine-interface, ux]
-    related_skills: [general]
 ---
 
 # Automotive Hmi Design

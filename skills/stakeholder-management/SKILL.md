@@ -2,12 +2,12 @@
 name: stakeholder-management
 description: RACI, communication plans, executive updates, and managing up/across
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["stakeholders", "communication"]
+    tags: [stakeholders, communication]
 ---
 
 # Stakeholder Management

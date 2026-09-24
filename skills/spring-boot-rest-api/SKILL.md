@@ -1,12 +1,13 @@
 ---
 name: spring-boot-rest-api
-description: "Use when building Spring Boot APIs."
+description: Use when building Spring Boot APIs.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["spring-boot", "java", "REST", "JPA", "microservices"]
+    tags: [spring-boot, java, rest, jpa, microservices]
 ---
 
 # Spring Boot Rest Api

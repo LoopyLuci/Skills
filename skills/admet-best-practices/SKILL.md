@@ -1,14 +1,13 @@
 ---
 name: admet-best-practices
-description: "Use when applying admet assays best practices."
+description: Use when applying admet assays best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, pharma, admet]
-    related_skills: [general]
 ---
 
 # Admet Best Practices

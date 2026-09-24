@@ -1,14 +1,13 @@
 ---
 name: aerospace-regulation-best-practices
-description: "Use when applying aerospace regulation best practices."
+description: Use when applying aerospace regulation best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [compliance, aerospace, aerospace-regulation]
-    related_skills: [general]
 ---
 
 # Aerospace Regulation Best Practices

@@ -1,14 +1,13 @@
 ---
 name: backend-rust-implementation
-description: "Use when applying rust backend implementation."
+description: Use when applying rust backend implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, rust, webassembly, performance]
-    related_skills: [general]
 ---
 
 # Backend Rust Implementation

@@ -1,14 +1,13 @@
 ---
 name: biotech-bioprocess-implementation
-description: "Use when applying bioprocess engineering implementation."
+description: Use when applying bioprocess engineering implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, process]
-    related_skills: ['']
 ---
 
 # Biotech Bioprocess Implementation

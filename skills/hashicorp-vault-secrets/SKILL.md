@@ -1,12 +1,13 @@
 ---
 name: hashicorp-vault-secrets
-description: "Use when managing secrets with Vault."
+description: Use when managing secrets with Vault.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["vault", "secrets", "dynamic-secrets", "encryption", "ACL"]
+    tags: [vault, secrets, dynamic-secrets, encryption, acl]
 ---
 
 # Hashicorp Vault Secrets

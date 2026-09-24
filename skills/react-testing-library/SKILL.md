@@ -1,12 +1,13 @@
 ---
 name: react-testing-library
-description: "Use when testing React components."
+description: Use when testing React components.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["react", "testing", "RTL", "jest", "user-events"]
+    tags: [react, testing, rtl, jest, user-events]
 ---
 
 # React Testing Library

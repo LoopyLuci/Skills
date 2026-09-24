@@ -1,14 +1,13 @@
 ---
 name: cpp-programming-troubleshooting
-description: "Use when applying c++ programming troubleshooting."
+description: Use when applying c++ programming troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cpp, cplusplus, programming, modern-cpp]
-    related_skills: [general]
 ---
 
 # Cpp Programming Troubleshooting

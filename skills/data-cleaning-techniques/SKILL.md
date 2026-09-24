@@ -1,14 +1,13 @@
 ---
 name: data-cleaning-techniques
-description: "Use when cleaning messy data."
+description: Use when cleaning messy data.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data-science, data-cleaning, preprocessing, quality]
-    related_skills: ['data-cleaning-patterns']
 ---
 
 # Data Cleaning Techniques

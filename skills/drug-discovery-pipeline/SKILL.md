@@ -1,14 +1,13 @@
 ---
 name: drug-discovery-pipeline
-description: "Use when planning drug discovery. Target ID to IND filing."
+description: Use when planning drug discovery. Target ID to IND filing.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [drug-discovery, pharma, medicinal-chemistry, clinical-development]
-    related_skills: [genomics-data-processing, bioinformatics-sequences-analysis]
 ---
 
 # Drug Discovery Pipeline

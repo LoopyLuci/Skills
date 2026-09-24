@@ -1,14 +1,13 @@
 ---
 name: database-redis-cluster-best-practices
-description: "Use when applying redis cluster best practices."
+description: Use when applying redis cluster best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, redis, clustering, high-availability]
-    related_skills: [general]
 ---
 
 # Database Redis Cluster Best Practices

@@ -1,6 +1,13 @@
 ---
 name: git-workflow-optimization
-description: "Git rebase bisect worktree and interactive squash patterns"
+description: Git rebase bisect worktree and interactive squash patterns
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [git, workflow, optimization]
 ---
 
 # Git Workflow Optimization

@@ -1,14 +1,13 @@
 ---
 name: aviation-composites-troubleshooting
-description: "Use when applying aviation composites troubleshooting."
+description: Use when applying aviation composites troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, composites, composite-materials]
-    related_skills: ['general']
 ---
 
 # Aviation Composites Troubleshooting

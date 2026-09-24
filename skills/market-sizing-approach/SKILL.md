@@ -1,12 +1,13 @@
 ---
 name: market-sizing-approach
-description: "Use when calculating market size."
+description: Use when calculating market size.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["TAM", "SAM", "SOM", "market-sizing", "top-down"]
+    tags: [tam, sam, som, market-sizing, top-down]
 ---
 
 # Market Sizing Approach

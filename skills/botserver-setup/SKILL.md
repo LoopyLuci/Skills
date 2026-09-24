@@ -1,9 +1,10 @@
 ---
 name: botserver-setup
-description: "Use for BotServer setup, build, and updates on Windows."
+description: Use for BotServer setup, build, and updates on Windows.
 version: 1.0.0
-author: Jessi
-platforms: [windows]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [botserver, telegram, tauri, windows, setup]

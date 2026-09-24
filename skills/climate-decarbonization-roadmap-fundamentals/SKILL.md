@@ -1,14 +1,13 @@
 ---
 name: climate-decarbonization-roadmap-fundamentals
-description: "Use when applying decarbonization roadmapping fundamentals."
+description: Use when applying decarbonization roadmapping fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, decarbonization, decarbonization-roadmapping]
-    related_skills: ['']
 ---
 
 # Climate Decarbonization Roadmap Fundamentals

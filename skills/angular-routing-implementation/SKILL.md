@@ -1,14 +1,13 @@
 ---
 name: angular-routing-implementation
-description: "Use when applying angular routing implementation."
+description: Use when applying angular routing implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [frontend, angular, router, navigation]
-    related_skills: [general]
 ---
 
 # Angular Routing Implementation

@@ -1,14 +1,13 @@
 ---
 name: api-design-implementation
-description: "Use when implementing api design."
+description: Use when implementing api design.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [api, rest, design, openapi]
-    related_skills: [general]
 ---
 
 # Api Design Implementation

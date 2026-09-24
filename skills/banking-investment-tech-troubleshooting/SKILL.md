@@ -1,14 +1,13 @@
 ---
 name: banking-investment-tech-troubleshooting
-description: "Use when applying investment tech troubleshooting."
+description: Use when applying investment tech troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, investing, investment-tech]
-    related_skills: [general]
 ---
 
 # Banking Investment Tech Troubleshooting

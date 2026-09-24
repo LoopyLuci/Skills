@@ -1,14 +1,13 @@
 ---
 name: banking-insurance-tech-implementation
-description: "Use when applying banking insurance tech implementation."
+description: Use when applying banking insurance tech implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, insurance, insurance-tech]
-    related_skills: [general]
 ---
 
 # Banking Insurance Tech Implementation

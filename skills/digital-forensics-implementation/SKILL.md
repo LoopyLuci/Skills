@@ -1,14 +1,13 @@
 ---
 name: digital-forensics-implementation
-description: "Use when implementing digital forensics."
+description: Use when implementing digital forensics.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, forensics, investigation]
-    related_skills: [general]
 ---
 
 # Digital Forensics Implementation

@@ -1,14 +1,13 @@
 ---
 name: energy-storage-economics
-description: "Use when analyzing energy storage. Battery, ROI, economics."
+description: Use when analyzing energy storage. Battery, ROI, economics.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climatetech, energy-storage, battery, roi, economics, lcoe]
-    related_skills: [renewable-energy-design, energy-storage-systems]
 ---
 
 # Energy Storage Economics

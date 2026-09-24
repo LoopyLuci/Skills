@@ -1,13 +1,13 @@
 ---
 name: product-marketing-strategy
-description: "Use when creating product marketing strategies."
+description: Use when creating product marketing strategies.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [product-marketing, positioning, messaging, launch, buyer-persona, GTM]
-    related_skills: [go-to-market-strategy, product-led-growth, demand-generation, content-marketing-workflow]
+    tags: [product-marketing, positioning, messaging, launch, buyer-persona, gtm]
 ---
 
 # Product Marketing Strategy

@@ -1,14 +1,13 @@
 ---
 name: asset-management-tech-fundamentals
-description: "Use when applying asset management tech fundamentals."
+description: Use when applying asset management tech fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, asset, asset-management-fundamentals]
-    related_skills: [general]
 ---
 
 # Asset Management Tech Fundamentals

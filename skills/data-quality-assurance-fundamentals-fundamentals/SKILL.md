@@ -1,14 +1,13 @@
 ---
 name: data-quality-assurance-fundamentals-fundamentals
-description: "Use when applying data quality fundamentals fundamentals."
+description: Use when applying data quality fundamentals fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, data-quality]
-    related_skills: ['data-quality-assurance-fundamentals']
 ---
 
 # Data Quality Assurance Fundamentals Fundamentals

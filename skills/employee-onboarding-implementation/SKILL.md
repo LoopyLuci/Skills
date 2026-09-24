@@ -1,14 +1,13 @@
 ---
 name: employee-onboarding-implementation
-description: "Use when applying employee onboarding implementation."
+description: Use when applying employee onboarding implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [hr, onboarding, employee-onboarding-automation]
-    related_skills: [general]
 ---
 
 # Employee Onboarding Implementation

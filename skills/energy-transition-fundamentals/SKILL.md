@@ -1,14 +1,13 @@
 ---
 name: energy-transition-fundamentals
-description: "Use when applying energy transition fundamentals."
+description: Use when applying energy transition fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [energy, transition, renewable-energy]
-    related_skills: [general]
 ---
 
 # Energy Transition Fundamentals

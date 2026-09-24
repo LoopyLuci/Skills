@@ -1,14 +1,13 @@
 ---
 name: digital-marketing-analytics
-description: "Use when analyzing marketing data. ROI, attribution, CAC."
+description: Use when analyzing marketing data. ROI, attribution, CAC.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, analytics, roi, attribution, cac, ltv]
-    related_skills: [marketing-analytics-dashboard, content-marketing-strategy]
 ---
 
 # Digital Marketing Analytics

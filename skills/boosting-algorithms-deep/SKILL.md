@@ -1,13 +1,13 @@
 ---
 name: boosting-algorithms-deep
-description: "Use when implementing gradient boosting algorithms."
+description: Use when implementing gradient boosting algorithms.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [boosting, XGBoost, LightGBM, CatBoost, gradient-boosting, ensemble]
-    related_skills: [random-forest-advanced, feature-engineering-automation, hyperparameter-optimization-ml, model-evaluation-metrics]
+    tags: [boosting, xgboost, lightgbm, catboost, gradient-boosting, ensemble]
 ---
 
 # Boosting Algorithms Deep

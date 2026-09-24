@@ -1,14 +1,13 @@
 ---
 name: commodity-trading-implementation
-description: "Use when applying commodity trading implementation."
+description: Use when applying commodity trading implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, trading, commodity-trading]
-    related_skills: [general]
 ---
 
 # Commodity Trading Implementation

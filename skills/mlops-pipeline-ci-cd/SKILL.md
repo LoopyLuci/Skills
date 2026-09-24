@@ -1,13 +1,13 @@
 ---
 name: mlops-pipeline-ci-cd
-description: "Use when building CI/CD pipelines for ML systems."
+description: Use when building CI/CD pipelines for ML systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [mlops, CI-CD, ML-pipeline, automation, model-deployment, CI, testing]
-    related_skills: [ml-pipeline-design, ml-deployment-serving, ml-experiment-tracking, model-registry-management]
+    tags: [mlops, ci-cd, ml-pipeline, automation, model-deployment, ci, testing]
 ---
 
 # MLOps CI/CD Pipelines

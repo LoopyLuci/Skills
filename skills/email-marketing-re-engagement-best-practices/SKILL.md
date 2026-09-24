@@ -1,14 +1,13 @@
 ---
 name: email-marketing-re-engagement-best-practices
-description: "Use when applying re-engagement email best practices."
+description: Use when applying re-engagement email best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, re-engagement, engagement]
-    related_skills: [general]
 ---
 
 # Email Marketing Re Engagement Best Practices

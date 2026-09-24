@@ -1,9 +1,13 @@
 ---
 name: service-orchestrator
-title: Service Orchestrator
 description: Use when managing multi-platform Sentinel service lifecycle.
-category: networking
-tags: [service, orchestration, lifecycle, systemd, launchd, windows]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [service, orchestration, lifecycle, systemd, launchd, windows]
 ---
 
 # Service Orchestrator

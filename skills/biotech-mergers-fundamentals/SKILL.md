@@ -1,14 +1,13 @@
 ---
 name: biotech-mergers-fundamentals
-description: "Use when applying biotech m&a fundamentals."
+description: Use when applying biotech m&a fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: [biotech, M&A, mergers-acquisitions]
-    related_skills: [general]
+    tags: [biotech, m&a, mergers-acquisitions]
 ---
 
 # Biotech Mergers Fundamentals

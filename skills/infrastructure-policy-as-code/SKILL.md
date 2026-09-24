@@ -1,13 +1,13 @@
 ---
 name: infrastructure-policy-as-code
-description: "Use when implementing policy as code for infrastructure."
+description: Use when implementing policy as code for infrastructure.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [policy-as-code, OPA, Sentinel, Kyverno, conftest, compliance]
-    related_skills: [gitops-argocd-flux, cloud-cost-optimization-finops, terraform-module-patterns, devsecops-shift-left]
+    tags: [policy-as-code, opa, sentinel, kyverno, conftest, compliance]
 ---
 
 # Infrastructure Policy as Code

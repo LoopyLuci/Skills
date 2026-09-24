@@ -1,14 +1,13 @@
 ---
 name: electric-motor-design-ev
-description: "Use when designing electric motors for EVs."
+description: Use when designing electric motors for EVs.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [automotive, electric-motors, ev-design, engineering]
-    related_skills: [electric-vehicle-engineering]
 ---
 
 # Electric Motor Design Ev

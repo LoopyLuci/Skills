@@ -1,14 +1,13 @@
 ---
 name: real-estate-property-analysis
-description: "Use when underwriting property. Cap rate, NOI, IRR, DSCR."
-version: 2.0.0
-author: Hermes Agent
+description: Use when underwriting property. Cap rate, NOI, IRR, DSCR.
+version: 1.0.0
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [real-estate, investment, analysis, financial-modeling, underwriting]
-    related_skills: [real-estate-rental-analysis, real-estate-cma-generator, real-estate-market-intel]
 ---
 
 # Real Estate Property Analysis

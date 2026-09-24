@@ -1,14 +1,13 @@
 ---
 name: aws-cdk-implementation
-description: "Use when applying aws cdk implementation."
+description: Use when applying aws cdk implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, cdk, iac, typescript]
-    related_skills: [general]
 ---
 
 # Aws Cdk Implementation

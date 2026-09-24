@@ -1,14 +1,13 @@
 ---
 name: data-lineage-troubleshooting-implementation
-description: "Use when applying data lineage troubleshooting implement."
+description: Use when applying data lineage troubleshooting implement.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, lineage]
-    related_skills: ['data-lineage-troubleshooting']
 ---
 
 # Data Lineage Troubleshooting Implementation

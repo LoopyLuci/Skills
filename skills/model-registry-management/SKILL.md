@@ -1,13 +1,13 @@
 ---
 name: model-registry-management
-description: "Use when managing ML model versions and registries."
+description: Use when managing ML model versions and registries.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [model-registry, model-versioning, deployment, governance, staging, production]
-    related_skills: [ml-experiment-tracking, ml-deployment-serving, ml-pipeline-design, model-evaluation-metrics]
 ---
 
 # Model Registry Management

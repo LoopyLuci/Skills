@@ -1,14 +1,13 @@
 ---
 name: climate-risk-modeling-implementation
-description: "Use when applying climate risk modeling implementation."
+description: Use when applying climate risk modeling implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, risk, climate-risk-insurance]
-    related_skills: [general]
 ---
 
 # Climate Risk Modeling Implementation

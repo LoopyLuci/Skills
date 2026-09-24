@@ -1,14 +1,13 @@
 ---
 name: biotech-drug-discovery-fundamentals
-description: "Use when applying drug discovery fundamentals."
+description: Use when applying drug discovery fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, drug-discovery]
-    related_skills: ['']
 ---
 
 # Biotech Drug Discovery Fundamentals

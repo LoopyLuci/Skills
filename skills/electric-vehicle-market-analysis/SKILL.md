@@ -1,14 +1,13 @@
 ---
 name: electric-vehicle-market-analysis
-description: "Use when analyzing EV markets."
+description: Use when analyzing EV markets.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [automotive, ev-market, analysis, forecasting]
-    related_skills: [market-research]
 ---
 
 # Electric Vehicle Market Analysis

@@ -1,14 +1,13 @@
 ---
 name: email-marketing-trigger-based-troubleshooting
-description: "Use when applying trigger-based emails troubleshooting."
+description: Use when applying trigger-based emails troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, automation, triggers]
-    related_skills: [general]
 ---
 
 # Email Marketing Trigger Based Troubleshooting

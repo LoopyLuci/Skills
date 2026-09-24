@@ -1,14 +1,13 @@
 ---
 name: beauty-product-testing
-description: "Use when testing beauty products."
+description: Use when testing beauty products.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [beauty, testing, safety, efficacy]
-    related_skills: ['beauty-product-testing-methods']
 ---
 
 # Beauty Product Testing

@@ -1,14 +1,13 @@
 ---
 name: email-marketing-inbox-best-practices
-description: "Use when applying email inbox placement best practices."
+description: Use when applying email inbox placement best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, deliverability, inbox]
-    related_skills: [general]
 ---
 
 # Email Marketing Inbox Best Practices

@@ -2,12 +2,12 @@
 name: marine-renewable-energy
 description: Offshore wind, wave energy, tidal energy, and ocean thermal
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["marine-energy", "offshore"]
+    tags: [marine-energy, offshore]
 ---
 
 # Marine Renewable Energy

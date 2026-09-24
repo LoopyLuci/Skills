@@ -1,8 +1,13 @@
 ---
 name: validate-idea
 description: Use when testing a business idea before building anything
-tags: [validation, mvp, customer-discovery, lean-startup]
-related_skills: [find-community, processize, mvp, first-customers]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [validation, mvp, customer-discovery, lean-startup]
 ---
 
 # Validate Idea

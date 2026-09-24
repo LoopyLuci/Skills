@@ -1,13 +1,13 @@
 ---
 name: lead-generation-strategies
-description: "Use when generating leads through multiple channels."
+description: Use when generating leads through multiple channels.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [lead-generation, demand-generation, inbound, outbound, B2B-leads]
-    related_skills: [crm-sales-pipeline, marketing-funnel-design, list-building-email-growth, digital-marketing-strategy]
+    tags: [lead-generation, demand-generation, inbound, outbound, b2b-leads]
 ---
 
 # Lead Generation Strategies

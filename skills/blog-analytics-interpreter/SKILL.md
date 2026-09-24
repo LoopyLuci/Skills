@@ -1,14 +1,13 @@
 ---
 name: blog-analytics-interpreter
-description: "Use when interpreting blog analytics. Traffic insights."
+description: Use when interpreting blog analytics. Traffic insights.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [blog, analytics, traffic, metrics, growth]
-    related_skills: [blog-seo-post-optimizer, blog-publishing-workflow, content-repurposing]
 ---
 
 # Blog Analytics Interpreter

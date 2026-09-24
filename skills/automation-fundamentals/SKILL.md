@@ -1,14 +1,13 @@
 ---
 name: automation-fundamentals
-description: "Use when applying automation fundamentals."
+description: Use when applying automation fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [automation, robotics, plc, scada]
-    related_skills: [general]
 ---
 
 # Automation Fundamentals

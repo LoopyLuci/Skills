@@ -1,14 +1,13 @@
 ---
 name: aws-threat-modeling
-description: "Use when threat modeling AWS."
+description: Use when threat modeling AWS.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, aws, threat-modeling-fundamentals]
-    related_skills: [general]
 ---
 
 # Aws Threat Modeling

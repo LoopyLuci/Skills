@@ -1,6 +1,13 @@
 ---
 name: telegram-github-bridge
-description: "Bridge GitHub webhooks to Telegram notifications"
+description: Bridge GitHub webhooks to Telegram notifications
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [telegram, github, bridge]
 ---
 
 # Telegram GitHub Bridge

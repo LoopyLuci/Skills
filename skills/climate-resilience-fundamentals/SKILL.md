@@ -1,14 +1,13 @@
 ---
 name: climate-resilience-fundamentals
-description: "Use when applying climate resilience fundamentals."
+description: Use when applying climate resilience fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, resilience, climate-resilience-planning]
-    related_skills: [general]
 ---
 
 # Climate Resilience Fundamentals

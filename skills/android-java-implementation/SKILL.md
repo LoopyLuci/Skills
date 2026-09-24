@@ -1,14 +1,13 @@
 ---
 name: android-java-implementation
-description: "Use when applying android java implementation."
+description: Use when applying android java implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mobile, android, java, android-development]
-    related_skills: [general]
 ---
 
 # Android Java Implementation

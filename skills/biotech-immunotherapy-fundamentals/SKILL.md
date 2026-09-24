@@ -1,14 +1,13 @@
 ---
 name: biotech-immunotherapy-fundamentals
-description: "Use when applying immunotherapy fundamentals."
+description: Use when applying immunotherapy fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, immuno]
-    related_skills: ['']
 ---
 
 # Biotech Immunotherapy Fundamentals

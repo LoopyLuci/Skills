@@ -2,12 +2,12 @@
 name: gdpr-data-protection
 description: Data subject rights, DPIA, breach notification, international transfers, and records of processing
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["gdpr", "privacy"]
+    tags: [gdpr, privacy]
 ---
 
 # Gdpr Data Protection

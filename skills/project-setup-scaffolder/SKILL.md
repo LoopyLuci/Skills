@@ -1,14 +1,13 @@
 ---
 name: project-setup-scaffolder
-description: "Use for project scaffolding. Folder structure, lint, CI."
-version: 1.1.0
-author: Hermes Agent
+description: Use for project scaffolding. Folder structure, lint, CI.
+version: 1.0.0
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [programming, project-setup, scaffolding, boilerplate, configuration, tooling]
-    related_skills: [dependency-management, code-review-checklist, codebase-onboarding]
 ---
 
 # Project Setup Scaffolder

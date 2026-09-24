@@ -1,14 +1,13 @@
 ---
 name: cache-aside-pattern-deep-implementation
-description: "Use when applying cache-aside pattern implementation."
+description: Use when applying cache-aside pattern implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [programming, caching]
-    related_skills: ['cache-aside-pattern']
 ---
 
 # Cache Aside Pattern Deep Implementation

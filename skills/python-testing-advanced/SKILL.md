@@ -1,13 +1,13 @@
 ---
 name: python-testing-advanced
-description: "Use when implementing advanced Python testing."
+description: Use when implementing advanced Python testing.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [python, testing, pytest, fixtures, mocking, parametrize]
-    related_skills: [testing-pyramid-practice, property-based-testing, behavior-driven-development]
 ---
 
 # Advanced Python Testing

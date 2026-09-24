@@ -1,14 +1,13 @@
 ---
 name: business-process-reengineering-fundamentals
-description: "Use when applying bpr fundamentals."
+description: Use when applying bpr fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [consulting, process, business-process-reengineering]
-    related_skills: [general]
 ---
 
 # Business Process Reengineering Fundamentals

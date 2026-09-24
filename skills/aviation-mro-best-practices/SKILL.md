@@ -1,14 +1,13 @@
 ---
 name: aviation-mro-best-practices
-description: "Use when applying aviation mro best practices."
+description: Use when applying aviation mro best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: [aviation, maintenance, aircraft-MRO]
-    related_skills: ['general']
+    tags: [aviation, maintenance, aircraft-mro]
 ---
 
 # Aviation Mro Best Practices

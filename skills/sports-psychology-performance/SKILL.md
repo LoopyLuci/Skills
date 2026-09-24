@@ -2,12 +2,12 @@
 name: sports-psychology-performance
 description: Mental skills, goal setting, visualization, and team dynamics
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["psychology", "performance"]
+    tags: [psychology, performance]
 ---
 
 # Sports Psychology Performance

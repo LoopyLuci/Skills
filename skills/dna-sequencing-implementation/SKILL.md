@@ -1,14 +1,13 @@
 ---
 name: dna-sequencing-implementation
-description: "Use when applying dna sequencing implementation."
+description: Use when applying dna sequencing implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, genomics, genomics-data-processing]
-    related_skills: [general]
 ---
 
 # Dna Sequencing Implementation

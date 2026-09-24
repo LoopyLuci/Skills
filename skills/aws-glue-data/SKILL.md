@@ -1,14 +1,13 @@
 ---
 name: aws-glue-data
-description: "Use when using AWS Glue."
+description: Use when using AWS Glue.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, aws, aws-glue]
-    related_skills: [general]
 ---
 
 # Aws Glue Data

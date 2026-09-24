@@ -1,14 +1,13 @@
 ---
 name: email-marketing-analytics-best-practices
-description: "Use when applying email analytics best practices."
+description: Use when applying email analytics best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, analytics, data]
-    related_skills: [general]
 ---
 
 # Email Marketing Analytics Best Practices

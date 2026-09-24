@@ -2,12 +2,12 @@
 name: fashion-branding-marketing
 description: Fashion branding, fashion marketing, and retail strategy
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["branding", "marketing"]
+    tags: [branding, marketing]
 ---
 
 # Fashion Branding Marketing

@@ -2,12 +2,12 @@
 name: hydroponics-aeroponics
 description: Controlled environment agriculture, nutrient solutions, and vertical farming
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["hydroponics", "cea"]
+    tags: [hydroponics, cea]
 ---
 
 # Hydroponics Aeroponics

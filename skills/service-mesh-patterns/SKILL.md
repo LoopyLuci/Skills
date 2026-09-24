@@ -1,13 +1,13 @@
 ---
 name: service-mesh-patterns
-description: "Use when designing service mesh architecture and patterns."
+description: Use when designing service mesh architecture and patterns.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [service-mesh, istio, linkerd, envoy, sidecar, microservices]
-    related_skills: [api-gateway-load-balancing, zero-trust-network-architecture, distributed-systems-patterns, multi-platform-project]
 ---
 
 # Service Mesh Patterns

@@ -1,9 +1,13 @@
 ---
 name: dns-proxy-filter
-title: "DNS Proxy & Network Filter"
-description: "Use when building DNS proxy/block/firewall tools in Python or Rust."
-category: software-development
-tags: [dns, proxy, adblocker, firewall, network-filter, python, rust, rayon, gpu-acceleration, asyncio]
+description: Use when building DNS proxy/block/firewall tools in Python or Rust.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [dns, proxy, adblocker, firewall, network-filter, python, rust, rayon, gpu-acceleration, asyncio]
 ---
 
 # DNS Proxy & Network Filter — Building Network Security Tools

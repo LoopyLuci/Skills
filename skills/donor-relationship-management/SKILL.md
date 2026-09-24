@@ -1,14 +1,13 @@
 ---
 name: donor-relationship-management
-description: "Use when managing donor relationships."
+description: Use when managing donor relationships.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [nonprofit, donor-management, crm, stewardship]
-    related_skills: [general]
 ---
 
 # Donor Relationship Management

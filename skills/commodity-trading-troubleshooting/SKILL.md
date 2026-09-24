@@ -1,14 +1,13 @@
 ---
 name: commodity-trading-troubleshooting
-description: "Use when applying commodity trading troubleshooting."
+description: Use when applying commodity trading troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, trading, commodity-trading]
-    related_skills: [general]
 ---
 
 # Commodity Trading Troubleshooting

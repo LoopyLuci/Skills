@@ -1,9 +1,13 @@
 ---
 name: entity-framework-core
-description: "Use when using EF Core."
+description: Use when using EF Core.
 version: 1.0.0
-author: Hermes Agent
-tags: ["ef-core", "ORM", "migrations", "LINQ", "database"]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [ef-core, orm, migrations, linq, database]
 ---
 
 # Entity Framework Core

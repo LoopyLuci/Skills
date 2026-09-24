@@ -1,14 +1,13 @@
 ---
 name: css-custom-properties-theming-deep-fundamentals
-description: "Use when applying css custom properties fundamentals."
+description: Use when applying css custom properties fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [design, css]
-    related_skills: ['css-custom-properties-theming']
 ---
 
 # Css Custom Properties Theming Deep Fundamentals

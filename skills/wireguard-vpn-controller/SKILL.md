@@ -1,9 +1,13 @@
 ---
 name: wireguard-vpn-controller
-title: WireGuard VPN Controller
 description: Use when managing WireGuard tunnels and peers.
-category: networking
-tags: [wireguard, vpn, tunnel, peers, config, rust]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [wireguard, vpn, tunnel, peers, config, rust]
 ---
 
 # WireGuard VPN Controller

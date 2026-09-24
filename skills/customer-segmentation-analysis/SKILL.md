@@ -1,13 +1,13 @@
 ---
 name: customer-segmentation-analysis
-description: "Use when segmenting customers and analyzing behavior."
+description: Use when segmenting customers and analyzing behavior.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [segmentation, customer-analysis, cohorts, RFM, personas, targeting]
-    related_skills: [crm-sales-pipeline, email-marketing-campaigns, digital-marketing-strategy, business-metrics-kpis]
+    tags: [segmentation, customer-analysis, cohorts, rfm, personas, targeting]
 ---
 
 # Customer Segmentation Analysis

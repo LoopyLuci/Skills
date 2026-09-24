@@ -2,12 +2,12 @@
 name: offshore-oil-gas-platforms
 description: Offshore platforms, subsea systems, and marine operations
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["offshore", "oil-gas"]
+    tags: [offshore, oil-gas]
 ---
 
 # Offshore Oil Gas Platforms

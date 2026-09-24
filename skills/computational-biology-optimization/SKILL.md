@@ -1,14 +1,13 @@
 ---
 name: computational-biology-optimization
-description: "Use when optimizing computational biology systems."
+description: Use when optimizing computational biology systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [computational-biology, modeling, systems-biology]
-    related_skills: [general]
 ---
 
 # Computational Biology Optimization

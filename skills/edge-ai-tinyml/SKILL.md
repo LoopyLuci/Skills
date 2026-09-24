@@ -1,13 +1,13 @@
 ---
 name: edge-ai-tinyml
-description: "Use when deploying ML models to edge devices."
+description: Use when deploying ML models to edge devices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [edge-ai, tinyML, TensorFlow-Lite, ONNX-Runtime, MCU, embedded-ml]
-    related_skills: [tiny-ml-mcu-deployment, on-device-ml-optimization, ml-serving-optimization, ml-deployment-serving]
+    tags: [edge-ai, tinyml, tensorflow-lite, onnx-runtime, mcu, embedded-ml]
 ---
 
 # Edge AI and TinyML

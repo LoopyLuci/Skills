@@ -2,12 +2,12 @@
 name: insurance-product-development
 description: Product design, pricing, underwriting guidelines, and distribution
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["product", "pricing"]
+    tags: [product, pricing]
 ---
 
 # Insurance Product Development

@@ -1,14 +1,13 @@
 ---
 name: aws-ec2-troubleshooting-fundamentals
-description: "Use when applying aws ec2 troubleshooting fundamentals."
+description: Use when applying aws ec2 troubleshooting fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, ec2]
-    related_skills: ['aws-ec2-troubleshooting']
 ---
 
 # Aws Ec2 Troubleshooting Fundamentals

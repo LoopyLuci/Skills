@@ -2,12 +2,12 @@
 name: equine-horse-care
 description: Horse care, stable management, and equine health
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["horse", "equine"]
+    tags: [horse, equine]
 ---
 
 # Equine Horse Care

@@ -1,14 +1,13 @@
 ---
 name: construction-foundations
-description: "Use when designing construction foundations."
+description: Use when designing construction foundations.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [construction, foundations, geotechnical, structural]
-    related_skills: [general]
 ---
 
 # Construction Foundations

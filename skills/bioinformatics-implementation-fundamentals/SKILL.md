@@ -1,14 +1,13 @@
 ---
 name: bioinformatics-implementation-fundamentals
-description: "Use when applying bioinfo implementation fundamentals."
+description: Use when applying bioinfo implementation fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [medicine, bioinfo, bioinformatics-implementation]
-    related_skills: [general]
 ---
 
 # Bioinformatics Implementation Fundamentals

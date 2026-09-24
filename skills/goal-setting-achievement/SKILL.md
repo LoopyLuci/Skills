@@ -2,12 +2,12 @@
 name: goal-setting-achievement
 description: Goal setting, OKRs, and achievement psychology
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["goals", "achievement"]
+    tags: [goals, achievement]
 ---
 
 # Goal Setting Achievement

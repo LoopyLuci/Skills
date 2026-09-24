@@ -1,6 +1,13 @@
 ---
 name: skill-prompt-chaining
 description: Chain skill invocations together across turns.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [skill, prompt, chaining]
 ---
 
 # Skill Prompt Chaining

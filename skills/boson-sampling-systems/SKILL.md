@@ -1,14 +1,13 @@
 ---
 name: boson-sampling-systems
-description: "Use when building boson sampling systems."
+description: Use when building boson sampling systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [quantum, boson-sampling, photonic, quantum-optics]
-    related_skills: [general]
 ---
 
 # Boson Sampling Systems

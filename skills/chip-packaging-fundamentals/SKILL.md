@@ -1,14 +1,13 @@
 ---
 name: chip-packaging-fundamentals
-description: "Use when applying chip packaging fundamentals."
+description: Use when applying chip packaging fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [semiconductor, packaging, packaging]
-    related_skills: ['general']
 ---
 
 # Chip Packaging Fundamentals

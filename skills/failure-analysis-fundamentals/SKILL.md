@@ -1,14 +1,13 @@
 ---
 name: failure-analysis-fundamentals
-description: "Use when applying failure analysis fundamentals."
+description: Use when applying failure analysis fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [materials, engineering, failure-mode-analysis]
-    related_skills: [general]
 ---
 
 # Failure Analysis Fundamentals

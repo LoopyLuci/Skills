@@ -1,14 +1,13 @@
 ---
 name: carbon-markets
-description: "Use when trading carbon markets."
+description: Use when trading carbon markets.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climatetech, carbon-markets, compliance, trading]
-    related_skills: [general]
 ---
 
 # Carbon Markets

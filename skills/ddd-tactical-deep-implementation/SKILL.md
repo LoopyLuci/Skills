@@ -1,14 +1,13 @@
 ---
 name: ddd-tactical-deep-implementation
-description: "Use when applying domain-driven design tactical implemen."
+description: Use when applying domain-driven design tactical implemen.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [programming, ddd]
-    related_skills: ['domain-driven-design-tactical']
 ---
 
 # Ddd Tactical Deep Implementation

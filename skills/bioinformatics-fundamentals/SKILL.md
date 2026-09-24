@@ -1,14 +1,13 @@
 ---
 name: bioinformatics-fundamentals
-description: "Use when applying bioinformatics fundamentals."
+description: Use when applying bioinformatics fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [bioinformatics, genomics, bioinformatics, comp-bio]
-    related_skills: [general]
 ---
 
 # Bioinformatics Fundamentals

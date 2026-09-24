@@ -1,14 +1,13 @@
 ---
 name: faith-community-giving-fundamentals
-description: "Use when applying community giving programs fundamentals."
+description: Use when applying community giving programs fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [spiritual, finance]
-    related_skills: ['foundation-giving-programs']
 ---
 
 # Faith Community Giving Fundamentals

@@ -1,14 +1,13 @@
 ---
 name: data-analytics-design
-description: "Use when for data analytics design."
+description: Use when for data analytics design.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data-analytics, analytics, business]
-    related_skills: [general]
 ---
 
 # Data Analytics Design

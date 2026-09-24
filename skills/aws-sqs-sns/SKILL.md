@@ -1,14 +1,13 @@
 ---
 name: aws-sqs-sns
-description: "Use when using AWS messaging."
+description: Use when using AWS messaging.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, aws, aws-sqs]
-    related_skills: [general]
 ---
 
 # Aws Sqs Sns

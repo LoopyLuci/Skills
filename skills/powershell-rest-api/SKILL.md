@@ -1,9 +1,15 @@
 ---
 name: powershell-rest-api
-description: "Use when calling REST APIs from PowerShell."
-category: software-development
-tags: [powershell, rest, api, web, invoke-restmethod]
+description: Use when calling REST APIs from PowerShell.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [powershell, rest, api, web, invoke-restmethod]
 ---
+
 # PowerShell REST API
 
 Calling REST APIs from PowerShell.

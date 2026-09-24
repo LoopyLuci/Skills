@@ -2,12 +2,12 @@
 name: marketplace-operations
 description: Multi-vendor marketplaces, seller onboarding, and marketplace economics
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["marketplace", "sellers"]
+    tags: [marketplace, sellers]
 ---
 
 # Marketplace Operations

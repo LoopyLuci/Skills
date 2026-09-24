@@ -2,12 +2,12 @@
 name: voip-unified-communications
 description: SIP, WebRTC, Teams/Zoom integration, and UC platforms
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["voip", "uc"]
+    tags: [voip, uc]
 ---
 
 # Voip Unified Communications

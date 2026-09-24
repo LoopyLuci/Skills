@@ -1,14 +1,13 @@
 ---
 name: family-medicine
-description: "Use when practicing family medicine."
+description: Use when practicing family medicine.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [healthcare, medicine, medicine-fundamentals]
-    related_skills: [general]
 ---
 
 # Family Medicine

@@ -2,12 +2,12 @@
 name: blockchain-security-web3
 description: Smart contract auditing, DeFi exploits, flash loan attacks, and formal verification
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["web3", "blockchain"]
+    tags: [web3, blockchain]
 ---
 
 # Blockchain Security Web3

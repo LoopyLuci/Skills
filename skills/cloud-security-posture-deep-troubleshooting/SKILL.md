@@ -1,14 +1,13 @@
 ---
 name: cloud-security-posture-deep-troubleshooting
-description: "Use when applying cloud security posture troubleshooting."
+description: Use when applying cloud security posture troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, security]
-    related_skills: ['cloud-security-posture']
 ---
 
 # Cloud Security Posture Deep Troubleshooting

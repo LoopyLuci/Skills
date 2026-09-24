@@ -2,12 +2,12 @@
 name: special-needs-parenting
 description: Developmental disabilities, IEPs, therapies, and family support
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["special-needs", "disability"]
+    tags: [special-needs, disability]
 ---
 
 # Special Needs Parenting

@@ -1,14 +1,13 @@
 ---
 name: ccpa-opt-out-fundamentals
-description: "Use when applying ccpa opt out fundamentals."
+description: Use when applying ccpa opt out fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [legal, compliance, ccpa]
-    related_skills: [general]
 ---
 
 # Ccpa Opt Out Fundamentals

@@ -1,14 +1,13 @@
 ---
 name: chemical-eng-troubleshooting-fundamentals
-description: "Use when applying chemical troubleshooting fundamentals."
+description: Use when applying chemical troubleshooting fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, chemical, troubleshooting]
-    related_skills: [general]
 ---
 
 # Chemical Eng Troubleshooting Fundamentals

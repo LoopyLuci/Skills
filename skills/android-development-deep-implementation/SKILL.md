@@ -1,14 +1,13 @@
 ---
 name: android-development-deep-implementation
-description: "Use when applying android development implementation."
+description: Use when applying android development implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mobile, android]
-    related_skills: ['android-development']
 ---
 
 # Android Development Deep Implementation

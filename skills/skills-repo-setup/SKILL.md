@@ -1,6 +1,13 @@
 ---
 name: skills-repo-setup
 description: Set up a GitHub skills tap repo with two-way Hermes sync.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [skills, repo, setup]
 ---
 
 # Skills Repo Setup

@@ -1,6 +1,13 @@
 ---
 name: instanttransfer-protocol
-description: "InstantTransfer wire protocol pairing and file transfer spec"
+description: InstantTransfer wire protocol pairing and file transfer spec
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [instanttransfer, protocol]
 ---
 
 # InstantTransfer Protocol

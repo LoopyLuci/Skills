@@ -1,13 +1,13 @@
 ---
 name: timeseries-foundation-models
-description: "Use when using foundation models for time series."
+description: Use when using foundation models for time series.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [timeseries, foundation-models, Lag-Llama, TimesFM, forecasting, patchTST]
-    related_skills: [timeseries-forecasting-ml, anomaly-detection-ml, embedding-models-patterns, transformer-architectures]
+    tags: [timeseries, foundation-models, lag-llama, timesfm, forecasting, patchtst]
 ---
 
 # Time Series Foundation Models

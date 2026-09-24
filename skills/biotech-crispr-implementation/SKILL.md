@@ -1,14 +1,13 @@
 ---
 name: biotech-crispr-implementation
-description: "Use when applying crispr gene editing implementation."
+description: Use when applying crispr gene editing implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, crispr]
-    related_skills: ['']
 ---
 
 # Biotech Crispr Implementation

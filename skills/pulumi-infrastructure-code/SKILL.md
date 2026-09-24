@@ -1,12 +1,13 @@
 ---
 name: pulumi-infrastructure-code
-description: "Use when building infra with Pulumi."
+description: Use when building infra with Pulumi.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["pulumi", "IaC", "infra", "TypeScript", "Go"]
+    tags: [pulumi, iac, infra, typescript, go]
 ---
 
 # Pulumi Infrastructure Code

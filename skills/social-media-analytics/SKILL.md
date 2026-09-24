@@ -1,14 +1,13 @@
 ---
 name: social-media-analytics
-description: "Use when analyzing social media performance data."
+description: Use when analyzing social media performance data.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [social-media, analytics, metrics, reporting, kpi]
-    related_skills: [social-media-strategy, social-media-content-calendar]
 ---
 
 # Social Media Analytics

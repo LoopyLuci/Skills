@@ -2,12 +2,12 @@
 name: woodworking-cabinetry
 description: Joinery, finishing, furniture design, and workshop safety
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["woodworking", "furniture"]
+    tags: [woodworking, furniture]
 ---
 
 # Woodworking Cabinetry

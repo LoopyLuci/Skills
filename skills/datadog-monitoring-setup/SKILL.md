@@ -1,9 +1,13 @@
 ---
 name: datadog-monitoring-setup
-description: "Use when setting up Datadog monitoring."
+description: Use when setting up Datadog monitoring.
 version: 1.0.0
-author: Hermes Agent
-tags: ["datadog", "monitoring", "APM", "dashboards", "alerts"]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [datadog, monitoring, apm, dashboards, alerts]
 ---
 
 # Datadog Monitoring Setup

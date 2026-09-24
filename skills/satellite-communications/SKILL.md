@@ -2,12 +2,12 @@
 name: satellite-communications
 description: LEO/MEO/GEO, satellite internet, ground station, and VSAT
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["satellite", "space"]
+    tags: [satellite, space]
 ---
 
 # Satellite Communications

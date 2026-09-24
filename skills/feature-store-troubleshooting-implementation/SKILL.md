@@ -1,14 +1,13 @@
 ---
 name: feature-store-troubleshooting-implementation
-description: "Use when applying feature store troubleshooting implemen."
+description: Use when applying feature store troubleshooting implemen.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, data-science]
-    related_skills: ['feature-store-troubleshooting']
 ---
 
 # Feature Store Troubleshooting Implementation

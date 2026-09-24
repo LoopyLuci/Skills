@@ -1,14 +1,13 @@
 ---
 name: bigquery-fundamentals-deep-implementation
-description: "Use when applying bigquery fundamentals implementation."
+description: Use when applying bigquery fundamentals implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, bigquery]
-    related_skills: ['bigquery-fundamentals']
 ---
 
 # Bigquery Fundamentals Deep Implementation

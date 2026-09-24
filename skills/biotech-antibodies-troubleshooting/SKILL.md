@@ -1,14 +1,13 @@
 ---
 name: biotech-antibodies-troubleshooting
-description: "Use when applying monoclonal antibodies troubleshooting."
+description: Use when applying monoclonal antibodies troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, antibodies]
-    related_skills: ['']
 ---
 
 # Biotech Antibodies Troubleshooting

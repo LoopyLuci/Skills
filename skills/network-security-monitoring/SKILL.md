@@ -2,12 +2,12 @@
 name: network-security-monitoring
 description: IDS/IPS, SIEM, packet analysis, NetFlow, Zeek, and anomaly detection
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["nsm", "siem"]
+    tags: [nsm, siem]
 ---
 
 # Network Security Monitoring

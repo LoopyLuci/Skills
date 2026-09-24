@@ -2,12 +2,12 @@
 name: dunge-dragons-dming
 description: Adventure design, DM techniques, rules adjudication, and player engagement
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["dnd", "dming"]
+    tags: [dnd, dming]
 ---
 
 # Dunge Dragons Dming

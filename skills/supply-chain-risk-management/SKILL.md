@@ -2,12 +2,12 @@
 name: supply-chain-risk-management
 description: Risk mapping, dual sourcing, nearshoring, and resilience planning
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["risk", "resilience"]
+    tags: [risk, resilience]
 ---
 
 # Supply Chain Risk Management

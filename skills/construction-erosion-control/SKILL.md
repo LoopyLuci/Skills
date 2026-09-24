@@ -1,14 +1,13 @@
 ---
 name: construction-erosion-control
-description: "Use when controlling construction erosion."
+description: Use when controlling construction erosion.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [construction, erosion-control, silt-fence, compliance]
-    related_skills: [general]
 ---
 
 # Construction Erosion Control

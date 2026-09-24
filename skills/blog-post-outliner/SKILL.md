@@ -1,14 +1,13 @@
 ---
 name: blog-post-outliner
-description: "Use when outlining blog posts. Headlines and structure."
+description: Use when outlining blog posts. Headlines and structure.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [blog, writing, outlining, structure, content]
-    related_skills: [blog-idea-generator, blog-seo-post-optimizer, blog-publishing-workflow]
 ---
 
 # Blog Post Outliner

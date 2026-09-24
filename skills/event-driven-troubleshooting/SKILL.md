@@ -1,14 +1,13 @@
 ---
 name: event-driven-troubleshooting
-description: "Use when applying event-driven architecture troubleshoot."
+description: Use when applying event-driven architecture troubleshoot.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [architecture, event-driven, messaging, events]
-    related_skills: [general]
 ---
 
 # Event Driven Troubleshooting

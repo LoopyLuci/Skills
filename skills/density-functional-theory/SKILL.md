@@ -1,14 +1,13 @@
 ---
 name: density-functional-theory
-description: "Use when applying density functional theory."
+description: Use when applying density functional theory.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [materials-science, dft, quantum-chemistry, simulation]
-    related_skills: [general]
 ---
 
 # Density Functional Theory

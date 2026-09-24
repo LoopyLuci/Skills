@@ -1,14 +1,13 @@
 ---
 name: agritech-platforms-troubleshooting
-description: "Use when applying agritech platforms troubleshooting."
+description: Use when applying agritech platforms troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agri, tech, agritech-platforms]
-    related_skills: [general]
 ---
 
 # Agritech Platforms Troubleshooting

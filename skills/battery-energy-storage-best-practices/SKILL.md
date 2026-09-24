@@ -1,14 +1,13 @@
 ---
 name: battery-energy-storage-best-practices
-description: "Use when applying battery storage systems best practices."
+description: Use when applying battery storage systems best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [energy, battery, battery-energy-storage]
-    related_skills: ['general']
 ---
 
 # Battery Energy Storage Best Practices

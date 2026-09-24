@@ -1,14 +1,13 @@
 ---
 name: docker-monitoring-best-practices
-description: "Use when applying docker monitoring best practices."
+description: Use when applying docker monitoring best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [docker, monitoring, docker-monitoring-logs]
-    related_skills: [general]
 ---
 
 # Docker Monitoring Best Practices

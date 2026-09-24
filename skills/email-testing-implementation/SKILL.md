@@ -1,14 +1,13 @@
 ---
 name: email-testing-implementation
-description: "Use when applying email testing implementation."
+description: Use when applying email testing implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, testing, qa]
-    related_skills: [general]
 ---
 
 # Email Testing Implementation

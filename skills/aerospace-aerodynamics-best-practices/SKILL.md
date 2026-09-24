@@ -1,14 +1,13 @@
 ---
 name: aerospace-aerodynamics-best-practices
-description: "Use when applying aerospace aerodynamics best practices."
+description: Use when applying aerospace aerodynamics best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aerospace, aero, aerodynamics]
-    related_skills: ['general']
 ---
 
 # Aerospace Aerodynamics Best Practices

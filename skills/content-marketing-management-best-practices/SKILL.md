@@ -1,14 +1,13 @@
 ---
 name: content-marketing-management-best-practices
-description: "Use when applying content marketing management best prac."
+description: Use when applying content marketing management best prac.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, content-marketing-management]
-    related_skills: ['']
 ---
 
 # Content Marketing Management Best Practices

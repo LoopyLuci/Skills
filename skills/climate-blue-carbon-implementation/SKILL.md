@@ -1,14 +1,13 @@
 ---
 name: climate-blue-carbon-implementation
-description: "Use when applying climate blue carbon implementation."
+description: Use when applying climate blue carbon implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, environment]
-    related_skills: ['']
 ---
 
 # Climate Blue Carbon Implementation

@@ -2,8 +2,9 @@
 name: vscode-extension-development
 description: Use for VS Code extensions with native chat, tools, and MCP.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [vscode, extension, development, chat, mcp, native-ui, build]

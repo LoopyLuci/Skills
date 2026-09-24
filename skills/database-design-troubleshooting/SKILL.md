@@ -1,14 +1,13 @@
 ---
 name: database-design-troubleshooting
-description: "Use when troubleshooting database design."
+description: Use when troubleshooting database design.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, schema, db-design]
-    related_skills: [general]
 ---
 
 # Database Design Troubleshooting

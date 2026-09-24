@@ -1,14 +1,13 @@
 ---
 name: content-creation-fundamentals
-description: "Use when applying content creation fundamentals."
+description: Use when applying content creation fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [creative, content, content-marketing-strategy]
-    related_skills: [general]
 ---
 
 # Content Creation Fundamentals

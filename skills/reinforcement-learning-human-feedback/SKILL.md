@@ -1,13 +1,13 @@
 ---
 name: reinforcement-learning-human-feedback
-description: "Use when implementing RLHF or RLAIF for alignment."
+description: Use when implementing RLHF or RLAIF for alignment.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [RLHF, reinforcement-learning, human-feedback, alignment, reward-modeling, PPO, DPO]
-    related_skills: [rlhf-implementation-guide, advanced-reasoning-patterns, agent-ethics-alignment, custom-training-loops]
+    tags: [rlhf, reinforcement-learning, human-feedback, alignment, reward-modeling, ppo, dpo]
 ---
 
 # Reinforcement Learning from Human Feedback

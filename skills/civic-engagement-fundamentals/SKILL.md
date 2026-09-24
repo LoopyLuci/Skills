@@ -1,14 +1,13 @@
 ---
 name: civic-engagement-fundamentals
-description: "Use when applying civic engagement fundamentals."
+description: Use when applying civic engagement fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [gov, civic, public-participation-platforms]
-    related_skills: [general]
 ---
 
 # Civic Engagement Fundamentals

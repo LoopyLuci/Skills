@@ -1,14 +1,13 @@
 ---
 name: dentistry-fundamentals
-description: "Use when applying dentistry fundamentals."
+description: Use when applying dentistry fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [dentistry, dental, oral-health, teeth]
-    related_skills: [general]
 ---
 
 # Dentistry Fundamentals

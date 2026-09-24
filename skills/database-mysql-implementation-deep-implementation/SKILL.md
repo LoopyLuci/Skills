@@ -1,14 +1,13 @@
 ---
 name: database-mysql-implementation-deep-implementation
-description: "Use when applying mysql implementation implementation."
+description: Use when applying mysql implementation implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, mysql]
-    related_skills: ['mysql-implementation']
 ---
 
 # Database Mysql Implementation Deep Implementation

@@ -1,14 +1,13 @@
 ---
 name: angular-routing-best-practices
-description: "Use when applying angular routing best practices."
+description: Use when applying angular routing best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [frontend, angular, router, navigation]
-    related_skills: [general]
 ---
 
 # Angular Routing Best Practices

@@ -2,12 +2,12 @@
 name: ecological-restoration
 description: Restoration ecology, reclamation, and habitat restoration
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["restoration", "reclamation"]
+    tags: [restoration, reclamation]
 ---
 
 # Ecological Restoration

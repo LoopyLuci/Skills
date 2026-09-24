@@ -1,6 +1,13 @@
 ---
 name: skill-automatic-invocation
 description: Decide when to load a skill proactively vs. waiting.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [skill, automatic, invocation]
 ---
 
 # Skill Automatic Invocation

@@ -1,14 +1,13 @@
 ---
 name: banking-core-systems-fundamentals
-description: "Use when applying core banking systems fundamentals."
+description: Use when applying core banking systems fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, banking, core-banking]
-    related_skills: [general]
 ---
 
 # Banking Core Systems Fundamentals

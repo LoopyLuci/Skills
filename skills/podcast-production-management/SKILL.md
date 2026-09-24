@@ -1,13 +1,13 @@
 ---
 name: podcast-production-management
-description: "Use when producing and managing podcast episodes."
+description: Use when producing and managing podcast episodes.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [podcast, production, audio, editing, distribution, show-notes]
-    related_skills: [content-repurposing-distribution, content-writing-seo-copy, blog-building-content-strategy, digital-marketing-strategy]
 ---
 
 # Podcast Production Management

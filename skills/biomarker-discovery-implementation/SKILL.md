@@ -1,14 +1,13 @@
 ---
 name: biomarker-discovery-implementation
-description: "Use when applying biomarker discovery implementation."
+description: Use when applying biomarker discovery implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, biomarker, biomarker]
-    related_skills: ['general']
 ---
 
 # Biomarker Discovery Implementation

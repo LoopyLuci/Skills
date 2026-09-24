@@ -1,14 +1,13 @@
 ---
 name: azure-data-factory-fundamentals
-description: "Use when applying azure data factory fundamentals."
+description: Use when applying azure data factory fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, azure, data-factory, etl]
-    related_skills: [general]
 ---
 
 # Azure Data Factory Fundamentals

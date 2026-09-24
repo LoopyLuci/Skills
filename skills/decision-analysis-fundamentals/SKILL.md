@@ -1,14 +1,13 @@
 ---
 name: decision-analysis-fundamentals
-description: "Use when applying decision analysis fundamentals."
+description: Use when applying decision analysis fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, decision, decision-analysis-methods]
-    related_skills: [general]
 ---
 
 # Decision Analysis Fundamentals

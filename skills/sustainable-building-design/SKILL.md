@@ -2,12 +2,12 @@
 name: sustainable-building-design
 description: Green building, LEED, net-zero, and sustainable materials
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["green-building", "leed"]
+    tags: [green-building, leed]
 ---
 
 # Sustainable Building Design

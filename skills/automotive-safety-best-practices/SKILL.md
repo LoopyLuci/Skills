@@ -1,14 +1,13 @@
 ---
 name: automotive-safety-best-practices
-description: "Use when applying automotive safety best practices."
+description: Use when applying automotive safety best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [auto, safety, automotive-functional-safety]
-    related_skills: [general]
 ---
 
 # Automotive Safety Best Practices

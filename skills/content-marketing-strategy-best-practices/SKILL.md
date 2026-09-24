@@ -1,14 +1,13 @@
 ---
 name: content-marketing-strategy-best-practices
-description: "Use when applying content marketing strategy best practi."
+description: Use when applying content marketing strategy best practi.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, content-marketing-strategy]
-    related_skills: ['']
 ---
 
 # Content Marketing Strategy Best Practices

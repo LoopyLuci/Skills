@@ -1,14 +1,13 @@
 ---
 name: circular-economy-business-models
-description: "Use when designing circular economy models."
+description: Use when designing circular economy models.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climatetech, circular-economy, sustainability, business-models]
-    related_skills: [waste-stream-optimization]
 ---
 
 # Circular Economy Business Models

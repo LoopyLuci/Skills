@@ -1,14 +1,13 @@
 ---
 name: biotech-clinical-trials-deep-troubleshooting
-description: "Use when applying clinical trials troubleshooting."
+description: Use when applying clinical trials troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, clinical-trials]
-    related_skills: ['']
 ---
 
 # Biotech Clinical Trials Deep Troubleshooting

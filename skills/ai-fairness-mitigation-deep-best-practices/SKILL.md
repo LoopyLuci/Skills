@@ -1,14 +1,13 @@
 ---
 name: ai-fairness-mitigation-deep-best-practices
-description: "Use when applying ai fairness mitigation best practices."
+description: Use when applying ai fairness mitigation best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, ethics]
-    related_skills: ['ai-fairness-mitigation']
 ---
 
 # Ai Fairness Mitigation Deep Best Practices

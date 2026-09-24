@@ -1,9 +1,15 @@
 ---
 name: docker-monitoring-logs
-description: "Use when monitoring containers and aggregating logs."
-category: docker
-tags: [docker, monitoring, logs, metrics]
+description: Use when monitoring containers and aggregating logs.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [docker, monitoring, logs, metrics]
 ---
+
 # Docker Monitoring & Logs
 
 Monitoring containers and collecting logs.

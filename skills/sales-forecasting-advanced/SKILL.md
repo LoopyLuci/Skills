@@ -1,13 +1,13 @@
 ---
 name: sales-forecasting-advanced
-description: "Use when building advanced sales forecasting models."
+description: Use when building advanced sales forecasting models.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [sales-forecasting, pipeline-analysis, stages, probability, velocity, predictions]
-    related_skills: [revenue-operations-revops, crm-sales-pipeline, saas-metrics-reporting, business-metrics-kpis]
 ---
 
 # Sales Forecasting Advanced

@@ -2,12 +2,12 @@
 name: event-photography-documentation
 description: Candid coverage, key moments, lighting challenges, and delivery workflows
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["event", "documentary"]
+    tags: [event, documentary]
 ---
 
 # Event Photography Documentation

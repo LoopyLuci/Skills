@@ -1,14 +1,13 @@
 ---
 name: cd-pipeline-setup-implementation
-description: "Use when applying cd pipeline setup implementation."
+description: Use when applying cd pipeline setup implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, ci-cd, pipeline, cd-pipeline-setup]
-    related_skills: [general]
 ---
 
 # Cd Pipeline Setup Implementation

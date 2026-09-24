@@ -2,12 +2,12 @@
 name: press-relations-media-outreach
 description: Press releases, media kits, pitching, and journalist relations
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["pr", "media"]
+    tags: [pr, media]
 ---
 
 # Press Relations Media Outreach

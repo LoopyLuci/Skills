@@ -2,12 +2,12 @@
 name: security-architecture-design
 description: Zero trust, defense in depth, segmentation, SASE, and security patterns
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["architecture", "zero-trust"]
+    tags: [architecture, zero-trust]
 ---
 
 # Security Architecture Design

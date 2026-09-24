@@ -1,14 +1,13 @@
 ---
 name: digital-art-generation-tools
-description: "Use when generating digital art with tools."
+description: Use when generating digital art with tools.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [creative, digital-art, generative-art, ai-tools]
-    related_skills: [comfyui]
 ---
 
 # Digital Art Generation Tools

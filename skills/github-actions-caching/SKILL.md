@@ -1,6 +1,13 @@
 ---
 name: github-actions-caching
 description: Cache dependencies and build outputs to speed up workflows.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [github, actions, caching]
 ---
 
 # GitHub Actions Caching

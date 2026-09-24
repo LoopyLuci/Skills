@@ -1,14 +1,13 @@
 ---
 name: customer-success-optimization-deep-best-practices
-description: "Use when applying customer success optimization best pra."
+description: Use when applying customer success optimization best pra.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [sales, customer-success-optimization]
-    related_skills: ['']
 ---
 
 # Customer Success Optimization Deep Best Practices

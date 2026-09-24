@@ -1,14 +1,13 @@
 ---
 name: few-shot-prompting-advanced-deep-troubleshooting
-description: "Use when applying few-shot prompting troubleshooting."
+description: Use when applying few-shot prompting troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, prompts]
-    related_skills: ['few-shot-prompting-advanced']
 ---
 
 # Few Shot Prompting Advanced Deep Troubleshooting

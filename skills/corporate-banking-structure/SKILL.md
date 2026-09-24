@@ -1,14 +1,13 @@
 ---
 name: corporate-banking-structure
-description: "Use when structuring corporate banking deals."
+description: Use when structuring corporate banking deals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, corporate-banking, lending]
-    related_skills: [general]
 ---
 
 # Corporate Banking Structure

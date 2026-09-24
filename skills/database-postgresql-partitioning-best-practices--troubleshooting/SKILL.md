@@ -1,14 +1,13 @@
 ---
 name: database-postgresql-partitioning-best-practices--troubleshooting
-description: "Use when applying postgresql partitioning troubleshooting."
+description: Use when applying postgresql partitioning troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, postgres]
-    related_skills: ['postgres-partitioning-best-practices']
 ---
 
 # Database Postgresql Partitioning Best Practices Troubleshooting

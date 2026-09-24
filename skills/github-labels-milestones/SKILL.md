@@ -1,6 +1,13 @@
 ---
 name: github-labels-milestones
 description: Manage labels, milestones, and saved replies for repos.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [github, labels, milestones]
 ---
 
 # GitHub Labels & Milestones

@@ -1,14 +1,13 @@
 ---
 name: csharp-programming-implementation
-description: "Use when applying c# programming implementation."
+description: Use when applying c# programming implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [csharp, dotnet, programming, csharp-linq]
-    related_skills: [general]
 ---
 
 # Csharp Programming Implementation

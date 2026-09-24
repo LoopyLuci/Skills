@@ -1,14 +1,13 @@
 ---
 name: computational-neuroscience-fundamentals
-description: "Use when applying computational neuroscience fundamentals."
+description: Use when applying computational neuroscience fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neurotech, neuroscience-computational]
-    related_skills: [general]
 ---
 
 # Computational Neuroscience Fundamentals

@@ -1,13 +1,13 @@
 ---
 name: pricing-strategy-optimization
-description: "Use when developing pricing strategies and models."
+description: Use when developing pricing strategies and models.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [pricing, strategy, monetization, packaging, tiers, value-based, discounting]
-    related_skills: [product-management-roadmap, saas-metrics-reporting, competitive-intelligence-analysis, ecommerce-platform-management]
 ---
 
 # Pricing Strategy Optimization

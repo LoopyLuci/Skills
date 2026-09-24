@@ -2,12 +2,12 @@
 name: opc-ua-industrial-interop
 description: OPC UA server/client, information modeling, security, and Pub/Sub
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["opc-ua", "interop"]
+    tags: [opc-ua, interop]
 ---
 
 # Opc Ua Industrial Interop

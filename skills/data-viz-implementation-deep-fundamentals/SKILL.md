@@ -1,14 +1,13 @@
 ---
 name: data-viz-implementation-deep-fundamentals
-description: "Use when applying data viz implementation fundamentals."
+description: Use when applying data viz implementation fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [design, data-viz]
-    related_skills: ['data-viz-implementation']
 ---
 
 # Data Viz Implementation Deep Fundamentals

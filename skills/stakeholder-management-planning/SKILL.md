@@ -1,12 +1,13 @@
 ---
 name: stakeholder-management-planning
-description: "Use when managing stakeholders."
+description: Use when managing stakeholders.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["stakeholder", "communication", "engagement", "matrix"]
+    tags: [stakeholder, communication, engagement, matrix]
 ---
 
 # Stakeholder Management Planning

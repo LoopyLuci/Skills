@@ -1,14 +1,13 @@
 ---
 name: ai-fairness-mitigation-deep-implementation
-description: "Use when applying ai fairness mitigation implementation."
+description: Use when applying ai fairness mitigation implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, ethics]
-    related_skills: ['ai-fairness-mitigation']
 ---
 
 # Ai Fairness Mitigation Deep Implementation

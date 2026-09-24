@@ -1,14 +1,13 @@
 ---
 name: chip-materials-fundamentals
-description: "Use when applying chip materials fundamentals."
+description: Use when applying chip materials fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [semiconductor, materials, semiconductor-materials]
-    related_skills: ['general']
 ---
 
 # Chip Materials Fundamentals

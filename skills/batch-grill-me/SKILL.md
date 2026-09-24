@@ -1,13 +1,13 @@
 ---
-
 name: batch-grill-me
 description: A relentless interview that asks every frontier question at once, round by round.
-disable-model-invocation: true
-source: mattpocock/skills
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [agent, skill]
-
 ---
 
 Interview the user relentlessly until you reach a shared understanding. Map this as a **design tree**: every decision branches into the decisions that hang off it.

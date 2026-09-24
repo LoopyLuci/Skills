@@ -1,14 +1,13 @@
 ---
 name: biotech-pharma-mfg-best-practices
-description: "Use when applying pharmaceutical manufacturing best prac."
+description: Use when applying pharmaceutical manufacturing best prac.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, pharma-mfg]
-    related_skills: ['']
 ---
 
 # Biotech Pharma Mfg Best Practices

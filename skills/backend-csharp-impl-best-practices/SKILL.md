@@ -1,14 +1,13 @@
 ---
 name: backend-csharp-impl-best-practices
-description: "Use when applying backend c# implementation best practices."
+description: Use when applying backend c# implementation best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, csharp, backend-csharp-implementation]
-    related_skills: [general]
 ---
 
 # Backend Csharp Impl Best Practices

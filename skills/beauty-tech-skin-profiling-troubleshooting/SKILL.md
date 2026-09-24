@@ -1,14 +1,13 @@
 ---
 name: beauty-tech-skin-profiling-troubleshooting
-description: "Use when applying beauty skin profiling troubleshooting."
+description: Use when applying beauty skin profiling troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, beauty]
-    related_skills: ['']
 ---
 
 # Beauty Tech Skin Profiling Troubleshooting

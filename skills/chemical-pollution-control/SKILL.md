@@ -1,14 +1,13 @@
 ---
 name: chemical-pollution-control
-description: "Use when controlling pollution."
+description: Use when controlling pollution.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [chem, environment, pollution]
-    related_skills: [general]
 ---
 
 # Chemical Pollution Control

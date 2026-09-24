@@ -1,14 +1,13 @@
 ---
 name: aviation-aerodynamics-implementation
-description: "Use when applying aviation aerodynamics implementation."
+description: Use when applying aviation aerodynamics implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, aero, aerodynamics]
-    related_skills: ['general']
 ---
 
 # Aviation Aerodynamics Implementation

@@ -1,14 +1,13 @@
 ---
 name: backend-php-fundamentals
-description: "Use when applying php backend fundamentals."
+description: Use when applying php backend fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, php, laravel, symfony]
-    related_skills: [general]
 ---
 
 # Backend Php Fundamentals

@@ -1,14 +1,13 @@
 ---
 name: blockchain-nft-development-deep-fundamentals
-description: "Use when applying nft development fundamentals."
+description: Use when applying nft development fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [blockchain, nft]
-    related_skills: ['blockchain-nft-development']
 ---
 
 # Blockchain Nft Development Deep Fundamentals

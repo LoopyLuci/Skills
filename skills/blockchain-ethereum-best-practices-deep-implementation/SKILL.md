@@ -1,14 +1,13 @@
 ---
 name: blockchain-ethereum-best-practices-deep-implementation
-description: "Use when applying ethereum best practices implementation."
+description: Use when applying ethereum best practices implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [blockchain, ethereum]
-    related_skills: ['blockchain-ethereum-best-practices']
 ---
 
 # Blockchain Ethereum Best Practices Deep Implementation

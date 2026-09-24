@@ -1,14 +1,13 @@
 ---
 name: facility-management-fundamentals
-description: "Use when applying facility management fundamentals."
+description: Use when applying facility management fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [facility-management, buildings, maintenance]
-    related_skills: [general]
 ---
 
 # Facility Management Fundamentals

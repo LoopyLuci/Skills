@@ -2,12 +2,12 @@
 name: red-team-adversary-simulation
 description: C2 frameworks, phishing campaigns, physical security, and purple team exercises
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["red-team", "c2"]
+    tags: [red-team, c2]
 ---
 
 # Red Team Adversary Simulation

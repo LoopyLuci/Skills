@@ -1,13 +1,13 @@
 ---
 name: cap-table-management
-description: "Use when managing cap tables and equity structures."
+description: Use when managing cap tables and equity structures.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [cap-table, equity, stock, options, dilution, valuation, fundraising]
-    related_skills: [fundraising-investor-pitch, financial-modeling-budgeting, board-presentation-deck, equity-compensation-basics]
 ---
 
 # Cap Table Management

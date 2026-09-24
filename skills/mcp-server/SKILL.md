@@ -1,7 +1,13 @@
 ---
 name: mcp-server
-description: "Build MCP servers for AI agent tool integration."
-tags: ["mcp", "ai-agents", "protocol"]
+description: Build MCP servers for AI agent tool integration.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [mcp, ai-agents, protocol]
 ---
 
 # MCP Server Construction

@@ -1,6 +1,13 @@
 ---
 name: python-asyncio-gui-threading
-description: "Run async code alongside CustomTkinter GUI without crashes"
+description: Run async code alongside CustomTkinter GUI without crashes
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [python, asyncio, gui]
 ---
 
 # Python Asyncio + GUI Threading

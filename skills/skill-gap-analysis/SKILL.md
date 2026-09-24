@@ -1,13 +1,13 @@
 ---
 name: skill-gap-analysis
-description: "Use when identifying missing skills and opportunities."
+description: Use when identifying missing skills and opportunities.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [meta, skill-gap, analysis, discovery, opportunity, landscape]
-    related_skills: [skill-discovery, skill-inventory-management, skill-cross-reference-mapper, skill-blueprint-generator]
 ---
 
 # Skill Gap Analysis

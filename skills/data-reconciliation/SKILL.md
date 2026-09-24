@@ -1,14 +1,13 @@
 ---
 name: data-reconciliation
-description: "Use when reconciling data discrepancies."
+description: Use when reconciling data discrepancies.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data-science, data-reconciliation, consistency, etl]
-    related_skills: ['data-quality-monitoring']
 ---
 
 # Data Reconciliation

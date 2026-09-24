@@ -2,12 +2,12 @@
 name: cultural-tourism-heritage
 description: Heritage tourism, cultural sensitivity, and sustainable travel
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["cultural", "heritage"]
+    tags: [cultural, heritage]
 ---
 
 # Cultural Tourism Heritage

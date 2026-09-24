@@ -2,12 +2,12 @@
 name: sports-analytics-data
 description: Performance metrics, tracking data, visualization, and predictive modeling
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["analytics", "data"]
+    tags: [analytics, data]
 ---
 
 # Sports Analytics Data

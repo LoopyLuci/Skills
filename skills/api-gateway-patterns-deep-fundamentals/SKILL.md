@@ -1,14 +1,13 @@
 ---
 name: api-gateway-patterns-deep-fundamentals
-description: "Use when applying api gateway patterns fundamentals."
+description: Use when applying api gateway patterns fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [programming, api]
-    related_skills: ['api-gateway-patterns']
 ---
 
 # Api Gateway Patterns Deep Fundamentals

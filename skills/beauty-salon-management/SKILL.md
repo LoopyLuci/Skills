@@ -1,14 +1,13 @@
 ---
 name: beauty-salon-management
-description: "Use when managing beauty salons."
+description: Use when managing beauty salons.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, salon-management, beauty-salon, client]
-    related_skills: [general]
 ---
 
 # Beauty Salon Management

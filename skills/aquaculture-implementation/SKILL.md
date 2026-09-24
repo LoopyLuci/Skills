@@ -1,14 +1,13 @@
 ---
 name: aquaculture-implementation
-description: "Use when applying aquaculture implementation."
+description: Use when applying aquaculture implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [food, agriculture, aquaculture]
-    related_skills: [general]
 ---
 
 # Aquaculture Implementation

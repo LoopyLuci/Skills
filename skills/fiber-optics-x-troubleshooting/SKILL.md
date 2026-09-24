@@ -1,14 +1,13 @@
 ---
 name: fiber-optics-x-troubleshooting
-description: "Use when applying fiber optics troubleshooting."
+description: Use when applying fiber optics troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [optics, fiber, fiber-optics]
-    related_skills: ['']
 ---
 
 # Fiber Optics X Troubleshooting

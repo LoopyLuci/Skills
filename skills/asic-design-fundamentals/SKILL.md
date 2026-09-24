@@ -1,14 +1,13 @@
 ---
 name: asic-design-fundamentals
-description: "Use when applying asic design fundamentals."
+description: Use when applying asic design fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [electronics, asic, chip-design]
-    related_skills: [general]
 ---
 
 # Asic Design Fundamentals

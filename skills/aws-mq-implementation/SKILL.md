@@ -1,14 +1,13 @@
 ---
 name: aws-mq-implementation
-description: "Use when applying aws mq implementation."
+description: Use when applying aws mq implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, mq, activemq, rabbitmq]
-    related_skills: [general]
 ---
 
 # Aws Mq Implementation

@@ -1,14 +1,13 @@
 ---
 name: chunked-streaming-deep-best-practices
-description: "Use when applying chunked streaming best practices."
+description: Use when applying chunked streaming best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, streaming]
-    related_skills: ['chunked-streaming']
 ---
 
 # Chunked Streaming Deep Best Practices

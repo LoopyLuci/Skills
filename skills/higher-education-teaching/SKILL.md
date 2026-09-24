@@ -2,12 +2,12 @@
 name: higher-education-teaching
 description: Course design, active learning, grading for equity, and teaching portfolios
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["higher-ed", "university"]
+    tags: [higher-ed, university]
 ---
 
 # Higher Education Teaching

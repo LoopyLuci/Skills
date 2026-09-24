@@ -1,14 +1,13 @@
 ---
 name: crop-yield-modeling
-description: "Use when modeling crop yields. Machine learning, agronomy."
+description: Use when modeling crop yields. Machine learning, agronomy.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agriculture, crop-yield, machine-learning, agronomy, forecasting]
-    related_skills: [precision-agriculture, farm-management-software]
 ---
 
 # Crop Yield Modeling

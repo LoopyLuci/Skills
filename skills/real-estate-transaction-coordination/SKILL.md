@@ -1,14 +1,13 @@
 ---
 name: real-estate-transaction-coordination
-description: "Closing checklists per state. Docs, disclaimers, compliance."
-version: 2.0.0
-author: Hermes Agent
+description: Closing checklists per state. Docs, disclaimers, compliance.
+version: 1.0.0
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [real-estate, transactions, closing, compliance, documentation]
-    related_skills: [real-estate-cma-generator, real-estate-property-analysis]
 ---
 
 # Real Estate Transaction Coordination

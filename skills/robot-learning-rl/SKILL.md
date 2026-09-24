@@ -2,12 +2,12 @@
 name: robot-learning-rl
 description: Sim-to-real, domain randomization, imitation learning, and reinforcement learning for robots
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["robot-learning", "rl"]
+    tags: [robot-learning, rl]
 ---
 
 # Robot Learning Rl

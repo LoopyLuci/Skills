@@ -1,14 +1,13 @@
 ---
 name: climate-tech-software-best-practices
-description: "Use when applying climate tech software best practices."
+description: Use when applying climate tech software best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, software, climate-tech-software]
-    related_skills: [general]
 ---
 
 # Climate Tech Software Best Practices

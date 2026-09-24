@@ -1,8 +1,13 @@
 ---
 name: apple-design
 description: Use when building gesture-driven or Apple-style interfaces.
-tags: [apple, ui-design, animation, gestures, spring-physics]
-related_skills: [animation-vocabulary, frontend-design, emil-design-eng]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [apple, ui-design, animation, gestures, spring-physics]
 ---
 
 # Apple Design

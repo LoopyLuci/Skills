@@ -1,13 +1,13 @@
 ---
 name: cloud-penetration-testing
-description: "Use when testing cloud infrastructure security."
+description: Use when testing cloud infrastructure security.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [cloud-pentest, AWS, Azure, GCP, IAM, S3, metadata, privilege-escalation]
-    related_skills: [cloud-cost-optimization-finops, identity-access-management, container-security-testing, webapp-penetration-testing]
+    tags: [cloud-pentest, aws, azure, gcp, iam, s3, metadata, privilege-escalation]
 ---
 
 # Cloud Penetration Testing

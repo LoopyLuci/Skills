@@ -1,9 +1,13 @@
 ---
 name: ml-model-pipeline
-title: ML Model Pipeline
 description: Use when training and deploying ML models for Sentinel.
-category: networking
-tags: [ml, model, pipeline, training, deployment, automation]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [ml, model, pipeline, training, deployment, automation]
 ---
 
 # ML Model Pipeline

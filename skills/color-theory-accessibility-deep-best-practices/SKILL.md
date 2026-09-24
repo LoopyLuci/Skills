@@ -1,14 +1,13 @@
 ---
 name: color-theory-accessibility-deep-best-practices
-description: "Use when applying color theory accessibility best practi."
+description: Use when applying color theory accessibility best practi.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [design, color]
-    related_skills: ['color-theory-accessibility']
 ---
 
 # Color Theory Accessibility Deep Best Practices

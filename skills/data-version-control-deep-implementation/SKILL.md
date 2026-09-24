@@ -1,14 +1,13 @@
 ---
 name: data-version-control-deep-implementation
-description: "Use when applying data version control implementation."
+description: Use when applying data version control implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, dvc]
-    related_skills: ['data-version-control']
 ---
 
 # Data Version Control Deep Implementation

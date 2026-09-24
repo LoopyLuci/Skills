@@ -1,14 +1,13 @@
 ---
 name: aerospace-engineering-best-practices
-description: "Use when applying aerospace engineering best practices."
+description: Use when applying aerospace engineering best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, aerospace, aero, aerospace-eng-design]
-    related_skills: [general]
 ---
 
 # Aerospace Engineering Best Practices

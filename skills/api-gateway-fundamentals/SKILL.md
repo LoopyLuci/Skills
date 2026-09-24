@@ -1,14 +1,13 @@
 ---
 name: api-gateway-fundamentals
-description: "Use when applying api gateway fundamentals."
+description: Use when applying api gateway fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [architecture, api-gateway, gateway-patterns]
-    related_skills: [general]
 ---
 
 # Api Gateway Fundamentals

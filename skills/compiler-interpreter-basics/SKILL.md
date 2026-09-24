@@ -1,13 +1,13 @@
 ---
 name: compiler-interpreter-basics
-description: "Use when building compilers, interpreters, and transpilers."
+description: Use when building compilers, interpreters, and transpilers.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [compiler, interpreter, parser, lexer, AST, codegen]
-    related_skills: [type-system-design-theory, formal-verification-methods, cross-language-design-patterns]
+    tags: [compiler, interpreter, parser, lexer, ast, codegen]
 ---
 
 # Compiler Interpreter Basics

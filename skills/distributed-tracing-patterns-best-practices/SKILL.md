@@ -1,14 +1,13 @@
 ---
 name: distributed-tracing-patterns-best-practices
-description: "Use when applying distributed tracing best practices."
+description: Use when applying distributed tracing best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [monitoring, tracing, distributed-tracing-patterns, observability]
-    related_skills: [general]
 ---
 
 # Distributed Tracing Patterns Best Practices

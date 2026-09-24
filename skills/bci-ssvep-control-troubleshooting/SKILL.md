@@ -1,14 +1,13 @@
 ---
 name: bci-ssvep-control-troubleshooting
-description: "Use when applying bci ssvep control troubleshooting."
+description: Use when applying bci ssvep control troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neuro, bci, brain-computer-interface-applications]
-    related_skills: ['']
 ---
 
 # Bci Ssvep Control Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: bioinformatics-design-troubleshooting
-description: "Use when applying bioinformatics design troubleshooting."
+description: Use when applying bioinformatics design troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [medicine, bioinfo, bioinformatics-design]
-    related_skills: [general]
 ---
 
 # Bioinformatics Design Troubleshooting

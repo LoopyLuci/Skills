@@ -1,14 +1,13 @@
 ---
 name: fashion-brand-identity
-description: "Use when building fashion brand identity."
+description: Use when building fashion brand identity.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, branding, brand-identity, marketing]
-    related_skills: [general]
 ---
 
 # Fashion Brand Identity

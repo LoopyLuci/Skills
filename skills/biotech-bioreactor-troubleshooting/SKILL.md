@@ -1,14 +1,13 @@
 ---
 name: biotech-bioreactor-troubleshooting
-description: "Use when applying bioreactor design troubleshooting."
+description: Use when applying bioreactor design troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, bioreactor]
-    related_skills: ['']
 ---
 
 # Biotech Bioreactor Troubleshooting

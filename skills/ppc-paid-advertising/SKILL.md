@@ -2,12 +2,12 @@
 name: ppc-paid-advertising
 description: Google Ads, Meta Ads, programmatic, bidding strategies, and ROAS optimization
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["ppc", "paid"]
+    tags: [ppc, paid]
 ---
 
 # Ppc Paid Advertising

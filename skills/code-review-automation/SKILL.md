@@ -1,13 +1,13 @@
 ---
 name: code-review-automation
-description: "Use when automating code review processes."
+description: Use when automating code review processes.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [code-review, automation, linting, static-analysis, PR-checklist, CI]
-    related_skills: [behavior-driven-development, testing-pyramid-practice, devsecops-shift-left, code-review-checklist]
+    tags: [code-review, automation, linting, static-analysis, pr-checklist, ci]
 ---
 
 # Code Review Automation

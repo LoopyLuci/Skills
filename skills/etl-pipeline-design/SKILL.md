@@ -1,6 +1,13 @@
 ---
 name: etl-pipeline-design
-description: "Design ETL pipelines with error handling and idempotency"
+description: Design ETL pipelines with error handling and idempotency
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [etl, pipeline, design]
 ---
 
 # ETL Pipeline Design

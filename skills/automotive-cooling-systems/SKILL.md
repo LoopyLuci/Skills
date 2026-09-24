@@ -1,14 +1,13 @@
 ---
 name: automotive-cooling-systems
-description: "Use when designing cooling systems."
+description: Use when designing cooling systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [automotive, cooling, thermal, radiator]
-    related_skills: [general]
 ---
 
 # Automotive Cooling Systems

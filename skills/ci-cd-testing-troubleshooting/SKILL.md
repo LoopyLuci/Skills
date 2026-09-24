@@ -1,14 +1,13 @@
 ---
 name: ci-cd-testing-troubleshooting
-description: "Use when applying ci/cd testing troubleshooting."
+description: Use when applying ci/cd testing troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, testing, ci-cd, quality-gates]
-    related_skills: [general]
 ---
 
 # Ci Cd Testing Troubleshooting

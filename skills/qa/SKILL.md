@@ -1,8 +1,13 @@
 ---
 name: qa
 description: Use when reporting bugs, doing QA, or filing GitHub issues conversationally
-tags: [testing, QA, bugs, GitHub, issues]
-related_skills: [triage, diagnosing-bugs, to-tickets]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [testing, qa, bugs, github, issues]
 ---
 
 # Qa

@@ -1,14 +1,13 @@
 ---
 name: developmental-biology-management
-description: "Use when managing developmental biology operations."
+description: Use when managing developmental biology operations.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [developmental-biology, embryology, development]
-    related_skills: [general]
 ---
 
 # Developmental Biology Management

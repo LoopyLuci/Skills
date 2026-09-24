@@ -1,9 +1,15 @@
 ---
 name: wsl2-ide-integration
-description: "Use when connecting IDEs to WSL2 toolchains."
-category: software-development
-tags: [wsl2, ide, vscode, jetbrains, development]
+description: Use when connecting IDEs to WSL2 toolchains.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [wsl2, ide, vscode, jetbrains, development]
 ---
+
 # WSL2 IDE Integration
 
 Connecting IDEs to WSL2 toolchains.

@@ -1,14 +1,13 @@
 ---
 name: faith-community-tithing-fundamentals
-description: "Use when applying faith community tithing fundamentals."
+description: Use when applying faith community tithing fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [spiritual, finance]
-    related_skills: ['cap-table']
 ---
 
 # Faith Community Tithing Fundamentals

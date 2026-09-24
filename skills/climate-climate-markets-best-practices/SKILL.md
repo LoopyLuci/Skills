@@ -1,14 +1,13 @@
 ---
 name: climate-climate-markets-best-practices
-description: "Use when applying carbon markets best practices."
+description: Use when applying carbon markets best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, markets, carbon-markets]
-    related_skills: ['']
 ---
 
 # Climate Climate Markets Best Practices

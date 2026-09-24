@@ -1,6 +1,13 @@
 ---
 name: dns-configuration
-description: "Configure DNS records A CNAME MX TXT via API"
+description: Configure DNS records A CNAME MX TXT via API
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [dns, configuration]
 ---
 
 # DNS Configuration

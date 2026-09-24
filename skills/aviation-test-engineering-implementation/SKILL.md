@@ -1,14 +1,13 @@
 ---
 name: aviation-test-engineering-implementation
-description: "Use when applying aviation test implementation."
+description: Use when applying aviation test implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, testing, testing]
-    related_skills: ['general']
 ---
 
 # Aviation Test Engineering Implementation

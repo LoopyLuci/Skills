@@ -1,8 +1,13 @@
 ---
 name: summary-page-generator
 description: Use when creating summary/closing slides for PowerPoint presentations with PptxGenJS.
-tags: [pptx, powerpoint, presentation, summary-slide, closing, pptxgenjs]
-related_skills: [cover-page-generator, content-page-generator, table-of-contents-generator]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [pptx, powerpoint, presentation, summary-slide, closing, pptxgenjs]
 ---
 
 # Summary / Closing Page Generator

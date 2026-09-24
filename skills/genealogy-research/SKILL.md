@@ -2,12 +2,12 @@
 name: genealogy-research
 description: Genealogical research, census records, and family tree building
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["genealogy", "family-tree"]
+    tags: [genealogy, family-tree]
 ---
 
 # Genealogy Research

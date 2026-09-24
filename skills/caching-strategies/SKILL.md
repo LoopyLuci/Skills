@@ -1,13 +1,13 @@
 ---
 name: caching-strategies
-description: "Use when implementing caching strategies for applications."
+description: Use when implementing caching strategies for applications.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [caching, redis, CDN, cache-invalidation, performance, write-through, write-behind]
-    related_skills: [performance-optimization, event-driven-architecture, distributed-systems-patterns, api-design-rest-graphql]
+    tags: [caching, redis, cdn, cache-invalidation, performance, write-through, write-behind]
 ---
 
 # Caching Strategies

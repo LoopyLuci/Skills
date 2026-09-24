@@ -1,14 +1,13 @@
 ---
 name: biomedical-eng-analysis-troubleshooting
-description: "Use when applying biomedical analysis troubleshooting."
+description: Use when applying biomedical analysis troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, biomedical, analysis, biomedical-eng-analysis]
-    related_skills: [general]
 ---
 
 # Biomedical Eng Analysis Troubleshooting

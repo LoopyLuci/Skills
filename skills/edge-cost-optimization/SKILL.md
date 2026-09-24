@@ -1,14 +1,13 @@
 ---
 name: edge-cost-optimization
-description: "Use when optimizing edge computing costs."
+description: Use when optimizing edge computing costs.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [edge-computing, cost-optimization, finops, resource-utilization]
-    related_skills: [general]
 ---
 
 # Edge Cost Optimization

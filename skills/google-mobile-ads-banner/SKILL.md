@@ -1,8 +1,13 @@
 ---
 name: google-mobile-ads-banner
 description: Use when implementing Google Mobile Ads banner ads in Android/iOS apps.
-tags: [android, ios, google-mobile-ads, banner-ads, monetization]
-related_skills: [google-mobile-ads-get-started, google-mobile-ads-interstitial, google-mobile-ads-rewarded]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [android, ios, google-mobile-ads, banner-ads, monetization]
 ---
 
 # Google Mobile Ads SDK — Banner Ads

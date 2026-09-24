@@ -1,14 +1,13 @@
 ---
 name: email-marketing-migration-fundamentals
-description: "Use when applying email migration fundamentals."
+description: Use when applying email migration fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, migration, platform]
-    related_skills: [general]
 ---
 
 # Email Marketing Migration Fundamentals

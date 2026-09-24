@@ -1,13 +1,13 @@
 ---
 name: bug-bounty-methodology
-description: "Use when participating in bug bounty programs."
+description: Use when participating in bug bounty programs.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [bug-bounty, vulnerability-disclosure, recon, HackerOne, Bugcrowd, triage]
-    related_skills: [osint-reconnaissance-techniques, webapp-penetration-testing, api-penetration-testing, sql-injection-exploitation]
+    tags: [bug-bounty, vulnerability-disclosure, recon, hackerone, bugcrowd, triage]
 ---
 
 # Bug Bounty Methodology

@@ -1,14 +1,13 @@
 ---
 name: database-mysql-clustering-fundamentals
-description: "Use when applying mysql clustering fundamentals."
+description: Use when applying mysql clustering fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, mysql, clustering, ha]
-    related_skills: [general]
 ---
 
 # Database Mysql Clustering Fundamentals

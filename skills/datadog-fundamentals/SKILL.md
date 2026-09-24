@@ -1,14 +1,13 @@
 ---
 name: datadog-fundamentals
-description: "Use when applying datadog fundamentals."
+description: Use when applying datadog fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [monitoring, datadog, apm, infrastructure]
-    related_skills: [general]
 ---
 
 # Datadog Fundamentals

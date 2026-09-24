@@ -1,14 +1,13 @@
 ---
 name: computational-biology-troubleshooting
-description: "Use when troubleshooting computational biology issues."
+description: Use when troubleshooting computational biology issues.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [computational-biology, modeling, systems-biology]
-    related_skills: [general]
 ---
 
 # Computational Biology Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: fashion-supply-chain-deep-fundamentals
-description: "Use when applying fashion supply chain fundamentals."
+description: Use when applying fashion supply chain fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, supply-chain, fashion-supply-chain]
-    related_skills: ['general']
 ---
 
 # Fashion Supply Chain Deep Fundamentals

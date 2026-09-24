@@ -1,14 +1,13 @@
 ---
 name: distributed-sql-best-practices
-description: "Use when applying distributed sql databases best practices."
+description: Use when applying distributed sql databases best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, distributed-sql, cockroachdb, yugabyte]
-    related_skills: [general]
 ---
 
 # Distributed Sql Best Practices

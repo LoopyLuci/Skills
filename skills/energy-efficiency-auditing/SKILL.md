@@ -1,14 +1,13 @@
 ---
 name: energy-efficiency-auditing
-description: "Use when auditing energy efficiency. Walkthrough, analysis."
+description: Use when auditing energy efficiency. Walkthrough, analysis.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climatetech, energy-audit, efficiency, buildings]
-    related_skills: [building-energy-efficiency, smart-building-controls]
 ---
 
 # Energy Efficiency Auditing

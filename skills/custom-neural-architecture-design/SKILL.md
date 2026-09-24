@@ -1,13 +1,13 @@
 ---
 name: custom-neural-architecture-design
-description: "Use when designing custom neural network architectures."
+description: Use when designing custom neural network architectures.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [neural-networks, architecture, design, deep-learning, pytorch]
-    related_skills: [neural-network-fundamentals, transformer-architectures, attention-mechanisms-deep, state-space-models-mamba, custom-training-loops]
 ---
 
 # Custom Neural Architecture Design

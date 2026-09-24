@@ -1,14 +1,13 @@
 ---
 name: clojure-rule-engine-deep-implementation
-description: "Use when applying clojure rule engine implementation."
+description: Use when applying clojure rule engine implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [language, clojure]
-    related_skills: ['clojure-rule-engine']
 ---
 
 # Clojure Rule Engine Deep Implementation

@@ -1,14 +1,13 @@
 ---
 name: distribution-implementation
-description: "Use when applying distribution implementation."
+description: Use when applying distribution implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [logistics, distribution, distribution]
-    related_skills: [general]
 ---
 
 # Distribution Implementation

@@ -1,14 +1,13 @@
 ---
 name: backup-recovery-strategy
-description: "Use when designing backup and recovery."
+description: Use when designing backup and recovery.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, backup-recovery, disaster-recovery, rto-rpo]
-    related_skills: ['database-backup-strategies']
 ---
 
 # Backup Recovery Strategy

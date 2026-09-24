@@ -1,14 +1,13 @@
 ---
 name: application-firewall-implementation
-description: "Use when for waf implementation."
+description: Use when for waf implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, waf, web-app-firewall, filtering]
-    related_skills: [general]
 ---
 
 # Application Firewall Implementation

@@ -1,14 +1,13 @@
 ---
 name: agent-ethics-alignment-deep-troubleshooting
-description: "Use when applying agent ethics alignment troubleshooting."
+description: Use when applying agent ethics alignment troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agents, ethics]
-    related_skills: ['agent-ethics-alignment']
 ---
 
 # Agent Ethics Alignment Deep Troubleshooting

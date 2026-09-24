@@ -1,13 +1,13 @@
 ---
 name: slam-simultaneous-localization
-description: "Use when implementing SLAM for robotics."
+description: Use when implementing SLAM for robotics.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [SLAM, localization, mapping, robotics, lidar, visual-SLAM, GMapping]
-    related_skills: [ros-robot-operating-system, robot-control-systems, computer-vision-techniques, computer-vision]
+    tags: [slam, localization, mapping, robotics, lidar, visual-slam, gmapping]
 ---
 
 # SLAM — Simultaneous Localization and Mapping

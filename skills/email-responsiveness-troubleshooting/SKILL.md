@@ -1,14 +1,13 @@
 ---
 name: email-responsiveness-troubleshooting
-description: "Use when applying email responsiveness troubleshooting."
+description: Use when applying email responsiveness troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, design, responsive]
-    related_skills: [general]
 ---
 
 # Email Responsiveness Troubleshooting

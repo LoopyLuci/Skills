@@ -1,14 +1,13 @@
 ---
 name: civil-engineering-transportation
-description: "Use when doing transportation civil engineering."
+description: Use when doing transportation civil engineering.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [construction, transportation-engineering, roads, highways]
-    related_skills: [public-transportation-planning]
 ---
 
 # Civil Engineering Transportation

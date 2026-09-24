@@ -1,14 +1,13 @@
 ---
 name: feature-store-design-deep-troubleshooting
-description: "Use when applying feature store design troubleshooting."
+description: Use when applying feature store design troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, ml-feature-store]
-    related_skills: ['feature-store-design']
 ---
 
 # Feature Store Design Deep Troubleshooting

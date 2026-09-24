@@ -2,12 +2,12 @@
 name: number-theory-cryptography
 description: Prime numbers, modular arithmetic, and cryptographic applications
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["number-theory", "crypto"]
+    tags: [number-theory, crypto]
 ---
 
 # Number Theory Cryptography

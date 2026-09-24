@@ -1,14 +1,13 @@
 ---
 name: email-marketing-campaign-strategy-troubleshooting
-description: "Use when applying email campaign strategy troubleshooting."
+description: Use when applying email campaign strategy troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, strategy, campaigns]
-    related_skills: [general]
 ---
 
 # Email Marketing Campaign Strategy Troubleshooting

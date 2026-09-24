@@ -1,14 +1,13 @@
 ---
 name: database-indexing-troubleshooting
-description: "Use when for database indexing troubleshooting."
+description: Use when for database indexing troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, indexing, performance, optimization]
-    related_skills: [general]
 ---
 
 # Database Indexing Troubleshooting

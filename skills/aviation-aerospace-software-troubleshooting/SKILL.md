@@ -1,14 +1,13 @@
 ---
 name: aviation-aerospace-software-troubleshooting
-description: "Use when applying aerospace software troubleshooting."
+description: Use when applying aerospace software troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, software, avionics]
-    related_skills: ['general']
 ---
 
 # Aviation Aerospace Software Troubleshooting

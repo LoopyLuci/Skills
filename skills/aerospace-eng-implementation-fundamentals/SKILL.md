@@ -1,14 +1,13 @@
 ---
 name: aerospace-eng-implementation-fundamentals
-description: "Use when applying aerospace implementation fundamentals."
+description: Use when applying aerospace implementation fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, aerospace, implementation]
-    related_skills: [general]
 ---
 
 # Aerospace Eng Implementation Fundamentals

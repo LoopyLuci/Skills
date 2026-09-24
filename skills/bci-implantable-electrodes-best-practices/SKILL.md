@@ -1,14 +1,13 @@
 ---
 name: bci-implantable-electrodes-best-practices
-description: "Use when applying bci implantable electrodes best practi."
+description: Use when applying bci implantable electrodes best practi.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neuro, bci, brain-computer-interface-applications]
-    related_skills: ['']
 ---
 
 # Bci Implantable Electrodes Best Practices

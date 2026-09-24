@@ -1,14 +1,13 @@
 ---
 name: email-template-implementation
-description: "Use when applying email templates implementation."
+description: Use when applying email templates implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, marketing, templates]
-    related_skills: [general]
 ---
 
 # Email Template Implementation

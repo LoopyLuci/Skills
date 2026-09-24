@@ -2,12 +2,12 @@
 name: digital-forensics-investigation
 description: Disk imaging, memory forensics, timeline analysis, mobile forensics, and chain of custody
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["forensics", "dfir"]
+    tags: [forensics, dfir]
 ---
 
 # Digital Forensics Investigation

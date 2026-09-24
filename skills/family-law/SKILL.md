@@ -1,14 +1,13 @@
 ---
 name: family-law
-description: "Use when practicing family law."
+description: Use when practicing family law.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [legal, family, family-law]
-    related_skills: [general]
 ---
 
 # Family Law

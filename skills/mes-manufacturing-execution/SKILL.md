@@ -2,12 +2,12 @@
 name: mes-manufacturing-execution
 description: Production scheduling, quality management, OEE, and ISA-95
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["mes", "production"]
+    tags: [mes, production]
 ---
 
 # Mes Manufacturing Execution

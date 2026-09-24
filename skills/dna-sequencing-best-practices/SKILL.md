@@ -1,14 +1,13 @@
 ---
 name: dna-sequencing-best-practices
-description: "Use when applying dna sequencing best practices."
+description: Use when applying dna sequencing best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, genomics, genomics-data-processing]
-    related_skills: [general]
 ---
 
 # Dna Sequencing Best Practices

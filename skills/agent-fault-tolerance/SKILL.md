@@ -1,13 +1,13 @@
 ---
 name: agent-fault-tolerance
-description: "Use when implementing fault tolerance for agent systems."
+description: Use when implementing fault tolerance for agent systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [fault-tolerance, resilience, recovery, redundancy, agent-reliability]
-    related_skills: [multi-agent-collaboration-patterns, agent-swarm-architectures, distributed-systems-patterns, agent-safety-monitoring]
 ---
 
 # Agent Fault Tolerance

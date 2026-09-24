@@ -1,14 +1,13 @@
 ---
 name: contract-management-fundamentals
-description: "Use when applying contract management fundamentals."
+description: Use when applying contract management fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [legal, contract, contract-management-basics]
-    related_skills: [general]
 ---
 
 # Contract Management Fundamentals

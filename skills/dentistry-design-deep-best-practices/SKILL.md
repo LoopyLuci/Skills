@@ -1,14 +1,13 @@
 ---
 name: dentistry-design-deep-best-practices
-description: "Use when applying dentistry design best practices."
+description: Use when applying dentistry design best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [healthcare, dentistry]
-    related_skills: ['dentistry-design']
 ---
 
 # Dentistry Design Deep Best Practices

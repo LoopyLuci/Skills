@@ -1,14 +1,13 @@
 ---
 name: biomaterials-fundamentals
-description: "Use when applying biomaterials fundamentals."
+description: Use when applying biomaterials fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [materials, biomedical, biomaterials-engineering]
-    related_skills: [general]
 ---
 
 # Biomaterials Fundamentals

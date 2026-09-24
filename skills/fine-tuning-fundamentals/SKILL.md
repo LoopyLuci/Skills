@@ -1,14 +1,13 @@
 ---
 name: fine-tuning-fundamentals
-description: "Use when applying fine tuning fundamentals."
+description: Use when applying fine tuning fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, fine-tuning, llm-fine-tuning-lora]
-    related_skills: [general]
 ---
 
 # Fine Tuning Fundamentals

@@ -2,12 +2,12 @@
 name: urban-planning-design
 description: Zoning, transit-oriented development, community engagement, and master plans
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["urban-planning", "design"]
+    tags: [urban-planning, design]
 ---
 
 # Urban Planning Design

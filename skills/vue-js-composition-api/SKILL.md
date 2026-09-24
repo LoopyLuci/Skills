@@ -1,12 +1,13 @@
 ---
 name: vue-js-composition-api
-description: "Use when building Vue apps with Composition API."
+description: Use when building Vue apps with Composition API.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["vue", "composition-api", "ref", "reactive", "composables"]
+    tags: [vue, composition-api, ref, reactive, composables]
 ---
 
 # Vue Js Composition Api

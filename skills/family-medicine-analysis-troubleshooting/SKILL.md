@@ -1,14 +1,13 @@
 ---
 name: family-medicine-analysis-troubleshooting
-description: "Use when applying family med analysis troubleshooting."
+description: Use when applying family med analysis troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [medicine, family, family-medicine-analysis]
-    related_skills: [general]
 ---
 
 # Family Medicine Analysis Troubleshooting

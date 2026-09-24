@@ -1,14 +1,13 @@
 ---
 name: cold-chain-logistics-implementation
-description: "Use when applying cold chain logistics implementation."
+description: Use when applying cold chain logistics implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [logistics, cold, cold-chain-logistics]
-    related_skills: [general]
 ---
 
 # Cold Chain Logistics Implementation

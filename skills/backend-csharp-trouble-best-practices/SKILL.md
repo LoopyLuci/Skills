@@ -1,14 +1,13 @@
 ---
 name: backend-csharp-trouble-best-practices
-description: "Use when applying backend c# troubl best practices."
+description: Use when applying backend c# troubl best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, csharp, backend-csharp-troubleshooting]
-    related_skills: [general]
 ---
 
 # Backend Csharp Trouble Best Practices

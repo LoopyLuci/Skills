@@ -1,14 +1,13 @@
 ---
 name: agri-export-fundamentals
-description: "Use when applying agricultural export fundamentals."
+description: Use when applying agricultural export fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agri, export, export]
-    related_skills: ['general']
 ---
 
 # Agri Export Fundamentals

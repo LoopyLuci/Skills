@@ -1,14 +1,13 @@
 ---
 name: aws-lambda
-description: "Use when building AWS Lambda functions."
+description: Use when building AWS Lambda functions.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, lambda, serverless, functions]
-    related_skills: [general]
 ---
 
 # Aws Lambda

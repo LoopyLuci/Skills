@@ -2,12 +2,12 @@
 name: real-estate-data-analytics
 description: MLS data, predictive analytics, geographic analysis, and market intelligence
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["data", "analytics"]
+    tags: [data, analytics]
 ---
 
 # Real Estate Data Analytics

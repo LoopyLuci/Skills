@@ -1,14 +1,13 @@
 ---
 name: email-marketing-analytics-troubleshooting
-description: "Use when applying email analytics troubleshooting."
+description: Use when applying email analytics troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, analytics, data]
-    related_skills: [general]
 ---
 
 # Email Marketing Analytics Troubleshooting

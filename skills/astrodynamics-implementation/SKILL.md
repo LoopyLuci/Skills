@@ -1,14 +1,13 @@
 ---
 name: astrodynamics-implementation
-description: "Use when applying astrodynamics implementation."
+description: Use when applying astrodynamics implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [space, orbital, astrodynamics-calculations]
-    related_skills: [general]
 ---
 
 # Astrodynamics Implementation

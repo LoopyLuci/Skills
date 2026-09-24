@@ -1,9 +1,15 @@
 ---
 name: git-for-windows
-description: "Use when configuring Git on Windows."
-category: software-development
-tags: [git, windows, configuration, line-endings, authentication]
+description: Use when configuring Git on Windows.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [git, windows, configuration, line-endings, authentication]
 ---
+
 # Git for Windows
 
 Configuring Git for optimal use on Windows.

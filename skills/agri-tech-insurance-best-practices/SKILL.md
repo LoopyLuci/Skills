@@ -1,14 +1,13 @@
 ---
 name: agri-tech-insurance-best-practices
-description: "Use when applying agricultural insurance best practices."
+description: Use when applying agricultural insurance best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agri, insurance, agricultural-insurance]
-    related_skills: ['']
 ---
 
 # Agri Tech Insurance Best Practices

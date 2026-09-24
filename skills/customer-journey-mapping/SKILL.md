@@ -1,13 +1,13 @@
 ---
 name: customer-journey-mapping
-description: "Use when mapping customer journeys and touchpoints."
+description: Use when mapping customer journeys and touchpoints.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [customer-journey, experience-map, touchpoints, CX, UX, service-design]
-    related_skills: [digital-marketing-strategy, customer-success-retention, product-management-roadmap, marketing-funnel-design]
+    tags: [customer-journey, experience-map, touchpoints, cx, ux, service-design]
 ---
 
 # Customer Journey Mapping

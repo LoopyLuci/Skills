@@ -1,14 +1,13 @@
 ---
 name: drug-screening-implementation
-description: "Use when applying drug screening implementation."
+description: Use when applying drug screening implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, pharma, screening]
-    related_skills: [general]
 ---
 
 # Drug Screening Implementation

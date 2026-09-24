@@ -1,9 +1,13 @@
 ---
 name: sqlite-embedded-database
-description: "Use when using SQLite databases."
+description: Use when using SQLite databases.
 version: 1.0.0
-author: Hermes Agent
-tags: ["sqlite", "embedded", "database", "WAL", "FTS5"]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [sqlite, embedded, database, wal, fts5]
 ---
 
 # Sqlite Embedded Database

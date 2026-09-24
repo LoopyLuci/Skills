@@ -1,6 +1,13 @@
 ---
 name: android-instrumented-testing
 description: Use when Android instrumented tests fail or hang on devices.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [android, instrumented, testing]
 ---
 
 # Android Instrumented Test Execution & Debugging

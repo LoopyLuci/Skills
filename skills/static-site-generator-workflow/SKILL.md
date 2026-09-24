@@ -1,14 +1,13 @@
 ---
 name: static-site-generator-workflow
-description: "Use when building static sites. SSG setup, deploy."
+description: Use when building static sites. SSG setup, deploy.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [static-site, hugo, jekyll, 11ty, astro, jamstack]
-    related_skills: [website-architecture-planner, blog-publishing-workflow]
 ---
 
 # Static Site Generator Workflow

@@ -2,12 +2,12 @@
 name: work-life-family-balance
 description: Work-family integration, childcare, and household management
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["work-life", "balance"]
+    tags: [work-life, balance]
 ---
 
 # Work Life Family Balance

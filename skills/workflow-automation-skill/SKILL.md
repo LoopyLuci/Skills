@@ -1,14 +1,13 @@
 ---
 name: workflow-automation-skill
-description: "Automation: identify tasks, design, implement."
+description: Automation: identify tasks, design, implement.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [automation, workflow, scripts, efficiency, meta]
-    related_skills: [ai-agent-integration-workflow, skill-audit-and-gap-analysis, freelance-business-operations]
 ---
 
 # Workflow Automation Skill

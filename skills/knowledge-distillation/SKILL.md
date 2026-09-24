@@ -1,13 +1,13 @@
 ---
 name: knowledge-distillation
-description: "Use when compressing models via knowledge distillation."
+description: Use when compressing models via knowledge distillation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [knowledge-distillation, model-compression, student-teacher, quantization]
-    related_skills: [model-compression-techniques, custom-training-loops, transformer-architectures, ml-model-serving-optimization]
 ---
 
 # Knowledge Distillation

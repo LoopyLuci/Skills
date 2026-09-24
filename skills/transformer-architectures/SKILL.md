@@ -1,9 +1,15 @@
 ---
 name: transformer-architectures
-description: "Use when implementing transformer-based models."
-category: mlops
-tags: [transformer, attention, bert, gpt, pytorch]
+description: Use when implementing transformer-based models.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [transformer, attention, bert, gpt, pytorch]
 ---
+
 # Transformer Architectures
 
 Implementing transformer-based models: attention, self-attention, encoder-decoder.

@@ -1,14 +1,13 @@
 ---
 name: podcasting-workflow
-description: "Podcast: recording, editing, distribution, RSS."
+description: Podcast: recording, editing, distribution, RSS.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [podcast, audio, production, distribution, content]
-    related_skills: [video-production-workflow, personal-brand-building, affiliate-marketing]
 ---
 
 # Podcasting Workflow

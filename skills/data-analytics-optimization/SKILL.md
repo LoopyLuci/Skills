@@ -1,14 +1,13 @@
 ---
 name: data-analytics-optimization
-description: "Use when optimizing data analytics systems."
+description: Use when optimizing data analytics systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data-analytics, analysis, python]
-    related_skills: [general]
 ---
 
 # Data Analytics Optimization

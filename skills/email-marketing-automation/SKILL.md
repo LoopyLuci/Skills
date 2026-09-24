@@ -1,14 +1,13 @@
 ---
 name: email-marketing-automation
-description: "Use when automating email. Sequences, flows, funnels."
+description: Use when automating email. Sequences, flows, funnels.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, marketing, automation, sequences, funnels, drip]
-    related_skills: [email-marketing-campaigns, lead-gen-optimization]
 ---
 
 # Email Marketing Automation

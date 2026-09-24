@@ -1,14 +1,13 @@
 ---
 name: evolutionary-biology-troubleshooting
-description: "Use when troubleshooting evolutionary biology issues."
+description: Use when troubleshooting evolutionary biology issues.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [evolutionary-biology, evolution, genetics]
-    related_skills: [general]
 ---
 
 # Evolutionary Biology Troubleshooting

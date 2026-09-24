@@ -1,14 +1,13 @@
 ---
 name: construction-scheduling-software
-description: "Use when scheduling construction software."
+description: Use when scheduling construction software.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [construction, scheduling, software, primavera, ms-project]
-    related_skills: [general]
 ---
 
 # Construction Scheduling Software

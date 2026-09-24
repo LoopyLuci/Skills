@@ -1,14 +1,13 @@
 ---
 name: docker-implementation-deep-troubleshooting
-description: "Use when applying docker implementation troubleshooting."
+description: Use when applying docker implementation troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, docker]
-    related_skills: ['docker-implementation']
 ---
 
 # Docker Implementation Deep Troubleshooting

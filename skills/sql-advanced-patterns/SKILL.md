@@ -1,13 +1,13 @@
 ---
 name: sql-advanced-patterns
-description: "Use when writing advanced SQL queries and optimizations."
+description: Use when writing advanced SQL queries and optimizations.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [sql, advanced-sql, CTE, window-functions, optimization, execution-plan]
-    related_skills: [database-design-patterns, data-modeling-foundations, database-schema-design, database-migration-patterns]
+    tags: [sql, advanced-sql, cte, window-functions, optimization, execution-plan]
 ---
 
 # Advanced SQL Patterns

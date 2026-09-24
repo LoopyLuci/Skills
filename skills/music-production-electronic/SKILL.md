@@ -2,12 +2,12 @@
 name: music-production-electronic
 description: Beat making, sampling, sound design, and arrangement in electronic genres
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["production", "electronic"]
+    tags: [production, electronic]
 ---
 
 # Music Production Electronic

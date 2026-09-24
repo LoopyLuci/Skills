@@ -1,14 +1,13 @@
 ---
 name: bluetooth-le-troubleshooting
-description: "Use when applying bluetooth le troubleshooting."
+description: Use when applying bluetooth le troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [electronics, wireless, bluetooth-le-device]
-    related_skills: [general]
 ---
 
 # Bluetooth Le Troubleshooting

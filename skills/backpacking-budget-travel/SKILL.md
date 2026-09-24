@@ -2,12 +2,12 @@
 name: backpacking-budget-travel
 description: Budget travel, hostels, backpacking routes, and gear
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["backpacking", "budget"]
+    tags: [backpacking, budget]
 ---
 
 # Backpacking Budget Travel

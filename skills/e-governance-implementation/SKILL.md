@@ -1,14 +1,13 @@
 ---
 name: e-governance-implementation
-description: "Use when applying e-governance implementation."
+description: Use when applying e-governance implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [gov, digital, e-governance-platforms]
-    related_skills: [general]
 ---
 
 # E Governance Implementation

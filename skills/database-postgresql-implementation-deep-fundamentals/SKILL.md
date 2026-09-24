@@ -1,14 +1,13 @@
 ---
 name: database-postgresql-implementation-deep-fundamentals
-description: "Use when applying postgresql implementation fundamentals."
+description: Use when applying postgresql implementation fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, postgres]
-    related_skills: ['postgres-implementation']
 ---
 
 # Database Postgresql Implementation Deep Fundamentals

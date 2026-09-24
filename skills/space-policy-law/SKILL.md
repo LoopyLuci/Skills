@@ -2,12 +2,12 @@
 name: space-policy-law
 description: Outer Space Treaty, spectrum regulation, debris mitigation, and national space law
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["space-law", "policy"]
+    tags: [space-law, policy]
 ---
 
 # Space Policy Law

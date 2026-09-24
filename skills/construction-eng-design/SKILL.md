@@ -1,14 +1,13 @@
 ---
 name: construction-eng-design
-description: "Use when for construction eng design."
+description: Use when for construction eng design.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [construction, civil, structural]
-    related_skills: [general]
 ---
 
 # Construction Eng Design

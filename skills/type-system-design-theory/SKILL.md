@@ -1,13 +1,13 @@
 ---
 name: type-system-design-theory
-description: "Use when designing programming language type systems."
+description: Use when designing programming language type systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [type-systems, type-theory, programming-languages, PLT, compiler]
-    related_skills: [compiler-interpreter-basics, formal-verification-methods, functional-programming-concepts]
+    tags: [type-systems, type-theory, programming-languages, plt, compiler]
 ---
 
 # Type System Design Theory

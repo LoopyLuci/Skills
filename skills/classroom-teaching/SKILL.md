@@ -1,14 +1,13 @@
 ---
 name: classroom-teaching
-description: "Use when teaching in classrooms."
+description: Use when teaching in classrooms.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [education, teaching, classroom-teaching]
-    related_skills: [general]
 ---
 
 # Classroom Teaching

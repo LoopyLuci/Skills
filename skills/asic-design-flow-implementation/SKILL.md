@@ -1,14 +1,13 @@
 ---
 name: asic-design-flow-implementation
-description: "Use when applying asic design flow implementation."
+description: Use when applying asic design flow implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [electronics, asic, asic-design]
-    related_skills: ['general']
 ---
 
 # Asic Design Flow Implementation

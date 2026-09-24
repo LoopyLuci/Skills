@@ -1,14 +1,13 @@
 ---
 name: database-mongodb-performance-fundamentals
-description: "Use when applying mongodb performance fundamentals."
+description: Use when applying mongodb performance fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, mongodb, performance, optimization]
-    related_skills: [general]
 ---
 
 # Database Mongodb Performance Fundamentals

@@ -1,14 +1,13 @@
 ---
 name: fashion-business
-description: "Use when running fashion business."
+description: Use when running fashion business.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, business, fashion-business-strategy]
-    related_skills: [general]
 ---
 
 # Fashion Business

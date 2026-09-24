@@ -1,14 +1,13 @@
 ---
 name: computational-biology-implementation
-description: "Use when implementing computational biology projects."
+description: Use when implementing computational biology projects.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [computational-biology, modeling, systems-biology]
-    related_skills: [general]
 ---
 
 # Computational Biology Implementation

@@ -1,14 +1,13 @@
 ---
 name: azure-services
-description: "Use when working with Azure services."
+description: Use when working with Azure services.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, azure, microsoft]
-    related_skills: [general]
 ---
 
 # Azure Services

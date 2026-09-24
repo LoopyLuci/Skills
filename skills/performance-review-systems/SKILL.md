@@ -1,13 +1,13 @@
 ---
 name: performance-review-systems
-description: "Use when designing performance review and feedback systems."
+description: Use when designing performance review and feedback systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [performance-review, feedback, 360-review, OKRs, evaluation, growth]
-    related_skills: [remote-team-management, hr-recruiting-onboarding, business-metrics-kpis, okr-goal-setting-advanced]
+    tags: [performance-review, feedback, 360-review, okrs, evaluation, growth]
 ---
 
 # Performance Review Systems

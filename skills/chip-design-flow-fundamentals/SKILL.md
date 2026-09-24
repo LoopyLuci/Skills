@@ -1,14 +1,13 @@
 ---
 name: chip-design-flow-fundamentals
-description: "Use when applying chip design flow fundamentals."
+description: Use when applying chip design flow fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [semiconductor, design, design-flow]
-    related_skills: ['general']
 ---
 
 # Chip Design Flow Fundamentals

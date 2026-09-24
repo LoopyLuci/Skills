@@ -1,14 +1,13 @@
 ---
 name: fashion-design-optimization
-description: "Use when for fashion design optimization."
+description: Use when for fashion design optimization.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, management, general]
-    related_skills: [general]
 ---
 
 # Fashion Design Optimization

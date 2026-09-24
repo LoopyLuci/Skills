@@ -1,14 +1,13 @@
 ---
 name: clinical-decision-support-best-practices
-description: "Use when applying cdss best practices."
+description: Use when applying cdss best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, medicine, cdss]
-    related_skills: [general]
 ---
 
 # Clinical Decision Support Best Practices

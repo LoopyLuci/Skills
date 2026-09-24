@@ -1,14 +1,13 @@
 ---
 name: docker-networking-troubleshoot-deep-fundamentals
-description: "Use when applying docker networking fundamentals."
+description: Use when applying docker networking fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, docker]
-    related_skills: ['docker-networking-troubleshoot']
 ---
 
 # Docker Networking Troubleshoot Deep Fundamentals

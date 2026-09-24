@@ -1,12 +1,13 @@
 ---
-
 name: resolving-merge-conflicts
 description: Use when you need to resolve an in-progress git merge/rebase conflict.
-source: mattpocock/skills
-tags: [engineering, git, merge, conflict-resolution]
-metadata: 
-hermes: 
-
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [engineering, git, merge, conflict-resolution]
 ---
 
 **Trigger**: Use when resolving in-progress git merge or rebase conflicts — understand each side's intent and finish the operation without aborting.

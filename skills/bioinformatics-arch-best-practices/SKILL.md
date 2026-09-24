@@ -1,14 +1,13 @@
 ---
 name: bioinformatics-arch-best-practices
-description: "Use when applying bioinformatics architecture best pract."
+description: Use when applying bioinformatics architecture best pract.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [medicine, bioinfo, bioinformatics-architecture]
-    related_skills: [general]
 ---
 
 # Bioinformatics Arch Best Practices

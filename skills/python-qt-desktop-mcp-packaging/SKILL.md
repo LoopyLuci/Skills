@@ -1,15 +1,13 @@
 ---
 name: python-qt-desktop-mcp-packaging
-title: Package PyQt6 desktop apps with MCP backend as Windows EXE
 description: Build PyQt6 desktop apps with MCP backend as Windows EXE.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [pyqt6, mcp, packaging, pyinstaller, windows]
-    related_skills: [pyinstaller-pywebview-packaging, publish Python app]
 ---
 
 # PyQt6 Desktop + MCP Packaging

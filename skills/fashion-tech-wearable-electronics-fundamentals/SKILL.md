@@ -1,14 +1,13 @@
 ---
 name: fashion-tech-wearable-electronics-fundamentals
-description: "Use when applying fashion wearable electronics fundament."
+description: Use when applying fashion wearable electronics fundament.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, beauty]
-    related_skills: ['']
 ---
 
 # Fashion Tech Wearable Electronics Fundamentals

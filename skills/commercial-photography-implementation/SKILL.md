@@ -1,14 +1,13 @@
 ---
 name: commercial-photography-implementation
-description: "Use when applying commercial photography implementation."
+description: Use when applying commercial photography implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [media, photo, commercial]
-    related_skills: [general]
 ---
 
 # Commercial Photography Implementation

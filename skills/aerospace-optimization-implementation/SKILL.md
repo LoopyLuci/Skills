@@ -1,14 +1,13 @@
 ---
 name: aerospace-optimization-implementation
-description: "Use when applying aerospace optimization implementation."
+description: Use when applying aerospace optimization implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aerospace, optimization, aerospace-eng-optimization]
-    related_skills: [general]
 ---
 
 # Aerospace Optimization Implementation

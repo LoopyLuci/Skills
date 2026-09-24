@@ -1,14 +1,13 @@
 ---
 name: adaptive-clinical-trial-fundamentals
-description: "Use when applying adaptive trials fundamentals."
+description: Use when applying adaptive trials fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, medicine, adaptive-trial]
-    related_skills: [general]
 ---
 
 # Adaptive Clinical Trial Fundamentals

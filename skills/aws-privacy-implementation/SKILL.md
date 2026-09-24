@@ -1,14 +1,13 @@
 ---
 name: aws-privacy-implementation
-description: "Use when applying aws privacy implementation."
+description: Use when applying aws privacy implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, privacy, data-protection, gdpr]
-    related_skills: [general]
 ---
 
 # Aws Privacy Implementation

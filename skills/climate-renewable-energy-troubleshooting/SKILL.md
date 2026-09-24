@@ -1,14 +1,13 @@
 ---
 name: climate-renewable-energy-troubleshooting
-description: "Use when applying renewable energy systems troubleshooting."
+description: Use when applying renewable energy systems troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, renewable, renewable-energy-design]
-    related_skills: ['']
 ---
 
 # Climate Renewable Energy Troubleshooting

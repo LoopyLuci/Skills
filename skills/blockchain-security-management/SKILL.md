@@ -1,14 +1,13 @@
 ---
 name: blockchain-security-management
-description: "Use when managing blockchain security."
+description: Use when managing blockchain security.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, blockchain, smart-contract-audit]
-    related_skills: [general]
 ---
 
 # Blockchain Security Management

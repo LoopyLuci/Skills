@@ -1,14 +1,13 @@
 ---
 name: ferry-passenger-logistics
-description: "Use when planning ferry passenger logistics."
+description: Use when planning ferry passenger logistics.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [maritime, ferry, passenger-logistics, scheduling]
-    related_skills: [general]
 ---
 
 # Ferry Passenger Logistics

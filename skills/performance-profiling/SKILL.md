@@ -1,6 +1,13 @@
 ---
 name: performance-profiling
-description: "Profile Python apps with cProfile py spy and scalene"
+description: Profile Python apps with cProfile py spy and scalene
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [performance, profiling]
 ---
 
 # Performance Profiling
@@ -30,3 +37,16 @@ scalene myapp.py
 - I/O bottlenecks
 - Database queries
 - API call latency
+
+## Trigger
+
+Activate this skill when the user mentions:
+- performance, profiling workflows or issues
+- Building, fixing, or optimizing performance profiling
+
+
+## Core Concepts
+
+- Domain fundamentals and best practices
+- Key tools and methodologies
+- Quality standards and common patterns

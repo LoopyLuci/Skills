@@ -1,14 +1,13 @@
 ---
 name: automotive-cybersecurity
-description: "Use when securing automotive systems."
+description: Use when securing automotive systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [automotive, automotive-cybersecurity, vehicle-security]
-    related_skills: [maritime-cybersecurity]
 ---
 
 # Automotive Cybersecurity

@@ -1,9 +1,15 @@
 ---
 name: powershell-filesystem-advanced
-description: "Use when doing advanced PS filesystem operations."
-category: software-development
-tags: [powershell, filesystem, files, directories, io]
+description: Use when doing advanced PS filesystem operations.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [powershell, filesystem, files, directories, io]
 ---
+
 # PowerShell Advanced Filesystem
 
 Advanced filesystem operations with PowerShell.

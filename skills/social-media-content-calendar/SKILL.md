@@ -1,14 +1,13 @@
 ---
 name: social-media-content-calendar
-description: "Use when planning social media content calendars."
+description: Use when planning social media content calendars.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [social-media, content-calendar, planning, scheduling]
-    related_skills: [social-media-strategy, social-media-analytics]
 ---
 
 # Social Media Content Calendar

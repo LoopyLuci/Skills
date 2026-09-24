@@ -1,14 +1,13 @@
 ---
 name: customer-due-diligence-best-practices
-description: "Use when applying cdd best practices."
+description: Use when applying cdd best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, security, cdd]
-    related_skills: [general]
 ---
 
 # Customer Due Diligence Best Practices

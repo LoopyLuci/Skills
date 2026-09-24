@@ -1,14 +1,13 @@
 ---
 name: car-t-cell-fundamentals
-description: "Use when applying car t cell biotech fundamentals."
+description: Use when applying car t cell biotech fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, bio]
-    related_skills: ['']
 ---
 
 # Car T Cell Fundamentals

@@ -1,14 +1,13 @@
 ---
 name: container-security-hardening-deep-implementation
-description: "Use when applying container hardening implementation."
+description: Use when applying container hardening implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, security]
-    related_skills: ['container-security-hardening']
 ---
 
 # Container Security Hardening Deep Implementation

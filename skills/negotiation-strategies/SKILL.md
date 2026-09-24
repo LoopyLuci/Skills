@@ -2,12 +2,12 @@
 name: negotiation-strategies
 description: BATNA, anchoring, interest-based negotiation, and cross-cultural negotiation
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["negotiation", "communication"]
+    tags: [negotiation, communication]
 ---
 
 # Negotiation Strategies

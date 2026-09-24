@@ -2,12 +2,12 @@
 name: plc-programming-ladder
 description: IEC 61131-3, ladder logic, structured text, function blocks, and safety PLCs
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["plc", "automation"]
+    tags: [plc, automation]
 ---
 
 # Plc Programming Ladder

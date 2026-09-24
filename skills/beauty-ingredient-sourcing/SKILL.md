@@ -1,14 +1,13 @@
 ---
 name: beauty-ingredient-sourcing
-description: "Use when sourcing beauty ingredients."
+description: Use when sourcing beauty ingredients.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, ingredients, sourcing, sustainability]
-    related_skills: [general]
 ---
 
 # Beauty Ingredient Sourcing

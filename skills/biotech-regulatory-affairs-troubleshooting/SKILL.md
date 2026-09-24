@@ -1,14 +1,13 @@
 ---
 name: biotech-regulatory-affairs-troubleshooting
-description: "Use when applying biotech regulatory affairs troubleshoo."
+description: Use when applying biotech regulatory affairs troubleshoo.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, regulatory, regulatory-affairs]
-    related_skills: [general]
 ---
 
 # Biotech Regulatory Affairs Troubleshooting

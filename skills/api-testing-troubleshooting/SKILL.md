@@ -1,14 +1,13 @@
 ---
 name: api-testing-troubleshooting
-description: "Use when applying api testing troubleshooting."
+description: Use when applying api testing troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [api, testing, contract, rest]
-    related_skills: [general]
 ---
 
 # Api Testing Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: crispr-base-editing-troubleshooting
-description: "Use when applying crispr base editing biotech troublesho."
+description: Use when applying crispr base editing biotech troublesho.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, bio]
-    related_skills: ['']
 ---
 
 # Crispr Base Editing Troubleshooting

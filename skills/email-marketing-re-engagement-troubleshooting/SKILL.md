@@ -1,14 +1,13 @@
 ---
 name: email-marketing-re-engagement-troubleshooting
-description: "Use when applying re-engagement email troubleshooting."
+description: Use when applying re-engagement email troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, re-engagement, engagement]
-    related_skills: [general]
 ---
 
 # Email Marketing Re Engagement Troubleshooting

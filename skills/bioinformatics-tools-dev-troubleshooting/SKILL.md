@@ -1,14 +1,13 @@
 ---
 name: bioinformatics-tools-dev-troubleshooting
-description: "Use when applying bioinformatics dev troubleshooting."
+description: Use when applying bioinformatics dev troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [bioinformatics, dev, development]
-    related_skills: [general]
 ---
 
 # Bioinformatics Tools Dev Troubleshooting

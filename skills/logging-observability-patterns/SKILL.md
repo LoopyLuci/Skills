@@ -1,13 +1,13 @@
 ---
 name: logging-observability-patterns
-description: "Use when implementing structured logging and observability."
+description: Use when implementing structured logging and observability.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [logging, observability, structured-logging, telemetry, monitoring]
-    related_skills: [debugging-techniques-advanced, performance-optimization, distributed-systems-patterns, service-mesh-patterns]
 ---
 
 # Logging Observability Patterns

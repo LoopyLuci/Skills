@@ -1,14 +1,13 @@
 ---
 name: docker-development
-description: "Use when building Docker containers."
+description: Use when building Docker containers.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, docker, containerization]
-    related_skills: [general]
 ---
 
 # Docker Development

@@ -1,14 +1,13 @@
 ---
 name: event-sourcing-best-practices
-description: "Use when applying event sourcing best practices."
+description: Use when applying event sourcing best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [architecture, event-sourcing, cqrs]
-    related_skills: [general]
 ---
 
 # Event Sourcing Best Practices

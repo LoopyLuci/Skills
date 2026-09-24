@@ -1,14 +1,13 @@
 ---
 name: datadog-monitoring-deep-best-practices
-description: "Use when applying datadog monitoring best practices."
+description: Use when applying datadog monitoring best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [sys, monitoring]
-    related_skills: ['datadog-monitoring']
 ---
 
 # Datadog Monitoring Deep Best Practices

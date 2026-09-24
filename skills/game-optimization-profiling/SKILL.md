@@ -2,12 +2,12 @@
 name: game-optimization-profiling
 description: GPU/CPU profiling, batching, LOD, occlusion culling, memory budgets, and frame pacing
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["optimization", "profiling"]
+    tags: [optimization, profiling]
 ---
 
 # Game Optimization Profiling

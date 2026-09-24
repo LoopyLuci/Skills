@@ -1,14 +1,13 @@
 ---
 name: fcra-compliance-troubleshooting
-description: "Use when applying fcra compliance troubleshooting."
+description: Use when applying fcra compliance troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [legal, us, fcra]
-    related_skills: [general]
 ---
 
 # Fcra Compliance Troubleshooting

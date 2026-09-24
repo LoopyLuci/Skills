@@ -1,13 +1,13 @@
 ---
 name: skill-maintenance-lifecycle
-description: "Use when maintaining and updating existing skills."
+description: Use when maintaining and updating existing skills.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [meta, skill-maintenance, lifecycle, updates, versioning, deprecation]
-    related_skills: [skill-quality-standards, skill-inventory-management, skill-testing-automation, skill-content-optimization]
 ---
 
 # Skill Maintenance Lifecycle

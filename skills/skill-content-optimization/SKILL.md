@@ -1,13 +1,13 @@
 ---
 name: skill-content-optimization
-description: "Use when optimizing skill content quality and density."
+description: Use when optimizing skill content quality and density.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [meta, skill-content, optimization, quality, density, readability]
-    related_skills: [skill-quality-standards, skill-blueprint-generator, skill-testing-automation, technical-writing-patterns]
 ---
 
 # Skill Content Optimization

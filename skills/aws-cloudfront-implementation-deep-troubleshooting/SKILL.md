@@ -1,14 +1,13 @@
 ---
 name: aws-cloudfront-implementation-deep-troubleshooting
-description: "Use when applying cloudfront implementation troubleshoot."
+description: Use when applying cloudfront implementation troubleshoot.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, cdn]
-    related_skills: ['aws-cloudfront-implementation']
 ---
 
 # Aws Cloudfront Implementation Deep Troubleshooting

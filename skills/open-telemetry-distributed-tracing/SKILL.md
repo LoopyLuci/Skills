@@ -1,13 +1,13 @@
 ---
 name: open-telemetry-distributed-tracing
-description: "Use when implementing OpenTelemetry for observability."
+description: Use when implementing OpenTelemetry for observability.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [OpenTelemetry, observability, tracing, metrics, logs, distributed-tracing]
-    related_skills: [site-reliability-engineering, logging-observability-patterns, model-monitoring-drift, incident-management-on-call]
+    tags: [opentelemetry, observability, tracing, metrics, logs, distributed-tracing]
 ---
 
 # OpenTelemetry and Distributed Tracing

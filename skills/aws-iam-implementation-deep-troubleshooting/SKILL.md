@@ -1,14 +1,13 @@
 ---
 name: aws-iam-implementation-deep-troubleshooting
-description: "Use when applying aws iam implementation troubleshooting."
+description: Use when applying aws iam implementation troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, aws]
-    related_skills: ['aws-iam-implementation']
 ---
 
 # Aws Iam Implementation Deep Troubleshooting

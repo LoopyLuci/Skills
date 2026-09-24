@@ -1,6 +1,13 @@
 ---
 name: p2p-lan-transfer
-description: "Peer to peer file transfer patterns for local networks"
+description: Peer to peer file transfer patterns for local networks
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [p2p, lan, transfer]
 ---
 
 # P2P LAN File Transfer

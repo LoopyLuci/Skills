@@ -1,14 +1,13 @@
 ---
 name: aws-well-architected-troubleshooting
-description: "Use when applying aws well-architected troubleshooting."
+description: Use when applying aws well-architected troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, well-architected, best-practices]
-    related_skills: [general]
 ---
 
 # Aws Well Architected Troubleshooting

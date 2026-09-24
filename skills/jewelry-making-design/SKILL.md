@@ -2,12 +2,12 @@
 name: jewelry-making-design
 description: Metalsmithing, beadwork, wire wrapping, and design
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["jewelry", "metalwork"]
+    tags: [jewelry, metalwork]
 ---
 
 # Jewelry Making Design

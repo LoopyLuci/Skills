@@ -1,14 +1,13 @@
 ---
 name: astrology-moon-phase-cycles
-description: "Use when tracking astrology moon phases."
+description: Use when tracking astrology moon phases.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [esoteric, moon-phases, lunar-cycles, astrology]
-    related_skills: [general]
 ---
 
 # Astrology Moon Phase Cycles

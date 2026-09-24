@@ -1,13 +1,13 @@
 ---
 name: error-budgets-slos
-description: "Use when implementing error budgets and SLO management."
+description: Use when implementing error budgets and SLO management.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [error-budget, SLO, SLI, reliability, burn-rate, alerting]
-    related_skills: [site-reliability-engineering, incident-management-on-call, chaos-engineering, open-telemetry-distributed-tracing]
+    tags: [error-budget, slo, sli, reliability, burn-rate, alerting]
 ---
 
 # Error Budgets and SLO Management

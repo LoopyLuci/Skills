@@ -1,14 +1,13 @@
 ---
 name: aws-compliance-audit
-description: "Use when auditing AWS compliance."
+description: Use when auditing AWS compliance.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, aws, compliance-audit]
-    related_skills: [general]
 ---
 
 # Aws Compliance Audit

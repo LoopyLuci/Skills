@@ -1,13 +1,13 @@
 ---
 name: zero-trust-network-architecture
-description: "Use when designing zero-trust network architecture patterns."
+description: Use when designing zero-trust network architecture patterns.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [zero-trust, network-security, segmentation, ZTA, architecture]
-    related_skills: [firewall-rules-engine, network-segmentation-strategies, vpn-tunnel-engine, wireguard-vpn-controller]
+    tags: [zero-trust, network-security, segmentation, zta, architecture]
 ---
 
 # Zero Trust Network Architecture

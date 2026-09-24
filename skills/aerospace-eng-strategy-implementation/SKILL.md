@@ -1,14 +1,13 @@
 ---
 name: aerospace-eng-strategy-implementation
-description: "Use when applying aerospace strategy implementation."
+description: Use when applying aerospace strategy implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, aerospace, strategy]
-    related_skills: [general]
 ---
 
 # Aerospace Eng Strategy Implementation

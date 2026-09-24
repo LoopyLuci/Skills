@@ -1,14 +1,13 @@
 ---
 name: construction-waste-reduction-best-practices
-description: "Use when applying construction waste reduction best prac."
+description: Use when applying construction waste reduction best prac.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [waste, construction]
-    related_skills: ['general']
 ---
 
 # Construction Waste Reduction Best Practices

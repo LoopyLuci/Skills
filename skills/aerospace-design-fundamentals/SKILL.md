@@ -1,14 +1,13 @@
 ---
 name: aerospace-design-fundamentals
-description: "Use when applying aerospace design fundamentals."
+description: Use when applying aerospace design fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aerospace, design, aerospace-eng-design]
-    related_skills: [general]
 ---
 
 # Aerospace Design Fundamentals

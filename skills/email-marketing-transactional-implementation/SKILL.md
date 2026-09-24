@@ -1,14 +1,13 @@
 ---
 name: email-marketing-transactional-implementation
-description: "Use when applying transactional email implementation."
+description: Use when applying transactional email implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, transactional, triggered]
-    related_skills: [general]
 ---
 
 # Email Marketing Transactional Implementation

@@ -2,12 +2,12 @@
 name: game-audio-design
 description: FMOD, Wwise, adaptive audio, spatial sound, dynamic music, and procedural audio
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["audio", "fm", "wwise"]
+    tags: [audio, fm, wwise]
 ---
 
 # Game Audio Design

@@ -1,14 +1,13 @@
 ---
 name: backend-golang-troubleshooting
-description: "Use when applying golang backend troubleshooting."
+description: Use when applying golang backend troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, golang, go, server]
-    related_skills: [general]
 ---
 
 # Backend Golang Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: fashion-tech-events-fundamentals
-description: "Use when applying fashion tech events fundamentals."
+description: Use when applying fashion tech events fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, events, event-planning]
-    related_skills: ['general']
 ---
 
 # Fashion Tech Events Fundamentals

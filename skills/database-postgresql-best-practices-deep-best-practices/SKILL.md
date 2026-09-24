@@ -1,14 +1,13 @@
 ---
 name: database-postgresql-best-practices-deep-best-practices
-description: "Use when applying postgresql best practices best practices."
+description: Use when applying postgresql best practices best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, postgres]
-    related_skills: ['postgres-best-practices']
 ---
 
 # Database Postgresql Best Practices Deep Best Practices

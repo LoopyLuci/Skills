@@ -1,14 +1,13 @@
 ---
 name: anesthesia
-description: "Use when administering anesthesia."
+description: Use when administering anesthesia.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [healthcare, anesthesia, anesthesiology-fundamentals]
-    related_skills: [general]
 ---
 
 # Anesthesia

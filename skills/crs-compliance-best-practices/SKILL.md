@@ -1,14 +1,13 @@
 ---
 name: crs-compliance-best-practices
-description: "Use when applying crs best practices."
+description: Use when applying crs best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, tax, crs]
-    related_skills: [general]
 ---
 
 # Crs Compliance Best Practices

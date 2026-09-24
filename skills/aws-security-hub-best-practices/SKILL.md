@@ -1,14 +1,13 @@
 ---
 name: aws-security-hub-best-practices
-description: "Use when applying aws security hub best practices."
+description: Use when applying aws security hub best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, security-hub, security-center]
-    related_skills: [general]
 ---
 
 # Aws Security Hub Best Practices

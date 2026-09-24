@@ -1,14 +1,13 @@
 ---
 name: corporate-training-design
-description: "Use when designing corporate training."
+description: Use when designing corporate training.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: ['t', 'r', 'a', 'i', 'n', 'i', 'n', 'g', ',', ' ', 'i', 'n', 's', 't', 'r', 'u', 'c', 't', 'i', 'o', 'n', 'a', 'l', '-', 'd', 'e', 's', 'i', 'g', 'n']
-    related_skills: [general]
+    tags: [t, r, a, i, n, i, n, g, , ,  , i, n, s, t, r, u, c, t, i, o, n, a, l, -, d, e, s, i, g, n]
 ---
 
 # Corporate Training Design

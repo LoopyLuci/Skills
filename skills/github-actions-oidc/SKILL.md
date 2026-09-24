@@ -1,6 +1,13 @@
 ---
 name: github-actions-oidc
 description: Authenticate to clouds via OIDC without static secrets.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [github, actions, oidc]
 ---
 
 # GitHub Actions OIDC

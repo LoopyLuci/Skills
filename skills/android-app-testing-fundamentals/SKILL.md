@@ -1,14 +1,13 @@
 ---
 name: android-app-testing-fundamentals
-description: "Use when applying android app testing fundamentals."
+description: Use when applying android app testing fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [android, mobile, testing, android-jetpack-compose]
-    related_skills: [general]
 ---
 
 # Android App Testing Fundamentals

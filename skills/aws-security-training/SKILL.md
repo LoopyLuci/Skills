@@ -1,14 +1,13 @@
 ---
 name: aws-security-training
-description: "Use when training AWS security."
+description: Use when training AWS security.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, aws, security-awareness-best-practices]
-    related_skills: [general]
 ---
 
 # Aws Security Training

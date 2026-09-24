@@ -1,14 +1,13 @@
 ---
 name: conservation-management
-description: "Use when managing conservation operations."
+description: Use when managing conservation operations.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [conservation, biodiversity, protection, sustainability]
-    related_skills: [general]
 ---
 
 # Conservation Management

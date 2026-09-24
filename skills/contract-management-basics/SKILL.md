@@ -1,13 +1,13 @@
 ---
 name: contract-management-basics
-description: "Use when managing contracts and agreements."
+description: Use when managing contracts and agreements.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [contract-management, agreements, terms, signatures, renewals, legal-ops]
-    related_skills: [vendor-management-procurement, legal-compliance-business, business-insurance-guide, financial-modeling-budgeting]
 ---
 
 # Contract Management Basics

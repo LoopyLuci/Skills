@@ -1,13 +1,13 @@
 ---
 name: data-visualization-practices
-description: "Use when implementing data visualization and dashboards."
+description: Use when implementing data visualization and dashboards.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [data-visualization, charts, D3, dashboards, BI, dashboard-design, storytelling]
-    related_skills: [website-analytics-tracking, business-metrics-kpis, saas-metrics-reporting, marketing-analytics-dashboard]
+    tags: [data-visualization, charts, d3, dashboards, bi, dashboard-design, storytelling]
 ---
 
 # Data Visualization Practices

@@ -1,14 +1,13 @@
 ---
 name: computational-neuroscience-implementation
-description: "Use when applying computational neuroscience implementat."
+description: Use when applying computational neuroscience implementat.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neurotech, neuroscience-computational]
-    related_skills: [general]
 ---
 
 # Computational Neuroscience Implementation

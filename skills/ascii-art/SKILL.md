@@ -1,16 +1,13 @@
 ---
 name: ascii-art
-description: "ASCII art: pyfiglet, cowsay, boxes, image-to-ascii."
-version: 4.0.0
-author: 0xbyt4, Hermes Agent
+description: ASCII art: pyfiglet, cowsay, boxes, image-to-ascii.
+version: 1.0.0
+author: LoopyLuci Community
 license: MIT
-dependencies: []
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: [ASCII, Art, Banners, Creative, Unicode, Text-Art, pyfiglet, figlet, cowsay, boxes]
-    related_skills: [excalidraw]
-
+    tags: [ascii, art, banners, creative, unicode, text-art, pyfiglet, figlet, cowsay, boxes]
 ---
 
 # ASCII Art Skill

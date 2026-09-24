@@ -1,14 +1,13 @@
 ---
 name: data-mining-fundamentals
-description: "Use when applying data mining fundamentals."
+description: Use when applying data mining fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, mining, data-mining]
-    related_skills: [general]
 ---
 
 # Data Mining Fundamentals

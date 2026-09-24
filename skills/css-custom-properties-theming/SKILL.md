@@ -1,12 +1,13 @@
 ---
 name: css-custom-properties-theming
-description: "Use when implementing CSS theming."
+description: Use when implementing CSS theming.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["css", "custom-properties", "theming", "dark-mode"]
+    tags: [css, custom-properties, theming, dark-mode]
 ---
 
 # Css Custom Properties Theming

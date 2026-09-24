@@ -1,14 +1,13 @@
 ---
 name: email-marketing-segments-troubleshooting
-description: "Use when applying email segments troubleshooting."
+description: Use when applying email segments troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, segmentation, targeting]
-    related_skills: [general]
 ---
 
 # Email Marketing Segments Troubleshooting

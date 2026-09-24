@@ -1,8 +1,13 @@
 ---
 name: docker-volume-backup-restore
-description: "Use when backing up or restoring Docker volumes."
-category: docker
-tags: [docker, volumes, backup, restore, data]
+description: Use when backing up or restoring Docker volumes.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [docker, volumes, backup, restore, data]
 ---
 
 # Docker Volume Backup & Restore

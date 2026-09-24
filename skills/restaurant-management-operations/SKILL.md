@@ -2,12 +2,12 @@
 name: restaurant-management-operations
 description: Kitchen management, front-of-house, inventory, and labor scheduling
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["restaurant", "operations"]
+    tags: [restaurant, operations]
 ---
 
 # Restaurant Management Operations

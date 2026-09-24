@@ -1,14 +1,13 @@
 ---
 name: customer-success-analysis-deep-implementation
-description: "Use when applying customer success analysis implementation."
+description: Use when applying customer success analysis implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [sales, customer-success-analysis]
-    related_skills: ['']
 ---
 
 # Customer Success Analysis Deep Implementation

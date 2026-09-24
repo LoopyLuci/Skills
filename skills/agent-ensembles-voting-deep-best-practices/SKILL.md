@@ -1,14 +1,13 @@
 ---
 name: agent-ensembles-voting-deep-best-practices
-description: "Use when applying agent ensemble voting best practices."
+description: Use when applying agent ensemble voting best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agents, ensembles]
-    related_skills: ['agent-ensembles-voting']
 ---
 
 # Agent Ensembles Voting Deep Best Practices

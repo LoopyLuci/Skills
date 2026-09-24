@@ -1,14 +1,13 @@
 ---
 name: backend-nodejs-implementation-deep-fundamentals
-description: "Use when applying node.js backend implementation fundame."
+description: Use when applying node.js backend implementation fundame.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, nodejs]
-    related_skills: ['backend-nodejs-implementation']
 ---
 
 # Backend Nodejs Implementation Deep Fundamentals

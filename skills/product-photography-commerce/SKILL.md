@@ -2,12 +2,12 @@
 name: product-photography-commerce
 description: Lighting, backgrounds, lifestyle vs. packshot, and e-commerce standards
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["product", "commerce"]
+    tags: [product, commerce]
 ---
 
 # Product Photography Commerce

@@ -1,14 +1,13 @@
 ---
 name: continuous-processing-fundamentals
-description: "Use when applying continuous processing fundamentals."
+description: Use when applying continuous processing fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mfg, continuous, continuous-process-control]
-    related_skills: [general]
 ---
 
 # Continuous Processing Fundamentals

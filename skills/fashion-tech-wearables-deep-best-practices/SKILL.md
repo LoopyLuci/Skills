@@ -1,14 +1,13 @@
 ---
 name: fashion-tech-wearables-deep-best-practices
-description: "Use when applying fashion tech wearables best practices."
+description: Use when applying fashion tech wearables best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, wearables]
-    related_skills: ['']
 ---
 
 # Fashion Tech Wearables Deep Best Practices

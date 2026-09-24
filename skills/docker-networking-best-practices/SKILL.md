@@ -1,14 +1,13 @@
 ---
 name: docker-networking-best-practices
-description: "Use when applying docker networking best practices."
+description: Use when applying docker networking best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [docker, networking, docker-networking-troubleshoot]
-    related_skills: [general]
 ---
 
 # Docker Networking Best Practices

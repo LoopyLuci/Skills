@@ -1,14 +1,13 @@
 ---
 name: aws-eks-troubleshooting-best-practices
-description: "Use when applying aws eks troubleshooting best practices."
+description: Use when applying aws eks troubleshooting best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, eks]
-    related_skills: ['aws-eks-troubleshooting']
 ---
 
 # Aws Eks Troubleshooting Best Practices

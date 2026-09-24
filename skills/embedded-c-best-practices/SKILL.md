@@ -1,14 +1,13 @@
 ---
 name: embedded-c-best-practices
-description: "Use when applying c for embedded best practices."
+description: Use when applying c for embedded best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [embedded, c, microcontroller, firmware]
-    related_skills: [general]
 ---
 
 # Embedded C Best Practices

@@ -1,12 +1,13 @@
 ---
 name: color-theory-accessibility
-description: "Use when implementing color accessibility."
+description: Use when implementing color accessibility.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["color-theory", "contrast", "WCAG", "accessibility"]
+    tags: [color-theory, contrast, wcag, accessibility]
 ---
 
 # Color Theory Accessibility

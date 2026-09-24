@@ -1,14 +1,13 @@
 ---
 name: bioinformatics-management-implementation
-description: "Use when applying bioinfo management implementation."
+description: Use when applying bioinfo management implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [medicine, bioinfo, bioinformatics-management]
-    related_skills: [general]
 ---
 
 # Bioinformatics Management Implementation

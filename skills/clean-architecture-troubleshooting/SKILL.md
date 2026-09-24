@@ -1,14 +1,13 @@
 ---
 name: clean-architecture-troubleshooting
-description: "Use when applying clean architecture troubleshooting."
+description: Use when applying clean architecture troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [architecture, clean-architecture, hexagons]
-    related_skills: [general]
 ---
 
 # Clean Architecture Troubleshooting

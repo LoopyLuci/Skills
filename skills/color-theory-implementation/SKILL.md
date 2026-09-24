@@ -1,14 +1,13 @@
 ---
 name: color-theory-implementation
-description: "Use when applying color theory implementation."
+description: Use when applying color theory implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [design, color, color-theory-accessibility]
-    related_skills: [general]
 ---
 
 # Color Theory Implementation

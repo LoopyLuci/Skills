@@ -1,14 +1,13 @@
 ---
 name: accounting-forecasting-best-practices
-description: "Use when applying accounting forecasting best practices."
+description: Use when applying accounting forecasting best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, accounting-analysis]
-    related_skills: ['']
 ---
 
 # Accounting Forecasting Best Practices

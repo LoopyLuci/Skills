@@ -1,9 +1,13 @@
 ---
 name: ml-threat-detection
-title: ML Threat Detection
 description: Use when running ML models for network threat detection.
-category: networking
-tags: [ml, threat, detection, model, inference, candle, rust]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [ml, threat, detection, model, inference, candle, rust]
 ---
 
 # ML Threat Detection

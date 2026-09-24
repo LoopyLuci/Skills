@@ -2,12 +2,12 @@
 name: social-entrepreneurship
 description: Social enterprise models, impact measurement, scaling, and hybrid organizations
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["social-enterprise", "impact"]
+    tags: [social-enterprise, impact]
 ---
 
 # Social Entrepreneurship

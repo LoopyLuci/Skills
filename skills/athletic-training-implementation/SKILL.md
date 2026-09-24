@@ -1,14 +1,13 @@
 ---
 name: athletic-training-implementation
-description: "Use when applying athletic training implementation."
+description: Use when applying athletic training implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [sports, training, athlete]
-    related_skills: [general]
 ---
 
 # Athletic Training Implementation

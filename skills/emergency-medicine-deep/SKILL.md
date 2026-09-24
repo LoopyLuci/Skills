@@ -1,14 +1,13 @@
 ---
 name: emergency-medicine-deep
-description: "Use when practicing emergency medicine."
+description: Use when practicing emergency medicine.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [healthcare, emergency, emergency-medicine]
-    related_skills: [general]
 ---
 
 # Emergency Medicine Deep

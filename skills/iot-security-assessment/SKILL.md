@@ -2,12 +2,12 @@
 name: iot-security-assessment
 description: Firmware analysis, UART/SPI sniffing, Zigbee/BLE attacks, and IoT hardening
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["iot", "embedded"]
+    tags: [iot, embedded]
 ---
 
 # Iot Security Assessment

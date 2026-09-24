@@ -1,7 +1,13 @@
 ---
 name: ascii-video
-description: "ASCII video: convert video/audio to colored ASCII MP4/GIF."
-platforms: [linux, macos, windows]
+description: ASCII video: convert video/audio to colored ASCII MP4/GIF.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [ascii, video]
 ---
 
 # ASCII Video Production Pipeline

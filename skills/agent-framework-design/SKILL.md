@@ -1,9 +1,15 @@
 ---
 name: agent-framework-design
-description: "Use when building custom AI agent frameworks."
-category: mlops
-tags: [agents, framework, design, ai, llm, tool-use]
+description: Use when building custom AI agent frameworks.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [agents, framework, design, ai, llm, tool-use]
 ---
+
 # Agent Framework Design
 
 Designing and building custom AI agent frameworks.

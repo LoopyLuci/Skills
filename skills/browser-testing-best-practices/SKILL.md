@@ -1,14 +1,13 @@
 ---
 name: browser-testing-best-practices
-description: "Use when applying browser testing best practices."
+description: Use when applying browser testing best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [testing, browser, selenium, playwright]
-    related_skills: [general]
 ---
 
 # Browser Testing Best Practices

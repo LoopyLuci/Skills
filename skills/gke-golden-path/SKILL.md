@@ -1,12 +1,13 @@
 ---
-
 name: gke-golden-path
-description: >-
-source: google/skills
-tags: [gcp, gke, kubernetes, google-cloud, container]
-metadata: 
-hermes: 
-
+description: Skill for gke golden path
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [gcp, gke, kubernetes, google-cloud, container]
 ---
 
 **Trigger**: Use when working with GKE Golden Path — Google Kubernetes Engine configuration and management.

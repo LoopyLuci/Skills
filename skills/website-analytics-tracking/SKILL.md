@@ -1,13 +1,13 @@
 ---
 name: website-analytics-tracking
-description: "Use when setting up website analytics and tracking systems."
+description: Use when setting up website analytics and tracking systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [analytics, tracking, google-analytics, dashboards, metrics, GA4, event-tracking]
-    related_skills: [seo-search-engine-optimization, cms-website-management, digital-marketing-strategy, conversion-rate-optimization]
+    tags: [analytics, tracking, google-analytics, dashboards, metrics, ga4, event-tracking]
 ---
 
 # Website Analytics Tracking

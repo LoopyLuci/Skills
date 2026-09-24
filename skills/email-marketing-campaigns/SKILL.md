@@ -1,13 +1,13 @@
 ---
 name: email-marketing-campaigns
-description: "Use when building and managing email marketing campaigns."
+description: Use when building and managing email marketing campaigns.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [email-marketing, campaigns, newsletters, automation, deliverability]
-    related_skills: [crm-sales-pipeline, marketing-funnel-design, social-media-content-planning, digital-marketing-strategy]
 ---
 
 # Email Marketing Campaigns

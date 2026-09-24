@@ -1,14 +1,13 @@
 ---
 name: banking-insurance-tech-fundamentals
-description: "Use when applying banking insurance tech fundamentals."
+description: Use when applying banking insurance tech fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, insurance, insurance-tech]
-    related_skills: [general]
 ---
 
 # Banking Insurance Tech Fundamentals

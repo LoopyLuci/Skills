@@ -1,9 +1,13 @@
 ---
 name: gpu-packet-classifier
-title: GPU Packet Classifier
 description: Use when offloading packet classification to GPU compute.
-category: networking
-tags: [gpu, packet, classify, compute, wgpu, rocm]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [gpu, packet, classify, compute, wgpu, rocm]
 ---
 
 # GPU Packet Classifier

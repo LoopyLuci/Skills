@@ -1,8 +1,13 @@
 ---
 name: minimalist-review
 description: Use when reviewing decisions through minimalist entrepreneur lens
-tags: [decision-making, review, minimalist, business-strategy]
-related_skills: [grow-sustainably, company-values, validate-idea]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [decision-making, review, minimalist, business-strategy]
 ---
 
 # Minimalist Review

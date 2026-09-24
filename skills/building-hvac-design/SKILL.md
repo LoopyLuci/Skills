@@ -1,14 +1,13 @@
 ---
 name: building-hvac-design
-description: "Use when designing building HVAC systems."
+description: Use when designing building HVAC systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [construction, hvac, heating-cooling, mechanical]
-    related_skills: [building-energy-efficiency]
 ---
 
 # Building Hvac Design

@@ -1,14 +1,13 @@
 ---
 name: faith-outreach-fundamentals
-description: "Use when applying faith outreach fundamentals."
+description: Use when applying faith outreach fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [religion, community, faith-community-outreach]
-    related_skills: [general]
 ---
 
 # Faith Outreach Fundamentals

@@ -2,12 +2,12 @@
 name: glass-bead-fusing
 description: Glass fusing, bead making, and stained glass
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["glass", "fusing"]
+    tags: [glass, fusing]
 ---
 
 # Glass Bead Fusing

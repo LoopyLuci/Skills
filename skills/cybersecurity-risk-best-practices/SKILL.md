@@ -1,14 +1,13 @@
 ---
 name: cybersecurity-risk-best-practices
-description: "Use when for cybersecurity risk best practices."
+description: Use when for cybersecurity risk best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, risk, cyber-risk, assessment]
-    related_skills: [general]
 ---
 
 # Cybersecurity Risk Best Practices

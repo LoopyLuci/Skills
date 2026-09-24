@@ -1,14 +1,13 @@
 ---
 name: data-streaming-analytics
-description: "Use when analyzing streaming data."
+description: Use when analyzing streaming data.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data-science, streaming, real-time-analytics, kafka]
-    related_skills: ['kafka-producer-consumer']
 ---
 
 # Data Streaming Analytics

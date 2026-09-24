@@ -1,14 +1,13 @@
 ---
 name: code-review-checklist
-description: "Use for code review. Correctness, security, performance."
-version: 1.1.0
-author: Hermes Agent
+description: Use for code review. Correctness, security, performance.
+version: 1.0.0
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [programming, code-review, pr-review, quality, best-practices, security]
-    related_skills: [refactoring-playbook, debugging-workflow, performance-profiling]
 ---
 
 # Code Review Checklist

@@ -2,12 +2,12 @@
 name: real-estate-finance-investment
 description: Cap rates, cash-on-cash, IRR, deal structuring, and syndication
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["finance", "investment"]
+    tags: [finance, investment]
 ---
 
 # Real Estate Finance Investment

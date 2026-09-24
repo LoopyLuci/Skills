@@ -1,14 +1,13 @@
 ---
 name: construction-tech-ctech
-description: "Use when applying construction technology."
+description: Use when applying construction technology.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [construction, construction-tech, ctech, proptech]
-    related_skills: [general]
 ---
 
 # Construction Tech Ctech

@@ -1,14 +1,13 @@
 ---
 name: electronic-data-capture-fundamentals
-description: "Use when applying edc fundamentals."
+description: Use when applying edc fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, medicine, edc]
-    related_skills: [general]
 ---
 
 # Electronic Data Capture Fundamentals

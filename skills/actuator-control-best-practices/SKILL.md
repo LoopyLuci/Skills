@@ -1,14 +1,13 @@
 ---
 name: actuator-control-best-practices
-description: "Use when applying actuator control best practices."
+description: Use when applying actuator control best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [electronics, control, actuators]
-    related_skills: [general]
 ---
 
 # Actuator Control Best Practices

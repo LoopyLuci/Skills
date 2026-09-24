@@ -1,14 +1,13 @@
 ---
 name: embedded-coap-implementation
-description: "Use when applying coap for embedded implementation."
+description: Use when applying coap for embedded implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [embedded, coap, iot, protocols]
-    related_skills: [general]
 ---
 
 # Embedded Coap Implementation

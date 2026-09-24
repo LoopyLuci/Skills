@@ -1,13 +1,13 @@
 ---
 name: sdn-software-defined-networking
-description: "Use when implementing SDN and network virtualization."
+description: Use when implementing SDN and network virtualization.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [sdn, openflow, network-virtualization, SDN-controller, network-programmability]
-    related_skills: [network-automation-scripting, container-networking-patterns, bgp-routing-patterns, terraform-module-patterns]
+    tags: [sdn, openflow, network-virtualization, sdn-controller, network-programmability]
 ---
 
 # Sdn Software Defined Networking

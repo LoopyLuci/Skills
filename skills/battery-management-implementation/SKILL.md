@@ -1,14 +1,13 @@
 ---
 name: battery-management-implementation
-description: "Use when applying battery management implementation."
+description: Use when applying battery management implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [electronics, battery, battery-management-systems]
-    related_skills: [general]
 ---
 
 # Battery Management Implementation

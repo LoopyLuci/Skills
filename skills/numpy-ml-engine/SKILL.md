@@ -1,10 +1,13 @@
 ---
 name: numpy-ml-engine
-description: "Build ML models from scratch in NumPy for apps."
+description: Build ML models from scratch in NumPy for apps.
 version: 1.0.0
-author: Hermes Agent
-tags: [numpy, ml, neural-networks, from-scratch, models]
-related_skills: [pyqt5-desktop-dev]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [numpy, ml, neural-networks, from-scratch, models]
 ---
 
 # NumPy ML Engine — Build Models From Scratch

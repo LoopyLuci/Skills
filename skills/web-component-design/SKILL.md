@@ -1,13 +1,13 @@
 ---
 name: web-component-design
-description: "Use when building reusable web components."
+description: Use when building reusable web components.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [web-components, custom-elements, shadow-DOM, HTML-templates, reusable]
-    related_skills: [frontend-bootstrap, responsive-web-design-patterns, graphql-client-patterns, web-accessibility-practices]
+    tags: [web-components, custom-elements, shadow-dom, html-templates, reusable]
 ---
 
 # Web Component Design

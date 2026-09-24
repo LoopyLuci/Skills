@@ -1,9 +1,13 @@
 ---
 name: sympy-symbolic-mathematics
-description: "Use when doing symbolic math with SymPy."
+description: Use when doing symbolic math with SymPy.
 version: 1.0.0
-author: Hermes Agent
-tags: ["sympy", "symbolic", "equations", "calculus", "algebra"]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [sympy, symbolic, equations, calculus, algebra]
 ---
 
 # Sympy Symbolic Mathematics

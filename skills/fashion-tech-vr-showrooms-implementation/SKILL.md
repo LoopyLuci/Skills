@@ -1,14 +1,13 @@
 ---
 name: fashion-tech-vr-showrooms-implementation
-description: "Use when applying fashion vr showrooms implementation."
+description: Use when applying fashion vr showrooms implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, beauty]
-    related_skills: ['']
 ---
 
 # Fashion Tech Vr Showrooms Implementation

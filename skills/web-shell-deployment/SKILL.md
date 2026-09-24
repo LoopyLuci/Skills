@@ -1,13 +1,13 @@
 ---
 name: web-shell-deployment
-description: "Use when deploying web shells on compromised servers."
+description: Use when deploying web shells on compromised servers.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [web-shell, backdoor, webserver, PHP, ASPX, JSP, file-upload, RCE]
-    related_skills: [privilege-escalation-techniques, lateral-movement-pivoting, evasion-techniques-av-bypass, port-redirection-tunneling]
+    tags: [web-shell, backdoor, webserver, php, aspx, jsp, file-upload, rce]
 ---
 
 # Web Shell Deployment

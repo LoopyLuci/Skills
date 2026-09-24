@@ -1,6 +1,13 @@
 ---
 name: database-migration-patterns
-description: "Safe schema migrations alembic rollback zero downtime"
+description: Safe schema migrations alembic rollback zero downtime
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [database, migration, patterns]
 ---
 
 # Database Migration Patterns
@@ -25,3 +32,16 @@ alembic downgrade -1
 4. Add NOT NULL constraint
 5. Deploy app (reads from new column)
 6. Drop old column
+
+## Trigger
+
+Activate this skill when the user mentions:
+- database, migration, patterns workflows or issues
+- Building, fixing, or optimizing database migration patterns
+
+
+## Core Concepts
+
+- Domain fundamentals and best practices
+- Key tools and methodologies
+- Quality standards and common patterns

@@ -1,14 +1,13 @@
 ---
 name: crypto-trading-tech-implementation
-description: "Use when applying crypto trading tech implementation."
+description: Use when applying crypto trading tech implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, crypto, crypto-trading]
-    related_skills: [general]
 ---
 
 # Crypto Trading Tech Implementation

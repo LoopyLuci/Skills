@@ -1,14 +1,13 @@
 ---
 name: composite-materials-troubleshooting
-description: "Use when applying composite materials troubleshooting."
+description: Use when applying composite materials troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [materials, composite, composite-materials-design]
-    related_skills: [general]
 ---
 
 # Composite Materials Troubleshooting

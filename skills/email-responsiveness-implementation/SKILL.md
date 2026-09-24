@@ -1,14 +1,13 @@
 ---
 name: email-responsiveness-implementation
-description: "Use when applying email responsiveness implementation."
+description: Use when applying email responsiveness implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, design, responsive]
-    related_skills: [general]
 ---
 
 # Email Responsiveness Implementation

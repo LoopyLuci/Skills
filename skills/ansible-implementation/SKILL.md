@@ -1,14 +1,13 @@
 ---
 name: ansible-implementation
-description: "Use when applying ansible implementation."
+description: Use when applying ansible implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, ansible, automation, playbooks]
-    related_skills: [general]
 ---
 
 # Ansible Implementation

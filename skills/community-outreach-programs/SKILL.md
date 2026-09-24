@@ -1,14 +1,13 @@
 ---
 name: community-outreach-programs
-description: "Use when designing community outreach programs."
+description: Use when designing community outreach programs.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [nonprofit, community-outreach, engagement, social]
-    related_skills: [general]
 ---
 
 # Community Outreach Programs

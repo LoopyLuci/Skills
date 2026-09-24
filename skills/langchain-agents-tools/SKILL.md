@@ -1,12 +1,13 @@
 ---
 name: langchain-agents-tools
-description: "Use when building LangChain agents."
+description: Use when building LangChain agents.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["langchain", "agents", "tools", "reAct", "tool-use"]
+    tags: [langchain, agents, tools, react, tool-use]
 ---
 
 # Langchain Agents Tools

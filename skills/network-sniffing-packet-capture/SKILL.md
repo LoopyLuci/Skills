@@ -1,13 +1,13 @@
 ---
 name: network-sniffing-packet-capture
-description: "Use when sniffing networks and analyzing packet captures."
+description: Use when sniffing networks and analyzing packet captures.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [network-sniffing, tcpdump, Wireshark, pcap, packet-analysis, ARP-spoof]
-    related_skills: [network-forensics-analysis, packet-capture-engine, network-scanning-enumeration, traffic-analyzer]
+    tags: [network-sniffing, tcpdump, wireshark, pcap, packet-analysis, arp-spoof]
 ---
 
 # Network Sniffing and Packet Capture

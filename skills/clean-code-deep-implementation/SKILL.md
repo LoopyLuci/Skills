@@ -1,14 +1,13 @@
 ---
 name: clean-code-deep-implementation
-description: "Use when applying clean code principles implementation."
+description: Use when applying clean code principles implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [programming, best-practices]
-    related_skills: ['clean-code-principles']
 ---
 
 # Clean Code Deep Implementation

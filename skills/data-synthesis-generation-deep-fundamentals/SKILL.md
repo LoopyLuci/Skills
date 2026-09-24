@@ -1,14 +1,13 @@
 ---
 name: data-synthesis-generation-deep-fundamentals
-description: "Use when applying data synthesis fundamentals."
+description: Use when applying data synthesis fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, data]
-    related_skills: ['data-synthesis-generation']
 ---
 
 # Data Synthesis Generation Deep Fundamentals

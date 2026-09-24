@@ -1,14 +1,13 @@
 ---
 name: crisis-management-planning
-description: "Use when planning crisis response."
+description: Use when planning crisis response.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: ['c', 'r', 'i', 's', 'i', 's', '-', 'm', 'a', 'n', 'a', 'g', 'e', 'm', 'e', 'n', 't', ',', ' ', 'e', 'm', 'e', 'r', 'g', 'e', 'n', 'c', 'y']
-    related_skills: ['emergency-management']
+    tags: [c, r, i, s, i, s, -, m, a, n, a, g, e, m, e, n, t, , ,  , e, m, e, r, g, e, n, c, y]
 ---
 
 # Crisis Management Planning

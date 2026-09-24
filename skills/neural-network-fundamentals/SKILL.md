@@ -1,9 +1,15 @@
 ---
 name: neural-network-fundamentals
-description: "Use when designing neural network architectures."
-category: mlops
-tags: [neural-networks, deep-learning, architecture, layers]
+description: Use when designing neural network architectures.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [neural-networks, deep-learning, architecture, layers]
 ---
+
 # Neural Network Fundamentals
 
 Core neural network concepts: layers, backpropagation, architectures.

@@ -1,14 +1,13 @@
 ---
 name: alternative-medicine-fundamentals
-description: "Use when applying alternative medicine fundamentals."
+description: Use when applying alternative medicine fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [healthcare, alternative, medicine]
-    related_skills: [general]
 ---
 
 # Alternative Medicine Fundamentals

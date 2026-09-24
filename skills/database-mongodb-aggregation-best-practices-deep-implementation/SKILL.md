@@ -1,14 +1,13 @@
 ---
 name: database-mongodb-aggregation-best-practices-deep-implementation
-description: "Use when applying mongodb aggregation implementation."
+description: Use when applying mongodb aggregation implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, mongodb]
-    related_skills: ['mongodb-aggregation-best-practices']
 ---
 
 # Database Mongodb Aggregation Best Practices Deep Implementation

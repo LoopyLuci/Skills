@@ -1,14 +1,13 @@
 ---
 name: aws-rds-troubleshooting-troubleshooting
-description: "Use when applying aws rds troubleshooting troubleshooting."
+description: Use when applying aws rds troubleshooting troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, rds]
-    related_skills: ['aws-rds-troubleshooting']
 ---
 
 # Aws Rds Troubleshooting Troubleshooting

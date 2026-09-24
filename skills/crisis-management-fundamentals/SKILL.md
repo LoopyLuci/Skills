@@ -1,14 +1,13 @@
 ---
 name: crisis-management-fundamentals
-description: "Use when for crisis management fundamentals."
+description: Use when for crisis management fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, management, general]
-    related_skills: [general]
 ---
 
 # Crisis Management Fundamentals

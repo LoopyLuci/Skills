@@ -1,14 +1,13 @@
 ---
 name: ai-alignment-best-practices
-description: "Use when for ai alignment best practices."
+description: Use when for ai alignment best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ai, alignment, safety, ethics]
-    related_skills: [general]
 ---
 
 # Ai Alignment Best Practices

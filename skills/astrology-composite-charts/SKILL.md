@@ -1,14 +1,13 @@
 ---
 name: astrology-composite-charts
-description: "Use when creating composite astrology charts."
+description: Use when creating composite astrology charts.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [esoteric, composite-charts, relationship-astrology]
-    related_skills: [general]
 ---
 
 # Astrology Composite Charts

@@ -1,14 +1,13 @@
 ---
 name: aviation-helicopter-troubleshooting
-description: "Use when applying helicopter ops troubleshooting."
+description: Use when applying helicopter ops troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, helicopter, rotorcraft]
-    related_skills: ['general']
 ---
 
 # Aviation Helicopter Troubleshooting

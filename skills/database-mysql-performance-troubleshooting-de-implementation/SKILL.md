@@ -1,14 +1,13 @@
 ---
 name: database-mysql-performance-troubleshooting-de-implementation
-description: "Use when applying mysql performance troubleshooting impl."
+description: Use when applying mysql performance troubleshooting impl.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, mysql]
-    related_skills: ['mysql-optimization-troubleshooting']
 ---
 
 # Database Mysql Performance Troubleshooting De Implementation

@@ -1,14 +1,13 @@
 ---
 name: beneficial-ownership-troubleshooting
-description: "Use when applying beneficial ownership troubleshooting."
+description: Use when applying beneficial ownership troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, legal, beneficial-ownership]
-    related_skills: [general]
 ---
 
 # Beneficial Ownership Troubleshooting

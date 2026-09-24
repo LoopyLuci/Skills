@@ -1,14 +1,13 @@
 ---
 name: biotech-bioreactor-implementation
-description: "Use when applying bioreactor design implementation."
+description: Use when applying bioreactor design implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, bioreactor]
-    related_skills: ['']
 ---
 
 # Biotech Bioreactor Implementation

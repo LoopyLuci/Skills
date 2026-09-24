@@ -2,12 +2,12 @@
 name: mastering-audio-finalization
 description: Limiting, stereo imaging, loudness standards, and delivery formats
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["mastering", "loudness"]
+    tags: [mastering, loudness]
 ---
 
 # Mastering Audio Finalization

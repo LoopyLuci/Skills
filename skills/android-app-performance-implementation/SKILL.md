@@ -1,14 +1,13 @@
 ---
 name: android-app-performance-implementation
-description: "Use when applying android app performance implementation."
+description: Use when applying android app performance implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [android, mobile, performance, android-app-performance]
-    related_skills: [general]
 ---
 
 # Android App Performance Implementation

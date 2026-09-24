@@ -1,14 +1,13 @@
 ---
 name: executive-coaching-methods
-description: "Use when applying executive coaching."
+description: Use when applying executive coaching.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: ['c', 'o', 'a', 'c', 'h', 'i', 'n', 'g', ',', ' ', 'l', 'e', 'a', 'd', 'e', 'r', 's', 'h', 'i', 'p']
-    related_skills: [general]
+    tags: [c, o, a, c, h, i, n, g, , ,  , l, e, a, d, e, r, s, h, i, p]
 ---
 
 # Executive Coaching Methods

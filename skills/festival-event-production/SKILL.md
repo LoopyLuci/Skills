@@ -2,12 +2,12 @@
 name: festival-event-production
 description: Large-scale event production, staging, and crowd management
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["festival", "production"]
+    tags: [festival, production]
 ---
 
 # Festival Event Production

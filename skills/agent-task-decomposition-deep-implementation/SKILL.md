@@ -1,14 +1,13 @@
 ---
 name: agent-task-decomposition-deep-implementation
-description: "Use when applying agent task decomposition implementation."
+description: Use when applying agent task decomposition implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agents, tasks]
-    related_skills: ['agent-task-decomposition']
 ---
 
 # Agent Task Decomposition Deep Implementation

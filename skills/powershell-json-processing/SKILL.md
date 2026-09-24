@@ -1,9 +1,15 @@
 ---
 name: powershell-json-processing
-description: "Use when processing JSON data in PowerShell."
-category: software-development
-tags: [powershell, json, parsing, api]
+description: Use when processing JSON data in PowerShell.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [powershell, json, parsing, api]
 ---
+
 # PowerShell JSON Processing
 
 Working with JSON data in PowerShell.

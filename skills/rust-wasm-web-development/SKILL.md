@@ -1,12 +1,13 @@
 ---
 name: rust-wasm-web-development
-description: "Use when building Rust WebAssembly apps."
+description: Use when building Rust WebAssembly apps.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["rust", "wasm", "wasm-pack", "wasm-bindgen", "yew"]
+    tags: [rust, wasm, wasm-pack, wasm-bindgen, yew]
 ---
 
 # Rust Wasm Web Development

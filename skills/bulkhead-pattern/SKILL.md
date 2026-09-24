@@ -1,14 +1,13 @@
 ---
 name: bulkhead-pattern
-description: "Use when applying bulkhead patterns."
+description: Use when applying bulkhead patterns.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [architecture, bulkhead, resilience, isolation]
-    related_skills: [general]
 ---
 
 # Bulkhead Pattern

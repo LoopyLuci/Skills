@@ -1,13 +1,13 @@
 ---
 name: site-reliability-engineering
-description: "Use when implementing SRE patterns and practices."
+description: Use when implementing SRE patterns and practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [SRE, reliability, SLIs, SLOs, error-budgets, toil-automation, observability]
-    related_skills: [error-budgets-slos, incident-management-on-call, chaos-engineering, open-telemetry-distributed-tracing]
+    tags: [sre, reliability, slis, slos, error-budgets, toil-automation, observability]
 ---
 
 # Site Reliability Engineering

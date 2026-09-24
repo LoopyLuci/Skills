@@ -1,14 +1,13 @@
 ---
 name: accounting-consolidation-implementation
-description: "Use when applying consolidation implementation."
+description: Use when applying consolidation implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [accounting, consolidation, finance, multi-entity]
-    related_skills: [general]
 ---
 
 # Accounting Consolidation Implementation

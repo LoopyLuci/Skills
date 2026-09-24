@@ -1,14 +1,13 @@
 ---
 name: product-price-monitor
-description: "Watch product, flight, or listing prices; alert on target."
-version: 0.1.0
-author: Ben Barclay (benbarclay), Hermes Agent
+description: Watch product, flight, or listing prices; alert on target.
+version: 1.0.0
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: [Prices, Availability, Shopping, Travel, Alerts]
-    related_skills: [maps]
+    tags: [prices, availability, shopping, travel, alerts]
 ---
 
 # Product Price Monitor

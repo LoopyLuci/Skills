@@ -1,14 +1,13 @@
 ---
 name: android-ndk-troubleshooting
-description: "Use when applying android ndk troubleshooting."
+description: Use when applying android ndk troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mobile, android, ndk, native]
-    related_skills: [general]
 ---
 
 # Android Ndk Troubleshooting

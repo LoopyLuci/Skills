@@ -1,14 +1,13 @@
 ---
 name: customer-persona-troubleshooting
-description: "Use when applying customer personas troubleshooting."
+description: Use when applying customer personas troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, persona, customer]
-    related_skills: [general]
 ---
 
 # Customer Persona Troubleshooting

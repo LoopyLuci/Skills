@@ -1,14 +1,13 @@
 ---
 name: fashion-design
-description: "Use when designing fashion."
+description: Use when designing fashion.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, design, fashion-design-fundamentals]
-    related_skills: [general]
 ---
 
 # Fashion Design

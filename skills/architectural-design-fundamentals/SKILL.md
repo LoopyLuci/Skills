@@ -1,14 +1,13 @@
 ---
 name: architectural-design-fundamentals
-description: "Use when applying architectural design fundamentals."
+description: Use when applying architectural design fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [design, architecture, architecture-design]
-    related_skills: [general]
 ---
 
 # Architectural Design Fundamentals

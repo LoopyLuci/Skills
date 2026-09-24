@@ -1,6 +1,13 @@
 ---
 name: notification-aggregator
-description: "Aggregate alerts from GitHub monitoring RSS into Telegram"
+description: Aggregate alerts from GitHub monitoring RSS into Telegram
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [notification, aggregator]
 ---
 
 # Notification Aggregator

@@ -1,14 +1,13 @@
 ---
 name: climate-climate-policy-troubleshooting
-description: "Use when applying climate policy analysis troubleshooting."
+description: Use when applying climate policy analysis troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, policy, public-policy-analysis]
-    related_skills: ['']
 ---
 
 # Climate Climate Policy Troubleshooting

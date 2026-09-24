@@ -1,8 +1,13 @@
 ---
 name: design-an-interface
 description: Use when designing an API, exploring interface options, or comparing module shapes
-tags: [design, architecture, API, sub-agents, review]
-related_skills: [codebase-design, improve-codebase-architecture, to-spec]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [design, architecture, api, sub-agents, review]
 ---
 
 # Design An Interface

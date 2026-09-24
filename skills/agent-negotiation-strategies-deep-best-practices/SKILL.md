@@ -1,14 +1,13 @@
 ---
 name: agent-negotiation-strategies-deep-best-practices
-description: "Use when applying agent negotiation best practices."
+description: Use when applying agent negotiation best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agents, negotiation]
-    related_skills: ['agent-negotiation-strategies']
 ---
 
 # Agent Negotiation Strategies Deep Best Practices

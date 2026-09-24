@@ -1,14 +1,13 @@
 ---
 name: desktop-wxwidgets-troubleshooting
-description: "Use when applying wxwidgets desktop troubleshooting."
+description: Use when applying wxwidgets desktop troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [desktop, wxwidgets, cpp, cross-platform]
-    related_skills: [general]
 ---
 
 # Desktop Wxwidgets Troubleshooting

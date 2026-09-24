@@ -1,12 +1,13 @@
 ---
 name: mongodb-aggregation-pipeline
-description: "Use when writing MongoDB aggregations."
+description: Use when writing MongoDB aggregations.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["mongodb", "aggregation", "$lookup", "$unwind", "$group"]
+    tags: [mongodb, aggregation, $lookup, $unwind, $group]
 ---
 
 # Mongodb Aggregation Pipeline

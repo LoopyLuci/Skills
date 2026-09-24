@@ -1,14 +1,13 @@
 ---
 name: esg-compliance-fundamentals
-description: "Use when applying esg compliance fundamentals."
+description: Use when applying esg compliance fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, sustainability, esg-compliance]
-    related_skills: [general]
 ---
 
 # Esg Compliance Fundamentals

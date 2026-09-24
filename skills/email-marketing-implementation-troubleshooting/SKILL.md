@@ -1,14 +1,13 @@
 ---
 name: email-marketing-implementation-troubleshooting
-description: "Use when applying email marketing impl troubleshooting."
+description: Use when applying email marketing impl troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, marketing, email-marketing-implementation]
-    related_skills: [general]
 ---
 
 # Email Marketing Implementation Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: ecology-ecosystem-modeling
-description: "Use when modeling ecosystems."
+description: Use when modeling ecosystems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biology, ecology, ecosystem, modeling]
-    related_skills: [general]
 ---
 
 # Ecology Ecosystem Modeling

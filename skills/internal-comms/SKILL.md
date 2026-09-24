@@ -1,8 +1,13 @@
 ---
 name: internal-comms
 description: Use when writing internal status reports or team updates.
-tags: [internal-communications, status-reports, newsletters, faq]
-related_skills: [doc-coauthoring]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [internal-communications, status-reports, newsletters, faq]
 ---
 
 # Internal Communications

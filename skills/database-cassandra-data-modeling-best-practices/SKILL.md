@@ -1,14 +1,13 @@
 ---
 name: database-cassandra-data-modeling-best-practices
-description: "Use when applying cassandra modeling best practices."
+description: Use when applying cassandra modeling best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, cassandra, data-modeling, single-table]
-    related_skills: [general]
 ---
 
 # Database Cassandra Data Modeling Best Practices

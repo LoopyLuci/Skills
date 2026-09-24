@@ -1,14 +1,13 @@
 ---
 name: creative-coding-implementation
-description: "Use when applying creative coding implementation."
+description: Use when applying creative coding implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [design, creative, p5js, algorithmic-art]
-    related_skills: [general]
 ---
 
 # Creative Coding Implementation

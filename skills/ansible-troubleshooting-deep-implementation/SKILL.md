@@ -1,14 +1,13 @@
 ---
 name: ansible-troubleshooting-deep-implementation
-description: "Use when applying ansible troubleshooting implementation."
+description: Use when applying ansible troubleshooting implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, ansible]
-    related_skills: ['ansible-troubleshooting']
 ---
 
 # Ansible Troubleshooting Deep Implementation

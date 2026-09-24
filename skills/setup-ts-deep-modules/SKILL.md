@@ -1,8 +1,13 @@
 ---
 name: setup-ts-deep-modules
 description: Use when setting up TypeScript deep modules with dependency-cruiser enforcement
-tags: [TypeScript, modules, dependency-cruiser, architecture, encapsulation]
-related_skills: [codebase-design, setup-matt-pocock-skills]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [typescript, modules, dependency-cruiser, architecture, encapsulation]
 ---
 
 # Setup Ts Deep Modules

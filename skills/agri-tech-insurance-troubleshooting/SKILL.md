@@ -1,14 +1,13 @@
 ---
 name: agri-tech-insurance-troubleshooting
-description: "Use when applying agricultural insurance troubleshooting."
+description: Use when applying agricultural insurance troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agri, insurance, agricultural-insurance]
-    related_skills: ['']
 ---
 
 # Agri Tech Insurance Troubleshooting

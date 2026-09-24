@@ -2,12 +2,12 @@
 name: marketing-analytics-attribution
 description: Multi-touch attribution, marketing mix modeling, incrementality, and data layers
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["analytics", "attribution"]
+    tags: [analytics, attribution]
 ---
 
 # Marketing Analytics Attribution

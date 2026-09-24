@@ -1,14 +1,13 @@
 ---
 name: feature-store-fundamentals-deep-troubleshooting
-description: "Use when applying feature store fundamentals troubleshoo."
+description: Use when applying feature store fundamentals troubleshoo.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, data-science]
-    related_skills: ['feature-store-fundamentals']
 ---
 
 # Feature Store Fundamentals Deep Troubleshooting

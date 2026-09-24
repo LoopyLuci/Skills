@@ -1,14 +1,13 @@
 ---
 name: dask-array-implementation
-description: "Use when applying dask arrays implementation."
+description: Use when applying dask arrays implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [python, dask, arrays, numpy]
-    related_skills: [general]
 ---
 
 # Dask Array Implementation

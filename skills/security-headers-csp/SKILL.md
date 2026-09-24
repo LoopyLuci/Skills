@@ -1,12 +1,13 @@
 ---
 name: security-headers-csp
-description: "Use when implementing security headers."
+description: Use when implementing security headers.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["CSP", "HSTS", "X-Frame-Options", "security-headers"]
+    tags: [csp, hsts, x-frame-options, security-headers]
 ---
 
 # Security Headers Csp

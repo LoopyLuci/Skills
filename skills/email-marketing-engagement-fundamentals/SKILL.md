@@ -1,14 +1,13 @@
 ---
 name: email-marketing-engagement-fundamentals
-description: "Use when applying email engagement fundamentals."
+description: Use when applying email engagement fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, analytics, engagement]
-    related_skills: [general]
 ---
 
 # Email Marketing Engagement Fundamentals

@@ -1,14 +1,13 @@
 ---
 name: csharp-linq-fundamentals
-description: "Use when applying c# linq fundamentals."
+description: Use when applying c# linq fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [csharp, linq, dotnet, queries]
-    related_skills: [general]
 ---
 
 # Csharp Linq Fundamentals

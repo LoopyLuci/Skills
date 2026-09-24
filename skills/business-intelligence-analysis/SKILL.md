@@ -1,14 +1,13 @@
 ---
 name: business-intelligence-analysis
-description: "Use when for bi analysis."
+description: Use when for bi analysis.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, management, general]
-    related_skills: [general]
 ---
 
 # Business Intelligence Analysis

@@ -1,12 +1,13 @@
 ---
 name: python-logging-structuring
-description: "Use when implementing Python logging."
+description: Use when implementing Python logging.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["python", "logging", "structlog", "JSON", "best-practices"]
+    tags: [python, logging, structlog, json, best-practices]
 ---
 
 # Python Logging Structuring

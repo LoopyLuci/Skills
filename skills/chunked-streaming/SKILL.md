@@ -1,6 +1,13 @@
 ---
 name: chunked-streaming
-description: "Stream large files in chunks with CRC or hash verification"
+description: Stream large files in chunks with CRC or hash verification
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [chunked, streaming]
 ---
 
 # Chunked File Streaming

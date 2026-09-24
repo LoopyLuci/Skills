@@ -1,14 +1,13 @@
 ---
 name: fashion-model-management
-description: "Use when managing fashion models."
+description: Use when managing fashion models.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, model-management, scouting, talent]
-    related_skills: [general]
 ---
 
 # Fashion Model Management

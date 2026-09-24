@@ -1,13 +1,13 @@
 ---
 name: adversarial-ml-robustness
-description: "Use when implementing adversarial attacks and ML defenses."
+description: Use when implementing adversarial attacks and ML defenses.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [adversarial, robustness, attacks, defenses, security]
-    related_skills: [agent-safety-alignment, differential-privacy-training, explainable-ai-xai-patterns]
 ---
 
 # Adversarial Ml Robustness

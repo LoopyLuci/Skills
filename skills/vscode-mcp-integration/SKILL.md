@@ -1,13 +1,13 @@
 ---
 name: vscode-mcp-integration
-description: "Use when building VS Code MCP extensions for AI agents."
+description: Use when building VS Code MCP extensions for AI agents.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [vscode, mcp, extensions, typescript, ai-agents, webview]
-    related_skills: [mcp-server, mcp-server-development, frontend-bootstrap]
 ---
 
 # Vscode Mcp Integration

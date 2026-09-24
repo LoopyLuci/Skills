@@ -1,9 +1,13 @@
 ---
 name: bandwidth-monitor
-title: Bandwidth Monitor
 description: Use when monitoring bandwidth usage per flow or device.
-category: networking
-tags: [bandwidth, monitor, usage, traffic, analytics, rust]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [bandwidth, monitor, usage, traffic, analytics, rust]
 ---
 
 # Bandwidth Monitor

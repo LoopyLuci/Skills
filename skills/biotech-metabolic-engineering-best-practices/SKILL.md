@@ -1,14 +1,13 @@
 ---
 name: biotech-metabolic-engineering-best-practices
-description: "Use when applying metabolic engineering best practices."
+description: Use when applying metabolic engineering best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, metabolism]
-    related_skills: ['']
 ---
 
 # Biotech Metabolic Engineering Best Practices

@@ -1,14 +1,13 @@
 ---
 name: aviation-maintenance-planning-troubleshooting
-description: "Use when applying mro planning troubleshooting."
+description: Use when applying mro planning troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, mro, maintenance-planning]
-    related_skills: ['general']
 ---
 
 # Aviation Maintenance Planning Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: climate-tech-innovation-implementation
-description: "Use when applying climate tech innovation implementation."
+description: Use when applying climate tech innovation implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, innovation]
-    related_skills: ['general']
 ---
 
 # Climate Tech Innovation Implementation

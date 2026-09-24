@@ -1,14 +1,13 @@
 ---
 name: design-thinking-process
-description: "Use when applying design thinking."
+description: Use when applying design thinking.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: ['d', 'e', 's', 'i', 'g', 'n', '-', 't', 'h', 'i', 'n', 'k', 'i', 'n', 'g', ',', ' ', 'i', 'd', 'e', 'a', 't', 'i', 'o', 'n']
-    related_skills: [general]
+    tags: [d, e, s, i, g, n, -, t, h, i, n, k, i, n, g, , ,  , i, d, e, a, t, i, o, n]
 ---
 
 # Design Thinking Process

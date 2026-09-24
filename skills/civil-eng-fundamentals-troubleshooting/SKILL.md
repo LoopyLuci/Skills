@@ -1,14 +1,13 @@
 ---
 name: civil-eng-fundamentals-troubleshooting
-description: "Use when applying civil fundamentals troubleshooting."
+description: Use when applying civil fundamentals troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, civil, fundamentals]
-    related_skills: [general]
 ---
 
 # Civil Eng Fundamentals Troubleshooting

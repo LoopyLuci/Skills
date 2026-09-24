@@ -1,16 +1,13 @@
 ---
-
 name: claude-code
-description: "Delegate coding to Claude Code CLI (features, PRs)."
-version: 2.2.1
-author: Hermes Agent + Teknium
+description: Delegate coding to Claude Code CLI (features, PRs).
+version: 1.0.0
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: [Coding-Agent, Claude, Anthropic, Code-Review, Refactoring, PTY, Automation]
-    related_skills: [codex, hermes-agent, opencode]
-
+    tags: [coding-agent, claude, anthropic, code-review, refactoring, pty, automation]
 ---
 
 # Claude Code — Hermes Orchestration Guide

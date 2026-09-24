@@ -1,9 +1,13 @@
 ---
 name: maven-project-management
-description: "Use when managing Maven projects."
+description: Use when managing Maven projects.
 version: 1.0.0
-author: Hermes Agent
-tags: ["maven", "pom", "dependencies", "plugins", "lifecycle"]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [maven, pom, dependencies, plugins, lifecycle]
 ---
 
 # Maven Project Management

@@ -2,12 +2,12 @@
 name: mental-health-care-delivery
 description: Digital therapeutics, stepped care, CBT platforms, and outcome measurement
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["mental-health", "dt"]
+    tags: [mental-health, dt]
 ---
 
 # Mental Health Care Delivery

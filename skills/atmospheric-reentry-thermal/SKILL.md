@@ -2,12 +2,12 @@
 name: atmospheric-reentry-thermal
 description: TPS, hypersonic aerothermodynamics, reentry trajectories, and ablation
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["reentry", "thermal"]
+    tags: [reentry, thermal]
 ---
 
 # Atmospheric Reentry Thermal

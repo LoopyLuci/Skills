@@ -1,14 +1,13 @@
 ---
 name: envoy-fundamentals
-description: "Use when applying envoy proxy fundamentals."
+description: Use when applying envoy proxy fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [kubernetes, service-mesh, envoy, envoy-proxy-configuration]
-    related_skills: [general]
 ---
 
 # Envoy Fundamentals

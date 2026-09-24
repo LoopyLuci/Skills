@@ -1,14 +1,13 @@
 ---
 name: climate-carbon-accounting-troubleshooting
-description: "Use when applying carbon accounting troubleshooting."
+description: Use when applying carbon accounting troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, accounting, carbon-accounting]
-    related_skills: ['']
 ---
 
 # Climate Carbon Accounting Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: climate-carbon-credit-best-practices
-description: "Use when applying carbon credit verification best practi."
+description: Use when applying carbon credit verification best practi.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, credits, carbon-credit-verification]
-    related_skills: ['']
 ---
 
 # Climate Carbon Credit Best Practices

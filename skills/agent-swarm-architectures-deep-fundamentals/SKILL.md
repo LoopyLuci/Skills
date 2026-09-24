@@ -1,14 +1,13 @@
 ---
 name: agent-swarm-architectures-deep-fundamentals
-description: "Use when applying agent swarm architectures fundamentals."
+description: Use when applying agent swarm architectures fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agents, swarms]
-    related_skills: ['agent-swarm-architectures']
 ---
 
 # Agent Swarm Architectures Deep Fundamentals

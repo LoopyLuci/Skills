@@ -1,14 +1,13 @@
 ---
 name: energy-systems-troubleshooting
-description: "Use when troubleshooting energy systems issues."
+description: Use when troubleshooting energy systems issues.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [energy, power-systems, electrical]
-    related_skills: [general]
 ---
 
 # Energy Systems Troubleshooting

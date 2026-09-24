@@ -2,12 +2,12 @@
 name: privacy-law-ccpa-state
 description: CCPA/CPRA, VCDPA, state privacy laws, and US privacy patchwork
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["privacy", "us-law"]
+    tags: [privacy, us-law]
 ---
 
 # Privacy Law Ccpa State

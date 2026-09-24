@@ -1,13 +1,13 @@
 ---
 name: web-security-patterns
-description: "Use when implementing web application security patterns."
+description: Use when implementing web application security patterns.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [web-security, OWASP, XSS, CSRF, SQL-injection, secure-coding]
-    related_skills: [cryptography-implementation-patterns, api-design-rest-graphql, api-gateway-load-balancing, frontend-bootstrap]
+    tags: [web-security, owasp, xss, csrf, sql-injection, secure-coding]
 ---
 
 # Web Security Patterns

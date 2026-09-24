@@ -2,12 +2,12 @@
 name: drone-systems-uav
 description: PX4/ArduPilot, flight controllers, waypoint navigation, geofencing, and airspace compliance
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["drone", "uav"]
+    tags: [drone, uav]
 ---
 
 # Drone Systems Uav

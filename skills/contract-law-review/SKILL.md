@@ -2,12 +2,12 @@
 name: contract-law-review
 description: Contract structure, key clauses, redlining, risk assessment, and negotiation playbooks
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["contracts", "review"]
+    tags: [contracts, review]
 ---
 
 # Contract Law Review

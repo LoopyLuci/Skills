@@ -1,14 +1,13 @@
 ---
 name: cruise-ship-sustainability
-description: "Use when optimizing cruise ship sustainability."
+description: Use when optimizing cruise ship sustainability.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [maritime, cruise-ships, sustainability, waste-management]
-    related_skills: [circular-economy-business-models]
 ---
 
 # Cruise Ship Sustainability

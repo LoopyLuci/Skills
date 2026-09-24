@@ -1,14 +1,13 @@
 ---
 name: claude-design-deep-implementation
-description: "Use when applying claude design implementation."
+description: Use when applying claude design implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [design, claude-design]
-    related_skills: ['claude-design']
 ---
 
 # Claude Design Deep Implementation

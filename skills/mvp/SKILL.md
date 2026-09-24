@@ -1,8 +1,13 @@
 ---
 name: mvp
 description: Use when building a minimum viable product with maximum constraints
-tags: [mvp, product, no-code, minimalist, validation]
-related_skills: [validate-idea, processize, first-customers, pricing]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [mvp, product, no-code, minimalist, validation]
 ---
 
 # Minimum Viable Product

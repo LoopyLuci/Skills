@@ -1,14 +1,13 @@
 ---
 name: data-version-control
-description: "Use when versioning data and models."
+description: Use when versioning data and models.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data-science, dvc, version-control, mlops]
-    related_skills: ['advanced-version-control-git']
 ---
 
 # Data Version Control

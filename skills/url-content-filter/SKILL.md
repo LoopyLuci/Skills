@@ -1,9 +1,13 @@
 ---
 name: url-content-filter
-title: URL Content Filter
 description: Use when filtering URLs by category and content rules.
-category: networking
-tags: [url, content, filter, categorization, parental, rust]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [url, content, filter, categorization, parental, rust]
 ---
 
 # URL Content Filter

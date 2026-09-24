@@ -1,14 +1,13 @@
 ---
 name: educational-technology
-description: "Use when building educational tech."
+description: Use when building educational tech.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [education, edtech, educational-technology-platforms]
-    related_skills: [general]
 ---
 
 # Educational Technology

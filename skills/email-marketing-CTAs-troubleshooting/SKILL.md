@@ -1,14 +1,13 @@
 ---
 name: email-marketing-CTAs-troubleshooting
-description: "Use when applying email ctas troubleshooting."
+description: Use when applying email ctas troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, copywriting, call-to-action]
-    related_skills: [general]
 ---
 
 # Email Marketing Ctas Troubleshooting

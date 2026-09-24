@@ -1,14 +1,13 @@
 ---
 name: academic-writing-best-practices
-description: "Use when applying academic writing best practices."
+description: Use when applying academic writing best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [writing, academic, academic-publishing]
-    related_skills: [general]
 ---
 
 # Academic Writing Best Practices

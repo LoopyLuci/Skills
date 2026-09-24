@@ -1,12 +1,13 @@
 ---
 name: typescript-zod-validation
-description: "Use when validating with Zod."
+description: Use when validating with Zod.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["typescript", "zod", "validation", "schema", "parsing"]
+    tags: [typescript, zod, validation, schema, parsing]
 ---
 
 # Typescript Zod Validation

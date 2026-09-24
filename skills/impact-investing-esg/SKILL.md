@@ -2,12 +2,12 @@
 name: impact-investing-esg
 description: ESG integration, impact measurement, SRI, and blended finance
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["impact-investing", "esg"]
+    tags: [impact-investing, esg]
 ---
 
 # Impact Investing Esg

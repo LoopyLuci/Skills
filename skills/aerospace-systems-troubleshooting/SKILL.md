@@ -1,14 +1,13 @@
 ---
 name: aerospace-systems-troubleshooting
-description: "Use when applying aerospace systems troubleshooting."
+description: Use when applying aerospace systems troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, aerospace, aerospace-systems-engineering]
-    related_skills: [general]
 ---
 
 # Aerospace Systems Troubleshooting

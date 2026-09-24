@@ -1,14 +1,13 @@
 ---
 name: database-redis-implementation-deep-fundamentals
-description: "Use when applying redis implementation fundamentals."
+description: Use when applying redis implementation fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, redis]
-    related_skills: ['redis-implementation']
 ---
 
 # Database Redis Implementation Deep Fundamentals

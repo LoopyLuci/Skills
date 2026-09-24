@@ -2,12 +2,12 @@
 name: web3-frontend-dapp
 description: Web3.js, ethers.js, wallet integration, and dApp UX
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["web3", "frontend"]
+    tags: [web3, frontend]
 ---
 
 # Web3 Frontend Dapp

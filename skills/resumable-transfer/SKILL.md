@@ -1,6 +1,13 @@
 ---
 name: resumable-transfer
-description: "Resume interrupted file transfers from last offset"
+description: Resume interrupted file transfers from last offset
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [resumable, transfer]
 ---
 
 # Resumable File Transfer

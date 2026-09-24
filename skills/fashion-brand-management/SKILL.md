@@ -1,14 +1,13 @@
 ---
 name: fashion-brand-management
-description: "Use when managing fashion brands."
+description: Use when managing fashion brands.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, brand-management, luxury]
-    related_skills: ['brand-identity-development']
 ---
 
 # Fashion Brand Management

@@ -1,9 +1,15 @@
 ---
 name: agent-safety-alignment
-description: "Use when implementing safety guardrails for AI agents."
-category: mlops
-tags: [agents, safety, alignment, guardrails, constraints]
+description: Use when implementing safety guardrails for AI agents.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [agents, safety, alignment, guardrails, constraints]
 ---
+
 # Agent Safety & Alignment
 
 Implementing safety guardrails and alignment for AI agents.

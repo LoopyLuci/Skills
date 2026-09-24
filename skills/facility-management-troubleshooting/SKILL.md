@@ -1,14 +1,13 @@
 ---
 name: facility-management-troubleshooting
-description: "Use when troubleshooting facility management issues."
+description: Use when troubleshooting facility management issues.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [facility-management, buildings, maintenance]
-    related_skills: [general]
 ---
 
 # Facility Management Troubleshooting

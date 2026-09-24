@@ -1,13 +1,13 @@
 ---
 name: webxr-ar-vr-development
-description: "Use when building WebXR AR/VR experiences."
+description: Use when building WebXR AR/VR experiences.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [webxr, AR, VR, three-js, A-Frame, spatial-computing, immersive]
-    related_skills: [three-js-3d-web, game-development-patterns, responsive-web-design-patterns, animation-web-patterns]
+    tags: [webxr, ar, vr, three-js, a-frame, spatial-computing, immersive]
 ---
 
 # WebXR AR/VR Development

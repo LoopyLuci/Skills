@@ -1,14 +1,13 @@
 ---
 name: cloud-penetration-troubleshooting
-description: "Use when applying cloud penetration troubleshooting."
+description: Use when applying cloud penetration troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, pentesting, cloud]
-    related_skills: [general]
 ---
 
 # Cloud Penetration Troubleshooting

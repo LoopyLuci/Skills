@@ -1,9 +1,13 @@
 ---
 name: rust-core-ffi
-title: Rust Core FFI
 description: Use when generating cross-language FFI bindings for Rust.
-category: networking
-tags: [ffi, rust, bindings, uniffi, cross-language, cbindgen]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [ffi, rust, bindings, uniffi, cross-language, cbindgen]
 ---
 
 # Rust Core FFI

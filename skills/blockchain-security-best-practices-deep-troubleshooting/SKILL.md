@@ -1,14 +1,13 @@
 ---
 name: blockchain-security-best-practices-deep-troubleshooting
-description: "Use when applying blockchain security troubleshooting."
+description: Use when applying blockchain security troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [blockchain, security]
-    related_skills: ['blockchain-security-best-practices']
 ---
 
 # Blockchain Security Best Practices Deep Troubleshooting

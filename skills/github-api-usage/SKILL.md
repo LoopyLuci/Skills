@@ -1,6 +1,13 @@
 ---
 name: github-api-usage
 description: Use the GitHub REST and GraphQL APIs for automation.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [github, api, usage]
 ---
 
 # GitHub API Usage

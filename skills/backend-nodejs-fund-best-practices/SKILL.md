@@ -1,14 +1,13 @@
 ---
 name: backend-nodejs-fund-best-practices
-description: "Use when applying backend node fundamentals best practices."
+description: Use when applying backend node fundamentals best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, nodejs, backend-nodejs-fundamentals]
-    related_skills: [general]
 ---
 
 # Backend Nodejs Fund Best Practices

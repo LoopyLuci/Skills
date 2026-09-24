@@ -1,14 +1,13 @@
 ---
 name: biocatalysts-fundamentals
-description: "Use when applying biocatalysts fundamentals."
+description: Use when applying biocatalysts fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, pharma, biocatalysts]
-    related_skills: [general]
 ---
 
 # Biocatalysts Fundamentals

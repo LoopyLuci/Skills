@@ -1,14 +1,13 @@
 ---
 name: analog-design-deep-best-practices
-description: "Use when applying analog design best practices."
+description: Use when applying analog design best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [electronics, analog, analog-circuit-design]
-    related_skills: ['general']
 ---
 
 # Analog Design Deep Best Practices

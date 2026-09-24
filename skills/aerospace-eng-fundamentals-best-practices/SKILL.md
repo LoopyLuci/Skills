@@ -1,14 +1,13 @@
 ---
 name: aerospace-eng-fundamentals-best-practices
-description: "Use when applying aerospace fundamentals best practices."
+description: Use when applying aerospace fundamentals best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, aerospace, fundamentals]
-    related_skills: [general]
 ---
 
 # Aerospace Eng Fundamentals Best Practices

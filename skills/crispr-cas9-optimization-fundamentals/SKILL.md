@@ -1,14 +1,13 @@
 ---
 name: crispr-cas9-optimization-fundamentals
-description: "Use when applying crispr cas9 optimization fundamentals."
+description: Use when applying crispr cas9 optimization fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, crispr, crispr-gene-editing]
-    related_skills: ['']
 ---
 
 # Crispr Cas9 Optimization Fundamentals

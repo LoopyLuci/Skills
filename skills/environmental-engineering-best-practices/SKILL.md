@@ -1,14 +1,13 @@
 ---
 name: environmental-engineering-best-practices
-description: "Use when applying environmental engineering best practices."
+description: Use when applying environmental engineering best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, environmental, env, environmental-eng-design]
-    related_skills: [general]
 ---
 
 # Environmental Engineering Best Practices

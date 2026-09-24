@@ -1,13 +1,13 @@
 ---
 name: formal-verification-methods
-description: "Use when implementing formal verification for software."
+description: Use when implementing formal verification for software.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [formal-verification, model-checking, theorem-proving, correctness]
-    related_skills: [compiler-interpreter-basics, type-system-design-theory, systematic-debugging, test-driven-development]
 ---
 
 # Formal Verification Methods

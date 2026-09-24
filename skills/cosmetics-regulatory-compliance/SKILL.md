@@ -1,14 +1,13 @@
 ---
 name: cosmetics-regulatory-compliance
-description: "Use when complying with cosmetics regulations."
+description: Use when complying with cosmetics regulations.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, cosmetics-regulations, compliance, fda]
-    related_skills: [general]
 ---
 
 # Cosmetics Regulatory Compliance

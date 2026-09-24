@@ -1,13 +1,13 @@
 ---
 name: community-management-engagement
-description: "Use when building and managing online communities."
+description: Use when building and managing online communities.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [community-management, engagement, moderation, forums, discord, slack, membership]
-    related_skills: [customer-success-retention, social-media-content-planning, customer-feedback-surveys, event-planning-management]
 ---
 
 # Community Management Engagement

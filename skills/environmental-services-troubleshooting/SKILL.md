@@ -1,14 +1,13 @@
 ---
 name: environmental-services-troubleshooting
-description: "Use when applying environmental services troubleshooting."
+description: Use when applying environmental services troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, environment, environmental-services]
-    related_skills: [general]
 ---
 
 # Environmental Services Troubleshooting

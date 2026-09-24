@@ -1,14 +1,13 @@
 ---
 name: docker-logging
-description: "Use when logging Docker."
+description: Use when logging Docker.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, docker, logging-best-practices]
-    related_skills: [general]
 ---
 
 # Docker Logging

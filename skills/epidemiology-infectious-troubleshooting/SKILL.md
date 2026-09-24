@@ -1,14 +1,13 @@
 ---
 name: epidemiology-infectious-troubleshooting
-description: "Use when applying infectious disease epi troubleshooting."
+description: Use when applying infectious disease epi troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [medicine, epi, epidemiology-infectious-disease]
-    related_skills: [general]
 ---
 
 # Epidemiology Infectious Troubleshooting

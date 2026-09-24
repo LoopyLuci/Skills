@@ -1,9 +1,15 @@
 ---
 name: agent-reasoning-patterns
-description: "Use when implementing agent reasoning: ReAct, CoT, Plan-Solve."
-category: mlops
-tags: [agents, reasoning, react, chain-of-thought, planning]
+description: Use when implementing agent reasoning: ReAct, CoT, Plan-Solve.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [agents, reasoning, react, chain-of-thought, planning]
 ---
+
 # Agent Reasoning Patterns
 
 Reasoning architectures for AI agents: ReAct, Chain-of-Thought, Plan-and-Solve.

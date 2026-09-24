@@ -1,9 +1,15 @@
 ---
 name: cargo-windows-workflow
-description: "Use when managing Rust Cargo projects on Windows."
-category: software-development
-tags: [rust, cargo, windows, build, toolchain]
+description: Use when managing Rust Cargo projects on Windows.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [rust, cargo, windows, build, toolchain]
 ---
+
 # Cargo Windows Workflow
 
 Managing Rust Cargo projects on Windows.

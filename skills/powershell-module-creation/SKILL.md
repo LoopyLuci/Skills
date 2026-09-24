@@ -1,9 +1,15 @@
 ---
 name: powershell-module-creation
-description: "Use when creating and publishing PowerShell modules."
-category: software-development
-tags: [powershell, module, psm1, psd1, publishing]
+description: Use when creating and publishing PowerShell modules.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [powershell, module, psm1, psd1, publishing]
 ---
+
 # PowerShell Module Creation
 
 Creating, structuring, and publishing PowerShell modules.

@@ -1,14 +1,13 @@
 ---
 name: banking-customer-onboarding-troubleshooting
-description: "Use when applying banking onboarding troubleshooting."
+description: Use when applying banking onboarding troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, customer, bank-onboarding]
-    related_skills: [general]
 ---
 
 # Banking Customer Onboarding Troubleshooting

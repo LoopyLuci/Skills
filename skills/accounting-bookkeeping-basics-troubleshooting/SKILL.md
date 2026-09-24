@@ -1,14 +1,13 @@
 ---
 name: accounting-bookkeeping-basics-troubleshooting
-description: "Use when applying bookkeeping basics troubleshooting."
+description: Use when applying bookkeeping basics troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, accounting-bookkeeping-basics]
-    related_skills: ['']
 ---
 
 # Accounting Bookkeeping Basics Troubleshooting

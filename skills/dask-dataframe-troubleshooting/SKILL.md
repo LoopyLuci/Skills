@@ -1,14 +1,13 @@
 ---
 name: dask-dataframe-troubleshooting
-description: "Use when applying dask dataframe troubleshooting."
+description: Use when applying dask dataframe troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [python, dask, dataframe, parallel]
-    related_skills: [general]
 ---
 
 # Dask Dataframe Troubleshooting

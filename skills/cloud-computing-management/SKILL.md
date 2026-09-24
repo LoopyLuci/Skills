@@ -1,14 +1,13 @@
 ---
 name: cloud-computing-management
-description: "Use when managing cloud computing."
+description: Use when managing cloud computing.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, aws, gcp, azure]
-    related_skills: [general]
 ---
 
 # Cloud Computing Management

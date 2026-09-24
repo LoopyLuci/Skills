@@ -1,14 +1,13 @@
 ---
 name: bioinformatics-troubleshooting-implementation
-description: "Use when applying bioinfo troubleshooting implementation."
+description: Use when applying bioinfo troubleshooting implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [medicine, bioinfo, bioinformatics-troubleshooting]
-    related_skills: [general]
 ---
 
 # Bioinformatics Troubleshooting Implementation

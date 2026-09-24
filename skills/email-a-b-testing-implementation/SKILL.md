@@ -1,14 +1,13 @@
 ---
 name: email-a-b-testing-implementation
-description: "Use when applying email a/b testing implementation."
+description: Use when applying email a/b testing implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, testing, ab-testing]
-    related_skills: [general]
 ---
 
 # Email A B Testing Implementation

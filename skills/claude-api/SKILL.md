@@ -1,11 +1,10 @@
 ---
 name: claude-api
 description: |-
-source: anthropics/skills
-tags: [api, claude, anthropic, llm, documentation]
-metadata: 
-hermes: 
-
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [api, claude, anthropic, llm, documentation]

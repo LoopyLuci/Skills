@@ -1,13 +1,13 @@
 ---
 name: skill-discovery-techniques
-description: "Use when discovering new skill creation opportunities."
+description: Use when discovering new skill creation opportunities.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [meta, skill-discovery, techniques, research, opportunity, scanning]
-    related_skills: [skill-gap-analysis, skill-architecture-patterns, skill-content-optimization, skill-inventory-management]
 ---
 
 # Skill Discovery Techniques

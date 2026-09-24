@@ -1,14 +1,13 @@
 ---
 name: agri-tech-precision-deep-fundamentals
-description: "Use when applying precision agriculture fundamentals."
+description: Use when applying precision agriculture fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agri, precision, precision-agriculture]
-    related_skills: ['']
 ---
 
 # Agri Tech Precision Deep Fundamentals

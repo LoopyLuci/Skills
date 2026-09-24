@@ -1,12 +1,13 @@
 ---
 name: go-testing-benchmarks
-description: "Use when testing and benchmarking Go code."
+description: Use when testing and benchmarking Go code.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["go", "testing", "benchmark", "table-driven", "fuzzing"]
+    tags: [go, testing, benchmark, table-driven, fuzzing]
 ---
 
 # Go Testing Benchmarks

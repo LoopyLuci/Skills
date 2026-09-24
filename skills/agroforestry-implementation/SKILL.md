@@ -1,14 +1,13 @@
 ---
 name: agroforestry-implementation
-description: "Use when applying agroforestry implementation."
+description: Use when applying agroforestry implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agriculture, forestry, agroforestry]
-    related_skills: [general]
 ---
 
 # Agroforestry Implementation

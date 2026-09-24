@@ -1,12 +1,13 @@
 ---
 name: aws-cloudfront
-description: "Use when implementing aws cloudfront."
+description: Use when implementing aws cloudfront.
 version: 1.0.0
-author: "Skill Genesis Model"
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["aws", "cloudfront"]
+    tags: [aws, cloudfront]
 ---
 
 # Aws Cloudfront

@@ -1,14 +1,13 @@
 ---
 name: climate-climate-governance-best-practices
-description: "Use when applying climate governance best practices."
+description: Use when applying climate governance best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, governance, compliance]
-    related_skills: ['']
 ---
 
 # Climate Climate Governance Best Practices

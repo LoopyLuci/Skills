@@ -2,12 +2,12 @@
 name: resilience-grit-development
 description: Resilience, grit, and overcoming adversity
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["resilience", "grit"]
+    tags: [resilience, grit]
 ---
 
 # Resilience Grit Development

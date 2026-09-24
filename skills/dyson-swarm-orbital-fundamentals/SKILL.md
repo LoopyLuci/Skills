@@ -1,14 +1,13 @@
 ---
 name: dyson-swarm-orbital-fundamentals
-description: "Use when applying dyson swarm orbital fundamentals."
+description: Use when applying dyson swarm orbital fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [space, engineering, distributed-systems]
-    related_skills: ['']
 ---
 
 # Dyson Swarm Orbital Fundamentals

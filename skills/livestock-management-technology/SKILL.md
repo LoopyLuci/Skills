@@ -2,12 +2,12 @@
 name: livestock-management-technology
 description: Precision livestock, health monitoring, feeding systems, and welfare
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["livestock", "animal"]
+    tags: [livestock, animal]
 ---
 
 # Livestock Management Technology

@@ -1,14 +1,13 @@
 ---
 name: demand-generation-implementation
-description: "Use when applying demand generation implementation."
+description: Use when applying demand generation implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, demand-generation, demand-gen]
-    related_skills: [general]
 ---
 
 # Demand Generation Implementation

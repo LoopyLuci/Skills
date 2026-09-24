@@ -1,14 +1,13 @@
 ---
 name: data-quality-troubleshooting
-description: "Use when troubleshooting data quality."
+description: Use when troubleshooting data quality.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data-quality, profiling, validation, clean]
-    related_skills: [general]
 ---
 
 # Data Quality Troubleshooting

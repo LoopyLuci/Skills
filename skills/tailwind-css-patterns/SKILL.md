@@ -1,13 +1,13 @@
 ---
 name: tailwind-css-patterns
-description: "Use when implementing Tailwind CSS designs."
+description: Use when implementing Tailwind CSS designs.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [tailwind, CSS, utility-classes, responsive, design-system]
-    related_skills: [responsive-web-design-patterns, web-component-design, frontend-bootstrap]
+    tags: [tailwind, css, utility-classes, responsive, design-system]
 ---
 
 # Tailwind CSS Patterns

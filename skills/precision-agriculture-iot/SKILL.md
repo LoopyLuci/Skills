@@ -2,12 +2,12 @@
 name: precision-agriculture-iot
 description: Sensor networks, variable rate technology, soil mapping, and crop monitoring
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["precision", "iot"]
+    tags: [precision, iot]
 ---
 
 # Precision Agriculture Iot

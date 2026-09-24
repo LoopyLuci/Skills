@@ -1,13 +1,13 @@
 ---
 name: tool-augmented-models-training
-description: "Use when training models for tool-use and function calling."
+description: Use when training models for tool-use and function calling.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [tool-use, function-calling, training, fine-tuning, agents]
-    related_skills: [tool-augmented-agents, agentic-models-from-scratch, rlhf-implementation-guide, agent-framework-design]
 ---
 
 # Tool Augmented Models Training

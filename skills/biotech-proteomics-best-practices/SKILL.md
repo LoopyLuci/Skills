@@ -1,14 +1,13 @@
 ---
 name: biotech-proteomics-best-practices
-description: "Use when applying proteomics best practices."
+description: Use when applying proteomics best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, proteomics]
-    related_skills: ['']
 ---
 
 # Biotech Proteomics Best Practices

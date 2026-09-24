@@ -1,14 +1,13 @@
 ---
 name: ai-alignment-implementation-deep-troubleshooting
-description: "Use when applying ai alignment implementation troublesho."
+description: Use when applying ai alignment implementation troublesho.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ai-security, ethics]
-    related_skills: ['ai-alignment-implementation']
 ---
 
 # Ai Alignment Implementation Deep Troubleshooting

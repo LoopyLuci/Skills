@@ -2,12 +2,12 @@
 name: street-photography-candid
 description: Zone focusing, composition, legal/ethical considerations, and storytelling
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["street", "candid"]
+    tags: [street, candid]
 ---
 
 # Street Photography Candid

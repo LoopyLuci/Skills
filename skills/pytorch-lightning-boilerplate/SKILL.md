@@ -1,12 +1,13 @@
 ---
 name: pytorch-lightning-boilerplate
-description: "Use when training with Lightning."
+description: Use when training with Lightning.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["pytorch-lightning", "trainer", "module", "callbacks"]
+    tags: [pytorch-lightning, trainer, module, callbacks]
 ---
 
 # Pytorch Lightning Boilerplate

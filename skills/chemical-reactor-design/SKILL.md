@@ -1,14 +1,13 @@
 ---
 name: chemical-reactor-design
-description: "Use when designing reactors."
+description: Use when designing reactors.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [chem, reactor, reactors]
-    related_skills: [general]
 ---
 
 # Chemical Reactor Design

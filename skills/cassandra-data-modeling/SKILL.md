@@ -1,9 +1,13 @@
 ---
 name: cassandra-data-modeling
-description: "Use when modeling Cassandra data."
+description: Use when modeling Cassandra data.
 version: 1.0.0
-author: Hermes Agent
-tags: ["cassandra", "NoSQL", "data-modeling", "CQL", "partition"]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [cassandra, nosql, data-modeling, cql, partition]
 ---
 
 # Cassandra Data Modeling

@@ -1,13 +1,13 @@
 ---
 name: penetration-testing-methodology
-description: "Use when structuring penetration testing engagements."
+description: Use when structuring penetration testing engagements.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [pentest, methodology, PTES, OWASP, ethical-hacking, scope, reporting]
-    related_skills: [vulnerability-assessment-scanning, webapp-penetration-testing, network-sniffing-packet-capture, bug-bounty-methodology]
+    tags: [pentest, methodology, ptes, owasp, ethical-hacking, scope, reporting]
 ---
 
 # Penetration Testing Methodology

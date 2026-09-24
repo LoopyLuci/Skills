@@ -1,14 +1,13 @@
 ---
 name: clinical-trial-supply-best-practices
-description: "Use when applying cttm best practices."
+description: Use when applying cttm best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, pharma, supply-chain]
-    related_skills: [general]
 ---
 
 # Clinical Trial Supply Best Practices

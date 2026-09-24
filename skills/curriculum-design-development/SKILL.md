@@ -2,12 +2,12 @@
 name: curriculum-design-development
 description: Backward design, standards alignment, scope and sequence, and assessment mapping
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["curriculum", "instructional-design"]
+    tags: [curriculum, instructional-design]
 ---
 
 # Curriculum Design Development

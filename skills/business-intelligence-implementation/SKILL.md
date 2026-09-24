@@ -1,14 +1,13 @@
 ---
 name: business-intelligence-implementation
-description: "Use when implementing business intelligence."
+description: Use when implementing business intelligence.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [bi, business-intelligence, dashboards]
-    related_skills: [general]
 ---
 
 # Business Intelligence Implementation

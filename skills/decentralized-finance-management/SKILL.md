@@ -1,14 +1,13 @@
 ---
 name: decentralized-finance-management
-description: "Use when for defi management."
+description: Use when for defi management.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, management, general]
-    related_skills: [general]
 ---
 
 # Decentralized Finance Management

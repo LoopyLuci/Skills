@@ -1,14 +1,13 @@
 ---
 name: data-warehousing-optimization
-description: "Use when optimizing data warehousing systems."
+description: Use when optimizing data warehousing systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, data-warehouse, etl]
-    related_skills: [general]
 ---
 
 # Data Warehousing Optimization

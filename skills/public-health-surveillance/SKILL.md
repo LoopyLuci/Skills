@@ -2,12 +2,12 @@
 name: public-health-surveillance
 description: Disease surveillance, outbreak investigation, epidemiological study design
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["epidemiology", "surveillance"]
+    tags: [epidemiology, surveillance]
 ---
 
 # Public Health Surveillance

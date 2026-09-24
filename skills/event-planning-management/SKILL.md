@@ -1,13 +1,13 @@
 ---
 name: event-planning-management
-description: "Use when planning and managing events and conferences."
+description: Use when planning and managing events and conferences.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [event-planning, conferences, webinars, venue, logistics, registration]
-    related_skills: [marketing-funnel-design, email-marketing-campaigns, project-management-workflows, lead-generation-strategies]
 ---
 
 # Event Planning Management

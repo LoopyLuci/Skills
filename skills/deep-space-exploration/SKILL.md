@@ -2,12 +2,12 @@
 name: deep-space-exploration
 description: Interplanetary trajectories, gravity assists, deep space network, and autonomy
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["exploration", "interplanetary"]
+    tags: [exploration, interplanetary]
 ---
 
 # Deep Space Exploration

@@ -1,13 +1,13 @@
 ---
 name: loyalty-programs-crm
-description: "Use when designing and managing customer loyalty programs."
+description: Use when designing and managing customer loyalty programs.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [loyalty, rewards, points, VIP, customer-retention, referral-programs]
-    related_skills: [customer-success-retention, crm-sales-pipeline, email-marketing-campaigns, ecommerce-platform-management]
+    tags: [loyalty, rewards, points, vip, customer-retention, referral-programs]
 ---
 
 # Loyalty Programs Crm

@@ -1,6 +1,13 @@
 ---
 name: api-testing-patterns
-description: "Test REST APIs contracts auth pagination and errors"
+description: Test REST APIs contracts auth pagination and errors
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [api, testing, patterns]
 ---
 
 # API Testing Patterns
@@ -20,3 +27,16 @@ def test_create_user(client):
 - 404 for not found
 - Pagination: page size, cursors
 - Edge cases: empty body, wrong types
+
+## Trigger
+
+Activate this skill when the user mentions:
+- api, testing, patterns workflows or issues
+- Building, fixing, or optimizing api testing patterns
+
+
+## Core Concepts
+
+- Domain fundamentals and best practices
+- Key tools and methodologies
+- Quality standards and common patterns

@@ -1,14 +1,13 @@
 ---
 name: docker-registry-implementation
-description: "Use when applying docker registry implementation."
+description: Use when applying docker registry implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [docker, registry, docker-registry-operations]
-    related_skills: [general]
 ---
 
 # Docker Registry Implementation

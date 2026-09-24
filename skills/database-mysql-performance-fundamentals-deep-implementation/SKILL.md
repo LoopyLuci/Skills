@@ -1,14 +1,13 @@
 ---
 name: database-mysql-performance-fundamentals-deep-implementation
-description: "Use when applying mysql performance fundamentals impleme."
+description: Use when applying mysql performance fundamentals impleme.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, mysql]
-    related_skills: ['mysql-optimization-fundamentals']
 ---
 
 # Database Mysql Performance Fundamentals Deep Implementation

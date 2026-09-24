@@ -1,14 +1,13 @@
 ---
 name: developmental-biology-design
-description: "Use when designing developmental biology solutions."
+description: Use when designing developmental biology solutions.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [developmental-biology, embryology, development]
-    related_skills: [general]
 ---
 
 # Developmental Biology Design

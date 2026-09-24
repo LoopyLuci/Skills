@@ -2,12 +2,12 @@
 name: maritime-shipping-operations
 description: Ship operations, port logistics, maritime regulations, and chartering
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["maritime", "shipping"]
+    tags: [maritime, shipping]
 ---
 
 # Maritime Shipping Operations

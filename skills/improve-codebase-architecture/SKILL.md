@@ -1,8 +1,13 @@
 ---
 name: improve-codebase-architecture
 description: Use when improving codebase architecture, reducing coupling, or increasing cohesion
-tags: [architecture, refactoring, coupling, cohesion, analysis]
-related_skills: [codebase-design, request-refactor-plan, code-review]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [architecture, refactoring, coupling, cohesion, analysis]
 ---
 
 # Improve Codebase Architecture

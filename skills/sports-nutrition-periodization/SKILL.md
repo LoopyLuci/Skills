@@ -2,12 +2,12 @@
 name: sports-nutrition-periodization
 description: Macro cycling, supplementation, hydration, and competition nutrition
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["nutrition", "sports"]
+    tags: [nutrition, sports]
 ---
 
 # Sports Nutrition Periodization

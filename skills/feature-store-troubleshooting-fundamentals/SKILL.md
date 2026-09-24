@@ -1,14 +1,13 @@
 ---
 name: feature-store-troubleshooting-fundamentals
-description: "Use when applying feature store troubleshooting fundamen."
+description: Use when applying feature store troubleshooting fundamen.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, data-science]
-    related_skills: ['feature-store-troubleshooting']
 ---
 
 # Feature Store Troubleshooting Fundamentals

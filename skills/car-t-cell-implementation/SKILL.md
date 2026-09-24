@@ -1,14 +1,13 @@
 ---
 name: car-t-cell-implementation
-description: "Use when applying car t cell biotech implementation."
+description: Use when applying car t cell biotech implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, bio]
-    related_skills: ['']
 ---
 
 # Car T Cell Implementation

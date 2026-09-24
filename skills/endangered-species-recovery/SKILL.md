@@ -2,12 +2,12 @@
 name: endangered-species-recovery
 description: Endangered species, recovery plans, and habitat conservation
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["endangered", "recovery"]
+    tags: [endangered, recovery]
 ---
 
 # Endangered Species Recovery

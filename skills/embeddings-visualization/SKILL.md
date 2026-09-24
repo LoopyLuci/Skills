@@ -1,13 +1,13 @@
 ---
 name: embeddings-visualization
-description: "Use when visualizing and analyzing embeddings."
+description: Use when visualizing and analyzing embeddings.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [embeddings, visualization, t-SNE, UMAP, vector-space, clustering, similarity]
-    related_skills: [dimensionality-reduction, embedding-models-patterns, data-visualization-practices, data-profiling-quality]
+    tags: [embeddings, visualization, t-sne, umap, vector-space, clustering, similarity]
 ---
 
 # Embeddings Visualization

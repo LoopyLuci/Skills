@@ -1,14 +1,13 @@
 ---
 name: email-marketing-tools-fundamentals
-description: "Use when applying email marketing tools fundamentals."
+description: Use when applying email marketing tools fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, tools, marketing]
-    related_skills: [general]
 ---
 
 # Email Marketing Tools Fundamentals

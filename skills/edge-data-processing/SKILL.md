@@ -1,14 +1,13 @@
 ---
 name: edge-data-processing
-description: "Use when processing data at edge."
+description: Use when processing data at edge.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [edge-computing, edge-data, streaming, real-time]
-    related_skills: ['distributed-systems-patterns']
 ---
 
 # Edge Data Processing

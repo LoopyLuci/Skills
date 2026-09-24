@@ -1,14 +1,13 @@
 ---
 name: climate-battery-recycling-troubleshooting
-description: "Use when applying climate battery recycling troubleshoot."
+description: Use when applying climate battery recycling troubleshoot.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, environment]
-    related_skills: ['']
 ---
 
 # Climate Battery Recycling Troubleshooting

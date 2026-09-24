@@ -1,14 +1,13 @@
 ---
 name: chef-best-practices
-description: "Use when applying chef best practices."
+description: Use when applying chef best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, chef, automation, infrastructure]
-    related_skills: [general]
 ---
 
 # Chef Best Practices

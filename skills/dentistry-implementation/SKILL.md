@@ -1,14 +1,13 @@
 ---
 name: dentistry-implementation
-description: "Use when implementing dentistry projects."
+description: Use when implementing dentistry projects.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [dentistry, dental, oral-health, teeth]
-    related_skills: [general]
 ---
 
 # Dentistry Implementation

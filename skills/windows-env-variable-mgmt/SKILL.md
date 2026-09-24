@@ -1,9 +1,15 @@
 ---
 name: windows-env-variable-mgmt
-description: "Use when managing Windows PATH and environment variables."
-category: software-development
-tags: [windows, environment, path, env-vars, powershell]
+description: Use when managing Windows PATH and environment variables.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [windows, environment, path, env-vars, powershell]
 ---
+
 # Windows Environment Variable Management
 
 Managing PATH and environment variables on Windows.

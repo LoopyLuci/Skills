@@ -1,14 +1,13 @@
 ---
 name: energy-storage-materials
-description: "Use when researching energy storage materials."
+description: Use when researching energy storage materials.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climatetech, batteries, materials, electrochemistry]
-    related_skills: [semiconductor-process-integration, energy-storage-systems]
 ---
 
 # Energy Storage Materials

@@ -1,14 +1,13 @@
 ---
 name: real-estate-market-intel
-description: "Use when researching markets. Demographics, comps, schools."
-version: 2.0.0
-author: Hermes Agent
+description: Use when researching markets. Demographics, comps, schools.
+version: 1.0.0
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [real-estate, market-research, neighborhood-analysis, demographics]
-    related_skills: [real-estate-cma-generator, real-estate-property-analysis]
 ---
 
 # Real Estate Market Intel

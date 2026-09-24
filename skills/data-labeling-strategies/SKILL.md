@@ -1,13 +1,13 @@
 ---
 name: data-labeling-strategies
-description: "Use when implementing data labeling workflows and tools."
+description: Use when implementing data labeling workflows and tools.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [data-labeling, annotation, labeling-tools, quality, consensus, active-learning]
-    related_skills: [active-learning-strategies, data-augmentation-techniques, semi-supervised-learning, data-profiling-quality]
 ---
 
 # Data Labeling Strategies

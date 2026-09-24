@@ -1,14 +1,13 @@
 ---
 name: fashion-tech-wearables-fundamentals
-description: "Use when applying fashion tech wearables fundamentals."
+description: Use when applying fashion tech wearables fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, wearables, fashion-tech-wearables]
-    related_skills: ['general']
 ---
 
 # Fashion Tech Wearables Fundamentals

@@ -1,14 +1,13 @@
 ---
 name: consumer-3d-audio
-description: "Use when designing 3D audio systems."
+description: Use when designing 3D audio systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [consumer-tech, 3d-audio, spatial, surround-sound]
-    related_skills: [general]
 ---
 
 # Consumer 3d Audio

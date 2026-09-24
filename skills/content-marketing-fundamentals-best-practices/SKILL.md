@@ -1,14 +1,13 @@
 ---
 name: content-marketing-fundamentals-best-practices
-description: "Use when applying content marketing fundamentals best pr."
+description: Use when applying content marketing fundamentals best pr.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, content-marketing-fundamentals]
-    related_skills: ['']
 ---
 
 # Content Marketing Fundamentals Best Practices

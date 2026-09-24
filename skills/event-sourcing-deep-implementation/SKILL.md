@@ -1,14 +1,13 @@
 ---
 name: event-sourcing-deep-implementation
-description: "Use when applying event sourcing implementation."
+description: Use when applying event sourcing implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [programming, patterns]
-    related_skills: ['event-sourcing']
 ---
 
 # Event Sourcing Deep Implementation

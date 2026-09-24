@@ -1,12 +1,13 @@
 ---
 name: react-animations
-description: "Use when implementing react animations."
+description: Use when implementing react animations.
 version: 1.0.0
-author: "Skill Genesis Model"
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["react", "animations"]
+    tags: [react, animations]
 ---
 
 # React Animations

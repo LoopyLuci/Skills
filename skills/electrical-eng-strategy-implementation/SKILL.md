@@ -1,14 +1,13 @@
 ---
 name: electrical-eng-strategy-implementation
-description: "Use when applying elect eng strategy implementation."
+description: Use when applying elect eng strategy implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, electrical, strategy]
-    related_skills: [general]
 ---
 
 # Electrical Eng Strategy Implementation

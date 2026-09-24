@@ -2,12 +2,12 @@
 name: cycling-training-triathlon
 description: Power training, FTP testing, bike fit, and triathlon periodization
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["cycling", "triathlon"]
+    tags: [cycling, triathlon]
 ---
 
 # Cycling Training Triathlon

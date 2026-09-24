@@ -1,9 +1,13 @@
 ---
 name: huggingface-transformers
-description: "Use when using HuggingFace Transformers."
+description: Use when using HuggingFace Transformers.
 version: 1.0.0
-author: Hermes Agent
-tags: ["huggingface", "transformers", "models", "tokenizers"]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [huggingface, transformers, models, tokenizers]
 ---
 
 # Huggingface Transformers

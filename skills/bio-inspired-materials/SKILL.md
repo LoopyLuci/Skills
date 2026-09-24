@@ -1,14 +1,13 @@
 ---
 name: bio-inspired-materials
-description: "Use when designing bio-inspired materials."
+description: Use when designing bio-inspired materials.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [materials-science, bio-inspired, biomimicry, nature]
-    related_skills: [general]
 ---
 
 # Bio Inspired Materials

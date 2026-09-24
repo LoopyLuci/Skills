@@ -1,13 +1,13 @@
 ---
 name: customer-marketing-social-proof
-description: "Use when building customer marketing and social proof."
+description: Use when building customer marketing and social proof.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [customer-marketing, social-proof, testimonials, case-studies, reviews, G2]
-    related_skills: [customer-advocacy-program, product-marketing-strategy, content-marketing-workflow, influencer-affiliate-programs]
+    tags: [customer-marketing, social-proof, testimonials, case-studies, reviews, g2]
 ---
 
 # Customer Marketing and Social Proof

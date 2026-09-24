@@ -1,14 +1,13 @@
 ---
 name: chunked-streaming-deep-troubleshooting
-description: "Use when applying chunked streaming troubleshooting."
+description: Use when applying chunked streaming troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, streaming]
-    related_skills: ['chunked-streaming']
 ---
 
 # Chunked Streaming Deep Troubleshooting

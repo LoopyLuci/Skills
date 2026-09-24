@@ -1,14 +1,13 @@
 ---
 name: data-governance-troubleshooting
-description: "Use when troubleshooting data governance."
+description: Use when troubleshooting data governance.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data-governance, data-quality, compliance]
-    related_skills: [general]
 ---
 
 # Data Governance Troubleshooting

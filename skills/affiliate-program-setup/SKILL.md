@@ -1,14 +1,13 @@
 ---
 name: affiliate-program-setup
-description: "Use when running affiliate programs. Recruitment, payouts."
+description: Use when running affiliate programs. Recruitment, payouts.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [affiliate, program, recruitment, payouts, commissions, tracking]
-    related_skills: [affiliate-marketing, seo-strategy]
 ---
 
 # Affiliate Program Setup

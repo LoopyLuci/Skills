@@ -1,14 +1,13 @@
 ---
 name: cqrs-event-sourcing-deep-troubleshooting
-description: "Use when applying cqrs pattern troubleshooting."
+description: Use when applying cqrs pattern troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [programming, patterns]
-    related_skills: ['cqrs-event-sourcing']
 ---
 
 # Cqrs Event Sourcing Deep Troubleshooting

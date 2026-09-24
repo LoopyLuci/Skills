@@ -1,9 +1,13 @@
 ---
 name: okr-goal-setting-framework
-description: "Use when implementing OKR frameworks."
+description: Use when implementing OKR frameworks.
 version: 1.0.0
-author: Hermes Agent
-tags: ["OKR", "goals", "objectives", "key-results", "tracking"]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [okr, goals, objectives, key-results, tracking]
 ---
 
 # Okr Goal Setting Framework

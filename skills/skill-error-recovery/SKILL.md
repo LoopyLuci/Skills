@@ -1,6 +1,13 @@
 ---
 name: skill-error-recovery
 description: Recover when a skill's instructions fail at runtime.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [skill, error, recovery]
 ---
 
 # Skill Error Recovery

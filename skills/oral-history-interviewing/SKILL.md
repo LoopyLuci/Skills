@@ -2,12 +2,12 @@
 name: oral-history-interviewing
 description: Oral history methods, interviewing, and preservation
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["oral-history", "interviews"]
+    tags: [oral-history, interviews]
 ---
 
 # Oral History Interviewing

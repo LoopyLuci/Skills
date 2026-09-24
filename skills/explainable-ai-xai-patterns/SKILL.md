@@ -1,13 +1,13 @@
 ---
 name: explainable-ai-xai-patterns
-description: "Use when implementing explainable AI techniques and tools."
+description: Use when implementing explainable AI techniques and tools.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [explainability, XAI, interpretability, SHAP, LIME, attention]
-    related_skills: [interpretable-ml, adversarial-ml-robustness, ai-fairness-mitigation, agent-safety-alignment]
+    tags: [explainability, xai, interpretability, shap, lime, attention]
 ---
 
 # Explainable Ai Xai Patterns

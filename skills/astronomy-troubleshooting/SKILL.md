@@ -1,14 +1,13 @@
 ---
 name: astronomy-troubleshooting
-description: "Use when troubleshooting astronomy issues."
+description: Use when troubleshooting astronomy issues.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [astronomy, astrophysics, observation, research]
-    related_skills: [general]
 ---
 
 # Astronomy Troubleshooting

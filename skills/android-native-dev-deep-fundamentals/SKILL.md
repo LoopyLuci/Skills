@@ -1,14 +1,13 @@
 ---
 name: android-native-dev-deep-fundamentals
-description: "Use when applying android native development fundamentals."
+description: Use when applying android native development fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mobile, android]
-    related_skills: ['android-native-dev']
 ---
 
 # Android Native Dev Deep Fundamentals

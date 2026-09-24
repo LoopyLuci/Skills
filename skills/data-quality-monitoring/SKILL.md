@@ -1,14 +1,13 @@
 ---
 name: data-quality-monitoring
-description: "Use when monitoring data quality."
+description: Use when monitoring data quality.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data-science, data-quality, profiling, monitoring]
-    related_skills: ['data-profiling-quality']
 ---
 
 # Data Quality Monitoring

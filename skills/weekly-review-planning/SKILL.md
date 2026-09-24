@@ -1,14 +1,13 @@
 ---
 name: weekly-review-planning
-description: "Weekly reset: commitments, stalled work, next-week plan."
-version: 0.1.0
-author: Ben Barclay (benbarclay), Hermes Agent
+description: Weekly reset: commitments, stalled work, next-week plan.
+version: 1.0.0
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: [Weekly-Review, Planning, Tasks, Calendar, Productivity]
-    related_skills: [obsidian, notion, airtable, google-workspace, email-inbox-triage]
+    tags: [weekly-review, planning, tasks, calendar, productivity]
 ---
 
 # Weekly Review and Planning

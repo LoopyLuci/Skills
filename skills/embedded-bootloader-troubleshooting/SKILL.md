@@ -1,14 +1,13 @@
 ---
 name: embedded-bootloader-troubleshooting
-description: "Use when applying bootloader design troubleshooting."
+description: Use when applying bootloader design troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [embedded, bootloader, firmware, startup]
-    related_skills: [general]
 ---
 
 # Embedded Bootloader Troubleshooting

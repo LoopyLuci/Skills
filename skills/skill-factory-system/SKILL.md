@@ -1,13 +1,13 @@
 ---
 name: skill-factory-system
-description: "Use when autonomously discovering and creating skills."
-version: 2.0.0
-author: Hermes Agent
+description: Use when autonomously discovering and creating skills.
+version: 1.0.0
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [meta, skill-factory, batch-create, landscape, auto-discovery, quality]
-    related_skills: ["skill-content-optimization", "skill-gap-analysis", "skill-test-generation", "meta-skill-patterns", "skill-analytics-usage-tracking"]
 ---
 
 # Skill Factory System

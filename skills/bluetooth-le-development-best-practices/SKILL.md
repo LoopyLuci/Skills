@@ -1,14 +1,13 @@
 ---
 name: bluetooth-le-development-best-practices
-description: "Use when applying ble development best practices."
+description: Use when applying ble development best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [electronics, bluetooth, bluetooth-le-device-programming]
-    related_skills: ['general']
 ---
 
 # Bluetooth Le Development Best Practices

@@ -1,14 +1,13 @@
 ---
 name: biomedical-management
-description: "Use when managing biomedical operations."
+description: Use when managing biomedical operations.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biomedical, bioengineering, medical-devices, bme]
-    related_skills: [general]
 ---
 
 # Biomedical Management

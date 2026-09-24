@@ -2,12 +2,12 @@
 name: qiskit-quantum-programming
 description: Qiskit circuits, transpilation, primitives, error mitigation, and IBM Quantum hardware
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["qiskit", "ibm"]
+    tags: [qiskit, ibm]
 ---
 
 # Qiskit Quantum Programming

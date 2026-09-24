@@ -1,14 +1,13 @@
 ---
 name: fashion-model-management-deep-best-practices
-description: "Use when applying model management best practices."
+description: Use when applying model management best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [beauty, models]
-    related_skills: ['']
 ---
 
 # Fashion Model Management Deep Best Practices

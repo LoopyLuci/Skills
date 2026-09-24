@@ -1,9 +1,13 @@
 ---
 name: aarrr-metrics-framework
-description: "Use when implementing AARRR metrics."
+description: Use when implementing AARRR metrics.
 version: 1.0.0
-author: Hermes Agent
-tags: ["AARRR", "pirate-metrics", "acquisition", "activation", "retention"]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [aarrr, pirate-metrics, acquisition, activation, retention]
 ---
 
 # Aarrr Metrics Framework

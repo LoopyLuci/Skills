@@ -1,14 +1,13 @@
 ---
 name: docker-build-troubleshooting
-description: "Use when applying docker build troubleshooting."
+description: Use when applying docker build troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [docker, build, buildx, docker-buildx-multiarch]
-    related_skills: [general]
 ---
 
 # Docker Build Troubleshooting

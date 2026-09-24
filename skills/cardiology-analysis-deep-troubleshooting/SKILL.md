@@ -1,14 +1,13 @@
 ---
 name: cardiology-analysis-deep-troubleshooting
-description: "Use when applying cardiology analysis troubleshooting."
+description: Use when applying cardiology analysis troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [healthcare, cardiology]
-    related_skills: ['cardiology-analysis']
 ---
 
 # Cardiology Analysis Deep Troubleshooting

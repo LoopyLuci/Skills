@@ -1,14 +1,13 @@
 ---
 name: avionics-fundamentals-fundamentals
-description: "Use when applying avionics fundamental concepts and theory."
+description: Use when applying avionics fundamental concepts and theory.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: ['aerospace', 'avionics', 'systems']
-    related_skills: ['aerospace-avionics-fundamentals']
+    tags: [aerospace, avionics, systems]
 ---
 
 # Avionics Fundamentals Fundamentals

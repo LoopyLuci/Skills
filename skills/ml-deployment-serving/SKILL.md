@@ -1,9 +1,15 @@
 ---
 name: ml-deployment-serving
-description: "Use when deploying ML models to production."
-category: mlops
-tags: [ml, deployment, serving, inference, production]
+description: Use when deploying ML models to production.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [ml, deployment, serving, inference, production]
 ---
+
 # ML Model Deployment & Serving
 
 Deploying ML models to production: serving, monitoring, and infrastructure.

@@ -1,14 +1,13 @@
 ---
 name: chemical-eng-audit
-description: "Use when for chemical engineering audit."
+description: Use when for chemical engineering audit.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, management, general]
-    related_skills: [general]
 ---
 
 # Chemical Eng Audit

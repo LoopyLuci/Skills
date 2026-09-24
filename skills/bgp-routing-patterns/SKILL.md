@@ -1,13 +1,13 @@
 ---
 name: bgp-routing-patterns
-description: "Use when implementing BGP routing and traffic engineering."
+description: Use when implementing BGP routing and traffic engineering.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [bgp, routing, BGP-iBGP, eBGP, traffic-engineering, AS, peering, anycast]
-    related_skills: [sdn-software-defined-networking, dns-implementation-patterns, network-automation-scripting, connection-monitor]
+    tags: [bgp, routing, bgp-ibgp, ebgp, traffic-engineering, as, peering, anycast]
 ---
 
 # Bgp Routing Patterns

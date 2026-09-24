@@ -1,14 +1,13 @@
 ---
 name: ansible-vault-troubleshooting-best-practices
-description: "Use when applying ansible vault troubleshooting best pra."
+description: Use when applying ansible vault troubleshooting best pra.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, ansible]
-    related_skills: ['ansible-vault-troubleshooting']
 ---
 
 # Ansible Vault Troubleshooting Best Practices

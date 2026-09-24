@@ -1,6 +1,13 @@
 ---
 name: community-skill-harvesting
 description: Import external skill repos into your skills library.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [community, skill, harvesting]
 ---
 
 # Community Skill Harvesting

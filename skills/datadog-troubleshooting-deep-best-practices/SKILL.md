@@ -1,14 +1,13 @@
 ---
 name: datadog-troubleshooting-deep-best-practices
-description: "Use when applying datadog troubleshooting best practices."
+description: Use when applying datadog troubleshooting best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [sys, monitoring]
-    related_skills: ['datadog-troubleshooting']
 ---
 
 # Datadog Troubleshooting Deep Best Practices

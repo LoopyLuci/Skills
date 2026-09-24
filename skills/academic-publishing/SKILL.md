@@ -1,14 +1,13 @@
 ---
 name: academic-publishing
-description: "Use when publishing academic papers."
+description: Use when publishing academic papers.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [research, publishing, academic, journal]
-    related_skills: [general]
 ---
 
 # Academic Publishing

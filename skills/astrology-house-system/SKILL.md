@@ -1,14 +1,13 @@
 ---
 name: astrology-house-system
-description: "Use when calculating astrology houses."
+description: Use when calculating astrology houses.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [esoteric, astrology-houses, house-system, calculation]
-    related_skills: [general]
 ---
 
 # Astrology House System

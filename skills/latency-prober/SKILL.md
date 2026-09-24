@@ -1,9 +1,13 @@
 ---
 name: latency-prober
-title: Latency Prober
 description: Use when measuring network latency to destinations.
-category: networking
-tags: [latency, probe, ping, measurement, monitoring, rust]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [latency, probe, ping, measurement, monitoring, rust]
 ---
 
 # Latency Prober

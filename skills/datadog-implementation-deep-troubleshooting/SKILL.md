@@ -1,14 +1,13 @@
 ---
 name: datadog-implementation-deep-troubleshooting
-description: "Use when applying datadog implementation troubleshooting."
+description: Use when applying datadog implementation troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [sys, monitoring]
-    related_skills: ['datadog-implementation']
 ---
 
 # Datadog Implementation Deep Troubleshooting

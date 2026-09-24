@@ -1,14 +1,13 @@
 ---
 name: compliance-security-troubleshooting
-description: "Use when for security compliance troubleshooting."
+description: Use when for security compliance troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, compliance, audit, regulatory]
-    related_skills: [general]
 ---
 
 # Compliance Security Troubleshooting

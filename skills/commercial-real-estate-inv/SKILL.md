@@ -1,14 +1,13 @@
 ---
 name: commercial-real-estate-inv
-description: "Use when investing in commercial real estate."
+description: Use when investing in commercial real estate.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [real-estate, cre, commercial-investing]
-    related_skills: ['real-estate-property-analysis']
 ---
 
 # Commercial Real Estate Inv

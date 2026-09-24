@@ -1,14 +1,13 @@
 ---
 name: fashion-forecasting-systems
-description: "Use when building fashion forecasting systems."
+description: Use when building fashion forecasting systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, forecasting-systems, data-analytics]
-    related_skills: [general]
 ---
 
 # Fashion Forecasting Systems

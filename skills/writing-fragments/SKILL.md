@@ -1,13 +1,13 @@
 ---
-
 name: writing-fragments
 description: Writing, explore — mine raw fragments, no structure yet.
-disable-model-invocation: true
-source: mattpocock/skills
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [agent, skill]
-
 ---
 
 <what-to-do>

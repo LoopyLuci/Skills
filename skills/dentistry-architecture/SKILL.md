@@ -1,14 +1,13 @@
 ---
 name: dentistry-architecture
-description: "Use when architecting dentistry systems."
+description: Use when architecting dentistry systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [dentistry, dental, oral-health, teeth]
-    related_skills: [general]
 ---
 
 # Dentistry Architecture

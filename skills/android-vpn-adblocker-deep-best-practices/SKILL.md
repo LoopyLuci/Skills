@@ -1,14 +1,13 @@
 ---
 name: android-vpn-adblocker-deep-best-practices
-description: "Use when applying android vpn adblocker best practices."
+description: Use when applying android vpn adblocker best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mobile, android]
-    related_skills: ['android-vpn-adblocker']
 ---
 
 # Android Vpn Adblocker Deep Best Practices

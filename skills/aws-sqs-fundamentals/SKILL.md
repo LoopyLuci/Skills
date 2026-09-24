@@ -1,14 +1,13 @@
 ---
 name: aws-sqs-fundamentals
-description: "Use when applying aws sqs fundamentals."
+description: Use when applying aws sqs fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, sqs, queueing, messaging]
-    related_skills: [general]
 ---
 
 # Aws Sqs Fundamentals

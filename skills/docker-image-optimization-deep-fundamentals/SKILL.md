@@ -1,14 +1,13 @@
 ---
 name: docker-image-optimization-deep-fundamentals
-description: "Use when applying docker image optimization fundamentals."
+description: Use when applying docker image optimization fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, docker]
-    related_skills: ['docker-image-optimization']
 ---
 
 # Docker Image Optimization Deep Fundamentals

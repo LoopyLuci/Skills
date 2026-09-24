@@ -2,12 +2,12 @@
 name: shadergame-visual-effects
 description: Shader Graph, HLSL/GLSL, VFX Graph, post-processing stacks, and GPU particles
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["shaders", "vfx"]
+    tags: [shaders, vfx]
 ---
 
 # Shadergame Visual Effects

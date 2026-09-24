@@ -2,12 +2,12 @@
 name: 3d-modeling-blender
 description: Blender modeling, sculpting, retopology, UV mapping, and rendering
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["3d", "blender"]
+    tags: [3d, blender]
 ---
 
 # 3d Modeling Blender

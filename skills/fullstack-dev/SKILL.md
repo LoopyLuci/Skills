@@ -1,12 +1,13 @@
 ---
-
 name: fullstack-dev
 description: |
-source: MiniMax-AI/skills
-tags: [fullstack, web, backend, api, frontend]
-metadata: 
-hermes: 
-
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [fullstack, web, backend, api, frontend]
 ---
 
 **Trigger**: Use when developing full-stack web applications — backend architecture, API design, auth flows, database integration, and production deployment.

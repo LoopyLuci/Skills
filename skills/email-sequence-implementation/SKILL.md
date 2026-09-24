@@ -1,14 +1,13 @@
 ---
 name: email-sequence-implementation
-description: "Use when applying email sequence implementation."
+description: Use when applying email sequence implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, marketing, email-sequence-automation]
-    related_skills: [general]
 ---
 
 # Email Sequence Implementation

@@ -2,12 +2,12 @@
 name: retail-data-analytics
 description: Customer analytics, basket analysis, churn prediction, and RFM modeling
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["analytics", "retail"]
+    tags: [analytics, retail]
 ---
 
 # Retail Data Analytics

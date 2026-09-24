@@ -1,14 +1,13 @@
 ---
 name: agri-tech-inputs-fundamentals
-description: "Use when applying agricultural inputs fundamentals."
+description: Use when applying agricultural inputs fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agri, inputs, agricultural-inputs]
-    related_skills: ['']
 ---
 
 # Agri Tech Inputs Fundamentals

@@ -1,14 +1,13 @@
 ---
 name: feature-engineering-auto-fundamentals
-description: "Use when applying auto feature engineering fundamentals."
+description: Use when applying auto feature engineering fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, feature-engineering, feature-engineering-automation]
-    related_skills: [general]
 ---
 
 # Feature Engineering Auto Fundamentals

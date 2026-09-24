@@ -1,14 +1,13 @@
 ---
 name: developmental-biology-optimization
-description: "Use when optimizing developmental biology systems."
+description: Use when optimizing developmental biology systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [developmental-biology, embryology, development]
-    related_skills: [general]
 ---
 
 # Developmental Biology Optimization

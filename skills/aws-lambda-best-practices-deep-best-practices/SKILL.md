@@ -1,14 +1,13 @@
 ---
 name: aws-lambda-best-practices-deep-best-practices
-description: "Use when applying aws lambda best practices."
+description: Use when applying aws lambda best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, lambda]
-    related_skills: ['aws-lambda-best-practices']
 ---
 
 # Aws Lambda Best Practices Deep Best Practices

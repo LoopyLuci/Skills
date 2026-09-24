@@ -1,14 +1,13 @@
 ---
 name: aws-eks-fundamentals-deep-fundamentals
-description: "Use when applying aws eks fundamentals fundamentals."
+description: Use when applying aws eks fundamentals fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, eks]
-    related_skills: ['aws-eks-fundamentals']
 ---
 
 # Aws Eks Fundamentals Deep Fundamentals

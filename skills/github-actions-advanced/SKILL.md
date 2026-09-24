@@ -1,12 +1,13 @@
 ---
 name: github-actions-advanced
-description: "Use when writing advanced GitHub Actions."
+description: Use when writing advanced GitHub Actions.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["github-actions", "CI", "matrix", "reusable-workflows"]
+    tags: [github-actions, ci, matrix, reusable-workflows]
 ---
 
 # Github Actions Advanced

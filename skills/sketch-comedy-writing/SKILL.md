@@ -2,12 +2,12 @@
 name: sketch-comedy-writing
 description: Sketch structure, characters, parody, and production
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["sketch", "writing"]
+    tags: [sketch, writing]
 ---
 
 # Sketch Comedy Writing

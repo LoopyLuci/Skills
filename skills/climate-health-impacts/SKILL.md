@@ -1,14 +1,13 @@
 ---
 name: climate-health-impacts
-description: "Use when assessing climate health impacts."
+description: Use when assessing climate health impacts.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cross-domain, climate-health, public-health, epidemiology]
-    related_skills: [public-health-data]
 ---
 
 # Climate Health Impacts

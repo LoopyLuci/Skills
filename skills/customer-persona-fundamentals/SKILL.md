@@ -1,14 +1,13 @@
 ---
 name: customer-persona-fundamentals
-description: "Use when applying customer personas fundamentals."
+description: Use when applying customer personas fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, persona, customer]
-    related_skills: [general]
 ---
 
 # Customer Persona Fundamentals

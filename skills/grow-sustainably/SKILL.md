@@ -1,8 +1,13 @@
 ---
 name: grow-sustainably
 description: Use when making spending or scaling decisions for business
-tags: [growth, profitability, spending, sustainability, bootstrapping]
-related_skills: [company-values, pricing, mvp]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [growth, profitability, spending, sustainability, bootstrapping]
 ---
 
 # Grow Sustainably

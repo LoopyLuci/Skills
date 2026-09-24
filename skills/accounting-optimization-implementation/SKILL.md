@@ -1,14 +1,13 @@
 ---
 name: accounting-optimization-implementation
-description: "Use when applying accounting optimization implementation."
+description: Use when applying accounting optimization implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, accounting-optimization]
-    related_skills: ['']
 ---
 
 # Accounting Optimization Implementation

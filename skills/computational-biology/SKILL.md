@@ -1,14 +1,13 @@
 ---
 name: computational-biology
-description: "Use when doing computational biology."
+description: Use when doing computational biology.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [healthcare, bio, computational-biology-fundamentals]
-    related_skills: [general]
 ---
 
 # Computational Biology

@@ -1,14 +1,13 @@
 ---
 name: biotechnology-fundamentals
-description: "Use when applying biotechnology fundamentals."
+description: Use when applying biotechnology fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, bioprocess, fermentation, r-d]
-    related_skills: [general]
 ---
 
 # Biotechnology Fundamentals

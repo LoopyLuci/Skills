@@ -1,14 +1,13 @@
 ---
 name: blocked-page-recovery
-description: "Use when a fetch fails: 403/429, paywall, WAF, bot wall."
+description: Use when a fetch fails: 403/429, paywall, WAF, bot wall.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: [Research, Archives, Wayback, Paywall, WAF, Fallback]
-    related_skills: [grounded-citations]
+    tags: [research, archives, wayback, paywall, waf, fallback]
 ---
 
 # Blocked-Page Recovery

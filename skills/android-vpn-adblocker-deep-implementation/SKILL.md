@@ -1,14 +1,13 @@
 ---
 name: android-vpn-adblocker-deep-implementation
-description: "Use when applying android vpn adblocker implementation."
+description: Use when applying android vpn adblocker implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mobile, android]
-    related_skills: ['android-vpn-adblocker']
 ---
 
 # Android Vpn Adblocker Deep Implementation

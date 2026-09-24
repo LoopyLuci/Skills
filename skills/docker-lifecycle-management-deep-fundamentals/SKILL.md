@@ -1,14 +1,13 @@
 ---
 name: docker-lifecycle-management-deep-fundamentals
-description: "Use when applying docker lifecycle fundamentals."
+description: Use when applying docker lifecycle fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, docker]
-    related_skills: ['docker-lifecycle-management']
 ---
 
 # Docker Lifecycle Management Deep Fundamentals

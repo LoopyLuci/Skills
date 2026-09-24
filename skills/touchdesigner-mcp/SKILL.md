@@ -1,15 +1,13 @@
 ---
 name: touchdesigner-mcp
 description: Control TouchDesigner via twozero MCP.
-version: 1.1.0
-author: kshitijk4poor
+version: 1.0.0
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: [TouchDesigner, MCP, twozero, creative-coding, real-time-visuals, generative-art, audio-reactive, VJ, installation, GLSL]
-    related_skills: [ascii-video, manim-video]
-
+    tags: [touchdesigner, mcp, twozero, creative-coding, real-time-visuals, generative-art, audio-reactive, vj, installation, glsl]
 ---
 
 # TouchDesigner Integration (twozero MCP)

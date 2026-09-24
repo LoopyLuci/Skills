@@ -1,14 +1,13 @@
 ---
 name: diversity-inclusion-analytics
-description: "Use when analyzing DEI metrics."
+description: Use when analyzing DEI metrics.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: ['d', 'i', 'v', 'e', 'r', 's', 'i', 't', 'y', ',', ' ', 'a', 'n', 'a', 'l', 'y', 't', 'i', 'c', 's']
-    related_skills: [general]
+    tags: [d, i, v, e, r, s, i, t, y, , ,  , a, n, a, l, y, t, i, c, s]
 ---
 
 # Diversity Inclusion Analytics

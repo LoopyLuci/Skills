@@ -1,14 +1,13 @@
 ---
 name: cell-biology-best-practices
-description: "Use when applying cell biology best practices."
+description: Use when applying cell biology best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [medicine, cell-biology]
-    related_skills: ['cell-biology-fundamentals']
 ---
 
 # Cell Biology Best Practices

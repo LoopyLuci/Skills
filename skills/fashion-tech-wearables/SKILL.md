@@ -1,14 +1,13 @@
 ---
 name: fashion-tech-wearables
-description: "Use when building fashion tech wearables."
+description: Use when building fashion tech wearables.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, fashion-tech, wearables, smart-clothing]
-    related_skills: [general]
 ---
 
 # Fashion Tech Wearables

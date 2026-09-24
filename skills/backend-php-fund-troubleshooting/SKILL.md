@@ -1,14 +1,13 @@
 ---
 name: backend-php-fund-troubleshooting
-description: "Use when applying backend php fundamentals troubleshooting."
+description: Use when applying backend php fundamentals troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, php, backend-php-fundamentals]
-    related_skills: [general]
 ---
 
 # Backend Php Fund Troubleshooting

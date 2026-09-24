@@ -1,14 +1,13 @@
 ---
 name: blockchain-ethereum-fundamentals
-description: "Use when for ethereum development fundamentals."
+description: Use when for ethereum development fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [blockchain, ethereum, solidity, smart-contracts]
-    related_skills: [general]
 ---
 
 # Blockchain Ethereum Fundamentals

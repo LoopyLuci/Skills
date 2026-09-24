@@ -1,14 +1,13 @@
 ---
 name: data-quality-assurance-best-practices
-description: "Use when for data qa best practices."
+description: Use when for data qa best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data-quality, profiling, validation]
-    related_skills: [general]
 ---
 
 # Data Quality Assurance Best Practices

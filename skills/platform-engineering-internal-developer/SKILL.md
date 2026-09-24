@@ -1,13 +1,13 @@
 ---
 name: platform-engineering-internal-developer
-description: "Use when building internal developer platforms."
+description: Use when building internal developer platforms.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [platform-engineering, IDP, developer-experience, Backstage, golden-path]
-    related_skills: [site-reliability-engineering, gitops-argocd-flux, devsecops-shift-left, monorepo-management]
+    tags: [platform-engineering, idp, developer-experience, backstage, golden-path]
 ---
 
 # Platform Engineering and IDPs

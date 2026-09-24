@@ -1,14 +1,13 @@
 ---
 name: azure-vnet-best-practices
-description: "Use when applying azure vnet best practices."
+description: Use when applying azure vnet best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, azure, vnet, networking]
-    related_skills: [general]
 ---
 
 # Azure Vnet Best Practices

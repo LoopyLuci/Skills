@@ -2,12 +2,12 @@
 name: renewable-energy-finance
 description: PPAs, tax equity, green bonds, and renewable project finance
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["finance", "renewable"]
+    tags: [finance, renewable]
 ---
 
 # Renewable Energy Finance

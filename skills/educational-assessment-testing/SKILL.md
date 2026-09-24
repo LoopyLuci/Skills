@@ -2,12 +2,12 @@
 name: educational-assessment-testing
 description: Formative/summative assessment, rubrics, item analysis, and standardized testing
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["assessment", "testing"]
+    tags: [assessment, testing]
 ---
 
 # Educational Assessment Testing

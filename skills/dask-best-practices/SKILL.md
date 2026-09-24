@@ -1,14 +1,13 @@
 ---
 name: dask-best-practices
-description: "Use when applying dask best practices."
+description: Use when applying dask best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [python, dask, parallel, big-data]
-    related_skills: [general]
 ---
 
 # Dask Best Practices

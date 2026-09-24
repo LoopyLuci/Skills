@@ -1,13 +1,13 @@
 ---
 name: anomaly-detection-ml
-description: "Use when implementing ML-based anomaly detection systems."
+description: Use when implementing ML-based anomaly detection systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [anomaly-detection, outliers, isolation-forest, autoencoder, OCSVM, fraud]
-    related_skills: [ml-threat-detection, gpu-anomaly-detector, timeseries-forecasting-ml, ml-pipeline-design]
+    tags: [anomaly-detection, outliers, isolation-forest, autoencoder, ocsvm, fraud]
 ---
 
 # Anomaly Detection Ml

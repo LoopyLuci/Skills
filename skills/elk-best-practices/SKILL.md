@@ -1,14 +1,13 @@
 ---
 name: elk-best-practices
-description: "Use when applying elk stack best practices."
+description: Use when applying elk stack best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [monitoring, elk, elasticsearch, logging]
-    related_skills: [general]
 ---
 
 # Elk Best Practices

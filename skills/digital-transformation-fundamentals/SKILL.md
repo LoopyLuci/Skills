@@ -1,14 +1,13 @@
 ---
 name: digital-transformation-fundamentals
-description: "Use when applying digital transformation fundamentals."
+description: Use when applying digital transformation fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [consulting, digital, digital-transformation]
-    related_skills: [general]
 ---
 
 # Digital Transformation Fundamentals

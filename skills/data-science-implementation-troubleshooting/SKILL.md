@@ -1,14 +1,13 @@
 ---
 name: data-science-implementation-troubleshooting
-description: "Use when applying data science implementation troublesho."
+description: Use when applying data science implementation troublesho.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data-science, implementation]
-    related_skills: [general]
 ---
 
 # Data Science Implementation Troubleshooting

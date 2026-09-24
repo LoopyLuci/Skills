@@ -1,14 +1,13 @@
 ---
 name: docker-security-hardening-deep-fundamentals
-description: "Use when applying docker hardening fundamentals."
+description: Use when applying docker hardening fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, docker]
-    related_skills: ['docker-security-hardening']
 ---
 
 # Docker Security Hardening Deep Fundamentals

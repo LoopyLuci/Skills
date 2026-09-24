@@ -1,14 +1,13 @@
 ---
 name: data-quality-assurance-troubleshooting-troubleshooting
-description: "Use when applying data quality troubleshooting troublesh."
+description: Use when applying data quality troubleshooting troublesh.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, data-quality]
-    related_skills: ['data-quality-assurance-troubleshooting']
 ---
 
 # Data Quality Assurance Troubleshooting Troubleshooting

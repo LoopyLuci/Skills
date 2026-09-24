@@ -1,9 +1,13 @@
 ---
 name: packet-processing-pipeline
-title: Packet Processing Pipeline
 description: Use when building parallel multi-stage packet processing.
-category: networking
-tags: [pipeline, packet, processing, parallel, stages, throughput]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [pipeline, packet, processing, parallel, stages, throughput]
 ---
 
 # Packet Processing Pipeline

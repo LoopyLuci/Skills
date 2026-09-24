@@ -1,14 +1,13 @@
 ---
 name: critical-thinking-framework
-description: "Use when applying critical thinking frameworks."
+description: Use when applying critical thinking frameworks.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: ['c', 'r', 'i', 't', 'i', 'c', 'a', 'l', '-', 't', 'h', 'i', 'n', 'k', 'i', 'n', 'g', ',', ' ', 'r', 'e', 'a', 's', 'o', 'n', 'i', 'n', 'g']
-    related_skills: [general]
+    tags: [c, r, i, t, i, c, a, l, -, t, h, i, n, k, i, n, g, , ,  , r, e, a, s, o, n, i, n, g]
 ---
 
 # Critical Thinking Framework

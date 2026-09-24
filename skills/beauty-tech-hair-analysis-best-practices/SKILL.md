@@ -1,14 +1,13 @@
 ---
 name: beauty-tech-hair-analysis-best-practices
-description: "Use when applying beauty hair analysis best practices."
+description: Use when applying beauty hair analysis best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, beauty]
-    related_skills: ['']
 ---
 
 # Beauty Tech Hair Analysis Best Practices

@@ -1,14 +1,13 @@
 ---
 name: database-clustering-troubleshooting
-description: "Use when for database clustering troubleshooting."
+description: Use when for database clustering troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, clustering, high-availability, nosql]
-    related_skills: [general]
 ---
 
 # Database Clustering Troubleshooting

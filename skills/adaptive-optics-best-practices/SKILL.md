@@ -1,14 +1,13 @@
 ---
 name: adaptive-optics-best-practices
-description: "Use when applying adaptive optics best practices."
+description: Use when applying adaptive optics best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [optics, adaptive, adaptive-optics]
-    related_skills: [general]
 ---
 
 # Adaptive Optics Best Practices

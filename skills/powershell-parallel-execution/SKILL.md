@@ -1,9 +1,15 @@
 ---
 name: powershell-parallel-execution
-description: "Use when running tasks in parallel with PowerShell."
-category: software-development
-tags: [powershell, parallel, threading, runspace, jobs]
+description: Use when running tasks in parallel with PowerShell.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [powershell, parallel, threading, runspace, jobs]
 ---
+
 # PowerShell Parallel Execution
 
 Running tasks concurrently in PowerShell.

@@ -1,14 +1,13 @@
 ---
 name: api-versioning-strategies
-description: "Use when versioning APIs."
+description: Use when versioning APIs.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [api, api-versioning, backward-compatibility]
-    related_skills: ['api-design-and-documentation']
 ---
 
 # Api Versioning Strategies

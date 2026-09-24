@@ -1,14 +1,13 @@
 ---
 name: data-protection-compliance
-description: "Use when ensuring data protection compliance."
+description: Use when ensuring data protection compliance.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [legal, data-protection, gdpr, privacy]
-    related_skills: [general]
 ---
 
 # Data Protection Compliance

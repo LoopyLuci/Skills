@@ -1,14 +1,13 @@
 ---
 name: accounting-budgeting-implementation
-description: "Use when applying budgeting implementation."
+description: Use when applying budgeting implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [accounting, finance, budgeting, budgeting]
-    related_skills: [general]
 ---
 
 # Accounting Budgeting Implementation

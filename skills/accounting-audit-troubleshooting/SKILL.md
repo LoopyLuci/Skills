@@ -1,14 +1,13 @@
 ---
 name: accounting-audit-troubleshooting
-description: "Use when applying accounting audit troubleshooting."
+description: Use when applying accounting audit troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [accounting, finance, audit, accounting-audit]
-    related_skills: [general]
 ---
 
 # Accounting Audit Troubleshooting

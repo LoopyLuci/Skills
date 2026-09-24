@@ -1,14 +1,13 @@
 ---
 name: aerospace-testing-troubleshooting
-description: "Use when applying aerospace testing troubleshooting."
+description: Use when applying aerospace testing troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aerospace, testing, testing]
-    related_skills: ['general']
 ---
 
 # Aerospace Testing Troubleshooting

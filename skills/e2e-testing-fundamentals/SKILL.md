@@ -1,14 +1,13 @@
 ---
 name: e2e-testing-fundamentals
-description: "Use when applying end-to-end testing fundamentals."
+description: Use when applying end-to-end testing fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [testing, e2e, end-to-end]
-    related_skills: [general]
 ---
 
 # E2e Testing Fundamentals

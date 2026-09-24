@@ -1,9 +1,13 @@
 ---
 name: sqlalchemy-orm-advanced
-description: "Use when using advanced SQLAlchemy."
+description: Use when using advanced SQLAlchemy.
 version: 1.0.0
-author: Hermes Agent
-tags: ["sqlalchemy", "ORM", "relationships", "async", "alembic"]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [sqlalchemy, orm, relationships, async, alembic]
 ---
 
 # Sqlalchemy Orm Advanced

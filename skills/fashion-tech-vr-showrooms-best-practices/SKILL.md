@@ -1,14 +1,13 @@
 ---
 name: fashion-tech-vr-showrooms-best-practices
-description: "Use when applying fashion vr showrooms best practices."
+description: Use when applying fashion vr showrooms best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, beauty]
-    related_skills: ['']
 ---
 
 # Fashion Tech Vr Showrooms Best Practices

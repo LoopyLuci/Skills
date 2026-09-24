@@ -1,14 +1,13 @@
 ---
 name: energy-efficiency-implementation
-description: "Use when applying energy efficiency implementation."
+description: Use when applying energy efficiency implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [energy, efficiency, energy-efficiency-auditing]
-    related_skills: [general]
 ---
 
 # Energy Efficiency Implementation

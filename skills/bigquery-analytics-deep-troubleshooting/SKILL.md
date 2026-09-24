@@ -1,14 +1,13 @@
 ---
 name: bigquery-analytics-deep-troubleshooting
-description: "Use when applying bigquery analytics troubleshooting."
+description: Use when applying bigquery analytics troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, bigquery]
-    related_skills: ['bigquery-analytics']
 ---
 
 # Bigquery Analytics Deep Troubleshooting

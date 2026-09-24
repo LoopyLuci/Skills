@@ -1,14 +1,13 @@
 ---
 name: accessibility-testing-troubleshooting
-description: "Use when applying accessibility testing troubleshooting."
+description: Use when applying accessibility testing troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [testing, accessibility, axe, wcag]
-    related_skills: [general]
 ---
 
 # Accessibility Testing Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: embedded-opentelemetry-fundamentals
-description: "Use when applying embedded opentelemetry fundamentals."
+description: Use when applying embedded opentelemetry fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [embedded, tracing, observability, opentelemetry]
-    related_skills: [general]
 ---
 
 # Embedded Opentelemetry Fundamentals

@@ -1,6 +1,13 @@
 ---
 name: firewall-configuration
-description: "Configure ufw iptables firewall rules for common services"
+description: Configure ufw iptables firewall rules for common services
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [firewall, configuration]
 ---
 
 # Firewall Configuration
@@ -22,3 +29,16 @@ sudo ufw allow from 192.168.1.0/24
 sudo ufw deny from 10.0.0.1
 sudo ufw limit ssh  # Rate limit SSH attempts
 ```
+
+## Trigger
+
+Activate this skill when the user mentions:
+- firewall, configuration workflows or issues
+- Building, fixing, or optimizing firewall configuration
+
+
+## Core Concepts
+
+- Domain fundamentals and best practices
+- Key tools and methodologies
+- Quality standards and common patterns

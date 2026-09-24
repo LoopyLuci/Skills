@@ -1,14 +1,13 @@
 ---
 name: data-analytics-management
-description: "Use when managing data analytics."
+description: Use when managing data analytics.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data-analytics, analysis, python]
-    related_skills: [general]
 ---
 
 # Data Analytics Management

@@ -1,14 +1,13 @@
 ---
 name: ehr-interoperability-implementation
-description: "Use when applying ehr interoperability implementation."
+description: Use when applying ehr interoperability implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, medicine, interoperability]
-    related_skills: [general]
 ---
 
 # Ehr Interoperability Implementation

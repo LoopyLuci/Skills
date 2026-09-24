@@ -1,12 +1,13 @@
 ---
 name: typescript-decorators-metadata
-description: "Use when implementing TS decorators."
+description: Use when implementing TS decorators.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["typescript", "decorators", "metadata", "reflection"]
+    tags: [typescript, decorators, metadata, reflection]
 ---
 
 # Typescript Decorators Metadata

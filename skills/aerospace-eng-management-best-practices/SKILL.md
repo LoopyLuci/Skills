@@ -1,14 +1,13 @@
 ---
 name: aerospace-eng-management-best-practices
-description: "Use when applying aerospace management best practices."
+description: Use when applying aerospace management best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, aerospace, management]
-    related_skills: [general]
 ---
 
 # Aerospace Eng Management Best Practices

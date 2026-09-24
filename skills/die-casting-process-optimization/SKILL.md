@@ -1,14 +1,13 @@
 ---
 name: die-casting-process-optimization
-description: "Use when optimizing die casting."
+description: Use when optimizing die casting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [manufacturing, die-casting, casting, metal-forming]
-    related_skills: [general]
 ---
 
 # Die Casting Process Optimization

@@ -1,14 +1,13 @@
 ---
 name: aws-eks-troubleshooting-troubleshooting
-description: "Use when applying aws eks troubleshooting troubleshooting."
+description: Use when applying aws eks troubleshooting troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, eks]
-    related_skills: ['aws-eks-troubleshooting']
 ---
 
 # Aws Eks Troubleshooting Troubleshooting

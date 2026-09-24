@@ -1,14 +1,13 @@
 ---
 name: chartjs-data-visualization-deep-implementation
-description: "Use when applying chart.js viz implementation."
+description: Use when applying chart.js viz implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [design, data-viz]
-    related_skills: ['chartjs-data-visualization']
 ---
 
 # Chartjs Data Visualization Deep Implementation

@@ -1,14 +1,13 @@
 ---
 name: chemical-eng-implementation-implementation
-description: "Use when applying chemical implementation implementation."
+description: Use when applying chemical implementation implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, chemical, implementation]
-    related_skills: [general]
 ---
 
 # Chemical Eng Implementation Implementation

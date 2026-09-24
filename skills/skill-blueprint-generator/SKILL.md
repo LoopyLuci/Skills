@@ -1,13 +1,13 @@
 ---
 name: skill-blueprint-generator
-description: "Use when generating skill blueprints and structures."
+description: Use when generating skill blueprints and structures.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [skill-blueprint, generator, template, scaffold, meta, structure]
-    related_skills: [skill-quality-standards, skill-template-catalog, meta-skill-patterns, skill-testing-automation]
 ---
 
 # Skill Blueprint Generator

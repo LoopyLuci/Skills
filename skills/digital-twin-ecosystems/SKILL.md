@@ -1,14 +1,13 @@
 ---
 name: digital-twin-ecosystems
-description: "Use when building digital twin ecosystems."
+description: Use when building digital twin ecosystems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cross-domain, digital-twins, simulation, integration]
-    related_skills: [digital-twin-manufacturing]
 ---
 
 # Digital Twin Ecosystems

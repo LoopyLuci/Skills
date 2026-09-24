@@ -1,13 +1,13 @@
 ---
 name: tax-planning-small-business
-description: "Use when planning taxes for small businesses."
+description: Use when planning taxes for small businesses.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [tax-planning, small-business, deductions, entity-structure, quarterly-taxes]
-    related_skills: [accounting-bookkeeping-basics, financial-modeling-budgeting, legal-compliance-business]
 ---
 
 # Tax Planning for Small Business

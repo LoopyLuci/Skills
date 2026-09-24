@@ -1,14 +1,13 @@
 ---
 name: biotech-diagnostics-implementation
-description: "Use when applying diagnostic development implementation."
+description: Use when applying diagnostic development implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, diagnostics]
-    related_skills: ['']
 ---
 
 # Biotech Diagnostics Implementation

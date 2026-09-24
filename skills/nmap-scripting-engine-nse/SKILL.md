@@ -1,12 +1,13 @@
 ---
 name: nmap-scripting-engine-nse
-description: "Use when writing NSE scripts."
+description: Use when writing NSE scripts.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["nmap", "NSE", "lua", "scanning", "automation"]
+    tags: [nmap, nse, lua, scanning, automation]
 ---
 
 # Nmap Scripting Engine Nse

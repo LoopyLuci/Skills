@@ -1,14 +1,13 @@
 ---
 name: circuit-breaker-pattern
-description: "Use when implementing circuit breakers."
+description: Use when implementing circuit breakers.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [architecture, circuit-breaker, resilience]
-    related_skills: ['circuit-breaker-resilience']
 ---
 
 # Circuit Breaker Pattern

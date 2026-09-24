@@ -1,14 +1,13 @@
 ---
 name: culinary-science-applications
-description: "Use when applying culinary science."
+description: Use when applying culinary science.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [food-tech, culinary-science, cooking, food-chemistry]
-    related_skills: [general]
 ---
 
 # Culinary Science Applications

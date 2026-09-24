@@ -1,13 +1,13 @@
 ---
 name: skill-user-research
-description: "Use when researching user needs for skill creation."
+description: Use when researching user needs for skill creation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [meta, skill-research, user-needs, discovery, validation, interviews]
-    related_skills: [skill-discovery-techniques, skill-gap-analysis, skill-content-optimization, customer-interview-techniques]
 ---
 
 # Skill User Research

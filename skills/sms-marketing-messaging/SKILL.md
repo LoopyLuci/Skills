@@ -1,13 +1,13 @@
 ---
 name: sms-marketing-messaging
-description: "Use when implementing SMS marketing and messaging campaigns."
+description: Use when implementing SMS marketing and messaging campaigns.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [sms, messaging, text-marketing, SMS-campaigns, compliance, TCPA]
-    related_skills: [email-marketing-campaigns, marketing-automation-workflows, list-building-email-growth, digital-marketing-strategy]
+    tags: [sms, messaging, text-marketing, sms-campaigns, compliance, tcpa]
 ---
 
 # Sms Marketing Messaging

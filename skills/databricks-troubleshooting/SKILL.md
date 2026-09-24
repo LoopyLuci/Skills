@@ -1,14 +1,13 @@
 ---
 name: databricks-troubleshooting
-description: "Use when for databricks troubleshooting."
+description: Use when for databricks troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [big-data, databricks, lakehouse, spark]
-    related_skills: [general]
 ---
 
 # Databricks Troubleshooting

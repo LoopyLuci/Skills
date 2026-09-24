@@ -1,9 +1,13 @@
 ---
 name: gradle-build-automation
-description: "Use when automating builds with Gradle."
+description: Use when automating builds with Gradle.
 version: 1.0.0
-author: Hermes Agent
-tags: ["gradle", "build", "dependencies", "plugins", "multi-module"]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [gradle, build, dependencies, plugins, multi-module]
 ---
 
 # Gradle Build Automation

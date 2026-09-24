@@ -1,9 +1,13 @@
 ---
 name: spring-boot-testing
-description: "Use when testing Spring Boot apps."
+description: Use when testing Spring Boot apps.
 version: 1.0.0
-author: Hermes Agent
-tags: ["spring-boot", "testing", "JUnit", "Mockito", "integration"]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [spring-boot, testing, junit, mockito, integration]
 ---
 
 # Spring Boot Testing

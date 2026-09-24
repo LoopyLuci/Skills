@@ -1,14 +1,13 @@
 ---
 name: biomarker-discovery-best-practices
-description: "Use when applying biomarker discovery best practices."
+description: Use when applying biomarker discovery best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, biomarker, biomarker]
-    related_skills: ['general']
 ---
 
 # Biomarker Discovery Best Practices

@@ -1,14 +1,13 @@
 ---
 name: biotech-protein-engineering-fundamentals
-description: "Use when applying protein engineering fundamentals."
+description: Use when applying protein engineering fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, protein]
-    related_skills: ['']
 ---
 
 # Biotech Protein Engineering Fundamentals

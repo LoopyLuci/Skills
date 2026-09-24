@@ -2,12 +2,12 @@
 name: biochemistry-structural
 description: Structural biology, protein chemistry, and enzymology
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["biochemistry", "structural"]
+    tags: [biochemistry, structural]
 ---
 
 # Biochemistry Structural

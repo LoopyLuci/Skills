@@ -1,14 +1,13 @@
 ---
 name: css-flexbox-patterns-deep-best-practices
-description: "Use when applying css flexbox best practices."
+description: Use when applying css flexbox best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [design, css]
-    related_skills: ['css-flexbox-patterns']
 ---
 
 # Css Flexbox Patterns Deep Best Practices

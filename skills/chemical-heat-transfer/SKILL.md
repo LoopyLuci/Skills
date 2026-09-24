@@ -1,14 +1,13 @@
 ---
 name: chemical-heat-transfer
-description: "Use when handling heat transfer."
+description: Use when handling heat transfer.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [chem, heat, heat-transfer]
-    related_skills: [general]
 ---
 
 # Chemical Heat Transfer

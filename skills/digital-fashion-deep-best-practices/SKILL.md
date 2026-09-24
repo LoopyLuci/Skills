@@ -1,14 +1,13 @@
 ---
 name: digital-fashion-deep-best-practices
-description: "Use when applying digital fashion best practices."
+description: Use when applying digital fashion best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, digital-fashion]
-    related_skills: ['']
 ---
 
 # Digital Fashion Deep Best Practices

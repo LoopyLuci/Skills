@@ -1,14 +1,13 @@
 ---
 name: aws-security-hub-troubleshooting
-description: "Use when applying aws security hub troubleshooting."
+description: Use when applying aws security hub troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, security-hub, security-center]
-    related_skills: [general]
 ---
 
 # Aws Security Hub Troubleshooting

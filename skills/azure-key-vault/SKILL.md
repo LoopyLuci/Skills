@@ -1,14 +1,13 @@
 ---
 name: azure-key-vault
-description: "Use when managing Azure secrets."
+description: Use when managing Azure secrets.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, azure, azure-key-vault]
-    related_skills: [general]
 ---
 
 # Azure Key Vault

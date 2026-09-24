@@ -1,9 +1,15 @@
 ---
 name: nlp-techniques
-description: "Use when implementing NLP: tokenization, embeddings, NER, QA."
-category: mlops
-tags: [nlp, tokenization, embeddings, ner, text-classification]
+description: Use when implementing NLP: tokenization, embeddings, NER, QA.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [nlp, tokenization, embeddings, ner, text-classification]
 ---
+
 # NLP Techniques
 
 Core NLP techniques for text processing and understanding.

@@ -2,12 +2,12 @@
 name: water-management-irrigation
 description: Irrigation systems, water efficiency, drainage, and water rights
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["water", "irrigation"]
+    tags: [water, irrigation]
 ---
 
 # Water Management Irrigation

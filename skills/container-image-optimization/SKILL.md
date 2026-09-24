@@ -1,14 +1,13 @@
 ---
 name: container-image-optimization
-description: "Use when optimizing container images."
+description: Use when optimizing container images.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, containers, docker-image-optimization]
-    related_skills: [general]
 ---
 
 # Container Image Optimization

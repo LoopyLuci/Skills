@@ -1,14 +1,13 @@
 ---
 name: financial-regulation-compliance
-description: "Use when ensuring financial regulation."
+description: Use when ensuring financial regulation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [legal, finance-reg, sec, compliance]
-    related_skills: [general]
 ---
 
 # Financial Regulation Compliance

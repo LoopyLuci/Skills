@@ -1,14 +1,13 @@
 ---
 name: aws-incident-response
-description: "Use when responding AWS incidents."
+description: Use when responding AWS incidents.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, aws, incident-response-best-practices]
-    related_skills: [general]
 ---
 
 # Aws Incident Response

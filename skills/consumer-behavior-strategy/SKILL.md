@@ -1,14 +1,13 @@
 ---
 name: consumer-behavior-strategy
-description: "Use when for consumer behavior strategy."
+description: Use when for consumer behavior strategy.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, management, general]
-    related_skills: [general]
 ---
 
 # Consumer Behavior Strategy

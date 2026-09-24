@@ -1,12 +1,13 @@
 ---
 name: pricing-models-saas
-description: "Use when designing SaaS pricing models."
+description: Use when designing SaaS pricing models.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["pricing", "saas", "tiers", "per-seat", "usage-based"]
+    tags: [pricing, saas, tiers, per-seat, usage-based]
 ---
 
 # Pricing Models Saas

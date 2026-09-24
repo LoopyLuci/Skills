@@ -1,12 +1,13 @@
 ---
 name: customer-health-scoring
-description: "Use when implementing customer health scores."
+description: Use when implementing customer health scores.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["customer-health", "scoring", "churn-prediction", "CX"]
+    tags: [customer-health, scoring, churn-prediction, cx]
 ---
 
 # Customer Health Scoring

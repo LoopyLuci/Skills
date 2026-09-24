@@ -1,14 +1,13 @@
 ---
 name: bioinformatics-sequences-fundamentals
-description: "Use when applying bioinformatics sequences fundamentals."
+description: Use when applying bioinformatics sequences fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [medicine, bioinfo, bioinformatics-sequences-analysis]
-    related_skills: [general]
 ---
 
 # Bioinformatics Sequences Fundamentals

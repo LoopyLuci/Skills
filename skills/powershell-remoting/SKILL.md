@@ -1,9 +1,15 @@
 ---
 name: powershell-remoting
-description: "Use when managing remote machines via PowerShell Remoting."
-category: software-development
-tags: [powershell, remoting, winrm, pssession, remote]
+description: Use when managing remote machines via PowerShell Remoting.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [powershell, remoting, winrm, pssession, remote]
 ---
+
 # PowerShell Remoting
 
 Managing remote machines via PowerShell Remoting (WinRM/PSSession).

@@ -1,13 +1,13 @@
 ---
 name: privilege-escalation-techniques
-description: "Use when escalating privileges on compromised systems."
+description: Use when escalating privileges on compromised systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [privilege-escalation, Windows, Linux, kernel-exploit, sudo, token, potato]
-    related_skills: [active-directory-pentesting, lateral-movement-pivoting, web-shell-deployment, exploit-development-basics]
+    tags: [privilege-escalation, windows, linux, kernel-exploit, sudo, token, potato]
 ---
 
 # Privilege Escalation Techniques

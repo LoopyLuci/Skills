@@ -1,8 +1,13 @@
 ---
 name: section-divider-generator
 description: Use when creating section divider slides for PowerPoint presentations with PptxGenJS.
-tags: [pptx, powerpoint, presentation, section-divider, pptxgenjs, javascript]
-related_skills: [cover-page-generator, content-page-generator, table-of-contents-generator]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [pptx, powerpoint, presentation, section-divider, pptxgenjs, javascript]
 ---
 
 # Section Divider Generator

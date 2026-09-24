@@ -1,8 +1,13 @@
 ---
 name: frontend-bootstrap
-description: "React+Vite+TS from spec. Alias, store, OS gotchas."
-category: software-development
-tags: [react, typescript, vite, zustand, frontend, windows]
+description: React+Vite+TS from spec. Alias, store, OS gotchas.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [react, typescript, vite, zustand, frontend, windows]
 ---
 
 # Frontend Application Bootstrap

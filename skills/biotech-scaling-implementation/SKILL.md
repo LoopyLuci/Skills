@@ -1,14 +1,13 @@
 ---
 name: biotech-scaling-implementation
-description: "Use when applying biotech scale-up implementation."
+description: Use when applying biotech scale-up implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, scale-up, scale-up]
-    related_skills: ['general']
 ---
 
 # Biotech Scaling Implementation

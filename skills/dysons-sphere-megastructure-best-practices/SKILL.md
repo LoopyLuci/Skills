@@ -1,14 +1,13 @@
 ---
 name: dysons-sphere-megastructure-best-practices
-description: "Use when applying dyson sphere megastructure best practi."
+description: Use when applying dyson sphere megastructure best practi.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [space, engineering, dyson-sphere-design]
-    related_skills: ['']
 ---
 
 # Dysons Sphere Megastructure Best Practices

@@ -2,12 +2,12 @@
 name: avionics-flight-control
 description: Fly-by-wire, FADEC, sensor fusion, and autopilot design
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["avionics", "flight-control"]
+    tags: [avionics, flight-control]
 ---
 
 # Avionics Flight Control

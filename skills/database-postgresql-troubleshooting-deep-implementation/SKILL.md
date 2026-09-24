@@ -1,14 +1,13 @@
 ---
 name: database-postgresql-troubleshooting-deep-implementation
-description: "Use when applying postgresql troubleshooting implementat."
+description: Use when applying postgresql troubleshooting implementat.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, postgres]
-    related_skills: ['postgres-troubleshooting']
 ---
 
 # Database Postgresql Troubleshooting Deep Implementation

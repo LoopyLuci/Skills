@@ -1,8 +1,13 @@
 ---
 name: find-community
 description: Use when looking for a community to build a business around
-tags: [community, business-idea, entrepreneur, validation]
-related_skills: [validate-idea, first-customers, company-values]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [community, business-idea, entrepreneur, validation]
 ---
 
 # Find Community

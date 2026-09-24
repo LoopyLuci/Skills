@@ -1,12 +1,13 @@
 ---
-
 name: gcloud
-description: >-
-source: google/skills
-tags: [gcp, gcloud, cli, cloud, google]
-metadata: 
-hermes: 
-
+description: Skill for gcloud
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [gcp, gcloud, cli, cloud, google]
 ---
 
 **Trigger**: Use when working with the Google Cloud CLI (`gcloud`) — authentication, resource management, configuration, and troubleshooting.

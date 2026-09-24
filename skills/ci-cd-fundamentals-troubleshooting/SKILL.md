@@ -1,14 +1,13 @@
 ---
 name: ci-cd-fundamentals-troubleshooting
-description: "Use when applying ci/cd fundamentals troubleshooting."
+description: Use when applying ci/cd fundamentals troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, ci-cd, fundamentals, ci-cd-fundamentals]
-    related_skills: [general]
 ---
 
 # Ci Cd Fundamentals Troubleshooting

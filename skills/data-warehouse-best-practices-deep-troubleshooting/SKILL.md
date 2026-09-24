@@ -1,14 +1,13 @@
 ---
 name: data-warehouse-best-practices-deep-troubleshooting
-description: "Use when applying data warehouse best practices troubles."
+description: Use when applying data warehouse best practices troubles.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, data-warehousing]
-    related_skills: ['data-warehousing-best-practices']
 ---
 
 # Data Warehouse Best Practices Deep Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: accounting-tax-best-practices
-description: "Use when applying accounting tax best practices."
+description: Use when applying accounting tax best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [accounting, tax, finance, tax-planning]
-    related_skills: [general]
 ---
 
 # Accounting Tax Best Practices

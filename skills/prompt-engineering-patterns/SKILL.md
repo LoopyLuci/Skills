@@ -1,9 +1,15 @@
 ---
 name: prompt-engineering-patterns
-description: "Use when designing prompts for LLMs."
-category: mlops
-tags: [prompt-engineering, llm, gpt, patterns, prompting]
+description: Use when designing prompts for LLMs.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [prompt-engineering, llm, gpt, patterns, prompting]
 ---
+
 # Prompt Engineering Patterns
 
 Systematic patterns for designing effective LLM prompts.

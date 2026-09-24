@@ -1,14 +1,13 @@
 ---
 name: distributed-systems-fundamentals
-description: "Use when learning distributed systems fundamentals."
+description: Use when learning distributed systems fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [distributed-systems, consensus, scalability]
-    related_skills: [general]
 ---
 
 # Distributed Systems Fundamentals

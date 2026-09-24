@@ -1,14 +1,13 @@
 ---
 name: beauty-ingredient-sourcing-best-practices
-description: "Use when applying beauty ingredient sourcing best practi."
+description: Use when applying beauty ingredient sourcing best practi.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [beauty, sourcing, beauty-ingredient-sourcing]
-    related_skills: ['general']
 ---
 
 # Beauty Ingredient Sourcing Best Practices

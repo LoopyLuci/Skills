@@ -1,14 +1,13 @@
 ---
 name: desktop-imgui-best-practices
-description: "Use when applying dear imgui best practices."
+description: Use when applying dear imgui best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [desktop, imgui, gui, c++]
-    related_skills: [general]
 ---
 
 # Desktop Imgui Best Practices

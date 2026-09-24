@@ -2,12 +2,12 @@
 name: stand-up-comedy-marketing
 description: Self-promotion, social media, touring, and building an audience
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["comedy", "marketing"]
+    tags: [comedy, marketing]
 ---
 
 # Stand Up Comedy Marketing

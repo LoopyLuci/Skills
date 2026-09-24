@@ -1,6 +1,13 @@
 ---
 name: skill-output-delivery
 description: Format skill output — media, files, and documents.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [skill, output, delivery]
 ---
 
 # Skill Output Delivery

@@ -1,14 +1,13 @@
 ---
 name: ccpa-compliance-best-practices
-description: "Use when applying ccpa compliance best practices."
+description: Use when applying ccpa compliance best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [legal, compliance, privacy-law-compliance]
-    related_skills: [general]
 ---
 
 # Ccpa Compliance Best Practices

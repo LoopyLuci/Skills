@@ -1,14 +1,13 @@
 ---
 name: additive-manufacturing-materials
-description: "Use when selecting AM materials."
+description: Use when selecting AM materials.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [materials-science, 3d-printing, additive-manufacturing, metals]
-    related_skills: [general]
 ---
 
 # Additive Manufacturing Materials

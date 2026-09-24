@@ -1,14 +1,13 @@
 ---
 name: data-cleaning-implementation
-description: "Use when applying data cleaning implementation."
+description: Use when applying data cleaning implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, cleaning, data-cleaning-techniques]
-    related_skills: [general]
 ---
 
 # Data Cleaning Implementation

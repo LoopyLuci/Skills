@@ -1,8 +1,13 @@
 ---
 name: minimax-xlsx
 description: Use when creating, editing, or validating Excel spreadsheets
-tags: [excel, xlsx, spreadsheet, financial-model, data]
-related_skills: [pptx-generator, mmx-cli]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [excel, xlsx, spreadsheet, financial-model, data]
 ---
 
 # Minimax Xlsx

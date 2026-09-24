@@ -1,14 +1,13 @@
 ---
 name: database-tuning-implementation
-description: "Use when for database tuning implementation."
+description: Use when for database tuning implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, tuning, performance, optimization]
-    related_skills: [general]
 ---
 
 # Database Tuning Implementation

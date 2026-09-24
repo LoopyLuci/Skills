@@ -1,13 +1,13 @@
 ---
 name: python-metaclasses-descriptors
-description: "Use when implementing metaclasses and descriptors."
+description: Use when implementing metaclasses and descriptors.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [python, metaclass, descriptor, __new__, __init_subclass__, meta]
-    related_skills: [python-typing-advanced, python-decorators-advanced, type-system-design-theory]
 ---
 
 # Metaclasses and Descriptors

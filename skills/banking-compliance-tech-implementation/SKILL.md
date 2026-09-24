@@ -1,14 +1,13 @@
 ---
 name: banking-compliance-tech-implementation
-description: "Use when applying banking compliance tech implementation."
+description: Use when applying banking compliance tech implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, compliance, banking-compliance]
-    related_skills: [general]
 ---
 
 # Banking Compliance Tech Implementation

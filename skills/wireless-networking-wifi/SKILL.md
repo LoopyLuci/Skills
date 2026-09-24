@@ -2,12 +2,12 @@
 name: wireless-networking-wifi
 description: Wi-Fi 6/6E/7, mesh networks, site surveys, and WLAN design
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["wifi", "wireless"]
+    tags: [wifi, wireless]
 ---
 
 # Wireless Networking Wifi

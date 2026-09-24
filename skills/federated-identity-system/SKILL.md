@@ -1,14 +1,13 @@
 ---
 name: federated-identity-system
-description: "Use when federating identity."
+description: Use when federating identity.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, iam, federated-identity]
-    related_skills: [general]
 ---
 
 # Federated Identity System

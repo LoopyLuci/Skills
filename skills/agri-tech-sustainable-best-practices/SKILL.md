@@ -1,14 +1,13 @@
 ---
 name: agri-tech-sustainable-best-practices
-description: "Use when applying sustainable agriculture best practices."
+description: Use when applying sustainable agriculture best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agri, sustainable, sustainable-agriculture]
-    related_skills: ['']
 ---
 
 # Agri Tech Sustainable Best Practices

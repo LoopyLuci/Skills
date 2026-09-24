@@ -1,14 +1,13 @@
 ---
 name: aws-security-hub
-description: "Use when using AWS Security Hub."
+description: Use when using AWS Security Hub.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, aws, aws-security-hub-best-practices]
-    related_skills: [general]
 ---
 
 # Aws Security Hub

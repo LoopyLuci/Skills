@@ -1,9 +1,15 @@
 ---
 name: wsl2-systemd-config
-description: "Use when enabling systemd in WSL2 distros."
-category: software-development
-tags: [wsl2, systemd, linux, service-management]
+description: Use when enabling systemd in WSL2 distros.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [wsl2, systemd, linux, service-management]
 ---
+
 # WSL2 systemd Configuration
 
 Enabling systemd in WSL2 distributions.

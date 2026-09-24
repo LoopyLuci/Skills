@@ -1,14 +1,13 @@
 ---
 name: assembly-troubleshooting
-description: "Use when applying assembly troubleshooting."
+description: Use when applying assembly troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mfg, assembly, assembly]
-    related_skills: [general]
 ---
 
 # Assembly Troubleshooting

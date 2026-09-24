@@ -1,14 +1,13 @@
 ---
 name: desktop-swt-fundamentals
-description: "Use when applying swt desktop fundamentals."
+description: Use when applying swt desktop fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [desktop, swt, java, gui]
-    related_skills: [general]
 ---
 
 # Desktop Swt Fundamentals

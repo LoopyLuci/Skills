@@ -1,14 +1,13 @@
 ---
 name: aws-rds-best-practices-deep-fundamentals
-description: "Use when applying aws rds fundamentals."
+description: Use when applying aws rds fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, rds]
-    related_skills: ['aws-rds-best-practices']
 ---
 
 # Aws Rds Best Practices Deep Fundamentals

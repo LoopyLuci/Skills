@@ -1,14 +1,13 @@
 ---
 name: chip-design-troubleshooting
-description: "Use when applying chip design troubleshooting."
+description: Use when applying chip design troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [semiconductor, design, chip-design]
-    related_skills: ['general']
 ---
 
 # Chip Design Troubleshooting

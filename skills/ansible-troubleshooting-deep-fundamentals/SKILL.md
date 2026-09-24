@@ -1,14 +1,13 @@
 ---
 name: ansible-troubleshooting-deep-fundamentals
-description: "Use when applying ansible troubleshooting fundamentals."
+description: Use when applying ansible troubleshooting fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, ansible]
-    related_skills: ['ansible-troubleshooting']
 ---
 
 # Ansible Troubleshooting Deep Fundamentals

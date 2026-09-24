@@ -1,13 +1,13 @@
 ---
 name: android-oem-audio-workarounds
-version: 1.0.0
-author: Hermes
-license: MIT
 description: Workaround Android OEM audio routing type mismatches.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [android, audio, bluetooth, miui, workaround, oem]
-    related_skills: [android-audio-device-control, android-instrumented-testing]
 ---
 
 # Android OEM Audio Routing Workarounds

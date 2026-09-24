@@ -1,14 +1,13 @@
 ---
 name: container-scanning-trivy
-description: "Use when scanning containers with Trivy."
+description: Use when scanning containers with Trivy.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, devops, trivy-container]
-    related_skills: [general]
 ---
 
 # Container Scanning Trivy

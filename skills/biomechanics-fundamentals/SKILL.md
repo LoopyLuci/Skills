@@ -1,14 +1,13 @@
 ---
 name: biomechanics-fundamentals
-description: "Use when applying biomechanics fundamentals."
+description: Use when applying biomechanics fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [medicine, biomedical, nutrition-biomechanics]
-    related_skills: [general]
 ---
 
 # Biomechanics Fundamentals

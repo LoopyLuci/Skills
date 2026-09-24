@@ -1,14 +1,13 @@
 ---
 name: electrical-eng-optimization-fundamentals
-description: "Use when applying elect eng optimization fundamentals."
+description: Use when applying elect eng optimization fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, electrical, optimization]
-    related_skills: [general]
 ---
 
 # Electrical Eng Optimization Fundamentals

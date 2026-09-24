@@ -1,14 +1,13 @@
 ---
 name: beauty-tech-personalized-formulas-fundamentals
-description: "Use when applying beauty personalized formulas fundament."
+description: Use when applying beauty personalized formulas fundament.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, beauty]
-    related_skills: ['']
 ---
 
 # Beauty Tech Personalized Formulas Fundamentals

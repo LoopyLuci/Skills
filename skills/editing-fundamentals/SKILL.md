@@ -1,14 +1,13 @@
 ---
 name: editing-fundamentals
-description: "Use when applying editing fundamentals."
+description: Use when applying editing fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [writing, editing, proofreading]
-    related_skills: [general]
 ---
 
 # Editing Fundamentals

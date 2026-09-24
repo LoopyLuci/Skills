@@ -1,13 +1,13 @@
 ---
 name: robot-control-systems
-description: "Use when implementing robot control systems."
+description: Use when implementing robot control systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [robot-control, PID, LQR, MPC, kinematics, dynamics, trajectory]
-    related_skills: [ros-robot-operating-system, slam-simultaneous-localization, agent-environment-interaction, deep-reinforcement-learning]
+    tags: [robot-control, pid, lqr, mpc, kinematics, dynamics, trajectory]
 ---
 
 # Robot Control Systems

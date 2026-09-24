@@ -2,12 +2,12 @@
 name: lean-manufacturing-six-sigma
 description: Value stream mapping, Kaizen, DMAIC, waste reduction, and continuous improvement
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["lean", "six-sigma"]
+    tags: [lean, six-sigma]
 ---
 
 # Lean Manufacturing Six Sigma

@@ -2,12 +2,12 @@
 name: social-welfare-policy
 description: Poverty measurement, program evaluation, social safety nets, and policy design
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["welfare", "social-policy"]
+    tags: [welfare, social-policy]
 ---
 
 # Social Welfare Policy

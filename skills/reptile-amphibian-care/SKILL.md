@@ -2,12 +2,12 @@
 name: reptile-amphibian-care
 description: Husbandry, heating, lighting, and species-specific care
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["reptile", "amphibian"]
+    tags: [reptile, amphibian]
 ---
 
 # Reptile Amphibian Care

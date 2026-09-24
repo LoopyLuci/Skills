@@ -1,14 +1,13 @@
 ---
 name: cognitive-load-fundamentals
-description: "Use when applying cognitive load assessment fundamentals."
+description: Use when applying cognitive load assessment fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neuro, psychology, cognitive-load-assessment]
-    related_skills: [general]
 ---
 
 # Cognitive Load Fundamentals

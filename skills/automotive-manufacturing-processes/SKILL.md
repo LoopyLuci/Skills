@@ -1,14 +1,13 @@
 ---
 name: automotive-manufacturing-processes
-description: "Use when managing auto manufacturing."
+description: Use when managing auto manufacturing.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [automotive, manufacturing, assembly-line, production]
-    related_skills: [lean-manufacturing-systems]
 ---
 
 # Automotive Manufacturing Processes

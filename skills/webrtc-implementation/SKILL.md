@@ -1,13 +1,13 @@
 ---
 name: webrtc-implementation
-description: "Use when implementing WebRTC for real-time communication."
+description: Use when implementing WebRTC for real-time communication.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [webrtc, video, audio, p2p, signaling, STUN, TURN, ICE, real-time-communication]
-    related_skills: [mdns-discovery, p2p-lan-transfer, instanttransfer-protocol, cross-thread-async]
+    tags: [webrtc, video, audio, p2p, signaling, stun, turn, ice, real-time-communication]
 ---
 
 # Webrtc Implementation

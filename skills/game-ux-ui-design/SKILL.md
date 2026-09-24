@@ -2,12 +2,12 @@
 name: game-ux-ui-design
 description: Diegetic UI, HUD design, accessibility, localization, and platform certification UX requirements
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["ux", "ui", "accessibility"]
+    tags: [ux, ui, accessibility]
 ---
 
 # Game Ux Ui Design

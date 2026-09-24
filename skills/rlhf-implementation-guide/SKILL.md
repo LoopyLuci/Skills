@@ -1,13 +1,13 @@
 ---
 name: rlhf-implementation-guide
-description: "Use when implementing RLHF for training language models."
+description: Use when implementing RLHF for training language models.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [RLHF, reinforcement-learning, LLM, training, human-feedback]
-    related_skills: [reinforcement-learning, llm-fine-tuning-lora, deep-reinforcement-learning, agent-safety-alignment]
+    tags: [rlhf, reinforcement-learning, llm, training, human-feedback]
 ---
 
 # Rlhf Implementation Guide

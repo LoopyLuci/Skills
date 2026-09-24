@@ -1,14 +1,13 @@
 ---
 name: data-engineering-best-practices
-description: "Use when applying data engineering best practices."
+description: Use when applying data engineering best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, data-engineering, pipelines, etl]
-    related_skills: [general]
 ---
 
 # Data Engineering Best Practices

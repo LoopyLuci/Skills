@@ -1,14 +1,13 @@
 ---
 name: data-catalog-management-deep-troubleshooting
-description: "Use when applying data catalog management troubleshooting."
+description: Use when applying data catalog management troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, data-catalog]
-    related_skills: ['data-catalog-management']
 ---
 
 # Data Catalog Management Deep Troubleshooting

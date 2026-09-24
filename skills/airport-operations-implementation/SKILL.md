@@ -1,14 +1,13 @@
 ---
 name: airport-operations-implementation
-description: "Use when applying airport operations implementation."
+description: Use when applying airport operations implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, airport, airport-operations]
-    related_skills: [general]
 ---
 
 # Airport Operations Implementation

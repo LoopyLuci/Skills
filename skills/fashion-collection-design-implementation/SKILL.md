@@ -1,14 +1,13 @@
 ---
 name: fashion-collection-design-implementation
-description: "Use when applying fashion collection design implementation."
+description: Use when applying fashion collection design implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, design, fashion-collection-design]
-    related_skills: ['general']
 ---
 
 # Fashion Collection Design Implementation

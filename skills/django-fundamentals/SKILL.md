@@ -1,14 +1,13 @@
 ---
 name: django-fundamentals
-description: "Use when applying django development fundamentals."
+description: Use when applying django development fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, django, python, web]
-    related_skills: [general]
 ---
 
 # Django Fundamentals

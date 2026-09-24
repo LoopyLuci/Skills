@@ -1,14 +1,13 @@
 ---
 name: dyson-sphere-engineering-best-practices
-description: "Use when applying dyson sphere eng best practices."
+description: Use when applying dyson sphere eng best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [space, physics, megastructure, stellar]
-    related_skills: [general]
 ---
 
 # Dyson Sphere Engineering Best Practices

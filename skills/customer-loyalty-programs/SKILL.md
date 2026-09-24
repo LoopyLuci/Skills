@@ -2,12 +2,12 @@
 name: customer-loyalty-programs
 description: Loyalty strategy, points programs, VIP tiers, and gamification
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["loyalty", "retention"]
+    tags: [loyalty, retention]
 ---
 
 # Customer Loyalty Programs

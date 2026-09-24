@@ -1,14 +1,13 @@
 ---
 name: biotech-medical-devices-implementation
-description: "Use when applying medical device development implementat."
+description: Use when applying medical device development implementat.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, medical-devices]
-    related_skills: ['']
 ---
 
 # Biotech Medical Devices Implementation

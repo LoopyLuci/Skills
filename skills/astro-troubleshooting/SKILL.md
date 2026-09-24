@@ -1,14 +1,13 @@
 ---
 name: astro-troubleshooting
-description: "Use when applying astro development troubleshooting."
+description: Use when applying astro development troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [frontend, astro, ssg, static-site]
-    related_skills: [general]
 ---
 
 # Astro Troubleshooting

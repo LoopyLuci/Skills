@@ -2,12 +2,12 @@
 name: catering-events-management
 description: Event planning, off-premise catering, logistics, and client management
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["catering", "events"]
+    tags: [catering, events]
 ---
 
 # Catering Events Management

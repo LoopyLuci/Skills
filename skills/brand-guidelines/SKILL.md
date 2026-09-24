@@ -1,8 +1,13 @@
 ---
 name: brand-guidelines
 description: Use when applying brand colors and typography to artifacts.
-tags: [branding, design-systems, visual-identity, typography]
-related_skills: [theme-factory, frontend-design]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [branding, design-systems, visual-identity, typography]
 ---
 
 # Anthropic Brand Styling

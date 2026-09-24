@@ -1,14 +1,13 @@
 ---
 name: content-marketing-design-implementation
-description: "Use when applying content marketing design implementation."
+description: Use when applying content marketing design implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, content-marketing-design]
-    related_skills: ['']
 ---
 
 # Content Marketing Design Implementation

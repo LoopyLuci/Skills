@@ -1,12 +1,13 @@
 ---
 name: dockerfile-best-practices
-description: "Use when writing optimized Dockerfiles."
+description: Use when writing optimized Dockerfiles.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["docker", "dockerfile", "multi-stage", "layers", "caching"]
+    tags: [docker, dockerfile, multi-stage, layers, caching]
 ---
 
 # Dockerfile Best Practices

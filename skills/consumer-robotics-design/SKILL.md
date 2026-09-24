@@ -1,14 +1,13 @@
 ---
 name: consumer-robotics-design
-description: "Use when designing consumer robots."
+description: Use when designing consumer robots.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [consumer-tech, robotics, consumer-robots, home]
-    related_skills: [general]
 ---
 
 # Consumer Robotics Design

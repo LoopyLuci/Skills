@@ -1,14 +1,13 @@
 ---
 name: email-security-troubleshooting
-description: "Use when for email security troubleshooting."
+description: Use when for email security troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, email, phishing, spam]
-    related_skills: [general]
 ---
 
 # Email Security Troubleshooting

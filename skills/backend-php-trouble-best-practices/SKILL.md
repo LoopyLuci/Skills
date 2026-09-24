@@ -1,14 +1,13 @@
 ---
 name: backend-php-trouble-best-practices
-description: "Use when applying backend php troubl best practices."
+description: Use when applying backend php troubl best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, php, backend-php-troubleshooting]
-    related_skills: [general]
 ---
 
 # Backend Php Trouble Best Practices

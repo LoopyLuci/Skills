@@ -2,12 +2,12 @@
 name: lean-construction-methods
 description: Last planner system, pull planning, and lean project delivery
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["lean", "construction"]
+    tags: [lean, construction]
 ---
 
 # Lean Construction Methods

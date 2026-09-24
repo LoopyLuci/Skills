@@ -1,14 +1,13 @@
 ---
 name: biotech-immunotherapy-implementation
-description: "Use when applying immunotherapy implementation."
+description: Use when applying immunotherapy implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, immuno]
-    related_skills: ['']
 ---
 
 # Biotech Immunotherapy Implementation

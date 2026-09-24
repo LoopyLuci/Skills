@@ -1,13 +1,13 @@
 ---
 name: content-writing-seo-copy
-description: "Use when writing SEO content and marketing copy."
+description: Use when writing SEO content and marketing copy.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [content-writing, copywriting, seo-copy, marketing, content-creation]
-    related_skills: [blog-building-content-strategy, seo-search-engine-optimization, social-media-content-planning, digital-marketing-strategy]
 ---
 
 # Content Writing Seo Copy

@@ -1,14 +1,13 @@
 ---
 name: business-operations-implementation
-description: "Use when applying business operations implementation."
+description: Use when applying business operations implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, operations, operations-management]
-    related_skills: [general]
 ---
 
 # Business Operations Implementation

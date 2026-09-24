@@ -1,14 +1,13 @@
 ---
 name: api-error-handling-best-practices
-description: "Use when applying api error handling best practices."
+description: Use when applying api error handling best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [api, error-handling, rest, graphql]
-    related_skills: [general]
 ---
 
 # Api Error Handling Best Practices

@@ -1,14 +1,13 @@
 ---
 name: environmental-engineering-optimization
-description: "Use when optimizing environmental systems."
+description: Use when optimizing environmental systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [environmental, eia, remediation, compliance]
-    related_skills: [general]
 ---
 
 # Environmental Engineering Optimization

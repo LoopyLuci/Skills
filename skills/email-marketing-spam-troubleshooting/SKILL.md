@@ -1,14 +1,13 @@
 ---
 name: email-marketing-spam-troubleshooting
-description: "Use when applying email spam troubleshooting."
+description: Use when applying email spam troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, spam, deliverability]
-    related_skills: [general]
 ---
 
 # Email Marketing Spam Troubleshooting

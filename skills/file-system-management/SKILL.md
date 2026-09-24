@@ -1,6 +1,13 @@
 ---
 name: file-system-management
-description: "Organize deduplicate archive and clean files with Python"
+description: Organize deduplicate archive and clean files with Python
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [file, system, management]
 ---
 
 # File System Management
@@ -22,3 +29,16 @@ import hashlib
 def file_hash(path):
     return hashlib.md5(open(path, "rb").read()).hexdigest()
 ```
+
+## Trigger
+
+Activate this skill when the user mentions:
+- file, system, management workflows or issues
+- Building, fixing, or optimizing file system management
+
+
+## Core Concepts
+
+- Domain fundamentals and best practices
+- Key tools and methodologies
+- Quality standards and common patterns

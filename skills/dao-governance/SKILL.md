@@ -2,12 +2,12 @@
 name: dao-governance
 description: DAO frameworks, governance tokens, voting, and treasury management
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["dao", "governance"]
+    tags: [dao, governance]
 ---
 
 # Dao Governance

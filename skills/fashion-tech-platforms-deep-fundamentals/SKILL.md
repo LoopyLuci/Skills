@@ -1,14 +1,13 @@
 ---
 name: fashion-tech-platforms-deep-fundamentals
-description: "Use when applying fashion tech platforms fundamentals."
+description: Use when applying fashion tech platforms fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, platforms]
-    related_skills: ['']
 ---
 
 # Fashion Tech Platforms Deep Fundamentals

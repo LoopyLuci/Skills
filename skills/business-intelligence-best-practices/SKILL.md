@@ -1,14 +1,13 @@
 ---
 name: business-intelligence-best-practices
-description: "Use when applying business intelligence best practices."
+description: Use when applying business intelligence best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, bi, business-intelligence-implementation]
-    related_skills: [general]
 ---
 
 # Business Intelligence Best Practices

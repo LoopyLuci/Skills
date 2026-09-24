@@ -1,14 +1,13 @@
 ---
 name: aviation-drone-ops-fundamentals
-description: "Use when applying drone operations fundamentals."
+description: Use when applying drone operations fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, drone, uas]
-    related_skills: ['general']
 ---
 
 # Aviation Drone Ops Fundamentals

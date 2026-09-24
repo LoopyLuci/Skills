@@ -1,14 +1,13 @@
 ---
 name: construction-eng-fundamentals
-description: "Use when for construction eng fundamentals."
+description: Use when for construction eng fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [construction, civil, structural]
-    related_skills: [general]
 ---
 
 # Construction Eng Fundamentals

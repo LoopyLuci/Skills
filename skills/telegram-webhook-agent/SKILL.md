@@ -1,6 +1,13 @@
 ---
 name: telegram-webhook-agent
-description: "Let Telegram messages trigger agent responses via webhooks"
+description: Let Telegram messages trigger agent responses via webhooks
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [telegram, webhook, agent]
 ---
 
 # Telegram Webhook Agent

@@ -1,14 +1,13 @@
 ---
 name: aws-redshift-implementation
-description: "Use when applying aws redshift implementation."
+description: Use when applying aws redshift implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, redshift, data-warehouse, analytics]
-    related_skills: [general]
 ---
 
 # Aws Redshift Implementation

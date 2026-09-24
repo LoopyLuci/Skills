@@ -1,13 +1,13 @@
 ---
 name: branding-identity-guide
-description: "Use when developing brand identity and style guidelines."
+description: Use when developing brand identity and style guidelines.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [branding, identity, style-guide, visual-design, brand-strategy, logo]
-    related_skills: [content-writing-seo-copy, digital-marketing-strategy, social-media-content-planning, marketing-funnel-design]
 ---
 
 # Branding Identity Guide

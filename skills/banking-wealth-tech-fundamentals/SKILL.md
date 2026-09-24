@@ -1,14 +1,13 @@
 ---
 name: banking-wealth-tech-fundamentals
-description: "Use when applying wealth tech fundamentals."
+description: Use when applying wealth tech fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, wealth, wealth-tech]
-    related_skills: [general]
 ---
 
 # Banking Wealth Tech Fundamentals

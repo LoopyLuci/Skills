@@ -2,12 +2,12 @@
 name: historical-records-research
 description: Archival research, primary sources, and historical records
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["archives", "research"]
+    tags: [archives, research]
 ---
 
 # Historical Records Research

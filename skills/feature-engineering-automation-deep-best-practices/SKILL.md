@@ -1,14 +1,13 @@
 ---
 name: feature-engineering-automation-deep-best-practices
-description: "Use when applying feature engineering automation best pr."
+description: Use when applying feature engineering automation best pr.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, data-science]
-    related_skills: ['feature-engineering-automation']
 ---
 
 # Feature Engineering Automation Deep Best Practices

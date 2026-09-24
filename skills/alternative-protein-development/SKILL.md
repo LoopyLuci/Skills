@@ -1,14 +1,13 @@
 ---
 name: alternative-protein-development
-description: "Use when developing alternative proteins."
+description: Use when developing alternative proteins.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [food-tech, alt-protein, cultivated-meat]
-    related_skills: ['alt-protein-development']
 ---
 
 # Alternative Protein Development

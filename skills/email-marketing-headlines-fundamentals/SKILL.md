@@ -1,14 +1,13 @@
 ---
 name: email-marketing-headlines-fundamentals
-description: "Use when applying email headlines fundamentals."
+description: Use when applying email headlines fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, copywriting, headlines]
-    related_skills: [general]
 ---
 
 # Email Marketing Headlines Fundamentals

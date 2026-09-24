@@ -2,12 +2,12 @@
 name: urban-forestry-green-infrastructure
 description: Urban trees, green infrastructure, and ecosystem services
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["urban", "green-infra"]
+    tags: [urban, green-infra]
 ---
 
 # Urban Forestry Green Infrastructure

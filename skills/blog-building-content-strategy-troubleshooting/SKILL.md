@@ -1,14 +1,13 @@
 ---
 name: blog-building-content-strategy-troubleshooting
-description: "Use when applying blog content strategy troubleshooting."
+description: Use when applying blog content strategy troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, blog-building-content-strategy]
-    related_skills: ['']
 ---
 
 # Blog Building Content Strategy Troubleshooting

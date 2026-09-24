@@ -2,12 +2,12 @@
 name: fashion-merchandising-buying
 description: Fashion buying, merchandising, and assortment planning
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["merchandising", "buying"]
+    tags: [merchandising, buying]
 ---
 
 # Fashion Merchandising Buying

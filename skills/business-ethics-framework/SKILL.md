@@ -1,14 +1,13 @@
 ---
 name: business-ethics-framework
-description: "Use when applying business ethics frameworks."
+description: Use when applying business ethics frameworks.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: ['e', 't', 'h', 'i', 'c', 's', ',', ' ', 'c', 'o', 'r', 'p', 'o', 'r', 'a', 't', 'e', '-', 'g', 'o', 'v', 'e', 'r', 'n', 'a', 'n', 'c', 'e']
-    related_skills: ['legal-and-compliance-basics']
+    tags: [e, t, h, i, c, s, , ,  , c, o, r, p, o, r, a, t, e, -, g, o, v, e, r, n, a, n, c, e]
 ---
 
 # Business Ethics Framework

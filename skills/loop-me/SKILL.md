@@ -1,8 +1,13 @@
 ---
 name: loop-me
 description: Use when you want the AI to check back periodically for updates or progress
-tags: [looping, check-in, progress, async, status]
-related_skills: [teach, wayfinder, triage]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [looping, check-in, progress, async, status]
 ---
 
 # Loop Me

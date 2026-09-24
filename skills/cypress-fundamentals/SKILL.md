@@ -1,14 +1,13 @@
 ---
 name: cypress-fundamentals
-description: "Use when applying cypress fundamentals."
+description: Use when applying cypress fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [testing, cypress, e2e, web-testing]
-    related_skills: [general]
 ---
 
 # Cypress Fundamentals

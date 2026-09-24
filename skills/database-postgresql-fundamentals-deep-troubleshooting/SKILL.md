@@ -1,14 +1,13 @@
 ---
 name: database-postgresql-fundamentals-deep-troubleshooting
-description: "Use when applying postgresql fundamentals troubleshooting."
+description: Use when applying postgresql fundamentals troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, postgres]
-    related_skills: ['postgres-fundamentals']
 ---
 
 # Database Postgresql Fundamentals Deep Troubleshooting

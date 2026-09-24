@@ -2,12 +2,12 @@
 name: software-defined-networking-sdn
 description: OpenFlow, SDN controllers, network virtualization, and intent-based networking
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["sdn", "networking"]
+    tags: [sdn, networking]
 ---
 
 # Software Defined Networking Sdn

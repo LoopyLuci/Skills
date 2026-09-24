@@ -1,14 +1,13 @@
 ---
 name: container-dev-containers
-description: "Use when configuring dev containers."
+description: Use when configuring dev containers.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, containers, docker-dev-containers]
-    related_skills: [general]
 ---
 
 # Container Dev Containers

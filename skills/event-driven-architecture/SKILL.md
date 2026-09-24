@@ -1,13 +1,13 @@
 ---
 name: event-driven-architecture
-description: "Use when designing event-driven and message-driven systems."
+description: Use when designing event-driven and message-driven systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [event-driven, messaging, kafka, async, events, CQRS, saga, pub-sub]
-    related_skills: [microservices-decomposition, distributed-systems-patterns, message-queue-patterns, data-pipeline-streaming]
+    tags: [event-driven, messaging, kafka, async, events, cqrs, saga, pub-sub]
 ---
 
 # Event Driven Architecture

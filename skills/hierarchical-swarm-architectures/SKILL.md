@@ -1,13 +1,13 @@
 ---
 name: hierarchical-swarm-architectures
-description: "Use when designing hierarchical multi-agent swarm systems."
+description: Use when designing hierarchical multi-agent swarm systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [agents, swarm, hierarchy, architecture, orchestration]
-    related_skills: [agent-swarm-architectures, multi-agent-orchestration, sub-agent-delegation, agent-routing-models, agent-task-decomposition]
 ---
 
 # Hierarchical Swarm Architectures

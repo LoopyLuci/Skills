@@ -1,14 +1,13 @@
 ---
 name: blockchain-ethereum-implementation-implementation
-description: "Use when applying ethereum implementation implementation."
+description: Use when applying ethereum implementation implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [blockchain, ethereum]
-    related_skills: ['blockchain-ethereum-implementation']
 ---
 
 # Blockchain Ethereum Implementation Implementation

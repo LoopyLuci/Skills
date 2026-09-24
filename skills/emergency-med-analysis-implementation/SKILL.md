@@ -1,14 +1,13 @@
 ---
 name: emergency-med-analysis-implementation
-description: "Use when applying emergency med analysis implementation."
+description: Use when applying emergency med analysis implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [medicine, emergency, emergency-med-analysis]
-    related_skills: [general]
 ---
 
 # Emergency Med Analysis Implementation

@@ -2,12 +2,12 @@
 name: life-coaching-techniques
 description: Coaching frameworks, powerful questions, and accountability
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["coaching", "accountability"]
+    tags: [coaching, accountability]
 ---
 
 # Life Coaching Techniques

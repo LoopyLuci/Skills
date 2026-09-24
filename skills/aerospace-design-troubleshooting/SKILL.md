@@ -1,14 +1,13 @@
 ---
 name: aerospace-design-troubleshooting
-description: "Use when applying aerospace design troubleshooting."
+description: Use when applying aerospace design troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aerospace, design, aerospace-eng-design]
-    related_skills: [general]
 ---
 
 # Aerospace Design Troubleshooting

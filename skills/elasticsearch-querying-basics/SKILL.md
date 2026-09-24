@@ -1,12 +1,13 @@
 ---
 name: elasticsearch-querying-basics
-description: "Use when querying Elasticsearch."
+description: Use when querying Elasticsearch.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["elasticsearch", "query", "DSL", "filters", "aggregations"]
+    tags: [elasticsearch, query, dsl, filters, aggregations]
 ---
 
 # Elasticsearch Querying Basics

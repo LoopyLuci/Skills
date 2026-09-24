@@ -2,12 +2,12 @@
 name: event-risk-management-safety
 description: Risk assessment, emergency planning, and event insurance
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["risk", "safety"]
+    tags: [risk, safety]
 ---
 
 # Event Risk Management Safety

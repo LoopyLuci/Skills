@@ -1,14 +1,13 @@
 ---
 name: agri-tech-sustainable-implementation
-description: "Use when applying sustainable agriculture implementation."
+description: Use when applying sustainable agriculture implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agri, sustainable, sustainable-agriculture]
-    related_skills: ['']
 ---
 
 # Agri Tech Sustainable Implementation

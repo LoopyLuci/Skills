@@ -1,14 +1,13 @@
 ---
 name: aerodynamics-fundamentals
-description: "Use when applying aerodynamics fundamentals."
+description: Use when applying aerodynamics fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, physics, automotive-aerodynamics]
-    related_skills: [general]
 ---
 
 # Aerodynamics Fundamentals

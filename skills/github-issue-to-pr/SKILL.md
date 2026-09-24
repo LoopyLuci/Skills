@@ -1,14 +1,13 @@
 ---
 name: github-issue-to-pr
-description: "Carry a GitHub issue to a verified PR with honest CI state."
-version: 0.1.0
-author: Ben Barclay (benbarclay), Hermes Agent
+description: Carry a GitHub issue to a verified PR with honest CI state.
+version: 1.0.0
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: [GitHub, Issues, Coding, Pull-Requests, CI]
-    related_skills: [github-issues, github-pr-workflow, systematic-debugging, test-driven-development, requesting-code-review]
+    tags: [github, issues, coding, pull-requests, ci]
 ---
 
 # GitHub Issue to Pull Request

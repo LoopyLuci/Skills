@@ -1,14 +1,13 @@
 ---
 name: aviation-lightweight-design-fundamentals
-description: "Use when applying lightweight design fundamentals."
+description: Use when applying lightweight design fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, weight, lightweight]
-    related_skills: ['general']
 ---
 
 # Aviation Lightweight Design Fundamentals

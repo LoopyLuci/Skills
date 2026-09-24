@@ -1,14 +1,13 @@
 ---
 name: farm-management-software
-description: "Use when planning farm management. Software, workflows."
+description: Use when planning farm management. Software, workflows.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [farm-management, agtech, agronomy, operations]
-    related_skills: [precision-agriculture, crop-yield-modeling]
 ---
 
 # Farm Management Software

@@ -2,12 +2,12 @@
 name: copywriting-conversion
 description: Headlines, CTAs, AIDA, PAS, and sales page copy that converts
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["copywriting", "conversion"]
+    tags: [copywriting, conversion]
 ---
 
 # Copywriting Conversion

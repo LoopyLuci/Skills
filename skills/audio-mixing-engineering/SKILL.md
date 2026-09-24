@@ -2,12 +2,12 @@
 name: audio-mixing-engineering
 description: Gain staging, EQ, compression, reverb, automation, and mixing in-the-box
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["mixing", "engineering"]
+    tags: [mixing, engineering]
 ---
 
 # Audio Mixing Engineering

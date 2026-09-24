@@ -1,14 +1,13 @@
 ---
 name: climate-modeling-troubleshooting
-description: "Use when applying climate modeling troubleshooting."
+description: Use when applying climate modeling troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, science, climate-risk-assessment]
-    related_skills: [general]
 ---
 
 # Climate Modeling Troubleshooting

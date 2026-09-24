@@ -1,14 +1,13 @@
 ---
 name: crispr-goldy-2a-fundamentals
-description: "Use when applying crispr goldy 2a fundamentals."
+description: Use when applying crispr goldy 2a fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, crispr, crispr-gene-editing]
-    related_skills: ['']
 ---
 
 # Crispr Goldy 2a Fundamentals

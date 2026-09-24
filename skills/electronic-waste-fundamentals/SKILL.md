@@ -1,14 +1,13 @@
 ---
 name: electronic-waste-fundamentals
-description: "Use when applying electronic waste fundamentals."
+description: Use when applying electronic waste fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [waste, e-waste]
-    related_skills: ['general']
 ---
 
 # Electronic Waste Fundamentals

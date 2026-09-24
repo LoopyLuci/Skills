@@ -2,12 +2,12 @@
 name: gps-gnss-positioning
 description: RTK, PPP, coordinate transformations, and accuracy assessment
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["gps", "surveying"]
+    tags: [gps, surveying]
 ---
 
 # Gps Gnss Positioning

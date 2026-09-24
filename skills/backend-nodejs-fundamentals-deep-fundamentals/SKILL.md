@@ -1,14 +1,13 @@
 ---
 name: backend-nodejs-fundamentals-deep-fundamentals
-description: "Use when applying node.js backend fundamentals fundament."
+description: Use when applying node.js backend fundamentals fundament.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, nodejs]
-    related_skills: ['backend-nodejs-fundamentals']
 ---
 
 # Backend Nodejs Fundamentals Deep Fundamentals

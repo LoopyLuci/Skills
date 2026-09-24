@@ -1,14 +1,13 @@
 ---
 name: employee-retention-troubleshooting
-description: "Use when applying employee retention troubleshooting."
+description: Use when applying employee retention troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [hr, retention, employee-retention-strategies]
-    related_skills: [general]
 ---
 
 # Employee Retention Troubleshooting

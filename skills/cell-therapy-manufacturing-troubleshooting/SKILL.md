@@ -1,14 +1,13 @@
 ---
 name: cell-therapy-manufacturing-troubleshooting
-description: "Use when applying cell therapy manufacturing biotech tro."
+description: Use when applying cell therapy manufacturing biotech tro.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, bio]
-    related_skills: ['']
 ---
 
 # Cell Therapy Manufacturing Troubleshooting

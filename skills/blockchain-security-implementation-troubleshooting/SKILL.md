@@ -1,14 +1,13 @@
 ---
 name: blockchain-security-implementation-troubleshooting
-description: "Use when applying blockchain security implementation tro."
+description: Use when applying blockchain security implementation tro.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [blockchain, security]
-    related_skills: ['blockchain-security-implementation']
 ---
 
 # Blockchain Security Implementation Troubleshooting

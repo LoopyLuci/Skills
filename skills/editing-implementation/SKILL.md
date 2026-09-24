@@ -1,14 +1,13 @@
 ---
 name: editing-implementation
-description: "Use when applying editing implementation."
+description: Use when applying editing implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [writing, editing, proofreading]
-    related_skills: [general]
 ---
 
 # Editing Implementation

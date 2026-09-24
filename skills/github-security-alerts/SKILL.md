@@ -1,8 +1,13 @@
 ---
-
 name: github-security-alerts
 description: Manage Dependabot, secret scanning, and code scanning.
-
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [github, security, alerts]
 ---
 
 # GitHub Security & Alerts

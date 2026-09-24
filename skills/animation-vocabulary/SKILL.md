@@ -1,8 +1,13 @@
 ---
 name: animation-vocabulary
 description: Use when naming a motion effect by its feel description.
-tags: [animation, motion, ui, vocabulary, css]
-related_skills: [apple-design, frontend-design]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [animation, motion, ui, vocabulary, css]
 ---
 
 # Animation Vocabulary

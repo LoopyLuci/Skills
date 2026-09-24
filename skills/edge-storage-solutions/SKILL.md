@@ -1,14 +1,13 @@
 ---
 name: edge-storage-solutions
-description: "Use when designing edge storage."
+description: Use when designing edge storage.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [edge-computing, edge-storage, distributed-db, caching]
-    related_skills: ['redis-caching-patterns']
 ---
 
 # Edge Storage Solutions

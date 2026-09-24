@@ -1,6 +1,13 @@
 ---
 name: changelog-generation
-description: "Auto generate CHANGELOG from conventional commits"
+description: Auto generate CHANGELOG from conventional commits
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [changelog, generation]
 ---
 
 # Changelog Generation
@@ -27,3 +34,16 @@ git-cliff -o CHANGELOG.md
 ### Fixed
 - Bug in Y
 ```
+
+## Trigger
+
+Activate this skill when the user mentions:
+- changelog, generation workflows or issues
+- Building, fixing, or optimizing changelog generation
+
+
+## Core Concepts
+
+- Domain fundamentals and best practices
+- Key tools and methodologies
+- Quality standards and common patterns

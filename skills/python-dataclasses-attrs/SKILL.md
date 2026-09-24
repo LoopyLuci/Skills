@@ -1,12 +1,13 @@
 ---
 name: python-dataclasses-attrs
-description: "Use when using dataclasses and attrs."
+description: Use when using dataclasses and attrs.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["python", "dataclasses", "attrs", "frozen", "slots"]
+    tags: [python, dataclasses, attrs, frozen, slots]
 ---
 
 # Python Dataclasses Attrs

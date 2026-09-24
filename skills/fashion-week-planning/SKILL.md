@@ -1,14 +1,13 @@
 ---
 name: fashion-week-planning
-description: "Use when planning fashion week events."
+description: Use when planning fashion week events.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, fashion-week, event-planning, production]
-    related_skills: [general]
 ---
 
 # Fashion Week Planning

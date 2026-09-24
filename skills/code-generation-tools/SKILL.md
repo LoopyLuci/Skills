@@ -1,13 +1,13 @@
 ---
 name: code-generation-tools
-description: "Use when implementing code generation tools."
+description: Use when implementing code generation tools.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [code-generation, scaffolding, codegen, templates, AST, DSL]
-    related_skills: [project-scaffolding, monorepo-management, prompt-engineering-for-code, frontend-bootstrap]
+    tags: [code-generation, scaffolding, codegen, templates, ast, dsl]
 ---
 
 # Code Generation Tools

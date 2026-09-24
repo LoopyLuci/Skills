@@ -1,14 +1,13 @@
 ---
 name: employee-onboarding-automation
-description: "Use when automating employee onboarding."
+description: Use when automating employee onboarding.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [hr, onboarding, automation]
-    related_skills: [general]
 ---
 
 # Employee Onboarding Automation

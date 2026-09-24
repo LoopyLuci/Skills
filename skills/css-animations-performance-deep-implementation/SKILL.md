@@ -1,14 +1,13 @@
 ---
 name: css-animations-performance-deep-implementation
-description: "Use when applying css animations performance implementat."
+description: Use when applying css animations performance implementat.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [design, css]
-    related_skills: ['css-animations-performance']
 ---
 
 # Css Animations Performance Deep Implementation

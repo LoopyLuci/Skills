@@ -1,14 +1,13 @@
 ---
 name: chemical-reaction-engineering
-description: "Use when engineering reactions."
+description: Use when engineering reactions.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [chem, reaction, reactions]
-    related_skills: [general]
 ---
 
 # Chemical Reaction Engineering

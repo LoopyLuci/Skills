@@ -1,14 +1,13 @@
 ---
 name: excalidraw-diagrams-deep-fundamentals
-description: "Use when applying excalidraw diagrams fundamentals."
+description: Use when applying excalidraw diagrams fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [design, diagrams]
-    related_skills: ['excalidraw']
 ---
 
 # Excalidraw Diagrams Deep Fundamentals

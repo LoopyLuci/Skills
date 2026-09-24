@@ -1,14 +1,13 @@
 ---
 name: data-engineering-pipelines-implementation-troubleshooting
-description: "Use when applying data engineering implementation troubl."
+description: Use when applying data engineering implementation troubl.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, data-eng-implementation]
-    related_skills: ['']
 ---
 
 # Data Engineering Pipelines Implementation Troubleshooting

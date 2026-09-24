@@ -1,14 +1,13 @@
 ---
 name: email-testing-fundamentals
-description: "Use when applying email testing fundamentals."
+description: Use when applying email testing fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, testing, qa]
-    related_skills: [general]
 ---
 
 # Email Testing Fundamentals

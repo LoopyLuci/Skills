@@ -1,14 +1,13 @@
 ---
 name: agri-tech-supply-chain-implementation
-description: "Use when applying agricultural supply chain implementation."
+description: Use when applying agricultural supply chain implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agri, supply, agri-supply-chain]
-    related_skills: ['']
 ---
 
 # Agri Tech Supply Chain Implementation

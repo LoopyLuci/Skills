@@ -1,14 +1,13 @@
 ---
 name: 3d-printer-consumer-design
-description: "Use when designing consumer 3D printers."
+description: Use when designing consumer 3D printers.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [consumer-tech, 3d-printing, desktop-printer, consumer]
-    related_skills: [additive-manufacturing-materials]
 ---
 
 # 3d Printer Consumer Design

@@ -1,14 +1,13 @@
 ---
 name: environmental-services-implementation
-description: "Use when applying environmental services implementation."
+description: Use when applying environmental services implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, environment, environmental-services]
-    related_skills: [general]
 ---
 
 # Environmental Services Implementation

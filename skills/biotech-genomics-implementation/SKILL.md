@@ -1,14 +1,13 @@
 ---
 name: biotech-genomics-implementation
-description: "Use when applying genomics implementation."
+description: Use when applying genomics implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, genomics]
-    related_skills: ['']
 ---
 
 # Biotech Genomics Implementation

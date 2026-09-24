@@ -1,13 +1,13 @@
 ---
 name: few-shot-prompting-advanced
-description: "Use when implementing advanced few-shot prompting."
+description: Use when implementing advanced few-shot prompting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [few-shot, prompting, in-context-learning, example-selection, dynamic-prompting]
-    related_skills: [prompt-optimization-automation, advanced-reasoning-patterns, llm-fine-tuning-lora, large-language-model-optimization]
 ---
 
 # Advanced Few-Shot Prompting

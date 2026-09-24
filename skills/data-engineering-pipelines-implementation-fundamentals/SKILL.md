@@ -1,14 +1,13 @@
 ---
 name: data-engineering-pipelines-implementation-fundamentals
-description: "Use when applying data engineering implementation fundam."
+description: Use when applying data engineering implementation fundam.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, data-eng-implementation]
-    related_skills: ['']
 ---
 
 # Data Engineering Pipelines Implementation Fundamentals

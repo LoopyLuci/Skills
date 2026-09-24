@@ -1,12 +1,13 @@
 ---
 name: terraform-module-design
-description: "Use when designing Terraform modules."
+description: Use when designing Terraform modules.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["terraform", "modules", "IaC", "reusability", "outputs"]
+    tags: [terraform, modules, iac, reusability, outputs]
 ---
 
 # Terraform Module Design

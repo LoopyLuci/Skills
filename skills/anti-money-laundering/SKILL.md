@@ -1,14 +1,13 @@
 ---
 name: anti-money-laundering
-description: "Use when applying AML measures."
+description: Use when applying AML measures.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, compliance, anti-money-laundering]
-    related_skills: [general]
 ---
 
 # Anti Money Laundering

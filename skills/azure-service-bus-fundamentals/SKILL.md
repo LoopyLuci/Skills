@@ -1,14 +1,13 @@
 ---
 name: azure-service-bus-fundamentals
-description: "Use when applying azure service bus fundamentals."
+description: Use when applying azure service bus fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, azure, service-bus, mq]
-    related_skills: [general]
 ---
 
 # Azure Service Bus Fundamentals

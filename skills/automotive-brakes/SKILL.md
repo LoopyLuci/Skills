@@ -1,14 +1,13 @@
 ---
 name: automotive-brakes
-description: "Use when designing braking systems."
+description: Use when designing braking systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [auto, brake, brakes]
-    related_skills: [general]
 ---
 
 # Automotive Brakes

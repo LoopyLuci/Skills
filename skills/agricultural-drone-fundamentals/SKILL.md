@@ -1,14 +1,13 @@
 ---
 name: agricultural-drone-fundamentals
-description: "Use when applying agricultural drones fundamentals."
+description: Use when applying agricultural drones fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agriculture, drone, drone-crop-monitoring]
-    related_skills: [general]
 ---
 
 # Agricultural Drone Fundamentals

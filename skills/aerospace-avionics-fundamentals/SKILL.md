@@ -1,14 +1,13 @@
 ---
 name: aerospace-avionics-fundamentals
-description: "Use when applying aerospace avionics fundamentals."
+description: Use when applying aerospace avionics fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aerospace, electronics, satellite-avionics]
-    related_skills: [general]
 ---
 
 # Aerospace Avionics Fundamentals

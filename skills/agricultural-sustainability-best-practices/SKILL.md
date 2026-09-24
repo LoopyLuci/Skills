@@ -1,14 +1,13 @@
 ---
 name: agricultural-sustainability-best-practices
-description: "Use when applying sustainable agriculture best practices."
+description: Use when applying sustainable agriculture best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agriculture, sustainability, regenerative-agriculture-scaling]
-    related_skills: [general]
 ---
 
 # Agricultural Sustainability Best Practices

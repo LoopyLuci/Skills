@@ -2,12 +2,12 @@
 name: autonomous-vehicle-development
 description: Perception, planning, control, safety cases, and validation for AVs
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["autonomous", "ad"]
+    tags: [autonomous, ad]
 ---
 
 # Autonomous Vehicle Development

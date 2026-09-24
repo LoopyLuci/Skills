@@ -2,12 +2,12 @@
 name: intellectual-property-patents
 description: Patentability, prior art search, prosecution, portfolio strategy, and licensing
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["ip", "patents"]
+    tags: [ip, patents]
 ---
 
 # Intellectual Property Patents

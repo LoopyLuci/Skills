@@ -2,12 +2,12 @@
 name: applied-mathematics-modeling
 description: Mathematical modeling, differential equations, and numerical methods
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["applied-math", "modeling"]
+    tags: [applied-math, modeling]
 ---
 
 # Applied Mathematics Modeling

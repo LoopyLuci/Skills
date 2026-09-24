@@ -1,14 +1,13 @@
 ---
 name: civic-engagement-best-practices
-description: "Use when applying civic engagement best practices."
+description: Use when applying civic engagement best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [gov, civic, public-participation-platforms]
-    related_skills: [general]
 ---
 
 # Civic Engagement Best Practices

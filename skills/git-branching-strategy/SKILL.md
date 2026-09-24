@@ -1,6 +1,13 @@
 ---
 name: git-branching-strategy
 description: Choose and implement a branching strategy for your team.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [git, branching, strategy]
 ---
 
 # Git Branching Strategy

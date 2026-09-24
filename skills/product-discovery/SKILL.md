@@ -2,12 +2,12 @@
 name: product-discovery
 description: Opportunity solution tree, assumption mapping, prototyping, and validated learning
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["discovery", "lean"]
+    tags: [discovery, lean]
 ---
 
 # Product Discovery

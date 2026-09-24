@@ -2,12 +2,12 @@
 name: teen-communication-development
 description: Adolescent development, communication, and independence
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["teen", "adolescent"]
+    tags: [teen, adolescent]
 ---
 
 # Teen Communication Development

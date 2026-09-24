@@ -2,12 +2,12 @@
 name: magic-the-gathering-strategy
 description: Deck building, metagame, limited formats, and competitive play
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["mtg", "tcg"]
+    tags: [mtg, tcg]
 ---
 
 # Magic The Gathering Strategy

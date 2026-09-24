@@ -1,14 +1,13 @@
 ---
 name: real-estate-rental-analysis
-description: "Rental cash flow analysis. 1% rule, 50% rule, cash-on-cash."
-version: 2.0.0
-author: Hermes Agent
+description: Rental cash flow analysis. 1% rule, 50% rule, cash-on-cash.
+version: 1.0.0
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [real-estate, rentals, cash-flow, roi, property-management]
-    related_skills: [real-estate-property-analysis, real-estate-market-intel, real-estate-cma-generator]
 ---
 
 # Real Estate Rental Analysis

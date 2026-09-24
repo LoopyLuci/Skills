@@ -1,14 +1,13 @@
 ---
 name: agent-framework-design-deep-troubleshooting
-description: "Use when applying agent framework design troubleshooting."
+description: Use when applying agent framework design troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agents, architecture]
-    related_skills: ['agent-framework-design']
 ---
 
 # Agent Framework Design Deep Troubleshooting

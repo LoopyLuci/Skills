@@ -1,13 +1,13 @@
 ---
 name: music-information-retrieval
-description: "Use when implementing music information retrieval."
+description: Use when implementing music information retrieval.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [music-IR, MIR, audio-analysis, chord-detection, tempo, genre-classification, music-recommendation]
-    related_skills: [audio-processing-deep-learning, speech-recognition-systems, timeseries-foundation-models, recommender-systems-building]
+    tags: [music-ir, mir, audio-analysis, chord-detection, tempo, genre-classification, music-recommendation]
 ---
 
 # Music Information Retrieval

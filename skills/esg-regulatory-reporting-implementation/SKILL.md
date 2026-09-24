@@ -1,14 +1,13 @@
 ---
 name: esg-regulatory-reporting-implementation
-description: "Use when applying esg reporting implementation."
+description: Use when applying esg reporting implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, sustainability, esg-reg-reporting]
-    related_skills: [general]
 ---
 
 # Esg Regulatory Reporting Implementation

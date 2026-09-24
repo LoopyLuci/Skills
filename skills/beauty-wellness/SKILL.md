@@ -1,14 +1,13 @@
 ---
 name: beauty-wellness
-description: "Use when integrating beauty and wellness."
+description: Use when integrating beauty and wellness.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [beauty, wellness, beauty-wellness-integration]
-    related_skills: [general]
 ---
 
 # Beauty Wellness

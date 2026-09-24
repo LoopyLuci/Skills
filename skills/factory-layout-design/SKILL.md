@@ -1,14 +1,13 @@
 ---
 name: factory-layout-design
-description: "Use when designing factory layouts."
+description: Use when designing factory layouts.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [manufacturing, factory-layout, ergonomics, workflow]
-    related_skills: [general]
 ---
 
 # Factory Layout Design

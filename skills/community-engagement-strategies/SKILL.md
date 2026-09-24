@@ -1,14 +1,13 @@
 ---
 name: community-engagement-strategies
-description: "Use when developing community engagement."
+description: Use when developing community engagement.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [nonprofit, engagement, community-strategy, outreach]
-    related_skills: [general]
 ---
 
 # Community Engagement Strategies

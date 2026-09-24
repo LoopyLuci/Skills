@@ -2,14 +2,12 @@
 name: agentic-platform-development
 description: Build web platforms where AI agents are first-class via MCP.
 version: 1.0.0
-author: LoopyLuci
+author: LoopyLuci Community
 license: MIT
-platforms: [windows, macos, linux]
+platforms: [any]
 metadata:
   hermes:
     tags: [agentic, mcp, monorepo, code-generation, visual-editor, web-builder]
-    category: software-development
-    related_skills: [parallel-typescript-development]
 ---
 
 # Agentic Platform Development

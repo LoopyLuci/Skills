@@ -1,14 +1,13 @@
 ---
 name: ansible-vault-implementation-deep-fundamentals
-description: "Use when applying ansible vault implementation fundament."
+description: Use when applying ansible vault implementation fundament.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, ansible]
-    related_skills: ['ansible-vault-implementation']
 ---
 
 # Ansible Vault Implementation Deep Fundamentals

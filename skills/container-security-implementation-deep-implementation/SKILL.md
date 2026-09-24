@@ -1,14 +1,13 @@
 ---
 name: container-security-implementation-deep-implementation
-description: "Use when applying container security implementation impl."
+description: Use when applying container security implementation impl.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, security]
-    related_skills: ['container-security-implementation']
 ---
 
 # Container Security Implementation Deep Implementation

@@ -1,14 +1,13 @@
 ---
 name: android-jetpack-compose-deep-implementation
-description: "Use when applying jetpack compose implementation."
+description: Use when applying jetpack compose implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mobile, android]
-    related_skills: ['android-jetpack-compose']
 ---
 
 # Android Jetpack Compose Deep Implementation

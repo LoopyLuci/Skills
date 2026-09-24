@@ -1,15 +1,13 @@
 ---
 name: nano-pdf
-description: "Edit text in existing PDFs via natural-language prompts."
+description: Edit text in existing PDFs via natural-language prompts.
 version: 1.0.0
-author: community
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: [PDF, Documents, Editing, NLP, Productivity]
-    homepage: https://pypi.org/project/nano-pdf/
-    related_skills: [pdf, ocr-and-documents]
+    tags: [pdf, documents, editing, nlp, productivity]
 ---
 
 # nano-pdf

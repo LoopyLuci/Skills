@@ -1,9 +1,13 @@
 ---
 name: tls-ssl-inspector
-title: TLS/SSL Inspector
 description: Use when inspecting TLS handshakes and certificate metadata.
-category: networking
-tags: [tls, ssl, inspection, sni, certificate, rust]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [tls, ssl, inspection, sni, certificate, rust]
 ---
 
 # TLS/SSL Inspector

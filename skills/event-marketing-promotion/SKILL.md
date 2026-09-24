@@ -2,12 +2,12 @@
 name: event-marketing-promotion
 description: Event marketing, ticketing, and audience development
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["marketing", "promotion"]
+    tags: [marketing, promotion]
 ---
 
 # Event Marketing Promotion

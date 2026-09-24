@@ -1,14 +1,13 @@
 ---
 name: biotech-gene-therapy-troubleshooting
-description: "Use when applying gene therapy troubleshooting."
+description: Use when applying gene therapy troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, gene-therapy]
-    related_skills: ['']
 ---
 
 # Biotech Gene Therapy Troubleshooting

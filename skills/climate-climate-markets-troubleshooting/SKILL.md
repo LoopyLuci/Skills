@@ -1,14 +1,13 @@
 ---
 name: climate-climate-markets-troubleshooting
-description: "Use when applying carbon markets troubleshooting."
+description: Use when applying carbon markets troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, markets, carbon-markets]
-    related_skills: ['']
 ---
 
 # Climate Climate Markets Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: aerospace-optimization-fundamentals
-description: "Use when applying aerospace optimization fundamentals."
+description: Use when applying aerospace optimization fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aerospace, optimization, aerospace-eng-optimization]
-    related_skills: [general]
 ---
 
 # Aerospace Optimization Fundamentals

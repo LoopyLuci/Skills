@@ -1,14 +1,13 @@
 ---
 name: conflict-resolution-negotiation
-description: "Use when resolving conflicts through negotiation."
+description: Use when resolving conflicts through negotiation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: ['c', 'o', 'n', 'f', 'l', 'i', 'c', 't', '-', 'r', 'e', 's', 'o', 'l', 'u', 't', 'i', 'o', 'n', ',', ' ', 'n', 'e', 'g', 'o', 't', 'i', 'a', 't', 'i', 'o', 'n']
-    related_skills: ['dispute-resolution']
+    tags: [c, o, n, f, l, i, c, t, -, r, e, s, o, l, u, t, i, o, n, , ,  , n, e, g, o, t, i, a, t, i, o, n]
 ---
 
 # Conflict Resolution Negotiation

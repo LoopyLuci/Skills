@@ -1,14 +1,13 @@
 ---
 name: ai-alignment-implementation-deep-implementation
-description: "Use when applying ai alignment implementation implementa."
+description: Use when applying ai alignment implementation implementa.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ai-security, ethics]
-    related_skills: ['ai-alignment-implementation']
 ---
 
 # Ai Alignment Implementation Deep Implementation

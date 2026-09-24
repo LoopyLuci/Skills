@@ -1,14 +1,13 @@
 ---
 name: autonomous-driving-fundamentals
-description: "Use when applying autonomous driving fundamentals."
+description: Use when applying autonomous driving fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [auto, ai, autonomous-driving-perception]
-    related_skills: [general]
 ---
 
 # Autonomous Driving Fundamentals

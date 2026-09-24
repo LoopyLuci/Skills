@@ -1,14 +1,13 @@
 ---
 name: actuarial-science-troubleshooting
-description: "Use when applying actuarial science troubleshooting."
+description: Use when applying actuarial science troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, insurance, actuarial-science-models]
-    related_skills: [general]
 ---
 
 # Actuarial Science Troubleshooting

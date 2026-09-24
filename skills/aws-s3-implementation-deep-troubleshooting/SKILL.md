@@ -1,14 +1,13 @@
 ---
 name: aws-s3-implementation-deep-troubleshooting
-description: "Use when applying aws s3 implementation troubleshooting."
+description: Use when applying aws s3 implementation troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, s3]
-    related_skills: ['aws-s3-implementation']
 ---
 
 # Aws S3 Implementation Deep Troubleshooting

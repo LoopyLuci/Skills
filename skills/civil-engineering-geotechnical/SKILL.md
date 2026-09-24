@@ -1,14 +1,13 @@
 ---
 name: civil-engineering-geotechnical
-description: "Use when doing geotechnical civil engineering."
+description: Use when doing geotechnical civil engineering.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [construction, geotechnical, soil-analysis, foundation]
-    related_skills: [general]
 ---
 
 # Civil Engineering Geotechnical

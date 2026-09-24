@@ -1,14 +1,13 @@
 ---
 name: aerogel-insulation-applications
-description: "Use when applying aerogel insulation."
+description: Use when applying aerogel insulation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [materials-science, aerogel, insulation, thermal]
-    related_skills: [general]
 ---
 
 # Aerogel Insulation Applications

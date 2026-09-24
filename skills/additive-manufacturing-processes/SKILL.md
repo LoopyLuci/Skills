@@ -1,14 +1,13 @@
 ---
 name: additive-manufacturing-processes
-description: "Use when managing additive manufacturing."
+description: Use when managing additive manufacturing.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [manufacturing, 3d-printing, additive, sintering]
-    related_skills: [general]
 ---
 
 # Additive Manufacturing Processes

@@ -2,12 +2,12 @@
 name: sentiment-analysis-opinion
 description: Sentiment analysis, emotion detection, and opinion mining
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["sentiment", "emotion"]
+    tags: [sentiment, emotion]
 ---
 
 # Sentiment Analysis Opinion

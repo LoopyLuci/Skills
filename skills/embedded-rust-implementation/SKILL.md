@@ -1,14 +1,13 @@
 ---
 name: embedded-rust-implementation
-description: "Use when applying rust for embedded implementation."
+description: Use when applying rust for embedded implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [embedded, rust, microcontroller, no_std]
-    related_skills: [general]
 ---
 
 # Embedded Rust Implementation

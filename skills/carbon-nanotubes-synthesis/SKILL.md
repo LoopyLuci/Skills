@@ -1,14 +1,13 @@
 ---
 name: carbon-nanotubes-synthesis
-description: "Use when synthesizing carbon nanotubes."
+description: Use when synthesizing carbon nanotubes.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [materials-science, cnt, carbon-nanotubes, nanotech]
-    related_skills: [general]
 ---
 
 # Carbon Nanotubes Synthesis

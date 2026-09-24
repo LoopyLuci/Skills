@@ -1,8 +1,13 @@
 ---
-
 name: github-templates-community
 description: Set up issue/PR templates, CODEOWNERS, and community files.
-
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [github, templates, community]
 ---
 
 # GitHub Templates & Community Standards

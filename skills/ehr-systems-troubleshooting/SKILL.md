@@ -1,14 +1,13 @@
 ---
 name: ehr-systems-troubleshooting
-description: "Use when applying ehr systems troubleshooting."
+description: Use when applying ehr systems troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, medicine, ehr]
-    related_skills: [general]
 ---
 
 # Ehr Systems Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: cargo-windows-workflow-deep2-implementation
-description: "Use when applying cargo windows workflow implementation."
+description: Use when applying cargo windows workflow implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [language, rust, windows]
-    related_skills: ['cargo-windows-workflow']
 ---
 
 # Cargo Windows Workflow Deep2 Implementation

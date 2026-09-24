@@ -1,14 +1,13 @@
 ---
 name: biotech-eng-audit-fundamentals
-description: "Use when applying biotech audit fundamentals."
+description: Use when applying biotech audit fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, engineering, biotech-eng-audit]
-    related_skills: [general]
 ---
 
 # Biotech Eng Audit Fundamentals

@@ -1,14 +1,13 @@
 ---
 name: expressjs-api-patterns-deep-best-practices
-description: "Use when applying express.js api patterns best practices."
+description: Use when applying express.js api patterns best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, nodejs]
-    related_skills: ['expressjs-api-patterns']
 ---
 
 # Expressjs Api Patterns Deep Best Practices

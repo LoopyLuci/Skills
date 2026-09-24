@@ -1,14 +1,13 @@
 ---
 name: data-quality-assessment
-description: "Use when assessing data quality."
+description: Use when assessing data quality.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data-science, data-quality, profiling, validation]
-    related_skills: ['data-profiling-quality']
 ---
 
 # Data Quality Assessment

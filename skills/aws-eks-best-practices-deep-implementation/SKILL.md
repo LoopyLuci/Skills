@@ -1,14 +1,13 @@
 ---
 name: aws-eks-best-practices-deep-implementation
-description: "Use when applying aws eks implementation."
+description: Use when applying aws eks implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, eks]
-    related_skills: ['aws-eks-best-practices']
 ---
 
 # Aws Eks Best Practices Deep Implementation

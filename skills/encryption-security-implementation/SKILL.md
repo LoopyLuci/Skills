@@ -1,14 +1,13 @@
 ---
 name: encryption-security-implementation
-description: "Use when for encryption implementation."
+description: Use when for encryption implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, encryption, crypto, tls]
-    related_skills: [general]
 ---
 
 # Encryption Security Implementation

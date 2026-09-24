@@ -1,14 +1,13 @@
 ---
 name: biophotonics-implementation
-description: "Use when applying biophotonics implementation."
+description: Use when applying biophotonics implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [optics, biomedical, biophotonics]
-    related_skills: [general]
 ---
 
 # Biophotonics Implementation

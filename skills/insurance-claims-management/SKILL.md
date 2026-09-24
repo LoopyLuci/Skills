@@ -2,12 +2,12 @@
 name: insurance-claims-management
 description: Claims handling, adjusting, fraud detection, and litigation management
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["claims", "adjusting"]
+    tags: [claims, adjusting]
 ---
 
 # Insurance Claims Management

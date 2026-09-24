@@ -1,8 +1,13 @@
 ---
 name: firebase-basics
 description: Use when working with Firebase products and services for mobile/web apps.
-tags: [firebase, google-cloud, mobile, web, backend, cli]
-related_skills: [google-cloud-recipe-auth, gemini-api]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [firebase, google-cloud, mobile, web, backend, cli]
 ---
 
 # Firebase Basics

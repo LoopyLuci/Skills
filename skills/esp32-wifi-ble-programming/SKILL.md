@@ -1,14 +1,13 @@
 ---
 name: esp32-wifi-ble-programming
-description: "Use when programming ESP32 devices."
+description: Use when programming ESP32 devices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [electronics, esp32, wifi, ble, iot]
-    related_skills: ['esp32-wifi-ble-iot']
 ---
 
 # Esp32 Wifi Ble Programming

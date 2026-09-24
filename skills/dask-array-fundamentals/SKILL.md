@@ -1,14 +1,13 @@
 ---
 name: dask-array-fundamentals
-description: "Use when applying dask arrays fundamentals."
+description: Use when applying dask arrays fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [python, dask, arrays, numpy]
-    related_skills: [general]
 ---
 
 # Dask Array Fundamentals

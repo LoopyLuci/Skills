@@ -1,13 +1,13 @@
 ---
 name: deep-reinforcement-learning
-description: "Use when implementing deep RL algorithms and environments."
+description: Use when implementing deep RL algorithms and environments.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [reinforcement-learning, DRL, DQN, PPO, SAC, pytorch]
-    related_skills: [reinforcement-learning, multi-agent-reinforcement-learning, custom-training-loops, agent-reasoning-patterns]
+    tags: [reinforcement-learning, drl, dqn, ppo, sac, pytorch]
 ---
 
 # Deep Reinforcement Learning

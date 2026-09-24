@@ -1,14 +1,13 @@
 ---
 name: financial-planning-budgeting
-description: "Use when planning finances and budgets."
+description: Use when planning finances and budgets.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: ['f', 'i', 'n', 'a', 'n', 'c', 'i', 'a', 'l', '-', 'p', 'l', 'a', 'n', 'n', 'i', 'n', 'g', ',', ' ', 'b', 'u', 'd', 'g', 'e', 't', 'i', 'n', 'g']
-    related_skills: [general]
+    tags: [f, i, n, a, n, c, i, a, l, -, p, l, a, n, n, i, n, g, , ,  , b, u, d, g, e, t, i, n, g]
 ---
 
 # Financial Planning Budgeting

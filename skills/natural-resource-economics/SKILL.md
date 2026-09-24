@@ -2,12 +2,12 @@
 name: natural-resource-economics
 description: Resource economics, valuation, and policy analysis
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["economics", "resources"]
+    tags: [economics, resources]
 ---
 
 # Natural Resource Economics

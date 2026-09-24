@@ -1,14 +1,13 @@
 ---
 name: fatca-compliance-best-practices
-description: "Use when applying fatca best practices."
+description: Use when applying fatca best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, tax, fatca]
-    related_skills: [general]
 ---
 
 # Fatca Compliance Best Practices

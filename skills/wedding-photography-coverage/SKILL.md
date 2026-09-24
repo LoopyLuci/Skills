@@ -2,12 +2,12 @@
 name: wedding-photography-coverage
 description: Timeline planning, must-shot lists, posing groups, and editing workflows
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["wedding", "events"]
+    tags: [wedding, events]
 ---
 
 # Wedding Photography Coverage

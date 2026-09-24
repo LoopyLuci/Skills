@@ -1,12 +1,13 @@
 ---
 name: git-submodules-management
-description: "Use when managing git submodules."
+description: Use when managing git submodules.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["git", "submodules", "dependencies", "monorepo"]
+    tags: [git, submodules, dependencies, monorepo]
 ---
 
 # Git Submodules Management

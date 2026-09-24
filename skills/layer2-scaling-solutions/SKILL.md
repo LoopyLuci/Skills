@@ -2,12 +2,12 @@
 name: layer2-scaling-solutions
 description: Rollups, sidechains, and L2 ecosystem
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["l2", "scaling"]
+    tags: [l2, scaling]
 ---
 
 # Layer2 Scaling Solutions

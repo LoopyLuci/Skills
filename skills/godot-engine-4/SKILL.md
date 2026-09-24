@@ -2,12 +2,12 @@
 name: godot-engine-4
 description: Godot 4 GDScript and C#, signals, nodes, scenes, shaders, and export workflows
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["godot", "gamedev"]
+    tags: [godot, gamedev]
 ---
 
 # Godot Engine 4

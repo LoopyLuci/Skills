@@ -2,12 +2,12 @@
 name: security-awareness-training
 description: Phishing simulations, security culture, gamification, and metrics tracking
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["training", "culture"]
+    tags: [training, culture]
 ---
 
 # Security Awareness Training

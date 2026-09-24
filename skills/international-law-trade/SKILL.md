@@ -2,12 +2,12 @@
 name: international-law-trade
 description: Export controls, sanctions, customs, and international contracts
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["trade", "international"]
+    tags: [trade, international]
 ---
 
 # International Law Trade

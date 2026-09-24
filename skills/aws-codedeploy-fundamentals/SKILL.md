@@ -1,14 +1,13 @@
 ---
 name: aws-codedeploy-fundamentals
-description: "Use when applying aws codedeploy fundamentals."
+description: Use when applying aws codedeploy fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, codedeploy, deployment, ci-cd]
-    related_skills: [general]
 ---
 
 # Aws Codedeploy Fundamentals

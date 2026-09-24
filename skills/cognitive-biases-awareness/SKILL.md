@@ -1,14 +1,13 @@
 ---
 name: cognitive-biases-awareness
-description: "Use when identifying cognitive biases."
+description: Use when identifying cognitive biases.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: ['c', 'o', 'g', 'n', 'i', 't', 'i', 'v', 'e', '-', 'b', 'i', 'a', 's', 'e', 's', ',', ' ', 'p', 's', 'y', 'c', 'h', 'o', 'l', 'o', 'g', 'y']
-    related_skills: [general]
+    tags: [c, o, g, n, i, t, i, v, e, -, b, i, a, s, e, s, , ,  , p, s, y, c, h, o, l, o, g, y]
 ---
 
 # Cognitive Biases Awareness

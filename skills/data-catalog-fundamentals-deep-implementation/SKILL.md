@@ -1,14 +1,13 @@
 ---
 name: data-catalog-fundamentals-deep-implementation
-description: "Use when applying data catalog fundamentals implementation."
+description: Use when applying data catalog fundamentals implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, data-catalog]
-    related_skills: ['data-catalog-fundamentals']
 ---
 
 # Data Catalog Fundamentals Deep Implementation

@@ -1,14 +1,13 @@
 ---
 name: fastapi-development-fundamentals
-description: "Use when applying fastapi development fundamentals."
+description: Use when applying fastapi development fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, fastapi, python, api]
-    related_skills: [general]
 ---
 
 # Fastapi Development Fundamentals

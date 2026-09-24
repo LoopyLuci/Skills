@@ -1,14 +1,13 @@
 ---
 name: digital-marketing-optimization
-description: "Use when for digital marketing optimization."
+description: Use when for digital marketing optimization.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, management, general]
-    related_skills: [general]
 ---
 
 # Digital Marketing Optimization

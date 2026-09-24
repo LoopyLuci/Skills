@@ -1,14 +1,13 @@
 ---
 name: aws-services-implementation-deep-best-practices
-description: "Use when applying aws implementation best practices."
+description: Use when applying aws implementation best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, aws]
-    related_skills: ['aws-services-implementation']
 ---
 
 # Aws Services Implementation Deep Best Practices

@@ -1,13 +1,13 @@
 ---
 name: multi-agent-collaboration-patterns
-description: "Use when designing multi-agent collaboration and delegation."
+description: Use when designing multi-agent collaboration and delegation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [multi-agent, collaboration, delegation, negotiation, teamwork, coordination]
-    related_skills: [agent-swarm-architectures, hierarchical-swarm-architectures, swarm-communication-protocols, agent-ensembles-voting]
 ---
 
 # Multi Agent Collaboration Patterns

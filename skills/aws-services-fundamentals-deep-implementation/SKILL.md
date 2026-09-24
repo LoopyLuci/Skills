@@ -1,14 +1,13 @@
 ---
 name: aws-services-fundamentals-deep-implementation
-description: "Use when applying aws fundamentals implementation."
+description: Use when applying aws fundamentals implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, aws]
-    related_skills: ['aws-services-fundamentals']
 ---
 
 # Aws Services Fundamentals Deep Implementation

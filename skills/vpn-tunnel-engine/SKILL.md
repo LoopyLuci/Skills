@@ -1,9 +1,13 @@
 ---
 name: vpn-tunnel-engine
-title: VPN Tunnel Engine
 description: Use when building VPN tunnels with TUN/TAP interfaces.
-category: networking
-tags: [vpn, tunnel, tun, tap, wireguard, rust]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [vpn, tunnel, tun, tap, wireguard, rust]
 ---
 
 # VPN Tunnel Engine

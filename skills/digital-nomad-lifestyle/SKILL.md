@@ -2,12 +2,12 @@
 name: digital-nomad-lifestyle
 description: Remote work, co-living, visas, and location independence
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["digital-nomad", "remote-work"]
+    tags: [digital-nomad, remote-work]
 ---
 
 # Digital Nomad Lifestyle

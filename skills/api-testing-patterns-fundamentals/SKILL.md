@@ -1,14 +1,13 @@
 ---
 name: api-testing-patterns-fundamentals
-description: "Use when applying api testing patterns fundamentals."
+description: Use when applying api testing patterns fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [testing, api-testing-patterns, rest]
-    related_skills: [general]
 ---
 
 # Api Testing Patterns Fundamentals

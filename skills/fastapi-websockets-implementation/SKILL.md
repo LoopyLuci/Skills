@@ -1,14 +1,13 @@
 ---
 name: fastapi-websockets-implementation
-description: "Use when applying fastapi websockets implementation."
+description: Use when applying fastapi websockets implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, fastapi, websockets, realtime]
-    related_skills: [general]
 ---
 
 # Fastapi Websockets Implementation

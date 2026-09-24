@@ -1,14 +1,13 @@
 ---
 name: aws-security-automation
-description: "Use when automating AWS security."
+description: Use when automating AWS security.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, aws, security-automation]
-    related_skills: [general]
 ---
 
 # Aws Security Automation

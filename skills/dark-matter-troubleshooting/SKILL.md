@@ -1,14 +1,13 @@
 ---
 name: dark-matter-troubleshooting
-description: "Use when applying dark matter troubleshooting."
+description: Use when applying dark matter troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [physics, astronomy, astrophysics]
-    related_skills: [general]
 ---
 
 # Dark Matter Troubleshooting

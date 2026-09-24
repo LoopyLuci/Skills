@@ -1,14 +1,13 @@
 ---
 name: electronics-engineering-implementation
-description: "Use when applying electronics engineering implementation."
+description: Use when applying electronics engineering implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, electronics, embedded, analog-circuit-design]
-    related_skills: [general]
 ---
 
 # Electronics Engineering Implementation

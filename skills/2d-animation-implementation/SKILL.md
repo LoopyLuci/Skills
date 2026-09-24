@@ -1,14 +1,13 @@
 ---
 name: 2d-animation-implementation
-description: "Use when applying 2d animation implementation."
+description: Use when applying 2d animation implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [media, animation, animation-techniques-2d]
-    related_skills: [general]
 ---
 
 # 2d Animation Implementation

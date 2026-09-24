@@ -2,12 +2,12 @@
 name: psychology-cognitive-behavioral
 description: CBT techniques, behavioral assessment, therapy modalities, and research methods
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["psychology", "cbt"]
+    tags: [psychology, cbt]
 ---
 
 # Psychology Cognitive Behavioral

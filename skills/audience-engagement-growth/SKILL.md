@@ -2,12 +2,12 @@
 name: audience-engagement-growth
 description: Audience development, newsletters, subscriptions, and community
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["audience", "engagement"]
+    tags: [audience, engagement]
 ---
 
 # Audience Engagement Growth

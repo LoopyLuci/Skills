@@ -2,12 +2,12 @@
 name: computational-research-methods
 description: Simulation, agent-based modeling, network analysis, and reproducibility
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["computational", "methods"]
+    tags: [computational, methods]
 ---
 
 # Computational Research Methods

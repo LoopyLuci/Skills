@@ -1,14 +1,13 @@
 ---
 name: astronautics-implementation
-description: "Use when applying astronautics implementation."
+description: Use when applying astronautics implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [space, aerospace, rocket-]
-    related_skills: [general]
 ---
 
 # Astronautics Implementation

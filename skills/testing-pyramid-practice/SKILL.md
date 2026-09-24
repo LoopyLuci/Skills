@@ -1,13 +1,13 @@
 ---
 name: testing-pyramid-practice
-description: "Use when implementing the testing pyramid strategy."
+description: Use when implementing the testing pyramid strategy.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [testing-pyramid, unit-tests, integration-tests, e2e-tests, test-strategy]
-    related_skills: [test-driven-development, behavior-driven-development, api-testing-patterns, mutation-testing, snapshot-testing]
 ---
 
 # Testing Pyramid Practice

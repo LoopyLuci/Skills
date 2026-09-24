@@ -1,14 +1,13 @@
 ---
 name: ecology-marine-implementation
-description: "Use when implementing marine ecology projects."
+description: Use when implementing marine ecology projects.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marine-ecology, ocean, ecosystems, marine-life]
-    related_skills: [general]
 ---
 
 # Ecology Marine Implementation

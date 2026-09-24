@@ -1,14 +1,13 @@
 ---
 name: cloud-security-fundamentals-deep-troubleshooting
-description: "Use when applying cloud security fundamentals troublesho."
+description: Use when applying cloud security fundamentals troublesho.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, security]
-    related_skills: ['cloud-security-fundamentals']
 ---
 
 # Cloud Security Fundamentals Deep Troubleshooting

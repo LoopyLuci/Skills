@@ -1,9 +1,15 @@
 ---
 name: windows-iis-management
-description: "Use when managing IIS via PowerShell."
-category: software-development
-tags: [windows, iis, web-server, powershell, administration]
+description: Use when managing IIS via PowerShell.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [windows, iis, web-server, powershell, administration]
 ---
+
 # Windows IIS Management
 
 Managing IIS Web Server with PowerShell.

@@ -1,14 +1,13 @@
 ---
 name: docker-compose-workflows-deep-troubleshooting
-description: "Use when applying docker compose workflows troubleshooting."
+description: Use when applying docker compose workflows troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, docker]
-    related_skills: ['docker-compose-workflows']
 ---
 
 # Docker Compose Workflows Deep Troubleshooting

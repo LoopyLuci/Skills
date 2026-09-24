@@ -1,14 +1,13 @@
 ---
 name: business-legal-structure
-description: "Use when selecting business legal structure."
+description: Use when selecting business legal structure.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: ['l', 'e', 'g', 'a', 'l', '-', 's', 't', 'r', 'u', 'c', 't', 'u', 'r', 'e', ',', ' ', 'f', 'o', 'r', 'm', 'a', 't', 'i', 'o', 'n']
-    related_skills: ['legal-and-compliance-basics']
+    tags: [l, e, g, a, l, -, s, t, r, u, c, t, u, r, e, , ,  , f, o, r, m, a, t, i, o, n]
 ---
 
 # Business Legal Structure

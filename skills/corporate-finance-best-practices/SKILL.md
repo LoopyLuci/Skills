@@ -1,14 +1,13 @@
 ---
 name: corporate-finance-best-practices
-description: "Use when applying corporate finance best practices."
+description: Use when applying corporate finance best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, corporate, corporate-financial-modeling]
-    related_skills: [general]
 ---
 
 # Corporate Finance Best Practices

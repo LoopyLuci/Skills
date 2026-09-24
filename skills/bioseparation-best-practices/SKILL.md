@@ -1,14 +1,13 @@
 ---
 name: bioseparation-best-practices
-description: "Use when applying bioseparation best practices."
+description: Use when applying bioseparation best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, pharma, purification]
-    related_skills: [general]
 ---
 
 # Bioseparation Best Practices

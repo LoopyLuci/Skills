@@ -1,14 +1,13 @@
 ---
 name: embedded-modbus-fundamentals
-description: "Use when applying modbus protocol fundamentals."
+description: Use when applying modbus protocol fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [embedded, modbus, industrial, comms]
-    related_skills: [general]
 ---
 
 # Embedded Modbus Fundamentals

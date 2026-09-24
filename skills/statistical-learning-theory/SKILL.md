@@ -2,12 +2,12 @@
 name: statistical-learning-theory
 description: PAC learning, VC dimension, and generalization bounds
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["learning-theory", "statistical"]
+    tags: [learning-theory, statistical]
 ---
 
 # Statistical Learning Theory

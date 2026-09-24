@@ -2,12 +2,12 @@
 name: open-world-streaming
 description: World composition, level streaming, data layers, navmesh generation, and large-world coordinates
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["open-world", "streaming"]
+    tags: [open-world, streaming]
 ---
 
 # Open World Streaming

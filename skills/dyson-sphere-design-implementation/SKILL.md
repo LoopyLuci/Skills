@@ -1,14 +1,13 @@
 ---
 name: dyson-sphere-design-implementation
-description: "Use when applying dyson sphere design implementation."
+description: Use when applying dyson sphere design implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [space, engineering, dyson-sphere-design]
-    related_skills: ['']
 ---
 
 # Dyson Sphere Design Implementation

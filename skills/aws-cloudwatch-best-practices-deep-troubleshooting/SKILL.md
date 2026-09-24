@@ -1,14 +1,13 @@
 ---
 name: aws-cloudwatch-best-practices-deep-troubleshooting
-description: "Use when applying cloudwatch troubleshooting."
+description: Use when applying cloudwatch troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, monitoring]
-    related_skills: ['aws-cloudwatch-best-practices']
 ---
 
 # Aws Cloudwatch Best Practices Deep Troubleshooting

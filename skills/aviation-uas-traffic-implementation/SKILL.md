@@ -1,14 +1,13 @@
 ---
 name: aviation-uas-traffic-implementation
-description: "Use when applying uas traffic management implementation."
+description: Use when applying uas traffic management implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, utm, traffic]
-    related_skills: ['general']
 ---
 
 # Aviation Uas Traffic Implementation

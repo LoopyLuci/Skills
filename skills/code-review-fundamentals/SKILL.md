@@ -1,14 +1,13 @@
 ---
 name: code-review-fundamentals
-description: "Use when applying code review fundamentals."
+description: Use when applying code review fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [programming, code-review, review, code-review-checklist]
-    related_skills: [general]
 ---
 
 # Code Review Fundamentals

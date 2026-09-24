@@ -1,14 +1,13 @@
 ---
 name: ai-alignment-fundamentals
-description: "Use when for ai alignment fundamentals."
+description: Use when for ai alignment fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ai, alignment, safety, ethics]
-    related_skills: [general]
 ---
 
 # Ai Alignment Fundamentals

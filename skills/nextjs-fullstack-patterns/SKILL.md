@@ -1,13 +1,13 @@
 ---
 name: nextjs-fullstack-patterns
-description: "Use when building fullstack apps with Next.js."
+description: Use when building fullstack apps with Next.js.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [nextjs, react, SSR, app-router, server-components, middleware]
-    related_skills: [react-hooks-advanced, typescript-advanced-types, frontend-bootstrap]
+    tags: [nextjs, react, ssr, app-router, server-components, middleware]
 ---
 
 # Next.js Fullstack Patterns

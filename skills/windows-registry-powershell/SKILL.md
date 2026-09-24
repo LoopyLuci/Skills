@@ -1,9 +1,15 @@
 ---
 name: windows-registry-powershell
-description: "Use when reading or writing the Windows registry via PS."
-category: software-development
-tags: [windows, registry, powershell, hklm, hkcu]
+description: Use when reading or writing the Windows registry via PS.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [windows, registry, powershell, hklm, hkcu]
 ---
+
 # Windows Registry via PowerShell
 
 Reading and writing the Windows registry with PowerShell.

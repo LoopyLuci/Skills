@@ -1,14 +1,13 @@
 ---
 name: cqrs-event-sourcing-deep-implementation
-description: "Use when applying cqrs pattern implementation."
+description: Use when applying cqrs pattern implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [programming, patterns]
-    related_skills: ['cqrs-event-sourcing']
 ---
 
 # Cqrs Event Sourcing Deep Implementation

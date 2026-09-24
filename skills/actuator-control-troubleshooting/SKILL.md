@@ -1,14 +1,13 @@
 ---
 name: actuator-control-troubleshooting
-description: "Use when applying actuator control troubleshooting."
+description: Use when applying actuator control troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [electronics, control, actuators]
-    related_skills: [general]
 ---
 
 # Actuator Control Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: blockchain-ethereum-best-practices
-description: "Use when for ethereum development best practices."
+description: Use when for ethereum development best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [blockchain, ethereum, solidity, smart-contracts]
-    related_skills: [general]
 ---
 
 # Blockchain Ethereum Best Practices

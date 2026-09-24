@@ -2,12 +2,12 @@
 name: facility-management-maintenance
 description: Building maintenance, CMMS, and lifecycle management
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["facilities", "maintenance"]
+    tags: [facilities, maintenance]
 ---
 
 # Facility Management Maintenance

@@ -1,14 +1,13 @@
 ---
 name: airline-revenue-management
-description: "Use when managing airline revenue."
+description: Use when managing airline revenue.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [travel, airline-revenue, pricing, yield-management]
-    related_skills: [general]
 ---
 
 # Airline Revenue Management

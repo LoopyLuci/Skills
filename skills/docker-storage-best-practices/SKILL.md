@@ -1,14 +1,13 @@
 ---
 name: docker-storage-best-practices
-description: "Use when applying docker storage best practices."
+description: Use when applying docker storage best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [docker, storage, volumes, docker-volume-backup-restore]
-    related_skills: [general]
 ---
 
 # Docker Storage Best Practices

@@ -1,14 +1,13 @@
 ---
 name: chip-etching-troubleshooting
-description: "Use when applying chip etching troubleshooting."
+description: Use when applying chip etching troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [semiconductor, etching, etching]
-    related_skills: ['general']
 ---
 
 # Chip Etching Troubleshooting

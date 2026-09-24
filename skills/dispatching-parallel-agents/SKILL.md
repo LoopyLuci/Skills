@@ -1,8 +1,13 @@
 ---
 name: dispatching-parallel-agents
 description: Use when dispatching subagents for parallel independent tasks
-tags: [subagents, parallel, delegation, testing]
-related_skills: [subagent-driven-development, executing-plans]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [subagents, parallel, delegation, testing]
 ---
 
 # Dispatching Parallel Agents

@@ -2,12 +2,12 @@
 name: green-chemistry-sustainable
 description: Green chemistry, sustainable synthesis, and atom economy
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["green-chemistry", "sustainable"]
+    tags: [green-chemistry, sustainable]
 ---
 
 # Green Chemistry Sustainable

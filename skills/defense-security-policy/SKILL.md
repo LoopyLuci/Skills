@@ -2,12 +2,12 @@
 name: defense-security-policy
 description: Defense strategy, procurement, threat assessment, and alliance management
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["defense", "security"]
+    tags: [defense, security]
 ---
 
 # Defense Security Policy

@@ -2,12 +2,12 @@
 name: audio-programming-supercollider
 description: SuperCollider, Max/MSP, Pure Data, and audio DSP programming
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["audio-programming", "dsp"]
+    tags: [audio-programming, dsp]
 ---
 
 # Audio Programming Supercollider

@@ -1,14 +1,13 @@
 ---
 name: drug-target-identification-best-practices
-description: "Use when applying drug target id best practices."
+description: Use when applying drug target id best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, pharma, target-identification]
-    related_skills: [general]
 ---
 
 # Drug Target Identification Best Practices

@@ -1,9 +1,13 @@
 ---
 name: application-filter
-title: Application Filter
 description: Use when filtering apps via protocol identification.
-category: networking
-tags: [application, filter, l7, block, allow, rust]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [application, filter, l7, block, allow, rust]
 ---
 
 # Application Filter

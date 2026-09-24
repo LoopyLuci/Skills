@@ -1,14 +1,13 @@
 ---
 name: chip-low-power-best-practices
-description: "Use when applying chip low-power design best practices."
+description: Use when applying chip low-power design best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [semiconductor, low-power, power-optimization]
-    related_skills: ['general']
 ---
 
 # Chip Low Power Best Practices

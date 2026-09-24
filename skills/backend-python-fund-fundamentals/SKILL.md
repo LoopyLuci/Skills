@@ -1,14 +1,13 @@
 ---
 name: backend-python-fund-fundamentals
-description: "Use when applying backend python fundamentals fundamentals."
+description: Use when applying backend python fundamentals fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, python, backend-python-fundamentals]
-    related_skills: [general]
 ---
 
 # Backend Python Fund Fundamentals

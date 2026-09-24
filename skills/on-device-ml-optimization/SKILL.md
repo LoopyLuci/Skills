@@ -1,13 +1,13 @@
 ---
 name: on-device-ml-optimization
-description: "Use when optimizing ML for on-device deployment."
+description: Use when optimizing ML for on-device deployment.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [on-device-ML, mobile-ML, TFLite, CoreML, MLKit, NNAPI, GPU-delegate]
-    related_skills: [edge-ai-tinyml, tiny-ml-mcu-deployment, ml-serving-optimization, model-compression-techniques]
+    tags: [on-device-ml, mobile-ml, tflite, coreml, mlkit, nnapi, gpu-delegate]
 ---
 
 # On-Device ML Optimization

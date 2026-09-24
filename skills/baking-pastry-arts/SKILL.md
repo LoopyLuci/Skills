@@ -2,12 +2,12 @@
 name: baking-pastry-arts
 description: Pastry techniques, bread baking, dessert plating, and ingredient science
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["baking", "pastry"]
+    tags: [baking, pastry]
 ---
 
 # Baking Pastry Arts

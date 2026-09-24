@@ -1,14 +1,13 @@
 ---
 name: corporate-finance-troubleshooting
-description: "Use when applying corporate finance troubleshooting."
+description: Use when applying corporate finance troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, corporate, corporate-financial-modeling]
-    related_skills: [general]
 ---
 
 # Corporate Finance Troubleshooting

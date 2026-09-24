@@ -1,14 +1,13 @@
 ---
 name: autonomous-driving
-description: "Use when building autonomous vehicles."
+description: Use when building autonomous vehicles.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [auto, av, autonomous]
-    related_skills: [general]
 ---
 
 # Autonomous Driving

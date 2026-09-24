@@ -1,6 +1,13 @@
 ---
 name: git-credential-management
 description: Manage git credentials — tokens, SSH keys, and helpers.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [git, credential, management]
 ---
 
 # Git Credential Management

@@ -1,14 +1,13 @@
 ---
 name: edge-cloud-integration
-description: "Use when integrating edge with cloud."
+description: Use when integrating edge with cloud.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [edge-computing, hybrid-cloud, edge-cloud, multi-cloud]
-    related_skills: ['multi-cloud-networking-strategy']
 ---
 
 # Edge Cloud Integration

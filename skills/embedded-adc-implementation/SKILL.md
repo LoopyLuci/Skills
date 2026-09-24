@@ -1,14 +1,13 @@
 ---
 name: embedded-adc-implementation
-description: "Use when applying adc programming implementation."
+description: Use when applying adc programming implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [embedded, adc, analog, digital]
-    related_skills: [general]
 ---
 
 # Embedded Adc Implementation

@@ -1,12 +1,13 @@
 ---
 name: git-worktrees-multiple-branches
-description: "Use when using git worktrees."
+description: Use when using git worktrees.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["git", "worktree", "branches", "parallel-development"]
+    tags: [git, worktree, branches, parallel-development]
 ---
 
 # Git Worktrees Multiple Branches

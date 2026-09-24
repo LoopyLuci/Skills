@@ -1,14 +1,13 @@
 ---
 name: cloud-security-optimization
-description: "Use when optimizing cloud security systems."
+description: Use when optimizing cloud security systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, cloud-security, infosec]
-    related_skills: [general]
 ---
 
 # Cloud Security Optimization

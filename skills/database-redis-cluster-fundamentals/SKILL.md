@@ -1,14 +1,13 @@
 ---
 name: database-redis-cluster-fundamentals
-description: "Use when applying redis cluster fundamentals."
+description: Use when applying redis cluster fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, redis, clustering, high-availability]
-    related_skills: [general]
 ---
 
 # Database Redis Cluster Fundamentals

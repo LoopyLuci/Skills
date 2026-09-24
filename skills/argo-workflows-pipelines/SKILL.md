@@ -1,9 +1,13 @@
 ---
 name: argo-workflows-pipelines
-description: "Use when building Argo workflows."
+description: Use when building Argo workflows.
 version: 1.0.0
-author: Hermes Agent
-tags: ["argo", "workflows", "kubernetes", "DAG", "CI-CD"]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [argo, workflows, kubernetes, dag, ci-cd]
 ---
 
 # Argo Workflows Pipelines

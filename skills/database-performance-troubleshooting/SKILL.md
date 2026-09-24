@@ -1,14 +1,13 @@
 ---
 name: database-performance-troubleshooting
-description: "Use when for database performance troubleshooting."
+description: Use when for database performance troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, performance, optimization, tuning]
-    related_skills: [general]
 ---
 
 # Database Performance Troubleshooting

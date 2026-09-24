@@ -2,12 +2,12 @@
 name: digital-twin-development
 description: Simulation, IoT data integration, predictive models, and digital thread
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["digital-twin", "simulation"]
+    tags: [digital-twin, simulation]
 ---
 
 # Digital Twin Development

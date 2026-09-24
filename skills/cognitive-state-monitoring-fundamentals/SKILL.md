@@ -1,14 +1,13 @@
 ---
 name: cognitive-state-monitoring-fundamentals
-description: "Use when applying cognitive state monitoring fundamentals."
+description: Use when applying cognitive state monitoring fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neurotech, psychology, cognitive-state-monitoring]
-    related_skills: [general]
 ---
 
 # Cognitive State Monitoring Fundamentals

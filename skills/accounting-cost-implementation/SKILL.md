@@ -1,14 +1,13 @@
 ---
 name: accounting-cost-implementation
-description: "Use when applying cost accounting implementation."
+description: Use when applying cost accounting implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [accounting, finance, cost-accounting, managerial]
-    related_skills: [general]
 ---
 
 # Accounting Cost Implementation

@@ -1,14 +1,13 @@
 ---
 name: agent-communication-languages-deep-implementation
-description: "Use when applying agent communication languages implemen."
+description: Use when applying agent communication languages implemen.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agents, communication]
-    related_skills: ['agent-communication-languages']
 ---
 
 # Agent Communication Languages Deep Implementation

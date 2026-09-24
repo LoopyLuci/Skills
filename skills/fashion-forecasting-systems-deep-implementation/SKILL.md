@@ -1,14 +1,13 @@
 ---
 name: fashion-forecasting-systems-deep-implementation
-description: "Use when applying fashion forecasting systems implementa."
+description: Use when applying fashion forecasting systems implementa.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, forecasting]
-    related_skills: ['']
 ---
 
 # Fashion Forecasting Systems Deep Implementation

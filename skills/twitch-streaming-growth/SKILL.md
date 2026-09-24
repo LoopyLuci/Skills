@@ -2,12 +2,12 @@
 name: twitch-streaming-growth
 description: Stream setup, community building, engagement, and monetization
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["twitch", "streaming"]
+    tags: [twitch, streaming]
 ---
 
 # Twitch Streaming Growth

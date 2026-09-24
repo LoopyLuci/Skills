@@ -1,14 +1,13 @@
 ---
 name: ferry-operations-best-practices
-description: "Use when applying ferry operations best practices."
+description: Use when applying ferry operations best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marine, ferry, ferry-passenger-logistics]
-    related_skills: [general]
 ---
 
 # Ferry Operations Best Practices

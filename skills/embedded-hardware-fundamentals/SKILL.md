@@ -1,14 +1,13 @@
 ---
 name: embedded-hardware-fundamentals
-description: "Use when applying embedded hardware fundamentals."
+description: Use when applying embedded hardware fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [electronics, embedded, embedded-hardware]
-    related_skills: [general]
 ---
 
 # Embedded Hardware Fundamentals

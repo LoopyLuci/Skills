@@ -1,14 +1,13 @@
 ---
 name: duckdb-fundamentals
-description: "Use when for duckdb fundamentals."
+description: Use when for duckdb fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, duckdb, analytics, embedded]
-    related_skills: [general]
 ---
 
 # Duckdb Fundamentals

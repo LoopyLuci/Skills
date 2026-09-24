@@ -1,14 +1,13 @@
 ---
 name: docker-compose-prod-deep2-fundamentals
-description: "Use when applying docker compose prod fundamentals."
+description: Use when applying docker compose prod fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devop]
-    related_skills: ['']
 ---
 
 # Docker Compose Prod Deep2 Fundamentals

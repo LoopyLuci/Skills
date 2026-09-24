@@ -1,14 +1,13 @@
 ---
 name: adversarial-ml-robustness-deep-fundamentals
-description: "Use when applying adversarial ml robustness fundamentals."
+description: Use when applying adversarial ml robustness fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, adversarial-ml]
-    related_skills: ['adversarial-ml-robustness']
 ---
 
 # Adversarial Ml Robustness Deep Fundamentals

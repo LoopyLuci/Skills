@@ -1,9 +1,13 @@
 ---
 name: xgboost-model-training
-description: "Use when training XGBoost models."
+description: Use when training XGBoost models.
 version: 1.0.0
-author: Hermes Agent
-tags: ["xgboost", "gradient-boosting", "trees", "training", "tuning"]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [xgboost, gradient-boosting, trees, training, tuning]
 ---
 
 # Xgboost Model Training

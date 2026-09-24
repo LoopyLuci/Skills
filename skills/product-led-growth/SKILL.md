@@ -1,13 +1,13 @@
 ---
 name: product-led-growth
-description: "Use when implementing product-led growth strategies."
+description: Use when implementing product-led growth strategies.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [product-led-growth, PLG, freemium, viral, self-serve, adoption]
-    related_skills: [product-analytics-instrumentation, customer-onboarding-automation, saas-metrics-reporting, growth-hacking-experiments]
+    tags: [product-led-growth, plg, freemium, viral, self-serve, adoption]
 ---
 
 # Product Led Growth

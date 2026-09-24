@@ -1,14 +1,13 @@
 ---
 name: aws-disaster-recovery-implementation
-description: "Use when applying aws disaster recovery implementation."
+description: Use when applying aws disaster recovery implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, disaster-recovery, dr, backup]
-    related_skills: [general]
 ---
 
 # Aws Disaster Recovery Implementation

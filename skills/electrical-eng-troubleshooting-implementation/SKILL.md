@@ -1,14 +1,13 @@
 ---
 name: electrical-eng-troubleshooting-implementation
-description: "Use when applying elect eng troubleshooting implementation."
+description: Use when applying elect eng troubleshooting implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, electrical, troubleshooting]
-    related_skills: [general]
 ---
 
 # Electrical Eng Troubleshooting Implementation

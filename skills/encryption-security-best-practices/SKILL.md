@@ -1,14 +1,13 @@
 ---
 name: encryption-security-best-practices
-description: "Use when for encryption best practices."
+description: Use when for encryption best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, encryption, crypto, tls]
-    related_skills: [general]
 ---
 
 # Encryption Security Best Practices

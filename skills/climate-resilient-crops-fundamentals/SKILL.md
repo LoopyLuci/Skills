@@ -1,14 +1,13 @@
 ---
 name: climate-resilient-crops-fundamentals
-description: "Use when applying climate crops fundamentals."
+description: Use when applying climate crops fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agriculture, genetics, climate-adaptation]
-    related_skills: [general]
 ---
 
 # Climate Resilient Crops Fundamentals

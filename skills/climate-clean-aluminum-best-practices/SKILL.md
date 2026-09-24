@@ -1,14 +1,13 @@
 ---
 name: climate-clean-aluminum-best-practices
-description: "Use when applying climate clean aluminum best practices."
+description: Use when applying climate clean aluminum best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, environment]
-    related_skills: ['']
 ---
 
 # Climate Clean Aluminum Best Practices

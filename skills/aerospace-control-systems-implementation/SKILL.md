@@ -1,14 +1,13 @@
 ---
 name: aerospace-control-systems-implementation
-description: "Use when applying control systems implementation."
+description: Use when applying control systems implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aerospace, control, control-systems]
-    related_skills: ['general']
 ---
 
 # Aerospace Control Systems Implementation

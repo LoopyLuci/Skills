@@ -1,14 +1,13 @@
 ---
 name: brand-management-implementation
-description: "Use when applying brand management implementation."
+description: Use when applying brand management implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, brand, branding-identity-guide]
-    related_skills: [general]
 ---
 
 # Brand Management Implementation

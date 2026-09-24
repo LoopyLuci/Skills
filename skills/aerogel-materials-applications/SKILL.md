@@ -1,14 +1,13 @@
 ---
 name: aerogel-materials-applications
-description: "Use when applying aerogel materials."
+description: Use when applying aerogel materials.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [materials-science, aerogel, insulation, lightweight]
-    related_skills: [general]
 ---
 
 # Aerogel Materials Applications

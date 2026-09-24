@@ -1,14 +1,13 @@
 ---
 name: active-bcis-troubleshooting
-description: "Use when applying active bcis troubleshooting."
+description: Use when applying active bcis troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neurotech, bci, active]
-    related_skills: [general]
 ---
 
 # Active Bcis Troubleshooting

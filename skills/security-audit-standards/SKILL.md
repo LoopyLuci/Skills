@@ -1,13 +1,13 @@
 ---
 name: security-audit-standards
-description: "Use when conducting security audits and assessments."
+description: Use when conducting security audits and assessments.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [security-audit, assessment, SOC2, ISO27001, penetration-testing, compliance]
-    related_skills: [security-incident-response, vulnerability-scanning, identity-access-management, waf-web-application-firewall]
+    tags: [security-audit, assessment, soc2, iso27001, penetration-testing, compliance]
 ---
 
 # Security Audit Standards

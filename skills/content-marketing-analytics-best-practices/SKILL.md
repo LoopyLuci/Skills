@@ -1,14 +1,13 @@
 ---
 name: content-marketing-analytics-best-practices
-description: "Use when applying content marketing analytics best pract."
+description: Use when applying content marketing analytics best pract.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, content-marketing-analysis]
-    related_skills: ['']
 ---
 
 # Content Marketing Analytics Best Practices

@@ -1,14 +1,13 @@
 ---
 name: agritech-platforms-best-practices
-description: "Use when applying agritech platforms best practices."
+description: Use when applying agritech platforms best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agri, tech, agritech-platforms]
-    related_skills: [general]
 ---
 
 # Agritech Platforms Best Practices

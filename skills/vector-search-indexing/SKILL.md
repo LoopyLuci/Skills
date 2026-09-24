@@ -1,13 +1,13 @@
 ---
 name: vector-search-indexing
-description: "Use when implementing vector search indexing algorithms."
+description: Use when implementing vector search indexing algorithms.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [vector-search, ANN, HNSW, IVF, PQ, similarity-search, indexing]
-    related_skills: [embedding-models-patterns, embeddings-visualization,rag-system-design, large-language-model-optimization]
+    tags: [vector-search, ann, hnsw, ivf, pq, similarity-search, indexing]
 ---
 
 # Vector Search and Indexing

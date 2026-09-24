@@ -1,6 +1,13 @@
 ---
 name: vector-database-setup
-description: "Set up Chroma Qdrant pgvector for semantic search"
+description: Set up Chroma Qdrant pgvector for semantic search
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [vector, database, setup]
 ---
 
 # Vector Database Setup

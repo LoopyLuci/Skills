@@ -2,12 +2,12 @@
 name: leather-crafting
 description: Leatherworking, tooling, stitching, and finishing
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["leather", "crafting"]
+    tags: [leather, crafting]
 ---
 
 # Leather Crafting

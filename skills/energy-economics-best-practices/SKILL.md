@@ -1,14 +1,13 @@
 ---
 name: energy-economics-best-practices
-description: "Use when applying energy economics best practices."
+description: Use when applying energy economics best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [energy, economics, energy-economics]
-    related_skills: [general]
 ---
 
 # Energy Economics Best Practices

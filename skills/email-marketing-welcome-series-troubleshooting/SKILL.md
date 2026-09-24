@@ -1,14 +1,13 @@
 ---
 name: email-marketing-welcome-series-troubleshooting
-description: "Use when applying welcome email series troubleshooting."
+description: Use when applying welcome email series troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, onboarding, welcome-series]
-    related_skills: [general]
 ---
 
 # Email Marketing Welcome Series Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: employee-engagement-surveys
-description: "Use when conducting employee engagement surveys."
+description: Use when conducting employee engagement surveys.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: ['e', 'n', 'g', 'a', 'g', 'e', 'm', 'e', 'n', 't', ',', ' ', 's', 'u', 'r', 'v', 'e', 'y', 's']
-    related_skills: [general]
+    tags: [e, n, g, a, g, e, m, e, n, t, , ,  , s, u, r, v, e, y, s]
 ---
 
 # Employee Engagement Surveys

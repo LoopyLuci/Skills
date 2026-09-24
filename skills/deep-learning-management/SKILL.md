@@ -1,14 +1,13 @@
 ---
 name: deep-learning-management
-description: "Use when managing deep learning."
+description: Use when managing deep learning.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, deep-learning, neural-networks, pytorch]
-    related_skills: [general]
 ---
 
 # Deep Learning Management

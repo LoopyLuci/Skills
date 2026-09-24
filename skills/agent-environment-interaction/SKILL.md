@@ -1,13 +1,13 @@
 ---
 name: agent-environment-interaction
-description: "Use when designing agent interaction with environments."
+description: Use when designing agent interaction with environments.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [agent-environment, perception, action, observation, world-model, state]
-    related_skills: [deep-reinforcement-learning, agent-framework-design, tool-augmented-agents, agent-planning-algorithms]
 ---
 
 # Agent Environment Interaction

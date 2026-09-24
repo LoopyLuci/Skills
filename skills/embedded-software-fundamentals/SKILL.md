@@ -1,14 +1,13 @@
 ---
 name: embedded-software-fundamentals
-description: "Use when applying embedded software fundamentals."
+description: Use when applying embedded software fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [electronics, embedded, embedded-software]
-    related_skills: [general]
 ---
 
 # Embedded Software Fundamentals

@@ -1,14 +1,13 @@
 ---
 name: data-pipeline-implementation
-description: "Use when applying data pipeline implementation."
+description: Use when applying data pipeline implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, pipelines, data-pipeline-streaming]
-    related_skills: [general]
 ---
 
 # Data Pipeline Implementation

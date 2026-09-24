@@ -1,14 +1,13 @@
 ---
 name: audio-engineering-best-practices
-description: "Use when applying audio engineering best practices."
+description: Use when applying audio engineering best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [media, audio, audio-processing-deep-learning]
-    related_skills: [general]
 ---
 
 # Audio Engineering Best Practices

@@ -1,14 +1,13 @@
 ---
 name: apache-spark-troubleshooting
-description: "Use when for apache spark troubleshooting."
+description: Use when for apache spark troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [big-data, spark, scala, python]
-    related_skills: [general]
 ---
 
 # Apache Spark Troubleshooting

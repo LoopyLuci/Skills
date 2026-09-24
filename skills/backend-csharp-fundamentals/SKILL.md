@@ -1,14 +1,13 @@
 ---
 name: backend-csharp-fundamentals
-description: "Use when applying c# backend fundamentals."
+description: Use when applying c# backend fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, csharp, dotnet]
-    related_skills: [general]
 ---
 
 # Backend Csharp Fundamentals

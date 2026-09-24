@@ -1,14 +1,13 @@
 ---
 name: docker-storage-troubleshooting
-description: "Use when applying docker storage troubleshooting."
+description: Use when applying docker storage troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [docker, storage, volumes, docker-volume-backup-restore]
-    related_skills: [general]
 ---
 
 # Docker Storage Troubleshooting

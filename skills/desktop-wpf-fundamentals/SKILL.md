@@ -1,14 +1,13 @@
 ---
 name: desktop-wpf-fundamentals
-description: "Use when applying wpf desktop fundamentals."
+description: Use when applying wpf desktop fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [desktop, wpf, dotnet, csharp]
-    related_skills: [general]
 ---
 
 # Desktop Wpf Fundamentals

@@ -1,14 +1,13 @@
 ---
 name: aws-ec2-implementation-deep-troubleshooting
-description: "Use when applying aws ec2 implementation troubleshooting."
+description: Use when applying aws ec2 implementation troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, ec2]
-    related_skills: ['aws-ec2-implementation']
 ---
 
 # Aws Ec2 Implementation Deep Troubleshooting

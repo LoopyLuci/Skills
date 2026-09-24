@@ -1,13 +1,13 @@
 ---
-
 name: writing-shape
 description: Writing, exploit — shape raw material into an article, paragraph by paragraph.
-disable-model-invocation: true
-source: mattpocock/skills
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [agent, skill]
-
 ---
 
 <what-to-do>

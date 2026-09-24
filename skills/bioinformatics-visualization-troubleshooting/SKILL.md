@@ -1,14 +1,13 @@
 ---
 name: bioinformatics-visualization-troubleshooting
-description: "Use when applying bioinformatics vis troubleshooting."
+description: Use when applying bioinformatics vis troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [bioinformatics, viz, bioinformatics]
-    related_skills: [general]
 ---
 
 # Bioinformatics Visualization Troubleshooting

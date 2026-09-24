@@ -1,14 +1,13 @@
 ---
 name: ai-alignment-fundamentals-deep-troubleshooting
-description: "Use when applying ai alignment fundamentals troubleshoot."
+description: Use when applying ai alignment fundamentals troubleshoot.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ai-security, ethics]
-    related_skills: ['ai-alignment-fundamentals']
 ---
 
 # Ai Alignment Fundamentals Deep Troubleshooting

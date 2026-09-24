@@ -1,14 +1,13 @@
 ---
 name: ci-cd-best-practices-troubleshooting
-description: "Use when applying ci/cd best practices troubleshooting."
+description: Use when applying ci/cd best practices troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, best-practices, ci-cd, ci-cd-best-practices]
-    related_skills: [general]
 ---
 
 # Ci Cd Best Practices Troubleshooting

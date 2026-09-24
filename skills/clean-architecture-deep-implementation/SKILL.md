@@ -1,14 +1,13 @@
 ---
 name: clean-architecture-deep-implementation
-description: "Use when applying clean architecture implementation."
+description: Use when applying clean architecture implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [programming, architecture]
-    related_skills: ['clean-architecture']
 ---
 
 # Clean Architecture Deep Implementation

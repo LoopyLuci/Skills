@@ -1,14 +1,13 @@
 ---
 name: bioinformatics-implementation
-description: "Use when implementing bioinformatics projects."
+description: Use when implementing bioinformatics projects.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [bioinformatics, genomics, bioinformatics, comp-bio]
-    related_skills: [general]
 ---
 
 # Bioinformatics Implementation

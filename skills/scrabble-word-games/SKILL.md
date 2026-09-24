@@ -2,12 +2,12 @@
 name: scrabble-word-games
 description: Word knowledge, rack management, board control, and tournament strategy
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["scrabble", "word-games"]
+    tags: [scrabble, word-games]
 ---
 
 # Scrabble Word Games

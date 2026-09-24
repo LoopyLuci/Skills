@@ -1,14 +1,13 @@
 ---
 name: feature-engineering-auto-implementation
-description: "Use when applying auto feature engineering implementation."
+description: Use when applying auto feature engineering implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, feature-engineering, feature-engineering-automation]
-    related_skills: [general]
 ---
 
 # Feature Engineering Auto Implementation

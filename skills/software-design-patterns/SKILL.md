@@ -1,9 +1,15 @@
 ---
 name: software-design-patterns
-description: "Use when applying design patterns: creational, structural, behavioral."
-category: software-development
-tags: [design-patterns, architecture, gof, software-engineering]
+description: Use when applying design patterns: creational, structural, behavioral.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [design-patterns, architecture, gof, software-engineering]
 ---
+
 # Software Design Patterns
 
 Gang of Four and modern design patterns for production software.

@@ -1,14 +1,13 @@
 ---
 name: biomaterials-engineering
-description: "Use when engineering biomaterials."
+description: Use when engineering biomaterials.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [materials-science, biomaterials, medical-devices, biocompatibility]
-    related_skills: [general]
 ---
 
 # Biomaterials Engineering

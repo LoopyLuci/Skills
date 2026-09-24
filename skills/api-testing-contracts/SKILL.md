@@ -1,12 +1,13 @@
 ---
 name: api-testing-contracts
-description: "Use when implementing contract testing."
+description: Use when implementing contract testing.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["pact", "contract-testing", "consumer-driven"]
+    tags: [pact, contract-testing, consumer-driven]
 ---
 
 # Api Testing Contracts

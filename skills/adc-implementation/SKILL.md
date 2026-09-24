@@ -1,14 +1,13 @@
 ---
 name: adc-implementation
-description: "Use when applying antibody drug conjugates implementation."
+description: Use when applying antibody drug conjugates implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, pharma, adc]
-    related_skills: [general]
 ---
 
 # Adc Implementation

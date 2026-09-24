@@ -1,14 +1,13 @@
 ---
 name: academic-integrity
-description: "Use when maintaining academic integrity."
+description: Use when maintaining academic integrity.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [education, ethics, academic-integrity]
-    related_skills: [general]
 ---
 
 # Academic Integrity

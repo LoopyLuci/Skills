@@ -1,14 +1,13 @@
 ---
 name: apache-spark-implementation
-description: "Use when for apache spark implementation."
+description: Use when for apache spark implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [big-data, spark, scala, python]
-    related_skills: [general]
 ---
 
 # Apache Spark Implementation

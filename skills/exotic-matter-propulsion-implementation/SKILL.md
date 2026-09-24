@@ -1,14 +1,13 @@
 ---
 name: exotic-matter-propulsion-implementation
-description: "Use when applying exotic matter propulsion implementation."
+description: Use when applying exotic matter propulsion implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [physics, exotic, propulsion]
-    related_skills: ['']
 ---
 
 # Exotic Matter Propulsion Implementation

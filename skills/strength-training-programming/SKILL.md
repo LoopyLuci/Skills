@@ -2,12 +2,12 @@
 name: strength-training-programming
 description: Periodization, progressive overload, and program design for strength
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["strength", "programming"]
+    tags: [strength, programming]
 ---
 
 # Strength Training Programming

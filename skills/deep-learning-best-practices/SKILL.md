@@ -1,14 +1,13 @@
 ---
 name: deep-learning-best-practices
-description: "Use when applying deep learning best practices."
+description: Use when applying deep learning best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ai, deep-learning, deep-learning-fundamentals]
-    related_skills: [general]
 ---
 
 # Deep Learning Best Practices

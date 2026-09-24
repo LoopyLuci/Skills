@@ -1,14 +1,13 @@
 ---
 name: delta-lake-implementation
-description: "Use when for delta lake implementation."
+description: Use when for delta lake implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [big-data, delta-lake, lakehouse, databricks]
-    related_skills: [general]
 ---
 
 # Delta Lake Implementation

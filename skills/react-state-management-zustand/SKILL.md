@@ -1,12 +1,13 @@
 ---
 name: react-state-management-zustand
-description: "Use when using Zustand for state."
+description: Use when using Zustand for state.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["react", "zustand", "state-management", "store", "selectors"]
+    tags: [react, zustand, state-management, store, selectors]
 ---
 
 # React State Management Zustand

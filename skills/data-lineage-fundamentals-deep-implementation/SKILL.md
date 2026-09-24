@@ -1,14 +1,13 @@
 ---
 name: data-lineage-fundamentals-deep-implementation
-description: "Use when applying data lineage fundamentals implementation."
+description: Use when applying data lineage fundamentals implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, lineage]
-    related_skills: ['data-lineage-fundamentals']
 ---
 
 # Data Lineage Fundamentals Deep Implementation

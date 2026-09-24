@@ -1,14 +1,13 @@
 ---
 name: application-security-best-practices
-description: "Use when for application security best practices."
+description: Use when for application security best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, app-security, owasp]
-    related_skills: [general]
 ---
 
 # Application Security Best Practices

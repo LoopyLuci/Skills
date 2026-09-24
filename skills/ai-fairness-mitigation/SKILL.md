@@ -1,13 +1,13 @@
 ---
 name: ai-fairness-mitigation
-description: "Use when detecting and mitigating bias in AI systems."
+description: Use when detecting and mitigating bias in AI systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [fairness, bias, ethical-ai, auditing, responsible-ai]
-    related_skills: [adversarial-ml-robustness, explainable-ai-xai-patterns, differential-privacy-training, agent-safety-alignment]
 ---
 
 # Ai Fairness Mitigation

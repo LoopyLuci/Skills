@@ -1,14 +1,13 @@
 ---
 name: ansible-implementation-deep-fundamentals
-description: "Use when applying ansible implementation fundamentals."
+description: Use when applying ansible implementation fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, ansible]
-    related_skills: ['ansible-implementation']
 ---
 
 # Ansible Implementation Deep Fundamentals

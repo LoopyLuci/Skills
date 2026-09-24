@@ -1,9 +1,15 @@
 ---
 name: attention-mechanisms-deep
-description: "Use when implementing advanced attention mechanisms."
-category: mlops
-tags: [attention, transformers, multi-head, flash-attention, sparse]
+description: Use when implementing advanced attention mechanisms.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [attention, transformers, multi-head, flash-attention, sparse]
 ---
+
 # Advanced Attention Mechanisms
 
 Deep dive into attention variants beyond the original Transformer.

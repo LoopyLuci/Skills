@@ -1,14 +1,13 @@
 ---
 name: backend-php-trouble-implementation
-description: "Use when applying backend php troubl implementation."
+description: Use when applying backend php troubl implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, php, backend-php-troubleshooting]
-    related_skills: [general]
 ---
 
 # Backend Php Trouble Implementation

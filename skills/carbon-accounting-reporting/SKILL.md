@@ -2,12 +2,12 @@
 name: carbon-accounting-reporting
 description: GHG protocol, Scope 1/2/3, carbon markets, and disclosure frameworks
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["carbon", "reporting"]
+    tags: [carbon, reporting]
 ---
 
 # Carbon Accounting Reporting

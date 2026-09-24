@@ -1,9 +1,15 @@
 ---
 name: docker-networking-troubleshoot
-description: "Use when debugging Docker network connectivity issues."
-category: docker
-tags: [docker, networking, troubleshooting]
+description: Use when debugging Docker network connectivity issues.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [docker, networking, troubleshooting]
 ---
+
 # Docker Networking Troubleshoot
 
 Diagnosing and fixing Docker network issues.

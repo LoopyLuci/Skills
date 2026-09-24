@@ -1,14 +1,13 @@
 ---
 name: ddd-tactical-deep-troubleshooting
-description: "Use when applying domain-driven design tactical troubles."
+description: Use when applying domain-driven design tactical troubles.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [programming, ddd]
-    related_skills: ['domain-driven-design-tactical']
 ---
 
 # Ddd Tactical Deep Troubleshooting

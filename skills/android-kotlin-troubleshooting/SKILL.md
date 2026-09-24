@@ -1,14 +1,13 @@
 ---
 name: android-kotlin-troubleshooting
-description: "Use when applying android kotlin troubleshooting."
+description: Use when applying android kotlin troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mobile, android, kotlin, kotlin-android-dev]
-    related_skills: [general]
 ---
 
 # Android Kotlin Troubleshooting

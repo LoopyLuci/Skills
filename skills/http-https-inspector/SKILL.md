@@ -1,9 +1,13 @@
 ---
 name: http-https-inspector
-title: HTTP/HTTPS Inspector
 description: Use when inspecting HTTP traffic and extracting metadata.
-category: networking
-tags: [http, https, inspection, metadata, proxy, rust]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [http, https, inspection, metadata, proxy, rust]
 ---
 
 # HTTP/HTTPS Inspector

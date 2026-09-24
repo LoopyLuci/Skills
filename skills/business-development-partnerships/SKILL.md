@@ -1,13 +1,13 @@
 ---
 name: business-development-partnerships
-description: "Use when building business development and partnerships."
+description: Use when building business development and partnerships.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [business-development, partnerships, strategic-alliances, channel, ecosystem]
-    related_skills: [partner-channel-management, sales-enablement-playbooks, revenue-operations-revops, go-to-market-strategy]
 ---
 
 # Business Development and Partnerships

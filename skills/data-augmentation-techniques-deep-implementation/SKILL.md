@@ -1,14 +1,13 @@
 ---
 name: data-augmentation-techniques-deep-implementation
-description: "Use when applying data augmentation implementation."
+description: Use when applying data augmentation implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, ml-data-aug]
-    related_skills: ['']
 ---
 
 # Data Augmentation Techniques Deep Implementation

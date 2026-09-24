@@ -1,14 +1,13 @@
 ---
 name: api-versioning-fundamentals
-description: "Use when applying api versioning fundamentals."
+description: Use when applying api versioning fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [api, versioning, rest, backward]
-    related_skills: [general]
 ---
 
 # Api Versioning Fundamentals

@@ -1,15 +1,13 @@
 ---
 name: apple-reminders
-description: "Apple Reminders via remindctl: add, list, complete."
+description: Apple Reminders via remindctl: add, list, complete.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [macos]
+platforms: [any]
 metadata:
   hermes:
-    tags: [Reminders, tasks, todo, macOS, Apple]
-prerequisites:
-  commands: [remindctl]
+    tags: [reminders, tasks, todo, macos, apple]
 ---
 
 # Apple Reminders

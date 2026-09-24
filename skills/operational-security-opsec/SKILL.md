@@ -2,12 +2,12 @@
 name: operational-security-opsec
 description: Counter-surveillance, tradecraft, secure communications, and personal security
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["opsec", "privacy"]
+    tags: [opsec, privacy]
 ---
 
 # Operational Security Opsec

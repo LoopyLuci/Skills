@@ -1,14 +1,13 @@
 ---
 name: django-rest-framework-best-practices
-description: "Use when applying django rest framework best practices."
+description: Use when applying django rest framework best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, django, drf, python]
-    related_skills: [general]
 ---
 
 # Django Rest Framework Best Practices

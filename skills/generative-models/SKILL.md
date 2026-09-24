@@ -1,9 +1,15 @@
 ---
 name: generative-models
-description: "Use when building GANs, VAEs, or diffusion models."
-category: mlops
-tags: [generative, gans, vaes, diffusion, image-generation]
+description: Use when building GANs, VAEs, or diffusion models.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [generative, gans, vaes, diffusion, image-generation]
 ---
+
 # Generative Models
 
 Building and training GANs, VAEs, and diffusion models.

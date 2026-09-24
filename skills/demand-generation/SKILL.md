@@ -1,13 +1,13 @@
 ---
 name: demand-generation
-description: "Use when building demand generation and pipeline programs."
+description: Use when building demand generation and pipeline programs.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [demand-generation, pipeline, ABM, inbound, outbound, campaigns]
-    related_skills: [lead-generation-strategies, marketing-funnel-design, digital-marketing-strategy, marketing-automation-workflows]
+    tags: [demand-generation, pipeline, abm, inbound, outbound, campaigns]
 ---
 
 # Demand Generation

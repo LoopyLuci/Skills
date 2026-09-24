@@ -1,14 +1,13 @@
 ---
 name: cardiology-analysis-best-practices
-description: "Use when applying cardiology analysis best practices."
+description: Use when applying cardiology analysis best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [medicine, cardiology, cardiology-analysis]
-    related_skills: [general]
 ---
 
 # Cardiology Analysis Best Practices

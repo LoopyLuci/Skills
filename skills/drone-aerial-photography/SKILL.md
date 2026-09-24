@@ -2,12 +2,12 @@
 name: drone-aerial-photography
 description: Flight planning, regulations, panorama stitching, and HDR
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["drone", "aerial"]
+    tags: [drone, aerial]
 ---
 
 # Drone Aerial Photography

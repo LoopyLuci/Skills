@@ -1,14 +1,13 @@
 ---
 name: banking-digital-transformation-fundamentals
-description: "Use when applying banking digital transformation fundame."
+description: Use when applying banking digital transformation fundame.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, digital, digital-transformation]
-    related_skills: [general]
 ---
 
 # Banking Digital Transformation Fundamentals

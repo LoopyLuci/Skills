@@ -1,14 +1,13 @@
 ---
 name: decision-analysis-methods
-description: "Use when applying decision analysis methods."
+description: Use when applying decision analysis methods.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: ['d', 'e', 'c', 'i', 's', 'i', 'o', 'n', '-', 'a', 'n', 'a', 'l', 'y', 's', 'i', 's']
-    related_skills: [general]
+    tags: [d, e, c, i, s, i, o, n, -, a, n, a, l, y, s, i, s]
 ---
 
 # Decision Analysis Methods

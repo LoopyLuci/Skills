@@ -1,14 +1,13 @@
 ---
 name: electric-vehicle-eng-troubleshooting
-description: "Use when applying electric vehicle engineering troublesh."
+description: Use when applying electric vehicle engineering troublesh.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [auto, ev, electric-vehicle-engineering]
-    related_skills: ['general']
 ---
 
 # Electric Vehicle Eng Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: fatca-compliance-troubleshooting
-description: "Use when applying fatca troubleshooting."
+description: Use when applying fatca troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, tax, fatca]
-    related_skills: [general]
 ---
 
 # Fatca Compliance Troubleshooting

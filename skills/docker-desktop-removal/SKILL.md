@@ -1,14 +1,13 @@
 ---
 name: docker-desktop-removal
-description: "Use when removing Docker Desktop."
+description: Use when removing Docker Desktop.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, docker, docker-desktop-windows-removal]
-    related_skills: [general]
 ---
 
 # Docker Desktop Removal

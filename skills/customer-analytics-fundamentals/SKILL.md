@@ -1,14 +1,13 @@
 ---
 name: customer-analytics-fundamentals
-description: "Use when applying customer analytics fundamentals."
+description: Use when applying customer analytics fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, customer, analytics, digital-marketing-analytics]
-    related_skills: [general]
 ---
 
 # Customer Analytics Fundamentals

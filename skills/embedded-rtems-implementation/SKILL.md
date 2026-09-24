@@ -1,14 +1,13 @@
 ---
 name: embedded-rtems-implementation
-description: "Use when applying rtems implementation."
+description: Use when applying rtems implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [embedded, rtems, rtos, realtime]
-    related_skills: [general]
 ---
 
 # Embedded Rtems Implementation

@@ -1,14 +1,13 @@
 ---
 name: docker-volume-backup-restore-deep-fundamentals
-description: "Use when applying docker volume backup fundamentals."
+description: Use when applying docker volume backup fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, docker]
-    related_skills: ['docker-volume-backup-restore']
 ---
 
 # Docker Volume Backup Restore Deep Fundamentals

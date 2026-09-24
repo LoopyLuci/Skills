@@ -1,14 +1,13 @@
 ---
 name: email-marketing-platform-selection-implementation
-description: "Use when applying email platform selection implementation."
+description: Use when applying email platform selection implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, platform, selection]
-    related_skills: [general]
 ---
 
 # Email Marketing Platform Selection Implementation

@@ -1,14 +1,13 @@
 ---
 name: cloud-penetration-testing-deep-troubleshooting
-description: "Use when applying cloud penetration testing troubleshoot."
+description: Use when applying cloud penetration testing troubleshoot.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, security]
-    related_skills: ['cloud-penetration-testing']
 ---
 
 # Cloud Penetration Testing Deep Troubleshooting

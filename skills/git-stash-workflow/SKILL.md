@@ -1,6 +1,13 @@
 ---
 name: git-stash-workflow
 description: Temporarily save work-in-progress changes with git stash.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [git, stash, workflow]
 ---
 
 # Git Stash Workflow

@@ -1,14 +1,13 @@
 ---
 name: art-direction-implementation
-description: "Use when applying art direction implementation."
+description: Use when applying art direction implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [creative, art, art-direction]
-    related_skills: [general]
 ---
 
 # Art Direction Implementation

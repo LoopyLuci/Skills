@@ -1,14 +1,13 @@
 ---
 name: banking-investment-tech-fundamentals
-description: "Use when applying investment tech fundamentals."
+description: Use when applying investment tech fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, investing, investment-tech]
-    related_skills: [general]
 ---
 
 # Banking Investment Tech Fundamentals

@@ -1,14 +1,13 @@
 ---
 name: business-process-implementation
-description: "Use when applying business process implementation."
+description: Use when applying business process implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, process, business-process-reengineering]
-    related_skills: [general]
 ---
 
 # Business Process Implementation

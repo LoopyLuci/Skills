@@ -1,9 +1,15 @@
 ---
 name: agent-routing-models
-description: "Use when routing tasks between specialized agents."
-category: mlops
-tags: [agents, routing, classification, orchestration]
+description: Use when routing tasks between specialized agents.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [agents, routing, classification, orchestration]
 ---
+
 # Agent Routing Models
 
 Routing tasks to the right agent based on task type, complexity, and agent capability.

@@ -1,14 +1,13 @@
 ---
 name: backend-elixir-implementation
-description: "Use when applying elixir backend implementation."
+description: Use when applying elixir backend implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, elixir, functional]
-    related_skills: [general]
 ---
 
 # Backend Elixir Implementation

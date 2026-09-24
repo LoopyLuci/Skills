@@ -1,14 +1,13 @@
 ---
 name: aws-eks-implementation-deep-fundamentals
-description: "Use when applying aws eks implementation fundamentals."
+description: Use when applying aws eks implementation fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, eks]
-    related_skills: ['aws-eks-implementation']
 ---
 
 # Aws Eks Implementation Deep Fundamentals

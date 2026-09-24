@@ -1,14 +1,13 @@
 ---
 name: email-marketing-integration-implementation
-description: "Use when applying email integration implementation."
+description: Use when applying email integration implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, integration, api]
-    related_skills: [general]
 ---
 
 # Email Marketing Integration Implementation

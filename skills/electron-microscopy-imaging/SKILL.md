@@ -1,14 +1,13 @@
 ---
 name: electron-microscopy-imaging
-description: "Use when imaging with electron microscopy."
+description: Use when imaging with electron microscopy.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [materials-science, sem, tem, microscopy]
-    related_skills: [general]
 ---
 
 # Electron Microscopy Imaging

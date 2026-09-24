@@ -2,12 +2,12 @@
 name: construction-safety-osha
 description: OSHA compliance, safety programs, and job hazard analysis
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["safety", "osha"]
+    tags: [safety, osha]
 ---
 
 # Construction Safety Osha

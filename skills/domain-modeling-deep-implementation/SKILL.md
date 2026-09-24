@@ -1,14 +1,13 @@
 ---
 name: domain-modeling-deep-implementation
-description: "Use when applying domain modeling implementation."
+description: Use when applying domain modeling implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [programming, ddd]
-    related_skills: ['domain-modeling']
 ---
 
 # Domain Modeling Deep Implementation

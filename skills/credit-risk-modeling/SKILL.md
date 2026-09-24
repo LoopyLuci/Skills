@@ -1,14 +1,13 @@
 ---
 name: credit-risk-modeling
-description: "Use when modeling credit risk."
+description: Use when modeling credit risk.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, risk, credit-risk]
-    related_skills: [general]
 ---
 
 # Credit Risk Modeling

@@ -1,14 +1,13 @@
 ---
 name: biomedical-eng-strategy-implementation
-description: "Use when applying biomedical strategy implementation."
+description: Use when applying biomedical strategy implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, biomedical, strategy]
-    related_skills: [general]
 ---
 
 # Biomedical Eng Strategy Implementation

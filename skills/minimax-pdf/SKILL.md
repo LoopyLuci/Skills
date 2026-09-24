@@ -1,12 +1,13 @@
 ---
-
 name: minimax-pdf
-description: >
-source: MiniMax-AI/skills
-tags: [minimax, document, pdf, office]
-metadata: 
-hermes: 
-
+description: Skill for minimax pdf
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [minimax, document, pdf, office]
 ---
 
 **Trigger**: Use when creating, editing, or formatting PDF documents — generation, template application, content extraction, and validation.

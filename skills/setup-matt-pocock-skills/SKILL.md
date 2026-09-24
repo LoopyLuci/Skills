@@ -1,8 +1,13 @@
 ---
 name: setup-matt-pocock-skills
 description: Use when setting up Matt Pocock skills in a new workspace or project
-tags: [setup, onboarding, configuration, matt-pocock, workspace]
-related_skills: [writing-great-skills, ask-matt, wayfinder]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [setup, onboarding, configuration, matt-pocock, workspace]
 ---
 
 # Setup Matt Pocock Skills

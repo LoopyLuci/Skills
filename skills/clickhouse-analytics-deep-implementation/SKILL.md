@@ -1,14 +1,13 @@
 ---
 name: clickhouse-analytics-deep-implementation
-description: "Use when applying clickhouse analytics implementation."
+description: Use when applying clickhouse analytics implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, analytics]
-    related_skills: ['clickhouse-analytics']
 ---
 
 # Clickhouse Analytics Deep Implementation

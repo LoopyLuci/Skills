@@ -1,14 +1,13 @@
 ---
 name: database-mongodb-transactions-fundamentals
-description: "Use when applying mongodb transactions fundamentals."
+description: Use when applying mongodb transactions fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, mongodb, transactions, consistency]
-    related_skills: [general]
 ---
 
 # Database Mongodb Transactions Fundamentals

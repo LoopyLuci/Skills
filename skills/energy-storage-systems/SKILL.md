@@ -1,14 +1,13 @@
 ---
 name: energy-storage-systems
-description: "Use when designing energy storage. Batteries, grid."
+description: Use when designing energy storage. Batteries, grid.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climatetech, energy-storage, batteries, grid-scale]
-    related_skills: [energy-storage-economics, renewable-energy-design]
 ---
 
 # Energy Storage Systems

@@ -1,14 +1,13 @@
 ---
 name: aws-lambda-implementation-deep-implementation
-description: "Use when applying aws lambda implementation implementation."
+description: Use when applying aws lambda implementation implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, lambda]
-    related_skills: ['aws-lambda-implementation']
 ---
 
 # Aws Lambda Implementation Deep Implementation

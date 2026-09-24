@@ -1,9 +1,15 @@
 ---
 name: code-refactoring-strategies
-description: "Use when systematically refactoring code."
-category: software-development
-tags: [refactoring, code-quality, cleanup, technical-debt]
+description: Use when systematically refactoring code.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [refactoring, code-quality, cleanup, technical-debt]
 ---
+
 # Code Refactoring Strategies
 
 Systematic approaches to refactoring code safely.

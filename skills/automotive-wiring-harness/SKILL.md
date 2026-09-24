@@ -1,14 +1,13 @@
 ---
 name: automotive-wiring-harness
-description: "Use when designing wiring harnesses."
+description: Use when designing wiring harnesses.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [automotive, wiring, harness, electrical]
-    related_skills: [general]
 ---
 
 # Automotive Wiring Harness

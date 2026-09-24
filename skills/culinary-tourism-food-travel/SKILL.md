@@ -2,12 +2,12 @@
 name: culinary-tourism-food-travel
 description: Food tours, culinary experiences, and gastronomic tourism
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["culinary", "food-travel"]
+    tags: [culinary, food-travel]
 ---
 
 # Culinary Tourism Food Travel

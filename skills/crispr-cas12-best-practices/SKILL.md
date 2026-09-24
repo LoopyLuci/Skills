@@ -1,14 +1,13 @@
 ---
 name: crispr-cas12-best-practices
-description: "Use when applying crispr cas12 biotech best practices."
+description: Use when applying crispr cas12 biotech best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, bio]
-    related_skills: ['']
 ---
 
 # Crispr Cas12 Best Practices

@@ -1,14 +1,13 @@
 ---
 name: astrophotography-best-practices
-description: "Use when applying astrophotography best practices."
+description: Use when applying astrophotography best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [media, photo, astronomy]
-    related_skills: [general]
 ---
 
 # Astrophotography Best Practices

@@ -1,14 +1,13 @@
 ---
 name: accounting-financial-planning-troubleshooting
-description: "Use when applying financial planning troubleshooting."
+description: Use when applying financial planning troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, accounting-fundamentals]
-    related_skills: ['']
 ---
 
 # Accounting Financial Planning Troubleshooting

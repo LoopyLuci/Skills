@@ -1,14 +1,13 @@
 ---
 name: email-marketing-winback-fundamentals
-description: "Use when applying email win-back fundamentals."
+description: Use when applying email win-back fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, retention, win-back]
-    related_skills: [general]
 ---
 
 # Email Marketing Winback Fundamentals

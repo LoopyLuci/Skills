@@ -1,14 +1,13 @@
 ---
 name: citizen-engagement-platforms-best-practices
-description: "Use when applying citizen engagement best practices."
+description: Use when applying citizen engagement best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [gov, engagement]
-    related_skills: ['general']
 ---
 
 # Citizen Engagement Platforms Best Practices

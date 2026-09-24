@@ -1,13 +1,13 @@
 ---
 name: three-js-3d-web
-description: "Use when building 3D web experiences with Three.js."
+description: Use when building 3D web experiences with Three.js.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [three-js, 3D, WebGL, WebGPU, rendering, GLTF, animation]
-    related_skills: [webxr-ar-vr-development, game-development-patterns, animation-web-patterns, performance-budgeting-web]
+    tags: [three-js, 3d, webgl, webgpu, rendering, gltf, animation]
 ---
 
 # Three.js 3D Web Development

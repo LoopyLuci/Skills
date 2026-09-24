@@ -1,14 +1,13 @@
 ---
 name: environmental-law
-description: "Use when practicing environmental law."
+description: Use when practicing environmental law.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [legal, environment, environmental-law]
-    related_skills: [general]
 ---
 
 # Environmental Law

@@ -1,14 +1,13 @@
 ---
 name: embedded-assembler-fundamentals
-description: "Use when applying assembler for embedded fundamentals."
+description: Use when applying assembler for embedded fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [embedded, assembler, assembly, low-level]
-    related_skills: [general]
 ---
 
 # Embedded Assembler Fundamentals

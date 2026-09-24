@@ -2,12 +2,12 @@
 name: text-to-speech-tts
 description: TTS synthesis, vocoders, and neural speech synthesis
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["tts", "speech"]
+    tags: [tts, speech]
 ---
 
 # Text To Speech Tts

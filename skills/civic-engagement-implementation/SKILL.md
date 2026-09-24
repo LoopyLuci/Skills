@@ -1,14 +1,13 @@
 ---
 name: civic-engagement-implementation
-description: "Use when applying civic engagement implementation."
+description: Use when applying civic engagement implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [gov, civic, public-participation-platforms]
-    related_skills: [general]
 ---
 
 # Civic Engagement Implementation

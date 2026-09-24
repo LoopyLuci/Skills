@@ -1,14 +1,13 @@
 ---
 name: dependency-audit-troubleshooting
-description: "Use when applying dependency audit troubleshooting."
+description: Use when applying dependency audit troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [programming, dependency-audit, security]
-    related_skills: [general]
 ---
 
 # Dependency Audit Troubleshooting

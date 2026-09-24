@@ -1,13 +1,13 @@
 ---
 name: cryptography-implementation-patterns
-description: "Use when implementing cryptography securely in apps."
+description: Use when implementing cryptography securely in apps.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [cryptography, encryption, hashing, signing, security, python, rust]
-    related_skills: [formal-verification-methods, web-security-patterns, zero-trust-network-architecture]
 ---
 
 # Cryptography Implementation Patterns

@@ -1,14 +1,13 @@
 ---
 name: accounting-design-implementation
-description: "Use when applying accounting design implementation."
+description: Use when applying accounting design implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, accounting-design]
-    related_skills: ['']
 ---
 
 # Accounting Design Implementation

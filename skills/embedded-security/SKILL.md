@@ -1,14 +1,13 @@
 ---
 name: embedded-security
-description: "Use when securing embedded devices."
+description: Use when securing embedded devices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [electronics, embedded-security, iot-security]
-    related_skills: ['iot-security-hardening']
 ---
 
 # Embedded Security

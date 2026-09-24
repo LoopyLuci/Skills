@@ -1,14 +1,13 @@
 ---
 name: api-documentation
-description: "Use when documenting APIs."
+description: Use when documenting APIs.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [api, documentation, openapi, swagger]
-    related_skills: ['api-design-and-documentation']
 ---
 
 # Api Documentation

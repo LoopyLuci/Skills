@@ -1,14 +1,13 @@
 ---
 name: faith-based-youth-ministry
-description: "Use when leading youth ministry programs."
+description: Use when leading youth ministry programs.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [religious, youth-ministry, teenagers, faith-education]
-    related_skills: [general]
 ---
 
 # Faith Based Youth Ministry

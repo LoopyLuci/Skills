@@ -1,14 +1,13 @@
 ---
 name: fashion-forecasting-systems-deep-troubleshooting
-description: "Use when applying fashion forecasting systems troublesho."
+description: Use when applying fashion forecasting systems troublesho.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, forecasting]
-    related_skills: ['']
 ---
 
 # Fashion Forecasting Systems Deep Troubleshooting

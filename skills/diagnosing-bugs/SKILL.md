@@ -1,8 +1,13 @@
 ---
 name: diagnosing-bugs
 description: Use when diagnosing hard bugs, debugging failures, or investigating performance regressions
-tags: [debugging, bugs, diagnosis, bisect, testing]
-related_skills: [systematic-debugging, debugging-techniques-advanced, qa]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [debugging, bugs, diagnosis, bisect, testing]
 ---
 
 # Diagnosing Bugs

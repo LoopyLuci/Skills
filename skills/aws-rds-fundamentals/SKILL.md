@@ -1,14 +1,13 @@
 ---
 name: aws-rds-fundamentals
-description: "Use when applying aws rds fundamentals."
+description: Use when applying aws rds fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, rds, database, postgres]
-    related_skills: [general]
 ---
 
 # Aws Rds Fundamentals

@@ -1,14 +1,13 @@
 ---
 name: cardiology-optimization
-description: "Use when optimizing cardiology systems."
+description: Use when optimizing cardiology systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cardiology, heart, cardiovascular, medicine]
-    related_skills: [general]
 ---
 
 # Cardiology Optimization

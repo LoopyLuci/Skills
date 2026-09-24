@@ -1,13 +1,13 @@
 ---
 name: meta-skill-patterns
-description: "Use when designing meta-skills for creation and management."
+description: Use when designing meta-skills for creation and management.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [skills, meta, patterns, architecture, design]
-    related_skills: [skill-development-workflow, skill-architecture-planning, skill-inventory-management, skill-testing-automation]
 ---
 
 # Meta Skill Patterns

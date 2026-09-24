@@ -1,8 +1,13 @@
 ---
 name: cover-page-generator
 description: Use when creating cover/title slides for PowerPoint presentations with PptxGenJS.
-tags: [pptx, powerpoint, presentation, cover-slide, pptxgenjs, javascript]
-related_skills: [content-page-generator, table-of-contents-generator, color-font-skill]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [pptx, powerpoint, presentation, cover-slide, pptxgenjs, javascript]
 ---
 
 # Cover Page Generator

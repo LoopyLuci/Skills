@@ -1,14 +1,13 @@
 ---
 name: ppc-advertising
-description: "Use when planning PPC ads. Keywords, bidding, tracking."
+description: Use when planning PPC ads. Keywords, bidding, tracking.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ppc, google-ads, facebook-ads, paid-media, advertising]
-    related_skills: [conversion-rate-optimization, marketing-analytics-dashboard, content-marketing-workflow]
 ---
 
 # Ppc Advertising

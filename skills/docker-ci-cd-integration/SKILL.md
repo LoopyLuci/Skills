@@ -1,10 +1,13 @@
 ---
-
 name: docker-ci-cd-integration
-description: "Use when using Docker in CI/CD pipelines."
-category: docker
-tags: [docker, cicd, github-actions, gitlab-ci, pipeline]
-
+description: Use when using Docker in CI/CD pipelines.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [docker, cicd, github-actions, gitlab-ci, pipeline]
 ---
 
 # Docker CI/CD Integration

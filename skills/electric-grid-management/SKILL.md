@@ -2,12 +2,12 @@
 name: electric-grid-management
 description: Grid operations, demand response, distributed energy, and microgrids
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["grid", "utility"]
+    tags: [grid, utility]
 ---
 
 # Electric Grid Management

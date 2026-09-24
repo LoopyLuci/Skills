@@ -1,9 +1,13 @@
 ---
 name: sentry-error-tracking
-description: "Use when implementing Sentry error tracking."
+description: Use when implementing Sentry error tracking.
 version: 1.0.0
-author: Hermes Agent
-tags: ["sentry", "errors", "exceptions", "source-maps", "releases"]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [sentry, errors, exceptions, source-maps, releases]
 ---
 
 # Sentry Error Tracking

@@ -1,14 +1,13 @@
 ---
 name: agri-tech-vertical-farming-troubleshooting
-description: "Use when applying vertical farming troubleshooting."
+description: Use when applying vertical farming troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agri, vertical, vertical-farming]
-    related_skills: ['']
 ---
 
 # Agri Tech Vertical Farming Troubleshooting

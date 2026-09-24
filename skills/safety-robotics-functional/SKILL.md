@@ -2,12 +2,12 @@
 name: safety-robotics-functional
 description: ISO 10218, ISO/TS 15066, safety-rated monitored stop, collaborative robots, and risk assessment
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["safety", "cobot"]
+    tags: [safety, cobot]
 ---
 
 # Safety Robotics Functional

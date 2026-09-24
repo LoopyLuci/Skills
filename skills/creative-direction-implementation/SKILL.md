@@ -1,14 +1,13 @@
 ---
 name: creative-direction-implementation
-description: "Use when applying creative direction implementation."
+description: Use when applying creative direction implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [creative, leadership, creative-direction]
-    related_skills: [general]
 ---
 
 # Creative Direction Implementation

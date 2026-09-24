@@ -1,14 +1,13 @@
 ---
 name: corporate-finance-fundamentals
-description: "Use when applying corporate finance fundamentals."
+description: Use when applying corporate finance fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, corporate, corporate-financial-modeling]
-    related_skills: [general]
 ---
 
 # Corporate Finance Fundamentals

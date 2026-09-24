@@ -2,12 +2,12 @@
 name: surface-science-catalysis
 description: Surface science, heterogeneous catalysis, and interfaces
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["surface", "catalysis"]
+    tags: [surface, catalysis]
 ---
 
 # Surface Science Catalysis

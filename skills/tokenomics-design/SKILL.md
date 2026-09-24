@@ -1,13 +1,13 @@
 ---
 name: tokenomics-design
-description: "Use when designing token economics and incentive systems."
+description: Use when designing token economics and incentive systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [tokenomics, token-economics, incentives, DeFi, governance, staking, DAO]
-    related_skills: [blockchain-development-solidity, defi-smart-contracts, zero-knowledge-proofs, agent-economics-markets]
+    tags: [tokenomics, token-economics, incentives, defi, governance, staking, dao]
 ---
 
 # Tokenomics Design

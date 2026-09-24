@@ -1,14 +1,13 @@
 ---
 name: container-security-best-practices-deep-best-practices
-description: "Use when applying container security best practices best."
+description: Use when applying container security best practices best.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, security]
-    related_skills: ['container-security-best-practices']
 ---
 
 # Container Security Best Practices Deep Best Practices

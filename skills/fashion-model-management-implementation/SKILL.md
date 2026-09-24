@@ -1,14 +1,13 @@
 ---
 name: fashion-model-management-implementation
-description: "Use when applying model management implementation."
+description: Use when applying model management implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, modeling, model-management]
-    related_skills: ['general']
 ---
 
 # Fashion Model Management Implementation

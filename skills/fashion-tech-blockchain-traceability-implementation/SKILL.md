@@ -1,14 +1,13 @@
 ---
 name: fashion-tech-blockchain-traceability-implementation
-description: "Use when applying fashion blockchain traceability implem."
+description: Use when applying fashion blockchain traceability implem.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, beauty]
-    related_skills: ['']
 ---
 
 # Fashion Tech Blockchain Traceability Implementation

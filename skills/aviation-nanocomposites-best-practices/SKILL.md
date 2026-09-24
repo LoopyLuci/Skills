@@ -1,14 +1,13 @@
 ---
 name: aviation-nanocomposites-best-practices
-description: "Use when applying nanocomposites best practices."
+description: Use when applying nanocomposites best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, nano, nanomaterials]
-    related_skills: ['general']
 ---
 
 # Aviation Nanocomposites Best Practices

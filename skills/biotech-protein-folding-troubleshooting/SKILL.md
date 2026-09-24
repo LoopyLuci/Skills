@@ -1,14 +1,13 @@
 ---
 name: biotech-protein-folding-troubleshooting
-description: "Use when applying protein folding troubleshooting."
+description: Use when applying protein folding troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, protein]
-    related_skills: ['']
 ---
 
 # Biotech Protein Folding Troubleshooting

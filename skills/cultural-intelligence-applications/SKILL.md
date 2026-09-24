@@ -1,14 +1,13 @@
 ---
 name: cultural-intelligence-applications
-description: "Use when applying cultural intelligence."
+description: Use when applying cultural intelligence.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: ['c', 'u', 'l', 't', 'u', 'r', 'a', 'l', '-', 'i', 'n', 't', 'e', 'l', 'l', 'i', 'g', 'e', 'n', 'c', 'e', ',', ' ', 'd', 'i', 'v', 'e', 'r', 's', 'i', 't', 'y']
-    related_skills: [general]
+    tags: [c, u, l, t, u, r, a, l, -, i, n, t, e, l, l, i, g, e, n, c, e, , ,  , d, i, v, e, r, s, i, t, y]
 ---
 
 # Cultural Intelligence Applications

@@ -1,14 +1,13 @@
 ---
 name: docker-monitoring-implementation
-description: "Use when applying docker monitoring implementation."
+description: Use when applying docker monitoring implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [docker, monitoring, docker-monitoring-logs]
-    related_skills: [general]
 ---
 
 # Docker Monitoring Implementation

@@ -1,15 +1,13 @@
 ---
 name: powershell-windows-scripts
-description: 'PowerShell script patterns: admin, encoding, launchers.'
-category: software-development
-tags:
-  - powershell
-  - windows
-  - scripting
-  - interactive-console
-  - admin-elevation
-  - encoding
+description: PowerShell script patterns: admin, encoding, launchers.
 version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [powershell, windows, scripts]
 ---
 
 # PowerShell Windows Scripts

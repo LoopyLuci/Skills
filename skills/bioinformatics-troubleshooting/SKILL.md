@@ -1,14 +1,13 @@
 ---
 name: bioinformatics-troubleshooting
-description: "Use when troubleshooting bioinformatics issues."
+description: Use when troubleshooting bioinformatics issues.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [bioinformatics, genomics, bioinformatics, comp-bio]
-    related_skills: [general]
 ---
 
 # Bioinformatics Troubleshooting

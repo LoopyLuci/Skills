@@ -1,14 +1,13 @@
 ---
 name: ci-cd-implementation-troubleshooting
-description: "Use when applying ci/cd implementation troubleshooting."
+description: Use when applying ci/cd implementation troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, ci-cd, implementation]
-    related_skills: [general]
 ---
 
 # Ci Cd Implementation Troubleshooting

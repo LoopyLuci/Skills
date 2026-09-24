@@ -1,14 +1,13 @@
 ---
 name: digital-product-marketplace
-description: "Use when creating digital product marketplaces."
+description: Use when creating digital product marketplaces.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [digital-products, marketplace, ecommerce, monetization, saas]
-    related_skills: [ecommerce-store-setup, affiliate-program-setup]
 ---
 
 # Digital Product Marketplace

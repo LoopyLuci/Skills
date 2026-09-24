@@ -1,14 +1,13 @@
 ---
 name: certificate-lifecycle
-description: "Use when managing cert lifecycle."
+description: Use when managing cert lifecycle.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, crypto, certificate-management]
-    related_skills: [general]
 ---
 
 # Certificate Lifecycle

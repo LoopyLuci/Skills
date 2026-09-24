@@ -1,14 +1,13 @@
 ---
 name: backend-python-troubleshooting-deep-troubleshooting
-description: "Use when applying python backend troubleshooting trouble."
+description: Use when applying python backend troubleshooting trouble.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, python]
-    related_skills: ['backend-python-troubleshooting']
 ---
 
 # Backend Python Troubleshooting Deep Troubleshooting

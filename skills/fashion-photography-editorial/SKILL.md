@@ -2,12 +2,12 @@
 name: fashion-photography-editorial
 description: Fashion photography, editorial styling, and lookbooks
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["photography", "editorial"]
+    tags: [photography, editorial]
 ---
 
 # Fashion Photography Editorial

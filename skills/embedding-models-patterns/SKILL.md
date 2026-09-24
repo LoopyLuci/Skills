@@ -1,13 +1,13 @@
 ---
 name: embedding-models-patterns
-description: "Use when training embeddings and vector search indexes."
+description: Use when training embeddings and vector search indexes.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [embeddings, vector-search, similarity, ANN, faiss, sentence-transformers]
-    related_skills: [rag-system-design, recommender-systems-building, nlp-techniques, knowledge-management-systems]
+    tags: [embeddings, vector-search, similarity, ann, faiss, sentence-transformers]
 ---
 
 # Embedding Models Patterns

@@ -1,14 +1,13 @@
 ---
 name: chemical-safety
-description: "Use when ensuring chemical safety."
+description: Use when ensuring chemical safety.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [chem, safety, chemical-safety]
-    related_skills: [general]
 ---
 
 # Chemical Safety

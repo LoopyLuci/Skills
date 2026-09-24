@@ -2,12 +2,12 @@
 name: causal-inference-methods
 description: Causal inference, potential outcomes, and instrumental variables
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["causal", "inference"]
+    tags: [causal, inference]
 ---
 
 # Causal Inference Methods

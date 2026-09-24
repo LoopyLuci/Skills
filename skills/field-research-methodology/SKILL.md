@@ -2,12 +2,12 @@
 name: field-research-methodology
 description: Sampling, observation, ethnography, and ecological field methods
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["fieldwork", "ecology"]
+    tags: [fieldwork, ecology]
 ---
 
 # Field Research Methodology

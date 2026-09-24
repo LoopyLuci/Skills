@@ -1,14 +1,13 @@
 ---
 name: email-marketing-automation-platform
-description: "Use when automating email."
+description: Use when automating email.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, marketing, automation, platforms]
-    related_skills: [general]
 ---
 
 # Email Marketing Automation Platform

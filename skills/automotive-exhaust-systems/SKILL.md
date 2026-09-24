@@ -1,14 +1,13 @@
 ---
 name: automotive-exhaust-systems
-description: "Use when designing exhaust systems."
+description: Use when designing exhaust systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [automotive, exhaust, emissions, catalytic]
-    related_skills: [general]
 ---
 
 # Automotive Exhaust Systems

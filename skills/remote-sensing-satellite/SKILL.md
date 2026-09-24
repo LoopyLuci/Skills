@@ -2,12 +2,12 @@
 name: remote-sensing-satellite
 description: Sentinel, Landsat, NDVI, change detection, and time-series analysis
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["remote-sensing", "satellite"]
+    tags: [remote-sensing, satellite]
 ---
 
 # Remote Sensing Satellite

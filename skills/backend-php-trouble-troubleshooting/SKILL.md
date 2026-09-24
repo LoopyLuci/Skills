@@ -1,14 +1,13 @@
 ---
 name: backend-php-trouble-troubleshooting
-description: "Use when applying backend php troubl troubleshooting."
+description: Use when applying backend php troubl troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, php, backend-php-troubleshooting]
-    related_skills: [general]
 ---
 
 # Backend Php Trouble Troubleshooting

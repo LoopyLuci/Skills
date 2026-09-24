@@ -1,14 +1,13 @@
 ---
 name: backend-elixir-troubleshooting
-description: "Use when applying elixir backend troubleshooting."
+description: Use when applying elixir backend troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, elixir, functional]
-    related_skills: [general]
 ---
 
 # Backend Elixir Troubleshooting

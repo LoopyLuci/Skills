@@ -1,13 +1,13 @@
 ---
 name: defi-smart-contracts
-description: "Use when building DeFi smart contracts."
+description: Use when building DeFi smart contracts.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [DeFi, smart-contracts, AMM, lending, staking, yield, Solidity]
-    related_skills: [blockchain-development-solidity, tokenomics-design, zero-knowledge-proofs, agent-economics-markets]
+    tags: [defi, smart-contracts, amm, lending, staking, yield, solidity]
 ---
 
 # DeFi Smart Contracts

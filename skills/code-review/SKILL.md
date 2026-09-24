@@ -1,8 +1,13 @@
 ---
 name: code-review
 description: Use when reviewing a branch, PR, or work-in-progress changes against standards and spec
-tags: [review, code-quality, PR, standards, spec]
-related_skills: [requesting-code-review, code-review-best-practices, codebase-design]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [review, code-quality, pr, standards, spec]
 ---
 
 # Code Review

@@ -1,14 +1,13 @@
 ---
 name: endpoint-security-best-practices-deep-best-practices
-description: "Use when applying endpoint security best practices."
+description: Use when applying endpoint security best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, security]
-    related_skills: ['endpoint-security-best-practices']
 ---
 
 # Endpoint Security Best Practices Deep Best Practices

@@ -1,13 +1,13 @@
 ---
 name: random-forest-advanced
-description: "Use when implementing advanced random forest models."
+description: Use when implementing advanced random forest models.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [random-forest, ensemble, bagging, decision-trees, feature-importance]
-    related_skills: [boosting-algorithms-deep, hyperparameter-optimization-ml, feature-engineering-automation, interpretable-ml]
 ---
 
 # Random Forest Advanced

@@ -1,14 +1,13 @@
 ---
 name: demand-forecasting-best-practices
-description: "Use when applying demand forecasting best practices."
+description: Use when applying demand forecasting best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [logistics, forecasting, forecasting]
-    related_skills: ['general']
 ---
 
 # Demand Forecasting Best Practices

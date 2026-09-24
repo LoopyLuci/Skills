@@ -1,14 +1,13 @@
 ---
 name: compensation-structures-design
-description: "Use when designing compensation structures."
+description: Use when designing compensation structures.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: ['c', 'o', 'm', 'p', 'e', 'n', 's', 'a', 't', 'i', 'o', 'n', ',', ' ', 'h', 'r']
-    related_skills: [general]
+    tags: [c, o, m, p, e, n, s, a, t, i, o, n, , ,  , h, r]
 ---
 
 # Compensation Structures Design

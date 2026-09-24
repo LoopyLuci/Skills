@@ -1,14 +1,13 @@
 ---
 name: docker-storage-implementation
-description: "Use when applying docker storage implementation."
+description: Use when applying docker storage implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [docker, storage, volumes, docker-volume-backup-restore]
-    related_skills: [general]
 ---
 
 # Docker Storage Implementation

@@ -2,12 +2,12 @@
 name: crop-modeling-simulation
 description: Growth models, yield prediction, climate impact, and DSSAT
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["modeling", "crops"]
+    tags: [modeling, crops]
 ---
 
 # Crop Modeling Simulation

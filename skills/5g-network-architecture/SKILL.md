@@ -2,12 +2,12 @@
 name: 5g-network-architecture
 description: 5G NR, network slicing, MEC, Open RAN, and 5G core
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["5g", "nr"]
+    tags: [5g, nr]
 ---
 
 # 5g Network Architecture

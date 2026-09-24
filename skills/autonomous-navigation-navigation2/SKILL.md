@@ -2,12 +2,12 @@
 name: autonomous-navigation-navigation2
 description: Nav2, behavior trees, costmap layers, global/local planners, and recovery behaviors
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["navigation", "autonomy"]
+    tags: [navigation, autonomy]
 ---
 
 # Autonomous Navigation Navigation2

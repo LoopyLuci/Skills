@@ -1,13 +1,13 @@
 ---
 name: game-development-patterns
-description: "Use when implementing game development patterns."
+description: Use when implementing game development patterns.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [game-development, Unity, Unreal, Godot, game-loop, ECS, state-machines]
-    related_skills: [unity-development-patterns, unreal-engine-basics, godot-game-engine, webxr-ar-vr-development]
+    tags: [game-development, unity, unreal, godot, game-loop, ecs, state-machines]
 ---
 
 # Game Development Patterns

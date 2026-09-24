@@ -1,11 +1,10 @@
 ---
 name: cloud-run-basics
-description: >-
-source: google/skills
-tags: [gcp, cloud-run, serverless, container]
-metadata: 
-hermes: 
-
+description: Skill for cloud run basics
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [gcp, cloud-run, serverless, container]

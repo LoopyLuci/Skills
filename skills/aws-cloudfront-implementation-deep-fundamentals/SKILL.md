@@ -1,14 +1,13 @@
 ---
 name: aws-cloudfront-implementation-deep-fundamentals
-description: "Use when applying cloudfront implementation fundamentals."
+description: Use when applying cloudfront implementation fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, cdn]
-    related_skills: ['aws-cloudfront-implementation']
 ---
 
 # Aws Cloudfront Implementation Deep Fundamentals

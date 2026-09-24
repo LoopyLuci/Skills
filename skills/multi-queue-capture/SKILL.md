@@ -1,9 +1,13 @@
 ---
 name: multi-queue-capture
-title: Multi-Queue Capture
 description: Use when distributing packet capture across CPU cores.
-category: networking
-tags: [packet, capture, multi-queue, rss, parallel, performance]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [packet, capture, multi-queue, rss, parallel, performance]
 ---
 
 # Multi-Queue Capture

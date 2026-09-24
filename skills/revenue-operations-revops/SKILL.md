@@ -1,13 +1,13 @@
 ---
 name: revenue-operations-revops
-description: "Use when building revenue operations and processes."
+description: Use when building revenue operations and processes.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [revenue-operations, revops, sales-ops, marketing-ops, CRM, process]
-    related_skills: [crm-sales-pipeline, marketing-automation-workflows, business-metrics-kpis, sales-enablement-playbooks]
+    tags: [revenue-operations, revops, sales-ops, marketing-ops, crm, process]
 ---
 
 # Revenue Operations Revops

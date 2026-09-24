@@ -1,14 +1,13 @@
 ---
 name: construction-lightweight-design
-description: "Use when designing lightweight structures."
+description: Use when designing lightweight structures.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [construction, lightweight, structural, efficiency]
-    related_skills: [general]
 ---
 
 # Construction Lightweight Design

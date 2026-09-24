@@ -1,6 +1,13 @@
 ---
 name: git-interactive-rebase
 description: Squash, reorder, and clean up commits interactively.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [git, interactive, rebase]
 ---
 
 # Git Interactive Rebase

@@ -1,14 +1,13 @@
 ---
 name: container-security-fundamentals-deep-best-practices
-description: "Use when applying container security fundamentals best p."
+description: Use when applying container security fundamentals best p.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, security]
-    related_skills: ['container-security-fundamentals']
 ---
 
 # Container Security Fundamentals Deep Best Practices

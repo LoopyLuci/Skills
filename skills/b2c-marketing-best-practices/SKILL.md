@@ -1,14 +1,13 @@
 ---
 name: b2c-marketing-best-practices
-description: "Use when applying b2c marketing best practices."
+description: Use when applying b2c marketing best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, b2c, b2c-marketing]
-    related_skills: [general]
 ---
 
 # B2c Marketing Best Practices

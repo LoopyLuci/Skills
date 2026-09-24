@@ -1,14 +1,13 @@
 ---
 name: backend-java-impl-implementation
-description: "Use when applying backend java implementation implementa."
+description: Use when applying backend java implementation implementa.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, java, backend-java-implementation]
-    related_skills: [general]
 ---
 
 # Backend Java Impl Implementation

@@ -1,14 +1,13 @@
 ---
 name: fermentation-tech-best-practices
-description: "Use when applying fermentation technology best practices."
+description: Use when applying fermentation technology best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, pharma, fermentation]
-    related_skills: [general]
 ---
 
 # Fermentation Tech Best Practices

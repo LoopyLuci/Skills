@@ -1,14 +1,13 @@
 ---
-
 name: google-cloud-networking-observability
-  category: Compute
-description: >-
-  Investigates Google Cloud networking issues by analyzing logs, metrics, and diagnostics. Use when investigating VPC Flow Logs (including cost estimation), NAT, firewall, or threat logs, querying latency and throughput metrics, or running Connectivity Tests for path diagnostics. Don't use for generic VM management or non-observability tasks.
-source: google/skills
+description: Skill for google cloud networking observability
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [agent, skill]
-
 ---
 
 # Google Cloud Networking Observability Expert

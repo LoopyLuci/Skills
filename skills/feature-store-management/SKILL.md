@@ -1,14 +1,13 @@
 ---
 name: feature-store-management
-description: "Use when managing feature store."
+description: Use when managing feature store.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mlops, feature-store, ml, data]
-    related_skills: [general]
 ---
 
 # Feature Store Management

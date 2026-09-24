@@ -1,14 +1,13 @@
 ---
 name: feature-store-fundamentals-deep-best-practices
-description: "Use when applying feature store fundamentals best practi."
+description: Use when applying feature store fundamentals best practi.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, data-science]
-    related_skills: ['feature-store-fundamentals']
 ---
 
 # Feature Store Fundamentals Deep Best Practices

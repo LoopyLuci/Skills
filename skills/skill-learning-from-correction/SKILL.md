@@ -1,6 +1,13 @@
 ---
 name: skill-learning-from-correction
 description: Turn user corrections into skill improvements or new skills.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [skill, learning, from]
 ---
 
 # Skill Learning from Correction

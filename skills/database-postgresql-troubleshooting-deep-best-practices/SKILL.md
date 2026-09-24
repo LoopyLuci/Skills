@@ -1,14 +1,13 @@
 ---
 name: database-postgresql-troubleshooting-deep-best-practices
-description: "Use when applying postgresql troubleshooting best practi."
+description: Use when applying postgresql troubleshooting best practi.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, postgres]
-    related_skills: ['postgres-troubleshooting']
 ---
 
 # Database Postgresql Troubleshooting Deep Best Practices

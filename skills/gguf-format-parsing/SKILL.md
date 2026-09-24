@@ -1,6 +1,13 @@
 ---
 name: gguf-format-parsing
-description: "Use when parsing GGUF model files from scratch."
+description: Use when parsing GGUF model files from scratch.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [gguf, format, parsing]
 ---
 
 # GGUF Format Parsing

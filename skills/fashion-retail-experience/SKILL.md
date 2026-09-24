@@ -1,14 +1,13 @@
 ---
 name: fashion-retail-experience
-description: "Use when designing retail experiences."
+description: Use when designing retail experiences.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, retail-experience, store-design, customer-journey]
-    related_skills: [general]
 ---
 
 # Fashion Retail Experience

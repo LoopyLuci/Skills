@@ -1,13 +1,13 @@
 ---
 name: cms-website-management
-description: "Use when managing content management systems and websites."
+description: Use when managing content management systems and websites.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [cms, website-management, wordpress, web-hosting, domains, maintenance]
-    related_skills: [seo-search-engine-optimization, website-analytics-tracking, blog-building-content-strategy, web-security-patterns]
 ---
 
 # Cms Website Management

@@ -1,14 +1,13 @@
 ---
 name: database-mysql-fundamentals
-description: "Use when applying mysql fundamentals."
+description: Use when applying mysql fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, mysql, sql, mariadb]
-    related_skills: [general]
 ---
 
 # Database Mysql Fundamentals

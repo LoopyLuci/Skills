@@ -1,6 +1,13 @@
 ---
 name: csv-json-processing
-description: "Efficient large file CSV JSON streaming and chunking"
+description: Efficient large file CSV JSON streaming and chunking
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [csv, json, processing]
 ---
 
 # CSV/JSON Processing

@@ -1,13 +1,13 @@
 ---
 name: micro-frontends-architecture
-description: "Use when building micro-frontend architectures."
+description: Use when building micro-frontend architectures.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [micro-frontends, web-components, module-federation, Qwik, iframe, MFE]
-    related_skills: [microservices-decomposition, web-component-design, monorepo-management, frontend-bootstrap]
+    tags: [micro-frontends, web-components, module-federation, qwik, iframe, mfe]
 ---
 
 # Micro Frontends Architecture

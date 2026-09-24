@@ -2,12 +2,12 @@
 name: early-childhood-education
 description: Play-based learning, developmental milestones, and early literacy/numeracy
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["ece", "play-based"]
+    tags: [ece, play-based]
 ---
 
 # Early Childhood Education

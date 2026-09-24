@@ -1,14 +1,13 @@
 ---
 name: biotech-pharma-regulatory-implementation
-description: "Use when applying pharmaceutical regulation implementation."
+description: Use when applying pharmaceutical regulation implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, pharma-regulatory]
-    related_skills: ['']
 ---
 
 # Biotech Pharma Regulatory Implementation

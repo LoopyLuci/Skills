@@ -1,12 +1,13 @@
 ---
-
 name: gemini-live-api
-description: >-
-source: google/skills
-tags: [gcp, gemini, google-ai, api]
-metadata: 
-hermes: 
-
+description: Skill for gemini live api
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [gcp, gemini, google-ai, api]
 ---
 
 **Trigger**: Use when working with the Gemini Live Api — Google's multimodal AI API.

@@ -1,14 +1,13 @@
 ---
 name: fashion-forecasting
-description: "Use when forecasting fashion trends."
+description: Use when forecasting fashion trends.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, forecasting, fashion-trend-forecasting]
-    related_skills: [general]
 ---
 
 # Fashion Forecasting

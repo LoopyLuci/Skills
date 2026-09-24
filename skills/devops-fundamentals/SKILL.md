@@ -1,14 +1,13 @@
 ---
 name: devops-fundamentals
-description: "Use when learning devops fundamentals."
+description: Use when learning devops fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, ci-cd, automation, kubernetes]
-    related_skills: [general]
 ---
 
 # Devops Fundamentals

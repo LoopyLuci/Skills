@@ -1,14 +1,13 @@
 ---
 name: aerospace-safety-systems-best-practices
-description: "Use when applying aerospace safety best practices."
+description: Use when applying aerospace safety best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aerospace, safety, safety]
-    related_skills: ['general']
 ---
 
 # Aerospace Safety Systems Best Practices

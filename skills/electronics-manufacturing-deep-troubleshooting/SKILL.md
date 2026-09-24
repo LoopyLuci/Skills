@@ -1,14 +1,13 @@
 ---
 name: electronics-manufacturing-deep-troubleshooting
-description: "Use when applying electronics manufacturing troubleshoot."
+description: Use when applying electronics manufacturing troubleshoot.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [electronics, mfg, electronics-manufacturing]
-    related_skills: ['general']
 ---
 
 # Electronics Manufacturing Deep Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: excalidraw-diagrams-deep-troubleshooting
-description: "Use when applying excalidraw diagrams troubleshooting."
+description: Use when applying excalidraw diagrams troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [design, diagrams]
-    related_skills: ['excalidraw']
 ---
 
 # Excalidraw Diagrams Deep Troubleshooting

@@ -1,16 +1,13 @@
 ---
 name: excalidraw
-description: "Hand-drawn Excalidraw JSON diagrams (arch, flow, seq)."
-version: 1.0.1
-author: Hermes Agent
+description: Hand-drawn Excalidraw JSON diagrams (arch, flow, seq).
+version: 1.0.0
+author: LoopyLuci Community
 license: MIT
-dependencies: []
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: [Excalidraw, Diagrams, Flowcharts, Architecture, Visualization, JSON]
-    related_skills: []
-
+    tags: [excalidraw, diagrams, flowcharts, architecture, visualization, json]
 ---
 
 # Excalidraw Diagram Skill
@@ -195,5 +192,3 @@ See `references/colors.md` for full color tables. Quick reference:
 - Do NOT use emoji in text -- they don't render in Excalidraw's font
 - For dark mode diagrams, see `references/dark-mode.md`
 - For larger examples, see `references/examples.md`
-
-

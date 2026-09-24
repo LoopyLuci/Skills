@@ -1,14 +1,13 @@
 ---
 name: embedded-can-best-practices
-description: "Use when applying can bus for embedded best practices."
+description: Use when applying can bus for embedded best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [embedded, can-bus, automotive, protocols]
-    related_skills: [general]
 ---
 
 # Embedded Can Best Practices

@@ -1,14 +1,13 @@
 ---
 name: crispr-prime-editing-troubleshooting
-description: "Use when applying crispr prime editing biotech troublesh."
+description: Use when applying crispr prime editing biotech troublesh.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, bio]
-    related_skills: ['']
 ---
 
 # Crispr Prime Editing Troubleshooting

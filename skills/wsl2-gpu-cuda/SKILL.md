@@ -1,9 +1,15 @@
 ---
 name: wsl2-gpu-cuda
-description: "Use when enabling GPU/CUDA acceleration in WSL2."
-category: software-development
-tags: [wsl2, gpu, cuda, nvidia, vulkan, directml]
+description: Use when enabling GPU/CUDA acceleration in WSL2.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [wsl2, gpu, cuda, nvidia, vulkan, directml]
 ---
+
 # WSL2 GPU / CUDA
 
 Enabling GPU acceleration (CUDA, Vulkan, DirectML) in WSL2.

@@ -1,14 +1,13 @@
 ---
 name: digital-identity-gov
-description: "Use when implementing digital identity for government."
+description: Use when implementing digital identity for government.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [govtech, digital-identity, government, authentication]
-    related_skills: [general]
 ---
 
 # Digital Identity Gov

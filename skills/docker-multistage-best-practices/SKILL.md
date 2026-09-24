@@ -1,14 +1,13 @@
 ---
 name: docker-multistage-best-practices
-description: "Use when applying docker multistage best practices."
+description: Use when applying docker multistage best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [docker, multistage, buildx]
-    related_skills: [general]
 ---
 
 # Docker Multistage Best Practices

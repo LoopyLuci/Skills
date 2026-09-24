@@ -1,14 +1,13 @@
 ---
 name: employee-relations
-description: "Use when managing employee relations."
+description: Use when managing employee relations.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [hr, employee-relations, conflict-resolution]
-    related_skills: [general]
 ---
 
 # Employee Relations

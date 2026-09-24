@@ -1,6 +1,13 @@
 ---
 name: git-merge-conflict-resolution
 description: Systematically resolve merge and rebase conflicts.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [git, merge, conflict]
 ---
 
 # Git Merge Conflict Resolution

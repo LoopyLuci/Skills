@@ -1,14 +1,13 @@
 ---
 name: ansible-best-practices-deep-best-practices
-description: "Use when applying ansible best practices best practices."
+description: Use when applying ansible best practices best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, ansible]
-    related_skills: ['ansible-best-practices']
 ---
 
 # Ansible Best Practices Deep Best Practices

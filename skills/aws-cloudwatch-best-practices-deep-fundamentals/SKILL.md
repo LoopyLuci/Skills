@@ -1,14 +1,13 @@
 ---
 name: aws-cloudwatch-best-practices-deep-fundamentals
-description: "Use when applying cloudwatch fundamentals."
+description: Use when applying cloudwatch fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, monitoring]
-    related_skills: ['aws-cloudwatch-best-practices']
 ---
 
 # Aws Cloudwatch Best Practices Deep Fundamentals

@@ -1,13 +1,13 @@
 ---
 name: quarterly-business-review
-description: "Use when conducting quarterly business reviews."
+description: Use when conducting quarterly business reviews.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [QBR, business-review, performance-review, account-review, stakeholder-meeting]
-    related_skills: [board-presentation-deck, business-metrics-kpis, customer-journey-mapping, sales-forecasting-advanced]
+    tags: [qbr, business-review, performance-review, account-review, stakeholder-meeting]
 ---
 
 # Quarterly Business Review

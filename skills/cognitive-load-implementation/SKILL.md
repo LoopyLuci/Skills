@@ -1,14 +1,13 @@
 ---
 name: cognitive-load-implementation
-description: "Use when applying cognitive load assessment implementation."
+description: Use when applying cognitive load assessment implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neuro, psychology, cognitive-load-assessment]
-    related_skills: [general]
 ---
 
 # Cognitive Load Implementation

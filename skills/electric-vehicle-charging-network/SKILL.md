@@ -1,14 +1,13 @@
 ---
 name: electric-vehicle-charging-network
-description: "Use when building EV charging networks."
+description: Use when building EV charging networks.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [automotive, ev-charging, charging-station, infrastructure]
-    related_skills: [electric-vehicle-infrastructure]
 ---
 
 # Electric Vehicle Charging Network

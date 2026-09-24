@@ -1,14 +1,13 @@
 ---
 name: data-quality-optimization
-description: "Use when optimizing data quality systems."
+description: Use when optimizing data quality systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data-quality, profiling, validation, clean]
-    related_skills: [general]
 ---
 
 # Data Quality Optimization

@@ -1,14 +1,13 @@
 ---
 name: database-redis-lua-scripts-best-practices-deep-implementation
-description: "Use when applying redis lua scripts implementation."
+description: Use when applying redis lua scripts implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, redis]
-    related_skills: ['redis-lua-scripts-best-practices']
 ---
 
 # Database Redis Lua Scripts Best Practices Deep Implementation

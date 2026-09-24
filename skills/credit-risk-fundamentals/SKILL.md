@@ -1,14 +1,13 @@
 ---
 name: credit-risk-fundamentals
-description: "Use when applying credit risk fundamentals."
+description: Use when applying credit risk fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, banking, credit-risk]
-    related_skills: [general]
 ---
 
 # Credit Risk Fundamentals

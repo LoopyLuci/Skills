@@ -1,14 +1,13 @@
 ---
 name: cache-aside-pattern
-description: "Use when implementing cache-aside."
+description: Use when implementing cache-aside.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [architecture, caching, cache-aside]
-    related_skills: ['caching-strategies']
 ---
 
 # Cache Aside Pattern

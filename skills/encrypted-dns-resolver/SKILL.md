@@ -1,9 +1,13 @@
 ---
 name: encrypted-dns-resolver
-title: Encrypted DNS Resolver
 description: Use when adding DoH/DoT/DNSCrypt with fallback pooling.
-category: networking
-tags: [dns, doh, dot, encryption, privacy, rust]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [dns, doh, dot, encryption, privacy, rust]
 ---
 
 # Encrypted DNS Resolver

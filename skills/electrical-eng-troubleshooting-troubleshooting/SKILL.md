@@ -1,14 +1,13 @@
 ---
 name: electrical-eng-troubleshooting-troubleshooting
-description: "Use when applying elect eng troubleshooting troubleshoot."
+description: Use when applying elect eng troubleshooting troubleshoot.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, electrical, troubleshooting]
-    related_skills: [general]
 ---
 
 # Electrical Eng Troubleshooting Troubleshooting

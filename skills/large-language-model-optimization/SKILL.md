@@ -1,13 +1,13 @@
 ---
 name: large-language-model-optimization
-description: "Use when optimizing LLMs for production deployment."
+description: Use when optimizing LLMs for production deployment.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [LLM, optimization, quantization, vLLM, speculative-decoding, KV-cache]
-    related_skills: [llama-cpp, ml-serving-optimization, knowledge-distillation, prompt-optimization-automation]
+    tags: [llm, optimization, quantization, vllm, speculative-decoding, kv-cache]
 ---
 
 # Large Language Model Optimization

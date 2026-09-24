@@ -2,12 +2,12 @@
 name: agile-product-ownership
 description: Scrum, Kanban, story mapping, backlog refinement, and sprint ceremonies
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["agile", "scrum"]
+    tags: [agile, scrum]
 ---
 
 # Agile Product Ownership

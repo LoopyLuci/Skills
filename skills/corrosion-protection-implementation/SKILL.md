@@ -1,14 +1,13 @@
 ---
 name: corrosion-protection-implementation
-description: "Use when applying corrosion protection implementation."
+description: Use when applying corrosion protection implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [materials, corrosion, corrosion-protection]
-    related_skills: [general]
 ---
 
 # Corrosion Protection Implementation

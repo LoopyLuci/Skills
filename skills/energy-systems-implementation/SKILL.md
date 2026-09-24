@@ -1,14 +1,13 @@
 ---
 name: energy-systems-implementation
-description: "Use when implementing energy systems projects."
+description: Use when implementing energy systems projects.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [energy, power-systems, electrical]
-    related_skills: [general]
 ---
 
 # Energy Systems Implementation

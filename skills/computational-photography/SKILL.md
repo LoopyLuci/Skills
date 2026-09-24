@@ -1,13 +1,13 @@
 ---
 name: computational-photography
-description: "Use when implementing computational photography pipelines."
+description: Use when implementing computational photography pipelines.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [computational-photography, HDR, image-processing, burst, denoising, super-resolution]
-    related_skills: [computer-vision-techniques, audio-processing-deep-learning, custom-training-loops, data-augmentation-techniques]
+    tags: [computational-photography, hdr, image-processing, burst, denoising, super-resolution]
 ---
 
 # Computational Photography

@@ -1,14 +1,13 @@
 ---
 name: beauty-ingredient-sourcing-fundamentals
-description: "Use when applying beauty ingredient sourcing fundamentals."
+description: Use when applying beauty ingredient sourcing fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [beauty, sourcing, beauty-ingredient-sourcing]
-    related_skills: ['general']
 ---
 
 # Beauty Ingredient Sourcing Fundamentals

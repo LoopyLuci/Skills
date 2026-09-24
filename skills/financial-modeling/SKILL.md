@@ -1,14 +1,13 @@
 ---
 name: financial-modeling
-description: "Use when building financial models."
+description: Use when building financial models.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, financial-modeling, valuation]
-    related_skills: ['financial-modeling-python']
 ---
 
 # Financial Modeling

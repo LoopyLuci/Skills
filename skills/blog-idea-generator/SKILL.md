@@ -1,14 +1,13 @@
 ---
 name: blog-idea-generator
-description: "Use when generating blog ideas. Multi-framework."
+description: Use when generating blog ideas. Multi-framework.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [blog, ideas, content-planning, keyword-research, topics]
-    related_skills: [blog-post-outliner, blog-seo-post-optimizer, blog-analytics-interpreter]
 ---
 
 # Blog Idea Generator

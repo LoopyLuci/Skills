@@ -1,12 +1,13 @@
 ---
 name: kubernetes-secret
-description: "Use when implementing kubernetes secret."
+description: Use when implementing kubernetes secret.
 version: 1.0.0
-author: "Skill Genesis Model"
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["kubernetes", "secret"]
+    tags: [kubernetes, secret]
 ---
 
 # Kubernetes Secret

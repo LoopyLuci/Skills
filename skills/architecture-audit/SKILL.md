@@ -1,14 +1,13 @@
 ---
 name: architecture-audit
-description: "Use when for architecture audit."
+description: Use when for architecture audit.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, management, general]
-    related_skills: [general]
 ---
 
 # Architecture Audit

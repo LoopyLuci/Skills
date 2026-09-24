@@ -1,9 +1,13 @@
 ---
 name: traffic-shaper
-title: Traffic Shaper
 description: Use when implementing QoS bandwidth shaping and queuing.
-category: networking
-tags: [traffic, shaping, qos, bandwidth, queue, rust]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [traffic, shaping, qos, bandwidth, queue, rust]
 ---
 
 # Traffic Shaper

@@ -1,14 +1,13 @@
 ---
 name: battery-management-systems
-description: "Use when managing EV battery systems."
+description: Use when managing EV battery systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [automotive, bms, battery-management, ev-battery]
-    related_skills: [energy-storage-systems]
 ---
 
 # Battery Management Systems

@@ -1,14 +1,13 @@
 ---
 name: climate-tech-innovation-troubleshooting
-description: "Use when applying climate tech innovation troubleshooting."
+description: Use when applying climate tech innovation troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, innovation]
-    related_skills: ['general']
 ---
 
 # Climate Tech Innovation Troubleshooting

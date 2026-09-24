@@ -1,9 +1,15 @@
 ---
 name: docker-swarm-orchestration
-description: "Use when deploying/managing Docker Swarm services."
-category: docker
-tags: [docker, swarm, orchestration, cluster, service]
+description: Use when deploying/managing Docker Swarm services.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [docker, swarm, orchestration, cluster, service]
 ---
+
 # Docker Swarm Orchestration
 
 Deploying and managing Docker Swarm services and clusters.

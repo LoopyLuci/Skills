@@ -1,14 +1,13 @@
 ---
 name: digital-government-fundamentals
-description: "Use when applying digital government fundamentals."
+description: Use when applying digital government fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [gov, digital, civic-tech-platforms]
-    related_skills: [general]
 ---
 
 # Digital Government Fundamentals

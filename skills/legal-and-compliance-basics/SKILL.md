@@ -1,14 +1,13 @@
 ---
 name: legal-and-compliance-basics
-description: "Legal: GDPR, CCPA, FTC, ToS, privacy, consent."
+description: Legal: GDPR, CCPA, FTC, ToS, privacy, consent.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [legal, compliance, gdpr, ccpa, privacy, terms-of-service]
-    related_skills: [ecommerce-store-setup, freelance-business-operations, affiliate-marketing]
 ---
 
 # Legal And Compliance Basics

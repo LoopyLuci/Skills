@@ -1,14 +1,13 @@
 ---
 name: bioenergy-troubleshooting
-description: "Use when applying bioenergy troubleshooting."
+description: Use when applying bioenergy troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [energy, bio, renewable-energy]
-    related_skills: [general]
 ---
 
 # Bioenergy Troubleshooting

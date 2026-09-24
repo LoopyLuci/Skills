@@ -1,14 +1,13 @@
 ---
 name: automation-engineering-best-practices
-description: "Use when applying automation engineering best practices."
+description: Use when applying automation engineering best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mfg, automation, industrial-automation-systems]
-    related_skills: [general]
 ---
 
 # Automation Engineering Best Practices

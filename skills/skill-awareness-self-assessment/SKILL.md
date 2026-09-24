@@ -1,6 +1,13 @@
 ---
 name: skill-awareness-self-assessment
 description: Check if a relevant skill exists before starting a task.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [skill, awareness, self]
 ---
 
 # Skill Awareness & Self-Assessment

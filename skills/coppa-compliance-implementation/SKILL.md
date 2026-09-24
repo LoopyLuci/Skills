@@ -1,14 +1,13 @@
 ---
 name: coppa-compliance-implementation
-description: "Use when applying coppa compliance implementation."
+description: Use when applying coppa compliance implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [legal, compliance, coppa]
-    related_skills: [general]
 ---
 
 # Coppa Compliance Implementation

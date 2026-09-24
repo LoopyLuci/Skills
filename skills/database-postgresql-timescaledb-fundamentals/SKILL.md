@@ -1,14 +1,13 @@
 ---
 name: database-postgresql-timescaledb-fundamentals
-description: "Use when applying postgresql timescaledb fundamentals."
+description: Use when applying postgresql timescaledb fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, postgresql, timescaledb, time-series]
-    related_skills: [general]
 ---
 
 # Database Postgresql Timescaledb Fundamentals

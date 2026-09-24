@@ -1,6 +1,13 @@
 ---
 name: github-teams-orgs
 description: Manage GitHub teams, orgs, roles, and permissions.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [github, teams, orgs]
 ---
 
 # GitHub Teams & Organizations

@@ -1,14 +1,13 @@
 ---
 name: backend-elixir-fund-best-practices
-description: "Use when applying backend elixir fundamentals best pract."
+description: Use when applying backend elixir fundamentals best pract.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, elixir, backend-elixir-fundamentals]
-    related_skills: [general]
 ---
 
 # Backend Elixir Fund Best Practices

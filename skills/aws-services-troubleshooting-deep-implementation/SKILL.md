@@ -1,14 +1,13 @@
 ---
 name: aws-services-troubleshooting-deep-implementation
-description: "Use when applying aws troubleshooting implementation."
+description: Use when applying aws troubleshooting implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, aws]
-    related_skills: ['aws-services-troubleshooting']
 ---
 
 # Aws Services Troubleshooting Deep Implementation

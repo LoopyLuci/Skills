@@ -1,14 +1,13 @@
 ---
 name: circleci-implementation
-description: "Use when applying circleci implementation."
+description: Use when applying circleci implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, circleci, ci-cd]
-    related_skills: [general]
 ---
 
 # Circleci Implementation

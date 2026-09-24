@@ -1,9 +1,13 @@
 ---
 name: gpu-anomaly-detector
-title: GPU Anomaly Detector
 description: Use when running ML threat detection on GPU.
-category: networking
-tags: [gpu, anomaly, detection, ml, inference, candle]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [gpu, anomaly, detection, ml, inference, candle]
 ---
 
 # GPU Anomaly Detector

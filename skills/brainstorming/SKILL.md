@@ -1,8 +1,13 @@
 ---
 name: brainstorming
 description: Use when exploring ideas and design before writing code
-tags: [design, planning, requirements, spec]
-related_skills: [writing-plans, subagent-driven-development, executing-plans]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [design, planning, requirements, spec]
 ---
 
 # Brainstorming Ideas Into Designs

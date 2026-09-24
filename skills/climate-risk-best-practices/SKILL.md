@@ -1,14 +1,13 @@
 ---
 name: climate-risk-best-practices
-description: "Use when applying climate risk best practices."
+description: Use when applying climate risk best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, risk-assessment]
-    related_skills: ['general']
 ---
 
 # Climate Risk Best Practices

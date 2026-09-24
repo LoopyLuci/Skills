@@ -1,14 +1,13 @@
 ---
 name: aviation-air-traffic-troubleshooting
-description: "Use when applying air traffic control troubleshooting."
+description: Use when applying air traffic control troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, atc, air-traffic-control]
-    related_skills: ['general']
 ---
 
 # Aviation Air Traffic Troubleshooting

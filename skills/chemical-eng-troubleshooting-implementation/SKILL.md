@@ -1,14 +1,13 @@
 ---
 name: chemical-eng-troubleshooting-implementation
-description: "Use when applying chemical troubleshooting implementation."
+description: Use when applying chemical troubleshooting implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, chemical, troubleshooting]
-    related_skills: [general]
 ---
 
 # Chemical Eng Troubleshooting Implementation

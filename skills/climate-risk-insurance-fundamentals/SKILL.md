@@ -1,14 +1,13 @@
 ---
 name: climate-risk-insurance-fundamentals
-description: "Use when applying climate risk insurance fundamentals."
+description: Use when applying climate risk insurance fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, insurance, climate-risk-insurance]
-    related_skills: [general]
 ---
 
 # Climate Risk Insurance Fundamentals

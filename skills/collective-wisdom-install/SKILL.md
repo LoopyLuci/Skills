@@ -1,14 +1,13 @@
 ---
 name: collective-wisdom-install
 description: Browse, install, or share team skills with consent.
-version: 0.2.0
-author: Shannon (Shannon), Hermes Agent
+version: 1.0.0
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [skills, collective-wisdom, install, share, team, catalog]
-    related_skills: []
 ---
 
 # Collective Wisdom

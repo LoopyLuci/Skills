@@ -2,12 +2,12 @@
 name: spatial-analysis-modeling
 description: Spatial statistics, hotspot analysis, interpolation, and geostatistics
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["spatial-stats", "analysis"]
+    tags: [spatial-stats, analysis]
 ---
 
 # Spatial Analysis Modeling

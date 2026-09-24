@@ -1,14 +1,13 @@
 ---
 name: data-viz-optimization
-description: "Use when optimizing data visualization systems."
+description: Use when optimizing data visualization systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data-viz, visualization, charts, dashboards]
-    related_skills: [general]
 ---
 
 # Data Viz Optimization

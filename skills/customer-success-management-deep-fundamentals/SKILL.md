@@ -1,14 +1,13 @@
 ---
 name: customer-success-management-deep-fundamentals
-description: "Use when applying customer success management fundamentals."
+description: Use when applying customer success management fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [sales, customer-success-management]
-    related_skills: ['']
 ---
 
 # Customer Success Management Deep Fundamentals

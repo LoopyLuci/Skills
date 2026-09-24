@@ -1,9 +1,15 @@
 ---
 name: agent-cost-optimization
-description: "Use when minimizing costs of running AI agents."
-category: mlops
-tags: [agents, cost, optimization, tokens, caching]
+description: Use when minimizing costs of running AI agents.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [agents, cost, optimization, tokens, caching]
 ---
+
 # Agent Cost Optimization
 
 Reducing operational costs of AI agent systems.

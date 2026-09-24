@@ -1,8 +1,13 @@
 ---
 name: windows-port-management
-description: "Use when managing TCP ports on Windows: conflicts, cleanup."
-category: windows
-tags: [windows, networking, ports, troubleshooting, process-management]
+description: Use when managing TCP ports on Windows: conflicts, cleanup.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [windows, networking, ports, troubleshooting, process-management]
 ---
 
 # Windows Port Management

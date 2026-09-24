@@ -1,14 +1,13 @@
 ---
 name: biotech-toxicology-implementation
-description: "Use when applying toxicology implementation."
+description: Use when applying toxicology implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, toxicology]
-    related_skills: ['']
 ---
 
 # Biotech Toxicology Implementation

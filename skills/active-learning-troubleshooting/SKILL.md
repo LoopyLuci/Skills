@@ -1,14 +1,13 @@
 ---
 name: active-learning-troubleshooting
-description: "Use when applying active learning troubleshooting."
+description: Use when applying active learning troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ai, ml, active-learning-strategies]
-    related_skills: [general]
 ---
 
 # Active Learning Troubleshooting

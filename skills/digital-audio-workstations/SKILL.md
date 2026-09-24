@@ -2,12 +2,12 @@
 name: digital-audio-workstations
 description: Ableton, Logic, Pro Tools, FL Studio workflows, and session management
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["daw", "production"]
+    tags: [daw, production]
 ---
 
 # Digital Audio Workstations

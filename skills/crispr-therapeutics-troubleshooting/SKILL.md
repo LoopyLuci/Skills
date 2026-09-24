@@ -1,14 +1,13 @@
 ---
 name: crispr-therapeutics-troubleshooting
-description: "Use when applying crispr therapeutics troubleshooting."
+description: Use when applying crispr therapeutics troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, crispr, gene-therapy]
-    related_skills: [general]
 ---
 
 # Crispr Therapeutics Troubleshooting

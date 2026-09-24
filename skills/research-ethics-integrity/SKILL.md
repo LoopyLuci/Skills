@@ -2,12 +2,12 @@
 name: research-ethics-integrity
 description: IRB, informed consent, authorship, and responsible conduct of research
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["ethics", "integrity"]
+    tags: [ethics, integrity]
 ---
 
 # Research Ethics Integrity

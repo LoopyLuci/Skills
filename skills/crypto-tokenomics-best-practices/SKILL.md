@@ -1,14 +1,13 @@
 ---
 name: crypto-tokenomics-best-practices
-description: "Use when applying token economics design best practices."
+description: Use when applying token economics design best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [crypto, tokenomics, tokenomics-design]
-    related_skills: ['']
 ---
 
 # Crypto Tokenomics Best Practices

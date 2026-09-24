@@ -1,13 +1,13 @@
 ---
 name: neural-architecture-search
-description: "Use when implementing neural architecture search for models."
+description: Use when implementing neural architecture search for models.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [nas, architecture-search, automl, neural-networks, pytorch]
-    related_skills: [custom-neural-architecture-design, hyperparameter-optimization, model-compression-techniques]
 ---
 
 # Neural Architecture Search

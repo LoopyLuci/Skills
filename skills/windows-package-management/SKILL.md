@@ -1,9 +1,15 @@
 ---
 name: windows-package-management
-description: "Use when installing software via winget, choco, or scoop."
-category: software-development
-tags: [windows, package-manager, winget, choco, scoop]
+description: Use when installing software via winget, choco, or scoop.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [windows, package-manager, winget, choco, scoop]
 ---
+
 # Windows Package Management
 
 Installing and managing software with winget, Chocolatey, and Scoop.

@@ -1,14 +1,13 @@
 ---
 name: customer-success-strategy-deep-best-practices
-description: "Use when applying customer success strategy best practices."
+description: Use when applying customer success strategy best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [sales, customer-success-strategy]
-    related_skills: ['']
 ---
 
 # Customer Success Strategy Deep Best Practices

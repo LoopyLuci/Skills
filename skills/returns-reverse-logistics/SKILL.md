@@ -2,12 +2,12 @@
 name: returns-reverse-logistics
 description: Returns policy, processing, refurbishment, and liquidation
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["returns", "reverse"]
+    tags: [returns, reverse]
 ---
 
 # Returns Reverse Logistics

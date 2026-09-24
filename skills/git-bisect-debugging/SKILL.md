@@ -1,12 +1,13 @@
 ---
 name: git-bisect-debugging
-description: "Use when debugging with git bisect."
+description: Use when debugging with git bisect.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["git", "bisect", "debugging", "binary-search"]
+    tags: [git, bisect, debugging, binary-search]
 ---
 
 # Git Bisect Debugging

@@ -1,9 +1,15 @@
 ---
 name: windows-symbol-server
-description: "Use when setting up debug symbol servers on Windows."
-category: software-development
-tags: [windows, symbols, debugging, pdb, windbg]
+description: Use when setting up debug symbol servers on Windows.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [windows, symbols, debugging, pdb, windbg]
 ---
+
 # Windows Symbol Server
 
 Setting up debug symbol servers and configuring debuggers.

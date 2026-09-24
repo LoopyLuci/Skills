@@ -1,14 +1,13 @@
 ---
 name: database-postgresql-json-fundamentals
-description: "Use when applying postgresql json fundamentals."
+description: Use when applying postgresql json fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, postgresql, json, document]
-    related_skills: [general]
 ---
 
 # Database Postgresql Json Fundamentals

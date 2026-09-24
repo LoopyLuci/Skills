@@ -1,12 +1,13 @@
 ---
-
 name: google-cloud-storage-basics
-description: >-
-source: google/skills
-tags: [gcp, google-cloud, cloud]
-metadata: 
-hermes: 
-
+description: Skill for google cloud storage basics
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [gcp, google-cloud, cloud]
 ---
 
 **Trigger**: Use when working with Google Cloud Google Cloud Storage — setup, configuration, and best practices.

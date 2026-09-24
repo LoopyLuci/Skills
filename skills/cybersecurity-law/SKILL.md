@@ -1,14 +1,13 @@
 ---
 name: cybersecurity-law
-description: "Use when applying cybersecurity law."
+description: Use when applying cybersecurity law.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [legal, cybersecurity-law, cyber-reg]
-    related_skills: [general]
 ---
 
 # Cybersecurity Law

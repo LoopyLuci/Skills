@@ -1,14 +1,13 @@
 ---
 name: aws-cli
-description: "Use when using AWS CLI."
+description: Use when using AWS CLI.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, cli, aws-cli, commands]
-    related_skills: [general]
 ---
 
 # Aws Cli

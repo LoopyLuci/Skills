@@ -1,14 +1,13 @@
 ---
 name: creative-problem-implementation
-description: "Use when applying creative problem solving implementation."
+description: Use when applying creative problem solving implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, creativity, creative-problem-solving]
-    related_skills: [general]
 ---
 
 # Creative Problem Implementation

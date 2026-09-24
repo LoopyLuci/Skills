@@ -1,14 +1,13 @@
 ---
 name: crypto-zero-knowledge-troubleshooting
-description: "Use when applying zero-knowledge proofs troubleshooting."
+description: Use when applying zero-knowledge proofs troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [crypto, zkp, zero-knowledge-proofs]
-    related_skills: ['']
 ---
 
 # Crypto Zero Knowledge Troubleshooting

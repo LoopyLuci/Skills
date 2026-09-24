@@ -1,14 +1,13 @@
 ---
 name: chip-verification-implementation
-description: "Use when applying chip verification implementation."
+description: Use when applying chip verification implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [electronics, chip, chip-arch-verification]
-    related_skills: [general]
 ---
 
 # Chip Verification Implementation

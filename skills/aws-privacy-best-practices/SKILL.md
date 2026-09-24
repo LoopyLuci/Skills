@@ -1,14 +1,13 @@
 ---
 name: aws-privacy-best-practices
-description: "Use when applying aws privacy best practices."
+description: Use when applying aws privacy best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, privacy, data-protection, gdpr]
-    related_skills: [general]
 ---
 
 # Aws Privacy Best Practices

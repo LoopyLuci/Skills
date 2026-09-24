@@ -1,14 +1,13 @@
 ---
 name: biotech-toxicology-best-practices
-description: "Use when applying toxicology best practices."
+description: Use when applying toxicology best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, toxicology]
-    related_skills: ['']
 ---
 
 # Biotech Toxicology Best Practices

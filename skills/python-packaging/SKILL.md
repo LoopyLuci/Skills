@@ -1,12 +1,13 @@
 ---
 name: python-packaging
-description: "Use when implementing python packaging."
+description: Use when implementing python packaging.
 version: 1.0.0
-author: "Skill Genesis Model"
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["python", "packaging"]
+    tags: [python, packaging]
 ---
 
 # Python Packaging

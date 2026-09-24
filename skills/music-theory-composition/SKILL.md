@@ -2,12 +2,12 @@
 name: music-theory-composition
 description: Harmony, counterpoint, form, orchestration, and arrangement techniques
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["theory", "composition"]
+    tags: [theory, composition]
 ---
 
 # Music Theory Composition

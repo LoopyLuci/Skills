@@ -1,14 +1,13 @@
 ---
 name: fashion-photography-troubleshooting
-description: "Use when applying fashion photography troubleshooting."
+description: Use when applying fashion photography troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [media, photo, fashion-photography]
-    related_skills: [general]
 ---
 
 # Fashion Photography Troubleshooting

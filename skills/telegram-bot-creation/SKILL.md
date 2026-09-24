@@ -1,6 +1,13 @@
 ---
 name: telegram-bot-creation
-description: "Create deploy and manage Telegram bots with python library"
+description: Create deploy and manage Telegram bots with python library
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [telegram, bot, creation]
 ---
 
 # Telegram Bot Creation

@@ -1,14 +1,13 @@
 ---
 name: website-accessibility-audit
-description: "Use when auditing site accessibility. WCAG, a11y."
+description: Use when auditing site accessibility. WCAG, a11y.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [accessibility, a11y, wcag, compliance, inclusive-design]
-    related_skills: [website-architecture-planner, landing-page-builder]
 ---
 
 # Website Accessibility Audit

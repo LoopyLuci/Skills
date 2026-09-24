@@ -1,14 +1,13 @@
 ---
 name: construction-exterior-systems
-description: "Use when designing construction exteriors."
+description: Use when designing construction exteriors.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [construction, exterior-systems, facade]
-    related_skills: [general]
 ---
 
 # Construction Exterior Systems

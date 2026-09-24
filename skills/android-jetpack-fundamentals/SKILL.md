@@ -1,14 +1,13 @@
 ---
 name: android-jetpack-fundamentals
-description: "Use when applying android jetpack fundamentals."
+description: Use when applying android jetpack fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mobile, android, jetpack, compose]
-    related_skills: [general]
 ---
 
 # Android Jetpack Fundamentals

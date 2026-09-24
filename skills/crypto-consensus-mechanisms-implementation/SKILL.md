@@ -1,14 +1,13 @@
 ---
 name: crypto-consensus-mechanisms-implementation
-description: "Use when applying consensus mechanisms implementation."
+description: Use when applying consensus mechanisms implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [crypto, consensus, blockchain-development-solidity]
-    related_skills: ['']
 ---
 
 # Crypto Consensus Mechanisms Implementation

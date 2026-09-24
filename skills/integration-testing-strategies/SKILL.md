@@ -1,12 +1,13 @@
 ---
 name: integration-testing-strategies
-description: "Use when implementing integration tests."
+description: Use when implementing integration tests.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["integration-test", "testcontainers", "database-testing"]
+    tags: [integration-test, testcontainers, database-testing]
 ---
 
 # Integration Testing Strategies

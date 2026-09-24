@@ -1,13 +1,13 @@
 ---
 name: partner-channel-management
-description: "Use when building partner and channel sales programs."
+description: Use when building partner and channel sales programs.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [partner-management, channel-sales, partnerships, resellers, ecosystem]
-    related_skills: [influencer-affiliate-programs, sales-enablement-playbooks, demand-generation, revenue-operations-revops]
 ---
 
 # Partner Channel Management

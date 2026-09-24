@@ -1,14 +1,13 @@
 ---
 name: blog-content-optimization-troubleshooting
-description: "Use when applying blog content optimization troubleshoot."
+description: Use when applying blog content optimization troubleshoot.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, blog-seo-post-optimizer]
-    related_skills: ['']
 ---
 
 # Blog Content Optimization Troubleshooting

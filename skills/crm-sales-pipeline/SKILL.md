@@ -1,13 +1,13 @@
 ---
 name: crm-sales-pipeline
-description: "Use when building CRM and sales pipeline management systems."
+description: Use when building CRM and sales pipeline management systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [crm, sales, pipeline, deals, lead-management, salesforce]
-    related_skills: [real-estate-crm-leads, email-marketing-campaigns, business-metrics-kpis, customer-segmentation-analysis]
 ---
 
 # Crm Sales Pipeline

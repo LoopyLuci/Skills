@@ -1,14 +1,13 @@
 ---
 name: biotech-biosensors-troubleshooting
-description: "Use when applying biosensors troubleshooting."
+description: Use when applying biosensors troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, biosensors]
-    related_skills: ['']
 ---
 
 # Biotech Biosensors Troubleshooting

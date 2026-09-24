@@ -2,12 +2,12 @@
 name: optimization-operations-research
 description: Linear programming, integer programming, and optimization methods
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["optimization", "or"]
+    tags: [optimization, or]
 ---
 
 # Optimization Operations Research

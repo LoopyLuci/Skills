@@ -1,14 +1,13 @@
 ---
 name: astrology-aspect-analysis
-description: "Use when analyzing astrological aspects."
+description: Use when analyzing astrological aspects.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [esoteric, astrology-aspects, planetary-aspects, synastry]
-    related_skills: [general]
 ---
 
 # Astrology Aspect Analysis

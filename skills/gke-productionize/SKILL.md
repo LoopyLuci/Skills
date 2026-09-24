@@ -1,8 +1,13 @@
 ---
 name: gke-productionize
 description: Use when assessing and preparing GKE clusters and workloads for production readiness.
-tags: [gke, kubernetes, google-cloud, production, reliability, security]
-related_skills: [google-cloud-recipe-auth, google-cloud-waf-security, google-cloud-waf-cost-optimization]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [gke, kubernetes, google-cloud, production, reliability, security]
 ---
 
 # GKE Productionize Skill

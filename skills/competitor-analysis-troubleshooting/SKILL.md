@@ -1,14 +1,13 @@
 ---
 name: competitor-analysis-troubleshooting
-description: "Use when applying competitor analysis troubleshooting."
+description: Use when applying competitor analysis troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, competitive-analysis, competitor-analysis]
-    related_skills: [general]
 ---
 
 # Competitor Analysis Troubleshooting

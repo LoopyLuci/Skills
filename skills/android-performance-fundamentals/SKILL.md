@@ -1,14 +1,13 @@
 ---
 name: android-performance-fundamentals
-description: "Use when applying android performance fundamentals."
+description: Use when applying android performance fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mobile, android, performance, optimization]
-    related_skills: [general]
 ---
 
 # Android Performance Fundamentals

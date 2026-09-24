@@ -1,14 +1,13 @@
 ---
 name: affiliate-marketing
-description: "Affiliate: commissions, recruitment, compliance."
+description: Affiliate: commissions, recruitment, compliance.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [affiliate, marketing, commissions, partnerships, passive-income]
-    related_skills: [ecommerce-store-setup, personal-brand-building, legal-and-compliance-basics]
 ---
 
 # Affiliate Marketing

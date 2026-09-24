@@ -1,9 +1,13 @@
 ---
 name: django-rest-framework-apis
-description: "Use when building DRF APIs."
+description: Use when building DRF APIs.
 version: 1.0.0
-author: Hermes Agent
-tags: ["django", "DRF", "serializers", "viewsets", "permissions"]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [django, drf, serializers, viewsets, permissions]
 ---
 
 # Django Rest Framework Apis

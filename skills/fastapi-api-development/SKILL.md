@@ -1,12 +1,13 @@
 ---
 name: fastapi-api-development
-description: "Use when building APIs with FastAPI."
+description: Use when building APIs with FastAPI.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["fastapi", "pydantic", "swagger", "async", "dependencies"]
+    tags: [fastapi, pydantic, swagger, async, dependencies]
 ---
 
 # Fastapi Api Development

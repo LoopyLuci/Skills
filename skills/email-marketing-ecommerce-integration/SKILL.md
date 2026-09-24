@@ -1,14 +1,13 @@
 ---
 name: email-marketing-ecommerce-integration
-description: "Use when connecting email to ecomm."
+description: Use when connecting email to ecomm.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, marketing, ecommerce, integration]
-    related_skills: [general]
 ---
 
 # Email Marketing Ecommerce Integration

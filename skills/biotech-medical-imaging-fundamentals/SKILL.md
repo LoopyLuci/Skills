@@ -1,14 +1,13 @@
 ---
 name: biotech-medical-imaging-fundamentals
-description: "Use when applying medical imaging fundamentals."
+description: Use when applying medical imaging fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, medical-imaging]
-    related_skills: ['']
 ---
 
 # Biotech Medical Imaging Fundamentals

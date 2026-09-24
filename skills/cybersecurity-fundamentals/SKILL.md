@@ -1,14 +1,13 @@
 ---
 name: cybersecurity-fundamentals
-description: "Use when learning cybersecurity fundamentals."
+description: Use when learning cybersecurity fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, cybersecurity, infosec]
-    related_skills: [general]
 ---
 
 # Cybersecurity Fundamentals

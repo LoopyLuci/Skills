@@ -1,14 +1,13 @@
 ---
 name: biotech-eng-fundamentals-troubleshooting
-description: "Use when applying biotech fundamentals troubleshooting."
+description: Use when applying biotech fundamentals troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, fundamentals, biotech-eng-fundamentals]
-    related_skills: [general]
 ---
 
 # Biotech Eng Fundamentals Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: application-firewall-fundamentals
-description: "Use when for waf fundamentals."
+description: Use when for waf fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, waf, web-app-firewall, filtering]
-    related_skills: [general]
 ---
 
 # Application Firewall Fundamentals

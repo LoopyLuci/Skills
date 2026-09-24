@@ -1,14 +1,13 @@
 ---
 name: beauty-salon-management-best-practices
-description: "Use when applying salon management best practices."
+description: Use when applying salon management best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [beauty, management, beauty-salon-management]
-    related_skills: ['general']
 ---
 
 # Beauty Salon Management Best Practices

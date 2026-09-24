@@ -1,14 +1,13 @@
 ---
 name: emg-processing-best-practices
-description: "Use when applying emg processing best practices."
+description: Use when applying emg processing best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neurotech, emg, signal-processing]
-    related_skills: [general]
 ---
 
 # Emg Processing Best Practices

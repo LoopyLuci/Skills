@@ -1,14 +1,13 @@
 ---
 name: film-video-color-grading
-description: "Use when grading film video colors."
+description: Use when grading film video colors.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [filmmaking, color-grading, video]
-    related_skills: [general]
 ---
 
 # Film Video Color Grading

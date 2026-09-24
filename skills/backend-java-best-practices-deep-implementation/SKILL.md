@@ -1,14 +1,13 @@
 ---
 name: backend-java-best-practices-deep-implementation
-description: "Use when applying java backend best practices implementa."
+description: Use when applying java backend best practices implementa.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, java]
-    related_skills: ['backend-java-best-practices']
 ---
 
 # Backend Java Best Practices Deep Implementation

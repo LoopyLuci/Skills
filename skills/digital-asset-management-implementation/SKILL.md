@@ -1,14 +1,13 @@
 ---
 name: digital-asset-management-implementation
-description: "Use when applying digital asset management implementation."
+description: Use when applying digital asset management implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [media, dam, asset-management]
-    related_skills: ['general']
 ---
 
 # Digital Asset Management Implementation

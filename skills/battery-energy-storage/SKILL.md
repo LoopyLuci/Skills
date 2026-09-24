@@ -2,12 +2,12 @@
 name: battery-energy-storage
 description: Lithium-ion, flow batteries, BMS, and grid-scale storage deployment
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["battery", "storage"]
+    tags: [battery, storage]
 ---
 
 # Battery Energy Storage

@@ -1,14 +1,13 @@
 ---
 name: brand-identity-development
-description: "Use when developing brand identity. Positioning, visuals."
+description: Use when developing brand identity. Positioning, visuals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [brand, branding, identity, positioning, guidelines]
-    related_skills: [marketing-strategy-framework, competitor-analysis, content-marketing-workflow]
 ---
 
 # Brand Identity Development

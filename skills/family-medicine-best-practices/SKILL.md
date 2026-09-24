@@ -1,14 +1,13 @@
 ---
 name: family-medicine-best-practices
-description: "Use when applying family medicine best practices."
+description: Use when applying family medicine best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [medicine, healthcare, family]
-    related_skills: [general]
 ---
 
 # Family Medicine Best Practices

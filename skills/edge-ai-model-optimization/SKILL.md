@@ -1,14 +1,13 @@
 ---
 name: edge-ai-model-optimization
-description: "Use when optimizing edge AI models."
+description: Use when optimizing edge AI models.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [edge-computing, model-optimization, quantization, pruning]
-    related_skills: ['model-compression-techniques']
 ---
 
 # Edge Ai Model Optimization

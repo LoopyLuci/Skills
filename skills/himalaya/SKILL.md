@@ -1,16 +1,13 @@
 ---
 name: himalaya
-description: "Himalaya CLI: IMAP/SMTP email from terminal."
-version: 1.1.0
-author: community
+description: Himalaya CLI: IMAP/SMTP email from terminal.
+version: 1.0.0
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: [Email, IMAP, SMTP, CLI, Communication]
-    homepage: https://github.com/pimalaya/himalaya
-prerequisites:
-  commands: [himalaya]
+    tags: [email, imap, smtp, cli, communication]
 ---
 
 # Himalaya Email CLI

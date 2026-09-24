@@ -1,9 +1,15 @@
 ---
 name: windows-event-log-querying
-description: "Use when searching/filtering Windows Event Logs."
-category: software-development
-tags: [windows, eventlog, event-viewer, logging, powershell]
+description: Use when searching/filtering Windows Event Logs.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [windows, eventlog, event-viewer, logging, powershell]
 ---
+
 # Windows Event Log Querying
 
 Searching and filtering Windows Event Logs with PowerShell.

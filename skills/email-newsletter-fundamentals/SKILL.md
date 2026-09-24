@@ -1,14 +1,13 @@
 ---
 name: email-newsletter-fundamentals
-description: "Use when applying email newsletter fundamentals."
+description: Use when applying email newsletter fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, publishing, newsletter]
-    related_skills: [general]
 ---
 
 # Email Newsletter Fundamentals

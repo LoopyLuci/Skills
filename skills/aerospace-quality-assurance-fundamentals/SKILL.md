@@ -1,14 +1,13 @@
 ---
 name: aerospace-quality-assurance-fundamentals
-description: "Use when applying aerospace qa fundamentals."
+description: Use when applying aerospace qa fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aerospace, quality, aerospace-qms]
-    related_skills: ['general']
 ---
 
 # Aerospace Quality Assurance Fundamentals

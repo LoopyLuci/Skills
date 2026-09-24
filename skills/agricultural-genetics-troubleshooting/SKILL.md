@@ -1,14 +1,13 @@
 ---
 name: agricultural-genetics-troubleshooting
-description: "Use when applying agricultural genetics troubleshooting."
+description: Use when applying agricultural genetics troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agri, genetics, agricultural-genetics]
-    related_skills: [general]
 ---
 
 # Agricultural Genetics Troubleshooting

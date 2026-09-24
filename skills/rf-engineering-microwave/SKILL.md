@@ -2,12 +2,12 @@
 name: rf-engineering-microwave
 description: RF design, antenna engineering, spectrum analysis, and microwave systems
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["rf", "antenna"]
+    tags: [rf, antenna]
 ---
 
 # Rf Engineering Microwave

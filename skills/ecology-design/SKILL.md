@@ -1,14 +1,13 @@
 ---
 name: ecology-design
-description: "Use when designing ecology solutions."
+description: Use when designing ecology solutions.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ecology, ecosystems, environment, biodiversity]
-    related_skills: [general]
 ---
 
 # Ecology Design

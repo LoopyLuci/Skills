@@ -1,14 +1,13 @@
 ---
 name: blogging-implementation
-description: "Use when applying blogging implementation."
+description: Use when applying blogging implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [blog, writing, blog-post-outliner]
-    related_skills: [general]
 ---
 
 # Blogging Implementation

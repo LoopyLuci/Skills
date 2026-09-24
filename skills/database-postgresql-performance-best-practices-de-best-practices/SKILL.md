@@ -1,14 +1,13 @@
 ---
 name: database-postgresql-performance-best-practices-de-best-practices
-description: "Use when applying postgresql performance best practices."
+description: Use when applying postgresql performance best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, postgres]
-    related_skills: ['postgres-performance-best-practices']
 ---
 
 # Database Postgresql Performance Best Practices De Best Practices

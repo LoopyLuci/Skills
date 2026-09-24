@@ -1,14 +1,13 @@
 ---
 name: astrology-solar-return
-description: "Use when calculating astrology solar returns."
+description: Use when calculating astrology solar returns.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [esoteric, solar-return, yearly-forecast, natal]
-    related_skills: [general]
 ---
 
 # Astrology Solar Return

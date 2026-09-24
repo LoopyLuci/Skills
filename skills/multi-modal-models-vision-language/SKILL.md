@@ -1,13 +1,13 @@
 ---
 name: multi-modal-models-vision-language
-description: "Use when building multi-modal vision-language AI models."
+description: Use when building multi-modal vision-language AI models.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [multi-modal, vision-language, VLM, CLIP, image-captioning, visual-qa]
-    related_skills: [custom-neural-architecture-design, computer-vision-techniques, nlp-techniques, transformer-architectures]
+    tags: [multi-modal, vision-language, vlm, clip, image-captioning, visual-qa]
 ---
 
 # Multi Modal Models Vision Language

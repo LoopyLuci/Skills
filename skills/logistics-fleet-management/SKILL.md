@@ -2,12 +2,12 @@
 name: logistics-fleet-management
 description: Fleet operations, maintenance, telematics, and driver safety
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["fleet", "management"]
+    tags: [fleet, management]
 ---
 
 # Logistics Fleet Management

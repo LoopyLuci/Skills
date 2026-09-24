@@ -1,14 +1,13 @@
 ---
 name: autonomous-delivery-robots
-description: "Use when building delivery robots."
+description: Use when building delivery robots.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [automotive, delivery-robots, autonomous, last-mile]
-    related_skills: [general]
 ---
 
 # Autonomous Delivery Robots

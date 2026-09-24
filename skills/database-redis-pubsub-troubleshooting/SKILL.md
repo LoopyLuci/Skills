@@ -1,14 +1,13 @@
 ---
 name: database-redis-pubsub-troubleshooting
-description: "Use when applying redis pub/sub troubleshooting."
+description: Use when applying redis pub/sub troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, redis, pub-sub, messaging]
-    related_skills: [general]
 ---
 
 # Database Redis Pubsub Troubleshooting

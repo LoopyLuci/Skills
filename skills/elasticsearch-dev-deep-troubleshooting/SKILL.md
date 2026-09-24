@@ -1,14 +1,13 @@
 ---
 name: elasticsearch-dev-deep-troubleshooting
-description: "Use when applying elasticsearch development troubleshoot."
+description: Use when applying elasticsearch development troubleshoot.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, search]
-    related_skills: ['elasticsearch-dev']
 ---
 
 # Elasticsearch Dev Deep Troubleshooting

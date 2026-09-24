@@ -1,14 +1,13 @@
 ---
 name: django-troubleshooting
-description: "Use when applying django development troubleshooting."
+description: Use when applying django development troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, django, python, web]
-    related_skills: [general]
 ---
 
 # Django Troubleshooting

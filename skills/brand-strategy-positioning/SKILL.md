@@ -2,12 +2,12 @@
 name: brand-strategy-positioning
 description: Brand architecture, positioning statements, messaging frameworks, and brand audits
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["brand", "positioning"]
+    tags: [brand, positioning]
 ---
 
 # Brand Strategy Positioning

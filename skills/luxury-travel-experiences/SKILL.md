@@ -2,12 +2,12 @@
 name: luxury-travel-experiences
 description: Luxury travel planning, exclusive experiences, and high-end service
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["luxury", "experiences"]
+    tags: [luxury, experiences]
 ---
 
 # Luxury Travel Experiences

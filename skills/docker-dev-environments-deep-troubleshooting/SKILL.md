@@ -1,14 +1,13 @@
 ---
 name: docker-dev-environments-deep-troubleshooting
-description: "Use when applying docker dev environments troubleshooting."
+description: Use when applying docker dev environments troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, docker]
-    related_skills: ['docker-dev-environments']
 ---
 
 # Docker Dev Environments Deep Troubleshooting

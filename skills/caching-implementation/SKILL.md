@@ -1,14 +1,13 @@
 ---
 name: caching-implementation
-description: "Use when applying caching strategies implementation."
+description: Use when applying caching strategies implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [architecture, caching, cache-aside]
-    related_skills: [general]
 ---
 
 # Caching Implementation

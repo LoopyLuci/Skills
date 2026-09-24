@@ -1,13 +1,13 @@
 ---
 name: multi-agent-routing-optimization
-description: "Use when optimizing routing between specialized AI agents."
+description: Use when optimizing routing between specialized AI agents.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [agents, routing, optimization, orchestration, load-balancing]
-    related_skills: [agent-routing-models, agent-swarm-architectures, hierarchical-swarm-architectures, multi-agent-orchestration, agent-task-decomposition]
 ---
 
 # Multi Agent Routing Optimization

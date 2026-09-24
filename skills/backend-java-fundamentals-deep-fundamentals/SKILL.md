@@ -1,14 +1,13 @@
 ---
 name: backend-java-fundamentals-deep-fundamentals
-description: "Use when applying java backend fundamentals fundamentals."
+description: Use when applying java backend fundamentals fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, java]
-    related_skills: ['backend-java-fundamentals']
 ---
 
 # Backend Java Fundamentals Deep Fundamentals

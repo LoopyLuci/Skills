@@ -1,14 +1,13 @@
 ---
 name: faith-community-implementation
-description: "Use when applying faith communities implementation."
+description: Use when applying faith communities implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [religion, community, faith-community-management]
-    related_skills: [general]
 ---
 
 # Faith Community Implementation

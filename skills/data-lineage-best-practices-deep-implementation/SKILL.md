@@ -1,14 +1,13 @@
 ---
 name: data-lineage-best-practices-deep-implementation
-description: "Use when applying data lineage implementation."
+description: Use when applying data lineage implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, lineage]
-    related_skills: ['data-lineage-best-practices']
 ---
 
 # Data Lineage Best Practices Deep Implementation

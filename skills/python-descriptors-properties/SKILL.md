@@ -1,12 +1,13 @@
 ---
 name: python-descriptors-properties
-description: "Use when implementing properties."
+description: Use when implementing properties.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["python", "descriptors", "property", "cached-property"]
+    tags: [python, descriptors, property, cached-property]
 ---
 
 # Python Descriptors Properties

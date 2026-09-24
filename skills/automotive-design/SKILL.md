@@ -1,14 +1,13 @@
 ---
 name: automotive-design
-description: "Use when designing vehicles."
+description: Use when designing vehicles.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [auto, design, automotive-design]
-    related_skills: [general]
 ---
 
 # Automotive Design

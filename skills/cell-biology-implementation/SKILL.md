@@ -1,14 +1,13 @@
 ---
 name: cell-biology-implementation
-description: "Use when implementing cell biology projects."
+description: Use when implementing cell biology projects.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cell-biology, cells, microscopy, research]
-    related_skills: [general]
 ---
 
 # Cell Biology Implementation

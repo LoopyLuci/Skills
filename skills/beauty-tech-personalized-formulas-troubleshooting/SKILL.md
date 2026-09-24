@@ -1,14 +1,13 @@
 ---
 name: beauty-tech-personalized-formulas-troubleshooting
-description: "Use when applying beauty personalized formulas troublesh."
+description: Use when applying beauty personalized formulas troublesh.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, beauty]
-    related_skills: ['']
 ---
 
 # Beauty Tech Personalized Formulas Troubleshooting

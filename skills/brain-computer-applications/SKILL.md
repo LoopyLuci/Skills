@@ -1,14 +1,13 @@
 ---
 name: brain-computer-applications
-description: "Use when building BCI applications."
+description: Use when building BCI applications.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neurotech, bci, prosthetics, gaming, communication]
-    related_skills: ['neural-interface-design', ' neural-decoding-algorithms']
 ---
 
 # Brain Computer Applications

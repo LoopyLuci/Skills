@@ -2,12 +2,12 @@
 name: architectural-interior-photography
 description: Perspective control, lighting, HDR, and twilight shooting
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["architecture", "interior"]
+    tags: [architecture, interior]
 ---
 
 # Architectural Interior Photography

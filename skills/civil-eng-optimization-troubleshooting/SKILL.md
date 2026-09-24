@@ -1,14 +1,13 @@
 ---
 name: civil-eng-optimization-troubleshooting
-description: "Use when applying civil optimization troubleshooting."
+description: Use when applying civil optimization troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, civil, optimization]
-    related_skills: [general]
 ---
 
 # Civil Eng Optimization Troubleshooting

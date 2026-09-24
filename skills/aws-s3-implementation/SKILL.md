@@ -1,14 +1,13 @@
 ---
 name: aws-s3-implementation
-description: "Use when applying aws s3 implementation."
+description: Use when applying aws s3 implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, s3, storage, bucket]
-    related_skills: [general]
 ---
 
 # Aws S3 Implementation

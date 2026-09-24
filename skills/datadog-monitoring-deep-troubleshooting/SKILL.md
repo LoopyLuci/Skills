@@ -1,14 +1,13 @@
 ---
 name: datadog-monitoring-deep-troubleshooting
-description: "Use when applying datadog monitoring troubleshooting."
+description: Use when applying datadog monitoring troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [sys, monitoring]
-    related_skills: ['datadog-monitoring']
 ---
 
 # Datadog Monitoring Deep Troubleshooting

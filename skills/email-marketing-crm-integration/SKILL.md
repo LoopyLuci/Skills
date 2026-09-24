@@ -1,14 +1,13 @@
 ---
 name: email-marketing-crm-integration
-description: "Use when connecting email to CRM."
+description: Use when connecting email to CRM.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, marketing, crm, integration]
-    related_skills: [general]
 ---
 
 # Email Marketing Crm Integration

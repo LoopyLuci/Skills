@@ -1,14 +1,13 @@
 ---
 name: biotech-omics-analysis-fundamentals
-description: "Use when applying omics data analysis fundamentals."
+description: Use when applying omics data analysis fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, omics]
-    related_skills: ['']
 ---
 
 # Biotech Omics Analysis Fundamentals

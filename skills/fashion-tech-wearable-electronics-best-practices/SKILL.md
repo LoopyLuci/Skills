@@ -1,14 +1,13 @@
 ---
 name: fashion-tech-wearable-electronics-best-practices
-description: "Use when applying fashion wearable electronics best prac."
+description: Use when applying fashion wearable electronics best prac.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, beauty]
-    related_skills: ['']
 ---
 
 # Fashion Tech Wearable Electronics Best Practices

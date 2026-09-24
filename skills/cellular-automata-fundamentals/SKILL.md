@@ -1,14 +1,13 @@
 ---
 name: cellular-automata-fundamentals
-description: "Use when applying cellular automata fundamentals."
+description: Use when applying cellular automata fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [computing, cellular-automata]
-    related_skills: ['general']
 ---
 
 # Cellular Automata Fundamentals

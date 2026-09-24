@@ -1,14 +1,13 @@
 ---
 name: embedded-mqtt-fundamentals
-description: "Use when applying mqtt for embedded fundamentals."
+description: Use when applying mqtt for embedded fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [embedded, mqtt, iot, protocols]
-    related_skills: [general]
 ---
 
 # Embedded Mqtt Fundamentals

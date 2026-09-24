@@ -1,14 +1,13 @@
 ---
 name: climate-green-hydrogen-troubleshooting
-description: "Use when applying green hydrogen production troubleshoot."
+description: Use when applying green hydrogen production troubleshoot.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, hydrogen, green-hydrogen-production]
-    related_skills: ['']
 ---
 
 # Climate Green Hydrogen Troubleshooting

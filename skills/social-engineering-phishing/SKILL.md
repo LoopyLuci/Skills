@@ -1,13 +1,13 @@
 ---
 name: social-engineering-phishing
-description: "Use when performing social engineering and phishing tests."
+description: Use when performing social engineering and phishing tests.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [social-engineering, phishing, pretexting, spear-phishing, Gophish, SET]
-    related_skills: [osint-reconnaissance-techniques, red-team-operations, evasion-techniques-av-bypass, bug-bounty-methodology]
+    tags: [social-engineering, phishing, pretexting, spear-phishing, gophish, set]
 ---
 
 # Social Engineering and Phishing

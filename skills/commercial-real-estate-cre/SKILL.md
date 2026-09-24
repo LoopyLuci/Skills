@@ -2,12 +2,12 @@
 name: commercial-real-estate-cre
 description: Office, retail, industrial, multifamily, and CRE transaction lifecycle
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["commercial", "cre"]
+    tags: [commercial, cre]
 ---
 
 # Commercial Real Estate Cre

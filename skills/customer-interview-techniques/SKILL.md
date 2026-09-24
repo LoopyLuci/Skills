@@ -1,9 +1,13 @@
 ---
 name: customer-interview-techniques
-description: "Use when conducting customer interviews."
+description: Use when conducting customer interviews.
 version: 1.0.0
-author: Hermes Agent
-tags: ["customer-interviews", "research", "discovery", "feedback"]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [customer-interviews, research, discovery, feedback]
 ---
 
 # Customer Interview Techniques

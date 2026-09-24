@@ -1,14 +1,13 @@
 ---
 name: endocrinology
-description: "Use when treating endocrine disorders."
+description: Use when treating endocrine disorders.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [healthcare, endocrinology, endocrinology]
-    related_skills: [general]
 ---
 
 # Endocrinology

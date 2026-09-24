@@ -1,8 +1,13 @@
 ---
 name: pick-ui-library
 description: Use when picking the right library for a frontend task.
-tags: [ui-libraries, frontend, react, components, tools]
-related_skills: [frontend-design, emil-design-eng]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [ui-libraries, frontend, react, components, tools]
 ---
 
 # Picking The Right Library

@@ -1,14 +1,13 @@
 ---
 name: data-engineering-pipelines-best-practices-deep-troubleshooting
-description: "Use when applying data engineering pipelines troubleshoo."
+description: Use when applying data engineering pipelines troubleshoo.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, data-eng-best-practices]
-    related_skills: ['']
 ---
 
 # Data Engineering Pipelines Best Practices Deep Troubleshooting

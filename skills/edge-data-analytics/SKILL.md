@@ -1,14 +1,13 @@
 ---
 name: edge-data-analytics
-description: "Use when analyzing edge data."
+description: Use when analyzing edge data.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [edge-computing, data-analytics, edge-analytics, real-time]
-    related_skills: ['data-visualization-practices']
 ---
 
 # Edge Data Analytics

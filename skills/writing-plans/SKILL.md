@@ -1,12 +1,13 @@
 ---
-
 name: writing-plans
 description: Use when you have a spec or requirements for a multi-step task, before touching code
-source: hermes/superpowers
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [agent, skill]
-
 ---
 
 # Writing Plans

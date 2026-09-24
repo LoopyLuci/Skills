@@ -1,14 +1,13 @@
 ---
 name: embedded-freertos-best-practices
-description: "Use when applying freertos best practices."
+description: Use when applying freertos best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [embedded, freertos, rtos, microcontroller]
-    related_skills: [general]
 ---
 
 # Embedded Freertos Best Practices

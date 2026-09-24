@@ -1,12 +1,13 @@
 ---
 name: typescript-utility-types
-description: "Use when building TS utility types."
+description: Use when building TS utility types.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["typescript", "utility-types", "Partial", "Pick", "Omit"]
+    tags: [typescript, utility-types, partial, pick, omit]
 ---
 
 # Typescript Utility Types

@@ -1,14 +1,13 @@
 ---
 name: adc-fundamentals
-description: "Use when applying antibody drug conjugates fundamentals."
+description: Use when applying antibody drug conjugates fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, pharma, adc]
-    related_skills: [general]
 ---
 
 # Adc Fundamentals

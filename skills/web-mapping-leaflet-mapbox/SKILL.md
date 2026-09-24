@@ -2,12 +2,12 @@
 name: web-mapping-leaflet-mapbox
 description: Leaflet, Mapbox GL, MapLibre, tile servers, and interactive web maps
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["web-mapping", "javascript"]
+    tags: [web-mapping, javascript]
 ---
 
 # Web Mapping Leaflet Mapbox

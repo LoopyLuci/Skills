@@ -1,14 +1,13 @@
 ---
 name: data-loss-prevention
-description: "Use when preventing data loss."
+description: Use when preventing data loss.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cybersecurity, dlp, data-protection, privacy]
-    related_skills: ['data-leakage-prevention-in-skills']
 ---
 
 # Data Loss Prevention

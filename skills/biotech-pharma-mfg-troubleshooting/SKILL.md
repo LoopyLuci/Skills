@@ -1,14 +1,13 @@
 ---
 name: biotech-pharma-mfg-troubleshooting
-description: "Use when applying pharmaceutical manufacturing troublesh."
+description: Use when applying pharmaceutical manufacturing troublesh.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, pharma-mfg]
-    related_skills: ['']
 ---
 
 # Biotech Pharma Mfg Troubleshooting

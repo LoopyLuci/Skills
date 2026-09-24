@@ -1,14 +1,13 @@
 ---
 name: agri-tech-marketplaces-fundamentals
-description: "Use when applying agri marketplaces fundamentals."
+description: Use when applying agri marketplaces fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agri, marketplace, agri-marketplaces]
-    related_skills: ['']
 ---
 
 # Agri Tech Marketplaces Fundamentals

@@ -1,14 +1,13 @@
 ---
 name: consumer-facial-recognition
-description: "Use when implementing facial recognition."
+description: Use when implementing facial recognition.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [consumer-tech, face-recognition, biometrics, security]
-    related_skills: [general]
 ---
 
 # Consumer Facial Recognition

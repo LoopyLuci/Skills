@@ -1,14 +1,13 @@
 ---
 name: cell-biology-microscopy-fundamentals
-description: "Use when applying cell biology microscopy fundamentals."
+description: Use when applying cell biology microscopy fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [medicine, microscopy, cell-biology-microscopy]
-    related_skills: [general]
 ---
 
 # Cell Biology Microscopy Fundamentals

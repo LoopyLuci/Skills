@@ -1,14 +1,13 @@
 ---
 name: fashion-show-production-deep-implementation
-description: "Use when applying fashion show production implementation."
+description: Use when applying fashion show production implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, events]
-    related_skills: ['']
 ---
 
 # Fashion Show Production Deep Implementation

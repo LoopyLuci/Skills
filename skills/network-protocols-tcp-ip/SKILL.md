@@ -2,12 +2,12 @@
 name: network-protocols-tcp-ip
 description: TCP/IP stack, HTTP/3, QUIC, DNS, and protocol analysis
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["networking", "protocols"]
+    tags: [networking, protocols]
 ---
 
 # Network Protocols Tcp Ip

@@ -1,14 +1,13 @@
 ---
 name: crypto-cross-chain-fundamentals
-description: "Use when applying cross-chain protocols fundamentals."
+description: Use when applying cross-chain protocols fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [crypto, cross-chain, blockchain-development-solidity]
-    related_skills: ['']
 ---
 
 # Crypto Cross Chain Fundamentals

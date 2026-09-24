@@ -1,14 +1,13 @@
 ---
 name: docker-compose-prod-fundamentals
-description: "Use when applying docker compose production fundamentals."
+description: Use when applying docker compose production fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [docker, compose, prod, docker-compose-prod]
-    related_skills: [general]
 ---
 
 # Docker Compose Prod Fundamentals

@@ -1,14 +1,13 @@
 ---
 name: experimentation-implementation
-description: "Use when implementing experimentation."
+description: Use when implementing experimentation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [experimentation, ab-testing, experimentation]
-    related_skills: [general]
 ---
 
 # Experimentation Implementation

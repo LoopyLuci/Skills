@@ -1,14 +1,13 @@
 ---
 name: expressjs-api
-description: "Use when building Express.js APIs."
+description: Use when building Express.js APIs.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, expressjs, node, api]
-    related_skills: [general]
 ---
 
 # Expressjs Api

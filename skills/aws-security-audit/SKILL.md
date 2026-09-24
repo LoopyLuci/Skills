@@ -1,14 +1,13 @@
 ---
 name: aws-security-audit
-description: "Use when auditing AWS security."
+description: Use when auditing AWS security.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, aws, security-audit-standards]
-    related_skills: [general]
 ---
 
 # Aws Security Audit

@@ -1,14 +1,13 @@
 ---
 name: bio-digital-twins-healthcare
-description: "Use when building bio-digital twins."
+description: Use when building bio-digital twins.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cross-domain, bio-digital-twins, healthcare, simulation]
-    related_skills: [general]
 ---
 
 # Bio Digital Twins Healthcare

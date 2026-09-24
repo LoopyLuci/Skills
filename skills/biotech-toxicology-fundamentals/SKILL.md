@@ -1,14 +1,13 @@
 ---
 name: biotech-toxicology-fundamentals
-description: "Use when applying toxicology fundamentals."
+description: Use when applying toxicology fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, toxicology]
-    related_skills: ['']
 ---
 
 # Biotech Toxicology Fundamentals

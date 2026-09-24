@@ -1,14 +1,13 @@
 ---
 name: azure-app-service-troubleshooting
-description: "Use when applying azure app service troubleshooting."
+description: Use when applying azure app service troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, azure, app-service, webapp]
-    related_skills: [general]
 ---
 
 # Azure App Service Troubleshooting

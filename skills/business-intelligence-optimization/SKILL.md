@@ -1,14 +1,13 @@
 ---
 name: business-intelligence-optimization
-description: "Use when optimizing business intelligence systems."
+description: Use when optimizing business intelligence systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [bi, business-intelligence, dashboards]
-    related_skills: [general]
 ---
 
 # Business Intelligence Optimization

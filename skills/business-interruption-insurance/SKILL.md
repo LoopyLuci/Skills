@@ -1,14 +1,13 @@
 ---
 name: business-interruption-insurance
-description: "Use when evaluating business interruption."
+description: Use when evaluating business interruption.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: ['b', 'u', 's', 'i', 'n', 'e', 's', 's', '-', 'i', 'n', 't', 'e', 'r', 'r', 'u', 'p', 't', 'i', 'o', 'n', ',', ' ', 'i', 'n', 's', 'u', 'r', 'a', 'n', 'c', 'e']
-    related_skills: [general]
+    tags: [b, u, s, i, n, e, s, s, -, i, n, t, e, r, r, u, p, t, i, o, n, , ,  , i, n, s, u, r, a, n, c, e]
 ---
 
 # Business Interruption Insurance

@@ -1,14 +1,13 @@
 ---
 name: commercial-law
-description: "Use when practicing commercial law."
+description: Use when practicing commercial law.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [legal, commercial, commercial-law]
-    related_skills: [general]
 ---
 
 # Commercial Law

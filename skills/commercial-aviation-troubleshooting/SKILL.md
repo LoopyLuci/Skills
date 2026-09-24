@@ -1,14 +1,13 @@
 ---
 name: commercial-aviation-troubleshooting
-description: "Use when applying commercial aviation troubleshooting."
+description: Use when applying commercial aviation troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, airline, aerospace-eng-analysis]
-    related_skills: [general]
 ---
 
 # Commercial Aviation Troubleshooting

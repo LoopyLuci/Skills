@@ -2,12 +2,12 @@
 name: live-sound-reinforcement
 description: PA systems, monitors, RF coordination, and live mixing techniques
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["live-sound", "reinforcement"]
+    tags: [live-sound, reinforcement]
 ---
 
 # Live Sound Reinforcement

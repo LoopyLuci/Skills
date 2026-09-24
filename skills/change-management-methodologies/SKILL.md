@@ -1,14 +1,13 @@
 ---
 name: change-management-methodologies
-description: "Use when managing organizational change."
+description: Use when managing organizational change.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: ['c', 'h', 'a', 'n', 'g', 'e', '-', 'm', 'a', 'n', 'a', 'g', 'e', 'm', 'e', 'n', 't', ',', ' ', 'a', 'd', 'k', 'a', 'r', 's']
-    related_skills: [general]
+    tags: [c, h, a, n, g, e, -, m, a, n, a, g, e, m, e, n, t, , ,  , a, d, k, a, r, s]
 ---
 
 # Change Management Methodologies

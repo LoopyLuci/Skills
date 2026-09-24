@@ -1,14 +1,13 @@
 ---
 name: data-anomaly-detection
-description: "Use when detecting anomalies in data."
+description: Use when detecting anomalies in data.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data-science, anomaly-detection, outlier-detection, ml]
-    related_skills: ['anomaly-detection-ml']
 ---
 
 # Data Anomaly Detection

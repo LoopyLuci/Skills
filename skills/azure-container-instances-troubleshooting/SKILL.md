@@ -1,14 +1,13 @@
 ---
 name: azure-container-instances-troubleshooting
-description: "Use when applying azure container instances troubleshoot."
+description: Use when applying azure container instances troubleshoot.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, azure, aci, containers]
-    related_skills: [general]
 ---
 
 # Azure Container Instances Troubleshooting

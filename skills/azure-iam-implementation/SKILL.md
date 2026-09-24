@@ -1,14 +1,13 @@
 ---
 name: azure-iam-implementation
-description: "Use when applying azure iam implementation."
+description: Use when applying azure iam implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, azure, iam, rbac]
-    related_skills: [general]
 ---
 
 # Azure Iam Implementation

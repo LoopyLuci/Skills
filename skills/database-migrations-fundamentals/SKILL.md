@@ -1,14 +1,13 @@
 ---
 name: database-migrations-fundamentals
-description: "Use when for database migrations fundamentals."
+description: Use when for database migrations fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, migrations, schema-evolution]
-    related_skills: [general]
 ---
 
 # Database Migrations Fundamentals

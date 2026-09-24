@@ -1,9 +1,13 @@
 ---
 name: hibernate-jpa-patterns
-description: "Use when implementing JPA/Hibernate."
+description: Use when implementing JPA/Hibernate.
 version: 1.0.0
-author: Hermes Agent
-tags: ["hibernate", "JPA", "entities", "relationships", "caching"]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [hibernate, jpa, entities, relationships, caching]
 ---
 
 # Hibernate Jpa Patterns

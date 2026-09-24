@@ -1,9 +1,13 @@
 ---
 name: react-native-navigation
-description: "Use when implementing RN navigation."
+description: Use when implementing RN navigation.
 version: 1.0.0
-author: Hermes Agent
-tags: ["react-native", "navigation", "stack", "tabs", "deep-links"]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [react-native, navigation, stack, tabs, deep-links]
 ---
 
 # React Native Navigation

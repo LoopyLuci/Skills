@@ -1,13 +1,13 @@
 ---
 name: web-accessibility-practices
-description: "Use when implementing web accessibility (WCAG) standards."
+description: Use when implementing web accessibility (WCAG) standards.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [accessibility, a11y, WCAG, ARIA, screen-reader, inclusive-design]
-    related_skills: [responsive-web-design-patterns, web-component-design, website-accessibility-audit, frontend-bootstrap]
+    tags: [accessibility, a11y, wcag, aria, screen-reader, inclusive-design]
 ---
 
 # Web Accessibility Practices

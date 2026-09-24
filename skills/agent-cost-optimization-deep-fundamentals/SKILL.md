@@ -1,14 +1,13 @@
 ---
 name: agent-cost-optimization-deep-fundamentals
-description: "Use when applying agent cost optimization fundamentals."
+description: Use when applying agent cost optimization fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agents, cost]
-    related_skills: ['agent-cost-optimization']
 ---
 
 # Agent Cost Optimization Deep Fundamentals

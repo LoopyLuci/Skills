@@ -1,20 +1,13 @@
 ---
-
 name: data-manager-api-audience-ingestion
-description: >-
-  Guides developers through uploading audience members to Google products using
-  the Data Manager API /v1/audienceMembers/ingest endpoint and its associated
-  client libraries. Use this skill when the user wants to upload audience
-  members for Customer Match, mobile device ID audiences, or any other audience
-  use case supported by the Data Manager API. Don't use for uploading events or
-  conversions (use the data-manager-api-event-ingestion skill).
-  version: 1.1
-  category: GoogleAds
-source: google/skills
+description: Skill for data manager api audience ingestion
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [agent, skill]
-
 ---
 
 # Data Manager API Audience Ingestion

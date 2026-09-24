@@ -1,12 +1,13 @@
 ---
 name: ios-swiftui-navigation
-description: "Use when implementing SwiftUI navigation."
+description: Use when implementing SwiftUI navigation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["swiftui", "navigation", "NavigationStack", "tabs"]
+    tags: [swiftui, navigation, navigationstack, tabs]
 ---
 
 # Ios Swiftui Navigation

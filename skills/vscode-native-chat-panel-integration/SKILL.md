@@ -2,12 +2,12 @@
 name: vscode-native-chat-panel-integration
 description: Use when building VS Code native Chat panel integrations.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [vscode, chat, participant, provider, extension, native-ui, integration]
-    related_skills: [vscode-extension-development, vscode-mcp-integration, vscode-extension-100-year-architecture]
 ---
 
 # VS Code Native Chat Panel Integration

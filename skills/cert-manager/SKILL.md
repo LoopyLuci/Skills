@@ -1,14 +1,13 @@
 ---
 name: cert-manager
-description: "Use when managing cert-manager."
+description: Use when managing cert-manager.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [kubernetes, cert-manager, tls, certificates]
-    related_skills: [general]
 ---
 
 # Cert Manager

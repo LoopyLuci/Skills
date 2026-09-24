@@ -1,14 +1,13 @@
 ---
 name: faith-community-financial-implementation
-description: "Use when applying community financial management impleme."
+description: Use when applying community financial management impleme.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [spiritual, finance]
-    related_skills: ['faith-community-financial-management']
 ---
 
 # Faith Community Financial Implementation

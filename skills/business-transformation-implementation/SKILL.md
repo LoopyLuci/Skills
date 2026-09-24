@@ -1,14 +1,13 @@
 ---
 name: business-transformation-implementation
-description: "Use when applying business transformation implementation."
+description: Use when applying business transformation implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [consulting, transformation, business-transformation]
-    related_skills: [general]
 ---
 
 # Business Transformation Implementation

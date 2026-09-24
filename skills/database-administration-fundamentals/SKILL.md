@@ -1,14 +1,13 @@
 ---
 name: database-administration-fundamentals
-description: "Use when for database administration fundamentals."
+description: Use when for database administration fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, dba, administration, maintenance]
-    related_skills: [general]
 ---
 
 # Database Administration Fundamentals

@@ -1,14 +1,13 @@
 ---
 name: contract-negotiation
-description: "Use when negotiating contracts strategically."
+description: Use when negotiating contracts strategically.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: ['c', 'o', 'n', 't', 'r', 'a', 'c', 't', '-', 'n', 'e', 'g', 'o', 't', 'i', 'a', 't', 'i', 'o', 'n', ',', ' ', 'c', 'o', 'n', 't', 'r', 'a', 'c', 't', 's']
-    related_skills: [general]
+    tags: [c, o, n, t, r, a, c, t, -, n, e, g, o, t, i, a, t, i, o, n, , ,  , c, o, n, t, r, a, c, t, s]
 ---
 
 # Contract Negotiation

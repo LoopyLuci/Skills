@@ -1,6 +1,13 @@
 ---
 name: git-shallow-sparse
 description: Clone partially — shallow, sparse, and blobless checkouts.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [git, shallow, sparse]
 ---
 
 # Git Shallow & Sparse Clones

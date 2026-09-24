@@ -2,12 +2,12 @@
 name: injury-rehabilitation-return
 description: Rehab phases, load management, return-to-play criteria, and prevention
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["rehab", "injury"]
+    tags: [rehab, injury]
 ---
 
 # Injury Rehabilitation Return

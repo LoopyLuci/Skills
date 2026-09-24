@@ -1,12 +1,13 @@
 ---
-
 name: google-analytics-data-api-basics
-description: >-
-source: google/skills
-tags: [gcp, google-cloud, google]
-metadata: 
-hermes: 
-
+description: Skill for google analytics data api basics
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [gcp, google-cloud, google]
 ---
 
 **Trigger**: Use when working with Google Cloud Google Analytics Data Api — setup, configuration, and best practices.

@@ -1,14 +1,13 @@
 ---
 name: film-post-production
-description: "Use when handling film post-production."
+description: Use when handling film post-production.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [filmmaking, post-production, editing, color]
-    related_skills: [general]
 ---
 
 # Film Post Production

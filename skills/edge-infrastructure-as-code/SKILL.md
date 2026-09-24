@@ -1,14 +1,13 @@
 ---
 name: edge-infrastructure-as-code
-description: "Use when provisioning edge infrastructure."
+description: Use when provisioning edge infrastructure.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [edge-computing, iac, terraform, edge-deployment]
-    related_skills: ['terraform-module-patterns']
 ---
 
 # Edge Infrastructure As Code

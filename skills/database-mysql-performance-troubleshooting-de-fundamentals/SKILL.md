@@ -1,14 +1,13 @@
 ---
 name: database-mysql-performance-troubleshooting-de-fundamentals
-description: "Use when applying mysql performance troubleshooting fund."
+description: Use when applying mysql performance troubleshooting fund.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, mysql]
-    related_skills: ['mysql-optimization-troubleshooting']
 ---
 
 # Database Mysql Performance Troubleshooting De Fundamentals

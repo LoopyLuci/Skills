@@ -1,14 +1,13 @@
 ---
 name: blog-post-outliner-implementation
-description: "Use when applying blog post outliner implementation."
+description: Use when applying blog post outliner implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, blog-post-outliner]
-    related_skills: ['']
 ---
 
 # Blog Post Outliner Implementation

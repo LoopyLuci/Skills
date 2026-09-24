@@ -1,12 +1,13 @@
 ---
-
 name: gke-basics
-description: >-
-source: google/skills
-tags: [gcp, kubernetes, gke, container, orchestration]
-metadata: 
-hermes: 
-
+description: Skill for gke basics
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [gcp, kubernetes, gke, container, orchestration]
 ---
 
 **Trigger**: Use when working with Google Kubernetes Engine basics — cluster setup, node pools, workloads, networking, and storage fundamentals.

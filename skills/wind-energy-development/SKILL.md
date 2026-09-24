@@ -2,12 +2,12 @@
 name: wind-energy-development
 description: Site assessment, turbine technology, offshore wind, and wind project finance
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["wind", "offshore"]
+    tags: [wind, offshore]
 ---
 
 # Wind Energy Development

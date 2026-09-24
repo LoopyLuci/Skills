@@ -1,13 +1,13 @@
 ---
 name: typescript-advanced-types
-description: "Use when implementing advanced TypeScript type patterns."
+description: Use when implementing advanced TypeScript type patterns.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [typescript, generics, conditional-types, mapped-types, utility-types]
-    related_skills: [python-typing-advanced, react-hooks-advanced, type-system-design-theory]
 ---
 
 # Advanced TypeScript Types

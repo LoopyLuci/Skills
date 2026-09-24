@@ -2,12 +2,12 @@
 name: go-game-strategy
 description: Joseki, tesuji, influence vs territory, and modern AI-driven strategy
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["go", "strategy"]
+    tags: [go, strategy]
 ---
 
 # Go Game Strategy

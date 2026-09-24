@@ -1,14 +1,13 @@
 ---
 name: azure-devops-troubleshooting
-description: "Use when applying azure devops troubleshooting."
+description: Use when applying azure devops troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, azure, devops, pipelines]
-    related_skills: [general]
 ---
 
 # Azure Devops Troubleshooting

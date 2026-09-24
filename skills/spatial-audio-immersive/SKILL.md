@@ -2,12 +2,12 @@
 name: spatial-audio-immersive
 description: Ambisonics, binaural, Dolby Atmos, and object-based audio
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["spatial", "immersive"]
+    tags: [spatial, immersive]
 ---
 
 # Spatial Audio Immersive

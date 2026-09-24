@@ -1,14 +1,13 @@
 ---
 name: accounting-management-implementation
-description: "Use when applying management accounting implementation."
+description: Use when applying management accounting implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [accounting, finance, management, accounting-management]
-    related_skills: [general]
 ---
 
 # Accounting Management Implementation

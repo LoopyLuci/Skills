@@ -1,14 +1,13 @@
 ---
 name: drug-discovery
-description: "Use when planning drug discovery."
+description: Use when planning drug discovery.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [healthcare, biotech, drug-discovery-pipeline]
-    related_skills: [general]
 ---
 
 # Drug Discovery

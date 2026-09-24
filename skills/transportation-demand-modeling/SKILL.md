@@ -2,12 +2,12 @@
 name: transportation-demand-modeling
 description: Four-step model, activity-based modeling, and travel demand management
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["demand", "modeling"]
+    tags: [demand, modeling]
 ---
 
 # Transportation Demand Modeling

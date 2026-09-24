@@ -1,14 +1,13 @@
 ---
 name: data-governance-fundamentals-deep-fundamentals
-description: "Use when applying data governance fundamentals fundament."
+description: Use when applying data governance fundamentals fundament.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, data-governance]
-    related_skills: ['data-governance-fundamentals']
 ---
 
 # Data Governance Fundamentals Deep Fundamentals

@@ -1,12 +1,13 @@
 ---
 name: gpg-encryption-key-management
-description: "Use when managing GPG keys."
+description: Use when managing GPG keys.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["GPG", "encryption", "signing", "key-management", "PGP"]
+    tags: [gpg, encryption, signing, key-management, pgp]
 ---
 
 # Gpg Encryption Key Management

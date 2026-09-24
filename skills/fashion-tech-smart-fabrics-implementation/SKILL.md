@@ -1,14 +1,13 @@
 ---
 name: fashion-tech-smart-fabrics-implementation
-description: "Use when applying fashion smart fabrics implementation."
+description: Use when applying fashion smart fabrics implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, beauty]
-    related_skills: ['']
 ---
 
 # Fashion Tech Smart Fabrics Implementation

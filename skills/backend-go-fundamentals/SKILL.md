@@ -1,14 +1,13 @@
 ---
 name: backend-go-fundamentals
-description: "Use when applying go backend fundamentals."
+description: Use when applying go backend fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, go, golang, server]
-    related_skills: [general]
 ---
 
 # Backend Go Fundamentals

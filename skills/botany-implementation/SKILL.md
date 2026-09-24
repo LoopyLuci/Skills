@@ -1,14 +1,13 @@
 ---
 name: botany-implementation
-description: "Use when implementing botany projects."
+description: Use when implementing botany projects.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [botany, plants, botany, flora]
-    related_skills: [general]
 ---
 
 # Botany Implementation

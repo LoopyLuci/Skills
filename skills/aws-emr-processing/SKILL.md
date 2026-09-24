@@ -1,14 +1,13 @@
 ---
 name: aws-emr-processing
-description: "Use when using AWS EMR."
+description: Use when using AWS EMR.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, aws, aws-emr]
-    related_skills: [general]
 ---
 
 # Aws Emr Processing

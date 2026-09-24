@@ -1,14 +1,13 @@
 ---
 name: carbon-credit-verification
-description: "Use when verifying carbon credits. Standards, MRV."
+description: Use when verifying carbon credits. Standards, MRV.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climatetech, carbon-credits, verification, mrv]
-    related_skills: [carbon-accounting-standards, carbon-offset-standards]
 ---
 
 # Carbon Credit Verification

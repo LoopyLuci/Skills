@@ -1,14 +1,13 @@
 ---
 name: aviation-hybrid-electric-fundamentals
-description: "Use when applying hybrid electric aircraft fundamentals."
+description: Use when applying hybrid electric aircraft fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, hybrid, hybrid-electric]
-    related_skills: ['general']
 ---
 
 # Aviation Hybrid Electric Fundamentals

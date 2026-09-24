@@ -1,6 +1,13 @@
 ---
 name: github-releases-notes
 description: Create releases, automate release notes, and manage assets.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [github, releases, notes]
 ---
 
 # GitHub Releases & Release Notes

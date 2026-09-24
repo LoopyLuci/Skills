@@ -1,14 +1,13 @@
 ---
 name: biotech-process-optimization-implementation
-description: "Use when applying biotech process optimization implement."
+description: Use when applying biotech process optimization implement.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, optimization, optimization]
-    related_skills: [general]
 ---
 
 # Biotech Process Optimization Implementation

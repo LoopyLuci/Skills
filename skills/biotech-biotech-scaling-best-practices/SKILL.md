@@ -1,14 +1,13 @@
 ---
 name: biotech-biotech-scaling-best-practices
-description: "Use when applying biotech scale-up best practices."
+description: Use when applying biotech scale-up best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, scale-up]
-    related_skills: ['']
 ---
 
 # Biotech Biotech Scaling Best Practices

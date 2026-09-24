@@ -1,14 +1,13 @@
 ---
 name: contract-management-implementation
-description: "Use when applying contract management implementation."
+description: Use when applying contract management implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [legal, contract, contract-management-basics]
-    related_skills: [general]
 ---
 
 # Contract Management Implementation

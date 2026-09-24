@@ -1,14 +1,13 @@
 ---
 name: embedding-models-patterns-deep-troubleshooting
-description: "Use when applying embedding models troubleshooting."
+description: Use when applying embedding models troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, embeddings]
-    related_skills: ['embedding-models-patterns']
 ---
 
 # Embedding Models Patterns Deep Troubleshooting

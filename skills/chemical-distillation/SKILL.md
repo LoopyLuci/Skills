@@ -1,14 +1,13 @@
 ---
 name: chemical-distillation
-description: "Use when doing distillation."
+description: Use when doing distillation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [chem, distillation, distillation]
-    related_skills: [general]
 ---
 
 # Chemical Distillation

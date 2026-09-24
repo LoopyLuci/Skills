@@ -1,13 +1,13 @@
 ---
 name: data-contracts-schema-governance
-description: "Use when implementing data contracts and schema governance."
+description: Use when implementing data contracts and schema governance.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [data-contracts, schema-governance, Avro, Protobuf, data-lineage, data-quality]
-    related_skills: [data-profiling-quality, data-pipeline-streaming, database-schema-design, ml-pipeline-design]
+    tags: [data-contracts, schema-governance, avro, protobuf, data-lineage, data-quality]
 ---
 
 # Data Contracts and Schema Governance

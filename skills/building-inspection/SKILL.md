@@ -1,14 +1,13 @@
 ---
 name: building-inspection
-description: "Use when inspecting buildings."
+description: Use when inspecting buildings.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [construction, inspection, building-inspection]
-    related_skills: [general]
 ---
 
 # Building Inspection

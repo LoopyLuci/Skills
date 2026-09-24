@@ -1,13 +1,13 @@
 ---
 name: active-learning-strategies
-description: "Use when implementing active learning for data labeling."
+description: Use when implementing active learning for data labeling.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [active-learning, data-labeling, uncertainty-sampling, query-strategies, annotation]
-    related_skills: [semi-supervised-learning, data-augmentation-techniques, feature-engineering-automation, ml-pipeline-design]
 ---
 
 # Active Learning Strategies

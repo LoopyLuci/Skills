@@ -1,13 +1,13 @@
 ---
 name: incident-management-on-call
-description: "Use when implementing incident management and on-call."
+description: Use when implementing incident management and on-call.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [incident-management, on-call, pager-duty, escalation, postmortem, alerting]
-    related_skills: [error-budgets-slos, site-reliability-engineering, security-incident-response, chaos-engineering]
 ---
 
 # Incident Management and On-Call

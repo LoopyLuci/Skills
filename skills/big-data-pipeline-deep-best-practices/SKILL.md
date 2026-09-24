@@ -1,14 +1,13 @@
 ---
 name: big-data-pipeline-deep-best-practices
-description: "Use when applying big data pipelines best practices."
+description: Use when applying big data pipelines best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, big-data]
-    related_skills: ['big-data-pipeline']
 ---
 
 # Big Data Pipeline Deep Best Practices

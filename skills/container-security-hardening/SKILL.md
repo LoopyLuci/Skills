@@ -1,13 +1,13 @@
 ---
 name: container-security-hardening
-description: "Use when hardening container images and deployments."
+description: Use when hardening container images and deployments.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [container-security, docker, kubernetes, images, vulnerability-scanning, seccomp]
-    related_skills: [container-networking-patterns, kubernetes-deployment, vulnerability-scanning, security-incident-response]
 ---
 
 # Container Security Hardening

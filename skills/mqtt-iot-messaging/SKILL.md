@@ -2,12 +2,12 @@
 name: mqtt-iot-messaging
 description: MQTT broker setup, QoS, retained messages, last will, and IoT fleet management
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["mqtt", "iot"]
+    tags: [mqtt, iot]
 ---
 
 # Mqtt Iot Messaging

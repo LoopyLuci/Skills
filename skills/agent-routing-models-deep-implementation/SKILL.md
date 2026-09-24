@@ -1,14 +1,13 @@
 ---
 name: agent-routing-models-deep-implementation
-description: "Use when applying agent routing models implementation."
+description: Use when applying agent routing models implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agents, routing]
-    related_skills: ['agent-routing-models']
 ---
 
 # Agent Routing Models Deep Implementation

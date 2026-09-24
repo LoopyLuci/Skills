@@ -1,14 +1,13 @@
 ---
 name: decarbonization-roadmapping
-description: "Use when planning decarbonization. Roadmap, targets."
+description: Use when planning decarbonization. Roadmap, targets.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climatetech, decarbonization, strategy, net-zero]
-    related_skills: [climate-risk-assessment, carbon-accounting-standards]
 ---
 
 # Decarbonization Roadmapping

@@ -1,13 +1,13 @@
 ---
 name: c-plus-plus-structural-verification
-description: "Verify C++ correctness without a build toolchain."
+description: Verify C++ correctness without a build toolchain.
 version: 1.0.0
-author: Hermes Agent
-platforms: [linux, macos, windows]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [cpp, verification, structural-check, build-independent, no-compiler]
-    related_skills: [requesting-code-review, systematic-debugging]
 ---
 
 # C++ Structural Verification (No Build Toolchain)

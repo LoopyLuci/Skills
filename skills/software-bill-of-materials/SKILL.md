@@ -1,13 +1,13 @@
 ---
 name: software-bill-of-materials
-description: "Use when managing software bill of materials."
+description: Use when managing software bill of materials.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [SBOM, software-bill-of-materials, dependency-tracking, SPDX, CycloneDX, supply-chain]
-    related_skills: [supply-chain-levels-slsa, devsecops-shift-left, vulnerability-scanning, dependency-audit]
+    tags: [sbom, software-bill-of-materials, dependency-tracking, spdx, cyclonedx, supply-chain]
 ---
 
 # Software Bill of Materials

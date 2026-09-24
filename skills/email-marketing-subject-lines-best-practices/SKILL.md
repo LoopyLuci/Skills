@@ -1,14 +1,13 @@
 ---
 name: email-marketing-subject-lines-best-practices
-description: "Use when applying email subject lines best practices."
+description: Use when applying email subject lines best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, copywriting, subject-lines]
-    related_skills: [general]
 ---
 
 # Email Marketing Subject Lines Best Practices

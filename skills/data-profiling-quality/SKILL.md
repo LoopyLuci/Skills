@@ -1,13 +1,13 @@
 ---
 name: data-profiling-quality
-description: "Use when profiling data and assessing data quality."
+description: Use when profiling data and assessing data quality.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [data-profiling, data-quality, validation, cleanup, pandas-profiling, great-expectations]
-    related_skills: [data-cleaning-patterns, feature-engineering-automation, ml-pipeline-design, data-labeling-strategies]
 ---
 
 # Data Profiling Quality

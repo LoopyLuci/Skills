@@ -2,12 +2,12 @@
 name: textile-science-fabric
 description: Textile properties, fabric selection, and textile testing
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["textile", "fabric"]
+    tags: [textile, fabric]
 ---
 
 # Textile Science Fabric

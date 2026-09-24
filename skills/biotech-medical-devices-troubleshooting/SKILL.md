@@ -1,14 +1,13 @@
 ---
 name: biotech-medical-devices-troubleshooting
-description: "Use when applying medical device development troubleshoo."
+description: Use when applying medical device development troubleshoo.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, medical-devices]
-    related_skills: ['']
 ---
 
 # Biotech Medical Devices Troubleshooting

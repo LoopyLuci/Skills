@@ -1,12 +1,13 @@
 ---
 name: apache-spark-data-processing
-description: "Use when processing data with Spark."
+description: Use when processing data with Spark.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["spark", "dataframes", "RDD", "partitioning", "optimization"]
+    tags: [spark, dataframes, rdd, partitioning, optimization]
 ---
 
 # Apache Spark Data Processing

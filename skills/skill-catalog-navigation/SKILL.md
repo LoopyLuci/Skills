@@ -1,6 +1,13 @@
 ---
 name: skill-catalog-navigation
 description: Browse and search 1,000+ skills to find what you need.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [skill, catalog, navigation]
 ---
 
 # Skill Catalog Navigation

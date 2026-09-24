@@ -1,14 +1,13 @@
 ---
 name: biotech-drug-delivery-implementation
-description: "Use when applying drug delivery systems implementation."
+description: Use when applying drug delivery systems implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, drug-delivery]
-    related_skills: ['']
 ---
 
 # Biotech Drug Delivery Implementation

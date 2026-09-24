@@ -2,12 +2,12 @@
 name: public-transit-systems
 description: Bus, rail, BRT, paratransit, and fare collection systems
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["transit", "bus"]
+    tags: [transit, bus]
 ---
 
 # Public Transit Systems

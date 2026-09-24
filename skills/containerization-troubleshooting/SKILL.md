@@ -1,14 +1,13 @@
 ---
 name: containerization-troubleshooting
-description: "Use when troubleshooting containerization."
+description: Use when troubleshooting containerization.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [docker, containers, kubernetes, kubernetes-deployment]
-    related_skills: [general]
 ---
 
 # Containerization Troubleshooting

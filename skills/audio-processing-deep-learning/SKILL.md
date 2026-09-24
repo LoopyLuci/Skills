@@ -1,13 +1,13 @@
 ---
 name: audio-processing-deep-learning
-description: "Use when applying deep learning to audio processing."
+description: Use when applying deep learning to audio processing.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [audio-processing, deep-learning, spectrogram, mel, STFT, audio-classification]
-    related_skills: [speech-recognition-systems, text-to-speech-engines, music-information-retrieval, multi-modal-models-vision-language]
+    tags: [audio-processing, deep-learning, spectrogram, mel, stft, audio-classification]
 ---
 
 # Audio Processing with Deep Learning

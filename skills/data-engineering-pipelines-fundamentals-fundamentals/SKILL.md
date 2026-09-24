@@ -1,14 +1,13 @@
 ---
 name: data-engineering-pipelines-fundamentals-fundamentals
-description: "Use when applying data engineering fundamentals fundamen."
+description: Use when applying data engineering fundamentals fundamen.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, data-eng-fundamentals]
-    related_skills: ['']
 ---
 
 # Data Engineering Pipelines Fundamentals Fundamentals

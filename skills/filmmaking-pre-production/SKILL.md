@@ -1,14 +1,13 @@
 ---
 name: filmmaking-pre-production
-description: "Use when planning film pre-production."
+description: Use when planning film pre-production.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [filmmaking, pre-production, planning]
-    related_skills: [general]
 ---
 
 # Filmmaking Pre Production

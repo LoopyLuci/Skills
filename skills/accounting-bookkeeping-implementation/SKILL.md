@@ -1,14 +1,13 @@
 ---
 name: accounting-bookkeeping-implementation
-description: "Use when applying bookkeeping implementation."
+description: Use when applying bookkeeping implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [accounting, bookkeeping, finance, accounting-bookkeeping-basics]
-    related_skills: [general]
 ---
 
 # Accounting Bookkeeping Implementation

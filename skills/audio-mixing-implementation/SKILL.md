@@ -1,14 +1,13 @@
 ---
 name: audio-mixing-implementation
-description: "Use when applying audio mixing implementation."
+description: Use when applying audio mixing implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [media, audio, mixing]
-    related_skills: [general]
 ---
 
 # Audio Mixing Implementation

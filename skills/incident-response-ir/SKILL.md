@@ -2,12 +2,12 @@
 name: incident-response-ir
 description: SANS PICERL, NIST 800-61, containment, eradication, recovery, and lessons-learned
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["ir", "dfir"]
+    tags: [ir, dfir]
 ---
 
 # Incident Response Ir

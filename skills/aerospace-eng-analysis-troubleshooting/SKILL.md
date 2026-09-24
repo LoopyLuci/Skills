@@ -1,14 +1,13 @@
 ---
 name: aerospace-eng-analysis-troubleshooting
-description: "Use when applying aerospace analysis troubleshooting."
+description: Use when applying aerospace analysis troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, aerospace, analysis, aerospace-eng-analysis]
-    related_skills: [general]
 ---
 
 # Aerospace Eng Analysis Troubleshooting

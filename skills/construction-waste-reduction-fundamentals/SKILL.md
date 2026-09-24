@@ -1,14 +1,13 @@
 ---
 name: construction-waste-reduction-fundamentals
-description: "Use when applying construction waste reduction fundament."
+description: Use when applying construction waste reduction fundament.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [waste, construction]
-    related_skills: ['general']
 ---
 
 # Construction Waste Reduction Fundamentals

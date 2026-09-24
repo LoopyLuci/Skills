@@ -1,14 +1,13 @@
 ---
 name: export-control-fundamentals
-description: "Use when applying export control fundamentals."
+description: Use when applying export control fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [legal, defense, export-control]
-    related_skills: [general]
 ---
 
 # Export Control Fundamentals

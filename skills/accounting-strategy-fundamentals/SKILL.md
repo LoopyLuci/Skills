@@ -1,14 +1,13 @@
 ---
 name: accounting-strategy-fundamentals
-description: "Use when applying accounting strategy fundamentals."
+description: Use when applying accounting strategy fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, accounting-strategy]
-    related_skills: ['']
 ---
 
 # Accounting Strategy Fundamentals

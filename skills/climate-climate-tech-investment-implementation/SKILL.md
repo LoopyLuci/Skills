@@ -1,14 +1,13 @@
 ---
 name: climate-climate-tech-investment-implementation
-description: "Use when applying climate tech investment implementation."
+description: Use when applying climate tech investment implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, investment, climate-tech-investment]
-    related_skills: ['']
 ---
 
 # Climate Climate Tech Investment Implementation

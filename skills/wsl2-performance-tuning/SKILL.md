@@ -1,9 +1,15 @@
 ---
 name: wsl2-performance-tuning
-description: "Use when tuning WSL2 performance: memory, CPU, swap."
-category: software-development
-tags: [wsl2, performance, memory, cpu, swap, tuning]
+description: Use when tuning WSL2 performance: memory, CPU, swap.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [wsl2, performance, memory, cpu, swap, tuning]
 ---
+
 # WSL2 Performance Tuning
 
 Tuning WSL2 performance: memory limits, CPU count, swap, VHDX compaction.

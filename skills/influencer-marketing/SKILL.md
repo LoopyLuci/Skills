@@ -1,14 +1,13 @@
 ---
 name: influencer-marketing
-description: "Use when planning influencer outreach campaigns."
+description: Use when planning influencer outreach campaigns.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [influencer, marketing, outreach, partnerships, sponsorships]
-    related_skills: [social-media-strategy, social-media-analytics]
 ---
 
 # Influencer Marketing

@@ -1,9 +1,15 @@
 ---
 name: technical-documentation
-description: "Use when writing technical documentation for projects."
-category: software-development
-tags: [documentation, writing, technical, api-docs, readme]
+description: Use when writing technical documentation for projects.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [documentation, writing, technical, api-docs, readme]
 ---
+
 # Technical Documentation
 
 Writing clear, comprehensive technical documentation.

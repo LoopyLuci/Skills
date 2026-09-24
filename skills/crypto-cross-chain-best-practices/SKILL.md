@@ -1,14 +1,13 @@
 ---
 name: crypto-cross-chain-best-practices
-description: "Use when applying cross-chain protocols best practices."
+description: Use when applying cross-chain protocols best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [crypto, cross-chain, blockchain-development-solidity]
-    related_skills: ['']
 ---
 
 # Crypto Cross Chain Best Practices

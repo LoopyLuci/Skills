@@ -1,12 +1,13 @@
 ---
 name: technical-interview-preparation
-description: "Use when preparing for tech interviews."
+description: Use when preparing for tech interviews.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["interview", "coding", "system-design", "behavioral"]
+    tags: [interview, coding, system-design, behavioral]
 ---
 
 # Technical Interview Preparation

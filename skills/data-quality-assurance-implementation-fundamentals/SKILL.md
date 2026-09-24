@@ -1,14 +1,13 @@
 ---
 name: data-quality-assurance-implementation-fundamentals
-description: "Use when applying data quality implementation fundamentals."
+description: Use when applying data quality implementation fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, data-quality]
-    related_skills: ['data-quality-assurance-implementation']
 ---
 
 # Data Quality Assurance Implementation Fundamentals

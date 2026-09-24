@@ -1,14 +1,13 @@
 ---
 name: bigquery-troubleshooting-deep-best-practices
-description: "Use when applying bigquery troubleshooting best practices."
+description: Use when applying bigquery troubleshooting best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, bigquery]
-    related_skills: ['bigquery-troubleshooting']
 ---
 
 # Bigquery Troubleshooting Deep Best Practices

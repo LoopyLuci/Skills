@@ -1,14 +1,13 @@
 ---
 name: faith-community-mentoring-best-practices
-description: "Use when applying community mentoring best practices."
+description: Use when applying community mentoring best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [spiritual, mentoring]
-    related_skills: ['mentoring-junior-developers']
 ---
 
 # Faith Community Mentoring Best Practices

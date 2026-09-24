@@ -1,14 +1,13 @@
 ---
 name: aviation-weather-implementation
-description: "Use when applying aviation weather implementation."
+description: Use when applying aviation weather implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, weather, meteorology]
-    related_skills: ['general']
 ---
 
 # Aviation Weather Implementation

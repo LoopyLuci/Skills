@@ -1,14 +1,13 @@
 ---
 name: embedded-mqtt-implementation
-description: "Use when applying mqtt for embedded implementation."
+description: Use when applying mqtt for embedded implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [embedded, mqtt, iot, protocols]
-    related_skills: [general]
 ---
 
 # Embedded Mqtt Implementation

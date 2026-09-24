@@ -2,12 +2,12 @@
 name: procurement-strategic-sourcing
 description: Category management, supplier selection, negotiation, and SRM
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["procurement", "sourcing"]
+    tags: [procurement, sourcing]
 ---
 
 # Procurement Strategic Sourcing

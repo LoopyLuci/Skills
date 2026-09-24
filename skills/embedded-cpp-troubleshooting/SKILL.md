@@ -1,14 +1,13 @@
 ---
 name: embedded-cpp-troubleshooting
-description: "Use when applying c++ for embedded troubleshooting."
+description: Use when applying c++ for embedded troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [embedded, cpp, cplusplus, microcontroller]
-    related_skills: [general]
 ---
 
 # Embedded Cpp Troubleshooting

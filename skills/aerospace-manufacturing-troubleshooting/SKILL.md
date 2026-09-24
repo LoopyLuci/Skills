@@ -1,14 +1,13 @@
 ---
 name: aerospace-manufacturing-troubleshooting
-description: "Use when applying aerospace mfg troubleshooting."
+description: Use when applying aerospace mfg troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aerospace, manufacturing, aerospace-eng-implementation]
-    related_skills: [general]
 ---
 
 # Aerospace Manufacturing Troubleshooting

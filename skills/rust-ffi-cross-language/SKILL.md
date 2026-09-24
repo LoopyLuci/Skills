@@ -1,14 +1,13 @@
 ---
 name: rust-ffi-cross-language
-description: 'Generate C-compatible FFI bindings from Rust crates for Python, Node, Swift, and Kotlin consumers.'
+description: Generate C-compatible FFI bindings from Rust crates for Python, Node, Swift, and Kotlin consumers.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: ["rust", "ffi", "cbindgen", "bindgen", "interop"]
-    related_skills: ["rust-package-build", "rust-ownership-borrowing"]
+    tags: [rust, ffi, cbindgen, bindgen, interop]
 ---
 
 Use when a Rust crate needs to be called from Python, Node.js, Swift, or Kotlin

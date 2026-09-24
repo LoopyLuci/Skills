@@ -2,12 +2,12 @@
 name: destination-event-planning
 description: Destination events, travel logistics, and site selection
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["destination", "travel"]
+    tags: [destination, travel]
 ---
 
 # Destination Event Planning

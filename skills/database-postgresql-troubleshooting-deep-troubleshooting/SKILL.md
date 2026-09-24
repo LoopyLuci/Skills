@@ -1,14 +1,13 @@
 ---
 name: database-postgresql-troubleshooting-deep-troubleshooting
-description: "Use when applying postgresql troubleshooting troubleshoo."
+description: Use when applying postgresql troubleshooting troubleshoo.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, postgres]
-    related_skills: ['postgres-troubleshooting']
 ---
 
 # Database Postgresql Troubleshooting Deep Troubleshooting

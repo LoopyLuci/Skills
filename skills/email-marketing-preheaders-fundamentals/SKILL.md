@@ -1,14 +1,13 @@
 ---
 name: email-marketing-preheaders-fundamentals
-description: "Use when applying email preheaders fundamentals."
+description: Use when applying email preheaders fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, copywriting, preheaders]
-    related_skills: [general]
 ---
 
 # Email Marketing Preheaders Fundamentals

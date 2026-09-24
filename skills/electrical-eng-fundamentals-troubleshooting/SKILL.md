@@ -1,14 +1,13 @@
 ---
 name: electrical-eng-fundamentals-troubleshooting
-description: "Use when applying elect eng fundamentals troubleshooting."
+description: Use when applying elect eng fundamentals troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, electrical, fundamentals]
-    related_skills: [general]
 ---
 
 # Electrical Eng Fundamentals Troubleshooting

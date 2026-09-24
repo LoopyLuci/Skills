@@ -1,8 +1,13 @@
 ---
 name: docker-wsl2-integration
-description: "Use when configuring Docker Desktop WSL2 backend on Windows."
-category: docker
-tags: [docker, wsl2, windows, integration, gpu, daemon]
+description: Use when configuring Docker Desktop WSL2 backend on Windows.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [docker, wsl2, windows, integration, gpu, daemon]
 ---
 
 # Docker WSL2 Integration

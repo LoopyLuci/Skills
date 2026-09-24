@@ -1,14 +1,13 @@
 ---
 name: construction-electrical-systems
-description: "Use when designing construction electrical."
+description: Use when designing construction electrical.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [construction, electrical-systems, power, lighting]
-    related_skills: [general]
 ---
 
 # Construction Electrical Systems

@@ -1,14 +1,13 @@
 ---
 name: consul-fundamentals
-description: "Use when applying consul fundamentals."
+description: Use when applying consul fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, consul, service-mesh, discovery]
-    related_skills: [general]
 ---
 
 # Consul Fundamentals

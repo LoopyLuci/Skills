@@ -1,14 +1,13 @@
 ---
 name: chemical-thermodynamics
-description: "Use when applying chemical thermo."
+description: Use when applying chemical thermo.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [chem, thermo, thermodynamics]
-    related_skills: [general]
 ---
 
 # Chemical Thermodynamics

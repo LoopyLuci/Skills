@@ -1,14 +1,13 @@
 ---
 name: fashion-design-troubleshooting
-description: "Use when applying fashion design troubleshooting."
+description: Use when applying fashion design troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [design, fashion, fashion-design-principles]
-    related_skills: [general]
 ---
 
 # Fashion Design Troubleshooting

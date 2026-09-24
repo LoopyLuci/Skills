@@ -1,14 +1,13 @@
 ---
 name: autonomous-driving-perception
-description: "Use when building ADAS perception."
+description: Use when building ADAS perception.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [automotive, autonomous-driving, perception, computer-vision]
-    related_skills: [general]
 ---
 
 # Autonomous Driving Perception

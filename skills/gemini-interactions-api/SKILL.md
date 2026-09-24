@@ -1,8 +1,13 @@
 ---
 name: gemini-interactions-api
 description: Use when running multi-turn conversations with the Gemini Interactions API on Agent Platform.
-tags: [gemini, interactions, api, conversations, streaming, function-calling]
-related_skills: [gemini-api, gemini-agents-api, google-cloud-recipe-auth]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [gemini, interactions, api, conversations, streaming, function-calling]
 ---
 
 # Gemini Interactions API

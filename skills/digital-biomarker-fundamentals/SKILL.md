@@ -1,14 +1,13 @@
 ---
 name: digital-biomarker-fundamentals
-description: "Use when applying digital biomarker fundamentals."
+description: Use when applying digital biomarker fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, medicine, digital-biomarker]
-    related_skills: [general]
 ---
 
 # Digital Biomarker Fundamentals

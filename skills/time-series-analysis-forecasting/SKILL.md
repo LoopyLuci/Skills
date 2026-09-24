@@ -2,12 +2,12 @@
 name: time-series-analysis-forecasting
 description: ARIMA, exponential smoothing, state space models, and forecasting
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["time-series", "forecasting"]
+    tags: [time-series, forecasting]
 ---
 
 # Time Series Analysis Forecasting

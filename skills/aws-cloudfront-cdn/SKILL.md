@@ -1,14 +1,13 @@
 ---
 name: aws-cloudfront-cdn
-description: "Use when configuring AWS CloudFront."
+description: Use when configuring AWS CloudFront.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, aws, aws-cloudfront]
-    related_skills: [general]
 ---
 
 # Aws Cloudfront Cdn

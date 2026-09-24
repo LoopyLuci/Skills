@@ -1,14 +1,13 @@
 ---
 name: blog-publishing-workflow-best-practices
-description: "Use when applying blog publishing workflow best practices."
+description: Use when applying blog publishing workflow best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, blog-publishing-workflow]
-    related_skills: ['']
 ---
 
 # Blog Publishing Workflow Best Practices

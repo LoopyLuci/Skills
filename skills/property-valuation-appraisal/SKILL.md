@@ -2,12 +2,12 @@
 name: property-valuation-appraisal
 description: Comparable sales, income approach, cost approach, and valuation models
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["valuation", "appraisal"]
+    tags: [valuation, appraisal]
 ---
 
 # Property Valuation Appraisal

@@ -1,14 +1,13 @@
 ---
 name: financial-auditing
-description: "Use when auditing finances."
+description: Use when auditing finances.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, audit, financial-analysis-fundamentals]
-    related_skills: [general]
 ---
 
 # Financial Auditing

@@ -1,13 +1,13 @@
 ---
 name: continual-lifelong-learning
-description: "Use when implementing continual and lifelong learning."
+description: Use when implementing continual and lifelong learning.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [continual-learning, lifelong-learning, catastrophic-forgetting, elastic-weight-consolidation]
-    related_skills: [transfer-learning-patterns, self-supervised-learning, meta-learning-few-shot, model-compression-techniques]
 ---
 
 # Continual Lifelong Learning

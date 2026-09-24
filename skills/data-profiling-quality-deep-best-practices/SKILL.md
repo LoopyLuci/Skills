@@ -1,14 +1,13 @@
 ---
 name: data-profiling-quality-deep-best-practices
-description: "Use when applying data profiling and quality best practi."
+description: Use when applying data profiling and quality best practi.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, dq]
-    related_skills: ['data-profiling-quality']
 ---
 
 # Data Profiling Quality Deep Best Practices

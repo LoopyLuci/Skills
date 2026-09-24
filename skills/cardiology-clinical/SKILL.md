@@ -1,14 +1,13 @@
 ---
 name: cardiology-clinical
-description: "Use when practicing clinical cardiology."
+description: Use when practicing clinical cardiology.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [healthcare, cardiology, cardiology-fundamentals]
-    related_skills: [general]
 ---
 
 # Cardiology Clinical

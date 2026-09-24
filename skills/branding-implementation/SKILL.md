@@ -1,14 +1,13 @@
 ---
 name: branding-implementation
-description: "Use when applying branding implementation."
+description: Use when applying branding implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [design, brand, branding-identity-guide]
-    related_skills: [general]
 ---
 
 # Branding Implementation

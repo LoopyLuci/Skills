@@ -1,14 +1,13 @@
 ---
 name: edge-application-deployment
-description: "Use when deploying edge applications."
+description: Use when deploying edge applications.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [edge-computing, deployment, containers, kubernetes]
-    related_skills: ['docker-compose-prod']
 ---
 
 # Edge Application Deployment

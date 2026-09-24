@@ -2,12 +2,12 @@
 name: hospitality-hotel-management
 description: Hotel operations, guest experience, and revenue management
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["hospitality", "hotel"]
+    tags: [hospitality, hotel]
 ---
 
 # Hospitality Hotel Management

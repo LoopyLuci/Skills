@@ -1,13 +1,13 @@
 ---
 name: operating-system-concepts
-description: "Use when implementing OS-level primitives and concepts."
+description: Use when implementing OS-level primitives and concepts.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [operating-system, processes, memory, scheduler, IPC, syscalls]
-    related_skills: [concurrency-parallelism, performance-optimization, compiler-interpreter-basics, distributed-systems-patterns]
+    tags: [operating-system, processes, memory, scheduler, ipc, syscalls]
 ---
 
 # Operating System Concepts

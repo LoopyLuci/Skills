@@ -1,14 +1,13 @@
 ---
 name: aws-rds-best-practices
-description: "Use when applying aws rds best practices."
+description: Use when applying aws rds best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, rds, database, postgres]
-    related_skills: [general]
 ---
 
 # Aws Rds Best Practices

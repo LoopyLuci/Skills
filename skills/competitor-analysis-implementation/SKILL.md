@@ -1,14 +1,13 @@
 ---
 name: competitor-analysis-implementation
-description: "Use when applying competitor analysis implementation."
+description: Use when applying competitor analysis implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, competitive-analysis, competitor-analysis]
-    related_skills: [general]
 ---
 
 # Competitor Analysis Implementation

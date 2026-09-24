@@ -1,14 +1,13 @@
 ---
 name: clickhouse-analytics
-description: "Use when querying ClickHouse."
+description: Use when querying ClickHouse.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, clickhouse, analytics, olap]
-    related_skills: ['clickhouse-olap-queries']
 ---
 
 # Clickhouse Analytics

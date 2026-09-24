@@ -1,14 +1,13 @@
 ---
 name: chaos-engineering-troubleshooting
-description: "Use when applying chaos engineering troubleshooting."
+description: Use when applying chaos engineering troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [testing, chaos-engineering, resilience]
-    related_skills: [general]
 ---
 
 # Chaos Engineering Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: digital-fashion-troubleshooting
-description: "Use when applying digital fashion troubleshooting."
+description: Use when applying digital fashion troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, digital, digital-art-generation]
-    related_skills: ['general']
 ---
 
 # Digital Fashion Troubleshooting

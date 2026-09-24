@@ -1,12 +1,13 @@
 ---
 name: aws-s3-data-pipelines
-description: "Use when building data pipelines with S3."
+description: Use when building data pipelines with S3.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["aws", "s3", "data-lake", "events", "triggers"]
+    tags: [aws, s3, data-lake, events, triggers]
 ---
 
 # Aws S3 Data Pipelines

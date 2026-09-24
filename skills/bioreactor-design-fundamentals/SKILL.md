@@ -1,14 +1,13 @@
 ---
 name: bioreactor-design-fundamentals
-description: "Use when applying bioreactor design fundamentals."
+description: Use when applying bioreactor design fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, engineering]
-    related_skills: [general]
 ---
 
 # Bioreactor Design Fundamentals

@@ -1,14 +1,13 @@
 ---
 name: cell-biology
-description: "Use when studying cell biology."
+description: Use when studying cell biology.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [healthcare, bio, cell-biology-fundamentals]
-    related_skills: [general]
 ---
 
 # Cell Biology

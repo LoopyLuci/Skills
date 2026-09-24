@@ -1,13 +1,13 @@
 ---
 name: agent-benchmarking-evaluation
-description: "Use when benchmarking and evaluating AI agent performance."
+description: Use when benchmarking and evaluating AI agent performance.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [agent-evaluation, benchmarking, metrics, success-rate, cost, latency]
-    related_skills: [agent-evaluation-metrics, agent-framework-design, model-evaluation-metrics, research-workflow]
 ---
 
 # Agent Benchmarking Evaluation

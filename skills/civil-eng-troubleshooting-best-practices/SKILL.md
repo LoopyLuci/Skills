@@ -1,14 +1,13 @@
 ---
 name: civil-eng-troubleshooting-best-practices
-description: "Use when applying civil troubleshooting best practices."
+description: Use when applying civil troubleshooting best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, civil, troubleshooting]
-    related_skills: [general]
 ---
 
 # Civil Eng Troubleshooting Best Practices

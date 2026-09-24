@@ -1,14 +1,13 @@
 ---
 name: construction-insurance-bonding
-description: "Use when getting construction insurance."
+description: Use when getting construction insurance.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [construction, insurance, bonding, surety]
-    related_skills: [general]
 ---
 
 # Construction Insurance Bonding

@@ -1,14 +1,13 @@
 ---
 name: employee-engagement-troubleshooting
-description: "Use when applying employee engagement troubleshooting."
+description: Use when applying employee engagement troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [hr, engagement, employee-engagement-surveys]
-    related_skills: [general]
 ---
 
 # Employee Engagement Troubleshooting

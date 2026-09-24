@@ -1,14 +1,13 @@
 ---
 name: evolutionary-biology-modeling
-description: "Use when modeling evolutionary biology."
+description: Use when modeling evolutionary biology.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biology, evolution, population-genetics]
-    related_skills: [general]
 ---
 
 # Evolutionary Biology Modeling

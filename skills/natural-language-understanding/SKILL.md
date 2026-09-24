@@ -2,12 +2,12 @@
 name: natural-language-understanding
 description: NLU, semantic parsing, and intent recognition
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["nlu", "semantics"]
+    tags: [nlu, semantics]
 ---
 
 # Natural Language Understanding

@@ -1,14 +1,13 @@
 ---
 name: entomology-troubleshooting
-description: "Use when troubleshooting entomology issues."
+description: Use when troubleshooting entomology issues.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [entomology, insects, bugs, pest]
-    related_skills: [general]
 ---
 
 # Entomology Troubleshooting

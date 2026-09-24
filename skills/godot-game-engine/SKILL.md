@@ -1,13 +1,13 @@
 ---
 name: godot-game-engine
-description: "Use when developing games with Godot engine."
+description: Use when developing games with Godot engine.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [Godot, GDScript, game-development, scene-tree, signals, C#]
-    related_skills: [game-development-patterns, unity-development-patterns, unreal-engine-basics, animation-web-patterns]
+    tags: [godot, gdscript, game-development, scene-tree, signals, c#]
 ---
 
 # Godot Game Engine

@@ -1,14 +1,13 @@
 ---
 name: construction-contracting
-description: "Use when contracting construction."
+description: Use when contracting construction.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [construction, contracts, construction-contracts]
-    related_skills: [general]
 ---
 
 # Construction Contracting

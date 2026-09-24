@@ -1,14 +1,13 @@
 ---
 name: aerospace-fundamentals-fundamentals
-description: "Use when applying aerospace fundamentals fundamentals."
+description: Use when applying aerospace fundamentals fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aerospace, education, aerospace-eng-fundamentals]
-    related_skills: [general]
 ---
 
 # Aerospace Fundamentals Fundamentals

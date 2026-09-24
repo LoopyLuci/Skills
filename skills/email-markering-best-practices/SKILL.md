@@ -1,14 +1,13 @@
 ---
 name: email-markering-best-practices
-description: "Use when applying email marketing best practices."
+description: Use when applying email marketing best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, email, email-marketing-campaigns]
-    related_skills: [general]
 ---
 
 # Email Markering Best Practices

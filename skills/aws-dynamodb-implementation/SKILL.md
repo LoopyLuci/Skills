@@ -1,14 +1,13 @@
 ---
 name: aws-dynamodb-implementation
-description: "Use when applying aws dynamodb implementation."
+description: Use when applying aws dynamodb implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, dynamodb, nosql, database]
-    related_skills: [general]
 ---
 
 # Aws Dynamodb Implementation

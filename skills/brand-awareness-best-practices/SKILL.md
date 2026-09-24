@@ -1,14 +1,13 @@
 ---
 name: brand-awareness-best-practices
-description: "Use when applying brand awareness best practices."
+description: Use when applying brand awareness best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, brand, brand-awareness]
-    related_skills: [general]
 ---
 
 # Brand Awareness Best Practices

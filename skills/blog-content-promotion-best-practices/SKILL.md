@@ -1,14 +1,13 @@
 ---
 name: blog-content-promotion-best-practices
-description: "Use when applying blog content promotion best practices."
+description: Use when applying blog content promotion best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, content-marketing-strategy]
-    related_skills: ['']
 ---
 
 # Blog Content Promotion Best Practices

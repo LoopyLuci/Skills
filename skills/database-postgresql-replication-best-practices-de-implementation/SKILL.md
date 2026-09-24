@@ -1,14 +1,13 @@
 ---
 name: database-postgresql-replication-best-practices-de-implementation
-description: "Use when applying postgresql replication implementation."
+description: Use when applying postgresql replication implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, postgres]
-    related_skills: ['postgres-replication-best-practices']
 ---
 
 # Database Postgresql Replication Best Practices De Implementation

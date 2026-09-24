@@ -1,13 +1,13 @@
 ---
 name: react-hooks-advanced
-description: "Use when implementing advanced React hooks patterns."
+description: Use when implementing advanced React hooks patterns.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [react, hooks, useReducer, useContext, custom-hooks, performance]
-    related_skills: [typescript-advanced-types, frontend-bootstrap, graphql-client-patterns]
+    tags: [react, hooks, usereducer, usecontext, custom-hooks, performance]
 ---
 
 # Advanced React Hooks

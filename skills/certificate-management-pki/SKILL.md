@@ -1,13 +1,13 @@
 ---
 name: certificate-management-pki
-description: "Use when managing PKI and TLS certificate lifecycles."
+description: Use when managing PKI and TLS certificate lifecycles.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [PKI, certificates, TLS, SSL, ACME, cert-manager, CA, certificate-lifecycle]
-    related_skills: [identity-access-management, cryptography-implementation-patterns, security-incident-response, dns-implementation-patterns]
+    tags: [pki, certificates, tls, ssl, acme, cert-manager, ca, certificate-lifecycle]
 ---
 
 # Certificate Management Pki

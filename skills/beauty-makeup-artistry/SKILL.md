@@ -1,14 +1,13 @@
 ---
 name: beauty-makeup-artistry
-description: "Use when applying makeup artistry techniques."
+description: Use when applying makeup artistry techniques.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [beauty, makeup-artistry, techniques]
-    related_skills: ['makeup-artistry-techniques']
 ---
 
 # Beauty Makeup Artistry

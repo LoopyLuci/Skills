@@ -1,14 +1,13 @@
 ---
 name: agricultural-finance-implementation
-description: "Use when applying agri finance implementation."
+description: Use when applying agri finance implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agriculture, finance, agricultural-insurance-risk]
-    related_skills: [general]
 ---
 
 # Agricultural Finance Implementation

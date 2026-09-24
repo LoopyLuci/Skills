@@ -2,12 +2,12 @@
 name: anthropology-fieldwork
 description: Ethnography, participant observation, cultural analysis, and research ethics
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["anthropology", "culture"]
+    tags: [anthropology, culture]
 ---
 
 # Anthropology Fieldwork

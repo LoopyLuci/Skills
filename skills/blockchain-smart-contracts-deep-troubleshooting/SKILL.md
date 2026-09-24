@@ -1,14 +1,13 @@
 ---
 name: blockchain-smart-contracts-deep-troubleshooting
-description: "Use when applying smart contract dev troubleshooting."
+description: Use when applying smart contract dev troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [blockchain, contracts]
-    related_skills: ['blockchain-smart-contracts']
 ---
 
 # Blockchain Smart Contracts Deep Troubleshooting

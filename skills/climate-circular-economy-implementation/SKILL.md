@@ -1,14 +1,13 @@
 ---
 name: climate-circular-economy-implementation
-description: "Use when applying circular economy design implementation."
+description: Use when applying circular economy design implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, circular-economy, circular-economy-business-models]
-    related_skills: ['']
 ---
 
 # Climate Circular Economy Implementation

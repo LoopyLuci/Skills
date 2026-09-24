@@ -1,14 +1,13 @@
 ---
 name: feature-store-design
-description: "Use when building feature stores."
+description: Use when building feature stores.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data-science, feature-store, ml-platforms, feature-engineering]
-    related_skills: ['feature-engineering-automation']
 ---
 
 # Feature Store Design

@@ -1,13 +1,13 @@
 ---
 name: wireless-penetration-testing
-description: "Use when testing wireless network security."
+description: Use when testing wireless network security.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [wireless-pentest, WPA2, WPA3, WPS, WEP, deauth, handshake, aircrack-ng]
-    related_skills: [network-sniffing-packet-capture, evasion-techniques-av-bypass, iot-security-framework, osint-reconnaissance-techniques]
+    tags: [wireless-pentest, wpa2, wpa3, wps, wep, deauth, handshake, aircrack-ng]
 ---
 
 # Wireless Penetration Testing

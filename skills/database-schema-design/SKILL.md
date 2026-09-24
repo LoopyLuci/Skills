@@ -1,14 +1,13 @@
 ---
 name: database-schema-design
-description: "Use for DB schema design. Entities, normalization, indexes."
-version: 1.1.0
-author: Hermes Agent
+description: Use for DB schema design. Entities, normalization, indexes.
+version: 1.0.0
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [programming, database, schema, sql, design, normalization]
-    related_skills: [api-design-and-documentation, refactoring-playbook]
 ---
 
 # Database Schema Design

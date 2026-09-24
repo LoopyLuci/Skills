@@ -1,14 +1,13 @@
 ---
 name: data-quality-assurance-best-practices-deep-fundamentals
-description: "Use when applying data quality assurance fundamentals."
+description: Use when applying data quality assurance fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, data-quality]
-    related_skills: ['data-quality-assurance-best-practices']
 ---
 
 # Data Quality Assurance Best Practices Deep Fundamentals

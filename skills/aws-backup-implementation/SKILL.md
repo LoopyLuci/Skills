@@ -1,14 +1,13 @@
 ---
 name: aws-backup-implementation
-description: "Use when applying aws backup implementation."
+description: Use when applying aws backup implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, backup, disaster-recovery]
-    related_skills: [general]
 ---
 
 # Aws Backup Implementation

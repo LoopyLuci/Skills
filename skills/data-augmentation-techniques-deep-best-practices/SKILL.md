@@ -1,14 +1,13 @@
 ---
 name: data-augmentation-techniques-deep-best-practices
-description: "Use when applying data augmentation best practices."
+description: Use when applying data augmentation best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, ml-data-aug]
-    related_skills: ['']
 ---
 
 # Data Augmentation Techniques Deep Best Practices

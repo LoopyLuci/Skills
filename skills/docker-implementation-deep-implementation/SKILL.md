@@ -1,14 +1,13 @@
 ---
 name: docker-implementation-deep-implementation
-description: "Use when applying docker implementation implementation."
+description: Use when applying docker implementation implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, docker]
-    related_skills: ['docker-implementation']
 ---
 
 # Docker Implementation Deep Implementation

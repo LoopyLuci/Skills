@@ -2,12 +2,12 @@
 name: scriptwriting-screenplay
 description: Format, structure, dialogue, and visual storytelling for screen
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["screenplay", "script"]
+    tags: [screenplay, script]
 ---
 
 # Scriptwriting Screenplay

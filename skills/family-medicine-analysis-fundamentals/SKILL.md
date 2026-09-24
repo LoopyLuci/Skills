@@ -1,14 +1,13 @@
 ---
 name: family-medicine-analysis-fundamentals
-description: "Use when applying family med analysis fundamentals."
+description: Use when applying family med analysis fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [medicine, family, family-medicine-analysis]
-    related_skills: [general]
 ---
 
 # Family Medicine Analysis Fundamentals

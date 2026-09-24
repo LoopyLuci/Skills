@@ -2,12 +2,12 @@
 name: uav-systems-engineering
 description: UAS design, sense-and-avoid, beyond-visual-line-of-sight, and UTM
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["uas", "drones"]
+    tags: [uas, drones]
 ---
 
 # Uav Systems Engineering

@@ -1,14 +1,13 @@
 ---
 name: content-marketing-strategy
-description: "Use when building content strategy. Planning, topics, SEO."
+description: Use when building content strategy. Planning, topics, SEO.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [content-marketing, strategy, seo, content-planning, editorial]
-    related_skills: [seo-strategy, blog-idea-generator, content-marketing-workflow]
 ---
 
 # Content Marketing Strategy

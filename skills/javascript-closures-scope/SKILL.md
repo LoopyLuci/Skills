@@ -1,12 +1,13 @@
 ---
 name: javascript-closures-scope
-description: "Use when understanding JS closures."
+description: Use when understanding JS closures.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["javascript", "closures", "scope", "hoisting", "IIFE"]
+    tags: [javascript, closures, scope, hoisting, iife]
 ---
 
 # Javascript Closures Scope

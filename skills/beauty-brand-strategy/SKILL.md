@@ -1,14 +1,13 @@
 ---
 name: beauty-brand-strategy
-description: "Use when building beauty brand strategy."
+description: Use when building beauty brand strategy.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, beauty-brand, brand-strategy, positioning]
-    related_skills: [brand-identity-development]
 ---
 
 # Beauty Brand Strategy

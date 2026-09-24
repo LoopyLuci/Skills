@@ -1,14 +1,13 @@
 ---
 name: audio-mixing-troubleshooting
-description: "Use when applying audio mixing troubleshooting."
+description: Use when applying audio mixing troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [media, audio, mixing]
-    related_skills: [general]
 ---
 
 # Audio Mixing Troubleshooting

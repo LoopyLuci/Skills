@@ -1,14 +1,13 @@
 ---
 name: embedded-gpio-troubleshooting
-description: "Use when applying gpio programming troubleshooting."
+description: Use when applying gpio programming troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [embedded, gpio, microcontroller, pins]
-    related_skills: [general]
 ---
 
 # Embedded Gpio Troubleshooting

@@ -1,6 +1,13 @@
 ---
 name: mdns-discovery
-description: "Discover devices on LAN using mDNS Zeroconf from Python"
+description: Discover devices on LAN using mDNS Zeroconf from Python
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [mdns, discovery]
 ---
 
 # mDNS Discovery

@@ -1,14 +1,13 @@
 ---
 name: data-mart-implementation
-description: "Use when applying data mart implementation."
+description: Use when applying data mart implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ds, data, data-mart]
-    related_skills: [general]
 ---
 
 # Data Mart Implementation

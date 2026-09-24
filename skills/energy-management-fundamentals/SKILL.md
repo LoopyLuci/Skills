@@ -1,14 +1,13 @@
 ---
 name: energy-management-fundamentals
-description: "Use when applying energy management fundamentals."
+description: Use when applying energy management fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [energy, management, energy-systems-management]
-    related_skills: [general]
 ---
 
 # Energy Management Fundamentals

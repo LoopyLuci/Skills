@@ -1,14 +1,13 @@
 ---
 name: fermentation-tech
-description: "Use when applying fermentation tech."
+description: Use when applying fermentation tech.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [food, fermentation, fermentation]
-    related_skills: [general]
 ---
 
 # Fermentation Tech

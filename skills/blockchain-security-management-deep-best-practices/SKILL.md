@@ -1,14 +1,13 @@
 ---
 name: blockchain-security-management-deep-best-practices
-description: "Use when applying blockchain security management best pr."
+description: Use when applying blockchain security management best pr.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [blockchain, security]
-    related_skills: ['blockchain-security-management']
 ---
 
 # Blockchain Security Management Deep Best Practices

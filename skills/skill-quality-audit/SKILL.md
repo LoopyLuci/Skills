@@ -1,6 +1,13 @@
 ---
 name: skill-quality-audit
 description: Audit skills for correctness, freshness, and usefulness.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [skill, quality, audit]
 ---
 
 # Skill Quality Audit

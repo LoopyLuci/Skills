@@ -1,14 +1,13 @@
 ---
 name: climate-finance-fundamentals
-description: "Use when applying climate finance fundamentals."
+description: Use when applying climate finance fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, climate-finance]
-    related_skills: ['general']
 ---
 
 # Climate Finance Fundamentals

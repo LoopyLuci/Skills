@@ -2,12 +2,12 @@
 name: satellite-mission-design
 description: Mission analysis, link budgets, ground stations, and mission operations
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["satellite", "mission"]
+    tags: [satellite, mission]
 ---
 
 # Satellite Mission Design

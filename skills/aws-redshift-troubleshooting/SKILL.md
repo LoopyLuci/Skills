@@ -1,14 +1,13 @@
 ---
 name: aws-redshift-troubleshooting
-description: "Use when applying aws redshift troubleshooting."
+description: Use when applying aws redshift troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, redshift, data-warehouse, analytics]
-    related_skills: [general]
 ---
 
 # Aws Redshift Troubleshooting

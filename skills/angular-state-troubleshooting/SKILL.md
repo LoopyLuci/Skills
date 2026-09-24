@@ -1,14 +1,13 @@
 ---
 name: angular-state-troubleshooting
-description: "Use when applying angular state troubleshooting."
+description: Use when applying angular state troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [frontend, angular, ngrx, state]
-    related_skills: [general]
 ---
 
 # Angular State Troubleshooting

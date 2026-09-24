@@ -1,14 +1,13 @@
 ---
 name: consumer-health-app-development
-description: "Use when building health apps for consumers."
+description: Use when building health apps for consumers.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [consumer-tech, health-apps, fitness, wellness]
-    related_skills: [general]
 ---
 
 # Consumer Health App Development

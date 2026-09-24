@@ -1,14 +1,13 @@
 ---
 name: aws-cloudfront-best-practices-deep-best-practices
-description: "Use when applying cloudfront best practices."
+description: Use when applying cloudfront best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, cdn]
-    related_skills: ['aws-cloudfront-best-practices']
 ---
 
 # Aws Cloudfront Best Practices Deep Best Practices

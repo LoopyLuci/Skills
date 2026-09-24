@@ -1,14 +1,13 @@
 ---
 name: conservation-design
-description: "Use when designing conservation solutions."
+description: Use when designing conservation solutions.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [conservation, biodiversity, protection, sustainability]
-    related_skills: [general]
 ---
 
 # Conservation Design

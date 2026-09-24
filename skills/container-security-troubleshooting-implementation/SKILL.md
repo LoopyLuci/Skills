@@ -1,14 +1,13 @@
 ---
 name: container-security-troubleshooting-implementation
-description: "Use when applying container security troubleshooting imp."
+description: Use when applying container security troubleshooting imp.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, security]
-    related_skills: ['container-security-troubleshooting']
 ---
 
 # Container Security Troubleshooting Implementation

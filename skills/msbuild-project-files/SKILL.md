@@ -1,9 +1,15 @@
 ---
 name: msbuild-project-files
-description: "Use when editing .csproj/.vcxproj MSBuild XML."
-category: software-development
-tags: [msbuild, csproj, vcxproj, xml, project-files]
+description: Use when editing .csproj/.vcxproj MSBuild XML.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [msbuild, csproj, vcxproj, xml, project-files]
 ---
+
 # MSBuild Project Files
 
 Editing and understanding MSBuild project files (.csproj, .vcxproj).

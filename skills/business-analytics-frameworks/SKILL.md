@@ -1,14 +1,13 @@
 ---
 name: business-analytics-frameworks
-description: "Use when applying business analytics frameworks."
+description: Use when applying business analytics frameworks.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: ['b', 'u', 's', 'i', 'n', 'e', 's', 's', '-', 'a', 'n', 'a', 'l', 'y', 't', 'i', 'c', 's', ',', ' ', 'f', 'r', 'a', 'm', 'e', 'w', 'o', 'r', 'k', 's']
-    related_skills: [general]
+    tags: [b, u, s, i, n, e, s, s, -, a, n, a, l, y, t, i, c, s, , ,  , f, r, a, m, e, w, o, r, k, s]
 ---
 
 # Business Analytics Frameworks

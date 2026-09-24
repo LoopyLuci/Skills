@@ -1,14 +1,13 @@
 ---
 name: civil-eng-strategy-troubleshooting
-description: "Use when applying civil strategy troubleshooting."
+description: Use when applying civil strategy troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, civil, strategy]
-    related_skills: [general]
 ---
 
 # Civil Eng Strategy Troubleshooting

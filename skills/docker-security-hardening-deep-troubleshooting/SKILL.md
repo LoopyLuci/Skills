@@ -1,14 +1,13 @@
 ---
 name: docker-security-hardening-deep-troubleshooting
-description: "Use when applying docker hardening troubleshooting."
+description: Use when applying docker hardening troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, docker]
-    related_skills: ['docker-security-hardening']
 ---
 
 # Docker Security Hardening Deep Troubleshooting

@@ -1,13 +1,13 @@
 ---
 name: container-security-testing
-description: "Use when testing container and Kubernetes security."
+description: Use when testing container and Kubernetes security.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [container-security, kubernetes-pentest, Docker, kube-hunter, admission-control]
-    related_skills: [container-security-hardening, cloud-penetration-testing, privilege-escalation-techniques, lateral-movement-pivoting]
+    tags: [container-security, kubernetes-pentest, docker, kube-hunter, admission-control]
 ---
 
 # Container Security Testing

@@ -1,12 +1,13 @@
 ---
 name: aws-ec2
-description: "Use when implementing aws ec2."
+description: Use when implementing aws ec2.
 version: 1.0.0
-author: "Skill Genesis Model"
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["aws", "ec2"]
+    tags: [aws, ec2]
 ---
 
 # Aws Ec2

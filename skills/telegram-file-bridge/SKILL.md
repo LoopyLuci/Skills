@@ -1,6 +1,13 @@
 ---
 name: telegram-file-bridge
-description: "Bridge files between Telegram and local file system"
+description: Bridge files between Telegram and local file system
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [telegram, file, bridge]
 ---
 
 # Telegram File Bridge

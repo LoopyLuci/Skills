@@ -2,12 +2,12 @@
 name: drone-agriculture-uav
 description: Crop scouting, spraying, multispectral imaging, and drone regulations
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["drone", "uav"]
+    tags: [drone, uav]
 ---
 
 # Drone Agriculture Uav

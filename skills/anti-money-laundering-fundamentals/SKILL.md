@@ -1,14 +1,13 @@
 ---
 name: anti-money-laundering-fundamentals
-description: "Use when applying aml fundamentals."
+description: Use when applying aml fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, security, aml]
-    related_skills: [general]
 ---
 
 # Anti Money Laundering Fundamentals

@@ -1,14 +1,13 @@
 ---
 name: data-driven-decision-making
-description: "Use when making data-driven decisions."
+description: Use when making data-driven decisions.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: ['d', 'a', 't', 'a', '-', 'd', 'r', 'i', 'v', 'e', 'n', ',', ' ', 'a', 'n', 'a', 'l', 'y', 't', 'i', 'c', 's']
-    related_skills: [general]
+    tags: [d, a, t, a, -, d, r, i, v, e, n, , ,  , a, n, a, l, y, t, i, c, s]
 ---
 
 # Data Driven Decision Making

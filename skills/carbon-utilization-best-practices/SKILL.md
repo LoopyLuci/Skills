@@ -1,14 +1,13 @@
 ---
 name: carbon-utilization-best-practices
-description: "Use when applying carbon utilization best practices."
+description: Use when applying carbon utilization best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, carbon, carbon-capture-utilization]
-    related_skills: [general]
 ---
 
 # Carbon Utilization Best Practices

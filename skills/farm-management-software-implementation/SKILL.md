@@ -1,14 +1,13 @@
 ---
 name: farm-management-software-implementation
-description: "Use when applying farm management implementation."
+description: Use when applying farm management implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agri, software, farm-management-software]
-    related_skills: [general]
 ---
 
 # Farm Management Software Implementation

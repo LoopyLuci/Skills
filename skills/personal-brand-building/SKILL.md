@@ -1,14 +1,13 @@
 ---
 name: personal-brand-building
-description: "Personal brand: niche, platform, content, network."
+description: Personal brand: niche, platform, content, network.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [personal-brand, thought-leadership, positioning, authority]
-    related_skills: [freelance-business-operations, video-production-workflow, podcasting-workflow]
 ---
 
 # Personal Brand Building

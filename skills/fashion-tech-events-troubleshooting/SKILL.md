@@ -1,14 +1,13 @@
 ---
 name: fashion-tech-events-troubleshooting
-description: "Use when applying fashion tech events troubleshooting."
+description: Use when applying fashion tech events troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, events, event-planning]
-    related_skills: ['general']
 ---
 
 # Fashion Tech Events Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: cryptography-optimization
-description: "Use when optimizing cryptography systems."
+description: Use when optimizing cryptography systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, crypto, encryption, hashing]
-    related_skills: [general]
 ---
 
 # Cryptography Optimization

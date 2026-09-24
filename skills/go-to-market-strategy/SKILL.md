@@ -1,13 +1,13 @@
 ---
 name: go-to-market-strategy
-description: "Use when planning go-to-market and launch strategies."
+description: Use when planning go-to-market and launch strategies.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [go-to-market, product-launch, GTM, market-entry, launch-strategy]
-    related_skills: [product-management-roadmap, digital-marketing-strategy, pricing-strategy-optimization, sales-enablement-playbooks]
+    tags: [go-to-market, product-launch, gtm, market-entry, launch-strategy]
 ---
 
 # Go To Market Strategy

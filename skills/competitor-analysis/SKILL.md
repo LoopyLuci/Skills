@@ -1,14 +1,13 @@
 ---
 name: competitor-analysis
-description: "Use when analyzing competitors. Audits, positioning."
+description: Use when analyzing competitors. Audits, positioning.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [competitive-analysis, market-research, intelligence, strategy]
-    related_skills: [marketing-strategy-framework, seo-strategy, brand-identity-development]
 ---
 
 # Competitor Analysis

@@ -1,14 +1,13 @@
 ---
 name: chemical-separations
-description: "Use when designing separations."
+description: Use when designing separations.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [chem, separation, separations]
-    related_skills: [general]
 ---
 
 # Chemical Separations

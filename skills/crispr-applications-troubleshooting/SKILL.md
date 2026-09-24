@@ -1,14 +1,13 @@
 ---
 name: crispr-applications-troubleshooting
-description: "Use when applying crispr applications troubleshooting."
+description: Use when applying crispr applications troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, crispr, crispr-applications]
-    related_skills: [general]
 ---
 
 # Crispr Applications Troubleshooting

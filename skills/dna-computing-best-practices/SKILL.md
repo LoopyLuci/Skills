@@ -1,14 +1,13 @@
 ---
 name: dna-computing-best-practices
-description: "Use when applying dna computing best practices."
+description: Use when applying dna computing best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [computing, dna-computing]
-    related_skills: ['general']
 ---
 
 # Dna Computing Best Practices

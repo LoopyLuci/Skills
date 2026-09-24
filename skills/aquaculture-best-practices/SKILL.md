@@ -1,14 +1,13 @@
 ---
 name: aquaculture-best-practices
-description: "Use when applying aquaculture best practices."
+description: Use when applying aquaculture best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [food, agriculture, aquaculture]
-    related_skills: [general]
 ---
 
 # Aquaculture Best Practices

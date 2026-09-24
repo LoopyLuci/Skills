@@ -1,12 +1,13 @@
 ---
 name: dbt-data-transformation
-description: "Use when transforming data with dbt."
+description: Use when transforming data with dbt.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["dbt", "data-transformation", "SQL", "models", "testing"]
+    tags: [dbt, data-transformation, sql, models, testing]
 ---
 
 # Dbt Data Transformation

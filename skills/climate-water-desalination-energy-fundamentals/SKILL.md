@@ -1,14 +1,13 @@
 ---
 name: climate-water-desalination-energy-fundamentals
-description: "Use when applying climate water desalination energy fund."
+description: Use when applying climate water desalination energy fund.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, environment]
-    related_skills: ['']
 ---
 
 # Climate Water Desalination Energy Fundamentals

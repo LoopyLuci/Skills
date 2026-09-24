@@ -1,13 +1,13 @@
 ---
 name: skill-testing-automation
-description: "Use when validating skills for correctness and freshness."
+description: Use when validating skills for correctness and freshness.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [skills, testing, validation, automation, quality]
-    related_skills: [skill-inventory-management, skill-development-workflow, meta-skill-patterns]
 ---
 
 # Skill Testing Automation

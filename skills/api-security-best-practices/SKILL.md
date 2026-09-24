@@ -1,14 +1,13 @@
 ---
 name: api-security-best-practices
-description: "Use when securing APIs."
+description: Use when securing APIs.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [api, api-security, authentication, authorization]
-    related_skills: ['api-penetration-testing']
 ---
 
 # Api Security Best Practices

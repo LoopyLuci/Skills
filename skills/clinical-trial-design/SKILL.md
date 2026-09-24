@@ -1,14 +1,13 @@
 ---
 name: clinical-trial-design
-description: "Use when designing clinical trials."
+description: Use when designing clinical trials.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [medicine, clinical-trial, study-design]
-    related_skills: [general]
 ---
 
 # Clinical Trial Design

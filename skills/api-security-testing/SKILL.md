@@ -1,14 +1,13 @@
 ---
 name: api-security-testing
-description: "Use when testing API security."
+description: Use when testing API security.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, api, api-security]
-    related_skills: [general]
 ---
 
 # Api Security Testing

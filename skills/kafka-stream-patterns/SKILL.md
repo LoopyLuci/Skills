@@ -1,12 +1,13 @@
 ---
 name: kafka-stream-patterns
-description: "Use when implementing Kafka streams."
+description: Use when implementing Kafka streams.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["kafka", "streams", "KStream", "KTable", "state-store"]
+    tags: [kafka, streams, kstream, ktable, state-store]
 ---
 
 # Kafka Stream Patterns

@@ -1,14 +1,13 @@
 ---
 name: battery-materials-research
-description: "Use when researching battery materials."
+description: Use when researching battery materials.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [materials-science, batteries, electrodes, energy-storage]
-    related_skills: [energy-storage-materials]
 ---
 
 # Battery Materials Research

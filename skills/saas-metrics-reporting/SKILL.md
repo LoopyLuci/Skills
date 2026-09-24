@@ -1,13 +1,13 @@
 ---
 name: saas-metrics-reporting
-description: "Use when tracking and reporting SaaS business metrics."
+description: Use when tracking and reporting SaaS business metrics.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [saas, metrics, mrr, churn, LTV, CAC, subscription, reporting, board-deck]
-    related_skills: [business-metrics-kpis, crm-sales-pipeline, customer-success-retention, digital-marketing-strategy]
+    tags: [saas, metrics, mrr, churn, ltv, cac, subscription, reporting, board-deck]
 ---
 
 # Saas Metrics Reporting

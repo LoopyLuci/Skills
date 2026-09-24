@@ -1,13 +1,13 @@
 ---
 name: digital-marketing-strategy
-description: "Use when creating digital marketing strategies and plans."
+description: Use when creating digital marketing strategies and plans.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing-strategy, digital-marketing, growth, planning, channels, budget]
-    related_skills: [seo-search-engine-optimization, email-marketing-campaigns, social-media-content-planning, conversion-rate-optimization]
 ---
 
 # Digital Marketing Strategy

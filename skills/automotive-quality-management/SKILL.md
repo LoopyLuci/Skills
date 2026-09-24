@@ -1,14 +1,13 @@
 ---
 name: automotive-quality-management
-description: "Use when managing automotive quality."
+description: Use when managing automotive quality.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [automotive, quality, iso-9001, iatf-16949]
-    related_skills: [quality-control-systems]
 ---
 
 # Automotive Quality Management

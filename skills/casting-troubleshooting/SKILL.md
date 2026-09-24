@@ -1,14 +1,13 @@
 ---
 name: casting-troubleshooting
-description: "Use when applying casting troubleshooting."
+description: Use when applying casting troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mfg, casting, die-casting]
-    related_skills: [general]
 ---
 
 # Casting Troubleshooting

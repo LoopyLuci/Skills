@@ -1,14 +1,13 @@
 ---
 name: agricultural-satellite-implementation
-description: "Use when applying agri satellites implementation."
+description: Use when applying agri satellites implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agri, satellite, earth-observation-processing]
-    related_skills: [general]
 ---
 
 # Agricultural Satellite Implementation

@@ -1,13 +1,13 @@
 ---
 name: agent-communication-languages
-description: "Use when designing agent communication languages."
+description: Use when designing agent communication languages.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [agent-communication, ACL, FIPA, speech-acts, agent-protocols]
-    related_skills: [swarm-communication-protocols, multi-agent-collaboration-patterns, tool-augmented-agents, agent-framework-design]
+    tags: [agent-communication, acl, fipa, speech-acts, agent-protocols]
 ---
 
 # Agent Communication Languages

@@ -1,14 +1,13 @@
 ---
 name: biotech-process-ops-best-practices
-description: "Use when applying biotech operations best practices."
+description: Use when applying biotech operations best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, ops, operations]
-    related_skills: [general]
 ---
 
 # Biotech Process Ops Best Practices

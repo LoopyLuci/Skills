@@ -1,14 +1,13 @@
 ---
 name: desalination-troubleshooting
-description: "Use when applying desalination troubleshooting."
+description: Use when applying desalination troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [maritime, desalination]
-    related_skills: ['general']
 ---
 
 # Desalination Troubleshooting

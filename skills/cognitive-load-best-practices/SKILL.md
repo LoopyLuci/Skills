@@ -1,14 +1,13 @@
 ---
 name: cognitive-load-best-practices
-description: "Use when applying cognitive load assessment best practices."
+description: Use when applying cognitive load assessment best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neuro, psychology, cognitive-load-assessment]
-    related_skills: [general]
 ---
 
 # Cognitive Load Best Practices

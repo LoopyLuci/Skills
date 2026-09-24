@@ -1,6 +1,13 @@
 ---
 name: telegram-media-delivery
-description: "Send files via MEDIA protocol on Telegram paths and limits"
+description: Send files via MEDIA protocol on Telegram paths and limits
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [telegram, media, delivery]
 ---
 
 # Telegram Media Delivery

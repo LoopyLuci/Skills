@@ -2,12 +2,12 @@
 name: portrait-photography-techniques
 description: Posing, lighting setups, lens selection, and directing subjects
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["portrait", "lighting"]
+    tags: [portrait, lighting]
 ---
 
 # Portrait Photography Techniques

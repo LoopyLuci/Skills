@@ -2,12 +2,12 @@
 name: brewing-distilling-fermentation
 description: Beer brewing, wine making, distillation, and fermentation science
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["brewing", "distillation"]
+    tags: [brewing, distillation]
 ---
 
 # Brewing Distilling Fermentation

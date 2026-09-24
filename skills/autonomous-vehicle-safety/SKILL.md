@@ -1,14 +1,13 @@
 ---
 name: autonomous-vehicle-safety
-description: "Use when ensuring autonomous vehicle safety."
+description: Use when ensuring autonomous vehicle safety.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [automotive, autonomous-safety, iso-26262, functional-safety]
-    related_skills: [general]
 ---
 
 # Autonomous Vehicle Safety

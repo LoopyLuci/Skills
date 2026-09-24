@@ -1,14 +1,13 @@
 ---
 name: api-contract-implementation
-description: "Use when applying api contract testing implementation."
+description: Use when applying api contract testing implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [api, contract-testing, pact, consumer-driven]
-    related_skills: [general]
 ---
 
 # Api Contract Implementation

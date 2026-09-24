@@ -2,12 +2,12 @@
 name: forest-management-silviculture
 description: Silviculture, timber management, and forest planning
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["forestry", "silviculture"]
+    tags: [forestry, silviculture]
 ---
 
 # Forest Management Silviculture

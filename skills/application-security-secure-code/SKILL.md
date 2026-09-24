@@ -2,12 +2,12 @@
 name: application-security-secure-code
 description: SAST, DAST, SCA, threat modeling (STRIDE), code review, and secure SDLC
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["appsec", "devsecops"]
+    tags: [appsec, devsecops]
 ---
 
 # Application Security Secure Code

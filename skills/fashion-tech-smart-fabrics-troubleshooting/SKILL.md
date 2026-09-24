@@ -1,14 +1,13 @@
 ---
 name: fashion-tech-smart-fabrics-troubleshooting
-description: "Use when applying fashion smart fabrics troubleshooting."
+description: Use when applying fashion smart fabrics troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, beauty]
-    related_skills: ['']
 ---
 
 # Fashion Tech Smart Fabrics Troubleshooting

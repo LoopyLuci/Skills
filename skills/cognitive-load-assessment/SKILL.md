@@ -1,14 +1,13 @@
 ---
 name: cognitive-load-assessment
-description: "Use when assessing cognitive load."
+description: Use when assessing cognitive load.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neurotech, cognitive-load, eeg, pupillometry, workload]
-    related_skills: ['cognitive-state-monitoring']
 ---
 
 # Cognitive Load Assessment

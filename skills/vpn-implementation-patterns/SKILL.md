@@ -1,13 +1,13 @@
 ---
 name: vpn-implementation-patterns
-description: "Use when implementing VPN tunnels and remote access."
+description: Use when implementing VPN tunnels and remote access.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [VPN, tunnel, WireGuard, OpenVPN, IPsec, remote-access, site-to-site]
-    related_skills: [wireguard-vpn-controller, network-segmentation-strategies, firewall-rules-engine, identity-access-management]
+    tags: [vpn, tunnel, wireguard, openvpn, ipsec, remote-access, site-to-site]
 ---
 
 # Vpn Implementation Patterns

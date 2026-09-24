@@ -1,14 +1,13 @@
 ---
 name: android-kotlin-fundamentals
-description: "Use when applying android kotlin fundamentals."
+description: Use when applying android kotlin fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mobile, android, kotlin, kotlin-android-dev]
-    related_skills: [general]
 ---
 
 # Android Kotlin Fundamentals

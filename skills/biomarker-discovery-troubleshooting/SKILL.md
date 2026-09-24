@@ -1,14 +1,13 @@
 ---
 name: biomarker-discovery-troubleshooting
-description: "Use when applying biomarker discovery troubleshooting."
+description: Use when applying biomarker discovery troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, biomarker, biomarker]
-    related_skills: ['general']
 ---
 
 # Biomarker Discovery Troubleshooting

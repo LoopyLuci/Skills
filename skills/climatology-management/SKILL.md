@@ -1,14 +1,13 @@
 ---
 name: climatology-management
-description: "Use when managing climatology operations."
+description: Use when managing climatology operations.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climatology, climate, weather, change]
-    related_skills: [general]
 ---
 
 # Climatology Management

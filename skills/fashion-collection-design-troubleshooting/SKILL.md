@@ -1,14 +1,13 @@
 ---
 name: fashion-collection-design-troubleshooting
-description: "Use when applying fashion collection design troubleshoot."
+description: Use when applying fashion collection design troubleshoot.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, design, fashion-collection-design]
-    related_skills: ['general']
 ---
 
 # Fashion Collection Design Troubleshooting

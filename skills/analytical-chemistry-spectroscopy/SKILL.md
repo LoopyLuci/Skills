@@ -2,12 +2,12 @@
 name: analytical-chemistry-spectroscopy
 description: Spectroscopy, chromatography, and analytical methods
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["analytical", "spectroscopy"]
+    tags: [analytical, spectroscopy]
 ---
 
 # Analytical Chemistry Spectroscopy

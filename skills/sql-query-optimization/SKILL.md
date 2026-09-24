@@ -1,9 +1,15 @@
 ---
 name: sql-query-optimization
-description: "Use when optimizing SQL query performance."
-category: software-development
-tags: [sql, optimization, database, queries, performance]
+description: Use when optimizing SQL query performance.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [sql, optimization, database, queries, performance]
 ---
+
 # SQL Query Optimization
 
 Optimizing SQL queries for performance.

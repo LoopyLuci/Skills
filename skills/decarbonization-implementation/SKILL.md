@@ -1,14 +1,13 @@
 ---
 name: decarbonization-implementation
-description: "Use when applying decarbonization implementation."
+description: Use when applying decarbonization implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, carbon, decarbonization-roadmapping]
-    related_skills: [general]
 ---
 
 # Decarbonization Implementation

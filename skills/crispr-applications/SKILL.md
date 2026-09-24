@@ -1,14 +1,13 @@
 ---
 name: crispr-applications
-description: "Use when applying CRISPR gene editing."
+description: Use when applying CRISPR gene editing.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [healthcare, biotech, crispr]
-    related_skills: [general]
 ---
 
 # Crispr Applications

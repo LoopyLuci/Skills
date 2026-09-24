@@ -1,14 +1,13 @@
 ---
 name: fastapi-development-best-practices
-description: "Use when applying fastapi development best practices."
+description: Use when applying fastapi development best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, fastapi, python, api]
-    related_skills: [general]
 ---
 
 # Fastapi Development Best Practices

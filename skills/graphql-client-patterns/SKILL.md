@@ -1,13 +1,13 @@
 ---
 name: graphql-client-patterns
-description: "Use when implementing GraphQL client patterns."
+description: Use when implementing GraphQL client patterns.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [graphql, client, Apollo, Relay, queries, mutations, subscriptions, caching]
-    related_skills: [graphql-api-implementation, api-testing-patterns, frontend-bootstrap, caching-strategies]
+    tags: [graphql, client, apollo, relay, queries, mutations, subscriptions, caching]
 ---
 
 # GraphQL Client Patterns

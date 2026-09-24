@@ -1,14 +1,13 @@
 ---
 name: refactoring-playbook
-description: "Use for refactoring. Smell detection, patterns, metrics."
-version: 1.1.0
-author: Hermes Agent
+description: Use for refactoring. Smell detection, patterns, metrics.
+version: 1.0.0
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [programming, refactoring, technical-debt, code-quality, clean-code]
-    related_skills: [code-review-checklist, debugging-workflow, performance-profiling]
 ---
 
 # Refactoring Playbook

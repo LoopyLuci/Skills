@@ -1,14 +1,13 @@
 ---
 name: backend-python-impl-implementation
-description: "Use when applying backend python implementation implemen."
+description: Use when applying backend python implementation implemen.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, python, backend-python-implementation]
-    related_skills: [general]
 ---
 
 # Backend Python Impl Implementation

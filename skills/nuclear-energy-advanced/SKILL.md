@@ -2,12 +2,12 @@
 name: nuclear-energy-advanced
 description: Small modular reactors, nuclear safety, waste management, and advanced fission
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["nuclear", "smr"]
+    tags: [nuclear, smr]
 ---
 
 # Nuclear Energy Advanced

@@ -1,14 +1,13 @@
 ---
 name: expressjs-api-best-practices
-description: "Use when applying express.js api best practices."
+description: Use when applying express.js api best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, expressjs, api, nodejs]
-    related_skills: [general]
 ---
 
 # Expressjs Api Best Practices

@@ -1,14 +1,13 @@
 ---
 name: embedded-gpio-implementation
-description: "Use when applying gpio programming implementation."
+description: Use when applying gpio programming implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [embedded, gpio, microcontroller, pins]
-    related_skills: [general]
 ---
 
 # Embedded Gpio Implementation

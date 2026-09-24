@@ -1,14 +1,13 @@
 ---
 name: emergency-management
-description: "Use when managing emergency response. Disasters, planning."
+description: Use when managing emergency response. Disasters, planning.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [govtech, emergency-management, disaster-response, planning]
-    related_skills: [general]
 ---
 
 # Emergency Management

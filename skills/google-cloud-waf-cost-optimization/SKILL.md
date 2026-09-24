@@ -1,8 +1,13 @@
 ---
 name: google-cloud-waf-cost-optimization
 description: Use when optimizing Google Cloud workload costs following the Well-Architected Framework.
-tags: [google-cloud, waf, cost-optimization, finops, cloud-architecture]
-related_skills: [google-cloud-waf-security, gke-productionize, google-cloud-recipe-auth]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [google-cloud, waf, cost-optimization, finops, cloud-architecture]
 ---
 
 # Google Cloud Well-Architected Framework — Cost Optimization

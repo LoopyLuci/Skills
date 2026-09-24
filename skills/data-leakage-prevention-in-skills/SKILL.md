@@ -1,14 +1,13 @@
 ---
 name: data-leakage-prevention-in-skills
-description: "Use when creating skills. Prevent data leakage."
+description: Use when creating skills. Prevent data leakage.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [privacy, data-leakage, security, pii, skill-authoring]
-    related_skills: [privacy-by-design-skill-authoring, pii-detection-and-remediation]
 ---
 
 # Data Leakage Prevention In Skills

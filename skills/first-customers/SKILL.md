@@ -1,8 +1,13 @@
 ---
 name: first-customers
 description: Use when selling to first 100 customers for a new product
-tags: [sales, customers, outreach, mvp, pricing]
-related_skills: [validate-idea, mvp, pricing, find-community]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [sales, customers, outreach, mvp, pricing]
 ---
 
 # First Customers

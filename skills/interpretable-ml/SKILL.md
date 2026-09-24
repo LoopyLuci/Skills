@@ -1,9 +1,15 @@
 ---
 name: interpretable-ml
-description: "Use when explaining and interpreting ML model predictions."
-category: mlops
-tags: [interpretability, explainability, shap, lime, xai]
+description: Use when explaining and interpreting ML model predictions.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [interpretability, explainability, shap, lime, xai]
 ---
+
 # Interpretable ML
 
 Explaining and interpreting machine learning model predictions.

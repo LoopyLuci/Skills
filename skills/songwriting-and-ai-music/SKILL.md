@@ -1,16 +1,13 @@
 ---
 name: songwriting-and-ai-music
-description: "Songwriting craft and Suno AI music prompts."
-tags: [songwriting, music, suno, parody, lyrics, creative]
-platforms: [linux, macos, windows]
-triggers:
-  - writing a song
-  - song lyrics
-  - music prompt
-  - suno prompt
-  - parody song
-  - adapting a song
-  - AI music generation
+description: Songwriting craft and Suno AI music prompts.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [songwriting, music, suno, parody, lyrics, creative]
 ---
 
 # Songwriting & AI Music Generation

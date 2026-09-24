@@ -2,12 +2,12 @@
 name: content-markategy-strategy
 description: Content calendars, pillar/cluster models, topic authority, and content ops
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["content", "strategy"]
+    tags: [content, strategy]
 ---
 
 # Content Markategy Strategy

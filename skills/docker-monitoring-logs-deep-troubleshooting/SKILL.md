@@ -1,14 +1,13 @@
 ---
 name: docker-monitoring-logs-deep-troubleshooting
-description: "Use when applying docker monitoring troubleshooting."
+description: Use when applying docker monitoring troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, docker]
-    related_skills: ['docker-monitoring']
 ---
 
 # Docker Monitoring Logs Deep Troubleshooting

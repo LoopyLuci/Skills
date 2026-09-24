@@ -1,14 +1,13 @@
 ---
 name: climate-finance-risk-modelling
-description: "Use when modeling climate finance risks."
+description: Use when modeling climate finance risks.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cross-domain, climate-finance, risk-modeling, investing]
-    related_skills: [financial-modeling-python]
 ---
 
 # Climate Finance Risk Modelling

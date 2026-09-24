@@ -1,14 +1,13 @@
 ---
 name: biomedical-eng-management-fundamentals
-description: "Use when applying biomedical management fundamentals."
+description: Use when applying biomedical management fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, biomedical, management]
-    related_skills: [general]
 ---
 
 # Biomedical Eng Management Fundamentals

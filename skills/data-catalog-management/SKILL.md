@@ -1,14 +1,13 @@
 ---
 name: data-catalog-management
-description: "Use when managing data catalogs."
+description: Use when managing data catalogs.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data-science, data-catalog, metadata, discovery]
-    related_skills: ['data-governance-platform']
 ---
 
 # Data Catalog Management

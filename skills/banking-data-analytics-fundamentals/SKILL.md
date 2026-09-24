@@ -1,14 +1,13 @@
 ---
 name: banking-data-analytics-fundamentals
-description: "Use when applying banking data analytics fundamentals."
+description: Use when applying banking data analytics fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, data, banking-data-analytics]
-    related_skills: [general]
 ---
 
 # Banking Data Analytics Fundamentals

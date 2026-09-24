@@ -1,9 +1,13 @@
 ---
 name: pattern-matching-engine
-title: Pattern Matching Engine
 description: Use when doing YARA/Suricata regex detection on packets.
-category: networking
-tags: [yara, suricata, regex, hyperscan, signature, rust]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [yara, suricata, regex, hyperscan, signature, rust]
 ---
 
 # Pattern Matching Engine

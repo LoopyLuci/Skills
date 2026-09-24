@@ -1,6 +1,13 @@
 ---
 name: git-lfs-setup
 description: Manage large files in git repositories with Git LFS.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [git, lfs, setup]
 ---
 
 # Git Large File Storage (LFS)

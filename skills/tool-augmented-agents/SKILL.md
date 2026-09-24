@@ -1,9 +1,15 @@
 ---
 name: tool-augmented-agents
-description: "Use when building tools for LLM agents to use."
-category: mlops
-tags: [agents, tools, tool-use, function-calling, llm]
+description: Use when building tools for LLM agents to use.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [agents, tools, tool-use, function-calling, llm]
 ---
+
 # Tool-Augmented Agents
 
 Building and integrating tools for LLM agents to use.

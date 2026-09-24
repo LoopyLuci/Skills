@@ -1,9 +1,15 @@
 ---
 name: cmake-windows-workflow
-description: "Use when building C++ projects with CMake on Windows."
-category: software-development
-tags: [cmake, windows, cpp, build, msvc, clang]
+description: Use when building C++ projects with CMake on Windows.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [cmake, windows, cpp, build, msvc, clang]
 ---
+
 # CMake on Windows Workflow
 
 Building C++ projects with CMake on Windows (MSVC, Clang-CL, Ninja).

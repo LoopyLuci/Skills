@@ -1,14 +1,13 @@
 ---
 name: database-postgresql-performance-troubleshooting--troubleshooting
-description: "Use when applying postgresql performance troubleshooting."
+description: Use when applying postgresql performance troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, postgres]
-    related_skills: ['postgres-performance-troubleshooting']
 ---
 
 # Database Postgresql Performance Troubleshooting Troubleshooting

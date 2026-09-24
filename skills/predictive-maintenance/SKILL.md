@@ -2,12 +2,12 @@
 name: predictive-maintenance
 description: Vibration analysis, thermal imaging, ML models, and maintenance scheduling
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["maintenance", "reliability"]
+    tags: [maintenance, reliability]
 ---
 
 # Predictive Maintenance

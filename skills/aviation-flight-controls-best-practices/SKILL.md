@@ -1,14 +1,13 @@
 ---
 name: aviation-flight-controls-best-practices
-description: "Use when applying flight controls aviation best practices."
+description: Use when applying flight controls aviation best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, aerospace]
-    related_skills: ['']
 ---
 
 # Aviation Flight Controls Best Practices

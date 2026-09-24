@@ -1,14 +1,13 @@
 ---
 name: plan
 description: Write a markdown plan to .hermes/plans/; no execution.
-version: 2.0.0
-author: Hermes Agent (writing-craft adapted from obra/superpowers)
+version: 1.0.0
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [planning, plan-mode, implementation, workflow, design, documentation]
-    related_skills: [subagent-driven-development, test-driven-development, requesting-code-review]
 ---
 
 # Plan Mode

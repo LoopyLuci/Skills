@@ -1,14 +1,13 @@
 ---
 name: failure-mode-analysis
-description: "Use when performing FMEA analysis."
+description: Use when performing FMEA analysis.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [manufacturing, fmea, reliability, risk-assessment]
-    related_skills: [general]
 ---
 
 # Failure Mode Analysis

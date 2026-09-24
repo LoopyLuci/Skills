@@ -2,12 +2,12 @@
 name: cat-care-behavior
 description: Feline behavior, enrichment, health, and multi-cat households
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["cat", "behavior"]
+    tags: [cat, behavior]
 ---
 
 # Cat Care Behavior

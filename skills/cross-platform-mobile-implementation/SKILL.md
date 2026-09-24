@@ -1,14 +1,13 @@
 ---
 name: cross-platform-mobile-implementation
-description: "Use when applying cross platform mobile implementation."
+description: Use when applying cross platform mobile implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mobile, cross-platform, react-native, flutter]
-    related_skills: [general]
 ---
 
 # Cross Platform Mobile Implementation

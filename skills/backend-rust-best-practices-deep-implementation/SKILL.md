@@ -1,14 +1,13 @@
 ---
 name: backend-rust-best-practices-deep-implementation
-description: "Use when applying rust backend best practices implementa."
+description: Use when applying rust backend best practices implementa.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, rust]
-    related_skills: ['backend-rust-best-practices']
 ---
 
 # Backend Rust Best Practices Deep Implementation

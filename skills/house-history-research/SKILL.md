@@ -2,12 +2,12 @@
 name: house-history-research
 description: Property research, building histories, and land records
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["house", "property"]
+    tags: [house, property]
 ---
 
 # House History Research

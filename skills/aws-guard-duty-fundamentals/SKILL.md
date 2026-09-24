@@ -1,14 +1,13 @@
 ---
 name: aws-guard-duty-fundamentals
-description: "Use when applying aws guardduty fundamentals."
+description: Use when applying aws guardduty fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, guardduty, security, threat-detection]
-    related_skills: [general]
 ---
 
 # Aws Guard Duty Fundamentals

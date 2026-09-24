@@ -1,14 +1,13 @@
 ---
 name: cloud-penetration-testing-deep-implementation
-description: "Use when applying cloud penetration testing implementation."
+description: Use when applying cloud penetration testing implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, security]
-    related_skills: ['cloud-penetration-testing']
 ---
 
 # Cloud Penetration Testing Deep Implementation

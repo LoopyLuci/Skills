@@ -1,9 +1,15 @@
 ---
 name: powershell-xml-processing
-description: "Use when processing XML data in PowerShell."
-category: software-development
-tags: [powershell, xml, parsing, xpath, config]
+description: Use when processing XML data in PowerShell.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [powershell, xml, parsing, xpath, config]
 ---
+
 # PowerShell XML Processing
 
 Working with XML data in PowerShell.

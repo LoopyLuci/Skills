@@ -1,14 +1,13 @@
 ---
 name: aviation-aircraft-certification-best-practices
-description: "Use when applying aircraft certification best practices."
+description: Use when applying aircraft certification best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, cert, certification]
-    related_skills: ['general']
 ---
 
 # Aviation Aircraft Certification Best Practices

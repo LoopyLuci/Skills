@@ -1,14 +1,13 @@
 ---
 name: api-gateway-patterns
-description: "Use when implementing API gateways."
+description: Use when implementing API gateways.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [api, api-gateway, microservices, routing]
-    related_skills: ['api-gateway-load-balancing']
 ---
 
 # Api Gateway Patterns

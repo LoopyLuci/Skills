@@ -1,14 +1,13 @@
 ---
 name: desktop-wpf-implementation
-description: "Use when applying wpf desktop implementation."
+description: Use when applying wpf desktop implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [desktop, wpf, dotnet, csharp]
-    related_skills: [general]
 ---
 
 # Desktop Wpf Implementation

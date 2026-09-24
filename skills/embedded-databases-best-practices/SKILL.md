@@ -1,14 +1,13 @@
 ---
 name: embedded-databases-best-practices
-description: "Use when applying embedded databases best practices."
+description: Use when applying embedded databases best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, embedded, sqlite, leveldb]
-    related_skills: [general]
 ---
 
 # Embedded Databases Best Practices

@@ -1,9 +1,13 @@
 ---
 name: connection-monitor
-title: Connection Monitor
 description: Use when monitoring active connections and their states.
-category: networking
-tags: [connection, monitor, active, state, tracking, rust]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [connection, monitor, active, state, tracking, rust]
 ---
 
 # Connection Monitor

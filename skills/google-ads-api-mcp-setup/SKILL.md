@@ -1,8 +1,13 @@
 ---
 name: google-ads-api-mcp-setup
 description: Use when installing and configuring the Google Ads MCP Server for AI assistants.
-tags: [google-ads, mcp, api, python, pipx, ai-tools]
-related_skills: [google-cloud-recipe-auth, gemini-api]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [google-ads, mcp, api, python, pipx, ai-tools]
 ---
 
 # Google Ads API MCP Server Installation

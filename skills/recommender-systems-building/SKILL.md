@@ -1,13 +1,13 @@
 ---
 name: recommender-systems-building
-description: "Use when building recommendation engine architectures."
+description: Use when building recommendation engine architectures.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [recommender-systems, collaborative-filtering, matrix-factorization, neural-recsys]
-    related_skills: [embedding-models-patterns, nlp-techniques, data-augmentation-techniques, ml-pipeline-design]
 ---
 
 # Recommender Systems Building

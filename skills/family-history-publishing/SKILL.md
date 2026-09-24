@@ -2,12 +2,12 @@
 name: family-history-publishing
 description: Family history books, charts, and multimedia publishing
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["publishing", "family-history"]
+    tags: [publishing, family-history]
 ---
 
 # Family History Publishing

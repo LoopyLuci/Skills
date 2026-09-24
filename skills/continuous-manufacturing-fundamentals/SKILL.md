@@ -1,14 +1,13 @@
 ---
 name: continuous-manufacturing-fundamentals
-description: "Use when applying continuous mfg fundamentals."
+description: Use when applying continuous mfg fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, pharma, continuous-manufacturing]
-    related_skills: [general]
 ---
 
 # Continuous Manufacturing Fundamentals

@@ -1,14 +1,13 @@
 ---
 name: aws-services
-description: "Use when working with AWS services."
+description: Use when working with AWS services.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, aws, amazon, services]
-    related_skills: [general]
 ---
 
 # Aws Services

@@ -1,14 +1,13 @@
 ---
 name: digital-marketing-best-practices
-description: "Use when applying digital marketing best practices."
+description: Use when applying digital marketing best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, digital-marketing, digital-marketing-strategy]
-    related_skills: [general]
 ---
 
 # Digital Marketing Best Practices

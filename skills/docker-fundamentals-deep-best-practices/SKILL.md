@@ -1,14 +1,13 @@
 ---
 name: docker-fundamentals-deep-best-practices
-description: "Use when applying docker fundamentals best practices."
+description: Use when applying docker fundamentals best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, docker]
-    related_skills: ['docker-fundamentals']
 ---
 
 # Docker Fundamentals Deep Best Practices

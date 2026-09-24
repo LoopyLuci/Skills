@@ -1,13 +1,13 @@
 ---
 name: technical-writing-patterns
-description: "Use when writing technical documentation."
+description: Use when writing technical documentation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [technical-writing, documentation, API-docs, README, style-guide, Diátaxis]
-    related_skills: [swagger-openapi-patterns, api-design-and-documentation, documentation-generation, codebase-onboarding]
+    tags: [technical-writing, documentation, api-docs, readme, style-guide, diátaxis]
 ---
 
 # Technical Writing Patterns

@@ -1,14 +1,13 @@
 ---
 name: api-design-and-documentation
-description: "Use for REST API design. Resources, schemas, OpenAPI, auth."
-version: 1.1.0
-author: Hermes Agent
+description: Use for REST API design. Resources, schemas, OpenAPI, auth.
+version: 1.0.0
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [programming, api, rest, design, documentation, openapi]
-    related_skills: [database-schema-design, code-review-checklist]
 ---
 
 # Api Design And Documentation

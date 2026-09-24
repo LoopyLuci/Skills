@@ -1,14 +1,13 @@
 ---
 name: blockchain-development-solidity-deep-troubleshooting
-description: "Use when applying solidity development troubleshooting."
+description: Use when applying solidity development troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [blockchain, solidity]
-    related_skills: ['blockchain-development-solidity']
 ---
 
 # Blockchain Development Solidity Deep Troubleshooting

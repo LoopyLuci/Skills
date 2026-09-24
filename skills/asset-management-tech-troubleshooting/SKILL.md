@@ -1,14 +1,13 @@
 ---
 name: asset-management-tech-troubleshooting
-description: "Use when applying asset management tech troubleshooting."
+description: Use when applying asset management tech troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, asset, asset-management-fundamentals]
-    related_skills: [general]
 ---
 
 # Asset Management Tech Troubleshooting

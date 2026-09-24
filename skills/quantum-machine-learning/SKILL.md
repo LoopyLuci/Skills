@@ -2,12 +2,12 @@
 name: quantum-machine-learning
 description: Quantum kernels, QSVM, variational circuits, and quantum neural networks
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["qml", "hybrid"]
+    tags: [qml, hybrid]
 ---
 
 # Quantum Machine Learning

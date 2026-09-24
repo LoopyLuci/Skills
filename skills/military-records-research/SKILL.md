@@ -2,12 +2,12 @@
 name: military-records-research
 description: Military service records, pensions, and unit histories
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["military", "records"]
+    tags: [military, records]
 ---
 
 # Military Records Research

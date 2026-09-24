@@ -1,14 +1,13 @@
 ---
 name: cloud-security-fundamentals-deep-fundamentals
-description: "Use when applying cloud security fundamentals fundamentals."
+description: Use when applying cloud security fundamentals fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, security]
-    related_skills: ['cloud-security-fundamentals']
 ---
 
 # Cloud Security Fundamentals Deep Fundamentals

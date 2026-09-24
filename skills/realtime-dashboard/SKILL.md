@@ -1,9 +1,13 @@
 ---
 name: realtime-dashboard
-title: Real-Time Dashboard
 description: Use when building live network traffic visualization UI.
-category: networking
-tags: [dashboard, realtime, visualization, svelte, chart, ui]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [dashboard, realtime, visualization, svelte, chart, ui]
 ---
 
 # Real-Time Dashboard

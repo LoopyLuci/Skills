@@ -1,14 +1,13 @@
 ---
 name: api-specification-design
-description: "Use when designing API specifications."
+description: Use when designing API specifications.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [api, specification, design, openapi]
-    related_skills: ['api-design-and-documentation', 'swagger-openapi-patterns']
 ---
 
 # Api Specification Design

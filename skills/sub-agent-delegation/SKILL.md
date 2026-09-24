@@ -1,9 +1,15 @@
 ---
 name: sub-agent-delegation
-description: "Use when delegating subtasks to sub-agents."
-category: mlops
-tags: [agents, delegation, sub-agents, sub-tasks, hierarchy]
+description: Use when delegating subtasks to sub-agents.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [agents, delegation, sub-agents, sub-tasks, hierarchy]
 ---
+
 # Sub-Agent Delegation
 
 Delegating tasks to sub-agents with context, constraints, and result verification.

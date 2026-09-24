@@ -2,12 +2,12 @@
 name: electronic-health-records-ehr
 description: EHR implementation, CPOE, interoperability, HL7 FHIR, and usability
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["ehr", "interoperability"]
+    tags: [ehr, interoperability]
 ---
 
 # Electronic Health Records Ehr

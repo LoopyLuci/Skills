@@ -1,14 +1,13 @@
 ---
 name: electric-aviation-propulsion
-description: "Use when designing electric aviation."
+description: Use when designing electric aviation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [automotive, aviation-electric, epropulsion, aerospace]
-    related_skills: [aerospace-systems-engineering]
 ---
 
 # Electric Aviation Propulsion

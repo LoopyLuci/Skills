@@ -1,14 +1,13 @@
 ---
 name: django-authentication-best-practices
-description: "Use when applying django auth best practices."
+description: Use when applying django auth best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, django, auth, python]
-    related_skills: [general]
 ---
 
 # Django Authentication Best Practices

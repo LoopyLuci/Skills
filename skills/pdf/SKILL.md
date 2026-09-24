@@ -1,15 +1,13 @@
 ---
 name: pdf
-description: "Create, merge, split, fill, and secure PDF files."
+description: Create, merge, split, fill, and secure PDF files.
 version: 1.0.0
-author: Anthropic (adapted by Nous Research)
-license: Proprietary. LICENSE.txt has complete terms
-platforms: [linux, macos, windows]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [PDF, Documents, Forms, Office, Productivity]
-    category: productivity
-    related_skills: [ocr-and-documents, nano-pdf, docx, xlsx]
+    tags: [pdf, documents, forms, office, productivity]
 ---
 
 # PDF Skill

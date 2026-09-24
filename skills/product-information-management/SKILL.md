@@ -2,12 +2,12 @@
 name: product-information-management
 description: PIM, product data, digital assets, and syndication
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["pim", "data"]
+    tags: [pim, data]
 ---
 
 # Product Information Management

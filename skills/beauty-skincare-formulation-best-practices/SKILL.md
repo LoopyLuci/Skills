@@ -1,14 +1,13 @@
 ---
 name: beauty-skincare-formulation-best-practices
-description: "Use when applying skincare formulation best practices."
+description: Use when applying skincare formulation best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [beauty, skincare, beauty-skincare-formulation]
-    related_skills: ['general']
 ---
 
 # Beauty Skincare Formulation Best Practices

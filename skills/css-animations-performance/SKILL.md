@@ -1,12 +1,13 @@
 ---
 name: css-animations-performance
-description: "Use when implementing CSS animations."
+description: Use when implementing CSS animations.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["css-animations", "GPU-compositing", "will-change"]
+    tags: [css-animations, gpu-compositing, will-change]
 ---
 
 # Css Animations Performance

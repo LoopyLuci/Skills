@@ -1,13 +1,13 @@
 ---
 name: seo-search-engine-optimization
-description: "Use when implementing SEO strategies and technical audits."
+description: Use when implementing SEO strategies and technical audits.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [seo, search-engine-optimization, keyword-research, technical-seo, content-optimization]
-    related_skills: [website-analytics-tracking, content-writing-seo-copy, cms-website-management, digital-marketing-strategy]
 ---
 
 # Seo Search Engine Optimization

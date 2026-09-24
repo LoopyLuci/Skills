@@ -1,14 +1,13 @@
 ---
 name: embedded-cpp-best-practices
-description: "Use when applying c++ for embedded best practices."
+description: Use when applying c++ for embedded best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [embedded, cpp, cplusplus, microcontroller]
-    related_skills: [general]
 ---
 
 # Embedded Cpp Best Practices

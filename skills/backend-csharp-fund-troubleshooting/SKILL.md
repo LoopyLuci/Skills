@@ -1,14 +1,13 @@
 ---
 name: backend-csharp-fund-troubleshooting
-description: "Use when applying backend c# fundamentals troubleshooting."
+description: Use when applying backend c# fundamentals troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, csharp, backend-csharp-fundamentals]
-    related_skills: [general]
 ---
 
 # Backend Csharp Fund Troubleshooting

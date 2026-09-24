@@ -1,14 +1,13 @@
 ---
 name: aws-data-protection
-description: "Use when protecting AWS data."
+description: Use when protecting AWS data.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, aws, data-protection-best-practices]
-    related_skills: [general]
 ---
 
 # Aws Data Protection

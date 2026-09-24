@@ -1,14 +1,13 @@
 ---
 name: aviation-turboprop-implementation
-description: "Use when applying turboprop engines implementation."
+description: Use when applying turboprop engines implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, engines, turbofan]
-    related_skills: ['general']
 ---
 
 # Aviation Turboprop Implementation

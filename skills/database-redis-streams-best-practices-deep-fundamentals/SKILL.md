@@ -1,14 +1,13 @@
 ---
 name: database-redis-streams-best-practices-deep-fundamentals
-description: "Use when applying redis streams fundamentals."
+description: Use when applying redis streams fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, redis]
-    related_skills: ['redis-streams-best-practices']
 ---
 
 # Database Redis Streams Best Practices Deep Fundamentals

@@ -1,14 +1,13 @@
 ---
 name: drug-delivery-implementation
-description: "Use when applying drug delivery implementation."
+description: Use when applying drug delivery implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [medicine, pharma, pharmaceutical-design]
-    related_skills: [general]
 ---
 
 # Drug Delivery Implementation

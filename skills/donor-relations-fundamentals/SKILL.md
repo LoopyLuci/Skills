@@ -1,14 +1,13 @@
 ---
 name: donor-relations-fundamentals
-description: "Use when applying donor relations fundamentals."
+description: Use when applying donor relations fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [npo, fundraising, donor-relationship-management]
-    related_skills: [general]
 ---
 
 # Donor Relations Fundamentals

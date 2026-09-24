@@ -2,12 +2,12 @@
 name: retail-merchandising-planning
 description: Assortment planning, space allocation, and retail analytics
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["merchandising", "planning"]
+    tags: [merchandising, planning]
 ---
 
 # Retail Merchandising Planning

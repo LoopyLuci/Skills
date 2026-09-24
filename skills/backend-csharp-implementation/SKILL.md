@@ -1,14 +1,13 @@
 ---
 name: backend-csharp-implementation
-description: "Use when applying c# backend implementation."
+description: Use when applying c# backend implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, csharp, dotnet]
-    related_skills: [general]
 ---
 
 # Backend Csharp Implementation

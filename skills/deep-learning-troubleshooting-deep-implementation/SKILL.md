@@ -1,14 +1,13 @@
 ---
 name: deep-learning-troubleshooting-deep-implementation
-description: "Use when applying deep learning troubleshooting implemen."
+description: Use when applying deep learning troubleshooting implemen.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, ml-deep-learning-troubleshooting]
-    related_skills: ['']
 ---
 
 # Deep Learning Troubleshooting Deep Implementation

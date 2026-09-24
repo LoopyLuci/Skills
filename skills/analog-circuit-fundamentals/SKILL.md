@@ -1,14 +1,13 @@
 ---
 name: analog-circuit-fundamentals
-description: "Use when applying analog circuits fundamentals."
+description: Use when applying analog circuits fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [electronics, circuit, analog-circuit-design]
-    related_skills: [general]
 ---
 
 # Analog Circuit Fundamentals

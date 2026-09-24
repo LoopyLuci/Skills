@@ -1,14 +1,13 @@
 ---
 name: design-md-deep-fundamentals
-description: "Use when applying design.md token spec fundamentals."
+description: Use when applying design.md token spec fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [design, design-md]
-    related_skills: ['design-md']
 ---
 
 # Design Md Deep Fundamentals

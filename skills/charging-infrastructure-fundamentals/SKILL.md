@@ -1,14 +1,13 @@
 ---
 name: charging-infrastructure-fundamentals
-description: "Use when applying charging infrastructure fundamentals."
+description: Use when applying charging infrastructure fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [auto, ev, charging-infrastructure]
-    related_skills: ['general']
 ---
 
 # Charging Infrastructure Fundamentals

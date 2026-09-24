@@ -1,13 +1,13 @@
 ---
 name: text-to-speech-engines
-description: "Use when building text-to-speech and voice synthesis."
+description: Use when building text-to-speech and voice synthesis.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [TTS, text-to-speech, voice-synthesis, Bark, Coqui, Tacotron, voice-cloning]
-    related_skills: [speech-recognition-systems, audio-processing-deep-learning, dialogue-systems-conversational-ai, multi-modal-models-vision-language]
+    tags: [tts, text-to-speech, voice-synthesis, bark, coqui, tacotron, voice-cloning]
 ---
 
 # Text-to-Speech Engines

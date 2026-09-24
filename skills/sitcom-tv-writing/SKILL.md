@@ -2,12 +2,12 @@
 name: sitcom-tv-writing
 description: Sitcom structure, writers' room, pitch, and script format
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["sitcom", "tv-writing"]
+    tags: [sitcom, tv-writing]
 ---
 
 # Sitcom Tv Writing

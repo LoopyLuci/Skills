@@ -1,14 +1,13 @@
 ---
 name: marketing-analytics-dashboard
-description: "Use when building marketing dashboards. KPIs, funnels."
+description: Use when building marketing dashboards. KPIs, funnels.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, analytics, dashboard, kpi, metrics, reporting]
-    related_skills: [marketing-strategy-framework, conversion-rate-optimization, ppc-advertising]
 ---
 
 # Marketing Analytics Dashboard

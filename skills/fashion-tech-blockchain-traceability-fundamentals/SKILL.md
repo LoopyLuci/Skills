@@ -1,14 +1,13 @@
 ---
 name: fashion-tech-blockchain-traceability-fundamentals
-description: "Use when applying fashion blockchain traceability fundam."
+description: Use when applying fashion blockchain traceability fundam.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, beauty]
-    related_skills: ['']
 ---
 
 # Fashion Tech Blockchain Traceability Fundamentals

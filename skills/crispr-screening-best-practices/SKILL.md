@@ -1,14 +1,13 @@
 ---
 name: crispr-screening-best-practices
-description: "Use when applying crispr screening best practices."
+description: Use when applying crispr screening best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, crispr, screening]
-    related_skills: [general]
 ---
 
 # Crispr Screening Best Practices

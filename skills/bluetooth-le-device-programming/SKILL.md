@@ -1,14 +1,13 @@
 ---
 name: bluetooth-le-device-programming
-description: "Use when programming BLE devices."
+description: Use when programming BLE devices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [consumer-tech, bluetooth-le, ble, embedded-systems]
-    related_skills: [general]
 ---
 
 # Bluetooth Le Device Programming

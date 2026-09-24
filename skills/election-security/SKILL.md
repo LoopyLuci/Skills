@@ -1,14 +1,13 @@
 ---
 name: election-security
-description: "Use when securing elections. Voting systems, audit."
+description: Use when securing elections. Voting systems, audit.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [govtech, election-security, voting, cybersecurity]
-    related_skills: [general]
 ---
 
 # Election Security

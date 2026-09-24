@@ -1,14 +1,13 @@
 ---
 name: augmented-reality-fundamentals
-description: "Use when applying augmented reality fundamentals."
+description: Use when applying augmented reality fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [electronics, ar, ar-vr-mr-development]
-    related_skills: [general]
 ---
 
 # Augmented Reality Fundamentals

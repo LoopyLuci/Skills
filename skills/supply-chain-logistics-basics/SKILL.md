@@ -1,13 +1,13 @@
 ---
 name: supply-chain-logistics-basics
-description: "Use when managing supply chain and logistics operations."
+description: Use when managing supply chain and logistics operations.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [supply-chain, logistics, inventory, warehouse, procurement, shipping]
-    related_skills: [vendor-management-procurement, ecommerce-platform-management, retail-pos-systems, business-continuity-planning]
 ---
 
 # Supply Chain and Logistics Basics

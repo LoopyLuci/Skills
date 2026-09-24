@@ -1,14 +1,13 @@
 ---
 name: advanced-materials-design
-description: "Use when designing advanced materials."
+description: Use when designing advanced materials.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [materials-science, materials-design, nanomaterials, engineering]
-    related_skills: [general]
 ---
 
 # Advanced Materials Design

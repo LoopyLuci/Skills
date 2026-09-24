@@ -1,14 +1,13 @@
 ---
 name: computer-vision-fundamentals
-description: "Use when learning computer vision fundamentals."
+description: Use when learning computer vision fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cv, computer-vision, image-processing]
-    related_skills: [general]
 ---
 
 # Computer Vision Fundamentals

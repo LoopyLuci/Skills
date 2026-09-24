@@ -1,14 +1,13 @@
 ---
 name: deep-learning-troubleshooting-deep-fundamentals
-description: "Use when applying deep learning troubleshooting fundamen."
+description: Use when applying deep learning troubleshooting fundamen.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, ml-deep-learning-troubleshooting]
-    related_skills: ['']
 ---
 
 # Deep Learning Troubleshooting Deep Fundamentals

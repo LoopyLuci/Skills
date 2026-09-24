@@ -1,13 +1,13 @@
 ---
 name: serverless-computing-patterns
-description: "Use when building serverless applications and functions."
+description: Use when building serverless applications and functions.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [serverless, lambda, functions, FaaS, AWS, cold-start, event-driven]
-    related_skills: [event-driven-architecture, microservices-decomposition, ci-cd-pipeline-setup, terraform-module-patterns]
+    tags: [serverless, lambda, functions, faas, aws, cold-start, event-driven]
 ---
 
 # Serverless Computing Patterns

@@ -1,14 +1,13 @@
 ---
 name: confidential-computing-troubleshooting
-description: "Use when applying confidential computing troubleshooting."
+description: Use when applying confidential computing troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, confidential-computing, enclave, tdx]
-    related_skills: [general]
 ---
 
 # Confidential Computing Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: agent-planning-algorithms-deep-fundamentals
-description: "Use when applying agent planning algorithms fundamentals."
+description: Use when applying agent planning algorithms fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agents, planning]
-    related_skills: ['agent-planning-algorithms']
 ---
 
 # Agent Planning Algorithms Deep Fundamentals

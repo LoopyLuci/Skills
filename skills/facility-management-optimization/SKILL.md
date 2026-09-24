@@ -1,14 +1,13 @@
 ---
 name: facility-management-optimization
-description: "Use when optimizing facility management systems."
+description: Use when optimizing facility management systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [facility-management, buildings, maintenance]
-    related_skills: [general]
 ---
 
 # Facility Management Optimization

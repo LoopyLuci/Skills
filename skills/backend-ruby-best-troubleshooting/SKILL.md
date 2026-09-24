@@ -1,14 +1,13 @@
 ---
 name: backend-ruby-best-troubleshooting
-description: "Use when applying backend ruby best troubleshooting."
+description: Use when applying backend ruby best troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, ruby, backend-ruby-best-practices]
-    related_skills: [general]
 ---
 
 # Backend Ruby Best Troubleshooting

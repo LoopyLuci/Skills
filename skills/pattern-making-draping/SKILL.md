@@ -2,12 +2,12 @@
 name: pattern-making-draping
 description: Pattern drafting, draping, and digital pattern making
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["pattern", "draping"]
+    tags: [pattern, draping]
 ---
 
 # Pattern Making Draping

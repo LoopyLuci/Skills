@@ -1,14 +1,13 @@
 ---
 name: credit-risk-troubleshooting
-description: "Use when applying credit risk troubleshooting."
+description: Use when applying credit risk troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, banking, credit-risk]
-    related_skills: [general]
 ---
 
 # Credit Risk Troubleshooting

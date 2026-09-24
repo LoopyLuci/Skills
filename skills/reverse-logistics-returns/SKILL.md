@@ -2,12 +2,12 @@
 name: reverse-logistics-returns
 description: Returns processing, refurbishment, recycling, and circular economy
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["reverse", "circularity"]
+    tags: [reverse, circularity]
 ---
 
 # Reverse Logistics Returns

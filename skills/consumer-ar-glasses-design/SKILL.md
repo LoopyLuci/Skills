@@ -1,14 +1,13 @@
 ---
 name: consumer-ar-glasses-design
-description: "Use when designing AR glasses for consumers."
+description: Use when designing AR glasses for consumers.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [consumer-tech, ar-glasses, augmented-reality, display]
-    related_skills: [general]
 ---
 
 # Consumer Ar Glasses Design

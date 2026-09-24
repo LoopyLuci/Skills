@@ -1,13 +1,13 @@
 ---
 name: devsecops-shift-left
-description: "Use when implementing DevSecOps and shift-left security."
+description: Use when implementing DevSecOps and shift-left security.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [DevSecOps, shift-left, SAST, DAST, SCA, security-testing, CI-security]
-    related_skills: [software-bill-of-materials, supply-chain-levels-slsa, continuous-integration-advanced, security-audit-standards]
+    tags: [devsecops, shift-left, sast, dast, sca, security-testing, ci-security]
 ---
 
 # DevSecOps and Shift-Left Security

@@ -1,12 +1,13 @@
 ---
 name: sed-stream-editor
-description: "Use when editing text with sed."
+description: Use when editing text with sed.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["sed", "stream-editor", "text-transform", "in-place"]
+    tags: [sed, stream-editor, text-transform, in-place]
 ---
 
 # Sed Stream Editor

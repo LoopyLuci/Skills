@@ -1,12 +1,13 @@
 ---
 name: azure-functions-serverless
-description: "Use when building Azure Functions."
+description: Use when building Azure Functions.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["azure", "functions", "serverless", "triggers", "bindings"]
+    tags: [azure, functions, serverless, triggers, bindings]
 ---
 
 # Azure Functions Serverless

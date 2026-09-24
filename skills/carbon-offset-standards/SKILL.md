@@ -1,14 +1,13 @@
 ---
 name: carbon-offset-standards
-description: "Use when verifying carbon offsets. Methodology, MRV."
+description: Use when verifying carbon offsets. Methodology, MRV.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climatetech, carbon-offset, verification, mrv]
-    related_skills: [carbon-accounting-standards]
 ---
 
 # Carbon Offset Standards

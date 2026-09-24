@@ -1,14 +1,13 @@
 ---
 name: agent-memory-systems-deep-fundamentals
-description: "Use when applying agent memory systems fundamentals."
+description: Use when applying agent memory systems fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agents, memory]
-    related_skills: ['agent-memory-systems']
 ---
 
 # Agent Memory Systems Deep Fundamentals

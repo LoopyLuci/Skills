@@ -1,14 +1,13 @@
 ---
 name: email-marketing-behavioral-best-practices
-description: "Use when applying behavioral emails best practices."
+description: Use when applying behavioral emails best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, automation, behavioral]
-    related_skills: [general]
 ---
 
 # Email Marketing Behavioral Best Practices

@@ -1,9 +1,15 @@
 ---
 name: docker-dev-containers
-description: "Use when configuring VS Code Dev Containers."
-category: docker
-tags: [docker, devcontainers, vscode, development, environment]
+description: Use when configuring VS Code Dev Containers.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [docker, devcontainers, vscode, development, environment]
 ---
+
 # Docker Dev Containers
 
 Using VS Code Dev Containers for reproducible development environments.

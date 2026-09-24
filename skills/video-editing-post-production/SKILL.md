@@ -2,12 +2,12 @@
 name: video-editing-post-production
 description: Premiere, DaVinci, editing workflows, color grading, and audio sync
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["video", "editing"]
+    tags: [video, editing]
 ---
 
 # Video Editing Post Production

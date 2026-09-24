@@ -1,14 +1,13 @@
 ---
 name: accounting-implementation-fundamentals
-description: "Use when applying accounting implementation fundamentals."
+description: Use when applying accounting implementation fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, accounting-implementation]
-    related_skills: ['']
 ---
 
 # Accounting Implementation Fundamentals

@@ -2,12 +2,12 @@
 name: indie-game-marketing
 description: Steam page optimization, wishlist campaigns, press outreach, festival submissions, and launch strategy
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["marketing", "indie"]
+    tags: [marketing, indie]
 ---
 
 # Indie Game Marketing

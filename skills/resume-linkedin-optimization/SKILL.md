@@ -1,12 +1,13 @@
 ---
 name: resume-linkedin-optimization
-description: "Use when optimizing resumes and LinkedIn."
+description: Use when optimizing resumes and LinkedIn.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["resume", "linkedin", "personal-brand", "job-search"]
+    tags: [resume, linkedin, personal-brand, job-search]
 ---
 
 # Resume Linkedin Optimization

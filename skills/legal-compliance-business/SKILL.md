@@ -1,13 +1,13 @@
 ---
 name: legal-compliance-business
-description: "Use when managing legal and regulatory compliance."
+description: Use when managing legal and regulatory compliance.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [legal, compliance, regulations, GDPR, CCPA, business-law, contracts]
-    related_skills: [contract-management-basics, business-insurance-guide, hr-recruiting-onboarding, tax-planning-small-business]
+    tags: [legal, compliance, regulations, gdpr, ccpa, business-law, contracts]
 ---
 
 # Legal Compliance for Business

@@ -1,14 +1,13 @@
 ---
 name: aviation-maintenance-planning-implementation
-description: "Use when applying mro planning implementation."
+description: Use when applying mro planning implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, mro, maintenance-planning]
-    related_skills: ['general']
 ---
 
 # Aviation Maintenance Planning Implementation

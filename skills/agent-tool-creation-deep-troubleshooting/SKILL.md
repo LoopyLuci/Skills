@@ -1,14 +1,13 @@
 ---
 name: agent-tool-creation-deep-troubleshooting
-description: "Use when applying agent tool creation troubleshooting."
+description: Use when applying agent tool creation troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agents, tools]
-    related_skills: ['agent-tool-creation']
 ---
 
 # Agent Tool Creation Deep Troubleshooting

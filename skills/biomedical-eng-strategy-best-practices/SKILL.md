@@ -1,14 +1,13 @@
 ---
 name: biomedical-eng-strategy-best-practices
-description: "Use when applying biomedical strategy best practices."
+description: Use when applying biomedical strategy best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, biomedical, strategy]
-    related_skills: [general]
 ---
 
 # Biomedical Eng Strategy Best Practices

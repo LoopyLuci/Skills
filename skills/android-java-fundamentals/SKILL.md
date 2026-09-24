@@ -1,14 +1,13 @@
 ---
 name: android-java-fundamentals
-description: "Use when applying android java fundamentals."
+description: Use when applying android java fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mobile, android, java, android-development]
-    related_skills: [general]
 ---
 
 # Android Java Fundamentals

@@ -1,14 +1,13 @@
 ---
 name: competency-based-learning
-description: "Use when implementing competency-based learning."
+description: Use when implementing competency-based learning.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [education, competency-based, curriculum]
-    related_skills: [general]
 ---
 
 # Competency Based Learning

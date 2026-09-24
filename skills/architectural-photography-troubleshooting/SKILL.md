@@ -1,14 +1,13 @@
 ---
 name: architectural-photography-troubleshooting
-description: "Use when applying architectural photography troubleshoot."
+description: Use when applying architectural photography troubleshoot.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [media, photo, architecture]
-    related_skills: [general]
 ---
 
 # Architectural Photography Troubleshooting

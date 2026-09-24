@@ -1,9 +1,15 @@
 ---
 name: model-compression-techniques
-description: "Use when compressing models: pruning, quantization, distillation."
-category: mlops
-tags: [model-compression, pruning, quantization, distillation]
+description: Use when compressing models: pruning, quantization, distillation.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [model-compression, pruning, quantization, distillation]
 ---
+
 # Model Compression Techniques
 
 Reducing model size and inference cost through compression.

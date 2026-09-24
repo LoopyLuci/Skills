@@ -1,9 +1,15 @@
 ---
 name: skill-discovery
-description: "Use when discovering, designing, or developing skills."
-category: software-development
-tags: [skills, meta, discovery, design, development, best-practices]
+description: Use when discovering, designing, or developing skills.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [skills, meta, discovery, design, development, best-practices]
 ---
+
 # Skill Discovery — Design & Development Meta-Skill
 
 A systematic approach to discovering, designing, developing, and managing skills.

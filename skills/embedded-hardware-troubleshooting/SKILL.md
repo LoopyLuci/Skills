@@ -1,14 +1,13 @@
 ---
 name: embedded-hardware-troubleshooting
-description: "Use when applying embedded hardware troubleshooting."
+description: Use when applying embedded hardware troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [electronics, embedded, embedded-hardware]
-    related_skills: [general]
 ---
 
 # Embedded Hardware Troubleshooting

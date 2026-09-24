@@ -1,8 +1,13 @@
 ---
 name: content-page-generator
 description: Use when creating content slides for PowerPoint presentations with PptxGenJS.
-tags: [pptx, powerpoint, presentation, content-slide, pptxgenjs, javascript]
-related_skills: [cover-page-generator, section-divider-generator, summary-page-generator, table-of-contents-generator]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [pptx, powerpoint, presentation, content-slide, pptxgenjs, javascript]
 ---
 
 # Content Page Generator

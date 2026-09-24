@@ -1,14 +1,13 @@
 ---
 name: fashion-tech-compliance-troubleshooting
-description: "Use when applying fashion tech compliance troubleshooting."
+description: Use when applying fashion tech compliance troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, compliance, legal-compliance-business]
-    related_skills: ['general']
 ---
 
 # Fashion Tech Compliance Troubleshooting

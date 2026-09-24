@@ -1,14 +1,13 @@
 ---
 name: duckdb-analytical-queries-deep-implementation
-description: "Use when applying duckdb analytical queries implementation."
+description: Use when applying duckdb analytical queries implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, duckdb]
-    related_skills: ['duckdb-analytical-queries']
 ---
 
 # Duckdb Analytical Queries Deep Implementation

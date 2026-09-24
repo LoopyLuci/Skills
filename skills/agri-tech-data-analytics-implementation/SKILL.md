@@ -1,14 +1,13 @@
 ---
 name: agri-tech-data-analytics-implementation
-description: "Use when applying agricultural data analytics implementa."
+description: Use when applying agricultural data analytics implementa.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agri, analytics, agricultural-data]
-    related_skills: ['']
 ---
 
 # Agri Tech Data Analytics Implementation

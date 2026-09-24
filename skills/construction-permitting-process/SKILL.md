@@ -1,14 +1,13 @@
 ---
 name: construction-permitting-process
-description: "Use when handling construction permitting."
+description: Use when handling construction permitting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [construction, permitting, zoning, approvals]
-    related_skills: [general]
 ---
 
 # Construction Permitting Process

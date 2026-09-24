@@ -1,9 +1,13 @@
 ---
 name: crossplane-composition
-description: "Use when using Crossplane compositions."
+description: Use when using Crossplane compositions.
 version: 1.0.0
-author: Hermes Agent
-tags: ["crossplane", "kubernetes", "composition", "control-plane"]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [crossplane, kubernetes, composition, control-plane]
 ---
 
 # Crossplane Composition

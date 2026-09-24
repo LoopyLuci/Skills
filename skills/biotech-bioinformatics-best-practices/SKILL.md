@@ -1,14 +1,13 @@
 ---
 name: biotech-bioinformatics-best-practices
-description: "Use when applying bioinformatics best practices."
+description: Use when applying bioinformatics best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, bioinformatics]
-    related_skills: ['']
 ---
 
 # Biotech Bioinformatics Best Practices

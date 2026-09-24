@@ -1,6 +1,13 @@
 ---
 name: kubernetes-deployment
-description: "Deploy apps to k8s with deployments ingress and configmaps"
+description: Deploy apps to k8s with deployments ingress and configmaps
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [kubernetes, deployment]
 ---
 
 # Kubernetes Deployment
@@ -28,3 +35,16 @@ kubectl apply -f deployment.yaml
 kubectl get pods
 kubectl logs deployment/myapp -f
 ```
+
+## Trigger
+
+Activate this skill when the user mentions:
+- kubernetes, deployment workflows or issues
+- Building, fixing, or optimizing kubernetes deployment
+
+
+## Core Concepts
+
+- Domain fundamentals and best practices
+- Key tools and methodologies
+- Quality standards and common patterns

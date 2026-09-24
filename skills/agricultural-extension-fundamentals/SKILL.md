@@ -1,14 +1,13 @@
 ---
 name: agricultural-extension-fundamentals
-description: "Use when applying ag extension fundamentals."
+description: Use when applying ag extension fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agriculture, education, extension]
-    related_skills: [general]
 ---
 
 # Agricultural Extension Fundamentals

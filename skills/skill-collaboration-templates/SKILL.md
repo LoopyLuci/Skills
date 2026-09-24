@@ -1,13 +1,13 @@
 ---
 name: skill-collaboration-templates
-description: "Use when creating collaborative skill authoring templates."
+description: Use when creating collaborative skill authoring templates.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [meta, skill-collaboration, templates, teamwork, review, co-authoring]
-    related_skills: [skill-authoring-workflows, skill-review-feedback-loops, skill-template-catalog, skill-quality-standards]
 ---
 
 # Skill Collaboration Templates

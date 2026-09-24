@@ -1,14 +1,13 @@
 ---
 name: fan-out-pattern-deep2-best-practices
-description: "Use when applying fan-out pattern best practices."
+description: Use when applying fan-out pattern best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [sys, parallelism]
-    related_skills: ['fan-out-pattern']
 ---
 
 # Fan Out Pattern Deep2 Best Practices

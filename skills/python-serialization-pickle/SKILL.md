@@ -1,12 +1,13 @@
 ---
 name: python-serialization-pickle
-description: "Use when implementing serialization."
+description: Use when implementing serialization.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["python", "pickle", "json", "msgpack", "serialization"]
+    tags: [python, pickle, json, msgpack, serialization]
 ---
 
 # Python Serialization Pickle

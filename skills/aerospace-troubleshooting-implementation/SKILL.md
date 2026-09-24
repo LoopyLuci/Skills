@@ -1,14 +1,13 @@
 ---
 name: aerospace-troubleshooting-implementation
-description: "Use when applying aerospace troubleshooting implementation."
+description: Use when applying aerospace troubleshooting implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aerospace, troubleshooting, aerospace-eng-troubleshooting]
-    related_skills: [general]
 ---
 
 # Aerospace Troubleshooting Implementation

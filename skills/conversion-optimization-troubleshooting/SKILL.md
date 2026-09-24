@@ -1,14 +1,13 @@
 ---
 name: conversion-optimization-troubleshooting
-description: "Use when applying conversion optimization troubleshooting."
+description: Use when applying conversion optimization troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, conversion-rate-optimization, cro]
-    related_skills: [general]
 ---
 
 # Conversion Optimization Troubleshooting

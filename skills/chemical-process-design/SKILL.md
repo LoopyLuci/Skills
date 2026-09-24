@@ -1,14 +1,13 @@
 ---
 name: chemical-process-design
-description: "Use when designing chemical processes."
+description: Use when designing chemical processes.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [chem, design, process-design]
-    related_skills: [general]
 ---
 
 # Chemical Process Design

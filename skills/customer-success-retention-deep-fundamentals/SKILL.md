@@ -1,14 +1,13 @@
 ---
 name: customer-success-retention-deep-fundamentals
-description: "Use when applying customer retention fundamentals."
+description: Use when applying customer retention fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [sales, customer-success-retention]
-    related_skills: ['']
 ---
 
 # Customer Success Retention Deep Fundamentals

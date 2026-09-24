@@ -1,14 +1,13 @@
 ---
 name: building-energy-efficiency
-description: "Use when improving building efficiency. Audit, retro."
+description: Use when improving building efficiency. Audit, retro.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climatetech, energy-efficiency, buildings, retrofitting]
-    related_skills: [energy-efficiency-auditing, smart-building-controls]
 ---
 
 # Building Energy Efficiency

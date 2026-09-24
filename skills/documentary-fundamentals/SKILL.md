@@ -1,14 +1,13 @@
 ---
 name: documentary-fundamentals
-description: "Use when applying documentary fundamentals."
+description: Use when applying documentary fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [media, film, documentary]
-    related_skills: [general]
 ---
 
 # Documentary Fundamentals

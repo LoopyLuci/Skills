@@ -1,14 +1,13 @@
 ---
 name: aws-cdk-fundamentals
-description: "Use when applying aws cdk fundamentals."
+description: Use when applying aws cdk fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, cdk, iac, typescript]
-    related_skills: [general]
 ---
 
 # Aws Cdk Fundamentals

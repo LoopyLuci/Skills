@@ -1,14 +1,13 @@
 ---
 name: customer-success-management-deep-troubleshooting
-description: "Use when applying customer success management troublesho."
+description: Use when applying customer success management troublesho.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [sales, customer-success-management]
-    related_skills: ['']
 ---
 
 # Customer Success Management Deep Troubleshooting

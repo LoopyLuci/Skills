@@ -1,14 +1,13 @@
 ---
 name: fashion-sustainability-certification
-description: "Use when certifying fashion sustainability."
+description: Use when certifying fashion sustainability.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, sustainability-certification, b-corp, certification]
-    related_skills: [sustainable-fashion-design]
 ---
 
 # Fashion Sustainability Certification

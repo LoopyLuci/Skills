@@ -1,14 +1,13 @@
 ---
 name: aws-eventbridge-fundamentals
-description: "Use when applying aws eventbridge fundamentals."
+description: Use when applying aws eventbridge fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, eventbridge, events, event-bus]
-    related_skills: [general]
 ---
 
 # Aws Eventbridge Fundamentals

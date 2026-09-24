@@ -1,14 +1,13 @@
 ---
 name: customer-success-management-deep-best-practices
-description: "Use when applying customer success management best pract."
+description: Use when applying customer success management best pract.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [sales, customer-success-management]
-    related_skills: ['']
 ---
 
 # Customer Success Management Deep Best Practices

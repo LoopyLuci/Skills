@@ -1,14 +1,13 @@
 ---
 name: email-marketing-kpi-framework
-description: "Use when measuring email KPIs."
+description: Use when measuring email KPIs.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, marketing, kpis, analytics]
-    related_skills: [general]
 ---
 
 # Email Marketing Kpi Framework

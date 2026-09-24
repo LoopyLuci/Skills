@@ -1,14 +1,13 @@
 ---
 name: social-media-strategy
-description: "Use when building a social media strategy doc."
+description: Use when building a social media strategy doc.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [social-media, strategy, content-planning, marketing]
-    related_skills: [social-media-content-calendar, social-media-analytics]
 ---
 
 # Social Media Strategy

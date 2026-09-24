@@ -1,12 +1,13 @@
 ---
 name: duckdb-analytical-queries
-description: "Use when using DuckDB for analytics."
+description: Use when using DuckDB for analytics.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["duckdb", "analytics", "SQL", "parquet", "in-process"]
+    tags: [duckdb, analytics, sql, parquet, in-process]
 ---
 
 # Duckdb Analytical Queries

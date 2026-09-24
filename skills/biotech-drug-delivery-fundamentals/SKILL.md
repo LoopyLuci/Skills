@@ -1,14 +1,13 @@
 ---
 name: biotech-drug-delivery-fundamentals
-description: "Use when applying drug delivery systems fundamentals."
+description: Use when applying drug delivery systems fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, drug-delivery]
-    related_skills: ['']
 ---
 
 # Biotech Drug Delivery Fundamentals

@@ -1,14 +1,13 @@
 ---
 name: aviation-jet-engines-best-practices
-description: "Use when applying jet engines best practices."
+description: Use when applying jet engines best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, engines, propulsion]
-    related_skills: ['general']
 ---
 
 # Aviation Jet Engines Best Practices

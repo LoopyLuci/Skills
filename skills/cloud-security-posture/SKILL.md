@@ -1,14 +1,13 @@
 ---
 name: cloud-security-posture
-description: "Use when securing cloud infrastructure."
+description: Use when securing cloud infrastructure.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cybersecurity, cloud-security, cspm, misconfiguration]
-    related_skills: ['cloud-penetration-testing']
 ---
 
 # Cloud Security Posture

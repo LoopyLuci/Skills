@@ -1,14 +1,13 @@
 ---
 name: agri-tech-sustainable-fundamentals
-description: "Use when applying sustainable agriculture fundamentals."
+description: Use when applying sustainable agriculture fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agri, sustainable, sustainable-agriculture]
-    related_skills: ['']
 ---
 
 # Agri Tech Sustainable Fundamentals

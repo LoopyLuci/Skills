@@ -1,14 +1,13 @@
 ---
 name: azure-service-bus-implementation
-description: "Use when applying azure service bus implementation."
+description: Use when applying azure service bus implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, azure, service-bus, mq]
-    related_skills: [general]
 ---
 
 # Azure Service Bus Implementation

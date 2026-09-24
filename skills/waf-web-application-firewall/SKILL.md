@@ -1,13 +1,13 @@
 ---
 name: waf-web-application-firewall
-description: "Use when implementing web application firewalls and rules."
+description: Use when implementing web application firewalls and rules.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [WAF, web-application-firewall, modsecurity, OWASP, rules, SQL-injection, XSS]
-    related_skills: [web-security-patterns, network-ids-ips-patterns, ddos-mitigation-strategies, api-gateway-load-balancing]
+    tags: [waf, web-application-firewall, modsecurity, owasp, rules, sql-injection, xss]
 ---
 
 # Waf Web Application Firewall

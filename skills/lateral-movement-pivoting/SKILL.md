@@ -1,13 +1,13 @@
 ---
 name: lateral-movement-pivoting
-description: "Use when moving laterally in compromised networks."
+description: Use when moving laterally in compromised networks.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [lateral-movement, pivoting, pass-the-hash, psexec, WMI, SSH-tunnel, proxy]
-    related_skills: [privilege-escalation-techniques, active-directory-pentesting, port-redirection-tunneling, command-control-c2-infrastructure]
+    tags: [lateral-movement, pivoting, pass-the-hash, psexec, wmi, ssh-tunnel, proxy]
 ---
 
 # Lateral Movement and Pivoting

@@ -1,14 +1,13 @@
 ---
 name: banking-api-integration-troubleshooting
-description: "Use when applying banking apis troubleshooting."
+description: Use when applying banking apis troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, api, banking-api-integration]
-    related_skills: [general]
 ---
 
 # Banking Api Integration Troubleshooting

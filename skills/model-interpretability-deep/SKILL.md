@@ -1,13 +1,13 @@
 ---
 name: model-interpretability-deep
-description: "Use when implementing deep model interpretability methods."
+description: Use when implementing deep model interpretability methods.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [interpretability, explainability, SHAP, LIME, integrated-gradients, feature-attribution, mechanistic-interpretability]
-    related_skills: [explainable-ai-xai-patterns, model-monitoring-drift, feature-engineering-automation, random-forest-advanced]
+    tags: [interpretability, explainability, shap, lime, integrated-gradients, feature-attribution, mechanistic-interpretability]
 ---
 
 # Deep Model Interpretability

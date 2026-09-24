@@ -1,9 +1,15 @@
 ---
 name: skill-architecture-planning
-description: "Use when planning multi-skill architectures for complex tasks."
-category: software-development
-tags: [skills, architecture, planning, meta, workflow]
+description: Use when planning multi-skill architectures for complex tasks.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [skills, architecture, planning, meta, workflow]
 ---
+
 # Skill Architecture Planning
 
 Designing and planning multi-skill architectures for complex, multi-step tasks.

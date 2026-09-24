@@ -1,14 +1,13 @@
 ---
 name: content-calendar-best-practices
-description: "Use when applying content calendar best practices."
+description: Use when applying content calendar best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, content, content-marketing-calendar]
-    related_skills: [general]
 ---
 
 # Content Calendar Best Practices

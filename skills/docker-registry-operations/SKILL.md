@@ -1,9 +1,15 @@
 ---
 name: docker-registry-operations
-description: "Use when pushing/pulling/managing registry images."
-category: docker
-tags: [docker, registry, push, pull, dockerhub]
+description: Use when pushing/pulling/managing registry images.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [docker, registry, push, pull, dockerhub]
 ---
+
 # Docker Registry Operations
 
 Working with image registries.

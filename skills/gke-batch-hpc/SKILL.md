@@ -1,12 +1,13 @@
 ---
-
 name: gke-batch-hpc
-description: >-
-source: google/skills
-tags: [gcp, gke, kubernetes, google-cloud, container]
-metadata: 
-hermes: 
-
+description: Skill for gke batch hpc
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [gcp, gke, kubernetes, google-cloud, container]
 ---
 
 # GKE Batch & HPC Workloads

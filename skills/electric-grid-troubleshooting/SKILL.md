@@ -1,14 +1,13 @@
 ---
 name: electric-grid-troubleshooting
-description: "Use when applying electric grids troubleshooting."
+description: Use when applying electric grids troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [energy, grid, smart-grid-optimization]
-    related_skills: [general]
 ---
 
 # Electric Grid Troubleshooting

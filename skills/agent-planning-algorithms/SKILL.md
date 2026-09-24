@@ -1,13 +1,13 @@
 ---
 name: agent-planning-algorithms
-description: "Use when implementing planning algorithms for AI agents."
+description: Use when implementing planning algorithms for AI agents.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [planning, STRIPS, PDDL, HTN, task-planning, agent-reasoning]
-    related_skills: [agent-task-decomposition, agent-reasoning-patterns, advanced-reasoning-patterns, agent-framework-design]
+    tags: [planning, strips, pddl, htn, task-planning, agent-reasoning]
 ---
 
 # Agent Planning Algorithms

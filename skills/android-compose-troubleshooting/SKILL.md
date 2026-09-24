@@ -1,14 +1,13 @@
 ---
 name: android-compose-troubleshooting
-description: "Use when applying android jetpack compose troubleshooting."
+description: Use when applying android jetpack compose troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mobile, android, compose, kotlin]
-    related_skills: [general]
 ---
 
 # Android Compose Troubleshooting

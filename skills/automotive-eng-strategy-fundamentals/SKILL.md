@@ -1,14 +1,13 @@
 ---
 name: automotive-eng-strategy-fundamentals
-description: "Use when applying automotive strategy fundamentals."
+description: Use when applying automotive strategy fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, automotive, strategy]
-    related_skills: [general]
 ---
 
 # Automotive Eng Strategy Fundamentals

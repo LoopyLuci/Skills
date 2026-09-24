@@ -1,14 +1,13 @@
 ---
 name: chemical-eng-optimization-fundamentals
-description: "Use when applying chemical optimization fundamentals."
+description: Use when applying chemical optimization fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, chemical, optimization]
-    related_skills: [general]
 ---
 
 # Chemical Eng Optimization Fundamentals

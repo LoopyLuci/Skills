@@ -1,14 +1,13 @@
 ---
 name: dietary-supplement-implementation
-description: "Use when applying dietary supplements implementation."
+description: Use when applying dietary supplements implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [food, supplement, dietary-supplement-formulation]
-    related_skills: [general]
 ---
 
 # Dietary Supplement Implementation

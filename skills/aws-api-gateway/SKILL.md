@@ -1,12 +1,13 @@
 ---
 name: aws-api-gateway
-description: "Use when implementing aws api gateway."
+description: Use when implementing aws api gateway.
 version: 1.0.0
-author: "Skill Genesis Model"
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["aws", "api-gateway"]
+    tags: [aws, api-gateway]
 ---
 
 # Aws Api Gateway

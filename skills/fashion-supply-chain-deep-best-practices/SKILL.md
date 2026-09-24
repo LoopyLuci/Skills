@@ -1,14 +1,13 @@
 ---
 name: fashion-supply-chain-deep-best-practices
-description: "Use when applying fashion supply chain best practices."
+description: Use when applying fashion supply chain best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, supply-chain, fashion-supply-chain]
-    related_skills: ['general']
 ---
 
 # Fashion Supply Chain Deep Best Practices

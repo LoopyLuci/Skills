@@ -2,12 +2,12 @@
 name: youtube-content-creation
 description: Channel growth, video production, SEO, and monetization
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["youtube", "creator"]
+    tags: [youtube, creator]
 ---
 
 # Youtube Content Creation

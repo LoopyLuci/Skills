@@ -1,14 +1,13 @@
 ---
 name: biotech-regenerative-med-implementation
-description: "Use when applying regenerative medicine implementation."
+description: Use when applying regenerative medicine implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, regenerative]
-    related_skills: ['']
 ---
 
 # Biotech Regenerative Med Implementation

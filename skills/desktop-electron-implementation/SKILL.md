@@ -1,14 +1,13 @@
 ---
 name: desktop-electron-implementation
-description: "Use when applying electron desktop implementation."
+description: Use when applying electron desktop implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [desktop, electron, javascript, desktop-app]
-    related_skills: [general]
 ---
 
 # Desktop Electron Implementation

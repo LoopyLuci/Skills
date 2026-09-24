@@ -1,14 +1,13 @@
 ---
 name: analog-design-deep-troubleshooting
-description: "Use when applying analog design troubleshooting."
+description: Use when applying analog design troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [electronics, analog, analog-circuit-design]
-    related_skills: ['general']
 ---
 
 # Analog Design Deep Troubleshooting

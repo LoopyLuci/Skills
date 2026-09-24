@@ -1,14 +1,13 @@
 ---
 name: active-learning-implementation
-description: "Use when applying active learning implementation."
+description: Use when applying active learning implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ai, ml, active-learning-strategies]
-    related_skills: [general]
 ---
 
 # Active Learning Implementation

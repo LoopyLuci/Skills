@@ -2,12 +2,12 @@
 name: event-design-decor
 description: Event design, floral, lighting, and décor
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["design", "decor"]
+    tags: [design, decor]
 ---
 
 # Event Design Decor

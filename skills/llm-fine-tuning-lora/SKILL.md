@@ -1,9 +1,15 @@
 ---
 name: llm-fine-tuning-lora
-description: "Use when fine-tuning LLMs with LoRA/QLoRA."
-category: mlops
-tags: [llm, fine-tuning, lora, qlora, peft, huggingface]
+description: Use when fine-tuning LLMs with LoRA/QLoRA.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [llm, fine-tuning, lora, qlora, peft, huggingface]
 ---
+
 # LLM Fine-Tuning with LoRA/QLoRA
 
 Efficiently fine-tuning large language models using PEFT, LoRA, and QLoRA.

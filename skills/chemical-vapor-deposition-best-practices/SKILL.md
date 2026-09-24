@@ -1,14 +1,13 @@
 ---
 name: chemical-vapor-deposition-best-practices
-description: "Use when applying cvd best practices."
+description: Use when applying cvd best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [materials, semiconductor, cvd]
-    related_skills: [general]
 ---
 
 # Chemical Vapor Deposition Best Practices

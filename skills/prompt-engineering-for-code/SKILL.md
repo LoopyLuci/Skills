@@ -1,9 +1,15 @@
 ---
 name: prompt-engineering-for-code
-description: "Use when writing prompts for code generation tasks."
-category: software-development
-tags: [prompt, code-generation, llm, programming, copilot]
+description: Use when writing prompts for code generation tasks.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [prompt, code-generation, llm, programming, copilot]
 ---
+
 # Prompt Engineering for Code
 
 Writing effective prompts for code generation with LLMs.

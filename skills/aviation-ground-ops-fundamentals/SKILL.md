@@ -1,14 +1,13 @@
 ---
 name: aviation-ground-ops-fundamentals
-description: "Use when applying ground operations fundamentals."
+description: Use when applying ground operations fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, ops, airport]
-    related_skills: ['general']
 ---
 
 # Aviation Ground Ops Fundamentals

@@ -1,8 +1,13 @@
 ---
 name: pptx-generator
 description: Use when creating or editing PowerPoint presentations
-tags: [powerpoint, pptx, presentation, slides, design]
-related_skills: [minimax-xlsx, mmx-cli]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [powerpoint, pptx, presentation, slides, design]
 ---
 
 # Pptx Generator

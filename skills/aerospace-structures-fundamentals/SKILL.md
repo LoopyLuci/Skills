@@ -1,14 +1,13 @@
 ---
 name: aerospace-structures-fundamentals
-description: "Use when applying aerospace structures fundamentals."
+description: Use when applying aerospace structures fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aerospace, structures, aircraft-design]
-    related_skills: [general]
 ---
 
 # Aerospace Structures Fundamentals

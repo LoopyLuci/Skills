@@ -1,14 +1,13 @@
 ---
 name: landing-page-builder
-description: "Use when building landing pages. Structure, copy, CRO."
+description: Use when building landing pages. Structure, copy, CRO.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [landing-page, conversion, design, html-css, copywriting]
-    related_skills: [conversion-rate-optimization, website-architecture-planner]
 ---
 
 # Landing Page Builder

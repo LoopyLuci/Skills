@@ -2,12 +2,12 @@
 name: watershed-management
 description: Watershed planning, riparian zones, and water quality
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["watershed", "riparian"]
+    tags: [watershed, riparian]
 ---
 
 # Watershed Management

@@ -1,14 +1,13 @@
 ---
 name: few-shot-prompting-advanced-deep-implementation
-description: "Use when applying few-shot prompting implementation."
+description: Use when applying few-shot prompting implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, prompts]
-    related_skills: ['few-shot-prompting-advanced']
 ---
 
 # Few Shot Prompting Advanced Deep Implementation

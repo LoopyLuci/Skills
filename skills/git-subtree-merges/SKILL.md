@@ -1,6 +1,13 @@
 ---
 name: git-subtree-merges
 description: Merge external projects into your repo without submodules.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [git, subtree, merges]
 ---
 
 # Git Subtree Merges

@@ -1,14 +1,13 @@
 ---
 name: chemical-eng-troubleshooting-troubleshooting
-description: "Use when applying chemical troubleshooting troubleshooting."
+description: Use when applying chemical troubleshooting troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, chemical, troubleshooting]
-    related_skills: [general]
 ---
 
 # Chemical Eng Troubleshooting Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: automotive-eng-management-best-practices
-description: "Use when applying automotive management best practices."
+description: Use when applying automotive management best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, automotive, management]
-    related_skills: [general]
 ---
 
 # Automotive Eng Management Best Practices

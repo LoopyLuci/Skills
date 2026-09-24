@@ -1,9 +1,13 @@
 ---
 name: dotnet-webapi-minimal
-description: "Use when building minimal .NET APIs."
+description: Use when building minimal .NET APIs.
 version: 1.0.0
-author: Hermes Agent
-tags: ["dotnet", "C#", "minimal-api", "webapi", "endpoints"]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [dotnet, c#, minimal-api, webapi, endpoints]
 ---
 
 # Dotnet Webapi Minimal

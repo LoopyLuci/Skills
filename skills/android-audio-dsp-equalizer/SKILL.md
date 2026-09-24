@@ -1,13 +1,13 @@
 ---
 name: android-audio-dsp-equalizer
-version: 1.0.0
-author: Hermes Agent
-license: MIT
 description: Build EQ/DSP engines and spectrum visualizers on Android.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [android, dsp, equalizer, biquad, fft, kotlin]
-    related_skills: [android-audio-device-control]
 ---
 
 # Android Audio DSP: Equalizers & Visualization

@@ -1,14 +1,13 @@
 ---
 name: aws-codecommit-implementation
-description: "Use when applying aws codecommit implementation."
+description: Use when applying aws codecommit implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, codecommit, git, repository]
-    related_skills: [general]
 ---
 
 # Aws Codecommit Implementation

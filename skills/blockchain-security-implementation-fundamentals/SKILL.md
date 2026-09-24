@@ -1,14 +1,13 @@
 ---
 name: blockchain-security-implementation-fundamentals
-description: "Use when applying blockchain security implementation fun."
+description: Use when applying blockchain security implementation fun.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [blockchain, security]
-    related_skills: ['blockchain-security-implementation']
 ---
 
 # Blockchain Security Implementation Fundamentals

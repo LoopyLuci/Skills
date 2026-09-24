@@ -1,14 +1,13 @@
 ---
 name: android-fundamentals-deep-best-practices
-description: "Use when applying android fundamentals best practices."
+description: Use when applying android fundamentals best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mobile, android]
-    related_skills: ['mobile-android-fundamentals']
 ---
 
 # Android Fundamentals Deep Best Practices

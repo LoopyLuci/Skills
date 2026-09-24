@@ -2,12 +2,12 @@
 name: nutrition-dietetics-clinical
 description: Medical nutrition therapy, nutritional assessment, and dietary planning
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["nutrition", "dietetics"]
+    tags: [nutrition, dietetics]
 ---
 
 # Nutrition Dietetics Clinical

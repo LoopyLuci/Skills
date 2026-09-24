@@ -1,14 +1,13 @@
 ---
 name: biotech-cellular-therapy-implementation
-description: "Use when applying cellular therapy implementation."
+description: Use when applying cellular therapy implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, cell-therapy]
-    related_skills: ['']
 ---
 
 # Biotech Cellular Therapy Implementation

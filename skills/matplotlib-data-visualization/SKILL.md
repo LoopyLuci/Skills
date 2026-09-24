@@ -1,9 +1,13 @@
 ---
 name: matplotlib-data-visualization
-description: "Use when visualizing data with Matplotlib."
+description: Use when visualizing data with Matplotlib.
 version: 1.0.0
-author: Hermes Agent
-tags: ["matplotlib", "plots", "charts", "customization", "styling"]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [matplotlib, plots, charts, customization, styling]
 ---
 
 # Matplotlib Data Visualization

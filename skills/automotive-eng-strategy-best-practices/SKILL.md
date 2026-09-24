@@ -1,14 +1,13 @@
 ---
 name: automotive-eng-strategy-best-practices
-description: "Use when applying automotive strategy best practices."
+description: Use when applying automotive strategy best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, automotive, strategy]
-    related_skills: [general]
 ---
 
 # Automotive Eng Strategy Best Practices

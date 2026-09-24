@@ -1,14 +1,13 @@
 ---
 name: biocatalysts-implementation
-description: "Use when applying biocatalysts implementation."
+description: Use when applying biocatalysts implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, pharma, biocatalysts]
-    related_skills: [general]
 ---
 
 # Biocatalysts Implementation

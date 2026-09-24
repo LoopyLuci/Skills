@@ -2,12 +2,12 @@
 name: drug-discovery-development
 description: Target identification, lead optimization, preclinical, and clinical trial phases
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["pharma", "rdd"]
+    tags: [pharma, rdd]
 ---
 
 # Drug Discovery Development

@@ -1,9 +1,15 @@
 ---
 name: model-evaluation-metrics
-description: "Use when evaluating ML model performance."
-category: mlops
-tags: [ml, evaluation, metrics, classification, regression]
+description: Use when evaluating ML model performance.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [ml, evaluation, metrics, classification, regression]
 ---
+
 # Model Evaluation Metrics
 
 Selecting and interpreting evaluation metrics for ML models.

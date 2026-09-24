@@ -1,14 +1,13 @@
 ---
 name: desktop-electron-troubleshooting
-description: "Use when applying electron desktop troubleshooting."
+description: Use when applying electron desktop troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [desktop, electron, javascript, desktop-app]
-    related_skills: [general]
 ---
 
 # Desktop Electron Troubleshooting

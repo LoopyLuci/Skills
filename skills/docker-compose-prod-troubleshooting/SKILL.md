@@ -1,14 +1,13 @@
 ---
 name: docker-compose-prod-troubleshooting
-description: "Use when applying docker compose production troubleshoot."
+description: Use when applying docker compose production troubleshoot.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [docker, compose, prod, docker-compose-prod]
-    related_skills: [general]
 ---
 
 # Docker Compose Prod Troubleshooting

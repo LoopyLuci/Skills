@@ -1,14 +1,13 @@
 ---
 name: email-marketing-engagement-troubleshooting
-description: "Use when applying email engagement troubleshooting."
+description: Use when applying email engagement troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, analytics, engagement]
-    related_skills: [general]
 ---
 
 # Email Marketing Engagement Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: desktop-qt-best-practices
-description: "Use when applying qt desktop best practices."
+description: Use when applying qt desktop best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [desktop, qt, cpp, cplusplus]
-    related_skills: [general]
 ---
 
 # Desktop Qt Best Practices

@@ -1,14 +1,13 @@
 ---
 name: blue-team-ops-fundamentals
-description: "Use when for blue team operations fundamentals."
+description: Use when for blue team operations fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, blue-team, siem, monitoring]
-    related_skills: [general]
 ---
 
 # Blue Team Ops Fundamentals

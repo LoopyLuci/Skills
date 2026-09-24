@@ -2,12 +2,12 @@
 name: international-relations-theory
 description: Realism, liberalism, constructivism, diplomacy, and global governance
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["ir", "diplomacy"]
+    tags: [ir, diplomacy]
 ---
 
 # International Relations Theory

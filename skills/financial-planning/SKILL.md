@@ -1,14 +1,13 @@
 ---
 name: financial-planning
-description: "Use when planning finances."
+description: Use when planning finances.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, planning, financial-planning-budgeting]
-    related_skills: [general]
 ---
 
 # Financial Planning

@@ -1,14 +1,13 @@
 ---
 name: aws-eks-implementation
-description: "Use when applying aws eks implementation."
+description: Use when applying aws eks implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, eks, kubernetes, managed-k8s]
-    related_skills: [general]
 ---
 
 # Aws Eks Implementation

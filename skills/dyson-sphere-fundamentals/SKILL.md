@@ -1,14 +1,13 @@
 ---
 name: dyson-sphere-fundamentals
-description: "Use when applying dyson sphere fundamentals."
+description: Use when applying dyson sphere fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [space, physics, megastructure]
-    related_skills: [general]
 ---
 
 # Dyson Sphere Fundamentals

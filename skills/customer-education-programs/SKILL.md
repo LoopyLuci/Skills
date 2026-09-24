@@ -1,13 +1,13 @@
 ---
 name: customer-education-programs
-description: "Use when building customer education and enablement."
+description: Use when building customer education and enablement.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [customer-education, enablement, training, certification, knowledge-base, academy]
-    related_skills: [customer-onboarding-automation, customer-success-retention, product-led-growth, customer-advocacy-program]
 ---
 
 # Customer Education Programs

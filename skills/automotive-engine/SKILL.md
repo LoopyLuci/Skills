@@ -1,14 +1,13 @@
 ---
 name: automotive-engine
-description: "Use when designing engines."
+description: Use when designing engines.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [auto, engine, automotive-engine]
-    related_skills: [general]
 ---
 
 # Automotive Engine

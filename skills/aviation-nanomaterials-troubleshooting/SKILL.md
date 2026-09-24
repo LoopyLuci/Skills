@@ -1,14 +1,13 @@
 ---
 name: aviation-nanomaterials-troubleshooting
-description: "Use when applying aviation nanomaterials troubleshooting."
+description: Use when applying aviation nanomaterials troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, nano, nanomaterials]
-    related_skills: ['general']
 ---
 
 # Aviation Nanomaterials Troubleshooting

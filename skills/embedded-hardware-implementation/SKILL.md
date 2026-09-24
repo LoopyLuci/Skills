@@ -1,14 +1,13 @@
 ---
 name: embedded-hardware-implementation
-description: "Use when applying embedded hardware implementation."
+description: Use when applying embedded hardware implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [electronics, embedded, embedded-hardware]
-    related_skills: [general]
 ---
 
 # Embedded Hardware Implementation

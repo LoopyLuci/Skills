@@ -1,14 +1,13 @@
 ---
 name: embedded-rtems-fundamentals
-description: "Use when applying rtems fundamentals."
+description: Use when applying rtems fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [embedded, rtems, rtos, realtime]
-    related_skills: [general]
 ---
 
 # Embedded Rtems Fundamentals

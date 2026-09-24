@@ -1,14 +1,13 @@
 ---
 name: decentralized-finance-fundamentals
-description: "Use when for defi fundamentals."
+description: Use when for defi fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, management, general]
-    related_skills: [general]
 ---
 
 # Decentralized Finance Fundamentals

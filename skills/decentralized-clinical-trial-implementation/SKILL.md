@@ -1,14 +1,13 @@
 ---
 name: decentralized-clinical-trial-implementation
-description: "Use when applying dct implementation."
+description: Use when applying dct implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, medicine, dcx]
-    related_skills: [general]
 ---
 
 # Decentralized Clinical Trial Implementation

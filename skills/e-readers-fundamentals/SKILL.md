@@ -1,14 +1,13 @@
 ---
 name: e-readers-fundamentals
-description: "Use when applying e-readers fundamentals."
+description: Use when applying e-readers fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [electronics, consumer, e-reader]
-    related_skills: [general]
 ---
 
 # E Readers Fundamentals

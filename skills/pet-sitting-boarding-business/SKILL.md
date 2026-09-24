@@ -2,12 +2,12 @@
 name: pet-sitting-boarding-business
 description: Pet care business, insurance, safety, and client management
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["pet-care", "business"]
+    tags: [pet-care, business]
 ---
 
 # Pet Sitting Boarding Business

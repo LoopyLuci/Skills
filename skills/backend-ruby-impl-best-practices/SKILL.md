@@ -1,14 +1,13 @@
 ---
 name: backend-ruby-impl-best-practices
-description: "Use when applying backend ruby implementation best pract."
+description: Use when applying backend ruby implementation best pract.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, ruby, backend-ruby-implementation]
-    related_skills: [general]
 ---
 
 # Backend Ruby Impl Best Practices

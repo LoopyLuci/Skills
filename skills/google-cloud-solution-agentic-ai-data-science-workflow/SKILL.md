@@ -1,18 +1,13 @@
 ---
-
 name: google-cloud-solution-agentic-ai-data-science-workflow
-  category: AiAndMachineLearning
-description: >-
-  Designs a tailored multi-product agentic data science
-  architecture on Google Cloud that incorporates opinionated best practices. Use
-  when architecting multi-product solutions for agent-based data analytics or ML
-  workloads. Don't use for simple queries, non-agentic pipelines, general cloud
-  reviews, or writing agent code.
-source: google/skills
+description: Skill for google cloud solution agentic ai data science workflow
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [agent, skill]
-
 ---
 
 # Data science workflow with AI agents solution

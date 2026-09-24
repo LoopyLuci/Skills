@@ -2,12 +2,12 @@
 name: unity-game-development
 description: Unity C# game development patterns, prefabs, ScriptableObjects, coroutines, physics, and performance optimization
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["unity", "csharp", "game-dev"]
+    tags: [unity, csharp, game-dev]
 ---
 
 # Unity Game Development

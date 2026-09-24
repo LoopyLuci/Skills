@@ -2,12 +2,12 @@
 name: running-coaching-training
 description: Training plans, gait analysis, pace strategy, and race preparation
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["running", "coaching"]
+    tags: [running, coaching]
 ---
 
 # Running Coaching Training

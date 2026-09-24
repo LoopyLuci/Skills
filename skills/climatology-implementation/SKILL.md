@@ -1,14 +1,13 @@
 ---
 name: climatology-implementation
-description: "Use when implementing climatology projects."
+description: Use when implementing climatology projects.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climatology, climate, weather, change]
-    related_skills: [general]
 ---
 
 # Climatology Implementation

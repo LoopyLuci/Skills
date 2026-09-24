@@ -1,14 +1,13 @@
 ---
 name: drug-target-identification-troubleshooting
-description: "Use when applying drug target id troubleshooting."
+description: Use when applying drug target id troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, pharma, target-identification]
-    related_skills: [general]
 ---
 
 # Drug Target Identification Troubleshooting

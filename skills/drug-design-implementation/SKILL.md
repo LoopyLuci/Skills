@@ -1,14 +1,13 @@
 ---
 name: drug-design-implementation
-description: "Use when applying drug design implementation."
+description: Use when applying drug design implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [pharma, biotech, drug-design]
-    related_skills: [general]
 ---
 
 # Drug Design Implementation

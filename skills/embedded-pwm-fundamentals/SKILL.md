@@ -1,14 +1,13 @@
 ---
 name: embedded-pwm-fundamentals
-description: "Use when applying pwm programming fundamentals."
+description: Use when applying pwm programming fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [embedded, pwm, motor-control, signals]
-    related_skills: [general]
 ---
 
 # Embedded Pwm Fundamentals

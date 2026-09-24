@@ -1,14 +1,13 @@
 ---
 name: dentistry-analysis-troubleshooting
-description: "Use when applying dentistry analysis troubleshooting."
+description: Use when applying dentistry analysis troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [medicine, dentistry, dentistry-analysis]
-    related_skills: [general]
 ---
 
 # Dentistry Analysis Troubleshooting

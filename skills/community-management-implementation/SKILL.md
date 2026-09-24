@@ -1,14 +1,13 @@
 ---
 name: community-management-implementation
-description: "Use when applying community management implementation."
+description: Use when applying community management implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, community, community-management-engagement]
-    related_skills: [general]
 ---
 
 # Community Management Implementation

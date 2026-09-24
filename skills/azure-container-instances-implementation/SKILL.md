@@ -1,14 +1,13 @@
 ---
 name: azure-container-instances-implementation
-description: "Use when applying azure container instances implementation."
+description: Use when applying azure container instances implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, azure, aci, containers]
-    related_skills: [general]
 ---
 
 # Azure Container Instances Implementation

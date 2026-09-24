@@ -1,14 +1,13 @@
 ---
 name: audiovisual-content-creation
-description: "Use when creating audiovisual content."
+description: Use when creating audiovisual content.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [media, video-production, content-creation]
-    related_skills: [general]
 ---
 
 # Audiovisual Content Creation

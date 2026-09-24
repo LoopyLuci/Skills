@@ -1,14 +1,13 @@
 ---
 name: clinical-medicine
-description: "Use when practicing clinical medicine."
+description: Use when practicing clinical medicine.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [healthcare, medicine, medicine-fundamentals]
-    related_skills: [general]
 ---
 
 # Clinical Medicine

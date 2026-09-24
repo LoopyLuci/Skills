@@ -2,12 +2,12 @@
 name: corporate-social-responsibility
 description: CSR strategy, employee volunteering, sustainability reporting, and stakeholder engagement
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["csr", "responsibility"]
+    tags: [csr, responsibility]
 ---
 
 # Corporate Social Responsibility

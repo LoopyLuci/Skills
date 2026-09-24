@@ -1,14 +1,13 @@
 ---
 name: docker-compose
-description: "Use when using Docker Compose."
+description: Use when using Docker Compose.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [docker, compose, multi-service]
-    related_skills: [general]
 ---
 
 # Docker Compose

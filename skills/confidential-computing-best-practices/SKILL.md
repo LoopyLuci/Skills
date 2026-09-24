@@ -1,14 +1,13 @@
 ---
 name: confidential-computing-best-practices
-description: "Use when applying confidential computing best practices."
+description: Use when applying confidential computing best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, confidential-computing, enclave, tdx]
-    related_skills: [general]
 ---
 
 # Confidential Computing Best Practices

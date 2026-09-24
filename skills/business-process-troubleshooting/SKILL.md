@@ -1,14 +1,13 @@
 ---
 name: business-process-troubleshooting
-description: "Use when applying business process troubleshooting."
+description: Use when applying business process troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, process, business-process-reengineering]
-    related_skills: [general]
 ---
 
 # Business Process Troubleshooting

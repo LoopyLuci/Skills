@@ -1,14 +1,13 @@
 ---
 name: email-marketing-reporting-troubleshooting
-description: "Use when applying email reporting troubleshooting."
+description: Use when applying email reporting troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, reporting, kpis]
-    related_skills: [general]
 ---
 
 # Email Marketing Reporting Troubleshooting

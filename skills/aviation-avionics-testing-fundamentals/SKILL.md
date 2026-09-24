@@ -1,14 +1,13 @@
 ---
 name: aviation-avionics-testing-fundamentals
-description: "Use when applying avionics testing fundamentals."
+description: Use when applying avionics testing fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, testing, electronics]
-    related_skills: ['general']
 ---
 
 # Aviation Avionics Testing Fundamentals

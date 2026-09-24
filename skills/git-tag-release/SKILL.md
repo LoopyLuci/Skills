@@ -1,8 +1,13 @@
 ---
-
 name: git-tag-release
 description: Manage version tags and coordinate with GitHub releases.
-
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [git, tag, release]
 ---
 
 # Git Tag & Release Management

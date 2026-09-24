@@ -1,14 +1,13 @@
 ---
 name: guest-posting-outreach
-description: "Use when doing guest posting outreach. Targets."
+description: Use when doing guest posting outreach. Targets.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [guest-posting, outreach, backlinks, seo, content-marketing]
-    related_skills: [blog-idea-generator, blog-publishing-workflow, blog-seo-post-optimizer]
 ---
 
 # Guest Posting Outreach

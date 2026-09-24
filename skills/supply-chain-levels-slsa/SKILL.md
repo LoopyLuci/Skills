@@ -1,13 +1,13 @@
 ---
 name: supply-chain-levels-slsa
-description: "Use when implementing SLSA supply chain levels."
+description: Use when implementing SLSA supply chain levels.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [SLSA, supply-chain, levels, integrity, provenance, build-attestation]
-    related_skills: [software-bill-of-materials, devsecops-shift-left, ci-cd-pipeline-setup, container-security-hardening]
+    tags: [slsa, supply-chain, levels, integrity, provenance, build-attestation]
 ---
 
 # SLSA Supply Chain Levels

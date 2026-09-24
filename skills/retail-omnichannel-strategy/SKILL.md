@@ -2,12 +2,12 @@
 name: retail-omnichannel-strategy
 description: Unified commerce, BOPIS, ship-from-store, and inventory visibility
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["retail", "omnichannel"]
+    tags: [retail, omnichannel]
 ---
 
 # Retail Omnichannel Strategy

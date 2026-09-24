@@ -1,18 +1,13 @@
 ---
-
 name: detection-engineering-coverage-evaluation
-  category: Security
-description: >-
-  Automates the end-to-end detection engineering workflow in Google SecOps using MCP tools.
-  Use when fetching threat intelligence from blogs, generating Threat Detection Opportunities (TDOs),
-  simulating attacker behavior with synthetic UDM events, evaluating rule coverage,
-  generating new YARA-L 2.0 rules to close coverage gaps, and with user approval, deploy them to SecOps.
-  Don't use when asked to perform threat hunting actions, and SOC investigative actions.
-source: google/skills
+description: Skill for detection engineering coverage evaluation
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [agent, skill]
-
 ---
 
 # SecOps Detection Coverage Skill

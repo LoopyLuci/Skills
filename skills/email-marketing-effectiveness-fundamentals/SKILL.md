@@ -1,14 +1,13 @@
 ---
 name: email-marketing-effectiveness-fundamentals
-description: "Use when applying email effectiveness fundamentals."
+description: Use when applying email effectiveness fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, analytics, effectiveness]
-    related_skills: [general]
 ---
 
 # Email Marketing Effectiveness Fundamentals

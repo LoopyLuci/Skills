@@ -1,7 +1,13 @@
 ---
 name: hermes-mcp-server-integration
-description: "Use when configuring MCP servers in Hermes config.yaml."
-tags: [hermes, mcp, configuration, tool-integration, streaming]
+description: Use when configuring MCP servers in Hermes config.yaml.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [hermes, mcp, configuration, tool-integration, streaming]
 ---
 
 # Hermes MCP Server Integration

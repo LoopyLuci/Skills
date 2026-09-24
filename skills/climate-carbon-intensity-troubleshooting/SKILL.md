@@ -1,14 +1,13 @@
 ---
 name: climate-carbon-intensity-troubleshooting
-description: "Use when applying carbon intensity metrics troubleshooting."
+description: Use when applying carbon intensity metrics troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, metrics, carbon-intensity-metrics]
-    related_skills: ['']
 ---
 
 # Climate Carbon Intensity Troubleshooting

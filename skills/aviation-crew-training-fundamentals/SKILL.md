@@ -1,14 +1,13 @@
 ---
 name: aviation-crew-training-fundamentals
-description: "Use when applying crew training fundamentals."
+description: Use when applying crew training fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, training, crew]
-    related_skills: ['general']
 ---
 
 # Aviation Crew Training Fundamentals

@@ -1,9 +1,15 @@
 ---
 name: reinforcement-learning
-description: "Use when implementing reinforcement learning algorithms."
-category: mlops
-tags: [reinforcement-learning, rl, dqn, ppo, policy-gradient]
+description: Use when implementing reinforcement learning algorithms.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [reinforcement-learning, rl, dqn, ppo, policy-gradient]
 ---
+
 # Reinforcement Learning
 
 Implementing core RL algorithms: value-based, policy-based, and actor-critic.

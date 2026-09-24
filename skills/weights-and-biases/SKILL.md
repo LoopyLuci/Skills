@@ -1,15 +1,13 @@
 ---
 name: weights-and-biases
-description: "W&B: log ML experiments, sweeps, model registry, dashboards."
-version: 1.0.1
-author: Orchestra Research
+description: W&B: log ML experiments, sweeps, model registry, dashboards.
+version: 1.0.0
+author: LoopyLuci Community
 license: MIT
-dependencies: [wandb]
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: [MLOps, Weights And Biases, WandB, Experiment Tracking, Hyperparameter Tuning, Model Registry, Collaboration, Real-Time Visualization, PyTorch, TensorFlow, HuggingFace]
-
+    tags: [mlops, weights and biases, wandb, experiment tracking, hyperparameter tuning, model registry, collaboration, real-time visualization, pytorch, tensorflow, huggingface]
 ---
 
 # Weights & Biases: ML Experiment Tracking & MLOps
@@ -594,5 +592,3 @@ print(f"Share this URL: {run.url}")
 - `references/sweeps.md` - Comprehensive hyperparameter optimization guide
 - `references/artifacts.md` - Data and model versioning patterns
 - `references/integrations.md` - Framework-specific examples
-
-

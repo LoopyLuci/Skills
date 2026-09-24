@@ -1,14 +1,13 @@
 ---
 name: django-deployment-fundamentals
-description: "Use when applying django deployment fundamentals."
+description: Use when applying django deployment fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, django, deployment, gunicorn]
-    related_skills: [general]
 ---
 
 # Django Deployment Fundamentals

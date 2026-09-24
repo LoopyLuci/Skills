@@ -1,14 +1,13 @@
 ---
 name: digital-fashion-implementation
-description: "Use when applying digital fashion implementation."
+description: Use when applying digital fashion implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, digital, digital-art-generation]
-    related_skills: ['general']
 ---
 
 # Digital Fashion Implementation

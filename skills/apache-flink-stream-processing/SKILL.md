@@ -1,12 +1,13 @@
 ---
 name: apache-flink-stream-processing
-description: "Use when processing streams with Flink."
+description: Use when processing streams with Flink.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["flink", "streaming", "event-time", "checkpoints"]
+    tags: [flink, streaming, event-time, checkpoints]
 ---
 
 # Apache Flink Stream Processing

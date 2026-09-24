@@ -1,14 +1,13 @@
 ---
 name: chip-fabrication-best-practices
-description: "Use when applying chip fabrication best practices."
+description: Use when applying chip fabrication best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [semiconductor, mfg, semiconductor-fab]
-    related_skills: ['general']
 ---
 
 # Chip Fabrication Best Practices

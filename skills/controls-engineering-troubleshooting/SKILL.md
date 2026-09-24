@@ -1,14 +1,13 @@
 ---
 name: controls-engineering-troubleshooting
-description: "Use when applying controls engineering troubleshooting."
+description: Use when applying controls engineering troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, controls, automation, embedded-system]
-    related_skills: [general]
 ---
 
 # Controls Engineering Troubleshooting

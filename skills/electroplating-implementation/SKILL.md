@@ -1,14 +1,13 @@
 ---
 name: electroplating-implementation
-description: "Use when applying electroplating implementation."
+description: Use when applying electroplating implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [materials, manufacturing, electroplating]
-    related_skills: [general]
 ---
 
 # Electroplating Implementation

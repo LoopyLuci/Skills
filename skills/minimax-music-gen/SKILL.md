@@ -1,12 +1,13 @@
 ---
-
 name: minimax-music-gen
-description: >
-source: MiniMax-AI/skills
-tags: [music, audio, generation, minimax, ai]
-metadata: 
-hermes: 
-
+description: Skill for minimax music gen
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [music, audio, generation, minimax, ai]
 ---
 
 **Trigger**: Use when generating music with AI — vocal songs, instrumentals, or covers using the MiniMax Music API.

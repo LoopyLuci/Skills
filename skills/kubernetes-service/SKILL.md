@@ -1,12 +1,13 @@
 ---
 name: kubernetes-service
-description: "Use when implementing kubernetes service."
+description: Use when implementing kubernetes service.
 version: 1.0.0
-author: "Skill Genesis Model"
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["kubernetes", "service"]
+    tags: [kubernetes, service]
 ---
 
 # Kubernetes Service

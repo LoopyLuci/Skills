@@ -1,12 +1,13 @@
 ---
 name: javascript-fetch-api-patterns
-description: "Use when using fetch API."
+description: Use when using fetch API.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["javascript", "fetch", "HTTP", "API", "error-handling"]
+    tags: [javascript, fetch, http, api, error-handling]
 ---
 
 # Javascript Fetch Api Patterns

@@ -1,14 +1,13 @@
 ---
 name: bare-except-elimination
-description: "Replace bare except Exception: with typed exceptions."
+description: Replace bare except Exception: with typed exceptions.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [exceptions, error-handling, code-quality]
-    related_skills: [systematic-debugging, test-driven-development]
 ---
 
 # Bare Except Elimination

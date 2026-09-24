@@ -1,14 +1,13 @@
 ---
 name: email-marketing-transactional-best-practices
-description: "Use when applying transactional email best practices."
+description: Use when applying transactional email best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, transactional, triggered]
-    related_skills: [general]
 ---
 
 # Email Marketing Transactional Best Practices

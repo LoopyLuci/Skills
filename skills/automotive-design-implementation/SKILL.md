@@ -1,14 +1,13 @@
 ---
 name: automotive-design-implementation
-description: "Use when applying automotive design implementation."
+description: Use when applying automotive design implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [auto, design, automotive-hmi-design]
-    related_skills: [general]
 ---
 
 # Automotive Design Implementation

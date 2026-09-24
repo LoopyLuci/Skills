@@ -1,14 +1,13 @@
 ---
 name: codebase-onboarding
-description: "Use for codebase exploration. Map structure, deps, tests."
-version: 1.1.0
-author: Hermes Agent
+description: Use for codebase exploration. Map structure, deps, tests.
+version: 1.0.0
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [programming, onboarding, codebase, documentation, architecture]
-    related_skills: [api-design-and-documentation, refactoring-playbook, debugging-workflow]
 ---
 
 # Codebase Onboarding

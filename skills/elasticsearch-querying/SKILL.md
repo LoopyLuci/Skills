@@ -1,14 +1,13 @@
 ---
 name: elasticsearch-querying
-description: "Use when querying Elasticsearch."
+description: Use when querying Elasticsearch.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, elasticsearch, search, querying]
-    related_skills: ['elasticsearch-querying-basics']
 ---
 
 # Elasticsearch Querying

@@ -2,12 +2,12 @@
 name: freight-forwarding-logistics
 description: Customs brokerage, international freight, warehousing, and 3PL/4PL
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["freight", "forwarding"]
+    tags: [freight, forwarding]
 ---
 
 # Freight Forwarding Logistics

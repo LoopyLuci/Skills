@@ -1,14 +1,13 @@
 ---
 name: corporate-finance-advisory-troubleshooting
-description: "Use when applying corporate finance advisory troubleshoo."
+description: Use when applying corporate finance advisory troubleshoo.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [consulting, finance, corporate-finance]
-    related_skills: [general]
 ---
 
 # Corporate Finance Advisory Troubleshooting

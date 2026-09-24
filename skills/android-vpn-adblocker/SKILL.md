@@ -1,9 +1,13 @@
 ---
 name: android-vpn-adblocker
-title: Android VPN AdBlocker
 description: Use when building Android VPN-based adblocker with Kotlin.
-category: networking
-tags: [android, kotlin, vpn, adblock, vpnservice, kotlin]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [android, kotlin, vpn, adblock, vpnservice, kotlin]
 ---
 
 # Android VPN AdBlocker

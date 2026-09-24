@@ -1,12 +1,13 @@
 ---
-
 name: minimax-docx
-description: >
-source: MiniMax-AI/skills
-tags: [minimax, document, docx, office]
-metadata: 
-hermes: 
-
+description: Skill for minimax docx
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [minimax, document, docx, office]
 ---
 
 **Trigger**: Use when creating, editing, or formatting DOCX documents — generation, template application, content extraction, and validation.

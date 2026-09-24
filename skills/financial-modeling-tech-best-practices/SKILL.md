@@ -1,14 +1,13 @@
 ---
 name: financial-modeling-tech-best-practices
-description: "Use when applying financial modeling tech best practices."
+description: Use when applying financial modeling tech best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, modeling, financial-modeling-python]
-    related_skills: [general]
 ---
 
 # Financial Modeling Tech Best Practices

@@ -1,13 +1,13 @@
 ---
 name: redis-caching-patterns
-description: "Use when implementing Redis caching and data structures."
+description: Use when implementing Redis caching and data structures.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [redis, caching, pub-sub, streams, sorted-sets, caching-strategies]
-    related_skills: [caching-strategies, message-queue-patterns, api-rate-limiting]
 ---
 
 # Redis Caching Patterns

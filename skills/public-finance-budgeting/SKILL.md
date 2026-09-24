@@ -2,12 +2,12 @@
 name: public-finance-budgeting
 description: Public budgeting, fiscal policy, debt management, and capital planning
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["finance", "budgeting"]
+    tags: [finance, budgeting]
 ---
 
 # Public Finance Budgeting

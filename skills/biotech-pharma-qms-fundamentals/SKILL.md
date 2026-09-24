@@ -1,14 +1,13 @@
 ---
 name: biotech-pharma-qms-fundamentals
-description: "Use when applying pharmaceutical quality fundamentals."
+description: Use when applying pharmaceutical quality fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, pharma-qms]
-    related_skills: ['']
 ---
 
 # Biotech Pharma Qms Fundamentals

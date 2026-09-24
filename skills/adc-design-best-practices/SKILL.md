@@ -1,14 +1,13 @@
 ---
 name: adc-design-best-practices
-description: "Use when applying adc design best practices."
+description: Use when applying adc design best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [electronics, embedded, embedded-adc]
-    related_skills: [general]
 ---
 
 # Adc Design Best Practices

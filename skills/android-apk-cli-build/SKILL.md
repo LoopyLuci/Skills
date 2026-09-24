@@ -1,6 +1,13 @@
 ---
 name: android-apk-cli-build
-description: "Build Android APK from CLI on Windows without Android Studio"
+description: Build Android APK from CLI on Windows without Android Studio
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [android, apk, cli]
 ---
 
 # Android APK CLI Build on Windows

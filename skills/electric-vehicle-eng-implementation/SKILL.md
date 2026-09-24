@@ -1,14 +1,13 @@
 ---
 name: electric-vehicle-eng-implementation
-description: "Use when applying electric vehicle engineering implement."
+description: Use when applying electric vehicle engineering implement.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [auto, ev, electric-vehicle-engineering]
-    related_skills: ['general']
 ---
 
 # Electric Vehicle Eng Implementation

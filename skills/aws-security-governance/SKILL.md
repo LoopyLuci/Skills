@@ -1,14 +1,13 @@
 ---
 name: aws-security-governance
-description: "Use when governing AWS security."
+description: Use when governing AWS security.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, aws, security-governance]
-    related_skills: [general]
 ---
 
 # Aws Security Governance

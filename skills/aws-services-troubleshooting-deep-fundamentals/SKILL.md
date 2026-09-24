@@ -1,14 +1,13 @@
 ---
 name: aws-services-troubleshooting-deep-fundamentals
-description: "Use when applying aws troubleshooting fundamentals."
+description: Use when applying aws troubleshooting fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, aws]
-    related_skills: ['aws-services-troubleshooting']
 ---
 
 # Aws Services Troubleshooting Deep Fundamentals

@@ -1,14 +1,13 @@
 ---
 name: android-development-deep-fundamentals
-description: "Use when applying android development fundamentals."
+description: Use when applying android development fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mobile, android]
-    related_skills: ['android-development']
 ---
 
 # Android Development Deep Fundamentals

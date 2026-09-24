@@ -1,14 +1,13 @@
 ---
-
 name: google-cloud-solution-n-tier-serverless-web-app
-  category: Serverless
-description: >-
-  Guides agents to interactively discover customer requirements for a Secure n-tier serverless web application and generate a tailored cloud multi-product solution that incorporates opinionated best practices and architecture guidance. Use when users need agentic assistance with designing and creating a multi-product solution in the cloud for Secure n-tier serverless web application. Don't use when designing VM or GKE-based architectures or when not using Google Cloud.
-source: google/skills
+description: Skill for google cloud solution n tier serverless web app
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [agent, skill]
-
 ---
 
 <!-- disableFinding(all) -->

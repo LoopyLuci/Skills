@@ -1,9 +1,15 @@
 ---
 name: skill-development-workflow
-description: "Use when building authoring, testing, and iterating skills."
-category: software-development
-tags: [skills, development, authoring, testing, workflow]
+description: Use when building authoring, testing, and iterating skills.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [skills, development, authoring, testing, workflow]
 ---
+
 # Skill Development Workflow
 
 End-to-end process for authoring, testing, iterating, and deprecating skills.

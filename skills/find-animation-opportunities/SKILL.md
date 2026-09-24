@@ -1,8 +1,13 @@
 ---
 name: find-animation-opportunities
 description: Use when finding UI spots that should animate.
-tags: [animation, ui-audit, motion, design-review]
-related_skills: [emil-design-eng, improve-animations, review-animations]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [animation, ui-audit, motion, design-review]
 ---
 
 # Finding Animation Opportunities

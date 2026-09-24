@@ -1,9 +1,13 @@
 ---
 name: scikit-learn-pipeline
-description: "Use when building sklearn pipelines."
+description: Use when building sklearn pipelines.
 version: 1.0.0
-author: Hermes Agent
-tags: ["scikit-learn", "pipeline", "transformers", "ColumnTransformer"]
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [scikit-learn, pipeline, transformers, columntransformer]
 ---
 
 # Scikit Learn Pipeline

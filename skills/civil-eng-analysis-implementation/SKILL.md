@@ -1,14 +1,13 @@
 ---
 name: civil-eng-analysis-implementation
-description: "Use when applying civil analysis implementation."
+description: Use when applying civil analysis implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, civil, analysis, civil-eng-analysis]
-    related_skills: [general]
 ---
 
 # Civil Eng Analysis Implementation

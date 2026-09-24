@@ -1,14 +1,13 @@
 ---
 name: database-redis-streams-troubleshooting
-description: "Use when applying redis streams troubleshooting."
+description: Use when applying redis streams troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, redis, streams, pub-sub]
-    related_skills: [general]
 ---
 
 # Database Redis Streams Troubleshooting

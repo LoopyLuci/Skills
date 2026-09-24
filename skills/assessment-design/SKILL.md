@@ -1,14 +1,13 @@
 ---
 name: assessment-design
-description: "Use when designing assessments."
+description: Use when designing assessments.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [education, assessment, educational-assessment-design]
-    related_skills: [general]
 ---
 
 # Assessment Design

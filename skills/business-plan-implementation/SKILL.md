@@ -1,14 +1,13 @@
 ---
 name: business-plan-implementation
-description: "Use when applying business plan implementation."
+description: Use when applying business plan implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, plan, business-plan]
-    related_skills: [general]
 ---
 
 # Business Plan Implementation

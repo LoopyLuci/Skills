@@ -2,12 +2,12 @@
 name: scada-industrial-control
 description: HMI design, alarm management, historians, and SCADA security
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["scada", "hmi"]
+    tags: [scada, hmi]
 ---
 
 # Scada Industrial Control

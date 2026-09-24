@@ -2,12 +2,12 @@
 name: night-astrophotography
 description: Star tracking, stacking, Milky Way composition, and light pollution management
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["night", "astrophoto"]
+    tags: [night, astrophoto]
 ---
 
 # Night Astrophotography

@@ -1,14 +1,13 @@
 ---
 name: aviation-component-tracking-fundamentals
-description: "Use when applying component tracking fundamentals."
+description: Use when applying component tracking fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, tracking, supply-chain]
-    related_skills: ['general']
 ---
 
 # Aviation Component Tracking Fundamentals

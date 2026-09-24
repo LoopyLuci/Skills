@@ -2,12 +2,12 @@
 name: additive-manufacturing-printing
 description: 3D printing workflows, SLA/SLS/FDM, print optimization, and post-processing
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["3d-printing", "additive"]
+    tags: [3d-printing, additive]
 ---
 
 # Additive Manufacturing Printing

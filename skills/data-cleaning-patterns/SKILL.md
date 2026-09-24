@@ -1,6 +1,13 @@
 ---
 name: data-cleaning-patterns
-description: "Clean messy datasets nulls outliers duplicates normalization"
+description: Clean messy datasets nulls outliers duplicates normalization
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [data, cleaning, patterns]
 ---
 
 # Data Cleaning Patterns

@@ -1,16 +1,13 @@
 ---
-
 name: design-md
 description: Author/validate/export Google's DESIGN.md token spec files.
-version: 1.1.0
-author: Hermes Agent
+version: 1.0.0
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [design, design-system, tokens, ui, accessibility, wcag, tailwind, dtcg, google]
-    related_skills: [popular-web-designs, claude-design, excalidraw, architecture-diagram]
-
 ---
 
 # DESIGN.md Skill

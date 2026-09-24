@@ -1,7 +1,13 @@
 ---
 name: youtube-content
-description: "YouTube transcripts to summaries, threads, blogs."
-platforms: [linux, macos, windows]
+description: YouTube transcripts to summaries, threads, blogs.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [youtube, content]
 ---
 
 # YouTube Content Tool

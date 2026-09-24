@@ -1,14 +1,13 @@
 ---
 name: docker-compose-migration-deep-fundamentals
-description: "Use when applying docker compose migration fundamentals."
+description: Use when applying docker compose migration fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, docker]
-    related_skills: ['docker-compose-migration']
 ---
 
 # Docker Compose Migration Deep Fundamentals

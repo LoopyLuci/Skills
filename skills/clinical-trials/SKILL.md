@@ -1,14 +1,13 @@
 ---
 name: clinical-trials
-description: "Use when conducting clinical trials."
+description: Use when conducting clinical trials.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [healthcare, research, clinical-trial-design]
-    related_skills: [general]
 ---
 
 # Clinical Trials

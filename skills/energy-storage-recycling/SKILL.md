@@ -1,14 +1,13 @@
 ---
 name: energy-storage-recycling
-description: "Use when recycling energy storage."
+description: Use when recycling energy storage.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [energy, battery-recycling, ev-batteries, circular]
-    related_skills: ['electric-vehicle-battery-recycling']
 ---
 
 # Energy Storage Recycling

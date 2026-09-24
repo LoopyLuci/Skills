@@ -1,13 +1,13 @@
 ---
 name: threat-hunting-methods
-description: "Use when implementing threat hunting and proactive security."
+description: Use when implementing threat hunting and proactive security.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [threat-hunting, security, proactive, IoCs, TTPs, hypothesis, SIEM]
-    related_skills: [security-incident-response, network-forensics-analysis, identity-access-management, anomaly-detection-ml]
+    tags: [threat-hunting, security, proactive, iocs, ttps, hypothesis, siem]
 ---
 
 # Threat Hunting Methods

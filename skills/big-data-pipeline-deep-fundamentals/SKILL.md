@@ -1,14 +1,13 @@
 ---
 name: big-data-pipeline-deep-fundamentals
-description: "Use when applying big data pipelines fundamentals."
+description: Use when applying big data pipelines fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, big-data]
-    related_skills: ['big-data-pipeline']
 ---
 
 # Big Data Pipeline Deep Fundamentals

@@ -2,12 +2,12 @@
 name: nft-digital-collectibles
 description: NFT standards, marketplaces, creator royalties, and utility NFTs
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["nft", "collectibles"]
+    tags: [nft, collectibles]
 ---
 
 # Nft Digital Collectibles

@@ -1,14 +1,13 @@
 ---
 name: azure-vm-implementation
-description: "Use when applying azure virtual machines implementation."
+description: Use when applying azure virtual machines implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, azure, vm, virtual-machines]
-    related_skills: [general]
 ---
 
 # Azure Vm Implementation

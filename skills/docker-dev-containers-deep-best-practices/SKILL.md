@@ -1,14 +1,13 @@
 ---
 name: docker-dev-containers-deep-best-practices
-description: "Use when applying docker dev containers best practices."
+description: Use when applying docker dev containers best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, docker]
-    related_skills: ['docker-dev-containers']
 ---
 
 # Docker Dev Containers Deep Best Practices

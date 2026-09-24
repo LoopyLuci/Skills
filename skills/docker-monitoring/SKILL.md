@@ -1,14 +1,13 @@
 ---
 name: docker-monitoring
-description: "Use when monitoring Docker containers."
+description: Use when monitoring Docker containers.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [docker, monitoring, logs, observability]
-    related_skills: [general]
 ---
 
 # Docker Monitoring

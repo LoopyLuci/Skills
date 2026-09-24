@@ -1,14 +1,13 @@
 ---
 name: aerospace-research-dev-troubleshooting
-description: "Use when applying aerospace r&d troubleshooting."
+description: Use when applying aerospace r&d troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aerospace, r&d, research]
-    related_skills: ['general']
 ---
 
 # Aerospace Research Dev Troubleshooting

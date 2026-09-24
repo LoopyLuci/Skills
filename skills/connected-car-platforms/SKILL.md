@@ -1,14 +1,13 @@
 ---
 name: connected-car-platforms
-description: "Use when building connected car platforms."
+description: Use when building connected car platforms.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [automotive, connected-cars, platform, telematics]
-    related_skills: [general]
 ---
 
 # Connected Car Platforms

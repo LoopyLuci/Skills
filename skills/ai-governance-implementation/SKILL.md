@@ -1,14 +1,13 @@
 ---
 name: ai-governance-implementation
-description: "Use when for ai governance implementation."
+description: Use when for ai governance implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ai, governance, policy, regulation]
-    related_skills: [general]
 ---
 
 # Ai Governance Implementation

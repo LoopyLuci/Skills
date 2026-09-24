@@ -1,14 +1,13 @@
 ---
 name: deep-learning-fundamentals-deep-implementation
-description: "Use when applying deep learning fundamentals implementat."
+description: Use when applying deep learning fundamentals implementat.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, ml-deep-learning-fundamentals]
-    related_skills: ['']
 ---
 
 # Deep Learning Fundamentals Deep Implementation

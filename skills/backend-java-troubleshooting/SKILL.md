@@ -1,14 +1,13 @@
 ---
 name: backend-java-troubleshooting
-description: "Use when applying java backend troubleshooting."
+description: Use when applying java backend troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, java, spring]
-    related_skills: [general]
 ---
 
 # Backend Java Troubleshooting

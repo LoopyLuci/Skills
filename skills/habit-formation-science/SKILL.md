@@ -2,12 +2,12 @@
 name: habit-formation-science
 description: Habit loops, behavioral design, and habit stacking
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["habits", "behavior"]
+    tags: [habits, behavior]
 ---
 
 # Habit Formation Science

@@ -1,14 +1,13 @@
 ---
 name: ai-for-science-applications
-description: "Use when applying AI to scientific research."
+description: Use when applying AI to scientific research.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cross-domain, ai-for-science, scientific-ml, research]
-    related_skills: [general]
 ---
 
 # Ai For Science Applications

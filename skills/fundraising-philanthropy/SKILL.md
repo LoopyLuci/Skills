@@ -2,12 +2,12 @@
 name: fundraising-philanthropy
 description: Donor relations, major gifts, annual fund, planned giving, and grant writing
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["fundraising", "philanthropy"]
+    tags: [fundraising, philanthropy]
 ---
 
 # Fundraising Philanthropy

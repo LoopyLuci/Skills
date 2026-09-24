@@ -1,14 +1,13 @@
 ---
 name: digital-marketing-strategy-implementation
-description: "Use when applying digital marketing strategy implementat."
+description: Use when applying digital marketing strategy implementat.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, digital, digital-marketing-strategy]
-    related_skills: [general]
 ---
 
 # Digital Marketing Strategy Implementation

@@ -1,14 +1,13 @@
 ---
 name: circuit-breaker-resilience-deep-best-practices
-description: "Use when applying circuit breaker pattern best practices."
+description: Use when applying circuit breaker pattern best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [programming, resilience]
-    related_skills: ['circuit-breaker-pattern']
 ---
 
 # Circuit Breaker Resilience Deep Best Practices

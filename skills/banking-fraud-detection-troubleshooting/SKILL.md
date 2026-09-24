@@ -1,14 +1,13 @@
 ---
 name: banking-fraud-detection-troubleshooting
-description: "Use when applying banking fraud detection troubleshooting."
+description: Use when applying banking fraud detection troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, fraud, fraud-detection]
-    related_skills: [general]
 ---
 
 # Banking Fraud Detection Troubleshooting

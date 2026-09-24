@@ -1,14 +1,13 @@
 ---
 name: aerospace-quality-assurance-implementation
-description: "Use when applying aerospace qa implementation."
+description: Use when applying aerospace qa implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aerospace, quality, aerospace-qms]
-    related_skills: ['general']
 ---
 
 # Aerospace Quality Assurance Implementation

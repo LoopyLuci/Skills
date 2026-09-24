@@ -1,14 +1,13 @@
 ---
 name: climate-data-analytics-best-practices
-description: "Use when applying climate data analytics best practices."
+description: Use when applying climate data analytics best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, data, climate-data-analytics]
-    related_skills: [general]
 ---
 
 # Climate Data Analytics Best Practices

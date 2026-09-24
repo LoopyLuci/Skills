@@ -1,23 +1,13 @@
 ---
-
 name: google-cloud-global-frontend-configuration
-  category: Networking
 description: |
-  Guides agents through a structured 6-step discovery process to design and deploy Google Cloud global external Application Load Balancers with Cloud CDN, Cloud Armor, and Service Extensions, mapping workload requirements to opinionated best-practice configurations.
-  Use when:
-  - Designing, configuring, or deploying a Google Cloud global external Application Load Balancer, Cloud CDN, Cloud Armor WAF, or Service Extensions.
-  - Discovering existing Google Cloud resources (Cloud Storage buckets, Compute Engine MIGs, GKE, Cloud Run) to use as load balancer backends.
-  - Generating production-grade Terraform HCL or gcloud CLI scripts for global external Application Load Balancer configurations.
-  - Actuating deployments via Infrastructure Manager or bash scripts, including performing IAM pre-checks.
-  - Detecting, analyzing, or reconciling configuration drift on deployed global external Application Load Balancers.
-  Don't use for:
-  - Non-Google Cloud load balancing or security configurations.
-  - Purely regional or internal load balancing setups (unless part of a hybrid/failover global design).
-source: google/skills
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [agent, skill]
-
 ---
 
 # Google Cloud global external Application Load Balancer Configuration Skill

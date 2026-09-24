@@ -1,14 +1,13 @@
 ---
 name: beauty-salon-management-fundamentals
-description: "Use when applying salon management fundamentals."
+description: Use when applying salon management fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [beauty, management, beauty-salon-management]
-    related_skills: ['general']
 ---
 
 # Beauty Salon Management Fundamentals

@@ -2,12 +2,12 @@
 name: launch-vehicle-rocketry
 description: Rocket propulsion, staging, launch operations, and range safety
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["launch", "propulsion"]
+    tags: [launch, propulsion]
 ---
 
 # Launch Vehicle Rocketry

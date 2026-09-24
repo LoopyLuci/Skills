@@ -1,14 +1,13 @@
 ---
 name: creative-coding-troubleshooting
-description: "Use when applying creative coding troubleshooting."
+description: Use when applying creative coding troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [design, creative, p5js, algorithmic-art]
-    related_skills: [general]
 ---
 
 # Creative Coding Troubleshooting

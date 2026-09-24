@@ -1,14 +1,13 @@
 ---
 name: email-marketing-unsubscribe-implementation
-description: "Use when applying email unsubscribe implementation."
+description: Use when applying email unsubscribe implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, analytics, unsubscribe]
-    related_skills: [general]
 ---
 
 # Email Marketing Unsubscribe Implementation

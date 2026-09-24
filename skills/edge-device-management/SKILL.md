@@ -1,14 +1,13 @@
 ---
 name: edge-device-management
-description: "Use when managing edge device fleets."
+description: Use when managing edge device fleets.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [edge-computing, iot-management, device-provisioning]
-    related_skills: ['edge-computing-architectures']
 ---
 
 # Edge Device Management

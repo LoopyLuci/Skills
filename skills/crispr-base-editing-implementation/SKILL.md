@@ -1,14 +1,13 @@
 ---
 name: crispr-base-editing-implementation
-description: "Use when applying crispr base editing biotech implementa."
+description: Use when applying crispr base editing biotech implementa.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, bio]
-    related_skills: ['']
 ---
 
 # Crispr Base Editing Implementation

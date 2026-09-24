@@ -1,14 +1,13 @@
 ---
 name: climate-electric-vehicle-materials-best-practices
-description: "Use when applying climate electric vehicle materials bes."
+description: Use when applying climate electric vehicle materials bes.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, environment]
-    related_skills: ['']
 ---
 
 # Climate Electric Vehicle Materials Best Practices

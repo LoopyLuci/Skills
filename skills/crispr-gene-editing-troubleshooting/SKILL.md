@@ -1,14 +1,13 @@
 ---
 name: crispr-gene-editing-troubleshooting
-description: "Use when applying crispr gene editing troubleshooting."
+description: Use when applying crispr gene editing troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, crispr, crispr-gene-editing]
-    related_skills: ['general']
 ---
 
 # Crispr Gene Editing Troubleshooting

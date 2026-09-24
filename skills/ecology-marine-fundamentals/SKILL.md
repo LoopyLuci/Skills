@@ -1,14 +1,13 @@
 ---
 name: ecology-marine-fundamentals
-description: "Use when applying marine ecology fundamentals."
+description: Use when applying marine ecology fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marine-ecology, ocean, ecosystems, marine-life]
-    related_skills: [general]
 ---
 
 # Ecology Marine Fundamentals

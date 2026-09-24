@@ -1,14 +1,13 @@
 ---
 name: expressjs-authentication-fundamentals
-description: "Use when applying express.js auth fundamentals."
+description: Use when applying express.js auth fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, expressjs, auth, jwt]
-    related_skills: [general]
 ---
 
 # Expressjs Authentication Fundamentals

@@ -1,12 +1,13 @@
 ---
 name: pytorch-data-loading
-description: "Use when implementing PyTorch data loading."
+description: Use when implementing PyTorch data loading.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["pytorch", "dataloader", "dataset", "transforms"]
+    tags: [pytorch, dataloader, dataset, transforms]
 ---
 
 # Pytorch Data Loading

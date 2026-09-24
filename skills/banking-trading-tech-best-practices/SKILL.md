@@ -1,14 +1,13 @@
 ---
 name: banking-trading-tech-best-practices
-description: "Use when applying trading tech best practices."
+description: Use when applying trading tech best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, trading, trading-tech]
-    related_skills: [general]
 ---
 
 # Banking Trading Tech Best Practices

@@ -2,12 +2,12 @@
 name: fashion-technology-wearables
 description: Wearable tech, smart textiles, and fashion innovation
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["wearables", "innovation"]
+    tags: [wearables, innovation]
 ---
 
 # Fashion Technology Wearables

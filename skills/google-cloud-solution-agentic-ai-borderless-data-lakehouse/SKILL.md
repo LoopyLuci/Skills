@@ -1,19 +1,13 @@
 ---
-
 name: google-cloud-solution-agentic-ai-borderless-data-lakehouse
-  category: BigDataAndAnalytics
-description: >-
-  Guides agents to discover requirements and design a governed,
-  secure borderless open data lakehouse with agentic AI integration. Use when
-  designing a multi-product architecture that connects data silos to AI agents,
-  joining data across clouds, or running federated queries across Google Cloud
-  and external data sources, including on-premises or other cloud providers.
-  Don't use for simple single-cloud data warehouses or non-AI workloads.
-source: google/skills
+description: Skill for google cloud solution agentic ai borderless data lakehouse
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [agent, skill]
-
 ---
 
 # Borderless open data lakehouse agentic AI system

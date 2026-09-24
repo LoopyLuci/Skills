@@ -2,12 +2,12 @@
 name: civil-engineering-infrastructure
 description: Roads, bridges, water systems, and infrastructure planning
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["civil", "infrastructure"]
+    tags: [civil, infrastructure]
 ---
 
 # Civil Engineering Infrastructure

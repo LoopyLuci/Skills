@@ -1,14 +1,13 @@
 ---
 name: accounting-audit-best-practices
-description: "Use when applying accounting audit best practices."
+description: Use when applying accounting audit best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [accounting, finance, audit, accounting-audit]
-    related_skills: [general]
 ---
 
 # Accounting Audit Best Practices

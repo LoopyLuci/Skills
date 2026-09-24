@@ -1,14 +1,13 @@
 ---
 name: container-ship-loading
-description: "Use when planning container ship loading. Stowage."
+description: Use when planning container ship loading. Stowage.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [maritime, container-ship, stowage-planning, cargo]
-    related_skills: [general]
 ---
 
 # Container Ship Loading

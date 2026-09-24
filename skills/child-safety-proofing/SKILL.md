@@ -2,12 +2,12 @@
 name: child-safety-proofing
 description: Home safety, car seats, internet safety, and childproofing
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["safety", "childproofing"]
+    tags: [safety, childproofing]
 ---
 
 # Child Safety Proofing

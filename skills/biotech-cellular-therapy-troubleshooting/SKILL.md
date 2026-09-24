@@ -1,14 +1,13 @@
 ---
 name: biotech-cellular-therapy-troubleshooting
-description: "Use when applying cellular therapy troubleshooting."
+description: Use when applying cellular therapy troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, cell-therapy]
-    related_skills: ['']
 ---
 
 # Biotech Cellular Therapy Troubleshooting

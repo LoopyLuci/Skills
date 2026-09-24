@@ -1,13 +1,13 @@
 ---
 name: financial-modeling-budgeting
-description: "Use when building financial models and budgets."
+description: Use when building financial models and budgets.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [financial-modeling, budgeting, forecasting, P&L, cash-flow, scenario-planning]
-    related_skills: [fundraising-investor-pitch, saas-metrics-reporting, business-metrics-kpis, cap-table-management]
+    tags: [financial-modeling, budgeting, forecasting, p&l, cash-flow, scenario-planning]
 ---
 
 # Financial Modeling Budgeting

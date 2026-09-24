@@ -1,14 +1,13 @@
 ---
 name: fiber-optics-implementation
-description: "Use when applying fiber optics implementation."
+description: Use when applying fiber optics implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [photonics, networking, fiber-optics]
-    related_skills: [general]
 ---
 
 # Fiber Optics Implementation

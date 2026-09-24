@@ -1,14 +1,13 @@
 ---
 name: email-marketing-webhooks-troubleshooting
-description: "Use when applying email webhooks troubleshooting."
+description: Use when applying email webhooks troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, webhooks, integration]
-    related_skills: [general]
 ---
 
 # Email Marketing Webhooks Troubleshooting

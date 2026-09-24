@@ -1,14 +1,13 @@
 ---
 name: agrochemical-formulation-implementation
-description: "Use when applying agrochemical formulation implementation."
+description: Use when applying agrochemical formulation implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agriculture, chemistry, formulation]
-    related_skills: [general]
 ---
 
 # Agrochemical Formulation Implementation

@@ -1,12 +1,13 @@
 ---
 name: docker-compose-prod
-description: "Use when deploying with Docker Compose."
+description: Use when deploying with Docker Compose.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["docker-compose", "production", "healthchecks", "volumes"]
+    tags: [docker-compose, production, healthchecks, volumes]
 ---
 
 # Docker Compose Prod

@@ -1,14 +1,13 @@
 ---
 name: feature-store-optimization
-description: "Use when optimizing feature store systems."
+description: Use when optimizing feature store systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mlops, feature-store, ml, data]
-    related_skills: [general]
 ---
 
 # Feature Store Optimization

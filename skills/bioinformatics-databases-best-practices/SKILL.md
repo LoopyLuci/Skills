@@ -1,14 +1,13 @@
 ---
 name: bioinformatics-databases-best-practices
-description: "Use when applying bioinformatics dbs best practices."
+description: Use when applying bioinformatics dbs best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [bioinformatics, data, databases]
-    related_skills: [general]
 ---
 
 # Bioinformatics Databases Best Practices

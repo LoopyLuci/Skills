@@ -1,14 +1,13 @@
 ---
 name: financial-planning-retirement
-description: "Use when planning retirement finances."
+description: Use when planning retirement finances.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, retirement-planning, 401k]
-    related_skills: ['financial-planning-budgeting']
 ---
 
 # Financial Planning Retirement

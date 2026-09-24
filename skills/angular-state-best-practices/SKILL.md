@@ -1,14 +1,13 @@
 ---
 name: angular-state-best-practices
-description: "Use when applying angular state best practices."
+description: Use when applying angular state best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [frontend, angular, ngrx, state]
-    related_skills: [general]
 ---
 
 # Angular State Best Practices

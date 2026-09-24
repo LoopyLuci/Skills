@@ -1,14 +1,13 @@
 ---
 name: accounting-assessment-troubleshooting
-description: "Use when applying accounting assessment troubleshooting."
+description: Use when applying accounting assessment troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, accounting-analysis]
-    related_skills: ['']
 ---
 
 # Accounting Assessment Troubleshooting

@@ -1,6 +1,13 @@
 ---
 name: git-remote-fork-sync
 description: Sync forks, manage remotes, and keep branches up to date.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [git, remote, fork]
 ---
 
 # Git Remote & Fork Sync

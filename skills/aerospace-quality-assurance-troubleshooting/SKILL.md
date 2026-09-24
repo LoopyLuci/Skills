@@ -1,14 +1,13 @@
 ---
 name: aerospace-quality-assurance-troubleshooting
-description: "Use when applying aerospace qa troubleshooting."
+description: Use when applying aerospace qa troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aerospace, quality, aerospace-qms]
-    related_skills: ['general']
 ---
 
 # Aerospace Quality Assurance Troubleshooting

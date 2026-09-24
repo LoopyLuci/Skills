@@ -1,14 +1,13 @@
 ---
 name: docker-security
-description: "Use when securing Docker containers."
+description: Use when securing Docker containers.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [docker, security, hardening, cis]
-    related_skills: [general]
 ---
 
 # Docker Security

@@ -2,12 +2,12 @@
 name: environmental-policy-regulation
 description: Environmental law, climate policy, impact assessment, and regulation
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["environment", "regulation"]
+    tags: [environment, regulation]
 ---
 
 # Environmental Policy Regulation

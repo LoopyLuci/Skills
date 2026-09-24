@@ -1,14 +1,13 @@
 ---
 name: backend-java-implementation-deep-troubleshooting
-description: "Use when applying java backend implementation troublesho."
+description: Use when applying java backend implementation troublesho.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, java]
-    related_skills: ['backend-java-implementation']
 ---
 
 # Backend Java Implementation Deep Troubleshooting

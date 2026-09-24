@@ -1,14 +1,13 @@
 ---
 name: digital-government-implementation
-description: "Use when applying digital government implementation."
+description: Use when applying digital government implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [gov, digital, civic-tech-platforms]
-    related_skills: [general]
 ---
 
 # Digital Government Implementation

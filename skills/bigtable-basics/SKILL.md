@@ -1,11 +1,10 @@
 ---
 name: bigtable-basics
-description: >-
-source: google/skills
-tags: [gcp, google-cloud, bigtable]
-metadata: 
-hermes: 
-
+description: Skill for bigtable basics
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [gcp, google-cloud, bigtable]

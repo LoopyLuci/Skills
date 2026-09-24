@@ -1,14 +1,13 @@
 ---
 name: documentary-photography-fundamentals
-description: "Use when applying documentary photography fundamentals."
+description: Use when applying documentary photography fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [media, photo, documentary]
-    related_skills: [general]
 ---
 
 # Documentary Photography Fundamentals

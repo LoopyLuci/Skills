@@ -2,12 +2,12 @@
 name: entertainment-industry-business
 description: Talent management, production, distribution, and deal-making
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["entertainment", "business"]
+    tags: [entertainment, business]
 ---
 
 # Entertainment Industry Business

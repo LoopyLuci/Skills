@@ -1,14 +1,13 @@
 ---
 name: cargo-tracking-troubleshooting
-description: "Use when applying cargo tracking troubleshooting."
+description: Use when applying cargo tracking troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [logistics, tracking, tracking]
-    related_skills: ['general']
 ---
 
 # Cargo Tracking Troubleshooting

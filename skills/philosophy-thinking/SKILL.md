@@ -2,12 +2,12 @@
 name: philosophy-thinking
 description: Critical thinking, ethics frameworks, logic, and philosophical analysis
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["philosophy", "ethics"]
+    tags: [philosophy, ethics]
 ---
 
 # Philosophy Thinking

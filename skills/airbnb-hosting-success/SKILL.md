@@ -1,14 +1,13 @@
 ---
 name: airbnb-hosting-success
-description: "Use when succeeding as Airbnb host."
+description: Use when succeeding as Airbnb host.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [travel, airbnb, hosting, short-term-rental]
-    related_skills: [general]
 ---
 
 # Airbnb Hosting Success

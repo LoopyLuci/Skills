@@ -1,14 +1,13 @@
 ---
 name: backend-go-fund-best-practices
-description: "Use when applying backend go fundamentals best practices."
+description: Use when applying backend go fundamentals best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, go, backend-go-fundamentals]
-    related_skills: [general]
 ---
 
 # Backend Go Fund Best Practices

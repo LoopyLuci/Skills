@@ -1,14 +1,13 @@
 ---
 name: database-mysql-query-optimization-deep-fundamentals
-description: "Use when applying mysql query optimization fundamentals."
+description: Use when applying mysql query optimization fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, mysql]
-    related_skills: ['mysql-query-optimization']
 ---
 
 # Database Mysql Query Optimization Deep Fundamentals

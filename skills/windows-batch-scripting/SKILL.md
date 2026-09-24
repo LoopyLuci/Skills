@@ -1,9 +1,15 @@
 ---
 name: windows-batch-scripting
-description: "Use when writing .bat/.cmd scripts for Windows automation."
-category: software-development
-tags: [batch, bat, cmd, windows, scripting, automation]
+description: Use when writing .bat/.cmd scripts for Windows automation.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [batch, bat, cmd, windows, scripting, automation]
 ---
+
 # Windows Batch Scripting
 
 Writing production-grade .bat/.cmd scripts for Windows automation.

@@ -2,12 +2,12 @@
 name: heavy-equipment-operations
 description: Equipment selection, utilization, maintenance, and safety
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["equipment", "operations"]
+    tags: [equipment, operations]
 ---
 
 # Heavy Equipment Operations

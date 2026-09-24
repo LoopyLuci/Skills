@@ -2,12 +2,12 @@
 name: data-journalism-investigative
 description: Data analysis, FOIA, fact-checking, and investigative workflows
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["data-journalism", "investigative"]
+    tags: [data-journalism, investigative]
 ---
 
 # Data Journalism Investigative

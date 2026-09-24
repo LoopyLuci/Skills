@@ -1,8 +1,13 @@
 ---
 name: mmx-cli
 description: Use when generating media via MiniMax API CLI scripts
-tags: [minimax, media-generation, tts, video, image, music]
-related_skills: [minimax-xlsx, pptx-generator, shader-dev]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [minimax, media-generation, tts, video, image, music]
 ---
 
 # Mmx Cli

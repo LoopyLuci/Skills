@@ -1,14 +1,13 @@
 ---
 name: change-mgmt-optimization
-description: "Use when for change management optimization."
+description: Use when for change management optimization.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, management, general]
-    related_skills: [general]
 ---
 
 # Change Mgmt Optimization

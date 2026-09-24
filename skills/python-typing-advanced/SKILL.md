@@ -1,13 +1,13 @@
 ---
 name: python-typing-advanced
-description: "Use when implementing advanced Python typing patterns."
+description: Use when implementing advanced Python typing patterns.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [python, typing, generics, Protocol, TypeVar, mypy]
-    related_skills: [python-decorators-advanced, python-generators-coroutines, type-system-design-theory]
+    tags: [python, typing, generics, protocol, typevar, mypy]
 ---
 
 # Advanced Python Typing

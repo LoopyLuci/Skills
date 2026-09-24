@@ -1,14 +1,13 @@
 ---
 name: digital-art-troubleshooting
-description: "Use when applying digital art troubleshooting."
+description: Use when applying digital art troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [design, art, digital-art-generation-tools]
-    related_skills: [general]
 ---
 
 # Digital Art Troubleshooting

@@ -1,9 +1,15 @@
 ---
 name: ml-pipeline-design
-description: "Use when designing end-to-end ML training pipelines."
-category: mlops
-tags: [ml, pipeline, training, data, mlops]
+description: Use when designing end-to-end ML training pipelines.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [ml, pipeline, training, data, mlops]
 ---
+
 # ML Pipeline Design
 
 Designing end-to-end machine learning training pipelines.

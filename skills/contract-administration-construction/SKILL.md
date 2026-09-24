@@ -2,12 +2,12 @@
 name: contract-administration-construction
 description: Construction contracts, change orders, claims, and disputes
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["contracts", "admin"]
+    tags: [contracts, admin]
 ---
 
 # Contract Administration Construction

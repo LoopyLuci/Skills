@@ -1,14 +1,13 @@
 ---
 name: aerospace-maintenance-fundamentals
-description: "Use when applying aerospace mro fundamentals."
+description: Use when applying aerospace mro fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aerospace, maintenance, mro]
-    related_skills: ['general']
 ---
 
 # Aerospace Maintenance Fundamentals

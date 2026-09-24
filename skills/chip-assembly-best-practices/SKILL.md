@@ -1,14 +1,13 @@
 ---
 name: chip-assembly-best-practices
-description: "Use when applying chip assembly best practices."
+description: Use when applying chip assembly best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [semiconductor, assembly, assembly]
-    related_skills: ['general']
 ---
 
 # Chip Assembly Best Practices

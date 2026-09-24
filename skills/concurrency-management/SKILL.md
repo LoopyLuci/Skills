@@ -1,14 +1,13 @@
 ---
 name: concurrency-management
-description: "Use when managing concurrency."
+description: Use when managing concurrency.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [concurrency, threading, async, parallelism]
-    related_skills: [general]
 ---
 
 # Concurrency Management

@@ -1,8 +1,13 @@
 ---
 name: executing-plans
 description: Use when executing written implementation plans step by step
-tags: [plans, execution, implementation, development]
-related_skills: [writing-plans, subagent-driven-development, finishing-a-development-branch]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [plans, execution, implementation, development]
 ---
 
 # Executing Plans

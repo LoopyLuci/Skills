@@ -1,6 +1,13 @@
 ---
 name: dependency-audit
-description: "Audit Python deps for vulnerabilities updates and licenses"
+description: Audit Python deps for vulnerabilities updates and licenses
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [dependency, audit]
 ---
 
 # Dependency Audit

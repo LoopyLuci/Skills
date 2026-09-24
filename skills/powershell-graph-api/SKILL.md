@@ -1,9 +1,15 @@
 ---
 name: powershell-graph-api
-description: "Use when calling Microsoft Graph API from PowerShell."
-category: software-development
-tags: [powershell, graph, microsoft, api, azure, entra]
+description: Use when calling Microsoft Graph API from PowerShell.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [powershell, graph, microsoft, api, azure, entra]
 ---
+
 # Microsoft Graph API with PowerShell
 
 Calling Microsoft Graph API from PowerShell.

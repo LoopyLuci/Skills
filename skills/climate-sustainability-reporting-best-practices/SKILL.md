@@ -1,14 +1,13 @@
 ---
 name: climate-sustainability-reporting-best-practices
-description: "Use when applying sustainability reporting best practices."
+description: Use when applying sustainability reporting best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, sustainability-reporting, sustainability-reporting]
-    related_skills: ['']
 ---
 
 # Climate Sustainability Reporting Best Practices

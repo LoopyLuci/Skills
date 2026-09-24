@@ -1,14 +1,13 @@
 ---
 name: bioinformatics-tools
-description: "Use when using bioinformatics tools."
+description: Use when using bioinformatics tools.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [bioinformatics, genomics, alignment]
-    related_skills: ['bioinformatics-sequences-analysis']
 ---
 
 # Bioinformatics Tools

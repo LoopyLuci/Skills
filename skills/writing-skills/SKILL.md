@@ -1,8 +1,13 @@
 ---
 name: writing-skills
 description: Use when creating, editing, or testing agent skills
-tags: [skills, authoring, testing, documentation]
-related_skills: [test-driven-development, skill-discovery, skill-factory-system]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [skills, authoring, testing, documentation]
 ---
 
 # Writing Skills

@@ -1,14 +1,13 @@
 ---
 name: computational-social-science
-description: "Use when applying computational social science."
+description: Use when applying computational social science.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cross-domain, computational-social-science, sociology, data]
-    related_skills: [general]
 ---
 
 # Computational Social Science

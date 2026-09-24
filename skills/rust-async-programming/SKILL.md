@@ -1,12 +1,13 @@
 ---
 name: rust-async-programming
-description: "Use when writing async Rust code."
+description: Use when writing async Rust code.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["rust", "async", "tokio", "futures", "async-std"]
+    tags: [rust, async, tokio, futures, async-std]
 ---
 
 # Rust Async Programming

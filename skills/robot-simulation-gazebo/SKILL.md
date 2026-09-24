@@ -2,12 +2,12 @@
 name: robot-simulation-gazebo
 description: Gazebo/Ignition, SDF/URDF, physics tuning, sensor simulation, and headless operation
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["simulation", "gazebo"]
+    tags: [simulation, gazebo]
 ---
 
 # Robot Simulation Gazebo

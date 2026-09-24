@@ -1,14 +1,13 @@
 ---
 name: agri-tech-regenerative-implementation
-description: "Use when applying regenerative agriculture implementation."
+description: Use when applying regenerative agriculture implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agri, regenerative, regenerative-agriculture]
-    related_skills: ['']
 ---
 
 # Agri Tech Regenerative Implementation

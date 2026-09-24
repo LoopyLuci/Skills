@@ -1,14 +1,13 @@
 ---
 name: faith-community-mentoring
-description: "Use when mentoring faith community members."
+description: Use when mentoring faith community members.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [religious, mentoring, discipleship, leadership-development]
-    related_skills: [general]
 ---
 
 # Faith Community Mentoring

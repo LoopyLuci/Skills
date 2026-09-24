@@ -1,14 +1,13 @@
 ---
 name: ema-regulatory-affairs-best-practices
-description: "Use when applying ema regulatory best practices."
+description: Use when applying ema regulatory best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, pharma, ema]
-    related_skills: [general]
 ---
 
 # Ema Regulatory Affairs Best Practices

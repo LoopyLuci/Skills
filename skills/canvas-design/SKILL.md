@@ -1,8 +1,13 @@
 ---
 name: canvas-design
 description: Use when creating posters, art, or visual canvas designs.
-tags: [design, canvas, poster, visual-art, typography]
-related_skills: [algorithmic-art, theme-factory, brand-guidelines]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [design, canvas, poster, visual-art, typography]
 ---
 
 # Canvas Design

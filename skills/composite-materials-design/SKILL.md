@@ -1,14 +1,13 @@
 ---
 name: composite-materials-design
-description: "Use when designing composite materials."
+description: Use when designing composite materials.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [materials-science, composites, fiber-reinforced, lightweight]
-    related_skills: [general]
 ---
 
 # Composite Materials Design

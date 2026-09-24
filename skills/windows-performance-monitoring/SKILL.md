@@ -1,9 +1,15 @@
 ---
 name: windows-performance-monitoring
-description: "Use when monitoring perf counters and system metrics."
-category: software-development
-tags: [windows, performance, monitoring, counters, perfmon]
+description: Use when monitoring perf counters and system metrics.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [windows, performance, monitoring, counters, perfmon]
 ---
+
 # Windows Performance Monitoring
 
 Monitoring system performance via PowerShell and PerfMon.

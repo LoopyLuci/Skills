@@ -1,14 +1,13 @@
 ---
 name: container-security-fund
-description: "Use when learning container security."
+description: Use when learning container security.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, containers, container-security-fundamentals]
-    related_skills: [general]
 ---
 
 # Container Security Fund

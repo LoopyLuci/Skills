@@ -1,14 +1,13 @@
 ---
 name: circuit-breaker-resilience-deep-implementation
-description: "Use when applying circuit breaker pattern implementation."
+description: Use when applying circuit breaker pattern implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [programming, resilience]
-    related_skills: ['circuit-breaker-pattern']
 ---
 
 # Circuit Breaker Resilience Deep Implementation

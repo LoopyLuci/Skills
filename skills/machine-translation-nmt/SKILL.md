@@ -2,12 +2,12 @@
 name: machine-translation-nmt
 description: Neural machine translation, Transformer models, and MT evaluation
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["nmt", "translation"]
+    tags: [nmt, translation]
 ---
 
 # Machine Translation Nmt

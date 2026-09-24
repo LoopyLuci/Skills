@@ -1,6 +1,13 @@
 ---
 name: skills-repo-automated-sync
 description: Auto-sync Hermes skills to a GitHub repo via cron job.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [skills, repo, automated]
 ---
 
 # Skills Repo Automated Sync

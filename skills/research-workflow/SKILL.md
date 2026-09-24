@@ -1,9 +1,15 @@
 ---
 name: research-workflow
-description: "Use when conducting systematic AI/ML research."
-category: mlops
-tags: [research, methodology, experiment, literature-review]
+description: Use when conducting systematic AI/ML research.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [research, methodology, experiment, literature-review]
 ---
+
 # Research Workflow
 
 Systematic approach to AI/ML research: literature review, experimentation, reporting.

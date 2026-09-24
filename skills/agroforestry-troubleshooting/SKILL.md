@@ -1,14 +1,13 @@
 ---
 name: agroforestry-troubleshooting
-description: "Use when applying agroforestry troubleshooting."
+description: Use when applying agroforestry troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agriculture, forestry, agroforestry]
-    related_skills: [general]
 ---
 
 # Agroforestry Troubleshooting

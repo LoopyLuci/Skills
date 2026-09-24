@@ -1,14 +1,13 @@
 ---
 name: devops-troubleshooting
-description: "Use when troubleshooting devops."
+description: Use when troubleshooting devops.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, ci-cd, automation, kubernetes]
-    related_skills: [general]
 ---
 
 # Devops Troubleshooting

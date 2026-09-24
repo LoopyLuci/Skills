@@ -1,6 +1,13 @@
 ---
 name: instanttransfer-architecture
-description: "Design choices for InstantTransfer LAN file sync tool"
+description: Design choices for InstantTransfer LAN file sync tool
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [instanttransfer, architecture]
 ---
 
 # InstantTransfer Architecture

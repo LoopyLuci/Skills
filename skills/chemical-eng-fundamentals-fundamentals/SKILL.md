@@ -1,14 +1,13 @@
 ---
 name: chemical-eng-fundamentals-fundamentals
-description: "Use when applying chemical fundamentals fundamentals."
+description: Use when applying chemical fundamentals fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, chemical, fundamentals]
-    related_skills: [general]
 ---
 
 # Chemical Eng Fundamentals Fundamentals

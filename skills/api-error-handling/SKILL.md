@@ -1,14 +1,13 @@
 ---
 name: api-error-handling
-description: "Use when handling API errors."
+description: Use when handling API errors.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [api, error-handling, error-codes, messaging]
-    related_skills: ['javascript-error-handling-patterns']
 ---
 
 # Api Error Handling

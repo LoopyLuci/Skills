@@ -1,14 +1,13 @@
 ---
 name: automotive-supply-chain-management
-description: "Use when managing automotive supply chains."
+description: Use when managing automotive supply chains.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [automotive, supply-chain, automotive-supply, procurement]
-    related_skills: [supply-chain-optimization]
 ---
 
 # Automotive Supply Chain Management

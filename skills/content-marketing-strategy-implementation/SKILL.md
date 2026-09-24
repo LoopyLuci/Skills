@@ -1,14 +1,13 @@
 ---
 name: content-marketing-strategy-implementation
-description: "Use when applying content marketing strategy implementat."
+description: Use when applying content marketing strategy implementat.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, content-marketing-strategy]
-    related_skills: ['']
 ---
 
 # Content Marketing Strategy Implementation

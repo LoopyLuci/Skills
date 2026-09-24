@@ -1,14 +1,13 @@
 ---
 name: beauty-brand-strategy-deep-troubleshooting
-description: "Use when applying beauty brand strategy troubleshooting."
+description: Use when applying beauty brand strategy troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [beauty, strategy, beauty-brand-strategy]
-    related_skills: ['general']
 ---
 
 # Beauty Brand Strategy Deep Troubleshooting

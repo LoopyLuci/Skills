@@ -1,13 +1,13 @@
 ---
 name: causal-inference-ml
-description: "Use when implementing causal inference methods in ML."
+description: Use when implementing causal inference methods in ML.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [causal-inference, do-calculus, treatment-effects, DAG, counterfactual]
-    related_skills: [ab-testing-experimentation, deep-reinforcement-learning, ml-pipeline-design, agent-reasoning-patterns]
+    tags: [causal-inference, do-calculus, treatment-effects, dag, counterfactual]
 ---
 
 # Causal Inference Ml

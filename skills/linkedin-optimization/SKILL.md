@@ -1,14 +1,13 @@
 ---
 name: linkedin-optimization
-description: "Use when optimizing LinkedIn profiles and content."
+description: Use when optimizing LinkedIn profiles and content.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [linkedin, profile-optimization, b2b, personal-branding]
-    related_skills: [social-media-strategy, social-media-content-calendar]
 ---
 
 # Linkedin Optimization

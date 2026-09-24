@@ -1,14 +1,13 @@
 ---
 name: chip-arch-verification
-description: "Use when verifying chip arch. UVM, formal, assertions."
+description: Use when verifying chip arch. UVM, formal, assertions.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [chip, arch-verification, uvm, formal, assertions]
-    related_skills: [rtl-design-verilog, timing-analysis-digital]
 ---
 
 # Chip Arch Verification

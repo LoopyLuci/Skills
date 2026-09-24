@@ -1,14 +1,13 @@
 ---
 name: bioinformatics-optimization
-description: "Use when optimizing bioinformatics systems."
+description: Use when optimizing bioinformatics systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [bioinformatics, genomics, bioinformatics, comp-bio]
-    related_skills: [general]
 ---
 
 # Bioinformatics Optimization

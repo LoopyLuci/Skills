@@ -1,14 +1,13 @@
 ---
 name: climate-direct-air-capture-best-practices
-description: "Use when applying climate direct air capture best practi."
+description: Use when applying climate direct air capture best practi.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, environment]
-    related_skills: ['']
 ---
 
 # Climate Direct Air Capture Best Practices

@@ -2,12 +2,12 @@
 name: clinical-workflow-design
 description: Patient journey mapping, clinical pathways, order sets, and workflow optimization
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["clinical", "workflow"]
+    tags: [clinical, workflow]
 ---
 
 # Clinical Workflow Design

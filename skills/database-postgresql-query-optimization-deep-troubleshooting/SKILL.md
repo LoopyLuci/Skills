@@ -1,14 +1,13 @@
 ---
 name: database-postgresql-query-optimization-deep-troubleshooting
-description: "Use when applying postgresql query optimization troubles."
+description: Use when applying postgresql query optimization troubles.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, postgres]
-    related_skills: ['postgresql-query-optimization']
 ---
 
 # Database Postgresql Query Optimization Deep Troubleshooting

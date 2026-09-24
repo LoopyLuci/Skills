@@ -1,14 +1,13 @@
 ---
 name: bioinformatics-management
-description: "Use when managing bioinformatics operations."
+description: Use when managing bioinformatics operations.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [bioinformatics, genomics, bioinformatics, comp-bio]
-    related_skills: [general]
 ---
 
 # Bioinformatics Management

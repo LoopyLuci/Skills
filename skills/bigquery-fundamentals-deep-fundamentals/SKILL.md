@@ -1,14 +1,13 @@
 ---
 name: bigquery-fundamentals-deep-fundamentals
-description: "Use when applying bigquery fundamentals fundamentals."
+description: Use when applying bigquery fundamentals fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, bigquery]
-    related_skills: ['bigquery-fundamentals']
 ---
 
 # Bigquery Fundamentals Deep Fundamentals

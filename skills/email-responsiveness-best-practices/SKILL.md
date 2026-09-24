@@ -1,14 +1,13 @@
 ---
 name: email-responsiveness-best-practices
-description: "Use when applying email responsiveness best practices."
+description: Use when applying email responsiveness best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, design, responsive]
-    related_skills: [general]
 ---
 
 # Email Responsiveness Best Practices

@@ -1,14 +1,13 @@
 ---
 name: clinical-medicine-analysis-best-practices
-description: "Use when applying clinical med analysis best practices."
+description: Use when applying clinical med analysis best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [medicine, clinical, clinical-medicine-analysis]
-    related_skills: [general]
 ---
 
 # Clinical Medicine Analysis Best Practices

@@ -1,14 +1,13 @@
 ---
 name: data-anomaly-detection-deep-implementation
-description: "Use when applying data anomaly detection implementation."
+description: Use when applying data anomaly detection implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, anomaly-detection]
-    related_skills: ['data-anomaly-detection']
 ---
 
 # Data Anomaly Detection Deep Implementation

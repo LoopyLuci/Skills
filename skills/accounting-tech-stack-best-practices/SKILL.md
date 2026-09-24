@@ -1,14 +1,13 @@
 ---
 name: accounting-tech-stack-best-practices
-description: "Use when applying accounting tech stack best practices."
+description: Use when applying accounting tech stack best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, accounting-fundamentals]
-    related_skills: ['']
 ---
 
 # Accounting Tech Stack Best Practices

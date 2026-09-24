@@ -1,14 +1,13 @@
 ---
 name: android-compose-best-practices
-description: "Use when applying android jetpack compose best practices."
+description: Use when applying android jetpack compose best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mobile, android, compose, kotlin]
-    related_skills: [general]
 ---
 
 # Android Compose Best Practices

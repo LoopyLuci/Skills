@@ -1,14 +1,13 @@
 ---
 name: automotive-eng-troubleshooting-fundamentals
-description: "Use when applying automotive troubleshooting fundamentals."
+description: Use when applying automotive troubleshooting fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, automotive, troubleshooting]
-    related_skills: [general]
 ---
 
 # Automotive Eng Troubleshooting Fundamentals

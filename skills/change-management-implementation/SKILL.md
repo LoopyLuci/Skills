@@ -1,14 +1,13 @@
 ---
 name: change-management-implementation
-description: "Use when applying change management implementation."
+description: Use when applying change management implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [management, change, change-management-methodologies]
-    related_skills: [general]
 ---
 
 # Change Management Implementation

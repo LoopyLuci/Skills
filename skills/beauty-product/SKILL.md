@@ -1,14 +1,13 @@
 ---
 name: beauty-product
-description: "Use when developing beauty products."
+description: Use when developing beauty products.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [beauty, product, beauty-product-development]
-    related_skills: [general]
 ---
 
 # Beauty Product

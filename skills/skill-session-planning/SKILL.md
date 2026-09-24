@@ -1,6 +1,13 @@
 ---
 name: skill-session-planning
 description: Plan which skills to load before starting complex tasks.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [skill, session, planning]
 ---
 
 # Skill Session Planning

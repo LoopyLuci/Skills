@@ -1,14 +1,13 @@
 ---
 name: emg-processing-troubleshooting
-description: "Use when applying emg processing troubleshooting."
+description: Use when applying emg processing troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neurotech, emg, signal-processing]
-    related_skills: [general]
 ---
 
 # Emg Processing Troubleshooting

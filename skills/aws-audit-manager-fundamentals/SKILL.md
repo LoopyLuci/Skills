@@ -1,14 +1,13 @@
 ---
 name: aws-audit-manager-fundamentals
-description: "Use when applying aws audit manager fundamentals."
+description: Use when applying aws audit manager fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, audit-manager, compliance, audit]
-    related_skills: [general]
 ---
 
 # Aws Audit Manager Fundamentals

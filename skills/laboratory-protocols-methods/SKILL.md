@@ -2,12 +2,12 @@
 name: laboratory-protocols-methods
 description: SOP writing, protocol optimization, lab safety, and reproducibility standards
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["lab", "protocols"]
+    tags: [lab, protocols]
 ---
 
 # Laboratory Protocols Methods

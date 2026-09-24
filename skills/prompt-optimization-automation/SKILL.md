@@ -1,13 +1,13 @@
 ---
 name: prompt-optimization-automation
-description: "Use when optimizing and automating prompt engineering."
+description: Use when optimizing and automating prompt engineering.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [prompt-engineering, optimization, dspy, auto-prompt, LLM, evaluation]
-    related_skills: [prompt-engineering-patterns, advanced-reasoning-patterns, agent-framework-design, llm-fine-tuning-lora]
+    tags: [prompt-engineering, optimization, dspy, auto-prompt, llm, evaluation]
 ---
 
 # Prompt Optimization Automation

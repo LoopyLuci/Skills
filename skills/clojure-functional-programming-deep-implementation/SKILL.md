@@ -1,14 +1,13 @@
 ---
 name: clojure-functional-programming-deep-implementation
-description: "Use when applying clojure functional implementation."
+description: Use when applying clojure functional implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [language, clojure]
-    related_skills: ['clojure-functional-programming']
 ---
 
 # Clojure Functional Programming Deep Implementation

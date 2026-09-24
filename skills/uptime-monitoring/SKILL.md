@@ -1,6 +1,13 @@
 ---
 name: uptime-monitoring
-description: "Ping endpoints check SSL expiry monitor via Telegram cron"
+description: Ping endpoints check SSL expiry monitor via Telegram cron
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [uptime, monitoring]
 ---
 
 # Uptime Monitoring

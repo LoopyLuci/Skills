@@ -2,12 +2,12 @@
 name: fighting-game-mechanics
 description: Frame data, input buffering, hitboxes/hurtboxes, combo systems, and netcode for fighters
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["fighting", "competitive"]
+    tags: [fighting, competitive]
 ---
 
 # Fighting Game Mechanics

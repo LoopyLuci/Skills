@@ -1,14 +1,13 @@
 ---
 name: tiktok-reels-shorts-scripting
-description: "Use when scripting short-form video content."
+description: Use when scripting short-form video content.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [tiktok, reels, shorts, video-scripting, short-form]
-    related_skills: [social-media-content-calendar, social-media-strategy]
 ---
 
 # Tiktok Reels Shorts Scripting

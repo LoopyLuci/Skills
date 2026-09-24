@@ -1,14 +1,13 @@
 ---
 name: cryptographic-security
-description: "Use when implementing cryptography."
+description: Use when implementing cryptography.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cybersecurity, cryptography, encryption, key-management]
-    related_skills: ['cryptography-implementation-patterns']
 ---
 
 # Cryptographic Security

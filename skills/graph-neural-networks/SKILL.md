@@ -1,9 +1,15 @@
 ---
 name: graph-neural-networks
-description: "Use when implementing GNNs for graph-structured data."
-category: mlops
-tags: [gnn, graph-neural-networks, message-passing, gcn, gat]
+description: Use when implementing GNNs for graph-structured data.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [gnn, graph-neural-networks, message-passing, gcn, gat]
 ---
+
 # Graph Neural Networks
 
 Building and training GNNs for graph-structured data.

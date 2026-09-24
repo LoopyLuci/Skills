@@ -1,14 +1,13 @@
 ---
 name: carbon-offset-implementation
-description: "Use when applying carbon offsets implementation."
+description: Use when applying carbon offsets implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, carbon, carbon-offset-standards]
-    related_skills: [general]
 ---
 
 # Carbon Offset Implementation

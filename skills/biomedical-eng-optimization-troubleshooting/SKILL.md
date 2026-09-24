@@ -1,14 +1,13 @@
 ---
 name: biomedical-eng-optimization-troubleshooting
-description: "Use when applying biomedical optimization troubleshooting."
+description: Use when applying biomedical optimization troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, biomedical, optimization]
-    related_skills: [general]
 ---
 
 # Biomedical Eng Optimization Troubleshooting

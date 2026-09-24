@@ -1,12 +1,13 @@
 ---
 name: linux-command-line-advanced
-description: "Use when using advanced Linux commands."
+description: Use when using advanced Linux commands.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["linux", "bash", "awk", "sed", "find", "xargs"]
+    tags: [linux, bash, awk, sed, find, xargs]
 ---
 
 # Linux Command Line Advanced

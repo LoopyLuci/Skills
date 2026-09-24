@@ -2,12 +2,12 @@
 name: vertical-farming-indoor
 description: Lighting, climate control, stacking systems, and economics
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["vertical", "indoor"]
+    tags: [vertical, indoor]
 ---
 
 # Vertical Farming Indoor

@@ -1,14 +1,13 @@
 ---
 name: content-marketing-seo-best-practices
-description: "Use when applying content seo best practices."
+description: Use when applying content seo best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, seo-strategy]
-    related_skills: ['']
 ---
 
 # Content Marketing Seo Best Practices

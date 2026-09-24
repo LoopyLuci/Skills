@@ -1,14 +1,13 @@
 ---
 name: aviation-aeroclub-fundamentals
-description: "Use when applying aviation aeroclub management fundament."
+description: Use when applying aviation aeroclub management fundament.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, management, club]
-    related_skills: ['general']
 ---
 
 # Aviation Aeroclub Fundamentals

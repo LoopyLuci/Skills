@@ -1,14 +1,13 @@
 ---
 name: azure-storage-implementation
-description: "Use when applying azure storage implementation."
+description: Use when applying azure storage implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, azure, blob, file-storage]
-    related_skills: [general]
 ---
 
 # Azure Storage Implementation

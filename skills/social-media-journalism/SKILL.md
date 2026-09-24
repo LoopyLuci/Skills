@@ -2,12 +2,12 @@
 name: social-media-journalism
 description: Social-first reporting, verification, and platform strategy
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["social-media", "verification"]
+    tags: [social-media, verification]
 ---
 
 # Social Media Journalism

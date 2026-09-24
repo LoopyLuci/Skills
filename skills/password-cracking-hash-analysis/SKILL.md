@@ -1,13 +1,13 @@
 ---
 name: password-cracking-hash-analysis
-description: "Use when cracking passwords and analyzing hashes."
+description: Use when cracking passwords and analyzing hashes.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [password-cracking, hashcat, john, hash-analysis, wordlist, GPU, brute-force]
-    related_skills: [active-directory-pentesting, webapp-penetration-testing, privilege-escalation-techniques, osint-reconnaissance-techniques]
+    tags: [password-cracking, hashcat, john, hash-analysis, wordlist, gpu, brute-force]
 ---
 
 # Password Cracking and Hash Analysis

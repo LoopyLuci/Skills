@@ -1,9 +1,15 @@
 ---
 name: custom-training-loops
-description: "Use when writing custom PyTorch training loops."
-category: mlops
-tags: [pytorch, training, loops, custom, gradient]
+description: Use when writing custom PyTorch training loops.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [pytorch, training, loops, custom, gradient]
 ---
+
 # Custom Training Loops
 
 Writing custom PyTorch training loops beyond the standard Trainer.

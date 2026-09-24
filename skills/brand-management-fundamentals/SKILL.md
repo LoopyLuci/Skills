@@ -1,14 +1,13 @@
 ---
 name: brand-management-fundamentals
-description: "Use when applying brand management fundamentals."
+description: Use when applying brand management fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, brand, branding-identity-guide]
-    related_skills: [general]
 ---
 
 # Brand Management Fundamentals

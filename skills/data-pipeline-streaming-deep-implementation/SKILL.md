@@ -1,14 +1,13 @@
 ---
 name: data-pipeline-streaming-deep-implementation
-description: "Use when applying streaming data pipelines implementation."
+description: Use when applying streaming data pipelines implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, streaming]
-    related_skills: ['data-pipeline-streaming']
 ---
 
 # Data Pipeline Streaming Deep Implementation

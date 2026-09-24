@@ -1,13 +1,13 @@
 ---
 name: data-synthesis-generation
-description: "Use when generating synthetic data for ML training."
+description: Use when generating synthetic data for ML training.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [synthetic-data, data-generation, GAN, diffusion, augmentation, privacy]
-    related_skills: [data-augmentation-techniques, data-labeling-strategies, privacy-training, active-learning-strategies]
+    tags: [synthetic-data, data-generation, gan, diffusion, augmentation, privacy]
 ---
 
 # Data Synthesis and Generation

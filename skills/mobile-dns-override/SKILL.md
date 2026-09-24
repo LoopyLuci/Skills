@@ -1,9 +1,13 @@
 ---
 name: mobile-dns-override
-title: Mobile DNS Override
 description: Use when configuring private DNS on iOS and Android.
-category: networking
-tags: [mobile, dns, override, private, ios, android, configuration]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [mobile, dns, override, private, ios, android, configuration]
 ---
 
 # Mobile DNS Override

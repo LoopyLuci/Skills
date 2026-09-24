@@ -2,12 +2,12 @@
 name: meme-internet-culture
 description: Meme creation, virality, remix culture, and platform dynamics
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["meme", "internet"]
+    tags: [meme, internet]
 ---
 
 # Meme Internet Culture

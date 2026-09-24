@@ -1,14 +1,13 @@
 ---
 name: algorithms-bioinformatics-troubleshooting
-description: "Use when applying bioinformatics algorithms troubleshoot."
+description: Use when applying bioinformatics algorithms troubleshoot.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [bioinformatics, algorithms, algorithms]
-    related_skills: [general]
 ---
 
 # Algorithms Bioinformatics Troubleshooting

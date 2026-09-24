@@ -1,14 +1,13 @@
 ---
 name: controls-engineering-best-practices
-description: "Use when applying controls engineering best practices."
+description: Use when applying controls engineering best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [engineering, controls, automation, embedded-system]
-    related_skills: [general]
 ---
 
 # Controls Engineering Best Practices

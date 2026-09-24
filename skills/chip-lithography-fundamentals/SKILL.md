@@ -1,14 +1,13 @@
 ---
 name: chip-lithography-fundamentals
-description: "Use when applying chip lithography fundamentals."
+description: Use when applying chip lithography fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [semiconductor, lithography, lithography]
-    related_skills: ['general']
 ---
 
 # Chip Lithography Fundamentals

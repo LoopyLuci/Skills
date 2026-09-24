@@ -2,12 +2,12 @@
 name: graphic-design-branding
 description: Logo design, brand identity, print design, and brand guidelines
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["graphic-design", "branding"]
+    tags: [graphic-design, branding]
 ---
 
 # Graphic Design Branding

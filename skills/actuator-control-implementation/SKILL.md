@@ -1,14 +1,13 @@
 ---
 name: actuator-control-implementation
-description: "Use when applying actuator control implementation."
+description: Use when applying actuator control implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [electronics, control, actuators]
-    related_skills: [general]
 ---
 
 # Actuator Control Implementation

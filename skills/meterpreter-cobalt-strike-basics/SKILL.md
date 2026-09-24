@@ -1,13 +1,13 @@
 ---
 name: meterpreter-cobalt-strike-basics
-description: "Use when using Meterpreter and Cobalt Strike."
+description: Use when using Meterpreter and Cobalt Strike.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [meterpreter, cobalt-strike, beacon, post-exploitation, Mettle, payload]
-    related_skills: [command-control-c2-infrastructure, evasion-techniques-av-bypass, privilege-escalation-techniques, lateral-movement-pivoting]
+    tags: [meterpreter, cobalt-strike, beacon, post-exploitation, mettle, payload]
 ---
 
 # Meterpreter and Cobalt Strike Basics

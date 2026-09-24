@@ -1,14 +1,13 @@
 ---
 name: blockchain-security-best-practices-deep-fundamentals
-description: "Use when applying blockchain security fundamentals."
+description: Use when applying blockchain security fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [blockchain, security]
-    related_skills: ['blockchain-security-best-practices']
 ---
 
 # Blockchain Security Best Practices Deep Fundamentals

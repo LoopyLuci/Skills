@@ -1,12 +1,13 @@
 ---
 name: airflow-dag-design
-description: "Use when designing Airflow DAGs."
+description: Use when designing Airflow DAGs.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["airflow", "DAGs", "tasks", "scheduling", "operators"]
+    tags: [airflow, dags, tasks, scheduling, operators]
 ---
 
 # Airflow Dag Design

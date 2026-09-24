@@ -1,14 +1,13 @@
 ---
 name: fMRI-fundamentals
-description: "Use when applying functional mri fundamentals."
+description: Use when applying functional mri fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neurotech, imaging, fmri]
-    related_skills: [general]
 ---
 
 # Fmri Fundamentals

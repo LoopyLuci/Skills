@@ -1,14 +1,13 @@
 ---
 name: creative-problem-troubleshooting
-description: "Use when applying creative problem solving troubleshooting."
+description: Use when applying creative problem solving troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, creativity, creative-problem-solving]
-    related_skills: [general]
 ---
 
 # Creative Problem Troubleshooting

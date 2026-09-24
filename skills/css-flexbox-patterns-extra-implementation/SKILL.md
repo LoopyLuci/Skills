@@ -1,14 +1,13 @@
 ---
 name: css-flexbox-patterns-extra-implementation
-description: "Use when applying css flexbox implementation."
+description: Use when applying css flexbox implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [web, css]
-    related_skills: ['css-flexbox-patterns']
 ---
 
 # Css Flexbox Patterns Extra Implementation

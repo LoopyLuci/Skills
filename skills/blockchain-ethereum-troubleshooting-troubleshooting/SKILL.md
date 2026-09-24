@@ -1,14 +1,13 @@
 ---
 name: blockchain-ethereum-troubleshooting-troubleshooting
-description: "Use when applying ethereum troubleshooting troubleshooting."
+description: Use when applying ethereum troubleshooting troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [blockchain, ethereum]
-    related_skills: ['blockchain-ethereum-troubleshooting']
 ---
 
 # Blockchain Ethereum Troubleshooting Troubleshooting

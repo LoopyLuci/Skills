@@ -1,14 +1,13 @@
 ---
 name: electroplating-fundamentals
-description: "Use when applying electroplating fundamentals."
+description: Use when applying electroplating fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [materials, manufacturing, electroplating]
-    related_skills: [general]
 ---
 
 # Electroplating Fundamentals

@@ -1,14 +1,13 @@
 ---
 name: datadog-monitoring-setup-deep-implementation
-description: "Use when applying datadog monitoring setup implementation."
+description: Use when applying datadog monitoring setup implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [sys, monitoring]
-    related_skills: ['datadog-monitoring-setup']
 ---
 
 # Datadog Monitoring Setup Deep Implementation

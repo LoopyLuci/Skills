@@ -1,13 +1,13 @@
 ---
 name: sales-compensation-planning
-description: "Use when designing sales compensation and commission plans."
+description: Use when designing sales compensation and commission plans.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [sales-compensation, commissions, quotas, SPIFF, variable-pay, comp-plan]
-    related_skills: [sales-enablement-playbooks, sales-forecasting-advanced, revenue-operations-revops, crm-sales-pipeline]
+    tags: [sales-compensation, commissions, quotas, spiff, variable-pay, comp-plan]
 ---
 
 # Sales Compensation Planning

@@ -2,12 +2,12 @@
 name: public-speaking-presentation
 description: Speech structure, stage presence, slide design, and overcoming nerves
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["speaking", "presentation"]
+    tags: [speaking, presentation]
 ---
 
 # Public Speaking Presentation

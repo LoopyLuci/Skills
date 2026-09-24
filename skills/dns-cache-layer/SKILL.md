@@ -1,9 +1,13 @@
 ---
 name: dns-cache-layer
-title: DNS Cache Layer
 description: Use when caching DNS responses with TTL and prefetch.
-category: networking
-tags: [dns, cache, performance, lru, concurrent, rust]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [dns, cache, performance, lru, concurrent, rust]
 ---
 
 # DNS Cache Layer

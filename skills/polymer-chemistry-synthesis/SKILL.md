@@ -2,12 +2,12 @@
 name: polymer-chemistry-synthesis
 description: Polymer synthesis, characterization, and polymer physics
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["polymer", "synthesis"]
+    tags: [polymer, synthesis]
 ---
 
 # Polymer Chemistry Synthesis

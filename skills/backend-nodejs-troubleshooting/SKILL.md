@@ -1,14 +1,13 @@
 ---
 name: backend-nodejs-troubleshooting
-description: "Use when applying node.js backend troubleshooting."
+description: Use when applying node.js backend troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, nodejs, javascript]
-    related_skills: [general]
 ---
 
 # Backend Nodejs Troubleshooting

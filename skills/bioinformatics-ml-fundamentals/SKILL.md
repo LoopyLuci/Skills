@@ -1,14 +1,13 @@
 ---
 name: bioinformatics-ml-fundamentals
-description: "Use when applying bioinformatics ml fundamentals."
+description: Use when applying bioinformatics ml fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, bioinfo, bioinformatics-fundamentals]
-    related_skills: [general]
 ---
 
 # Bioinformatics Ml Fundamentals

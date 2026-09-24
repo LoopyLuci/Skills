@@ -1,14 +1,13 @@
 ---
 name: edge-computing-architectures
-description: "Use when designing edge computing architectures."
+description: Use when designing edge computing architectures.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [edge-computing, distributed-systems, edge-ai, fog-computing]
-    related_skills: [general]
 ---
 
 # Edge Computing Architectures

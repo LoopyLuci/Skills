@@ -1,14 +1,13 @@
 ---
 name: climate-tech-manufacturing-fundamentals
-description: "Use when applying climate mfg fundamentals."
+description: Use when applying climate mfg fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, manufacturing, manufacturing-optimization]
-    related_skills: [general]
 ---
 
 # Climate Tech Manufacturing Fundamentals

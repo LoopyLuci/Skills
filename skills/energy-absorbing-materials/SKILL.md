@@ -1,14 +1,13 @@
 ---
 name: energy-absorbing-materials
-description: "Use when designing energy absorbing materials."
+description: Use when designing energy absorbing materials.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [materials, energy-absorbing, impact, crash]
-    related_skills: [general]
 ---
 
 # Energy Absorbing Materials

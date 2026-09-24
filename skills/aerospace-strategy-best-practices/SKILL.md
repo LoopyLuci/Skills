@@ -1,14 +1,13 @@
 ---
 name: aerospace-strategy-best-practices
-description: "Use when applying aerospace strategy best practices."
+description: Use when applying aerospace strategy best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aerospace, strategy, aerospace-eng-strategy]
-    related_skills: [general]
 ---
 
 # Aerospace Strategy Best Practices

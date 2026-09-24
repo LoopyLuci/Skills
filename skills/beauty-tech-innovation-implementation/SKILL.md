@@ -1,14 +1,13 @@
 ---
 name: beauty-tech-innovation-implementation
-description: "Use when applying beauty tech innovation implementation."
+description: Use when applying beauty tech innovation implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [beauty, innovation, beauty-tech]
-    related_skills: ['general']
 ---
 
 # Beauty Tech Innovation Implementation

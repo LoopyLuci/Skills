@@ -1,9 +1,13 @@
 ---
 name: multi-platform-installer
-title: Multi-Platform Installer
 description: Use when building installers for all target platforms.
-category: networking
-tags: [installer, cross-platform, packaging, distribution, deployment]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [installer, cross-platform, packaging, distribution, deployment]
 ---
 
 # Multi-Platform Installer

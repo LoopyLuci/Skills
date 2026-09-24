@@ -1,14 +1,13 @@
 ---
 name: data-lineage-best-practices-deep-troubleshooting
-description: "Use when applying data lineage troubleshooting."
+description: Use when applying data lineage troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, lineage]
-    related_skills: ['data-lineage-best-practices']
 ---
 
 # Data Lineage Best Practices Deep Troubleshooting

@@ -1,12 +1,13 @@
 ---
 name: jwt-verification-basics
-description: "Use when verifying JWT tokens."
+description: Use when verifying JWT tokens.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["JWT", "verification", "RS256", "HS256", "jwks"]
+    tags: [jwt, verification, rs256, hs256, jwks]
 ---
 
 # Jwt Verification Basics

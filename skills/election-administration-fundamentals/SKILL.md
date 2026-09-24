@@ -1,14 +1,13 @@
 ---
 name: election-administration-fundamentals
-description: "Use when applying election administration fundamentals."
+description: Use when applying election administration fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [gov, election, election-security]
-    related_skills: [general]
 ---
 
 # Election Administration Fundamentals

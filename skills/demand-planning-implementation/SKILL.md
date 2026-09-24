@@ -1,14 +1,13 @@
 ---
 name: demand-planning-implementation
-description: "Use when applying demand planning implementation."
+description: Use when applying demand planning implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [logistics, supply, demand-forecasting]
-    related_skills: [general]
 ---
 
 # Demand Planning Implementation

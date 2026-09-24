@@ -1,14 +1,13 @@
 ---
 name: backend-go-implementation-deep-best-practices
-description: "Use when applying go backend implementation best practices."
+description: Use when applying go backend implementation best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, go]
-    related_skills: ['backend-go-implementation']
 ---
 
 # Backend Go Implementation Deep Best Practices

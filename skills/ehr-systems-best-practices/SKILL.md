@@ -1,14 +1,13 @@
 ---
 name: ehr-systems-best-practices
-description: "Use when applying ehr systems best practices."
+description: Use when applying ehr systems best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, medicine, ehr]
-    related_skills: [general]
 ---
 
 # Ehr Systems Best Practices

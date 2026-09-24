@@ -1,14 +1,13 @@
 ---
 name: database-tuning-best-practices
-description: "Use when for database tuning best practices."
+description: Use when for database tuning best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, tuning, performance, optimization]
-    related_skills: [general]
 ---
 
 # Database Tuning Best Practices

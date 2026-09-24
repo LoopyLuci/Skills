@@ -1,14 +1,13 @@
 ---
 name: bioinformatics-sequences-analysis
-description: "Use when analyzing bio sequences. Genomics, alignment."
+description: Use when analyzing bio sequences. Genomics, alignment.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [bioinformatics, genomics, proteomics, biotech, alignment]
-    related_skills: [genomics-data-processing, drug-discovery-pipeline]
 ---
 
 # Bioinformatics Sequences Analysis

@@ -1,13 +1,13 @@
 ---
 name: command-control-c2-infrastructure
-description: "Use when building C2 infrastructure for red teams."
+description: Use when building C2 infrastructure for red teams.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [C2, command-control, mythic, cobalt-strike, sliver, domain-fronting, redirector]
-    related_skills: [red-team-operations, evasion-techniques-av-bypass, lateral-movement-pivoting, port-redirection-tunneling]
+    tags: [c2, command-control, mythic, cobalt-strike, sliver, domain-fronting, redirector]
 ---
 
 # Command and Control (C2) Infrastructure

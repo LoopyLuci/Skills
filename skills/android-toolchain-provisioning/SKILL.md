@@ -1,6 +1,13 @@
 ---
 name: android-toolchain-provisioning
 description: Build Android APKs with no JDK/SDK/Studio installed.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [android, toolchain, provisioning]
 ---
 
 # Android Toolchain Provisioning (headless, no Android Studio)

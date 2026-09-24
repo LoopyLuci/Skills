@@ -1,14 +1,13 @@
 ---
 name: data-engineering-pipelines-troubleshooting
-description: "Use when for data engineering troubleshooting."
+description: Use when for data engineering troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data-engineering, etl, data-pipeline]
-    related_skills: [general]
 ---
 
 # Data Engineering Pipelines Troubleshooting

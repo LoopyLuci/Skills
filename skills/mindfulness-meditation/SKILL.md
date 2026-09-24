@@ -2,12 +2,12 @@
 name: mindfulness-meditation
 description: Meditation techniques, mindfulness practices, and stress reduction
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["mindfulness", "meditation"]
+    tags: [mindfulness, meditation]
 ---
 
 # Mindfulness Meditation

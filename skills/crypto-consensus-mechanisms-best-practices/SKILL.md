@@ -1,14 +1,13 @@
 ---
 name: crypto-consensus-mechanisms-best-practices
-description: "Use when applying consensus mechanisms best practices."
+description: Use when applying consensus mechanisms best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [crypto, consensus, blockchain-development-solidity]
-    related_skills: ['']
 ---
 
 # Crypto Consensus Mechanisms Best Practices

@@ -2,12 +2,12 @@
 name: regulatory-compliance-financial
 description: SEC, FINRA, MiFID II, AML/KYC, and compliance programs
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["financial", "regulatory"]
+    tags: [financial, regulatory]
 ---
 
 # Regulatory Compliance Financial

@@ -2,12 +2,12 @@
 name: multiplayer-networking-games
 description: Netcode, client-server authority, prediction, reconciliation, lag compensation, and state sync
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["multiplayer", "networking"]
+    tags: [multiplayer, networking]
 ---
 
 # Multiplayer Networking Games

@@ -1,14 +1,13 @@
 ---
 name: climate-carbon-utilization-implementation
-description: "Use when applying climate carbon utilization implementat."
+description: Use when applying climate carbon utilization implementat.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, environment]
-    related_skills: ['']
 ---
 
 # Climate Carbon Utilization Implementation

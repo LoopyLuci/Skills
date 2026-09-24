@@ -1,14 +1,13 @@
 ---
 name: analog-computing-best-practices
-description: "Use when applying analog computing best practices."
+description: Use when applying analog computing best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [computing, analog]
-    related_skills: ['general']
 ---
 
 # Analog Computing Best Practices

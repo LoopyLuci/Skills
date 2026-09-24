@@ -1,14 +1,13 @@
 ---
 name: astronomical-image-processing
-description: "Use when processing astronomical images."
+description: Use when processing astronomical images.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [space, astronomy, image-processing, astrophotography]
-    related_skills: [satellite-data-downlink]
 ---
 
 # Astronomical Image Processing

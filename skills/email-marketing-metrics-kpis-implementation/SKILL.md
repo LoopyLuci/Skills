@@ -1,14 +1,13 @@
 ---
 name: email-marketing-metrics-kpis-implementation
-description: "Use when applying email kpis implementation."
+description: Use when applying email kpis implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, analytics, kpis]
-    related_skills: [general]
 ---
 
 # Email Marketing Metrics Kpis Implementation

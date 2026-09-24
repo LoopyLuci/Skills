@@ -1,14 +1,13 @@
 ---
 name: fMRI-troubleshooting
-description: "Use when applying functional mri troubleshooting."
+description: Use when applying functional mri troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neurotech, imaging, fmri]
-    related_skills: [general]
 ---
 
 # Fmri Troubleshooting

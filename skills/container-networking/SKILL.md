@@ -1,14 +1,13 @@
 ---
 name: container-networking
-description: "Use when designing container networking."
+description: Use when designing container networking.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, containers, container-networking-patterns]
-    related_skills: [general]
 ---
 
 # Container Networking

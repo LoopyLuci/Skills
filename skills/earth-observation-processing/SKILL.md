@@ -1,14 +1,13 @@
 ---
 name: earth-observation-processing
-description: "Use when processing earth observation data."
+description: Use when processing earth observation data.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [space, earth-observation, satellite-imaging, data-processing]
-    related_skills: [general]
 ---
 
 # Earth Observation Processing

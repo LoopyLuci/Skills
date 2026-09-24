@@ -1,14 +1,13 @@
 ---
 name: data-science-implementation-fundamentals
-description: "Use when applying data science implementation fundamentals."
+description: Use when applying data science implementation fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data-science, implementation]
-    related_skills: [general]
 ---
 
 # Data Science Implementation Fundamentals

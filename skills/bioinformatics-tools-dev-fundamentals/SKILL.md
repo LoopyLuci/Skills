@@ -1,14 +1,13 @@
 ---
 name: bioinformatics-tools-dev-fundamentals
-description: "Use when applying bioinformatics dev fundamentals."
+description: Use when applying bioinformatics dev fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [bioinformatics, dev, development]
-    related_skills: [general]
 ---
 
 # Bioinformatics Tools Dev Fundamentals

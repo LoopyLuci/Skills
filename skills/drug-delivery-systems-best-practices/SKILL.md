@@ -1,14 +1,13 @@
 ---
 name: drug-delivery-systems-best-practices
-description: "Use when applying drug delivery best practices."
+description: Use when applying drug delivery best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, delivery, drug-delivery]
-    related_skills: ['general']
 ---
 
 # Drug Delivery Systems Best Practices

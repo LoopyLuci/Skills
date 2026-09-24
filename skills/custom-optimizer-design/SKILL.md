@@ -1,13 +1,13 @@
 ---
 name: custom-optimizer-design
-description: "Use when implementing custom optimization algorithms for ML."
+description: Use when implementing custom optimization algorithms for ML.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [optimization, optimizers, training, deep-learning, pytorch]
-    related_skills: [custom-training-loops, custom-loss-activation-functions, model-compression-techniques]
 ---
 
 # Custom Optimizer Design

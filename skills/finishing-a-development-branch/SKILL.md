@@ -1,8 +1,13 @@
 ---
 name: finishing-a-development-branch
 description: Use when completing dev work: verify tests and present merge options
-tags: [git, branch, merge, testing, pull-request]
-related_skills: [executing-plans, receiving-code-review, verification-before-completion]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [git, branch, merge, testing, pull-request]
 ---
 
 # Finishing A Development Branch

@@ -1,13 +1,13 @@
 ---
-
-name: prototype
+name: prototype-solution
 description: Build a throwaway prototype to answer a design question. Use when the user wants to sanity-check whether a state model or logic feels right, or explore what a UI should look like.
-source: mattpocock/skills
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [design, prototype, frontend]
-    category: creative
-
 ---
 
 # Prototype

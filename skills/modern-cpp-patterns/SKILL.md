@@ -1,9 +1,15 @@
 ---
 name: modern-cpp-patterns
-description: "Use when writing modern C++17/20/23: concepts, ranges, coros."
-category: software-development
-tags: [cpp, modern, cpp20, concepts, ranges, coroutines]
+description: Use when writing modern C++17/20/23: concepts, ranges, coros.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [cpp, modern, cpp20, concepts, ranges, coroutines]
 ---
+
 # Modern C++ Patterns
 
 C++17/20/23 patterns: concepts, ranges, coroutines, smart pointers, move semantics.

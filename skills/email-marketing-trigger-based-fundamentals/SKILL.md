@@ -1,14 +1,13 @@
 ---
 name: email-marketing-trigger-based-fundamentals
-description: "Use when applying trigger-based emails fundamentals."
+description: Use when applying trigger-based emails fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, automation, triggers]
-    related_skills: [general]
 ---
 
 # Email Marketing Trigger Based Fundamentals

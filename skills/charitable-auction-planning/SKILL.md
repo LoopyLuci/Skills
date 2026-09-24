@@ -1,14 +1,13 @@
 ---
 name: charitable-auction-planning
-description: "Use when planning charity auctions."
+description: Use when planning charity auctions.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [nonprofit, auctions, fundraising-events, charity]
-    related_skills: [general]
 ---
 
 # Charitable Auction Planning

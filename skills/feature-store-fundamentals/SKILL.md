@@ -1,14 +1,13 @@
 ---
 name: feature-store-fundamentals
-description: "Use when learning feature store fundamentals."
+description: Use when learning feature store fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mlops, feature-store, ml, data]
-    related_skills: [general]
 ---
 
 # Feature Store Fundamentals

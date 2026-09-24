@@ -1,14 +1,13 @@
 ---
 name: banking-security-tech-implementation
-description: "Use when applying banking security tech implementation."
+description: Use when applying banking security tech implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, security, bank-security]
-    related_skills: [general]
 ---
 
 # Banking Security Tech Implementation

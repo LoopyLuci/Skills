@@ -1,14 +1,13 @@
 ---
 name: dodd-frank-implementation
-description: "Use when applying dodd-frank implementation."
+description: Use when applying dodd-frank implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, banking, dodd-frank]
-    related_skills: [general]
 ---
 
 # Dodd Frank Implementation

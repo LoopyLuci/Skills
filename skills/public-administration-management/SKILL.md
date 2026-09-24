@@ -2,12 +2,12 @@
 name: public-administration-management
 description: Public sector management, procurement, performance management, and reform
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["administration", "management"]
+    tags: [administration, management]
 ---
 
 # Public Administration Management

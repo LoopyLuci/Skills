@@ -1,14 +1,13 @@
 ---
 name: customer-support-strategy
-description: "Use when for customer support strategy."
+description: Use when for customer support strategy.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, management, general]
-    related_skills: [general]
 ---
 
 # Customer Support Strategy

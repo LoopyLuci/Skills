@@ -1,9 +1,15 @@
 ---
 name: api-design-rest-graphql
-description: "Use when designing REST or GraphQL API architectures."
-category: software-development
-tags: [api, rest, graphql, design, architecture]
+description: Use when designing REST or GraphQL API architectures.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [api, rest, graphql, design, architecture]
 ---
+
 # API Design: REST & GraphQL
 
 Designing robust REST and GraphQL APIs.

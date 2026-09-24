@@ -1,14 +1,13 @@
 ---
 name: feature-engineering-auto-best-practices
-description: "Use when applying auto feature engineering best practices."
+description: Use when applying auto feature engineering best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, feature-engineering, feature-engineering-automation]
-    related_skills: [general]
 ---
 
 # Feature Engineering Auto Best Practices

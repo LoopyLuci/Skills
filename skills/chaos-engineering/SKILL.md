@@ -1,13 +1,13 @@
 ---
 name: chaos-engineering
-description: "Use when implementing chaos engineering experiments."
+description: Use when implementing chaos engineering experiments.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [chaos-engineering, resilience-testing, fault-injection, Gameday, reliability]
-    related_skills: [security-incident-response, agent-fault-tolerance, distributed-systems-patterns, load-testing]
+    tags: [chaos-engineering, resilience-testing, fault-injection, gameday, reliability]
 ---
 
 # Chaos Engineering

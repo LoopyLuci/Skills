@@ -1,14 +1,13 @@
 ---
 name: aerospace-fundamentals-eng-troubleshooting
-description: "Use when applying aerospace fundamentals troubleshooting."
+description: Use when applying aerospace fundamentals troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aerospace, education, aerospace-eng-fundamentals]
-    related_skills: [general]
 ---
 
 # Aerospace Fundamentals Eng Troubleshooting

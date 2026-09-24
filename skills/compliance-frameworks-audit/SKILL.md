@@ -2,12 +2,12 @@
 name: compliance-frameworks-audit
 description: SOC 2, ISO 27001, PCI DSS, HIPAA, NIST CSF, and audit preparation
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["compliance", "audit"]
+    tags: [compliance, audit]
 ---
 
 # Compliance Frameworks Audit

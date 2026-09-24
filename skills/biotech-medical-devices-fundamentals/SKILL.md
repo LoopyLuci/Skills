@@ -1,14 +1,13 @@
 ---
 name: biotech-medical-devices-fundamentals
-description: "Use when applying medical device development fundamentals."
+description: Use when applying medical device development fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, medical-devices]
-    related_skills: ['']
 ---
 
 # Biotech Medical Devices Fundamentals

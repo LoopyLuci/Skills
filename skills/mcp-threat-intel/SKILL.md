@@ -1,9 +1,13 @@
 ---
 name: mcp-threat-intel
-title: MCP Threat Intelligence
 description: Use when exposing threat intel data via MCP to agents.
-category: networking
-tags: [mcp, threat, intelligence, agents, security, sharing]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [mcp, threat, intelligence, agents, security, sharing]
 ---
 
 # MCP Threat Intelligence

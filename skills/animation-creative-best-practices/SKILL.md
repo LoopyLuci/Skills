@@ -1,14 +1,13 @@
 ---
 name: animation-creative-best-practices
-description: "Use when applying animation best practices."
+description: Use when applying animation best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [creative, animation, animation-techniques-3d]
-    related_skills: [general]
 ---
 
 # Animation Creative Best Practices

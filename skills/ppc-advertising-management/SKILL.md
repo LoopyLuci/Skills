@@ -1,13 +1,13 @@
 ---
 name: ppc-advertising-management
-description: "Use when managing pay-per-click advertising campaigns."
+description: Use when managing pay-per-click advertising campaigns.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [ppc, advertising, google-ads, paid-search, SEM, bidding, keywords]
-    related_skills: [social-media-advertising, seo-search-engine-optimization, conversion-rate-optimization, digital-marketing-strategy]
+    tags: [ppc, advertising, google-ads, paid-search, sem, bidding, keywords]
 ---
 
 # Ppc Advertising Management

@@ -1,13 +1,13 @@
 ---
 name: curriculum-learning
-description: "Use when implementing curriculum learning strategies."
+description: Use when implementing curriculum learning strategies.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [curriculum-learning, training-strategy, easy-to-hard, progressive-learning]
-    related_skills: [continual-lifelong-learning, deep-reinforcement-learning, active-learning-strategies, custom-training-loops]
 ---
 
 # Curriculum Learning

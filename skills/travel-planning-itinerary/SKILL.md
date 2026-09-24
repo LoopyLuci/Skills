@@ -2,12 +2,12 @@
 name: travel-planning-itinerary
 description: Itinerary building, logistics, budgeting, and travel optimization
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["travel", "itinerary"]
+    tags: [travel, itinerary]
 ---
 
 # Travel Planning Itinerary

@@ -2,12 +2,12 @@
 name: quantum-error-correction
 description: Surface codes, stabilizer codes, logical qubits, and fault-tolerant thresholds
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["error-correction", "fault-tolerant"]
+    tags: [error-correction, fault-tolerant]
 ---
 
 # Quantum Error Correction

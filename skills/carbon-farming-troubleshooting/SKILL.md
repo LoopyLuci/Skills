@@ -1,14 +1,13 @@
 ---
 name: carbon-farming-troubleshooting
-description: "Use when applying carbon farming troubleshooting."
+description: Use when applying carbon farming troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agriculture, carbon, carbon-farming]
-    related_skills: [general]
 ---
 
 # Carbon Farming Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: finance-trading-implementation
-description: "Use when for finance trading implementation."
+description: Use when for finance trading implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, investing, trading]
-    related_skills: [general]
 ---
 
 # Finance Trading Implementation

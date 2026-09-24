@@ -2,12 +2,12 @@
 name: knitting-crochet
 description: Patterns, techniques, yarn selection, and garment construction
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["knitting", "crochet"]
+    tags: [knitting, crochet]
 ---
 
 # Knitting Crochet

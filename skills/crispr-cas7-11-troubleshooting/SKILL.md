@@ -1,14 +1,13 @@
 ---
 name: crispr-cas7-11-troubleshooting
-description: "Use when applying crispr cas7 11 troubleshooting."
+description: Use when applying crispr cas7 11 troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, crispr, crispr-gene-editing]
-    related_skills: ['']
 ---
 
 # Crispr Cas7 11 Troubleshooting

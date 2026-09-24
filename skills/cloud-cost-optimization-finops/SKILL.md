@@ -1,13 +1,13 @@
 ---
 name: cloud-cost-optimization-finops
-description: "Use when implementing FinOps and cloud cost optimization."
+description: Use when implementing FinOps and cloud cost optimization.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [FinOps, cloud-cost, AWS, Azure, GCP, optimization, reserved-instances, spot]
-    related_skills: [infrastructure-policy-as-code, gitops-argocd-flux, cloud-operations, financial-modeling-budgeting]
+    tags: [finops, cloud-cost, aws, azure, gcp, optimization, reserved-instances, spot]
 ---
 
 # FinOps and Cloud Cost Optimization

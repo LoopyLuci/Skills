@@ -1,13 +1,13 @@
 ---
 name: conversion-rate-optimization
-description: "Use when optimizing landing pages and conversion rates."
+description: Use when optimizing landing pages and conversion rates.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [CRO, conversion, landing-pages, A/B-testing, optimization, UX]
-    related_skills: [marketing-funnel-design, ab-testing-experimentation, website-analytics-tracking, digital-marketing-strategy]
+    tags: [cro, conversion, landing-pages, a/b-testing, optimization, ux]
 ---
 
 # Conversion Rate Optimization

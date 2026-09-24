@@ -1,14 +1,13 @@
 ---
 name: email-marketing-behavioral-troubleshooting
-description: "Use when applying behavioral emails troubleshooting."
+description: Use when applying behavioral emails troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, automation, behavioral]
-    related_skills: [general]
 ---
 
 # Email Marketing Behavioral Troubleshooting

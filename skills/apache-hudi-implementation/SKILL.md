@@ -1,14 +1,13 @@
 ---
 name: apache-hudi-implementation
-description: "Use when for apache hudi implementation."
+description: Use when for apache hudi implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [big-data, hudi, databricks, lakehouse]
-    related_skills: [general]
 ---
 
 # Apache Hudi Implementation

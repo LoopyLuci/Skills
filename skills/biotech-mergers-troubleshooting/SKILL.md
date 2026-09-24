@@ -1,14 +1,13 @@
 ---
 name: biotech-mergers-troubleshooting
-description: "Use when applying biotech m&a troubleshooting."
+description: Use when applying biotech m&a troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: [biotech, M&A, mergers-acquisitions]
-    related_skills: [general]
+    tags: [biotech, m&a, mergers-acquisitions]
 ---
 
 # Biotech Mergers Troubleshooting

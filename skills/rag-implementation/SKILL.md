@@ -1,6 +1,13 @@
 ---
 name: rag-implementation
-description: "Build retrieval augmented generation with embeddings and vector DB"
+description: Build retrieval augmented generation with embeddings and vector DB
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [rag, implementation]
 ---
 
 # RAG Implementation

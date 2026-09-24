@@ -1,6 +1,13 @@
 ---
 name: skill-description-crafting
 description: Write trigger-based 60-char descriptions for skill routing.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [skill, description, crafting]
 ---
 
 # Skill Description Crafting

@@ -1,14 +1,13 @@
 ---
 name: backend-nodejs-troubleshooting-deep-implementation
-description: "Use when applying node.js backend troubleshooting implem."
+description: Use when applying node.js backend troubleshooting implem.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, nodejs]
-    related_skills: ['backend-nodejs-troubleshooting']
 ---
 
 # Backend Nodejs Troubleshooting Deep Implementation

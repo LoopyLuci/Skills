@@ -1,14 +1,13 @@
 ---
 name: aws-iam-fundamentals-deep-implementation
-description: "Use when applying aws iam fundamentals implementation."
+description: Use when applying aws iam fundamentals implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, aws]
-    related_skills: ['aws-iam-fundamentals']
 ---
 
 # Aws Iam Fundamentals Deep Implementation

@@ -1,9 +1,15 @@
 ---
 name: concurrency-parallelism
-description: "Use when writing concurrent or parallel code."
-category: software-development
-tags: [concurrency, parallelism, threads, async, multiprocessing]
+description: Use when writing concurrent or parallel code.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [concurrency, parallelism, threads, async, multiprocessing]
 ---
+
 # Concurrency & Parallelism
 
 Patterns for concurrent and parallel programming across languages.

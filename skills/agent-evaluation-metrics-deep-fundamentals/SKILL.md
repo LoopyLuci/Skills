@@ -1,14 +1,13 @@
 ---
 name: agent-evaluation-metrics-deep-fundamentals
-description: "Use when applying agent evaluation metrics fundamentals."
+description: Use when applying agent evaluation metrics fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agents, testing]
-    related_skills: ['agent-evaluation-metrics']
 ---
 
 # Agent Evaluation Metrics Deep Fundamentals

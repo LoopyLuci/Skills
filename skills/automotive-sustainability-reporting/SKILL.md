@@ -1,14 +1,13 @@
 ---
 name: automotive-sustainability-reporting
-description: "Use when reporting automotive sustainability."
+description: Use when reporting automotive sustainability.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [automotive, sustainability, reporting, esg]
-    related_skills: [sustainability-reporting]
 ---
 
 # Automotive Sustainability Reporting

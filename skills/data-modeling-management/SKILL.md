@@ -1,14 +1,13 @@
 ---
 name: data-modeling-management
-description: "Use when managing data modeling."
+description: Use when managing data modeling.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, data-modeling, schema-design]
-    related_skills: [general]
 ---
 
 # Data Modeling Management

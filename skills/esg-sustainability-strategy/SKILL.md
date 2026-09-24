@@ -2,12 +2,12 @@
 name: esg-sustainability-strategy
 description: ESG frameworks, materiality, reporting standards, and stakeholder engagement
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["esg", "sustainability"]
+    tags: [esg, sustainability]
 ---
 
 # Esg Sustainability Strategy

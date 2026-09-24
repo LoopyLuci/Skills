@@ -1,14 +1,13 @@
 ---
 name: conflict-resolution-fundamentals
-description: "Use when applying conflict resolution fundamentals."
+description: Use when applying conflict resolution fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [management, conflict, conflict-resolution-negotiation]
-    related_skills: [general]
 ---
 
 # Conflict Resolution Fundamentals

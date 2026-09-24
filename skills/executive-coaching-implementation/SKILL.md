@@ -1,14 +1,13 @@
 ---
 name: executive-coaching-implementation
-description: "Use when applying executive coaching implementation."
+description: Use when applying executive coaching implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [management, leadership, executive-coaching-methods]
-    related_skills: [general]
 ---
 
 # Executive Coaching Implementation

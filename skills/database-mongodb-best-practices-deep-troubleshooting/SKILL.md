@@ -1,14 +1,13 @@
 ---
 name: database-mongodb-best-practices-deep-troubleshooting
-description: "Use when applying mongodb best practices troubleshooting."
+description: Use when applying mongodb best practices troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, mongodb]
-    related_skills: ['mongodb-best-practices']
 ---
 
 # Database Mongodb Best Practices Deep Troubleshooting

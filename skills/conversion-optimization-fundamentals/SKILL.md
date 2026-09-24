@@ -1,14 +1,13 @@
 ---
 name: conversion-optimization-fundamentals
-description: "Use when applying conversion optimization fundamentals."
+description: Use when applying conversion optimization fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, conversion-rate-optimization, cro]
-    related_skills: [general]
 ---
 
 # Conversion Optimization Fundamentals

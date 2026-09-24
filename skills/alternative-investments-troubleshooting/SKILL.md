@@ -1,14 +1,13 @@
 ---
 name: alternative-investments-troubleshooting
-description: "Use when applying alternative investments troubleshooting."
+description: Use when applying alternative investments troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, investing, alternative-investments]
-    related_skills: [general]
 ---
 
 # Alternative Investments Troubleshooting

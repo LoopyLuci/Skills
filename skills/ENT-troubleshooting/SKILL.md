@@ -1,14 +1,13 @@
 ---
 name: ENT-troubleshooting
-description: "Use when applying ent medicine troubleshooting."
+description: Use when applying ent medicine troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [healthcare, ent, medicine]
-    related_skills: [general]
 ---
 
 # Ent Troubleshooting

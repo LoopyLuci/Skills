@@ -1,14 +1,13 @@
 ---
 name: container-security-fundamentals-deep-implementation
-description: "Use when applying container security fundamentals implem."
+description: Use when applying container security fundamentals implem.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [devops, security]
-    related_skills: ['container-security-fundamentals']
 ---
 
 # Container Security Fundamentals Deep Implementation

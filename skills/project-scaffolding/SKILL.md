@@ -1,8 +1,13 @@
 ---
-
 name: project-scaffolding
-description: "Generate project templates with lint CI and structure"
-
+description: Generate project templates with lint CI and structure
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [project, scaffolding]
 ---
 
 # Project Scaffolding

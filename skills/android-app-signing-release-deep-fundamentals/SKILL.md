@@ -1,14 +1,13 @@
 ---
 name: android-app-signing-release-deep-fundamentals
-description: "Use when applying android app signing fundamentals."
+description: Use when applying android app signing fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mobile, android]
-    related_skills: ['android-app-signing-release']
 ---
 
 # Android App Signing Release Deep Fundamentals

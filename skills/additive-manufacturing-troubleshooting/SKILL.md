@@ -1,14 +1,13 @@
 ---
 name: additive-manufacturing-troubleshooting
-description: "Use when applying additive manufacturing troubleshooting."
+description: Use when applying additive manufacturing troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mfg, 3d, additive-manufacturing-processes]
-    related_skills: [general]
 ---
 
 # Additive Manufacturing Troubleshooting

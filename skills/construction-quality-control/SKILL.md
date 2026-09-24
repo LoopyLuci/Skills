@@ -1,14 +1,13 @@
 ---
 name: construction-quality-control
-description: "Use when managing construction quality."
+description: Use when managing construction quality.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [construction, quality-control, qc, inspection]
-    related_skills: [quality-control-systems]
 ---
 
 # Construction Quality Control

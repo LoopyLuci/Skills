@@ -1,14 +1,13 @@
 ---
 name: filters-fundamentals
-description: "Use when applying electronic filters fundamentals."
+description: Use when applying electronic filters fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [electronics, circuit, filter-design]
-    related_skills: [general]
 ---
 
 # Filters Fundamentals

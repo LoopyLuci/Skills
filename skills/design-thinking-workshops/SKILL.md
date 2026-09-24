@@ -2,12 +2,12 @@
 name: design-thinking-workshops
 description: Empathize-define-ideate-prototype-test, facilitation, and synthesis methods
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["design-thinking", "workshops"]
+    tags: [design-thinking, workshops]
 ---
 
 # Design Thinking Workshops

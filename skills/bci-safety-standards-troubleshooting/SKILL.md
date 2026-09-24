@@ -1,14 +1,13 @@
 ---
 name: bci-safety-standards-troubleshooting
-description: "Use when applying bci safety standards troubleshooting."
+description: Use when applying bci safety standards troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neurotech, bci, brain-stimulation-safety]
-    related_skills: [general]
 ---
 
 # Bci Safety Standards Troubleshooting

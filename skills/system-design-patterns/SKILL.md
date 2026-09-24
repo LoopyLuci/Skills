@@ -1,9 +1,15 @@
 ---
 name: system-design-patterns
-description: "Use when designing large-scale distributed systems."
-category: software-development
-tags: [system-design, distributed-systems, scalability, architecture]
+description: Use when designing large-scale distributed systems.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [system-design, distributed-systems, scalability, architecture]
 ---
+
 # System Design Patterns
 
 Patterns for designing large-scale distributed systems.

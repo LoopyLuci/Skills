@@ -2,12 +2,12 @@
 name: escape-room-puzzle-design
 description: Puzzle design, narrative integration, flow, and difficulty curves
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["escape-room", "puzzles"]
+    tags: [escape-room, puzzles]
 ---
 
 # Escape Room Puzzle Design

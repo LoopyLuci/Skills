@@ -1,13 +1,13 @@
 ---
 name: identity-access-management
-description: "Use when implementing IAM and access control systems."
+description: Use when implementing IAM and access control systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [IAM, identity, access-control, RBAC, ABAC, SSO, LDAP, SAML]
-    related_skills: [oauth-authentication-patterns, certificate-management-pki, web-security-patterns, security-incident-response]
+    tags: [iam, identity, access-control, rbac, abac, sso, ldap, saml]
 ---
 
 # Identity Access Management

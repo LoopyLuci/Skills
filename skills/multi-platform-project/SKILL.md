@@ -1,8 +1,13 @@
 ---
 name: multi-platform-project
-description: "Multi-platform apps: protocol-first, parallel delegation."
-tags: [cross-platform, multi-platform, protocol-first, protobuf, parallel-delegation, monorepo]
-related_skills: [python-package-build, frontend-bootstrap, spike, service-orchestration, test-driven-development]
+description: Multi-platform apps: protocol-first, parallel delegation.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [cross-platform, multi-platform, protocol-first, protobuf, parallel-delegation, monorepo]
 ---
 
 # Multi Platform Project

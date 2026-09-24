@@ -1,14 +1,13 @@
 ---
 name: employee-experience-design
-description: "Use when designing employee experience."
+description: Use when designing employee experience.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
-    tags: ['e', 'm', 'p', 'l', 'o', 'y', 'e', 'e', '-', 'e', 'x', 'p', 'e', 'r', 'i', 'e', 'n', 'c', 'e', ',', ' ', 'h', 'r', '-', 'd', 'e', 's', 'i', 'g', 'n']
-    related_skills: [general]
+    tags: [e, m, p, l, o, y, e, e, -, e, x, p, e, r, i, e, n, c, e, , ,  , h, r, -, d, e, s, i, g, n]
 ---
 
 # Employee Experience Design

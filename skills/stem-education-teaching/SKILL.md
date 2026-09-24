@@ -2,12 +2,12 @@
 name: stem-education-teaching
 description: Inquiry-based learning, project-based STEM, maker spaces, and coding in schools
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["stem", "pbl"]
+    tags: [stem, pbl]
 ---
 
 # Stem Education Teaching

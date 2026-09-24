@@ -1,14 +1,13 @@
 ---
 name: edge-resilience-patterns
-description: "Use when ensuring edge resilience."
+description: Use when ensuring edge resilience.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [edge-computing, resilience, fault-tolerance, chaos-engineering]
-    related_skills: ['circuit-breaker-resilience']
 ---
 
 # Edge Resilience Patterns

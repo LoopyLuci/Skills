@@ -1,14 +1,13 @@
 ---
 name: accounting-analysis-fundamentals
-description: "Use when applying accounting analysis fundamentals."
+description: Use when applying accounting analysis fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, accounting-analysis]
-    related_skills: ['']
 ---
 
 # Accounting Analysis Fundamentals

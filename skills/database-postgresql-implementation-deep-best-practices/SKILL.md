@@ -1,14 +1,13 @@
 ---
 name: database-postgresql-implementation-deep-best-practices
-description: "Use when applying postgresql implementation best practices."
+description: Use when applying postgresql implementation best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data, postgres]
-    related_skills: ['postgres-implementation']
 ---
 
 # Database Postgresql Implementation Deep Best Practices

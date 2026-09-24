@@ -1,14 +1,13 @@
 ---
 name: brand-guidelines-troubleshooting
-description: "Use when applying brand guidelines troubleshooting."
+description: Use when applying brand guidelines troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [brand, design, brand-guidelines]
-    related_skills: [general]
 ---
 
 # Brand Guidelines Troubleshooting

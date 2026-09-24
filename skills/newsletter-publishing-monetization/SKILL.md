@@ -2,12 +2,12 @@
 name: newsletter-publishing-monetization
 description: Newsletter strategy, growth, monetization, and platforms
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["newsletter", "publishing"]
+    tags: [newsletter, publishing]
 ---
 
 # Newsletter Publishing Monetization

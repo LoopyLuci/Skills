@@ -1,14 +1,13 @@
 ---
 name: brand-strategy-development
-description: "Use when developing brand strategies."
+description: Use when developing brand strategies.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, brand-strategy, positioning]
-    related_skills: ['brand-identity-development']
 ---
 
 # Brand Strategy Development

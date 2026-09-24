@@ -1,14 +1,13 @@
 ---
 name: beauty-skincare-formulation-deep-troubleshooting
-description: "Use when applying skincare formulation troubleshooting."
+description: Use when applying skincare formulation troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [beauty, skincare]
-    related_skills: ['']
 ---
 
 # Beauty Skincare Formulation Deep Troubleshooting

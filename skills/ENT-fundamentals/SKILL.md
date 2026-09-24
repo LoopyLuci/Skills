@@ -1,14 +1,13 @@
 ---
 name: ENT-fundamentals
-description: "Use when applying ent medicine fundamentals."
+description: Use when applying ent medicine fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [healthcare, ent, medicine]
-    related_skills: [general]
 ---
 
 # Ent Fundamentals

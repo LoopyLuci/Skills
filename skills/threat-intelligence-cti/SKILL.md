@@ -2,12 +2,12 @@
 name: threat-intelligence-cti
 description: MITRE ATT&CK, STIX/TAXII, IOCs, threat actor profiling, and intelligence sharing
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["cti", "intelligence"]
+    tags: [cti, intelligence]
 ---
 
 # Threat Intelligence Cti

@@ -2,12 +2,12 @@
 name: nonprofit-strategic-planning
 description: Strategic planning, theory of change, logic models, and organizational development
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["nonprofit", "strategy"]
+    tags: [nonprofit, strategy]
 ---
 
 # Nonprofit Strategic Planning

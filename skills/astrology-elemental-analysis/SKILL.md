@@ -1,14 +1,13 @@
 ---
 name: astrology-elemental-analysis
-description: "Use when analyzing astrology elements."
+description: Use when analyzing astrology elements.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [esoteric, astrology-elements, fire-water, earth-air]
-    related_skills: [general]
 ---
 
 # Astrology Elemental Analysis

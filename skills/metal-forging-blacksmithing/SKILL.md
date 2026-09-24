@@ -2,12 +2,12 @@
 name: metal-forging-blacksmithing
 description: Blacksmithing, forging, heat treatment, and tool making
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["forging", "blacksmithing"]
+    tags: [forging, blacksmithing]
 ---
 
 # Metal Forging Blacksmithing

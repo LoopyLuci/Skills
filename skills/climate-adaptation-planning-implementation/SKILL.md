@@ -1,14 +1,13 @@
 ---
 name: climate-adaptation-planning-implementation
-description: "Use when applying climate adaptation planning implementa."
+description: Use when applying climate adaptation planning implementa.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, adaptation, climate-adaptation-planning]
-    related_skills: ['']
 ---
 
 # Climate Adaptation Planning Implementation

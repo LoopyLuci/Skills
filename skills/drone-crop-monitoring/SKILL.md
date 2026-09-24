@@ -1,14 +1,13 @@
 ---
 name: drone-crop-monitoring
-description: "Use when monitoring crops with drones. Multispectral, NDVI."
+description: Use when monitoring crops with drones. Multispectral, NDVI.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [drones, agriculture, multispectral, ndvi, crop-monitoring]
-    related_skills: [precision-agriculture, crop-yield-modeling]
 ---
 
 # Drone Crop Monitoring

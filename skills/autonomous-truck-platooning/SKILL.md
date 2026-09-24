@@ -1,14 +1,13 @@
 ---
 name: autonomous-truck-platooning
-description: "Use when planning truck platooning."
+description: Use when planning truck platooning.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [automotive, trucking, platooning, autonomous]
-    related_skills: [logistics-routing]
 ---
 
 # Autonomous Truck Platooning

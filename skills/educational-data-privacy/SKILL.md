@@ -1,14 +1,13 @@
 ---
 name: educational-data-privacy
-description: "Use when managing educational data privacy."
+description: Use when managing educational data privacy.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [education, data-privacy, ferpa]
-    related_skills: [general]
 ---
 
 # Educational Data Privacy

@@ -1,14 +1,13 @@
 ---
 name: aws-ecs-troubleshooting
-description: "Use when applying aws ecs troubleshooting."
+description: Use when applying aws ecs troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, ecs, containers, ecs-service]
-    related_skills: [general]
 ---
 
 # Aws Ecs Troubleshooting

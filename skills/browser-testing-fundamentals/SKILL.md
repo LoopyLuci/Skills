@@ -1,14 +1,13 @@
 ---
 name: browser-testing-fundamentals
-description: "Use when applying browser testing fundamentals."
+description: Use when applying browser testing fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [testing, browser, selenium, playwright]
-    related_skills: [general]
 ---
 
 # Browser Testing Fundamentals

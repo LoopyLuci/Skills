@@ -1,12 +1,13 @@
 ---
 name: tls-configuration-hardening
-description: "Use when hardening TLS configuration."
+description: Use when hardening TLS configuration.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["TLS", "SSL", "certificates", "cipher-suites", "HSTS"]
+    tags: [tls, ssl, certificates, cipher-suites, hsts]
 ---
 
 # Tls Configuration Hardening

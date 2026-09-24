@@ -2,12 +2,12 @@
 name: wildlife-conservation-biology
 description: Wildlife biology, habitat management, and conservation planning
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["wildlife", "conservation"]
+    tags: [wildlife, conservation]
 ---
 
 # Wildlife Conservation Biology

@@ -1,13 +1,13 @@
 ---
 name: ml-serving-optimization
-description: "Use when optimizing ML model serving and inference."
+description: Use when optimizing ML model serving and inference.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [model-serving, inference-optimization, quantization, batching, ONNX, TensorRT, Triton]
-    related_skills: [ml-deployment-serving, model-compression-techniques, knowledge-distillation, ml-pipeline-design]
+    tags: [model-serving, inference-optimization, quantization, batching, onnx, tensorrt, triton]
 ---
 
 # Ml Serving Optimization

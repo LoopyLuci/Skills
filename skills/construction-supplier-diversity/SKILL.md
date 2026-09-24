@@ -1,14 +1,13 @@
 ---
 name: construction-supplier-diversity
-description: "Use when ensuring supplier diversity."
+description: Use when ensuring supplier diversity.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [construction, supplier-diversity, mbe-wbe, inclusion]
-    related_skills: [supply-chain-optimization]
 ---
 
 # Construction Supplier Diversity

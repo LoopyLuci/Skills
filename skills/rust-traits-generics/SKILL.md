@@ -1,12 +1,13 @@
 ---
 name: rust-traits-generics
-description: "Use when implementing Rust traits and generics."
+description: Use when implementing Rust traits and generics.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["rust", "traits", "generics", "associated-types"]
+    tags: [rust, traits, generics, associated-types]
 ---
 
 # Rust Traits Generics

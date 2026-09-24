@@ -1,14 +1,13 @@
 ---
 name: agricultural-data-analytics-best-practices
-description: "Use when applying agri data analytics best practices."
+description: Use when applying agri data analytics best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agri, data, precision-agriculture-analysis]
-    related_skills: [general]
 ---
 
 # Agricultural Data Analytics Best Practices

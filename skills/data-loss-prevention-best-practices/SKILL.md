@@ -1,14 +1,13 @@
 ---
 name: data-loss-prevention-best-practices
-description: "Use when for data loss prevention best practices."
+description: Use when for data loss prevention best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, dlp, data-protection, monitoring]
-    related_skills: [general]
 ---
 
 # Data Loss Prevention Best Practices

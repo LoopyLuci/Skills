@@ -1,13 +1,13 @@
 ---
 name: swarm-communication-protocols
-description: "Use when designing agent-to-agent communication in swarms."
+description: Use when designing agent-to-agent communication in swarms.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [agents, swarm, communication, protocols, messaging]
-    related_skills: [agent-swarm-architectures, hierarchical-swarm-architectures, multi-agent-orchestration, tool-augmented-agents]
 ---
 
 # Swarm Communication Protocols

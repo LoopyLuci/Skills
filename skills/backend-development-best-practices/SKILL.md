@@ -1,14 +1,13 @@
 ---
 name: backend-development-best-practices
-description: "Use when applying backend development best practices."
+description: Use when applying backend development best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, backend-dev-fundamentals]
-    related_skills: [general]
 ---
 
 # Backend Development Best Practices

@@ -1,14 +1,13 @@
 ---
 name: embedding-strategies-deep-best-practices
-description: "Use when applying embedding strategies best practices."
+description: Use when applying embedding strategies best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ml, embeddings]
-    related_skills: ['embedding-strategies']
 ---
 
 # Embedding Strategies Deep Best Practices

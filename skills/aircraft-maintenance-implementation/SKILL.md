@@ -1,14 +1,13 @@
 ---
 name: aircraft-maintenance-implementation
-description: "Use when applying aircraft maintenance implementation."
+description: Use when applying aircraft maintenance implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, maintenance, aircraft-maintenance]
-    related_skills: [general]
 ---
 
 # Aircraft Maintenance Implementation

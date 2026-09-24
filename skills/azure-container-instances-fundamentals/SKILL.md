@@ -1,14 +1,13 @@
 ---
 name: azure-container-instances-fundamentals
-description: "Use when applying azure container instances fundamentals."
+description: Use when applying azure container instances fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, azure, aci, containers]
-    related_skills: [general]
 ---
 
 # Azure Container Instances Fundamentals

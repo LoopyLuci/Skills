@@ -1,14 +1,13 @@
 ---
 name: clean-architecture-implementation
-description: "Use when applying clean architecture implementation."
+description: Use when applying clean architecture implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [architecture, clean-architecture, hexagons]
-    related_skills: [general]
 ---
 
 # Clean Architecture Implementation

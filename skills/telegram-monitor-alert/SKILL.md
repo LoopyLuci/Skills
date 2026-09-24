@@ -1,6 +1,13 @@
 ---
 name: telegram-monitor-alert
-description: "Send system monitoring alerts to Telegram via cron"
+description: Send system monitoring alerts to Telegram via cron
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [telegram, monitor, alert]
 ---
 
 # Telegram Monitor Alert

@@ -1,14 +1,13 @@
 ---
 name: finite-element-analysis
-description: "Use when performing FEA."
+description: Use when performing FEA.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [materials-science, fea, stress-analysis, simulation]
-    related_skills: [general]
 ---
 
 # Finite Element Analysis

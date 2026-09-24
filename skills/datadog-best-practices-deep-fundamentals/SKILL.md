@@ -1,14 +1,13 @@
 ---
 name: datadog-best-practices-deep-fundamentals
-description: "Use when applying datadog best practices fundamentals."
+description: Use when applying datadog best practices fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [sys, monitoring]
-    related_skills: ['datadog-best-practices']
 ---
 
 # Datadog Best Practices Deep Fundamentals

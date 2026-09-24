@@ -1,14 +1,13 @@
 ---
 name: construction-foundation-engineering
-description: "Use when doing foundation engineering."
+description: Use when doing foundation engineering.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [construction, foundation, geotechnical, deep-foundation]
-    related_skills: [civil-engineering-geotechnical]
 ---
 
 # Construction Foundation Engineering

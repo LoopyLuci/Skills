@@ -1,14 +1,13 @@
 ---
 name: digital-health-implementation
-description: "Use when applying digital health implementation."
+description: Use when applying digital health implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, medicine, digital-health]
-    related_skills: [general]
 ---
 
 # Digital Health Implementation

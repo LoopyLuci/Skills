@@ -2,12 +2,12 @@
 name: oceanography-marine-science
 description: Physical oceanography, marine ecosystems, and ocean observation
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["oceanography", "science"]
+    tags: [oceanography, science]
 ---
 
 # Oceanography Marine Science

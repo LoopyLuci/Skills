@@ -1,14 +1,13 @@
 ---
 name: court-automation-troubleshooting
-description: "Use when applying court automation troubleshooting."
+description: Use when applying court automation troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [legal, court, court-technology]
-    related_skills: ['general']
 ---
 
 # Court Automation Troubleshooting

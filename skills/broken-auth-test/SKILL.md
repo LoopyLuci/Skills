@@ -1,14 +1,13 @@
 ---
 name: broken-auth-test
-description: "Use when testing auth bypass."
+description: Use when testing auth bypass.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [security, pentest, auth-bypass]
-    related_skills: [general]
 ---
 
 # Broken Auth Test

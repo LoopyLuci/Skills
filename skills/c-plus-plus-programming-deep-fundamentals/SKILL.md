@@ -1,14 +1,13 @@
 ---
 name: c-plus-plus-programming-deep-fundamentals
-description: "Use when applying c++ programming fundamentals."
+description: Use when applying c++ programming fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [language, cpp]
-    related_skills: ['']
 ---
 
 # C Plus Plus Programming Deep Fundamentals

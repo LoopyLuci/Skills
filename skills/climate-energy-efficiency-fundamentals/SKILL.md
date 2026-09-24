@@ -1,14 +1,13 @@
 ---
 name: climate-energy-efficiency-fundamentals
-description: "Use when applying energy efficiency auditing fundamentals."
+description: Use when applying energy efficiency auditing fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, energy-efficiency, energy-efficiency-auditing]
-    related_skills: ['']
 ---
 
 # Climate Energy Efficiency Fundamentals

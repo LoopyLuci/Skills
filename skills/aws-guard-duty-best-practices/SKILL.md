@@ -1,14 +1,13 @@
 ---
 name: aws-guard-duty-best-practices
-description: "Use when applying aws guardduty best practices."
+description: Use when applying aws guardduty best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aws, guardduty, security, threat-detection]
-    related_skills: [general]
 ---
 
 # Aws Guard Duty Best Practices

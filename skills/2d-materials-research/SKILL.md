@@ -1,14 +1,13 @@
 ---
 name: 2d-materials-research
-description: "Use when researching 2D materials."
+description: Use when researching 2D materials.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [materials-science, 2d-materials, graphene, nanotech]
-    related_skills: [general]
 ---
 
 # 2d Materials Research

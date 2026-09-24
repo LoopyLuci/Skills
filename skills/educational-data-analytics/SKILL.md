@@ -1,14 +1,13 @@
 ---
 name: educational-data-analytics
-description: "Use when analyzing education data."
+description: Use when analyzing education data.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [education, data, educational-data-analytics]
-    related_skills: [general]
 ---
 
 # Educational Data Analytics

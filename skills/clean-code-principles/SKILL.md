@@ -1,13 +1,13 @@
 ---
 name: clean-code-principles
-description: "Use when applying clean code and software craftsmanship."
+description: Use when applying clean code and software craftsmanship.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [clean-code, craftsmanship, naming, refactoring, SOLID, readability]
-    related_skills: [code-refactoring-strategies, software-design-patterns, test-driven-development, code-review-checklist]
+    tags: [clean-code, craftsmanship, naming, refactoring, solid, readability]
 ---
 
 # Clean Code Principles

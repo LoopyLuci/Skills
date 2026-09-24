@@ -1,14 +1,13 @@
 ---
 name: asic-design-troubleshooting
-description: "Use when applying asic design troubleshooting."
+description: Use when applying asic design troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [electronics, asic, chip-design]
-    related_skills: [general]
 ---
 
 # Asic Design Troubleshooting

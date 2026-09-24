@@ -2,12 +2,12 @@
 name: color-theory-application
 description: Color psychology, palette generation, accessibility contrast, and brand color systems
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["color", "theory"]
+    tags: [color, theory]
 ---
 
 # Color Theory Application

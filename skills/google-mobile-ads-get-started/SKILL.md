@@ -1,8 +1,13 @@
 ---
 name: google-mobile-ads-get-started
 description: Use when integrating Google Mobile Ads SDK into Android, iOS, or Unity apps.
-tags: [android, ios, unity, google-mobile-ads, sdk-setup, admob]
-related_skills: [google-mobile-ads-banner, google-mobile-ads-interstitial, google-mobile-ads-rewarded]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [android, ios, unity, google-mobile-ads, sdk-setup, admob]
 ---
 
 # Google Mobile Ads SDK — Getting Started

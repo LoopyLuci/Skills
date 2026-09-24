@@ -1,14 +1,13 @@
 ---
 name: email-segmentation-implementation
-description: "Use when applying email segmentation implementation."
+description: Use when applying email segmentation implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, marketing, segmentation]
-    related_skills: [general]
 ---
 
 # Email Segmentation Implementation

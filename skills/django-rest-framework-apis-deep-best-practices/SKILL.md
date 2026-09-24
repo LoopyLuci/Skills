@@ -1,14 +1,13 @@
 ---
 name: django-rest-framework-apis-deep-best-practices
-description: "Use when applying drf apis best practices."
+description: Use when applying drf apis best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, python]
-    related_skills: ['django-rest-framework-apis']
 ---
 
 # Django Rest Framework Apis Deep Best Practices

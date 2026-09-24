@@ -1,14 +1,13 @@
 ---
 name: cardiology-design-deep-implementation
-description: "Use when applying cardiology design implementation."
+description: Use when applying cardiology design implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [healthcare, cardiology]
-    related_skills: ['cardiology-design']
 ---
 
 # Cardiology Design Deep Implementation

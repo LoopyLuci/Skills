@@ -1,14 +1,13 @@
 ---
 name: climate-ocean-cleanup-implementation
-description: "Use when applying climate ocean cleanup implementation."
+description: Use when applying climate ocean cleanup implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, environment]
-    related_skills: ['']
 ---
 
 # Climate Ocean Cleanup Implementation

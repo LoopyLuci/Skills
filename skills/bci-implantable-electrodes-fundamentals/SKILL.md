@@ -1,14 +1,13 @@
 ---
 name: bci-implantable-electrodes-fundamentals
-description: "Use when applying bci implantable electrodes fundamentals."
+description: Use when applying bci implantable electrodes fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [neuro, bci, brain-computer-interface-applications]
-    related_skills: ['']
 ---
 
 # Bci Implantable Electrodes Fundamentals

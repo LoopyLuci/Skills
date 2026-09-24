@@ -1,14 +1,13 @@
 ---
 name: fashion-retail-tech-deep-implementation
-description: "Use when applying fashion retail tech implementation."
+description: Use when applying fashion retail tech implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, retail-tech]
-    related_skills: ['']
 ---
 
 # Fashion Retail Tech Deep Implementation

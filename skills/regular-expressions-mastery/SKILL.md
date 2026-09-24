@@ -1,13 +1,13 @@
 ---
 name: regular-expressions-mastery
-description: "Use when writing advanced regular expressions and patterns."
+description: Use when writing advanced regular expressions and patterns.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [regex, regular-expressions, pattern-matching, text-processing, python]
-    related_skills: [pattern-matching-engine, compiler-interpreter-basics, data-structures-algorithms, sql-query-optimization]
 ---
 
 # Regular Expressions Mastery

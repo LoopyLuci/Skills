@@ -1,9 +1,13 @@
 ---
 name: port-scanner-detection
-title: Port Scanner Detection
 description: Use when detecting port scans and adding dynamic blocks.
-category: networking
-tags: [port-scan, detection, security, dynamic-block, rust]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [port-scan, detection, security, dynamic-block, rust]
 ---
 
 # Port Scanner Detection

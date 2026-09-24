@@ -1,14 +1,13 @@
 ---
 name: actuator-design-implementation
-description: "Use when applying actuator design implementation."
+description: Use when applying actuator design implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [electronics, actuators, actuator-control]
-    related_skills: [general]
 ---
 
 # Actuator Design Implementation

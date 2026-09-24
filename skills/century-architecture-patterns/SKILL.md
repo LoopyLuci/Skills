@@ -1,13 +1,13 @@
 ---
 name: century-architecture-patterns
-description: "Use when building systems designed to last 100+ years."
+description: Use when building systems designed to last 100+ years.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [architecture, longevity, schema-versioning, self-healing, plugin-systems, atomic-writes, forward-compat]
-    related_skills: [system-design-patterns, software-design-patterns, hexagonal-architecture, domain-driven-design-tactical]
 ---
 
 # Century Architecture Patterns

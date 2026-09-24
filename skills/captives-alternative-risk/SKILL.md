@@ -2,12 +2,12 @@
 name: captives-alternative-risk
 description: Captive formation, rent-a-captive, risk retention groups, and ART
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["captive", "art"]
+    tags: [captive, art]
 ---
 
 # Captives Alternative Risk

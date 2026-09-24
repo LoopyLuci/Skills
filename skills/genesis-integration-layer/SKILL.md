@@ -1,13 +1,13 @@
 ---
 name: genesis-integration-layer
-description: "Use when integrating the Skill Genesis Model into any agent."
+description: Use when integrating the Skill Genesis Model into any agent.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [genesis, integration, MCP, API, plugin, agents, portability]
-    related_skills: [skill-genesis-model, mcp-server, hermes-agent, autonomous-ai-agents]
+    tags: [genesis, integration, mcp, api, plugin, agents, portability]
 ---
 
 # Genesis Integration Layer

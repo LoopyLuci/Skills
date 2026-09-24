@@ -1,14 +1,13 @@
 ---
 name: aviation-maintenance-best-practices
-description: "Use when applying aviation maintenance best practices."
+description: Use when applying aviation maintenance best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aviation, maintenance, aircraft-certification]
-    related_skills: ['general']
 ---
 
 # Aviation Maintenance Best Practices

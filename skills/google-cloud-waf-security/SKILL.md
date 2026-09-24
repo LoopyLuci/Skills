@@ -1,8 +1,13 @@
 ---
 name: google-cloud-waf-security
 description: Use when evaluating security posture of Google Cloud workloads following Well-Architected Framework.
-tags: [google-cloud, waf, security, iam, network-security, compliance]
-related_skills: [google-cloud-waf-cost-optimization, google-cloud-recipe-auth, gke-productionize]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [google-cloud, waf, security, iam, network-security, compliance]
 ---
 
 # Google Cloud Well-Architected Framework — Security

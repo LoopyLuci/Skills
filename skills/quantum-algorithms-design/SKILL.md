@@ -2,12 +2,12 @@
 name: quantum-algorithms-design
 description: Shor, Grover, QAOA, VQE, quantum walks, and algorithm complexity analysis
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["algorithms", "theory"]
+    tags: [algorithms, theory]
 ---
 
 # Quantum Algorithms Design

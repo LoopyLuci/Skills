@@ -1,14 +1,13 @@
 ---
 name: customer-persona-implementation
-description: "Use when applying customer personas implementation."
+description: Use when applying customer personas implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marketing, persona, customer]
-    related_skills: [general]
 ---
 
 # Customer Persona Implementation

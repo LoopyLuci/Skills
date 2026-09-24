@@ -1,14 +1,13 @@
 ---
 name: consumer-audio-design
-description: "Use when designing consumer audio products."
+description: Use when designing consumer audio products.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [consumer-tech, audio, sound-design, dsp]
-    related_skills: [general]
 ---
 
 # Consumer Audio Design

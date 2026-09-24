@@ -1,9 +1,15 @@
 ---
 name: vulkan-development-windows
-description: "Use when setting up or debugging Vulkan on Windows."
-category: software-development
-tags: [vulkan, windows, graphics, layers, sdk]
+description: Use when setting up or debugging Vulkan on Windows.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [vulkan, windows, graphics, layers, sdk]
 ---
+
 # Vulkan Development on Windows
 
 Setting up Vulkan SDK, validation layers, and implicit layers on Windows.

@@ -1,13 +1,13 @@
 ---
 name: graph-neural-networks-advanced
-description: "Use when implementing graph neural networks."
+description: Use when implementing graph neural networks.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [GNN, graph-neural-networks, PyTorch-Geometric, GCN, GAT, message-passing]
-    related_skills: [custom-neural-architecture-design, attention-mechanisms-deep, transformer-architectures, embedding-models-patterns]
+    tags: [gnn, graph-neural-networks, pytorch-geometric, gcn, gat, message-passing]
 ---
 
 # Graph Neural Networks

@@ -1,14 +1,13 @@
 ---
 name: ecology-fundamentals
-description: "Use when applying ecology fundamentals."
+description: Use when applying ecology fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [ecology, ecosystems, environment, biodiversity]
-    related_skills: [general]
 ---
 
 # Ecology Fundamentals

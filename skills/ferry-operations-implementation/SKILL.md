@@ -1,14 +1,13 @@
 ---
 name: ferry-operations-implementation
-description: "Use when applying ferry operations implementation."
+description: Use when applying ferry operations implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [marine, ferry, ferry-passenger-logistics]
-    related_skills: [general]
 ---
 
 # Ferry Operations Implementation

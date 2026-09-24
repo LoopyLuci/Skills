@@ -1,14 +1,13 @@
 ---
 name: financial-risk
-description: "Use when managing financial risk."
+description: Use when managing financial risk.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, risk, financial-risk]
-    related_skills: [general]
 ---
 
 # Financial Risk

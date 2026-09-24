@@ -1,12 +1,13 @@
 ---
-
 name: google-ads-api-account-diagnostics
-description: >-
-source: google/skills
-tags: [google-ads, advertising, mobile-ads, gcp]
-metadata: 
-hermes: 
-
+description: Skill for google ads api account diagnostics
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [google-ads, advertising, mobile-ads, gcp]
 ---
 
 **Trigger**: Use when implementing Google Api Account Diagnostics — AdMob, Ad Manager, and related ad SDKs.

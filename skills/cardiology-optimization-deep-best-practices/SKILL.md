@@ -1,14 +1,13 @@
 ---
 name: cardiology-optimization-deep-best-practices
-description: "Use when applying cardiology optimization best practices."
+description: Use when applying cardiology optimization best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [healthcare, cardiology]
-    related_skills: ['cardiology-optimization']
 ---
 
 # Cardiology Optimization Deep Best Practices

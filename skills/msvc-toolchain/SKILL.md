@@ -1,9 +1,15 @@
 ---
 name: msvc-toolchain
-description: "Use when compiling with MSVC on Windows."
-category: software-development
-tags: [msvc, cpp, compiler, windows, visual-cpp]
+description: Use when compiling with MSVC on Windows.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [msvc, cpp, compiler, windows, visual-cpp]
 ---
+
 # MSVC Toolchain
 
 Using the MSVC compiler (cl.exe) and linker (link.exe) on Windows.

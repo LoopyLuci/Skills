@@ -2,12 +2,12 @@
 name: proptech-technology
 description: Real estate technology, smart buildings, tenant experience, and CRE tech
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["proptech", "technology"]
+    tags: [proptech, technology]
 ---
 
 # Proptech Technology

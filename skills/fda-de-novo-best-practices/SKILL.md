@@ -1,14 +1,13 @@
 ---
 name: fda-de-novo-best-practices
-description: "Use when applying fda de novo best practices."
+description: Use when applying fda de novo best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, pharma, fda-de-novo]
-    related_skills: [general]
 ---
 
 # Fda De Novo Best Practices

@@ -1,12 +1,13 @@
 ---
 name: terraform-remote-state
-description: "Use when managing Terraform state."
+description: Use when managing Terraform state.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["terraform", "state", "remote", "backend", "locking"]
+    tags: [terraform, state, remote, backend, locking]
 ---
 
 # Terraform Remote State

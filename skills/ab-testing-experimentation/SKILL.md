@@ -1,13 +1,13 @@
 ---
 name: ab-testing-experimentation
-description: "Use when designing and analyzing A/B testing experiments."
+description: Use when designing and analyzing A/B testing experiments.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [ab-testing, experimentation, statistics, hypothesis-testing, optimization]
-    related_skills: [conversion-rate-optimization, marketing-funnel-design, website-analytics-tracking, digital-marketing-strategy]
 ---
 
 # Ab Testing Experimentation

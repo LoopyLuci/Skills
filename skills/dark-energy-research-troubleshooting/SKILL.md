@@ -1,14 +1,13 @@
 ---
 name: dark-energy-research-troubleshooting
-description: "Use when applying dark energy research troubleshooting."
+description: Use when applying dark energy research troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [physics, cosmology, physics]
-    related_skills: ['']
 ---
 
 # Dark Energy Research Troubleshooting

@@ -1,14 +1,13 @@
 ---
 name: accounting-strategy-best-practices
-description: "Use when applying accounting strategy best practices."
+description: Use when applying accounting strategy best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, accounting-strategy]
-    related_skills: ['']
 ---
 
 # Accounting Strategy Best Practices

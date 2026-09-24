@@ -1,13 +1,13 @@
 ---
 name: network-segmentation-strategies
-description: "Use when designing network segmentation and isolation."
+description: Use when designing network segmentation and isolation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [network-segmentation, VLAN, subnet, micro-segmentation, zero-trust, isolation]
-    related_skills: [zero-trust-network-architecture, container-networking-patterns, firewall-rules-engine, identity-access-management]
+    tags: [network-segmentation, vlan, subnet, micro-segmentation, zero-trust, isolation]
 ---
 
 # Network Segmentation Strategies

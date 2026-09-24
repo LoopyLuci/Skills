@@ -1,6 +1,13 @@
 ---
 name: skill-priority-ranking
 description: Rank which skills to load first in constrained contexts.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [skill, priority, ranking]
 ---
 
 # Skill Priority Ranking

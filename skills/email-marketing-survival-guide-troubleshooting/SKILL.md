@@ -1,14 +1,13 @@
 ---
 name: email-marketing-survival-guide-troubleshooting
-description: "Use when applying email survival guide troubleshooting."
+description: Use when applying email survival guide troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, deliverability, spam-filter]
-    related_skills: [general]
 ---
 
 # Email Marketing Survival Guide Troubleshooting

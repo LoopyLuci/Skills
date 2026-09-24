@@ -1,13 +1,13 @@
 ---
 name: port-redirection-tunneling
-description: "Use when tunneling and redirecting network traffic."
+description: Use when tunneling and redirecting network traffic.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [port-forwarding, tunneling, SSH, SOCKS, chisel, ligolo, ngrok]
-    related_skills: [lateral-movement-pivoting, vpn-implementation-patterns, network-sniffing-packet-capture, command-control-c2-infrastructure]
+    tags: [port-forwarding, tunneling, ssh, socks, chisel, ligolo, ngrok]
 ---
 
 # Port Redirection and Tunneling

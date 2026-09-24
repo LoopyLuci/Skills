@@ -1,13 +1,13 @@
 ---
 name: responsive-web-design-patterns
-description: "Use when building responsive and mobile-first web designs."
+description: Use when building responsive and mobile-first web designs.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [responsive-design, mobile-first, CSS-grid, flexbox, media-queries, web-design]
-    related_skills: [frontend-bootstrap, web-component-design, website-accessibility-audit, performance-budgeting]
+    tags: [responsive-design, mobile-first, css-grid, flexbox, media-queries, web-design]
 ---
 
 # Responsive Web Design Patterns

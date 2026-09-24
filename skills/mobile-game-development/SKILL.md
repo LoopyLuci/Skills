@@ -2,12 +2,12 @@
 name: mobile-game-development
 description: Mobile-first game design, touch input, performance on low-end devices, and store optimization
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["mobile", "ios", "android"]
+    tags: [mobile, ios, android]
 ---
 
 # Mobile Game Development

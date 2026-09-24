@@ -1,14 +1,13 @@
 ---
 name: fashion-show-production
-description: "Use when producing fashion shows."
+description: Use when producing fashion shows.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, fashion-show, event-production]
-    related_skills: ['runway-show-production']
 ---
 
 # Fashion Show Production

@@ -1,14 +1,13 @@
 ---
 name: dietary-supplement-formulation
-description: "Use when formulating dietary supplements."
+description: Use when formulating dietary supplements.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [food-tech, supplements, formulation, nutraceuticals]
-    related_skills: [general]
 ---
 
 # Dietary Supplement Formulation

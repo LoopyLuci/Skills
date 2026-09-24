@@ -2,12 +2,12 @@
 name: landscape-photography-capture
 description: Composition, filters, long exposure, and golden/blue hour timing
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["landscape", "nature"]
+    tags: [landscape, nature]
 ---
 
 # Landscape Photography Capture

@@ -1,14 +1,13 @@
 ---
 name: android-compose-fundamentals
-description: "Use when applying android jetpack compose fundamentals."
+description: Use when applying android jetpack compose fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mobile, android, compose, kotlin]
-    related_skills: [general]
 ---
 
 # Android Compose Fundamentals

@@ -1,14 +1,13 @@
 ---
 name: cruise-ship-hospitality
-description: "Use when managing cruise ship hospitality."
+description: Use when managing cruise ship hospitality.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [travel, cruise-ships, hospitality, guest-services]
-    related_skills: [cruise-ship-sustainability]
 ---
 
 # Cruise Ship Hospitality

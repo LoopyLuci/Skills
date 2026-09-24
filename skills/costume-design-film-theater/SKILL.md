@@ -2,12 +2,12 @@
 name: costume-design-film-theater
 description: Costume design, wardrobe, and historical costume
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["costume", "wardrobe"]
+    tags: [costume, wardrobe]
 ---
 
 # Costume Design Film Theater

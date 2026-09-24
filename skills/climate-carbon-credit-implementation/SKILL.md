@@ -1,14 +1,13 @@
 ---
 name: climate-carbon-credit-implementation
-description: "Use when applying carbon credit verification implementat."
+description: Use when applying carbon credit verification implementat.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [climate, credits, carbon-credit-verification]
-    related_skills: ['']
 ---
 
 # Climate Carbon Credit Implementation

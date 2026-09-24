@@ -2,12 +2,12 @@
 name: nonprofit-governance-board
 description: Board development, fiduciary duty, governance policies, and CEO relations
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["governance", "board"]
+    tags: [governance, board]
 ---
 
 # Nonprofit Governance Board

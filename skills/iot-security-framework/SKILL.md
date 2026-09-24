@@ -1,13 +1,13 @@
 ---
 name: iot-security-framework
-description: "Use when securing IoT devices and networks."
+description: Use when securing IoT devices and networks.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [iot-security, device-security, firmware, embedded, OTA, mTLS]
-    related_skills: [container-security-hardening, network-segmentation-strategies, certificate-management-pki, identity-access-management]
+    tags: [iot-security, device-security, firmware, embedded, ota, mtls]
 ---
 
 # IoT Security Framework

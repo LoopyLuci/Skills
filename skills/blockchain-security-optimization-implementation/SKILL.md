@@ -1,14 +1,13 @@
 ---
 name: blockchain-security-optimization-implementation
-description: "Use when applying blockchain security optimization imple."
+description: Use when applying blockchain security optimization imple.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [blockchain, security]
-    related_skills: ['blockchain-security-optimization']
 ---
 
 # Blockchain Security Optimization Implementation

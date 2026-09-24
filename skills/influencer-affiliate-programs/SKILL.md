@@ -1,13 +1,13 @@
 ---
 name: influencer-affiliate-programs
-description: "Use when building influencer and affiliate programs."
+description: Use when building influencer and affiliate programs.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [influencer-marketing, affiliate-marketing, partnerships, creator-economy]
-    related_skills: [social-media-advertising, digital-marketing-strategy, ppc-advertising-management, ecommerce-platform-management]
 ---
 
 # Influencer Affiliate Programs

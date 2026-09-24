@@ -1,14 +1,13 @@
 ---
 name: business-analytics
-description: "Use when analyzing business data."
+description: Use when analyzing business data.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [business, analytics, data-analysis, kpis]
-    related_skills: ['business-analytics-frameworks']
 ---
 
 # Business Analytics

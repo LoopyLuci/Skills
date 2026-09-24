@@ -1,14 +1,13 @@
 ---
 name: database-clustering-fundamentals
-description: "Use when for database clustering fundamentals."
+description: Use when for database clustering fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [database, clustering, high-availability, nosql]
-    related_skills: [general]
 ---
 
 # Database Clustering Fundamentals

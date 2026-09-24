@@ -1,14 +1,13 @@
 ---
 name: aws-lambda-fundamentals-deep-fundamentals
-description: "Use when applying aws lambda fundamentals fundamentals."
+description: Use when applying aws lambda fundamentals fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [cloud, lambda]
-    related_skills: ['aws-lambda-fundamentals']
 ---
 
 # Aws Lambda Fundamentals Deep Fundamentals

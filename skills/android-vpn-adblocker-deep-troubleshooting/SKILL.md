@@ -1,14 +1,13 @@
 ---
 name: android-vpn-adblocker-deep-troubleshooting
-description: "Use when applying android vpn adblocker troubleshooting."
+description: Use when applying android vpn adblocker troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [mobile, android]
-    related_skills: ['android-vpn-adblocker']
 ---
 
 # Android Vpn Adblocker Deep Troubleshooting

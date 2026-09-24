@@ -1,12 +1,13 @@
 ---
-
 name: vision-analysis
-description: >
-source: MiniMax-AI/skills
-tags: [vision, image-analysis, ai, ocr, multimodal]
-metadata: 
-hermes: 
-
+description: Skill for vision analysis
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [vision, image-analysis, ai, ocr, multimodal]
 ---
 
 **Trigger**: Use when analyzing images with AI vision models — describe content, extract text (OCR), review UI mockups, or extract chart data.

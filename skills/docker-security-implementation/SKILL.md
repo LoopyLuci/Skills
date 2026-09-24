@@ -1,14 +1,13 @@
 ---
 name: docker-security-implementation
-description: "Use when applying docker security implementation."
+description: Use when applying docker security implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [docker, security, docker-security-hardening]
-    related_skills: [general]
 ---
 
 # Docker Security Implementation

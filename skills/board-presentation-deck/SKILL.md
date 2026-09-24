@@ -1,13 +1,13 @@
 ---
 name: board-presentation-deck
-description: "Use when preparing board presentations and materials."
+description: Use when preparing board presentations and materials.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [board-deck, board-meeting, investor-reporting, governance, presentation]
-    related_skills: [fundraising-investor-pitch, business-metrics-kpis, saas-metrics-reporting, financial-modeling-budgeting]
 ---
 
 # Board Presentation Deck

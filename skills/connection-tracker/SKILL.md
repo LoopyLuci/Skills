@@ -1,9 +1,13 @@
 ---
 name: connection-tracker
-title: Connection Tracker
 description: Use when tracking TCP/UDP state and exporting flows.
-category: networking
-tags: [connection, tracking, stateful, netflow, conntrack, rust]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [connection, tracking, stateful, netflow, conntrack, rust]
 ---
 
 # Connection Tracker

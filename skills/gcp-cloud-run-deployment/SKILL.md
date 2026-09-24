@@ -1,12 +1,13 @@
 ---
 name: gcp-cloud-run-deployment
-description: "Use when deploying to Cloud Run."
+description: Use when deploying to Cloud Run.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["gcp", "cloud-run", "containers", "serverless", "knative"]
+    tags: [gcp, cloud-run, containers, serverless, knative]
 ---
 
 # Gcp Cloud Run Deployment

@@ -1,12 +1,13 @@
 ---
 name: python-regex-advanced
-description: "Use when writing advanced Python regex."
+description: Use when writing advanced Python regex.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["python", "regex", "re", "patterns", "groups", "flags"]
+    tags: [python, regex, re, patterns, groups, flags]
 ---
 
 # Python Regex Advanced

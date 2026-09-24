@@ -1,13 +1,13 @@
 ---
 name: security-incident-response
-description: "Use when building incident response and security operations."
+description: Use when building incident response and security operations.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: [incident-response, security-operations, SOC, forensics, threat-hunting, IR]
-    related_skills: [waf-web-application-firewall, network-forensics-analysis, ddos-mitigation-strategies, identity-access-management]
+    tags: [incident-response, security-operations, soc, forensics, threat-hunting, ir]
 ---
 
 # Security Incident Response

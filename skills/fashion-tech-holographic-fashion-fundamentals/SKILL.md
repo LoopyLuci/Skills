@@ -1,14 +1,13 @@
 ---
 name: fashion-tech-holographic-fashion-fundamentals
-description: "Use when applying fashion holographic fashion fundamentals."
+description: Use when applying fashion holographic fashion fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, beauty]
-    related_skills: ['']
 ---
 
 # Fashion Tech Holographic Fashion Fundamentals

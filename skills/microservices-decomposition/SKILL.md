@@ -1,13 +1,13 @@
 ---
 name: microservices-decomposition
-description: "Use when decomposing monoliths into microservices."
+description: Use when decomposing monoliths into microservices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [microservices, decomposition, monolith, bounded-context, domain-driven-design]
-    related_skills: [distributed-systems-patterns, api-design-rest-graphql, container-networking-patterns, event-driven-architecture]
 ---
 
 # Microservices Decomposition

@@ -2,12 +2,12 @@
 name: network-automation-programmability
 description: Netconf/YANG, Ansible for networks, telemetry, and network automation
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["automation", "netdevops"]
+    tags: [automation, netdevops]
 ---
 
 # Network Automation Programmability

@@ -1,9 +1,15 @@
 ---
 name: distributed-systems-patterns
-description: "Use when building distributed systems and services."
-category: software-development
-tags: [distributed-systems, consensus, replication, fault-tolerance]
+description: Use when building distributed systems and services.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [distributed-systems, consensus, replication, fault-tolerance]
 ---
+
 # Distributed Systems Patterns
 
 Core patterns for building reliable distributed systems.

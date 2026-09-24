@@ -2,12 +2,12 @@
 name: immigration-ancestral-research
 description: Immigration records, passenger lists, and naturalization
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["immigration", "ancestry"]
+    tags: [immigration, ancestry]
 ---
 
 # Immigration Ancestral Research

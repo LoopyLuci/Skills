@@ -1,12 +1,13 @@
 ---
 name: javascript-promises-async-await
-description: "Use when using JavaScript promises."
+description: Use when using JavaScript promises.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
-    tags: ["javascript", "promises", "async-await", "error-handling"]
+    tags: [javascript, promises, async-await, error-handling]
 ---
 
 # Javascript Promises Async Await

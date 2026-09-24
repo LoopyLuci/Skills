@@ -2,12 +2,12 @@
 name: pet-nutrition-diet
 description: Pet nutrition, diet formulation, and dietary management
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["nutrition", "diet"]
+    tags: [nutrition, diet]
 ---
 
 # Pet Nutrition Diet

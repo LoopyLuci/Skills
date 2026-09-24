@@ -1,8 +1,13 @@
 ---
 name: gemini-agents-api
 description: Use when programmatically managing custom Agent resources on Gemini Enterprise Agent Platform.
-tags: [gemini, agents, api, google-cloud, vertex-ai, ai-platform]
-related_skills: [gemini-api, gemini-interactions-api, google-cloud-recipe-auth]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [gemini, agents, api, google-cloud, vertex-ai, ai-platform]
 ---
 
 # Gemini Enterprise Agent Platform — Managed Agents API

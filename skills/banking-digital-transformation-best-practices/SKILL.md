@@ -1,14 +1,13 @@
 ---
 name: banking-digital-transformation-best-practices
-description: "Use when applying banking digital transformation best pr."
+description: Use when applying banking digital transformation best pr.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, digital, digital-transformation]
-    related_skills: [general]
 ---
 
 # Banking Digital Transformation Best Practices

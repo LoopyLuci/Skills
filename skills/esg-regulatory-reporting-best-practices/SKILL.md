@@ -1,14 +1,13 @@
 ---
 name: esg-regulatory-reporting-best-practices
-description: "Use when applying esg reporting best practices."
+description: Use when applying esg reporting best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [finance, sustainability, esg-reg-reporting]
-    related_skills: [general]
 ---
 
 # Esg Regulatory Reporting Best Practices

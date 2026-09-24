@@ -1,14 +1,13 @@
 ---
 name: chaos-engineering-advanced-deep-troubleshooting
-description: "Use when applying advanced chaos engineering troubleshoo."
+description: Use when applying advanced chaos engineering troubleshoo.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [sys, chaos]
-    related_skills: ['chaos-engineering-advanced']
 ---
 
 # Chaos Engineering Advanced Deep Troubleshooting

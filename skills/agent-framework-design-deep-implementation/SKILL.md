@@ -1,14 +1,13 @@
 ---
 name: agent-framework-design-deep-implementation
-description: "Use when applying agent framework design implementation."
+description: Use when applying agent framework design implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [agents, architecture]
-    related_skills: ['agent-framework-design']
 ---
 
 # Agent Framework Design Deep Implementation

@@ -1,6 +1,13 @@
 ---
 name: git-patch-management
 description: Create, apply, and share changes as patch files.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [git, patch, management]
 ---
 
 # Git Patch Management

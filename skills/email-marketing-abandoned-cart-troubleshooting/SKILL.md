@@ -1,14 +1,13 @@
 ---
 name: email-marketing-abandoned-cart-troubleshooting
-description: "Use when applying email abandoned cart troubleshooting."
+description: Use when applying email abandoned cart troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, ecommerce, cart-abandonment]
-    related_skills: [general]
 ---
 
 # Email Marketing Abandoned Cart Troubleshooting

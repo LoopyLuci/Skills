@@ -2,12 +2,12 @@
 name: biomechanics-human-motion
 description: Motion analysis, force plates, injury mechanisms, and performance optimization
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["biomechanics", "motion"]
+    tags: [biomechanics, motion]
 ---
 
 # Biomechanics Human Motion

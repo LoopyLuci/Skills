@@ -1,14 +1,13 @@
 ---
 name: email-marketing-automation-best-practices
-description: "Use when applying email marketing automation best practi."
+description: Use when applying email marketing automation best practi.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, marketing, email-marketing-automation]
-    related_skills: [general]
 ---
 
 # Email Marketing Automation Best Practices

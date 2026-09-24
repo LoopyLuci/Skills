@@ -1,13 +1,13 @@
 ---
 name: skill-code-validation
-description: "Use when validating skill code examples and patterns."
+description: Use when validating skill code examples and patterns.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
+platforms: [any]
 metadata:
   hermes:
     tags: [skill-validation, code-quality, syntax-checking, meta]
-    related_skills: [skill-quality-standards, skill-testing-automation, skill-blueprint-generator]
 ---
 
 # Skill Code Validation

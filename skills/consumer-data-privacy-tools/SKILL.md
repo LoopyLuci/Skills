@@ -1,14 +1,13 @@
 ---
 name: consumer-data-privacy-tools
-description: "Use when building privacy tools for consumers."
+description: Use when building privacy tools for consumers.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [consumer-tech, data-privacy, privacy-tools, gdpr]
-    related_skills: [personal-data-redaction]
 ---
 
 # Consumer Data Privacy Tools

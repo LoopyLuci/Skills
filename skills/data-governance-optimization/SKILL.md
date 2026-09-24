@@ -1,14 +1,13 @@
 ---
 name: data-governance-optimization
-description: "Use when optimizing data governance systems."
+description: Use when optimizing data governance systems.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [data-governance, data-quality, compliance]
-    related_skills: [general]
 ---
 
 # Data Governance Optimization

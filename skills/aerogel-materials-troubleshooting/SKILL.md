@@ -1,14 +1,13 @@
 ---
 name: aerogel-materials-troubleshooting
-description: "Use when applying aerogel materials troubleshooting."
+description: Use when applying aerogel materials troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [materials, aerogel, aerogel-insulation-applications]
-    related_skills: [general]
 ---
 
 # Aerogel Materials Troubleshooting

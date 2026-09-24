@@ -1,14 +1,13 @@
 ---
 name: backend-nodejs-best-best-practices
-description: "Use when applying backend node best best practices."
+description: Use when applying backend node best best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [backend, nodejs, backend-nodejs-best-practices]
-    related_skills: [general]
 ---
 
 # Backend Nodejs Best Best Practices

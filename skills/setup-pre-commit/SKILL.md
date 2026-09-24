@@ -1,8 +1,13 @@
 ---
 name: setup-pre-commit
 description: Use when setting up Husky pre-commit hooks with lint-staged and formatting
-tags: [pre-commit, hooks, husky, lint-staged, prettier]
-related_skills: [git-guardrails-claude-code, git-hooks-workflow]
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [pre-commit, hooks, husky, lint-staged, prettier]
 ---
 
 # Setup Pre Commit

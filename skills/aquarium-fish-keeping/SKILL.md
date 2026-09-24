@@ -2,12 +2,12 @@
 name: aquarium-fish-keeping
 description: Freshwater and marine aquarium setup, water quality, and fish health
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["aquarium", "fish"]
+    tags: [aquarium, fish]
 ---
 
 # Aquarium Fish Keeping

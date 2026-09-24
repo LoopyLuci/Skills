@@ -1,14 +1,13 @@
 ---
 name: electronic-waste-troubleshooting
-description: "Use when applying electronic waste troubleshooting."
+description: Use when applying electronic waste troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [waste, e-waste]
-    related_skills: ['general']
 ---
 
 # Electronic Waste Troubleshooting

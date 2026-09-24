@@ -1,14 +1,13 @@
 ---
 name: fashion-brand-strategy
-description: "Use when building fashion brand identity."
+description: Use when building fashion brand identity.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, brand-identity, positioning]
-    related_skills: ['brand-identity-development']
 ---
 
 # Fashion Brand Strategy

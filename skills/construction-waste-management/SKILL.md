@@ -1,14 +1,13 @@
 ---
 name: construction-waste-management
-description: "Use when managing construction waste."
+description: Use when managing construction waste.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [construction, waste-management, disposal, recycling]
-    related_skills: [municipal-waste-management]
 ---
 
 # Construction Waste Management

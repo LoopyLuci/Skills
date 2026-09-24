@@ -1,14 +1,13 @@
 ---
 name: entomology-management
-description: "Use when managing entomology operations."
+description: Use when managing entomology operations.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [entomology, insects, bugs, pest]
-    related_skills: [general]
 ---
 
 # Entomology Management

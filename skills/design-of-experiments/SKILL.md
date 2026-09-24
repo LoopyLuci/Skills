@@ -1,14 +1,13 @@
 ---
 name: design-of-experiments
-description: "Use when designing experiments."
+description: Use when designing experiments.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [qa, doe, experimental-design, testing]
-    related_skills: [general]
 ---
 
 # Design Of Experiments

@@ -1,14 +1,13 @@
 ---
 name: fashion-show-production-fundamentals
-description: "Use when applying fashion show production fundamentals."
+description: Use when applying fashion show production fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [fashion, events, runway-show-production]
-    related_skills: ['general']
 ---
 
 # Fashion Show Production Fundamentals

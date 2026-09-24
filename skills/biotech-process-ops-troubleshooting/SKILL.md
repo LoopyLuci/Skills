@@ -1,14 +1,13 @@
 ---
 name: biotech-process-ops-troubleshooting
-description: "Use when applying biotech operations troubleshooting."
+description: Use when applying biotech operations troubleshooting.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, ops, operations]
-    related_skills: [general]
 ---
 
 # Biotech Process Ops Troubleshooting

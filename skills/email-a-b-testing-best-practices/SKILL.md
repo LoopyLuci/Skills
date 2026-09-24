@@ -1,14 +1,13 @@
 ---
 name: email-a-b-testing-best-practices
-description: "Use when applying email a/b testing best practices."
+description: Use when applying email a/b testing best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [email, testing, ab-testing]
-    related_skills: [general]
 ---
 
 # Email A B Testing Best Practices

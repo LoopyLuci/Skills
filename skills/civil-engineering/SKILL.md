@@ -1,14 +1,13 @@
 ---
 name: civil-engineering
-description: "Use when doing civil engineering."
+description: Use when doing civil engineering.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [construction, civil, civil-eng-fundamentals]
-    related_skills: [general]
 ---
 
 # Civil Engineering

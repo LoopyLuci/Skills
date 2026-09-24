@@ -1,14 +1,13 @@
 ---
 name: biotech-eng-analysis-fundamentals
-description: "Use when applying biotech analysis fundamentals."
+description: Use when applying biotech analysis fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, engineering, biotech-eng-analysis]
-    related_skills: [general]
 ---
 
 # Biotech Eng Analysis Fundamentals

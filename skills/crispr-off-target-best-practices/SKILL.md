@@ -1,14 +1,13 @@
 ---
 name: crispr-off-target-best-practices
-description: "Use when applying crispr off target best practices."
+description: Use when applying crispr off target best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [biotech, crispr, validation]
-    related_skills: [general]
 ---
 
 # Crispr Off Target Best Practices

@@ -1,9 +1,15 @@
 ---
 name: performance-optimization
-description: "Use when optimizing code and system performance."
-category: software-development
-tags: [performance, optimization, profiling, benchmarking]
+description: Use when optimizing code and system performance.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [performance, optimization, profiling, benchmarking]
 ---
+
 # Performance Optimization
 
 Systematic approach to profiling, identifying bottlenecks, and optimizing performance.

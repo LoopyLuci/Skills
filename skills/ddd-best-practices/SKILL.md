@@ -1,14 +1,13 @@
 ---
 name: ddd-best-practices
-description: "Use when applying domain-driven design best practices."
+description: Use when applying domain-driven design best practices.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [architecture, ddd, domain-driven-design]
-    related_skills: [general]
 ---
 
 # Ddd Best Practices

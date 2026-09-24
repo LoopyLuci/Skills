@@ -2,12 +2,12 @@
 name: open-source-licensing
 description: GPL, MIT, Apache, license compliance, and contribution policies
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
 platforms: [any]
 metadata:
   hermes:
-    tags: ["licensing", "open-source"]
+    tags: [licensing, open-source]
 ---
 
 # Open Source Licensing

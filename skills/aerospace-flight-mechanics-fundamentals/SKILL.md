@@ -1,14 +1,13 @@
 ---
 name: aerospace-flight-mechanics-fundamentals
-description: "Use when applying flight mechanics fundamentals."
+description: Use when applying flight mechanics fundamentals.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aerospace, flight, flight-mechanics]
-    related_skills: ['general']
 ---
 
 # Aerospace Flight Mechanics Fundamentals

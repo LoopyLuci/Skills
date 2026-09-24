@@ -1,14 +1,13 @@
 ---
 name: aerospace-supply-chain-implementation
-description: "Use when applying aerospace supply chain implementation."
+description: Use when applying aerospace supply chain implementation.
 version: 1.0.0
-author: Hermes Agent
+author: LoopyLuci Community
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [any]
 metadata:
   hermes:
     tags: [aerospace, supply, supply-chain]
-    related_skills: ['general']
 ---
 
 # Aerospace Supply Chain Implementation
