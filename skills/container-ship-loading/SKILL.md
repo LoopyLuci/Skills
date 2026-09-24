@@ -11,47 +11,62 @@ metadata:
     related_skills: [general]
 ---
 
-## Overview (Maritime & Ocean Tech)
-Domain-specific implementation.
-Container Ship Loading implementation. Covers best practices, common methodologies, 
-technical considerations, and verification approaches for this field.
+# Container Ship Loading
 
-## When to Use
-- "Container Ship Loading implementation and optimization"
-- "Best practices for Container Ship Loading workflows"
-- "Container Ship Loading compliance and standards"
-- "Container Ship Loading troubleshooting and problem-solving"
-- "Container Ship Loading ROI and performance measurement"
+"Use when planning container ship loading. Stowage."
 
-## Key Methodologies
-```text
-1. Assessment and Planning Phase
-2. Implementation and Execution
-3. Monitoring and Optimization
-4. Compliance and Verification
-5. Continuous Improvement
-```
+## Trigger
+
+Activate this skill when the user mentions:
+- maritime,  container-ship,  stowage-planning,  cargo workflows or issues
+- Building, fixing, or optimizing container ship loading
+- Questions about maritime best practices
+
+## Core Concepts
+
+- Infrastructure as Code (IaC)
+- Well-Architected Framework
+- Identity and access management
+- Networking and security groups
+- Cost optimization and tagging
+
+## Step-by-Step Workflow
+
+1. **Design** — Architecture review against WAF pillars
+   - Expected: Approved architecture diagram
+2. **Implement** — IaC templates with least-privilege IAM
+   - Expected: Reviewable version-controlled infra
+3. **Validate** — Security scan, cost estimate, plan review
+   - Expected: Clean plan within budget
+4. **Deploy** — Apply with change management
+   - Expected: Deployed infrastructure matches plan
+5. **Monitor** — Alarms, dashboards, cost alerts
+   - Expected: Full observability and cost allocation
+
+## Tools & Technologies
+
+- Terraform/Pulumi
+- Cloud-native IaC
+- Security scanning
+- Cost management
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. **Insufficient planning** — rushing implementation without proper assessment
-2. **Ignoring industry standards** — not following established frameworks
-3. **Poor stakeholder alignment** — conflicting expectations and requirements
-4. **Inadequate measurement** — no metrics for success or progress tracking
-5. **Not accounting for local conditions** — generic approaches fail in context
-6. **Underestimating complexity** — oversimplified solutions for complex problems
-7. **No contingency planning** — failure to plan for unexpected issues
-8. **Insufficient training** — operators lack required skills
-9. **No verification process** — implementation without quality checks
-10. **Failing to iterate** — not improving based on results
 
-## Verification Checklist
-- [ ] Initial assessment and baseline established
-- [ ] Industry standards and best practices identified
-- [ ] Stakeholder requirements aligned and documented
-- [ ] Implementation plan with timelines and milestones
-- [ ] Quality control measures and checkpoints defined
-- [ ] Training program completed for all involved parties
-- [ ] Monitoring system established with key metrics
-- [ ] Compliance requirements verified
-- [ ] Performance baseline established before go-live
-- [ ] Post-implementation review scheduled
+- **Manual console changes** → Configuration drift → All changes through IaC
+- **Over-privileged IAM** → Blast radius risk → Least privilege by default
+
+## Tags
+
+`maritime, container-ship, stowage-planning, cargo`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

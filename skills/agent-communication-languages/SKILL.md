@@ -12,44 +12,62 @@ metadata:
 
 # Agent Communication Languages
 
-Designing agent communication languages and protocols — from FIPA ACL through structured messaging, ontologies, and protocol negotiation.
+"Use when designing agent communication languages."
 
-## When to Use
+## Trigger
 
-- Designing how agents communicate in multi-agent systems
-- Defining message schemas and interaction protocols
-- Implementing agent conversation policies
-- Creating agent negotiation protocols
+Activate this skill when the user mentions:
+- agent-communication,  ACL,  FIPA,  speech-acts,  agent-protocols workflows or issues
+- Building, fixing, or optimizing agent communication languages
+- Questions about agent-communication best practices
 
-## Communication Framework
+## Core Concepts
 
-```python
-class AgentMessage:
-    """FIPA ACL-style agent message."""
-    def __init__(self, sender: str, receiver: str, performative: str,
-                 content: dict, ontology: str = ''):
-        self.sender = sender
-        self.receiver = receiver
-        self.performative = performative
-        self.content = content
-        self.conversation_id = str(uuid.uuid4())
-        self.timestamp = datetime.now().isoformat()
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-PERFORMATIVES = ['inform', 'query', 'request', 'propose', 'accept', 'reject', 'cfp']
-```
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Over-complex schemas** — 50-field messages obscure intent; keep it simple
-2. **No ontology** — agents using different terms for the same concept
-3. **Synchronous only** — design async by default; don't block on responses
-4. **No conversation state** — multi-turn interactions need context tracking
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Message schema defined (sender, receiver, performative, content)
-- [ ] Core performatives defined
-- [ ] Conversation IDs for multi-turn interactions
-- [ ] Async communication support
-- [ ] Ontology documented (shared vocabulary)
-- [ ] Timeout handling for unanswered messages
+`agent-communication, ACL, FIPA, speech-acts, agent-protocols`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

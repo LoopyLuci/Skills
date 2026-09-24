@@ -12,55 +12,62 @@ metadata:
 
 # Caching Strategies
 
-Implementing caching strategies for web applications, APIs, and distributed systems — from in-memory through distributed cache, CDN, and cache invalidation patterns.
+"Use when implementing caching strategies for applications."
 
-## When to Use
+## Trigger
 
-- Reducing database load for frequently accessed data
-- Improving API response times
-- Implementing distributed caching for scalability
-- Designing cache invalidation strategies
-- Choosing between local, distributed, and CDN caching
+Activate this skill when the user mentions:
+- caching,  redis,  CDN,  cache-invalidation,  performance,  write-through,  write-behind workflows or issues
+- Building, fixing, or optimizing caching strategies
+- Questions about caching best practices
 
-## Caching Patterns
+## Core Concepts
 
-```python
-CACHE_PATTERNS = {
-    'cache_aside': 'App checks cache first, loads from DB on miss, populates cache',
-    'read_through': 'Cache loads from DB automatically on miss',
-    'write_through': 'Data written to cache and DB simultaneously',
-    'write_behind': 'Data written to cache immediately, DB asynchronously',
-    'write_around': 'Data written to DB directly, cache invalidated',
-    'refresh_ahead': 'Cache proactively refreshes before expiration',
-}
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-class CacheAside:
-    """Cache-Aside pattern implementation."""
-    def __init__(self, cache, db):
-        self.cache = cache
-        self.db = db
-    
-    def get(self, key: str) -> any:
-        result = self.cache.get(key)
-        if result is not None:
-            return result
-        result = self.db.query(key)
-        self.cache.set(key, result, ttl=300)
-        return result
-```
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Stale data** — cache invalidation is one of the hardest problems in CS
-2. **Cache stampede** — many requests miss cache simultaneously, overloading DB
-3. **Thundering herd** — multiple requests regenerate cache at same time; use locking
-4. **Memory overuse** — caching too much data evicts useful data; set TTLs wisely
-5. **Distributed cache consistency** — nodes can have different cached versions
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Cache hit ratio > 80% for hot data
-- [ ] TTLs set appropriately for data freshness needs
-- [ ] Cache stampede protection (mutex/lock on miss)
-- [ ] Monitoring on cache hit/miss ratios
-- [ ] Invalidation strategy defined for data updates
+`caching, redis, CDN, cache-invalidation, performance, write-through, write-behind`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

@@ -10,54 +10,64 @@ metadata:
     related_skills: [network-automation-scripting, container-networking-patterns, bgp-routing-patterns, terraform-module-patterns]
 ---
 
-# Software-Defined Networking (SDN)
+# Sdn Software Defined Networking
 
-Implementing software-defined networking — from SDN controllers and OpenFlow through network virtualization, intent-based networking, and network programmability.
+"Use when implementing SDN and network virtualization."
 
-## When to Use
+## Trigger
 
-- Decoupling network control plane from data plane
-- Implementing programmable network infrastructure
-- Automating network provisioning and configuration
-- Building virtual networks and network overlays
-- Implementing intent-based networking
+Activate this skill when the user mentions:
+- sdn,  openflow,  network-virtualization,  SDN-controller,  network-programmability workflows or issues
+- Building, fixing, or optimizing sdn software defined networking
+- Questions about sdn best practices
 
-## SDN Architecture
+## Core Concepts
 
-```python
-SDN_LAYERS = {
-    'infrastructure': 'Physical/virtual switches, routers, middleboxes (data plane)',
-    'control': 'SDN controller (ONOS, OpenDaylight, Ryu) — central control plane',
-    'application': 'Network apps — routing, firewall, load balancing (business logic)',
-}
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-# Mininet-style network topology definition
-def create_topology():
-    """Define a software-defined network topology."""
-    return {
-        'switches': ['s1', 's2', 's3'],
-        'hosts': ['h1', 'h2', 'h3', 'h4'],
-        'links': [
-            ('h1', 's1'), ('h2', 's1'),
-            ('h3', 's2'), ('h4', 's2'),
-            ('s1', 's3'), ('s2', 's3'),
-        ],
-        'controller': 'ryu',
-    }
-```
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Controller bottleneck** — centralized controller becomes single point of failure; cluster it
-2. **Flow table exhaustion** — OpenFlow switches have limited flow table entries
-3. **Southbound latency** — control-to-data plane latency can impact convergence
-4. **Security of controller** — compromised controller compromises entire network
-5. **Vendor lock-in** — proprietary extensions reduce SDN benefits
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] SDN controller clustered for high availability
-- [ ] Flow table size monitored on switches
-- [ ] Southbound protocol secured (TLS for OpenFlow)
-- [ ] Northbound API documented and versioned
-- [ ] Network state synchronized across controller cluster
+`sdn, openflow, network-virtualization, SDN-controller, network-programmability`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

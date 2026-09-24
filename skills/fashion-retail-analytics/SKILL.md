@@ -11,46 +11,62 @@ metadata:
     related_skills: [general]
 ---
 
-## Overview
-Fashion Retail Analytics implementation. Comprehensive approach covering best practices, 
-methodologies, technical considerations, and verification approaches.
+# Fashion Retail Analytics
 
-## When to Use
-- "Fashion Retail Analytics and optimization"
-- "Best practices for Fashion Retail Analytics workflows"
-- "Fashion Retail Analytics compliance and standards"
-- "Fashion Retail Analytics troubleshooting and problem-solving"
-- "Fashion Retail Analytics ROI and performance measurement"
+"Use when analyzing fashion retail data."
 
-## Key Methodologies
-```text
-1. Assessment and Planning Phase
-2. Implementation and Execution
-3. Monitoring and Optimization
-4. Compliance and Verification
-5. Continuous Improvement
-```
+## Trigger
+
+Activate this skill when the user mentions:
+- fashion,  retail,  analytics,  demand-forecasting workflows or issues
+- Building, fixing, or optimizing fashion retail analytics
+- Questions about fashion best practices
+
+## Core Concepts
+
+- Data modeling (dimensional, normalized)
+- ETL/ELT patterns and idempotency
+- Data quality and validation
+- Lineage and cataloging
+- Privacy and data protection
+
+## Step-by-Step Workflow
+
+1. **Discover** — Profile data, assess quality
+   - Expected: Data profile report with quality scores
+2. **Design** — Model for use case
+   - Expected: Approved data model
+3. **Build** — Implement pipelines with testing
+   - Expected: Idempotent pipelines with quality checks
+4. **Validate** — Reconcile, test business rules
+   - Expected: Validated data with quality metrics
+5. **Operate** — Monitor, optimize, iterate
+   - Expected: Monitored pipelines with SLA tracking
+
+## Tools & Technologies
+
+- dbt
+- Airflow/Prefect
+- Spark/DuckDB
+- Data catalogs
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. **Insufficient planning** — rushing without proper assessment
-2. **Ignoring industry standards** — not following established frameworks
-3. **Poor stakeholder alignment** — conflicting requirements
-4. **Inadequate measurement** — no metrics for success
-5. **Not accounting for local conditions** — generic approaches fail
-6. **Underestimating complexity** — oversimplified solutions
-7. **No contingency planning** — no plan for unexpected issues
-8. **Insufficient training** — operators lack required skills
-9. **No verification process** — implementation without quality checks
-10. **Failing to iterate** — not improving based on results
 
-## Verification Checklist
-- [ ] Initial assessment and baseline established
-- [ ] Industry standards and best practices identified
-- [ ] Stakeholder requirements aligned and documented
-- [ ] Implementation plan with timelines
-- [ ] Quality control measures defined
-- [ ] Training completed for involved parties
-- [ ] Monitoring system with key metrics
-- [ ] Compliance requirements verified
-- [ ] Performance baseline before go-live
-- [ ] Post-implementation review scheduled
+- **No data quality gates** → Garbage in, garbage out → Validate at every stage
+- **Monolithic pipelines** → Hard to debug → Small idempotent tasks
+
+## Tags
+
+`fashion, retail, analytics, demand-forecasting`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

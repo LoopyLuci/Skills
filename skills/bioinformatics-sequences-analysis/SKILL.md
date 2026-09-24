@@ -13,39 +13,62 @@ metadata:
 
 # Bioinformatics Sequences Analysis
 
-## Overview
-Systematically process biological sequences (DNA, RNA, proteins) using industry-standard tools. Covers FASTA/FASTQ/SAM/BAM/VCF formats, quality control, alignment, assembly, annotation, and statistical analysis. Produces reproducible analysis pipelines.
+"Use when analyzing bio sequences. Genomics, alignment."
 
-## When to Use
-- "Analyze DNA/RNA/protein sequences"
-- "Run BLAST search and interpret results"
-- "Perform genome assembly from raw reads"
-- "Do phylogenetic tree construction"
+## Trigger
 
-## File Formats
-| Format | Content | Tools |
-|--------|---------|-------|
-| FASTA | Sequences with headers | biopython, samtools |
-| FASTQ | Sequences + quality scores | fastp, fastqc |
-| SAM/BAM | Aligned reads | samtools, picard |
-| VCF | Variants | bcftools, gatk |
+Activate this skill when the user mentions:
+- bioinformatics,  genomics,  proteomics,  biotech,  alignment workflows or issues
+- Building, fixing, or optimizing bioinformatics sequences analysis
+- Questions about bioinformatics best practices
 
-## Core Pipeline
-1. Quality check (FastQC)
-2. Trimming (fastp)
-3. Alignment (BWA/STAR/minimap2)
-4. Post-processing (samtools/picard)
-5. Quantification/Annotation
+## Core Concepts
+
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
+
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. Wrong aligner for data type — use splice-aware for RNA-seq
-2. Skipping QC — wastes compute on bad data
-3. Not indexing BAM files — samtools fails
-4. Ignoring reference genome version mismatch
 
-## Verification Checklist
-- [ ] FASTQ validated with BioPython
-- [ ] Quality passes thresholds
-- [ ] Alignment rate >80%
-- [ ] Output properly indexed
-- [ ] Results reproducible
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
+
+## Tags
+
+`bioinformatics, genomics, proteomics, biotech, alignment`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

@@ -12,110 +12,62 @@ metadata:
 
 # Skill Discovery Techniques
 
-Systematically discovering new skill creation opportunities — from technology trend scanning and ecosystem mapping through user need analysis and competitive research.
+"Use when discovering new skill creation opportunities."
 
-## When to Use
+## Trigger
 
-- Finding next skills to create
-- Researching emerging technologies
-- Mapping skill ecosystems
-- Identifying underserved skill areas
-- Planning skill creation roadmap
+Activate this skill when the user mentions:
+- meta,  skill-discovery,  techniques,  research,  opportunity,  scanning workflows or issues
+- Building, fixing, or optimizing skill discovery techniques
+- Questions about meta best practices
 
-## Discovery Framework
+## Core Concepts
 
-```python
-class SkillDiscoveryEngine:
-    """Systematic skill discovery from multiple signals."""
-    
-    SIGNALS = [
-        'github_trending_repos',
-        'stackoverflow_tags_growth',
-        'npm/pypi/crates_downloads',
-        'conference_talks_topics',
-        'job_postings_skill_demand',
-        'hackernews_mentions',
-        'reddit_community_discussions',
-        'user_search_queries',
-        'competitor_skill_inventories',
-        'technology_changelogs',
-    ]
-    
-    @staticmethod
-    def score_opportunity(name: str, demand: int, existing_supply: int, 
-                           growth_rate: float) -> float:
-        """Score a skill opportunity by demand-supply gap."""
-        if existing_supply == 0:
-            return demand * growth_rate * 2  # First mover bonus
-        
-        saturation = existing_supply / max(demand, 1)
-        if saturation > 0.5:
-            return 0  # Market saturated
-        
-        return demand * growth_rate * (1 - saturation)
-    
-    @staticmethod
-    def suggest_from_ecosystem(tech_stack: List[str], 
-                                existing: set) -> List[Dict]:
-        """Suggest skills from gaps in technology ecosystem coverage."""
-        suggestions = []
-        combos = [(a, b) for a in tech_stack for b in tech_stack if a < b]
-        for t1, t2 in combos:
-            integration_name = f"{t1}-{t2}-integration"
-            if integration_name not in existing:
-                suggestions.append({
-                    'name': integration_name,
-                    'opportunity': f'{t1} + {t2} integration patterns',
-                    'priority': 'high' if t1 in existing and t2 in existing else 'medium',
-                })
-        return suggestions
-```
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-## Discovery Channels
+## Step-by-Step Workflow
 
-```python
-DISCOVERY_CHANNELS = {
-    'technology_watch': [
-        'Follow major framework release notes (React, Angular, Vue, K8s)',
-        'Monitor new Cloud provider services (re:Invent, Google Cloud Next)',
-        'Track new programming language releases and features',
-        'Watch AI/ML model releases (HuggingFace, ArXiv)',
-    ],
-    'demand_signals': [
-        'Analyze internal user search queries for skill topics',
-        'Monitor community forum questions and gaps',
-        'Track StackOverflow tag growth rates',
-        'Review job description skill requirements by role',
-    ],
-    'ecosystem_mapping': [
-        'Map technology landscape for missing pieces',
-        'Identify integration points between technologies',
-        'Find "connector" skills (how A works with B)',
-        'Document migrations (legacy → modern patterns)',
-    ],
-    'user_pain_points': [
-        'Common errors and gotchas (great pitfall content)',
-        'Installation and configuration challenges',
-        'Performance issues that need optimization patterns',
-        'Security vulnerabilities requiring mitigation skills',
-    ],
-}
-```
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Chasing hype** — creating skills for trends that won't last; wait for stabilization
-2. **No user validation** — creating skills nobody needs; check search demand first
-3. **Ignoring existing content** — duplicating what already exists
-4. **Too narrow** — a skill about one specific API parameter is useless
-5. **Timing mismatch** — too early (unstable API) or too late (already commoditized)
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Demand signal confirmed (searches, questions, job posts)
-- [ ] Technology is stable enough (not breaking weekly)
-- [ ] No existing skill covers the same ground
-- [ ] Skill fits into the broader architecture (has prerequisite/related skills)
-- [ ] Topic has enough depth for a meaningful skill (not one-paragraph content)
-- [ ] Target audience identified (beginner, intermediate, advanced)
-- [ ] At least 3 related_skills exist for cross-referencing
+`meta, skill-discovery, techniques, research, opportunity, scanning`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

@@ -12,114 +12,62 @@ metadata:
 
 # Skill Architecture Patterns
 
-Designing multi-skill architectures — from skill families and dependency graphs through progressive complexity, cross-cutting skills, and skill ecosystems.
+"Use when designing multi-skill architectures."
 
-## When to Use
+## Trigger
 
-- Designing a suite of related skills
-- Building skill hierarchies (foundation → intermediate → advanced)
-- Creating cross-cutting skill categories
-- Managing skill dependencies and prerequisites
-- Designing learning paths through skills
+Activate this skill when the user mentions:
+- meta,  skill-architecture,  patterns,  design,  multi-skill,  systems workflows or issues
+- Building, fixing, or optimizing skill architecture patterns
+- Questions about meta best practices
 
-## Architecture Patterns
+## Core Concepts
 
-```python
-ARCHITECTURE_PATTERNS = {
-    'progressive_depth': 'Foundation → Intermediate → Advanced → Expert — each level builds on previous',
-    'radial_coverage': 'Core technology in center, integration skills radiating outward',
-    'cross_cutting': 'Skills that span multiple domains (security, observability, testing)',
-    'ecosystem_map': 'Full technology landscape mapped as interconnected skill graph',
-}
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-class SkillArchitect:
-    """Design skill architectures and learning paths."""
-    
-    def __init__(self):
-        self.skills = {}
-        self.relationships = {}  # skill -> [prerequisite_skills]
-    
-    def add_skill(self, name: str, level: str = 'intermediate'):
-        self.skills[name] = {'level': level, 'prerequisites': []}
-    
-    def add_prerequisite(self, skill: str, prerequisite: str):
-        if skill in self.skills and prerequisite in self.skills:
-            self.skills[skill]['prerequisites'].append(prerequisite)
-    
-    def generate_learning_path(self, target_skill: str) -> List[str]:
-        """Generate ordered learning path to a target skill."""
-        path = []
-        visited = set()
-        
-        def dfs(skill):
-            if skill in visited: return
-            visited.add(skill)
-            for prereq in self.skills.get(skill, {}).get('prerequisites', []):
-                dfs(prereq)
-            path.append(skill)
-        
-        dfs(target_skill)
-        return path
-    
-    def detect_cycles(self) -> List[tuple]:
-        """Detect circular prerequisite chains."""
-        cycles = []
-        for skill in self.skills:
-            visited = set()
-            def dfs(s, path):
-                if s in path:
-                    idx = path.index(s)
-                    cycles.append((' -> '.join(path[idx:] + [s]),))
-                    return
-                if s in visited: return
-                visited.add(s)
-                for p in self.skills.get(s, {}).get('prerequisites', []):
-                    dfs(p, path + [s])
-            dfs(skill, [skill])
-        return cycles
-```
+## Step-by-Step Workflow
 
-## Architecture Patterns
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
 
-```python
-PATTERNS = {
-    'foundation_layer': {
-        'description': 'Core concepts that don't change much',
-        'example': 'python-basics, git-fundamentals, sql-basics',
-        'update_frequency': 'Low (yearly)',
-    },
-    'technology_deep_dive': {
-        'description': 'Specific technology patterns and best practices',
-        'example': 'react-hooks-advanced, dockerfile-best-practices',
-        'update_frequency': 'Medium (quarterly)',
-    },
-    'integration_patterns': {
-        'description': 'How technologies work together',
-        'example': 'react-graphql-integration, docker-aws-deployment',
-        'update_frequency': 'High (monthly)',
-    },
-    'cross_cutting': {
-        'description': 'Spans all technology levels (security, testing)',
-        'example': 'web-security-patterns, api-testing-contracts',
-        'update_frequency': 'Medium',
-    },
-}
-```
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **No progression** — jump from beginner to advanced without intermediate steps
-2. **Circular dependencies** — skill A requires B, B requires A; redesign hierarchy
-3. **Orphan skills** — skills that reference non-existent prerequisites
-4. **Flat landscape** — all skills at same depth without progression structure
-5. **Overlapping scope** — two skills covering the same 80% of content
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Skill hierarchy defined (foundation → intermediate → advanced)
-- [ ] Prerequisites mapped and non-circular
-- [ ] Each skill has 3-5 related_skills for navigation
-- [ ] Cross-cutting skills identified and linked to all affected domains
-- [ ] Learning paths generate correctly from any start point
-- [ ] No orphan skills (zero incoming or outgoing references)
-- [ ] Update frequency assigned to match technology velocity
+`meta, skill-architecture, patterns, design, multi-skill, systems`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

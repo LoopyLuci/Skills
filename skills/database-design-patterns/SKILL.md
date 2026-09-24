@@ -12,156 +12,60 @@ metadata:
 
 # Database Design Patterns
 
-Designing efficient database schemas, indexing strategies, migration workflows, and data access patterns for SQL and NoSQL databases.
+"Use when designing database schemas and migrations."
 
-## When to Use
+## Trigger
 
-- Designing a new database schema from scratch
-- Optimizing slow queries with proper indexing
-- Planning database migrations without downtime
-- Choosing between SQL, NoSQL, or hybrid approaches
-- Modeling complex domain relationships in relational databases
+Activate this skill when the user mentions:
+- database,  sql,  nosql,  schema,  indexing,  migration,  postgresql workflows or issues
+- Building, fixing, or optimizing database design patterns
+- Questions about database best practices
 
-## Schema Design Patterns
+## Core Concepts
 
-### Single Table Inheritance
+- Data modeling (dimensional, normalized)
+- ETL/ELT patterns and idempotency
+- Data quality and validation
+- Lineage and cataloging
+- Privacy and data protection
 
-```sql
-CREATE TABLE assets (
-    id SERIAL PRIMARY KEY,
-    type VARCHAR(20) NOT NULL CHECK (type IN ('document', 'image', 'video')),
-    title TEXT NOT NULL,
-    page_count INTEGER,
-    width INTEGER, height INTEGER,
-    duration INTEGER, resolution VARCHAR(20),
-    created_at TIMESTAMPTZ DEFAULT NOW()
-);
-```
+## Step-by-Step Workflow
 
-### Concrete Table Inheritance
+1. **Discover** — Profile data, assess quality
+   - Expected: Data profile report with quality scores
+2. **Design** — Model for use case
+   - Expected: Approved data model
+3. **Build** — Implement pipelines with testing
+   - Expected: Idempotent pipelines with quality checks
+4. **Validate** — Reconcile, test business rules
+   - Expected: Validated data with quality metrics
+5. **Operate** — Monitor, optimize, iterate
+   - Expected: Monitored pipelines with SLA tracking
 
-```sql
-CREATE TABLE documents (
-    id SERIAL PRIMARY KEY, title TEXT NOT NULL, page_count INTEGER
-);
-CREATE TABLE images (
-    id SERIAL PRIMARY KEY, title TEXT NOT NULL, width INTEGER, height INTEGER
-);
-```
+## Tools & Technologies
 
-### Class Table Inheritance
+- dbt
+- Airflow/Prefect
+- Spark/DuckDB
+- Data catalogs
 
-```sql
-CREATE TABLE assets (
-    id SERIAL PRIMARY KEY, type VARCHAR(20) NOT NULL, title TEXT NOT NULL
-);
-CREATE TABLE documents (asset_id INTEGER PRIMARY KEY REFERENCES assets(id), page_count INTEGER);
-CREATE TABLE images (asset_id INTEGER PRIMARY KEY REFERENCES assets(id), width INTEGER, height INTEGER);
-```
+## Best Practices
 
-## Indexing Patterns
-
-### Composite Index Column Order
-
-```sql
--- For: WHERE status = 'active' AND created_at > '2024-01-01'
--- Place high-selectivity columns FIRST
-CREATE INDEX idx_orders_status_created ON orders (status, created_at);
-```
-
-### Covering Index
-
-```sql
--- Index-Only Scan: never touches the heap
--- For: SELECT user_id, email FROM users WHERE status = 'active';
-CREATE INDEX idx_users_status_covering ON users (status) INCLUDE (user_id, email);
-```
-
-### Partial Index
-
-```sql
--- Index only active records (much smaller, faster writes)
-CREATE INDEX idx_orders_active ON orders (created_at) WHERE status = 'active';
-```
-
-### Expression Index
-
-```sql
-CREATE INDEX idx_users_lower_email ON users (LOWER(email));
--- SELECT * FROM users WHERE LOWER(email) = 'user@example.com';
-```
-
-## Migration Patterns
-
-### Expand-Contract (Zero-Downtime)
-
-```sql
--- Phase 1: EXPAND — add new column
-ALTER TABLE users ADD COLUMN email_new VARCHAR(255);
--- App writes to both columns
-
--- Phase 2: Backfill
-UPDATE users SET email_new = email WHERE email_new IS NULL;
-
--- Phase 3: CONTRACT
-ALTER TABLE users DROP COLUMN email;
-ALTER TABLE users RENAME COLUMN email_new TO email;
-```
-
-## NoSQL Patterns
-
-### Document Denormalization
-
-```python
-user = {
-    "_id": "user_123",
-    "name": "Alice",
-    "addresses": [
-        {"type": "home", "street": "123 Main St"},
-        {"type": "work", "street": "456 Corp Ave"}
-    ]
-}
-# Pro: Single read for user + addresses
-# Con: Update anomalies on separately-edited embedded docs
-```
-
-### CQRS
-
-```python
-class CQRSHandler:
-    def __init__(self):
-        self.write_db = PostgresWriteDB()     # Normalized
-        self.read_db = ElasticsearchReadDB()   # Denormalized
-    
-    def handle_command(self, command):
-        result = self.write_db.execute(command)
-        self.sync_to_read_model(result)
-        return result
-    
-    def handle_query(self, query):
-        return self.read_db.search(query)
-```
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Premature denormalization** — normalize first, denormalize only when query patterns demand it
-2. **Missing foreign keys** — relational integrity enforced at app level drifts over time
-3. **Index-everything** — writes become slow; index only what queries filter on
-4. **SELECT * in production** — always name columns; breaks when schema changes
-5. **No migration plan** — schema changes without backfill cause downtime
-6. **Ignoring EXPLAIN ANALYZE** — the optimizer shows what's really happening; always check
+- **No data quality gates** → Garbage in, garbage out → Validate at every stage
+- **Monolithic pipelines** → Hard to debug → Small idempotent tasks
 
-## Verification Checklist
+## Tags
 
-- [ ] Schema normalized to 3NF before any denormalization
-- [ ] Indexes match actual query patterns (check slow query log)
-- [ ] Migrations are reversible (up + down functions)
-- [ ] Foreign keys enforced at DB level
-- [ ] EXPLAIN ANALYZE confirms index usage on critical queries
-- [ ] No N+1 queries in common access patterns
+`database, sql, nosql, schema, indexing, migration, postgresql`
 
-## See Also
+---
 
-- sql-query-optimization — optimizing queries against your schema
-- data-structures-algorithms — choosing right data structures
-- system-design-patterns — database at scale
+*LoopyLuci/Skills - 2026-09-24*

@@ -11,46 +11,62 @@ metadata:
     related_skills: [renewable-energy-design]
 ---
 
-## Overview
-Agri Voltaics Integration implementation. Covers essential methodologies, 
-best practices, technical foundations, and verification approaches.
+# Agri Voltaics Integration
 
-## When to Use
-- "Agri Voltaics Integration design and implementation"
-- "Best practices for Agri Voltaics Integration workflows"
-- "Agri Voltaics Integration optimization and enhancement"
-- "Agri Voltaics Integration troubleshooting and problem-solving"
-- "Agri Voltaics Integration performance and cost analysis"
+"Use when integrating agriculture and solar."
 
-## Key Methodologies
-```text
-1. Requirements Analysis and Planning
-2. Design and Implementation
-3. Testing and Validation
-4. Optimization and Refinement
-5. Monitoring and Maintenance
-```
+## Trigger
+
+Activate this skill when the user mentions:
+- cross-domain,  agri-voltaics,  dual-use,  solar-farming workflows or issues
+- Building, fixing, or optimizing agri voltaics integration
+- Questions about cross-domain best practices
+
+## Core Concepts
+
+- Model selection and evaluation
+- Feature engineering and data prep
+- Training methodology
+- Deployment and serving patterns
+- Monitoring and drift detection
+
+## Step-by-Step Workflow
+
+1. **Frame** — Define problem, success metric, baseline
+   - Expected: Clear problem statement
+2. **Explore** — EDA, feature analysis
+   - Expected: Understanding of data relationships
+3. **Build** — Train models, track experiments
+   - Expected: Logged reproducible experiments
+4. **Evaluate** — Test on holdout, check bias
+   - Expected: Evaluation report with confidence
+5. **Deploy** — Serve with monitoring
+   - Expected: Production model with drift detection
+
+## Tools & Technologies
+
+- Experiment tracking
+- Model registry
+- Feature store
+- Model serving
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. **Insufficient planning** — starting without proper assessment
-2. **Ignoring established standards** — not following industry best practices
-3. **Poor stakeholder alignment** — conflicting requirements and expectations
-4. **Inadequate measurement** — no metrics to track success or progress
-5. **Not accounting for context** — generic approaches applied blindly
-6. **Underestimating complexity** — oversimplified solutions
-7. **No contingency planning** — unhandled failure scenarios
-8. **Insufficient validation** — implementation without testing
-9. **Not documenting decisions** — lost knowledge and context
-10. **Failing to iterate** — not improving based on feedback
 
-## Verification Checklist
-- [ ] Initial assessment and requirements gathering completed
-- [ ] Industry standards and best practices reviewed
-- [ ] Design validated with stakeholders
-- [ ] Implementation plan with milestones defined
-- [ ] Quality control and validation approaches
-- [ ] Testing and verification procedures
-- [ ] Monitoring and feedback mechanisms
-- [ ] Documentation complete and accessible
-- [ ] Training provided to relevant stakeholders
-- [ ] Post-implementation review and improvement plan
+- **Data leakage** → Overly optimistic metrics → Strict temporal splits
+- **No monitoring** → Silent degradation → Monitor prediction distribution
+
+## Tags
+
+`cross-domain, agri-voltaics, dual-use, solar-farming`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

@@ -10,68 +10,64 @@ metadata:
     related_skills: [identity-access-management, cryptography-implementation-patterns, security-incident-response, dns-implementation-patterns]
 ---
 
-# Certificate Management and PKI
+# Certificate Management Pki
 
-Managing public key infrastructure and TLS certificate lifecycles — from CA setup and certificate issuance through automated renewal with ACME, revocation, and monitoring.
+"Use when managing PKI and TLS certificate lifecycles."
 
-## When to Use
+## Trigger
 
-- Managing TLS certificates for web services and APIs
-- Building an internal PKI for service-to-service mTLS
-- Automating certificate renewal with Let's Encrypt or cert-manager
-- Implementing certificate revocation and rotation
-- Complying with security standards requiring certificate management
+Activate this skill when the user mentions:
+- PKI,  certificates,  TLS,  SSL,  ACME,  cert-manager,  CA,  certificate-lifecycle workflows or issues
+- Building, fixing, or optimizing certificate management pki
+- Questions about PKI best practices
 
-## Certificate Lifecycle
+## Core Concepts
 
-```python
-CERTIFICATE_LIFECYCLE = {
-    'request': 'Generate CSR, submit to CA (internal or public)',
-    'issue': 'CA signs certificate after validation (DV, OV, or EV)',
-    'deploy': 'Install on servers, load balancers, or applications',
-    'monitor': 'Track expiry dates, start renewal at 30 days',
-    'renew': 'Re-issue before expiry (automated with ACME)',
-    'revoke': 'Immediately revoke if compromised (CRL/OCSP)',
-}
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-class CertificateManager:
-    """Track and manage certificate lifecycles."""
-    def __init__(self):
-        self.certs = {}
-    
-    def add_certificate(self, domain: str, issuer: str, 
-                        expiry: str, auto_renew: bool = True):
-        self.certs[domain] = {
-            'issuer': issuer, 'expiry': expiry,
-            'auto_renew': auto_renew, 'status': 'valid',
-            'renewal_in_days': None,
-        }
-    
-    def get_expiring_certs(self, days: int = 30) -> List[Dict]:
-        from datetime import datetime, timedelta
-        threshold = datetime.now() + timedelta(days=days)
-        expiring = []
-        for domain, info in self.certs.items():
-            expiry = datetime.fromisoformat(info['expiry'])
-            if expiry <= threshold:
-                expiring.append({'domain': domain, 'expiry': info['expiry']})
-        return expiring
-```
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Certificate expiry** — expired certs cause outages; automate renewal with ACME
-2. **Manual processes** — manual renewal on 100+ certs guarantees some will expire
-3. **Weak key sizes** — use 2048+ bit RSA or ECDSA P-256/P-384
-4. **No monitoring** — no alert when cert is expiring or has been revoked
-5. **Self-signed certs everywhere** — breaks trust; use internal CA or public trusted certs
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Certificate inventory maintained (all domains, issuers, expiry dates)
-- [ ] Automated renewal configured (ACME/cert-manager)
-- [ ] Monitoring on certificate expiry (alert at 30, 14, 7 days)
-- [ ] OCSP stapling enabled on web servers
-- [ ] Certificate revocation procedure documented
-- [ ] Key sizes meet security requirements (≥2048-bit RSA or P-256 ECDSA)
-- [ ] Internal CA configured for service mesh mTLS (if applicable)
+`PKI, certificates, TLS, SSL, ACME, cert-manager, CA, certificate-lifecycle`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

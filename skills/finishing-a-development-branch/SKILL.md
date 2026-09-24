@@ -5,77 +5,64 @@ tags: [git, branch, merge, testing, pull-request]
 related_skills: [executing-plans, receiving-code-review, verification-before-completion]
 ---
 
-# Finishing a Development Branch
+# Finishing A Development Branch
 
-## Overview
+Use when completing dev work: verify tests and present merge options
 
-After all tasks in a plan are complete, verify everything works and present merge options to the user.
+## Trigger
 
-## Required Steps
+Activate this skill when the user mentions:
+- git,  branch,  merge,  testing,  pull-request workflows or issues
+- Building, fixing, or optimizing finishing a development branch
+- Questions about git best practices
 
-### Step 1: Run All Tests
+## Core Concepts
 
-Run the full test suite. If tests fail, fix them. Do not skip this step.
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-### Step 2: Check for Issues
+## Step-by-Step Workflow
 
-- Run linters and type checkers
-- Review for any TODO/FIXME comments added during development
-- Ensure all new code has appropriate tests
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
 
-### Step 3: Present Options
+## Tools & Technologies
 
-Present a clear choice to the user with specific recommendations:
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
 
-```
-Option 1: Merge worktree branch into main
-- All tests passing
-- Ready for code review
-- Run: git merge ...
+## Best Practices
 
-Option 2: Create PR for review
-- Branch is pushed to remote
-- Open PR with description of changes
-- Request specific reviewers
-
-Option 3: Request code review
-- Invite review of specific components
-- Address feedback before merging
-```
-
-### Step 4: Execute User's Choice
-
-Once user selects an option, execute it.
-
-## Code Example: Post-Completion Summary
-
-```
-✓ All 47 tests passing
-✓ ESLint clean (0 warnings)
-✓ TypeScript strict check passed
-✓ No TODO/FIXME comments remain
-✓ Documentation updated
-
-Options:
-1. Merge to main (fast-forward)
-2. Open PR for team review
-3. Request my code review
-```
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-| Pitfall | Solution |
-|---------|----------|
-| Skipping test run | Always run full suite before declaring done |
-| Ignoring lint/type errors | Fix all warnings — they signal real issues |
-| Merging without user approval | Always present options and wait for choice |
-| Leaving TODO comments | Remove or address all TODOs before completion |
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Full test suite passes
-- [ ] Linting/type-checking clean
-- [ ] No TODO/FIXME left behind
-- [ ] All new code has tests
-- [ ] Options presented to user
-- [ ] User's choice executed
+`git, branch, merge, testing, pull-request`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

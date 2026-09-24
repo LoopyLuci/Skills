@@ -11,43 +11,64 @@ metadata:
     related_skills: [general]
 ---
 
-## Overview
-Develop brand identity.
+# Brand Identity Implementation
 
-## When to Use
-- Design and implement
-- Apply best practices
-- Optimize performance
-- Troubleshoot issues
+"Use when applying brand identity implementation."
 
-## Key Approaches
-1. Define requirements
-2. Choose tools
-3. Implement modular
-4. Test thoroughly
-5. Document decisions
-6. Monitor results
+## Trigger
+
+Activate this skill when the user mentions:
+- marketing,  brand,  brand-identity-development workflows or issues
+- Building, fixing, or optimizing brand identity implementation
+- Questions about marketing best practices
+
+## Core Concepts
+
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
+
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. Ignoring constraints
-2. Skipping standards
-3. Poor alignment
-4. Inadequate testing
-5. No documentation
-6. Over-engineering
-7. No rollback
-8. No monitoring
-9. No scalability
-10. No validation
 
-## Verification Checklist
-- [ ] Requirements validated
-- [ ] Standards applied
-- [ ] Design reviewed
-- [ ] Tests defined
-- [ ] Docs complete
-- [ ] Monitoring configured
-- [ ] Rollback planned
-- [ ] Security checked
-- [ ] Deploy verified
-- [ ] Stakeholder approved
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
+
+## Tags
+
+`marketing, brand, brand-identity-development`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

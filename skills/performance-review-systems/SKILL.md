@@ -12,69 +12,62 @@ metadata:
 
 # Performance Review Systems
 
-Designing performance review and feedback systems — from 360 reviews and OKR alignment through continuous feedback, calibration, and growth-based evaluation.
+"Use when designing performance review and feedback systems."
 
-## When to Use
+## Trigger
 
-- Building or improving performance review processes
-- Moving from annual reviews to continuous feedback
-- Aligning reviews with OKRs and company goals
-- Training managers on effective performance conversations
-- Implementing peer feedback and 360 reviews
+Activate this skill when the user mentions:
+- performance-review,  feedback,  360-review,  OKRs,  evaluation,  growth workflows or issues
+- Building, fixing, or optimizing performance review systems
+- Questions about performance-review best practices
 
-## Review Models
+## Core Concepts
 
-```python
-REVIEW_MODELS = {
-    'annual': 'Yearly comprehensive review (traditional, often disliked)',
-    'quarterly': 'Quarterly check-in on goals and development (responsive)',
-    'continuous': 'Ongoing feedback via lightweight tools (modern approach)',
-    '360': 'Feedback from manager, peers, direct reports, cross-functional',
-    'self_assessment': 'Employee evaluates their own performance first',
-    'peer_review': 'Feedback from team members and collaborators',
-}
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-class PerformanceReview:
-    """Structure a performance review cycle."""
-    def __init__(self, employee: str, reviewer: str, period: str):
-        self.employee = employee
-        self.reviewer = reviewer
-        self.period = period
-        self.scores = {}
-        self.comments = {}
-    
-    def add_category(self, name: str, score: int, 
-                     strengths: str = '', growth: str = ''):
-        self.scores[name] = score
-        self.comments[name] = {'strengths': strengths, 'growth': growth}
-    
-    def summary(self) -> Dict:
-        avg_score = sum(self.scores.values()) / len(self.scores) if self.scores else 0
-        return {
-            'employee': self.employee,
-            'overall_score': round(avg_score, 1),
-            'categories': self.scores,
-            'top_strength': max(self.comments.items(), key=lambda x: x[1].get('strengths', ''))[0] if self.comments else '',
-            'priority_growth': min(self.comments.items(), key=lambda x: x[1].get('growth', ''))[0] if self.comments else '',
-        }
-```
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Recency bias** — recent events overshadow the full period; document throughout
-2. **Surprise feedback** — nothing in review should be a surprise; give real-time feedback
-3. **Rating inflation** — everyone gets 4/5; use calibration across teams for fairness
-4. **No development focus** — reviews should be about growth, not just rating
-5. **Biased evaluations** — gender, racial, and cultural biases affect reviews; train reviewers
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Review cycle cadence defined (annual, quarterly, or continuous)
-- [ ] Evaluation criteria aligned with company values and role expectations
-- [ ] Manager training on effective feedback conversations
-- [ ] Calibration process to ensure fairness across teams
-- [ ] Self-assessment as first step in review
-- [ ] Development goals linked to review outcomes
-- [ ] Continuous feedback channel (not just formal reviews)
-- [ ] Bias training for all reviewers
-- [ ] Review data used for promotions and compensation decisions
+`performance-review, feedback, 360-review, OKRs, evaluation, growth`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

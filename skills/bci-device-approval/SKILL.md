@@ -11,43 +11,64 @@ metadata:
     related_skills: ['neurotech-clinical-trials', ' brain-stimulation-safety']
 ---
 
-## Overview
-Navigate FDA/CE marking pathways for brain-computer interfaces.
+# Bci Device Approval
 
-## When to Use
-- "Bci Device Approval design and implementation"
-- "Best practices for Bci Device Approval"
-- "Bci Device Approval optimization and enhancement"
-- "Bci Device Approval troubleshooting and validation"
-- "Bci Device Approval performance and metrics"
+"Use when gaining BCI device regulatory approval."
 
-## Key Concepts
-1. Foundational principles and core concepts
-2. Industry standards and best practices
-3. Implementation methodologies and workflows
-4. Testing, validation, and quality assurance
-5. Performance optimization and monitoring
+## Trigger
+
+Activate this skill when the user mentions:
+- neurotech,  bci-regulation,  fda,  medical-device workflows or issues
+- Building, fixing, or optimizing bci device approval
+- Questions about neurotech best practices
+
+## Core Concepts
+
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
+
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. **Insufficient planning** — starting without proper requirements
-2. **Ignoring industry standards** — not following established best practices
-3. **Poor stakeholder alignment** — conflicting requirements
-4. **Inadequate measurement** — no metrics to validate outcomes
-5. **Not accounting for constraints** — resource or timeline limitations
-6. **Overlooking integration** — interface and dependency issues
-7. **Inadequate testing** — no validation of critical functions
-8. **Not documenting decisions** — lost knowledge transfer
-9. **Skipping verification** — no quality assurance checks
-10. **Failing to iterate** — not improving based on feedback
 
-## Verification Checklist
-- [ ] Initial requirements and specifications documented
-- [ ] Industry standards reviewed and applied
-- [ ] Design validated with stakeholders
-- [ ] Implementation plan with milestones defined
-- [ ] Testing and validation procedures established
-- [ ] Quality control measures implemented
-- [ ] Performance metrics identified and tracked
-- [ ] Documentation complete and accessible
-- [ ] Training provided to relevant stakeholders
-- [ ] Post-implementation review scheduled
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
+
+## Tags
+
+`neurotech, bci-regulation, fda, medical-device`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

@@ -10,157 +10,62 @@ metadata:
     related_skills: [website-analytics-tracking, saas-metrics-reporting, business-metrics-kpis, customer-feedback-surveys]
 ---
 
-# Product Analytics and Instrumentation
+# Product Analytics Instrumentation
 
-Implementing product analytics — from event tracking and funnel analysis through retention cohorts, AARRR metrics, and data-informed product decisions.
+"Use when implementing product analytics and user tracking."
 
-## When to Use
+## Trigger
 
-- Setting up product analytics (Amplitude, Mixpanel, PostHog, Heap)
-- Defining and tracking key product events
-- Building funnel and retention analyses
-- Measuring product-led growth metrics (AARRR)
-- Making data-informed product decisions
+Activate this skill when the user mentions:
+- product-analytics,  user-tracking,  events,  funnel,  retention,  cohorts,  AARRR workflows or issues
+- Building, fixing, or optimizing product analytics instrumentation
+- Questions about product-analytics best practices
 
-## Analytics Framework (AARRR)
+## Core Concepts
 
-```python
-AARRR_METRICS = {
-    'acquisition': {
-        'metrics': ['Signups', 'Signup conversion rate', 'Traffic by source', 'CAC'],
-        'events': ['Page Viewed', 'Signup Started', 'Signup Completed'],
-    },
-    'activation': {
-        'metrics': ['Activation rate', 'Time to activation', '% completed setup'],
-        'events': ['Onboarding Step 1', 'Onboarding Complete', 'First Core Action'],
-    },
-    'retention': {
-        'metrics': ['D1/D7/D30 retention', 'DAU/MAU', 'Session frequency'],
-        'events': ['App Opened', 'Session Started', 'Feature Used'],
-    },
-    'revenue': {
-        'metrics': ['MRR', 'ARPU', 'Conversion rate', 'Expansion revenue'],
-        'events': ['Subscription Started', 'Payment Completed', 'Plan Upgraded'],
-    },
-    'referral': {
-        'metrics': ['Viral coefficient', 'Referrals per user', 'Invite acceptance rate'],
-        'events': ['Referral Sent', 'Referral Opened', 'Referral Converted'],
-    },
-}
-```
+- Data modeling (dimensional, normalized)
+- ETL/ELT patterns and idempotency
+- Data quality and validation
+- Lineage and cataloging
+- Privacy and data protection
 
-## Event Tracking Plan
+## Step-by-Step Workflow
 
-```python
-from typing import Dict, List, Optional
-from datetime import datetime
+1. **Discover** — Profile data, assess quality
+   - Expected: Data profile report with quality scores
+2. **Design** — Model for use case
+   - Expected: Approved data model
+3. **Build** — Implement pipelines with testing
+   - Expected: Idempotent pipelines with quality checks
+4. **Validate** — Reconcile, test business rules
+   - Expected: Validated data with quality metrics
+5. **Operate** — Monitor, optimize, iterate
+   - Expected: Monitored pipelines with SLA tracking
 
-class EventTrackingPlan:
-    """Define and manage product event tracking."""
-    
-    def __init__(self, product: str):
-        self.product = product
-        self.events = {}
-        self.user_properties = {}
-        self.funnels = []
-    
-    def add_event(self, name: str, category: str, 
-                  description: str, properties: List[Dict],
-                  trigger: str = 'user_action') -> 'EventTrackingPlan':
-        self.events[name] = {
-            'name': name, 'category': category,
-            'description': description, 'properties': properties,
-            'trigger': trigger,  # user_action, system, page_view
-            'status': 'planned',
-        }
-        return self
-    
-    def add_funnel(self, name: str, steps: List[str], 
-                   conversion_goal: str) -> 'EventTrackingPlan':
-        self.funnels.append({
-            'name': name, 'steps': steps,
-            'conversion_goal': conversion_goal,
-        })
-        return self
-    
-    def generate_tracking_spec(self) -> str:
-        spec = f"📊 Event Tracking Plan: {self.product}\n" + "=" * 50 + "\n"
-        
-        for event_name, event in self.events.items():
-            spec += f"\n**{event_name}** ({event['category']})\n"
-            spec += f"  Description: {event['description']}\n"
-            spec += f"  Trigger: {event['trigger']}\n"
-            for prop in event['properties']:
-                spec += f"  Property: {prop.get('name')} ({prop.get('type', 'string')})\n"
-        
-        if self.funnels:
-            spec += "\n**Funnels:**\n"
-            for funnel in self.funnels:
-                spec += f"\n  {funnel['name']}:"
-                for i, step in enumerate(funnel['steps'], 1):
-                    spec += f"\n    {i}. {step}"
-        
-        return spec
-```
+## Tools & Technologies
 
-## Funnel Analysis
+- dbt
+- Airflow/Prefect
+- Spark/DuckDB
+- Data catalogs
 
-```python
-class FunnelAnalyzer:
-    """Analyze conversion funnels and find drop-off."""
-    
-    @staticmethod
-    def analyze(funnel_steps: List[str], event_data: Dict) -> Dict:
-        results = []
-        prev_count = None
-        
-        for step in funnel_steps:
-            count = len(event_data.get(step, []))
-            if prev_count is not None:
-                conversion = round(count / max(prev_count, 1) * 100, 1)
-                dropoff = round((1 - count / max(prev_count, 1)) * 100, 1)
-            else:
-                conversion = 100.0
-                dropoff = 0.0
-            
-            results.append({
-                'step': step,
-                'users': count,
-                'conversion_from_previous': conversion,
-                'dropoff_from_previous': dropoff,
-            })
-            prev_count = count
-        
-        return {
-            'funnel': results,
-            'overall_conversion': round(results[-1]['users'] / max(results[0]['users'], 1) * 100, 1) if len(results) > 1 else 100,
-            'critical_dropoffs': [r for r in results if r['dropoff_from_previous'] > 30],
-        }
-```
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Tracking everything** — more events ≠ better insights; track what drives decisions
-2. **No event taxonomy** — same event named differently on web vs mobile causes data mess
-3. **Self-serve analytics not adopted** — if product team can't query data, they won't use it
-4. **Data quality issues** — missing events, duplicate events, wrong properties
-5. **Vanity metrics focus** — tracking page views instead of activation and retention
-6. **No instrumentation review** — events drift as product changes; audit quarterly
+- **No data quality gates** → Garbage in, garbage out → Validate at every stage
+- **Monolithic pipelines** → Hard to debug → Small idempotent tasks
 
-## Verification Checklist
+## Tags
 
-- [ ] Event tracking plan documents all key events
-- [ ] AARRR metrics defined and tracked
-- [ ] Key funnels identified and instrumented
-- [ ] User properties captured for segmentation
-- [ ] Data quality monitoring in place (event volume, missing props)
-- [ ] Product team has self-serve analytics access
-- [ ] Event naming convention documented
-- [ ] Quarterly event audit scheduled
+`product-analytics, user-tracking, events, funnel, retention, cohorts, AARRR`
 
-## See Also
+---
 
-- website-analytics-tracking — marketing analytics complement
-- saas-metrics-reporting — revenue metrics from product data
-- business-metrics-kpis — product KPIs
-- customer-feedback-surveys — qualitative complement to quantitative
+*LoopyLuci/Skills - 2026-09-24*

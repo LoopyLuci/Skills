@@ -11,43 +11,62 @@ metadata:
     related_skills: ['neurotech-clinical-trials']
 ---
 
-## Overview
-Ensure safety of TMS, tDCS, and other brain stimulation modalities.
+# Brain Stimulation Safety
 
-## When to Use
-- "Brain Stimulation Safety design and implementation"
-- "Best practices for Brain Stimulation Safety"
-- "Brain Stimulation Safety optimization and enhancement"
-- "Brain Stimulation Safety troubleshooting and validation"
-- "Brain Stimulation Safety performance and metrics"
+"Use when ensuring brain stimulation safety."
 
-## Key Concepts
-1. Foundational principles and core concepts
-2. Industry standards and best practices
-3. Implementation methodologies and workflows
-4. Testing, validation, and quality assurance
-5. Performance optimization and monitoring
+## Trigger
+
+Activate this skill when the user mentions:
+- neurotech,  brain-stimulation,  safety,  tms,  tdcs workflows or issues
+- Building, fixing, or optimizing brain stimulation safety
+- Questions about neurotech best practices
+
+## Core Concepts
+
+- Model selection and evaluation
+- Feature engineering and data prep
+- Training methodology
+- Deployment and serving patterns
+- Monitoring and drift detection
+
+## Step-by-Step Workflow
+
+1. **Frame** — Define problem, success metric, baseline
+   - Expected: Clear problem statement
+2. **Explore** — EDA, feature analysis
+   - Expected: Understanding of data relationships
+3. **Build** — Train models, track experiments
+   - Expected: Logged reproducible experiments
+4. **Evaluate** — Test on holdout, check bias
+   - Expected: Evaluation report with confidence
+5. **Deploy** — Serve with monitoring
+   - Expected: Production model with drift detection
+
+## Tools & Technologies
+
+- Experiment tracking
+- Model registry
+- Feature store
+- Model serving
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. **Insufficient planning** — starting without proper requirements
-2. **Ignoring industry standards** — not following established best practices
-3. **Poor stakeholder alignment** — conflicting requirements
-4. **Inadequate measurement** — no metrics to validate outcomes
-5. **Not accounting for constraints** — resource or timeline limitations
-6. **Overlooking integration** — interface and dependency issues
-7. **Inadequate testing** — no validation of critical functions
-8. **Not documenting decisions** — lost knowledge transfer
-9. **Skipping verification** — no quality assurance checks
-10. **Failing to iterate** — not improving based on feedback
 
-## Verification Checklist
-- [ ] Initial requirements and specifications documented
-- [ ] Industry standards reviewed and applied
-- [ ] Design validated with stakeholders
-- [ ] Implementation plan with milestones defined
-- [ ] Testing and validation procedures established
-- [ ] Quality control measures implemented
-- [ ] Performance metrics identified and tracked
-- [ ] Documentation complete and accessible
-- [ ] Training provided to relevant stakeholders
-- [ ] Post-implementation review scheduled
+- **Data leakage** → Overly optimistic metrics → Strict temporal splits
+- **No monitoring** → Silent degradation → Monitor prediction distribution
+
+## Tags
+
+`neurotech, brain-stimulation, safety, tms, tdcs`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

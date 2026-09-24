@@ -12,70 +12,62 @@ metadata:
 
 # Testing Pyramid Practice
 
-Implementing the testing pyramid strategy — from unit and integration through end-to-end tests, test ratios, and maintaining a healthy test suite.
+"Use when implementing the testing pyramid strategy."
 
-## When to Use
+## Trigger
 
-- Designing a comprehensive testing strategy
-- Balancing test types (unit, integration, e2e)
-- Improving test suite speed and reliability
-- Deciding what to test at each level
-- Building CI/CD test pipelines
+Activate this skill when the user mentions:
+- testing-pyramid,  unit-tests,  integration-tests,  e2e-tests,  test-strategy workflows or issues
+- Building, fixing, or optimizing testing pyramid practice
+- Questions about testing-pyramid best practices
 
-## Testing Pyramid
+## Core Concepts
 
-```python
-TESTING_PYRAMID = {
-    'unit': {
-        'ratio': '70% of tests',
-        'speed': 'Milliseconds',
-        'scope': 'Single function or method',
-        'goal': 'Verify business logic in isolation',
-    },
-    'integration': {
-        'ratio': '20% of tests',
-        'speed': 'Seconds',
-        'scope': 'Multiple components, database, API',
-        'goal': 'Verify components work together',
-    },
-    'e2e': {
-        'ratio': '10% of tests',
-        'speed': 'Minutes',
-        'scope': 'Full system, UI, external dependencies',
-        'goal': 'Critical user journeys work end-to-end',
-    },
-}
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-# Unit test example
-def test_calculate_order_total():
-    order = Order(items=[Item(price=10.0), Item(price=20.0)])
-    total = calculate_total(order, tax_rate=0.1)
-    assert total == 33.0  # (10 + 20) * 1.1
+## Step-by-Step Workflow
 
-# Integration test example
-def test_create_user_and_get_profile(db_session):
-    user = User(name='Alice', email='alice@example.com')
-    db_session.add(user)
-    db_session.commit()
-    
-    profile = get_user_profile(db_session, user.id)
-    assert profile['name'] == 'Alice'
-```
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Too many E2E tests** — slow, flaky, expensive; use 10% as max
-2. **No integration tests** — units pass individually but fail together; need integration layer
-3. **Testing implementation, not behavior** — tests that break on refactoring (not behavior change) are fragile
-4. **No test categorization** — can't run just unit tests quickly during development
-5. **Flaky E2E tests** — flaky tests erode trust; invest in stability or replace with integration tests
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Test ratio roughly 70/20/10 (unit/integration/e2e)
-- [ ] Unit tests run in < 1 second for the full suite
-- [ ] Integration tests use test containers or in-memory dependencies
-- [ ] E2E tests cover only critical user journeys
-- [ ] Flaky test detection and quarantine process
-- [ ] CI/CD pipeline runs appropriate test level per stage
-- [ ] Test coverage reports for unit tests (80%+ target)
+`testing-pyramid, unit-tests, integration-tests, e2e-tests, test-strategy`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

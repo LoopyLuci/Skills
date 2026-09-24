@@ -12,75 +12,62 @@ metadata:
 
 # Cap Table Management
 
-Managing capitalization tables and equity structures — from equity types and issuance through dilution modeling, option pools, and investor reporting.
+"Use when managing cap tables and equity structures."
 
-## When to Use
+## Trigger
 
-- Managing startup cap table and equity ownership
-- Modeling dilution for fundraising rounds
-- Granting employee stock options
-- Preparing for exits (acquisition or IPO)
-- Reporting equity to investors and board
+Activate this skill when the user mentions:
+- cap-table,  equity,  stock,  options,  dilution,  valuation,  fundraising workflows or issues
+- Building, fixing, or optimizing cap table management
+- Questions about cap-table best practices
 
-## Equity Types
+## Core Concepts
 
-```python
-EQUITY_TYPES = {
-    'common_stock': 'Standard equity (founders, employees via exercise)',
-    'preferred_stock': 'Investor equity with liquidation preference',
-    'options': 'Right to purchase common stock at strike price',
-    'rsu': 'Restricted Stock Units — shares granted, vest over time',
-    'warrants': 'Right to purchase shares at fixed price (investors, partners)',
-    'convertible_note': 'Debt that converts to equity at next round',
-    'safe': 'Simple Agreement for Future Equity (YC standard)',
-}
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-class CapTable:
-    """Maintain cap table and model dilution."""
-    def __init__(self):
-        self.shareholders = {}  # name -> {shares, type, price}
-        self.total_shares = 0
-        self.option_pool = 0
-    
-    def add_shareholder(self, name: str, shares: int, 
-                        equity_type: str, price: float = 0):
-        self.shareholders[name] = {
-            'shares': shares, 'type': equity_type, 'price': price
-        }
-        self.total_shares += shares
-    
-    def dilution_model(self, new_investment: float, 
-                       pre_money: float) -> Dict:
-        """Model dilution from a new funding round."""
-        pre_shares = self.total_shares
-        price_per_share = pre_money / pre_shares
-        new_shares = new_investment / price_per_share
-        post_shares = pre_shares + new_shares
-        
-        return {
-            'pre_money': pre_money,
-            'investment': new_investment,
-            'new_shares': int(new_shares),
-            'fully_diluted': int(post_shares),
-            'dilution_pct': round(new_shares / post_shares * 100, 1),
-        }
-```
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **No cap table system** — managing in spreadsheets after 10+ shareholders is risky
-2. **Option pool too small** — can't hire without equity; maintain 10-15% pool
-3. **Forgetting to model dilution** — founders surprised at how much they're diluted post-Series B
-4. **No 409A valuation** — options priced below FMV create tax issues; get annual valuation
-5. **Inexperienced legal counsel** — equity law is complex; hire startup-experienced lawyers
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Cap table maintained in software (Carta, Pulley, Shareworks, or managed spreadsheet)
-- [ ] All equity types tracked (common, preferred, options, warrants, SAFEs, convertibles)
-- [ ] 409A valuation updated annually (for options)
-- [ ] Option pool size appropriate (10-15% of fully diluted)
-- [ ] Dilution modeled for next 2-3 rounds
-- [ ] Vesting schedules tracked (typically 4-year with 1-year cliff)
-- [ ] Shareholder reports prepared for board meetings
-- [ ] Legal counsel reviews all equity grants
+`cap-table, equity, stock, options, dilution, valuation, fundraising`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

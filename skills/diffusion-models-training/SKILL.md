@@ -11,43 +11,62 @@ metadata:
     related_skills: ['generative-models']
 ---
 
-## Overview
-Train diffusion models for generative AI including image and audio synthesis.
+# Diffusion Models Training
 
-## When to Use
-- "Diffusion Models Training implementation and design"
-- "Best practices for Diffusion Models Training"
-- "Diffusion Models Training deployment and scaling"
-- "Diffusion Models Training optimization and monitoring"
+"Use when training diffusion models."
 
-## Key Approaches
-1. Define clear requirements and specifications
-2. Choose appropriate tools and frameworks
-3. Implement with modular, maintainable code
-4. Write tests and automate verification
-5. Document architecture and decisions
-6. Monitor performance and iterate
+## Trigger
+
+Activate this skill when the user mentions:
+- deep-learning,  diffusion-models,  generative,  training workflows or issues
+- Building, fixing, or optimizing diffusion models training
+- Questions about deep-learning best practices
+
+## Core Concepts
+
+- Model selection and evaluation
+- Feature engineering and data prep
+- Training methodology
+- Deployment and serving patterns
+- Monitoring and drift detection
+
+## Step-by-Step Workflow
+
+1. **Frame** — Define problem, success metric, baseline
+   - Expected: Clear problem statement
+2. **Explore** — EDA, feature analysis
+   - Expected: Understanding of data relationships
+3. **Build** — Train models, track experiments
+   - Expected: Logged reproducible experiments
+4. **Evaluate** — Test on holdout, check bias
+   - Expected: Evaluation report with confidence
+5. **Deploy** — Serve with monitoring
+   - Expected: Production model with drift detection
+
+## Tools & Technologies
+
+- Experiment tracking
+- Model registry
+- Feature store
+- Model serving
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. **Not accounting for constraints** — resource or timeline limitations
-2. **Ignoring industry standards** — not following established best practices
-3. **Poor stakeholder alignment** — conflicting requirements
-4. **Inadequate testing** — no validation of critical functions
-5. **Not documenting decisions** — lost knowledge transfer
-6. **Skipping security review** — no threat modeling performed
-7. **Over-engineering** — complex solutions where simple ones suffice
-8. **No rollback plan** — deployment failures cause outages
-9. **Insufficient monitoring** — no observability after deployment
-10. **Not planning for growth** — scalability issues in production
 
-## Verification Checklist
-- [ ] Requirements defined and validated
-- [ ] Industry standards and best practices applied
-- [ ] Design reviewed with stakeholders
-- [ ] Implementation plan with milestones
-- [ ] Testing strategy with coverage targets
-- [ ] Security review and threat modeling
-- [ ] Monitoring and alerting configured
-- [ ] Documentation complete and accessible
-- [ ] Deployment with rollback plan
-- [ ] Post-deployment verification
+- **Data leakage** → Overly optimistic metrics → Strict temporal splits
+- **No monitoring** → Silent degradation → Monitor prediction distribution
+
+## Tags
+
+`deep-learning, diffusion-models, generative, training`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

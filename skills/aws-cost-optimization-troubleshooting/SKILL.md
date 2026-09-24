@@ -11,43 +11,62 @@ metadata:
     related_skills: [general]
 ---
 
-## Overview
-Optimize AWS costs.
+# Aws Cost Optimization Troubleshooting
 
-## When to Use
-- Design and implement
-- Apply best practices
-- Optimize performance
-- Troubleshoot issues
+"Use when applying aws cost optimization troubleshooting."
 
-## Key Approaches
-1. Define requirements
-2. Choose tools
-3. Implement modular
-4. Test thoroughly
-5. Document decisions
-6. Monitor results
+## Trigger
+
+Activate this skill when the user mentions:
+- aws,  cost-optimization,  cost,  finops workflows or issues
+- Building, fixing, or optimizing aws cost optimization troubleshooting
+- Questions about aws best practices
+
+## Core Concepts
+
+- Infrastructure as Code (IaC)
+- Well-Architected Framework
+- Identity and access management
+- Networking and security groups
+- Cost optimization and tagging
+
+## Step-by-Step Workflow
+
+1. **Design** — Architecture review against WAF pillars
+   - Expected: Approved architecture diagram
+2. **Implement** — IaC templates with least-privilege IAM
+   - Expected: Reviewable version-controlled infra
+3. **Validate** — Security scan, cost estimate, plan review
+   - Expected: Clean plan within budget
+4. **Deploy** — Apply with change management
+   - Expected: Deployed infrastructure matches plan
+5. **Monitor** — Alarms, dashboards, cost alerts
+   - Expected: Full observability and cost allocation
+
+## Tools & Technologies
+
+- Terraform/Pulumi
+- Cloud-native IaC
+- Security scanning
+- Cost management
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. Ignoring constraints
-2. Skipping standards
-3. Poor alignment
-4. Inadequate testing
-5. No documentation
-6. Over-engineering
-7. No rollback
-8. No monitoring
-9. No scalability
-10. No validation
 
-## Verification Checklist
-- [ ] Requirements validated
-- [ ] Standards applied
-- [ ] Design reviewed
-- [ ] Tests defined
-- [ ] Docs complete
-- [ ] Monitoring configured
-- [ ] Rollback planned
-- [ ] Security checked
-- [ ] Deploy verified
-- [ ] Stakeholder approved
+- **Manual console changes** → Configuration drift → All changes through IaC
+- **Over-privileged IAM** → Blast radius risk → Least privilege by default
+
+## Tags
+
+`aws, cost-optimization, cost, finops`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

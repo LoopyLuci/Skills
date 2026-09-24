@@ -13,45 +13,62 @@ metadata:
 
 # Climate Risk Assessment
 
-## Overview
-Conduct comprehensive climate risk assessments following TCFD, IPCC, and ISO 14090 frameworks. Covers physical risk identification (acute and chronic), transition risk evaluation (policy, technology, market, reputational), climate scenario analysis, and risk quantification for infrastructure, supply chain, and financial assets.
+"Use when conducting climate risk assessments."
 
-## When to Use
-- "Assess climate physical risks to infrastructure"
-- "Evaluate transition risks from climate policy"
-- "Conduct TCFD scenario analysis"
-- "Plan climate adaptation strategies"
-- "Screen portfolios for climate risk exposure"
+## Trigger
 
-## Physical Climate Risks
-| Risk Type | Category | Examples |
-|-----------|----------|----------|
-| Acute | Event-driven | Hurricanes, floods, wildfires |
-| Chronic | Gradual onset | Sea level rise, drought, heatwaves |
+Activate this skill when the user mentions:
+- climatetech,  risk-assessment,  tcfd,  physical-risk workflows or issues
+- Building, fixing, or optimizing climate risk assessment
+- Questions about climatetech best practices
 
-## Scenario Analysis Framework
-- 2°C Scenario: Moderate warming, policy action aligned
-- 4°C Scenario: High warming, limited climate action
+## Core Concepts
 
-## Transition Risk Categories
-1. Policy & Legal Risks
-2. Technology Risks
-3. Market Risks
-4. Reputation Risks
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
+
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. Using historical data only — must project future climate
-2. Ignoring supply chain cascading effects
-3. Not considering all scenario pathways
-4. Static analysis — not updating for climate progression
-5. Ignoring stranded asset risks
 
-## Verification Checklist
-- [ ] Physical hazards mapped for all locations
-- [ ] Transition risks assessed across scenarios
-- [ ] Financial impact quantified with confidence intervals
-- [ ] Scenario analysis covers 10+ year horizon
-- [ ] Supply chain risks evaluated and mapped
-- [ ] Risk owners and accountability defined
-- [ ] Integration into enterprise risk management
-- [ ] Stakeholder engagement completed
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
+
+## Tags
+
+`climatetech, risk-assessment, tcfd, physical-risk`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

@@ -12,67 +12,62 @@ metadata:
 
 # Monorepo Management
 
-Managing monorepo structures — from choosing tools (Nx, Turborepo, Lerna, pnpm workspaces) through dependency management, build caching, and CI optimization.
+"Use when managing monorepo structures and tooling."
 
-## When to Use
+## Trigger
 
-- Multiple packages/applications sharing code
-- Building a design system with shared components
-- Managing microservices in a single repository
-- Sharing TypeScript types, utilities, or configs across projects
+Activate this skill when the user mentions:
+- monorepo,  nx,  turborepo,  lerna,  pnpm,  workspace,  build-system workflows or issues
+- Building, fixing, or optimizing monorepo management
+- Questions about monorepo best practices
 
-## Tool Comparison
+## Core Concepts
 
-```python
-MONOREPO_TOOLS = {
-    'nx': {
-        'features': 'Build caching, dependency graph, distributed execution, generators',
-        'best_for': 'Large enterprises, multiple apps, complex dependency graphs',
-        'learning_curve': 'Medium',
-    },
-    'turborepo': {
-        'features': 'Remote caching, parallel builds, task orchestration',
-        'best_for': 'Medium-sized monorepos, Vercel ecosystem',
-        'learning_curve': 'Low',
-    },
-    'pnpm_workspaces': {
-        'features': 'Efficient disk usage, strict isolation, workspace protocol',
-        'best_for': 'Simple monorepos, npm ecosystem compatibility',
-        'learning_curve': 'Low',
-    },
-}
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-def mono_repo_structure() -> str:
-    return """
-my-mono-repo/
-├── apps/
-│   ├── web/        # Next.js app
-│   └── api/        # Express API
-├── packages/
-│   ├── shared/     # Shared types and utilities
-│   ├── ui/         # Design system components
-│   └── config/     # Shared ESLint, TS configs
-├── tools/
-│   └── scripts/    # Build and CI scripts
-├── pnpm-workspace.yaml
-├── nx.json
-└── package.json
-"""
-```
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **No build caching** — rebuilding all packages wastes CI time; invest in caching
-2. **Circular dependencies** — packages depending on each other; enforce with tooling
-3. **Slow git operations** — large monorepos have slow clone/fetch; use sparse checkout
-4. **No code ownership** — unclear who can modify which packages; use CODEOWNERS
-5. **Over-sharing** — packages coupling to internal packages too tightly; define public APIs
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Package dependency graph visualized and acyclic
-- [ ] Build caching configured (local + remote)
-- [ ] Affected command works for selective builds
-- [ ] Test execution scoped to affected packages
-- [ ] Code ownership defined per package
-- [ ] Linting/formatting consistent across all packages
+`monorepo, nx, turborepo, lerna, pnpm, workspace, build-system`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

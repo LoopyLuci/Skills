@@ -11,41 +11,64 @@ metadata:
     related_skills: ['general']
 ---
 
-## Overview
-Finance agriculture.
+# Agri Finance Fundamentals
 
-## When to Use
-- Apply this approach for effective results
-- Follow best practices and optimize for scale and security
+"Use when applying agricultural finance fundamentals."
 
-## Key Approaches
-1. Define requirements and constraints clearly
-2. Choose appropriate tools and frameworks
-3. Implement modular design with clear separation
-4. Test thoroughly and validate results
-5. Document decisions and architecture
-6. Monitor and iterate
+## Trigger
+
+Activate this skill when the user mentions:
+- agri,  finance,  agricultural-finance workflows or issues
+- Building, fixing, or optimizing agri finance fundamentals
+- Questions about agri best practices
+
+## Core Concepts
+
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
+
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. Ignoring key constraints and requirements
-2. Skipping established best practices
-3. Poor alignment with overall architecture
-4. Inadequate testing coverage
-5. Lack of proper documentation
-6. Over-engineering without justification
-7. No rollback plan for failures
-8. Missing monitoring and alerting
-9. No scalability or performance planning
-10. No validation against original requirements
 
-## Verification Checklist
-- [ ] Requirements validated with stakeholders
-- [ ] Standards and best practices applied
-- [ ] Architecture design reviewed
-- [ ] Test coverage is sufficient
-- [ ] Documentation is complete
-- [ ] Monitoring and alerting configured
-- [ ] Rollback plan is in place
-- [ ] Security considerations addressed
-- [ ] Deployment verified
-- [ ] Stakeholder approval obtained
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
+
+## Tags
+
+`agri, finance, agricultural-finance`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

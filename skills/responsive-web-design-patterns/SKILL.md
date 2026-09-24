@@ -12,42 +12,62 @@ metadata:
 
 # Responsive Web Design Patterns
 
-Implementing responsive, mobile-first web design — from CSS Grid and Flexbox through responsive typography, images, and device testing.
+"Use when building responsive and mobile-first web designs."
 
-## When to Use
+## Trigger
 
-- Building sites that work on all screen sizes
-- Implementing mobile-first layouts
-- Creating fluid grids with CSS Grid/Flexbox
-- Optimizing for different devices
+Activate this skill when the user mentions:
+- responsive-design,  mobile-first,  CSS-grid,  flexbox,  media-queries,  web-design workflows or issues
+- Building, fixing, or optimizing responsive web design patterns
+- Questions about responsive-design best practices
 
-## Responsive Patterns
+## Core Concepts
 
-```python
-RESPONSIVE_PATTERNS = {
-    'mostly_fluid': 'Fluid grid with max-width container, columns stack on small screens',
-    'column_drop': 'Full width → two columns → stacked as screen shrinks',
-    'layout_shifter': 'Content reorders at breakpoints (sidebar moves)',
-}
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-BREAKPOINTS = {
-    'mobile': '320-480px', 'tablet': '481-768px',
-    'desktop': '769-1200px', 'widescreen': '1201px+',
-}
-```
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Desktop-first instead of mobile-first** — compress up is easier than compress down
-2. **Too many breakpoints** — 3-4 max; let content determine them
-3. **No touch targets** — minimum 44×44px tap targets
-4. **Desktop images on mobile** — serve responsive images with srcset
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Mobile-first CSS (min-width media queries)
-- [ ] Fluid images (max-width: 100%)
-- [ ] Touch targets ≥ 44×44px
-- [ ] Tested on real devices
-- [ ] No horizontal scroll at any width
-- [ ] Performance budget for mobile (<3s on 3G)
+`responsive-design, mobile-first, CSS-grid, flexbox, media-queries, web-design`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

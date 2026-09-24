@@ -10,143 +10,62 @@ metadata:
     related_skills: [rag-system-design, recommender-systems-building, nlp-techniques, knowledge-management-systems]
 ---
 
-# Embedding Models and Vector Search
+# Embedding Models Patterns
 
-Training, evaluating, and deploying embedding models with vector search for similarity, retrieval, and semantic search applications.
+"Use when training embeddings and vector search indexes."
 
-## When to Use
+## Trigger
 
-- Building semantic search or RAG (retrieval augmented generation) systems
-- Implementing similarity-based recommendations (item2vec)
-- Clustering or categorizing text/images by semantic similarity
-- Building deduplication or near-duplicate detection systems
-- Reducing dimensionality while preserving semantic relationships
+Activate this skill when the user mentions:
+- embeddings,  vector-search,  similarity,  ANN,  faiss,  sentence-transformers workflows or issues
+- Building, fixing, or optimizing embedding models patterns
+- Questions about embeddings best practices
 
-## Embedding Model Training
+## Core Concepts
 
-### Contrastive Learning (SimCSE)
+- Model selection and evaluation
+- Feature engineering and data prep
+- Training methodology
+- Deployment and serving patterns
+- Monitoring and drift detection
 
-```python
-import torch
-import torch.nn as nn
-import torch.nn.functional as F
+## Step-by-Step Workflow
 
-class SimCSETrainer:
-    """Unsupervised SimCSE: uses dropout as data augmentation.
-    Same sentence through model twice = positive pair."""
-    
-    def __init__(self, model, temperature=0.05):
-        self.model = model
-        self.temp = temperature
-    
-    def train_step(self, batch):
-        (input_ids1, mask1), (input_ids2, mask2) = batch
-        
-        z1 = self.model(input_ids1, mask1)
-        z2 = self.model(input_ids2, mask2)
-        
-        batch_size = z1.shape[0]
-        reps = torch.cat([z1, z2], dim=0)
-        sim = reps @ reps.T / self.temp
-        
-        labels = torch.arange(batch_size, device=z1.device)
-        labels = torch.cat([labels + batch_size, labels])
-        
-        mask = ~torch.eye(2 * batch_size, dtype=torch.bool, device=z1.device)
-        sim = sim[mask].view(2 * batch_size, -1)
-        
-        return F.cross_entropy(sim, labels)
-```
+1. **Frame** — Define problem, success metric, baseline
+   - Expected: Clear problem statement
+2. **Explore** — EDA, feature analysis
+   - Expected: Understanding of data relationships
+3. **Build** — Train models, track experiments
+   - Expected: Logged reproducible experiments
+4. **Evaluate** — Test on holdout, check bias
+   - Expected: Evaluation report with confidence
+5. **Deploy** — Serve with monitoring
+   - Expected: Production model with drift detection
 
-### Mean Pooling for Embeddings
+## Tools & Technologies
 
-```python
-class MeanPoolingEmbedding(nn.Module):
-    """Transformer encoder with mean pooling over token embeddings."""
-    
-    def __init__(self, encoder):
-        super().__init__()
-        self.encoder = encoder
-    
-    def forward(self, input_ids, attention_mask=None):
-        outputs = self.encoder(input_ids, attention_mask=attention_mask)
-        token_embeddings = outputs.last_hidden_state
-        if attention_mask is None:
-            return token_embeddings.mean(dim=1)
-        mask = attention_mask.unsqueeze(-1).float()
-        return (token_embeddings * mask).sum(dim=1) / mask.sum(dim=1)
-```
+- Experiment tracking
+- Model registry
+- Feature store
+- Model serving
 
-## Vector Search with FAISS
+## Best Practices
 
-```python
-import faiss
-import numpy as np
-
-def build_index(embeddings, index_type='IVF'):
-    """Build a FAISS vector search index."""
-    dim = embeddings.shape[1]
-    n = embeddings.shape[0]
-    
-    if n < 1000:
-        return faiss.IndexFlatIP(dim)  # Exact search
-    
-    elif index_type == 'IVF':
-        nlist = int(4 * np.sqrt(n))
-        quantizer = faiss.IndexFlatIP(dim)
-        index = faiss.IndexIVFFlat(quantizer, dim, nlist, faiss.METRIC_INNER_PRODUCT)
-        index.train(embeddings)
-    
-    elif index_type == 'HNSW':
-        index = faiss.IndexHNSWFlat(dim, 32)
-        index.hnsw.efConstruction = 200
-    
-    index.add(embeddings)
-    return index
-
-def search(index, query_emb, k=10):
-    if query_emb.ndim == 1:
-        query_emb = query_emb.reshape(1, -1)
-    scores, indices = index.search(query_emb, k)
-    return scores[0], indices[0]
-```
-
-## Evaluation
-
-```python
-def evaluate_retrieval(embeddings, queries, relevant_docs, k=10):
-    """Mean Reciprocal Rank @ k."""
-    index = build_index(embeddings)
-    mrr = 0
-    for q_emb, relevant in zip(queries, relevant_docs):
-        _, indices = search(index, q_emb, k)
-        for rank, idx in enumerate(indices, 1):
-            if idx in relevant:
-                mrr += 1.0 / rank; break
-    return mrr / len(queries)
-```
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Embedding drift** — model updates change vectors; version embeddings
-2. **Normalization** — most metrics assume normalized vectors; always normalize
-3. **Index staleness** — new items not indexed; incremental indexing needed
-4. **Dimensionality** — above ~1000 dims distances concentrate; use 128-768
-5. **Cold start** — new items without embeddings; use content-based init
-6. **Memory** — >10M vectors need significant RAM; use PQ compression
+- **Data leakage** → Overly optimistic metrics → Strict temporal splits
+- **No monitoring** → Silent degradation → Monitor prediction distribution
 
-## Verification Checklist
+## Tags
 
-- [ ] Cosine similarity works on known similar/dissimilar pairs
-- [ ] FAISS returns relevant results (manual top-5 check)
-- [ ] Dimension appropriate for dataset size
-- [ ] Vectors normalized before indexing
-- [ ] Search latency <50ms for interactive use
-- [ ] Index updated regularly
+`embeddings, vector-search, similarity, ANN, faiss, sentence-transformers`
 
-## See Also
+---
 
-- rag-system-design — using embeddings for RAG
-- recommender-systems-building — embedding-based recommendations
-- nlp-techniques — text embedding models
-- knowledge-management-systems — organizing embedded knowledge
+*LoopyLuci/Skills - 2026-09-24*

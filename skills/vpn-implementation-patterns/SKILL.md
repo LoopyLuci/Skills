@@ -10,68 +10,64 @@ metadata:
     related_skills: [wireguard-vpn-controller, network-segmentation-strategies, firewall-rules-engine, identity-access-management]
 ---
 
-# VPN Implementation Patterns
+# Vpn Implementation Patterns
 
-Implementing VPN tunnels and remote access — from WireGuard and OpenVPN through IPsec/IKEv2, site-to-site VPNs, and remote access design patterns.
+"Use when implementing VPN tunnels and remote access."
 
-## When to Use
+## Trigger
 
-- Providing secure remote access for employees
-- Connecting branch offices via site-to-site VPN
-- Building secure communication between cloud and on-premise
-- Implementing zero-trust network access alongside VPN
-- Replacing legacy VPN with modern alternatives
+Activate this skill when the user mentions:
+- VPN,  tunnel,  WireGuard,  OpenVPN,  IPsec,  remote-access,  site-to-site workflows or issues
+- Building, fixing, or optimizing vpn implementation patterns
+- Questions about VPN best practices
 
-## VPN Protocols
+## Core Concepts
 
-```python
-VPN_PROTOCOLS = {
-    'wireguard': {
-        'strength': 'Modern, fast, simple, kernel-level, audited',
-        'use_case': 'General purpose, site-to-site, remote access',
-        'setup': 'Minimal config, single file, public/private keys',
-    },
-    'openvpn': {
-        'strength': 'Mature, widely supported, rich auth options',
-        'use_case': 'Remote access, enterprise, complex auth needs',
-        'setup': 'Certificate-based, more config options',
-    },
-    'ipsec': {
-        'strength': 'Industry standard, hardware offload, strong encryption',
-        'use_case': 'Site-to-site, cloud-to-on-premise, legacy compatibility',
-        'setup': 'IKEv2 with strongSwan or built-in OS support',
-    },
-}
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-# WireGuard config template
-WIREGUARD_CONFIG = """
-[Interface]
-PrivateKey = <server-private-key>
-Address = 10.0.0.1/24
-ListenPort = 51820
+## Step-by-Step Workflow
 
-[Peer]
-PublicKey = <client-public-key>
-AllowedIPs = 10.0.0.2/32
-"""
-```
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Split tunneling not configured** — all traffic through VPN slows internet access; route only private ranges
-2. **Key management** — WireGuard keys on compromised clients; implement key rotation
-3. **No failover** — single VPN server = single point of failure; cluster or have backup
-4. **MTU issues** — VPN encapsulation reduces MTU; adjust MTU (typically 1420 for WireGuard)
-5. **Performance bottleneck** — VPN server CPU can't handle throughput; consider kernel-level WireGuard
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Protocol selected (WireGuard, OpenVPN, IPsec)
-- [ ] Split tunneling configured (only route private IPs)
-- [ ] Authentication method defined (keys, certificates, SSO)
-- [ ] MTU configured correctly
-- [ ] Firewall allows VPN protocol on correct port
-- [ ] DNS configuration for internal resources
-- [ ] Monitoring on connection count, bandwidth, errors
-- [ ] Revocation process for compromised devices
-- [ ] Failover/high availability for production VPN
+`VPN, tunnel, WireGuard, OpenVPN, IPsec, remote-access, site-to-site`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

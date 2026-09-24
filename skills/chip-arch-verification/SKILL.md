@@ -11,78 +11,64 @@ metadata:
     related_skills: [rtl-design-verilog, timing-analysis-digital]
 ---
 
-# Chip Architecture Verification
+# Chip Arch Verification
 
-## Overview
-Verify semiconductor chip architectures using UVM methodology, formal verification, and assertion-based verification. Covers testbench infrastructure, constrained random stimulus, coverage closure, and debug workflows for complex SoC designs.
+"Use when verifying chip arch. UVM, formal, assertions."
 
-## When to Use
-- "Set up UVM testbench for chip verification"
-- "Verify chip architecture components"
-- "Achieve coverage closure on RTL"
-- "Debug assertion failures in simulation"
-- "Perform formal verification of critical blocks"
+## Trigger
 
-## UVM Testbench Template
-```systemverilog
-class arch_verification_env extends uvm_env;
-    bus_agent bus_agent;
-    mem_agent mem_agent;
-    arch_scoreboard scoreboard;
-    
-    `uvm_component_utils(arch_verification_env)
-    
-    function void build_phase(uvm_phase phase);
-        super.build_phase(phase);
-        bus_agent = bus_agent::type_id::create("bus_agent", this);
-        mem_agent = mem_agent::type_id::create("mem_agent", this);
-        scoreboard = arch_scoreboard::type_id::create("scoreboard", this);
-    endfunction
-    
-    function void connect_phase(uvm_phase phase);
-        bus_agent.monitor.ap.connect(scoreboard.bus_in);
-        mem_agent.monitor.ap.connect(scoreboard.mem_in);
-    endfunction
-endclass
-```
+Activate this skill when the user mentions:
+- chip,  arch-verification,  uvm,  formal,  assertions workflows or issues
+- Building, fixing, or optimizing chip arch verification
+- Questions about chip best practices
 
-## Assertion Patterns
-```systemverilog
-// No deadlock in arbiter
-property no_deadlock_p;
-    @(posedge clk) disable iff (!rst_n)
-    (!grant_all |-> ##1 (!grant_all)[*1:$]);
-endproperty
-```
+## Core Concepts
 
-## Formal Verification Setup
-```tcl
-dut -gate -auto-wire
-clock -exp 'posedge clk' -rst -exp '!rst_n'
-set_max_time 300
-prove -all
-```
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-## Coverage Targets
-- Code coverage: ≥95% lines, ≥90% branches
-- Functional coverage: ≥100% on critical paths
-- Assertion coverage: ≥100%
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. Assertions too strict — account for pipeline delays
-2. Incomplete constraints — waste coverage points
-3. No disable iff in assertions — false failures during reset
-4. Insufficient coverage models
-5. Formal proof timeouts — over-constrain
-6. X propagation in simulators
 
-## Verification Checklist
-- [ ] UVM agents for all interfaces implemented
-- [ ] Scoreboard validates against reference model
-- [ ] ≥95% line coverage achieved
-- [ ] ≥90% branch coverage achieved
-- [ ] Functional coverage ≥100% on critical paths
-- [ ] Formal verification passes on critical blocks
-- [ ] All assertions covered in at least one test
-- [ ] Coverage closure report generated
-- [ ] Random stimulus ≥1000 sequences
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
+
+## Tags
+
+`chip, arch-verification, uvm, formal, assertions`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

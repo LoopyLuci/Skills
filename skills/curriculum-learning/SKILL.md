@@ -12,68 +12,62 @@ metadata:
 
 # Curriculum Learning
 
-Implementing curriculum learning strategies — from easy-to-hard training through pacing functions, self-paced learning, and anti-curriculum approaches.
+"Use when implementing curriculum learning strategies."
 
-## When to Use
+## Trigger
 
-- Training models that benefit from gradual complexity
-- Improving convergence speed and final performance
-- Reducing overfitting by starting with easier examples
-- Training on noisy data by filtering as curriculum progresses
-- RL environments with increasing difficulty levels
+Activate this skill when the user mentions:
+- curriculum-learning,  training-strategy,  easy-to-hard,  progressive-learning workflows or issues
+- Building, fixing, or optimizing curriculum learning
+- Questions about curriculum-learning best practices
 
-## Curriculum Strategies
+## Core Concepts
 
-```python
-CURRICULUM_STRATEGIES = {
-    'easy_to_hard': 'Start with easy examples, gradually increase difficulty',
-    'self_paced': 'Model selects examples with lowest loss first, expands threshold',
-    'pacing_function': 'Control difficulty exposure rate (linear, exponential, step)',
-    'anti_curriculum': 'Hardest examples first (sometimes works better)',
-    'automatic': 'Use auxiliary model to score difficulty automatically',
-}
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-class CurriculumLearner:
-    """Train models with curriculum learning."""
-    def __init__(self, model, difficulty_scores: np.array):
-        self.model = model
-        self.scores = difficulty_scores  # higher = more difficult
-        self.indices = np.argsort(self.scores)  # easiest first
-    
-    def train_epoch(self, epoch: int, total_epochs: int, 
-                    pacing: str = 'linear'):
-        """Train on increasing fraction of data based on pacing."""
-        if pacing == 'linear':
-            fraction = min(1.0, (epoch + 1) / total_epochs)
-        elif pacing == 'exponential':
-            fraction = min(1.0, 0.1 * (1.5 ** epoch))
-        elif pacing == 'step':
-            fraction = min(1.0, (epoch // 5 + 1) * 0.25)
-        else:
-            fraction = 1.0
-        
-        n_samples = max(10, int(len(self.indices) * fraction))
-        current_indices = self.indices[:n_samples]
-        
-        # Train on selected subset
-        loss = self.model.partial_fit(current_indices)
-        return {'fraction': fraction, 'n_samples': n_samples, 'loss': loss}
-```
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Easy definition is hard** — defining what makes an example "easier" is non-trivial
-2. **No benefit for simple tasks** — curriculum helps most for complex tasks; baseline tests first
-3. **Curriculum too fast** — moving to hard examples too quickly loses benefits; tune pacing
-4. **Anti-curriculum surprise** — sometimes hard examples first works better for certain architectures
-5. **Domain-specific** — what works for vision may not work for NLP; experiment
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Difficulty scoring method defined (loss, length, noise, confidence)
-- [ ] Pacing function chosen (linear, exponential, step, adaptive)
-- [ ] Training epochs planned for curriculum schedule
-- [ ] Baseline: standard training (no curriculum) for comparison
-- [ ] Curriculum benefit measured (convergence speed, final accuracy)
-- [ ] Ablation: test anti-curriculum (hardest first)
-- [ ] Curriculum schedule tuned (not too fast, not too slow)
+`curriculum-learning, training-strategy, easy-to-hard, progressive-learning`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

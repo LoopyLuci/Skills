@@ -11,43 +11,62 @@ metadata:
     related_skills: [general]
 ---
 
-## Overview
-Analyze email performance.
+# Email Marketing Analytics Troubleshooting
 
-## When to Use
-- Design and implement
-- Apply best practices
-- Optimize performance
-- Troubleshoot issues
+"Use when applying email analytics troubleshooting."
 
-## Key Approaches
-1. Define requirements
-2. Choose tools
-3. Implement modular
-4. Test thoroughly
-5. Document decisions
-6. Monitor results
+## Trigger
+
+Activate this skill when the user mentions:
+- email,  analytics,  data workflows or issues
+- Building, fixing, or optimizing email marketing analytics troubleshooting
+- Questions about email best practices
+
+## Core Concepts
+
+- Data modeling (dimensional, normalized)
+- ETL/ELT patterns and idempotency
+- Data quality and validation
+- Lineage and cataloging
+- Privacy and data protection
+
+## Step-by-Step Workflow
+
+1. **Discover** — Profile data, assess quality
+   - Expected: Data profile report with quality scores
+2. **Design** — Model for use case
+   - Expected: Approved data model
+3. **Build** — Implement pipelines with testing
+   - Expected: Idempotent pipelines with quality checks
+4. **Validate** — Reconcile, test business rules
+   - Expected: Validated data with quality metrics
+5. **Operate** — Monitor, optimize, iterate
+   - Expected: Monitored pipelines with SLA tracking
+
+## Tools & Technologies
+
+- dbt
+- Airflow/Prefect
+- Spark/DuckDB
+- Data catalogs
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. Ignoring constraints
-2. Skipping standards
-3. Poor alignment
-4. Inadequate testing
-5. No documentation
-6. Over-engineering
-7. No rollback
-8. No monitoring
-9. No scalability
-10. No validation
 
-## Verification Checklist
-- [ ] Requirements validated
-- [ ] Standards applied
-- [ ] Design reviewed
-- [ ] Tests defined
-- [ ] Docs complete
-- [ ] Monitoring configured
-- [ ] Rollback planned
-- [ ] Security checked
-- [ ] Deploy verified
-- [ ] Stakeholder approved
+- **No data quality gates** → Garbage in, garbage out → Validate at every stage
+- **Monolithic pipelines** → Hard to debug → Small idempotent tasks
+
+## Tags
+
+`email, analytics, data`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

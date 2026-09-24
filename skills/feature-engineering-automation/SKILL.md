@@ -12,112 +12,62 @@ metadata:
 
 # Feature Engineering Automation
 
-Automating feature engineering for ML pipelines — from automated feature generation and selection through feature stores, embedding generation, and feature importance analysis.
+"Use when automating feature engineering for ML models."
 
-## When to Use
+## Trigger
 
-- Engineering features for tabular ML models at scale
-- Building automated feature pipelines for production
-- Creating reusable feature definitions for serving
-- Selecting the most important features from hundreds of candidates
-- Implementing feature stores for consistency across training and serving
+Activate this skill when the user mentions:
+- feature-engineering,  automated-features,  feature-tools,  feature-store,  feature-selection workflows or issues
+- Building, fixing, or optimizing feature engineering automation
+- Questions about feature-engineering best practices
 
-## Automated Feature Generation
+## Core Concepts
 
-```python
-import pandas as pd
-import numpy as np
-from itertools import combinations
-from typing import List, Callable
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-class AutoFeatureEngineer:
-    """Generate features automatically from raw data."""
-    
-    TRANSFORMATIONS = {
-        'log': np.log1p,
-        'sqrt': np.sqrt,
-        'square': lambda x: x**2,
-        'inverse': lambda x: 1 / (x.abs() + 1),
-    }
-    
-    @staticmethod
-    def generate_numeric_features(df: pd.DataFrame, 
-                                   numerical_cols: List[str]) -> pd.DataFrame:
-        """Generate derived features from numerical columns."""
-        new_features = df.copy()
-        
-        for col in numerical_cols:
-            # Unary transformations
-            for name, func in AutoFeatureEngineer.TRANSFORMATIONS.items():
-                try:
-                    new_features[f'{col}_{name}'] = func(df[col])
-                except: pass
-        
-        # Pairwise interactions (top 10 highest correlation pairs)
-        if len(numerical_cols) >= 2:
-            for a, b in list(combinations(numerical_cols, 2))[:10]:
-                new_features[f'{a}_x_{b}'] = df[a] * df[b]
-                new_features[f'{a}_plus_{b}'] = df[a] + df[b]
-        
-        # Binning
-        for col in numerical_cols[:3]:
-            new_features[f'{col}_binned'] = pd.qcut(df[col], q=5, labels=False, duplicates='drop')
-        
-        return new_features
-    
-    @staticmethod
-    def generate_date_features(df: pd.DataFrame, 
-                                date_cols: List[str]) -> pd.DataFrame:
-        """Generate features from date columns."""
-        new_features = df.copy()
-        for col in date_cols:
-            dates = pd.to_datetime(df[col])
-            new_features[f'{col}_year'] = dates.dt.year
-            new_features[f'{col}_month'] = dates.dt.month
-            new_features[f'{col}_day'] = dates.dt.day
-            new_features[f'{col}_dayofweek'] = dates.dt.dayofweek
-            new_features[f'{col}_quarter'] = dates.dt.quarter
-            new_features[f'{col}_is_weekend'] = (dates.dt.dayofweek >= 5).astype(int)
-        return new_features
-```
+## Step-by-Step Workflow
 
-## Feature Selection
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
 
-```python
-class FeatureSelector:
-    """Select most important features from generated candidates."""
-    
-    @staticmethod
-    def mutual_information(X: pd.DataFrame, y: pd.Series, 
-                            top_k: int = 20) -> List[str]:
-        """Select top K features by mutual information."""
-        from sklearn.feature_selection import mutual_info_classif
-        mi_scores = mutual_info_classif(X.fillna(0), y)
-        top_indices = np.argsort(mi_scores)[-top_k:][::-1]
-        return [X.columns[i] for i in top_indices]
-    
-    @staticmethod
-    def feature_importance(model, X: pd.DataFrame, 
-                           top_k: int = 20) -> List[str]:
-        """Select top K features from trained model."""
-        importances = model.feature_importances_
-        top_indices = np.argsort(importances)[-top_k:][::-1]
-        return [X.columns[i] for i in top_indices]
-```
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Feature leakage** — generating features using future information; never use target in features
-2. **Too many features** — curse of dimensionality; use selection to keep top 20-50
-3. **Training/serving skew** — features computed differently at training vs serving; use feature store
-4. **Expensive features** — features that require complex joins slow inference; measure cost
-5. **Correlated features** — high multicollinearity; use variance inflation factor to detect
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Feature generation produces reasonable candidates (not random noise)
-- [ ] Feature selection reduces dimensionality to manageable number
-- [ ] No future leakage (time series: no future data in features)
-- [ ] Training and serving feature computation identical
-- [ ] Feature importance correlated with business understanding
-- [ ] Feature store (or equivalent) for consistent offline/online features
+`feature-engineering, automated-features, feature-tools, feature-store, feature-selection`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

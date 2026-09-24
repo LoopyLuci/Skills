@@ -10,69 +10,62 @@ metadata:
     related_skills: [ml-deployment-serving, model-compression-techniques, knowledge-distillation, ml-pipeline-design]
 ---
 
-# ML Serving Optimization
+# Ml Serving Optimization
 
-Optimizing ML model serving for production — from latency reduction through throughput optimization, model compilation, and hardware-specific acceleration.
+"Use when optimizing ML model serving and inference."
 
-## When to Use
+## Trigger
 
-- Reducing inference latency for real-time applications
-- Increasing throughput for batch inference
-- Deploying models on resource-constrained devices
-- Reducing serving infrastructure costs
-- Compiling models for specific hardware (GPU, CPU, mobile, edge)
+Activate this skill when the user mentions:
+- model-serving,  inference-optimization,  quantization,  batching,  ONNX,  TensorRT,  Triton workflows or issues
+- Building, fixing, or optimizing ml serving optimization
+- Questions about model-serving best practices
 
-## Optimization Techniques
+## Core Concepts
 
-```python
-from typing import Dict, List
-import time
-import numpy as np
+- Model selection and evaluation
+- Feature engineering and data prep
+- Training methodology
+- Deployment and serving patterns
+- Monitoring and drift detection
 
-class InferenceOptimizer:
-    """Profile and optimize model inference."""
-    
-    OPTIMIZATION_TECHNIQUES = {
-        'quantization': 'INT8/FP16 quantization reduces model size 2-4x',
-        'pruning': 'Remove unimportant weights, reduces compute',
-        'batching': 'Process multiple inputs simultaneously for throughput',
-        'compilation': 'XLA/ONNX Runtime/TensorRT compile for target hardware',
-        'caching': 'Cache frequent inference results (when deterministic)',
-        'distillation': 'Smaller student model approximates larger teacher',
-    }
-    
-    @staticmethod
-    def benchmark(model, input_data, n_runs: int = 100) -> Dict:
-        """Benchmark inference performance."""
-        latencies = []
-        for _ in range(n_runs):
-            start = time.time()
-            _ = model(input_data)
-            latencies.append((time.time() - start) * 1000)
-        
-        return {
-            'avg_latency_ms': round(np.mean(latencies), 2),
-            'p50_ms': round(np.percentile(latencies, 50), 2),
-            'p95_ms': round(np.percentile(latencies, 95), 2),
-            'p99_ms': round(np.percentile(latencies, 99), 2),
-            'throughput_per_sec': round(1000 / np.mean(latencies), 1),
-        }
-```
+## Step-by-Step Workflow
+
+1. **Frame** — Define problem, success metric, baseline
+   - Expected: Clear problem statement
+2. **Explore** — EDA, feature analysis
+   - Expected: Understanding of data relationships
+3. **Build** — Train models, track experiments
+   - Expected: Logged reproducible experiments
+4. **Evaluate** — Test on holdout, check bias
+   - Expected: Evaluation report with confidence
+5. **Deploy** — Serve with monitoring
+   - Expected: Production model with drift detection
+
+## Tools & Technologies
+
+- Experiment tracking
+- Model registry
+- Feature store
+- Model serving
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Premature optimization** — optimize after profiling, not before; measure first
-2. **Hardware mismatch** — optimizing for CPU but deploying on GPU; match target hardware
-3. **Numerical degradation** — INT8 quantization can hurt accuracy; validate after optimization
-4. **Batching side effects** — larger batches improve throughput but increase latency
-5. **No load testing** — benchmark under production-like load, not just single requests
+- **Data leakage** → Overly optimistic metrics → Strict temporal splits
+- **No monitoring** → Silent degradation → Monitor prediction distribution
 
-## Verification Checklist
+## Tags
 
-- [ ] Baseline inference latency measured before optimization
-- [ ] Optimization technique matches deployment hardware
-- [ ] Accuracy validated after quantization/pruning
-- [ ] Load testing with production-like traffic patterns
-- [ ] Batching strategy tuned (dynamic vs static batch)
-- [ ] Model compilation tested (ONNX, TensorRT)
-- [ ] Cost per inference tracked (before and after optimization)
+`model-serving, inference-optimization, quantization, batching, ONNX, TensorRT, Triton`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

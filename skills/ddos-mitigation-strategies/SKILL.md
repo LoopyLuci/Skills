@@ -10,74 +10,64 @@ metadata:
     related_skills: [waf-web-application-firewall, security-incident-response, network-ids-ips-patterns, bgp-routing-patterns]
 ---
 
-# DDoS Mitigation Strategies
+# Ddos Mitigation Strategies
 
-Implementing DDoS protection and mitigation — from volumetric and protocol attacks through application-layer mitigation, scrubbing centers, and incident response.
+"Use when implementing DDoS protection and mitigation."
 
-## When to Use
+## Trigger
 
-- Protecting web applications and APIs from DDoS attacks
-- Building DDoS response playbooks
-- Selecting DDoS mitigation services
-- Implementing rate limiting and traffic filtering
-- Designing resilient infrastructure against volumetric attacks
+Activate this skill when the user mentions:
+- ddos,  mitigation,  protection,  volumetric,  scrubbing,  rate-limiting workflows or issues
+- Building, fixing, or optimizing ddos mitigation strategies
+- Questions about ddos best practices
 
-## Attack Types and Mitigations
+## Core Concepts
 
-```python
-DDoS_VECTORS = {
-    'volumetric': {
-        'example': 'UDP amplification, ICMP flood, DNS reflection',
-        'scale': 'Hundreds of Gbps to Tbps',
-        'mitigation': 'Cloud scrubbing centers, BGP black-hole, rate limiting',
-    },
-    'protocol': {
-        'example': 'SYN flood, ACK flood, fragmented packet attack',
-        'scale': 'Millions of packets per second',
-        'mitigation': 'SYN cookies, connection tracking, TCP stack hardening',
-    },
-    'application': {
-        'example': 'HTTP flood, slow loris, API abuse, query flooding',
-        'scale': 'Hundreds of thousands of requests per second',
-        'mitigation': 'WAF rate limiting, CAPTCHA, challenge pages, bot detection',
-    },
-}
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-class DDoSResponder:
-    """Automated DDoS detection and mitigation response."""
-    def __init__(self, threshold_pps: int = 500000):
-        self.threshold = threshold_pps
-        self.mitigations = []
-    
-    def analyze_traffic(self, current_pps: int, current_bps: int) -> str:
-        if current_pps > self.threshold:
-            return self._trigger_mitigation('volumetric')
-        return 'normal'
-    
-    def _trigger_mitigation(self, attack_type: str):
-        actions = {
-            'volumetric': 'Enable BGP blackhole, activate cloud scrubber',
-            'protocol': 'Enable SYN cookies, rate-limit new connections',
-            'application': 'Enable WAF challenge, rate-limit per-IP',
-        }
-        return actions.get(attack_type, 'Monitor')
-```
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **No baseline** — don't know what normal traffic looks like; establish baseline
-2. **Mitigation false positives** — rate-limiting too aggressively blocks legitimate users
-3. **Single mitigation layer** — only cloud or only on-premise; defense in depth
-4. **Late detection** — by the time you detect, impact has occurred; use always-on monitoring
-5. **No testing** — mitigation mechanisms fail when needed if not tested regularly
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Normal traffic baseline established
-- [ ] Cloud-based scrubbing service (Cloudflare, AWS Shield, Akamai, etc.)
-- [ ] On-premise rate limiting and filtering
-- [ ] BGP blackhole / RTBH configured
-- [ ] WAF with DDoS rules enabled
-- [ ] Auto-scaling for legitimate traffic increase
-- [ ] DDoS response playbook documented and tested
-- [ ] Tabletop exercises conducted quarterly
+`ddos, mitigation, protection, volumetric, scrubbing, rate-limiting`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

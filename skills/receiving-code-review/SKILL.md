@@ -7,69 +7,62 @@ related_skills: [finishing-a-development-branch, code-review-checklist]
 
 # Receiving Code Review
 
-## Overview
+Use when receiving and integrating feedback from code reviews
 
-Code review is about improving the codebase, not about being right. Approach feedback with an open mind — the reviewer is investing time to help make the system better.
+## Trigger
 
-## Mindset
+Activate this skill when the user mentions:
+- code-review,  feedback,  pull-request,  quality workflows or issues
+- Building, fixing, or optimizing receiving code review
+- Questions about code-review best practices
 
-- **Don't take it personally.** Feedback is about the code, not about you.
-- **Assume positive intent.** The reviewer wants the codebase to be better.
-- **You are not your code.** Separation of identity from output is healthy.
-- **The reviewer is right more often than you think.** Even when you disagree, they've identified something worth discussing.
-- **Goal:** Merge better code, not "win" arguments.
+## Core Concepts
 
-## Process
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-### 1. Read Everything First
+## Step-by-Step Workflow
 
-Read all comments before responding. A comment that seems unreasonable may make sense in context of later comments.
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
 
-### 2. Categorize Each Comment
+## Tools & Technologies
 
-| Type | Response |
-|------|----------|
-| Clear bug / issue | Fix it. Thank the reviewer. |
-| Style preference | Consider adopting for consistency. Don't argue style. |
-| Suggestion / alternative | Evaluate trade-offs. Respond with your reasoning. |
-| Clarification question | Answer clearly. Update comments/docs if needed. |
-| You disagree | Explain your reasoning politely. Be open to being wrong. |
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
 
-### 3. Respond and Fix
+## Best Practices
 
-- Thank the reviewer for each comment
-- Fix issues or explain why you won't
-- Ask clarifying questions if needed
-- Push fixes as new commits (don't rebase until review is done)
-
-### 4. Request Re-review
-
-After addressing all feedback, request another look.
-
-## Code Example: Good Review Response
-
-```
-Reviewer: "This function is doing too much. Consider splitting it."
-
-You: "Good point. I've extracted the validation logic into
-validateInput() and the formatting into formatOutput(). The
-main function now only orchestrates the two. PTAL."
-```
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-| Pitfall | Solution |
-|---------|----------|
-| Taking feedback personally | Remember: feedback is about the code, not you |
-| Arguing every point | Choose your battles — some things aren't worth contesting |
-| Ignoring comments | Acknowledge every comment, even to say "fixed" |
-| Rebasing during review | Add fix commits — rebase only after approval |
-| Defensive responses | Thank the reviewer, then address the substance |
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Read all reviewer comments before responding
-- [ ] Each comment acknowledged and addressed
-- [ ] Fixes committed (not squashed) for reviewer clarity
-- [ ] Re-review requested after addressing feedback
-- [ ] All discussions resolved before merge
+`code-review, feedback, pull-request, quality`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

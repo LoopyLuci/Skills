@@ -13,66 +13,62 @@ metadata:
 
 # Aerospace Systems Engineering
 
-## Overview
-Design, develop, and validate safety-critical aerospace systems using systems engineering, risk management, and certification processes. Covers requirements engineering, system architecture, safety analysis (FMECA/HAZOP), testing/validation, and aerospace standards (DO-178C, DO-254, ARP4754A).
+"Use when engineering aerospace systems. Safety, risk."
 
-## When to Use
-- "Design aerospace flight control system"
-- "Perform safety analysis for aircraft systems"
-- "Plan DO-178C software certification"
-- "Manage aerospace requirements traceability"
-- "Test aerospace systems with fault injection"
+## Trigger
 
-## Systems Engineering V-Model (ARP4754A)
-```mermaid
-V-Model: System Requirements → Architecture → Design → Implementation → Testing ← Verification ← Validation
-```
+Activate this skill when the user mentions:
+- aerospace,  systems-engineering,  safety-critical,  requirements workflows or issues
+- Building, fixing, or optimizing aerospace systems engineering
+- Questions about aerospace best practices
 
-### Requirements Traceability
-```python
-class AerospaceReqTraceability:
-    def __init__(self):
-        self.traceability_matrix = {}
-    
-    def add_requirement(self, req_id, safety_level, source="DO-178C"):
-        """
-        Add aerospace requirement with safety level (A-E)
-        """
-        self.traceability_matrix[req_id] = {
-            "safety_level": safety_level,  # A=Catastrophic, B=Hazardous, C=Major, D=Minor, E=None
-            "source": source,
-            "design_elements": [],
-            "test_cases": [],
-            "verification_method": None
-        }
-```
+## Core Concepts
 
-## Safety Analysis Methods
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-### Functional Hazard Assessment (FHA)
-| Condition | Level | Description |
-|-----------|-------|-------------|
-| Catastrophic | A | Multiple fatalities |
-| Hazardous | B | Serious injury |
-| Major | C | Minor injury |
-| Minor | D | Passenger discomfort |
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. **Insufficient requirements traceability** — no linkage from req to design to test
-2. **Not addressing all hazard conditions** — incomplete FHA analysis
-3. **Wrong DO-178C level assignment** — safety level misidentified
-4. **Insufficient test coverage** — especially MC/DC for Level A
-5. **Poor configuration management** — lost changes during development
-6. **Not conducting peer reviews** — required for all levels per DO-178C
-7. **Inadequate safety margins** — hardware margins too tight
-8. **Not planning contingencies** — off-nominal conditions not tested
-9. **Skipping fault injection testing** — latent failures undetected
-10. **Not maintaining certification artifacts** — audit trail gaps
 
-## Verification Checklist
-- [ ] Requirements traceable per DO-178C
-- [ ] FHA/FTA completed for all safety levels
-- [ ] Test coverage meets software level (MC/DC for Level A)
-- [ ] Configuration management system active
-- [ ] Peer reviews documented per DO-178C
-- [ ] Fault injection testing completed
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
+
+## Tags
+
+`aerospace, systems-engineering, safety-critical, requirements`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

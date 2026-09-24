@@ -11,33 +11,62 @@ metadata:
     related_skills: ['general']
 ---
 
-## Overview
-Build charging infra.
+# Charging Infrastructure Troubleshooting
 
-## When to Use
-- Apply this approach for effective results
-- Follow best practices and optimize for scale
+"Use when applying charging infrastructure troubleshooting."
 
-## Key Approaches
-1. Define requirements
-2. Choose tools
-3. Implement design
-4. Test thoroughly
-5. Document decisions
-6. Monitor and iterate
+## Trigger
+
+Activate this skill when the user mentions:
+- auto,  ev,  charging-infrastructure workflows or issues
+- Building, fixing, or optimizing charging infrastructure troubleshooting
+- Questions about auto best practices
+
+## Core Concepts
+
+- Infrastructure as Code (IaC)
+- Well-Architected Framework
+- Identity and access management
+- Networking and security groups
+- Cost optimization and tagging
+
+## Step-by-Step Workflow
+
+1. **Design** — Architecture review against WAF pillars
+   - Expected: Approved architecture diagram
+2. **Implement** — IaC templates with least-privilege IAM
+   - Expected: Reviewable version-controlled infra
+3. **Validate** — Security scan, cost estimate, plan review
+   - Expected: Clean plan within budget
+4. **Deploy** — Apply with change management
+   - Expected: Deployed infrastructure matches plan
+5. **Monitor** — Alarms, dashboards, cost alerts
+   - Expected: Full observability and cost allocation
+
+## Tools & Technologies
+
+- Terraform/Pulumi
+- Cloud-native IaC
+- Security scanning
+- Cost management
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. Ignoring constraints
-2. Skipping standards
-3. Poor alignment
-4. Inadequate testing
-5. No documentation
-6. Over-engineering
 
-## Verification Checklist
-- [ ] Requirements validated
-- [ ] Standards applied
-- [ ] Design reviewed
-- [ ] Tests defined
-- [ ] Docs complete
+- **Manual console changes** → Configuration drift → All changes through IaC
+- **Over-privileged IAM** → Blast radius risk → Least privilege by default
 
+## Tags
+
+`auto, ev, charging-infrastructure`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

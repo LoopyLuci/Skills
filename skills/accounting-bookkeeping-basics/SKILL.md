@@ -10,60 +10,64 @@ metadata:
     related_skills: [financial-modeling-budgeting, business-metrics-kpis, tax-planning-small-business, business-insurance-guide]
 ---
 
-# Accounting and Bookkeeping Basics
+# Accounting Bookkeeping Basics
 
-Managing accounting and bookkeeping processes — from financial statements and chart of accounts through accrual vs cash accounting, reconciliations, and closing the books.
+"Use when managing accounting and bookkeeping processes."
 
-## When to Use
+## Trigger
 
-- Setting up accounting for a new business
-- Understanding financial statements (P&L, Balance Sheet, Cash Flow)
-- Managing accounts payable and receivable
-- Preparing for tax filing or audits
-- Building financial reporting processes
+Activate this skill when the user mentions:
+- accounting,  bookkeeping,  financial-statements,  GAAP,  tax,  cash-basis,  accrual workflows or issues
+- Building, fixing, or optimizing accounting bookkeeping basics
+- Questions about accounting best practices
 
-## Accounting Framework
+## Core Concepts
 
-```python
-ACCOUNTING_CONCEPTS = {
-    'double_entry': 'Every transaction affects at least two accounts (debit = credit)',
-    'accrual': 'Revenue recognized when earned, expenses when incurred (not when cash moves)',
-    'cash_basis': 'Revenue recognized when cash received, expenses when paid',
-    'gaap': 'Generally Accepted Accounting Principles — standard framework',
-}
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-class ChartOfAccounts:
-    """Standard chart of accounts categories."""
-    def __init__(self):
-        self.accounts = {
-            'assets': ['Cash', 'Accounts Receivable', 'Inventory', 'Equipment'],
-            'liabilities': ['Accounts Payable', 'Accrued Expenses', 'Deferred Revenue', 'Loans'],
-            'equity': ['Common Stock', 'Retained Earnings', 'Paid-in Capital'],
-            'revenue': ['Product Revenue', 'Service Revenue', 'Interest Income'],
-            'expenses': ['COGS', 'Salaries', 'Rent', 'Marketing', 'Software', 'Professional Fees'],
-        }
-    
-    def add_account(self, category: str, name: str):
-        if category in self.accounts:
-            self.accounts[category].append(name)
-```
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Mixing personal and business finances** — separate bank accounts and credit cards
-2. **No chart of accounts** — without structure, categories become inconsistent
-3. **Not reconciling monthly** — bank rec catches errors; do it monthly
-4. **Misclassifying expenses** — CAPEX vs OPEX matters for tax and financial reporting
-5. **Forgetting deferred revenue** — cash received for not-yet-delivered services is a liability
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Chart of accounts established
-- [ ] Separate business bank account and credit card
-- [ ] Accounting software configured (QBO, Xero, FreshBooks)
-- [ ] Bank accounts reconciled monthly
-- [ ] Accounts payable and receivable tracked
-- [ ] Invoicing system set up with payment terms
-- [ ] Sales tax registration (if applicable)
-- [ ] CPA/tax advisor engaged for tax planning
-- [ ] Financial statements reviewed monthly (P&L, Balance Sheet, Cash Flow)
+`accounting, bookkeeping, financial-statements, GAAP, tax, cash-basis, accrual`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

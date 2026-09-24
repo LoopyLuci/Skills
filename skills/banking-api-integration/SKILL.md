@@ -11,78 +11,64 @@ metadata:
     related_skills: [fintech-payment-systems, fraud-detection-ml]
 ---
 
-# Banking API Integration
+# Banking Api Integration
 
-## Overview
-Connect applications to banking systems using Open Banking (PSD2), Open Banking UK, FDX, or other regional banking data APIs. Covers OAuth2 authentication, consent flows, account information services (AIS), payment initiation (PIS), and webhook handling for real-time transaction data.
+"Use when integrating banking APIs. PSD2, Open Banking."
 
-## When to Use
-- "Integrate bank account data into my app"
-- "Implement PSD2-compliant payment initiation"
-- "Handle Open Banking OAuth consent flows"
-- "Set up bank transaction webhooks"
+## Trigger
 
-## Authentication Flow (OAuth2 + Consent)
-```python
-import httpx, hmac, hashlib
+Activate this skill when the user mentions:
+- banking,  fintech,  api-integration,  open-banking,  psd2 workflows or issues
+- Building, fixing, or optimizing banking api integration
+- Questions about banking best practices
 
-class BankingAPIClient:
-    def __init__(self, client_id, client_secret, base_url):
-        self.cid = client_id; self.sep = client_secret
-        self.base = base_url
+## Core Concepts
 
-    def get_access_token(self, auth_code):
-        r = httpx.post(f"{self.base}/oauth/token", data={
-            "grant_type": "authorization_code",
-            "code": auth_code,
-            "client_id": self.cid,
-            "client_secret": self.sep,
-            "redirect_uri": os.environ["OAUTH_REDIRECT_URI"]
-        })
-        return r.json()["access_token"]
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-    def create_consent(self, token, permissions):
-        r = httpx.post("https://api.openbanking.org.uk/aisp/account-requests",
-            headers={"Authorization": f"Bearer {token}"}, json={"Permissions": permissions})
-        return r.json()["AccountRequestId"]
+## Step-by-Step Workflow
 
-# Consent flow:
-# 1. Redirect user to bank auth page
-# 2. Bank returns auth_code → exchange for access_token
-# 3. Create consent with specific permissions
-# 4. Listen for webhooks on transaction updates
-```
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
 
-## Webhook Handling (Signature Verification Required)
-```python
-@app.route("/banking/webhook", methods=["POST"])
-def handle_webhook():
-    sig = request.headers.get("x-signature-sha256")
-    expected = hmac.new(os.environ["WEBHOOK_SECRET"].encode(),
-        request.data, hashlib.sha256).hexdigest()
-    if not hmac.compare_digest(sig, expected):
-        return "Unauthorized", 401
-    process_banking_event(request.get_json())
-    return "OK", 200
-```
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. Consent expiration (90-day renewal required in Open Banking UK)
-2. Rate limit exceeded — implement exponential backoff
-3. Not handling consent revocation gracefully
-4. Currency stored without currency code
-5. Duplicate webhook deliveries not deduplicated
-6. Not checking transaction data freshness
-7. Missing idempotency keys on webhook processing
 
-## Verification Checklist
-- [ ] OAuth2 consent flow tested end-to-end
-- [ ] Refresh token handling implemented
-- [ ] Rate limit backoff logic deployed
-- [ ] Webhook signature validation works
-- [ ] Consent expiration reminders configured
-- [ ] Account type filtering functional
-- [ ] Currency codes stored with amounts
-- [ ] Webhook deduplication by ID
-- [ ] Data freshness checks active
-- [ ] Bank API outage handling in place
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
+
+## Tags
+
+`banking, fintech, api-integration, open-banking, psd2`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

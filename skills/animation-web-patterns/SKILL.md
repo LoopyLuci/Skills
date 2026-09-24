@@ -10,50 +10,64 @@ metadata:
     related_skills: [responsive-web-design-patterns, web-component-design, frontend-bootstrap, web-accessibility-practices]
 ---
 
-# Web Animation Patterns
+# Animation Web Patterns
 
-Implementing web animations — from CSS transitions and keyframes through Web Animations API, scroll-driven animations, and performance optimization.
+"Use when implementing web animations and transitions."
 
-## When to Use
+## Trigger
 
-- Adding UI animations for better user experience
-- Implementing scroll-driven and intersection animations
-- Building performant animations that don't jank
-- Animating between routes and page transitions
+Activate this skill when the user mentions:
+- animation,  CSS-animations,  Web-API,  transitions,  GSAP,  motion workflows or issues
+- Building, fixing, or optimizing animation web patterns
+- Questions about animation best practices
 
-## Animation Methods
+## Core Concepts
 
-```python
-ANIMATION_METHODS = {
-    'css_transitions': 'Declarative, GPU-accelerated, best for simple state changes',
-    'css_keyframes': 'Multi-step animations, timing functions, can be GPU-accelerated',
-    'web_animations_api': 'Programmatic control, better than JS setInterval, composable',
-    'scroll_driven': 'Intersection Observer, Scroll Timeline — trigger on scroll position',
-    'view_transitions': 'SPA route transitions between pages (Chrome 111+)',
-}
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-# Web Animations API example
-def animate_element(element, keyframes: List[Dict], duration: int = 300):
-    import time
-    anim = element.animate(keyframes, {
-        'duration': duration, 'easing': 'ease-in-out',
-        'fill': 'forwards'
-    })
-    return anim.finished  # Promise when done
-```
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Animating layout properties** — animating width/height/top triggers layout; use transform + opacity
-2. **No prefers-reduced-motion** — always respect user preference for reduced motion
-3. **Too much animation** — overwhelming UI; use animation sparingly and purposefully
-4. **Long durations** — animations >500ms feel slow; use 200-400ms for UI animations
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Layout animations use transform (not width/height/top)
-- [ ] prefers-reduced-motion respected
-- [ ] Animation duration appropriate (200-400ms UI, 500-1000ms decorative)
-- [ ] Animation curves feel natural (ease-out, cubic-bezier)
-- [ ] No jank (60fps) — GPU-composited properties only
-- [ ] Accessible: no flashing (epilepsy), motion respected
+`animation, CSS-animations, Web-API, transitions, GSAP, motion`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

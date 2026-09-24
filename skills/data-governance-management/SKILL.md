@@ -11,43 +11,62 @@ metadata:
     related_skills: [general]
 ---
 
-## Overview
-Management and operations. Govern data assets.
+# Data Governance Management
 
-## When to Use
-- "Data Governance Management design and implementation"
-- "Best practices for Data Governance Management"
-- "Data Governance Management optimization and scaling"
-- "Data Governance Management troubleshooting"
+"Use when managing data governance."
 
-## Key Approaches
-1. Define requirements
-2. Choose tools
-3. Implement modular
-4. Test thoroughly
-5. Document
-6. Monitor
+## Trigger
+
+Activate this skill when the user mentions:
+- data-governance,  data-quality,  compliance workflows or issues
+- Building, fixing, or optimizing data governance management
+- Questions about data-governance best practices
+
+## Core Concepts
+
+- Data modeling (dimensional, normalized)
+- ETL/ELT patterns and idempotency
+- Data quality and validation
+- Lineage and cataloging
+- Privacy and data protection
+
+## Step-by-Step Workflow
+
+1. **Discover** — Profile data, assess quality
+   - Expected: Data profile report with quality scores
+2. **Design** — Model for use case
+   - Expected: Approved data model
+3. **Build** — Implement pipelines with testing
+   - Expected: Idempotent pipelines with quality checks
+4. **Validate** — Reconcile, test business rules
+   - Expected: Validated data with quality metrics
+5. **Operate** — Monitor, optimize, iterate
+   - Expected: Monitored pipelines with SLA tracking
+
+## Tools & Technologies
+
+- dbt
+- Airflow/Prefect
+- Spark/DuckDB
+- Data catalogs
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. **Not accounting for constraints**
-2. **Ignoring standards**
-3. **Poor alignment**
-4. **Inadequate testing**
-5. **No documentation**
-6. **Over-engineering**
-7. **No rollback plan**
-8. **Insufficient monitoring**
-9. **No scalability plan**
-10. **Missing validation**
 
-## Verification Checklist
-- [ ] Requirements validated
-- [ ] Standards applied
-- [ ] Design reviewed
-- [ ] Tests defined
-- [ ] Docs complete
-- [ ] Monitoring configured
-- [ ] Rollback plan
-- [ ] Security review
-- [ ] Post-deploy verification
-- [ ] Stakeholder signoff
+- **No data quality gates** → Garbage in, garbage out → Validate at every stage
+- **Monolithic pipelines** → Hard to debug → Small idempotent tasks
+
+## Tags
+
+`data-governance, data-quality, compliance`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

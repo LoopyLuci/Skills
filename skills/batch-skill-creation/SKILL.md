@@ -12,127 +12,64 @@ metadata:
     tier: class-level
 ---
 
-## Overview
-Template-driven batch creation of Hermes skills using Python scripts that generate SKILL.md files directly. Produces 500-700 skills per run with built-in validation, deduplication, and description formatting.
+# Batch Skill Creation
 
-## When to Use
-- "Bulk skill creation for large catalog expansion"
-- "When creating 50+ skills efficiently"
-- "Template-driven skill generation at scale"
-- "Automated skill creation with validation"
+"Use when bulk creating Hermes skills efficiently."
 
-## Key Approaches
+## Trigger
 
-### 1. Set Up the Environment
-```python
-import os
-SKILLS_DIR = "C:/Users/dubem/AppData/Local/hermes/skills"
-existing = set(d for d in os.listdir(SKILLS_DIR) if os.path.isdir(os.path.join(SKILLS_DIR, d)))
-```
+Activate this skill when the user mentions:
+- skill-management,  batch-creation,  productivity,  hermes-agent workflows or issues
+- Building, fixing, or optimizing batch skill creation
+- Questions about skill-management best practices
 
-### 2. Define the Skill Factory Function
-```python
-def create_skill(name, desc, tags, related, overview):
-    # Validate description: ≤60 chars, starts "Use when", ends with "."
-    assert len(desc) <= 59, f"DESC TOO LONG: {name} ({len(desc)} chars)"
-    assert desc.startswith("Use when"), f"Bad desc start: {name}"
-    assert desc.endswith("."), f"Bad desc end: {name}"
-    
-    related_str = ', '.join([f"'{r}'" for r in related.split(',') if r]) if related else "general"
-    # ... build body and markdown
-```
+## Core Concepts
 
-### 3. Domain-Based Template Pattern
-Define domains as tuples `(prefix, label, overview, tags)`, then generate 4-8 variations per domain:
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-```python
-domains = [
-    ("supply-chain", "Supply Chain", "Manage supply chains.", "supply-chain, logistics, procurement"),
-    ("logistics", "Logistics", "Plan logistics ops.", "logistics, delivery, shipping"),
-    # ... 80+ domain templates
-]
+## Step-by-Step Workflow
 
-for prefix, label, overview, tags in domains:
-    for suffix, desc_suffix in [
-        ("-fundamentals", f"for {label.lower()} fundamentals."),
-        ("-implementation", f"for {label.lower()} implementation."),
-        ("-optimization", f"for {label.lower()} optimization."),
-        ("-management", f"for {label.lower()} management."),
-    ]:
-        name = prefix + suffix
-        desc = "Use when " + desc_suffix
-        if len(desc) > 59: desc = desc[:56] + "."
-        # Create skill...
-```
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
 
-### 4. Deduplication Check
-```python
-if name in existing:
-    continue  # Skip existing skills
-```
+## Tools & Technologies
 
-### 5. Standard SKILL.md Template
-Every generated skill follows the standard format:
-- YAML frontmatter: name, description, version, author, license, platforms, metadata (tags, related_skills)
-- `## Overview` — brief domain overview
-- `## When to Use` — bullet-point trigger conditions
-- `## Key Approaches` — numbered implementation steps
-- `## Common Pitfalls` — numbered list of common mistakes
-- `## Verification Checklist` — markdown task list
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
 
-### 6. Validation Before Creation
-```python
-def desc_ok(d):
-    return len(d) <= 59 and d.startswith("Use when") and d.endswith(".")
-```
+## Best Practices
 
-### 7. Run and Verify (PROVEN PATTERN: execute_code over subagents)
-```python
-# Use execute_code for direct execution - NO subagent delegation
-# Subagents calling skill_manage per-skill cause HTTP 524 timeouts
-from hermes_tools import execute_code
-# ... or write batch script and run via terminal
-# python batch_script.py
-```
-
-### 8. Template-Driven Expansion (4 SKILLS PER DOMAIN)
-```python
-suffixes = [
-    ("-fundamentals", "for {label.lower()} fundamentals."),
-    ("-implementation", "for {label.lower()} implementation."),
-    ("-best-practices", "for {label.lower()} best practices."),
-    ("-troubleshooting", "for {label.lower()} troubleshooting."),
-]
-
-for prefix, label, overview, tags in domains:
-    for suffix, desc_suffix in suffixes:
-        name = prefix + suffix
-        desc = "Use when applying " + desc_suffix.format(label=label)
-        if len(desc) > 59: desc = desc[:56] + "."
-        make_skill(name, desc, tags, overview)
-```
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. **Description exceeds 60 chars** — Always truncate to `desc[:56] + "."` and validate with `len(desc) <= 59`
-2. **Missing 'Use when' prefix** — Descriptions must start with "Use when" exactly
-3. **Missing period at end** — All descriptions must end with "."
-4. **Duplicate skill names** — Always check `existing` set before creating
-5. **Script too large for write_file** — Use `execute_code` to write large Python scripts to disk, or split into smaller batch scripts
-6. **Subagent timeout for bulk creation** — Subagents that call `skill_manage` per-skill (one API call per skill) cause **HTTP 524 timeouts** at 120s proxy read timeout or 1200s hard ceiling. For 50-100+ skills, delegation always fails. **Always use direct terminal `python batch_script.py` execution instead.**
-7. **Variable scope errors in retry scripts** — When patching batch scripts, ensure counter variables (`created`, `failed`) are initialized before any loops that reference them
-8. **F-string escaping in Python** — When embedding the SKILL.md template, be careful with curly braces in YAML/metadata sections
-9. **Not cleaning up scripts** — Always remove temporary batch scripts after the session
 
-## Reference Files
-- `references/template_batch_creator.py` — Reusable starter script; edit the DOMAINS list and run
-- `scripts/verify_skills.py` — Post-creation verification: checks YAML, sections, description length Produces 4 variations per domain with automatic validation.
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
-- [x] Script validates descriptions before creation
-- [x] `desc_ok()` function checks length, prefix, and period
-- [ ] `existing` set prevents duplicate creation
-- [ ] Each skill has `## Overview`, `## When to Use`, `## Key Approaches`
-- [ ] Each skill has `## Common Pitfalls` and `## Verification Checklist`
-- [ ] Total SKILL.md count matches expected number
-- [ ] Temporary batch scripts cleaned up after use
-- [ ] All generated descriptions are ≤60 characters
+## Tags
+
+`skill-management, batch-creation, productivity, hermes-agent`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

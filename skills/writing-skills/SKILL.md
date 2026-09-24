@@ -7,75 +7,62 @@ related_skills: [test-driven-development, skill-discovery, skill-factory-system]
 
 # Writing Skills
 
-## Overview
+Use when creating, editing, or testing agent skills
 
-**Writing skills is Test-Driven Development applied to process documentation.** You write test cases (pressure scenarios), watch them fail (baseline behavior), write the skill, watch tests pass, and refactor (close loopholes).
+## Trigger
 
-**Core principle:** If you didn't watch an agent fail without the skill, you don't know if the skill teaches the right thing.
+Activate this skill when the user mentions:
+- skills,  authoring,  testing,  documentation workflows or issues
+- Building, fixing, or optimizing writing skills
+- Questions about skills best practices
 
-## TDD Mapping for Skills
+## Core Concepts
 
-| TDD Concept | Skill Creation |
-|-------------|----------------|
-| Test case | Pressure scenario with subagent |
-| Production code | Skill document (SKILL.md) |
-| Test fails (RED) | Agent violates rule without skill |
-| Test passes (GREEN) | Agent complies with skill present |
-| Refactor | Close loopholes while maintaining compliance |
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-## When to Create a Skill
+## Step-by-Step Workflow
 
-- Technique wasn't intuitively obvious to you
-- You'd reference this again across projects
-- Pattern applies broadly (not project-specific)
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
 
-**Don't create for:** One-off solutions, standard practices well-documented elsewhere, project-specific conventions.
+## Tools & Technologies
 
-## SKILL.md Structure
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
 
-```markdown
----
-name: skill-name-with-hyphens
-description: Use when [specific triggering conditions and symptoms]
----
+## Best Practices
 
-# Skill Name
-
-## Overview
-What is this? Core principle in 1-2 sentences.
-
-## Core Pattern
-Before/after code comparison
-
-## Common Pitfalls
-What goes wrong + fixes
-
-## Verification Checklist
-Actionable items to confirm the skill was followed
-```
-
-## Important Notes
-
-**Description = When to Use, NOT What the Skill Does.** The description should only describe triggering conditions. Do NOT summarize the skill's process or workflow in the description.
-
-**Name by what you DO:** Use active voice, verb-first (e.g., `creating-skills` not `skill-creation`).
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-| Pitfall | Solution |
-|---------|----------|
-| Writing skill before testing | Test first, watch it fail, then write the skill |
-| Describing workflow in description | Only describe triggering conditions |
-| One-off solutions made into skills | Skills must be broadly applicable |
-| Skipping real-world testing | Test with real pressure scenarios |
-| Vague verification steps | Make checklist items actionable and measurable |
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Skill addresses a real, recurring problem
-- [ ] Description is ≤60 chars, starts with "Use when"
-- [ ] Skill tested with pressure scenario before writing
-- [ ] Common Pitfalls section included
-- [ ] Verification Checklist section included
-- [ ] Code examples provided where applicable
-- [ ] Related skills cross-referenced
+`skills, authoring, testing, documentation`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

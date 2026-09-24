@@ -10,63 +10,64 @@ metadata:
     related_skills: [revenue-operations-revops, crm-sales-pipeline, saas-metrics-reporting, business-metrics-kpis]
 ---
 
-# Advanced Sales Forecasting
+# Sales Forecasting Advanced
 
-Building accurate sales forecasts — from pipeline-based and historical methods through AI-driven predictions, forecast categories, and deal inspection.
+"Use when building advanced sales forecasting models."
 
-## When to Use
+## Trigger
 
-- Building a repeatable sales forecasting process
-- Moving beyond "gut feel" forecasts to data-driven predictions
-- Forecasting at different levels (rep, team, company, product)
-- Identifying forecast risks and upside opportunities
-- Presenting forecasts to board and investors
+Activate this skill when the user mentions:
+- sales-forecasting,  pipeline-analysis,  stages,  probability,  velocity,  predictions workflows or issues
+- Building, fixing, or optimizing sales forecasting advanced
+- Questions about sales-forecasting best practices
 
-## Forecasting Methods
+## Core Concepts
 
-```python
-FORECASTING_METHODS = {
-    'pipeline_weighted': 'Deal value × probability per stage, weighted sum',
-    'historical_velocity': 'Based on historical win rates and velocity by rep/segment',
-    'time_series': 'Statistical projection from historical booking trends',
-    'ai_predicted': 'ML model trained on historical deal data predicting close likelihood',
-    'commit_plus_best': 'Committed (high confidence) + best case (medium confidence)',
-}
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-class SalesForecast:
-    """Generate sales forecasts from pipeline data."""
-    def __init__(self):
-        self.deals = []
-        self.historical_win_rate = 0.2
-        self.historical_velocity = 45  # avg days to close
-    
-    def weighted_forecast(self) -> Dict:
-        total_weighted = sum(d['value'] * d['probability'] for d in self.deals)
-        total_pipeline = sum(d['value'] for d in self.deals)
-        
-        return {
-            'weighted_forecast': total_weighted,
-            'pipeline_total': total_pipeline,
-            'deal_count': len(self.deals),
-            'commit_deals': [d for d in self.deals if d['probability'] >= 0.9],
-            'upside': [d for d in self.deals if 0.5 <= d['probability'] < 0.9],
-        }
-```
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Optimism bias** — reps overestimate close dates and probabilities; use data-driven calibration
-2. **No stage-based probability** — flat 50% for all deals ignores actual conversion patterns
-3. **Ignoring historical trends** — seasonal patterns (Q4 spikes, summer slumps) affect forecast
-4. **No bottoms-up + top-down** — only bottoms-up misses macro trends; use both
-5. **Forecast as target** — forecast should be what you'll likely close, not your goal
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Forecasting method documented (weighted pipeline, historical, AI, or hybrid)
-- [ ] Stage probabilities based on actual historical conversion data
-- [ ] Forecast categories defined (commit, best case, pipeline)
-- [ ] Deal inspection process (common forecast risks)
-- [ ] Forecast accuracy tracked and reported
-- [ ] Bias correction applied (optimism discount)
-- [ ] Forecast updated weekly with latest pipeline data
+`sales-forecasting, pipeline-analysis, stages, probability, velocity, predictions`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

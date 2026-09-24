@@ -12,141 +12,62 @@ metadata:
 
 # Knowledge Distillation
 
-Compressing large teacher models into smaller student models via knowledge distillation — from logit-based and feature-based distillation through self-distillation and distillation for LLMs.
+"Use when compressing models via knowledge distillation."
 
-## When to Use
+## Trigger
 
-- Deploying large models where latency/cost matter
-- Compressing an ensemble into a single model
-- Transferring knowledge from a large teacher to a deployable student
-- Improving a small model's performance beyond its capacity
-- Building production-ready models from research-scale models
+Activate this skill when the user mentions:
+- knowledge-distillation,  model-compression,  student-teacher,  quantization workflows or issues
+- Building, fixing, or optimizing knowledge distillation
+- Questions about knowledge-distillation best practices
 
-## Distillation Methods
+## Core Concepts
 
-```python
-DISTILLATION_TYPES = {
-    'logit_based': 'Student learns from teacher soft labels (temperature-scaled)',
-    'feature_based': 'Student matches teacher intermediate representations',
-    'relation_based': 'Student learns relationships between samples from teacher',
-    'self_distillation': 'Model distills knowledge into itself (no separate teacher)',
-    'online_distillation': 'Teacher and student trained simultaneously',
-}
-```
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-## Logit-Based Distillation
+## Step-by-Step Workflow
 
-```python
-import torch
-import torch.nn as nn
-import torch.nn.functional as F
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
 
-class DistillationLoss:
-    """Knowledge distillation loss combining hard and soft targets.
-    
-    Loss = α * CE(student_logits, hard_label) 
-         + (1-α) * KL(student_soft, teacher_soft) * T²
-    """
-    
-    def __init__(self, temperature: float = 4.0, alpha: float = 0.3):
-        self.T = temperature
-        self.alpha = alpha
-    
-    def __call__(self, student_logits, teacher_logits, targets):
-        # Hard loss (standard cross-entropy)
-        hard_loss = F.cross_entropy(student_logits, targets)
-        
-        # Soft loss (KL divergence between temperature-scaled distributions)
-        soft_student = F.log_softmax(student_logits / self.T, dim=1)
-        soft_teacher = F.softmax(teacher_logits.detach() / self.T, dim=1)
-        soft_loss = F.kl_div(soft_student, soft_teacher, reduction='batchmean') * (self.T ** 2)
-        
-        return self.alpha * hard_loss + (1 - self.alpha) * soft_loss
+## Tools & Technologies
 
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
 
-def distill_model(teacher, student, train_loader, epochs=10, T=4.0, alpha=0.3, lr=1e-4):
-    """Train a student model using knowledge distillation."""
-    criterion = DistillationLoss(T, alpha)
-    optimizer = torch.optim.Adam(student.parameters(), lr=lr)
-    
-    teacher.eval()
-    student.train()
-    
-    for epoch in range(epochs):
-        total_loss = 0
-        for inputs, targets in train_loader:
-            optimizer.zero_grad()
-            
-            with torch.no_grad():
-                teacher_logits = teacher(inputs)
-            
-            student_logits = student(inputs)
-            loss = criterion(student_logits, teacher_logits, targets)
-            
-            loss.backward()
-            optimizer.step()
-            total_loss += loss.item()
-        
-        print(f"Epoch {epoch}: Distillation Loss = {total_loss/len(train_loader):.4f}")
-    
-    return student
-```
+## Best Practices
 
-## Feature-Based Distillation
-
-```python
-class FeatureDistillation(nn.Module):
-    """Match intermediate features between teacher and student.
-    
-    Student regresses to match teacher's intermediate representations,
-    not just final outputs."""
-    
-    def __init__(self, student, teacher, student_feature_dims, teacher_feature_dims):
-        super().__init__()
-        self.student = student
-        self.teacher = teacher
-        
-        # Projection layers to align feature dimensions
-        self.projections = nn.ModuleList([
-            nn.Linear(s_dim, t_dim) if s_dim != t_dim else nn.Identity()
-            for s_dim, t_dim in zip(student_feature_dims, teacher_feature_dims)
-        ])
-    
-    def forward(self, x):
-        """Compute feature matching loss."""
-        s_features = self.student.get_intermediate_features(x)
-        t_features = self.teacher.get_intermediate_features(x)
-        
-        total_loss = 0
-        for s_feat, t_feat, proj in zip(s_features, t_features, self.projections):
-            s_proj = proj(s_feat)
-            loss = F.mse_loss(s_proj, t_feat.detach())
-            total_loss += loss
-        
-        return total_loss
-```
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Temperature too high or low** — T ~4 is a good starting point; tune for your task
-2. **Student too small** — extremely small students can't capture teacher knowledge; find minimum viable size
-3. **Overfitting to teacher** — student memorizes teacher mistakes; use hard labels too (α ≥ 0.3)
-4. **Feature mismatch** — student and teacher have different architecture shapes; projection layers needed
-5. **Not using teacher's strengths** — logit distillation works best; feature distillation adds marginal benefit
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Teacher model achieves target accuracy before distillation
-- [ ] Student model trains with distillation loss converging
-- [ ] Student accuracy approaches teacher's (within 1-3%)
-- [ ] Student parameter count < 30% of teacher
-- [ ] Student inference speed benchmarked (vs teacher)
-- [ ] Temperature and alpha hyperparameters tuned
-- [ ] Ablation: student trained with/without distillation compared
+`knowledge-distillation, model-compression, student-teacher, quantization`
 
-## See Also
+---
 
-- model-compression-techniques — broader compression beyond distillation
-- custom-training-loops — implementing distillation in training
-- transformer-architectures — distilling transformers
-- ml-model-serving-optimization — deploying distilled models
+*LoopyLuci/Skills - 2026-09-24*

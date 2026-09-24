@@ -12,69 +12,62 @@ metadata:
 
 # Contract Management Basics
 
-Managing contracts and agreements — from contract lifecycle and types through negotiation, execution, storage, renewal/expiry tracking, and compliance.
+"Use when managing contracts and agreements."
 
-## When to Use
+## Trigger
 
-- Managing customer, vendor, or partner contracts
-- Tracking contract renewals and expirations
-- Standardizing contract templates and terms
-- Building a contract repository and management process
-- Ensuring contract compliance with agreed terms
+Activate this skill when the user mentions:
+- contract-management,  agreements,  terms,  signatures,  renewals,  legal-ops workflows or issues
+- Building, fixing, or optimizing contract management basics
+- Questions about contract-management best practices
 
-## Contract Lifecycle
+## Core Concepts
 
-```python
-CONTRACT_LIFECYCLE = {
-    'request': 'Business need identified, contract request submitted',
-    'draft': 'Template selected, terms drafted by legal or template',
-    'negotiation': 'Redlines exchanged, terms negotiated, approvals',
-    'execution': 'Final version signed (e-signature or wet signature)',
-    'storage': 'Executed copy stored in contract repository',
-    'obligations': 'Track deliverables, milestones, SLAs',
-    'amendments': 'Changes during contract term (change orders)',
-    'renewal': 'Renewal or termination decision before expiry',
-}
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-class ContractManager:
-    """Track contract lifecycle and obligations."""
-    def __init__(self):
-        self.contracts = {}
-    
-    def add_contract(self, title: str, party: str, value: float,
-                     start_date: str, end_date: str, 
-                     contract_type: str = 'customer') -> str:
-        import uuid
-        cid = str(uuid.uuid4())[:8]
-        self.contracts[cid] = {
-            'id': cid, 'title': title, 'party': party,
-            'value': value, 'start': start_date, 'end': end_date,
-            'type': contract_type, 'status': 'active',
-        }
-        return cid
-    
-    def get_expiring(self, days: int = 60) -> List[Dict]:
-        from datetime import datetime, timedelta
-        threshold = datetime.now() + timedelta(days=days)
-        return [c for c in self.contracts.values() 
-                if datetime.fromisoformat(c['end']) <= threshold and c['status'] == 'active']
-```
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **No contract repository** — contracts scattered across emails, drives, and desks
-2. **Auto-renewal surprises** — contracts with auto-renewal clauses missed; set calendar alerts
-3. **No obligation tracking** — signed a contract but forgot to deliver on commitments
-4. **Expired contracts** — using services under expired terms; track renewals
-5. **No standard templates** — every contract negotiated from scratch; use clause libraries
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Contract repository established (centralized, searchable)
-- [ ] Standard templates for common contract types
-- [ ] Negotiation guidelines (what's negotiable, approval thresholds)
-- [ ] E-signature integration (DocuSign, HelloSign)
-- [ ] Renewal/expiry tracking (60/30/7 day alerts)
-- [ ] Obligations and milestones tracked per contract
-- [ ] Contract value tracked for financial reporting
-- [ ] Legal review process for non-standard terms
+`contract-management, agreements, terms, signatures, renewals, legal-ops`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

@@ -12,56 +12,62 @@ metadata:
 
 # Serverless Computing Patterns
 
-Building serverless applications — from function design and event sources through cold-start optimization, observability, and cost management.
+"Use when building serverless applications and functions."
 
-## When to Use
+## Trigger
 
-- Event-driven data processing pipelines
-- APIs with variable traffic patterns
-- Scheduled batch jobs and cron replacements
-- Webhook handlers and integrations
-- Prototyping and rapid iteration
+Activate this skill when the user mentions:
+- serverless,  lambda,  functions,  FaaS,  AWS,  cold-start,  event-driven workflows or issues
+- Building, fixing, or optimizing serverless computing patterns
+- Questions about serverless best practices
 
-## Function Design
+## Core Concepts
 
-```python
-# Handler pattern (AWS Lambda + API Gateway)
-def handler(event, context):
-    """
-    Standard Lambda handler for API Gateway HTTP API.
-    """
-    try:
-        # Parse request
-        path = event.get('rawPath', '/')
-        method = event.get('requestContext', {}).get('http', {}).get('method', 'GET')
-        body = json.loads(event.get('body', '{}')) if event.get('body') else {}
-        
-        # Business logic
-        result = process_request(method, path, body)
-        
-        return {
-            'statusCode': 200,
-            'headers': {'Content-Type': 'application/json'},
-            'body': json.dumps(result)
-        }
-    except Exception as e:
-        return {'statusCode': 500, 'body': json.dumps({'error': str(e)})}
-```
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
+
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Cold starts** — functions spin up from zero on infrequent invocations; use provisioned concurrency
-2. **Timeout limits** — Lambda max 15 min; design for the limit or use Step Functions
-3. **Stateless assumption** — no local filesystem state between invocations; use S3/EFS
-4. **Over-fragmentation** — one function per endpoint = management nightmare; group related logic
-5. **Cost surprises** — high invocation rates cost more than fixed servers; estimate first
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Cold start time < 500ms (or acceptable for use case)
-- [ ] Function timeout matches expected execution time
-- [ ] Error handling with DLQ for async invocations
-- [ ] Tracing/monitoring configured (X-Ray, CloudWatch)
-- [ ] Least-privilege IAM roles per function
-- [ ] Environment variables for configuration (not code)
-- [ ] Versioning and aliases for safe deployments
+`serverless, lambda, functions, FaaS, AWS, cold-start, event-driven`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

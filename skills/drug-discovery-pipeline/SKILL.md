@@ -11,60 +11,62 @@ metadata:
     related_skills: [genomics-data-processing, bioinformatics-sequences-analysis]
 ---
 
-# Drug Discovery Pipeline Management
+# Drug Discovery Pipeline
 
-## Overview
-Navigate the complete drug discovery pipeline from target identification through IND (Investigational New Drug) filing. Covers target validation, hit identification, lead optimization, preclinical development, and regulatory strategy. Produces project timelines, milestone plans, and risk assessments.
+"Use when planning drug discovery. Target ID to IND filing."
 
-## When to Use
-- "Plan a drug discovery project timeline"
-- "Identify and validate drug targets"
-- "Screen compounds for hits"
-- "Optimize lead compounds"
-- "Prepare IND filing documentation"
+## Trigger
 
-## The Drug Discovery Pipeline Stages
+Activate this skill when the user mentions:
+- drug-discovery,  pharma,  medicinal-chemistry,  clinical-development workflows or issues
+- Building, fixing, or optimizing drug discovery pipeline
+- Questions about drug-discovery best practices
 
-### Stage 1: Discovery (0–4 years)
-| Phase | Activities | Deliverables | Key Metrics |
-|-------|-----------|-------------|-------------|
-| Target ID & Validation | Bioinformatics, literature review, pathway analysis | Target dossier | Druggability score ≥0.5 |
-| Hit Identification | HTS, fragment screening, virtual screening | 10–100 hit compounds | Hit rate ≥0.01% |
-| Hit-to-Lead | SAR exploration, early potency optimization | 5–10 lead series | Potency <100 nM |
-| Lead Optimization | Improve potency, selectivity, ADME | 2–3 clinical candidates | All CMC milestones met |
+## Core Concepts
 
-### Stage 2: Preclinical Development (1–3 years)
-| Phase | Activities | Deliverables | Key Metrics |
-|-------|-----------|-------------|-------------|
-| Candidate Selection | Tox studies, efficacy models | Clinical candidate | Safety margin >10x |
-| IND-Enabling Studies | GLP tox, genotox, carcinogenicity | IND package | All regulatory requirements |
-| Formulation Development | Drug product development | Final formulation | Stability >24 months |
-| Manufacturing Scale-up | GMP production | Phase 1 drug supply | ≥90% recovery |
+- Data modeling (dimensional, normalized)
+- ETL/ELT patterns and idempotency
+- Data quality and validation
+- Lineage and cataloging
+- Privacy and data protection
 
-### Stage 3: Clinical Development (6–10 years)
-| Phase | Activities | Sample Size | Duration |
-|-------|-----------|-------------|---------|
-| Phase I | Safety, PK/PD in healthy volunteers | 20–100 | 1 year |
-| Phase II | Dose-ranging, preliminary efficacy | 100–300 | 2 years |
-| Phase III | Large-scale efficacy vs standard of care | 1,000–3,000+ | 3 years |
-| NDA/BLA Filing | Regulatory submission | — | 6–12 months |
+## Step-by-Step Workflow
+
+1. **Discover** — Profile data, assess quality
+   - Expected: Data profile report with quality scores
+2. **Design** — Model for use case
+   - Expected: Approved data model
+3. **Build** — Implement pipelines with testing
+   - Expected: Idempotent pipelines with quality checks
+4. **Validate** — Reconcile, test business rules
+   - Expected: Validated data with quality metrics
+5. **Operate** — Monitor, optimize, iterate
+   - Expected: Monitored pipelines with SLA tracking
+
+## Tools & Technologies
+
+- dbt
+- Airflow/Prefect
+- Spark/DuckDB
+- Data catalogs
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. **Poor target selection** — 40% of failures stem from invalid targets. Use multi-omics validation.
-2. **Ignoring ADME early** — compounds with poor absorption or metabolic stability sink late. Integrate ADME assays in hit-to-lead.
-3. **Insufficient tox studies** — delays IND filing. Start tox studies 1.5 years before planned IND submission.
-4. **Wrong species for tox** — use same species planned for clinical toxicology.
-5. **CMC gaps** — manufacturing and analytical methods must be validated before first-in-human.
-6. **Overpromising timelines** — account for setbacks. Build 20-30% buffer time into each phase.
 
-## Verification Checklist
-- [ ] Target validation with ≥3 orthogonal methods
-- [ ] Hit rate >0.01% in primary screen
-- [ ] Lead compound potency <100 nM with ≥10x selectivity
-- [ ] In vitro ADME profile documented
-- [ ] In vivo efficacy demonstrated in ≥2 disease models
-- [ ] GLP toxicology study protocol approved
-- [ ] IND-enabling chemistry complete with specification
-- [ ] Regulatory strategy meeting scheduled with FDA/EMA
-- [ ] GxP compliance documentation in place
-- [ ] Risk assessment updated with latest data
+- **No data quality gates** → Garbage in, garbage out → Validate at every stage
+- **Monolithic pipelines** → Hard to debug → Small idempotent tasks
+
+## Tags
+
+`drug-discovery, pharma, medicinal-chemistry, clinical-development`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

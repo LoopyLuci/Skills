@@ -11,43 +11,62 @@ metadata:
     related_skills: ['iot-security-hardening']
 ---
 
-## Overview
-Implement security for embedded devices against physical and cyber attacks.
+# Embedded Security
 
-## When to Use
-- "Embedded Security design and implementation"
-- "Best practices for Embedded Security"
-- "Embedded Security optimization and scaling"
-- "Embedded Security troubleshooting and validation"
+"Use when securing embedded devices."
 
-## Key Approaches
-1. Define clear requirements
-2. Choose appropriate tools
-3. Implement modular structure
-4. Write tests and validate
-5. Document decisions
-6. Monitor and iterate
+## Trigger
+
+Activate this skill when the user mentions:
+- electronics,  embedded-security,  iot-security workflows or issues
+- Building, fixing, or optimizing embedded security
+- Questions about electronics best practices
+
+## Core Concepts
+
+- Threat modeling and risk assessment
+- Attack surface analysis
+- Defense in depth
+- Zero-trust architecture
+- Compliance and audit requirements
+
+## Step-by-Step Workflow
+
+1. **Scope** — Define assets, threats, attack surface
+   - Expected: Documented scope with trust boundaries
+2. **Assess** — Identify vulnerabilities, evaluate risk
+   - Expected: Prioritized findings with CVSS scores
+3. **Remediate** — Apply secure-by-design fixes
+   - Expected: Vulnerabilities closed
+4. **Verify** — Re-test and validate remediation
+   - Expected: Independent verification complete
+5. **Document** — Record findings and lessons learned
+   - Expected: Audit-ready report
+
+## Tools & Technologies
+
+- Vulnerability scanners
+- SAST/DAST tools
+- SIEM platforms
+- Pen-testing frameworks
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. **Not accounting for constraints** — resource limitations
-2. **Ignoring industry standards** — no best practices
-3. **Poor stakeholder alignment** — conflicting requirements
-4. **Inadequate testing** — no validation
-5. **Not documenting decisions** — lost knowledge
-6. **Over-engineering** — complex where simple suffices
-7. **No rollback plan** — deployment failures
-8. **Insufficient monitoring** — no observability
-9. **Not planning for growth** — scalability issues
-10. **Missing validation** — no quality checks
 
-## Verification Checklist
-- [ ] Requirements defined and validated
-- [ ] Standards and best practices applied
-- [ ] Design reviewed with stakeholders
-- [ ] Implementation plan with milestones
-- [ ] Testing strategy defined
-- [ ] Documentation complete
-- [ ] Monitoring and alerting configured
-- [ ] Deployment with rollback plan
-- [ ] Security review completed
-- [ ] Post-deployment verification
+- **Scope creep** → Unclear boundaries → Define scope explicitly
+- **Tool reliance without analysis** → False positives → Manual validation required
+
+## Tags
+
+`electronics, embedded-security, iot-security`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

@@ -10,73 +10,62 @@ metadata:
     related_skills: [data-cleaning-patterns, feature-engineering-automation, ml-pipeline-design, data-labeling-strategies]
 ---
 
-# Data Profiling and Quality
+# Data Profiling Quality
 
-Profiling datasets and assessing data quality — from automated profiling (YData Profiling, Great Expectations) through quality dimensions, anomaly detection, and data validation.
+"Use when profiling data and assessing data quality."
 
-## When to Use
+## Trigger
 
-- Understanding a new dataset (profiling)
-- Setting up data quality checks for pipelines
-- Detecting data drift between training and production
-- Validating data before model training
-- Building data quality dashboards
+Activate this skill when the user mentions:
+- data-profiling,  data-quality,  validation,  cleanup,  pandas-profiling,  great-expectations workflows or issues
+- Building, fixing, or optimizing data profiling quality
+- Questions about data-profiling best practices
 
-## Quality Dimensions
+## Core Concepts
 
-```python
-DATA_QUALITY_DIMENSIONS = {
-    'completeness': 'Missing values, null rates, empty strings',
-    'uniqueness': 'Duplicate records, duplicate values in unique columns',
-    'validity': 'Values conform to schema (type, format, range, domain)',
-    'consistency': 'Values consistent across related columns/tables',
-    'accuracy': 'Values represent real-world entities correctly',
-    'timeliness': 'Data is current enough for the use case',
-}
+- Data modeling (dimensional, normalized)
+- ETL/ELT patterns and idempotency
+- Data quality and validation
+- Lineage and cataloging
+- Privacy and data protection
 
-class DataProfiler:
-    """Profile a dataset for quality assessment."""
-    def __init__(self, df: pd.DataFrame):
-        self.df = df
-        self.profile = {}
-    
-    def analyze(self) -> Dict:
-        self.profile['rows'] = len(self.df)
-        self.profile['columns'] = len(self.df.columns)
-        self.profile['missing'] = {}
-        self.profile['duplicates'] = self.df.duplicated().sum()
-        
-        for col in self.df.columns:
-            missing = self.df[col].isnull().mean() * 100
-            dtype = str(self.df[col].dtype)
-            unique = self.df[col].nunique()
-            
-            self.profile['missing'][col] = round(missing, 1)
-            if dtype.startswith('float') or dtype.startswith('int'):
-                self.profile[col] = {
-                    'dtype': dtype, 'missing_pct': round(missing, 1),
-                    'unique': unique, 'min': self.df[col].min(),
-                    'max': self.df[col].max(), 'mean': round(self.df[col].mean(), 2),
-                }
-        
-        return self.profile
-```
+## Step-by-Step Workflow
+
+1. **Discover** — Profile data, assess quality
+   - Expected: Data profile report with quality scores
+2. **Design** — Model for use case
+   - Expected: Approved data model
+3. **Build** — Implement pipelines with testing
+   - Expected: Idempotent pipelines with quality checks
+4. **Validate** — Reconcile, test business rules
+   - Expected: Validated data with quality metrics
+5. **Operate** — Monitor, optimize, iterate
+   - Expected: Monitored pipelines with SLA tracking
+
+## Tools & Technologies
+
+- dbt
+- Airflow/Prefect
+- Spark/DuckDB
+- Data catalogs
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Profiling without action** — running profiling once and never fixing issues
-2. **No automated checks** — manual quality checks don't happen regularly
-3. **Ignoring data drift** — data quality changes over time; monitor continuously
-4. **Schema validation only** — valid schema doesn't mean valid data (garbage values in valid formats)
-5. **No domain-specific rules** — general profiling misses business-specific quality rules
+- **No data quality gates** → Garbage in, garbage out → Validate at every stage
+- **Monolithic pipelines** → Hard to debug → Small idempotent tasks
 
-## Verification Checklist
+## Tags
 
-- [ ] Automated data profiling run on new datasets
-- [ ] Data quality checks defined for each pipeline stage
-- [ ] Great Expectations or similar validation suite implemented
-- [ ] Missing value thresholds with alerts
-- [ ] Duplicate detection and handling policy
-- [ ] Data drift monitoring (training vs production distributions)
-- [ ] Data quality dashboard with trends over time
-- [ ] Action plan for quality issues (who fixes, by when)
+`data-profiling, data-quality, validation, cleanup, pandas-profiling, great-expectations`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

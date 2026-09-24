@@ -12,71 +12,62 @@ metadata:
 
 # Dimensionality Reduction
 
-Implementing dimensionality reduction — from PCA and t-SNE through UMAP, autoencoders, and feature selection for high-dimensional data.
+"Use when implementing dimensionality reduction techniques."
 
-## When to Use
+## Trigger
 
-- Visualizing high-dimensional data in 2D/3D
-- Reducing feature space before ML model training
-- Removing multicollinearity from feature sets
-- Preprocessing for compress or speed up computation
-- Exploratory data analysis on complex datasets
+Activate this skill when the user mentions:
+- dimensionality-reduction,  PCA,  t-SNE,  UMAP,  feature-extraction,  manifold-learning workflows or issues
+- Building, fixing, or optimizing dimensionality reduction
+- Questions about dimensionality-reduction best practices
 
-## Reduction Methods
+## Core Concepts
 
-```python
-REDUCTION_METHODS = {
-    'pca': {
-        'type': 'Linear, global',
-        'best_for': 'Data with linear structure, preprocessing before ML',
-        'limitation': 'Assumes linear relationships',
-    },
-    'tsne': {
-        'type': 'Non-linear, local',
-        'best_for': 'Visualization (2D/3D), exploring clusters',
-        'limitation': 'Non-deterministic, doesn't generalize to new points',
-    },
-    'umap': {
-        'type': 'Non-linear, global+local',
-        'best_for': 'Visualization, general-purpose reduction, faster than t-SNE',
-        'limitation': 'Sensitive to hyperparameters (n_neighbors, min_dist)',
-    },
-}
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-class DimensionalityReducer:
-    """Apply dimensionality reduction with automation."""
-    def __init__(self, n_components: int = 2):
-        self.n = n_components
-    
-    def reduce_pca(self, X: np.array) -> np.array:
-        from sklearn.decomposition import PCA
-        pca = PCA(n_components=self.n)
-        X_reduced = pca.fit_transform(X)
-        self.explained_variance = pca.explained_variance_ratio_
-        return X_reduced
-    
-    def reduce_umap(self, X: np.array, n_neighbors: int = 15, 
-                    min_dist: float = 0.1) -> np.array:
-        import umap
-        reducer = umap.UMAP(n_components=self.n, 
-                           n_neighbors=n_neighbors, min_dist=min_dist)
-        return reducer.fit_transform(X)
-```
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Interpreting PCA components** — they are linear combinations, not real features
-2. **t-SNE perplexity mismatch** — wrong perplexity creates misleading clusters; try values 5-50
-3. **Losing global structure with t-SNE** — t-SNE preserves local, not global structure; use UMAP
-4. **Applying PCA without scaling** — PCA is sensitive to feature scales; standardize first
-5. **Reducing then interpreting** — you can't reverse-engineer which original features matter from reduced space
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Features standardized before PCA
-- [ ] Reduction method matches use case (PCA for preprocessing, UMAP for visualization)
-- [ ] Explained variance checked for PCA (enough components?)
-- [ ] t-SNE perplexity tuned (5-50 range)
-- [ ] UMAP n_neighbors and min_dist tuned
-- [ ] Results visualized (2D/3D scatter plot colored by target)
-- [ ] Downstream model performance compared with/without reduction
+`dimensionality-reduction, PCA, t-SNE, UMAP, feature-extraction, manifold-learning`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

@@ -12,62 +12,62 @@ metadata:
 
 # Network Segmentation Strategies
 
-Designing network segmentation and isolation — from VLANs and subnets through micro-segmentation, zero-trust network access, and multi-tenant isolation.
+"Use when designing network segmentation and isolation."
 
-## When to Use
+## Trigger
 
-- Segregating sensitive systems from general access
-- Implementing compliance requirements (PCI, HIPAA)
-- Containing breaches through lateral movement prevention
-- Designing multi-tenant SaaS infrastructure
-- Implementing zero-trust network principles
+Activate this skill when the user mentions:
+- network-segmentation,  VLAN,  subnet,  micro-segmentation,  zero-trust,  isolation workflows or issues
+- Building, fixing, or optimizing network segmentation strategies
+- Questions about network-segmentation best practices
 
-## Segmentation Models
+## Core Concepts
 
-```python
-SEGMENTATION_MODELS = {
-    'flat': 'Single network — all systems can communicate (legacy, insecure)',
-    'vlan_based': 'Logical segments by function (DMZ, internal, production, staging)',
-    'micro_segmentation': 'Granular per-workload policies (zero-trust, SaaS multi-tenant)',
-    'overlay': 'Software-defined segmentation on top of physical network (VXLAN, SDN)',
-}
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-SEGMENTATION_TIERS = {
-    'public': 'Internet-facing (web servers, API gateways, load balancers)',
-    'application': 'Business logic (app servers, microservices)',
-    'data': 'Databases, storage, caches (most restricted access)',
-    'management': 'Administrative access (SSH, RDP, bastion hosts)',
-    'internal_services': 'Internal tools, monitoring, CI/CD',
-}
+## Step-by-Step Workflow
 
-# Firewall rule pattern for segmentation
-SEGMENTATION_RULES = """
-# Internet → DMZ (web)
-allow proto tcp from any to DMZ port 443
-# DMZ → Application (backend API)
-allow proto tcp from DMZ to APP port 8080
-# Application → Database (read/write)
-allow proto tcp from APP to DATA port 5432
-# Deny everything else
-deny ip any any
-"""
-```
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Overly permissive rules** — "allow any any" between segments defeats segmentation
-2. **Segment sprawl** — hundreds of tiny segments become unmanageable; group by function
-3. **No east-west monitoring** — lateral movement between segments isn't monitored
-4. **Flat inside the segment** — once inside a segment, no further controls; implement host-based firewalls too
-5. **Dependence on IP addresses** — IP-based segmentation breaks with dynamic IPs; use identity-based
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Network tiers defined (public, app, data, management)
-- [ ] Segmentation rules documented and enforced (firewall)
-- [ ] Only required traffic allowed between segments
-- [ ] East-west traffic monitored and logged
-- [ ] Micro-segmentation for critical workloads (if applicable)
-- [ ] Segmentation tested (attempt lateral movement, verify blocks)
-- [ ] Compliance requirements met (PCI, HIPAA, SOC2)
-- [ ] Overlay segmentation for multi-tenant (VXLAN, SDN)
+`network-segmentation, VLAN, subnet, micro-segmentation, zero-trust, isolation`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

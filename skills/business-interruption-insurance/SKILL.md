@@ -11,44 +11,64 @@ metadata:
     related_skills: [general]
 ---
 
-## Overview
-Business Interruption Insurance implementation. Covers essential methodologies, 
-best practices, technical foundations, and verification approaches for this domain.
+# Business Interruption Insurance
 
-## When to Use
-- "Business Interruption Insurance implementation"
-- "Best practices for Business Interruption Insurance"
-- "Business Interruption Insurance optimization and enhancement"
-- "Business Interruption Insurance troubleshooting"
-- "Business Interruption Insurance performance and cost analysis"
+"Use when evaluating business interruption."
 
-## Key Methodologies
-1. Assessment and Planning Phase
-2. Implementation and Execution  
-3. Monitoring and Optimization
-4. Compliance and Verification
-5. Continuous Improvement
+## Trigger
+
+Activate this skill when the user mentions:
+- 'b',  'u',  's',  'i',  'n',  'e',  's',  's',  '-',  'i',  'n',  't',  'e',  'r',  'r',  'u',  'p',  't',  'i',  'o',  'n',  ',  ',  ' ',  'i',  'n',  's',  'u',  'r',  'a',  'n',  'c',  'e' workflows or issues
+- Building, fixing, or optimizing business interruption insurance
+- Questions about 'b' best practices
+
+## Core Concepts
+
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
+
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. **Insufficient planning** — rushing without proper assessment
-2. **Ignoring industry standards** — not following best practices
-3. **Poor stakeholder alignment** — conflicting requirements
-4. **Inadequate measurement** — no metrics to track success
-5. **Not accounting for context** — generic approaches fail
-6. **Underestimating complexity** — oversimplified solutions
-7. **No contingency planning** — unhandled failure scenarios
-8. **Insufficient validation** — implementation without testing
-9. **Not documenting decisions** — lost knowledge and context
-10. **Failing to iterate** — not improving based on feedback
 
-## Verification Checklist
-- [ ] Initial assessment and requirements gathering completed
-- [ ] Industry standards and best practices reviewed
-- [ ] Design validated with stakeholders
-- [ ] Implementation plan with milestones defined
-- [ ] Quality control and validation approaches
-- [ ] Testing and verification procedures established
-- [ ] Monitoring and feedback mechanisms
-- [ ] Documentation complete and accessible
-- [ ] Training provided to relevant stakeholders
-- [ ] Post-implementation review and improvement plan
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
+
+## Tags
+
+`'b', 'u', 's', 'i', 'n', 'e', 's', 's', '-', 'i', 'n', 't', 'e', 'r', 'r', 'u', 'p', 't', 'i', 'o', 'n', ', ', ' ', 'i', 'n', 's', 'u', 'r', 'a', 'n', 'c', 'e'`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

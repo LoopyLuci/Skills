@@ -11,33 +11,62 @@ metadata:
     related_skills: ['general']
 ---
 
-## Overview
-Comply in fashion tech.
+# Fashion Tech Compliance Troubleshooting
 
-## When to Use
-- Apply this approach for effective results
-- Follow best practices and optimize for scale
+"Use when applying fashion tech compliance troubleshooting."
 
-## Key Approaches
-1. Define requirements
-2. Choose tools
-3. Implement design
-4. Test thoroughly
-5. Document decisions
-6. Monitor and iterate
+## Trigger
+
+Activate this skill when the user mentions:
+- fashion,  compliance,  legal-compliance-business workflows or issues
+- Building, fixing, or optimizing fashion tech compliance troubleshooting
+- Questions about fashion best practices
+
+## Core Concepts
+
+- Threat modeling and risk assessment
+- Attack surface analysis
+- Defense in depth
+- Zero-trust architecture
+- Compliance and audit requirements
+
+## Step-by-Step Workflow
+
+1. **Scope** — Define assets, threats, attack surface
+   - Expected: Documented scope with trust boundaries
+2. **Assess** — Identify vulnerabilities, evaluate risk
+   - Expected: Prioritized findings with CVSS scores
+3. **Remediate** — Apply secure-by-design fixes
+   - Expected: Vulnerabilities closed
+4. **Verify** — Re-test and validate remediation
+   - Expected: Independent verification complete
+5. **Document** — Record findings and lessons learned
+   - Expected: Audit-ready report
+
+## Tools & Technologies
+
+- Vulnerability scanners
+- SAST/DAST tools
+- SIEM platforms
+- Pen-testing frameworks
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. Ignoring constraints
-2. Skipping standards
-3. Poor alignment
-4. Inadequate testing
-5. No documentation
-6. Over-engineering
 
-## Verification Checklist
-- [ ] Requirements validated
-- [ ] Standards applied
-- [ ] Design reviewed
-- [ ] Tests defined
-- [ ] Docs complete
+- **Scope creep** → Unclear boundaries → Define scope explicitly
+- **Tool reliance without analysis** → False positives → Manual validation required
 
+## Tags
+
+`fashion, compliance, legal-compliance-business`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

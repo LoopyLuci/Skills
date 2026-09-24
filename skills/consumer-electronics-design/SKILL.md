@@ -11,46 +11,64 @@ metadata:
     related_skills: [general]
 ---
 
-## Overview
-Consumer Electronics Design implementation. Comprehensive approach covering best practices, 
-methodologies, technical considerations, and verification approaches.
+# Consumer Electronics Design
 
-## When to Use
-- "Consumer Electronics Design and optimization"
-- "Best practices for Consumer Electronics Design workflows"
-- "Consumer Electronics Design compliance and standards"
-- "Consumer Electronics Design troubleshooting and problem-solving"
-- "Consumer Electronics Design ROI and performance measurement"
+"Use when designing consumer electronics."
 
-## Key Methodologies
-```text
-1. Assessment and Planning Phase
-2. Implementation and Execution
-3. Monitoring and Optimization
-4. Compliance and Verification
-5. Continuous Improvement
-```
+## Trigger
+
+Activate this skill when the user mentions:
+- consumer-tech,  electronics,  hardware,  pcb workflows or issues
+- Building, fixing, or optimizing consumer electronics design
+- Questions about consumer-tech best practices
+
+## Core Concepts
+
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
+
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. **Insufficient planning** — rushing without proper assessment
-2. **Ignoring industry standards** — not following established frameworks
-3. **Poor stakeholder alignment** — conflicting requirements
-4. **Inadequate measurement** — no metrics for success
-5. **Not accounting for local conditions** — generic approaches fail
-6. **Underestimating complexity** — oversimplified solutions
-7. **No contingency planning** — no plan for unexpected issues
-8. **Insufficient training** — operators lack required skills
-9. **No verification process** — implementation without quality checks
-10. **Failing to iterate** — not improving based on results
 
-## Verification Checklist
-- [ ] Initial assessment and baseline established
-- [ ] Industry standards and best practices identified
-- [ ] Stakeholder requirements aligned and documented
-- [ ] Implementation plan with timelines
-- [ ] Quality control measures defined
-- [ ] Training completed for involved parties
-- [ ] Monitoring system with key metrics
-- [ ] Compliance requirements verified
-- [ ] Performance baseline before go-live
-- [ ] Post-implementation review scheduled
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
+
+## Tags
+
+`consumer-tech, electronics, hardware, pcb`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

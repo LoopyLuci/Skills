@@ -11,43 +11,62 @@ metadata:
     related_skills: [general]
 ---
 
-## Overview
-Build on Ethereum.
+# Blockchain Ethereum Implementation
 
-## When to Use
-- "Blockchain Ethereum Implementation design"
-- "Best practices"
-- "Optimization"
-- "Troubleshooting"
+"Use when for ethereum development implementation."
 
-## Key Approaches
-1. Requirements
-2. Tools
-3. Implementation
-4. Testing
-5. Docs
-6. Monitoring
+## Trigger
+
+Activate this skill when the user mentions:
+- blockchain,  ethereum,  solidity,  smart-contracts workflows or issues
+- Building, fixing, or optimizing blockchain ethereum implementation
+- Questions about blockchain best practices
+
+## Core Concepts
+
+- Model selection and evaluation
+- Feature engineering and data prep
+- Training methodology
+- Deployment and serving patterns
+- Monitoring and drift detection
+
+## Step-by-Step Workflow
+
+1. **Frame** — Define problem, success metric, baseline
+   - Expected: Clear problem statement
+2. **Explore** — EDA, feature analysis
+   - Expected: Understanding of data relationships
+3. **Build** — Train models, track experiments
+   - Expected: Logged reproducible experiments
+4. **Evaluate** — Test on holdout, check bias
+   - Expected: Evaluation report with confidence
+5. **Deploy** — Serve with monitoring
+   - Expected: Production model with drift detection
+
+## Tools & Technologies
+
+- Experiment tracking
+- Model registry
+- Feature store
+- Model serving
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. Ignoring constraints
-2. Skipping standards
-3. Poor alignment
-4. Inadequate testing
-5. No docs
-6. Over-engineering
-7. No rollback
-8. No monitoring
-9. No scaling
-10. No validation
 
-## Verification Checklist
-- [ ] Requirements verified
-- [ ] Standards applied
-- [ ] Design reviewed
-- [ ] Tests defined
-- [ ] Docs complete
-- [ ] Monitoring set
-- [ ] Rollback planned
-- [ ] Security checked
-- [ ] Deploy verified
-- [ ] Stakeholder approved
+- **Data leakage** → Overly optimistic metrics → Strict temporal splits
+- **No monitoring** → Silent degradation → Monitor prediction distribution
+
+## Tags
+
+`blockchain, ethereum, solidity, smart-contracts`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

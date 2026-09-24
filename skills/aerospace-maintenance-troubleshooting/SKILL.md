@@ -11,41 +11,62 @@ metadata:
     related_skills: ['general']
 ---
 
-## Overview
-Maintain aerospace.
+# Aerospace Maintenance Troubleshooting
 
-## When to Use
-- Apply this approach for effective results
-- Follow best practices and optimize for scale and security
+"Use when applying aerospace mro troubleshooting."
 
-## Key Approaches
-1. Define requirements and constraints clearly
-2. Choose appropriate tools and frameworks
-3. Implement modular design with clear separation
-4. Test thoroughly and validate results
-5. Document decisions and architecture
-6. Monitor and iterate
+## Trigger
+
+Activate this skill when the user mentions:
+- aerospace,  maintenance,  mro workflows or issues
+- Building, fixing, or optimizing aerospace maintenance troubleshooting
+- Questions about aerospace best practices
+
+## Core Concepts
+
+- Model selection and evaluation
+- Feature engineering and data prep
+- Training methodology
+- Deployment and serving patterns
+- Monitoring and drift detection
+
+## Step-by-Step Workflow
+
+1. **Frame** — Define problem, success metric, baseline
+   - Expected: Clear problem statement
+2. **Explore** — EDA, feature analysis
+   - Expected: Understanding of data relationships
+3. **Build** — Train models, track experiments
+   - Expected: Logged reproducible experiments
+4. **Evaluate** — Test on holdout, check bias
+   - Expected: Evaluation report with confidence
+5. **Deploy** — Serve with monitoring
+   - Expected: Production model with drift detection
+
+## Tools & Technologies
+
+- Experiment tracking
+- Model registry
+- Feature store
+- Model serving
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. Ignoring key constraints and requirements
-2. Skipping established best practices
-3. Poor alignment with overall architecture
-4. Inadequate testing coverage
-5. Lack of proper documentation
-6. Over-engineering without justification
-7. No rollback plan for failures
-8. Missing monitoring and alerting
-9. No scalability or performance planning
-10. No validation against original requirements
 
-## Verification Checklist
-- [ ] Requirements validated with stakeholders
-- [ ] Standards and best practices applied
-- [ ] Architecture design reviewed
-- [ ] Test coverage is sufficient
-- [ ] Documentation is complete
-- [ ] Monitoring and alerting configured
-- [ ] Rollback plan is in place
-- [ ] Security considerations addressed
-- [ ] Deployment verified
-- [ ] Stakeholder approval obtained
+- **Data leakage** → Overly optimistic metrics → Strict temporal splits
+- **No monitoring** → Silent degradation → Monitor prediction distribution
+
+## Tags
+
+`aerospace, maintenance, mro`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

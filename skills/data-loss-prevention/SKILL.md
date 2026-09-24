@@ -11,39 +11,62 @@ metadata:
     related_skills: ['data-leakage-prevention-in-skills']
 ---
 
-## Overview
-Prevent unauthorized data exfiltration using DLP technologies.
+# Data Loss Prevention
 
-## When to Use
-- "Data Loss Prevention design and architecture"
-- "Best practices for Data Loss Prevention"
-- "Data Loss Prevention implementation and deployment"
-- "Data Loss Prevention optimization and monitoring"
-- "Data Loss Prevention troubleshooting and scaling"
+"Use when preventing data loss."
 
-## Key Concepts
-1. Foundational concepts
-2. Implementation approaches
-3. Testing and validation
+## Trigger
 
-## Implementation Patterns
-1. Define clear requirements and specifications
-2. Choose appropriate tools and frameworks
-3. Implement with modular, maintainable code
-4. Write tests and automate verification
-5. Document architecture and decisions
-6. Monitor performance and iterate
+Activate this skill when the user mentions:
+- cybersecurity,  dlp,  data-protection,  privacy workflows or issues
+- Building, fixing, or optimizing data loss prevention
+- Questions about cybersecurity best practices
+
+## Core Concepts
+
+- Data modeling (dimensional, normalized)
+- ETL/ELT patterns and idempotency
+- Data quality and validation
+- Lineage and cataloging
+- Privacy and data protection
+
+## Step-by-Step Workflow
+
+1. **Discover** — Profile data, assess quality
+   - Expected: Data profile report with quality scores
+2. **Design** — Model for use case
+   - Expected: Approved data model
+3. **Build** — Implement pipelines with testing
+   - Expected: Idempotent pipelines with quality checks
+4. **Validate** — Reconcile, test business rules
+   - Expected: Validated data with quality metrics
+5. **Operate** — Monitor, optimize, iterate
+   - Expected: Monitored pipelines with SLA tracking
+
+## Tools & Technologies
+
+- dbt
+- Airflow/Prefect
+- Spark/DuckDB
+- Data catalogs
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. **Not accounting for constraints** — resource or timeline limitations
-2. **Ignoring industry standards** — not following established best practices
-3. **Poor stakeholder alignment** — conflicting requirements
-4. **Inadequate testing** — no validation of critical functions
-5. **Not documenting decisions** — lost knowledge transfer
 
-## Verification Checklist
-- [ ] Requirements documented
-- [ ] Standards reviewed
-- [ ] Design validated
-- [ ] Testing established
-- [ ] Documentation complete
+- **No data quality gates** → Garbage in, garbage out → Validate at every stage
+- **Monolithic pipelines** → Hard to debug → Small idempotent tasks
+
+## Tags
+
+`cybersecurity, dlp, data-protection, privacy`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

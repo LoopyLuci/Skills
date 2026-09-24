@@ -11,107 +11,64 @@ metadata:
     related_skills: [blog-publishing-workflow, landing-page-builder]
 ---
 
-# WordPress Development
+# Wordpress Development
 
-## Overview
-Complete WordPress development workflow: local setup, theme development (PHP template hierarchy, block editor, hooks, CPTs, ACF), plugin guidance, caching/CDN, migration, security hardening, and WooCommerce setup.
+"Use when developing WordPress. Themes, plugins."
 
-## When to Use
-- "Set up a WordPress site"
-- "Customize this WordPress theme"
-- "Build a custom post type"
-- "Secure a WordPress site"
+## Trigger
 
-## Local Setup
-```bash
-# Option A: LocalWP (recommended) — install from https://localwp.com
-# One-click WordPress setup with SSL, live link sharing
+Activate this skill when the user mentions:
+- wordpress,  php,  themes,  plugins,  development workflows or issues
+- Building, fixing, or optimizing wordpress development
+- Questions about wordpress best practices
 
-# Option B: Docker
-docker compose up -d
-# wp-config.php auto-generated, phpMyAdmin at localhost:8080
-```
+## Core Concepts
 
-## Theme Development
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-### Template Hierarchy
-```
-index.php (fallback)
-├── home.php (blog index)
-├── single.php (single post)
-│   └── single-{post-type}.php
-├── page.php (single page)
-│   └── page-{slug}.php
-├── archive.php (archive pages)
-│   └── archive-{post-type}.php
-├── category.php → tag.php → taxonomy.php
-├── search.php
-├── 404.php
-└── front-page.php (static homepage)
-```
+## Step-by-Step Workflow
 
-### Child Theme
-Create `wp-content/themes/my-theme-child/style.css`:
-```css
-/*
-Theme Name: My Theme Child
-Template: parent-theme-folder
-*/
-```
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
 
-And `functions.php`:
-```php
-<?php
-add_action('wp_enqueue_scripts', function() {
-    wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
-});
-```
+## Tools & Technologies
 
-### Custom Post Types & ACF
-```php
-// functions.php
-add_action('init', function() {
-    register_post_type('property', [
-        'labels' => ['name' => 'Properties', 'singular_name' => 'Property'],
-        'public' => true,
-        'supports' => ['title', 'editor', 'thumbnail', 'custom-fields'],
-        'menu_icon' => 'dashicons-admin-home',
-    ]);
-});
-```
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
 
-## Essential Plugins
-| Category | Plugin | Purpose |
-|----------|--------|---------|
-| SEO | Yoast SEO / Rank Math | Meta, sitemap, readability |
-| Caching | WP Rocket / W3 Total Cache | Page cache, minify, CDN |
-| Security | Wordfence / Sucuri | Firewall, malware scan, login security |
-| Forms | Gravity Forms / Fluent Forms | Contact forms, payment collection |
-| Images | ShortPixel / Smush | Compression, WebP conversion |
-| Backup | UpdraftPlus / BlogVault | Scheduled offsite backups |
+## Best Practices
 
-## Security Hardening Checklist
-- [ ] Change `wp_` table prefix during install (not after)
-- [ ] Disable XML-RPC (block brute force attacks)
-- [ ] Force HTTPS with `.htaccess` redirect
-- [ ] Limit login attempts (Wordfence or custom)
-- [ ] Disable file editing from admin (`define('DISALLOW_FILE_EDIT', true)`)
-- [ ] Strong passwords (enforce via plugin)
-- [ ] Regular updates (core, themes, plugins)
-- [ ] Remove demo content and unused themes/plugins
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. **Plugin bloat** — each plugin is a security and performance risk; audit quarterly
-2. **Not using child themes** — parent theme updates will overwrite all customizations
-3. **Default permalinks** — change to "Post name" immediately for SEO
-4. **No staging environment** — never update plugins or themes on production without testing
-5. **Ignoring PHP version** — outdated PHP is the #1 WordPress security vulnerability
 
-## Verification Checklist
-- [ ] Local environment set up and running
-- [ ] Child theme created if customizing an existing theme
-- [ ] Custom post types and ACF fields registered
-- [ ] Essential plugins installed and configured
-- [ ] Security checklist items completed
-- [ ] Permalinks set to "Post name"
-- [ ] Caching plugin configured
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
+
+## Tags
+
+`wordpress, php, themes, plugins, development`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

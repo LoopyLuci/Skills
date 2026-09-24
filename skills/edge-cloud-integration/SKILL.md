@@ -11,39 +11,62 @@ metadata:
     related_skills: ['multi-cloud-networking-strategy']
 ---
 
-## Overview
-Integrate edge computing with centralized cloud for hybrid processing.
+# Edge Cloud Integration
 
-## When to Use
-- "Edge Cloud Integration design and architecture"
-- "Best practices for Edge Cloud Integration"
-- "Edge Cloud Integration implementation and deployment"
-- "Edge Cloud Integration optimization and monitoring"
-- "Edge Cloud Integration troubleshooting and scaling"
+"Use when integrating edge with cloud."
 
-## Key Concepts
-1. Foundational concepts
-2. Implementation approaches
-3. Testing and validation
+## Trigger
 
-## Implementation Patterns
-1. Define clear requirements and specifications
-2. Choose appropriate tools and frameworks
-3. Implement with modular, maintainable code
-4. Write tests and automate verification
-5. Document architecture and decisions
-6. Monitor performance and iterate
+Activate this skill when the user mentions:
+- edge-computing,  hybrid-cloud,  edge-cloud,  multi-cloud workflows or issues
+- Building, fixing, or optimizing edge cloud integration
+- Questions about edge-computing best practices
+
+## Core Concepts
+
+- Infrastructure as Code (IaC)
+- Well-Architected Framework
+- Identity and access management
+- Networking and security groups
+- Cost optimization and tagging
+
+## Step-by-Step Workflow
+
+1. **Design** — Architecture review against WAF pillars
+   - Expected: Approved architecture diagram
+2. **Implement** — IaC templates with least-privilege IAM
+   - Expected: Reviewable version-controlled infra
+3. **Validate** — Security scan, cost estimate, plan review
+   - Expected: Clean plan within budget
+4. **Deploy** — Apply with change management
+   - Expected: Deployed infrastructure matches plan
+5. **Monitor** — Alarms, dashboards, cost alerts
+   - Expected: Full observability and cost allocation
+
+## Tools & Technologies
+
+- Terraform/Pulumi
+- Cloud-native IaC
+- Security scanning
+- Cost management
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. **Not accounting for constraints** — resource or timeline limitations
-2. **Ignoring industry standards** — not following established best practices
-3. **Poor stakeholder alignment** — conflicting requirements
-4. **Inadequate testing** — no validation of critical functions
-5. **Not documenting decisions** — lost knowledge transfer
 
-## Verification Checklist
-- [ ] Requirements documented
-- [ ] Standards reviewed
-- [ ] Design validated
-- [ ] Testing established
-- [ ] Documentation complete
+- **Manual console changes** → Configuration drift → All changes through IaC
+- **Over-privileged IAM** → Blast radius risk → Least privilege by default
+
+## Tags
+
+`edge-computing, hybrid-cloud, edge-cloud, multi-cloud`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

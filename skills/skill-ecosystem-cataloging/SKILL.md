@@ -12,101 +12,62 @@ metadata:
 
 # Skill Ecosystem Cataloging
 
-Cataloging and organizing skill ecosystems — from taxonomy development and category naming through skill relationships, navigation paths, and portfolio management.
+"Use when cataloging and organizing skill ecosystems."
 
-## When to Use
+## Trigger
 
-- Organizing a large skill inventory
-- Designing skill categories and subcategories
-- Building skill navigation and discovery
-- Analyzing skill portfolio balance
-- Planning skill taxonomy evolution
+Activate this skill when the user mentions:
+- meta,  skill-ecosystem,  cataloging,  organization,  taxonomy,  mapping workflows or issues
+- Building, fixing, or optimizing skill ecosystem cataloging
+- Questions about meta best practices
 
-## Ecosystem Mapping
+## Core Concepts
 
-```python
-from typing import Dict, List, Set
-from collections import defaultdict
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-class SkillEcosystem:
-    """Map and analyze a skill ecosystem."""
-    
-    ECOSYSTEM_LAYERS = {
-        'foundation': 'Core concepts (programming basics, CS fundamentals)',
-        'language': 'Programming languages and runtimes',
-        'framework': 'Application frameworks and libraries',
-        'platform': 'Platforms and infrastructure',
-        'integration': 'Cross-cutting patterns and integrations',
-        'domain': 'Domain-specific knowledge and practices',
-    }
-    
-    def __init__(self):
-        self.categories = defaultdict(set)
-        self.skill_metadata = {}
-    
-    def catalog_skill(self, name: str, category: str, 
-                       layer: str, tags: List[str]):
-        self.skill_metadata[name] = {
-            'category': category,
-            'layer': layer,
-            'tags': tags,
-            'related': [],
-        }
-        self.categories[category].add(name)
-    
-    def portfolio_balance(self) -> Dict:
-        """Analyze distribution across ecosystem layers."""
-        layer_counts = defaultdict(int)
-        for meta in self.skill_metadata.values():
-            layer_counts[meta['layer']] += 1
-        
-        total = sum(layer_counts.values()) or 1
-        return {
-            layer: {
-                'count': count,
-                'pct': round(count / total * 100, 1),
-            }
-            for layer, count in sorted(layer_counts.items())
-        }
-    
-    def coverage_gaps(self) -> List[str]:
-        """Find underrepresented ecosystem layers."""
-        balance = self.portfolio_balance()
-        gaps = []
-        for layer, expected in {'foundation': 15, 'language': 20, 
-                                 'framework': 30, 'domain': 15}.items():
-            actual = balance.get(layer, {}).get('pct', 0)
-            if actual < expected:
-                gaps.append(f"{layer}: {actual}% (target {expected}%)")
-        return gaps
-```
+## Step-by-Step Workflow
 
-## Taxonomy Principles
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
 
-```python
-TAXONOMY_PRINCIPLES = {
-    'mutual_exclusivity': 'A skill belongs to exactly one primary category',
-    'hierarchical_depth': 'Max 3 levels deep (Cat → Subcat → Skill)',
-    'consistent_naming': 'Nouns for categories, verb-phrases for skill descriptions',
-    'future_room': 'Categories should allow growth without restructuring',
-    'user_mental_model': 'Categories match how users think about the domain',
-}
-```
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Over-categorization** — too many small categories make navigation harder
-2. **Inconsistent naming** — some categories are technology names, others are concepts
-3. **Skills in multiple categories** — confusion about where a skill lives
-4. **No cross-links** — categories are silos; cross-reference between categories
-5. **Rigid taxonomy** — categories don't evolve with new technologies
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Category names are consistent and self-explanatory
-- [ ] Each skill maps to exactly one primary category
-- [ ] Cross-category navigation links exist
-- [ ] Category balance is healthy (no single category > 50%)
-- [ ] Taxonomy allows room for 2x growth
-- [ ] User can find a skill in ≤3 clicks
-- [ ] Categories reviewed and updated annually
+`meta, skill-ecosystem, cataloging, organization, taxonomy, mapping`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

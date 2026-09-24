@@ -5,70 +5,64 @@ tags: [excel, xlsx, spreadsheet, financial-model, data]
 related_skills: [pptx-generator, mmx-cli]
 ---
 
-# MiniMax XLSX Skill
+# Minimax Xlsx
 
-## Overview
+Use when creating, editing, or validating Excel spreadsheets
 
-Create, edit, read, analyze, and validate Excel files (.xlsx, .xlsm, .csv, .tsv) using XML manipulation and helper scripts.
+## Trigger
 
-## Task Routing
+Activate this skill when the user mentions:
+- excel,  xlsx,  spreadsheet,  financial-model,  data workflows or issues
+- Building, fixing, or optimizing minimax xlsx
+- Questions about excel best practices
 
-| Task | Method |
-|------|--------|
-| **READ** — analyze data | `xlsx_reader.py` + pandas |
-| **CREATE** — new xlsx | XML template with `create.md` |
-| **EDIT** — modify existing | XML unpack→edit→pack |
-| **FIX** — repair formulas | XML unpack→fix `<f>` nodes→pack |
-| **VALIDATE** — check formulas | `formula_check.py` |
+## Core Concepts
 
-## Create a New Spreadsheet
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-```bash
-# Copy minimal template, edit XML directly, then pack
-python3 scripts/xlsx_pack.py /tmp/xlsx_work/ output.xlsx
-```
+## Step-by-Step Workflow
 
-## Edit an Existing Spreadsheet
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
 
-```bash
-# Unpack → edit → repack cycle
-python3 scripts/xlsx_unpack.py input.xlsx /tmp/xlsx_work/
-# ... edit XML ...
-python3 scripts/xlsx_pack.py /tmp/xlsx_work/ output.xlsx
-```
+## Tools & Technologies
 
-**CRITICAL:** Never use openpyxl round-trip on existing files (corrupts VBA, pivots, sparklines). Use unpack → edit → pack.
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
 
-## Add a Column
+## Best Practices
 
-```bash
-python3 scripts/xlsx_unpack.py input.xlsx /tmp/xlsx_work/
-python3 scripts/xlsx_add_column.py /tmp/xlsx_work/ --col G     --sheet "Sheet1" --header "% of Total"     --formula '=F{row}/$F$10' --formula-rows 2:9     --numfmt '0.0%'
-python3 scripts/xlsx_pack.py /tmp/xlsx_work/ output.xlsx
-```
-
-## Financial Color Standard
-
-| Cell Role | Font Color |
-|-----------|-----------|
-| Hard-coded input / assumption | Blue (`0000FF`) |
-| Formula / computed result | Black (`000000`) |
-| Cross-sheet reference formula | Green (`00B050`) |
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-| Pitfall | Solution |
-|---------|----------|
-| Using openpyxl for round-trip editing | Use XML unpack→edit→pack workflow |
-| Hardcoding calculated values | Every computed cell MUST use an Excel formula |
-| Forgetting formula validation | Run `formula_check.py` before delivery |
-| Not preserving original sheets | EDIT tasks must keep all original sheets and data |
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] READ: Data analyzed without modifying source
-- [ ] CREATE: XML template used, formulas for computed values
-- [ ] EDIT: XML unpack/edit/pack used (not openpyxl)
-- [ ] Original sheets preserved in EDIT tasks
-- [ ] Formulas validated with formula_check.py
-- [ ] Output file deliverable produced
+`excel, xlsx, spreadsheet, financial-model, data`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

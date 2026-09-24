@@ -10,69 +10,64 @@ metadata:
     related_skills: [board-presentation-deck, business-metrics-kpis, customer-journey-mapping, sales-forecasting-advanced]
 ---
 
-# Quarterly Business Reviews (QBR)
+# Quarterly Business Review
 
-Conducting effective quarterly business reviews — from QBR structure and prep through data analysis, stakeholder alignment, and action planning.
+"Use when conducting quarterly business reviews."
 
-## When to Use
+## Trigger
 
-- Reviewing business performance with stakeholders (customers, execs, board)
-- Conducting account-level QBRs with strategic customers
-- Preparing QBR presentations and materials
-- Driving alignment on priorities and goals
-- Turning QBR insights into action items
+Activate this skill when the user mentions:
+- QBR,  business-review,  performance-review,  account-review,  stakeholder-meeting workflows or issues
+- Building, fixing, or optimizing quarterly business review
+- Questions about QBR best practices
 
-## QBR Structure
+## Core Concepts
 
-```python
-QBR_AGENDA = {
-    'executive_summary': 'Highlights, lowlights, key metrics (5 min)',
-    'metrics_review': 'Revenue, usage, adoption, NPS, support (15 min)',
-    'goals_progress': 'OKR progress, milestones, wins vs gaps (10 min)',
-    'strategic_items': 'Key initiatives, product roadmap, partnership (10 min)',
-    'risks_and_concerns': 'Open issues, churn signals, competitive threats (5 min)',
-    'action_items': 'Priorities for next quarter, owners, deadlines (5 min)',
-}
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-class QBR:
-    """Prepare and structure a Quarterly Business Review."""
-    def __init__(self, customer: str, quarter: str, year: int):
-        self.customer = customer
-        self.quarter = quarter
-        self.year = year
-        self.sections = []
-    
-    def add_metrics(self, metrics: Dict):
-        self.sections.append({
-            'title': 'Performance Metrics',
-            'metrics': metrics,
-        })
-    
-    def add_action_items(self, items: List[Dict]):
-        self.sections.append({
-            'title': 'Action Items',
-            'items': [f"{i['owner']}: {i['action']} by {i['deadline']}" for i in items],
-        })
-    
-    def generate_agenda(self) -> str:
-        return f"📋 QBR: {self.customer} — Q{self.quarter} {self.year}\n" + "=" * 50 + "\n" + "\n".join(f"{k}: {v}" for k, v in QBR_AGENDA.items())
-```
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **No prep** — showing up without reviewing prior QBR action items wastes everyone's time
-2. **Too much data** — 50 slides of charts with no narrative; tell the story
-3. **Hiding bad news** — QBR is for honest assessment; hiding issues prevents getting help
-4. **No action items** — great meeting with no follow-up; conclude with owners and deadlines
-5. **Inconsistent cadence** — skipping QBRs or inconsistent format erodes their value
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Prior QBR action items reviewed and status updated
-- [ ] Customer/stakeholder goals clearly stated
-- [ ] Performance metrics vs targets shown
-- [ ] Issues and risks presented transparently
-- [ ] Action items with owners and deadlines
-- [ ] QBR materials sent 48 hours in advance
-- [ ] Feedback collected on QBR format and content
-- [ ] Post-QBR summary sent within 24 hours
+`QBR, business-review, performance-review, account-review, stakeholder-meeting`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

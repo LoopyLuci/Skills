@@ -12,99 +12,62 @@ metadata:
 
 # Skill Gap Analysis
 
-Systematically identifying missing skills and opportunities — analyzing domains, technology landscapes, user needs, and coverage gaps.
+"Use when identifying missing skills and opportunities."
 
-## When to Use
+## Trigger
 
-- Finding new skill opportunities
-- Assessing skill coverage in a domain
-- Planning skill creation sprints
-- Identifying underserved topics
-- Building comprehensive skill portfolios
+Activate this skill when the user mentions:
+- meta,  skill-gap,  analysis,  discovery,  opportunity,  landscape workflows or issues
+- Building, fixing, or optimizing skill gap analysis
+- Questions about meta best practices
 
-## Gap Analysis Framework
+## Core Concepts
 
-```python
-from typing import Dict, List, Set
-import re
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-class SkillGapAnalyzer:
-    """Identify missing skills across domains."""
-    
-    DOMAINS = {
-        'programming': ['python', 'javascript', 'typescript', 'rust', 'go', 'java', 'csharp', 'kotlin', 'swift'],
-        'web': ['react', 'vue', 'angular', 'svelte', 'next', 'nuxt', 'remix', 'astro'],
-        'data': ['sql', 'nosql', 'spark', 'kafka', 'pandas', 'polars', 'duckdb'],
-        'ml': ['pytorch', 'tensorflow', 'sklearn', 'xgboost', 'transformers', 'diffusers'],
-        'cloud': ['aws', 'azure', 'gcp', 'kubernetes', 'docker', 'terraform'],
-        'security': ['pentest', 'crypto', 'network-sec', 'app-sec', 'cloud-sec', 'identity'],
-        'business': ['marketing', 'sales', 'product', 'finance', 'hr', 'operations'],
-    }
-    
-    @staticmethod
-    def find_gaps(skills: Set[str], depth: int = 2) -> List[Dict]:
-        """Find coverage gaps in domains."""
-        gaps = []
-        for domain, keywords in SkillGapAnalyzer.DOMAINS.items():
-            for keyword in keywords:
-                # Check breadth and depth coverage
-                breadth_count = sum(1 for s in skills if keyword in s)
-                if breadth_count < depth:
-                    gaps.append({
-                        'domain': domain,
-                        'keyword': keyword,
-                        'current_count': breadth_count,
-                        'target': depth,
-                        'gap': depth - breadth_count,
-                        'suggestion': f"Create {depth - breadth_count} more {keyword} skills",
-                    })
-        return sorted(gaps, key=lambda g: g['gap'], reverse=True)
-    
-    @staticmethod
-    def suggest_skill(domain: str, technology: str, 
-                       existing_skills: Set[str]) -> List[str]:
-        """Suggest specific skills based on pattern analysis."""
-        patterns = [
-            f"{technology}-advanced-patterns",
-            f"{technology}-best-practices",
-            f"{technology}-optimization",
-            f"{technology}-security",
-            f"{technology}-testing",
-            f"{technology}-deployment",
-            f"{technology}-api-integration",
-        ]
-        return [p for p in patterns if p not in existing_skills]
-```
+## Step-by-Step Workflow
 
-## Discovery Methods
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
 
-```python
-DISCOVERY_METHODS = [
-    "Scan technology trends (GitHub trending, ProductHunt, tech conferences)",
-    "Analyze search queries and user requests",
-    "Map technology ecosystems and find missing pieces",
-    "Track language/framework version upgrades for new patterns",
-    "Cross-reference certification syllabi (AWS, GCP, Azure, CKx)",
-    "Audit existing skills for outdated content that needs replacement",
-    "Follow thought leaders and OSS maintainers for emerging practices",
-    "Parse changelogs of major frameworks for new features",
-]
-```
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Creating too early** — building skills for unstable technologies that will change
-2. **Too narrow** — a skill about one specific function is rarely useful
-3. **Too broad** — "Python" is too large for one skill; break into sub-patterns
-4. **Redundancy** — multiple skills covering the same ground; merge or distinguish
-5. **Ignoring prerequisites** — advanced skills without foundational context
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Domain coverage assessed against existing skills
-- [ ] Technology gaps identified by ecosystem analysis
-- [ ] Suggested skills are specific (not "learn programming")
-- [ ] Skills fill real user needs (not just "everything needs a skill")
-- [ ] No redundancy with existing skills
-- [ ] Priority ordered by impact + frequency of use
-- [ ] Each gem has at least 3-5 related existing skills to reference
+`meta, skill-gap, analysis, discovery, opportunity, landscape`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

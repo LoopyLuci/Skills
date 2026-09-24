@@ -10,48 +10,64 @@ metadata:
     related_skills: [security-incident-response, certificate-management-pki, remote-team-management, data-pipeline-streaming]
 ---
 
-# Business Continuity and Disaster Recovery
+# Business Continuity Planning
 
-Designing business continuity plans and disaster recovery procedures.
+"Use when designing business continuity and disaster plans."
 
-## When to Use
+## Trigger
 
-- Ensuring business operations continue during disruptions
-- Defining RTO (Recovery Time Objective) and RPO (Recovery Point Objective)
-- Building DR plans for IT systems
-- Complying with regulations requiring business continuity
+Activate this skill when the user mentions:
+- business-continuity,  disaster-recovery,  BCP,  DRP,  RTO,  RPO,  failover workflows or issues
+- Building, fixing, or optimizing business continuity planning
+- Questions about business-continuity best practices
 
-## BCP Framework
+## Core Concepts
 
-```python
-BCP_PHASES = {
-    'analysis': 'Business Impact Analysis (BIA) — identify critical functions',
-    'strategy': 'Define recovery strategies (active-passive, active-active, hot/warm/cold)',
-    'planning': 'Document recovery procedures, roles, communication',
-    'testing': 'Regular DR tests (tabletop, walkthrough, full failover)',
-}
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-def business_impact_analysis(processes: List[Dict]) -> List[Dict]:
-    for p in processes:
-        if p.get('max_downtime_hours', 72) <= 4: p['priority'] = 'critical'
-        elif p.get('max_downtime_hours', 72) <= 24: p['priority'] = 'high'
-        else: p['priority'] = 'normal'
-    return sorted(processes, key=lambda p: p.get('max_downtime_hours', 72))
-```
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **No testing** — untested DR plans fail when needed
-2. **Unrealistic RTO** — claiming 1-hour RTO for 4-hour restores
-3. **Only IT focus** — BCP includes people, facilities, suppliers too
-4. **Single region failure** — backup site in same disaster zone as primary
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] BIA completed for critical processes
-- [ ] RTO and RPO defined per system
-- [ ] DR plan documented and versioned
-- [ ] Crisis communication plan with contact lists
-- [ ] DR test schedule (tabletop quarterly, full failover annually)
-- [ ] Backup restoration tested regularly
-- [ ] Off-site or cloud-based backups
+`business-continuity, disaster-recovery, BCP, DRP, RTO, RPO, failover`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

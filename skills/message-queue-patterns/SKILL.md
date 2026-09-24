@@ -12,58 +12,62 @@ metadata:
 
 # Message Queue Patterns
 
-Implementing message queue and stream processing systems — from pub-sub and point-to-point through Kafka/RabbitMQ patterns, consumer groups, and exactly-once semantics.
+"Use when implementing message queues and stream processing."
 
-## When to Use
+## Trigger
 
-- Decoupling microservices via async messaging
-- Building event-driven data pipelines
-- Buffering spikes in request volume
-- Implementing pub-sub for broadcast events
-- Processing streams in real-time
+Activate this skill when the user mentions:
+- message-queue,  kafka,  rabbitmq,  pub-sub,  streaming,  event-bus workflows or issues
+- Building, fixing, or optimizing message queue patterns
+- Questions about message-queue best practices
 
-## Queue Types
+## Core Concepts
 
-```python
-QUEUE_TYPES = {
-    'point_to_point': 'One producer, one consumer (competing consumers)',
-    'pub_sub': 'One producer, multiple subscribers each get all messages',
-    'request_reply': 'Producer sends, consumer replies (RPC over queue)',
-    'dead_letter': 'Failed messages are stored for later inspection',
-}
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-class MessageBroker:
-    """Simple in-memory message broker."""
-    def __init__(self):
-        self.queues = {}
-        self.topics = {}
-    
-    def create_queue(self, name: str):
-        self.queues[name] = []
-    
-    def publish_to_queue(self, queue: str, message: dict):
-        if queue in self.queues:
-            self.queues[queue].append(message)
-    
-    def consume_from_queue(self, queue: str) -> dict:
-        if queue in self.queues and self.queues[queue]:
-            return self.queues[queue].pop(0)
-        return None
-```
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **No message ordering guarantees** — Kafka partitions order within, not across; design for it
-2. **Exactly-once is hard** — at-least-once with idempotent consumers is more practical
-3. **No dead letter queue** — failed messages block the queue; have a DLQ
-4. **Monitoring blind spot** — queue depth growing silently indicates a problem
-5. **Schema evolution** — messages change shape over time; use Avro/Protobuf with schema registry
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Queue topology matches use case (point-to-point vs pub-sub)
-- [ ] Consumer idempotency implemented (replay safety)
-- [ ] Dead letter queue configured per queue/topic
-- [ ] Message schema versioned (schema registry)
-- [ ] Monitoring on queue depth, consumer lag, throughput
-- [ ] Exactly-once vs at-least-once semantics documented
+`message-queue, kafka, rabbitmq, pub-sub, streaming, event-bus`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

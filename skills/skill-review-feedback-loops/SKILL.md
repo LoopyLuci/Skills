@@ -10,84 +10,64 @@ metadata:
     related_skills: [skill-quality-standards, skill-testing-framework, skill-maintenance-lifecycle, code-review-checklist]
 ---
 
-# Skill Review and Feedback Loops
+# Skill Review Feedback Loops
 
-Implementing review and feedback processes for skills — from peer review workflows through user feedback collection, iteration cycles, and continuous improvement.
+"Use when implementing skill review and feedback processes."
 
-## When to Use
+## Trigger
 
-- Reviewing skills for quality before publishing
-- Collecting user feedback on skill usefulness
-- Iteratively improving existing skills
-- Building a skill improvement cycle
+Activate this skill when the user mentions:
+- meta,  skill-review,  feedback,  quality-assurance,  iteration,  improvement workflows or issues
+- Building, fixing, or optimizing skill review feedback loops
+- Questions about meta best practices
 
-## Review Framework
+## Core Concepts
 
-```python
-class SkillReview:
-    """Review skills for quality and completeness."""
-    
-    REVIEW_CRITERIA = {
-        'accuracy': 'Technical content is correct and up-to-date',
-        'clarity': 'Content is understandable for the target audience',
-        'completeness': 'All required sections are present and substantial',
-        'practicality': 'Examples are realistic and applicable',
-        'usefulness': 'Skill addresses a real user need',
-    }
-    
-    def __init__(self):
-        self.reviews = []
-    
-    def conduct_review(self, skill_md: str, reviewer: str) -> Dict:
-        """Conduct a review of skill content."""
-        issues = []
-        
-        if not skill_md or len(skill_md) < 200:
-            issues.append('Skill content too short (< 200 chars)')
-        if '## Common Pitfalls' not in skill_md:
-            issues.append('Missing Common Pitfalls section')
-        if '## Verification Checklist' not in skill_md:
-            issues.append('Missing Verification Checklist')
-        if '```' not in skill_md:
-            issues.append('No code examples')
-        
-        return {
-            'reviewer': reviewer,
-            'issues': issues,
-            'pass': len(issues) <= 2,
-            'score': max(0, 10 - len(issues) * 2),
-        }
-```
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-## Feedback Loop
+## Step-by-Step Workflow
 
-```python
-FEEDBACK_LOOP = """
-Collect → Analyze → Prioritize → Improve → Verify → Measure
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
 
-Collect: Inline feedback, surveys, usage analytics
-Analyze: Tag and categorize feedback (accuracy, depth, missing topics)
-Prioritize: By frequency + impact (how many users affected? how bad?)
-Improve: Update skill content, add examples, fix inaccuracies
-Verify: Re-review updated skill against quality standards
-Measure: Track improvement in user satisfaction scores
-"""
-```
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Review bottlenecks** — single reviewer blocks publishing; use rotating reviewers
-2. **Vague feedback** — "This could be better" without specifics; require actionable comments
-3. **No iteration limit** — skills that keep getting revised without publishing
-4. **Ignoring negative feedback** — critical feedback is the most valuable for improvement
-5. **No feedback channel** — users can't report issues; add an inline feedback mechanism
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Peer review completed before publishing significant skills
-- [ ] Review criteria defined (accuracy, clarity, completeness, practicality)
-- [ ] User feedback channel exists (inline rating, issues link)
-- [ ] Feedback analyzed and prioritized regularly
-- [ ] Improvement cycle: feedback → prioritize → update → verify
-- [ ] Skill satisfaction score tracked over time
-- [ ] Review turnaround time < 48 hours
+`meta, skill-review, feedback, quality-assurance, iteration, improvement`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

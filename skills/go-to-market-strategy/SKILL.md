@@ -10,78 +10,64 @@ metadata:
     related_skills: [product-management-roadmap, digital-marketing-strategy, pricing-strategy-optimization, sales-enablement-playbooks]
 ---
 
-# Go-To-Market Strategy
+# Go To Market Strategy
 
-Planning and executing go-to-market strategies — from market segmentation through channel strategy, launch planning, and post-launch optimization.
+"Use when planning go-to-market and launch strategies."
 
-## When to Use
+## Trigger
 
-- Launching a new product or feature
-- Entering a new market or geography
-- Planning a GTM strategy for a startup
-- Coordinating cross-functional launch activities
+Activate this skill when the user mentions:
+- go-to-market,  product-launch,  GTM,  market-entry,  launch-strategy workflows or issues
+- Building, fixing, or optimizing go to market strategy
+- Questions about go-to-market best practices
 
-## GTM Framework
+## Core Concepts
 
-```python
-class GTMStrategy:
-    def __init__(self, product: str, target_market: str, launch_date: str, revenue_target: float):
-        self.product = product
-        self.market = target_market
-        self.launch_date = launch_date
-        self.revenue_target = revenue_target
-        self.segments = []; self.channels = []; self.milestones = []
-    
-    def add_segment(self, name: str, personas: List[str], pain_points: List[str], priority: int = 3):
-        self.segments.append({'name': name, 'personas': personas, 'pain_points': pain_points, 'priority': priority})
-        return self
-    
-    def add_channel(self, name: str, budget_pct: float, expected_leads: int, cpl: float):
-        self.channels.append({'name': name, 'budget_pct': budget_pct, 'expected_leads': expected_leads, 'cpl': cpl})
-        return self
-    
-    def generate_plan(self) -> str:
-        plan = f"🚀 GTM: {self.product} → {self.market}\nLaunch: {self.launch_date} | Revenue: ${self.revenue_target:,.0f}\n"
-        plan += "=" * 40 + "\n\nSegments:\n"
-        for s in sorted(self.segments, key=lambda x: x['priority']):
-            plan += f"  P{s['priority']}: {s['name']}\n"
-        plan += "\nChannels:\n"
-        for c in sorted(self.channels, key=lambda x: x['expected_leads'], reverse=True):
-            plan += f"  {c['name']}: {c['budget_pct']}% budget, ~{c['expected_leads']} leads\n"
-        return plan
-```
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-## Launch Phases
+## Step-by-Step Workflow
 
-```python
-LAUNCH_PHASES = {
-    'T-60': 'Market research, pricing, sales playbook, positioning',
-    'T-30': 'Landing page, email sequences, sales training, press kit',
-    'T-7': 'Final QA, social queue, support briefing, dashboards',
-    'Launch Day': 'Announcement, press release, webinar, sales activation',
-    'Week 1': 'Early adopter follow-up, analytics review, paid amplification',
-    'Month 1': 'GTM retrospective, channel analysis, customer interviews',
-}
-```
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **No market validation** — building what nobody wants
-2. **Sales and marketing not aligned** — leads generated but can't close
-3. **No post-launch plan** — launch day is just the beginning
-4. **Trying to reach everyone** — solve one problem for one audience well
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Target segments prioritized
-- [ ] Channel mix with budget allocation defined
-- [ ] Pricing finalized
-- [ ] Launch timeline with milestones and owners
-- [ ] Success metrics defined
+`go-to-market, product-launch, GTM, market-entry, launch-strategy`
 
-## See Also
+---
 
-- product-management-roadmap — product readiness
-- digital-marketing-strategy — marketing component
-- pricing-strategy-optimization — launch pricing
-- sales-enablement-playbooks — sales readiness
+*LoopyLuci/Skills - 2026-09-24*

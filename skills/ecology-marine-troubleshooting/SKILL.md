@@ -11,43 +11,64 @@ metadata:
     related_skills: [general]
 ---
 
-## Overview
-Apply troubleshooting marine ecology issues for effective results. 
+# Ecology Marine Troubleshooting
 
-## When to Use
-- "Ecology Marine Troubleshooting design and implementation"
-- "Best practices for Ecology Marine Troubleshooting"
-- "Ecology Marine Troubleshooting optimization and scaling"
-- "Ecology Marine Troubleshooting troubleshooting and validation"
+"Use when troubleshooting marine ecology issues."
 
-## Key Approaches
-1. Define clear requirements and specifications
-2. Choose appropriate frameworks and tools
-3. Implement with modular, maintainable structure
-4. Write comprehensive tests and validate
-5. Document architecture and decisions
-6. Monitor and iterate based on feedback
+## Trigger
+
+Activate this skill when the user mentions:
+- marine-ecology,  ocean,  ecosystems,  marine-life workflows or issues
+- Building, fixing, or optimizing ecology marine troubleshooting
+- Questions about marine-ecology best practices
+
+## Core Concepts
+
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
+
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. **Not accounting for constraints** — resource limitations
-2. **Ignoring industry standards** — no best practices followed
-3. **Poor stakeholder alignment** — conflicting requirements
-4. **Inadequate testing** — no validation of functions
-5. **Not documenting decisions** — lost knowledge transfer
-6. **Over-engineering** — complex where simple suffices
-7. **No rollback plan** — deployment failures
-8. **Insufficient monitoring** — no observability
-9. **Not planning for growth** — scalability issues
-10. **Missing validation** — no quality checks
 
-## Verification Checklist
-- [ ] Requirements defined and validated
-- [ ] Standards and best practices applied
-- [ ] Design reviewed with stakeholders
-- [ ] Implementation plan with milestones
-- [ ] Testing strategy defined
-- [ ] Documentation complete
-- [ ] Monitoring and alerting configured
-- [ ] Deployment with rollback plan
-- [ ] Security review completed
-- [ ] Post-deployment verification
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
+
+## Tags
+
+`marine-ecology, ocean, ecosystems, marine-life`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

@@ -12,71 +12,62 @@ metadata:
 
 # Remote Team Management
 
-Managing remote and distributed teams — from async communication and meeting rhythms through remote culture, performance management, and collaboration tools.
+"Use when managing remote and distributed teams."
 
-## When to Use
+## Trigger
 
-- Managing a fully remote or hybrid team
-- Building remote-first communication practices
-- Creating async-first workflows
-- Maintaining team culture across time zones
-- Onboarding and developing remote employees
+Activate this skill when the user mentions:
+- remote-work,  distributed-teams,  async-communication,  remote-culture,  hybrid workflows or issues
+- Building, fixing, or optimizing remote team management
+- Questions about remote-work best practices
 
-## Remote Work Practices
+## Core Concepts
 
-```python
-REMOTE_BEST_PRACTICES = {
-    'async_first': 'Default to async (docs, recorded video, chat), meeting as last resort',
-    'over_communicate': 'Share context generously — remote teams lack hallway conversations',
-    'written_culture': 'Decisions documented, not discussed away; write things down',
-    'time_zone_aware': 'Rotate meeting times; respect core hours with overlap',
-    'results_oriented': 'Measure output, not hours (but beware burnout)',
-}
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-class RemoteTeam:
-    """Manage remote team rhythms."""
-    def __init__(self, name: str, timezones: List[str]):
-        self.name = name
-        self.timezones = timezones
-    
-    def find_overlap(self, meeting_duration: int = 60) -> str:
-        """Find best meeting time across time zones."""
-        import pytz
-        from datetime import datetime, timedelta
-        
-        local_now = datetime.now()
-        overlap_hours = []
-        
-        # Simplified: find 2-hour window with most team members available
-        # Real implementation would check calendar availability
-        return "Suggest alternating between 9am ET/3pm CET and 3pm ET/9pm CET"
-    
-    def communication_rhythm(self) -> Dict:
-        return {
-            'daily': 'Async stand-up (Slack/bot, not video call)',
-            'weekly': 'Team meeting (45 min, recorded, agenda first)',
-            'biweekly': '1:1s with manager (30 min, no status update; coaching)',
-            'quarterly': 'Team offsite (in-person if possible)',
-        }
-```
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Meeting overload** — synchronous meetings dominate remote; shift to async by default
-2. **Out of sight, out of mind** — remote team members get overlooked for promotions; be intentional
-3. **Time zone tyranny** — always scheduling at the same time penalizes some; rotate
-4. **No water cooler** — serendipitous interactions need intentional replacement; virtual coffee
-5. **Over-documentation** — process for process's sake; document what matters, not everything
-6. **Burnout** — remote workers have trouble disconnecting; model healthy boundaries
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Async-first communication culture established
-- [ ] Core overlap hours defined for the team
-- [ ] Written culture (decisions documented, meeting notes shared)
-- [ ] 1:1s scheduled with every team member
-- [ ] Team meeting rotation considers all time zones
-- [ ] Career development and visibility for remote members
-- [ ] Virtual social events (coffee, games, celebrations)
-- [ ] Burnout signals monitored (after-hours messages, vacation usage)
-- [ ] Clear expectations on availability and response times
+`remote-work, distributed-teams, async-communication, remote-culture, hybrid`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

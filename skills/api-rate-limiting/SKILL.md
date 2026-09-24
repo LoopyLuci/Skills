@@ -10,76 +10,64 @@ metadata:
     related_skills: [api-design-rest-graphql, ddos-mitigation-strategies, caching-strategies, api-gateway-load-balancing]
 ---
 
-# API Rate Limiting
+# Api Rate Limiting
 
-Implementing API rate limiting — from token bucket and sliding window through distributed rate limiting, quota management, and Redis-backed implementations.
+"Use when implementing API rate limiting and throttling."
 
-## When to Use
+## Trigger
 
-- Protecting APIs from abuse and excessive traffic
-- Enforcing API usage quotas per customer tier
-- Preventing DDoS and brute-force attacks
-- Ensuring fair resource allocation across tenants
-- Implementing API monetization (rate tiers)
+Activate this skill when the user mentions:
+- rate-limiting,  throttling,  API,  token-bucket,  leaky-bucket,  quota,  Redis workflows or issues
+- Building, fixing, or optimizing api rate limiting
+- Questions about rate-limiting best practices
 
-## Rate Limiting Algorithms
+## Core Concepts
 
-```python
-import time
-from collections import defaultdict
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-class TokenBucket:
-    """Token bucket rate limiter — allows bursts up to capacity."""
-    def __init__(self, capacity: int, refill_rate: float):
-        self.capacity = capacity
-        self.tokens = capacity
-        self.refill_rate = refill_rate  # tokens per second
-        self.last_refill = time.time()
-    
-    def allow(self, tokens: int = 1) -> bool:
-        now = time.time()
-        elapsed = now - self.last_refill
-        self.tokens = min(self.capacity, self.tokens + elapsed * self.refill_rate)
-        self.last_refill = now
-        
-        if self.tokens >= tokens:
-            self.tokens -= tokens
-            return True
-        return False
+## Step-by-Step Workflow
 
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
 
-class SlidingWindow:
-    """Sliding window log — precise per-window counting."""
-    def __init__(self, window_seconds: int = 60, max_requests: int = 100):
-        self.window = window_seconds
-        self.max_requests = max_requests
-        self.requests = defaultdict(list)  # key -> [timestamps]
-    
-    def allow(self, key: str) -> bool:
-        now = time.time()
-        window_start = now - self.window
-        self.requests[key] = [t for t in self.requests[key] if t > window_start]
-        
-        if len(self.requests[key]) < self.max_requests:
-            self.requests[key].append(now)
-            return True
-        return False
-```
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Synchronous blocking** — blocking the request thread for rate limiting; use async
-2. **Clock skew issues** — distributed rate limiters need synchronized clocks
-3. **Rate limiting health checks** — monitoring systems may trip rate limits; whitelist them
-4. **No clear error format** — return 429 with Retry-After header and clear error body
-5. **Single-node bottleneck** — in-memory rate limiting doesn't scale across instances
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Algorithm matches use case (token bucket for bursts, sliding window for precise counting)
-- [ ] Distributed rate limiting (Redis or similar) for multi-instance deployments
-- [ ] 429 response includes Retry-After header
-- [ ] Rate limit headers in response (X-RateLimit-Limit, Remaining, Reset)
-- [ ] Exemptions for internal/monitoring services
-- [ ] Rate limit tiers by subscription level
-- [ ] Rate limit monitoring and alerts (proximity to limit)
+`rate-limiting, throttling, API, token-bucket, leaky-bucket, quota, Redis`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

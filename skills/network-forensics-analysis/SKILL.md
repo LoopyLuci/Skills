@@ -10,40 +10,62 @@ metadata:
     related_skills: [security-incident-response, threat-hunting-methods, packet-capture-engine, traffic-analyzer]
 ---
 
-# Network Forensic Analysis
+# Network Forensics Analysis
 
-Analyzing packet captures and network evidence for security investigations — from capture methodology through protocol analysis, timeline reconstruction, and evidence preservation.
+"Use when performing network forensic and pcap analysis."
 
-## When to Use
+## Trigger
 
-- Investigating a security incident from network evidence
-- Analyzing pcap files for indicators of compromise
-- Reconstructing network sessions and timelines
-- Preparing network evidence for legal proceedings
+Activate this skill when the user mentions:
+- network-forensics,  pcap,  wireshark,  packet-analysis,  incident-investigation workflows or issues
+- Building, fixing, or optimizing network forensics analysis
+- Questions about network-forensics best practices
 
-## Forensics Process
+## Core Concepts
 
-```python
-FORENSICS_PHASES = {
-    'preservation': 'Capture and hash evidence, maintain chain of custody',
-    'triage': 'Identify suspicious sessions, IPs, ports, and protocols',
-    'analysis': 'Deep packet inspection, protocol decode, file extraction',
-    'correlation': 'Correlate with logs, endpoints, and threat intel',
-}
-```
+- Threat modeling and risk assessment
+- Attack surface analysis
+- Defense in depth
+- Zero-trust architecture
+- Compliance and audit requirements
+
+## Step-by-Step Workflow
+
+1. **Scope** — Define assets, threats, attack surface
+   - Expected: Documented scope with trust boundaries
+2. **Assess** — Identify vulnerabilities, evaluate risk
+   - Expected: Prioritized findings with CVSS scores
+3. **Remediate** — Apply secure-by-design fixes
+   - Expected: Vulnerabilities closed
+4. **Verify** — Re-test and validate remediation
+   - Expected: Independent verification complete
+5. **Document** — Record findings and lessons learned
+   - Expected: Audit-ready report
+
+## Tools & Technologies
+
+- Vulnerability scanners
+- SAST/DAST tools
+- SIEM platforms
+- Pen-testing frameworks
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Truncated captures** — missing packet payloads lose evidence
-2. **No chain of custody** — evidence integrity must be provable
-3. **Analyzing originals** — always work from copies, not original evidence
-4. **Missing encrypted traffic** — focus on metadata, DNS, TLS handshakes
-5. **No timeline** — timestamps need synchronized clocks (NTP)
+- **Scope creep** → Unclear boundaries → Define scope explicitly
+- **Tool reliance without analysis** → False positives → Manual validation required
 
-## Verification Checklist
+## Tags
 
-- [ ] Full packet captures with timestamps
-- [ ] Cryptographic hashes of evidence files
-- [ ] Chain of custody documented
-- [ ] Timeline reconstructed from multiple sources
-- [ ] Protocol analysis for HTTP, DNS, TLS covering attack vector
+`network-forensics, pcap, wireshark, packet-analysis, incident-investigation`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

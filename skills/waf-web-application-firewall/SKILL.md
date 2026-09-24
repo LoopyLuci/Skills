@@ -10,44 +10,64 @@ metadata:
     related_skills: [web-security-patterns, network-ids-ips-patterns, ddos-mitigation-strategies, api-gateway-load-balancing]
 ---
 
-# Web Application Firewall (WAF)
+# Waf Web Application Firewall
 
-Implementing and managing WAFs — from rule writing and OWASP Core Rule Set through deployment, tuning, and bypass prevention.
+"Use when implementing web application firewalls and rules."
 
-## When to Use
+## Trigger
 
-- Protecting apps from SQL injection, XSS, and OWASP Top 10 attacks
-- Implementing virtual patching for known vulnerabilities
-- Filtering malicious traffic before it reaches app servers
-- PCI DSS compliance (requirement 6.6)
+Activate this skill when the user mentions:
+- WAF,  web-application-firewall,  modsecurity,  OWASP,  rules,  SQL-injection,  XSS workflows or issues
+- Building, fixing, or optimizing waf web application firewall
+- Questions about WAF best practices
 
-## WAF Solutions
+## Core Concepts
 
-```python
-WAF_SOLUTIONS = {
-    'modsecurity': 'Open-source WAF engine, OWASP CRS rules',
-    'cloudflare': 'Cloud WAF, managed rules, rate limiting, bot mgmt',
-    'aws_waf': 'AWS-managed, integrates with ALB/CloudFront',
-}
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-RULES = [
-    {'id': '942100', 'desc': 'SQL Injection', 'pattern': r'(?i)\b(union|select|drop)\b.*\b(from|where)\b'},
-    {'id': '941100', 'desc': 'XSS', 'pattern': r'(?i)(<script|javascript:|onerror=)'},
-    {'id': '930100', 'desc': 'Path Traversal', 'pattern': r'\.\.\/|\.\.\\'},
-]
-```
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **False positives** — blocking legitimate traffic; tune CRS paranoia level
-2. **Blind blocking** — deploy in detection mode first, block after tuning
-3. **Bypass vectors** — test with encoded payloads and alternative methods
-4. **WAF as only defense** — complements, doesn't replace secure coding
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Detection mode first, tune before blocking
-- [ ] OWASP CRS at appropriate paranoia level
-- [ ] Custom rules for app-specific threats
-- [ ] Rate limiting configured
-- [ ] Logs integrated with SIEM
+`WAF, web-application-firewall, modsecurity, OWASP, rules, SQL-injection, XSS`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

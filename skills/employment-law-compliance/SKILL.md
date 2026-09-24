@@ -11,43 +11,62 @@ metadata:
     related_skills: [general]
 ---
 
-## Overview
-Ensure employment law compliance in HR practices.
+# Employment Law Compliance
 
-## When to Use
-- "Employment Law Compliance design and implementation"
-- "Best practices for Employment Law Compliance"
-- "Employment Law Compliance optimization"
-- "Employment Law Compliance troubleshooting"
+"Use when ensuring employment law compliance."
 
-## Key Approaches
-1. Key approach 1 for effective implementation
-2. Key approach 2 for effective implementation
-3. Key approach 3 for effective implementation
-4. Key approach 4 for effective implementation
-5. Key approach 5 for effective implementation
-6. Key approach 6 for effective implementation
+## Trigger
+
+Activate this skill when the user mentions:
+- legal,  employment-law,  hr-compliance workflows or issues
+- Building, fixing, or optimizing employment law compliance
+- Questions about legal best practices
+
+## Core Concepts
+
+- Threat modeling and risk assessment
+- Attack surface analysis
+- Defense in depth
+- Zero-trust architecture
+- Compliance and audit requirements
+
+## Step-by-Step Workflow
+
+1. **Scope** — Define assets, threats, attack surface
+   - Expected: Documented scope with trust boundaries
+2. **Assess** — Identify vulnerabilities, evaluate risk
+   - Expected: Prioritized findings with CVSS scores
+3. **Remediate** — Apply secure-by-design fixes
+   - Expected: Vulnerabilities closed
+4. **Verify** — Re-test and validate remediation
+   - Expected: Independent verification complete
+5. **Document** — Record findings and lessons learned
+   - Expected: Audit-ready report
+
+## Tools & Technologies
+
+- Vulnerability scanners
+- SAST/DAST tools
+- SIEM platforms
+- Pen-testing frameworks
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1 **Common pitfall** — avoid this mistake during implementation
-2 **Common pitfall** — avoid this mistake during implementation
-3 **Common pitfall** — avoid this mistake during implementation
-4 **Common pitfall** — avoid this mistake during implementation
-5 **Common pitfall** — avoid this mistake during implementation
-6 **Common pitfall** — avoid this mistake during implementation
-7 **Common pitfall** — avoid this mistake during implementation
-8 **Common pitfall** — avoid this mistake during implementation
-9 **Common pitfall** — avoid this mistake during implementation
-10 **Common pitfall** — avoid this mistake during implementation
 
-## Verification Checklist
-- [ ] Verification item 1 completed
-- [ ] Verification item 2 completed
-- [ ] Verification item 3 completed
-- [ ] Verification item 4 completed
-- [ ] Verification item 5 completed
-- [ ] Verification item 6 completed
-- [ ] Verification item 7 completed
-- [ ] Verification item 8 completed
-- [ ] Verification item 9 completed
-- [ ] Verification item 10 completed
+- **Scope creep** → Unclear boundaries → Define scope explicitly
+- **Tool reliance without analysis** → False positives → Manual validation required
+
+## Tags
+
+`legal, employment-law, hr-compliance`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

@@ -11,43 +11,62 @@ metadata:
     related_skills: ['container-security-hardening']
 ---
 
-## Overview
-Secure container platforms including runtime protection and image scanning.
+# Container Platform Security
 
-## When to Use
-- "Container Platform Security design and implementation"
-- "Best practices for Container Platform Security"
-- "Container Platform Security deployment and monitoring"
-- "Container Platform Security troubleshooting and scaling"
+"Use when securing container platforms."
 
-## Key Approaches
-1. Define clear requirements and specifications
-2. Choose appropriate tools and frameworks
-3. Implement with modular, maintainable code
-4. Write tests and automate verification
-5. Document architecture and decisions
-6. Monitor performance and iterate
+## Trigger
+
+Activate this skill when the user mentions:
+- devops,  container-security,  k8s-security workflows or issues
+- Building, fixing, or optimizing container platform security
+- Questions about devops best practices
+
+## Core Concepts
+
+- Threat modeling and risk assessment
+- Attack surface analysis
+- Defense in depth
+- Zero-trust architecture
+- Compliance and audit requirements
+
+## Step-by-Step Workflow
+
+1. **Scope** — Define assets, threats, attack surface
+   - Expected: Documented scope with trust boundaries
+2. **Assess** — Identify vulnerabilities, evaluate risk
+   - Expected: Prioritized findings with CVSS scores
+3. **Remediate** — Apply secure-by-design fixes
+   - Expected: Vulnerabilities closed
+4. **Verify** — Re-test and validate remediation
+   - Expected: Independent verification complete
+5. **Document** — Record findings and lessons learned
+   - Expected: Audit-ready report
+
+## Tools & Technologies
+
+- Vulnerability scanners
+- SAST/DAST tools
+- SIEM platforms
+- Pen-testing frameworks
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. **Not accounting for constraints** — resource or timeline limitations
-2. **Ignoring industry standards** — not following established best practices
-3. **Poor stakeholder alignment** — conflicting requirements
-4. **Inadequate testing** — no validation of critical functions
-5. **Not documenting decisions** — lost knowledge transfer
-6. **Skipping security review** — no threat modeling performed
-7. **Over-engineering** — complex solutions where simple ones suffice
-8. **No rollback plan** — deployment failures cause outages
-9. **Insufficient monitoring** — no observability after deployment
-10. **Not planning for growth** — scalability issues in production
 
-## Verification Checklist
-- [ ] Requirements defined and validated
-- [ ] Industry standards and best practices applied
-- [ ] Design reviewed with stakeholders
-- [ ] Implementation plan with milestones
-- [ ] Testing strategy with coverage targets
-- [ ] Security review and threat modeling
-- [ ] Monitoring and alerting configured
-- [ ] Documentation complete and accessible
-- [ ] Deployment with rollback plan
-- [ ] Post-deployment verification
+- **Scope creep** → Unclear boundaries → Define scope explicitly
+- **Tool reliance without analysis** → False positives → Manual validation required
+
+## Tags
+
+`devops, container-security, k8s-security`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

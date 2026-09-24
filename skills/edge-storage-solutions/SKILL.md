@@ -11,39 +11,64 @@ metadata:
     related_skills: ['redis-caching-patterns']
 ---
 
-## Overview
-Design edge storage solutions for disconnected and intermittent connectivity.
+# Edge Storage Solutions
 
-## When to Use
-- "Edge Storage Solutions design and architecture"
-- "Best practices for Edge Storage Solutions"
-- "Edge Storage Solutions implementation and deployment"
-- "Edge Storage Solutions optimization and monitoring"
-- "Edge Storage Solutions troubleshooting and scaling"
+"Use when designing edge storage."
 
-## Key Concepts
-1. Foundational concepts
-2. Implementation approaches
-3. Testing and validation
+## Trigger
 
-## Implementation Patterns
-1. Define clear requirements and specifications
-2. Choose appropriate tools and frameworks
-3. Implement with modular, maintainable code
-4. Write tests and automate verification
-5. Document architecture and decisions
-6. Monitor performance and iterate
+Activate this skill when the user mentions:
+- edge-computing,  edge-storage,  distributed-db,  caching workflows or issues
+- Building, fixing, or optimizing edge storage solutions
+- Questions about edge-computing best practices
+
+## Core Concepts
+
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
+
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. **Not accounting for constraints** — resource or timeline limitations
-2. **Ignoring industry standards** — not following established best practices
-3. **Poor stakeholder alignment** — conflicting requirements
-4. **Inadequate testing** — no validation of critical functions
-5. **Not documenting decisions** — lost knowledge transfer
 
-## Verification Checklist
-- [ ] Requirements documented
-- [ ] Standards reviewed
-- [ ] Design validated
-- [ ] Testing established
-- [ ] Documentation complete
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
+
+## Tags
+
+`edge-computing, edge-storage, distributed-db, caching`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

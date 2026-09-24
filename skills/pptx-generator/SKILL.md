@@ -5,110 +5,64 @@ tags: [powerpoint, pptx, presentation, slides, design]
 related_skills: [minimax-xlsx, mmx-cli]
 ---
 
-# PPTX Generator & Editor
+# Pptx Generator
 
-## Overview
+Use when creating or editing PowerPoint presentations
 
-Create, edit, and read PowerPoint presentations. Create from scratch with PptxGenJS, edit via XML, or extract text with markitdown.
+## Trigger
 
-## Quick Reference
+Activate this skill when the user mentions:
+- powerpoint,  pptx,  presentation,  slides,  design workflows or issues
+- Building, fixing, or optimizing pptx generator
+- Questions about powerpoint best practices
 
-| Task | Approach |
-|------|----------|
-| Read/analyze content | `python -m markitdown presentation.pptx` |
-| Edit from template | XML manipulation workflow |
-| Create from scratch | PptxGenJS with design system |
+## Core Concepts
 
-| Item | Value |
-|------|-------|
-| Dimensions | 10" x 5.625" (LAYOUT_16x9) |
-| Colors | 6-char hex without # (e.g., `"FF0000"`) |
-| English font | Arial |
-| Chinese font | Microsoft YaHei |
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-## Reading Content
+## Step-by-Step Workflow
 
-```bash
-python -m markitdown presentation.pptx
-```
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
 
-## Creating from Scratch — Workflow
+## Tools & Technologies
 
-### Step 1: Select Color Palette & Fonts
-Choose a palette and font pairing matching the topic and audience.
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
 
-### Step 2: Plan Slide Outline
-Classify every slide as exactly one type: Cover, TOC, Section Divider, Content, Summary.
+## Best Practices
 
-### Step 3: Generate Slide JS Files
-Create one JS file per slide. Each exports `createSlide(pres, theme)`.
-
-### Step 4: Compile into Final PPTX
-
-```javascript
-const pptxgen = require('pptxgenjs');
-const pres = new pptxgen();
-pres.layout = 'LAYOUT_16x9';
-
-const theme = {
-  primary: "22223b",
-  secondary: "4a4e69",
-  accent: "9a8c98",
-  light: "c9ada7",
-  bg: "f2e9e4"
-};
-
-for (let i = 1; i <= 12; i++) {
-  const num = String(i).padStart(2, '0');
-  const slideModule = require(`./slide-${num}.js`);
-  slideModule.createSlide(pres, theme);
-}
-pres.writeFile({ fileName: './output/presentation.pptx' });
-```
-
-### Step 5: QA
-Verify all slides render correctly and meet design standards.
-
-## Slide Format
-
-```javascript
-// slide-01.js - Cover slide
-const pptxgen = require("pptxgenjs");
-
-function createSlide(pres, theme) {
-  const slide = pres.addSlide();
-  slide.background = { color: theme.bg };
-  slide.addText("Presentation Title", {
-    x: 0.5, y: 2, w: 9, h: 1.2,
-    fontSize: 48, fontFace: "Arial",
-    color: theme.primary, bold: true, align: "center"
-  });
-  return slide;
-}
-module.exports = { createSlide };
-```
-
-## Dependencies
-
-- `pip install "markitdown[pptx]"` — text extraction
-- `npm install -g pptxgenjs` — creating from scratch
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-| Pitfall | Solution |
-|---------|----------|
-| Wrong color format | Use 6-char hex without # |
-| Async slide functions | Slide modules must export synchronous `createSlide` |
-| Missing page numbers | All slides except cover need page badge |
-| Wrong theme key names | Must use exactly: primary, secondary, accent, light, bg |
-| Skipping QA step | Always verify output before delivery |
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Color palette and fonts selected
-- [ ] Slide outline planned with all page types
-- [ ] Each slide module exports synchronous createSlide
-- [ ] Theme object uses correct key names
-- [ ] Compile script runs without errors
-- [ ] Output presentation renders correctly
-- [ ] Page numbers on all slides except cover
+`powerpoint, pptx, presentation, slides, design`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

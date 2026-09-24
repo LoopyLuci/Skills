@@ -10,69 +10,64 @@ metadata:
     related_skills: [mdns-discovery, p2p-lan-transfer, instanttransfer-protocol, cross-thread-async]
 ---
 
-# WebRTC Implementation
+# Webrtc Implementation
 
-Implementing WebRTC for real-time audio, video, and data communication — from signaling and peer connection through NAT traversal, media streams, and data channels.
+"Use when implementing WebRTC for real-time communication."
 
-## When to Use
+## Trigger
 
-- Building video/audio conferencing applications
-- Implementing peer-to-peer file transfer
-- Adding real-time data channels to web applications
-- Building screen sharing or remote desktop tools
-- Creating real-time collaboration features
+Activate this skill when the user mentions:
+- webrtc,  video,  audio,  p2p,  signaling,  STUN,  TURN,  ICE,  real-time-communication workflows or issues
+- Building, fixing, or optimizing webrtc implementation
+- Questions about webrtc best practices
 
-## WebRTC Connection Flow
+## Core Concepts
 
-```python
-WEBRTC_FLOW = {
-    'signaling': 'Peers exchange session metadata (SDP offers/answers) via server',
-    'ICE': 'Interactive Connectivity Establishment — finds best network path',
-    'STUN': 'Session Traversal Utilities for NAT — determines public IP/port',
-    'TURN': 'Traversal Using Relays around NAT — relay when P2P fails',
-    'DTLS': 'Datagram Transport Layer Security — encrypts all media/data',
-}
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-class SignalingServer:
-    """WebSocket-based signaling server for WebRTC."""
-    def __init__(self):
-        self.clients = {}  # client_id -> websocket
-    
-    def relay_sdp(self, sender: str, receiver: str, sdp: dict):
-        """Relay SDP offer/answer between peers."""
-        if receiver in self.clients:
-            self.clients[receiver].send_json({
-                'type': 'sdp',
-                'from': sender,
-                'sdp': sdp
-            })
-    
-    def relay_ice(self, sender: str, receiver: str, candidate: dict):
-        """Relay ICE candidates between peers."""
-        if receiver in self.clients:
-            self.clients[receiver].send_json({
-                'type': 'ice_candidate',
-                'from': sender,
-                'candidate': candidate
-            })
-```
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **TURN server not configured** — only STUN works for 80% of connections; TURN needed for the rest
-2. **Signaling bottleneck** — signaling must be fast (WebSocket); slow signaling breaks connections
-3. **No connection state handling** — WebRTC connections change state; handle all states (disconnected, failed)
-4. **Codec compatibility** — not all browsers support all codecs; check in advance (H.264, VP8, VP9, AV1)
-5. **Bandwidth estimation** — sending HD video on slow connections causes buffering; use SVC or simulcast
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] STUN server configured (Google's stun.l.google.com or custom)
-- [ ] TURN server configured for NAT traversal fallback
-- [ ] Signaling via WebSocket (reliable, low-latency)
-- [ ] ICE candidate gathering and exchange working
-- [ ] Media stream constraints (resolution, frame rate) configured
-- [ ] Data channel (if used) established and reliable/unreliable mode chosen
-- [ ] Connection state monitoring (oniceconnectionstatechange)
-- [ ] Codec negotiation (H.264/VP8 for compatibility, AV1 for quality)
-- [ ] Bandwidth estimation (cc.bitrate) and adaptation
+`webrtc, video, audio, p2p, signaling, STUN, TURN, ICE, real-time-communication`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

@@ -11,43 +11,62 @@ metadata:
     related_skills: ['database-migration-patterns']
 ---
 
-## Overview
-Perform safe database migrations with zero-downtime techniques.
+# Database Migration Safety
 
-## When to Use
-- "Database Migration Safety design and implementation"
-- "Best practices for Database Migration Safety"
-- "Database Migration Safety deployment and monitoring"
-- "Database Migration Safety troubleshooting and scaling"
+"Use when safely migrating databases."
 
-## Key Approaches
-1. Define clear requirements and specifications
-2. Choose appropriate tools and frameworks
-3. Implement with modular, maintainable code
-4. Write tests and automate verification
-5. Document architecture and decisions
-6. Monitor performance and iterate
+## Trigger
+
+Activate this skill when the user mentions:
+- devops,  database-migration,  zero-downtime,  data-migration workflows or issues
+- Building, fixing, or optimizing database migration safety
+- Questions about devops best practices
+
+## Core Concepts
+
+- Data modeling (dimensional, normalized)
+- ETL/ELT patterns and idempotency
+- Data quality and validation
+- Lineage and cataloging
+- Privacy and data protection
+
+## Step-by-Step Workflow
+
+1. **Discover** — Profile data, assess quality
+   - Expected: Data profile report with quality scores
+2. **Design** — Model for use case
+   - Expected: Approved data model
+3. **Build** — Implement pipelines with testing
+   - Expected: Idempotent pipelines with quality checks
+4. **Validate** — Reconcile, test business rules
+   - Expected: Validated data with quality metrics
+5. **Operate** — Monitor, optimize, iterate
+   - Expected: Monitored pipelines with SLA tracking
+
+## Tools & Technologies
+
+- dbt
+- Airflow/Prefect
+- Spark/DuckDB
+- Data catalogs
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. **Not accounting for constraints** — resource or timeline limitations
-2. **Ignoring industry standards** — not following established best practices
-3. **Poor stakeholder alignment** — conflicting requirements
-4. **Inadequate testing** — no validation of critical functions
-5. **Not documenting decisions** — lost knowledge transfer
-6. **Skipping security review** — no threat modeling performed
-7. **Over-engineering** — complex solutions where simple ones suffice
-8. **No rollback plan** — deployment failures cause outages
-9. **Insufficient monitoring** — no observability after deployment
-10. **Not planning for growth** — scalability issues in production
 
-## Verification Checklist
-- [ ] Requirements defined and validated
-- [ ] Industry standards and best practices applied
-- [ ] Design reviewed with stakeholders
-- [ ] Implementation plan with milestones
-- [ ] Testing strategy with coverage targets
-- [ ] Security review and threat modeling
-- [ ] Monitoring and alerting configured
-- [ ] Documentation complete and accessible
-- [ ] Deployment with rollback plan
-- [ ] Post-deployment verification
+- **No data quality gates** → Garbage in, garbage out → Validate at every stage
+- **Monolithic pipelines** → Hard to debug → Small idempotent tasks
+
+## Tags
+
+`devops, database-migration, zero-downtime, data-migration`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

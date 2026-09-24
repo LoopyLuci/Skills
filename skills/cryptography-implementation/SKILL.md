@@ -11,43 +11,62 @@ metadata:
     related_skills: [general]
 ---
 
-## Overview
-Step-by-step implementation. Implement crypto securely.
+# Cryptography Implementation
 
-## When to Use
-- "Cryptography Implementation design and implementation"
-- "Best practices for Cryptography Implementation"
-- "Cryptography Implementation optimization and scaling"
-- "Cryptography Implementation troubleshooting"
+"Use when implementing cryptography."
 
-## Key Approaches
-1. Define requirements
-2. Choose tools
-3. Implement modular
-4. Test thoroughly
-5. Document
-6. Monitor
+## Trigger
+
+Activate this skill when the user mentions:
+- security,  crypto,  encryption,  hashing workflows or issues
+- Building, fixing, or optimizing cryptography implementation
+- Questions about security best practices
+
+## Core Concepts
+
+- Threat modeling and risk assessment
+- Attack surface analysis
+- Defense in depth
+- Zero-trust architecture
+- Compliance and audit requirements
+
+## Step-by-Step Workflow
+
+1. **Scope** — Define assets, threats, attack surface
+   - Expected: Documented scope with trust boundaries
+2. **Assess** — Identify vulnerabilities, evaluate risk
+   - Expected: Prioritized findings with CVSS scores
+3. **Remediate** — Apply secure-by-design fixes
+   - Expected: Vulnerabilities closed
+4. **Verify** — Re-test and validate remediation
+   - Expected: Independent verification complete
+5. **Document** — Record findings and lessons learned
+   - Expected: Audit-ready report
+
+## Tools & Technologies
+
+- Vulnerability scanners
+- SAST/DAST tools
+- SIEM platforms
+- Pen-testing frameworks
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. **Not accounting for constraints**
-2. **Ignoring standards**
-3. **Poor alignment**
-4. **Inadequate testing**
-5. **No documentation**
-6. **Over-engineering**
-7. **No rollback plan**
-8. **Insufficient monitoring**
-9. **No scalability plan**
-10. **Missing validation**
 
-## Verification Checklist
-- [ ] Requirements validated
-- [ ] Standards applied
-- [ ] Design reviewed
-- [ ] Tests defined
-- [ ] Docs complete
-- [ ] Monitoring configured
-- [ ] Rollback plan
-- [ ] Security review
-- [ ] Post-deploy verification
-- [ ] Stakeholder signoff
+- **Scope creep** → Unclear boundaries → Define scope explicitly
+- **Tool reliance without analysis** → False positives → Manual validation required
+
+## Tags
+
+`security, crypto, encryption, hashing`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

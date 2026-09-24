@@ -12,107 +12,62 @@ metadata:
 
 # Skill Testing Framework
 
-Creating testable skill content — from automated code validation through checklist verification, snippet testing, and CI/CD for skills.
+"Use when creating testable skill content and patterns."
 
-## When to Use
+## Trigger
 
-- Ensuring skill code examples actually work
-- Automating skill validation in CI
-- Creating test suites for skills
-- Verifying cross-references are valid
-- Testing skill content for completeness
+Activate this skill when the user mentions:
+- meta,  skill-testing,  framework,  automation,  validation,  CI workflows or issues
+- Building, fixing, or optimizing skill testing framework
+- Questions about meta best practices
 
-## Framework Design
+## Core Concepts
 
-```python
-import ast, json, os, re
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-class SkillTestSuite:
-    """Create and run tests for skills."""
-    
-    @staticmethod
-    def validate_python_blocks(skill_md: str) -> List[Dict]:
-        """Extract and syntax-check Python code blocks."""
-        results = []
-        blocks = re.findall(r'```python\n(.*?)\n```', skill_md, re.DOTALL)
-        
-        for i, block in enumerate(blocks):
-            try:
-                ast.parse(block)
-                results.append({'block': i, 'status': 'pass'})
-            except SyntaxError as e:
-                results.append({
-                    'block': i, 'status': 'fail',
-                    'error': str(e), 'line': e.lineno,
-                })
-        return results
-    
-    @staticmethod
-    def verify_references(skill_md: str, all_skills: set) -> List[str]:
-        """Verify all See Also references point to real skills."""
-        refs = re.findall(r'^- ([a-z0-9-]+)', 
-                         skill_md.split('## See Also')[-1] if '## See Also' in skill_md else '',
-                         re.MULTILINE)
-        return [r for r in refs if r not in all_skills]
-    
-    @staticmethod
-    def check_frontmatter(skill_md: str) -> Dict:
-        """Validate frontmatter completeness."""
-        issues = []
-        if not skill_md.startswith('---'):
-            issues.append('Missing opening frontmatter ---')
-            return {'valid': False, 'issues': issues}
-        
-        required = ['name', 'description', 'version', 'author']
-        fm = skill_md.split('---')[1] if '---' in skill_md else ''
-        
-        for field in required:
-            if f'{field}:' not in fm:
-                issues.append(f'Missing required field: {field}')
-        
-        if 'related_skills:' not in fm:
-            issues.append('Missing related_skills (improves discoverability)')
-        
-        return {'valid': len(issues) == 0, 'issues': issues}
-```
+## Step-by-Step Workflow
 
-## CI Pipeline
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
 
-```yaml
-CI_PIPELINE = """
-name: Skill Tests
-on: [push, pull_request]
-jobs:
-  validate:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Validate Python examples
-        run: python -c "import ast; ast.parse(open('skill.md').read())"
-      - name: Check frontmatter
-        run: python -c "
-      - name: Verify references
-        run: python verify_references.py
-      - name: Spell check
-        uses: codespell-project/actions-codespell@v2
-"""
-```
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Testing only syntax** — valid syntax doesn't mean valid logic; test logic too
-2. **No CI integration** — manual validation doesn't happen; automate it
-3. **Brittle tests** — tests that break on minor formatting changes
-4. **No reference checking** — broken cross-references degrade navigation
-5. **Ignoring non-Python code** — validate bash, YAML, SQL, and configs too
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Python code blocks pass syntax validation
-- [ ] Shell commands pass bash -n validation
-- [ ] YAML frontmatter is valid (yaml.load)
-- [ ] All See Also references point to existing skills
-- [ ] Frontmatter has all required fields
-- [ ] CI pipeline runs skill tests on every PR
-- [ ] Test failures block skill publishing
-- [ ] Spell check runs on skill content
+`meta, skill-testing, framework, automation, validation, CI`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

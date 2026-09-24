@@ -10,72 +10,64 @@ metadata:
     related_skills: [prompt-engineering-patterns, advanced-reasoning-patterns, agent-framework-design, llm-fine-tuning-lora]
 ---
 
-# Prompt Optimization and Automation
+# Prompt Optimization Automation
 
-Optimizing prompts systematically — from manual iteration through DSPy-style programmable prompts, automated optimization, and prompt evaluation.
+"Use when optimizing and automating prompt engineering."
 
-## When to Use
+## Trigger
 
-- Improving LLM response quality and consistency
-- Automating prompt testing and iteration
-- Building prompt pipelines with DSPy or similar
-- Evaluating prompts across metrics (accuracy, safety, cost)
-- Scaling prompt management across many use cases
+Activate this skill when the user mentions:
+- prompt-engineering,  optimization,  dspy,  auto-prompt,  LLM,  evaluation workflows or issues
+- Building, fixing, or optimizing prompt optimization automation
+- Questions about prompt-engineering best practices
 
-## Optimization Methods
+## Core Concepts
 
-```python
-OPTIMIZATION_STRATEGIES = {
-    'manual_iteration': 'Human A/B tests prompt variants, measures output quality',
-    'dspy_optimization': 'Programmatic: define signature, modules, teleprompter optimizes',
-    'meta_prompting': 'LLM generates and evaluates its own prompt improvements',
-    'few_shot_selection': 'Dynamically selects best examples for few-shot prompts',
-    'prompt_chaining': 'Decompose complex tasks into optimized sub-prompts',
-}
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-class PromptOptimizer:
-    """Simple A/B prompt testing framework."""
-    
-    def __init__(self, llm_callable):
-        self.llm = llm_callable
-        self.results = {}
-    
-    def test_variant(self, prompt: str, test_cases: List[Dict], 
-                     evaluator: Callable) -> float:
-        """Test a prompt variant against test cases and return avg score."""
-        scores = []
-        for case in test_cases:
-            response = self.llm(prompt.format(**case))
-            score = evaluator(case['expected'], response)
-            scores.append(score)
-        return sum(scores) / len(scores)
-    
-    def optimize(self, base_prompt: str, variants: List[str], 
-                 test_cases: List[Dict], evaluator: Callable) -> str:
-        """Find best prompt variant."""
-        best_score = 0
-        best_prompt = base_prompt
-        for v in [base_prompt] + variants:
-            score = self.test_variant(v, test_cases, evaluator)
-            if score > best_score:
-                best_score, best_prompt = score, v
-        return best_prompt
-```
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Overfitting to test set** — prompt optimized for 10 cases may fail on real data; use held-out eval
-2. **LLM variance** — same prompt produces different outputs; test with multiple runs
-3. **Cost of evaluation** — automated optimization can be expensive; budget wisely
-4. **Ignoring prompt length** — longer prompts cost more and may exceed context; optimize for brevity
-5. **No structured output** — unstructured llm responses are hard to evaluate consistently
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Baseline prompt established for comparison
-- [ ] Evaluation criteria defined (accuracy,format, safety)
-- [ ] Test set diverse (edge cases, normal cases)
-- [ ] Optimization method chosen (manual, DSPy, meta)
-- [ ] Results tracked per prompt version
-- [ ] Cost per inference measured
-- [ ] Final prompt validated on held-out set
+`prompt-engineering, optimization, dspy, auto-prompt, LLM, evaluation`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

@@ -10,63 +10,64 @@ metadata:
     related_skills: [agent-swarm-architectures, hierarchical-swarm-architectures, swarm-communication-protocols, agent-ensembles-voting]
 ---
 
-# Multi-Agent Collaboration Patterns
+# Multi Agent Collaboration Patterns
 
-Designing collaboration patterns for multi-agent systems — from task delegation and joint problem-solving through negotiation, consensus, and team formation.
+"Use when designing multi-agent collaboration and delegation."
 
-## When to Use
+## Trigger
 
-- Multiple agents need to work together on a shared task
-- Agents with different specializations need to coordinate
-- Complex tasks that no single agent can handle alone
-- Building agent teams that can dynamically reorganize
-- Implementing market-based or auction-style task allocation
+Activate this skill when the user mentions:
+- multi-agent,  collaboration,  delegation,  negotiation,  teamwork,  coordination workflows or issues
+- Building, fixing, or optimizing multi agent collaboration patterns
+- Questions about multi-agent best practices
 
-## Collaboration Patterns
+## Core Concepts
 
-```python
-COLLABORATION_PATTERNS = {
-    'delegation': 'Manager delegates subtasks to worker agents, collects results',
-    'peer_collaboration': 'Peer agents share context and work jointly on shared task',
-    'auction_bidding': 'Tasks are auctioned, agents bid based on capability/availability',
-    'blackboard': 'Agents read/write to shared workspace, coordinate via artifacts',
-    'debate': 'Agents argue different positions, converge through structured debate',
-    'voting': 'Each agent contributes a vote or score, results are aggregated',
-}
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-class TaskDelegation:
-    """Manager-worker delegation pattern."""
-    def __init__(self, manager, workers):
-        self.manager = manager
-        self.workers = workers
-    
-    def execute(self, complex_task: str) -> Dict:
-        # Manager decomposes task
-        subtasks = self.manager.decompose(complex_task)
-        results = {}
-        
-        # Delegate to workers
-        for subtask in subtasks:
-            best_worker = self._select_worker(subtask)
-            results[subtask['id']] = best_worker.execute(subtask)
-        
-        # Manager synthesizes results
-        return self.manager.synthesize(results)
-```
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Over-communication** — agents broadcasting everything creates noise; use targeted messages
-2. **Responsibility ambiguity** — unclear who handles what causes duplication or gaps
-3. **Deadlock** — agents waiting for each other indefinitely; use timeouts
-4. **Free-riding** — some agents don't contribute; track contribution metrics
-5. **Groupthink** — agents converge too quickly on wrong solution; encourage diversity
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Collaboration pattern matches task structure
-- [ ] Each agent has defined role and responsibilities
-- [ ] Communication protocol defined (what, when, how)
-- [ ] Conflict resolution mechanism in place
-- [ ] Task decomposition and result synthesis logic tested
-- [ ] Agent failures handled gracefully (re-assignment, escalation)
+`multi-agent, collaboration, delegation, negotiation, teamwork, coordination`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

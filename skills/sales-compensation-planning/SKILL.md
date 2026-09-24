@@ -12,71 +12,62 @@ metadata:
 
 # Sales Compensation Planning
 
-Designing sales compensation plans — from quota setting and commission structures through territory design, accelerators, clawbacks, and plan governance.
+"Use when designing sales compensation and commission plans."
 
-## When to Use
+## Trigger
 
-- Building or revising sales compensation plans
-- Setting quotas for sales reps and teams
-- Designing commission rates and accelerators
-- Balancing base salary vs variable pay
-- Managing comp plan administration
+Activate this skill when the user mentions:
+- sales-compensation,  commissions,  quotas,  SPIFF,  variable-pay,  comp-plan workflows or issues
+- Building, fixing, or optimizing sales compensation planning
+- Questions about sales-compensation best practices
 
-## Compensation Models
+## Core Concepts
 
-```python
-COMP_MODELS = {
-    'straight_commission': '100% variable, % of revenue closed',
-    'base_plus_commission': 'Base salary + variable % on attainment',
-    'tiered_commission': 'Increasing commission rate at higher attainment levels',
-    'gross_margin': 'Commission based on deal profitability, not just revenue',
-    'team_based': 'Mix of individual attainment and team/company performance',
-}
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-class CompPlan:
-    """Design and simulate sales compensation."""
-    def __init__(self, base_salary: float, quota: float, 
-                 commission_rate: float = 0.10):
-        self.base = base_salary
-        self.quota = quota
-        self.commission = commission_rate
-        self.accelerator = 0.15  # above quota rate
-        self.clawback_days = 90
-    
-    def calculate_payout(self, closed_revenue: float) -> Dict:
-        attainment = closed_revenue / self.quota
-        variable = 0
-        
-        if closed_revenue <= self.quota:
-            variable = closed_revenue * self.commission
-        else:
-            variable = (self.quota * self.commission + 
-                       (closed_revenue - self.quota) * self.accelerator)
-        
-        return {
-            'base': self.base / 12,
-            'variable': round(variable, 2),
-            'total': round(self.base / 12 + variable, 2),
-            'attainment_pct': round(attainment * 100, 1),
-        }
-```
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Plan too complex** — reps can't calculate their own commission; keep it simple
-2. **Changing plan mid-year** — erodes trust; only change for extreme circumstances
-3. **No clawback policy** — deals that churn within 90 days should reverse commission
-4. **Sandbagging** — closing deals slowly to make next quota easier; use accelerators
-5. **No governance** — inconsistent application of comp rules causes legal exposure
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Compensation model selected (base+commission, tiered, gross margin, etc.)
-- [ ] Quotas aligned with company revenue targets (bottoms-up + top-down)
-- [ ] Commission rates competitive for your market/industry
-- [ ] Accelerators for above-quota performance
-- [ ] Clawback policy for early churn
-- [ ] Plan documentation written in plain language
-- [ ] Comp plan administered in CRM (Salesforce, HubSpot)
-- [ ] Plan reviewed quarterly for effectiveness
-- [ ] Legal/compliance review for regulatory requirements
+`sales-compensation, commissions, quotas, SPIFF, variable-pay, comp-plan`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

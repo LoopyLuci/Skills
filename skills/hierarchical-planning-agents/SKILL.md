@@ -10,80 +10,64 @@ metadata:
     related_skills: [agent-planning-algorithms, agent-task-decomposition, multi-agent-collaboration-patterns, advanced-reasoning-patterns]
 ---
 
-# Hierarchical Planning for Agents
+# Hierarchical Planning Agents
 
-Implementing hierarchical planning for agents — from Hierarchical Task Networks (HTN) through goal decomposition, plan refinement, and execution monitoring.
+"Use when implementing hierarchical planning for agents."
 
-## When to Use
+## Trigger
 
-- Complex tasks that decompose into subtask hierarchies
-- Agents that need to plan at multiple abstraction levels
-- Environments with recurring task patterns
-- Long-horizon planning problems
-- Coordinating multiple agents with shared goals
+Activate this skill when the user mentions:
+- hierarchical-planning,  HTN,  task-decomposition,  STRIPS,  PDDL,  subgoals workflows or issues
+- Building, fixing, or optimizing hierarchical planning agents
+- Questions about hierarchical-planning best practices
 
-## HTN Planning
+## Core Concepts
 
-```python
-class HTNPlanner:
-    """Hierarchical Task Network planner."""
-    def __init__(self):
-        self.methods = {}  # task -> [{(subtasks, preconditions)}]
-        self.operators = {}  # -> {(preconditions, effects)}
-        self.domain = {}
-    
-    def add_method(self, task: str, subtasks: List[str], 
-                   preconditions: List[str] = None):
-        """Decompose a task into subtasks."""
-        self.methods.setdefault(task, []).append({
-            'subtasks': subtasks,
-            'preconditions': preconditions or [],
-        })
-    
-    def add_operator(self, action: str, preconditions: List[str],
-                     effects: List[str]):
-        """Define primitive action with preconditions and effects."""
-        self.operators[action] = {
-            'preconditions': preconditions,
-            'effects': effects,
-        }
-    
-    def plan(self, task: str, state: Dict) -> List[str]:
-        """Decompose task into plan of primitive actions."""
-        if task in self.operators:
-            if self._check_preconditions(task, state):
-                state.update(self.operators[task]['effects'])
-                return [task]
-            return None
-        
-        if task in self.methods:
-            for method in self.methods[task]:
-                if self._check_preconditions(method, state):
-                    plan = []
-                    for subtask in method['subtasks']:
-                        subplan = self.plan(subtask, state)
-                        if subplan is None:
-                            return None
-                        plan.extend(subplan)
-                    return plan
-        
-        return None  # Cannot decompose
-```
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
+
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Flat decomposition** — not using hierarchy effectively; design 3+ levels (strategic → tactical → operational)
-2. **Non-optimal plans** — hierarchy constrains the search space, may miss optimal plans
-3. **Brittle preconditions** — missing edge cases in preconditions causes plan failures
-4. **No execution monitoring** — plan generated but not monitored during execution; add re-planning
-5. **Knowledge engineering burden** — HTNs require significant domain expertise; consider learning methods
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Task hierarchy defined (3+ levels: goal → tasks → actions)
-- [ ] Decomposition methods for each compound task
-- [ ] Primitive operators with preconditions and effects
-- [ ] Planning state representation defined
-- [ ] Re-planning triggers (plan failure, unexpected state)
-- [ ] Performance: plan generation time within acceptable bounds
-- [ ] Execution monitoring (is plan being followed? producing expected effects?)
+`hierarchical-planning, HTN, task-decomposition, STRIPS, PDDL, subgoals`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

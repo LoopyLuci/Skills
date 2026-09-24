@@ -11,44 +11,62 @@ metadata:
     related_skills: [general]
 ---
 
-## Overview
-Diversity Inclusion Analytics implementation. Covers essential methodologies, 
-best practices, technical foundations, and verification approaches for this domain.
+# Diversity Inclusion Analytics
 
-## When to Use
-- "Diversity Inclusion Analytics implementation"
-- "Best practices for Diversity Inclusion Analytics"
-- "Diversity Inclusion Analytics optimization and enhancement"
-- "Diversity Inclusion Analytics troubleshooting"
-- "Diversity Inclusion Analytics performance and cost analysis"
+"Use when analyzing DEI metrics."
 
-## Key Methodologies
-1. Assessment and Planning Phase
-2. Implementation and Execution  
-3. Monitoring and Optimization
-4. Compliance and Verification
-5. Continuous Improvement
+## Trigger
+
+Activate this skill when the user mentions:
+- 'd',  'i',  'v',  'e',  'r',  's',  'i',  't',  'y',  ',  ',  ' ',  'a',  'n',  'a',  'l',  'y',  't',  'i',  'c',  's' workflows or issues
+- Building, fixing, or optimizing diversity inclusion analytics
+- Questions about 'd' best practices
+
+## Core Concepts
+
+- Data modeling (dimensional, normalized)
+- ETL/ELT patterns and idempotency
+- Data quality and validation
+- Lineage and cataloging
+- Privacy and data protection
+
+## Step-by-Step Workflow
+
+1. **Discover** — Profile data, assess quality
+   - Expected: Data profile report with quality scores
+2. **Design** — Model for use case
+   - Expected: Approved data model
+3. **Build** — Implement pipelines with testing
+   - Expected: Idempotent pipelines with quality checks
+4. **Validate** — Reconcile, test business rules
+   - Expected: Validated data with quality metrics
+5. **Operate** — Monitor, optimize, iterate
+   - Expected: Monitored pipelines with SLA tracking
+
+## Tools & Technologies
+
+- dbt
+- Airflow/Prefect
+- Spark/DuckDB
+- Data catalogs
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. **Insufficient planning** — rushing without proper assessment
-2. **Ignoring industry standards** — not following best practices
-3. **Poor stakeholder alignment** — conflicting requirements
-4. **Inadequate measurement** — no metrics to track success
-5. **Not accounting for context** — generic approaches fail
-6. **Underestimating complexity** — oversimplified solutions
-7. **No contingency planning** — unhandled failure scenarios
-8. **Insufficient validation** — implementation without testing
-9. **Not documenting decisions** — lost knowledge and context
-10. **Failing to iterate** — not improving based on feedback
 
-## Verification Checklist
-- [ ] Initial assessment and requirements gathering completed
-- [ ] Industry standards and best practices reviewed
-- [ ] Design validated with stakeholders
-- [ ] Implementation plan with milestones defined
-- [ ] Quality control and validation approaches
-- [ ] Testing and verification procedures established
-- [ ] Monitoring and feedback mechanisms
-- [ ] Documentation complete and accessible
-- [ ] Training provided to relevant stakeholders
-- [ ] Post-implementation review and improvement plan
+- **No data quality gates** → Garbage in, garbage out → Validate at every stage
+- **Monolithic pipelines** → Hard to debug → Small idempotent tasks
+
+## Tags
+
+`'d', 'i', 'v', 'e', 'r', 's', 'i', 't', 'y', ', ', ' ', 'a', 'n', 'a', 'l', 'y', 't', 'i', 'c', 's'`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

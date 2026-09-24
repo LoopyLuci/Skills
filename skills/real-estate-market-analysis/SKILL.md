@@ -12,105 +12,62 @@ metadata:
 
 # Real Estate Market Analysis
 
-Analyzing real estate markets, property valuations, comparable sales, and investment opportunities.
+"Use when analyzing real estate markets and valuations."
 
-## When to Use
+## Trigger
 
-- Pricing a property for listing or offer
-- Evaluating investment opportunities
-- Analyzing neighborhood and market trends
-- Preparing CMAs for clients
-- Making data-driven real estate decisions
+Activate this skill when the user mentions:
+- real-estate,  market-analysis,  comps,  valuation,  CMA,  investment workflows or issues
+- Building, fixing, or optimizing real estate market analysis
+- Questions about real-estate best practices
 
-## Comparative Market Analysis (CMA)
+## Core Concepts
 
-```python
-class CMA:
-    @staticmethod
-    def analyze(subject: Dict, comps: List[Dict]) -> Dict:
-        if not comps: return {}
-        
-        prices_per_sqft = [c.get('sold_price', 0) / max(c.get('sqft', 1), 1) for c in comps]
-        avg_pps = sum(prices_per_sqft) / len(prices_per_sqft)
-        estimated = avg_pps * subject.get('sqft', 0)
-        
-        # Adjust for differences
-        adjustments = 0
-        for comp in comps:
-            adjustments += (subject.get('beds', 0) - comp.get('beds', 0)) * 10000
-            adjustments += (subject.get('baths', 0) - comp.get('baths', 0)) * 7000
-        
-        avg_dom = sum(c.get('days_on_market', 30) for c in comps) / len(comps)
-        
-        return {
-            'estimated_value': round(estimated + adjustments / len(comps), 0),
-            'value_range': {
-                'low': round(estimated * 0.95, 0),
-                'high': round(estimated * 1.05, 0),
-            },
-            'avg_days_on_market': round(avg_dom, 1),
-            'comps_used': len(comps),
-        }
-```
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-## Market Trend Analysis
+## Step-by-Step Workflow
 
-```python
-def analyze_trends(data: List[Dict]) -> Dict:
-    if not data: return {}
-    prices = [d.get('median_price', 0) for d in sorted(data, key=lambda x: x.get('date', ''))]
-    doms = [d.get('days_on_market', 30) for d in data]
-    
-    avg_dom = sum(doms) / len(doms)
-    change = ((prices[-1] - prices[0]) / max(prices[0], 1)) * 100
-    
-    return {
-        'current_median': prices[-1],
-        'price_change_pct': round(change, 1),
-        'avg_days_on_market': round(avg_dom, 1),
-        'market_type': "Seller's Market" if avg_dom < 30 else "Balanced" if avg_dom < 60 else "Buyer's Market",
-    }
-```
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
 
-## Investment Analysis
+## Tools & Technologies
 
-```python
-def analyze_rental(value: float, down_pct: float, rate: float,
-                   rent: float, expenses: float) -> Dict:
-    down = value * down_pct
-    loan = value - down
-    monthly_rate = rate / 12
-    payments = 30 * 12
-    mortgage = loan * (monthly_rate * (1+monthly_rate)**payments) / ((1+monthly_rate)**payments - 1)
-    
-    noi = rent * 12 - expenses * 12
-    cash_flow = noi - mortgage * 12
-    
-    return {
-        'down_payment': round(down, 0),
-        'monthly_mortgage': round(mortgage, 2),
-        'annual_cash_flow': round(cash_flow, 2),
-        'cap_rate': round(noi / value * 100, 2),
-        'cash_on_cash': round(cash_flow / down * 100, 2),
-    }
-```
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Outdated comps** — use only last 3-6 months
-2. **No adjustments** — every property differs; adjust for beds, baths, condition
-3. **Too few comps** — need 5+ for reliable analysis
-4. **Over-relying on AVMs** — Zestimates are starting points, not definitive
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] 5+ comps from last 6 months
-- [ ] Adjustments calculated for differences
-- [ ] Market type identified
-- [ ] Investment metrics (cap rate, cash-on-cash)
+`real-estate, market-analysis, comps, valuation, CMA, investment`
 
-## See Also
+---
 
-- real-estate-crm-leads — managing property leads
-- crm-sales-pipeline — tracking deals to close
-- business-metrics-kpis — real estate business metrics
+*LoopyLuci/Skills - 2026-09-24*

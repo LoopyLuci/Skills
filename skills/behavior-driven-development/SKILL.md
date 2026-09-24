@@ -10,80 +10,64 @@ metadata:
     related_skills: [test-driven-development, test-driven-workflow, code-review-checklist, api-testing-patterns]
 ---
 
-# Behavior-Driven Development (BDD)
+# Behavior Driven Development
 
-Implementing behavior-driven development — from Gherkin feature files and scenario design through step definitions, living documentation, and BDD in CI/CD.
+"Use when implementing BDD with Gherkin and Cucumber."
 
-## When to Use
+## Trigger
 
-- Bridging communication gap between business and technical teams
-- Creating executable specifications that double as tests
-- Building a shared understanding of requirements
-- Automating acceptance criteria validation
-- Generating living documentation from feature files
+Activate this skill when the user mentions:
+- BDD,  behavior-driven-development,  Gherkin,  Cucumber,  SpecFlow,  executable-specifications workflows or issues
+- Building, fixing, or optimizing behavior driven development
+- Questions about BDD best practices
 
-## Gherkin Syntax
+## Core Concepts
 
-```gherkin
-Feature: User Login
-  As a registered user
-  I want to log into the application
-  So that I can access my account
-  
-  Background:
-    Given a registered user with email "user@example.com" and password "SecurePass123"
-  
-  Scenario: Successful login with valid credentials
-    When I navigate to the login page
-    And I enter "user@example.com" in the email field
-    And I enter "SecurePass123" in the password field
-    And I click the "Sign In" button
-    Then I should be redirected to the dashboard
-    And I should see "Welcome, User!" in the header
-  
-  Scenario: Login with invalid password
-    When I navigate to the login page
-    And I enter "user@example.com" in the email field
-    And I enter "WrongPassword" in the password field
-    And I click the "Sign In" button
-    Then I should see "Invalid email or password" error message
-```
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-## Step Definitions (Python)
+## Step-by-Step Workflow
 
-```python
-from behave import given, when, then
-from selenium import webdriver
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
 
-@given('a registered user with email "{email}" and password "{password}"')
-def step_register_user(context, email, password):
-    context.driver = webdriver.Chrome()
-    # Register user via API or directly in database
-    register_user(email, password)
+## Tools & Technologies
 
-@when('I navigate to the login page')
-def step_navigate_to_login(context):
-    context.driver.get("https://example.com/login")
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
 
-@then('I should be redirected to the dashboard')
-def step_check_dashboard(context):
-    assert "dashboard" in context.driver.current_url
-```
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Feature file as test script** — Gherkin is for behavior, not step-by-step automation details
-2. **Too many scenarios** — one feature file with 40 scenarios becomes unreadable; split up
-3. **Brittle step definitions** — CSS selectors in step defs break on UI changes; use Page Objects
-4. **No business involvement** — BDD without business collaboration is just automated testing
-5. **Overlapping step definitions** — ambiguous step matches cause confusing failures
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Feature files written in business language (not technical)
-- [ ] Scenarios use Given-When-Then format consistently
-- [ ] Step definitions use Page Objects or abstraction layer
-- [ ] Feature files reviewed by product/business stakeholders
-- [ ] Scenarios run in CI/CD pipeline
-- [ ] Living documentation generated from feature files
-- [ ] Background sections for shared setup (not repeated in each scenario)
+`BDD, behavior-driven-development, Gherkin, Cucumber, SpecFlow, executable-specifications`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

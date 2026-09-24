@@ -13,95 +13,62 @@ metadata:
 
 # Website Architecture Planner
 
-## Overview
-Plan complete website information architecture: sitemap generation, content hierarchy, navigation design, URL strategy, page type definitions, and wireframe outlines. Produces a full website blueprint document.
+"Use when planning site structure. IA, sitemaps."
 
-## When to Use
-- "Plan the structure for my new website"
-- "Design an information architecture"
-- "Help me organize my site's content"
+## Trigger
 
-## Sitemap Generation
-Build a hierarchical sitemap:
+Activate this skill when the user mentions:
+- website,  information-architecture,  sitemap,  wireframe,  planning workflows or issues
+- Building, fixing, or optimizing website architecture planner
+- Questions about website best practices
 
-```
-Home
-├── About
-│   ├── Our Story
-│   ├── Team
-│   └── Careers
-├── Services
-│   ├── Service A
-│   ├── Service B
-│   └── Service C
-├── Resources
-│   ├── Blog
-│   ├── Case Studies
-│   ├── Whitepapers
-│   └── FAQ
-└── Contact
-    ├── Locations
-    └── Support
-```
+## Core Concepts
 
-### Flat vs Deep Architecture
-- **Flat (<3 levels)**: Better for SEO, user experience. Limit to 2-3 clicks to any page.
-- **Deep (>3 levels)**: Only for massive sites (500+ pages) with clear navigation paths.
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-## Navigation Design
-| Navigation Type | Purpose | Best For |
-|----------------|---------|----------|
-| Primary nav | Main pages visitors need | Top 5-7 pages |
-| Secondary nav | Supporting content | Resources, legal, about |
-| Footer nav | Everything else in groups | Policies, contact, social |
-| Breadcrumbs | Show location + SEO | Every inner page |
-| Sidebar nav | Sub-page navigation | Documentation, courses |
+## Step-by-Step Workflow
 
-Apply the "three-click rule": any page should be reachable in ≤3 clicks from any other page.
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
 
-## URL Structure Strategy
-- Use descriptive, keyword-rich slugs: `example.com/services/web-design` not `example.com/services/?p=123`
-- Keep under 5 segments: `domain/category/post-name` ideal
-- Use hyphens, not underscores: `web-design` not `web_design`
-- Lowercase only: `/Services/Web-Design/` → `/services/web-design/`
-- Avoid dates in URLs unless time-sensitive content
+## Tools & Technologies
 
-## Page Type Definitions
-| Page Type | Purpose | Content Required |
-|-----------|---------|-----------------|
-| Homepage | Orientation, top conversions | H1, hero, social proof, top CTAs, value prop |
-| Landing Page | Single conversion goal | Target headline, benefit bullets, form/CTA, trust signals |
-| Blog Post | SEO, education, authority | Headline, body, featured image, meta, author |
-| Product/Service | Sell an offering | Features, benefits, pricing, testimonials, FAQ |
-| About | Trust-building | Story, team, mission, values, press mentions |
-| Contact | Lead generation | Form, map, phone, email, hours |
-| FAQ | Reduce support, SEO | Questions as H2s, answers below |
-| Resource/Library | Content hub | Filtered grid/search, categories, featured items |
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
 
-## Wireframe Outlines
-Use the `sketch` tool or describe layout in markdown tables:
-```
-[Hero: Headline + Subheading + CTA Button]
-[Social Proof: Logo bar of 3-5 companies]
-[Features: 3-column grid with icons]
-[Testimonials: Carousel of 3 quotes]
-[FAQ: Accordion of top 5 questions]
-[CTA: Final bold section]
-[Footer: Links, social, legal]
-```
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. **Ignoring mobile navigation** — hamburger menus on desktop are lazy; use responsive navigation
-2. **Content-first, structure-second** — structure must follow content needs, not the other way around
-3. **Orphan pages** — every page needs a link from at least one other page
-4. **Overloaded primary nav** — 7+ items overwhelms users; group and stack
-5. **No 404 strategy** — plan a helpful 404 page with search and popular links
 
-## Verification Checklist
-- [ ] Full hierarchical sitemap created  
-- [ ] Navigation design (primary/secondary/footer/breadcrumb) planned
-- [ ] URL structure strategy defined
-- [ ] All page types documented (homepage, landing, blog, etc.)
-- [ ] Wireframe outline for each top-level page type
-- [ ] Mobile navigation plan included
-- [ ] Every page has an inbound link path
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
+
+## Tags
+
+`website, information-architecture, sitemap, wireframe, planning`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

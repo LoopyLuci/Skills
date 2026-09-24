@@ -7,60 +7,62 @@ related_skills: [writing-plans, subagent-driven-development, finishing-a-develop
 
 # Executing Plans
 
-## Overview
+Use when executing written implementation plans step by step
 
-Load a plan, review critically, execute all tasks, report when complete.
+## Trigger
 
-## Step 1: Load and Review Plan
+Activate this skill when the user mentions:
+- plans,  execution,  implementation,  development workflows or issues
+- Building, fixing, or optimizing executing plans
+- Questions about plans best practices
 
-1. Ensure an isolated workspace (use using-git-worktrees or verify existing one)
-2. Read the plan file
-3. Review critically — identify any questions or concerns
-4. If concerns: Raise them with your human partner before starting
-5. If no concerns: Create todos for the plan items and proceed
+## Core Concepts
 
-## Step 2: Execute Tasks
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-For each task:
-1. Mark as in_progress
-2. Follow each step exactly
-3. Run verifications as specified
-4. Mark as completed
+## Step-by-Step Workflow
 
-## Step 3: Complete Development
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
 
-After all tasks complete and verified:
-- Use finishing-a-development-branch skill to verify tests and present options
+## Tools & Technologies
 
-## When to Stop and Ask for Help
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
 
-**STOP immediately when:** Hit a blocker, plan has critical gaps, instruction unclear, verification fails repeatedly. Ask for clarification rather than guessing.
+## Best Practices
 
-## Code Example: Task Progress Tracking
-
-```
-- [x] Step 1: Create database schema
-- [x] Step 2: Implement API endpoints
-- [ ] Step 3: Add input validation
-- [ ] Step 4: Write integration tests
-```
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-| Pitfall | Solution |
-|---------|----------|
-| Skipping plan review | Always review critically before executing |
-| Following vague steps blindly | Stop and ask for clarification |
-| Guessing instead of asking | Ask for help when stuck — never guess |
-| Modifying plan without approval | Raise concerns, let partner update the plan |
-| Skipping verification steps | Run all specified verifications before marking done |
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Plan reviewed critically before starting
-- [ ] Todos created for all plan items
-- [ ] Each task completed with verification
-- [ ] No steps skipped or guessed at
-- [ ] Blocker handling: asked for help when needed
-- [ ] finishing-a-development-branch invoked at completion
-- [ ] Tests pass, changes committed
+`plans, execution, implementation, development`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

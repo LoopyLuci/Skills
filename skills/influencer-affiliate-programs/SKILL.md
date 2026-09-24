@@ -10,85 +10,64 @@ metadata:
     related_skills: [social-media-advertising, digital-marketing-strategy, ppc-advertising-management, ecommerce-platform-management]
 ---
 
-# Influencer and Affiliate Marketing Programs
+# Influencer Affiliate Programs
 
-Building and managing influencer partnerships and affiliate marketing programs.
+"Use when building influencer and affiliate programs."
 
-## When to Use
+## Trigger
 
-- Launching an influencer marketing program
-- Building an affiliate/channel partner program
-- Recruiting and onboarding partners
-- Tracking performance and managing payouts
-- Scaling creator partnerships
+Activate this skill when the user mentions:
+- influencer-marketing,  affiliate-marketing,  partnerships,  creator-economy workflows or issues
+- Building, fixing, or optimizing influencer affiliate programs
+- Questions about influencer-marketing best practices
 
-## Program Types
+## Core Concepts
 
-```python
-PROGRAM_TYPES = {
-    'influencer_gifting': {'compensation': 'Free product', 'best_for': 'Launches, awareness', 'effort': 'Low'},
-    'influencer_paid': {'compensation': 'Flat fee + product', 'best_for': 'Campaigns, content', 'effort': 'Medium'},
-    'affiliate_percentage': {'compensation': '10-30% commission', 'best_for': 'Ecommerce, SaaS', 'effort': 'High'},
-    'ambassador': {'compensation': 'Tiered commission + perks', 'best_for': 'Loyalty, long-term', 'effort': 'High'},
-}
-```
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-## Influencer Vetting
+## Step-by-Step Workflow
 
-```python
-def score_influencer(profile: Dict) -> Dict:
-    score = 0
-    er = (profile.get('avg_likes', 0) + profile.get('avg_comments', 0)) / max(profile.get('followers', 1000), 1) * 100
-    
-    if er > 5: score += 30
-    elif er > 2: score += 15
-    else: score -= 10
-    
-    score += profile.get('niche_match', 50) * 0.3
-    score += profile.get('content_quality', 5) * 3
-    if profile.get('past_controversies'): score -= 40
-    
-    return {'score': round(score), 'rating': 'Excellent' if score >= 80 else 'Good' if score >= 60 else 'Fair' if score >= 40 else 'Poor'}
-```
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
 
-## Affiliate Program Manager
+## Tools & Technologies
 
-```python
-class AffiliateManager:
-    def __init__(self, commission=0.20):
-        self.commission = commission
-        self.affiliates = {}
-    
-    def add_affiliate(self, name: str, email: str, rate: float = None) -> str:
-        import uuid; aid = str(uuid.uuid4())[:8]
-        self.affiliates[aid] = {'id': aid, 'name': name, 'email': email,
-            'commission': rate or self.commission, 'sales': 0, 'earned': 0.0}
-        return aid
-    
-    def record_sale(self, aid: str, amount: float):
-        if aid in self.affiliates:
-            a = self.affiliates[aid]
-            a['sales'] += 1
-            a['earned'] += amount * a['commission']
-```
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Vanity metrics** — engagement rate matters more than followers
-2. **No tracking** — can't attribute sales without promo codes or links
-3. **No contract** — verbal agreements lead to disputes
-4. **No FTC disclosure** — ensure all paid posts are labeled #ad
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Program type selected
-- [ ] Vetting criteria defined
-- [ ] Tracking system set up
-- [ ] Commission structure defined
-- [ ] FTC disclosure compliance
+`influencer-marketing, affiliate-marketing, partnerships, creator-economy`
 
-## See Also
+---
 
-- social-media-advertising — paid social alongside influencer
-- digital-marketing-strategy — partnerships in strategy
-- ecommerce-platform-management — affiliate integration
+*LoopyLuci/Skills - 2026-09-24*

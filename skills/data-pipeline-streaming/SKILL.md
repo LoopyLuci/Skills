@@ -10,72 +10,62 @@ metadata:
     related_skills: [message-queue-patterns, event-driven-architecture, etl-pipeline-design, feature-engineering-automation]
 ---
 
-# Data Pipeline and Streaming
+# Data Pipeline Streaming
 
-Building batch and streaming data pipelines — from ETL/ELT design through stream processing, real-time analytics, and pipeline observability.
+"Use when building streaming and batch data pipelines."
 
-## When to Use
+## Trigger
 
-- Processing large volumes of data on schedule (batch)
-- Processing data in real-time as it arrives (streaming)
-- Building data lakes, data warehouses, or lakehouses
-- Implementing change data capture (CDC) from databases
-- Powering real-time dashboards and analytics
+Activate this skill when the user mentions:
+- data-pipeline,  ETL,  streaming,  Kafka,  Spark,  Flink,  batch workflows or issues
+- Building, fixing, or optimizing data pipeline streaming
+- Questions about data-pipeline best practices
 
-## Pipeline Architectures
+## Core Concepts
 
-```python
-PIPELINE_ARCHITECTURES = {
-    'batch_etl': 'Extract→Transform→Load in scheduled batches (hourly/daily)',
-    'batch_elt': 'Extract→Load→Transform in warehouse (modern approach)',
-    'streaming': 'Process events as they arrive (sub-second latency)',
-    'lambda': 'Batch + streaming layers combined, merged at query time',
-    'kappa': 'Everything is a stream, batch is just a replay of stream',
-}
+- Data modeling (dimensional, normalized)
+- ETL/ELT patterns and idempotency
+- Data quality and validation
+- Lineage and cataloging
+- Privacy and data protection
 
-class ETLPipeline:
-    """Design and monitor ETL pipelines."""
-    def __init__(self, name: str, schedule: str = 'daily'):
-        self.name = name
-        self.schedule = schedule
-        self.steps = []
-    
-    def add_step(self, name: str, func: callable, 
-                 dependencies: list = None) -> 'ETLPipeline':
-        self.steps.append({
-            'name': name, 'func': func, 'deps': dependencies or [],
-            'status': 'pending', 'duration': None,
-        })
-        return self
-    
-    def run(self):
-        for step in self.steps:
-            import time
-            start = time.time()
-            try:
-                step['func']()
-                step['status'] = 'success'
-            except Exception as e:
-                step['status'] = 'failed'
-                raise e
-            finally:
-                step['duration'] = time.time() - start
-```
+## Step-by-Step Workflow
+
+1. **Discover** — Profile data, assess quality
+   - Expected: Data profile report with quality scores
+2. **Design** — Model for use case
+   - Expected: Approved data model
+3. **Build** — Implement pipelines with testing
+   - Expected: Idempotent pipelines with quality checks
+4. **Validate** — Reconcile, test business rules
+   - Expected: Validated data with quality metrics
+5. **Operate** — Monitor, optimize, iterate
+   - Expected: Monitored pipelines with SLA tracking
+
+## Tools & Technologies
+
+- dbt
+- Airflow/Prefect
+- Spark/DuckDB
+- Data catalogs
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Schema drift** — source data changes shape and breaks pipelines; use schema-on-read
-2. **Backpressure** — ingestion rate > processing rate causes unbounded growth
-3. **Data quality** — garbage in, garbage out; validate at ingestion
-4. **No observability** — pipeline fails silently; monitor row counts, lag, errors
-5. **Reprocessing cost** — replaying weeks of data is expensive; design for selective replay
+- **No data quality gates** → Garbage in, garbage out → Validate at every stage
+- **Monolithic pipelines** → Hard to debug → Small idempotent tasks
 
-## Verification Checklist
+## Tags
 
-- [ ] Source data validation at ingestion point
-- [ ] Schema evolution strategy defined (Avro, Protobuf, schema registry)
-- [ ] Monitoring on row counts, data lag, error rates
-- [ ] Idempotent writes for safe reprocessing
-- [ ] Checkpointing for streaming (offset tracking)
-- [ ] Data quality checks after each stage
-- [ ] Alerting for pipeline failures and data anomalies
+`data-pipeline, ETL, streaming, Kafka, Spark, Flink, batch`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

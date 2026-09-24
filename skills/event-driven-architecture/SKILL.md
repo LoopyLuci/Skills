@@ -10,61 +10,64 @@ metadata:
     related_skills: [microservices-decomposition, distributed-systems-patterns, message-queue-patterns, data-pipeline-streaming]
 ---
 
-# Event-Driven Architecture
+# Event Driven Architecture
 
-Designing event-driven systems — from event schemas and message brokers through event sourcing, CQRS, sagas, and event-driven microservices.
+"Use when designing event-driven and message-driven systems."
 
-## When to Use
+## Trigger
 
-- Decoupling services through asynchronous communication
-- Building event-driven microservices
-- Implementing event sourcing or CQRS patterns
-- Orchestrating distributed transactions via sagas
-- Processing event streams in real-time
+Activate this skill when the user mentions:
+- event-driven,  messaging,  kafka,  async,  events,  CQRS,  saga,  pub-sub workflows or issues
+- Building, fixing, or optimizing event driven architecture
+- Questions about event-driven best practices
 
-## Key Patterns
+## Core Concepts
 
-```python
-from typing import Dict, List, Callable
-import json, uuid
-from datetime import datetime
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-class Event:
-    """Domain event with metadata."""
-    def __init__(self, name: str, data: Dict, source: str = ''):
-        self.id = str(uuid.uuid4())
-        self.name = name
-        self.data = data
-        self.source = source
-        self.timestamp = datetime.now().isoformat()
-        self.version = 1
+## Step-by-Step Workflow
 
-class EventBus:
-    """Simple in-memory event bus with pub/sub."""
-    def __init__(self):
-        self.subscribers = {}  # event_name -> [handlers]
-    
-    def publish(self, event: Event):
-        handlers = self.subscribers.get(event.name, [])
-        for handler in handlers:
-            handler(event)
-    
-    def subscribe(self, event_name: str, handler: Callable):
-        self.subscribers.setdefault(event_name, []).append(handler)
-```
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **No event schema governance** — events change shape and break consumers
-2. **At-most-once vs at-least-once** — choose delivery semantics per use case
-3. **Eventual consistency surprises** — systems are eventually consistent; design for it
-4. **Saga failure handling** — compensating transactions are hard; test failure paths
-5. **Event schema evolution** — backward compatibility is essential; use Avro/Protobuf
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Event schemas defined and versioned
-- [ ] Delivery semantics chosen per event type
-- [ ] Idempotent consumers (replay safety)
-- [ ] Dead letter queue configured
-- [ ] Monitoring on event latency and throughput
+`event-driven, messaging, kafka, async, events, CQRS, saga, pub-sub`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

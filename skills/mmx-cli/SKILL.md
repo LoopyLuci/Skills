@@ -5,103 +5,64 @@ tags: [minimax, media-generation, tts, video, image, music]
 related_skills: [minimax-xlsx, pptx-generator, shader-dev]
 ---
 
-# MiniMax CLI
+# Mmx Cli
 
-## Overview
+Use when generating media via MiniMax API CLI scripts
 
-Command-line scripts and Python API for generating media assets using the MiniMax API. Requires `MINIMAX_API_KEY` environment variable.
+## Trigger
 
-## Audio (Text-to-Speech)
+Activate this skill when the user mentions:
+- minimax,  media-generation,  tts,  video,  image,  music workflows or issues
+- Building, fixing, or optimizing mmx cli
+- Questions about minimax best practices
 
-```bash
-# Basic TTS
-python scripts/minimax_tts.py "Hello world" -o output.mp3
+## Core Concepts
 
-# Chinese voice with emotion
-python scripts/minimax_tts.py "你好" -o hi.mp3 -v female-shaonv
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-# Custom speed and format
-python scripts/minimax_tts.py "Welcome" -o out.wav -v male-qn-jingying --speed 0.8 --format wav
-```
+## Step-by-Step Workflow
 
-**Programmatic:**
-```python
-from minimax_tts import tts
-audio_bytes = tts("Hello", voice_id="female-shaonv")
-```
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
 
-## Video (Text-to-Video)
+## Tools & Technologies
 
-```bash
-# Basic generation
-python scripts/minimax_video.py "A cat playing piano" -o cat.mp4
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
 
-# Camera motion and duration
-python scripts/minimax_video.py "Ocean waves [Truck left]" -o waves.mp4 --duration 10
+## Best Practices
 
-# Resolution control
-python scripts/minimax_video.py "City skyline [Push in]" -o city.mp4 --resolution 1080P
-```
-
-**Programmatic:**
-```python
-from minimax_video import generate
-generate("A cat playing piano", "cat.mp4", model="MiniMax-Hailuo-2.3", duration=6)
-```
-
-## Image (Text-to-Image)
-
-```bash
-# Basic image
-python scripts/minimax_image.py "A cat astronaut in space" -o cat.png
-
-# Aspect ratio control
-python scripts/minimax_image.py "Mountain landscape" -o hero.png --ratio 16:9
-
-# Batch generation
-python scripts/minimax_image.py "Product icons, flat style" -o icons.png -n 4 --seed 42
-```
-
-**Programmatic:**
-```python
-from minimax_image import generate_image, download_and_save
-result = generate_image("A cat in space", aspect_ratio="16:9")
-download_and_save(result["data"]["image_urls"][0], "cat.png")
-```
-
-## Music (Text-to-Music)
-
-```bash
-# With lyrics
-python scripts/minimax_music.py --prompt "Indie folk, melancholic" --lyrics "[Verse]\nStreetlights flicker" -o song.mp3
-
-# Auto-lyrics
-python scripts/minimax_music.py --prompt "Upbeat pop, energetic" --auto-lyrics -o pop.mp3
-
-# Instrumental only
-python scripts/minimax_music.py --prompt "Jazz piano, smooth, relaxing" --instrumental -o jazz.mp3
-```
-
-**Programmatic:**
-```python
-from minimax_music import generate_music
-result = generate_music(prompt="Jazz piano", is_instrumental=True)
-with open("jazz.mp3", "wb") as f:
-    f.write(result["audio_bytes"])
-```
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-| Pitfall | Solution |
-|---------|----------|
-| Missing MINIMAX_API_KEY | Set environment variable before running scripts |
-| Camera commands not working | Use `[Command]` syntax like `[Push in]`, `[Truck left]` |
-| Output format mismatch | Check format flags per script (mp3/wav/flac for audio, mp4 for video, png/jpg for image) |
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] MINIMAX_API_KEY environment variable set
-- [ ] Correct script chosen for media type (tts/video/image/music)
-- [ ] Output path specified with `-o`
-- [ ] File generated and playable/viewable
-- [ ] Programmatic API works if needed
+`minimax, media-generation, tts, video, image, music`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

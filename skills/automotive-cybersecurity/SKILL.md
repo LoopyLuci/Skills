@@ -11,46 +11,62 @@ metadata:
     related_skills: [maritime-cybersecurity]
 ---
 
-## Overview
-Automotive Cybersecurity implementation. Covers best practices, methodologies, 
-technical considerations, and verification approaches for this domain.
+# Automotive Cybersecurity
 
-## When to Use
-- "Automotive Cybersecurity implementation and optimization"
-- "Best practices for Automotive Cybersecurity workflows"
-- "Automotive Cybersecurity compliance and standards"
-- "Automotive Cybersecurity troubleshooting and problem-solving"
-- "Automotive Cybersecurity ROI and performance measurement"
+"Use when securing automotive systems."
 
-## Key Methodologies
-```text
-1. Assessment and Planning Phase
-2. Implementation and Execution
-3. Monitoring and Optimization
-4. Compliance and Verification
-5. Continuous Improvement
-```
+## Trigger
+
+Activate this skill when the user mentions:
+- automotive,  automotive-cybersecurity,  vehicle-security workflows or issues
+- Building, fixing, or optimizing automotive cybersecurity
+- Questions about automotive best practices
+
+## Core Concepts
+
+- Threat modeling and risk assessment
+- Attack surface analysis
+- Defense in depth
+- Zero-trust architecture
+- Compliance and audit requirements
+
+## Step-by-Step Workflow
+
+1. **Scope** — Define assets, threats, attack surface
+   - Expected: Documented scope with trust boundaries
+2. **Assess** — Identify vulnerabilities, evaluate risk
+   - Expected: Prioritized findings with CVSS scores
+3. **Remediate** — Apply secure-by-design fixes
+   - Expected: Vulnerabilities closed
+4. **Verify** — Re-test and validate remediation
+   - Expected: Independent verification complete
+5. **Document** — Record findings and lessons learned
+   - Expected: Audit-ready report
+
+## Tools & Technologies
+
+- Vulnerability scanners
+- SAST/DAST tools
+- SIEM platforms
+- Pen-testing frameworks
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. **Insufficient planning** — rushing without proper assessment
-2. **Ignoring industry standards** — not following established frameworks
-3. **Poor stakeholder alignment** — conflicting requirements
-4. **Inadequate measurement** — no metrics for success
-5. **Not accounting for local conditions** — generic approaches fail
-6. **Underestimating complexity** — oversimplified solutions
-7. **No contingency planning** — no plan for unexpected issues
-8. **Insufficient training** — operators lack required skills
-9. **No verification process** — implementation without quality checks
-10. **Failing to iterate** — not improving based on results
 
-## Verification Checklist
-- [ ] Initial assessment and baseline established
-- [ ] Industry standards and best practices identified
-- [ ] Stakeholder requirements aligned and documented
-- [ ] Implementation plan with timelines
-- [ ] Quality control measures defined
-- [ ] Training completed for involved parties
-- [ ] Monitoring system with key metrics
-- [ ] Compliance requirements verified
-- [ ] Performance baseline before go-live
-- [ ] Post-implementation review scheduled
+- **Scope creep** → Unclear boundaries → Define scope explicitly
+- **Tool reliance without analysis** → False positives → Manual validation required
+
+## Tags
+
+`automotive, automotive-cybersecurity, vehicle-security`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

@@ -13,113 +13,62 @@ metadata:
 
 # Static Site Generator Workflow
 
-## Overview
-Set up, configure, and deploy static sites with Hugo, Jekyll, 11ty, or Astro. Covers theme selection and customization, content organization, build pipeline configuration, deployment, RSS, SEO metadata, and image optimization.
+"Use when building static sites. SSG setup, deploy."
 
-## When to Use
-- "Set up a blog with Hugo"
-- "Create a static site with 11ty or Astro"
-- "Deploy my site to Netlify/Vercel"
+## Trigger
 
-## SSG Quick Decision
-| SSG | Language | Best For | Build Speed | Learning Curve |
-|-----|----------|----------|-------------|----------------|
-| Hugo | Go (templates) | Blogs, docs, speed-critical | Fastest | Moderate |
-| Jekyll | Ruby | GitHub Pages, standard blogs | Slow (large sites) | Easy |
-| 11ty | JavaScript | Flexible, multi-template | Fast | Moderate |
-| Astro | JavaScript (islands) | Content sites, partial interactivity | Fast | Moderate |
+Activate this skill when the user mentions:
+- static-site,  hugo,  jekyll,  11ty,  astro,  jamstack workflows or issues
+- Building, fixing, or optimizing static site generator workflow
+- Questions about static-site best practices
 
-## Setup Workflow (Hugo example)
+## Core Concepts
 
-```bash
-# Install
-brew install hugo  # macOS
-scoop install hugo  # Windows
-# Create site
-hugo new site my-site --format yaml
-cd my-site
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-# Add theme (git submodule)
-git init
-git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
+## Step-by-Step Workflow
 
-# Configure (hugo.yaml)
-baseURL: "https://example.com/"
-languageCode: "en-us"
-title: "My Site"
-theme: "ananke"
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
 
-# Create content
-hugo new posts/first-post.md
-# Edit content/posts/first-post.md frontmatter
-```
+## Tools & Technologies
 
-## Content Organization
-```
-content/
-├── _index.md          # Homepage content
-├── posts/             # Blog posts
-│   ├── _index.md      # Blog list page
-│   └── post-1.md
-├── projects/
-│   ├── _index.md
-│   └── project-1.md
-├── about.md
-└── contact.md
-```
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
 
-### Frontmatter template (YAML)
-```yaml
----
-title: "Post Title"
-date: 2024-01-15T10:00:00Z
-draft: false
-tags: [tag1, tag2]
-categories: [category]
-description: "SEO meta description, 150-160 chars"
-featured_image: "/images/post-image.jpg"
----
+## Best Practices
 
-Post content in markdown.
-```
-
-## Build & Deploy
-```bash
-# Local development
-hugo server -D  # -D includes drafts
-
-# Build
-hugo --minify
-
-# Deploy to Netlify (netlify.toml)
-[build]
-  command = "hugo --minify"
-  publish = "public"
-
-[[redirects]]
-  from = "/blog/*"
-  to = "/posts/:splat"
-  status = 301
-```
-
-## RSS, SEO & Images
-- **RSS**: Hugo generates RSS automatically at `/index.xml`. Customize in config.
-- **SEO**: Title templates, meta descriptions in frontmatter, `<!--more-->` for excerpts
-- **Images**: Use `image` shortcode, lazy loading, WebP format, responsive srcset
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. **Not setting baseURL** — RSS and sitemap will have wrong URLs
-2. **Draft posts in production** — remember to set `draft: false`
-3. **Missing .nojekyll** — GitHub Pages assumes Jekyll; add empty `.nojekyll` file for Hugo/11ty
-4. **Theme updates breaking layout** — pin theme to a specific commit with git submodules
-5. **Slow builds** — large image galleries kill build times; use image processing at build, not runtime
 
-## Verification Checklist
-- [ ] SSG selected and initialized
-- [ ] Theme installed and configured
-- [ ] Content organized (posts, pages, sections)
-- [ ] Frontmatter complete (title, date, tags, description)
-- [ ] Build runs without errors locally
-- [ ] Deployed to chosen platform (Netlify/Vercel/GitHub Pages)
-- [ ] RSS feed accessible at /index.xml
-- [ ] Sitemap generated at /sitemap.xml
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
+
+## Tags
+
+`static-site, hugo, jekyll, 11ty, astro, jamstack`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

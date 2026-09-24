@@ -11,44 +11,64 @@ metadata:
     related_skills: [climate-risk-assessment, sustainability-reporting]
 ---
 
-# Carbon Accounting & GHG Protocol
+# Carbon Accounting Standards
 
-## Overview
-Measure, report, and verify greenhouse gas (GHG) emissions following GHG Protocol, ISO 14064, and IFRS sustainability standards. Covers scope 1, 2, 3 emissions calculation, carbon footprinting, offset quantification, and regulatory compliance.
+"Use when doing carbon accounting. GHG, scopes, reporting."
 
-## When to Use
-- "Calculate Scope 1/2/3 emissions inventory"
-- "Prepare carbon footprint for ESG reporting"
-- "Align emissions with Science-Based Targets"
-- "Implement carbon accounting system"
-- "Track and verify carbon offset projects"
+## Trigger
 
-## GHG Protocol Scopes
-- **Scope 1**: Direct emissions (fuel combustion, process emissions, fugitives)
-- **Scope 2**: Indirect emissions (purchased electricity, steam, heat)
-- **Scope 3**: Value chain emissions (15 categories)
+Activate this skill when the user mentions:
+- climatetech,  carbon-accounting,  ghg-protocol,  scope-123 workflows or issues
+- Building, fixing, or optimizing carbon accounting standards
+- Questions about climatetech best practices
 
-## Emissions Calculation
-```python
-def calculate_scope_1(fuels, factors):
-    """Calculate direct emissions from fuel combustion"""
-    total = sum(amount * factors.get(f, 0) for f, amount in fuels.items())
-    return round(total / 1000, 2)  # tons CO2e
+## Core Concepts
 
-EMISSION_FACTORS = {
-    "natural_gas_kwh": 0.185,
-    "diesel_litre": 2.68,
-    "propane_litre": 1.53,
-    "refrigerant_r134a": 1430
-}
-```
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-## Verification Checklist
-- [ ] All 3 scopes inventoried
-- [ ] Emission factors verified and current
-- [ ] Scope 3 covers all applicable categories
-- [ ] Third-party verification arranged
-- [ ] SBTi targets set
-- [ ] Internal carbon price applied
-- [ ] Offset inventory tracked
-- [ ] Reporting aligned with GRI/SASB/TCFD
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
+
+## Common Pitfalls
+
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
+
+## Tags
+
+`climatetech, carbon-accounting, ghg-protocol, scope-123`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

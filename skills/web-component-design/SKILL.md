@@ -12,47 +12,62 @@ metadata:
 
 # Web Component Design
 
-Building reusable web components using Web Components standards — Custom Elements, Shadow DOM, HTML Templates, lifecycle hooks, and framework-agnostic design.
+"Use when building reusable web components."
 
-## When to Use
+## Trigger
 
-- Building framework-agnostic reusable UI components
-- Creating design system components that work anywhere
-- Encapsulating component styles with Shadow DOM
-- Building micro-frontends with shared components
+Activate this skill when the user mentions:
+- web-components,  custom-elements,  shadow-DOM,  HTML-templates,  reusable workflows or issues
+- Building, fixing, or optimizing web component design
+- Questions about web-components best practices
 
-## Component Lifecycle
+## Core Concepts
 
-```javascript
-class BaseComponent extends HTMLElement {
-    constructor() { super(); this.attachShadow({ mode: 'open' }); }
-    connectedCallback() { this.render(); this.addListeners(); }
-    disconnectedCallback() { this.removeListeners(); }
-    attributeChangedCallback(name, oldVal, newVal) { if (oldVal !== newVal) this.render(); }
-    static get observedAttributes() { return ['data-label', 'data-disabled']; }
-    
-    render() {
-        this.shadowRoot.innerHTML = `
-            <style>:host { display: block; }</style>
-            <div part="container">${this.getAttribute('data-label')}</div>
-        `;
-    }
-}
-customElements.define('base-component', BaseComponent);
-```
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
+
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Over-styling** — Shadow DOM hard to customize; use CSS custom properties and ::part
-2. **Form participation** — custom elements need ElementInternals for form integration
-3. **Accessibility** — ARIA roles and keyboard navigation aren't automatic
-4. **Over-abstraction** — not everything needs to be a web component
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Lifecycle properly implemented
-- [ ] Shadow DOM for style encapsulation
-- [ ] CSS custom properties for theming
-- [ ] Attribute/property API documented
-- [ ] Accessibility (ARIA, keyboard, focus)
-- [ ] Tested in multiple frameworks
+`web-components, custom-elements, shadow-DOM, HTML-templates, reusable`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

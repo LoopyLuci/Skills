@@ -12,74 +12,62 @@ metadata:
 
 # Customer Education Programs
 
-Building customer education and enablement programs — from training content and certification through LMS setup, knowledge bases, and education ROI measurement.
+"Use when building customer education and enablement."
 
-## When to Use
+## Trigger
 
-- Reducing time-to-value through customer training
-- Building a certification program for power users
-- Creating self-service education resources (academy)
-- Reducing support tickets through enablement
-- Driving product adoption through training
+Activate this skill when the user mentions:
+- customer-education,  enablement,  training,  certification,  knowledge-base,  academy workflows or issues
+- Building, fixing, or optimizing customer education programs
+- Questions about customer-education best practices
 
-## Education Program Types
+## Core Concepts
 
-```python
-EDUCATION_PROGRAMS = {
-    'product_training': 'How-to guides, video tutorials, webinars on product usage',
-    'certification': 'Structured curriculum with assessments and credentials',
-    'knowledge_base': 'Searchable help articles, FAQs, troubleshooting guides',
-    'academy': 'On-demand learning platform with courses and progress tracking',
-    'community_learning': 'Peer learning, forums, AMAs, user groups',
-    'on_demand': 'Self-paced video courses available anytime',
-}
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-class EducationProgram:
-    """Design and manage customer education."""
-    def __init__(self, name: str):
-        self.name = name
-        self.courses = []
-        self.enrollments = {}  # customer_id -> [course_ids]
-    
-    def add_course(self, title: str, modules: List[str], 
-                   duration_hours: float, certification: bool = False):
-        self.courses.append({
-            'title': title, 'modules': modules,
-            'duration': duration_hours, 'certification': certification,
-            'completion_rate': 0,
-        })
-    
-    def enroll(self, customer_id: str, course_id: int) -> bool:
-        if course_id < len(self.courses):
-            self.enrollments.setdefault(customer_id, []).append(course_id)
-            return True
-        return False
-    
-    def program_health(self) -> Dict:
-        total = sum(len(e) for e in self.enrollments.values())
-        return {
-            'total_enrollments': total,
-            'total_courses': len(self.courses),
-            'active_students': len(self.enrollments),
-            'avg_completion': sum(c['completion_rate'] for c in self.courses) / max(len(self.courses), 1),
-        }
-```
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Content without context** — training that doesn't tie to customer use cases and jobs-to-be-done
-2. **No certification value** — certs that no one cares about; align with industry recognition
-3. **Static content** — product changes and training becomes outdated; maintain content regularly
-4. **Not measuring impact** — education should reduce support tickets and increase adoption; measure it
-5. **Text-heavy training** — people learn better with video, interactive exercises, and hands-on labs
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Training content maps to customer journey stages
-- [ ] Content formats varied (video, written, interactive, live)
-- [ ] Certification program with assessments
-- [ ] Knowledge base searchable and well-organized
-- [ ] Customer education platform selected (LMS or academy tool)
-- [ ] Content refresh cadence (quarterly for product training)
-- [ ] ROI metrics: ticket deflection, adoption increase, NPS improvement
-- [ ] Customer feedback collected on training effectiveness
+`customer-education, enablement, training, certification, knowledge-base, academy`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

@@ -10,78 +10,62 @@ metadata:
     related_skills: [ab-testing-experimentation, deep-reinforcement-learning, ml-pipeline-design, agent-reasoning-patterns]
 ---
 
-# Causal Inference in ML
+# Causal Inference Ml
 
-Applying causal inference methods to machine learning — from causal graphs through treatment effect estimation, counterfactual reasoning, and decision-making.
+"Use when implementing causal inference methods in ML."
 
-## When to Use
+## Trigger
 
-- Determining whether X causes Y (not just correlates)
-- Estimating treatment effects from observational data
-- Removing confounding bias from ML models
-- Answering "what if" counterfactual questions
+Activate this skill when the user mentions:
+- causal-inference,  do-calculus,  treatment-effects,  DAG,  counterfactual workflows or issues
+- Building, fixing, or optimizing causal inference ml
+- Questions about causal-inference best practices
 
-## Causal Concepts
+## Core Concepts
 
-```python
-CAUSAL_CONCEPTS = {
-    'association': 'P(Y|X) — statistical correlation',
-    'intervention': 'P(Y|do(X)) — causal effect of intervening',
-    'counterfactual': 'P(Y_{X=x} | X=x\') — what if X had been different',
-}
-```
+- Model selection and evaluation
+- Feature engineering and data prep
+- Training methodology
+- Deployment and serving patterns
+- Monitoring and drift detection
 
-## Causal Graph (DAG)
+## Step-by-Step Workflow
 
-```python
-class CausalGraph:
-    def __init__(self):
-        self.nodes = set(); self.edges = []
-    
-    def add_edge(self, cause: str, effect: str):
-        self.nodes.update([cause, effect]); self.edges.append((cause, effect))
-    
-    def get_confounders(self, x: str, y: str) -> list:
-        x_parents = set(p for p, c in self.edges if c == x)
-        y_parents = set(p for p, c in self.edges if c == y)
-        return list(x_parents & y_parents)
-```
+1. **Frame** — Define problem, success metric, baseline
+   - Expected: Clear problem statement
+2. **Explore** — EDA, feature analysis
+   - Expected: Understanding of data relationships
+3. **Build** — Train models, track experiments
+   - Expected: Logged reproducible experiments
+4. **Evaluate** — Test on holdout, check bias
+   - Expected: Evaluation report with confidence
+5. **Deploy** — Serve with monitoring
+   - Expected: Production model with drift detection
 
-## Treatment Effect Estimation
+## Tools & Technologies
 
-```python
-import numpy as np
-from sklearn.linear_model import LogisticRegression
+- Experiment tracking
+- Model registry
+- Feature store
+- Model serving
 
-def propensity_score_matching(treatment, outcome, features):
-    ps_model = LogisticRegression().fit(features, treatment)
-    propensity = ps_model.predict_proba(features)[:, 1]
-    
-    treated = treatment == 1; control = treatment == 0
-    effects = []
-    for i in np.where(treated)[0]:
-        nearest = np.where(control)[0][np.argmin(np.abs(propensity[control] - propensity[i]))]
-        effects.append(outcome[i] - outcome[nearest])
-    
-    return {'ate': np.mean(effects), 'matched_pairs': len(effects)}
-```
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Correlation ≠ causation** — always consider confounders
-2. **Conditioning on colliders** — opens spurious paths
-3. **Selection bias** — non-random treatment assignment; use matching
-4. **Hidden confounders** — unmeasured variables bias estimates
+- **Data leakage** → Overly optimistic metrics → Strict temporal splits
+- **No monitoring** → Silent degradation → Monitor prediction distribution
 
-## Verification Checklist
+## Tags
 
-- [ ] Causal DAG drawn and reviewed
-- [ ] Confounders identified and adjusted for
-- [ ] Backdoor criterion satisfied
-- [ ] Sensitivity analysis for unmeasured confounding
+`causal-inference, do-calculus, treatment-effects, DAG, counterfactual`
 
-## See Also
+---
 
-- ab-testing-experimentation — randomized experiments
-- deep-reinforcement-learning — causal effects in RL
-- ml-pipeline-design — causal inference in pipelines
+*LoopyLuci/Skills - 2026-09-24*

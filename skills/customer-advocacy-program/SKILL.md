@@ -10,73 +10,64 @@ metadata:
     related_skills: [customer-success-retention, loyalty-programs-crm, influencer-affiliate-programs, community-management-engagement]
 ---
 
-# Customer Advocacy Programs
+# Customer Advocacy Program
 
-Building customer advocacy programs — from identifying advocates and collecting testimonials through case studies, referral programs, and customer advisory boards.
+"Use when building customer advocacy and referral programs."
 
-## When to Use
+## Trigger
 
-- Leveraging happy customers for acquisition and retention
-- Building a customer reference program for sales
-- Collecting and promoting customer testimonials and case studies
-- Creating a customer advisory board
-- Implementing customer referral programs
+Activate this skill when the user mentions:
+- customer-advocacy,  referrals,  testimonials,  case-studies,  community,  champions workflows or issues
+- Building, fixing, or optimizing customer advocacy program
+- Questions about customer-advocacy best practices
 
-## Advocacy Program Types
+## Core Concepts
 
-```python
-ADVOCACY_TYPES = {
-    'referral': 'Customers refer others in exchange for rewards',
-    'testimonial': 'Collect and promote customer quotes and reviews',
-    'case_study': 'In-depth customer success story with metrics',
-    'reference_call': 'Customer speaks to prospects about their experience',
-    'advisory_board': 'Key customers provide strategic product feedback',
-    'community_champion': 'Active community members who help other customers',
-    'review_generation': 'Encourage reviews on G2, Capterra, Trustpilot',
-}
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-class AdvocacyProgram:
-    """Manage customer advocacy activities."""
-    def __init__(self):
-        self.advocates = {}
-        self.activities = []
-    
-    def enroll_advocate(self, customer: str, company: str, 
-                        engagement: str = 'reference'):
-        """Add customer to advocacy program."""
-        import uuid
-        aid = str(uuid.uuid4())[:8]
-        self.advocates[aid] = {
-            'id': aid, 'customer': customer, 'company': company,
-            'engagement': engagement, 'activities': 0, 'status': 'active',
-        }
-        return aid
-    
-    def record_activity(self, advocate_id: str, activity_type: str):
-        if advocate_id in self.advocates:
-            self.advocates[advocate_id]['activities'] += 1
-            self.activities.append({
-                'advocate': advocate_id, 'type': activity_type,
-                'date': datetime.now().isoformat(),
-            })
-```
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Only asking, never giving** — advocacy is reciprocal; provide early access, exclusive content, recognition
-2. **Not amplifying** — collecting testimonials without promoting them; feature advocates prominently
-3. **No program structure** — asking ad-hoc without a system; advocates feel undervalued
-4. **Not tracking ROI** — referalls from advocacy are less expensive than paid acquisition; measure it
-5. **Ignoring detractors** — unhappy customers are also vocal; address their concerns first
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Advocate identification criteria defined
-- [ ] Advocate program tiers with benefits
-- [ ] Testimonial collection process (text, video)
-- [ ] Case study template with ROI format
-- [ ] Referral program with rewards structure
-- [ ] Review generation campaign (G2, Capterra, Google)
-- [ ] Advocate recognition program (badges, events, swag)
-- [ ] Advocacy ROI tracked (referral revenue vs program cost)
-- [ ] Customer advisory board (quarterly meetings)
+`customer-advocacy, referrals, testimonials, case-studies, community, champions`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

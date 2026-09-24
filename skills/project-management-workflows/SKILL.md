@@ -12,95 +12,62 @@ metadata:
 
 # Project Management Workflows
 
-Setting up project management systems, workflows, and processes — from methodology selection through task management, sprint planning, and team collaboration.
+"Use when setting up project management systems and flows."
 
-## When to Use
+## Trigger
 
-- Setting up PM for a new team or project
-- Implementing Agile/Scrum or Kanban workflows
-- Designing task management workflows
-- Running sprint planning, standups, retrospectives
-- Tracking project progress and reporting
+Activate this skill when the user mentions:
+- project-management,  workflows,  agile,  scrum,  kanban,  task-management,  jira workflows or issues
+- Building, fixing, or optimizing project management workflows
+- Questions about project-management best practices
 
-## Methodology Selection
+## Core Concepts
 
-```python
-METHODOLOGIES = {
-    'scrum': {'best_for': 'Software teams', 'cadence': '2-week sprints'},
-    'kanban': {'best_for': 'Support, maintenance', 'cadence': 'Continuous'},
-    'waterfall': {'best_for': 'Construction, regulated', 'cadence': 'Phase-based'},
-    'hybrid': {'best_for': 'Marketing, creative', 'cadence': 'Weekly'},
-}
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-def recommend(team_size: int, work_type: str) -> Dict:
-    if team_size > 10 and work_type == 'software': return METHODOLOGIES['scrum']
-    elif work_type in ('support', 'maintenance'): return METHODOLOGIES['kanban']
-    return METHODOLOGIES['hybrid']
-```
+## Step-by-Step Workflow
 
-## Task and Sprint Management
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
 
-```python
-from datetime import datetime
-import uuid
+## Tools & Technologies
 
-class ProjectManager:
-    def __init__(self, name: str):
-        self.name = name
-        self.tasks = {}
-        self.sprints = {}
-    
-    def add_task(self, title: str, assignee: str = None,
-                 priority: str = 'medium') -> str:
-        task_id = str(uuid.uuid4())[:8]
-        self.tasks[task_id] = {
-            'id': task_id, 'title': title, 'assignee': assignee,
-            'status': 'backlog', 'priority': priority,
-            'created_at': datetime.now().isoformat(),
-        }
-        return task_id
-    
-    def create_sprint(self, name: str, goal: str, start: str, end: str) -> str:
-        sid = str(uuid.uuid4())[:8]
-        self.sprints[sid] = {'id': sid, 'name': name, 'goal': goal,
-            'start': start, 'end': end, 'tasks': [], 'status': 'planning'}
-        return sid
-    
-    def get_sprint_burndown(self, sid: str) -> Dict:
-        sprint = self.sprints.get(sid, {})
-        tasks = sprint.get('tasks', [])
-        done = sum(1 for t in tasks if self.tasks.get(t, {}).get('status') == 'done')
-        return {'total': len(tasks), 'completed': done, 'remaining': len(tasks) - done}
-```
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
 
-## Workflow Templates
+## Best Practices
 
-```python
-WORKFLOWS = {
-    'content': {'stages': ['Idea', 'Writing', 'Editing', 'Review', 'Published']},
-    'software': {'stages': ['Backlog', 'In Progress', 'Review', 'Testing', 'Done']},
-    'sales': {'stages': ['Lead', 'Contacted', 'Demo', 'Proposal', 'Closed']},
-}
-```
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Tool over process** — buying Jira won't fix broken workflows
-2. **Too many statuses** — keep to 5-7; more creates confusion
-3. **No WIP limits** — everything "in progress" means nothing finishes
-4. **Sprint overload** — commit to less than full capacity
-5. **No retros** — teams repeat mistakes without reflection
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Methodology selected and documented
-- [ ] Workflow statuses defined (5-7)
-- [ ] WIP limits set per stage
-- [ ] Meeting cadence established
-- [ ] Velocity tracked over 3+ sprints
+`project-management, workflows, agile, scrum, kanban, task-management, jira`
 
-## See Also
+---
 
-- crm-sales-pipeline — project management for sales
-- business-metrics-kpis — delivery metrics
-- cms-website-management — website projects
+*LoopyLuci/Skills - 2026-09-24*

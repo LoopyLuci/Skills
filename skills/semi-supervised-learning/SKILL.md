@@ -10,68 +10,64 @@ metadata:
     related_skills: [self-supervised-learning, active-learning-strategies, data-augmentation-techniques, transfer-learning-patterns]
 ---
 
-# Semi-Supervised Learning
+# Semi Supervised Learning
 
-Applying semi-supervised learning techniques to leverage unlabeled data — from self-training and pseudo-labeling through consistency regularization and hybrid approaches.
+"Use when applying semi-supervised learning techniques."
 
-## When to Use
+## Trigger
 
-- Labeled data is scarce but unlabeled data is abundant
-- Reducing labeling costs while maintaining model quality
-- Improving model robustness with unlabeled examples
-- Cold-start scenarios with limited initial labels
-- Building models where labeling requires expert time
+Activate this skill when the user mentions:
+- semi-supervised,  pseudo-labeling,  consistency-regularization,  self-training,  label-propagation workflows or issues
+- Building, fixing, or optimizing semi supervised learning
+- Questions about semi-supervised best practices
 
-## Key Methods
+## Core Concepts
 
-```python
-SEMI_SUPERVISED_METHODS = {
-    'self_training': 'Train on labeled, predict unlabeled, add high-confidence predictions as pseudo-labels, retrain',
-    'consistency_regularization': 'Apply different augmentations to same input, penalize prediction differences',
-    'mixmatch': 'Mix labeled and unlabeled data, apply MixUp between them',
-    'fixmatch': 'Generate pseudo-labels from weakly-augmented data, enforce on strongly-augmented version',
-    'label_propagation': 'Propagate labels through similarity graph of labeled to unlabeled examples',
-}
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-class FixMatch:
-    """FixMatch: simplified consistency regularization."""
-    def __init__(self, model, threshold=0.95, weight_ul=1.0):
-        self.model = model
-        self.threshold = threshold
-        self.weight_ul = weight_ul
-    
-    def train_step(self, labeled_x, labeled_y, unlabeled_x, weak_aug, strong_aug):
-        # Supervised loss on labeled
-        logits_labeled = self.model(labeled_x)
-        loss_s = F.cross_entropy(logits_labeled, labeled_y)
-        
-        # Pseudo-label unlabeled data using weakly-augmented version
-        with torch.no_grad():
-            weak_out = self.model(weak_aug(unlabeled_x))
-            probs = F.softmax(weak_out, dim=1)
-            max_probs, pseudo_labels = probs.max(dim=1)
-            mask = max_probs >= self.threshold
-        
-        # Apply on strongly-augmented version
-        strong_out = self.model(strong_aug(unlabeled_x))
-        loss_u = F.cross_entropy(strong_out, pseudo_labels, reduction='none') * mask
-        loss_u = loss_u.mean()
-        
-        return loss_s + self.weight_ul * loss_u
-```
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Noisy pseudo-labels** — low-quality pseudo-labels hurt more than help; use confidence threshold
-2. **Distribution mismatch** — unlabeled data from different distribution than labeled; filter OOD
-3. **Confirmation bias** — model reinforces its own mistakes in pseudo-labels; use augmentations
-4. **Class imbalance** — pseudo-labels skew toward majority class; use class-balanced sampling
-5. **Too little labeled data** — with <5 labeled examples per class, even SSL struggles
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Labeled and unlabeled data from same distribution
-- [ ] Pseudo-label confidence threshold tuned (eg 0.95)
-- [ ] Strong vs weak augmentation strategies defined
-- [ ] SSL method matches data size (FixMatch for <100 labels, MixMatch for more)
-- [ ] Ablation: labeled-only baseline vs SSL improvement measured
+`semi-supervised, pseudo-labeling, consistency-regularization, self-training, label-propagation`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

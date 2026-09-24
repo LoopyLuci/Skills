@@ -12,80 +12,62 @@ metadata:
 
 # Skill Collaboration Templates
 
-Enabling collaborative skill authoring — from team-based creation through review assignments, version control, and handoff workflows.
+"Use when creating collaborative skill authoring templates."
 
-## When to Use
+## Trigger
 
-- Multiple authors working on skill inventory
-- Required peer review for skill quality
-- Handoff between research, writing, and review roles
-- Managing skill contributions from community
+Activate this skill when the user mentions:
+- meta,  skill-collaboration,  templates,  teamwork,  review,  co-authoring workflows or issues
+- Building, fixing, or optimizing skill collaboration templates
+- Questions about meta best practices
 
-## Collaboration Workflow
+## Core Concepts
 
-```python
-class SkillCollaboration:
-    """Manage collaborative skill authoring."""
-    
-    ROLES = ['researcher', 'writer', 'reviewer', 'editor', 'publisher']
-    
-    def __init__(self):
-        self.tasks = []
-        self.workflow = []
-    
-    def assign_task(self, skill: str, role: str, assignee: str):
-        self.tasks.append({
-            'skill': skill, 'role': role,
-            'assignee': assignee, 'status': 'pending',
-        })
-    
-    def workflow_status(self, skill: str) -> List[Dict]:
-        return [t for t in self.tasks if t['skill'] == skill]
-    
-    def review_assignment(self, skill_count: int, reviewers: int) -> Dict:
-        """Distribute review load evenly."""
-        per_reviewer = max(1, skill_count // reviewers)
-        return {'skills_per_reviewer': per_reviewer, 'total_reviews': skill_count}
-```
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-## Collaboration Templates
+## Step-by-Step Workflow
 
-```python
-TEMPLATES = {
-    'skill_research': """
-## Research Brief
-- Technology name and version
-- Key patterns to cover (3-5)
-- Common pitfalls from docs/forums
-- Existing skills in the ecosystem
-- Target audience
-""",
-    'skill_review': """
-## Review Checklist
-- [ ] Technical accuracy verified
-- [ ] Code examples execute correctly
-- [ ] Pitfalls are accurate and relevant
-- [ ] Checklist items are testable
-- [ ] related_skills all exist
-- [ ] Description fits 60 char limit
-""",
-}
-```
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **No clear ownership** — skills without assigned authors/owners don't get maintained
-2. **Review bottlenecks** — all reviews go to one person; distribute across team
-3. **Version conflicts** — concurrent edits on same skill; use clear handoffs
-4. **Context switching** — authors switching between 10+ skill drafts is inefficient
-5. **Inconsistent voice** — multiple authors without style guide produce uneven content
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] Clear ownership assigned per skill or category
-- [ ] Review tools and checklists defined
-- [ ] Handoff workflow documented (research → write → review → publish)
-- [ ] Style guide for consistent voice and terminology
-- [ ] Review load distributed across team
-- [ ] Collaboration tooling (shared drafts, comments, version history)
-- [ ] SLA for review turnaround time
+`meta, skill-collaboration, templates, teamwork, review, co-authoring`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

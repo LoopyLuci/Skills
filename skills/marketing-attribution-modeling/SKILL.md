@@ -12,67 +12,60 @@ metadata:
 
 # Marketing Attribution Modeling
 
-Implementing marketing attribution models — from single-touch and multi-touch through algorithmic attribution, incrementality testing, and unified measurement.
+"Use when implementing marketing attribution and ROI models."
 
-## When to Use
+## Trigger
 
-- Understanding which marketing channels drive conversions
-- Allocating marketing budget based on actual impact
-- Moving beyond last-click attribution (which overvalues bottom-of-funnel)
-- Measuring incremental impact of marketing activities
-- Building a unified marketing measurement framework
+Activate this skill when the user mentions:
+- marketing-attribution,  ROI,  multi-touch,  first-touch,  last-touch,  data-driven workflows or issues
+- Building, fixing, or optimizing marketing attribution modeling
+- Questions about marketing-attribution best practices
 
-## Attribution Models
+## Core Concepts
 
-```python
-ATTRIBUTION_MODELS = {
-    'first_touch': '100% credit to first interaction (overvalues awareness)',
-    'last_touch': '100% credit to last interaction before conversion (overvalues bottom)',
-    'linear': 'Equal credit to all touchpoints in the journey',
-    'time_decay': 'More credit to touchpoints closer to conversion',
-    'position_based': '40% first touch, 40% last touch, 20% middle (U-shaped)',
-    'algorithmic': 'ML-driven attribution based on actual channel influence',
-    'incremental': 'Measures lift vs control group (true causal impact)',
-}
+- Model selection and evaluation
+- Feature engineering and data prep
+- Training methodology
+- Deployment and serving patterns
+- Monitoring and drift detection
 
-class AttributionModel:
-    """Calculate channel attribution."""
-    def __init__(self, model_type: str = 'multi_touch'):
-        self.model_type = model_type
-    
-    def attribute(self, journeys: List[Dict], conversions: List[int]) -> Dict:
-        channel_credit = {}
-        for journey, converted in zip(journeys, conversions):
-            if not converted: continue
-            channels = journey.get('touchpoints', [])
-            if not channels: continue
-            
-            if self.model_type == 'first_touch':
-                channel_credit[channels[0]] = channel_credit.get(channels[0], 0) + 1
-            elif self.model_type == 'last_touch':
-                channel_credit[channels[-1]] = channel_credit.get(channels[-1], 0) + 1
-            elif self.model_type == 'linear':
-                weight = 1 / len(channels)
-                for ch in channels:
-                    channel_credit[ch] = channel_credit.get(ch, 0) + weight
-        
-        return channel_credit
-```
+## Step-by-Step Workflow
+
+1. **Frame** — Define problem, success metric, baseline
+   - Expected: Clear problem statement
+2. **Explore** — EDA, feature analysis
+   - Expected: Understanding of data relationships
+3. **Build** — Train models, track experiments
+   - Expected: Logged reproducible experiments
+4. **Evaluate** — Test on holdout, check bias
+   - Expected: Evaluation report with confidence
+5. **Deploy** — Serve with monitoring
+   - Expected: Production model with drift detection
+
+## Tools & Technologies
+
+- Experiment tracking
+- Model registry
+- Feature store
+- Model serving
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Last-click dominance** — underinvesting in awareness channels that drive top-of-funnel
-2. **Cross-device blind spots** — attributing to wrong channel when user switches devices
-3. **Offline-online gap** — online attribution misses offline purchases influenced by online
-4. **View-through vs click-through** — view-through attribution is controversial; use with caution
-5. **Channel cannibalization** — paid search capturing brand searches that would convert organically
+- **Data leakage** → Overly optimistic metrics → Strict temporal splits
+- **No monitoring** → Silent degradation → Monitor prediction distribution
 
-## Verification Checklist
+## Tags
 
-- [ ] Attribution model selected (single, multi-touch, or algorithmic)
-- [ ] Cross-device tracking enabled (or probabilistic)
-- [ ] Offline conversion data integrated (if applicable)
-- [ ] Model regularly validated against holdout/incrementality tests
-- [ ] Channel overlap and cannibalization analyzed
-- [ ] Budget allocation adjusted based on attribution insights
-- [ ] Causal incrementality testing (geo holdout, time-series) in roadmap
+`marketing-attribution, ROI, multi-touch, first-touch, last-touch, data-driven`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

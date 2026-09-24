@@ -12,74 +12,60 @@ metadata:
 
 # Security Incident Response
 
-Building incident response capabilities — from preparation and detection through containment, eradication, recovery, and post-mortem analysis.
+"Use when building incident response and security operations."
 
-## When to Use
+## Trigger
 
-- Setting up a CSIRT (Computer Security Incident Response Team)
-- Responding to security breaches and incidents
-- Building incident response playbooks
-- Conducting post-incident analysis
-- Improving security posture through lessons learned
+Activate this skill when the user mentions:
+- incident-response,  security-operations,  SOC,  forensics,  threat-hunting,  IR workflows or issues
+- Building, fixing, or optimizing security incident response
+- Questions about incident-response best practices
 
-## Incident Response Lifecycle
+## Core Concepts
 
-```python
-IR_LIFECYCLE = {
-    'preparation': 'Tools, playbooks, training, communication plans',
-    'detection_and_analysis': 'Monitoring, alerts, triage, investigation',
-    'containment': 'Short-term (isolate) and long-term (system rebuild)',
-    'eradication': 'Remove threat, patch vulnerabilities',
-    'recovery': 'Restore systems, monitor for reinfection',
-    'post_mortem': 'Root cause, lessons learned, improvements',
-}
+- Threat modeling and risk assessment
+- Attack surface analysis
+- Defense in depth
+- Zero-trust architecture
+- Compliance and audit requirements
 
-IR_SEVERITY = {
-    'SEV1': 'Critical — active data breach, ransomware, full system compromise',
-    'SEV2': 'High — confirmed intrusion, malware outbreak, denial of service',
-    'SEV3': 'Medium — suspicious activity, single workstation compromise',
-    'SEV4': 'Low — phishing reports, policy violations, low-risk alerts',
-}
+## Step-by-Step Workflow
 
-class IncidentHandler:
-    """Track and manage security incidents."""
-    def __init__(self, name: str, severity: str):
-        self.name = name
-        self.severity = severity
-        self.timeline = []
-        self.actions = []
-        self.status = 'detected'
-    
-    def add_action(self, action: str, owner: str, timestamp: str = None):
-        import datetime
-        self.actions.append({
-            'action': action, 'owner': owner,
-            'timestamp': timestamp or datetime.datetime.now().isoformat(),
-        })
-    
-    def generate_report(self) -> str:
-        report = f"🛡️ Incident Report: {self.name} ({self.severity})\n" + "=" * 50 + "\n"
-        for a in self.actions:
-            report += f"\n{a['timestamp'][:19]} — {a['action']} ({a['owner']})"
-        report += f"\n\nStatus: {self.status}\n"
-        return report
-```
+1. **Scope** — Define assets, threats, attack surface
+   - Expected: Documented scope with trust boundaries
+2. **Assess** — Identify vulnerabilities, evaluate risk
+   - Expected: Prioritized findings with CVSS scores
+3. **Remediate** — Apply secure-by-design fixes
+   - Expected: Vulnerabilities closed
+4. **Verify** — Re-test and validate remediation
+   - Expected: Independent verification complete
+5. **Document** — Record findings and lessons learned
+   - Expected: Audit-ready report
+
+## Tools & Technologies
+
+- Vulnerability scanners
+- SAST/DAST tools
+- SIEM platforms
+- Pen-testing frameworks
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **No playbooks** — improvising during a breach wastes time; have documented procedures
-2. **Not isolating fast enough** — malware spreads in minutes; containment is priority #1
-3. **Skipping forensics** — wiping systems before forensic analysis destroys evidence
-4. **Poor communication** — stakeholders (legal, PR, exec, customers) need timely updates
-5. **No post-mortem** — repeating same mistakes because causes weren't documented
+- **Scope creep** → Unclear boundaries → Define scope explicitly
+- **Tool reliance without analysis** → False positives → Manual validation required
 
-## Verification Checklist
+## Tags
 
-- [ ] Incident response plan documented and reviewed
-- [ ] Playbooks for common scenarios (ransomware, data breach, DDoS)
-- [ ] Severity definitions clear (SEV1/2/3/4)
-- [ ] Communication templates (internal, customer, regulatory, PR)
-- [ ] Forensic tools available and tested
-- [ ] Backup restoration tested (not just backups exist)
-- [ ] Post-mortem conducted within 2 weeks of any SEV1/2 incident
-- [ ] Lessons learned tracked and improvements implemented
+`incident-response, security-operations, SOC, forensics, threat-hunting, IR`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

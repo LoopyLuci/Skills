@@ -11,46 +11,62 @@ metadata:
     related_skills: [supply-chain-optimization]
 ---
 
-## Overview
-Automotive Supply Chain Management implementation. Covers best practices, methodologies, 
-technical considerations, and verification approaches for this domain.
+# Automotive Supply Chain Management
 
-## When to Use
-- "Automotive Supply Chain Management implementation and optimization"
-- "Best practices for Automotive Supply Chain Management workflows"
-- "Automotive Supply Chain Management compliance and standards"
-- "Automotive Supply Chain Management troubleshooting and problem-solving"
-- "Automotive Supply Chain Management ROI and performance measurement"
+"Use when managing automotive supply chains."
 
-## Key Methodologies
-```text
-1. Assessment and Planning Phase
-2. Implementation and Execution
-3. Monitoring and Optimization
-4. Compliance and Verification
-5. Continuous Improvement
-```
+## Trigger
+
+Activate this skill when the user mentions:
+- automotive,  supply-chain,  automotive-supply,  procurement workflows or issues
+- Building, fixing, or optimizing automotive supply chain management
+- Questions about automotive best practices
+
+## Core Concepts
+
+- Model selection and evaluation
+- Feature engineering and data prep
+- Training methodology
+- Deployment and serving patterns
+- Monitoring and drift detection
+
+## Step-by-Step Workflow
+
+1. **Frame** — Define problem, success metric, baseline
+   - Expected: Clear problem statement
+2. **Explore** — EDA, feature analysis
+   - Expected: Understanding of data relationships
+3. **Build** — Train models, track experiments
+   - Expected: Logged reproducible experiments
+4. **Evaluate** — Test on holdout, check bias
+   - Expected: Evaluation report with confidence
+5. **Deploy** — Serve with monitoring
+   - Expected: Production model with drift detection
+
+## Tools & Technologies
+
+- Experiment tracking
+- Model registry
+- Feature store
+- Model serving
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. **Insufficient planning** — rushing without proper assessment
-2. **Ignoring industry standards** — not following established frameworks
-3. **Poor stakeholder alignment** — conflicting requirements
-4. **Inadequate measurement** — no metrics for success
-5. **Not accounting for local conditions** — generic approaches fail
-6. **Underestimating complexity** — oversimplified solutions
-7. **No contingency planning** — no plan for unexpected issues
-8. **Insufficient training** — operators lack required skills
-9. **No verification process** — implementation without quality checks
-10. **Failing to iterate** — not improving based on results
 
-## Verification Checklist
-- [ ] Initial assessment and baseline established
-- [ ] Industry standards and best practices identified
-- [ ] Stakeholder requirements aligned and documented
-- [ ] Implementation plan with timelines
-- [ ] Quality control measures defined
-- [ ] Training completed for involved parties
-- [ ] Monitoring system with key metrics
-- [ ] Compliance requirements verified
-- [ ] Performance baseline before go-live
-- [ ] Post-implementation review scheduled
+- **Data leakage** → Overly optimistic metrics → Strict temporal splits
+- **No monitoring** → Silent degradation → Monitor prediction distribution
+
+## Tags
+
+`automotive, supply-chain, automotive-supply, procurement`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

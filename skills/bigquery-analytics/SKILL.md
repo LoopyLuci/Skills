@@ -11,43 +11,62 @@ metadata:
     related_skills: ['bigquery-analytics-warehouse']
 ---
 
-## Overview
-Query large datasets using Google BigQuery for analytical data warehousing.
+# Bigquery Analytics
 
-## When to Use
-- "Bigquery Analytics implementation and design"
-- "Best practices for Bigquery Analytics"
-- "Bigquery Analytics deployment and scaling"
-- "Bigquery Analytics optimization and monitoring"
+"Use when querying with BigQuery."
 
-## Key Approaches
-1. Define clear requirements and specifications
-2. Choose appropriate tools and frameworks
-3. Implement with modular, maintainable code
-4. Write tests and automate verification
-5. Document architecture and decisions
-6. Monitor performance and iterate
+## Trigger
+
+Activate this skill when the user mentions:
+- database,  bigquery,  analytics,  data-warehouse workflows or issues
+- Building, fixing, or optimizing bigquery analytics
+- Questions about database best practices
+
+## Core Concepts
+
+- Data modeling (dimensional, normalized)
+- ETL/ELT patterns and idempotency
+- Data quality and validation
+- Lineage and cataloging
+- Privacy and data protection
+
+## Step-by-Step Workflow
+
+1. **Discover** — Profile data, assess quality
+   - Expected: Data profile report with quality scores
+2. **Design** — Model for use case
+   - Expected: Approved data model
+3. **Build** — Implement pipelines with testing
+   - Expected: Idempotent pipelines with quality checks
+4. **Validate** — Reconcile, test business rules
+   - Expected: Validated data with quality metrics
+5. **Operate** — Monitor, optimize, iterate
+   - Expected: Monitored pipelines with SLA tracking
+
+## Tools & Technologies
+
+- dbt
+- Airflow/Prefect
+- Spark/DuckDB
+- Data catalogs
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. **Not accounting for constraints** — resource or timeline limitations
-2. **Ignoring industry standards** — not following established best practices
-3. **Poor stakeholder alignment** — conflicting requirements
-4. **Inadequate testing** — no validation of critical functions
-5. **Not documenting decisions** — lost knowledge transfer
-6. **Skipping security review** — no threat modeling performed
-7. **Over-engineering** — complex solutions where simple ones suffice
-8. **No rollback plan** — deployment failures cause outages
-9. **Insufficient monitoring** — no observability after deployment
-10. **Not planning for growth** — scalability issues in production
 
-## Verification Checklist
-- [ ] Requirements defined and validated
-- [ ] Industry standards and best practices applied
-- [ ] Design reviewed with stakeholders
-- [ ] Implementation plan with milestones
-- [ ] Testing strategy with coverage targets
-- [ ] Security review and threat modeling
-- [ ] Monitoring and alerting configured
-- [ ] Documentation complete and accessible
-- [ ] Deployment with rollback plan
-- [ ] Post-deployment verification
+- **No data quality gates** → Garbage in, garbage out → Validate at every stage
+- **Monolithic pipelines** → Hard to debug → Small idempotent tasks
+
+## Tags
+
+`database, bigquery, analytics, data-warehouse`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

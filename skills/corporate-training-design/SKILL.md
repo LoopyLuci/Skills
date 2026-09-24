@@ -11,44 +11,62 @@ metadata:
     related_skills: [general]
 ---
 
-## Overview
-Corporate Training Design implementation. Covers essential methodologies, 
-best practices, technical foundations, and verification approaches for this domain.
+# Corporate Training Design
 
-## When to Use
-- "Corporate Training Design implementation"
-- "Best practices for Corporate Training Design"
-- "Corporate Training Design optimization and enhancement"
-- "Corporate Training Design troubleshooting"
-- "Corporate Training Design performance and cost analysis"
+"Use when designing corporate training."
 
-## Key Methodologies
-1. Assessment and Planning Phase
-2. Implementation and Execution  
-3. Monitoring and Optimization
-4. Compliance and Verification
-5. Continuous Improvement
+## Trigger
+
+Activate this skill when the user mentions:
+- 't',  'r',  'a',  'i',  'n',  'i',  'n',  'g',  ',  ',  ' ',  'i',  'n',  's',  't',  'r',  'u',  'c',  't',  'i',  'o',  'n',  'a',  'l',  '-',  'd',  'e',  's',  'i',  'g',  'n' workflows or issues
+- Building, fixing, or optimizing corporate training design
+- Questions about 't' best practices
+
+## Core Concepts
+
+- Model selection and evaluation
+- Feature engineering and data prep
+- Training methodology
+- Deployment and serving patterns
+- Monitoring and drift detection
+
+## Step-by-Step Workflow
+
+1. **Frame** — Define problem, success metric, baseline
+   - Expected: Clear problem statement
+2. **Explore** — EDA, feature analysis
+   - Expected: Understanding of data relationships
+3. **Build** — Train models, track experiments
+   - Expected: Logged reproducible experiments
+4. **Evaluate** — Test on holdout, check bias
+   - Expected: Evaluation report with confidence
+5. **Deploy** — Serve with monitoring
+   - Expected: Production model with drift detection
+
+## Tools & Technologies
+
+- Experiment tracking
+- Model registry
+- Feature store
+- Model serving
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. **Insufficient planning** — rushing without proper assessment
-2. **Ignoring industry standards** — not following best practices
-3. **Poor stakeholder alignment** — conflicting requirements
-4. **Inadequate measurement** — no metrics to track success
-5. **Not accounting for context** — generic approaches fail
-6. **Underestimating complexity** — oversimplified solutions
-7. **No contingency planning** — unhandled failure scenarios
-8. **Insufficient validation** — implementation without testing
-9. **Not documenting decisions** — lost knowledge and context
-10. **Failing to iterate** — not improving based on feedback
 
-## Verification Checklist
-- [ ] Initial assessment and requirements gathering completed
-- [ ] Industry standards and best practices reviewed
-- [ ] Design validated with stakeholders
-- [ ] Implementation plan with milestones defined
-- [ ] Quality control and validation approaches
-- [ ] Testing and verification procedures established
-- [ ] Monitoring and feedback mechanisms
-- [ ] Documentation complete and accessible
-- [ ] Training provided to relevant stakeholders
-- [ ] Post-implementation review and improvement plan
+- **Data leakage** → Overly optimistic metrics → Strict temporal splits
+- **No monitoring** → Silent degradation → Monitor prediction distribution
+
+## Tags
+
+`'t', 'r', 'a', 'i', 'n', 'i', 'n', 'g', ', ', ' ', 'i', 'n', 's', 't', 'r', 'u', 'c', 't', 'i', 'o', 'n', 'a', 'l', '-', 'd', 'e', 's', 'i', 'g', 'n'`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

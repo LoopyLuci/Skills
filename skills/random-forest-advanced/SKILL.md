@@ -10,78 +10,64 @@ metadata:
     related_skills: [boosting-algorithms-deep, hyperparameter-optimization-ml, feature-engineering-automation, interpretable-ml]
 ---
 
-# Advanced Random Forest
+# Random Forest Advanced
 
-Implementing advanced random forest models — from ensemble construction and hyperparameter tuning through feature importance, out-of-bag evaluation, and interpretability.
+"Use when implementing advanced random forest models."
 
-## When to Use
+## Trigger
 
-- Tabular data where interpretability matters
-- Building robust models that resist overfitting
-- Feature importance analysis and selection
-- Unsupervised learning (proximity matrices, anomaly detection)
-- Handling missing data and mixed data types
+Activate this skill when the user mentions:
+- random-forest,  ensemble,  bagging,  decision-trees,  feature-importance workflows or issues
+- Building, fixing, or optimizing random forest advanced
+- Questions about random-forest best practices
 
-## Random Forest Internals
+## Core Concepts
 
-```python
-from sklearn.ensemble import RandomForestClassifier
-import numpy as np
+- Language-specific idioms and best practices
+- Package/module organization
+- Error handling and logging patterns
+- Testing methodology (unit, integration, e2e)
+- Build, lint, and format tooling
 
-class AdvancedRandomForest:
-    """Advanced random forest with interpretation tools."""
-    
-    OPTIMAL_PARAMS = {
-        'n_estimators': 300,  # More trees = better convergence
-        'max_depth': 10,      # Control overfitting
-        'min_samples_leaf': 5, # Smoother decision boundaries
-        'max_features': 'sqrt', # sqrt(p) for classification
-        'bootstrap': True,
-        'oob_score': True,     # Out-of-bag score (internal validation)
-        'class_weight': 'balanced',  # Handle imbalance
-    }
-    
-    @staticmethod
-    def feature_importance(rf, feature_names: List[str], top_k: int = 20):
-        importances = rf.feature_importances_
-        std = np.std([tree.feature_importances_ for tree in rf.estimators_], axis=0)
-        indices = np.argsort(importances)[-top_k:][::-1]
-        
-        results = []
-        for i in indices:
-            results.append({
-                'feature': feature_names[i],
-                'importance': round(importances[i], 4),
-                'std': round(std[i], 4),
-                'ci_95': round(1.96 * std[i] / np.sqrt(len(rf.estimators_)), 4),
-            })
-        return results
-    
-    @staticmethod
-    def partial_dependence(rf, X, feature_idx: int, 
-                           grid_resolution: int = 50) -> np.array:
-        """Calculate partial dependence for a single feature."""
-        from sklearn.inspection import partial_dependence
-        pd_results = partial_dependence(rf, X, [feature_idx], 
-                                         grid_resolution=grid_resolution)
-        return pd_results['average'][0], pd_results['values'][0]
-```
+## Step-by-Step Workflow
+
+1. **Setup** — Initialize project, install dependencies, configure tooling
+   - Expected: Working dev environment
+2. **Implement** — Write core logic following idiomatic patterns
+   - Expected: Functional code with passing tests
+3. **Test** — Write and run tests covering happy path and edge cases
+   - Expected: All tests pass, >80% coverage
+4. **Review** — Self-review for code quality, performance, security
+   - Expected: Clean, documented production-ready code
+5. **Deliver** — Commit, document, and verify end-to-end
+   - Expected: Working feature with tests and docs
+
+## Tools & Technologies
+
+- Language-specific package manager
+- Test framework
+- Linter/Formatter
+- Build system
+- Debugging tools
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
 
-1. **Too many trees for no gain** — 300 trees vs 1000 trees: minimal improvement, double the inference time
-2. **Overfitting on noisy data** — random forest can still overfit on very noisy data; limit max_depth
-3. **Correlated features dominate** — highly correlated features split importance; use permutation importance
-4. **Poor extrapolation** — random forests can't extrapolate beyond training range; use linear model for trends
-5. **Imbalanced classes** — default random forest optimizes for accuracy, not recall for minority class
+- **Skipping error handling** → Silent failures → Always handle errors explicitly
+- **Over-engineering** → Unnecessary complexity → Add abstraction only when needed
+- **Missing tests** → Regression bugs → Write tests alongside code
 
-## Verification Checklist
+## Tags
 
-- [ ] n_estimators chosen (300+ for final model, 100 for prototyping)
-- [ ] max_depth and min_samples_leaf tuned via cross-validation
-- [ ] oob_score enabled for internal validation
-- [ ] Feature importance analyzed (permutation + impurity-based)
-- [ ] Partial dependence plots for top features
-- [ ] Class imbalance handled (class_weight or sampling)
-- [ ] Model compared with gradient boosting baseline
-- [ ] Inference performance optimized (tree pruning, ONNX export)
+`random-forest, ensemble, bagging, decision-trees, feature-importance`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

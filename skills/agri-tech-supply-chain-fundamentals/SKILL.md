@@ -11,38 +11,62 @@ metadata:
     related_skills: ['']
 ---
 
-## Overview
-Manage ag supply.
+# Agri Tech Supply Chain Fundamentals
 
-## When to Use
-- Apply domain best practices
-- Optimize for scale and security
-- Follow established standards
+"Use when applying agricultural supply chain fundamentals."
 
-## Key Approaches
-1. Define requirements and constraints
-2. Choose appropriate tools
-3. Implement with modularity
-4. Test thoroughly at scale
-5. Document decisions
-6. Monitor and iterate
+## Trigger
+
+Activate this skill when the user mentions:
+- agri,  supply,  agri-supply-chain workflows or issues
+- Building, fixing, or optimizing agri tech supply chain fundamentals
+- Questions about agri best practices
+
+## Core Concepts
+
+- Model selection and evaluation
+- Feature engineering and data prep
+- Training methodology
+- Deployment and serving patterns
+- Monitoring and drift detection
+
+## Step-by-Step Workflow
+
+1. **Frame** — Define problem, success metric, baseline
+   - Expected: Clear problem statement
+2. **Explore** — EDA, feature analysis
+   - Expected: Understanding of data relationships
+3. **Build** — Train models, track experiments
+   - Expected: Logged reproducible experiments
+4. **Evaluate** — Test on holdout, check bias
+   - Expected: Evaluation report with confidence
+5. **Deploy** — Serve with monitoring
+   - Expected: Production model with drift detection
+
+## Tools & Technologies
+
+- Experiment tracking
+- Model registry
+- Feature store
+- Model serving
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. Ignoring key constraints
-2. Skipping best practices
-3. Poor alignment with architecture
-4. Inadequate testing coverage
-5. Lack of documentation
-6. Over-engineering without justification
-7. No rollback plan
-8. Missing monitoring
 
-## Verification Checklist
-- [ ] Requirements validated
-- [ ] Standards applied
-- [ ] Architecture reviewed
-- [ ] Test coverage sufficient
-- [ ] Documentation complete
-- [ ] Monitoring configured
-- [ ] Security reviewed
+- **Data leakage** → Overly optimistic metrics → Strict temporal splits
+- **No monitoring** → Silent degradation → Monitor prediction distribution
 
+## Tags
+
+`agri, supply, agri-supply-chain`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

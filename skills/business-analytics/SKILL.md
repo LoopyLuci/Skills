@@ -11,43 +11,62 @@ metadata:
     related_skills: ['business-analytics-frameworks']
 ---
 
-## Overview
-Apply analyzing business data for effective results. 
+# Business Analytics
 
-## When to Use
-- "Business Analytics design and implementation"
-- "Best practices for Business Analytics"
-- "Business Analytics optimization and scaling"
-- "Business Analytics troubleshooting and validation"
+"Use when analyzing business data."
 
-## Key Approaches
-1. Define clear requirements and specifications
-2. Choose appropriate frameworks and tools
-3. Implement with modular, maintainable structure
-4. Write comprehensive tests and validate
-5. Document architecture and decisions
-6. Monitor and iterate based on feedback
+## Trigger
+
+Activate this skill when the user mentions:
+- business,  analytics,  data-analysis,  kpis workflows or issues
+- Building, fixing, or optimizing business analytics
+- Questions about business best practices
+
+## Core Concepts
+
+- Data modeling (dimensional, normalized)
+- ETL/ELT patterns and idempotency
+- Data quality and validation
+- Lineage and cataloging
+- Privacy and data protection
+
+## Step-by-Step Workflow
+
+1. **Discover** — Profile data, assess quality
+   - Expected: Data profile report with quality scores
+2. **Design** — Model for use case
+   - Expected: Approved data model
+3. **Build** — Implement pipelines with testing
+   - Expected: Idempotent pipelines with quality checks
+4. **Validate** — Reconcile, test business rules
+   - Expected: Validated data with quality metrics
+5. **Operate** — Monitor, optimize, iterate
+   - Expected: Monitored pipelines with SLA tracking
+
+## Tools & Technologies
+
+- dbt
+- Airflow/Prefect
+- Spark/DuckDB
+- Data catalogs
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. **Not accounting for constraints** — resource limitations
-2. **Ignoring industry standards** — no best practices followed
-3. **Poor stakeholder alignment** — conflicting requirements
-4. **Inadequate testing** — no validation of functions
-5. **Not documenting decisions** — lost knowledge transfer
-6. **Over-engineering** — complex where simple suffices
-7. **No rollback plan** — deployment failures
-8. **Insufficient monitoring** — no observability
-9. **Not planning for growth** — scalability issues
-10. **Missing validation** — no quality checks
 
-## Verification Checklist
-- [ ] Requirements defined and validated
-- [ ] Standards and best practices applied
-- [ ] Design reviewed with stakeholders
-- [ ] Implementation plan with milestones
-- [ ] Testing strategy defined
-- [ ] Documentation complete
-- [ ] Monitoring and alerting configured
-- [ ] Deployment with rollback plan
-- [ ] Security review completed
-- [ ] Post-deployment verification
+- **No data quality gates** → Garbage in, garbage out → Validate at every stage
+- **Monolithic pipelines** → Hard to debug → Small idempotent tasks
+
+## Tags
+
+`business, analytics, data-analysis, kpis`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

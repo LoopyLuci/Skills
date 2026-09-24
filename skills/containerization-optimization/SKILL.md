@@ -11,43 +11,62 @@ metadata:
     related_skills: [general]
 ---
 
-## Overview
-Optimization techniques. Build container systems.
+# Containerization Optimization
 
-## When to Use
-- "Containerization Optimization design and implementation"
-- "Best practices for Containerization Optimization"
-- "Containerization Optimization optimization and scaling"
-- "Containerization Optimization troubleshooting"
+"Use when optimizing containerization systems."
 
-## Key Approaches
-1. Define requirements
-2. Choose tools
-3. Implement modular
-4. Test thoroughly
-5. Document
-6. Monitor
+## Trigger
+
+Activate this skill when the user mentions:
+- docker,  containers,  kubernetes,  kubernetes-deployment workflows or issues
+- Building, fixing, or optimizing containerization optimization
+- Questions about docker best practices
+
+## Core Concepts
+
+- Infrastructure as Code (IaC)
+- Well-Architected Framework
+- Identity and access management
+- Networking and security groups
+- Cost optimization and tagging
+
+## Step-by-Step Workflow
+
+1. **Design** — Architecture review against WAF pillars
+   - Expected: Approved architecture diagram
+2. **Implement** — IaC templates with least-privilege IAM
+   - Expected: Reviewable version-controlled infra
+3. **Validate** — Security scan, cost estimate, plan review
+   - Expected: Clean plan within budget
+4. **Deploy** — Apply with change management
+   - Expected: Deployed infrastructure matches plan
+5. **Monitor** — Alarms, dashboards, cost alerts
+   - Expected: Full observability and cost allocation
+
+## Tools & Technologies
+
+- Terraform/Pulumi
+- Cloud-native IaC
+- Security scanning
+- Cost management
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. **Not accounting for constraints**
-2. **Ignoring standards**
-3. **Poor alignment**
-4. **Inadequate testing**
-5. **No documentation**
-6. **Over-engineering**
-7. **No rollback plan**
-8. **Insufficient monitoring**
-9. **No scalability plan**
-10. **Missing validation**
 
-## Verification Checklist
-- [ ] Requirements validated
-- [ ] Standards applied
-- [ ] Design reviewed
-- [ ] Tests defined
-- [ ] Docs complete
-- [ ] Monitoring configured
-- [ ] Rollback plan
-- [ ] Security review
-- [ ] Post-deploy verification
-- [ ] Stakeholder signoff
+- **Manual console changes** → Configuration drift → All changes through IaC
+- **Over-privileged IAM** → Blast radius risk → Least privilege by default
+
+## Tags
+
+`docker, containers, kubernetes, kubernetes-deployment`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

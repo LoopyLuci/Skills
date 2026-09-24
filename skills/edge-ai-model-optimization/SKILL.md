@@ -11,39 +11,62 @@ metadata:
     related_skills: ['model-compression-techniques']
 ---
 
-## Overview
-Optimize AI models for edge deployment using quantization and pruning techniques.
+# Edge Ai Model Optimization
 
-## When to Use
-- "Edge Ai Model Optimization design and architecture"
-- "Best practices for Edge Ai Model Optimization"
-- "Edge Ai Model Optimization implementation and deployment"
-- "Edge Ai Model Optimization optimization and monitoring"
-- "Edge Ai Model Optimization troubleshooting and scaling"
+"Use when optimizing edge AI models."
 
-## Key Concepts
-1. Foundational concepts
-2. Implementation approaches
-3. Testing and validation
+## Trigger
 
-## Implementation Patterns
-1. Define clear requirements and specifications
-2. Choose appropriate tools and frameworks
-3. Implement with modular, maintainable code
-4. Write tests and automate verification
-5. Document architecture and decisions
-6. Monitor performance and iterate
+Activate this skill when the user mentions:
+- edge-computing,  model-optimization,  quantization,  pruning workflows or issues
+- Building, fixing, or optimizing edge ai model optimization
+- Questions about edge-computing best practices
+
+## Core Concepts
+
+- Model selection and evaluation
+- Feature engineering and data prep
+- Training methodology
+- Deployment and serving patterns
+- Monitoring and drift detection
+
+## Step-by-Step Workflow
+
+1. **Frame** — Define problem, success metric, baseline
+   - Expected: Clear problem statement
+2. **Explore** — EDA, feature analysis
+   - Expected: Understanding of data relationships
+3. **Build** — Train models, track experiments
+   - Expected: Logged reproducible experiments
+4. **Evaluate** — Test on holdout, check bias
+   - Expected: Evaluation report with confidence
+5. **Deploy** — Serve with monitoring
+   - Expected: Production model with drift detection
+
+## Tools & Technologies
+
+- Experiment tracking
+- Model registry
+- Feature store
+- Model serving
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. **Not accounting for constraints** — resource or timeline limitations
-2. **Ignoring industry standards** — not following established best practices
-3. **Poor stakeholder alignment** — conflicting requirements
-4. **Inadequate testing** — no validation of critical functions
-5. **Not documenting decisions** — lost knowledge transfer
 
-## Verification Checklist
-- [ ] Requirements documented
-- [ ] Standards reviewed
-- [ ] Design validated
-- [ ] Testing established
-- [ ] Documentation complete
+- **Data leakage** → Overly optimistic metrics → Strict temporal splits
+- **No monitoring** → Silent degradation → Monitor prediction distribution
+
+## Tags
+
+`edge-computing, model-optimization, quantization, pruning`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*

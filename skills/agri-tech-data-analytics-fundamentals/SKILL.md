@@ -11,38 +11,62 @@ metadata:
     related_skills: ['']
 ---
 
-## Overview
-Analyze farm data.
+# Agri Tech Data Analytics Fundamentals
 
-## When to Use
-- Apply domain best practices
-- Optimize for scale and security
-- Follow established standards
+"Use when applying agricultural data analytics fundamentals."
 
-## Key Approaches
-1. Define requirements and constraints
-2. Choose appropriate tools
-3. Implement with modularity
-4. Test thoroughly at scale
-5. Document decisions
-6. Monitor and iterate
+## Trigger
+
+Activate this skill when the user mentions:
+- agri,  analytics,  agricultural-data workflows or issues
+- Building, fixing, or optimizing agri tech data analytics fundamentals
+- Questions about agri best practices
+
+## Core Concepts
+
+- Data modeling (dimensional, normalized)
+- ETL/ELT patterns and idempotency
+- Data quality and validation
+- Lineage and cataloging
+- Privacy and data protection
+
+## Step-by-Step Workflow
+
+1. **Discover** — Profile data, assess quality
+   - Expected: Data profile report with quality scores
+2. **Design** — Model for use case
+   - Expected: Approved data model
+3. **Build** — Implement pipelines with testing
+   - Expected: Idempotent pipelines with quality checks
+4. **Validate** — Reconcile, test business rules
+   - Expected: Validated data with quality metrics
+5. **Operate** — Monitor, optimize, iterate
+   - Expected: Monitored pipelines with SLA tracking
+
+## Tools & Technologies
+
+- dbt
+- Airflow/Prefect
+- Spark/DuckDB
+- Data catalogs
+
+## Best Practices
+
+- Document decisions and rationale (ADRs, design docs, runbooks)
+- Version everything - code, configs, data, and documentation
+- Test incrementally; never claim passing without verification
+- Respect domain-specific regulations and ethical standards
+- Measure outcomes with meaningful metrics
 
 ## Common Pitfalls
-1. Ignoring key constraints
-2. Skipping best practices
-3. Poor alignment with architecture
-4. Inadequate testing coverage
-5. Lack of documentation
-6. Over-engineering without justification
-7. No rollback plan
-8. Missing monitoring
 
-## Verification Checklist
-- [ ] Requirements validated
-- [ ] Standards applied
-- [ ] Architecture reviewed
-- [ ] Test coverage sufficient
-- [ ] Documentation complete
-- [ ] Monitoring configured
-- [ ] Security reviewed
+- **No data quality gates** → Garbage in, garbage out → Validate at every stage
+- **Monolithic pipelines** → Hard to debug → Small idempotent tasks
 
+## Tags
+
+`agri, analytics, agricultural-data`
+
+---
+
+*LoopyLuci/Skills - 2026-09-24*
