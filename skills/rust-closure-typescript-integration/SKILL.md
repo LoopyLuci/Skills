@@ -46,10 +46,13 @@ Register `VmHarnessBridge` object, inject `qtwebchannel.js`, load `index.html`.
 
 ## Key Pitfalls
 
-- **PyO3 edition**: `edition.workspace = true` is not always sufficient; set `edition = "2021"` explicitly in each crate `Cargo.toml`.
-- **Async + block_on**: Do NOT use `async { ... }.await` inside `.block_on()` closures. Call `.start_async()` or `.stop_async()` directly.
-- **TypeScript module resolution**: TypeScript uses CommonJS (`require`) for QWebChannel; ESM (`import`) requires `esModuleInterop` enabled and may break `webpack` bundler.
-- **WASM + QWebEngine**: WASM modules load asynchronously; the web page must wait for `vmharness-ready` event before calling `VmHarnessBridge.getMetrics()`.
+- **Two-lock deadlock risk**: When using `Arc<Mutex<...>>` with PyO3, acquire locks in consistent order (state first, then pid). If reversed in different methods, deadlock under concurrent Python ↔ Rust calls.
+- **File-lock single-instance**: Named mutex (`Global\VM-Harness-GUI`) fails in frozen EXE (temp dir locked by first instance). Use file-based `LOCALAPPDATA` lock with `os.path.exists` + `os.getpid()` check instead — auto-cleans stale locks.
+- **WASM module build order**: Build WASM before bundling with Closure. `wasm-pack build` outputs `.js` wrapper; Closure ADVANCED treats `.js` imports differently — declare externs for WASM modules.
+- **Single-click tray behavior**: On Windows, `QSystemTrayIcon.setContextMenu()` causes `Trigger` signal on single-click. The handler must explicitly ignore `reason != DoubleClick`; never call `_restore_from_tray()` for `Trigger`/`Context`.
+- **Subprocess console suppression**: All Python `subprocess.Popen` calls must include `creationflags=CREATE_NO_WINDOW` (0x08000000) and `startupinfo.dwFlags |= STARTF_USESHOWWINDOW`. Without this, GUI appears with a black console window.
+- **NSIS onedir layout**: PyInstaller `--onedir` creates `VM-Harness/` subfolder with `_internal/`. The NSIS `File` directive must use `/r` to include the full directory tree. `File /r "dist\VM-Harness\*.*"`.
+- **Build verification always**: After any Rust change, run `cargo build --release` then verify `.pyd` loads with Python (`import`, `start()`, `state()`). Never assume the build produces a valid module.
 
 ## References
 
