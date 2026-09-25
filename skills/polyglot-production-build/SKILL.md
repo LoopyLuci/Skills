@@ -15,7 +15,11 @@ Use when delivering verified polyglot apps: Python GUI + Rust .pyd + TypeScript 
 - `.pyd` embedded in frozen build: add `pyd_src = Path("target/release/vmharness_supervisor.pyd")` to `binaries` list in `scripts/build_pyinstaller.py` (verified: `.pyd` import via `spec_from_file_location` passes; exit 127 is separate loader issue).
 - `.proto` files must exist (count = 5): `vm.proto`, `telemetry.proto`, `lifecycle.proto`, `pairing.proto`, `chat.proto` — empty `proto/` directories are missing.
 - `gui/web_bridge.py`: must include `.setParent(self)` before frozen embed; verify frozen `grep -o 'WebBridgeEngine'` count = 2 (`WebBridgeEngine` + `.setParent`).
-- Frozen loader exit 127: loader resolves `python311.dll` differently than `.venv`. Verify `.pyd` independently (direct import `.start()` → `"started"`) before declaring `.pyd` broken.
+- Frozen loader exit 127: loader resolves `python311.dll` differently than `.venv`. Verify `.pyd` independently (direct import `.start()` returns non-empty string) before declaring `.pyd` broken.
+- Supervisor `.start()` must never hardcode a placeholder PID (e.g. `Some(99999)`). A fake PID masks real spawn failures. Run `grep -n "Some(" crates/supervisor/src/lib.rs` before any Python import test — a placeholder PID makes the supervisor appear-working when it is not.
+- Stale `.pyd` on disk: always `cargo build --release -p vmharness-supervisor` before any Python import test, even if a `.pyd` already exists under `target/release/`.
+- Use the project venv Python for import tests, not the system Python — the frozen EXE sees the venv's packages, not the system Python's.
+- Subprocess commands referencing project-relative paths need `cwd` set explicitly to the project root; the tool's working directory may differ from the project. Commands run without `cwd` fail with "not found" on relative paths.
 
 ## Procedure
 
@@ -32,12 +36,14 @@ Use when delivering verified polyglot apps: Python GUI + Rust .pyd + TypeScript 
 
 ## Pitfalls (rule + why mechanism, imperative)
 
-- Frozen loader exit 127: loader resolves `python311.dll` differently than `.venv`. Fix in `gui/__main__.py` (line 181): `sys.path.insert(0, os.path.join(_executable_dir, "_internal"))`. Verify `.pyd` independently (`ls` shows 152KB; direct import via `spec_from_file_location` works; `.start()` → `"started"` in `.venv`). Never declare `.pyd` broken based solely on frozen loader exit 127.
+- Frozen loader exit 127: loader resolves `python311.dll` differently than `.venv`. Fix in `gui/__main__.py` (line 181): `sys.path.insert(0, os.path.join(_executable_dir, "_internal"))`. Verify `.pyd` independently (`ls` shows 152KB; direct import via `spec_from_file_location` works; `.start()` returns non-empty string in `.venv`). Never declare `.pyd` broken based solely on frozen loader exit 127.
+- Supervisor `.start()` must never hardcode a placeholder PID (`Some(99999)` or similar). A fake PID makes the `.pyd` appear to start successfully while reporting a nonexistent PID — verify by reading `lib.rs` line-by-line, not by trusting the Python import result alone.
 - Never claim `.start()` passes when `sys.path.insert` fails; the loader issue masks `.pyd` validity. Always verify with direct import.
 - `.proto` files must exist (count = 5); empty `proto/` directories are missing.
 - Web bridge without `.setParent` produces 0 frozen references (before fix); after fix = 2. Lifecycle depends on parent widget assignment.
 - Graceful fallback references: `gui/widgets.py` has `_matplotlib_available` (5 before frozen); frozen build embeds 2. `.venv` passes regardless; frozen loader depends on `python311.dll` resolution, not the fallback code.
 - Build verification: every session requires `BUILD_PLAN.md` + `.proto` count (5) + `.pyd` rebuilt + web bridge (2) + `.proto` verified before reporting complete.
+- Subprocess commands referencing project-relative paths fail with "not found" when `cwd` is not set to the project root — this looks like a missing file but is a working-directory mismatch. Always launch cargo/PyInstaller/python commands with explicit `cwd` or `bash -c 'cd /c/Projects/QEMU-MCP && ...'`.
 
 ## References
 
