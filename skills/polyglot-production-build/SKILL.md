@@ -27,11 +27,12 @@ Use when delivering verified polyglot apps: Python GUI + Rust .pyd + TypeScript 
 6. Web bridge embedding: verify 2 references in rebuilt frozen EXE (`WebBridgeEngine` + `.setParent`).
 7. Full rebuild: `pyinstaller --clean --noconfirm ... --add-data ".pyd;_internal" --add-data "python311.dll;." --add-data "gui;gui" --hidden-import PyQt5 ...`; verify `.exe` timestamp > `gui/main_window.py` fix.
 8. End-to-end script: maintain `scripts/e2e_polylot_test.sh` (Python env, `.pyd` direct import, TypeScript 6 files, `.proto` count, frozen artifacts, web bridge, NSIS, signing key).
-9. Production docs: `docs/BUILD_PLAN.md` with 6 phases, 7 durability pillars (Zero-dep core, Protocol schema, Deterministic state, Post-quantum crypto, Swappable hypervisor, Self-updating, Observable/auditable).
+9. Production docs: `docs/BUILD_PLAN.md` with 6 phases, 7 durability pillars (Zero-dep core, Protocol schema, Deterministic state, Post-quantum crypto, Swappable hypervisor, Self-updating, Observable/auditable). Also `docs/FLAWLESS_BUILD_PLAN.md` (176 lines, 22 subsections, 5-phase execution sequence) and `docs/ENHANCEMENT_POLISH.md` (70 lines, 34 concrete items across 7 pillars: Runtime, Security, UX, Build/Release, Observability, Cross-platform, Protocol/API).
+10. Frozen loader fix verification: `gui/__main__.py` line 181 has `sys.path.insert(0, ...)`; rebuilt frozen EXE embeds `.pyd` via `pyd_src` in `build_pyinstaller.py`; `.pyd` import verified independently (`spec_from_file_location` + `.start()` → `"started"`).
 
 ## Pitfalls (rule + why mechanism, imperative)
 
-- Frozen loader exit 127: loader resolves `python311.dll` differently than `.venv`. Verify `.pyd` independently before declaring `.pyd` broken (`ls` shows 152KB; direct import works; `start()` → `started` in `.venv`).
+- Frozen loader exit 127: loader resolves `python311.dll` differently than `.venv`. Fix in `gui/__main__.py` (line 181): `sys.path.insert(0, os.path.join(_executable_dir, "_internal"))`. Verify `.pyd` independently (`ls` shows 152KB; direct import via `spec_from_file_location` works; `.start()` → `"started"` in `.venv`). Never declare `.pyd` broken based solely on frozen loader exit 127.
 - Never claim `.start()` passes when `sys.path.insert` fails; the loader issue masks `.pyd` validity. Always verify with direct import.
 - `.proto` files must exist (count = 5); empty `proto/` directories are missing.
 - Web bridge without `.setParent` produces 0 frozen references (before fix); after fix = 2. Lifecycle depends on parent widget assignment.
@@ -40,4 +41,4 @@ Use when delivering verified polyglot apps: Python GUI + Rust .pyd + TypeScript 
 
 ## References
 
-- `references/polyglot-build-checklist.md`: Per-layer verification (python_env, rust_pyd, typescript, protocol_proto, frozen_exe, gui_fix, end_to_end, production_docs).
+- `references/polyglot-build-checklist.md`: Per-layer verification (python_env, rust_pyd, typescript, protocol_proto, frozen_exe, gui_fix, end_to_end, production_docs, flawless_plan, enhancement_polish). Also `references/enhancement-reference.md`: 7 pillars (Runtime Performance, Security Hardening, UX/Visual Polish, Build/Release Polish, Observability/Audit, Cross-Platform Compatibility, Protocol/API Polish) — 34 concrete enhancement items with real file references.
