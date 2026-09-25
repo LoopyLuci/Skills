@@ -12,10 +12,10 @@ Use when delivering verified polyglot apps: Python GUI + Rust .pyd + TypeScript 
 
 - Real execution verification: every claim backed by `terminal` or `execute_code`; never claim without tool output.
 - Graceful fallbacks (`try/except`) for optional dependencies (e.g. matplotlib).
-- `.pyd` + `python311.dll` embedded in frozen `_internal/`; verify `.pyd` exists after rebuild.
-- Frozen EXE loader (exit 127) is loader issue, not `.pyd` error — verify `.pyd` with `.venv` Python first (direct import `spec_from_file_location`).
-- `.proto` files are real source of truth — create 5 files before claiming protocol complete.
-- Web bridge (`WebBridgeEngine`) needs `.setParent(self)` before frozen embed.
+- `.pyd` embedded in frozen build: add `pyd_src = Path("target/release/vmharness_supervisor.pyd")` to `binaries` list in `scripts/build_pyinstaller.py` (verified: `.pyd` import via `spec_from_file_location` passes; exit 127 is separate loader issue).
+- `.proto` files must exist (count = 5): `vm.proto`, `telemetry.proto`, `lifecycle.proto`, `pairing.proto`, `chat.proto` — empty `proto/` directories are missing.
+- `gui/web_bridge.py`: must include `.setParent(self)` before frozen embed; verify frozen `grep -o 'WebBridgeEngine'` count = 2 (`WebBridgeEngine` + `.setParent`).
+- Frozen loader exit 127: loader resolves `python311.dll` differently than `.venv`. Verify `.pyd` independently (direct import `.start()` → `"started"`) before declaring `.pyd` broken.
 
 ## Procedure
 
