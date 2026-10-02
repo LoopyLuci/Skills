@@ -61,9 +61,44 @@ the TLC model check. The bypass grep is mutation-tested: it fails against a
 `diagnostics-no-validate` build and passes against a secure one. `tla2tools.jar` is
 fetched by `scripts/fetch-tla.sh`, not committed.
 
-## Silent-wrong-value bugs found here
+## Measure the running resolver; do not read it
 
-Every one produced plausible output, not a crash. That is why review missed them.
+Reading the code found nothing. Timing it found three bugs in one pass:
+
+- `h0.debian.org` took **14 s**, with a visible 10 s gap between two hops. The
+  per-attempt timeout doubled per retry (RFC 1035 §4.2.2) with no total cap, so
+  one dead server cost 1.5 + 3 + 6 s. Now bounded by `max_total_per_server`.
+- `--upstream-timeout-ms` reached only the validator, so it had no effect on the
+  iterator -- the part that waits most. It now lives on `UpstreamConfig`.
+- UDP datagrams were **dropped by the kernel** under burst, because the socket
+  used the OS default buffer. A dropped query is indistinguishable from being
+  down. Buffers now requested at 4 MiB; the kernel grants 8.
+
+Probed and found correct, so left alone: TCP, 14 hostile datagrams, flag hygiene
+across TC/opcode/AA/CD/RD/Z, and the rate limiter (207/193 at defaults).
+
+### Two measurement errors that first looked like resolver bugs
+
+Both are worth remembering because each reads as a server fault:
+
+- **Firing 400 datagrams in a tight loop tests the socket buffer, not the
+  limiter.** The tokio task never gets scheduled, so the buffer absorbs them and
+  the limiter sees nothing. Pace the burst or yield between sends.
+- **A UDP socket reused after a timeout reports a spurious ICMP reset on
+  Windows.** Zero resets on a fresh socket for the same queries. Use one socket
+  per query when measuring.
+
+### `#[cfg(unix)]` code that only ever ran on Linux
+
+Socket buffer tuning took three attempts that all compiled and passed on Windows
+while panicking every runtime worker on Linux, because the block was `cfg(unix)`
+and never executed there. `UdpSocket::from_std` registers a *blocking* socket,
+which tokio permits only where blocking is legal, and an `async fn` body never is
+-- on any platform. Tuning belongs in `main`, before the runtime exists, where it
+is merely a syscall.
+
+The general rule: anything behind a platform cfg has never been executed unless it
+was run on that platform. `cargo build` on Windows is not a test of it.
 
 - **DO bit read from the OPT rclass** instead of bit 15 of the OPT TTL (RFC 6891
   §6.1.2). The XDP path did this, so the L0 key never matched a DO-bearing client:
