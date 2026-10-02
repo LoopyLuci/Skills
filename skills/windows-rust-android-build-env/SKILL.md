@@ -146,6 +146,31 @@ the test fails. An early version passed against the buggy code purely because
 the spawned thread had not reached its wait yet — give the loop a moment, then
 contend for the lock, so the assertion is real.
 
+## 7. Verifying against a real phone (adb)
+
+An Android device catches what the JVM suite cannot. Two failure modes that
+looked like app bugs were neither:
+
+- **`adb install` can silently not install.** `INSTALL_FAILED_UPDATE_INCOMPATIBLE`
+  (signature mismatch between a debug and a release-signed build) leaves the old
+  APK in place, so you keep testing stale code. Check the exit status, and confirm
+  with `pm query-receivers -a <ACTION>` that a new manifest entry is actually
+  registered.
+- **Implicit broadcasts may never be delivered.** `am broadcast -a ACTION` relies
+  on implicit-broadcast resolution and did not reach a receiver on a Nokia 7.2
+  running Android 11, even though the receiver was registered and the process was
+  alive. Use the explicit form: `am broadcast -a ACTION -n PKG/.Receiver`.
+- **`intent.getStringExtra` throws `ClassCastException`** when the extra was sent
+  as a real Boolean or Int (`--ez`, `--ei`). Read via `intent.extras?.get(key)`,
+  which tolerates both. This killed `onReceive` before any logging, so every
+  command looked accepted while doing nothing.
+- **Nothing forces a lazy initialiser.** A broadcast can start the process with
+  no UI, so handlers registered from a `by lazy` property are never created.
+  Install them from `Application.onCreate`.
+
+Reach the app from adb by `adb -s <serial> shell ...`; without `-s` and with
+several devices the command targets nothing and looks like a silent no-op.
+
 ## Kotlin/Android testing on the JVM
 
 `androidx.test.core`'s `ApplicationProvider` needs a registered instrumentation,
