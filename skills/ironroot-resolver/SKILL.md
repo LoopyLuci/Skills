@@ -53,6 +53,14 @@ Differential suite (network-dependent):
 counts, a hand-rolled record walk reporting where a bad message stopped parsing, and a
 TCP second opinion.
 
+## Remote
+
+Private repo: https://github.com/LoopyLuci/ironroot -- branch `main`, tag `v0.1.0`.
+Four CI jobs: userspace tests, hermetic e2e, the validation-bypass binary grep, and
+the TLC model check. The bypass grep is mutation-tested: it fails against a
+`diagnostics-no-validate` build and passes against a secure one. `tla2tools.jar` is
+fetched by `scripts/fetch-tla.sh`, not committed.
+
 ## Silent-wrong-value bugs found here
 
 Every one produced plausible output, not a crash. That is why review missed them.
@@ -97,6 +105,18 @@ Every one produced plausible output, not a crash. That is why review missed them
   `cached_ttl >= record_ttl` fails above 86400 and looks like a resolver bug.
 - Run new suites three times. A stress test whose *final* assertion does a real
   upstream lookup will flake, because the test just exhausted that path.
+- A **readiness poll must use a short timeout.** `TestServer::wait_until_ready` once
+  used the same 10s read timeout as a real query inside a 10s deadline, so one
+  unanswered probe ate the whole budget and the loop could not retry. It passed on
+  Windows and failed on the CI runner only because startup was slower (21.5s of
+  doomed waiting versus 0.5s). Hence `try_query_within(msg, timeout)`: 200ms to
+  poll, 10s to ask a real question.
+- **Green locally is not green on Linux.** CI runs ubuntu; the BPF toolchain lives
+  in Debian WSL. Check both before pushing, and install `rustfmt`/`clippy` for the
+  *stable* toolchain in WSL, not just nightly, or `cargo fmt` fails there.
+- `cargo clippy` finds real defects, not just style: it caught a retry loop that
+  returned on its first iteration and so could never retry, and a `u16 | u8`
+  mismatch when a "redundant" cast was removed. Trust its `-- -D warnings` run.
 - The BPF target's nightly rejects `fn f<N: usize>`; write `fn f<const N: usize>`.
 
 ## BPF verifier
