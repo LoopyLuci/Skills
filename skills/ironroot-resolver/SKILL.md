@@ -141,54 +141,96 @@ Rules, all hard-won:
 Harness: `~/vm` in Debian WSL, `vm/verify-bpf.sh` MD5-checks the object against the
 copy embedded in the initramfs. Never trust a verdict without that match.
 
-**Status: not accepted.** `invalid access to packet, off=0 size=1, R1(id=30,off=0,r=0)`
-at insn 260-262. The trace shows a backwards jump with the bound in `R2` as a
-*scalar*, which is the tell: the pkt_end comparison has been hoisted above the
-loop, so it no longer dominates that iteration's load.
+**Status: not accepted, but the cause is now pinned.** Staging the QNAME into a
+stack buffer *does* clear the verifier's packet-access complaint. The blocker
+moved to a different wall, and it is a specific one:
 
-Rounds 1-5 eliminated every write, then `read_be16`, `read_u8`,
-`count_labels_in`'s `get`, and `skip_name`'s bound -- `off=21` is gone. Stubbing
-`count_labels_in` out moves the error elsewhere, so it is the remaining site.
+> The write into the staging buffer must leave **no panic call**. aya concatenates
+> `.text.unlikely` into the program, so any panic the compiler cannot prove
+> unreachable becomes a trailing `call` the loader cannot resolve -- and the
+> symptom is "last insn is not an exit or jmp", which says nothing about panics.
 
-Tried, still failing:
+Five shapes tried, one failure each:
 
-- pointer compare in `span_in_bounds` instead of the integer `end <= self.proven`
-- `const_span_in_bounds::<N>` so the pointer addition is constant-width
-- `count_labels_in`'s loop bounded on `ctx.len()` and on the pointer proof
-- `read_span` out of line behind `#[inline(never)] fn bounded<const N: usize>`, to
-  stop LLVM hoisting the compare (moved 262 -> 260)
+| shape | leaves |
+|---|---|
+| `copy_from_slice` at a runtime length | `memmove` |
+| `buf[i + k]` | a bounds-check panic |
+| `buf.get_mut(a..b)` | a range-check panic |
+| `buf.as_mut_ptr().add(i)` cast to `[u8; N]` | an alignment panic |
+| nested `[[u8; BLOCK]; N]` | two index checks |
 
-Next, in order:
+The nested array ships (correct, tested, two panics left). Next: a fixed-width
+`copy_from_slice::<$n>` between two arrays of the same compile-time width -- no
+runtime length anywhere in it, so the remaining checks are over constants.
 
-1. `bounded` derives its pointer from `self.data`, a *struct field*, not from the XDP
-   context registers. The verifier only tracks ranges on registers originating at
-   `ctx`. Try passing the raw context pointers into the read helpers.
-2. Check `llvm-objdump` on the xdp section: is `bounded` a real call, or did it get
-   folded back despite `#[inline(never)]`?
-3. If hoisting persists, read each label byte at a *fixed* offset from a pointer
-   proven once at function entry, rather than per iteration.
+Also learned the hard way:
 
-## Hermetic end-to-end: blocked on per-resolver config
+- The ladder's width must come from what the **packet** offers, not the buffer's
+  remaining space. Backwards stages nothing for any query shorter than STAGE.
+- A name longer than one block crosses the boundary; dropping the spilled bytes
+  silently changes the hashed name, so the key stops matching the userspace
+  formula. Mutation testing caught this one.
+- STAGE must fit the 512-byte frame alongside `build_reply`'s buffers: 64 works,
+  128 does not. A longer name than STAGE is an L0 miss, which is correct.
+- The staged length is a **lower bound** when the packet is short; the walk must
+  stop there rather than read uninitialised stack.
+- `rm` the panic and the check becomes redundant: the compression-pointer guard is
+  subsumed by `label_len > 63`. Kept and documented as defence in depth with the
+  mutation result, rather than implied to be load-bearing.
+
+`vm/bisect_*.py` are the tools that got here; a round is ~4 min.
+
+## Hermetic end-to-end: per-resolver config, and what it unblocked
 
 A mock root and a mock authority must be **different sockets** -- the resolver
 expects a referral from one and a final answer from the other.
 
-**Blocker:** a delegation's glue carries only an IP, so the resolver always follows
-a referral to **port 53**. The mock binds an ephemeral port and there is no seam for
-it, so the referral walk cannot complete. Ten cases are `#[ignore]`d with this
-reason; four needing no network pass.
+`UpstreamConfig` carries the root set and the delegation port on the resolver
+itself, reached via `RuntimeConfig` and `Services`. It must be per-resolver, not
+process-global: env vars were tried twice and both failed -- read once per process
+pinned every test to the first test's root (a silent false pass), read live each
+test overwrote the previous mock (wholesale timeout).
 
-Two approaches tried and rejected:
+**The root's port and the delegation port are different fields.** A glue record
+carries only an IP, so the delegation port is ours to choose; the root's port is
+part of a real address we were handed. Collapsing them points root queries at the
+authority's socket.
 
-- Env var read once per process: every test after the first was silently pinned to
-  the first test's root -- a false pass, not a failure.
-- Env var read live, plus an upstream-port var: correct per test, but env is
-  process-global, so each test overwrote the previous mock and the suite timed out.
+Defects that surfaced only once the suite could run:
 
-The right fix is per-resolver config -- root set and upstream port on `Services`,
-which the iterator and validator already receive -- not process-global state.
+- `TestServer::_mock` was `Option`, so a second `with_mock` silently dropped the
+  first -- the mock authority, whose socket closed on drop. Indistinguishable from
+  a resolver that cannot reach its delegated server. It is a `Vec` now.
+- **A negative answer was treated as a referral.** Empty answer + populated
+  authority is both shapes; the code discriminated on section *counts*. NXDOMAIN
+  carries an SOA there (RFC 2308 2.1), so it went back to the root and died as a
+  referral loop. Check for actual NS records.
+- `resolve_name` returns **labels, not encoded bytes**. Reading qtype at
+  `12 + resolve_name(..).len()` silently decodes 0.
+- A mock that echoes a hardcoded qtype gets its referral rejected as a mismatch --
+  correctly. Echo the query's type.
 
-Also note: a mock cannot mint a signature that verifies, so no hermetic case can
-assert a genuinely *secure* verdict. That path is the differential suite's job;
-these pin the shape of each outcome (bogus fails closed, insecure returns with AD
-clear).
+Still ignored, each with its reason: two need an NSEC proof of DS absence to
+establish an insecure delegation (needs a signed parent zone); one needs
+per-query rcodes from the mock. The resolver is *right* in the first two --
+unable to distinguish unsigned from forged, it says bogus, which is correct.
+
+A mock cannot mint a signature that verifies, so no hermetic case can assert a
+genuinely *secure* verdict; the differential suite covers that.
+
+### Mocks must serve TCP, and truncation must be transport-specific
+
+RFC 1035 §4.2.1 makes the resolver retry a truncated UDP response over TCP, so a
+UDP-only mock cannot test it at all. Serve UDP and TCP on the *same* port -- a
+referral gives one address, so the resolver must not need a second for TCP.
+
+Mutation testing caught a **false pass** here: with the mock truncating over
+*both* transports, the retry got nothing back, so disabling the resolver's TCP
+fallback still left the test green. Truncation is a property of the transport,
+not of the zone -- `respond_on(query, Transport::Udp)` rather than `respond()`.
+After that fix, disabling the fallback fails the test.
+
+That is the general lesson: a mock that cannot express the *distinction* the test
+is about makes the test vacuous, and it passes under mutation without anyone
+noticing. If a mutation does not fail the test, the test is not testing anything.
