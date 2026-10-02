@@ -38,15 +38,61 @@ Do these in order. Steps 3 and 7 are where a "successful" release is actually
 caught, and both are routinely skipped.
 
 1. Confirm the project's own gates are green (build, lint, tests) *before*
-   staging a release. A release snapshotting a red tree is a bad release.
+staging a release. A release snapshotting a red tree is a bad release.
 2. Build the release artifact.
 3. **Audit staged content** for oversized blobs and secrets — before the first
-   push, not after the rejection teaches you what to look for.
+push, not after the rejection teaches you what to look for.
 4. Push.
-5. Tag.
-6. Create the release with assets.
-7. **Download the assets back and verify each one.**
-8. Report URLs, sizes, and what was verified vs. assumed.
+5. **Wait for CI on that exact commit to finish green.** Do not tag a commit
+whose checks are still running — see below.
+6. Tag.
+7. Create the release with assets.
+8. **Download the assets back and verify each one.**
+9. Report URLs, sizes, and what was verified vs. assumed.
+
+### Do not tag before CI has actually run
+
+`git push` returning 0 means the workflows were *queued*, not that they passed.
+Tagging immediately produces a release whose commit is still untested, and if CI
+then goes red you must either re-cut the tag or ship a release known to have a
+failing gate.
+
+```bash
+git push origin main
+RID=$(gh run list --limit 1 --json databaseId -q '.[0].databaseId')
+gh run watch "$RID" --exit-status --interval 25 >/dev/null   # wait, do not poll-and-hope
+gh run view "$RID" --json jobs -q '.jobs[] | "\(.conclusion)\t\(.name)"'
+```
+
+Every job must read `success`. If one fails, fix and push first — then wait again
+for the *new* head SHA.
+
+Note that `gh run watch` can exceed your own command timeout; re-query
+`gh run view <id> --json status,jobs` rather than assuming a timed-out watch means
+failure.
+
+### Keep version metadata in one story
+
+The manifest and the tag drift independently, and the drift is invisible until a
+user reports the wrong version. Before tagging, confirm these agree and that the
+tag matches:
+
+- `[workspace.package] version` (and any per-crate version that is published)
+- `versionName` / `versionCode` in the Android build
+- the git tag
+
+Where a version string is printed in the app (an About box, a `--version` flag),
+read it from crate metadata (`env!("CARGO_PKG_VERSION")`) instead of hardcoding
+it, so it cannot drift again. Bump `versionCode` on every release — Android
+requires a strictly greater code for an update to install over a published one.
+
+### If CI fails after you have already tagged
+
+Do not silently move the tag. Fix forward on `main`, then either move the tag
+deliberately (`git tag -f` + `--verify-tag` on re-create) or keep the tag and say
+plainly in the release notes which commit the binaries came from and that the fix
+landed after. When the post-tag fixes are test- or CI-only, state that
+explicitly so nobody thinks the published binaries changed.
 
 ## Gate the project the way CI does
 
@@ -118,6 +164,18 @@ builds still sign without secrets in history, and **warn explicitly when no
 keystore is found** — a silent fallback to a debug key produces an installable
 APK that nobody flags.
 
+In CI, a missing keystore must **fail the job, not skip it**. A step that
+`exit 0`s when its secret is absent turns a missing prerequisite into a green
+checkmark, and the release ships unsigned or absent while every status reads
+success. Then verify the produced artifact is release-signed rather than trusting
+the exit code. See `references/ci-signing-and-silent-skips.md`.
+
+The same "green but did nothing" class of bug has other members worth auditing
+for: a workflow whose `paths:` filter excludes its own file (so edits to it never
+trigger it), an action that ignores the job's `working-directory` (so relative
+paths 404), and `gradlew` committed without the exec bit (exit 126 on every
+step). All are listed in that reference.
+
 ## Default branch must match what CI triggers on
 
 If workflows trigger on `main` and the branch is `master`, CI silently never
@@ -163,9 +221,41 @@ Always surface what the user must act on, even mid-session:
 A verified claim and an inferred one must read differently. If something could
 not be verified, say so plainly instead of implying it was checked.
 
+**Label the strength of a fix honestly.** If a defect reproduced only in CI and
+your local runs stayed clean, say the local evidence did not reproduce it and
+that CI is the authority — do not present a plausible fix as confirmed. If you
+verified a regression test by reverting the fix and watching it fail, that is
+strong evidence and worth stating as such. Distinguish *verified*, *probable
+cause, unconfirmed locally*, and *assumed*.
+
+**Never report a check as passed when it errored, was skipped, or never ran.**
+Say which check did not run and why.
+
+## A green suite is not proof the artifact works
+
+A release can pass every gate and still be broken on the user's machine. Cheap
+test tiers miss whole classes of defect:
+
+| Defect class | Tier that can catch it |
+|---|---|
+| Plain logic, parsing, data transforms | Unit / JVM tests |
+| Concurrency, resource lifetime, native crashes | Stress at high thread counts, then CI |
+| UI composition, layout, lifecycle, rendering | Instrumented tests on device/emulator |
+| Anything the user touches | A real device, real install |
+
+When a whole unit suite is green and the app still misbehaves on hardware, the
+gap is the **tier**, not the tests. Install the built artifact on a real device,
+drive it, and read the crash log — then add the missing test tier to CI so the
+class cannot ship again. See `references/device-verification-and-test-tiers.md`.
+
 ## References
 
 - `references/android-apk-release.md` — APK signing, JDK/AGP version matrix,
   verifying a built APK, and recovering from wrapper/SDK misconfiguration.
 - `references/release-preflight-checklist.md` — condensed pre-push audit
   commands and the exact verification steps per artifact type.
+- `references/ci-signing-and-silent-skips.md` — CI jobs that go green without
+  doing their work: skipped signing, self-excluding path filters, actions that
+  ignore `working-directory`, lost exec bits, impossible matrix entries.
+- `references/device-verification-and-test-tiers.md` — installing and driving a
+  real device, reading crash logs, and which test tier catches which bug class.

@@ -149,6 +149,63 @@ cross-check these against the release tag.
 "JAVA_HOME is set to an invalid directory", which reads like a missing JDK but
 is a path-format problem.
 
+## Backing up and verifying a signing key
+
+Android cannot update an installed app with a different key, so a keystore that
+exists in only one working tree is unrecoverable: losing it strands every
+published APK at its current version. Back the key up as its own step, then
+*prove the copy works* rather than trusting the file copy.
+
+Back up the keystore **and** the properties file — the passwords are the part
+people forget, and a keystore without them is unusable.
+
+Verify the copy three ways, cheapest first:
+
+```bash
+# 1. bytes match
+sha256sum orig.jks backup.jks
+
+# 2. it opens with the stored password, and the certificate is the right one
+keytool -list -v -keystore backup.jks -storepass "$SP" | grep -E 'Alias name|^Owner|SHA256:'
+
+# 3. it actually signs
+jarsigner -keystore backup.jks -storepass "$SP" -keypass "$KP" scratch.apk "$AL"
+jarsigner -verify scratch.apk          # expect: jar verified.
+```
+
+Compare the SHA-256 fingerprint against the original keystore — a same-named
+`.jks` with a different fingerprint is worse than no backup, because it looks
+fine.
+
+**Sign a throwaway APK, not the real one.** `jarsigner` rewrites the APK in
+place, so verifying against `app/build/outputs/apk/release/app-release.apk`
+leaves a re-signed artifact with two signatures and a different size. Sign a
+scratch zip instead, or rebuild afterward and re-check for a single signer.
+
+Write a `README.md` beside the backup with the certificate DN, SHA-256/SHA-1
+fingerprints, alias, validity window, and how to point Gradle at it. A backup
+nobody can use under pressure is not a backup.
+
+### Locking down a backup directory on Windows
+
+`keystore.properties` is a plaintext password file. Lock the directory — but
+**grant by SID, never by bare account name**:
+
+```bash
+# 'Server:F' resolves to the local machine account, not the user, and locks
+# the owner out of their own key with no error from icacls.
+icacls "C:\path\to\backup" /inheritance:r
+icacls "C:\path\to\backup" /grant "*S-1-5-21-...-1001:(OI)(CI)F"   # the owner
+icacls "C:\path\to\backup" /grant "SYSTEM:F" "BUILTIN\Administrators:F"
+```
+
+After changing an ACL, **verify the owner can still read the files and the key
+still opens** — a lockout here silently destroys access to the one irreplaceable
+artifact in the project. Recover with `icacls <dir> /reset /T`.
+
+Also warn the user not to sync that folder to a cloud drive while it holds
+plaintext passwords.
+
 ## Version alignment
 
 `versionName` in `defaultConfig` and the release tag drift independently. The
