@@ -90,6 +90,31 @@ Verify an APK rather than trusting the build:
 The `.bat` needs a **native Windows** `JAVA_HOME` (`C:\...`); an MSYS `/c/...` path
 fails with "JAVA_HOME is set to an invalid directory".
 
+## 4. Verifying an IPC/control surface that only exists at runtime
+
+Compiling clean proves nothing here. ScreenBuddy's control server compiled for
+weeks while being dead code: never started, and its two sides held separate
+handles so every query returned defaults forever.
+
+Checklist when wiring one of these:
+
+- **Start the process for real**, then probe it over the wire. Two suites are
+  worth having: one at the protocol level and one at the adapter level (e.g. MCP).
+- **Prove a mutation actually mutated.** `{"queued": true}` only proves the
+  request was accepted. Read the state back and assert the value changed, then
+  restore it.
+- **Watch for overwrite ordering.** A render/simulation loop that runs *after*
+  your handler will undo it. Move the drain earlier, or pin the value.
+- **Ensure both sides share one handle.** Two `Arc<Mutex<State>>` that look
+  related but are constructed separately read as permanent defaults with no
+  error. Make the API force a single instance, e.g.
+  `Server::with_status(config, status.clone())`.
+- **`tokio::spawn` panics outside a runtime.** A plain `fn main` has no reactor;
+  build a `Runtime` and run it on a dedicated thread.
+- **Suspect the shared-state bug before the loop.** If frames tick but the
+  snapshot stays at zero, the loop is fine and the publisher is writing to a
+  different object.
+
 ## Kotlin/Android testing on the JVM
 
 `androidx.test.core`'s `ApplicationProvider` needs a registered instrumentation,
