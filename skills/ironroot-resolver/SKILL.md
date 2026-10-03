@@ -288,6 +288,10 @@ caught this immediately.
 Rules that follow:
 - A test of a *formatter* is not a test of a *decision*. Drive the kernel.
 - If mutating the code under test does not fail the test, the test is decorative.
+- **Do not truncate the captured output before deciding.** `cargo test ... | tail -5`
+  cut off the `test result: FAILED` line, so three real mutations read as "not detected"
+  and three load-bearing links looked untested. They were all detected. Capture the whole
+  run, or grep for the marker rather than reading the tail.
 - Check first whether the enforcement already existed elsewhere. The QR-set check
   was already in `Query::parse` (`NotAQuery`), so a kernel check for it was dead
   code; and asserting on the kernel instead of the parser would have passed for
@@ -548,8 +552,9 @@ establish an insecure delegation (needs a signed parent zone); one needs
 per-query rcodes from the mock. The resolver is *right* in the first two --
 unable to distinguish unsigned from forged, it says bogus, which is correct.
 
-A mock cannot mint a signature that verifies, so no hermetic case can assert a
-genuinely *secure* verdict; the differential suite covers that.
+A mock **can** assert a secure verdict. It was previously assumed it could not,
+which is why the suite could only ever pin "unverifiable data is withheld" and
+never "signed and valid" -- the distinction those tests exist to draw. See below.
 
 ### Mocks must serve TCP, and truncation must be transport-specific
 
@@ -566,3 +571,79 @@ After that fix, disabling the fallback fails the test.
 That is the general lesson: a mock that cannot express the *distinction* the test
 is about makes the test vacuous, and it passes under mutation without anyone
 noticing. If a mutation does not fail the test, the test is not testing anything.
+
+## A mock CAN mint a signature that verifies
+
+The claim above used to read "a mock cannot mint a signature that verifies". It
+can: `tests/support/signing.rs` runs `domain`'s real ECDSA P-256 signer, and with it
+the hermetic suite asserts a genuinely secure verdict. Four links, and each one
+fails in a way that names something else:
+
+- **The anchor must be the mock's own key.** The runtime reads the anchor from a
+  *file*, and a file that does not exist falls back to the **built-in IANA root**.
+  The validator then resolves its chain of trust against the *live internet* -- the
+  mock is never consulted and the test fails as "bogus" for reasons unrelated to the
+  resolver. This also made the suite non-hermetic. Check the log line
+  `trust anchors loaded from <path>` before believing a signed test ran hermetically.
+### Anchoring at the zone does NOT test the DS
+
+Anchoring the trust anchor at the signed zone validates that zone but **skips the
+delegation entirely** -- validation starts at the zone, so the DS is never consulted.
+Removing the DS leaves that test green. To exercise the DS-to-DNSKEY link, anchor at a
+**parent** that signs its child's DS; then the validator must fetch the parent's key,
+verify the DS against it, and check the child's DNSKEY against that DS.
+
+Both roles need separate keys. A child's DNSKEY is signed by the *child's* key, while the
+DS naming that key is signed by the *parent's*. Using one signer for both makes the mock
+serve the parent's key in answer to the child's DNSKEY query, and the validator reports
+`No signature` over the child's perfectly valid A record. The mock root needs a per-zone
+signer map.
+
+**Derive the DS you sign from the DS you publish.** Signing a freshly computed
+`signer.ds_record()` while serving a different digest means the signature covers the
+parent's key over the child's record -- correct-looking bytes, verifies against nothing,
+reported as `Bad signature`. Have the signer take the exact `Ds` value the caller serves.
+
+A DS query is answered from the **parent's** own data with AA set (RFC 4035 3.1.1), not
+with a referral. Answering it with the delegation path used for every other type leaves
+the validator with no DS and concludes the child is unsigned.
+
+### QDCOUNT=1 means echo the question
+
+Two mock responses set QDCOUNT=1 and then emitted records immediately. Every record is
+offset by the missing question's length, so the resolver reads the answer's owner name as
+TYPE/TCL garbage -- reported as `No DNSKEY RRset for trust anchor` with a complete,
+correct key sitting right there. Same shape as the section-count bug below: a mock that
+is structurally wrong produces an error that names something else entirely.
+
+### Signatures must cover the value that is served
+
+`sign_a_rrset` signs a typed RRset while the mock serves wire octets -- safe, because
+canonical form is unique. It is *not* safe when the signed object and the served object
+come from different calls to a digest function.
+- **The zone's DNSKEY must carry its own RRSIG.** RFC 4035 5.2 verifies a trust
+  anchor's key against its self-signature before using it. An unsigned key is found
+  and then rejected: `No DNSKEY RRset for trust anchor`, which reads as "no key"
+  when the key was there.
+- **Sign each RRset as a set.** One signature covers every record of the RRset, so
+  signing records individually produces a signature that verifies over nothing.
+
+`RRSIG.signature` covers the *zone apex*, not each record's owner, and the covered
+type is `type_covered` (not `rtype`).
+
+### This found a live-path bug
+
+The validator's transport documented a field as "where to start iterating" and then
+**rebuilt it from `UpstreamConfig::root_servers()`**, discarding it. So every validator
+query went to the public root servers even when the resolver was pointed at a private
+root or a mock: wrong, and a leak. Anything carrying configuration through a `spawn`
+must carry the *configured* value, not a fresh default.
+
+### Section counts and record order are load-bearing
+
+A mock authority section holding one record more than NSCOUNT declares makes the
+resolver read the next record as out of section. It surfaced as "referral has no
+usable glue", not as a malformed referral. And a DS emitted *before* the NS made the
+section read as DS-then-NS, which was rejected as an **upstream REFUSED** -- three
+symptoms pointing at three unrelated bugs. When a mock's answer is refused, count
+records per section against the header and check the order.
