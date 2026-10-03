@@ -149,6 +149,18 @@ cross-check these against the release tag.
 "JAVA_HOME is set to an invalid directory", which reads like a missing JDK but
 is a path-format problem.
 
+In an MSYS/Git-Bash shell, prepending a Windows-style `JAVA_HOME` to `PATH` does
+not make `java` resolvable — the drive-letter form is not a POSIX path. Invoke the
+binary directly instead, or set `JAVA_HOME` only for the tool that needs it:
+
+```bash
+export JAVA_HOME='C:\path\to\jdk-17'
+"$JAVA_HOME/bin/java.exe" -version        # works; bare `java` does not
+```
+
+The tool files are `apksigner.bat` / `aapt2.bat`, so a glob for `apksigner`
+without the extension silently matches nothing and looks like a missing SDK.
+
 ## Backing up and verifying a signing key
 
 Android cannot update an installed app with a different key, so a keystore that

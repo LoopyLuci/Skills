@@ -48,6 +48,21 @@ git branch -m master main     # if CI triggers on main
 gh workflow list              # expect: active
 ```
 
+### 5. Confirm gates ran against the artifact you are shipping
+
+A green run before a rebuild proves the *previous* binary. Probes and tests that
+launch a built executable resolve a path, and if both `debug` and `release`
+exist the wrong one may be picked — so a handler added since the last
+`--release` build looks like it never ran. Confirm the timestamp order, or
+delete the stale artifact before running the probes:
+
+```bash
+ls -la --time-style=+%s target/release/app.exe target/debug/app.exe   # newest first wins
+```
+
+Rebuild `--release` *before* the final probe run, not just before packing, so the
+live probe exercises the exact bytes that get uploaded.
+
 ## Post-release verification
 
 ### Confirm what exists
@@ -67,6 +82,23 @@ sha256sum verify.bin ./dist/ASSET      # must match
 ```
 
 A non-200 or a size mismatch means the upload is truncated or absent.
+
+### Shipping one checksums file for a multi-asset release
+
+When a release carries several artifacts, publish a `checksums.txt` next to them
+(`sha256sum asset1 asset2 > checksums.txt`) and verify with one command:
+
+```bash
+gh release download vX.Y.Z -p '*.exe' -p '*.apk' -p '*checksums.txt'
+sha256sum -c *checksums.txt          # expect every listed file: OK
+```
+
+Downloading assets with **selective `-p` patterns** is the trap here:
+`sha256sum -c` reads every line of the file, so an entry you did not download
+reports `FAILED open or read`. That reads like a corrupt published artifact when
+it only means the file is absent from the directory. Download the whole set, or
+grep the checksum file down to the names you actually fetched, before drawing any
+conclusion about upload integrity.
 
 ### Artifact-specific verification
 

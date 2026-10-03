@@ -231,6 +231,17 @@ cause, unconfirmed locally*, and *assumed*.
 **Never report a check as passed when it errored, was skipped, or never ran.**
 Say which check did not run and why.
 
+## Answering "what is next?"
+
+When the user asks what to do next and there is a clear highest-priority item
+with the evidence already gathered, **do that item** rather than returning a
+ranked list. A repeated question is not a request for a re-brief; it is a signal
+that the previous answer was not an action.
+
+If the ask genuinely needs a decision (scope the user must weigh, credentials
+only they hold), answer in one short paragraph and ask — but only then. Ranked
+lists of things already agreed are the failure mode this replaces.
+
 ## A green suite is not proof the artifact works
 
 A release can pass every gate and still be broken on the user's machine. Cheap
@@ -248,6 +259,14 @@ gap is the **tier**, not the tests. Install the built artifact on a real device,
 drive it, and read the crash log — then add the missing test tier to CI so the
 class cannot ship again. See `references/device-verification-and-test-tiers.md`.
 
+## A settings screen that stores and nothing reads is the same class of bug
+
+A UI control that renders, saves and persists, while no code ever reads the
+value, passes every gate in this document and is still a lie the user has to
+discover. Before shipping any settings, agent-profile or control surface, audit
+declared-versus-consumed, and prove the value on the wire rather than in the UI.
+See `references/declared-vs-consumed.md`.
+
 ## References
 
 - `references/android-apk-release.md` — APK signing, JDK/AGP version matrix,
@@ -259,3 +278,5 @@ class cannot ship again. See `references/device-verification-and-test-tiers.md`.
   ignore `working-directory`, lost exec bits, impossible matrix entries.
 - `references/device-verification-and-test-tiers.md` — installing and driving a
   real device, reading crash logs, and which test tier catches which bug class.
+- `references/declared-vs-consumed.md` — auditing a settings or control surface
+  for values nothing reads, proving it on the wire, and gating it in CI.
