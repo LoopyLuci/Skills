@@ -72,9 +72,31 @@ set printed before it is believed.
 - A name appearing near an unrelated call is not evidence it is written.
 - A dispatcher that merely forwards is not where commands are declared; find the
   registry the dispatcher calls into.
+- **A consumer often reads through an accessor, not the bare field.** A field read
+  only by `autoStartEnabledBlocking()` looks unreadable to a literal-name search,
+  so the audit reports a working setting as inert - and the next step is to remove
+  its honest "not wired up" label for no reason. Match `field[A-Z]\w*\(` as well
+  as `field`.
+- **Counts that disagree expose a duplicate.** Advertised N against registered
+  N-1 usually means the same command is registered twice, so the second silently
+  shadows the first and any data it returned is gone. Report duplicates
+  explicitly: harmless at runtime, but they hide a real handler and make the two
+  counts disagree, which is exactly the drift this audit exists to catch.
 
 Always print the parsed set and check it against reality before trusting a pass.
 A clean result from a broken parser is worse than a failure.
+
+## Audit every client, not just the one in front of you
+
+A surface that has already been audited will be trusted, so a second client goes
+unexamined - and the unaudited one is where the worst defects sit, because its
+code has had fewer passes over it. Expect it to be worse than the audited client,
+and scan it before making any parity claim.
+
+Do not carry a parity conclusion forward from a feature list or from earlier in
+the session. Read the code for the specific claim: an assertion that a client
+"lacks X" sends the work toward building something it already had, and a
+confidently-stated wrong premise costs more than the check would have.
 
 ## Prove it on the wire
 
@@ -158,6 +180,22 @@ waiting on a permission, a service, or a feature nobody has built.
 
 When a setting later gains a real consumer, remove its label in the same change.
 A stale "not wired up" is its own lie.
+
+## "Every setting has a consumer" is not "the feature is finished"
+
+A clean audit means nothing is lying to the user. It does not mean the backing
+feature exists. An engine can be fully wired with nothing bundled to play, a
+notification channel can be created with no permission prompt requesting it, and
+a creature can have physics with no sprites drawn.
+
+So a zero-count result is the end of the audit, not of the work. Before reporting
+it as done, check what the consumers depend on and state the remaining gaps in
+the same breath - no bundled assets, permission UX not implemented, placeholder
+art. A bare completeness number reads as "finished" and gets acted on.
+
+The same applies to the audit's own scope. "Every declared setting has a
+consumer" says nothing about whether the commands built on them work; audit the
+control surface separately.
 
 ## Two store bugs that look like working code
 

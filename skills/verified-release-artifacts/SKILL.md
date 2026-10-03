@@ -71,6 +71,37 @@ Note that `gh run watch` can exceed your own command timeout; re-query
 `gh run view <id> --json status,jobs` rather than assuming a timed-out watch means
 failure.
 
+### Local green says nothing about remote green
+
+Check CI state at the moment you report, not only at the moment you last pushed.
+A long local-green run can coexist with a remote failure you have not looked at,
+and the gap widens with every commit since. Before reporting CI as green:
+
+```bash
+gh run list --limit 5 --json workflowName,status,conclusion,headSha \
+  -q '.[] | "\(.conclusion // .status)\t\(.workflowName)"'
+```
+
+If several workflows run in parallel, all must be `success`, not just the one you
+remember. When a claim of "green" turns out to be stale, correct the record
+explicitly and name what was actually checked - an unverified claim reported as
+verified is the failure, not the underlying CI break.
+
+### A validation action that needs the network is a single point of failure
+
+Third-party validation actions commonly fetch expected checksums or manifests
+from a remote service. If the runner cannot reach it, the job fails before
+anything is compiled, and every step behind it is silently skipped - so the
+release artifact step never runs while the job looks like it was about to.
+
+Treat a remote-dependent validation step as optional unless the remote is
+guaranteed reachable. Prefer a local check with no network dependency; the build
+itself already exercises whatever the validation was guarding. Verify locally
+before pushing a replacement: a "fix" that fails on the runner costs another full
+cycle, and two of the three attempts in this class died on details the local run
+could not have told you (a tool absent from the runner image, a `cd` that
+duplicated a `working-directory` already set by the job).
+
 ### Keep version metadata in one story
 
 The manifest and the tag drift independently, and the drift is invisible until a
@@ -243,10 +274,39 @@ answer. If the user asks the same thing again having received a list, the list
 was the wrong output — stop explaining and start the top item. Answering the
 same question three times is not thoroughness; it is refusing to act.
 
-If the ask genuinely needs a decision (scope the user must weigh, credentials
-only they hold), answer in one short paragraph and ask — but only then, and say
-what decision you need rather than ranking alternatives. Ranked lists of things
-already agreed are the failure mode this replaces.
+### Acting beats asking for permission on the same thing twice
+
+Once you have named the top item and the user has asked again, asking "shall I
+do X?" a second time is the same mistake one level up: you have the answer and
+are spending a turn on ceremony. If the work needs no credentials, no scope
+decision, and no irreversible action, treat the repeat as consent and start.
+
+Reserve a question for work that genuinely cannot proceed without the user:
+credentials only they hold, a managed signing key, or a scope trade-off between
+options they must weigh. Ask for exactly that, in one short paragraph. Do not
+pad it with a re-ranked list of items already agreed.
+
+### Say the answer, then do the work, in that order
+
+Do not withhold the judgement. Give the ranked answer in a sentence or two, then
+begin the top item in the same turn. The user gets the reasoning *and* the
+progress, and a wrong premise can still be corrected before much is built on it.
+
+### When you have drained the work you can do alone, say so
+
+Repeatedly inventing adjacent tasks to avoid saying "this needs you" is its own
+failure. If everything remaining needs credentials, a managed key, or a scope
+decision, name that plainly and stop. Distinguish *nothing left to do* from
+*nothing left that I can do unaided* — the second is a real and useful status,
+and padding it with speculative work helps nobody.
+
+### Separate "complete" from "not lying"
+
+Report counts and verdicts with their scope attached. "Every declared setting has
+a consumer" means nothing is lying to the user; it does not mean the feature is
+finished. State the remaining gaps in the same breath — no bundled sound files, a
+permission prompt not yet requested, sprites not drawn — because a bare
+completeness number reads as "done" and gets acted on.
 
 ### Verify the premise of your own recommendation first
 

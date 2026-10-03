@@ -77,6 +77,27 @@ The same applies to the audit's own reach: an inert surface on one client says
 nothing about the other, and a count of zero from a scanner that never looked at a
 directory is a finding about the scanner, not the app.
 
+## A manifest declaration is not a request
+
+A permission listed in the manifest proves nothing. On modern Android the grant
+is a runtime decision made by the user in a dialog the app must actually raise,
+so a declared permission that is never requested is a control that reads as on
+and delivers nothing - the same defect as an unwired setting, one layer further
+down and invisible to a scanner that only reads code.
+
+- Audit for `checkSelfPermission` and `rememberLauncherForActivityResult` /
+  `requestPermissions`, not just for the manifest line. The manifest is where a
+  feature is *planned*; the launcher is where it is *asked for*.
+- Request at the moment the feature is relevant - when the user turns the setting
+  on, not on first launch. A cold prompt for an app the user has not yet
+  understood is declined far more often, and a permanently-declined permission
+  cannot be re-asked.
+- When the user declines, set the setting back off. Leaving it reading as
+  enabled is the one outcome that guarantees the control is lying.
+- Where the platform does not gate the capability at all, the blocked branch is
+  unreachable on the available hardware. Say so and cover the *decision* with an
+  instrumented test rather than claiming the blocked state was observed.
+
 ## Writers must reach durable storage
 
 A writer landing in an in-memory map is a writer that does not exist: the value
@@ -139,8 +160,28 @@ then report what is fixed and what is not.
 The tell is the user asking "what is next?" after a findings list: answering that
 with another prioritised list reads as not having listened. Once the question has
 been answered in list form, the useful reply is to build the top item and report
-the result. Repeated asking is a stronger signal than the first one - after the
-second time, stop ranking and start shipping.
+the result.
+
+Treat the second asking as a correction, not a prompt for a better list. A
+rephrased question is the user saying the previous answer did not land; answering
+it a third way is worse than answering it the first way, because it establishes
+that the answer is being produced without reference to whether it worked. After
+the second time there is only one correct shape: state the single highest-value
+item in a sentence, then do it and report what changed. No ranking, no options,
+no question at the end.
+
+Two failure shapes to avoid specifically. Offering alternatives and waiting -
+"do you want more features or the remaining rough edges polished?" - is the same
+stall in a more conversational dress, and it hands back a decision the user has
+already made by asking again. And re-ranking from scratch on each asking treats a
+repetition as new information when it is the opposite: it is evidence that the
+previous ranking was not acted on.
+
+When the autonomous work is genuinely exhausted, say so plainly and name what is
+blocked on the user - credentials, a signing key, a decision about scope. "I have
+nothing left that does not need your input, and here is exactly what that input
+is" is a real answer that ends the loop. Repeating a list as filler after the work
+runs out is the thing the repetition is complaining about.
 
 ## Gate only what nothing else covers
 

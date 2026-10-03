@@ -34,6 +34,19 @@ happens on one platform.
 
 - **A gate that needs a binary must build one first.** Otherwise it fails on
   first contact and gets ignored.
+- **A gate that fails on something already disclosed elsewhere is noise.** A
+  scanner that exits non-zero because a setting has no consumer, when every such
+  setting is already shown to the user as disabled with the reason named, turns
+  the job red for a finding that has already been handled. Narrow the exit
+  condition to the part that is genuinely undeliverable - a command advertised
+  but unable to run, because an agent would be told it is available and it would
+  do nothing - and keep the rest as reported output.
+- **Prefer a local check over a remote-fetching action.** The official
+  `gradle/actions/wrapper-validation` downloads the expected checksum from
+  services.gradle.org, so a runner without access to it fails before anything
+  compiles and takes the signed-release step with it. That is a supply-chain
+  nicety that became a single point of failure; a local archive listing over the
+  committed JAR is enough, because the build itself exercises the wrapper.
 - **Do not trust a green gate on the run that added it.** Read the step list to
   confirm each check actually executed rather than being skipped.
 - **A single-platform dev loop cannot see portability breakage.** Cross-target

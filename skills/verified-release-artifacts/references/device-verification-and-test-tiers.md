@@ -75,6 +75,44 @@ adb -s <serial> shell cat /sdcard/ui.xml | grep -o 'text="[^"]*"' | sort -u
 This catches both the crash case and the "renders blank / shows an error state"
 case, and unlike a screenshot it needs no vision step.
 
+### A simulated broadcast cannot test a protected one
+
+`am broadcast` cannot stand in for a protected system broadcast such as
+`BOOT_COMPLETED`. The platform refuses to deliver it to a backgrounded app, so
+the receiver simply never runs and the device proves nothing - even after a real
+`adb reboot`, because the app is not running at that point.
+
+The general lesson is worth more than the case: **confirm the instrument can go
+red before hunting the cause with it.** A run that produces *nothing at all* -
+no log line, no state change, no exception - means the signal never arrives, not
+that the code is quiet. One or two attempts at a silent method is a diagnostic;
+a third means the method is invalid. Keep adding log lines to a signal that
+never fires and you will spend the whole budget proving the harness is broken.
+
+Invoke the receiver directly in an instrumented test instead, and assert the
+decision it makes:
+
+```kotlin
+BootReceiver().onReceive(context, Intent(Intent.ACTION_BOOT_COMPLETED))
+// then assert on the state the receiver was supposed to change
+```
+
+That tests the part that can be wrong (does it honour the setting, does it avoid
+duplicating work, does it ignore an unrelated action) and it runs on the device
+in the normal test tier.
+
+A real reboot is not the fallback either: it is slow, and it still leaves you
+unable to assert anything without a log line you cannot rely on. Use it to
+confirm a shipped build behaves, not to develop the test.
+
+### Force-stop before believing any diagnostic
+
+A stale process reports the previous build's behaviour - including a defect you
+already fixed. Every hardware check that reads state should force-stop and
+relaunch first, and confirm the installed build is the one you just built
+(`dumpsys package` versionName, or the run's own version string) rather than
+assuming the install replaced what was running.
+
 ## Instrumentation in CI
 
 Emulator job, with KVM enabled or the emulator falls back to software and times
@@ -132,3 +170,25 @@ broken.
   database overlay.
 - Build a **debug** APK for stack traces when a release build yields only
   framework frames; R8 strips your app's frames entirely.
+
+## A correct command can be invisible on screen
+
+The wire and the screen are two different consumers. A command handled correctly
+at the backend can still show nothing, because the view caches what it read
+under a key that never changes.
+
+The signature: the IPC reply is correct, the engine state is correct, the screen
+shows the old value. The defect is in how the view is keyed or how often it
+re-reads - not in the command.
+
+- A frame counter or tick **derived from the data being displayed** never changes,
+  so the view never recomposes. It must increment monotonically on its own, from
+  whatever drives redraws.
+- Caching a read inside a `LaunchedEffect` keyed by the same value it reads makes
+  the cache permanent.
+- Reading the source directly in the composable body, keyed on a real tick, beats
+  caching it in an effect that has no reason to re-run.
+
+Verify the rendered result explicitly - screenshot the screen and read back what
+it says. A green backend test and a passing IPC probe both miss this entirely;
+it needs the render tier.

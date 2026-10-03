@@ -90,6 +90,33 @@ with `sh: 1: ./gradlew: not found`. Put the directory in the script itself:
 script: cd ScreenBuddy-Android && ./gradlew connectedDebugAndroidTest
 ```
 
+The reverse mistake is just as common: adding `cd ScreenBuddy-Android` to an
+ordinary `run:` step in a job whose `defaults.run.working-directory` is already
+that directory points at a path that does not exist from there, and the step fails
+on a path error that looks nothing like the real problem. Check the job defaults
+before writing a `cd`.
+
+## Validation steps that need the network
+
+An action that fetches an expected checksum or manifest from a remote service
+becomes a single point of failure: when the runner cannot reach it, the job dies
+before compiling anything and every later step is silently skipped - including
+the one that produces the release artifact.
+
+Prefer a local check. For a committed Gradle wrapper JAR, the build itself is the
+check that matters:
+
+```yaml
+- name: Check the wrapper JAR is a real archive
+  shell: bash
+  run: jar tf gradle/wrapper/gradle-wrapper.jar | head -5
+```
+
+Use a tool the runner image actually has. `jar` comes with the JDK set up by
+`setup-java`; `unzip` is absent from the Windows runner image and its absence
+reads as a corrupt archive. Confirm the replacement step works locally before
+pushing it - a validation step costs a full CI cycle per attempt.
+
 ## Exec bit lost on Windows
 
 `gradlew` committed as mode `100644` makes every `./gradlew` step die with exit

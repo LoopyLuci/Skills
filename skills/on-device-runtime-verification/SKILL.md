@@ -18,8 +18,10 @@ at the far end: bytes on a socket, an entry in a device log, a pixel in a
 screenshot.
 
 This skill covers setting up that observation harness. For auditing whether a
-surface has a consumer at all, see `references/declared-vs-consumed.md`. For
-pointing a handset at a recorder and reading replies back, see
+surface has a consumer at all, see `references/declared-vs-consumed.md` - which
+also covers the permission-declared-but-never-requested class and the rule that a
+repeated "what next?" means build the top item, not re-rank. For pointing a
+handset at a recorder and reading replies back, see
 `references/device-recorder-harness.md`. For wiring that audit into CI so drift
 fails a build, see `references/audits-as-ci-gates.md`. For checking and trusting
 what the remote pipeline actually did, see `references/remote-ci-state.md`. For
@@ -42,6 +44,9 @@ Lead with what changed and what was verified. State limits plainly, including
 anything the check could not cover, rather than letting a clean count imply more
 than it does. A "0 unconsumed" result means no surface is lying to the user, not
 that the product is finished - say so, because the distinction is the honest one.
+The same applies to a green audit generally: it is evidence about declared
+surfaces, not a completeness claim, and an engine with no sound files or a
+permission prompt that was never written still satisfies it.
 
 ## Procedure
 
