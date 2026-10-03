@@ -115,6 +115,51 @@ was run on that platform. `cargo build` on Windows is not a test of it.
   `--upstream-timeout-ms`. Found only after the lib/bin split removed
   `#![allow(dead_code)]`.
 
+## Two gaps found by probing the header, not the code
+
+Reading the resolver found nothing in these two places; a sweep of header fields
+did. Both produced a **correct-looking response with the AD bit set**, which is
+the worst kind of bug for a validating resolver: the answer looked verified.
+
+**No opcode validation existed at all.** Every opcode was resolved as QUERY:
+
+```
+sent opcode=2 (STATUS) -> rcode=0, 701-byte answer, AD=1
+sent opcode=15         -> rcode=0, 701-byte answer, AD=1
+```
+
+UPDATE is the dangerous case: a client could believe a record had been changed.
+RFC 1035 4.1.1 requires NOTIMP, with the opcode **echoed** so the client can tell
+which outstanding request was rejected.
+
+**QCLASS was mixed into the cache key but never validated.** So CHAOS was
+forwarded upstream as IN:
+
+```
+version.bind class=3 (CHAOS) -> rcode=0, 1031 bytes, 6 authority records, AD=1
+example.com  class=3          -> the validated IN answer, verbatim
+```
+
+A recursive server answers only for IN. The lesson generalises: **a field being
+present in a hash key is not the same as it being checked.**
+
+## Unit tests cannot prove enforcement
+
+The first opcode test called `build_response` directly. It passed. Removing the
+*entire* kernel check that enforces NOTIMP left it **green**, because
+`build_response` never enforced anything -- it just formats. Mutation testing
+caught this immediately.
+
+Rules that follow:
+- A test of a *formatter* is not a test of a *decision*. Drive the kernel.
+- If mutating the code under test does not fail the test, the test is decorative.
+- Check first whether the enforcement already existed elsewhere. The QR-set check
+  was already in `Query::parse` (`NotAQuery`), so a kernel check for it was dead
+  code; and asserting on the kernel instead of the parser would have passed for
+  the wrong reason.
+- When a test fails with a confusing number, suspect the test. `flags >> 11`
+  yielded `17` (QR|rcode), not the opcode; the fix was masking `0x7800`.
+
 ## Test traps in this codebase
 
 - `ttl::for_each_section(msg, start, count, f)`: `start` is **how many records to
