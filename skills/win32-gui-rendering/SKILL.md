@@ -35,6 +35,9 @@ silent — everything looks fine until you look at the pixels.
   live / read-only-mirror / inert classification and the CI scan that keeps it
   honest (same reference)
 - A list of "things not wired up yet" that you suspect is wrong
+- Auditing whether a declared surface is consumed at all — settings keys, MCP
+  tools, IPC commands — and turning the result into a CI gate
+  (see [references/inert-surface-audits.md](references/inert-surface-audits.md))
 
 ## Always-on rules
 
@@ -93,6 +96,16 @@ silent — everything looks fine until you look at the pixels.
   turn the result into a CI gate). Listing your findings as "not wired up yet"
   is a claim about code you have not checked, and it is often wrong: check for
   written-but-never-read settings before calling anything inert.
+- **An audit built by parsing source can report PASS while being broken.** A
+  clean audit result is only evidence if the audit found what it claims to look
+  for, so make the parser prove itself and print the picture it derived. Two
+  specific traps: slicing a Rust enum up to the *next* `pub enum` swallows
+  everything between them (so the real variants vanish and a neighbouring enum's
+  appear instead), and a serde `rename_all = "snake_case"` wire name never string-
+  equals the PascalCase variant (`nine_router_status` != `NineRouterStatus`), so
+  every item reads as unknown. Both produced a total false PASS here. Have the
+  audit print counts and the full name lists per category, and sanity-check them
+  against something you already know is true before believing a clean run.
 - **Verify the far end, not the near end.** Rendering correctly, persisting
   without error, and returning `Ok(())`/`{"queued": true}` are all evidence about
   the code you just wrote, not about the feature. For anything that crosses a
@@ -100,6 +113,17 @@ silent — everything looks fine until you look at the pixels.
   an observable at the destination (a value in a live readback, a log line, a
   pixel), and if the boundary is a queue, poll for the effect rather than
   trusting the ack.
+- **Write the destination probe before reporting the source done.** Asking "what
+  are the optimal next steps?" right after a feature lands will surface whether
+  anything consumes it, and it is cheaper to find out before the user does. The
+  probe is also the only thing that survives as a regression test for the
+  wiring, which unit tests of the producer never are. If a cross-boundary
+  feature cannot be probed, say so explicitly rather than describing the
+  boundary as if it were verified.
+- **Test-only hooks must not be `#[cfg(test)]` in a library used by another
+  crate's tests.** The attribute applies only within its own crate, so the
+  consuming test binary sees nothing. Use `#[doc(hidden)] pub` and document it
+  as not part of the user-facing API, or gate the *callers* instead.
 
 ## Layout
 
