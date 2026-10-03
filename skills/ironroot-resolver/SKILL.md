@@ -171,6 +171,31 @@ fault stays visible. Give up on a bound number of consecutive errors rather than
 spinning forever. `ConnectionReset`, `Interrupted`, `WouldBlock` and `TimedOut` are all
 recoverable; anything else is a genuine fault.
 
+## BPF: the verifier tests the object, not the loader
+
+`verify-bpf.sh` rebuilds the BPF *object* from the Windows tree every run. The
+*loader* that actually executes it lives inside the initramfs at
+`/home/ironroot/vm/root_base/loader` and is **not** rebuilt. Days of edits to
+`vm/load.c` were silently untested, and the gate kept reporting the same error the
+whole time. After touching `load.c`:
+
+```
+cp vm/load.c ~/vm/ && cd ~/vm && gcc -O2 -static -o load load.c && cp load root_base/loader
+```
+
+Three bugs lived in that untested file. A `call` immediate is a **signed instruction
+distance from the calling instruction**, not a byte offset and not a file offset — the
+old code wrote `symbol value + section file offset`, which is short by the program's own
+start offset and puts `.text.unlikely.` outside the program entirely
+("call to invalid destination"). Code in another section must be **copied into** the
+program array, since a BPF program is one contiguous block. And `insn_cnt` has to count
+the appended code, or the destinations exist outside the submitted range and produce the
+*same* error — which is what made the second bug hard to spot.
+
+Always print the value actually submitted, not the variable that happens to be nearby.
+A diagnostic reading a stale variable is worse than none: it reports a plausible number
+and hides the effect of the change.
+
 ## Never test against a stale binary
 
 A temporary debug line failed to compile, so the "fix worked" run actually exercised
