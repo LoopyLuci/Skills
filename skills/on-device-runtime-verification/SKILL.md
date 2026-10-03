@@ -18,7 +18,9 @@ at the far end: bytes on a socket, an entry in a device log, a pixel in a
 screenshot.
 
 This skill covers setting up that observation harness. For auditing whether a
-surface has a consumer at all, see `references/declared-vs-consumed.md`.
+surface has a consumer at all, see `references/declared-vs-consumed.md`. For
+wiring that audit into CI so drift fails a build, see
+`references/audits-as-ci-gates.md`.
 
 ## When to Use
 
