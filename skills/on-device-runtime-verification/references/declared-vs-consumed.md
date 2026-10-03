@@ -36,8 +36,46 @@ The first version of a scanner reports everything healthy. Expect these:
   route handlers typically parse and delegate; the command list and handlers
   live in a separate registration object. Reading the forwarder yields "zero
   commands" and looks like a result.
+- **Accessor-only reads.** A consumer that reaches the field through a derived
+  method is invisible to a literal name search, so a live setting reports as
+  dead. Match the field name *or* a method derived from it.
+- **A duplicate registration.** Two handlers for one command name means the
+  second silently replaced the first, losing whatever the first returned. The
+  tell is a count that disagrees between the declared list and the registered
+  set - chase that discrepancy rather than rounding it off.
 - **Assert your parser against ground truth** before trusting output: count what
   it found and check one name you already know is there.
+
+## Inert usually means a feature is missing, not a wire
+
+Before offering to wire a gap, establish what kind of work it is. A setting whose
+capability has no implementation at all - no boot receiver, no notification
+channel, no sound engine - cannot be connected to anything. Those need building,
+and they are the items worth surfacing as scope rather than quietly skipping.
+
+Take the labels off only after the behaviour exists: the label is a claim about
+the code, so it follows the code, never precedes it.
+
+## Check the extent of a gap before scoping it
+
+The costliest pattern here is calling a gap one feature when one step of reading
+the code would have said otherwise. Two mistakes from one session, both mine:
+
+- Reported the mobile client was missing a provider the desktop had. It had it on
+  both; the desktop was the one omitting it from its selectable list. The proposed
+  work would have built what already existed.
+- Called a set of settings "behind" and scoped them as wiring. Reading the code
+  showed the capability was absent entirely, so each was a feature to build, not
+  a line to connect.
+
+The distinction is the deliverable, so state it explicitly: "the control cannot
+select a provider the engine supports" is wiring; "there is no boot receiver at
+all" is a feature. Reporting either as "settings that do not work" hides which
+one you are asking to build.
+
+The same applies to the audit's own reach: an inert surface on one client says
+nothing about the other, and a count of zero from a scanner that never looked at a
+directory is a finding about the scanner, not the app.
 
 ## Writers must reach durable storage
 
@@ -101,7 +139,15 @@ then report what is fixed and what is not.
 The tell is the user asking "what is next?" after a findings list: answering that
 with another prioritised list reads as not having listened. Once the question has
 been answered in list form, the useful reply is to build the top item and report
-the result.
+the result. Repeated asking is a stronger signal than the first one - after the
+second time, stop ranking and start shipping.
+
+## Gate only what nothing else covers
+
+A CI gate that fires for a finding the UI already discloses is noise, and noise
+trains people to ignore the gate. Fail on what no other report catches: a
+command advertised but unable to run, a declared list that disagrees with the
+code. Report the rest and exit zero.
 
 Whatever stays unfixed gets labelled in the UI with the missing capability named
 ("no animation system in the UI", "TTS is the only audio output") rather than a

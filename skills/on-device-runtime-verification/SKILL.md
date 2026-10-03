@@ -21,7 +21,10 @@ This skill covers setting up that observation harness. For auditing whether a
 surface has a consumer at all, see `references/declared-vs-consumed.md`. For
 pointing a handset at a recorder and reading replies back, see
 `references/device-recorder-harness.md`. For wiring that audit into CI so drift
-fails a build, see `references/audits-as-ci-gates.md`.
+fails a build, see `references/audits-as-ci-gates.md`. For checking and trusting
+what the remote pipeline actually did, see `references/remote-ci-state.md`. For
+the Kotlin/Compose compile errors that cost a build cycle each, see
+`references/kotlin-compose-api-errors.md`.
 
 ## When to Use
 
@@ -32,6 +35,13 @@ fails a build, see `references/audits-as-ci-gates.md`.
 
 Do not use it for pure logic with no runtime surface: that is ordinary unit
 testing, and reaching for a device there is wasted time.
+
+## Reporting
+
+Lead with what changed and what was verified. State limits plainly, including
+anything the check could not cover, rather than letting a clean count imply more
+than it does. A "0 unconsumed" result means no surface is lying to the user, not
+that the product is finished - say so, because the distinction is the honest one.
 
 ## Procedure
 
@@ -79,7 +89,27 @@ testing, and reaching for a device there is wasted time.
 - **Finish the job in the same pass.** An audit that ends in a list of next steps
   reads as stalling. Fix what it found, then report what is fixed and what is not
   - and when the answer to "what is next?" is already known, build the top item
-  rather than re-prioritising it.
+  rather than re-prioritising it. A repeated question is a stronger signal than
+  the first: after the second, stop ranking entirely and ship, and lead the reply
+  with what you did rather than the list you did not need to give.
+- **Silence from a device is evidence about the harness first.** Confirm logcat
+  works, the app launches, and the component is registered before concluding the
+  code is at fault. `am start -W` reports a misleading component error even for
+  a registered, launchable activity, so read the whole output rather than its
+  first line.
+- **A protected broadcast cannot be simulated.** `am broadcast` will not deliver
+  a system action such as boot, and a real reboot that produces no log says
+  nothing about the receiver. Test the decision instead: instantiate the
+  component directly in an instrumented test and assert the branch it takes.
+- **A framework handle can be absent.** `goAsync()` returns null when nothing is
+  driving a receiver, and the resulting null dereference lands on a worker thread
+  where no log will ever show it. Guard the handle and run the work inline when
+  it is missing, which also makes the component directly testable.
+- **A recomposition key derived from what it renders never changes.** An overlay
+  keyed on a value computed from the data it displays never re-reads, so the
+  command reports success and the screen shows the old state. Drive rendering
+  from a real monotonic counter, and confirm the change by reading the captured
+  screen back.
 
 ## Durable success signals
 
