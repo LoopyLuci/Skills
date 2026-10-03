@@ -115,6 +115,55 @@ was run on that platform. `cargo build` on Windows is not a test of it.
   `--upstream-timeout-ms`. Found only after the lib/bin split removed
   `#![allow(dead_code)]`.
 
+## Sweep the corpus; don't assert a hand-written list
+
+`ironroot/src/bin/differential-corpus.rs` compares 121 questions against a reference
+and reports **every** disagreement. Run it before concluding a resolver behaves.
+
+Five comparison traps, each producing false positives before being fixed:
+
+- **Never compare AD with the reference.** A validating resolver is *required* to set
+  AD (RFC 4035 3.2.3) and public resolvers do not echo it. Only "never AD on a
+  failure" is a real invariant.
+- **Record contents are not comparable.** Anycast and round-robin return a different
+  address subset per query -- `reddit.com` gave five addresses at the reference, two
+  here, both correct. Compare **names and types**.
+- **The CNAME chain below the queried name may differ.** The reference chased Fastly,
+  we chased Akamai. Compare only records owned by the queried name.
+- **A cold cache exceeds the per-query timeout.** Retry once; report as latency, not
+  correctness.
+- **A public reference throttles a fast loop.** Pace it, and stop after three
+  consecutive reference misses instead of reporting the rest as failures.
+
+## DNSSEC verdicts: absence of evidence is not forgery
+
+The two worst bugs were verdict-mapping errors, in **different code paths**:
+
+| Situation | Correct | Was |
+|---|---|---|
+| Unsigned zone, answer has no RRSIG | Insecure | `Err` -> SERVFAIL |
+| Unsigned zone, NODATA with no SOA | Insecure | `Ok(Some(Bogus))` -> SERVFAIL |
+
+`Missing SOA record for NODATA` is only a violation in a **signed** zone. In an
+unsigned zone the server is not obliged to send one. `github.com` publishes no DS, so
+both its plain answers and its NODATA answers were refused -- one of the most-visited
+names on the Internet.
+
+The guard stays narrow: **zero RRSIG records anywhere** means Insecure. Anything
+carrying signatures that fails to parse still fails closed. Fix one arm and check the
+other -- the first fix did not cover the second.
+
+**Mutation-test every verdict fix.** Reverting the Bogus-path fix left the suite green
+until unsigned-NODATA coverage existed.
+
+### Distinguish a broken zone from a resolver bug
+
+A sweep flagged `go.dns.pl` as SERVFAIL. Chasing it: `dns.pl` publishes a DS but
+serves no DNSKEY -- an unsigned island -- and Google and Cloudflare SERVFAIL on it
+too. Ironroot answers `dns.pl` with **AD=1**, more strictly than either. Broken zone,
+not a bug; SERVFAIL was right. Check whether independent references fail the same way
+before "fixing" anything.
+
 ## Two gaps found by probing the header, not the code
 
 Reading the resolver found nothing in these two places; a sweep of header fields
