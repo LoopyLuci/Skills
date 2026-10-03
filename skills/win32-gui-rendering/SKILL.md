@@ -65,9 +65,22 @@ silent — everything looks fine until you look at the pixels.
 - **A handler that returns `Ok(())` proves only that it ran.** Every OS
   registration — tray icon, hotkey, hook, clipboard listener — must be checked by
   the OS's own acknowledgement, and `start()` must propagate that rather than
-  assuming success. See [System tray](#system-tray-lifecycle).
+  assuming success. The same applies to any command queued for another thread:
+  `{"queued": true}` is the *normal* response for an accepted control request, so
+  it distinguishes nothing. Poll for the observable effect it was supposed to
+  cause — the value in the snapshot, the row in the list, the line in the log —
+  and treat the ack as merely proof the request was received.
+  See [System tray](#system-tray-lifecycle).
 - **A `break` inside a `match` inside a `for` leaves only the match.** Loops
   driven by event handlers need a flag set in the arm and tested after the loop.
+- **A config screen that saves is not a feature.** Before reporting one done,
+  grep each field for a reader outside its own definition and the window that
+  edits it; zero readers means every control is a no-op however well it renders.
+  Check the two usual shapes by name: a runtime whose config is fixed at
+  construction (`new()` + `AgentConfig::default()`), and a window holding a
+  *copy* of the data instead of a reference to the live store. Details and the
+  swappable-runtime recipe in
+  [references/settings-editor-model.md](references/settings-editor-model.md).
 
 ## Layout
 
