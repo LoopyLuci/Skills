@@ -154,6 +154,34 @@ limits as resolver failures, and each read convincingly like a resolver bug.
 Before believing a "resolver failure", ask what the harness was doing when it happened.
 A timeout and a rejection are both harness-shaped.
 
+## A Windows socket error is not a fatal one
+
+`recv_from(&mut buf).await?` in the UDP accept loop removed the listener on the first
+recoverable error. Windows reports `WSAECONNRESET` (10054) on `recv_from` after an ICMP
+port-unreachable from an earlier send -- routine, and caused by any client that
+vanishes between our reply and its retransmit.
+
+The symptom is deceptive: the process is alive and still holds the socket, so health
+checks pass, but nothing is answered any more. It showed up as the corpus sweep
+agreeing on 80 of 121 questions and then reporting "no bytes back" for every
+remainder -- which reads as rate limiting, not a dead listener.
+
+Count transient errors and continue; log the first and every hundredth so a persistent
+fault stays visible. Give up on a bound number of consecutive errors rather than
+spinning forever. `ConnectionReset`, `Interrupted`, `WouldBlock` and `TimedOut` are all
+recoverable; anything else is a genuine fault.
+
+## Never test against a stale binary
+
+A temporary debug line failed to compile, so the "fix worked" run actually exercised
+the previous artifact and reported a pass. `cargo build` returning non-zero is not an
+optional detail: check the exit status before believing any result from a rebuilt
+binary, and prefer a mutation that must *fail* to a test that must pass -- a green test
+that never ran proves nothing.
+
+The same trap when a mutation silently does not apply: assert the mutated text differs
+from the original before running anything, or the "detected" result is fiction.
+
 ## Gate wiring: a gate that cannot run must say so
 
 The corpus sweep was added to the `GATES` array but never dispatched. It printed
