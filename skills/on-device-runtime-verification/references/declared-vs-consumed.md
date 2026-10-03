@@ -63,3 +63,48 @@ that stops there:
 - **Wire shapes differ between providers.** A field name correct for an
   OpenAI-compatible endpoint may be ignored by another runtime, which expects it
   nested or renamed. Check the target's actual contract.
+
+## Ordering bugs the audit tends to expose
+
+Once a value has a real consumer, the next failures are in the wiring around it.
+These pass every test that only exercises the happy path:
+
+- **Filter-then-lookup.** Removing an entry from a collection and *then* searching
+  that same collection for it guarantees the lookup misses. Read the original
+  before filtering.
+- **A serializer that drops what the user just edited.** Writing only non-seeded
+  entries means an edit to a code-seeded entry is silently discarded on the next
+  read. Seeded entries need a written override.
+- **A protection flag cleared by its own filter.** Computing the replacement list
+  as `all.filterNot { it.id == id } + stored` *before* reading whether that entry
+  was protected turns a protected entry into an ordinary, deletable one.
+
+## Audit every client separately
+
+One codebase can carry a desktop and a mobile client whose consumers diverge
+completely, so one platform's audit says nothing about the other. Expect the
+less-examined client to be worse: the desktop here had 4 of 15 settings inert and
+the mobile client 13 of 17.
+
+## Generalise past settings
+
+The same three-way comparison applies to any declared vocabulary - an advertised
+command list, a tool registry, a plugin table. Report what is **advertised**,
+what is **registered**, and what the loop **handles**. A command accepted and
+queued but never handled is accepted-and-dropped.
+
+## The finding is not the deliverable
+
+An audit that ends in a report is half a job. Fix what it found in the same pass,
+then report what is fixed and what is not.
+
+The tell is the user asking "what is next?" after a findings list: answering that
+with another prioritised list reads as not having listened. Once the question has
+been answered in list form, the useful reply is to build the top item and report
+the result.
+
+Whatever stays unfixed gets labelled in the UI with the missing capability named
+("no animation system in the UI", "TTS is the only audio output") rather than a
+generic apology, so a reader can tell whether a setting waits on a permission, a
+service, or a feature nobody has built. A control that stores a value nothing
+reads is worse than one that admits it.

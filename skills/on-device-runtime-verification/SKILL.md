@@ -19,8 +19,9 @@ screenshot.
 
 This skill covers setting up that observation harness. For auditing whether a
 surface has a consumer at all, see `references/declared-vs-consumed.md`. For
-wiring that audit into CI so drift fails a build, see
-`references/audits-as-ci-gates.md`.
+pointing a handset at a recorder and reading replies back, see
+`references/device-recorder-harness.md`. For wiring that audit into CI so drift
+fails a build, see `references/audits-as-ci-gates.md`.
 
 ## When to Use
 
@@ -70,6 +71,15 @@ testing, and reaching for a device there is wasted time.
   turns a pass into a fail.
 - **Resolve platform tools from the SDK, not `PATH`.** A tool that works in a
   terminal you configured is not available to a script you run later.
+- **`10.0.2.2` is the emulator loopback, not the host.** On a physical handset use
+  `adb reverse` to forward a host port, or the request simply never arrives.
+- **Audit each client separately.** A desktop and a mobile client in one codebase
+  can have completely different consumers, so one platform's audit says nothing
+  about the other.
+- **Finish the job in the same pass.** An audit that ends in a list of next steps
+  reads as stalling. Fix what it found, then report what is fixed and what is not
+  - and when the answer to "what is next?" is already known, build the top item
+  rather than re-prioritising it.
 
 ## Durable success signals
 
