@@ -135,6 +135,39 @@ Five comparison traps, each producing false positives before being fixed:
 - **A public reference throttles a fast loop.** Pace it, and stop after three
   consecutive reference misses instead of reporting the rest as failures.
 
+## The harness must not measure itself
+
+Three separate defects all had the same shape: the gate or sweep reported its own
+limits as resolver failures, and each read convincingly like a resolver bug.
+
+- **The corpus sweep tripped the resolver's own rate limiter.** 121 questions in quick
+  succession from one client address exceed the default 100 qps / 200 burst, and the
+  rejections were counted as timeouts: 66/121 agreed, with 54 "no bytes back". The
+  resolver was throttling the test, not failing. Raise the limits for the harness
+  resolver only; production defaults are correct and stay tested.
+- **The sweep's 8s per-query timeout was measuring its own pacing**, not resolution
+  time. Four names timed out that resolve in 0.1-1.3s standalone. At 20s: 121/121.
+- **`cargo clean` never ran** because a bare `cargo` does not exist on this host, only
+  `cargo.exe`, so the gate meant to prevent inspecting a stale binary inspected a stale
+  binary.
+
+Before believing a "resolver failure", ask what the harness was doing when it happened.
+A timeout and a rejection are both harness-shaped.
+
+## Gate wiring: a gate that cannot run must say so
+
+The corpus sweep was added to the `GATES` array but never dispatched. It printed
+`unknown gate: corpus` and the run still reported "all gates passed". A gate that
+cannot run must fail, not skip quietly -- a silent skip is a green tick it did not earn.
+
+Related, all found the hard way: `A=x B=y` on one line is a single command taking `A` as
+its name, so **neither** variable is set. `--bin foo` builds only `foo`, leaving
+sibling binaries absent so later checks run against a missing file -- and a missing
+executable reads as a *passing* security check. `[ -f "X:/..." ]` is always false from a
+POSIX shell, so Windows-form paths silently miss files that exist; and guessing the
+POSIX form (`/X/...` rather than MSYS's `/mnt/x/...`) is worse than not converting,
+because an unverified guess looks like a real path.
+
 ## DNSSEC verdicts: absence of evidence is not forgery
 
 The two worst bugs were verdict-mapping errors, in **different code paths**:
