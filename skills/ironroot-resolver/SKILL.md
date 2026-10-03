@@ -160,6 +160,71 @@ Rules that follow:
 - When a test fails with a confusing number, suspect the test. `flags >> 11`
   yielded `17` (QR|rcode), not the opcode; the fix was masking `0x7800`.
 
+## Header fields that were never validated
+
+Four fields the pipeline either ignored or checked only incidentally. All four
+produced a correct-looking response with **AD=1**, which is the worst shape for a
+validating resolver. Found by sweeping header fields against the running binary,
+never by reading code:
+
+| Field | Was | Now |
+|---|---|---|
+| OPCODE | every opcode resolved as QUERY | NOTIMP, opcode echoed |
+| QCLASS | mixed into the cache key, never checked | REFUSED unless IN |
+| EDNS version | read out of the OPT TTL and discarded | BADVERS |
+| AXFR / IXFR | resolved as lookups -> SERVFAIL | REFUSED |
+
+SENTFAIL vs REFUSED matters for transfers: SERVFAIL means "retry later", so a
+transfer client retries forever against a server that will never comply.
+
+## RFC 6891 OPT TTL layout
+
+Counting from the **most significant** bit:
+
+```
+|EXTENDED RCODE (8)| VERSION (8) |DO|Z| RCODE (4)|
+```
+
+So the extended rcode is bits 31..24 and the version is bits 23..16. Writing
+BADVERS into bits 16..23 puts it in the VERSION field, so a client decodes your
+BADVERS as "EDNS version 16".
+
+## Four wrong versions of one test reader
+
+Proving the BADVERS fix took four attempts, and every failure looked like "the fix
+is broken" when the fix was fine. The last reader read ANCOUNT from bytes 4..6 --
+which is QDCOUNT -- so it saw ARCOUNT as 0 and returned `None` for every response,
+including a correct one.
+
+- **Dump the bytes.** Do not reason about offsets. `println!("{:02x?}", resp)`
+  plus a Python one-liner resolves in seconds what an hour of reading does not.
+- Header counts are QD 4..6, AN 6..8, NS 8..10, AR 10..12. Getting this wrong is
+  easy to read as "the three counts after the flags".
+- A helper returning `Option<u8>` where you expect a value will often be `None` for
+  a reason unrelated to the fix. Check which.
+
+## Windows reserved ports cause 1-in-4 flakes
+
+`bind()` on a port in the OS exclusion range returns **PermissionDenied** (10013),
+not `AddrInUse`:
+
+```
+cmd /c "netsh int ipv4 show excludedportrange protocol=tcp"
+```
+
+Roughly 1,700 ports are reserved for outbound use, and `bind("127.0.0.1:0")` can
+hand one back. The symptom is indirect: the resolver logs
+`TCP listener failed: ... 10013`, correctly keeps serving UDP, and a TCP test then
+fails with a connection refusal. It reads as resolver flakiness.
+
+- Test harnesses must retry on a port that will not bind -- **on any error**, since
+  Linux reports the same collision as `AddrInUse`.
+- Probe **both** transports before returning a port. A UDP-only probe picks numbers
+  TCP cannot use.
+- Never let a harness draw a conclusion from a single listener. `transport::run`
+  treats a failed listener as non-fatal by design, which is right in production and
+  wrong to assume in a test.
+
 ## Test traps in this codebase
 
 - `ttl::for_each_section(msg, start, count, f)`: `start` is **how many records to
