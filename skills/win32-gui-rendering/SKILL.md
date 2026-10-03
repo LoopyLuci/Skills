@@ -20,17 +20,41 @@ silent — everything looks fine until you look at the pixels.
 
 - Writing or debugging a window that draws itself via GDI in Rust
 - Text renders nowhere, or only some labels appear
+- A window renders pure white, or white boxes over the text
+- A window's controls land off-screen or float in the wrong place
+- A form's labels are missing even though the fields draw
 - A window screenshots as solid black and you cannot tell whether it is broken
 - Sibling windows share a title and you keep capturing the wrong one
 - GUI unit tests hang, or pass against code you know is wrong
 - A tray icon, context menu, or minimise-to-tray that compiles and reports
   success but does nothing when clicked
+- Building a settings/agent/profile editor: what to model first, and the
+  serialization rules that keep saved data readable (see
+  [references/settings-editor-model.md](references/settings-editor-model.md))
 
 ## Always-on rules
 
 - **Text and fills must share one surface.** `DrawTextW`/`TextOutW` write to a GDI
   device context; filling a `Vec<u32>` writes to your buffer. Different surfaces
   means every glyph lands somewhere the app never blits from.
+- **`SetBkMode(dc, TRANSPARENT)` before every text draw.** GDI's default fills an
+  opaque rectangle behind each string using the current background brush, so a dark
+  UI gets a white box painted over every label and field — legible only where the
+  box happens to match. It is per-DC state that resets between DCs, so set it in
+  the same helper that selects the font, not at each call site.
+- **`WM_PAINT` must call `BeginPaint`/`EndPaint`.** Without them the DC is invalid
+  and GDI **silently discards every drawing call** — no error, no entry in the
+  debug output, just an untouched window. This looks identical to a bug in your
+  draw code.
+- **Lay out against `GetClientRect`, never a height constant.** The created window
+  size includes the frame, so the client area is smaller; adding a guessed frame
+  constant (`WIN_HEIGHT + 80`) is worse still, because the guess is wrong on every
+  DPI setting and theme. Panels and footers anchored to a constant end up cropped
+  or floating mid-window.
+- **Paint panels back-to-front, and never draw content at an x a later panel
+  covers.** A sidebar painted *after* the body erases any body content drawn at the
+  sidebar's x range, which reads as "the labels never rendered" rather than as an
+  ordering mistake. Same for a title and a tab strip sharing an origin.
 - **Never conclude a window is broken from a black screenshot.** `GetWindowDC` +
   `GetDIBits` returns all-black for a window rendering perfectly. Use
   `PrintWindow(hwnd, mem_dc, 2)`.
@@ -47,10 +71,16 @@ silent — everything looks fine until you look at the pixels.
 
 ## Layout
 
-1. Paint into a `CreateDIBSection` (top-down: negative `biHeight`).
-2. `SelectObject` the DIB into a memory DC.
-3. Publish that DC on your window state, *then* run the layout code.
-4. `BitBlt` to the window DC once — drawing direct to the window flickers.
+1. `BeginPaint` for the DC you will blit to.
+2. Paint into a `CreateDIBSection` (top-down: negative `biHeight`).
+3. `SelectObject` the DIB into a memory DC.
+4. Publish that DC on your window state, *then* run the layout code.
+5. `BitBlt` to the paint DC once — drawing direct to the window flickers.
+6. `EndPaint`.
+
+Read the surface size from `GetClientRect` and pass it down; full-height fills
+guarantee no unpainted band, and it is what makes the footer land on the real
+bottom edge.
 
 ```rust
 let buf: &mut [u32] = std::slice::from_raw_parts_mut(raw as *mut u32, total);
@@ -74,8 +104,8 @@ grep -n "pub fn CreateFontW" -A 16 ~/.cargo/registry/src/*/winapi-0.3.*/src/um/w
   than casting at each call site — and check the helper doesn't call itself.
 - `CreateFontW`'s `fwWeight` is `i32`; `DEFAULT_CHARSET as u32` trips clippy as a
   no-op cast.
-- `GetBitmapDimensionEx(hbit: HBITMAP, lpsize: *mut SIZE)`. `SIZE` lives in
-  `shared::windef`, not `minwindef`.
+- `GetBitmapDimensionEx(hbit: HBITMAP, lpsize: *mut SIZE)`; see the type-name
+  section below for which module each handle lives in.
 - `CreateCompatibleBitmap` gave a surface reporting 0x0 dimensions on this host,
   and `DrawTextW` clips to the surface — so text silently vanished. Use
   `CreateDIBSection` for any DC you draw text into. Do not assert on
@@ -92,6 +122,24 @@ grep -n "pub fn CreateFontW" -A 16 ~/.cargo/registry/src/*/winapi-0.3.*/src/um/w
 - `GetFileType(...) == FILE_TYPE_CHAR` (not `!=`) decides whether stdin is a real
   terminal. Getting this backwards inverts every prompt-suppression check; it
   needs `std::os::windows::io::AsRawHandle`.
+
+## Building an editor window
+
+Three tabs beats one long form: a single scrolling list of twenty fields is how
+settings screens become unusable. Click-to-cycle suits enum choices; `-`/`+`
+steppers suit bounded numbers; reserve real text entry for name/model fields.
+Show the selected option's description so the choice is informed.
+
+Wire every control the layout draws. A panel that renders but registers no hit
+target is the classic dead-control bug, so assert that every tab produces at
+least one target, that Save is absent while the form is invalid, and that a
+read-only record offers Duplicate but not Delete. Show unsaved state persistently
+(a marker plus an enabled Revert) rather than only in a confirm-on-close dialog.
+
+Expose the editor's events to the app rather than letting it mutate state itself:
+saves and deletes go through the app's store so the same data is visible over IPC
+and MCP afterwards, and there is one implementation of id-uniqueness and
+validation.
 
 ## Asserting on pixels
 
@@ -116,6 +164,55 @@ Quick health check on a capture:
 |---|---|
 | 1 | nothing rendered |
 | 150+ | backgrounds, borders, antialiased glyphs all present |
+
+A distinct-colour count is a *floor*, not a pass. “41 distinct colours” is
+consistent with a correct window and also with white boxes stamped over every
+label. Assert on **regions**: for each panel you care about, count pixels
+differing from that region's modal (background) colour. A label column reading 0%
+inked means nothing was drawn there no matter how colourful the window is overall.
+
+### A capture that cannot be read proves nothing
+
+Validate the capture file before drawing conclusions from it. A BMP header packed
+via a `ctypes` struct gets padded to 8 bytes, so the offsets silently do not line
+up; the resulting "screenshot" decodes to nonsense dimensions and a 100%-white
+histogram, which reads exactly like a blank window. Write the headers with
+`struct.pack` and assert the decoded width/height match what you asked for. Also
+verify the dominant colours are the palette you specified — if you chose
+`#141212` for the background and the histogram says `#FFFFFF`, the window did not
+paint, whatever the colour count says.
+
+### Let vision, but do not depend on it
+
+Reading a screenshot with a vision model is the best check available, and it gets
+rate-limited (HTTP 429) on shared keys. Have a pixel-level fallback ready so
+verification degrades instead of stopping: region ink coverage, dominant-colour
+comparison, and size assertions. Report which you used, and when vision was
+unavailable say the visual assessment is unverified rather than implying you saw it.
+
+## Verifying a change that adds a command or setting
+
+A probe that launches the built binary and drives the new control path is worth
+more than any unit test, because it proves the wiring between socket, queue and
+handler. Two failure modes make such a probe lie to you:
+
+- **A stale binary reports the feature as missing.** Preferring a fixed path
+  (`target/release/app.exe`) runs yesterday's build, so a newly added handler looks
+  like it never runs. Select the **newest** binary by mtime:
+  `max([p for p in candidates if p.exists()], key=lambda p: p.stat().st_mtime)`.
+- **Reading state back through a shared snapshot picks up the previous step's
+  value.** Poll for the value you expect to be written (match on its id), not
+  merely for "something non-empty", or the assertions silently pass against
+  whatever landed earlier.
+
+Make the probe clean up after itself. Agents and settings created by a probe
+persist to the user's real store and make the *next* run fail on collisions, which
+reads as a product bug. Delete created ids on the way out, and sweep leftovers
+from prior runs at the start.
+
+Prefer reading the app's own stdout when a probe fails. `[Agents] Saved 'x' over
+IPC` distinguishes "the handler never ran" from "the handler ran and the readback
+path is wrong" — a distinction that unit tests cannot make.
 
 ## Unit-testing a GUI with no window
 
@@ -209,7 +306,16 @@ Set `user32.SetProcessDPIAware()` first or the capture comes back scaled.
 
 ## Rust/winapi type-name checks
 
-`RECT` and `HBITMAP` are in `shared::windef`, not `minwindef`; `SIZE` likewise.
-Colour constants need no `as u32` in recent winapi. Many pet/overlay windows in
-one app means the *class name* is the only reliable selector — match
-`"AppMain"` rather than the window title, which siblings share.
+- `RECT`, `SIZE`, `HDC`, `HFONT`, `HBRUSH` and `HBITMAP` are all in
+  `shared::windef`. `shared::minwindef` holds only the scalar typedefs (`UINT`,
+  `DWORD`, …), so an `HDC`/`HFONT` import from `minwindef` does not resolve — this
+  costs a build cycle each time, so write `windef` for handles outright.
+- `GetModuleHandleW` is in `um::libloaderapi`, not `um::winuser`.
+- `WNDCLASSW.hbrBackground` is `HBRUSH`; the `(COLOR_WINDOW + 1) as usize as HBRUSH`
+  idiom avoids importing `GetStockObject` at all.
+- `GET_X_LPARAM` / `GET_Y_LPARAM` live behind the `windowsx` cargo feature. Do not
+  add a feature flag for two shifts and masks — `let p = lparam as u32;`
+  then `(p & 0xFFFF)` / `(p >> 16)` is clearer and dependency-free.
+- Colour constants need no `as u32` in recent winapi. Many pet/overlay windows in
+  one app means the *class name* is the only reliable selector — match
+  `"AppMain"` rather than the window title, which siblings share.
