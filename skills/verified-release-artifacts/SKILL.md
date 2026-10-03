@@ -125,6 +125,23 @@ plainly in the release notes which commit the binaries came from and that the fi
 landed after. When the post-tag fixes are test- or CI-only, state that
 explicitly so nobody thinks the published binaries changed.
 
+### Check remote state immediately before reporting, not just before pushing
+
+The gap between the last push and the report is where a stale "green" claim
+survives. A release cut while a workflow had been failing for several commits is
+still a bad release, and the user finds out from CI rather than from you.
+
+The ordering matters: check `gh run list` *after* the last commit lands and
+*before* writing the report. A workflow that failed on an earlier commit of the
+same work is the same defect as one failing now - it was never green, so the
+claim was never true.
+
+Where a workflow failed for an infrastructure reason rather than a code defect,
+say that explicitly and separately from code health, and say whether the fix is
+verified or only attempted. Both Android runs here failed on a network timeout in
+a third-party validation action while every local test passed; reporting that as
+"all green" would have been false in the way that matters.
+
 ## Gate the project the way CI does
 
 Run the exact commands the CI workflow runs, at the same strictness. Locally
