@@ -120,10 +120,25 @@ silent — everything looks fine until you look at the pixels.
   wiring, which unit tests of the producer never are. If a cross-boundary
   feature cannot be probed, say so explicitly rather than describing the
   boundary as if it were verified.
+- **"What is next?" asked twice is a command, not a question.** Answering it with
+  a re-ranked list the second time reads as stalling, and it burns the turn the
+  user spent to find out whether the work is real. When the same question comes
+  back after you already answered it, pick the highest-value item yourself and
+  build it; report what changed afterwards. Reserve the list for the first ask.
+  The same applies to "proceed", "properly proceed with all" and "optimally":
+  they mean act on the whole scope now, not plan it again.
 - **Test-only hooks must not be `#[cfg(test)]` in a library used by another
   crate's tests.** The attribute applies only within its own crate, so the
   consuming test binary sees nothing. Use `#[doc(hidden)] pub` and document it
   as not part of the user-facing API, or gate the *callers* instead.
+- **`#[cfg(windows)]` on an implementation does not gate its tests or its
+  imports.** Tests calling a cfg-gated helper still compile on every target, so
+  `cargo test --lib` fails on Linux/macOS while a Windows build stays green; and
+  `use x::{self, ...}` names `self` on every platform, so a `-D warnings` build
+  off Windows fails on an import only the Windows path uses. Gate the tests with
+  the same attribute as the code they exercise rather than deleting them, and
+  split the import. A Windows-only dev loop cannot see either failure, so a
+  green local suite is evidence about Windows only.
 
 ## Layout
 
@@ -178,6 +193,42 @@ grep -n "pub fn CreateFontW" -A 16 ~/.cargo/registry/src/*/winapi-0.3.*/src/um/w
 - `GetFileType(...) == FILE_TYPE_CHAR` (not `!=`) decides whether stdin is a real
   terminal. Getting this backwards inverts every prompt-suppression check; it
   needs `std::os::windows::io::AsRawHandle`.
+
+## Making a window property a real setting
+
+A style or alpha value hardcoded at `CreateWindowExW` makes its setting a no-op:
+there is no path from the toggle to the existing window. Three rules when a
+setting must reach a live window.
+
+- **Read the setting where the window is created**, not once at startup, and pass
+  the resulting style in as a parameter. Reading it once and threading it as a
+  parameter is what makes the call site honest about its dependency.
+- **One window kind is not another.** `replace_all` over a duplicated creation
+  block also rewrites the chat/main window, which legitimately keeps its own
+  topmost. Patch by unique surrounding context, or scope the edit to the
+  function, or you will make the *other* window wrong while fixing this one.
+- **Cache the last applied value and act only on change.** Applying
+  `SetLayeredWindowAttributes` or `SetWindowPos` every frame fights the window
+  manager and costs needless work; the app also stutters. Compare against a
+  tracked `applied` value.
+
+Properties and their calls:
+
+| Setting | Creation | Live change |
+|---|---|---|
+| always-on-top | omit `WS_EX_TOPMOST` from `ex_style` | `SetWindowPos` with `HWND_TOPMOST`/`HWND_NOTOPMOST` + `SWP_NOMOVE\|SWP_NOSIZE\|SWP_NOACTIVATE` |
+| transparency | window must be `WS_EX_LAYERED` | `SetLayeredWindowAttributes(hwnd, 0, alpha, LWA_ALPHA)` |
+
+Give transparency a **floor** (clamp to something like `0.05`): a settings store
+that accepts `0` must not be able to make a window the user cannot see.
+
+Handle types for these two calls are a common build-cycle sink: `SetWindowPos`
+and `SetLayeredWindowAttributes` want `*mut HWND__`, which `DECLARE_HANDLE!` puts
+in `shared::windef`, while `winuser::HWND` is a *private* alias. A `*mut c_void`
+handle needs `as *mut winapi::shared::windef::HWND__`, and there is no
+dereference — `*hwnd as *mut ...`, not `*hwnd as *mut ...` of a deref.
+`WS_EX_TOPMOST` is `DWORD` from `shared::minwindef`, and `COLORREF` is a type
+alias, so `0 as COLORREF` rather than a tuple-struct call.
 
 ## Building an editor window
 
@@ -362,10 +413,23 @@ Set `user32.SetProcessDPIAware()` first or the capture comes back scaled.
 
 ## Rust/winapi type-name checks
 
+Grep the bindings when a call will not typecheck; each of the following cost a
+build cycle, and none is guessable from the signature.
+
 - `RECT`, `SIZE`, `HDC`, `HFONT`, `HBRUSH` and `HBITMAP` are all in
   `shared::windef`. `shared::minwindef` holds only the scalar typedefs (`UINT`,
   `DWORD`, …), so an `HDC`/`HFONT` import from `minwindef` does not resolve — this
   costs a build cycle each time, so write `windef` for handles outright.
+- `HWND` is a **private** alias, and `winuser::HWND__` does not exist:
+  `DECLARE_HANDLE!{HWND, HWND__}` puts the struct in `shared::windef`. Functions
+  taking `*mut HWND__` (as `SetWindowPos` and `SetLayeredWindowAttributes` do) need
+  `x as *mut winapi::shared::windef::HWND__` from a `*mut c_void`. There is no
+  dereference: `*h as *mut T`, not `*h as *mut *mut T`.
+- `WINDOW_EX_STYLE` is not a name in winapi 0.3.9; an extended style is
+  `shared::minwindef::DWORD`, and `WS_EX_TOPMOST` is declared as one.
+- `COLORREF` is a **type alias**, not a tuple struct, so `COLORREF(0)` does not
+  compile — write `0 as winapi::shared::windef::COLORREF`. `wingdi` re-exports it
+  privately, so importing from there fails too.
 - `GetModuleHandleW` is in `um::libloaderapi`, not `um::winuser`.
 - `WNDCLASSW.hbrBackground` is `HBRUSH`; the `(COLOR_WINDOW + 1) as usize as HBRUSH`
   idiom avoids importing `GetStockObject` at all.
@@ -375,3 +439,24 @@ Set `user32.SetProcessDPIAware()` first or the capture comes back scaled.
 - Colour constants need no `as u32` in recent winapi. Many pet/overlay windows in
   one app means the *class name* is the only reliable selector — match
   `"AppMain"` rather than the window title, which siblings share.
+
+## Per-category audio needs a sink per sound
+
+A single shared `rodio::Sink` carries **one** volume, so `master * sfx` for every
+sound makes a music bus structurally unreachable — the setting reads back, saves,
+and changes nothing. Give each playback its own child sink of the mixer, compute
+`master * category_bus * sound_own_level` at play time, then `detach()` so it
+survives the local scope.
+
+rodio 0.17 specifics, each a compile error otherwise: there is no
+`Sink::new(&sink)` and no `Sink::mixer()` — build from a stream handle with
+`rodio::Sink::try_new(&handle)`, and get the handle from
+`rodio::OutputStream::try_default()` which returns `(OutputStream,
+OutputStreamHandle)`. **Store the handle on the struct**: sinks attach to it, so
+dropping it silences playback, and opening an output device per sound is slow
+and fails on a busy device. Gate the whole thing behind a cached `Option<...>`.
+
+Test the bus arithmetic as a pure function of `(config, category)` rather than
+through playback, and see
+[references/audio-bus-and-runtime-property-settings.md](references/audio-bus-and-runtime-property-settings.md)
+for the rodio 0.17 API and the general "single application point" shape.
