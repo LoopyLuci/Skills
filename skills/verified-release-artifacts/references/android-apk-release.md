@@ -223,3 +223,77 @@ plaintext passwords.
 `versionName` in `defaultConfig` and the release tag drift independently. The
 APK being `1.0.0` while the desktop binary is `0.1.0` is a real release defect
 even when both build fine — surface it rather than silently picking one.
+
+## Kotlin pitfalls that cost a build cycle each
+
+**`when { ... } ?: return false` binds the elvis to the final branch only.** The
+parser reads it as part of the last arm, so the null check does not apply to the
+whole expression and the compiler rejects the result type. Bind first, check
+after:
+
+```kotlin
+val chosen: ((S) -> S)? = when (key) { /* ... */ else -> null }
+val transform = chosen ?: return false
+```
+
+**Platform-typed values reject direct constructor calls.** `Context.filesDir` is
+`File!`, so `File(context.filesDir)` fails to resolve. Name it explicitly and
+provide a fallback:
+
+```kotlin
+val dir: File = app.filesDir ?: File(app.cacheDir, "agents")
+```
+
+**An inline annotated lambda types poorly** inside a `when` arm. `asBoolean()?.let { v -> { s: S -> s.copy(x = v) } }` infers as a nullable function type and fails against the expected type. Use an unannotated `let` block whose parameter type is inferred.
+
+**Narrowing a wildcard import silently removes symbols.** Replacing
+`import androidx.compose.runtime.*` with `import androidx.compose.runtime.Composable`
+to add one import drops `remember`, `mutableStateOf` and `LaunchedEffect`, and the
+errors point at every usage rather than the import. Add to the wildcard, never
+narrow it.
+
+**Patch helpers that match text insert duplicates.** Replacing a bare anchor like
+`#[test]` matches once per occurrence and lands the block in several places; the
+failure is `name defined multiple times`. Prefer unique multi-line context, and
+when a block is inserted N times, slice it out with a script and keep one copy.
+
+## Test JVM classes without dragging in an Android runtime
+
+A class that only reads and writes files does not need Robolectric, and adding
+it to test one such class is a poor trade. Make the storage location injectable
+and test on a plain JVM:
+
+```kotlin
+class AgentProfileStore(private val directory: File) {
+    companion object {
+        fun inAppFiles(context: Context) = AgentProfileStore(File(context.filesDir))
+    }
+}
+```
+
+Pair with `org.junit.rules.TemporaryFolder` in the test. Keep the factory for
+production call sites so the location stays explicit.
+
+## Compose will not redraw from a key that never changes
+
+If a view shows a value the backend already updated correctly, suspect how the
+view is keyed rather than the backend. A tick or frame counter computed **from the
+data being displayed** never changes, so the composable never recomposes and the
+correct value never appears on screen:
+
+```kotlin
+// Broken: derived from engine state, so it never increments.
+tick = engine.all().size.toLong() + engine.elapsed.toLong()
+
+// Correct: increments from the thing that drives redraws.
+var frame by remember { mutableLongStateOf(0L) }
+LaunchedEffect(Unit) { while (true) { engine.step(dt); frame++; delay(period) } }
+```
+
+The same trap applies to caching a read inside a `LaunchedEffect` keyed by the
+value being read — the cache is then permanent. Read the source during composition
+and key the `remember` on the monotonic counter.
+
+This class passes every backend test and every IPC probe, because the defect is
+purely in the render tier. Confirm it by reading back a screenshot after a
+command, not by trusting the reply.

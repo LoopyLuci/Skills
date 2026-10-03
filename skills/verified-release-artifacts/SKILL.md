@@ -238,9 +238,30 @@ with the evidence already gathered, **do that item** rather than returning a
 ranked list. A repeated question is not a request for a re-brief; it is a signal
 that the previous answer was not an action.
 
+**The second identical ask is the deadline.** The first one may deserve an
+answer. If the user asks the same thing again having received a list, the list
+was the wrong output — stop explaining and start the top item. Answering the
+same question three times is not thoroughness; it is refusing to act.
+
 If the ask genuinely needs a decision (scope the user must weigh, credentials
-only they hold), answer in one short paragraph and ask — but only then. Ranked
-lists of things already agreed are the failure mode this replaces.
+only they hold), answer in one short paragraph and ask — but only then, and say
+what decision you need rather than ranking alternatives. Ranked lists of things
+already agreed are the failure mode this replaces.
+
+### Verify the premise of your own recommendation first
+
+Before recommending work, check that the gap is real. A recommendation built on
+an unverified premise sends the user to build something that already exists, and
+costs more than checking would have.
+
+Re-read the code for the specific claim rather than carrying forward a summary
+from earlier in the session or from your own prior message. Stated confidently
+and wrong, a wrong premise is worse than an admitted uncertainty — the user acts
+on it. When a check contradicts something you asserted earlier, say so plainly
+and immediately, and correct the record before proceeding.
+
+Ask "what did I assert, and have I read the code since?" for every item in a
+recommended list.
 
 ## A green suite is not proof the artifact works
 
