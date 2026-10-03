@@ -160,6 +160,58 @@ Rules that follow:
 - When a test fails with a confusing number, suspect the test. `flags >> 11`
   yielded `17` (QR|rcode), not the opcode; the fix was masking `0x7800`.
 
+## Never send more than the client asked for (RFC 6891 6.2.3)
+
+There was no truncation at all. A client advertising 512 bytes got 1319 with TC
+clear, and got the same 1319 whatever it asked for.
+
+- Drop records **whole**, in section order, stopping at the first that does not fit.
+  Keeping a later, smaller record in the gap leaves contents that do not match the
+  counts.
+- Never drop the question: a response whose question does not match is discarded
+  (RFC 1035 4.1.1), turning a working answer into silence.
+- **Cache the complete answer; fit a copy per client on the way out.** Caching the
+  truncated bytes made every later client receive a partial response.
+- The **cache-hit path must truncate too.** Returning cached bytes verbatim is the
+  common case and no cold-cache test observes it.
+
+### TC is bit 9 of the flags word -- byte **2**
+
+```rust
+out[2] |= 0x02;   // correct: TC
+out[3] |= 0x02;   // WRONG: sets bit 1 of the low byte, inside the 4-bit RCODE
+```
+
+The wrong version turns every NOERROR into SERVFAIL, and only for responses large
+enough to truncate -- so small fixtures pass and live traffic fails.
+
+### TC cannot be derived from the final size
+
+A truncated response *shrinks to fit* and still carries TC. So `len(msg) <= limit`
+says nothing about whether TC should be set. Two of my own assertions were wrong
+before the code was. Compare against the **complete** answer's size instead.
+
+## Measuring: fresh process per configuration
+
+Reusing one process lets the first request warm the cache, after which every later
+configuration tests the cache-hit path. Three wiring mutations passed this way.
+Each size needs its own process, or its own name.
+
+To prove a mutation is load-bearing, measure directly rather than trusting a test:
+
+```
+correct code      : cached@512 -> len=456  tc=1   OK
+cache-hit bypassed: cached@512 -> len=1319 tc=0   VIOLATION
+```
+
+### Two self-inflicted errors worth remembering
+
+- `cargo fmt` reflowed `<< 16` into a multi-line form; a later `str::replace`
+  silently matched nothing, so the change appeared not to take effect. **Assert the
+  replacement applied.**
+- Moving new functions to sit before `mod tests` deleted the entire test module. When
+  reordering a file, restore from git and diff.
+
 ## Header fields that were never validated
 
 Four fields the pipeline either ignored or checked only incidentally. All four
