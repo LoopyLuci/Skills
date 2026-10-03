@@ -146,22 +146,63 @@ tier-based choice, and make an unresolvable name an **error listing what is
 available**, never a silent fallback to a different model: a fallback is
 indistinguishable from success until it produces the wrong answer.
 
-## Label what is not wired up, instead of shipping it as working
+## Classify every setting into three states, not two
 
-When some fields genuinely have no consumer, do not render them as if they do.
-Keep an explicit list, grey them out, mark them in the UI, and make them
-unclickable:
+When some fields have no consumer, do not render them as if they do. The
+tempting model is a single predicate over an inert list:
 
 ```rust
 pub const INERT_SETTINGS: &[&str] = &["ai_provider", "multi_gpu", /* ... */];
 pub fn setting_is_live(name: &str) -> bool { !INERT_SETTINGS.contains(&name) }
 ```
 
-A test must assert the list matches reality **in both directions**: every listed
-name is a real setting (no stale entries), and every real setting is classified
-consistently. Otherwise the list silently rots into mislabelling a working
-control as dead. A refusal path that explains itself ("not wired up yet") also
-doubles as the assertion that the guard is reachable.
+**That two-state model is wrong, and wrong in a way that misinforms the user.**
+It cannot express a setting the app *writes* but never *reads*:
+
+| State | App reads | App writes | UI |
+|---|---|---|---|
+| **Live** | yes | maybe | editable, stepper or toggle |
+| **Read-only mirror** | no | yes | disabled, "set by the app - read only" |
+| **Inert** | no | no | disabled, "not wired up yet" |
+
+A mirror is `settings.set("creature_count", creatures.len())` at startup: the
+window displays the truth, but changing the number does nothing. Listing such a
+setting as inert states something false — the app clearly *does* something with
+it. Use an enum so the UI can say which of the two non-live reasons applies:
+
+```rust
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum Availability { Live, ReadOnly, Inert }
+
+pub fn availability(name: &str) -> Availability {
+    // Read-only first: these names are deliberately absent from INERT_SETTINGS,
+    // so a live-first ordering classifies them as Live.
+    if MIRRORED_SETTINGS.contains(&name) { Availability::ReadOnly }
+    else if INERT_SETTINGS.contains(&name) { Availability::Inert }
+    else { Availability::Live }
+}
+```
+
+Note the ordering hazard in that comment: whenever one classification is the
+*negation* of a list, test the negation first, or the unlisted case swallows the
+other state. The failure compiles, passes a two-state test, and shows the user
+the wrong label.
+
+A test must assert both lists match reality **in both directions**, that no name
+appears in both, and that the three states partition every known setting.
+
+### Derive the lists from code and gate CI on the drift
+
+Hand-maintained lists rot the moment a setting gains a reader. Write a scan that
+finds, per declared setting, whether anything *reads* it and whether anything
+*writes* it, then fail if the window's lists disagree with the result or with
+each other, and run it as a CI gate. This matters more than it looks: three
+successive defects in one project were all a list drifting away from the code,
+and each was found by an audit, not by reading.
+
+When matching a writer, look for the name inside a `.set(` **call**, not merely
+nearby — a loose window around the match marks every setting as a mirror and
+hides the real findings.
 
 The same honesty rule applies to overflowing categories: when rows overflow the
 window, say "more settings below" rather than silently dropping them.

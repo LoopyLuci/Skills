@@ -31,6 +31,10 @@ silent — everything looks fine until you look at the pixels.
 - Building a settings/agent/profile editor: what to model first, and the
   serialization rules that keep saved data readable (see
   [references/settings-editor-model.md](references/settings-editor-model.md))
+- Deciding which settings to show, disable or label as unimplemented — the
+  live / read-only-mirror / inert classification and the CI scan that keeps it
+  honest (same reference)
+- A list of "things not wired up yet" that you suspect is wrong
 
 ## Always-on rules
 
@@ -81,6 +85,21 @@ silent — everything looks fine until you look at the pixels.
   *copy* of the data instead of a reference to the live store. Details and the
   swappable-runtime recipe in
   [references/settings-editor-model.md](references/settings-editor-model.md).
+- **When three defects in a row share a shape, audit for that shape before
+  implementing anything else.** The signal that a surface is inert — renders,
+  persists, reports success, and is read by nothing — is easy to miss once and
+  impossible to miss twice. On the third occurrence, stop implementing and
+  *measure* the whole class (scan every declared item for readers and writers,
+  turn the result into a CI gate). Listing your findings as "not wired up yet"
+  is a claim about code you have not checked, and it is often wrong: check for
+  written-but-never-read settings before calling anything inert.
+- **Verify the far end, not the near end.** Rendering correctly, persisting
+  without error, and returning `Ok(())`/`{"queued": true}` are all evidence about
+  the code you just wrote, not about the feature. For anything that crosses a
+  boundary — window to store, store to runtime, request to handler — assert on
+  an observable at the destination (a value in a live readback, a log line, a
+  pixel), and if the boundary is a queue, poll for the effect rather than
+  trusting the ack.
 
 ## Layout
 
