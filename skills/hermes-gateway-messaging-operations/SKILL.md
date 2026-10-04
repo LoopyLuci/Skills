@@ -63,6 +63,26 @@ the bundled `hermes-agent` skill's territory.
 5. **Prove delivery with a real API call**, not by inspecting state. See
    `references/platform-verification.md`.
 
+## Not every timestamp in gateway_state.json is an epoch time
+
+`gateway_state.json` mixes clock domains in one small file, and the mismatched
+ones fail silently rather than raising:
+
+- `start_time` is a **monotonic** clock, not epoch seconds. Subtracting it from
+  `time.time()` yields a negative delta, so any uptime display becomes a large
+  negative duration instead of an error. Derive real uptime from the OS process
+  instead (`psutil.Process(pid).create_time()`, or `wmic`/`Get-Process` on
+  Windows); `tasklist` has no start-time column, so it cannot substitute.
+- `platforms.<name>.updated_at` is an ISO-8601 **string** with a UTC offset,
+  while `sessions.started_at` and `gateway_heartbeats.last_heartbeat` in
+  `state.db` are epoch **seconds**.
+
+Normalise through one guarded helper that rejects values outside a plausible
+epoch window (2001-09-09 to 2286-11-20) rather than formatting them. Rendering
+`1.79e11` as a date silently yields a date ~55,000 years off, which looks like
+a data bug rather than a clock bug. When a duration field is monotonic, show an
+explicit dash instead of a fabricated number.
+
 ## Credentials live in .env — editing it is the dangerous step
 
 `$HERMES_HOME/.env` is the credential store for every provider and platform.
@@ -115,6 +135,31 @@ print([(a, b) for a, b in zip(new, bak) if a != b])   # should be only your edit
 
 That diff is the only acceptable evidence that credentials are intact. Say so
 in the report rather than quietly proceeding.
+
+**A backup can be too old, and a key-set diff will not catch it.** The newest
+`.env.bak.*` may predate a credential rotation, so restoring it hands back a
+revoked key under a correct-looking name — the key sets match, so the
+line-by-line diff above passes while the gateway silently loses that provider.
+Before restoring, harvest every `KEY=value` pair from the collapsed file and
+diff the *values*, not just the key names, then re-apply any value that differs
+from the backup:
+
+```python
+def kv(text):
+    out = {}
+    for m in re.finditer(r'([A-Za-z_][A-Za-z0-9_]*)=([^\n]*)', text):
+        out.setdefault(m.group(1), m.group(2))
+    return out
+
+collapsed = kv(open('.env.broken', encoding='utf-8').read())
+backup = kv(open(bak, encoding='utf-8').read())
+print({k: v for k, v in collapsed.items() if backup.get(k) != v})   # rotate these back in
+```
+
+Save a copy of the collapsed file under a distinct name before restoring. If a
+recovered value is empty or comment-like (the collapse swallowed it), the
+credential is unrecoverable from the file and must be reissued — say that
+plainly rather than shipping a half-restored `.env`.
 
 ## A disabled token usually has a comment explaining who took it
 
