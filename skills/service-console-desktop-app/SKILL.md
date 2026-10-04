@@ -98,18 +98,18 @@ covers the class of work where the GUI is a *second client* to a running daemon.
    deterministic, and give tests a `pump(app, predicate)` helper that spins the
    event loop until async results land.
 
-5. **Build a diagnostic step chain, not a single boolean.** The most useful
+6. **Build a diagnostic step chain, not a single boolean.** The most useful
    control-panel widget is a left-to-right strip of individual verdicts (token
    present → API reachable → process alive → transport connected → allowlist →
    default target → starts at login), each rendered from its own cheap check.
    A user can act on "allowlist empty" but not on "unhealthy".
 
-6. **Mask secrets by default, and make destructive edits recoverable.** Show
+7. **Mask secrets by default, and make destructive edits recoverable.** Show
    `prefix…••••(46 chars)`, keep secret input fields empty on load so saving an
    unrelated field cannot overwrite the value, and take a timestamped backup
    before any config write.
 
-7. **Use the store's full-text index; never `LIKE` over a big table.** If the
+8. **Use the store's full-text index; never `LIKE` over a big table.** If the
    service maintains an FTS index (check `sqlite_master` for an `*_fts` table),
    prefer `MATCH` with `bm25()` ranking — typically 10ms vs 400ms on a 100k-row
    table, and it finds strictly more matches. Two mandatory guards:
@@ -121,7 +121,7 @@ covers the class of work where the GUI is a *second client* to a running daemon.
      carry `active`/`compacted` flags; without them a feed shows the same turn
      twice and empty bodies render as blank rows.
 
-8. **Never render a nested config value raw.** Schedules, intervals, and
+9. **Never render a nested config value raw.** Schedules, intervals, and
    conditions are stored as nested dicts, so `str(schedule)` puts a Python repr in
    a table cell. Write one formatter per shape and fall back to a dash for
    anything unrecognised, so a new schema never leaks internals into the UI.
@@ -132,10 +132,42 @@ covers the class of work where the GUI is a *second client* to a running daemon.
    Surface the fields operators act on (`enabled`, `state`, `last_status`,
    `failure_streak`, `next_run_at`) alongside the human label.
 
-9. **Exports must honour the active filter.** Build CSV from the rows the table
+10. **Exports must honour the active filter.** Build CSV from the rows the table
    is currently showing, not the unfiltered backing store — track the rendered
    set explicitly, because indexing into the full list drifts once a filter is
    active. Write `utf-8-sig` so Excel reads non-ASCII content correctly.
+
+11. **Type-check every field you read from a file another process writes.** A
+   status file is written concurrently and can be truncated mid-write,
+   hand-edited, or hold any JSON value, so `data.get(...)` on a list or a
+   `"pid": "notanint"` raises `AttributeError`/`TypeError` and takes the window
+   down on the next refresh. Check the container is a mapping, then each field's
+   type, and degrade to "unknown" instead. Probe it deliberately rather than
+   assuming — see
+   [references/malformed-state-hardening.md](references/malformed-state-hardening.md).
+
+12. **Say what is missing, and never show a bare empty grid.** When a required
+   setting is absent, put a banner above the panels naming exactly which one and
+   where to set it, and hide it once configured — the empty-tables-no-explanation
+   state is the worst first impression a console can give. Give every table an
+   explicit placeholder row when it has nothing to show; an empty `QTableWidget`
+   reads as a crash. Flag the placeholder (a custom item-data role) so it is
+   excluded from exports and row counts.
+
+13. **Persist the window and the filters.** Save geometry, active panel, and each
+   panel's own filters via `QSettings`, restore them on launch, and offer a reset
+   action — a monitoring tool that forgets its size and scope every launch is
+   tedious to live with. Wrap reads so a corrupt value falls back to its default
+   instead of raising at construction time.
+
+## Always-on rules
+
+- This user's expectation for a console like this is a **measured audit pass, not
+  a green test run**. "It works" is the starting line. Once the happy path passes,
+  go looking for the next class of defect deliberately: time every query, feed
+  the readers deliberately malformed input, uncheck every filter, empty every
+  table, point the app at a missing install, and reopen it to check what persisted.
+  Report what you measured, not that it "seems solid".
 
 ## Verification
 
@@ -189,3 +221,21 @@ how far the run got.
 - **Clipboard access needs `QApplication` imported in that module** —
   `QApplication.clipboard()` raises `NameError` when the module imported only
   specific widgets.
+- **An empty filter set means "match nothing", not "ignore the filter".** Writing
+  `if not levels or e.level in levels` makes unchecking every checkbox show every
+  row — the exact opposite of the request, and it looks correct until a user tries
+  it. Match on membership alone.
+- **A new side effect added to a method with early returns may never run.** A
+  first-run "what's missing" banner placed after a `return` never appeared on the
+  missing-install path — the one case it exists for. After adding work to a
+  refresh method, walk each early return and confirm it also performs the update.
+- **A placeholder row will leak into exports and counts** unless it is flagged
+  and excluded; an exported CSV that starts with "No rows match the current
+  filters." is a data file full of UI text.
+- **`isVisible()` is False on a widget that was never shown**, so an offscreen
+  test asserting a banner appears fails for a reason unrelated to the banner.
+  `show()` the widget (or assert on the state you set) before testing visibility.
+- **Rendering a chart into a fixed-position axes box is not enough** — a donut
+  with an external legend needs the axes box shrunk (`set_position`) rather than a
+  `tight_layout` that fights the reserved margin; otherwise layout collapses to
+  zero and matplotlib warns instead of drawing.
