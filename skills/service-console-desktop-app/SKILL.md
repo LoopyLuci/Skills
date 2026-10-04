@@ -72,6 +72,32 @@ covers the class of work where the GUI is a *second client* to a running daemon.
    than a modal dialog. For "restart", re-read state on a delayed timer instead of
    immediately — the new process needs seconds to connect.
 
+4b. **Hold every moved worker in an attribute.** `moveToThread()` transfers C++
+   ownership to the thread, but Python still owns the wrapper. If the only
+   reference is a local variable the wrapper is collected before the thread runs
+   it, so `run()` never fires and the result callback is silently never called —
+   no exception, no traceback, and `thread.isRunning()` still True. Store both
+   halves and clear both on completion:
+   ```python
+   self._thread, self._worker = thread, worker   # worker MUST be an attribute
+   ```
+   Confirm by printing as the first line of `run()`: if the print never appears it
+   is collection, not signal wiring. This is distinct from preferring
+   `threading.Thread` for asyncio bridges — it bites plain `QObject` workers too.
+
+5. **Time every query before wiring it into a refresh.** A full-scan integrity
+   check (`PRAGMA quick_check` is ~5s on a 500 MB store) or a dozen sequential
+   queries inside a timer handler freezes the window for the whole duration, on
+   every tick. Measure each in isolation, then:
+   - batch the dashboard's queries into ONE `snapshot()` method sharing a single
+     connection, executed on a worker;
+   - give genuinely slow one-offs their own worker, then cache the result and
+     share it with other panels instead of recomputing per view;
+   - lengthen the poll interval once the payload is no longer a cheap file read.
+   Keep a `blocking=True` path on the refresh method so headless tests stay
+   deterministic, and give tests a `pump(app, predicate)` helper that spins the
+   event loop until async results land.
+
 5. **Build a diagnostic step chain, not a single boolean.** The most useful
    control-panel widget is a left-to-right strip of individual verdicts (token
    present → API reachable → process alive → transport connected → allowlist →
@@ -82,6 +108,34 @@ covers the class of work where the GUI is a *second client* to a running daemon.
    `prefix…••••(46 chars)`, keep secret input fields empty on load so saving an
    unrelated field cannot overwrite the value, and take a timestamped backup
    before any config write.
+
+7. **Use the store's full-text index; never `LIKE` over a big table.** If the
+   service maintains an FTS index (check `sqlite_master` for an `*_fts` table),
+   prefer `MATCH` with `bm25()` ranking — typically 10ms vs 400ms on a 100k-row
+   table, and it finds strictly more matches. Two mandatory guards:
+   - Quote every user token into the MATCH expression (`"tok1" AND "tok2"`);
+     raw input makes `"`, `-`, `*`, `(` syntax errors because they are FTS
+     operators. Strip them from each token, and fall back to `LIKE` on
+     `sqlite3.Error` rather than surfacing the failure.
+   - Filter out rows the store itself has superseded. Compaction-style tables
+     carry `active`/`compacted` flags; without them a feed shows the same turn
+     twice and empty bodies render as blank rows.
+
+8. **Never render a nested config value raw.** Schedules, intervals, and
+   conditions are stored as nested dicts, so `str(schedule)` puts a Python repr in
+   a table cell. Write one formatter per shape and fall back to a dash for
+   anything unrecognised, so a new schema never leaks internals into the UI.
+   Check the real stored shape before assuming flat keys:
+   ```python
+   print(sorted(read_jobs(path)[0].keys()))          # schedule is often a dict
+   ```
+   Surface the fields operators act on (`enabled`, `state`, `last_status`,
+   `failure_streak`, `next_run_at`) alongside the human label.
+
+9. **Exports must honour the active filter.** Build CSV from the rows the table
+   is currently showing, not the unfiltered backing store — track the rendered
+   set explicitly, because indexing into the full list drifts once a filter is
+   active. Write `utf-8-sig` so Excel reads non-ASCII content correctly.
 
 ## Verification
 
@@ -124,3 +178,14 @@ how far the run got.
 - **Verify the render, not just the data.** Colour-sample the actual
   `widget.grab()` pixels (or the AX tree of the live window) to prove charts drew
   ink. Populated model objects still paint blank when layout collapses.
+- **Surface health on the dashboard, not only in the logs.** If the service has
+  no error-rate metric, derive one from the log tail (counts per level, error
+  rate, latest offenders) and show it as a card. A user should not have to know
+  which panel holds the failures.
+- **QListWidget/EchoMode constant names drop the suffix.** `QLineEdit.Password`,
+  not `QLineEdit.PasswordEchoMode`. When the constant sits far from its use site,
+  alias the class import (`from PyQt5.QtWidgets import QLineEdit as _QLineEdit`)
+  so the instance attribute still resolves.
+- **Clipboard access needs `QApplication` imported in that module** —
+  `QApplication.clipboard()` raises `NameError` when the module imported only
+  specific widgets.

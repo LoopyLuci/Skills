@@ -63,6 +63,41 @@ the bundled `hermes-agent` skill's territory.
 5. **Prove delivery with a real API call**, not by inspecting state. See
    `references/platform-verification.md`.
 
+## Reading state.db without hurting the gateway
+
+`state.db` grows fast (hundreds of MB here) and the gateway is writing to it
+continuously. Any tool that inspects it must open it read-only:
+
+```python
+conn = sqlite3.connect(f"file:{db.as_posix()}?mode=ro", uri=True, timeout=5)
+```
+
+Three traps specific to this store:
+
+- **`PRAGMA quick_check` is a full scan — seconds, not milliseconds.** On a 500 MB
+  store it measured ~5s. Never call it from a UI thread, a timer tick, or an
+  interactive probe path; run it on a worker or on demand only. `count(*)` on
+  `messages` is ~7ms by contrast, so measure before assuming a query is cheap.
+- **Use the FTS index for message search, not `LIKE`.** `messages_fts` exists
+  alongside `messages`; `MATCH` + `bm25()` measured ~10ms where `LIKE '%term%'`
+  took ~420ms and matched fewer rows. Quote each user token (`"a" AND "b"`) so
+  FTS operators in the input (`"`, `-`, `*`, `(`) cannot raise a syntax error,
+  and fall back to `LIKE` on `sqlite3.Error`.
+- **Filter superseded rows.** `messages.active = 0` and `messages.compacted = 1`
+  mark content that context compaction replaced. Querying without those filters
+  returns the same turn twice and shows blanks; both flags are large here
+  (~90k inactive, ~73k compacted).
+
+Other tables worth knowing for triage: `sessions` (per-session token/tool
+counters, `end_reason`, `estimated_cost_usd`), `session_model_usage` (per-model
+token totals), `delivery_obligations` (outbound queue with `state`/`attempts`),
+`async_delegations` (background sub-agents), `gateway_heartbeats`.
+
+`cron/jobs.json` stores `schedule` as a **nested dict** (`{"kind": "interval",
+"minutes": 30, "display": "every 30m"}`), so `str(job["schedule"])` prints a
+Python repr. Read `.display`, fall back to deriving from `kind`+`minutes`, and
+show `state` / `last_status` / `failure_streak` / `next_run_at` alongside it.
+
 ## Not every timestamp in gateway_state.json is an epoch time
 
 `gateway_state.json` mixes clock domains in one small file, and the mismatched
