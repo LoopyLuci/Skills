@@ -182,6 +182,33 @@ suite stand in for a chain that has never been closed against a real peer.
   into a build failure.** Read the failing step before assuming a code defect: a
   network timeout is a gate dependency problem, and the steps queued behind it may
   never have run.
+- **A shape check passes on an honest error message.** Asserting "non-empty, not an
+  echo, long enough" is satisfied just as well by `I could not reach the AI model:
+  404 Not Found` as by a real reply. Add an assertion that the text is *not* a
+  failure report, or the check certifies that the app failed cleanly instead of
+  that it worked.
+- **A fallback that answers anyway is worse than a failure.** A keyword-matched
+  canned reply behind `Err(_) =>` means a broken provider is indistinguishable
+  from a working one at every layer above it, and no test that asserts on shape
+  will ever see it. Report the error and let it be red.
+- **Write the CI step in the shell it will run under.** A `run:` block on
+  `windows-latest` defaults to PowerShell, so bash habits - `seq`, `curl ... >
+  /dev/null`, `&&` - fail with a ParserError before executing anything. State
+  `shell:` explicitly rather than relying on the default.
+- **A probe that mutates persistent state breaks the next suite.** Capture the
+  values before changing them and restore them in a `finally`; otherwise an
+  interrupted run leaves a setting off and an unrelated test fails for a reason
+  that has nothing to do with it.
+- **Two owners of one piece of state is a silent split-brain.** An engine cloned
+  instead of shared means settings apply to an instance that never sends a
+  request while the one that does keeps its defaults. Share the object, not a
+  copy, and when a value appears not to propagate, check for a second owner
+  before hunting the consumer.
+- **A drain cursor offset from the wrong counter skips exactly what matters.** A
+  consumer's own message count is not the producer's length when other paths feed
+  the same view; using it as an offset silently drops the entries that arrive
+  after a differently-sourced one. Track the producer's cursor, and validate it
+  against the boundary entry so a clear cannot make it point past new content.
 
 ## Untestable here is not untested
 
