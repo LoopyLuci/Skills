@@ -48,6 +48,22 @@ The same applies to a green audit generally: it is evidence about declared
 surfaces, not a completeness claim, and an engine with no sound files or a
 permission prompt that was never written still satisfies it.
 
+**A repeated "what next?" means build, not re-rank.** Answering that question
+with another prioritised list reads as not having listened, and the user asking
+again is the correction. After the first list, the correct shape is one sentence
+naming the single highest-value item, then doing it and reporting what changed -
+no ranking, no options, no closing question. Offering alternatives and waiting
+hands back a decision the user has already made by asking again. Once the
+pattern is established, keep going without waiting for a "go": each cycle should
+carry something that could not have been said before - a number that moved, a
+defect class found, a control that was hollow. If a cycle produces no such thing,
+the item chosen was wrong, not the format of the reply.
+
+When the autonomous work is genuinely exhausted, that is the real answer: say
+what is blocked on the user specifically - credentials, a signing key, a scope
+decision - and stop. Repeating a list as filler once there is nothing left to
+build is exactly what the repetition is complaining about.
+
 ## Procedure
 
 1. **Pick the observation point closest to the effect.** A control change is
@@ -115,6 +131,11 @@ permission prompt that was never written still satisfies it.
   command reports success and the screen shows the old state. Drive rendering
   from a real monotonic counter, and confirm the change by reading the captured
   screen back.
+- **Every record looking the same is an identity problem, not a rendering one.**
+  When a feature is wired correctly yet the data never changes what appears,
+  suspect a lookup that misses and falls back: generated ids against referenced
+  names, or a default that swallows the miss. Compare two records that should
+  differ; if they render identically, fix the data layer, not the view.
 
 ## Durable success signals
 

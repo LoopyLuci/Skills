@@ -123,6 +123,62 @@ that stops there:
   OpenAI-compatible endpoint may be ignored by another runtime, which expects it
   nested or renamed. Check the target's actual contract.
 
+## A lookup that misses silently is the worst case
+
+Most defects in this class announce themselves: a control is visibly dead, a test
+fails, a log is empty. The expensive ones do not. A lookup that misses and returns
+a **default** produces no error, no failing test, and a passing audit - because a
+fallback is indistinguishable from success when read by eye.
+
+The signature is a set of records that are supposed to differ but render
+identically. When a feature works in principle yet the data never changes what
+appears, suspect identity mismatch before suspecting the rendering:
+
+- **Generated identities.** A catalogue whose entries get a random id at
+  construction, while the rest of the app references stable names, matches
+  nothing. Every lookup silently takes its default branch, so every record looks
+  the same no matter what the data says. This hid behind a correct-looking
+  feature: the drawing code was fine, the colours were defined, and none of it
+  was ever selected.
+- **Defaults that hide the miss.** Require the identifier rather than defaulting
+  it, so an entry cannot be anonymous, and make the catalogue's ids match the
+  naming the rest of the app already uses.
+- **Assert the lookup directly.** A unit test that resolves two entries by id and
+  asserts they differ in species, colour, or any distinguishing attribute catches
+  this with no device at all.
+
+Prove the fix by observing two records that *should* look different actually
+looking different in a capture. If both still render the same, the lookup is
+still missing - and the fix was in the data layer, not the view.
+
+## A handler registered twice silently shadows the first
+
+Two registrations for one command name is not an error the runtime reports: the
+second replaces the first and whatever the first returned is gone. Only the count
+disagreement between the declared list and the registered set exposes it, so make
+the scanner report duplicates explicitly - harmless at runtime, fatal as drift.
+
+The sibling of filter-then-lookup: a duplicate left in the declared list is inert
+config that reads as supported.
+
+## Hollow capability: working plumbing over nothing
+
+An engine can pass every structural check while having nothing to operate on. A
+sound engine with working volume, working category routing and two independent
+mute switches, and zero audio files, satisfies a consumer audit completely and
+ships a slider that moves a number controlling nothing.
+
+- After a consumer audit returns zero, ask what the consumers *act on*. Working
+  plumbing over an empty substrate is the same defect one layer down.
+- Give the empty substrate a check of its own, and check content rather than
+  existence: for generated audio, assert duration band, audible RMS, no clipped
+  samples, no long silence, peak low enough not to startle. "The file is present"
+  passes for a file of zeroes.
+- Generating assets rather than committing binaries of unknown provenance is
+  reproducible and reviewable; commit the generator and the output together.
+
+A control can be honestly wired and still hollow. Say which one you fixed.
+
 ## Ordering bugs the audit tends to expose
 
 Once a value has a real consumer, the next failures are in the wiring around it.
@@ -182,6 +238,14 @@ blocked on the user - credentials, a signing key, a decision about scope. "I hav
 nothing left that does not need your input, and here is exactly what that input
 is" is a real answer that ends the loop. Repeating a list as filler after the work
 runs out is the thing the repetition is complaining about.
+
+Keep going without waiting for a "go" once the pattern is established. Each cycle
+should read as one item chosen, built, and verified, with the reply leading on
+what changed rather than on what might be next. The loop only breaks when the
+report says the same thing twice, so make each report carry something that could
+not have been said before - a number that moved, a defect class found, a thing
+that was hollow. If a cycle produces no such thing, the choice of item was wrong,
+not the format of the reply.
 
 ## Gate only what nothing else covers
 

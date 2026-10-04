@@ -9,6 +9,19 @@ The general move: when a call fails to resolve, read the declaration rather than
 guessing the next variant. Guessing produced several consecutive failures from
 one wrong assumption.
 
+## Multi-match edits and repeated insertions
+
+- **A single edit can land many times.** Anchoring a patch on a common token - a
+  `#[test]` marker, a bare import line - applies it at every occurrence and
+  silently duplicates the inserted block. Check the occurrence count before
+  editing, and re-count after; duplicated tests surface as
+  "name is defined multiple times" long after the real cause.
+- **A targeted edit can widen.** `replace_all` on a string that appears in two
+  functions rewrites both, so a fix intended for one path lands in the other and
+  leaves an undefined reference behind. Name the function in the anchor.
+- **A wildcard import narrowed by one symbol breaks everything else it supplied.**
+  See Compose above; the same shape applies to `import ...*` in any file.
+
 ## Lambdas and function references
 
 - **A lambda bound to a `val` has no label.** `return@work` fails to resolve
@@ -32,6 +45,10 @@ one wrong assumption.
   single symbol removes `remember`, `LaunchedEffect`, and `mutableStateOf` and
   produces a cascade of unrelated unresolved-reference errors that look like the
   new code is wrong. When an import is edited, check what else it supplied.
+- **An annotation on a moved declaration follows the wrong target.** Reordering
+  composables can leave `@Composable` sitting above a plain data class, which
+  fails as "not applicable to target 'class'". Check which declaration the
+  annotation is actually attached to after a reorder.
 - **An experimental API needs the opt-in at each composable that uses it**, not
   once at the file.
 - **A `Modifier` chain with a no-op step is dead code.** `scale(1f, 1f)` next to a
@@ -46,6 +63,16 @@ one wrong assumption.
 - **Platform-typed Android properties are nullable to the compiler.** `filesDir`
   is `File?`, so `File(context.filesDir)` does not resolve. Name the type
   explicitly, with a fallback path, rather than wrapping it.
+- **A parameter can shadow an extension you meant to call.** A draw function
+  taking `h: Float` while the scope also offers an `h()` height accessor resolves
+  `h()` as an invocation of the parameter and fails with "function invocation
+  expected". Either pass the value in as a parameter with a distinct name, or name
+  the scope accessor so the two cannot collide.
+- **A blind find-and-replace corrupts identifiers, not just call sites.**
+  Renaming a short accessor call also rewrites the type name that contains it -
+  `Path()` became `PatcanvasH()`, and the cascade of unresolved-reference errors
+  pointed at the wrong lines entirely. Replace the exact call form, then grep for
+  the mangled token before rebuilding.
 - **The parameter type decides the overload.** A handle-taking loader takes the
   handle; the offset form takes a different type and will not accept it.
 

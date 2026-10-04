@@ -34,6 +34,12 @@ happens on one platform.
 
 - **A gate that needs a binary must build one first.** Otherwise it fails on
   first contact and gets ignored.
+- **Read the job's `working-directory` and available tools before writing a step
+  into it.** Two mistakes in one replacement step: it assumed `unzip` existed on
+  the runner, and it `cd`-ed into a directory that did not exist relative to the
+  job's own working directory. Both fail on first run for reasons unrelated to
+  what the gate checks. Run the new command locally with the same shell before
+  committing it.
 - **A gate that fails on something already disclosed elsewhere is noise.** A
   scanner that exits non-zero because a setting has no consumer, when every such
   setting is already shown to the user as disabled with the reason named, turns
