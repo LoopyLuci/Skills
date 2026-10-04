@@ -55,6 +55,10 @@ happens on one platform.
   committed JAR is enough, because the build itself exercises the wrapper.
 - **Do not trust a green gate on the run that added it.** Read the step list to
   confirm each check actually executed rather than being skipped.
+- **Count from the raw declared list, not a deduplicated set.** A duplicate entry
+  and a missing handler produce the same count mismatch, and deduplicating first
+  hides the discrepancy from the check meant to expose it. Report duplicates
+  explicitly: harmless at runtime, fatal as drift.
 - **A single-platform dev loop cannot see portability breakage.** Cross-target
   compile and test belong in CI, or cfg-gated code rots unchecked.
 - **Do not weaken a gate to make it pass.** When a gate starts failing, the first

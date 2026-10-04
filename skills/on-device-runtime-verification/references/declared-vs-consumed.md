@@ -56,6 +56,19 @@ and they are the items worth surfacing as scope rather than quietly skipping.
 Take the labels off only after the behaviour exists: the label is a claim about
 the code, so it follows the code, never precedes it.
 
+## Counting a set can hide the drift it exists to catch
+
+A count that disagrees is the finding, not a rounding error. Report counts from
+the raw declared list, never from a deduplicated set, or the discrepancy becomes
+invisible to the very check meant to expose it. When the numbers do not line up,
+resolve it before trusting either number: a duplicate entry in the declared list
+and a missing handler look identical from the outside, and only reading the source
+tells you which you have.
+
+When a scanner's verdict cannot be reconciled with the counts, suspect the
+scanner before the code - but prove which, by asserting the parser against ground
+truth rather than assuming either way.
+
 ## Check the extent of a gap before scoping it
 
 The costliest pattern here is calling a gap one feature when one step of reading
@@ -161,6 +174,22 @@ the scanner report duplicates explicitly - harmless at runtime, fatal as drift.
 The sibling of filter-then-lookup: a duplicate left in the declared list is inert
 config that reads as supported.
 
+## Untestable on the available device is not untested
+
+Where a platform behaviour cannot be triggered on the hardware in hand - a system
+broadcast, a permission gate the OS version does not implement - say so explicitly
+rather than reporting the absence of a log line as a result. A device that
+structurally cannot reach the state proves nothing about the code.
+
+Cover the *decision* instead: instantiate the component directly in an instrumented
+test and assert the branch it takes for each input. That is a stronger claim than
+the log-grep, because it names the behaviour under test.
+
+Framework handles can be absent in exactly that situation: an async result
+handle is null when nothing is driving the component, and dereferencing it lands
+on a worker thread where no log will show it. Guard the handle and run the work
+inline when it is missing - which also makes the component directly testable.
+
 ## Hollow capability: working plumbing over nothing
 
 An engine can pass every structural check while having nothing to operate on. A
@@ -179,7 +208,7 @@ ships a slider that moves a number controlling nothing.
 
 A control can be honestly wired and still hollow. Say which one you fixed.
 
-## Ordering bugs the audit tends to expose
+- **Ordering bugs the audit tends to expose**
 
 Once a value has a real consumer, the next failures are in the wiring around it.
 These pass every test that only exercises the happy path:
@@ -193,6 +222,21 @@ These pass every test that only exercises the happy path:
 - **A protection flag cleared by its own filter.** Computing the replacement list
   as `all.filterNot { it.id == id } + stored` *before* reading whether that entry
   was protected turns a protected entry into an ordinary, deletable one.
+
+## cfg-gating hides breakage from a single-OS loop
+
+A platform guard on an implementation does not gate its tests or its imports, so
+a cross-platform build breaks while the primary development platform stays green.
+Tests that call a platform-only function fail to compile elsewhere, and a
+wildcard import names members the guarded code needs on every platform. Include a
+non-primary target in continuous integration - a lone-platform dev loop cannot see
+these.
+
+The related trap in CI: a validation action that fetches its expectations from a
+network service turns a runner's connectivity into a build failure, and can skip
+the steps behind it. When a gate fails on a network timeout, fix the gate's
+dependency rather than hunting for a code defect that is not there - and check
+whether a local equivalent covers what the action was actually protecting.
 
 ## Audit every client separately
 

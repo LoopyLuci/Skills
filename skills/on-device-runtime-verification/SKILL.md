@@ -136,6 +136,24 @@ build is exactly what the repetition is complaining about.
   suspect a lookup that misses and falls back: generated ids against referenced
   names, or a default that swallows the miss. Compare two records that should
   differ; if they render identically, fix the data layer, not the view.
+- **A single-platform loop cannot see cross-platform breakage.** A platform guard
+  on an implementation does not gate its tests or its imports, so another target
+  fails to compile while the primary stays green. Put a second target in the
+  pipeline.
+- **A gate that fetches its expectations over the network turns connectivity
+  into a build failure.** Read the failing step before assuming a code defect: a
+  network timeout is a gate dependency problem, and the steps queued behind it may
+  never have run.
+
+## Untestable here is not untested
+
+Where the hardware in hand cannot reach a state - a system-only broadcast, a
+permission gate the OS version does not implement - say so rather than reporting
+a missing log line as a result. A device that structurally cannot produce the
+state proves nothing about the code. Instantiate the component directly in an
+instrumented test and assert the branch it takes; that names the behaviour under
+test instead of inferring it from silence. See
+`references/declared-vs-consumed.md`.
 
 ## Durable success signals
 
