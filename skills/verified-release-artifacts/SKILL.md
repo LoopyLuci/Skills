@@ -340,6 +340,27 @@ and immediately, and correct the record before proceeding.
 Ask "what did I assert, and have I read the code since?" for every item in a
 recommended list.
 
+### Do not name the release as the top item and keep building instead
+
+Ranking the release first and then shipping another feature is the most common
+way this skill gets ignored. The ranking is a commitment: it means the user's
+next download contains everything so far, and every commit landed after it makes
+the release more stale and the report more confusing.
+
+- **Naming it first means doing it in the same turn,** or immediately after
+  finishing whatever is already in flight. There is no third option where it
+  stays at the top of the list across several cycles.
+- **Unreleased work compounds silently.** Nothing about it is broken, so no gate
+  flags it - but the published artifact falls further behind each cycle, and the
+  release notes end up describing a version nobody has.
+- **If a cycle produces a change and a fresh verification anyway,** shipping that
+  change is the cheapest way to keep the release current. Re-verifying already
+  verified work instead is what turned a one-line release into a multi-cycle
+  deferral.
+- **Check what is unreleased before ranking anything:** `git log --oneline
+  <latest-tag>..HEAD`. Non-empty output is a release argument on its own, and it
+  outranks any feature idea.
+
 ## A green suite is not proof the artifact works
 
 A release can pass every gate and still be broken on the user's machine. Cheap

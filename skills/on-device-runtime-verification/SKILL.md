@@ -72,7 +72,9 @@ build is exactly what the repetition is complaining about.
    value it actually logs.
 2. **Redirect the app's traffic to something you control.** Point the app at a
    local stub that records its input. A static fixture proves less than a
-   recorder.
+   recorder. Once the request side is proven, close the loop against a
+   credential-free real provider before calling the chain verified - see
+   *A stub cannot find wire-format bugs*.
 3. **Force-stop and relaunch before every assertion.** A reinstall leaves the old
    process running; probing it tests the previous build and yields a confident
    wrong answer.
@@ -81,10 +83,46 @@ build is exactly what the repetition is complaining about.
    is how an error path passes as success.
 6. **Capture the screen and look at it** when the claim is about presentation.
 
+## A stub cannot find wire-format bugs
+
+A stub is built from your own reading of the spec, so it agrees with your code by
+construction. It proves the request you *intended* left the building; it cannot
+prove a reply comes back, and it will happily accept a response shape the real
+service never sends.
+
+Two classes of defect are invisible to every stub in the suite:
+
+- **The reply path.** Whether a token stream parses, whether NDJSON is
+  reassembled, whether the content field is where you expect. A stub returns the
+  shape your parser was written against.
+- **Allow-lists that reject reality.** Resolving a name only against a bundled
+  list looks like validation and reads as correct; it silently rejects every model
+  the user pulled into their own provider, so the feature cannot work at all
+  against anything real.
+
+Prefer a credential-free local provider as the far end of the check - a local
+inference server needs no key. Drive the shipped build against it and assert a
+reply arrived, parsed, and was stored. Reserve the stub for what it is good at:
+proving the exact request body, which a live model will not let you constrain.
+
+When the live path is unavailable, say so in the report. Do not let a green stub
+suite stand in for a chain that has never been closed against a real peer.
+
 ## Pitfalls
 
 - **Assert on the wire format, not on storage.** A value that persisted is not a
   value that was honoured; a setting can save perfectly and never be read.
+- **Check the allow-list before blaming the transport.** When a request reaches
+  the provider and fails anyway, confirm the client will accept the name it was
+  given; a bundled catalogue is a convenience list, not the set of callable
+  models.
+- **Parse the delimiter the peer actually uses.** Streaming APIs often answer
+  newline-delimited JSON even when a non-streaming flag was sent, so a parser
+  that reads the whole body as one object fails only in production. Check the
+  captured body shape, not the documented one.
+- **Assert on content, not on the small model's competence.** A deliberately
+  tiny local model ignores arithmetic instructions; failing on its answer tests
+  the model, not the chain. Assert that a reply arrived, parsed and persisted.
 - **Restart before diagnosing.** Stale processes serve stale code. When a value
   appears not to propagate, confirm the running process is the one you just
   built before hunting the cause.

@@ -45,6 +45,36 @@ polish?") re-opens the negotiation the user just closed. **Non-answer plus a
 repeat of the same question is an answer: it means just do it.** Count that
 silence as a reply and act on it.
 
+## Four repetitions means the question has stopped being the question
+
+This failure is invisible from inside it, because each individual turn looks
+reasonable: a genuine prioritisation, a real feature, real evidence. What gives
+it away is the count. Somewhere past the third asking, the user is no longer
+asking *what to do next* - they are telling you that **what you are doing is not
+what they wanted**, and repeating the question is the only channel they have.
+
+Treat the fourth and later repetition as a diagnosis, not a prompt:
+
+- **Stop choosing from the backlog and examine your choice.** A dozen correct,
+  well-verified items that nobody asked for is a selection failure. The work was
+  not the problem; the direction was.
+- **Say so plainly, once, without defensiveness.** "I have been building
+  features rather than addressing what you asked - say the thing once and I'll do
+  it" is a real answer. Another prioritised list is the exact failure being
+  complained about.
+- **Prefer the unverified to the unbuilt.** When the backlog is exhausted and the
+  question continues, the signal is that *more of the same* is unwanted. Reach
+  for what has never been tested - the real peer, the real device, the real
+  credentialed path - rather than the next feature, because the next feature is
+  the thing already rejected by repetition.
+- **Do not keep adding work to demonstrate progress.** Shipping more can hide the
+  problem longer, but it does not address it, and it makes the eventual answer
+  cost more.
+
+The honest move at that depth is to stop, name the pattern, and hand the decision
+back in one sentence - not another ranked list, which is the artefact of the
+failure.
+
 ## Procedure
 
 1. **Decide the reading before composing anything.** Ask yourself whether you

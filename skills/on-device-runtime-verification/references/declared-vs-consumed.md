@@ -291,6 +291,44 @@ not have been said before - a number that moved, a defect class found, a thing
 that was hollow. If a cycle produces no such thing, the choice of item was wrong,
 not the format of the reply.
 
+## The audit is not the end: a stub cannot find wire-format bugs
+
+An audit returning zero means nothing is *lying*. It does not mean a request ever
+completes, and after the obvious defects are fixed the remaining ones live in the
+reply path - which no amount of declared-versus-consumed scanning reaches.
+
+A stub is built from your own reading of the spec, so it agrees with your code by
+construction. It proves the request you intended left the building. It cannot
+prove a reply arrives, and it will happily return the shape your parser was
+written against. Two classes of defect are invisible to it:
+
+- **The reply path.** Whether a token stream parses, whether newline-delimited
+  JSON is reassembled, whether the content field is where you expect. Here a
+  parser read the whole body as one object and every streamed request died on a
+  malformed-JSON error - against a stub, because the stub was one object.
+- **Allow-lists that reject reality.** Resolving a name only against a bundled
+  catalogue reads as validation and looks correct; it silently rejects every
+  model the user pulled into their own provider, so the feature cannot work
+  against anything real while every test passes.
+
+Prefer a credential-free local provider as the far end of the check - a local
+inference server needs no key. Drive the shipped build against it and assert that
+a reply arrived, parsed, and was stored. Reserve the stub for what it is good
+at: proving the exact request body, which a live peer will not let you constrain.
+
+Two rules when writing that probe:
+
+- **Assert on the chain, not on the model's competence.** A deliberately tiny
+  local model ignores arithmetic instructions. Failing on its answer tests the
+  model, not the integration. Assert a reply arrived, parsed and persisted.
+- **Skip rather than fail when no provider is reachable.** A red result on a
+  machine without one says nothing about the code, and a gate that fires for
+  missing infrastructure is noise that trains people to ignore it.
+
+When the live path is genuinely unavailable, say so in the report. Do not let a
+green stub suite stand in for a chain that has never been closed against a real
+peer.
+
 ## Gate only what nothing else covers
 
 A CI gate that fires for a finding the UI already discloses is noise, and noise
