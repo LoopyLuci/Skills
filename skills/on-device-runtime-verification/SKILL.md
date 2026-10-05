@@ -220,6 +220,14 @@ instrumented test and assert the branch it takes; that names the behaviour under
 test instead of inferring it from silence. See
 `references/declared-vs-consumed.md`.
 
+## Pitfall — the writer isn't the victim (gateway exit-diag and companion logs)
+
+When a service logs lifecycle events (`gateway.start`, `gateway.exit_*`, `gateway.previous_unclean_exit`), the event is often written by one process (`pid` = writer) but names a different process (`prior_pid` = victim). Grouping by the writer marks an innocent clean shutdown as a crash; promoting `clean` to `unclean` incorrectly discards the only authoritative evidence the process spoke for itself.
+
+Rule: index obituary-style events by `prior_pid`. Only promote a `vanished` (silent, no exit record) to `unclean` when a later observer confirms it — never downgrade a process that wrote its own `gateway.exit_clean` or `SystemExit`.
+
+See `systematic-debugging/references/companion-log-forensics.md` for the full reproduction recipe (`_ev()` synthetic fixtures, traceback tail formatting, headless smoke verification against a live 552 MB database). The synthetic fixture is the correct shape: a copied real log hides attribution errors by accident.
+
 ## Durable success signals
 
 Prefer a check that is impossible to satisfy accidentally:
