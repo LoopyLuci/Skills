@@ -28,22 +28,39 @@ operational procedure on this host.
   replies, or `Channel directory built: 0 target(s)`.
 - A platform credential in `.env` must be enabled, replaced, or added.
 - The gateway dies repeatedly and the Windows login item needs checking.
+- Any report of a previous start that "died without a clean shutdown record",
+  or a gateway that exits and is not coming back.
 
 Not for choosing which platform to use or writing platform adapters — that is
 the bundled `hermes-agent` skill's territory.
 
 ## Order of work
 
-1. **Read the three state sources before touching anything.** They answer
-   "is it running", "what did it think", and "what did it do":
+1. **Read the four state sources before touching anything.** They answer
+   "is it running", "what did it think", "what did it do", and "why did it
+   stop":
    ```bash
    hermes gateway status                      # process + login item
    tail -40 "$HERMES_HOME/logs/gateway.log"   # per-platform connect lines
    cat "$HERMES_HOME/gateway_state.json"      # pid, state, per-platform error_code
+   tail -30 "$HERMES_HOME/logs/gateway-exit-diag.log"   # WHY it stopped
    ```
    Note `HERMES_HOME` here is `C:/Users/Server/AppData/Local/hermes`, not `~/.hermes`.
    Resolve it from the environment or the `hermes --version` install line; never
    hardcode `~/.hermes` on this host.
+
+   The exit-diag log is JSON-lines and is the *only* place the reason is written
+   down; `gateway_state.json` cannot tell you why. If the gateway is down, read it
+   before theorising — see `references/gateway-exit-forensics.md` for the event
+   vocabulary and the classification rules.
+
+1a. **Check the supervisor gap before debugging the gateway.** The gateway exits
+   **75 (`EX_TEMPFAIL`)** to hand restart ownership to a service supervisor. On
+   Linux systemd restarts it (`RestartForceExitStatus=75`); on Windows the
+   "supervisor" is a logon VBS that fires **once at logon and never again**, so
+   exit-75 leaves the gateway silently down until the next logon. A start with no
+   exit record at all means it was killed by its parent's **Windows Job Object**.
+   Neither is a gateway bug — do not go looking for a crash in the gateway.
 
 2. **Diagnose from the log line, not from config.** The decisive strings:
    - `No messaging platforms enabled.` → no platform has an active token.
