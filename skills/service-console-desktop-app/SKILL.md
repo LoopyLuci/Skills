@@ -239,3 +239,11 @@ how far the run got.
   with an external legend needs the axes box shrunk (`set_position`) rather than a
   `tight_layout` that fights the reserved margin; otherwise layout collapses to
   zero and matplotlib warns instead of drawing.
+
+## References
+
+- [references/exit-diag-interpretation.md](references/exit-diag-interpretation.md) — verdict classes for the gateway exit-diag log, attribution rules, supervisor gap explanation.
+- [references/hot-backup-pattern.md](references/hot-backup-pattern.md) — SQLite native `backup()` verification, rotation, restoration via rollback.
+- [references/isolation-pattern.md](references/isolation-pattern.md) — stripping Hermes PYTHONPATH and live `sys.path` from project entry points; preventing silent import contamination.
+- [references/exit-diag-parsing.md](references/exit-diag-parsing.md) — `gateway.previous_unclean_exit` attribution (index by `prior_pid`, let a process's own exit record outrank an observer), verdict mapping for the exit-diag log.
+- Module: `hermes_manager/watchdog.py` — background gateway watchdog (`Watchdog.start()` / `.stop()`), 60-second tick, respects `watchdog.pause`, logs to `watchdog.log`.
