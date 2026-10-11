@@ -138,6 +138,9 @@ suite stand in for a chain that has never been closed against a real peer.
 - **Read the log per-tag, and match the response line specifically.** A stack
   trace follows a successful reply, so "the last tagged line" picks up noise and
   turns a pass into a fail.
+- **`pm query-receivers` does not exist on all devices.** Use `dumpsys package <pkg>`
+  to check whether a receiver is registered; it is the portable equivalent and works
+  across Android versions.
 - **Resolve platform tools from the SDK, not `PATH`.** A tool that works in a
   terminal you configured is not available to a script you run later.
 - **`10.0.2.2` is the emulator loopback, not the host.** On a physical handset use
