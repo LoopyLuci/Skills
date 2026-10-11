@@ -47,6 +47,11 @@ When auditing by parsing source:
 - Wire formats are often snake_case (`serde` `rename_all`) while the enum is
   PascalCase, so the two never compare equal. Normalise both sides.
 - A name appearing near an unrelated `.set(` is not evidence it is written.
+- **A UI toggle is both a writer and a reader.** An audit that looks for
+  read sites outside the UI will flag UI-backed settings as "not in UI" even
+  though the toggle reads the setting to render its state. Check whether the
+  setting is read by the UI layer itself (e.g. Compose `uiState` fields)
+  before concluding it has no consumer.
 
 Always print the parsed set and check it against reality before trusting a pass.
 

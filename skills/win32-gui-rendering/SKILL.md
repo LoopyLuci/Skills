@@ -88,6 +88,11 @@ silent — everything looks fine until you look at the pixels.
   *copy* of the data instead of a reference to the live store. Details and the
   swappable-runtime recipe in
   [references/settings-editor-model.md](references/settings-editor-model.md).
+- **Settings must be loaded before being read.** A `SettingsUI::new()` creates
+  an empty settings object; calling `load()` before any read is required to
+  populate it from disk. Without this, saved settings are never applied at
+  startup — the default value is always used. This is the most common cause of
+  "my setting saved but didn't take effect" bugs.
 - **When three defects in a row share a shape, audit for that shape before
   implementing anything else.** The signal that a surface is inert — renders,
   persists, reports success, and is read by nothing — is easy to miss once and
