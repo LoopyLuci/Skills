@@ -93,6 +93,12 @@ silent — everything looks fine until you look at the pixels.
   populate it from disk. Without this, saved settings are never applied at
   startup — the default value is always used. This is the most common cause of
   "my setting saved but didn't take effect" bugs.
+- **Multiple GUI processes block all input.** When two instances of a Win32 GUI
+  app run simultaneously, neither responds to mouse or keyboard — the user sees
+  windows but clicks do nothing. Before diagnosing input handling, check
+  `tasklist` for duplicate PIDs and kill all but one. This is the first thing to
+  verify when the user reports "I cannot interact with any GUI elements"
+  despite windows being visible.
 - **When three defects in a row share a shape, audit for that shape before
   implementing anything else.** The signal that a surface is inert — renders,
   persists, reports success, and is read by nothing — is easy to miss once and

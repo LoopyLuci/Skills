@@ -143,6 +143,11 @@ suite stand in for a chain that has never been closed against a real peer.
   across Android versions.
 - **Resolve platform tools from the SDK, not `PATH`.** A tool that works in a
   terminal you configured is not available to a script you run later.
+- **Duplicate desktop processes block Android input too.** If the user reports
+  "cannot interact with GUI" on both desktop and Android simultaneously,
+  check for multiple desktop process PIDs first — killing duplicates on the
+  host restores input on both platforms. Verify with
+  `tasklist -fi "imagename eq <app>.exe"` before touching the device.
 - **`10.0.2.2` is the emulator loopback, not the host.** On a physical handset use
   `adb reverse` to forward a host port, or the request simply never arrives.
 - **Audit each client separately.** A desktop and a mobile client in one codebase
