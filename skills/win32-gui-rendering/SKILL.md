@@ -358,6 +358,14 @@ silent — everything looks fine until you look at the pixels.
   build it; report what changed afterwards. Reserve the list for the first ask.
   The same applies to "proceed", "properly proceed with all" and "optimally":
   they mean act on the whole scope now, not plan it again.
+- **Deleting a dead module requires cleaning up its exclusive dependencies.** A
+  module that is never constructed often pulls in dependencies nothing else
+  uses (e.g. `wgpu`, `winit`, `raw-window-handle`, `pollster`). After deleting
+  the module, grep the remaining code for each dependency — if zero references,
+  remove it from `Cargo.toml`. But first verify no other code references them:
+  a dependency used only by the dead module is safe to remove, one used
+  elsewhere (e.g. `hardware.rs` using `wgpu` for GPU enumeration) must stay.
+  The tell-tale sign is a build error naming the removed crate.
 - **Test-only hooks must not be `#[cfg(test)]` in a library used by another
   crate's tests.** The attribute applies only within its own crate, so the
   consuming test binary sees nothing. Use `#[doc(hidden)] pub` and document it
@@ -672,6 +680,9 @@ build cycle, and none is guessable from the signature.
   fails with a version-resolution error). `OFN_OVERWRITEPROMPT` and
   `OFN_PATHMUSTEXIST` are the flags to combine. The dialog is modal, so the
   calling thread blocks until the user acts — fine for a window, fatal in a test.
+- `EnumDisplayDevicesW` lives in `um::winuser`, not `um::wingdi`. The
+  `DISPLAY_DEVICEW` struct has no `Default` impl — use `mem::zeroed()` and set
+  `cb` manually. `DEVICE_STATE_ACTIVE` is `0x1`.
 - Colour constants need no `as u32` in recent winapi. Many pet/overlay windows in
   one app means the *class name* is the only reliable selector — match
   `"AppMain"` rather than the window title, which siblings share.
