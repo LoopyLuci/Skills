@@ -667,22 +667,11 @@ build cycle, and none is guessable from the signature.
 - `GET_X_LPARAM` / `GET_Y_LPARAM` live behind the `windowsx` cargo feature. Do not
   add a feature flag for two shifts and masks — `let p = lparam as u32;`
   then `(p & 0xFFFF)` / `(p >> 16)` is clearer and dependency-free.
-- `GetSaveFileNameW`/`GetOpenFileNameW` need the `commdlg` feature on winapi
-  0.3.9. The feature name is `commdlg`, not `comdlg32`.
-- `GetSaveFileNameW`/`GetOpenFileNameW` need the `commdlg` feature on winapi
-  0.3.9. The feature name is `commdlg`, not `comdlg32`.
 - `GetSaveFileNameW`/`GetOpenFileNameW` live in `um::commdlg` behind the
   `commdlg` feature (not `comdlg32` — that feature does not exist and cargo
   fails with a version-resolution error). `OFN_OVERWRITEPROMPT` and
   `OFN_PATHMUSTEXIST` are the flags to combine. The dialog is modal, so the
   calling thread blocks until the user acts — fine for a window, fatal in a test.
-- **Test UI states that are mutually exclusive separately.** When a render path
-  is `if state_a { draw_x() } else if state_b { draw_y() }`, the two controls
-  never appear together. A test that sets both states and asserts both tooltips
-  fails on the second one. Split into two tests, each setting only the state that
-  makes its control appear. The tell-tale failure is `left: None, right:
-  Some("...")` for the second assertion — the control was never rendered, not
-  rendered without a tooltip.
 - Colour constants need no `as u32` in recent winapi. Many pet/overlay windows in
   one app means the *class name* is the only reliable selector — match
   `"AppMain"` rather than the window title, which siblings share.
