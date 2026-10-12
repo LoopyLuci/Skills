@@ -234,13 +234,6 @@ silent — everything looks fine until you look at the pixels.
   makes its control appear. The tell-tale failure is `left: None, right:
   Some("...")` for the second assertion — the control was never rendered, not
   rendered without a tooltip.
-- **Test UI states that are mutually exclusive separately.** When a render path
-  is `if state_a { draw_x() } else if state_b { draw_y() }`, the two controls
-  never appear together. A test that sets both states and asserts both tooltips
-  fails on the second one. Split into two tests, each setting only the state that
-  makes its control appear. The tell-tale failure is `left: None, right:
-  Some("...")` for the second assertion — the control was never rendered, not
-  rendered without a tooltip.
 - **A handler that returns `Ok(())` proves only that it ran.** Every OS
   registration — tray icon, hotkey, hook, clipboard listener — must be checked by
   the OS's own acknowledgement, and `start()` must propagate that rather than
