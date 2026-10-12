@@ -99,6 +99,29 @@ silent — everything looks fine until you look at the pixels.
   for every access. Using `self` in a window proc is a compile error (E0424).
   See [references/window-proc-state-access.md](references/window-proc-state-access.md)
   for the full pattern with code examples and common compile errors.
+- **Adding a new message handler (WM_MOUSEMOVE, WM_LBUTTONDOWN, etc.) to a
+  window proc follows a strict pattern:** get the state pointer from
+  `GetWindowLongPtrW`, null-check, use `(*ptr).field` for every access, and
+  call `InvalidateRect(hwnd, ptr::null_mut(), 0)` to trigger a repaint.
+  Any deviation — using `self`, forgetting the null check, or not calling
+  `InvalidateRect` — causes a compile error or a silent no-op. When adding
+  a hover state, add a `btn_hover: bool` field to the struct, initialize it
+  in `new()`, update it in `WM_MOUSEMOVE`, and change the render color
+  based on it.
+- **A feature that compiles is not a feature that works.** After adding a new
+  field, function, or message handler, grep for its call site in the render
+  path. If the only reference is the definition, the feature is inert — it
+  exists in the binary but never runs. This is the most common failure mode
+  in a large GUI overhaul: the struct gets the field, the proc gets the match
+  arm, but nothing calls either. Before reporting a feature done, trace from
+  the paint loop to the new code and confirm the path is reachable.
+- **The "field exists but render ignores it" gap is the most common.** A field
+  is added to the state struct, a setter is written, but the render function
+  never reads the field — it still uses hardcoded values. Examples: a
+  `search_query` field that `paint_rows()` never filters on, a `typing` bool
+  that `render_chat_window()` never checks, a `stats_overlay` string that is
+  set but never drawn. Before reporting a feature done, grep the render
+  function for the field name and confirm it is actually used in a draw call.
 - **Handle `WM_ERASEBKGND` by returning `1`.** Without this, the window
   flickers on resize and repaint. Add `WM_ERASEBKGND => 1` to every window proc's
   match block — it is a one-liner that prevents visible flicker.
