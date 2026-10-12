@@ -104,6 +104,21 @@ silent — everything looks fine until you look at the pixels.
   the number decide: here the write was 8.8ms against a 16.7ms frame budget, so
   it was worth batching, but a 0.3ms write would have been left alone. Assert a
   generous bound rather than an exact time so the test does not flake.
+- **A snapshot derived by assignment clobbers keys another writer inserted.**
+  Publishing a store into a shared read-back map with `snapshot = store.clone()`
+  wipes every key a *different* writer put there — control handlers, caches,
+  computed fields. The other writer's work silently disappears on the next
+  publish, and a correct change reads back as missing. Merge per key
+  (`for (k, v) in store.snapshot() { map.insert(k, ...) }`) so store values
+  refresh while foreign keys survive. This is distinct from staleness: the
+  data was there and the publish deleted it.
+- **Do not recreate GDI objects per frame.** A DIBSection, bitmap or brush that is
+  deleted and recreated on every present is a full allocation plus a
+  whole-buffer copy each frame for an object that almost never changes. Create
+  once, keep the DC's original bitmap, and reallocate only when the size
+  actually changes. A bitmap selected into a DC must not be freed — restore the
+  DC's original bitmap with `SelectObject` before `DeleteObject`, or GDI leaks
+  and eventually fails.
 - **Batch a whole-store write; do not do it per change.** A store that
   serialises and writes everything on each mutation is O(n) per message. Mark it
   dirty and flush at most once a second from the loop, plus once on shutdown.
@@ -255,6 +270,11 @@ silent — everything looks fine until you look at the pixels.
 - **Hybrid sleep for precise frame pacing.** `std::thread::sleep` on Windows has
   ~15ms granularity. For sub-2ms precision, sleep for `target_ms - 2` ms, then
   busy-wait with `std::hint::spin_loop()` until the target duration elapses.
+  **Measure the deadline from the START of the frame, not from after the
+  sleep.** Measuring from after the sleep adds the whole target again, so every
+  frame costs about twice its budget (a 13ms target produces ~30ms frames).
+  Call `timeBeginPeriod(1)` at startup and `timeEndPeriod(1)` at exit so the
+  sleep honours the requested duration rather than rounding up to ~15.6ms.
   This is essential for consistent frame timing in a render loop.
 - **Register for `TaskbarCreated` to recover from Explorer restarts.** Call
   `RegisterWindowMessageW("TaskbarCreated")` at startup, then handle the

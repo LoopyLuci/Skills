@@ -95,3 +95,32 @@ is unreachable by sleeping alone. Sleep for `target_ms - 2`, then busy-wait with
 `std::hint::spin_loop()` until the target elapses. If the measured p50 sits near
 a multiple of ~15.6ms, the pacing is sleep-bound rather than work-bound — check
 that before optimising code.
+
+Call `timeBeginPeriod(1)` at startup and `timeEndPeriod(1)` at exit. Without it,
+a request to sleep 11ms actually sleeps ~15.6ms, so a 13ms frame lands at 17ms
+and no amount of code optimisation closes the gap. The granularity is
+per-process on current Windows, so raising it does not affect other apps.
+
+### The deadline must originate at the frame start
+
+The busy-wait condition must be `Instant::now() < frame_start + target`.
+Writing it as "spin until `target` has elapsed" measured from *after* the sleep
+adds the whole target a second time: the frame becomes `sleep + target` instead
+of `target`. At a 77fps setting (13ms) that is ~30ms frames — 24fps from a loop
+that looks correctly written. The tell-tale signature is a p50 suspiciously close
+to **2× the frame budget**; check the deadline's origin before suspecting the
+render work.
+
+### Do not clamp the fps target to the display refresh
+
+Clamping a 77fps target to a 60Hz display looks like the right fix for a setting
+that promises more than the panel can present, and it makes the app measurably
+**slower**: 21ms frames instead of 17ms. A frame costs `target + work`, so
+raising the target raises the floor even though the loop can never present
+faster than DWM composites. Leave the target as set; on a 60Hz display the loop
+still lands at ~17ms because that is where the work and composition sit.
+
+Confirm the ceiling before claiming a frame budget is unreachable: read the
+refresh rate (`EnumDisplaySettingsW` with `ENUM_CURRENT_SETTINGS`) and compare
+`1000 / refresh_hz` against the measured p50. A loop at 97% of the display
+ceiling is done, not behind.
