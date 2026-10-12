@@ -119,6 +119,21 @@ silent — everything looks fine until you look at the pixels.
   actually changes. A bitmap selected into a DC must not be freed — restore the
   DC's original bitmap with `SelectObject` before `DeleteObject`, or GDI leaks
   and eventually fails.
+- **Sharing a store behind `Arc<Mutex<>>` when a consumer holds a raw pointer
+  is safe only if the allocation never moves.** A `*mut SettingsUI` stored in a
+  window struct is a borrowed pointer into the store; wrapping the store in
+  `Arc<Mutex<>>` for cross-thread sharing keeps the heap allocation stable for
+  the Arc's lifetime, so the raw pointer stays valid. Moving the store (e.g. into
+  a `Vec` that reallocates, or returning it by value from a function) invalidates
+  every raw pointer into it. This is the standard pattern for a Win32 GDI app
+  where the render loop owns state and a window holds a borrowed pointer to it.
+- **A modal file dialog blocks forever in a test.** `GetSaveFileNameW` and
+  `GetOpenFileNameW` are modal and wait for user input; calling them from a unit
+  test hangs the suite indefinitely. Make the path prompt injectable: add a
+  `path_prompt: Option<fn(bool) -> Option<String>>` field to the view, default
+  to `None` (use the real dialog), and let tests supply a closure that returns
+  a fixed path. The same applies to any blocking OS dialog (colour picker,
+  folder browser, print dialog).
 - **Batch a whole-store write; do not do it per change.** A store that
   serialises and writes everything on each mutation is O(n) per message. Mark it
   dirty and flush at most once a second from the loop, plus once on shutdown.

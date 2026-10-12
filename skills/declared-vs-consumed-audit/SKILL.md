@@ -55,6 +55,17 @@ When auditing by parsing source:
 
 Always print the parsed set and check it against reality before trusting a pass.
 
+**Check whether an authoritative classification already exists before building a scanner.**
+A codebase may already have a hand-maintained or test-gated classification
+(e.g. an `availability()` function, an `INERT_SETTINGS` const, or tests asserting
+which settings are live). A new mechanical scanner that contradicts the existing
+authority is worse than no scanner — it reports plausible-looking but wrong
+results, and a future reader trusts it over the code. Grep for the existing
+classification first (`grep -rn "availability\|INERT\|LIVE" --include=*.rs`).
+If one exists, extend it rather than replacing it. If the existing classification
+is incomplete, patch it and add a test, do not build a parallel scanner that
+disagrees with it.
+
 ## Probing, not just unit testing
 
 A unit test over a helper proves the helper works, not that it is called. For
