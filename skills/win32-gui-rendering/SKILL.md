@@ -94,6 +94,30 @@ silent — everything looks fine until you look at the pixels.
   window, captures nothing, and reports a render failure that is really a
   harness bug. Assert an idempotent pair instead: toggle twice and check that
   each transition moves pixels and the third capture matches the first.
+- **Measure a suspected hot path before restructuring it.** An audit note that
+  "the store saves on every message" is a hypothesis, not a finding. Time the
+  worst case the caps allow (the test doubles as the regression guard) and let
+  the number decide: here the write was 8.8ms against a 16.7ms frame budget, so
+  it was worth batching, but a 0.3ms write would have been left alone. Assert a
+  generous bound rather than an exact time so the test does not flake.
+- **Batch a whole-store write; do not do it per change.** A store that
+  serialises and writes everything on each mutation is O(n) per message. Mark it
+  dirty and flush at most once a second from the loop, plus once on shutdown.
+  Keep the immediate path as the default so existing tests and callers are
+  unchanged, and make turning the mode off flush anything pending so a switch
+  cannot drop a change. Write to a sibling file and rename, or a crash mid-write
+  leaves a truncated store and loses everything.
+- **A theme is not wired until something reads the setting.** A
+  `set_theme()` that exists and is never called leaves the window permanently on
+  the default, and the setting screen still shows the control working. Grep for
+  the setter's call site: if the only hit is its definition, the feature is
+  inert. Wire it by reading the setting each frame and applying on change, and
+  apply the saved value before the first frame so a restart honours it.
+- **Hardcoded colour constants defeat a theme.** Replacing them in the panels
+  but not the message bubbles, sidebar and input leaves a theme switch that
+  changes most of the window, which reads as a bug. Grep the draw code for the
+  old constants after introducing a theme; the fill helpers taking a stride
+  makes this easy to miss because the call sites changed shape at the same time.
 - **Text and fills must share one surface.** `DrawTextW`/`TextOutW` write to a GDI
   device context; filling a `Vec<u32>` writes to your buffer. Different surfaces
   means every glyph lands somewhere the app never blits from.
