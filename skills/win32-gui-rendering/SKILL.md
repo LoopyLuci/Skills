@@ -41,6 +41,59 @@ silent — everything looks fine until you look at the pixels.
 
 ## Always-on rules
 
+- **A window that renders but ignores every click and keystroke has no
+  message pump.** A window proc is only ever invoked by the dispatcher, so if
+  the main loop never calls `PeekMessage`/`DispatchMessage` (or `GetMessage`),
+  the window receives no `WM_PAINT`, no `WM_KEYDOWN`/`WM_CHAR`, no
+  `WM_LBUTTONDOWN` and no `WM_MOUSEWHEEL` — every control is dead no matter how
+  correctly it is written. Grep the render loop for `PeekMessage`/`DispatchMessage`
+  before diagnosing input handling: an app can have a working pump on one
+  thread (an overlay) and none on the thread that owns the main window, which
+  is what makes the window look alive while ignoring everything. Fix:
+  `PeekMessageW(&mut msg, null_mut(), 0, 0, PM_REMOVE)` in a `while` loop at the
+  top of the frame loop, `TranslateMessage` + `DispatchMessageW` each, and break
+  on `WM_QUIT`. The tell-tale symptom in a probe: a colour count far too low for
+  the layout (e.g. 23 where a full UI needs 150+).
+- **`PrintWindow` flag 1 hangs when the window thread does not pump.**
+  `PW_CLIENTONLY` (1) sends `WM_PRINTCLIENT` to the app thread, so it blocks
+  forever on a window whose thread is not pumping; `PW_RENDERFULLCONTENT` (2)
+  reads the DWM redirection surface instead, which returns *stale* content rather
+  than hanging. A probe that captures successfully with flag 2 but hangs with
+  flag 1 is evidence of a missing pump, not a probe bug. Use flag 1 once the pump
+  exists — it also gives client-area coordinates directly.
+- **Capture the CLIENT area, or every measured band is shifted by the frame.**
+  `GetWindowRect` includes the title bar and border, so a band at y=60 in client
+  coordinates lands on the title bar in a whole-window capture. Use
+  `GetClientRect` for dimensions with `PrintWindow(hwnd, dc, 1)`, and measure
+  bands from the client origin (0, 0).
+- **`GetKeyState` misses injected, posted and `SendMessage`d input.** It reports
+  only the *physical* key state of the calling thread, so a probe (or an
+  automation tool) that posts Ctrl then F sees `GetKeyState(VK_CONTROL) >= 0` and
+  the shortcut never fires — while real typing works, which makes it look like a
+  probe-only problem. Track modifiers from the message stream instead:
+  set a `ctrl_down`/`shift_down` flag on `WM_KEYDOWN` of the modifier and clear
+  it on `WM_KEYUP`, then read the flag. This also makes the shortcut unit-testable
+  without a window.
+- **A before/after pixel diff beats an ink-vs-modal band when the change is
+  low-contrast.** A search bar whose fill matches the surrounding background
+  barely moves an ink count, so a band metric reports "no change" for a feature
+  that plainly rendered. Capture before and after and count differing pixels
+  directly (>200 is unambiguous); assert the reverse action restores the view
+  (diff returns to ~0).
+- **`CreateWindowExW` takes the OUTER size; layout constants are usually the
+  CLIENT size.** Passing `WIN_WIDTH`/`WIN_HEIGHT` straight to `CreateWindowExW`
+  when the layout is written against those constants leaves the client smaller by
+  the frame (title bar + borders), so the bottom strip — typically the message
+  input — lands below the visible edge and looks missing. Compute the outer size
+  with `AdjustWindowRectEx(&mut RECT{right: WIN_WIDTH, bottom: WIN_HEIGHT},
+  WS_OVERLAPPEDWINDOW, 0, 0)` and pass those dimensions. Tell-tale sign in a
+  capture: the client area is smaller than the layout constants (e.g. 884x600
+  where the code says 900x640).
+- **Do not use Escape to reset a probe's state.** If the app maps Escape to
+  "close search, else hide the window", a probe that sends Escape first hides the
+  window, captures nothing, and reports a render failure that is really a
+  harness bug. Assert an idempotent pair instead: toggle twice and check that
+  each transition moves pixels and the third capture matches the first.
 - **Text and fills must share one surface.** `DrawTextW`/`TextOutW` write to a GDI
   device context; filling a `Vec<u32>` writes to your buffer. Different surfaces
   means every glyph lands somewhere the app never blits from.
