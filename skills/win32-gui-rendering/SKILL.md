@@ -127,6 +127,7 @@ silent — everything looks fine until you look at the pixels.
   a `Vec` that reallocates, or returning it by value from a function) invalidates
   every raw pointer into it. This is the standard pattern for a Win32 GDI app
   where the render loop owns state and a window holds a borrowed pointer to it.
+- **A custom-drawn window has no OS tooltip, so each hit target needs one.** A hand-rolled GDI window cannot fall back on the OS tooltip: a button whose meaning is not obvious from its label is a dead end. Add a `tooltip: String` field to the hit target and fill it from the action in a constructor (`HitTarget::new(rect, action)`), so a new control cannot ship without one — the compiler enforces it. Store the tooltip text lookup (`fn tooltip_for(&UiAction) -> String`) next to the action enum so all strings are in one place. In the paint loop, read the hovered index and draw a small box near the cursor. The tooltip is drawn from `win.draw_dc` (the off-screen DC published for the frame), not from a local `dc` — `draw_ui` does not receive the DC directly.
 - **A modal file dialog blocks forever in a test.** `GetSaveFileNameW` and
   `GetOpenFileNameW` are modal and wait for user input; calling them from a unit
   test hangs the suite indefinitely. Make the path prompt injectable: add a
@@ -226,6 +227,20 @@ silent — everything looks fine until you look at the pixels.
   share a title, so title matching screenshots the wrong one.
 - **Prove behaviour with assertions, not eyeballs.** Colour count shows *something*
   drew; only looking at it shows the *right* thing drew. Do both.
+- **Test UI states that are mutually exclusive separately.** When a render path
+  is `if state_a { draw_x() } else if state_b { draw_y() }`, the two controls
+  never appear together. A test that sets both states and asserts both tooltips
+  fails on the second one. Split into two tests, each setting only the state that
+  makes its control appear. The tell-tale failure is `left: None, right:
+  Some("...")` for the second assertion — the control was never rendered, not
+  rendered without a tooltip.
+- **Test UI states that are mutually exclusive separately.** When a render path
+  is `if state_a { draw_x() } else if state_b { draw_y() }`, the two controls
+  never appear together. A test that sets both states and asserts both tooltips
+  fails on the second one. Split into two tests, each setting only the state that
+  makes its control appear. The tell-tale failure is `left: None, right:
+  Some("...")` for the second assertion — the control was never rendered, not
+  rendered without a tooltip.
 - **A handler that returns `Ok(())` proves only that it ran.** Every OS
   registration — tray icon, hotkey, hook, clipboard listener — must be checked by
   the OS's own acknowledgement, and `start()` must propagate that rather than
@@ -659,6 +674,22 @@ build cycle, and none is guessable from the signature.
 - `GET_X_LPARAM` / `GET_Y_LPARAM` live behind the `windowsx` cargo feature. Do not
   add a feature flag for two shifts and masks — `let p = lparam as u32;`
   then `(p & 0xFFFF)` / `(p >> 16)` is clearer and dependency-free.
+- `GetSaveFileNameW`/`GetOpenFileNameW` need the `commdlg` feature on winapi
+  0.3.9. The feature name is `commdlg`, not `comdlg32`.
+- `GetSaveFileNameW`/`GetOpenFileNameW` need the `commdlg` feature on winapi
+  0.3.9. The feature name is `commdlg`, not `comdlg32`.
+- `GetSaveFileNameW`/`GetOpenFileNameW` live in `um::commdlg` behind the
+  `commdlg` feature (not `comdlg32` — that feature does not exist and cargo
+  fails with a version-resolution error). `OFN_OVERWRITEPROMPT` and
+  `OFN_PATHMUSTEXIST` are the flags to combine. The dialog is modal, so the
+  calling thread blocks until the user acts — fine for a window, fatal in a test.
+- **Test UI states that are mutually exclusive separately.** When a render path
+  is `if state_a { draw_x() } else if state_b { draw_y() }`, the two controls
+  never appear together. A test that sets both states and asserts both tooltips
+  fails on the second one. Split into two tests, each setting only the state that
+  makes its control appear. The tell-tale failure is `left: None, right:
+  Some("...")` for the second assertion — the control was never rendered, not
+  rendered without a tooltip.
 - Colour constants need no `as u32` in recent winapi. Many pet/overlay windows in
   one app means the *class name* is the only reliable selector — match
   `"AppMain"` rather than the window title, which siblings share.
