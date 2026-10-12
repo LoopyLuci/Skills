@@ -358,6 +358,13 @@ silent — everything looks fine until you look at the pixels.
   build it; report what changed afterwards. Reserve the list for the first ask.
   The same applies to "proceed", "properly proceed with all" and "optimally":
   they mean act on the whole scope now, not plan it again.
+- **When adding `use` imports to files with `//!` doc comments, place them
+  after all `//!` lines and after any `#![cfg(windows)]` inner attributes.**
+  The order is: `//!` docs → `#![...]` attrs → `use` statements. A `use` line
+  inserted between `//!` lines or before `#![cfg(windows)]` causes an E0753
+  ("expected outer doc comment") or E0753 ("inner attribute is not permitted")
+  that costs a build cycle to diagnose. When bulk-adding an import to many
+  files, check each file's first 5 lines before moving on.
 - **Deleting a dead module requires cleaning up its exclusive dependencies.** A
   module that is never constructed often pulls in dependencies nothing else
   uses (e.g. `wgpu`, `winit`, `raw-window-handle`, `pollster`). After deleting
@@ -412,6 +419,11 @@ grep -n "pub fn CreateFontW" -A 16 ~/.cargo/registry/src/*/winapi-0.3.*/src/um/w
 
 - `SelectObject` / `DeleteObject` take `*mut c_void`. Wrap in one helper rather
   than casting at each call site — and check the helper doesn't call itself.
+- `CreateDIBSection`'s 4th parameter (`ppvBits`) is `*mut *mut c_void`, not
+  `&mut *mut c_void`. Passing `&mut raw` where `raw: *mut c_void` gives a
+  mismatched-types error. Use `&raw as *const _ as *mut _` — the compiler
+  infers the target type from the function signature. This applies to every
+  `CreateDIBSection` call site; grep for them all when one fails.
 - `CreateFontW`'s `fwWeight` is `i32`; `DEFAULT_CHARSET as u32` trips clippy as a
   no-op cast.
 - `GetBitmapDimensionEx(hbit: HBITMAP, lpsize: *mut SIZE)`; see the type-name
@@ -681,8 +693,17 @@ build cycle, and none is guessable from the signature.
   `OFN_PATHMUSTEXIST` are the flags to combine. The dialog is modal, so the
   calling thread blocks until the user acts — fine for a window, fatal in a test.
 - `EnumDisplayDevicesW` lives in `um::winuser`, not `um::wingdi`. The
-  `DISPLAY_DEVICEW` struct has no `Default` impl — use `mem::zeroed()` and set
-  `cb` manually. `DEVICE_STATE_ACTIVE` is `0x1`.
+  `DISPLAY_DEVICEW` struct is in `um::wingdi` and has no `Default` impl — use
+  `mem::zeroed()` and set `cb` manually. `DEVICE_STATE_ACTIVE` is `0x1`.
+- `std::ffi::c_void` and `winapi::ctypes::c_void` are **distinct types**.
+  All winapi GDI function signatures use `winapi::ctypes::c_void`; passing a
+  `*mut std::ffi::c_void` where `*mut winapi::ctypes::c_void` is expected
+  fails with a mismatched-types error that names both types. Import
+  `use winapi::ctypes;` and use `winapi::ctypes::c_void` in every GDI helper
+  signature. A bulk find-and-replace of `core::ffi::c_void` → `winapi::ctypes::c_void`
+  across all `.rs` files is safe (it is a type-name replacement, not a structural
+  change), but always verify each file's first 5 lines afterwards for doc-comment
+  ordering.
 - Colour constants need no `as u32` in recent winapi. Many pet/overlay windows in
   one app means the *class name* is the only reliable selector — match
   `"AppMain"` rather than the window title, which siblings share.
