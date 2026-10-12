@@ -93,6 +93,33 @@ silent — everything looks fine until you look at the pixels.
   populate it from disk. Without this, saved settings are never applied at
   startup — the default value is always used. This is the most common cause of
   "my setting saved but didn't take effect" bugs.
+- **Window procs have no `self`.** An `unsafe extern "system" fn` window proc
+  cannot use `self`. Get the state pointer from `GetWindowLongPtrW(hwnd,
+  GWLP_USERDATA) as *mut YourState`, null-check it, then use `(*ptr).field`
+  for every access. Using `self` in a window proc is a compile error (E0424).
+  See [references/window-proc-state-access.md](references/window-proc-state-access.md)
+  for the full pattern with code examples and common compile errors.
+- **Handle `WM_ERASEBKGND` by returning `1`.** Without this, the window
+  flickers on resize and repaint. Add `WM_ERASEBKGND => 1` to every window proc's
+  match block — it is a one-liner that prevents visible flicker.
+- **Hybrid sleep for precise frame pacing.** `std::thread::sleep` on Windows has
+  ~15ms granularity. For sub-2ms precision, sleep for `target_ms - 2` ms, then
+  busy-wait with `std::hint::spin_loop()` until the target duration elapses.
+  This is essential for consistent frame timing in a render loop.
+- **Register for `TaskbarCreated` to recover from Explorer restarts.** Call
+  `RegisterWindowMessageW("TaskbarCreated")` at startup, then handle the
+  returned message ID in the tray window proc to re-add the icon via
+  `Shell_NotifyIconW(NIM_ADD, ...)`. Without this, the tray icon disappears
+  permanently after an Explorer crash or restart.
+- **Balloon notifications use `NIM_MODIFY` with `NIF_INFO`.** Call
+  `Shell_NotifyIconW(NIM_MODIFY, ...)` with `uFlags = NIF_INFO` and the
+  `szInfoTitle`/`szInfo` fields populated. The `NIF_INFO` flag must also be set
+  on the initial `NIM_ADD` for balloons to work.
+- **Dynamic context menus need `CreatePopupMenu`/`AppendMenuW`/`TrackPopupMenu`.**
+  Build the menu each time it is shown based on current state. Use `MF_STRING`
+  for items, `MF_SEPARATOR` for dividers, and `MFT_CHECKED` for toggle state.
+  `TrackPopupMenu` returns the chosen item ID — assign it to a variable, don't
+  discard it.
 - **Multiple GUI processes block all input.** When two instances of a Win32 GUI
   app run simultaneously, neither responds to mouse or keyboard — the user sees
   windows but clicks do nothing. Before diagnosing input handling, check

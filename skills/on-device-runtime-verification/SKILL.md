@@ -141,6 +141,11 @@ suite stand in for a chain that has never been closed against a real peer.
 - **`pm query-receivers` does not exist on all devices.** Use `dumpsys package <pkg>`
   to check whether a receiver is registered; it is the portable equivalent and works
   across Android versions.
+- **`jarsigner -verify` only checks v1 (JAR signing).** Android APKs signed with
+  v2 scheme (the default since AGP 7) report "unsigned" to jarsigner despite being
+  correctly signed. Use `apksigner verify --verbose` from the SDK build-tools to
+  check v1/v2/v3/v4 schemes. An APK that says "unsigned" from jarsigner but
+  "Verifies" from apksigner with v2 scheme is correctly signed.
 - **Resolve platform tools from the SDK, not `PATH`.** A tool that works in a
   terminal you configured is not available to a script you run later.
 - **Duplicate desktop processes block Android input too.** If the user reports
