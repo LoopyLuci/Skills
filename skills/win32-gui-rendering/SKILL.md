@@ -38,6 +38,10 @@ silent — everything looks fine until you look at the pixels.
 - Auditing whether a declared surface is consumed at all — settings keys, MCP
   tools, IPC commands — and turning the result into a CI gate
   (see [references/inert-surface-audits.md](references/inert-surface-audits.md))
+- The UI stutters, or the loop misses its frame target and the average FPS hides
+  it (see [references/render-loop-performance.md](references/render-loop-performance.md))
+- Adding a command to the app's control surface, or a client needs to match
+  replies to requests (see [references/local-control-api.md](references/local-control-api.md))
 
 ## Always-on rules
 
@@ -118,6 +122,52 @@ silent — everything looks fine until you look at the pixels.
   changes most of the window, which reads as a bug. Grep the draw code for the
   old constants after introducing a theme; the fill helpers taking a stride
   makes this easy to miss because the call sites changed shape at the same time.
+- **`WM_LBUTTONDBLCLK` never arrives without `CS_DBLCLKS` on the window class.**
+  Registering with only `CS_HREDRAW | CS_VREDRAW` means Windows never
+  synthesises the double-click message, so a double-click feature silently does
+  nothing however correct its handler is. Add `CS_DBLCLKS` to `WNDCLASSEXW.style`
+  whenever a control responds to a double-click.
+- **Escape is a shared key: a mode must consume it before the window does.** If
+  Escape both leaves an edit mode and hides the window, pressing it while editing
+  must cancel the edit and return, not fall through to hide — otherwise a user
+  correcting a typo loses the window. Give the active mode the first look at the
+  key and delegate only when no mode is active.
+- **A keyboard-only user needs focus regions, not just a text box.** Tab between
+  the panes, arrows within a list, Enter activates whatever holds focus — so
+  Enter's meaning must be region-dependent (send in the input, open in the
+  sidebar), and text entry must be gated on the focused region or keystrokes
+  silently edit a draft the user is not looking at. Draw a focus indicator: a
+  keyboard user cannot otherwise tell what Enter would activate.
+- **An undo stack must be written by the reversal, not by the recording setter.**
+  Calling the normal setter from `undo()` records the undo itself as a new change,
+  so the history grows on every reversal and redo becomes unreachable. Write the
+  value directly in `undo`/`redo` and move the entry between the two stacks. A
+  bulk reset must clear the history rather than leave a stack that no longer
+  describes the state.
+- **A snapshot mirrored only on write goes stale the moment anything changes the
+  store by another path.** Publishing state into a shared read-back struct inside
+  the writer leaves every other mutator — undo, a loader, a reset — reporting the
+  old value, so a correct change looks like it did not take. Derive the snapshot
+  from the store on a timer instead, and throttle it: cloning it per frame is
+  wasted work when the only consumer polls.
+- **Case-insensitive search must take its offsets from the original text.**
+  `to_lowercase()` can change byte length (some characters expand), so an offset
+  taken from the lowered string can land mid-character in the original and panic
+  on the slice that follows. Match against the original, and snap any snippet
+  window to `is_char_boundary` before slicing.
+- **The frame loop must not clone the world every frame.** Cloning the whole
+  transcript, session list or status snapshot just to ask "is anything new?" is
+  the standard way a loop that should hit 75fps lands at 25fps. Grep the loop for
+  `.to_vec()` / `.clone()` / `.list()` / `.messages()`; gate each on a cheap
+  length or version signature, and throttle any publisher whose only consumer
+  polls. Measure before and after rather than assuming — see
+  [references/render-loop-performance.md](references/render-loop-performance.md).
+- **Additive changes to a wire format must not change the shape existing clients
+  see.** Insert the new optional field into the serialised object rather than
+  adding it to every variant of the response enum, then pin the no-field case with
+  a test asserting the exact serialised bytes. Details, plus the connection cap and
+  deferred-persistence patterns a local control surface needs, in
+  [references/local-control-api.md](references/local-control-api.md).
 - **Text and fills must share one surface.** `DrawTextW`/`TextOutW` write to a GDI
   device context; filling a `Vec<u32>` writes to your buffer. Different surfaces
   means every glyph lands somewhere the app never blits from.
