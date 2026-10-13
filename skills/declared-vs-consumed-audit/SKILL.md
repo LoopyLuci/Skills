@@ -66,6 +66,20 @@ If one exists, extend it rather than replacing it. If the existing classificatio
 is incomplete, patch it and add a test, do not build a parallel scanner that
 disagrees with it.
 
+**Prove the gate is not vacuous before trusting a pass.** A test that only
+checks a hand-written allowlist passes trivially: add a probe module to the
+declaration list, confirm the test FAILS on it, then remove it. Without this
+the scanner reports green while catching nothing. Also require every declared
+name to be in exactly one of consumed/exempt — a name added to the source but
+forgotten in both lists is the exact drift the gate exists to catch, and an
+allowlist-only check silently lets it through.
+
+**When wiring a discovered dead module, check whether an existing feature
+already covers the need before building new code.** The high-contrast theme
+here already existed in theme.rs; the only missing piece was the call that
+activated it from the OS state. The accessibility module was not the gap — the
+missing consumer was. Prefer activating what exists over adding a parallel path.
+
 ## Probing, not just unit testing
 
 A unit test over a helper proves the helper works, not that it is called. For
