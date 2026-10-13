@@ -365,14 +365,22 @@ silent — everything looks fine until you look at the pixels.
   ("expected outer doc comment") or E0753 ("inner attribute is not permitted")
   that costs a build cycle to diagnose. When bulk-adding an import to many
   files, check each file's first 5 lines before moving on.
-- **Deleting a dead module requires cleaning up its exclusive dependencies.** A
-  module that is never constructed often pulls in dependencies nothing else
+- **Deleting a dead module requires cleaning up its exclusive dependencies.**
+  A module that is never constructed often pulls in dependencies nothing else
   uses (e.g. `wgpu`, `winit`, `raw-window-handle`, `pollster`). After deleting
   the module, grep the remaining code for each dependency — if zero references,
   remove it from `Cargo.toml`. But first verify no other code references them:
   a dependency used only by the dead module is safe to remove, one used
   elsewhere (e.g. `hardware.rs` using `wgpu` for GPU enumeration) must stay.
   The tell-tale sign is a build error naming the removed crate.
+- **Replacing a GPU-enumeration dependency with Win32 requires more than
+  swapping the API call.** Dropping `wgpu::Instance::enumerate_adapters()` for
+  `EnumDisplayDevicesW` means rewriting the classification logic (vendor and
+  device type are no longer provided by the API), updating every consumer of
+  the old types (`GpuDeviceType` needs `Copy` if used by value in a `match`),
+  and adding the `winuser` feature to the `winapi` dependency in `Cargo.toml`.
+  A name-based classifier (`classify_gpu_name`) is the standard fallback — check
+  for vendor substrings and known integrated/virtual/software indicators.
 - **Test-only hooks must not be `#[cfg(test)]` in a library used by another
   crate's tests.** The attribute applies only within its own crate, so the
   consuming test binary sees nothing. Use `#[doc(hidden)] pub` and document it
@@ -421,9 +429,24 @@ grep -n "pub fn CreateFontW" -A 16 ~/.cargo/registry/src/*/winapi-0.3.*/src/um/w
   than casting at each call site — and check the helper doesn't call itself.
 - `CreateDIBSection`'s 4th parameter (`ppvBits`) is `*mut *mut c_void`, not
   `&mut *mut c_void`. Passing `&mut raw` where `raw: *mut c_void` gives a
-  mismatched-types error. Use `&raw as *const _ as *mut _` — the compiler
-  infers the target type from the function signature. This applies to every
+  mismatched-types error. Use `&mut raw as *mut _ as *mut _` — **not**
+  `&raw as *const _ as *mut _`, which compiles but creates a shared reference;
+  the compiler then rejects the later `from_raw_parts_mut` as UB because the
+  mutable pointer derives from a shared one. This applies to every
   `CreateDIBSection` call site; grep for them all when one fails.
+- **A clippy "unused constant" warning does not mean the constant is dead.**
+  Clippy sees only non-test code; `#[cfg(test)]` blocks that assert on rendered
+  colours still reference the constant. Deleting it breaks `cargo test` while
+  `cargo build` and `cargo clippy` stay green — a failure only the test build
+  surfaces. Before deleting a constant clippy flags, grep the test modules for
+  the symbol; if found, keep it under `#[cfg(test)] mod test_colors { ... }`
+  with a `#[cfg(test)] use` re-export, and ensure the values match whatever the
+  production code (e.g. a theme system) actually renders.
+- **A temporary collection's `.as_ptr()` is a dangling pointer the moment the
+  statement ends.** `"json\0".encode_utf16().collect::<Vec<u16>>().as_ptr()`
+  builds a Vec, takes its pointer, then drops the Vec — the pointer is invalid
+  before the next line runs. Bind the collection to a named `let` first, then
+  take the pointer, so the lifetime spans the FFI call that reads it.
 - `CreateFontW`'s `fwWeight` is `i32`; `DEFAULT_CHARSET as u32` trips clippy as a
   no-op cast.
 - `GetBitmapDimensionEx(hbit: HBITMAP, lpsize: *mut SIZE)`; see the type-name
