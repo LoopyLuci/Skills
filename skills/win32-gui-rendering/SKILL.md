@@ -310,7 +310,7 @@ silent — everything looks fine until you look at the pixels.
   on the initial `NIM_ADD` for balloons to work.
 - **Dynamic context menus need `CreatePopupMenu`/`AppendMenuW`/`TrackPopupMenu`.**
   Build the menu each time it is shown based on current state. Use `MF_STRING`
-  for items, `MF_SEPARATOR` for dividers, and `MFT_CHECKED` for toggle state.
+  Use `MF_STRING` for items, `MF_SEPARATOR` for dividers, and `MFS_CHECKED` for toggle state — `MFT_CHECKED` does not exist in winapi and fails to compile.
   `TrackPopupMenu` returns the chosen item ID — assign it to a variable, don't
   discard it.
 - **Multiple GUI processes block all input.** When two instances of a Win32 GUI
