@@ -727,9 +727,60 @@ build cycle, and none is guessable from the signature.
   across all `.rs` files is safe (it is a type-name replacement, not a structural
   change), but always verify each file's first 5 lines afterwards for doc-comment
   ordering.
-- Colour constants need no `as u32` in recent winapi. Many pet/overlay windows in
-  one app means the *class name* is the only reliable selector — match
+- Colour constants need no `as u32` in recent winapi. Many pet/overlay windows
+  in one app means the *class name* is the only reliable selector — match
   `"AppMain"` rather than the window title, which siblings share.
+- **`FILETIME` is private in `winbase`.** Use `winapi::shared::minwindef::FILETIME`
+  instead — it is the publicly re-exported alias. The `winbase` path fails
+  with E0603 (private struct).
+- **`DEVMODEW` and `POINT` are not publicly exported by winapi 0.3.9.**
+  `DEVMODEW` lives in `winuser` but is private (E0603). `POINT` is also
+  private. For display bounds, use `GetSystemMetrics(SM_CXSCREEN/SM_CYSCREEN)`
+  as a fallback. For `MonitorFromPoint`, use `MonitorFromWindow(GetDesktopWindow(), ...)`
+  instead to avoid needing a `POINT`.
+- **`HKEY` is private in winapi 0.3.9.** `winreg::HKEY` is a private type
+  alias. Use `let mut key = std::ptr::null_mut();` and let Rust infer the
+  type from the API call — the `RegOpenKeyExW` signature will guide inference.
+- **`EXCEPTION_EXECUTE_HANDLER` is private.** The constant exists in
+  `winapi::vc::excpt` but is not re-exported through `winnt`. Use the
+  literal value `1` with a comment: `// EXCEPTION_EXECUTE_HANDLER = 1`.
+- **`evntprov` module does not exist in winapi 0.3.9.** The modern
+  `EventRegister`/`EventWrite`/`EventUnregister` API is unavailable. Use
+  the legacy Event Log API instead: `RegisterEventSourceW`,
+  `ReportEventW`, `DeregisterEventSource` from `winbase`. These require
+  the `winbase` feature (already enabled by default).
+- **`MiniDumpWriteDump` is not in winapi 0.3.9's dbghelp module.**
+  dbghelp exists but only covers symbol walking. Load `MiniDumpWriteDump`
+  dynamically: `LoadLibraryW("dbghelp.dll")` + `GetProcAddress`, then
+  `transmute` to the correct fn signature. Define
+  `MINIDUMP_EXCEPTION_INFORMATION` manually (it is also not exported).
+- **`GetProcessHandleCount` takes two args** `(process, &mut count)`,
+  not one. Declare `let mut count: u32 = 0;` and pass `&mut count`.
+- **`ReportEventW` parameter types:** `lpStrings` is `*mut LPCWSTR`
+  (i.e., `*mut *const u16`), not `*const *const i8`. `lpUserSid` and
+  `lpRawData` are `*mut c_void` — use `std::ptr::null_mut()`, not
+  `std::ptr::null()` (which infers `*const`).
+- **`SystemParametersInfoW` expects `winapi::ctypes::c_void`**, not
+  `std::ffi::c_void`. These are distinct types; passing the wrong one
+  gives a mismatched-types error naming both.
+- **`matches!` does not support `as` expressions in patterns.**
+  `matches!(x, FOO as u32 | BAR as u32)` fails with "expected a pattern,
+  found an expression". Cast the variable first: `let x = x as i32;` then
+  `matches!(x, FOO | BAR)`. This applies to all `matches!` usage with
+  integer constants of a different type than the input.
+- **`if let` tuple patterns do not share bindings across elements.**
+  `if let (Ok(a), Ok(b)) = (expr, a.method())` fails because `a` is not
+  bound when the second tuple element is evaluated. Use nested `if let`
+  or a single `if let` with a guard. This is a common trap when combining
+  `Result` operations.
+- **A hasher's `finalize()` must not call `self.update(&pad)`.**
+  `update()` increments `total_len`, so calling it from `finalize()` to
+  append padding corrupts the length. Directly manipulate the internal
+  buffer instead. This applies to any streaming hasher implementation.
+- **`#[allow(clippy::manual_is_multiple_of)]` when `% N == 0` is clearer.**
+  `.is_multiple_of()` is nightly-only; on stable Rust, `% N == 0` is
+  the only option. Add the allow attribute to suppress the clippy warning
+  when the modulo check is more readable than the alternative.
 
 ## Per-category audio needs a sink per sound
 
