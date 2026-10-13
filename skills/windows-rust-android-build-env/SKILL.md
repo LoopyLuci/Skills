@@ -90,6 +90,12 @@ Verify an APK rather than trusting the build:
 The `.bat` needs a **native Windows** `JAVA_HOME` (`C:\...`); an MSYS `/c/...` path
 fails with "JAVA_HOME is set to an invalid directory".
 
+The same MSYS-vs-native split bites **git**: `git -C /c/Projects/repo …` fails
+with `fatal: cannot change to '/c/Projects/repo'` because native git cannot `cd`
+to a POSIX path, even though `cd /c/Projects/repo` works in bash. In scripts,
+drive git from a `cd` subshell (`( cd "$ROOT_DIR" && git … )`) rather than
+`git -C "$ROOT_DIR"`; `cd` is a bash builtin and resolves the MSYS path itself.
+
 ## 4. Verifying an IPC/control surface that only exists at runtime
 
 Compiling clean proves nothing here. ScreenBuddy's control server compiled for

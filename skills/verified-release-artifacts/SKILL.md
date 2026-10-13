@@ -153,6 +153,15 @@ cargo clippy --all-targets -- -D warnings
 cargo test --workspace
 ```
 
+The **format gate fails more often than any other** here, for a reason that has
+nothing to do with your code: the file-edit tool skips rustfmt on an untrusted
+workspace (it reports `rustfmt skipped: untrusted workspace`), so every edit
+lands unformatted, and `cargo fmt --all -- --check` is red on the next push. Run
+`cargo fmt --all` (not just `--check`) after editing Rust and before committing,
+every time. A batch of pre-existing files may also have drifted from rustfmt
+over time; formatting the whole workspace touches them too, so re-run the build
+and tests afterward to confirm the reformat changed nothing but whitespace.
+
 When you fix lint warnings, prefer real fixes over blanket suppression. For
 code that is genuinely reserved-but-unwired, mark it with an explicit reason
 (`#[allow(dead_code)] // Win32 hwnd handle; wired up when the window is shown`)

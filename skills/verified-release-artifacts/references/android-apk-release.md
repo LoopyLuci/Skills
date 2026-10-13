@@ -118,6 +118,14 @@ Two silent-failure traps, both producing an installable-but-wrong artifact:
 - `file(path)` inside the `app` module resolves to `app/`, not the root.
 - `storeFile` is non-null even when unset, so test existence explicitly.
 
+`file(p)` with an **absolute** Windows path (`C:/...`) resolves correctly from
+any module — the failure mode is a root-relative path like `keystore.jks` that
+exists beside `keystore.properties` at the project root but not under `app/`.
+Check both `file(p)` and `rootProject.file(p)`; the original `if (direct.exists())
+direct else rootProject.file(p)` pattern is correct for relative paths but silently
+returns null for absolute paths when `file(p)` mishandles them. A `when` block
+checking both candidates is more robust.
+
 Generate a key:
 
 ```bash
@@ -160,6 +168,11 @@ export JAVA_HOME='C:\path\to\jdk-17'
 
 The tool files are `apksigner.bat` / `aapt2.bat`, so a glob for `apksigner`
 without the extension silently matches nothing and looks like a missing SDK.
+
+**`jarsigner -verify` only checks v1 (JAR signing).** Android release APKs
+use v2+ (APK Signature Scheme), so `jarsigner` reports "jar is unsigned" even
+when the APK is correctly signed. Always verify with `apksigner verify
+--verbose` — it reports v1/v2/v3/v4 scheme status and signer count.
 
 ## Backing up and verifying a signing key
 

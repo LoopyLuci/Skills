@@ -133,3 +133,25 @@ release matrix is guaranteed red. Replace the impossible entry with a real check
 of whatever *is* portable — the core/library crate with `--all-targets` — which
 also catches cfg-gating mistakes a single-platform build cannot surface. Do not
 delete the job and do not fake it.
+
+## Release scripts that fail open
+
+The same green-but-did-nothing class lives in release scripts, not just CI. Two
+shapes to audit before trusting a `release.sh` exit 0:
+
+- **A build step whose failure is swallowed still lets a stale artifact ship.**
+  `./gradlew assembleRelease || echo "warning"` returns 0, and the very next step
+  copies the pre-existing APK from the output path — so a failed build publishes
+  the *previous* release's bytes under the new version. Delete the artifact path
+  (`rm -f "$APK_PATH"`) before building, so a failed build leaves nothing to
+  stage. Same rule as CI: verify the output exists and is fresh, not the exit
+  code.
+- **`sed` used to inject multi-line text aborts on metacharacters.** Passing
+  `--notes "… a/b …"` into `sed -i "1a\\\n$notes\\n"` breaks on the slashes and
+  other regex metacharacters in the notes, killing the script mid-release with a
+  "File name too long"-style error. Build the block in a temp file and splice it
+  with `awk` keyed on a heading pattern instead of a `sed` append program.
+
+Also print the truth, not a fixed string: a step that always echoes
+"Android APK built" after a guarded build lies when the guard fired. Echo the
+condition, or only echo inside the success branch.
