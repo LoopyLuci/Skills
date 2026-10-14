@@ -39,7 +39,13 @@ caught, and both are routinely skipped.
 
 1. Confirm the project's own gates are green (build, lint, tests) *before*
 staging a release. A release snapshotting a red tree is a bad release.
-2. Build the release artifact.
+2. **Kill stale instances of the app before building.** A running GUI process
+holds its own release binary open; on Windows the rebuild then dies with
+`Access is denied (os error 5)` while looking like a permissions problem. Check
+`tasklist | grep -i <app>` and `taskkill /F /IM <app>.exe` first — a release
+that stages a week-old binary because today's build silently failed to
+overwrite it is the failure this prevents.
+3. Build the release artifact.
 3. **Audit staged content** for oversized blobs and secrets — before the first
 push, not after the rejection teaches you what to look for.
 4. Push.
@@ -86,6 +92,26 @@ If several workflows run in parallel, all must be `success`, not just the one yo
 remember. When a claim of "green" turns out to be stale, correct the record
 explicitly and name what was actually checked - an unverified claim reported as
 verified is the failure, not the underlying CI break.
+
+### Watch the run that matches your commit, not the first one listed
+
+`gh run list --limit 1` returns the newest run of *any* workflow, and a repo
+with several workflows triggered by the same push produces several runs. A
+background poller built on `--limit 1` can lock onto a fast side workflow
+("Control API") and report `success` while the main CI run is still failing —
+or worse, report the *previous* run's result if a new push started a slower one.
+
+Select the run by both workflow name and head SHA, and re-check the mapping
+when a new push lands:
+
+```bash
+gh run list --limit 5 --json databaseId,name,status,conclusion,headSha \
+  -q '.[] | select(.name=="CI" and (.headSha|startswith("<short-sha>")))'
+```
+
+A poller that only prints job names for two jobs when the workflow has nine is
+the tell: its output is from the wrong workflow. When a background watcher
+reports completion, verify against `gh run view` directly before believing it.
 
 ### A validation action that needs the network is a single point of failure
 
