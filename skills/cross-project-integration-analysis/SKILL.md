@@ -44,7 +44,7 @@ The deliverable is a committed markdown doc in the primary repo's `docs/` — ex
 
 - **Re-pull the other repo before writing.** A same-day merge added an entire learning-router subsystem that reshaped the whole recommendation after the first draft was written.
 - **Check each seam's direction before recommending it.** One project exposed no OpenAI-compatible chat server, which turned the obvious "point X at Y" suggestion into a different pattern entirely — the analysis would have shipped a broken plan without that check.
-- **A re-ask of the same question is a depth signal, not a repetition request.** Add implementation-level detail — exact signatures, wire formats, paste-ready code sketches, test plans, decision tables — do not restate the same analysis at greater length.
+- **A re-ask of the same question is a depth signal, not a repetition request.** Add implementation-level detail — exact signatures, wire formats, paste-ready code sketches, test plans, decision tables — do not restate the same analysis at greater length. A *second* re-ask after the doc exists means analysis is finished: implement the top-ranked pattern under the repo's test bar and update the doc to an as-built record.
 - **When `write_file` refuses an overwrite with the stale-file guard** despite a full prior read, write the new content to a temp sibling filename and replace via shell `mv`; do not loop re-reads.
 - **Check whether a recommended config file is git-ignored or missing from a fresh checkout** before prescribing its placement — a snippet aimed at a file the repo deliberately excludes (provider/key-bearing configs usually are) needs a different placement note than one that exists in every clone.
 
