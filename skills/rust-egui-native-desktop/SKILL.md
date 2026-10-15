@@ -92,6 +92,11 @@ Use this instead of Tauri when the user demands 100% native rendering.
   declare what you want each frame and egui diffs against the previous frame.
   State lives in your struct, not in the widgets.
 
+- **Wire every UI control to a real API.** A button whose handler only sets a
+  status string ("Loading...", "Identifying...") is unfinished work and will be
+  rejected. Each control must invoke the core API and display real results
+  (track lists, progress, checksums, confidence scores, saved settings).
+
 ## Cargo.toml Setup
 
 ```toml
@@ -176,3 +181,21 @@ fn main() -> eframe::Result<()> {
 
 - **No CSS/styling.** egui uses a Rust-native styling system. Colors, spacing,
   and layout are all code. There is no CSS, no HTML, no web technologies.
+
+- **`write_file` refuses to overwrite paginated reads.** If a file was read with
+  `offset`/`limit` pagination, `write_file` blocks the overwrite with a
+  `stale_write_blocked` error. Fix: `rm` the file first via terminal, then
+  `write_file` fresh. This is a tool guard, not a code issue.
+
+- **Workspace dependencies are not inherited by member crates.** A dep in
+  `[workspace.dependencies]` reaches a member only if that member's Cargo.toml
+  lists it (`dep.workspace = true`). If only the core crate declares
+  `dirs`/`directories`, the app crate fails with "cannot find module or crate" —
+  either add the dep or resolve config paths with
+  `std::env::var("APPDATA")` / `std::env::temp_dir()`.
+
+- **Launch a built GUI on Windows with `cmd.exe /c "start C:\full\path\app.exe"`.**
+  Bare `start` inside git-bash mangles the path (the drive letter gets eaten,
+  producing "not recognized" errors), and `&` backgrounding is refused by the
+  foreground terminal. After launching, verify with `tasklist | grep <appname>`;
+  kill a previous instance first with `taskkill //F //IM <appname>.exe`.
