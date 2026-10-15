@@ -37,6 +37,11 @@ reads the real behaviour.
    noticing a fifth time.
 4. **Print the full picture** - every classified name - not just a verdict. A
    clean result from a broken parser is worse than a failure.
+5. **When the gate fires on a module you just added, wire the consumer — never
+   exempt it to go green.** The fix is a real call site (invoke the module's
+   API from the app's startup path) plus an allowlist entry naming that
+   consumer file, in the same commit. Exempting the new module defeats the
+   exact drift the gate exists to catch.
 
 ## Parser bugs to expect
 
