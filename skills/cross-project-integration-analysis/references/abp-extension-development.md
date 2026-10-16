@@ -59,6 +59,83 @@ Extensions receive `read_auth` and `write_auth` as **plain callables** (not
 @app.post("/api/thing", dependencies=[Depends(write_auth)])
 ```
 
+## Reading your own config (the `api.settings()` trap)
+
+The ExtensionAPI exposes registration calls only — **there is no `settings()`
+method.** Calling it raises AttributeError; the classic bug is a
+`try: settings = dict(api.settings()) except Exception: settings = {}` that
+silently falls back to defaults and the extension runs unconfigured for
+weeks without anyone noticing (a watcher did exactly this — env defaults
+happened to be correct).
+
+The sanctioned way to read your own config is your overlay file:
+
+```python
+from bot import extensions as _ext
+
+root = _ext.private_dir(os.environ)          # ABP_PRIVATE_DIR, or None
+path = root / "config" / "backends.yaml"    # your overlay name
+import yaml
+settings = yaml.safe_load(path.read_text())["backends"]["<your kind>"]
+```
+
+A missing overlay is the public default, not an error — return `{}`. Never
+let a config read fail silently: log or surface it, because the default
+*looks* like it works.
+
+## N named backends (the swarm pattern)
+
+One backend kind has one settings dict. For N instances with distinct
+config (addrs, personas), register one class per name — `add_backend` lands
+the settings in the effective config, `add_backend_class` makes the
+factory findable under that kind:
+
+```python
+for member in overlay_settings["swarm"]:            # your overlay drives it
+    api.add_backend_class(member["name"], factory,
+                          family="external", label=..., ready=ready)
+    api.add_backend(member["name"], addr=member["addr"],
+                    timeout_s=300, personas=member.get("personas", {}))
+```
+
+`Loaded.config_overlay()` folds every extension's `api.backends` into the
+config document, so `backends.<name>.<key>` resolves in the factory. A bot
+instance sets `backend: <name>` to use one. Unknown kinds with an `addr`
+key are safe to register generically — no other backend uses `addr`.
+
+## Sandboxed tool execution (dangerous tools in a cell)
+
+To run a tool inside a bounded process_cell from an extension route:
+
+```python
+from bot.backends.base import process_cell
+from bot.sandbox_ns import spawn
+
+cell = process_cell("myext-sandbox", preset="tool", owner="myext")
+try:
+    proc = spawn.run([sys.executable, worker, tool, json.dumps(args)],
+                      timeout=60, cell=cell, env=env)
+finally:
+    cell.close()
+```
+
+Three rules learned the hard way:
+
+- **`spawn.run` takes Popen kwargs, not `subprocess.run` kwargs** — no
+  `capture_output=True` ("Popen.__init__() got an unexpected keyword
+  argument"). It already defaults stdout/stderr to PIPE+text, and a timeout
+  kills the cell's whole tree itself before raising TimeoutExpired.
+- **The worker needs the package root on PYTHONPATH** — a fresh
+  subprocess cannot `import bot...`. Derive it from the running process:
+  `Path(bot.__file__).resolve().parent.parent`, pass it in `env`.
+- **Bound the output** (e.g. last 8k chars) and always state `timed_out` —
+  a killed run is a result, never a silent truncation.
+
+The worker calls the same dispatch the agent runtime uses
+(`bot.agent_runtime.tools.execute_tool(tool, args, workspace=...)`), so
+the tool behaves identically to an in-process call. MCP-routed tools cannot
+run in the worker (no server connection) — report that honestly.
+
 ## Backend settings
 
 A backend's `settings` dict comes from `config['backends'][name]` in ABP's

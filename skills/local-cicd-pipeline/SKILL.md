@@ -1,9 +1,24 @@
 ---
 name: local-cicd-pipeline
 description: "Build local CI/CD pipelines with preflight, tests, deploy."
+version: 1.0.0
+author: Hermes Agent
+license: MIT
+metadata:
+  hermes:
+    tags: [ci-cd, pipeline, automation, devops]
+    related_skills: [github-pr-workflow, verified-release-artifacts]
 ---
 
 # Local On-Device CI/CD Pipeline
+
+## When to Use
+
+Use this skill when building, maintaining, or troubleshooting a local on-device CI/CD pipeline. This includes:
+- Setting up preflight checks, static analysis, test automation, smoke tests, build, and deploy stages
+- Configuring git hooks (pre-commit, pre-push) for automated pipeline execution
+- Troubleshooting pipeline failures (stale reports, historical diff ranges, Gradle error parsing)
+- Adding file watchers or scheduler triggers for continuous automation
 
 ## Overview
 

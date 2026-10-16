@@ -143,6 +143,12 @@ read it from crate metadata (`env!("CARGO_PKG_VERSION")`) instead of hardcoding
 it, so it cannot drift again. Bump `versionCode` on every release — Android
 requires a strictly greater code for an update to install over a published one.
 
+Keep the **changelogs** in the same story as the versions: the project changelog
+(gets a new entry every release — check it for duplicated entries from past
+releases, they happen), the fastlane `default.txt` changelog (it goes stale
+*silently* — nothing reminds you to refresh it, and users on F-Droid read it),
+and one fastlane changelog file per `versionCode` (`changelogs/<code>.txt`).
+
 ### If CI fails after you have already tagged
 
 Do not silently move the tag. Fix forward on `main`, then either move the tag
@@ -290,6 +296,13 @@ Tag before releasing and pass `--verify-tag` so a release can't silently tag the
 wrong commit. Confirm the release version matches the build manifest
 (`[workspace.package] version`, `versionName`); these drift independently and a
 mismatched tag is a real release defect.
+
+**Push the tag before creating the release.** `gh release create` refuses with
+"tag vX exists locally but has not been pushed to OWNER/REPO" when the tag was
+created locally first — create-and-push order matters:
+`git tag -a vX -m "vX" && git push origin vX && gh release create vX ...`.
+The same guard applies to annotated tags; a second attempt after the push
+succeeds without recreating anything.
 
 ## Reporting
 
