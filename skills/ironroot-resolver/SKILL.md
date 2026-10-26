@@ -171,7 +171,206 @@ fault stays visible. Give up on a bound number of consecutive errors rather than
 spinning forever. `ConnectionReset`, `Interrupted`, `WouldBlock` and `TimedOut` are all
 recoverable; anything else is a genuine fault.
 
-## BPF: the verifier tests the object, not the loader
+## The BPF gate was judging a script that never ran
+
+`wsl.exe` inherits Git Bash's MSYS path translation, which rewrites a leading `/mnt/z/...`
+argument into `C:/Program Files/Git/mnt/z/...`. Bash inside WSL was handed a path that
+does not exist, the gate judged the resulting log, and it reported **"object identity
+unproven"** -- a verdict about a script that never executed. That is why the same failure
+survived every loader fix: the loader was never being tested.
+
+```
+MSYS_NO_PATHCONV=1 wsl.exe -d Debian --exec bash /mnt/z/.../verify-bpf.sh
+```
+
+Per-command, not exported -- other commands in the script rely on the conversion.
+
+**A gate that cannot run must fail loudly, and this one failed quietly.** "Object identity
+unproven" reads like a stale-object problem; the real cause was that the verifier never
+started. Check what the gate is *executing* before believing what it reports about it.
+
+Two more defects hid behind that one:
+
+- `awk`'s `strtonum` is a **gawk extension**; Debian ships mawk, so the instruction count
+  printed empty and the run looked like an identity failure again. Prefer `printf '%d'`
+  for hex, and degrade to a visible "unknown" rather than to nothing.
+- `bpfel-unknown-none` is a **low-tier target with no prebuilt artifacts**, so `rustup
+  target add` refuses it. It builds only with `-Z build-std=core` (and `rust-src`). The
+  gate already passed that flag -- it simply had not run.
+
+## What the verifier actually says, in the order the errors appeared
+
+`processed 0 insns` on a 2896-instruction program is the signature of
+`check_subprogs()` failing: it walks every BPF-to-BPF call target and requires each
+**subprogram's** last instruction to be an exit or unconditional jump, and it runs
+**before** any instruction is verified. So the error names "last insn" while the *main*
+program's last instruction is correctly an exit.
+
+Three loader defects sat behind that, each invisible until the previous was fixed:
+
+1. **A call target ignored the symbol's offset within its section.** `.text` holds memcpy
+   at 0, memmove at 0x58 and memset at 0x120; copying the whole section and aiming every
+   call at its start sends `memset` to `memcpy`. The call reaches a *real* subprogram, so
+   the program loads far enough to walk the CFG and reports the first instruction no path
+   reaches -- memmove's, since only memset was called. `unreachable insn 2907` named a
+   function nobody was looking at. Copy from `sh_offset + st_value`, not `sh_offset`.
+
+2. **`.text.unlikely.` holds two adjacent *single-instruction* panic subprograms.** The
+   first becomes an exit under the panic rewrite, so the CFG walk terminates there and the
+   second is never entered; `check_cfg` demands every instruction be explored. Drop the
+   second -- but scope that to the panic block. A general "drop the last instruction" rule
+   truncates `memset`, an eight-instruction function whose loop then cannot be explored.
+   That mistake cost a round.
+
+3. **The trailing `exit` appended to fix error 1 became the cause of error 2.** Once every
+   appended subprogram terminates in its own right, nothing falls through to a trailing
+   instruction. The requirement and the old fix were one idea seen from two sides: a
+   program whose last instruction is both reachable and terminal.
+
+    last insn is not an exit or jmp   -> a subprogram, not the main program
+    unreachable insn 2907            -> memset aimed at memcpy
+    unreachable insn 2905            -> the trailing exit
+    processed 2445 insns             -> the verifier is finally checking
+
+**A panic subprogram that calls itself has no terminating instruction at all**, so
+appending an exit *past the end of the program* can never satisfy the check. Patching only
+the `goto -1` half of a `call 0x0` + `goto -0x1` pair changes nothing.
+
+`verify-bpf.sh` **rebuilds the loader from the committed `vm/load.c` on every run**, so a
+binary staged into the VM is overwritten. Know that before concluding a change had no
+effect -- one experiment was void for exactly this reason.
+
+## L0 is cut: not shipped, gate skips with a reason
+
+L0 was **cut from shipping scope** on 2026-10-04 (`068fcf4`). The `bpf` gate now
+**skips with the reason** rather than failing, prints the verifier's own words so the
+evidence stays live, and fails hard under `IRONROOT_BPF_STRICT=1`. Final state:
+11 PASS, 1 SKIP, "all gates passed".
+
+`docs/bpf-loader-notes.md` is the handoff: the three loader bugs, the
+instruction-count progression, the failed experiments, and the stop point. The BPF crate,
+`vm/` and the loader stay in the tree, and CI has an `l0-builds` job so "it still builds"
+stays true.
+
+Reasoning worth not relitigating: L0 is an **optimisation, not a security control**. The
+userspace path validates signed, unsigned-by-proof, forged and downgrade cases end to end.
+A permanently red gate with an unactionable verdict is worse than a documented one -- that is
+exactly how the MSYS path-mangling bug hid for days behind "object identity unproven".
+
+## Harness traps that cost real time
+
+- **`bind("127.0.0.1:0")` can return a port inside a Windows *excluded range*.** The TCP bind
+  then fails with `os error 10013` ("access permissions"), not "in use", and **retrying cannot
+  escape it** because the OS keeps offering the same reserved range. Draw test ports from a
+  fixed base instead. Mutation-verified: 22 of 30 runtime tests fail with the OS-assigned port.
+- **A section symbol has an empty name and `st_value` 0**, so a relocation naming `.text`
+  carries no addend. That makes `bounded<1>` and `bounded<2>` indistinguishable to the loader.
+  Caching "append each section once" is correct in principle and unfixable with section-symbol
+  relocations -- it aims every call at offset 0 and leaves the other monomorphisation
+  unreachable. Do not go down this path without per-symbol relocations.
+- **`vm/verify-bpf.sh` rebuilds the loader from the committed `vm/load.c` every run**, so a
+  binary staged into the VM by hand is silently overwritten.
+- **Do not delete an instruction from the middle of a BPF program.** Every following relative
+  jump breaks (`jump out of range`); you must fix up all later offsets.
+- **The harness's own identity check can measure a stale file.** It extracted the initramfs from
+  a hardcoded path while the image is written to a run-specific directory. Cross-check
+  `PROG_MD5` (the object the verifier actually loaded) against the host hash before believing
+  any "identity unproven" verdict.
+- **Cosmetic edits can change BPF codegen.** Removing an `#[inline(always)]` that sat inside a
+  doc-comment block changed `.text` from 3 functions to 7 (extra `bounded<N>` monomorphisations)
+  and regressed 2445 instructions to `processed 0 insns`. Verify a BPF build after any change
+  to that file, however unrelated it looks.
+
+## Verify claims against source before writing them down
+
+A plausible number entered a status report, got copied forward, and became a "fact" that was
+never in the code: a **6,000 ms total-per-server budget** that did not exist. Only
+`UPSTREAM_TIMEOUT` (1,500 ms *per attempt*) was real, with retries counted by
+`MAX_REFERRALS`. It was about to be documented when a check against the source caught it.
+
+Same shape as the codegen trap, in prose instead of instructions: something asserted early,
+copied forward, and never re-derived. Check behavioural claims against the source before
+documenting them, not against memory or an earlier report.
+
+## Mutation tests: check the mutation removed the property
+
+Replacing `match timed.await { Ok(o) => o, Err(_) => ... }` with `unwrap_or_else` left the
+timeout **fully intact**, and the test passed. Replacing the whole call with a bare `.await`
+was the mutation that actually removed the behaviour -- and the test then failed, reporting
+`the budget did not stop the query: 30.008s`.
+
+A mutation that leaves the property intact proves nothing. Ask what the mutant would have to
+look like for the property to be gone, and check the test fails on *that*.
+
+## Budgets: an attempt timeout is not a query timeout
+
+`upstream_timeout` bounds one attempt; retries are counted, so the query ceiling was
+`attempts x timeout`. `total_budget` (3,000 ms, `--total-budget-ms`) is the missing limit:
+the pipeline runs inside `tokio::time::timeout`, and expiry gives SERVFAIL with AD clear and
+nothing cached. Cancelling the future drops the in-flight `recv_from` rather than leaking a
+task or socket.
+
+Implementation note: the stages had to move into `run_pipeline` because an `async fn` body
+cannot be borrowed across a timeout -- the whole loop has to live in its own future.
+
+## Iteration and validation do reach the right servers
+
+Checked rather than assumed, since a budget over a broken resolver treats a symptom:
+
+- The **iterator genuinely iterates**: root -> TLD -> authoritative, 70 referral references,
+  and a live 121/121 corpus against the real root servers.
+- The **validator has zero `ROOT_SERVERS` references**. It uses the configured `UpstreamConfig`
+  and a shared delegation cache (33 references), so DS and DNSKEY go to the right server.
+
+## Set resource ceilings from the maximum, never the median
+
+The `total_budget` default was a judgement call; measuring it showed the guess was wrong in the
+dangerous direction. `differential-corpus` prints the cold-path distribution (first-try answers
+only -- a retry's cost is harness load, not resolver latency):
+
+    budget    p50     p90     p99    max        SERVFAILs
+    3,000ms   399ms   983ms   2s     3.005s     3
+    30,000ms  398ms   914ms   1s     2.087s     0
+
+At 3 s the max lands at 3.005 s -- **the ceiling firing** -- with SERVFAILs. At 30 s the same
+sweep has none and tops out at 2.087 s, the true healthy maximum. The default is now **5 s**
+(~2.4x margin), mutation-verified by reverting to 3 s.
+
+The reasoning that produced the wrong answer is worth keeping as an anti-pattern: "typical
+latency is well under 100 ms, so 1.5 s is generous." A p50 says nothing about the maximum. A
+resource ceiling set below the slowest *healthy* resolution converts a slow-but-working server
+into a failure for every client behind it.
+
+**Raising a ceiling is safer than lowering one.** When tuning, err upward, and re-measure.
+
+This generalises past timeouts: any resource limit set below the observed healthy maximum
+silently converts working systems into failures, and it fails *cleanly* -- a ceiling that fires
+correctly looks identical to a ceiling set wrongly, in every aggregate. Guard the default with
+a test asserting **both** bounds; the upper bound catches an unbounded limit, the lower catches
+one that fires on healthy work. Assert against the *measurement* in the message, so the next
+tuner sees where the number came from.
+
+## Async ceilings do not cover CPU work
+
+`tokio::time::timeout` fires only at an `.await`. A module doing sustained compute is not
+interrupted mid-operation. Fine for this resolver today (DNSSEC verification is microseconds to
+low milliseconds; stages are I/O-bound on DS/DNSKEY fetches), but a future compute-bound stage
+needs its own bounds.
+
+## Reading a BPF refusal
+
+`processed 0 insns` is the signature of `check_subprogs` rejecting a **subprogram** before
+instruction verification begins -- the message says "last insn" while the *main* program's last
+instruction is correctly an exit. A non-zero count means the verifier is genuinely checking.
+
+Lesson repeated twice: **the mechanism in a bug report may be right while the named culprit
+is wrong.** Verify the named thing exists. One report blamed `aya-log-ebpf`'s `info!` --
+the source contained no `info!` and no `aya_log_ebpf` reference at all. Reading the
+disassembly of the actual object settled it in one step.
+
+Two `load.c` facts worth keeping: a `call` immediate is a **signed instruction distance
+from the calling instruction**, and code from other sections must be **copied into** the
+program array with `insn_cnt` covering the appended code.
 
 `verify-bpf.sh` rebuilds the BPF *object* from the Windows tree every run. The
 *loader* that actually executes it lives inside the initramfs at
@@ -572,7 +771,104 @@ That is the general lesson: a mock that cannot express the *distinction* the tes
 is about makes the test vacuous, and it passes under mutation without anyone
 noticing. If a mutation does not fail the test, the test is not testing anything.
 
-## A mock CAN mint a signature that verifies
+## Toolchains live on X:, and `~/.cargo/bin` may be empty
+
+Rust is installed at `X:/Dev/rustup` and `X:/Dev/cargo` (X: is a junction to `Z:/x/`).
+Both `RUSTUP_HOME` and `CARGO_HOME` must point there, plus `CARGO_TARGET_DIR=X:/cargo-target`.
+C: is at 90% full; keep every byte of the toolchain off it.
+
+**If `cargo` is "not found", do not conclude it is uninstalled.** Check
+`X:/Dev/rustup/toolchains` first — the toolchains survive, only the environment
+variables went missing. `rustup` auto-installs a default on first use, which then
+reports a *newer* Rust than the project was verified on, so check the version after
+recovering rather than trusting it.
+
+`rust-toolchain.toml` pins `channel = "nightly"` with `rust-src` and `llvm-tools`, so
+`cargo` in this workspace is nightly. rustfmt and clippy are **not** in that profile's
+default component set — `cargo fmt` fails with "'cargo-fmt.exe' is not installed for the
+toolchain 'nightly-...'". Add them explicitly:
+
+    rustup component add --toolchain nightly-x86_64-pc-windows-msvc rustfmt clippy
+
+## `domain::rdata` hides DNSSEC types behind the wrong path
+
+Guessing `domain::rdata::Nsec` / `domain::rdata::RtypeBitmap` both fail. The types are at
+`domain::rdata::dnssec::*`. Two related dead ends, so they are not retried:
+
+- `domain::base::rdata::Composer` and `domain::base::rdata::ComposeRecordData`'s target
+  bound are **private**, so `ComposeRecordData` cannot be implemented outside the crate.
+  A `RawRdata` wrapper is not an option; use the crate's own record types.
+- `domain::base::record::RecordData` is private; the public one is
+  `domain::base::rdata::RecordData`.
+- `RtypeBitmap` has `from_octets`, and `Nsec::new(next_name, bitmap)` plus
+  `types()` / `next_name()`. `contains` takes an `Rtype`, not a `u16`.
+
+The fastest way to a compile-time answer is a one-line probe
+(`let _: Option<domain::rdata::dnssec::RtypeBitmap<Vec<u8>>> = None;`) and reading the
+error, rather than several rounds of guessing a path.
+
+## A delegation NSEC has strict rules, and two are rejected outright
+
+To prove a zone unsigned, the parent must publish a **signed NSEC** (RFC 4035 5.4) --
+an empty NODATA says only "nothing was sent", indistinguishable from a stripped
+response. Getting it accepted took reading the validator's source rather than reasoning
+about the RFC:
+
+- **A delegation NSEC must have NS set and SOA clear.** One with both is rejected as
+  `"NSEC from apex"`; one with neither as `"NSEC from parent"`. Both are hard rejections,
+  not skips, so the proof simply fails.
+- **An empty NOERROR answer carrying an SOA is NODATA and is final** (RFC 2308 2.1).
+  Treating it as a referral asks `next_hop` for NS glue, finds only an NSEC, gives up, and
+  hands back a message the validator cannot use -- reported as
+  `request for DS or DNSKEY failed, parse error`, which names a parse failure of the
+  *request* rather than the misclassification.
+- **`get_checked_nsec` requires the NSEC's group to be `Secure`** and its signer name to
+  match, so the NSEC's RRSIG must validate against the key the validator already holds.
+
+**And one blocker this project cannot fix:** the RRSIG `domain` produces for an NSEC
+composes with `type_covered` = **RRSIG (47)**, not NSEC (50) -- the returned record's
+`type_covered()` accessor reports NSEC, but the wire bytes begin `00 2f`. The signature
+is genuine and self-consistent; it just advertises the wrong covered type, so the
+validator cannot attach it to anything. `a_zone_with_no_signature_succeeds_with_ad_clear`
+stays `#[ignore]`d with that recorded, rather than asserting the wrong value to go green.
+
+## `domain`'s API paths that cost the most turns
+
+Each of these was guessed wrong at least once:
+
+- DNSSEC record types are at **`domain::rdata::dnssec::*****, not `domain::rdata::`.
+  `RtypeBitmap::from_octets` and `Nsec::new(next_name, bitmap)`; `contains` takes an
+  `Rtype`, not a `u16`. Trailing zero bytes must be trimmed from a hand-built bitmap.
+- `domain::base::rdata::Composer` is **private**, so `ComposeRecordData` cannot be
+  implemented outside the crate -- no `RawRdata` wrapper. Use the crate's own types.
+- `RecordData` is public at `domain::base::rdata::RecordData`;
+  `domain::base::record::RecordData` is private.
+- `Nsec`, `Rrsig` and `RtypeBitmap` have **no public `from_octets`** and `GroupSet` is not
+  re-exported, so a test cannot parse one directly. Verify wire bytes by hand instead --
+  `type covered` is the first two octets of RRSIG rdata.
+- A fastest path to a compile-time answer: a one-line probe
+  (`let _: Option<domain::rdata::dnssec::RtypeBitmap<Vec<u8>>> = None;`) and read the error,
+  rather than several rounds of guessing.
+
+## `sign()` will not sign what you expect at a zone cut
+
+`domain`'s signer treats a name below the apex as a **zone cut** and signs only DS and
+NSEC there; elsewhere it skips RRSIGs. Consequence: an RRset whose owner is below the
+apex and whose type is neither DS nor NSEC is never signed, and `sign_rrset` reports
+`no signature for rtype ...` naming what it *did* sign. Read the error before assuming the
+signer is broken.
+
+## Shell quoting in commit messages on this host
+
+Backticks in a message passed through `bash -lc "git commit -m '...'"` are executed as
+command substitution -- the backtick contents vanish from the commit and the shell prints
+`command not found`. Write the message to a file and use `git commit -F`, or avoid
+backticks entirely.
+
+Building an NSEC by hand is the same class of bug as signing a freshly computed DS while
+publishing a different one: two encoders, one subtly wrong, and the failure is a validator
+that silently concludes the denial does not cover the name. Compose through the crate's
+type and assert the served rdata equals the composed bytes.
 
 The claim above used to read "a mock cannot mint a signature that verifies". It
 can: `tests/support/signing.rs` runs `domain`'s real ECDSA P-256 signer, and with it
