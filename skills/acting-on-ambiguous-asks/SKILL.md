@@ -18,6 +18,10 @@ to re-plan.
 
 ## When to Use
 
+- A short prompt arrives on first contact with no prior working stretch ("open
+  my X project", "look at this", "go") — load this skill on a first-contact nudge
+  too; rung 1 still governs, though "act" on first contact means orient and verify
+  rather than continue prior work.
 - A short prompt lands after a long working stretch ("what is next?", "go ahead",
   "proceed", "ok").
 - You have already delivered a plan and they reply with something equally short.

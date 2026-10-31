@@ -223,6 +223,19 @@ suite stand in for a chain that has never been closed against a real peer.
   after a differently-sourced one. Track the producer's cursor, and validate it
   against the boundary entry so a clear cannot make it point past new content.
 
+## Headless verification of hardware-adjacent desktop apps
+
+A desktop app whose true surface needs a display or real hardware (WMI sensors, a
+GPU fan controller) cannot be launched in a headless CLI session, and the GUI path
+cannot be asserted on. Do not let that block verification of what you CAN drive:
+exercise the backend over real HTTP from the test harness (a `uvicorn.Config` +
+daemon thread, as the project's `tests/test_mcp_api.py` does) and assert the
+non-GUI layers - the curve engine against mock providers, MCP tool dispatch, the
+atomic-reload storage contract. Then name the gap explicitly: "backend API + curve
+logic verified end-to-end over live HTTP; GUI and real WMI sensors not run in this
+session." A passing headless suite is evidence about the backend, not proof of the
+desktop install.
+
 ## Untestable here is not untested
 
 Where the hardware in hand cannot reach a state - a system-only broadcast, a
