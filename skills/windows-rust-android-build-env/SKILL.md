@@ -177,6 +177,21 @@ looked like app bugs were neither:
 Reach the app from adb by `adb -s <serial> shell ...`; without `-s` and with
 several devices the command targets nothing and looks like a silent no-op.
 
+## 8. Windows Rust build workflow (X: drive, stale binaries)
+
+- **X: drive enforced.** All Rust builds, Cargo output, and toolchains live on X:.
+  Set `CARGO_TARGET_DIR=X:/cargo-target` and `RUSTUP_HOME=X:/Dev/rustup` (in
+  `~/.bashrc` and the Windows user env). C: stays at 90% full / unused.
+- **Stale binary on rebuild.** Windows refuses to overwrite an executing
+  binary: `cargo build` fails with "Access is denied" while the daemon is
+  running. Kill the running daemon (`taskkill /F /IM rpc-daemon.exe`) first,
+  then rebuild.
+- **Tool usage.** The terminal runs git-bash (MSYS); native Windows commands
+  (taskkill, findstr, cmd) take forward-slash or native `C:\...` paths, never
+  MSYS `/c/...`. For git inside MSYS scripts, use a `cd` subshell
+  `( cd "$ROOT_DIR" && git … )` rather than `git -C "$ROOT_DIR"` — `cd` is
+  a bash builtin and resolves the MSYS path itself.
+
 ## Kotlin/Android testing on the JVM
 
 `androidx.test.core`'s `ApplicationProvider` needs a registered instrumentation,

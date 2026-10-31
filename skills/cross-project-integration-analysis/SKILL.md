@@ -40,6 +40,7 @@ The deliverable is a committed markdown doc in the primary repo's `docs/` — ex
 - Every claim verified by reading code; docs are leads, not evidence.
 - Honest effort estimates; mark optional phases explicitly and say which to do first.
 - Include the failure-mode contract. This user's codebases enforce "report the failure, never fabricate a plausible-looking reply" — every integration path must honor it, and the doc must say so.
+- **Cross-project identity normalization.** When two of the user's apps exchange provider/model state, the import direction MUST normalize provider IDs through the shared mapping (Agentic Workbench `nous`, `opencode-zen`, `opencode-go`, `xai` ↔ KotMoE `nous_research`, `open_code_zen`, `open_code_go`, `grok`). Export must read the actual model-visibility state; import must apply real state. Neither direction returns hard-coded success. If a referenced registry method does not exist, that is a failure the analysis must record, not paper over.
 
 ## Pitfalls
 
