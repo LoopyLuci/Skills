@@ -33,6 +33,17 @@ to re-plan.
 answer to a long working session reads as impatience with delay, not as a
 request for another document.
 
+## Standing execution stance (user)
+
+The user compounds short directives into full scope. Statements such as
+"proceed with all", "proceed optimally", "do that properly", "re-verify",
+"review and update your skills", and "fix it" mean: **implement the entire
+request, in the order named, completing every item** — never stop at a stub,
+never substitute a recommendation for the work, never turn the request into a
+question or a ranked "pick one" list. "What are the next steps?" means
+implement the next step, then report the result — it is never a licence to
+describe unbuilt work as the plan.
+
 ## The escalation ladder
 
 Each repetition of the same nudge licenses a further reduction in ceremony. Track
