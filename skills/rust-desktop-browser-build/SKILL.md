@@ -96,6 +96,12 @@ cargo check -p browzeit-core
 cargo test -p browzeit-core --test sanity
 ```
 
+## Verification-First Workflow
+- **Verify after every edit**: run `cargo check --workspace` after any structural change to parser code
+- **Zero tolerance for compile errors**: rustc/cargo check must pass before moving to the next phase
+- **Fix warnings before proceeding**: cargo warnings (unused variables/fields) block clean verification
+- **Full implementation never stubs**: every phase ships real code, not placeholders
+
 ## Key Conventions
 - **Crate names**: `browzeit-core`, `browzeit-engine`, `browzeit-renderer`, `browzeit-network`, `browzeit-driver`, `browzeit-traits`, `browzeit-types`
 - **Dependency pattern**: each crate depends on its neighbors (core ← engine, etc.)
@@ -111,3 +117,5 @@ cargo test -p browzeit-core --test sanity
 - **sed on Rust files removes braces** — use Python scripts for multi-line edits
 - **Nested impls create 'unexpected closing delimiter' errors** — check brace balance after edits
 - **Cargo warnings (unused variables/fields) block clean check** — fix warnings before proceeding
+- **parser.rs structure corruption**: after editing, verify the file is structurally sound: (1) search for duplicate code blocks using `content.find()` with a start offset; (2) count braces with a script to find unmatched blocks; (3) remove duplicate sections; (4) ensure `impl` blocks are properly closed with matching `}`; (5) confirm each function has a body (not just `{ }`)
+- **Associated function calls**: when calling an associated function defined in the same `impl Parser` block, use `Self::make_tag_token(...)` instead of `make_tag_token(...)` — bare function calls fail with E0425 "not found in this scope"
