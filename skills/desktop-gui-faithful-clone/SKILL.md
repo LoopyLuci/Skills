@@ -76,11 +76,75 @@ Run these before claiming completion:
 7. Headless driver: `python use_gui_driver.py` exits 0
 8. Backend gap-analysis fixes: run the six checks above
 
+## Pitfalls
+
+- **PyQt6.QtCharts module is missing.** The `PyQt6.QtCharts` module is NOT installed in the fan-controller venv (package `PyQt6 6.11.0` is present, but no `QtCharts` submodule). Do not import it. Replace `QChart`, `QChartView`, `QLineSeries`, `QValueAxis` with a custom `ChartWidget` class that draws using `QPainter`, `QPen`, and `QBrush`. See the ChartWidget pattern in `references/chart-widget.md` and in `gui_app.py`: store points as a list of `(x, y)` tuples, override `paintEvent`, and use `set_points()` / `add_point()` to feed data.
+- **`QAction` has no `setStyleSheet()` in PyQt6.** `QAction` inherits from `QObject`, not `QWidget`, so it cannot be styled with CSS. Wrap each `QAction` in a `QWidget` with a `QHBoxLayout`, call `widget.addAction(act)`, and add the widget to the layout instead.
+- **`QAction` cannot be added to a layout directly.** `QVBoxLayout.addWidget(act)` fails for `QAction` because it is not a `QWidget`. Always wrap it first, then add the widget.
+- **`setAccessibleName()` does not exist in PyQt6.** Use `setObjectName()` for all widget names (the old-code `setAccessibleName("Nav Dashboard")` → `setObjectName("NavDashboard")`).
+- **Verify the GUI actually starts before claiming success.** A `py_compile` pass only checks syntax, not runtime imports. Run the GUI headless: `timeout 10 .venv/Scripts/python.exe gui_app.py 2>&1`. Exit code 124 means it ran 10 seconds and was killed by the timeout (success). Any non-zero exit with a traceback means it crashed. Check for `OSError: only one usage of each socket address` — this means a previous backend server is still holding port 8080; kill it with `taskkill /F /PID <pid>` before launching the GUI.
+- **Verify the GUI starts before patching further.** After every chunked `patch` edit, run `python -m py_compile gui_app.py` and then launch the GUI briefly to confirm it starts. Do not add more edits on top of a file that won't import.
+
 ## Supported features
 
 - Pure-PyQt6 desktop GUI (no WebView, no browser engine, no HTML/JS frontend, no Rust/Tauri shell) — use only when the user explicitly rejects browser/WebView.
 - In-process imports of backend sensor/fan/curve modules (no HTTP sidecar for the Python GUI).
-- QThread poller for live telemetry; QCharts for charts; QTableWidget for tables.
+- Custom QPainter line-chart widget (no `PyQt6.QtCharts` — the module is not installed in the venv; see Pitfalls for the replacement pattern). QTableWidget for tables.
+- Dark theme via QPalette + custom QSS stylesheets.
+- PyInstaller packaging with `console=False`.
+- Headless driver for verification without a display.
+
+## Training rules (for the future)
+
+- When the user says "look EXACTLY like the rust one", clone the design FIRST (theme, layout, colors, nav) before writing any code. Do not invent a new layout.
+- "Proceed" = implement everything, never stop at a stub. If a step fails, diagnose and fix, do not report "blocked" without evidence.
+- Work from the `X:` drive (`RUSTUP_HOME=X:/Dev/rustup`, `CARGO_HOME=X:/Dev/cargo`, `CARGO_TARGET_DIR=X:/cargo-target`, `PATH=/x/Dev/cargo/bin:$PATH`). Never work from `C:` for Rust toolchain commands.
+- Never remove a reference implementation until the clone is verified. The reference (Rust/Tauri) is the source of truth for the design.
+- The product rule is absolute: no `backend`, no `offline` in any visible GUI text.
+
+A backend change is not done until you have run the check for each item. These are the common gaps in this class of app:
+
+1. **CUBIC curve interpolation** — the cubic (smoothstep) curve must use a proper Catmull-Rom/smoothstep: `ease = t^3 * (t^2 * (6t - 15) + 10)` and clamp the fraction to `[0,1]` before computing. Verify with a test that low/high temps return the exact control-point speeds.
+2. **Monotonic event counters** — every `EventBus.emit()` call must atomically increment `_total_events` and `_counters[event_type]` (and any type-specific counters). Verify with a test that emits a known number of events and reads back the exact count.
+3. **Curve-bounds clamping** — `CurveEngine.interpolate` must clamp `fraction` to `[0,1]` and handle out-of-range temps (below first point → return first speed; above last point → return last speed).
+4. **Full `/tools/*` REST proxy** — the FastAPI server must expose `POST /tools/{tool_name}` and handle every tool name the Rust frontend invokes (`list_sensors`, `list_fans`, `set_fan_speed`, `set_fan_mode`, `list_curves`, `create_curve`, `reload_config`, `reload_plugins`, `reload_profiles`, `emergency_stop`, `health_check`). Each handler must route to the correct backend module using the existing `API` instance state, not lazy-import another module.
+5. **Canonical `/settings` endpoints** — expose `GET /settings` (return merged config) and `POST /settings` (call `CONFIG.merge(payload)` then `CONFIG.save()` and emit `settings.updated`). Verify the merge preserves untouched sections.
+6. **`CONFIG.merge`** — the `Config` class must have a `merge(data)` method that updates only the supplied keys (`server`, `polling`, `safety`, `enabled_plugins`, `groups`) and preserves every other section. Verify with a test that merges a partial payload and reads back the untouched keys.
+
+### Verification commands (run these after any change)
+
+- `python -c "import ast; ast.parse(open('backend/api/server.py').read()); print('Syntax OK')"`
+- `python -m pytest tests/ -q --tb=short` (or the project test command)
+- Start the server: `python -m uvicorn backend.api.server:fastapi_app --host 127.0.0.1 --port 8080`
+- Probe `/health` and `/settings` with `curl`; confirm the product-rule wording does not appear in any visible UI text.
+- Run the GUI headless driver: `python use_gui_driver.py` (canonical headless check).
+
+## Verification Checklist
+
+Run these before claiming completion:
+1. GUI syntax: `python -m py_compile gui_app.py`
+2. GUI dark theme: grep for `#0f172a`, `#1e293b`, `#334155`, `#38bdf8`, `#34d399`, `#f87171` in gui_app.py
+3. Product rule: grep for `backend`, `offline` (case-insensitive) in gui_app.py visible text — must be zero matches
+4. Layout: sidebar + main content + pages (no tabs) — visually diff against reference
+5. Nav switching: click each nav item and confirm the correct page is `setVisible(True)`
+6. Backend: `python -m uvicorn backend.api.server:fastapi_app --host 127.0.0.1 --port 8080` and probe `/health`, `/settings`, `/tools/*`
+7. Headless driver: `python use_gui_driver.py` exits 0
+8. Backend gap-analysis fixes: run the six checks above
+
+## Pitfalls
+
+- **PyQt6.QtCharts module is missing.** The `PyQt6.QtCharts` module is NOT installed in the fan-controller venv (package `PyQt6 6.11.0` is present, but no `QtCharts` submodule). Do not import it. Replace `QChart`, `QChartView`, `QLineSeries`, `QValueAxis` with a custom `ChartWidget` class that draws using `QPainter`, `QPen`, and `QBrush`. See the ChartWidget pattern in `gui_app.py`: store points as a list of `(x, y)` tuples, override `paintEvent`, and use `set_points()` / `add_point()` to feed data.
+- **`QAction` has no `setStyleSheet()` in PyQt6.** `QAction` inherits from `QObject`, not `QWidget`, so it cannot be styled with CSS. Wrap each `QAction` in a `QWidget` with a `QHBoxLayout`, call `widget.addAction(act)`, and add the widget to the layout instead.
+- **`QAction` cannot be added to a layout directly.** `QVBoxLayout.addWidget(act)` fails for `QAction` because it is not a `QWidget`. Always wrap it first, then add the widget.
+- **`setAccessibleName()` does not exist in PyQt6.** Use `setObjectName()` for all widget names (the old-code `setAccessibleName("Nav Dashboard")` → `setObjectName("NavDashboard")`).
+- **Verify the GUI actually starts before claiming success.** A `py_compile` pass only checks syntax, not runtime imports. Run the GUI headless: `timeout 10 .venv/Scripts/python.exe gui_app.py 2>&1`. Exit code 124 means it ran 10 seconds and was killed by the timeout (success). Any non-zero exit with a traceback means it crashed. Check for `OSError: only one usage of each socket address` — this means a previous backend server is still holding port 8080; kill it with `taskkill /F /PID <pid>` before launching the GUI.
+- **Verify the GUI starts before patching further.** After every chunked `patch` edit, run `python -m py_compile gui_app.py` and then launch the GUI briefly to confirm it starts. Do not add more edits on top of a file that won't import.
+
+## Supported features
+
+- Pure-PyQt6 desktop GUI (no WebView, no browser engine, no HTML/JS frontend, no Rust/Tauri shell) — use only when the user explicitly rejects browser/WebView.
+- In-process imports of backend sensor/fan/curve modules (no HTTP sidecar for the Python GUI).
+- Custom QPainter line-chart widget (no `PyQt6.QtCharts` — the module is not installed in the venv; see Pitfalls for the replacement pattern). QTableWidget for tables.
 - Dark theme via QPalette + custom QSS stylesheets.
 - PyInstaller packaging with `console=False`.
 - Headless driver for verification without a display.
