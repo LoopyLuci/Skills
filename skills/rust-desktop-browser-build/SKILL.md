@@ -21,21 +21,19 @@ version: "1.0"
 - Setting up a from-scratch browser architecture with independent, minimal-dependency crates
 
 ## Always-On Rules
-- **Full implementation never stubs**: every phase ships real code, not placeholders
-- **Zero tolerance for compile errors**: rustc/cargo check must pass before moving on
-- **Codebase toolchain on X: never C:**: RUSTUP_HOME=X:/Dev/rustup, CARGO_HOME=/x/Dev/cargo, CARGO_TARGET_DIR=/x/Dev/cargo-target
-- **Desktop GUI = pywebview/Tauri shell, never browser dashboard**: pywebview or Tauri for the native shell
-- **Generative UI is a first-class feature**: agent must create/modify/optimize UI in real time (add_button, change_layout, theme)
-- **Verification-first**: integration tests in crates/*/tests/, cargo test green before moving on
-- **Independent from other browser stacks**: Browzeit builds from scratch, no direct dependencies on other browsers
-- **Minimal dependencies**: from-scratch parsers, no WebKit/WebKitGTK dependencies
+## User Preferences
+- **Workflows**: "proceed with all optimally" = full implementation of every phase with working artifacts, never a stub, never "next steps" substituted for implementation
+- **GUI**: Desktop GUI = pywebview/Tauri shell, never browser dashboard. Use pywebview or Tauri for the native shell with webpack/Tauri integration
+- **Generative UI**: agent must create/modify/optimize UI in real time (add_button, change_layout, theme)
+- **Verification**: integration tests in crates/*/tests/, cargo test green before moving on
+- **Zero tolerance**: compile errors and warnings block moving forward
 
 ## Project Context: Browzeit
 - **Name**: Browzeit (fully independent browser)
-- **Workspace**: X:\Projects\Browzeit\browzeit (Cargo workspace, NOT C: drive)
+- **Workspace**: X:\Projects\Browzeit\browzeit (Cargo workspace)
 - **Drives**: X: = junction to Z:/x/, C: at 90% full — NEVER use C:
 - **Architecture**: 7-crate Rust workspace: traits, types, core, engine, renderer, network, driver
-- **Phases**: 1. Core (parser, DOM, CSS), 2. Network (HTTP, cookies, cache), 3. Layout/Engine, 4. Renderer (graphics), 5. Agent (autonomous), 6. Driver (desktop shell), 7. Generative UI (agent add_button/change_layout/theme)
+- **General**: 7 phases (see below) + protocol layer + generative canvas
 
 ## Phase Execution Order
 
@@ -79,7 +77,7 @@ version: "1.0"
 2. Agent creates/modifies UI in real time
 3. Verify: `cargo check --workspace` and `cargo test`
 
-## Build & Verification Commands
+### Build & Verification Commands
 ```powershell
 # Set X: toolchain (run once per session)
 $env:RUSTUP_HOME = "X:/Dev/rustup"
@@ -95,6 +93,62 @@ cargo check -p browzeit-core
 # Run integration tests
 cargo test -p browzeit-core --test sanity
 ```
+
+### IPC Bridge: pywebview Python Shell ↔ Rust Engine
+The browser shell is built as:
+- **Python** (pywebview + WebView2): native desktop shell, GUI, agent chat, generative canvas
+- **Rust** (axum HTTP server): IPC API for browser control, agent task management, SSE streaming
+
+**Key endpoints:**
+- `GET /api/browser/tabs` — list browser tabs
+- `POST /api/browser/navigate` — navigate to URL
+- `POST /api/agent/task` — create an agent task
+- `GET /api/agent/results/{task_id}` — get task results
+- `GET /api/agent/stream/{task_id}` — SSE stream for live thought streaming
+- `GET /api/health` — health check
+
+**pywebview wiring:**
+1. Python starts local HTTP server (e.g., port 8765) serving `index.html` and static assets
+2. Python uses `webview.create_window(url="http://127.0.0.1:8765/index.html", ...)`
+3. Python server proxies API calls to Rust via HTTP client or direct Python imports
+4. Rust API server listens on port 8766, Python GUI on 8765
+5. SSE endpoints (`/api/agent/stream/{task_id}`) return `text/event-stream` for live thought streaming
+
+**Python server pseudo-structure:**
+```python
+import webview, threading
+from http.server import HTTPServer, SimpleHTTPRequestHandler
+
+class BrowzeitHandler(SimpleHTTPRequestHandler):
+    def do_GET(self):
+        if self.path.startswith("/api/"):
+            # Proxy to Rust API server (http://127.0.0.1:8766)
+            pass
+        else:
+            super().do_GET()
+
+server = HTTPServer(("127.0.0.1", 8765), BrowzeitHandler)
+threading.Thread(target=server.serve_forever, daemon=True).start()
+webview.create_window("Browzeit", "http://127.0.0.1:8765/index.html")
+webview.start()
+```
+
+**SSE streaming pattern (JavaScript):``
+```javascript
+const evtSource = new EventSource("http://127.0.0.1:8766/api/agent/stream/{task_id}");
+evtSource.onmessage = (e) => {
+  const data = JSON.parse(e.data);
+  appendMessage(data.content, "assistant");
+  updateTokens(data.token_count, data.tps);
+};
+```
+
+## Tool-Use Patterns
+- **`write_file` read-before-write rule**: The `write_file` tool refuses to overwrite a file that was last read with `offset`/`limit` pagination (partial view). To overwrite: (1) read the file with a full `read_file` (no offset/limit, or read from line 1 through end), then call `write_file`. Or use `patch` for targeted edits. Do NOT delete-and-recreate for files >50 lines — the `write_file` tool's stale-checksum guard will block repeated overwrites.
+- **`patch` for multi-line edits**: For files with pre-existing content, `patch` works reliably where `write_file` gets blocked by the read-before-write guard. Batch multiple `patch` calls for multi-section changes.
+- **Rust std naming**: `std::sync::mpsc::sync_channel` (snake_case), NOT `mpsc::SyncChannel`. Old `mpsc::SyncChannel` does not exist in Rust 2021 edition.
+- **uuid crate v1.x**: `Uuid::new_v4()` has no `as_u64()` method. Use `Uuid::new_v4().as_u128() as u64` or `Uuid::new_v4().to_u128_le() as u64`. The `as_u64()` method was removed in newer uuid crate versions.
+- **mpsc channel type**: `mpsc::sync_channel(n)` returns `(SyncSender, Receiver)`. The sender type is `mpsc::SyncSender<T>`, not `mpsc::Sender<T>`. Use `tx.send(())` for sync sender.
 
 ## Verification-First Workflow
 - **User workflow preference**: "proceed with all optimally" means full implementation of every phase with working artifacts, never a stub and never "next steps" substituted for implementation
@@ -112,6 +166,9 @@ cargo test -p browzeit-core --test sanity
 - **Rust `and_then` + `Result` pitfall**: chaining `.and_then()` with a closure returning `Result<T, E>` produces a nested `Result<Result<T, E>, E>`, not `Result<T, E>`. Use `?` to flatten, or wrap in `map` and match. Never return a nested `Result` from a function expecting `Result<T, E>`.
 - **`RefCell` struct literal pattern**: when a struct has `RefCell` fields, every struct literal that initializes those fields must wrap the value in `RefCell::new()`. Also wrap in `RefCell` in the struct definition. Access via `field.borrow()` (shared) or `field.borrow_mut()` (mutable), and assign through the returned `RefMut` via `*field.borrow_mut() = value;`.
 - **Rust build iteration workflow**: run `cargo build` directly (without piping through `tail`/`head`) — the exit code of `| tail` is that of `tail`, not `cargo`, so a build failure reports exit 0. Read the full error list from the pipeline output. Iterate on one error at a time; for E0308/E0382/E0594/E0425/E0594, read the full error block including the `help:` suggestions.
+- **Borrow checker: `navigate()` pattern**: when a method needs to mutate both `self.history` and a `tab` in `self.tabs`, first get the `tab_id` via `self.current_tab_id` (not `self.current_tab()`), then use `self.tabs.iter_mut().find(|t| t.id == *tab_id)`. Calling `self.current_tab()` borrows `self` immutably, which conflicts with later mutable borrows of `self.history` and `self.tabs`.
+- **Borrow checker: `set_title()` pattern**: never call `self.current_tab()` then `self.tabs.iter_mut()` in the same function. Instead, hold the tab ID (`self.current_tab_id`) and use `self.tabs.iter_mut().find(|t| t.id == *tab_id)` directly. The immutable borrow from `current_tab()` prevents the mutable borrow of `tabs`.
+- **Borrow checker: `history` truncation**: when truncating `self.history` then pushing to it in the same function, compute the truncation condition first (e.g., `let truncate = match self.history.last() { ... }`), then do the truncate and push in separate statements. The `self.history.last()` call borrows `self.history` immutably, conflicting with the mutable `truncate()` and `push()` calls.
 
 ## Pitfalls
 - **Always run cargo check before adding more phases** — nested impl blocks in Rust surface late
