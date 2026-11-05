@@ -32,8 +32,10 @@ version: "1.0"
 - **Name**: Browzeit (fully independent browser)
 - **Workspace**: X:\Projects\Browzeit\browzeit (Cargo workspace)
 - **Drives**: X: = junction to Z:/x/, C: at 90% full — NEVER use C:
-- **Architecture**: 7-crate Rust workspace: traits, types, core, engine, renderer, network, driver
+- **Architecture**: 7-crate Rust workspace: traits, types, core, engine, renderer, network, driver, api (new)
 - **General**: 7 phases (see below) + protocol layer + generative canvas
+- **New crates**: `api` (axum HTTP server), `types` module `browser.rs` (BrowserWindowState, BrowserTab, BrowserWindow)
+- **New modules**: `driver/src/shell.rs` (BrowserWindow with tabs, navigation, history, back/forward, atomic IDs), `driver/src/agent.rs` (DriverAgentOrchestrator with task queue, results, task creation)
 
 ## Phase Execution Order
 
@@ -65,7 +67,10 @@ version: "1.0"
 ### Phase 5 — Agent (Autonomous Actions)
 1. Define agent interface in `crates/engine/src/agent.rs`
 2. Implement agent command parsing and execution
-3. Verify: `cargo check -p browzeit-engine`
+3. **Agent system architecture**: AgentOrchestrator with MoE (Mixture of Experts), MoA (Mixture of Agents), subagents, agent swarms, and session forking
+4. **AgentState**: Use `RefCell` for interior mutability on status/logs/steps_taken/subagents fields; struct literals must initialize `RefCell::new()`
+5. Implement agent submodules: `agent/canvas.rs` (Generative Canvas), `agent/chat.rs` (Agent Chat UI Framework), `agent/protocol.rs` (Protocol Layer)
+6. Verify: `cargo check -p browzeit-engine`, `cargo test -p browzeit-engine`
 
 ### Phase 6 — Driver (Desktop Shell)
 1. Define `crates/driver/Cargo.toml` (BrowserWindow, webview module)
@@ -123,6 +128,7 @@ class BrowzeitHandler(SimpleHTTPRequestHandler):
     def do_GET(self):
         if self.path.startswith("/api/"):
             # Proxy to Rust API server (http://127.0.0.1:8766)
+            # or handle locally (tabs, agent tasks, SSE streaming)
             pass
         else:
             super().do_GET()
@@ -133,7 +139,7 @@ webview.create_window("Browzeit", "http://127.0.0.1:8765/index.html")
 webview.start()
 ```
 
-**SSE streaming pattern (JavaScript):``
+**SSE streaming pattern (JavaScript):**
 ```javascript
 const evtSource = new EventSource("http://127.0.0.1:8766/api/agent/stream/{task_id}");
 evtSource.onmessage = (e) => {
@@ -142,6 +148,20 @@ evtSource.onmessage = (e) => {
   updateTokens(data.token_count, data.tps);
 };
 ```
+
+**API server patterns (axum):**
+- Use `State<T>` only when `T: Send + Sync`. When `T` contains `RefCell`, `T` is not `Sync` and you must wrap in `Mutex`.
+- Route handlers with `Path<T>` for path parameters, `Json<T>` for request bodies.
+- Use `Arc<Mutex<T>>` for shared state instead of `Arc<T>` when `T` contains non-`Sync` types.
+- SSE endpoint: `GET /api/agent/stream/{task_id}` returns `text/event-stream` with `Cache-Control: no-cache` and `Connection: keep-alive` headers.
+- JSON-RPC endpoints: `POST /api/agent/task`, `GET /api/agent/results/{task_id}`, `GET /api/agent/stream/{task_id}`
+
+**API server patterns (axum):**
+- Use `State<T>` only when `T: Send + Sync`. When `T` contains `RefCell`, `T` is not `Sync` and you must wrap in `Mutex`.
+- Route handlers with `Path<T>` for path parameters, `Json<T>` for request bodies.
+- Use `Arc<Mutex<T>>` for shared state instead of `Arc<T>` when `T` contains non-`Sync` types.
+- SSE endpoint: `GET /api/agent/stream/{task_id}` returns `text/event-stream` with `Cache-Control: no-cache` and `Connection: keep-alive` headers.
+- JSON-RPC endpoints: `POST /api/agent/task`, `GET /api/agent/results/{task_id}`, `GET /api/agent/stream/{task_id}`
 
 ## Tool-Use Patterns
 - **`write_file` read-before-write rule**: The `write_file` tool refuses to overwrite a file that was last read with `offset`/`limit` pagination (partial view). To overwrite: (1) read the file with a full `read_file` (no offset/limit, or read from line 1 through end), then call `write_file`. Or use `patch` for targeted edits. Do NOT delete-and-recreate for files >50 lines — the `write_file` tool's stale-checksum guard will block repeated overwrites.
@@ -158,7 +178,8 @@ evtSource.onmessage = (e) => {
 - **Verify after every edit**: run `cargo check --workspace` after any structural change to parser code
 
 ### Rust-specific Build Patterns
-- **Interior mutability on `Arc<T>`**: when a struct is wrapped in `Arc` and needs mutation, use `RefCell` for fields that change. Do NOT try to get `&mut T` through `Arc` — call `.borrow_mut()` and assign through the returned `RefMut`.
+- **Interior mutability on `Arc<T>`**: when a struct is wrapped in `Arc` and needs mutation, use `RefCell` for single-threaded interior mutability (fields change via `.borrow_mut()`). Do NOT try to get `&mut T` through `Arc`.
+- **CRITICAL: `RefCell` is NOT `Send`/`Sync`-safe — use `Mutex` for cross-thread sharing**. When an `Arc<T>` containing a struct with `RefCell` fields is shared across threads (e.g., an axum HTTP server holding a `State<Arc<T>>`), the `RefCell` makes `T` neither `Send` nor `Sync`, and the server will fail to compile with E0277. The fix: wrap the struct in `std::sync::Mutex` (`Arc<Mutex<T>>`) so the `Mutex` wrapper is `Send` + `Sync`. Example: `let orchestrator = Arc::new(std::sync::Mutex::new(DriverAgentOrchestrator::new(window)));`.
 - **Write-file token mismatch**: the `write_file` tool refuses overwrites when the file was modified on disk after last read (CRLF↔LF conversion counts as a modification). To overwrite a Rust source file: (1) delete it with `terminal` first, then (2) `write_file` without reading it. For small targeted edits, use `patch` instead. Do NOT delete-and-recreate for files >50 lines.
 - **Heredoc Python quoting**: `python3 << 'PYEOF'` heredocs break when content contains `'''` (triple quotes). Keep Python content simple or write via `write_file` tool.
 - **`Arc` copy violation**: `Arc<T>` does not implement `Copy`. `state.clone()` creates a new `Arc` sharing the same `T`. After mutating through one clone, the other reads stale state.
