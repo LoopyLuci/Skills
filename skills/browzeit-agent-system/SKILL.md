@@ -40,23 +40,30 @@ crates/
 5. `parse_action()` maps LLM responses to actions by keyword: `done`/`exit` -> Done, `navigate` -> Navigate (extract URL), `extract` -> Extract (CSS selector), `click` -> Click, `fill` -> Fill, `eval`/`evaluate` -> Evaluate (extract code), `spawn` -> SpawnSubagent, `moe`/`ensemble` -> UseMoE, `moa`/`committee` -> UseMoA, `fork` -> ForkSession, `think`/`observe`/`wait` -> Wait, default -> Done with text.
 6. `compute` the snapshot: build `Snapshot` from `Session` (url, title, body_text), create a render tree, return via `build_snapshot()`.
 
-### AgentState (interior mutability)
+### AgentState (interior mutability) — for thread-safe API access
 
 ```rust
 #[derive(Debug, Clone)]
 struct AgentState {
     id: String,
     task: Task,
-    status: RefCell<AgentStatus>,
-    logs: RefCell<Vec<String>>,
+    status: RwLock<AgentStatus>,
+    logs: RwLock<Vec<String>>,
     start_time: Instant,
     max_steps: u32,
-    steps_taken: RefCell<u32>,
-    subagents: RefCell<HashMap<String, Arc<AgentState>>>,
+    steps_taken: RwLock<u32>,
+    subagents: RwLock<HashMap<String, Arc<AgentState>>>,
 }
 ```
 
-All mutable fields must use `RefCell` for interior mutability. In struct literals: `RefCell::new(...)`.
+**CRITICAL**: When the API server exposes endpoints that concurrently access `AgentOrchestrator`, `AgentState` fields must use `RwLock` (not `RefCell`). The API wraps `DriverAgentOrchestrator` in `Mutex<>`, and each handler locks it, calling methods that mutate `AgentState`. `RefCell` panics on concurrent borrows. Sources: build failures at `execute()` on line 146, `engine_orchestrator_mut()` on driver crate.
+
+- All mutable fields: `status: RwLock<AgentStatus>`, `logs: RwLock<Vec<String>>`, `steps_taken: RwLock<u32>`, `subagents: RwLock<HashMap<String, Arc<AgentState>>>`.
+- In struct literals: `RwLock::new(...)` for each mutable field.
+
+### Re-export of Task to engine crate
+
+The `engine` crate must re-export `Task` from `types::agent` for downstream crates (e.g., `api` crate) to use. This is done via `pub use types::agent::Task;` in `crates/engine/src/lib.rs`. Without this, `browzeit_engine::Task` does not exist and downstream crates using `browzeit_engine::agent::Task` fail to compile.
 
 ## Workload Phase 2: MoE / MoA / Subagents / Session
 
@@ -130,7 +137,12 @@ All mutable fields must use `RefCell` for interior mutability. In struct literal
   4. `let listener = TcpListener::bind("127.0.0.1:8767")`
   5. `axum::serve(listener, app).await.expect("Server failed")`
 
-> **NOTE**: This host has KotMoE API occupying port 8766. Browzeit's API must bind to **8767**, and `gui_shell/browzeit_shell.py` must set `API_PORT = 8767`. The default port 8766 will fail with `addr in use`.
+> **NOTE**: This host has KotMoE API occupying port 8766. Browzeit's API server binds to **8767** (not 8766 as the earlier stub draft said). `gui_shell/browzeit_shell.py` sets `API_PORT = 8767`. The default port 8766 will fail with `addr in use`.
+
+**Port conventions on this host:**
+- API server (Rust axum): `127.0.0.1:8767`
+- GUI shell (Python pywebview + HTTP): `127.0.0.1:8765` — serves `index.html` + static assets, proxies `/api/*` to the Rust server
+- SSE streaming for live thought: returned by the API server at `/api/agent/stream/{task_id}`
 
 ```rust
 async fn get_agent_results(Path(task_id): Path<String>) -> Json<api_types::ApiResponse<()>> {
@@ -198,7 +210,7 @@ Run in order; stop on first failure:
 
 - [ ] `cargo check --workspace` -> exit 0
 - [ ] `cargo test --workspace` -> all tests green
-- [ ] API server starts: `cargo run -p browzeit-api` -> port 8766 listening
+- [ ] API server starts: `cargo run -p browzeit-api` -> port 8767 listening
 - [ ] GUI shell starts: `python gui_shell/browzeit_shell.py` -> window opens
 - [ ] `/api/health` returns "ok"
 - [ ] `/api/browser/tabs` returns tabs list
@@ -212,8 +224,8 @@ Run in order; stop on first failure:
 
 - Start the GUI shell: `python gui_shell/browzeit_shell.py`
 - Verify the window opens and serves `http://127.0.0.1:8765/`. Do NOT use `terminal(background=true)` — pywebview requires an interactive session. Instead create a `.bat` launch script for the user.
-- Verify API endpoints respond: `curl http://127.0.0.1:8766/api/health`
-- Verify SSE streaming: `curl -N http://127.0.0.1:8766/api/agent/stream`
+- Verify API endpoints respond: `curl http://127.0.0.1:8767/api/health`
+- Verify SSE streaming: `curl -N http://127.0.0.1:8767/api/agent/stream`
 
 - **Agent module files live in a directory, not a mod.rs**: `engine/src/agent.rs` declares `pub mod moa; pub mod moi; ...` — but these modules are separate files in `engine/src/agent/`. Each must be patched as a standalone file, not written as a nested mod.rs.
 
@@ -239,7 +251,7 @@ Run in order; stop on first failure:
 
 - [ ] `cargo check --workspace` -> exit 0
 - [ ] `cargo test --workspace` -> all tests green
-- [ ] API server starts: `cargo run -p browzeit-api` -> port 8766 listening
+- [ ] API server starts: `cargo run -p browzeit-api` -> port 8767 listening
 - [ ] GUI shell starts: `python gui_shell/browzeit_shell.py` -> window opens
 - [ ] `/api/health` returns "ok"
 - [ ] `/api/browser/tabs` returns tabs list
@@ -253,8 +265,8 @@ Run in order; stop on first failure:
 
 - Start the GUI shell: `python gui_shell/browzeit_shell.py`
 - Verify the window opens and serves `http://127.0.0.1:8765/`. Do NOT use `terminal(background=true)` — pywebview requires an interactive session. Instead create a `.bat` launch script for the user.
-- Verify API endpoints respond: `curl http://127.0.0.1:8766/api/health`
-- Verify SSE streaming: `curl -N http://127.0.0.1:8766/api/agent/stream`
+- Verify API endpoints respond: `curl http://127.0.0.1:8767/api/health`
+- Verify SSE streaming: `curl -N http://127.0.0.1:8767/api/agent/stream`
 
 ## User's Preferred Workflow
 
@@ -271,7 +283,7 @@ Run in order; stop on first failure:
 
 - [ ] `cargo check --workspace` -> exit 0
 - [ ] `cargo test --workspace` -> all tests green
-- [ ] API server starts: `cargo run -p browzeit-api` -> port 8766 listening
+- [ ] API server starts: `cargo run -p browzeit-api` -> port 8767 listening
 - [ ] GUI shell starts: `python gui_shell/browzeit_shell.py` -> window opens
 - [ ] `/api/health` returns "ok"
 - [ ] `/api/browser/tabs` returns tabs list
