@@ -14,22 +14,27 @@ The Browzeit agent system orchestrates browsers with AI agents, supporting MoE (
 - User asks for the desktop GUI scaffold (pywebview/Tauri) for a Rust agentic browser.
 - User asks for API/CLI/MCP/ACP interfaces to control the browser agent.
 
-## Project Layout
+## Project Layout + Current State
 
-```
+```text
 crates/
-  traits/
-  types/
-  core/
-  engine/src/
-    agent/           # AgentOrchestrator + MoE/MoA/subagent/session/swarm modules
-    layout.rs        # Layout engine
-  renderer/
-  network/
-  driver/src/        # Driver shell (AgentOrchestrator wrapper + BrowserWindow)
-  api/src/           # Axum REST API + SSE streaming
-  gui_shell/          # Python pywebview shell
+  traits/          # Trait contracts (Parser, LayoutEngine, PaintBackend, NetworkClient, Agent)
+  types/           # Complete DOM, render tree, agent types, browser types
+  core/            # SKELETON: dom.rs (v0.1, doc-only), parser.rs (FIXED, COMPILING), style.rs (v0.1, doc-only)
+  engine/          # agent.rs + agent/ module files (moa, moi, moe, session, subagent, swarm, canvas, chat, protocol), layout.rs, moa.rs, moi.rs
+  renderer/        # SKELETON: paint.rs, compositing.rs, bridge.rs, v8_embed.rs
+  network/         # SKELETON: client.rs (stub returning error), cache.rs, cookies.rs (stub)
+  driver/          # shell.rs (BrowserWindow), webview.rs (duplicate BrowserWindow), agent.rs (orchestrator)
+  api/             # lib.rs (types + router) + main.rs (duplicate types + full server)
+  gui_shell/       # pywebview shell (browzeit_shell.py + index.html)
 ```
+
+**Known issues to resolve before building:**
+- `core/src/dom.rs` and `core/src/style.rs` are doc-only skeletons (v0.1), not implementations.
+- `network/src/client.rs` is a stub returning error — the HTTP client is not implemented.
+- `types::browser::BrowserWindow` (driver) is a skeleton with 3 methods; `driver::webview::BrowserWindow` has the full 20+ method implementation. The driver's agent.rs uses the skeleton type — this is intentional for the orchestrator but means tab/navigation APIs are not wired through.
+- `api/src/lib.rs` and `api/src/main.rs` both define `ApiResponse`, `BrowserTab`, `AgentTaskRequest`, etc. — duplicate type definitions that will conflict.
+- The entire workspace has NEVER been built end-to-end. `cargo check --workspace` has never been run to completion.
 
 ## Workload Phase 1: Agent Orchestrator Core
 
@@ -111,7 +116,10 @@ The `engine` crate must re-export `Task` from `types::agent` for downstream crat
 
 `driver/src/agent.rs` provides `DriverAgentOrchestrator`:
 
-- `use types::browser::BrowserWindow` (NOT `driver::shell::BrowserWindow`)
+- Use `types::browser::BrowserWindow` (NOT `driver::shell::BrowserWindow`)
+  - `types::browser::BrowserWindow` is a SKELETON with only `new()`, `set_state()`, `add_tab()` — 3 methods.
+  - `driver::webview::BrowserWindow` has the full 20+ method implementation (navigate, go_back, go_forward, refresh, history, evaluate_js, etc.).
+  - The driver's `agent.rs` imports `types::browser::BrowserWindow` for the orchestrator. Actual tab/navigation work is done on `driver::webview::BrowserWindow`.
 - `pub fn new() -> Self` (0 args, creates `BrowserWindow::new()` internally)
 - Fields: `id: u64`, `browser: BrowserWindow`, `engine_orchestrator: AgentOrchestrator`, `task_queue: Vec<(String, String)>`, `results: HashMap<String, Snapshot>`, `shutdown_tx: Option<mpsc::SyncSender<()>>`.
 - `result(&self, task_id: &str) -> Option<&Snapshot>` returns `self.results.get(task_id)`.
@@ -204,7 +212,9 @@ Run in order; stop on first failure:
 
 - **Rust 2024: unexpected closing delimiter**: If `cargo check` reports `^ unexpected closing delimiter: }`, check the file for a duplicate closing brace — a struct/enum definition with a stray `}` after the final `}` is a common cause. Read the file around the reported line and remove the duplicate. This happened in `crates/types/src/layout.rs` where an extra `}` after the final `}` of `impl LayoutDocument` broke compilation.
 
-- **Workspace verification before declaring done**: Always run `cargo check --workspace` and confirm exit 0 with 0 errors. Warnings are acceptable (they are usually unused variable/lint warnings).
+- **API crate duplicate type definitions**: The `api/src/lib.rs` and `api/src/main.rs` both define `ApiResponse`, `BrowserTab`, `AgentTaskRequest`, `AgentTaskResponse`, etc. This is a merge-conflict waiting to happen. Consolidate the duplicate definitions into one `types` module (keep one source of truth).
+
+- **Workspace verification before declaring done**: Always run `cargo check --workspace` and confirm exit 0 with 0 errors. Warnings are acceptable (they are usually unused variable/lint warnings). The Browzeit workspace has NEVER been built end-to-end — this is the target state, not the current state.
 
 ## Verification Checklist
 
