@@ -73,12 +73,30 @@ http://127.0.0.1:8787/api/agent/overview` should return a JSON object with a
 ### 3. Run the verification script
 
 ```bash
-python scripts/e2e_verify.py
+cd /c/Users/Server/AppData/Local/hermes/skills/software-development/screenbuddy-fleet-verification/scripts
+python e2e_verify.py
 ```
 
 The script speaks ScreenBuddy's length-prefixed IPC protocol (4-byte big-endian
 frame length + JSON payload) and ABP's HTTP API with the dashboard token. It
 exercises every integration pattern and reports PASS/FAIL per check.
+
+**Run the script from its own directory.** Passing the path directly to a
+Windows Python from git-bash mangles `/c/...` into `\c\...` and the script
+cannot be found. `cd` into the scripts directory first.
+
+**The ABP ask check needs a longer timeout.** The script's default HTTP
+timeout is 10s, but the ABP generation window is ~60s. If check 9 (ABP to
+ScreenBuddy ask) times out, re-run it manually with a 90s timeout:
+
+```bash
+TOKEN=$(grep DASHBOARD_TOKEN /c/Projects/AgenticBotPlatform/.env | cut -d= -f2 | tr -d '"')
+curl -s -m 90 -H "X-Dashboard-Token: $TOKEN" -H "Content-Type: application/json" \
+  -d '{"source_instance":"screenbuddy","target_instance":"screenbuddy-test","prompt":"E2E test: reply with INTEGRATION_OK"}' \
+  http://127.0.0.1:8787/api/agent/ask
+```
+
+A timeout here is a script limitation, not an integration failure.
 
 ### 4. Interpret results
 

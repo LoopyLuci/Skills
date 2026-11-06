@@ -137,6 +137,26 @@ tag matches:
 - `[workspace.package] version` (and any per-crate version that is published)
 - `versionName` / `versionCode` in the Android build
 - the git tag
+- **F-Droid's `fastlane/metadata/android/*/fdroid.yml` `Tags:` field** — it
+  must match the current release tag. F-Droid builds from the tagged source, so
+  a stale `Tags:` value silently produces an APK from an old commit. Check this
+  before every release; nothing reminds you to update it.
+
+### When the release already exists
+
+Before cutting a new release, check whether the tag is already pushed and the
+release already published:
+
+```bash
+git ls-remote --tags origin | grep vX.Y.Z
+git log --oneline origin/main..HEAD   # is local ahead of remote?
+gh release view vX.Y.Z --json tagName,isDraft,isPrerelease,assets,url
+```
+
+If the tag exists and the release is published with assets, **verify, don't
+re-cut**. Download the assets, compare SHA256 against a fresh local build, and
+report the release as already shipped. Re-cutting a published tag creates a
+release whose provenance is ambiguous.
 
 Where a version string is printed in the app (an About box, a `--version` flag),
 read it from crate metadata (`env!("CARGO_PKG_VERSION")`) instead of hardcoding
