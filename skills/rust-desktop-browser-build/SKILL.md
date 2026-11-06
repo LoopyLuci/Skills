@@ -28,14 +28,335 @@ version: "1.0"
 - **Verification**: integration tests in crates/*/tests/, cargo test green before moving on
 - **Zero tolerance**: compile errors and warnings block moving forward
 
+---
+name: rust-desktop-browser-build
+description: "Rust desktop browser build on Windows: X: toolchain"
+category: software-development
+---
+
+# Rust Desktop Browser Build
+
+## When to Use
+- Building a native Rust desktop browser (Browzeit) on Windows with the X: toolchain
+- Implementing a multi-phase Rust library workspace with crates/traits, crates/types, crates/core, crates/engine, crates/renderer, crates/network, crates/driver, and an `api` crate (axum HTTP server)
+- Setting up a from-scratch browser architecture with independent, minimal-dependency crates
+
+## Always-On Rules
+- **User workflow preference**: "proceed with all optimally" = full implementation of every phase with working artifacts, never a stub, never "next steps" substituted for implementation
+- **GUI**: Desktop GUI = pywebview/Tauri shell, never browser dashboard
+- **Generative UI**: agent must create/modify/optimize UI in real time (add_button, change_layout, theme)
+- **Verification**: `cargo check --workspace` green before moving to the next phase; `cargo test` green before claiming completion
+- **Zero tolerance**: compile errors and warnings block moving forward
+
 ## Project Context: Browzeit
 - **Name**: Browzeit (fully independent browser)
 - **Workspace**: X:\Projects\Browzeit\browzeit (Cargo workspace)
 - **Drives**: X: = junction to Z:/x/, C: at 90% full — NEVER use C:
-- **Architecture**: 7-crate Rust workspace: traits, types, core, engine, renderer, network, driver, api (new)
-- **General**: 7 phases (see below) + protocol layer + generative canvas
+- **Architecture**: 8-crate Rust workspace: traits, types, core, engine, renderer, network, driver, api
 - **New crates**: `api` (axum HTTP server), `types` module `browser.rs` (BrowserWindowState, BrowserTab, BrowserWindow)
-- **New modules**: `driver/src/shell.rs` (BrowserWindow with tabs, navigation, history, back/forward, atomic IDs), `driver/src/agent.rs` (DriverAgentOrchestrator with task queue, results, task creation)
+- **New modules**: `driver/src/shell.rs` (BrowserWindow with tabs, navigation, history, back/forward, atomic IDs), `driver/src/agent.rs` (DriverAgentOrchestrator), `api/src/lib.rs` (types module, GLOBAL_ORCHESTRATOR static), `api/src/main.rs` (axum server binary)
+
+## IPC Bridge Architecture
+The Browzeit desktop shell is a two-process system (not a single GUI binary):
+
+1. **Python (pywebview + WebView2)**: native desktop shell — the window, browser chrome, agent chat panel, and generative canvas. Starts a local HTTP server (e.g., port 8765) serving `index.html` and static assets, then opens the WebView2 window via `webview.create_window(url="http://127.0.0.1:8765/index.html", ...)`.
+2. **Rust (axum HTTP server)**: the IPC bridge. `crates/api` exposes REST endpoints and SSE streaming on port 8766. It owns a `GLOBAL_ORCHESTRATOR` (a `pub static mut` wrapped in `Arc<Mutex<DriverAgentOrchestrator>>`) that the Python shell's HTTP handlers access via `browzeit_api::GLOBAL_ORCHESTRATOR`.
+
+**Key endpoints (Rust axum server, port 8766):**
+- `GET /api/browser/tabs` — list browser tabs
+- `POST /api/browser/navigate` — navigate to URL (JSON body `{"url": "..."}`)
+- `POST /api/agent/task` — create an agent task (JSON body with `task`, `model`, `parameters`)
+- `GET /api/agent/results/{task_id}` — get task results
+- `GET /api/agent/stream/{task_id}` — SSE stream for live thought streaming
+- `GET /api/health` — health check
+
+**SSE streaming pattern (JavaScript):**
+```javascript
+const evtSource = new EventSource("http://127.0.0.1:8766/api/agent/stream/{task_id}");
+evtSource.onmessage = (e) => {
+  const data = JSON.parse(e.data);
+  appendMessage(data.content, "assistant");
+  updateTokens(data.token_count, data.tps);
+};
+```
+
+**SSE endpoint pattern (Rust axum):** return `text/event-stream`, `Cache-Control: no-cache`, `Connection: keep-alive`. Stream JSON messages line-by-line.
+
+**Python server pseudo-structure (port 8765):** `SimpleHTTPRequestHandler` on `127.0.0.1:8765` that proxies `/api/*` to the Rust server at `127.0.0.1:8766` and serves static GUI files locally. Start in a daemon thread.
+
+See `references/browzeit-ipc-architecture.md` for the full IPC bridge architecture document.
+
+## Phase Execution Order
+
+### Phase 1 — Core (Parser, DOM, CSS)
+1. Define `crates/traits/Cargo.toml` (Parser trait)
+2. Define `crates/types/Cargo.toml` (DOM types: Node, Element, Text, Comment)
+3. Implement HTML5 parser in `crates/core/src/parser.rs` (tokenizer + tree builder)
+4. Implement CSS cascade in `crates/core/src/style.rs`
+5. Add integration tests in `crates/core/tests/`
+6. Verify: `cargo check -p browzeit-core` and `cargo test -p browzeit-core`
+
+### Phase 2 — Network (HTTP, Cookies, Cache)
+1. Define `crates/network/Cargo.toml` (HttpClient, cookies module)
+2. Implement HTTP client (rustls + hyper optional)
+3. Implement cookie store and cache
+4. Verify: `cargo check -p browzeit-network`
+
+### Phase 3 — Layout/Engine
+1. Implement layout engine: box model, flex/grid
+2. Define `crates/engine/Cargo.toml`
+3. Implement layout pipeline
+4. Verify: `cargo check -p browzeit-engine`
+
+### Phase 4 — Renderer (Graphics)
+1. Define `crates/renderer/Cargo.toml` (paint, compositing modules)
+2. Implement off-screen rendering and compositing
+3. Verify: `cargo check -p browzeit-renderer`
+
+### Phase 5 — Agent (Autonomous Actions)
+1. Define agent interface in `crates/engine/src/agent.rs`
+2. Implement agent command parsing and execution
+3. **Agent system architecture**: AgentOrchestrator with MoE (Mixture of Experts), MoA (Mixture of Agents), subagents, agent swarms, and session forking
+4. **AgentState**: Use `RefCell` for interior mutability; struct literals must initialize `RefCell::new()`
+5. Implement agent submodules: `agent/canvas.rs`, `agent/chat.rs`, `agent/protocol.rs`
+6. Verify: `cargo check -p browzeit-engine`, `cargo test -p browzeit-engine`
+
+### Phase 6 — Driver (Desktop Shell)
+1. Define `crates/driver/Cargo.toml` (BrowserWindow, webview module)
+2. Implement pywebview/Tauri shell with navigation bar and tabs
+3. Verify: `cargo check -p browzeit-driver`
+
+### Phase 7 — Generative UI
+1. Add agent methods: `add_button`, `change_layout`, `theme`
+2. Agent creates/modifies UI in real time
+3. Verify: `cargo check --workspace` and `cargo test`
+
+### Phase 8 — API IPC Bridge
+1. Create `crates/api/Cargo.toml` (axum HTTP server dependency)
+2. Implement types module (`api/src/lib.rs`)
+3. Implement axum server (`api/src/main.rs`)
+4. Wrap `DriverAgentOrchestrator` in `Arc<Mutex<>>`
+5. Make `GLOBAL_ORCHESTRATOR` `pub static mut` in lib.rs
+6. Verify: `cargo check --workspace`
+
+## Build & Verification Commands
+```powershell
+# Set X: toolchain (run once per session)
+$env:RUSTUP_HOME = "X:/Dev/rustup"
+$env:CARGO_HOME = "X:/Dev/cargo"
+$env:CARGO_TARGET_DIR = "X:/Dev/cargo-target"
+
+# Full workspace check
+cargo check --workspace
+
+# Core crate check
+cargo check -p browzeit-core
+
+# Run integration tests
+cargo test -p browzeit-core --test sanity
+```
+
+## IPC Bridge Architecture: pywebview Python Shell ↔ Rust axum Engine
+The Browzeit desktop shell is a two-process system (not a single GUI binary):
+
+1. **Python (pywebview + WebView2)**: native desktop shell — the window, browser chrome, agent chat panel, and generative canvas. Starts a local HTTP server (e.g., port 8765) serving `index.html` and static assets, then opens the WebView2 window via `webview.create_window(url="http://127.0.0.1:8765/index.html", ...)`.
+2. **Rust (axum HTTP server)**: the IPC bridge. `crates/api` exposes REST endpoints and SSE streaming on port 8766. It owns a `GLOBAL_ORCHESTRATOR` (a `pub static mut` wrapped in `Arc<Mutex<DriverAgentOrchestrator>>`) that the Python shell's HTTP handlers access via `browzeit_api::GLOBAL_ORCHESTRATOR`.
+
+**Key endpoints (Rust axum server, port 8766):**
+- `GET /api/browser/tabs` — list browser tabs
+- `POST /api/browser/navigate` — navigate to URL (JSON body `{"url": "..."}`)
+- `POST /api/agent/task` — create an agent task (JSON body with `task`, `model`, `parameters`)
+- `GET /api/agent/results/{task_id}` — get task results
+- `GET /api/agent/stream/{task_id}` — SSE stream for live thought streaming
+- `GET /api/health` — health check
+
+**SSE streaming pattern (JavaScript, served from the Rust API server):**
+```javascript
+const evtSource = new EventSource("http://127.0.0.1:8766/api/agent/stream/{task_id}");
+evtSource.onmessage = (e) => {
+  const data = JSON.parse(e.data);
+  appendMessage(data.content, "assistant");
+  updateTokens(data.token_count, data.tps);
+};
+```
+
+**SSE endpoint pattern (Rust axum):** return `text/event-stream`, `Cache-Control: no-cache`, `Connection: keep-alive`. Stream JSON messages line-by-line:
+```
+event: thoughts
+data: {"task_id": "...", "content": "...", "token_count": N, "tps": N}
+
+```
+
+**Python server pseudo-structure (port 8765):** `SimpleHTTPRequestHandler` on `127.0.0.1:8765` that proxies `/api/*` to the Rust server at `127.0.0.1:8766` and serves static GUI files locally. Start in a daemon thread so the HTTP server runs alongside the pywebview event loop.
+
+## Phase Execution Order
+
+### Phase 1 — Core (Parser, DOM, CSS)
+1. Define `crates/traits/Cargo.toml` (Parser trait)
+2. Define `crates/types/Cargo.toml` (DOM types: Node, Element, Text, Comment)
+3. Implement HTML5 parser in `crates/core/src/parser.rs` (tokenizer + tree builder)
+4. Implement CSS cascade in `crates/core/src/style.rs`
+5. Add integration tests in `crates/core/tests/`
+6. Verify: `cargo check -p browzeit-core` and `cargo test -p browzeit-core`
+
+### Phase 2 — Network (HTTP, Cookies, Cache)
+1. Define `crates/network/Cargo.toml` (HttpClient, cookies module)
+2. Implement HTTP client (rustls + hyper optional)
+3. Implement cookie store and cache
+4. Verify: `cargo check -p browzeit-network`
+
+### Phase 3 — Layout/Engine
+1. Implement layout engine: box model, flex/grid
+2. Define `crates/engine/Cargo.toml`
+3. Implement layout pipeline
+4. Verify: `cargo check -p browzeit-engine`
+
+### Phase 4 — Renderer (Graphics)
+1. Define `crates/renderer/Cargo.toml` (paint, compositing modules)
+2. Implement off-screen rendering and compositing
+3. Verify: `cargo check -p browzeit-renderer`
+
+### Phase 5 — Agent (Autonomous Actions)
+1. Define agent interface in `crates/engine/src/agent.rs`
+2. Implement agent command parsing and execution
+3. **Agent system architecture**: AgentOrchestrator with MoE (Mixture of Experts), MoA (Mixture of Agents), subagents, agent swarms, and session forking
+4. **AgentState**: Use `RefCell` for interior mutability on status/logs/steps_taken/subagents fields; struct literals must initialize `RefCell::new()`
+5. Implement agent submodules: `agent/canvas.rs` (Generative Canvas), `agent/chat.rs` (Agent Chat UI Framework), `agent/protocol.rs` (Protocol Layer)
+6. Verify: `cargo check -p browzeit-engine`, `cargo test -p browzeit-engine`
+
+### Phase 6 — Driver (Desktop Shell)
+1. Define `crates/driver/Cargo.toml` (BrowserWindow, webview module)
+2. Implement pywebview/Tauri shell with navigation bar and tabs
+3. Verify: `cargo check -p browzeit-driver`
+
+### Phase 7 — Generative UI
+1. Add agent methods: `add_button`, `change_layout`, `theme`
+2. Agent creates/modifies UI in real time
+3. Verify: `cargo check --workspace` and `cargo test`
+
+### Phase 8 — API IPC Bridge (new)
+1. Create `crates/api/Cargo.toml` (axum HTTP server dependency)
+2. Implement types module (`api/src/lib.rs`): ApiResponse, BrowserTab, AgentTaskRequest, AgentTaskResponse, ThoughtEvent
+3. Implement axum server (`api/src/main.rs`): health, tabs, navigate, agent task creation, task results
+4. Wrap `DriverAgentOrchestrator` in `Arc<Mutex<>>` for cross-thread sharing
+5. Make `GLOBAL_ORCHESTRATOR` `pub static mut` in lib.rs so the binary can access it
+6. Verify: `cargo check --workspace`
+
+## Build & Verification Commands
+```powershell
+# Set X: toolchain (run once per session)
+$env:RUSTUP_HOME = "X:/Dev/rustup"
+$env:CARGO_HOME = "X:/Dev/cargo"
+$env:CARGO_TARGET_DIR = "X:/Dev/cargo-target"
+
+# Full workspace check
+cargo check --workspace
+
+# Core crate check
+cargo check -p browzeit-core
+
+# Run integration tests
+cargo test -p browzeit-core --test sanity
+```
+
+## IPC Bridge Architecture: pywebview Python Shell ↔ Rust axum Engine
+The Browzeit desktop shell is built as a two-process system (not a single GUI binary):
+
+1. **Python (pywebview + WebView2)**: native desktop shell — the window, browser chrome, agent chat panel, and generative canvas. Starts a local HTTP server (e.g., port 8765) serving `index.html` and static assets, then opens the WebView2 window via `webview.create_window(url="http://127.0.0.1:8765/index.html", ...)`.
+2. **Rust (axum HTTP server)**: the IPC bridge. `crates/api` exposes REST endpoints and SSE streaming on port 8766. It owns a `GLOBAL_ORCHESTRATOR` (a `pub static mut` wrapped in `Arc<Mutex<DriverAgentOrchestrator>>`) that the Python shell's HTTP handlers access via `browzeit_api::GLOBAL_ORCHESTRATOR`.
+
+**Key endpoints (Rust axum server, port 8766):**
+- `GET /api/browser/tabs` — list browser tabs
+- `POST /api/browser/navigate` — navigate to URL (JSON body `{"url": "..."}`)
+- `POST /api/agent/task` — create an agent task (JSON body with `task`, `model`, `parameters`)
+- `GET /api/agent/results/{task_id}` — get task results
+- `GET /api/agent/stream/{task_id}` — SSE stream for live thought streaming
+- `GET /api/health` — health check
+
+**SSE streaming pattern (JavaScript, served from the Rust API server):**
+```javascript
+const evtSource = new EventSource("http://127.0.0.1:8766/api/agent/stream/{task_id}");
+evtSource.onmessage = (e) => {
+  const data = JSON.parse(e.data);
+  appendMessage(data.content, "assistant");
+  updateTokens(data.token_count, data.tps);
+};
+```
+
+**SSE endpoint pattern (Rust axum):** return `text/event-stream`, `Cache-Control: no-cache`, `Connection: keep-alive`. Stream JSON messages line-by-line:
+```
+event: thoughts
+data: {"task_id": "...", "content": "...", "token_count": N, "tps": N}
+
+```
+
+**Python server pseudo-structure (port 8765):** `SimpleHTTPRequestHandler` on `127.0.0.1:8765` that proxies `/api/*` to the Rust server at `127.0.0.1:8766` and serves static GUI files locally. Start in a daemon thread so the HTTP server runs alongside the pywebview event loop.
+
+## IPC Bridge Architecture: pywebview Python Shell ↔ Rust axum Engine
+The Browzeit desktop shell is built as a two-process system (not a single GUI binary):
+
+1. **Python (pywebview + WebView2)**: native desktop shell — the window, browser chrome, agent chat panel, and generative canvas. Starts a local HTTP server (e.g., port 8765) serving `index.html` and static assets, then opens the WebView2 window via `webview.create_window(url="http://127.0.0.1:8765/index.html", ...)`.
+2. **Rust (axum HTTP server)**: the IPC bridge. `crates/api` exposes REST endpoints and SSE streaming on port 8766. It owns a `GLOBAL_ORCHESTRATOR` (a `pub static mut` wrapped in `Arc<Mutex<DriverAgentOrchestrator>>`) that the Python shell's HTTP handlers access via `browzeit_api::GLOBAL_ORCHESTRATOR`.
+
+**Key endpoints (Rust axum server, port 8766):**
+- `GET /api/browser/tabs` — list browser tabs
+- `POST /api/browser/navigate` — navigate to URL (JSON body `{"url": "..."}`)
+- `POST /api/agent/task` — create an agent task (JSON body with `task`, `model`, `parameters`)
+- `GET /api/agent/results/{task_id}` — get task results
+- `GET /api/agent/stream/{task_id}` — SSE stream for live thought streaming
+- `GET /api/health` — health check
+
+**SSE streaming pattern (JavaScript, served from the Rust API server):**
+```javascript
+const evtSource = new EventSource("http://127.0.0.1:8766/api/agent/stream/{task_id}");
+evtSource.onmessage = (e) => {
+  const data = JSON.parse(e.data);
+  appendMessage(data.content, "assistant");
+  updateTokens(data.token_count, data.tps);
+};
+```
+
+**SSE endpoint pattern (Rust axum):** return `text/event-stream`, `Cache-Control: no-cache`, `Connection: keep-alive`. Stream JSON messages line-by-line:
+```
+event: thoughts
+data: {"task_id": "...", "content": "...", "token_count": N, "tps": N}
+
+```
+
+**Python server pseudo-structure (port 8765):** `SimpleHTTPRequestHandler` on `127.0.0.1:8765` that proxies `/api/*` to the Rust server at `127.0.0.1:8766` and serves static GUI files locally. Start in a daemon thread so the HTTP server runs alongside the pywebview event loop.
+
+## IPC Bridge Architecture: pywebview Python Shell ↔ Rust axum Engine
+The Browzeit desktop shell is built as a two-process system (not a single GUI binary):
+
+1. **Python (pywebview + WebView2)**: native desktop shell — the window, browser chrome, agent chat panel, and generative canvas. Starts a local HTTP server (e.g., port 8765) serving `index.html` and static assets, then opens the WebView2 window via `webview.create_window(url="http://127.0.0.1:8765/index.html", ...)`.
+2. **Rust (axum HTTP server)**: the IPC bridge. `crates/api` exposes REST endpoints and SSE streaming on port 8766. It owns a `GLOBAL_ORCHESTRATOR` (a `pub static mut` wrapped in `Arc<Mutex<DriverAgentOrchestrator>>`) that the Python shell's HTTP handlers access via `browzeit_api::GLOBAL_ORCHESTRATOR`.
+
+**Key endpoints (Rust axum server, port 8766):**
+- `GET /api/browser/tabs` — list browser tabs
+- `POST /api/browser/navigate` — navigate to URL (JSON body `{"url": "..."}`)
+- `POST /api/agent/task` — create an agent task (JSON body with `task`, `model`, `parameters`)
+- `GET /api/agent/results/{task_id}` — get task results
+- `GET /api/agent/stream/{task_id}` — SSE stream for live thought streaming
+- `GET /api/health` — health check
+
+**SSE streaming pattern (JavaScript, served from the Rust API server):**
+```javascript
+const evtSource = new EventSource("http://127.0.0.1:8766/api/agent/stream/{task_id}");
+evtSource.onmessage = (e) => {
+  const data = JSON.parse(e.data);
+  appendMessage(data.content, "assistant");
+  updateTokens(data.token_count, data.tps);
+};
+```
+
+**SSE endpoint pattern (Rust axum):** return `text/event-stream`, `Cache-Control: no-cache`, `Connection: keep-alive`. Stream JSON messages line-by-line:
+```
+event: thoughts
+data: {"task_id": "...", "content": "...", "token_count": N, "tps": N}
+
+```
+
+**Python server pseudo-structure (port 8765):** `SimpleHTTPRequestHandler` on `127.0.0.1:8765` that proxies `/api/*` to the Rust server at `127.0.0.1:8766` and serves static GUI files locally. Start in a daemon thread so the HTTP server runs alongside the pywebview event loop.
 
 ## Phase Execution Order
 

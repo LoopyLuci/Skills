@@ -1,0 +1,45 @@
+## Tool-Use Patterns
+
+- **`write_file` read-before-write rule**: The `write_file` tool refuses to overwrite a file that was last read with `offset`/`limit` pagination (partial view). To overwrite: (1) read the file with a full `read_file` (no offset/limit, or read from line 1 through end), then call `write_file`. Or use `patch` for targeted edits. Do NOT delete-and-recreate for files >50 lines — the `write_file` tool's stale-checksum guard will block repeated overwrites.
+- **`patch` for multi-line edits**: For files with pre-existing content, `patch` works reliably where `write_file` gets blocked by the read-before-write guard. Batch multiple `patch` calls for multi-section changes.
+- **CRLF line endings pitfall**: The `patch` tool fails with "Could not find a match for old_string" when a file has CRLF line endings, because the `old_string` uses LF. Fix: run `sed -i 's/\r$//' /path/to/file.rs` on the affected file first. **Always run `cat -A file.rs | head` to check for `\r` before patching Rust files from this session.** This is critical for multi-crate workspaces where files may have been edited on different platforms.
+- **Rust std naming**: `std::sync::mpsc::sync_channel` (snake_case), NOT `mpsc::SyncChannel`. Old `mpsc::SyncChannel` does not exist in Rust 2021 edition.
+- **uuid crate v1.x**: `Uuid::new_v4()` has no `as_u64()` method. Use `Uuid::new_v4().as_u128() as u64` or `Uuid::new_v4().to_u128_le() as u64`. The `as_u64()` method was removed in newer uuid crate versions.
+- **mpsc channel type**: `mpsc::sync_channel(n)` returns `(SyncSender, Receiver)`. The sender type is `mpsc::SyncSender<T>`, not `mpsc::Sender<T>`. Use `tx.send(())` for sync sender.
+
+## Verification-First Workflow
+- **User workflow preference**: "proceed with all optimally" means full implementation of every phase with working artifacts, never a stub and never "next steps" substituted for implementation
+- **Fix warnings before proceeding**: cargo warnings (unused variables/fields) block clean verification
+- **Zero tolerance for compile errors**: rustc/cargo check must pass before moving to the next phase
+- **Next steps = implementation, not release advice**: when the user asks what to do next, do the work, then report results
+- **Verify after every edit**: run `cargo check --workspace` after any structural change to parser code
+
+## Rust-specific Build Patterns
+- **Interior mutability on `Arc<T>`**: when a struct is wrapped in `Arc` and needs mutation, use `RefCell` for single-threaded interior mutability (fields change via `.borrow_mut()`). Do NOT try to get `&mut T` through `Arc`.
+- **CRITICAL: `RefCell` is NOT `Send`/`Sync`-safe — use `Mutex` for cross-thread sharing**. When an `Arc<T>` containing a struct with `RefCell` fields is shared across threads (e.g., an axum HTTP server holding a `State<Arc<T>>`), the `RefCell` makes `T` neither `Send` nor `Sync`, and the server will fail to compile with E0277. The fix: wrap the struct in `std::sync::Mutex` (`Arc<Mutex<T>>`) so the `Mutex` wrapper is `Send` + `Sync`.
+- **API crate global state pattern**: when two crates share mutable state across threads, define `pub static mut GLOBAL_ORCHESTRATOR: Option<Arc<Mutex<T>>>` in the library crate (`lib.rs`), make it `pub`, and access it from the binary (`main.rs`) using `browzeit_api::GLOBAL_ORCHESTRATOR`. Access within `unsafe` blocks.
+- **API crate struct literal ownership pattern**: when passing a `String` field (e.g., `task_id`) to multiple struct literals that take ownership, clone it in the first struct (`task_id.clone()`) and use the original in the second. Or clone after the first use. The compiler error is E0382 "use of moved value".
+- **Write-file token mismatch**: the `write_file` tool refuses overwrites when the file was modified on disk after last read (CRLF↔LF conversion counts as a modification). To overwrite a Rust source file: (1) delete it with `terminal` first, then (2) `write_file` without reading it. For small targeted edits, use `patch` instead. Do NOT delete-and-recreate for files >50 lines.
+- **Heredoc Python quoting**: `python3 << 'PYEOF'` heredocs break when content contains `'''` (triple quotes). Keep Python content simple or write via `write_file` tool.
+- **`Arc` copy violation**: `Arc<T>` does not implement `Copy`. `state.clone()` creates a new `Arc` sharing the same `T`. After mutating through one clone, the other reads stale state.
+- **Search for duplicate code blocks**: after editing, verify the file is structurally sound: search for duplicate code blocks using `content.find()` with a start offset; count braces with a script to find unmatched blocks; remove duplicate sections.
+- **Rust `and_then` + `Result` pitfall**: chaining `.and_then()` with a closure returning `Result<T, E>` produces a nested `Result<Result<T, E>, E>`, not `Result<T, E>`. Use `?` to flatten, or wrap in `map` and match. Never return a nested `Result` from a function expecting `Result<T, E>`.
+- **`RefCell` struct literal pattern**: when a struct has `RefCell` fields, every struct literal that initializes those fields must wrap the value in `RefCell::new()`. Also wrap in `RefCell` in the struct definition. Access via `field.borrow()` (shared) or `field.borrow_mut()` (mutable), and assign through the returned `RefMut` via `*field.borrow_mut() = value;`.
+- **Rust build iteration workflow**: run `cargo build` directly (without piping through `tail`/`head`) — the exit code of `| tail` is that of `tail`, not `cargo`, so a build failure reports exit 0. Read the full error list from the pipeline output. Iterate on one error at a time; for E0308/E0382/E0594/E0425/E0594, read the full error block including the `help:` suggestions.
+- **Borrow checker: `navigate()` pattern**: when a method needs to mutate both `self.history` and a `tab` in `self.tabs`, first get the `tab_id` via `self.current_tab_id` (not `self.current_tab()`), then use `self.tabs.iter_mut().find(|t| t.id == *tab_id)`. Calling `self.current_tab()` borrows `self` immutably, which conflicts with later mutable borrows of `self.history` and `self.tabs`.
+- **Borrow checker: `set_title()` pattern**: never call `self.current_tab()` then `self.tabs.iter_mut()` in the same function. Instead, hold the tab ID (`self.current_tab_id`) and use `self.tabs.iter_mut().find(|t| t.id == *tab_id)` directly. The immutable borrow from `current_tab()` prevents the mutable borrow of `tabs`.
+- **Borrow checker: `history` truncation**: when truncating `self.history` then pushing to it in the same function, compute the truncation condition first (e.g., `let truncate = match self.history.last() { ... }`), then do the truncate and push in separate statements. The `self.history.last()` call borrows `self.history` immutably, conflicting with the mutable `truncate()` and `push()` calls.
+
+## Pitfalls
+- **Always run cargo check before adding more phases** — nested impl blocks in Rust surface late
+- **Nested `impl` blocks in Rust cause E0599** — flat impl blocks preferred
+- **Cargo `python3`/`rustc` not on PATH** — use full path or msys shell
+- **Heredoc Python scripts fail with `unexpected EOF`** — use `write_file` instead
+- **sed on Rust files removes braces** — use Python scripts for multi-line edits
+- **Nested impls create 'unexpected closing delimiter' errors** — check brace balance after edits
+- **Cargo warnings (unused variables/fields) block clean check** — fix warnings before proceeding
+- **parser.rs structure corruption**: after editing, verify the file is structurally sound: (1) search for duplicate code blocks using `content.find()` with a start offset; (2) count braces with a script to find unmatched blocks; (3) remove duplicate sections; (4) ensure `impl` blocks are properly closed with matching `}`; (5) confirm each function has a body (not just `{ }`)
+- **Associated function calls**: when calling an associated function defined in the same `impl Parser` block, use `Self::make_tag_token(...)` instead of `make_tag_token(...)` — bare function calls fail with E0425 "not found in this scope"
+- **CRLF line endings break `patch` tool**: the `patch` tool fails with "Could not find a match for old_string" when a file was created or modified with CRLF line endings. **Fix: run `sed -i 's/\r$//' /path/to/file.rs` on the file before patching.** This is critical for multi-crate workspaces where files may have been edited on different platforms.
+- **API crate `DriverAgentOrchestrator::new()` signature**: the `new()` method in `driver/src/agent.rs` takes zero arguments (creates `BrowserWindow` internally via `types::browser::BrowserWindow::new()`), not a `BrowserWindow` argument. The driver's shell `BrowserWindow` is a different type from `types::browser::BrowserWindow` — the agent uses the types crate version.
+- **API crate `task_id.clone()` pattern**: in `api/src/main.rs`, `create_agent_task` receives a `String task_id` and passes it to both `AgentTaskResponse` (which takes ownership) and `ApiResponse` (which also takes ownership). Clone in the first struct literal: `task_id: task_id.clone()`, then use `task_id` in the second. Error E0382 "use of moved value".
