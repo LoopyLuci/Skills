@@ -74,6 +74,38 @@ Run in order; stop on first failure:
 - **Public repo location.** The public repo is `https://github.com/LoopyLuci/rust-rtpc` (not `nousresearch`). The `repository` field in `Cargo.toml` must match the actual remote.
 - **Purpose-built ML model sizing.** When designing AI/ML components for this framework, every model must: (1) run on bare CPU (no GPU dependency); (2) improve performance/effectiveness more than the resources it consumes (measure ROI: latency removed vs latency added); (3) be sized specifically for the task (tiny NNs ~1–3 M params, trees/linear ~sub-ms). GPU acceleration (CUDA/ROCm EP) is optional; CPU EP is the floor. See `docs/ML-DESIGN.md` for the full catalog and sizing table.
 
+## Browzeit Workspace Pattern (multi-crate Rust + agentic RPC)
+
+The Browzeit project builds a next-gen browser with integrated AI agents using a Rust workspace with 8 crates in `crates/`: `traits`, `types`, `core`, `engine`, `renderer`, `network`, `driver`, `api`. Verified `cargo check --workspace` exits 0.
+
+### Key patterns
+
+1. **AgentOrchestrator** (`engine/src/agent.rs`): Uses `Arc<AgentState>` with `RefCell` for interior-mutability on `status`, `logs`, `steps_taken`, `subagents`. `AgentState` must be `RefCell<...>` for all mutable fields; struct literals use `RefCell::new()`.
+2. **DriverAgentOrchestrator** (`driver/src/agent.rs`): Wraps `AgentOrchestrator`. Uses `types::browser::BrowserWindow` (NOT `driver::shell::BrowserWindow`). `DriverAgentOrchestrator::new()` takes 0 args and creates `BrowserWindow::new()` internally.
+3. **API crate** (`api/src/lib.rs` + `main.rs`): Uses `axum` `Router` with `Json` responses. `GLOBAL_ORCHESTRATOR` is `pub static mut` (must be `pub` to be accessible from `main.rs`). Use `browzeit_api::GLOBAL_ORCHESTRATOR` to access from `main.rs`.
+4. **Python GUI shell** (`gui_shell/browzeit_shell.py`): Python `http.server` on port 8765 serving GUI + proxying API calls. SSE endpoint at `/api/agent/stream` for live thought streaming. `webview.create_window` for native shell.
+5. **Agent module stubs** (`engine/src/agent/moe.rs`, `moa.rs`, `moi.rs`, `session.rs`, `subagent.rs`, `swarm.rs`): These modules must be fully implemented with `use crate::agent::protocol::LLMClient` for LLM client trait access. The `MoERouter` routes tasks by capability matching; `MoAAggregator` coordinates multiple agents via iterative refinement.
+6. **API endpoint for `get_agent_results`:** Fetch `GLOBAL_ORCHESTRATOR` via `browzeit_api::GLOBAL_ORCHESTRATOR` (from lib.rs). Use `task_id.clone()` for `task_id` fields since `String` doesn't implement `Copy`.
+7. **Rust module resolution:** `pub mod foo;` resolves `foo.rs` BEFORE `foo/mod.rs`. Verify module compiles: `find crates/<crate>/src/<module>/` to ensure the real module is being compiled, not a stale stub.
+
+### Verification gate (F1)
+
+Run in order; stop on first failure:
+
+1. `cargo build --workspace --all-targets` -> exit 0
+2. `cargo fmt --all -- --check` -> FMT_OK
+3. `cargo clippy --workspace --all-targets -- -D warnings` -> 0 errors
+4. `cargo test --workspace` -> all crates green (including `rpc-cli` self-test, `rpc-api` doctest)
+
+**Note:** `cargo rustc --print=cfg` is NOT supported by this cargo version (rejected). To confirm feature activation, use `cargo metadata --no-deps`.
+
+### References
+- `references/f1-gate.md` — verification gate procedure.
+- `references/subsecond-thinlink.md` — S3 spike: subsecond runtime + ThinLink embedded in `dx`.
+- `references/salsa-persistence.md` — S2 spike: salsa v0.28.5 persistence feature (`tests/persistence.rs`).
+- `references/ra-ap-lib.md` — S1 spike: `ra_ap_*` library consumption (`v0.0.360` / `v0.0.358`, MSRV 1.98.0).
+- `references/ml-design.md` — CPU-first ML model sizing table + ROI rules (`docs/ML-DESIGN.md` full catalog: 11 models, each with concrete param count, CPU latency, RAM, and gain:cst).
+
 ### References
 - `references/f1-gate.md` — verification gate procedure.
 - `references/subsecond-thinlink.md` — S3 spike: subsecond runtime + ThinLink embedded in `dx`.
