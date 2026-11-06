@@ -127,10 +127,10 @@ All mutable fields must use `RefCell` for interior mutability. In struct literal
   1. Create `Arc<Mutex<DriverAgentOrchestrator>>`
   2. Set `unsafe { GLOBAL_ORCHESTRATOR = Some(...) }`
   3. Build `axum::Router` with routes
-  4. `let listener = TcpListener::bind("127.0.0.1:8766")`
+  4. `let listener = TcpListener::bind("127.0.0.1:8767")`
   5. `axum::serve(listener, app).await.expect("Server failed")`
 
-### `get_agent_results` handler
+> **NOTE**: This host has KotMoE API occupying port 8766. Browzeit's API must bind to **8767**, and `gui_shell/browzeit_shell.py` must set `API_PORT = 8767`. The default port 8766 will fail with `addr in use`.
 
 ```rust
 async fn get_agent_results(Path(task_id): Path<String>) -> Json<api_types::ApiResponse<()>> {
