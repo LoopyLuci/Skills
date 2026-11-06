@@ -120,7 +120,35 @@ Decision rule: user asked for a GUI - Tauri 2 first. If a Tauri native launch fa
 - Node 26, npm 11, pnpm, Python 3.14, git all present. Network access to registry.npmjs.org works, so npm install is the dependency source of truth.
 - cargo tauri dev on Windows can leave a stale app.exe holding target/debug/app.exe - kill it before rebuilding; if the lock persists, temporarily rename the binary in Cargo.toml, rebuild, restore the name.
 - cargo tauri dev can fail with exit 124 from a non-tty shell; prefer the manual dev flow (build frontend, start cargo tauri dev or run the binary manually and open the Vite dev server URL) over blind retries.
-- In a Tauri desktop app the frontend is served as file:// assets under base: './' - Vite must output ./assets/... references, not absolute /assets/..., or JS/CSS never load in the native window.
+|- In a Tauri desktop app the frontend is served as file:// assets under base: './' - Vite must output ./assets/... references, not absolute /assets/..., or JS/CSS never load in the native window.
+
+## Cross-platform Rust workspace integration (new)
+> This section is written for the Browzeit + Custode integration work, the most recent session's lesson set. It applies to any Rust multi-crate workspace on Windows where MSYS (bash) and native Windows tools share the same workspace.
+
+### Path resolution is the #1 failure mode
+`cargo`, `rustc`, and other native Windows tools do NOT have MSYS path conversion: a path like `/x/Projects/Browzeit` is seen by `cargo` as a literal path under a `/`-prefixed drive, not as `Z:\x\Projects\Browzeit`. Rules:
+- For `cargo check` / `cargo build` (run through the `terminal` tool), use the `X:\Projects\...` or `C:\Users\...` format with backslashes — this is what the native toolchain expects.
+- For `Cargo.toml` dependency `path` fields, use forward slashes: `path = "X:/Projects/Browzeit/browzeit/crates/traits"`. This is valid in both MSYS and native Windows build systems.
+- `cd` in bash (MSYS) maps `/x` → `Z:\x` but native tools see the raw `/x` as an unsupported prefix. Never pass MSYS-style paths to `cargo`, `rustc`, or other native Windows binaries.
+
+### Tool write behaviors (critical pitfalls)
+- `write_file` refuses to overwrite a file it has not seen in the current session, even if the file exists on disk under a different path. The fix: `read_file` the file first (even a partial view), then `write_file` or `patch` again. This was the cause of six of the source files in this session being silently written to the wrong directory.
+- `patch` cannot create a new file — it requires an existing match. To create a new file, use `write_file` or `terminal`.
+- `terminal` runs through bash (MSYS). Heredocs (`<< 'END'`) break on single quotes and backslashes in content. For complex file content (Rust source with `//!` doc comments, triple-quoted strings), write the file via a Python script using `open(path, 'w')` instead of a bash heredoc.
+
+### Cargo offline and dependency resolution
+- `--offline` mode will fail on any dependency that needs to be downloaded from the registry, even if the crate is written correctly and all workspace members resolve. This happened with `rustls v0.22.4` being unavailable in the offline cache. Use normal (non-offline) `cargo check` when dependencies are missing from the cache.
+- Rust package names use hyphens in `Cargo.toml` (`name = "browzeit-core"`) but underscore-separated in Rust code (`use browzeit_core::...`). When referencing workspace members, match the package name exactly.
+
+### Multi-crate workspace on Windows (this host)
+
+Rust multi-crate workspaces on this host split MSYS (bash) and native Windows path handling. Two failure modes that repeatedly cost sessions:
+
+1. **Relative member paths are resolved from the *member crate's* directory, not the workspace root.** From `packages/desktop/src-tauri/Cargo.toml`, the repo root (`NLP_CLI`) is *three* `..` levels up: `../../../crates/core`. Writing `../../crates/core` (two levels) resolves to `packages/crates/core` — a directory that exists but holds no `Cargo.toml`. `cargo` then fails with a `failed to read <that path>` error whose path is correct for the wrong directory; the manifest you meant to edit is untouched. Always trace the relative member path forward from the member crate, and verify with `cargo metadata --no-deps` before you invest in `cargo check`.
+2. **Verify the parsed workspace before building.** After editing the workspace root `Cargo.toml` (`members` array), run `cargo metadata --no-deps --manifest-path <root>/Cargo.toml` and check that the new package appears in `workspace_members`. If it does not, re-apply the patch — the working tree can silently revert to committed content (the desktop member was lost this session, leaving only `crates/core` and `crates/cli`, and every `cargo check` failed on the stale parse). Only run `cargo check` after the parsed workspace is right; a "member not found" error can be a stale parse from an earlier member list, not a code error.
+
+### Workspace member addition
+- To add a new crate to an existing Rust workspace, append its package name to the `members` array of the workspace root `Cargo.toml`. The new crate's `Cargo.toml` must already exist (or be created) at the listed path, and its dependencies on other workspace members use a relative `path` that is resolved from the *member crate's* directory, not the workspace root (`packages/desktop/src-tauri`'s `nlpcli-core` dependency is `../../../crates/core`, three `..` levels). Then verify with `cargo metadata --no-deps --manifest-path <root>/Cargo.toml` that the new package appears in `workspace_members` before running `cargo check`.
 
 ## Overlaps and where to look instead
 
