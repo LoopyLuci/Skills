@@ -168,16 +168,7 @@ async fn get_agent_results(Path(task_id): Path<String>) -> Json<api_types::ApiRe
 
 Run in order; stop on first failure:
 
-1. `cargo build --workspace --all-targets` -> exit 0
-2. `cargo fmt --all -- --check` -> FMT_OK
-3. `cargo clippy --workspace --all-targets -- -D warnings` -> 0 errors
-4. `cargo test --workspace` -> all crates green (including `rpc-cli` self-test, `rpc-api` doctest)
-
-## Rust Workspace Verification
-
-After making any code changes, run the following sequence before declaring work complete:
-
-1. `cargo check --workspace 2>&1 | grep "^error" | wc -l` -> must be 0 (if >0, iterate until clean)
+1. `cargo check --workspace 2>&1 | grep "^error" | wc -l` -> must be 0
 2. `cargo check --workspace` -> must complete with only warnings (no errors)
 3. `cargo fmt --all -- --check` -> must report FMT_OK
 4. `cargo clippy --workspace --all-targets -- -D warnings` -> 0 errors
@@ -187,29 +178,21 @@ After making any code changes, run the following sequence before declaring work 
 
 - **CRLF line endings break patch tool**: Files in the repo have CRLF endings. Before patching, run `sed -i 's/\r$//' <file>` to convert to LF. The patch tool silently fails on CRLF files.
 
-- **Agent module files live in a directory, not a mod.rs**: `engine/src/agent.rs` declares `pub mod moa; pub mod moi; ...` — but these modules are separate files in `engine/src/agent/`. Each must be patched as a standalone file, not written as a nested mod.rs.
-
-- **AgentState requires interior mutability**: All mutable fields in `AgentState` use `RefCell`. In struct literals: `RefCell::new(...)` for every mutable field (status, logs, steps_taken, subagents).
-
-- **API crate thread-safety**: The `DriverAgentOrchestrator` contains `AgentOrchestrator` which has `RefCell` fields. The API server wraps it in `Mutex<DriverAgentOrchestrator>` for thread safety. `GLOBAL_ORCHESTRATOR` must be `pub` for `main.rs` to access it.
-
-- **Do NOT use `driver::shell::BrowserWindow`**: Use `types::browser::BrowserWindow` in the driver's agent.rs. The shell's `BrowserWindow` is a different type.
-
-- **LLMClient import path**: `LLMClient` trait is defined in `engine/src/agent.rs` (not in `agent/protocol.rs`). Import as `use crate::agent::LLMClient;`, not `use crate::agent::protocol::LLMClient;`.
-
 - **Agent module files are stubs**: Files like `moi.rs`, `subagent.rs`, `swarm.rs`, `session.rs` may start as 20-25 byte stubs that need full implementation. Do NOT leave them as placeholders.
+
+- **Clone before move**: When you need a value both for side effects and for later use, clone it before moving. E.g., `responses.push((agent_id.clone(), response.clone()));` — if you move `response` into the tuple, you cannot use it again for a second push.
+
+- **Mutable borrow through shared reference**: When passing `&mut Session` through `&crate::agent::Session`, you get a compile error. Either take `&mut` directly, or refactor the function to receive the mutable reference at the right level.
 
 - **Patch file must be re-read after external modification**: After terminal commands modify a file (e.g., `sed -i`), the patching tool may report "was modified since last read." Re-read the file, then patch again.
 
-- **Workspace verification before declaring done**: Always run `cargo check --workspace` and confirm exit 0 with 0 errors. Warnings are acceptable (they are usually unused variable/lint warnings).
-
-- **Rust 2024: static_mut_refs warning**: `static mut` references require `unsafe` blocks. Warnings are acceptable — only errors block the build.
-
 - **Right-side file not written**: After a file write (cargo patch/terminal), verify with `cargo check` — changes may not land if the file was not properly flushed.
 
-- **Heredoc corruption in bash**: Writing Rust files via `cat << 'EOF'` in bash can silently corrupt content (unbalanced quotes, escape issues). If the file does not compile, re-read it and re-write it using the `write_file` tool or `patch` tool instead of heredocs. The `write_file` tool is safe and does not mangle content. This was observed during the Browzeit implementation when `moe.rs` and `moa.rs` were repeatedly corrupted by heredoc quoting.
+- **Heredoc corruption in bash**: Writing Rust files via `cat << 'EOF'` in bash can silently corrupt content (unbalanced quotes, escape issues). If the file does not compile, re-read it and re-write it using the `write_file` tool or `patch` tool instead of heredocs. The `write_file` tool is safe and does not mangle content.
 
-- **Duplicate content in SKILL.md**: When patching, check for duplicate sections (the skill file may contain repeated blocks). Verify the patch target exists before writing.
+- **Rust 2024: unexpected closing delimiter**: If `cargo check` reports `^ unexpected closing delimiter: }`, check the file for a duplicate closing brace — a struct/enum definition with a stray `}` after the final `}` is a common cause. Read the file around the reported line and remove the duplicate. This happened in `crates/types/src/layout.rs` where an extra `}` after the final `}` of `impl LayoutDocument` broke compilation.
+
+- **Workspace verification before declaring done**: Always run `cargo check --workspace` and confirm exit 0 with 0 errors. Warnings are acceptable (they are usually unused variable/lint warnings).
 
 ## Verification Checklist
 
