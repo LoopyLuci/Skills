@@ -498,6 +498,42 @@ evtSource.onmessage = (e) => {
 - **Next steps = implementation, not release advice**: when the user asks what to do next, do the work, then report results
 - **Verify after every edit**: run `cargo check --workspace` after any structural change to parser code
 
+## Rust Compilation Error Fix Workflow
+When fixing Rust compile errors in the Browzeit workspace:
+
+### Step 1 — Capture errors to a file
+```cmd
+cd /x/Projects/Browzeit/browzeit
+cargo check --offline > /x/Projects/Browzeit/browzeit/cargo_errors.txt 2>&1
+```
+**Never pipe cargo check through `tail`/`head`** — the pipe hides cargo's actual exit code. The file will contain `error[E0308]: ...` lines with full context.
+
+### Step 2 — Fix one error at a time
+Iterate on the first error in the file. After each fix, re-run `cargo check` and re-capture output.
+
+### Step 3 — Common Rust error patterns
+- **E0308 (mismatched types)**: Often caused by passing `String` where `&str` is expected, or `Vec<&T>` where `Vec<T>` is needed. Read the full error block including the `note:` section for the expected type.
+- **E0425 (cannot find value)**: A variable/import is out of scope. Check the enclosing function scope and `use` statements.
+- **E0624 (method `parse` is private)**: A pub method was made private or the trait import is missing.
+- **E0658 (unstable feature)**: A Rust nightly feature like `str::as_str` is being used. Replace with stable alternative (e.g., `w.as_str()` → `w` when used directly).
+- **E0277 (trait bound not satisfied)**: A type does not implement a required trait (e.g., `String: Copy` for `.copied()`, `f64: Eq` for derive macros). Add the missing trait or remove the derive.
+- **E0599 (method not found on type)**: A method/field does not exist on the type. Check the type definition.
+
+### Step 4 — Structural file issues
+- **`use` statements must be at the top of the file** — putting `use std::collections::HashSet;` after struct definitions causes E0425. Place all imports before any item definitions.
+- **`write_file` refuses overwrites** on files read with `offset`/`limit` pagination. Use `patch` for targeted edits, or read with full content (no offset/limit) then write.
+- **Duplicate derives**: Rust `#[derive]` macros must appear once per item. Duplicate `#[derive(Debug, Clone)]` is a compile error — remove the extra derive.
+- **`OnceCell::get_or_init` returns `&mut T`**: dereferencing with `*` tries to move the value. Use `.clone()` to get ownership.
+- **Rust `str::as_str()` is unstable**: replace `x.as_str()` with `x` when the value is used directly.
+- **`.copied()` on `Iterator<Item = String>`**: `String` does not implement `Copy`. Use `.cloned()` instead (returns `String`, not `&String`).
+
+### Step 5 — Verify
+After all errors are fixed, run:
+- `cargo check --workspace` (all crates compile)
+- `cargo test --workspace` (all tests pass)
+
+If the compile errors persist or cascade (one fix reveals another), document the remaining errors and continue iterating.
+
 ### Rust-specific Build Patterns
 - **Interior mutability on `Arc<T>`**: when a struct is wrapped in `Arc` and needs mutation, use `RefCell` for single-threaded interior mutability (fields change via `.borrow_mut()`). Do NOT try to get `&mut T` through `Arc`.
 - **CRITICAL: `RefCell` is NOT `Send`/`Sync`-safe — use `Mutex` for cross-thread sharing**. When an `Arc<T>` containing a struct with `RefCell` fields is shared across threads (e.g., an axum HTTP server holding a `State<Arc<T>>`), the `RefCell` makes `T` neither `Send` nor `Sync`, and the server will fail to compile with E0277. The fix: wrap the struct in `std::sync::Mutex` (`Arc<Mutex<T>>`) so the `Mutex` wrapper is `Send` + `Sync`. Example: `let orchestrator = Arc::new(std::sync::Mutex::new(DriverAgentOrchestrator::new(window)));`.

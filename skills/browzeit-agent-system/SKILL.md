@@ -27,6 +27,7 @@ crates/
   driver/          # shell.rs (BrowserWindow), webview.rs (duplicate BrowserWindow), agent.rs (orchestrator)
   api/             # lib.rs (types + router) + main.rs (duplicate types + full server)
   gui_shell/       # pywebview shell (browzeit_shell.py + index.html)
+  custode-browzeit/ # Custode agent implementation for Browzeit (agent, router, perceptor, verifier, registry, bridge)
 ```
 
 **Known issues to resolve before building:**
@@ -277,6 +278,10 @@ Run in order; stop on first failure:
 - Verify the window opens and serves `http://127.0.0.1:8765/`. Do NOT use `terminal(background=true)` — pywebview requires an interactive session. Instead create a `.bat` launch script for the user.
 - Verify API endpoints respond: `curl http://127.0.0.1:8767/api/health`
 - Verify SSE streaming: `curl -N http://127.0.0.1:8767/api/agent/stream`
+
+## References
+
+- `references/rust-workspace-pitfalls.md` — Module paths, derives, imports, and crate-specific issues across the Browzeit workspace including `custode-browzeit`.
 
 ## User's Preferred Workflow
 
