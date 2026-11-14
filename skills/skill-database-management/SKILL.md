@@ -140,8 +140,15 @@ Import rules, in order:
 6. Normalize frontmatter to the canonical schema, derive tags, and set `metadata.hermes.source` to `<owner>/<repo>`.
 7. Copy every sibling file/dir except `SKILL.md` (`references/`, `scripts/`, `agents/`, `assets/`, `templates/`) so relative links resolve.
 8. Write a JSON manifest of what was imported, then verify.
+9. **Customize before committing.** Import alone vendors a copy. Rewrite each body in
+   original wording (condensed, restructured), then reassemble with canonical frontmatter
+   plus Trigger / When-NOT-to-Use / Related Skills / Adaptation Notes / Source &
+   Attribution, and prove the result is not a copy. Scripts: `prep-customization.py`,
+   `assemble-custom-skills.py`; intermediate bodies in `scripts/adapted_bodies/`
+   (git-ignored).
 
-See `references/upstream-skill-import.md` for the algorithm, tag derivation, and canonical template.
+See `references/upstream-skill-import.md` for the import algorithm, tag derivation,
+canonical template, the customization pass, and the differentiation check.
 
 ### 7. Issue Remediation
 
@@ -179,6 +186,16 @@ Common issues and fixes:
 10. **Vendored repos are nested git repos.** Clone them into a git-ignored dir (`_sources/`); otherwise they appear as untracked and risk being committed as embedded repositories.
 
 11. **Changing the transform requires clearing prior output.** Importers skip existing skills, so after fixing a rule (tag derivation, frontmatter) delete the previously imported dirs before re-running — otherwise the fix silently never applies.
+
+12. **Import is not the deliverable — customization is.** The repo's convention is a condensed, restructured adaptation in original wording with attribution, not a vendored copy. Read one already-adapted skill in the target repo before rewriting and match its shape; measure verbatim overlap afterward rather than eyeballing it.
+
+13. **Licenses differ per upstream.** Read each source repo's LICENSE and record holder and year in Source & Attribution. Never default every import to MIT (oracle ships UPL-1.0).
+
+14. **Generic tags pollute generated cross-links.** Exclude generic tags (`productivity`, `engineering`, `software-development`, `automation`, `agent-skills`, `agent-workflow`, `ai-agents`, `general`, `tools`) from Related-Skills matching, or every import links to unrelated skills.
+
+15. **Skill directory name ≠ frontmatter name.** Map skills by the frontmatter `name` field, not the directory name; some repos slug directories differently from the declared name.
+
+16. **Delegated fan-outs can fail on provider rate limits.** Finish the remaining work directly in the main session instead of re-dispatching the same batch, and diff the output directory against the work list first — a failed child may still have written some files.
 
 ## Verification
 
