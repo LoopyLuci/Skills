@@ -1,7 +1,7 @@
 ---
 name: code-simplification
-description: Simplifies code for clarity. Use when refactoring code for clarity without changing behavior. Use when code works but is harder to read, maintain, or extend than it should be. Use when reviewing code that has accumulated unnecessary complexity. Use when asked to simplify, clean up, or reduce the nesting of a function or module that already works, even when the code is pasted inline and nothing else needs to change.
-version: 1.0.0
+description: Use when refactoring code for clarity without changing behavior; code works but is harder to read, maintain, or extend than it should be; reviewing code that has accumulated unnecessary complexity; asked to simplify, clean up, or reduce the nesting of a function or module that already works, even when the code is pasted inline and nothing else needs to change.
+version: 2.0.0
 author: LoopyLuci Community
 license: MIT
 platforms: [any]
@@ -9,37 +9,39 @@ metadata:
   hermes:
     tags: [software-development, engineering, agent-skills]
     source: addyosmani/agent-skills
+    adapted: true
 ---
 
 # Code Simplification
 
-> Inspired by the [Claude Code Simplifier plugin](https://github.com/anthropics/claude-plugins-official/blob/main/plugins/code-simplifier/agents/code-simplifier.md). Adapted here as a model-agnostic, process-driven skill for any AI coding agent.
+> **Adapted for the LoopyLuci Skills collection** from [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills). The guidance below is rewritten and condensed for this repo; commands, paths, and reference tables are preserved.
+
+## Trigger
+
+- Refactoring code for clarity without changing behavior
+- Code works but is harder to read, maintain, or extend than it should be
+- Reviewing code that has accumulated unnecessary complexity
+- Asked to simplify, clean up, or reduce the nesting of a function or module that already works, even when the code is pasted inline and nothing else needs to change
+
+## When NOT to Use
+
+- Simplification that requires modifying tests to pass (you likely changed behavior)
+- "Simplified" code that is longer and harder to follow than the original
+- Renaming things to match your preferences rather than project conventions
+- Removing error handling because "it makes the code cleaner"
+- Simplifying code you don't fully understand
+- Batching many simplifications into one large, hard-to-review commit
+- Refactoring code outside the scope of the current task without being asked
 
 ## Overview
 
-Simplify code by reducing complexity while preserving exact behavior. The goal is not fewer lines — it's code that is easier to read, understand, modify, and debug. Every simplification must pass a simple test: "Would a new team member understand this faster than the original?"
+Simplification means reducing complexity without altering behavior — not shrinking line count. The target is code a newcomer can understand faster than the original: fewer moving parts, clearer names, and the same outputs, side effects, error handling, and edge-case behavior as before. This is process-driven work that applies to any language; the test of every change is whether it makes the code easier to read, maintain, and extend.
 
-## When to Use
+## Core Principles
 
-- After a feature is working and tests pass, but the implementation feels heavier than it needs to be
-- During code review when readability or complexity issues are flagged
-- When you encounter deeply nested logic, long functions, or unclear names
-- When refactoring code written under time pressure
-- When consolidating related logic scattered across files
-- After merging changes that introduced duplication or inconsistency
+### Preserve Behavior Exactly
 
-**When NOT to use:**
-
-- Code is already clean and readable — don't simplify for the sake of it
-- You don't understand what the code does yet — comprehend before you simplify
-- The code is performance-critical and the "simpler" version would be measurably slower
-- You're about to rewrite the module entirely — simplifying throwaway code wastes effort
-
-## The Five Principles
-
-### 1. Preserve Behavior Exactly
-
-Don't change what the code does — only how it expresses it. All inputs, outputs, side effects, error behavior, and edge cases must remain identical. If you're not sure a simplification preserves behavior, don't make it.
+Change only how code expresses itself, never what it does. Inputs, outputs, side effects, error paths, and ordering must stay identical. If you cannot be certain a rewrite preserves behavior, leave it alone.
 
 ```
 ASK BEFORE EVERY CHANGE:
@@ -49,9 +51,9 @@ ASK BEFORE EVERY CHANGE:
 → Do all existing tests still pass without modification?
 ```
 
-### 2. Follow Project Conventions
+### Follow Project Conventions
 
-Simplification means making code more consistent with the codebase, not imposing external preferences. Before simplifying:
+"Simpler" means more consistent with the codebase, not more aligned with your own taste. First:
 
 ```
 1. Read CLAUDE.md / project conventions
@@ -64,11 +66,11 @@ Simplification means making code more consistent with the codebase, not imposing
    - Type annotation depth
 ```
 
-Simplification that breaks project consistency is not simplification — it's churn.
+A rewrite that breaks house style is churn, not simplification.
 
-### 3. Prefer Clarity Over Cleverness
+### Prefer Clarity Over Cleverness
 
-Explicit code is better than compact code when the compact version requires a mental pause to parse.
+When a compact version requires a mental pause, prefer the explicit one:
 
 ```typescript
 // UNCLEAR: Dense ternary chain
@@ -97,24 +99,24 @@ for (const item of items) {
 }
 ```
 
-### 4. Maintain Balance
+### Avoid Over-Simplifying
 
-Simplification has a failure mode: over-simplification. Watch for these traps:
+The failure mode of this skill is going too far:
 
-- **Inlining too aggressively** — removing a helper that gave a concept a name makes the call site harder to read
-- **Combining unrelated logic** — two simple functions merged into one complex function is not simpler
-- **Removing "unnecessary" abstraction** — some abstractions exist for extensibility or testability, not complexity
-- **Optimizing for line count** — fewer lines is not the goal; easier comprehension is
+- **Inlining too hard** — deleting a helper that gave a concept a name hurts readability
+- **Merging unrelated logic** — two simple functions fused into one complex one is not simpler
+- **Stripping abstraction that earns its place** — some exist for extensibility or testability
+- **Optimizing for line count** — comprehension speed is the metric, not lines removed
 
-### 5. Scope to What Changed
+### Scope to What Changed
 
-Default to simplifying recently modified code. Avoid drive-by refactors of unrelated code unless explicitly asked to broaden scope. Unscoped simplification creates noise in diffs and risks unintended regressions.
+Default to simplifying recently modified code. Drive-by refactors of untouched modules add diff noise and regression risk; widen scope only when asked.
 
-## The Simplification Process
+## Process
 
-### Step 1: Understand Before Touching (Chesterton's Fence)
+### 1. Understand Before Touching
 
-Before changing or removing anything, understand why it exists. This is Chesterton's Fence: if you see a fence across a road and don't understand why it's there, don't tear it down. First understand the reason, then decide if the reason still applies.
+This is Chesterton's Fence: don't remove a fence until you know why it was built. Ask:
 
 ```
 BEFORE SIMPLIFYING, ANSWER:
@@ -126,45 +128,43 @@ BEFORE SIMPLIFYING, ANSWER:
 - Check git blame: what was the original context for this code?
 ```
 
-If you can't answer these, you're not ready to simplify. Read more context first.
+If you cannot answer these, keep reading; you are not ready to edit.
 
-### Step 2: Identify Simplification Opportunities
+### 2. Spot Concrete Signals
 
-Scan for these patterns — each one is a concrete signal, not a vague smell:
-
-**Structural complexity:**
+**Structural complexity**
 
 | Pattern | Signal | Simplification |
 |---------|--------|----------------|
-| Deep nesting (3+ levels) | Hard to follow control flow | Extract conditions into guard clauses or helper functions |
+| Deep nesting (3+ levels) | Hard to follow control flow | Extract conditions into guard clauses or helpers |
 | Long functions (50+ lines) | Multiple responsibilities | Split into focused functions with descriptive names |
-| Nested ternaries | Requires mental stack to parse | Replace with if/else chains, switch, or lookup objects |
-| Boolean parameter flags | `doThing(true, false, true)` | Replace with options objects or separate functions |
-| Repeated conditionals | Same `if` check in multiple places | Extract to a well-named predicate function |
+| Nested ternaries | Needs a mental stack to parse | Replace with if/else chains, switch, or lookup objects |
+| Boolean parameter flags | `doThing(true, false, true)` | Use options objects or separate functions |
+| Repeated conditionals | Same `if` in several places | Extract a well-named predicate |
 
-**Naming and readability:**
-
-| Pattern | Signal | Simplification |
-|---------|--------|----------------|
-| Generic names | `data`, `result`, `temp`, `val`, `item` | Rename to describe the content: `userProfile`, `validationErrors` |
-| Abbreviated names | `usr`, `cfg`, `btn`, `evt` | Use full words unless the abbreviation is universal (`id`, `url`, `api`) |
-| Misleading names | Function named `get` that also mutates state | Rename to reflect actual behavior |
-| Comments explaining "what" | `// increment counter` above `count++` | Delete the comment — the code is clear enough |
-| Comments explaining "why" | `// Retry because the API is flaky under load` | Keep these — they carry intent the code can't express |
-
-**Redundancy:**
+**Naming and readability**
 
 | Pattern | Signal | Simplification |
 |---------|--------|----------------|
-| Duplicated logic | Same 5+ lines in multiple places | Extract to a shared function |
-| Dead code | Unreachable branches, unused variables, commented-out blocks | Remove (after confirming it's truly dead) |
-| Unnecessary abstractions | Wrapper that adds no value | Inline the wrapper, call the underlying function directly |
-| Over-engineered patterns | Factory-for-a-factory, strategy-with-one-strategy | Replace with the simple direct approach |
-| Redundant type assertions | Casting to a type that's already inferred | Remove the assertion |
+| Generic names | `data`, `result`, `temp`, `val`, `item` | Name the content: `userProfile`, `validationErrors` |
+| Abbreviations | `usr`, `cfg`, `btn`, `evt` | Spell it out unless universal (`id`, `url`, `api`) |
+| Misleading names | A `get` function that also mutates state | Rename to reflect actual behavior |
+| "What" comments | `// increment counter` above `count++` | Delete; the code says it |
+| "Why" comments | `// Retry because the API is flaky under load` | Keep; the code can't say this |
 
-### Step 3: Apply Changes Incrementally
+**Redundancy**
 
-Make one simplification at a time. Run tests after each change. **Submit refactoring changes separately from feature or bug fix changes.** A PR that refactors and adds a feature is two PRs — split them.
+| Pattern | Signal | Simplification |
+|---------|--------|----------------|
+| Duplicated logic | Same 5+ lines repeated | Extract a shared function |
+| Dead code | Unreachable branches, unused vars, commented-out blocks | Remove once confirmed dead |
+| Useless wrappers | Pass-through with no added value | Inline and call the underlying function |
+| Over-engineering | Factory-for-a-factory, strategy-with-one-strategy | Replace with the direct approach |
+| Redundant assertions | Casting an already-inferred type | Drop the assertion |
+
+### 3. Apply Incrementally
+
+One simplification at a time, tests after each:
 
 ```
 FOR EACH SIMPLIFICATION:
@@ -174,13 +174,11 @@ FOR EACH SIMPLIFICATION:
 4. If tests fail → revert and reconsider
 ```
 
-Avoid batching multiple simplifications into a single untested change. If something breaks, you need to know which simplification caused it.
+Keep refactor commits separate from feature or bugfix commits; a PR that does both is really two PRs. If a refactor would exceed roughly 500 lines, reach for automation (codemods, AST transforms) instead of hand-editing.
 
-**The Rule of 500:** If a refactoring would touch more than 500 lines, invest in automation (codemods, sed scripts, AST transforms) rather than making the changes by hand. Manual edits at that scale are error-prone and exhausting to review.
+### 4. Evaluate the Whole
 
-### Step 4: Verify the Result
-
-After all simplifications, step back and evaluate the whole:
+Afterward, compare before and against:
 
 ```
 COMPARE BEFORE AND AFTER:
@@ -190,11 +188,11 @@ COMPARE BEFORE AND AFTER:
 - Would a teammate approve this change?
 ```
 
-If the "simplified" version is harder to understand or review, revert. Not every simplification attempt succeeds.
+If the result is harder to read or review, revert. Not every attempt succeeds.
 
-## Language-Specific Guidance
+## Language Notes
 
-### TypeScript / JavaScript
+TypeScript / JavaScript:
 
 ```typescript
 // SIMPLIFY: Unnecessary async wrapper
@@ -243,7 +241,7 @@ function isValid(input: string): boolean {
 }
 ```
 
-### Python
+Python:
 
 ```python
 # SIMPLIFY: Verbose dictionary building
@@ -278,7 +276,7 @@ def process(data):
     return do_work(data)
 ```
 
-### React / JSX
+React / JSX:
 
 ```tsx
 // SIMPLIFY: Verbose conditional rendering
@@ -302,38 +300,61 @@ function UserBadge({ user }: Props) {
 // This is a judgment call — flag it, don't auto-refactor.
 ```
 
-## Common Rationalizations
+## Rationalizations to Reject
 
-| Rationalization | Reality |
+| Excuse | Reality |
 |---|---|
-| "It's working, no need to touch it" | Working code that's hard to read will be hard to fix when it breaks. Simplifying now saves time on every future change. |
-| "Fewer lines is always simpler" | A 1-line nested ternary is not simpler than a 5-line if/else. Simplicity is about comprehension speed, not line count. |
-| "I'll just quickly simplify this unrelated code too" | Unscoped simplification creates noisy diffs and risks regressions in code you didn't intend to change. Stay focused. |
-| "The types make it self-documenting" | Types document structure, not intent. A well-named function explains *why* better than a type signature explains *what*. |
-| "This abstraction might be useful later" | Don't preserve speculative abstractions. If it's not used now, it's complexity without value. Remove it and re-add when needed. |
-| "The original author must have had a reason" | Maybe. Check git blame — apply Chesterton's Fence. But accumulated complexity often has no reason; it's just the residue of iteration under pressure. |
-| "I'll refactor while adding this feature" | Separate refactoring from feature work. Mixed changes are harder to review, revert, and understand in history. |
+| "It works, no need to touch it" | Hard-to-read code will be hard to fix when it breaks; simplify now or pay later on every change. |
+| "Fewer lines is always simpler" | A one-line nested ternary beats nothing over a five-line if/else. Comprehension speed decides. |
+| "I'll quickly simplify this unrelated code too" | Unscoped edits make noisy diffs and regressions you never intended. |
+| "The types make it self-documenting" | Types document structure, not intent; a good name explains *why* better than a signature explains *what*. |
+| "This abstraction might be useful later" | Speculative abstractions are complexity with no current value. Remove; re-add when needed. |
+| "The original author must have had a reason" | Check git blame, but accumulated complexity often has no reason — it's residue from iteration under pressure. |
+| "I'll refactor while adding this feature" | Mixed changes are harder to review, revert, and read in history. Split them. |
 
 ## Red Flags
 
-- Simplification that requires modifying tests to pass (you likely changed behavior)
-- "Simplified" code that is longer and harder to follow than the original
-- Renaming things to match your preferences rather than project conventions
-- Removing error handling because "it makes the code cleaner"
-- Simplifying code you don't fully understand
-- Batching many simplifications into one large, hard-to-review commit
-- Refactoring code outside the scope of the current task without being asked
+- Tests had to be modified to pass (behavior likely changed)
+- The "simplified" version is longer and harder to follow
+- Renames match personal preference instead of project conventions
+- Error handling removed because it looked messy
+- Code simplified that isn't fully understood
+- Many simplifications bundled into one unreviewable commit
+- Refactoring outside the task's scope unasked
 
 ## Verification
 
-After completing a simplification pass:
+After a simplification pass:
 
-- [ ] All existing tests pass without modification
+- [ ] All existing tests pass unchanged
 - [ ] Build succeeds with no new warnings
-- [ ] Linter/formatter passes (no style regressions)
-- [ ] Each simplification is a reviewable, incremental change
-- [ ] The diff is clean — no unrelated changes mixed in
-- [ ] Simplified code follows project conventions (checked against CLAUDE.md or equivalent)
-- [ ] No error handling was removed or weakened
-- [ ] No dead code was left behind (unused imports, unreachable branches)
-- [ ] A teammate or review agent would approve the change as a net improvement
+- [ ] Linter/formatter passes
+- [ ] Each simplification is small and reviewable
+- [ ] Diff contains no unrelated changes
+- [ ] Style matches project conventions (checked against CLAUDE.md or equivalent)
+- [ ] No error handling removed or weakened
+- [ ] No dead code left behind (unused imports, unreachable branches)
+- [ ] A reviewer would call the result a net improvement
+
+## Related Skills in This Repo
+
+- [code-review-and-quality](../code-review-and-quality/SKILL.md) — Use when reviewing code written by yourself, another agent, or a human; you need to assess...
+- [ci-cd-and-automation](../ci-cd-and-automation/SKILL.md) — Use when setting up or modifying build and deployment pipelines; you need to automate qual...
+- [api-and-interface-design](../api-and-interface-design/SKILL.md) — Use when designing APIs, module boundaries, or any public interface; creating REST or Grap...
+- [git-workflow-and-versioning](../git-workflow-and-versioning/SKILL.md) — Use when making any code change; committing, branching, resolving conflicts, splitting unc...
+
+## Adaptation Notes
+
+- Description rewritten into this repo's trigger form.
+- Trigger and When-NOT-to-Use sections derived from the upstream guidance.
+- Body condensed and restructured; commands, file paths, and tables preserved.
+- Upstream anti-patterns retained as the When-NOT-to-Use list.
+- Related skills linked from this repo.
+- Upstream branding and attribution lines removed (attribution below).
+
+## Source & Attribution
+
+- Upstream: [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)
+- Path: `_sources/addyosmani_agent-skills/skills/code-simplification/SKILL.md`
+- License: MIT — Copyright (c) 2025 Addy Osmani
+- Retrieved: 2026-11-14; rewritten and condensed by LoopyLuci Community.

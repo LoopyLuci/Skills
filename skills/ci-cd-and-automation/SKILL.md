@@ -1,7 +1,7 @@
 ---
 name: ci-cd-and-automation
-description: Automates CI/CD pipeline setup. Use when setting up or modifying build and deployment pipelines. Use when you need to automate quality gates, configure test runners in CI, or establish deployment strategies.
-version: 1.0.0
+description: Use when setting up or modifying build and deployment pipelines; you need to automate quality gates, configure test runners in CI, or establish deployment strategies.
+version: 2.0.0
 author: LoopyLuci Community
 license: MIT
 platforms: [any]
@@ -9,103 +9,82 @@ metadata:
   hermes:
     tags: [software-development, engineering, agent-skills, devops, ci-cd, automation]
     source: addyosmani/agent-skills
+    adapted: true
 ---
 
 # CI/CD and Automation
 
+> **Adapted for the LoopyLuci Skills collection** from [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills). The guidance below is rewritten and condensed for this repo; commands, paths, and reference tables are preserved.
+
+## Trigger
+
+- Setting up or modifying build and deployment pipelines
+- You need to automate quality gates, configure test runners in CI, or establish deployment strategies
+
+## When NOT to Use
+
+- No CI pipeline in the project
+- CI failures ignored or silenced
+- Tests disabled in CI to make the pipeline pass
+- Production deploys without staging verification
+- No rollback mechanism
+- Secrets stored in code or CI config files (not secrets manager)
+- Long CI times with no optimization effort
+
 ## Overview
 
-Automate quality gates so that no change reaches production without passing tests, lint, type checking, and build. CI/CD is the enforcement mechanism for every other skill — it catches what humans and agents miss, and it does so consistently on every single change.
+Automate quality gates so no change reaches production without passing lint, types, tests, and build. CI/CD is the enforcement mechanism for every other skill: it catches what humans and agents miss, consistently, on every change.
 
-**Shift Left:** Catch problems as early in the pipeline as possible. A bug caught in linting costs minutes; the same bug caught in production costs hours. Move checks upstream — static analysis before tests, tests before staging, staging before production.
+- **Shift left.** Catch problems as early as possible — a lint-stage bug costs minutes, a production bug costs hours. Static analysis before tests, tests before staging, staging before production.
+- **Faster is safer.** Smaller batches and more frequent releases reduce risk: three changes are easier to debug than thirty, and frequent releases build confidence in the release process itself.
 
-**Faster is Safer:** Smaller batches and more frequent releases reduce risk, not increase it. A deployment with 3 changes is easier to debug than one with 30. Frequent releases build confidence in the release process itself.
-
-## When to Use
-
-- Setting up a new project's CI pipeline
-- Adding or modifying automated checks
-- Configuring deployment pipelines
-- When a change should trigger automated verification
-- Debugging CI failures
-
-## The Quality Gate Pipeline
-
-Every change goes through these gates before merge:
+## The quality gate pipeline
 
 ```
-Pull Request Opened
-    │
-    ▼
-┌─────────────────┐
-│   LINT CHECK     │  eslint, prettier
-│   ↓ pass         │
-│   TYPE CHECK     │  tsc --noEmit
-│   ↓ pass         │
-│   UNIT TESTS     │  jest/vitest
-│   ↓ pass         │
-│   BUILD          │  npm run build
-│   ↓ pass         │
-│   INTEGRATION    │  API/DB tests
-│   ↓ pass         │
-│   E2E (optional) │  Playwright/Cypress
-│   ↓ pass         │
-│   SECURITY AUDIT │  npm audit
-│   ↓ pass         │
-│   BUNDLE SIZE    │  bundlesize check
-└─────────────────┘
-    │
-    ▼
-  Ready for review
+Pull request opened
+  → lint (eslint, prettier)
+  → type check (tsc --noEmit)
+  → unit tests (jest/vitest)
+  → build
+  → integration (API/DB)
+  → e2e (optional: Playwright/Cypress)
+  → security audit (npm audit)
+  → bundle size check
+  → ready for review
 ```
 
-**No gate can be skipped.** If lint fails, fix lint — don't disable the rule. If a test fails, fix the code — don't skip the test.
+No gate can be skipped. If lint fails, fix lint rather than disabling the rule; if a test fails, fix the code rather than skipping the test.
 
-## GitHub Actions Configuration
+## GitHub Actions examples
 
-### Basic CI Pipeline
+Basic pipeline:
 
 ```yaml
 # .github/workflows/ci.yml
 name: CI
-
 on:
   pull_request:
     branches: [main]
   push:
     branches: [main]
-
 jobs:
   quality:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
           cache: 'npm'
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Lint
-        run: npm run lint
-
-      - name: Type check
-        run: npx tsc --noEmit
-
-      - name: Test
-        run: npm test -- --coverage
-
-      - name: Build
-        run: npm run build
-
-      - name: Security audit
-        run: npm audit --audit-level=high
+      - run: npm ci
+      - run: npm run lint
+      - run: npx tsc --noEmit
+      - run: npm test -- --coverage
+      - run: npm run build
+      - run: npm audit --audit-level=high
 ```
 
-### With Database Integration Tests
+With database integration tests:
 
 ```yaml
   integration:
@@ -117,34 +96,26 @@ jobs:
           POSTGRES_DB: testdb
           POSTGRES_USER: ci_user
           POSTGRES_PASSWORD: ${{ secrets.CI_DB_PASSWORD }}
-        ports:
-          - 5432:5432
+        ports: ['5432:5432']
         options: >-
-          --health-cmd pg_isready
-          --health-interval 10s
-          --health-timeout 5s
-          --health-retries 5
-
+          --health-cmd pg_isready --health-interval 10s
+          --health-timeout 5s --health-retries 5
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-        with:
-          node-version: '22'
-          cache: 'npm'
+        with: { node-version: '22', cache: 'npm' }
       - run: npm ci
-      - name: Run migrations
-        run: npx prisma migrate deploy
+      - run: npx prisma migrate deploy
         env:
           DATABASE_URL: postgresql://ci_user:${{ secrets.CI_DB_PASSWORD }}@localhost:5432/testdb
-      - name: Integration tests
-        run: npm run test:integration
+      - run: npm run test:integration
         env:
           DATABASE_URL: postgresql://ci_user:${{ secrets.CI_DB_PASSWORD }}@localhost:5432/testdb
 ```
 
-> **Note:** Even for CI-only test databases, use GitHub Secrets for credentials rather than hardcoding values. This builds good habits and prevents accidental reuse of test credentials in other contexts.
+Even for CI-only databases, keep credentials in secrets rather than hardcoding them — it builds good habits and stops test credentials leaking elsewhere.
 
-### E2E Tests
+E2E:
 
 ```yaml
   e2e:
@@ -152,16 +123,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-        with:
-          node-version: '22'
-          cache: 'npm'
+        with: { node-version: '22', cache: 'npm' }
       - run: npm ci
-      - name: Install Playwright
-        run: npx playwright install --with-deps chromium
-      - name: Build
-        run: npm run build
-      - name: Run E2E tests
-        run: npx playwright test
+      - run: npx playwright install --with-deps chromium
+      - run: npm run build
+      - run: npx playwright test
       - uses: actions/upload-artifact@v4
         if: failure()
         with:
@@ -169,103 +135,44 @@ jobs:
           path: playwright-report/
 ```
 
-## Feeding CI Failures Back to Agents
+## Feeding failures back to the agent
 
-The power of CI with AI agents is the feedback loop. When CI fails:
+The value of CI with agents is the feedback loop: copy the failure output, hand it to the agent with the specific error and an instruction to fix and verify locally, then push again. Lint failures → run the autofix and commit; type errors → read the location and fix the type; test failures → follow the debugging skill; build errors → check config and dependencies.
 
-```
-CI fails
-    │
-    ▼
-Copy the failure output
-    │
-    ▼
-Feed it to the agent:
-"The CI pipeline failed with this error:
-[paste specific error]
-Fix the issue and verify locally before pushing again."
-    │
-    ▼
-Agent fixes → pushes → CI runs again
-```
+## Deployment strategies
 
-**Key patterns:**
-
-```
-Lint failure → Agent runs `npm run lint -- --fix` and commits
-Type error  → Agent reads the error location and fixes the type
-Test failure → Agent follows debugging-and-error-recovery skill
-Build error → Agent checks config and dependencies
-```
-
-## Deployment Strategies
-
-### Preview Deployments
-
-Every PR gets a preview deployment for manual testing:
+**Preview deployments** — every PR gets a preview for manual testing:
 
 ```yaml
-# Deploy preview on PR (Vercel/Netlify/etc.)
 deploy-preview:
   runs-on: ubuntu-latest
   if: github.event_name == 'pull_request'
   steps:
     - uses: actions/checkout@v4
-    - name: Deploy preview
-      run: npx vercel --token=${{ secrets.VERCEL_TOKEN }}
+    - run: npx vercel --token=${{ secrets.VERCEL_TOKEN }}
 ```
 
-### Feature Flags
-
-Feature flags decouple deployment from release. Deploy incomplete or risky features behind flags so you can:
-
-- **Ship code without enabling it.** Merge to main early, enable when ready.
-- **Roll back without redeploying.** Disable the flag instead of reverting code.
-- **Canary new features.** Enable for 1% of users, then 10%, then 100%.
-- **Run A/B tests.** Compare behavior with and without the feature.
+**Feature flags** decouple deployment from release: ship code without enabling it, roll back without redeploying, canary 1% → 10% → 100%, and run A/B tests.
 
 ```typescript
-// Simple feature flag pattern
 if (featureFlags.isEnabled('new-checkout-flow', { userId })) {
   return renderNewCheckout();
 }
 return renderLegacyCheckout();
 ```
 
-**Flag lifecycle:** Create → Enable for testing → Canary → Full rollout → Remove the flag and dead code. Flags that live forever become technical debt — set a cleanup date when you create them.
+Lifecycle: create → enable for testing → canary → full rollout → remove the flag and its dead code. Flags that live forever become debt, so set a cleanup date at creation.
 
-### Staged Rollouts
+**Staged rollout** — merge to main → automatic staging deploy → manual verification → production deploy (manual trigger or automatic after staging) → monitor for 15 minutes → roll back on errors, otherwise done.
 
-```
-PR merged to main
-    │
-    ▼
-  Staging deployment (auto)
-    │ Manual verification
-    ▼
-  Production deployment (manual trigger or auto after staging)
-    │
-    ▼
-  Monitor for errors (15-minute window)
-    │
-    ├── Errors detected → Rollback
-    └── Clean → Done
-```
-
-### Rollback Plan
-
-Every deployment should be reversible:
+**Rollback plan** — every deployment must be reversible:
 
 ```yaml
-# Manual rollback workflow
 name: Rollback
 on:
   workflow_dispatch:
     inputs:
-      version:
-        description: 'Version to rollback to'
-        required: true
-
+      version: { description: 'Version to rollback to', required: true }
 jobs:
   rollback:
     runs-on: ubuntu-latest
@@ -273,27 +180,18 @@ jobs:
       - name: Rollback deployment
         env:
           VERSION: ${{ inputs.version }}
-        run: |
-          # Deploy the specified previous version. Pass the input through env,
-          # never interpolate it into the script (shell injection).
-          npx vercel rollback "$VERSION"
+        run: npx vercel rollback "$VERSION"
 ```
 
-## Environment Management
+Pass the input through `env`; never interpolate it into the script (shell injection).
 
-```
-.env.example       → Committed (template for developers)
-.env                → NOT committed (local development)
-.env.test           → Committed (test environment, no real secrets)
-CI secrets          → Stored in GitHub Secrets / vault
-Production secrets  → Stored in deployment platform / vault
-```
+## Environment management
 
-CI should never have production secrets. Use separate secrets for CI testing.
+`.env.example` committed as a template; `.env` never committed; `.env.test` committed with no real secrets; CI secrets in the platform's secrets store; production secrets in the deployment platform or a vault. CI should never hold production secrets.
 
-## Automation Beyond CI
+## Automation beyond CI
 
-### Dependabot / Renovate
+**Dependabot/Renovate** keeps dependencies fresh:
 
 ```yaml
 # .github/dependabot.yml
@@ -301,43 +199,18 @@ version: 2
 updates:
   - package-ecosystem: npm
     directory: /
-    schedule:
-      interval: weekly
+    schedule: { interval: weekly }
     open-pull-requests-limit: 5
 ```
 
-### Build Cop Role
+**Build Cop** — designate an owner responsible for keeping CI green, whose job when the build breaks is to fix or revert (not the author of the breaking change). Prevents broken builds accumulating while everyone assumes someone else will fix them.
 
-Designate someone responsible for keeping CI green. When the build breaks, the Build Cop's job is to fix or revert — not the person whose change caused the break. This prevents broken builds from accumulating while everyone assumes someone else will fix it.
+**PR checks** — require at least one approval, require status checks to pass, block force-pushes to main, and auto-merge once checks and approval are satisfied.
 
-### PR Checks
+## CI optimization
 
-- **Required reviews:** At least 1 approval before merge
-- **Required status checks:** CI must pass before merge
-- **Branch protection:** No force-pushes to main
-- **Auto-merge:** If all checks pass and approved, merge automatically
+When the pipeline passes 10 minutes, apply in order of impact: cache the package-manager cache (via `setup-node`'s `cache` or `actions/cache`, not `node_modules`); run lint/typecheck/test/build as parallel jobs; use path filters to skip unrelated jobs (docs-only PRs skip e2e); shard test suites across matrix runners; move slow tests off the critical path to a schedule; use larger runners for CPU-heavy builds.
 
-## CI Optimization
-
-When the pipeline exceeds 10 minutes, apply these strategies in order of impact:
-
-```
-Slow CI pipeline?
-├── Cache dependencies
-│   └── Use the setup-node cache option (or actions/cache) for the package manager cache, not node_modules
-├── Run jobs in parallel
-│   └── Split lint, typecheck, test, build into separate parallel jobs
-├── Only run what changed
-│   └── Use path filters to skip unrelated jobs (e.g., skip e2e for docs-only PRs)
-├── Use matrix builds
-│   └── Shard test suites across multiple runners
-├── Optimize the test suite
-│   └── Remove slow tests from the critical path, run them on a schedule instead
-└── Use larger runners
-    └── GitHub-hosted larger runners or self-hosted for CPU-heavy builds
-```
-
-**Example: caching and parallelism**
 ```yaml
 jobs:
   lint:
@@ -348,7 +221,6 @@ jobs:
         with: { node-version: '22', cache: 'npm' }
       - run: npm ci
       - run: npm run lint
-
   typecheck:
     runs-on: ubuntu-latest
     steps:
@@ -357,7 +229,6 @@ jobs:
         with: { node-version: '22', cache: 'npm' }
       - run: npm ci
       - run: npx tsc --noEmit
-
   test:
     runs-on: ubuntu-latest
     steps:
@@ -368,34 +239,47 @@ jobs:
       - run: npm test -- --coverage
 ```
 
-## Common Rationalizations
+## Red flags
 
-| Rationalization | Reality |
-|---|---|
-| "CI is too slow" | Optimize the pipeline (see CI Optimization below), don't skip it. A 5-minute pipeline prevents hours of debugging. |
-| "This change is trivial, skip CI" | Trivial changes break builds. CI is fast for trivial changes anyway. |
-| "The test is flaky, just re-run" | Flaky tests mask real bugs and waste everyone's time. Fix the flakiness. |
-| "We'll add CI later" | Projects without CI accumulate broken states. Set it up on day one. |
-| "Manual testing is enough" | Manual testing doesn't scale and isn't repeatable. Automate what you can. |
-
-## Red Flags
-
-- No CI pipeline in the project
-- CI failures ignored or silenced
-- Tests disabled in CI to make the pipeline pass
+- No CI pipeline at all
+- CI failures ignored or silenced; tests disabled to make the pipeline pass
 - Production deploys without staging verification
 - No rollback mechanism
-- Secrets stored in code or CI config files (not secrets manager)
-- Long CI times with no optimization effort
+- Secrets in code or CI config rather than a secrets manager
+- Long CI with no optimization effort
 
 ## Verification
 
-After setting up or modifying CI:
+- [ ] All quality gates present (lint, types, tests, build, audit).
+- [ ] Pipeline runs on every PR and push to main.
+- [ ] Failures block merge via branch protection.
+- [ ] CI results feed back into the development loop.
+- [ ] Secrets live in the secrets manager, not in code.
+- [ ] Deployment has a rollback mechanism.
+- [ ] Test suite completes in under 10 minutes.
 
-- [ ] All quality gates are present (lint, types, tests, build, audit)
-- [ ] Pipeline runs on every PR and push to main
-- [ ] Failures block merge (branch protection configured)
-- [ ] CI results feed back into the development loop
-- [ ] Secrets are stored in the secrets manager, not in code
-- [ ] Deployment has a rollback mechanism
-- [ ] Pipeline runs in under 10 minutes for the test suite
+## Related Skills in This Repo
+
+- [code-review-and-quality](../code-review-and-quality/SKILL.md) — Use when reviewing code written by yourself, another agent, or a human; you need to assess...
+- [api-and-interface-design](../api-and-interface-design/SKILL.md) — Use when designing APIs, module boundaries, or any public interface; creating REST or Grap...
+- [git-workflow-and-versioning](../git-workflow-and-versioning/SKILL.md) — Use when making any code change; committing, branching, resolving conflicts, splitting unc...
+- [context-engineering](../context-engineering/SKILL.md) — Use when starting a new session, when agent output quality degrades, when switching betwee...
+- [local-cicd-pipeline](../local-cicd-pipeline/SKILL.md) — Build local CI/CD pipelines with preflight, tests, deploy.
+- [devops-troubleshooting](../devops-troubleshooting/SKILL.md) — Use when troubleshooting devops.
+- [devops-optimization](../devops-optimization/SKILL.md) — Use when optimizing devops systems.
+
+## Adaptation Notes
+
+- Description rewritten into this repo's trigger form.
+- Trigger and When-NOT-to-Use sections derived from the upstream guidance.
+- Body condensed and restructured; commands, file paths, and tables preserved.
+- Upstream anti-patterns retained as the When-NOT-to-Use list.
+- Related skills linked from this repo.
+- Upstream branding and attribution lines removed (attribution below).
+
+## Source & Attribution
+
+- Upstream: [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)
+- Path: `_sources/addyosmani_agent-skills/skills/ci-cd-and-automation/SKILL.md`
+- License: MIT — Copyright (c) 2025 Addy Osmani
+- Retrieved: 2026-11-14; rewritten and condensed by LoopyLuci Community.

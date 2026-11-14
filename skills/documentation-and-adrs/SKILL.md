@@ -1,7 +1,7 @@
 ---
 name: documentation-and-adrs
-description: Records decisions and documentation, and detects when documentation has drifted from the code it describes. Use when you need to document an architecture decision (ADR) or the reasoning behind a design choice, when changing public APIs, shipping features, when docs may be stale or out of sync with the code they describe, when working out which module docs are still accurate, or when setting up a check so docs cannot silently go out of date again.
-version: 1.0.0
+description: Use when you need to document an architecture decision (ADR) or the reasoning behind a design choice, when changing public APIs, shipping features, when docs may be stale or out of sync with the code they describe, when working out which module docs are still accurate, or when setting up a check so docs cannot silently go out of date again.
+version: 2.0.0
 author: LoopyLuci Community
 license: MIT
 platforms: [any]
@@ -9,51 +9,59 @@ metadata:
   hermes:
     tags: [software-development, engineering, agent-skills, documentation, adr]
     source: addyosmani/agent-skills
+    adapted: true
 ---
 
 # Documentation and ADRs
 
+> **Adapted for the LoopyLuci Skills collection** from [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills). The guidance below is rewritten and condensed for this repo; commands, paths, and reference tables are preserved.
+
+## Trigger
+
+- You need to document an architecture decision (ADR) or the reasoning behind a design choice, when changing public APIs, shipping features, when docs may be stale or out of sync with the code they describe, when working out which module docs are still accurate, or when setting up a check so docs cannot silently go out of date again
+
+## When NOT to Use
+
+- Architectural decisions with no written rationale
+- Public APIs with no documentation or types
+- README that doesn't explain how to run the project
+- Commented-out code instead of deletion
+- TODO comments that have been there for weeks
+- No ADRs in a project with significant architectural choices
+- Documentation that restates the code instead of explaining intent
+- A change log that has been rewritten rather than appended to
+- A doc called current when the commit order of the doc and its code could not be determined
+
 ## Overview
 
-Document decisions, not just code. The most valuable documentation captures the *why* — the context, constraints, and trade-offs that led to a decision. Code shows *what* was built; documentation explains *why it was built this way* and *what alternatives were considered*. This context is essential for future humans and agents working in the codebase.
-
-## When to Use
-
-- Making a significant architectural decision
-- Choosing between competing approaches
-- Adding or changing a public API
-- Shipping a feature that changes user-facing behavior
-- Onboarding new team members (or agents) to the project
-- When you find yourself explaining the same thing repeatedly
-
-**When NOT to use:** Don't document obvious code. Don't add comments that restate what the code already says. Don't write docs for throwaway prototypes.
+Documentation earns its keep by recording *why*: the context, constraints, and trade-offs behind a decision. Code shows what was built; docs explain why it was built that way and what was rejected instead. That reasoning is what future humans and agents cannot reconstruct from the source alone, so capture it at the moment it is still cheap to record.
 
 ## Architecture Decision Records (ADRs)
 
-ADRs capture the reasoning behind significant technical decisions. They're the highest-value documentation you can write.
+ADRs hold the rationale for significant technical decisions and are the highest-value documentation you can produce.
 
-### When to Write an ADR
+### When to Write One
 
-- Choosing a framework, library, or major dependency
+- Selecting a framework, library, or other major dependency
 - Designing a data model or database schema
-- Selecting an authentication strategy
-- Deciding on an API architecture (REST vs. GraphQL vs. tRPC)
-- Choosing between build tools, hosting platforms, or infrastructure
+- Choosing an authentication strategy
+- Settling an API architecture (REST vs. GraphQL vs. tRPC)
+- Picking build tools, hosting platforms, or infrastructure
 - Any decision that would be expensive to reverse
 
-### Match the existing convention first
+### Match the Existing Convention First
 
-Before creating an ADR, inspect the available repository context for an established convention — existing ADRs, project instructions, and ADR-related configuration or tooling (e.g. an `.adr-dir` file). An established convention overrides the defaults below. Match:
+Before adding an ADR, inspect the repository for an established convention: existing ADRs, project instructions, and ADR tooling or configuration such as an `.adr-dir` file. An established convention overrides the defaults below. Concretely, match:
 
-- **Location and format** — e.g. `docs/adr/*.md`, `Documentation/Decisions/*.rst`, a MADR layout, or an `adr-tools` setup. Match the existing directory, file extension, and markup (Markdown vs reStructuredText).
-- **Numbering and naming** — continue the existing sequence and filename pattern (`ADR-004-Title.rst`, `0004-title.md`, …); don't restart at 001 or introduce a second scheme.
-- **Section headings** — reuse the project's heading set rather than imposing this template's.
+- **Location and format** — `docs/adr/*.md`, `Documentation/Decisions/*.rst`, a MADR layout, an `adr-tools` setup, and so on. Reuse the directory, extension, and markup already in use.
+- **Numbering and naming** — continue the current sequence and filename pattern (`ADR-004-Title.rst`, `0004-title.md`, …). Never restart at 001 or introduce a second scheme.
+- **Section headings** — adopt the project's heading set rather than imposing this template.
 
-If the available evidence conflicts, surface the conflict rather than silently introducing another scheme. Only when no convention can be established do you apply the default below.
+If the available evidence conflicts, surface the conflict instead of quietly starting another scheme. Apply the default below only when no convention can be established.
 
-### ADR Template
+### Template
 
-Store ADRs in `docs/decisions/` with sequential numbering (unless the project already uses another location — see above):
+Default location is `docs/decisions/` with sequential numbering, unless the project already standardizes elsewhere:
 
 ```markdown
 # ADR-001: Use PostgreSQL for primary database
@@ -98,20 +106,17 @@ Use PostgreSQL with Prisma ORM.
 - Hosting on managed service (Supabase, Neon, or RDS)
 ```
 
-### ADR Lifecycle
+### Lifecycle
 
 ```
 PROPOSED → ACCEPTED → (SUPERSEDED or DEPRECATED)
 ```
 
-- **Don't delete old ADRs.** They capture historical context.
-- When a decision changes, write a new ADR that references and supersedes the old one.
+Old ADRs stay in place — they preserve historical context. When a decision changes, write a new ADR that references and supersedes the old one rather than editing the original.
 
 ## Inline Documentation
 
-### When to Comment
-
-Comment the *why*, not the *what*:
+### Explain Why, Not What
 
 ```typescript
 // BAD: Restates the code
@@ -128,7 +133,7 @@ if (now - windowStart > WINDOW_SIZE_MS) {
 }
 ```
 
-### When NOT to Comment
+### Skip Comments That Add Nothing
 
 ```typescript
 // Don't comment self-explanatory code
@@ -143,7 +148,7 @@ function calculateTotal(items: CartItem[]): number {
 // const oldImplementation = () => { ... }  ← Delete it, git has history
 ```
 
-### Document Known Gotchas
+### Record Known Traps Where They Live
 
 ```typescript
 /**
@@ -160,9 +165,7 @@ export function initializeTheme(theme: Theme): void {
 
 ## API Documentation
 
-For public APIs (REST, GraphQL, library interfaces):
-
-### Inline with Types (Preferred for TypeScript)
+For public APIs (REST, GraphQL, library interfaces), document inline with the types where possible:
 
 ```typescript
 /**
@@ -182,7 +185,7 @@ export async function createTask(input: CreateTaskInput): Promise<Task> {
 }
 ```
 
-### OpenAPI / Swagger for REST APIs
+For REST surfaces, describe the contract with OpenAPI/Swagger:
 
 ```yaml
 paths:
@@ -208,7 +211,7 @@ paths:
 
 ## README Structure
 
-Every project should have a README that covers:
+Every project needs a README covering at least this ground:
 
 ```markdown
 # Project Name
@@ -239,7 +242,7 @@ How to contribute, coding standards, PR process.
 
 ## Changelog Maintenance
 
-For shipped features:
+Record shipped features as appended entries grouped by kind:
 
 ```markdown
 # Changelog
@@ -258,24 +261,24 @@ For shipped features:
 
 ## Documentation for Agents
 
-Special consideration for AI agent context:
+Agents consume project docs heavily, so treat these as load-bearing:
 
-- **CLAUDE.md / rules files** — Document project conventions so agents follow them
-- **Spec files** — Keep specs updated so agents build the right thing
-- **ADRs** — Help agents understand why past decisions were made (prevents re-deciding)
-- **Inline gotchas** — Prevent agents from falling into known traps
+- **CLAUDE.md / rules files** — encode conventions so agents follow them
+- **Spec files** — keep current so agents build the intended thing
+- **ADRs** — let agents see past reasoning instead of re-deciding settled questions
+- **Inline gotchas** — stop agents from walking into known traps
 
 ## Prose Review
 
-After checking the technical content, review the prose for the people who will use it. Clearer wording must not change the decision or its limits.
+Once the technical content checks out, review the writing for the people who will read it. Rewording must never change the decision or its limits.
 
-1. Mark the details that must survive the edit: names, numbers and units, commands, paths, links, conditions, trade-offs, and uncertainty. Check them against the available code and decision context; flag anything you cannot substantiate.
-2. Replace stock introductions, promotional adjectives, and repeated summaries with the concrete information the reader needs. Do not replace an unsupported claim with an invented example or a stronger guarantee. Keep necessary technical repetition and the project's established terminology.
-3. Compare the edited document with the original and its sources. Restore any lost qualifier or caveat, verify command and code examples still work as documented, and explain any unresolved factual question rather than polishing it away.
+1. Identify what must survive editing: names, numbers and units, commands, paths, links, conditions, trade-offs, and uncertainty. Verify each against the code and decision context, and flag anything you cannot substantiate.
+2. Cut stock openings, promotional adjectives, and repeated summaries; replace them with the concrete information the reader needs. Do not swap an unsupported claim for an invented example or a stronger guarantee. Keep necessary technical repetition and the project's established terminology.
+3. Diff the edited document against the original and its sources. Restore any lost qualifier or caveat, confirm commands and code examples still behave as documented, and raise unresolved factual questions explicitly instead of smoothing them over.
 
 ## Documentation Drift
 
-A document that was true when written still reads as authoritative after the code moves on. When a doc may be stale, decide from version control, not from how confident the doc sounds:
+A doc that was accurate when written still reads as authoritative after the code moves on. Decide staleness from version control, not from how confident the prose sounds:
 
 ```bash
 code=$(git log -1 --format=%H -- src/rate-limiter.js)
@@ -286,43 +289,67 @@ elif git merge-base --is-ancestor "$code" "$doc"; then echo "current: doc change
 else echo "can't tell"; fi
 ```
 
-Unordered history (divergent branches, a rebase, a shallow clone) means "can't tell". Say that; never report it as current.
+Unordered history — divergent branches, a rebase, a shallow clone — yields "can't tell". Report it that way and never label such a doc current.
 
-When you correct a doc that has a change log, append a dated entry that says why it changed. Never rewrite or collapse earlier entries: git keeps the old text, but the log is the only record of the reasons.
+When correcting a doc that carries a changelog, append a dated entry explaining the correction. Do not rewrite or collapse earlier entries: git preserves the old text, but the log is the only surviving record of the reasons.
 
 ## Common Rationalizations
 
-| Rationalization | Reality |
+| Excuse | Reality |
 |---|---|
-| "The code is self-documenting" | Code shows what. It doesn't show why, what alternatives were rejected, or what constraints apply. |
-| "We'll write docs when the API stabilizes" | APIs stabilize faster when you document them. The doc is the first test of the design. |
-| "Nobody reads docs" | Agents do. Future engineers do. Your 3-months-later self does. |
-| "ADRs are overhead" | A 10-minute ADR prevents a 2-hour debate about the same decision six months later. |
-| "Comments get outdated" | Comments on *why* are stable. Comments on *what* get outdated — that's why you only write the former. |
-| "I'll tidy the change log while I'm in here" | Git holds the old text; the log holds the reasons. Rewriting it destroys the only copy of the reasoning and preserves nothing. |
+| "The code is self-documenting" | Code states what happened; it cannot state why, what alternatives lost, or which constraints applied. |
+| "We'll document once the API stabilizes" | Documenting speeds stabilization — the doc is the first test of the design. |
+| "Nobody reads docs" | Agents do, future engineers do, and so will you in three months. |
+| "ADRs are overhead" | Ten minutes spent on an ADR saves a two-hour re-debate six months later. |
+| "Comments go stale" | Comments about *why* stay stable; comments about *what* go stale, which is why you only write the former. |
+| "I'll tidy the changelog while I'm here" | Git holds the old text; the log holds the reasoning. Rewriting it destroys the only copy of both. |
 
 ## Red Flags
 
-- Architectural decisions with no written rationale
-- Public APIs with no documentation or types
-- README that doesn't explain how to run the project
-- Commented-out code instead of deletion
-- TODO comments that have been there for weeks
+- Architectural decisions with no recorded rationale
+- Public APIs lacking documentation or types
+- A README that never explains how to run the project
+- Commented-out code left in place of deletion
+- TODO comments that have survived for weeks
 - No ADRs in a project with significant architectural choices
-- Documentation that restates the code instead of explaining intent
-- A change log that has been rewritten rather than appended to
-- A doc called current when the commit order of the doc and its code could not be determined
+- Docs that restate code instead of explaining intent
+- A changelog that was rewritten rather than appended to
+- A doc declared current when commit order between it and its code could not be determined
 
 ## Verification
 
-After documenting:
-
-- [ ] ADRs exist for all significant architectural decisions
-- [ ] README covers quick start, commands, and architecture overview
-- [ ] API functions have parameter and return type documentation
-- [ ] Known gotchas are documented inline where they matter
+- [ ] An ADR exists for every significant architectural decision
+- [ ] README covers quick start, commands, and an architecture overview
+- [ ] API functions carry parameter and return type documentation
+- [ ] Known gotchas are documented inline at the point they matter
 - [ ] No commented-out code remains
 - [ ] Rules files (CLAUDE.md etc.) are current and accurate
-- [ ] Prose edits preserve source details, decision trade-offs, and qualifiers without adding unsupported guarantees
-- [ ] Change logs were appended to rather than rewritten
+- [ ] Prose edits preserved source details, trade-offs, and qualifiers without adding unsupported guarantees
+- [ ] Changelogs were appended to, not rewritten
 - [ ] A doc whose staleness could not be determined is reported as "can't tell", not as current
+
+## Related Skills in This Repo
+
+- [code-review-and-quality](../code-review-and-quality/SKILL.md) — Use when reviewing code written by yourself, another agent, or a human; you need to assess...
+- [ci-cd-and-automation](../ci-cd-and-automation/SKILL.md) — Use when setting up or modifying build and deployment pipelines; you need to automate qual...
+- [api-and-interface-design](../api-and-interface-design/SKILL.md) — Use when designing APIs, module boundaries, or any public interface; creating REST or Grap...
+- [git-workflow-and-versioning](../git-workflow-and-versioning/SKILL.md) — Use when making any code change; committing, branching, resolving conflicts, splitting unc...
+- [writing-skills](../writing-skills/SKILL.md) — Use when creating, editing, or testing agent skills
+- [technical-writing-patterns](../technical-writing-patterns/SKILL.md) — Use when writing technical documentation.
+- [technical-documentation](../technical-documentation/SKILL.md) — Use when writing technical documentation for projects.
+
+## Adaptation Notes
+
+- Description rewritten into this repo's trigger form.
+- Trigger and When-NOT-to-Use sections derived from the upstream guidance.
+- Body condensed and restructured; commands, file paths, and tables preserved.
+- Upstream anti-patterns retained as the When-NOT-to-Use list.
+- Related skills linked from this repo.
+- Upstream branding and attribution lines removed (attribution below).
+
+## Source & Attribution
+
+- Upstream: [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)
+- Path: `_sources/addyosmani_agent-skills/skills/documentation-and-adrs/SKILL.md`
+- License: MIT — Copyright (c) 2025 Addy Osmani
+- Retrieved: 2026-11-14; rewritten and condensed by LoopyLuci Community.

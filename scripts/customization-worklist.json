@@ -1,0 +1,912 @@
+{
+  "output_dir": "scripts/adapted_bodies",
+  "n_batches": 10,
+  "skills": [
+    {
+      "name": "apexlang-inventory",
+      "source": "oracle/skills",
+      "source_dir": "oracle_skills",
+      "upstream_path": "_sources/oracle_skills/apex/apexlang/26.2/apexlang-inventory/SKILL.md",
+      "title": "APEXLang Component Catalog",
+      "description": "Provides an overview of APEX application components, APEXlang syntax, and application file layout, with links to detailed component properties and examples. Use this catalog to select, compose, generate, and edit APEX applications with APEXlang.",
+      "tags": [
+        "oracle",
+        "apex",
+        "apexlang"
+      ],
+      "lines": 802,
+      "batch": 0
+    },
+    {
+      "name": "obsidian-bases",
+      "source": "obsidianmd/obsidian-skills",
+      "source_dir": "obsidianmd_obsidian-skills",
+      "upstream_path": "_sources/obsidianmd_obsidian-skills/plugins/obsidian/skills/obsidian-bases/SKILL.md",
+      "title": "Obsidian Bases Skill",
+      "description": "Create and edit Obsidian Bases (.base files) with views, filters, formulas, and summaries. Use when working with .base files, creating database-like views of notes, or when the user mentions Bases, table views, card views, kanban boards, filters, or formulas in Obsidian.",
+      "tags": [
+        "note-taking",
+        "obsidian",
+        "productivity"
+      ],
+      "lines": 599,
+      "batch": 1
+    },
+    {
+      "name": "code-review-and-quality",
+      "source": "addyosmani/agent-skills",
+      "source_dir": "addyosmani_agent-skills",
+      "upstream_path": "_sources/addyosmani_agent-skills/skills/code-review-and-quality/SKILL.md",
+      "title": "Code Review and Quality",
+      "description": "Conducts multi-axis code review. Use before merging any change. Use when reviewing code written by yourself, another agent, or a human. Use when you need to assess code quality across multiple dimensions before it enters the main branch. Use when asked to review a diff or a pull request, even when the diff is pasted inline and the review looks quick to do from reading it.",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills",
+        "code-review",
+        "quality"
+      ],
+      "lines": 398,
+      "batch": 2
+    },
+    {
+      "name": "oke-troubleshooter",
+      "source": "oracle/skills",
+      "source_dir": "oracle_skills",
+      "upstream_path": "_sources/oracle_skills/oci/oke/skills/oke-troubleshooter/SKILL.md",
+      "title": "Oke Troubleshooter",
+      "description": "Use this skill when the user wants to diagnose or root-cause issues with an OCI Kubernetes Engine cluster or workload. Trigger phrases include \"pods pending\", \"troubleshoot OKE\", \"service has no IP\", \"cluster unhealthy\", DPDK/SR-IOV mlx5 pod failures, Multus network-status issues, or broad incident RCA across Kubernetes and OCI resources. Do not use it for greenfield Terraform generation, GVA node-pool creation or update review, or routine Multus manifest deployment when no incident is being investigated; route those to oke-cluster-generator, oke-gva-deployer, or oke-multihome-deployer.",
+      "tags": [
+        "oracle",
+        "oci",
+        "oke"
+      ],
+      "lines": 398,
+      "batch": 3
+    },
+    {
+      "name": "ci-cd-and-automation",
+      "source": "addyosmani/agent-skills",
+      "source_dir": "addyosmani_agent-skills",
+      "upstream_path": "_sources/addyosmani_agent-skills/skills/ci-cd-and-automation/SKILL.md",
+      "title": "CI/CD and Automation",
+      "description": "Automates CI/CD pipeline setup. Use when setting up or modifying build and deployment pipelines. Use when you need to automate quality gates, configure test runners in CI, or establish deployment strategies.",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills",
+        "devops",
+        "ci-cd",
+        "automation"
+      ],
+      "lines": 391,
+      "batch": 4
+    },
+    {
+      "name": "api-and-interface-design",
+      "source": "addyosmani/agent-skills",
+      "source_dir": "addyosmani_agent-skills",
+      "upstream_path": "_sources/addyosmani_agent-skills/skills/api-and-interface-design/SKILL.md",
+      "title": "API and Interface Design",
+      "description": "Guides stable API and interface design. Use when designing APIs, module boundaries, or any public interface. Use when creating REST or GraphQL endpoints, defining type contracts between modules, or establishing boundaries between frontend and backend.",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills"
+      ],
+      "lines": 367,
+      "batch": 5
+    },
+    {
+      "name": "git-workflow-and-versioning",
+      "source": "addyosmani/agent-skills",
+      "source_dir": "addyosmani_agent-skills",
+      "upstream_path": "_sources/addyosmani_agent-skills/skills/git-workflow-and-versioning/SKILL.md",
+      "title": "Git Workflow and Versioning",
+      "description": "Structures git workflow practices. Use when making any code change. Use when committing, branching, resolving conflicts, splitting uncommitted work in a messy working tree into clean atomic commits, opening or reviewing a pull request (PR), pushing to a remote, or when you need to organize work across multiple parallel streams. Use when cutting a release, choosing a semantic version bump, tagging, or writing a changelog. Use when asked to write a commit message or a changelog entry for a change, or to split a change into commits, even when the diff is pasted inline and the message seems easy to write from it.",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills",
+        "git",
+        "version-control"
+      ],
+      "lines": 353,
+      "batch": 6
+    },
+    {
+      "name": "context-engineering",
+      "source": "addyosmani/agent-skills",
+      "source_dir": "addyosmani_agent-skills",
+      "upstream_path": "_sources/addyosmani_agent-skills/skills/context-engineering/SKILL.md",
+      "title": "Context Engineering",
+      "description": "Optimizes agent context setup. Use when starting a new session, when agent output quality degrades, when switching between tasks, or when you need to configure rules files and context for a project.",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills",
+        "ai-agents",
+        "context"
+      ],
+      "lines": 351,
+      "batch": 7
+    },
+    {
+      "name": "frontend-ui-engineering",
+      "source": "addyosmani/agent-skills",
+      "source_dir": "addyosmani_agent-skills",
+      "upstream_path": "_sources/addyosmani_agent-skills/skills/frontend-ui-engineering/SKILL.md",
+      "title": "Frontend UI Engineering",
+      "description": "Builds production-quality, accessible, responsive user-facing UIs. Use when building or modifying interfaces and pages, creating components, implementing layouts, meeting WCAG accessibility requirements, managing state, or when the output needs to look and feel production-quality rather than AI-generated.",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills",
+        "frontend",
+        "ui",
+        "ux",
+        "accessibility"
+      ],
+      "lines": 344,
+      "batch": 8
+    },
+    {
+      "name": "shipping-and-launch",
+      "source": "addyosmani/agent-skills",
+      "source_dir": "addyosmani_agent-skills",
+      "upstream_path": "_sources/addyosmani_agent-skills/skills/shipping-and-launch/SKILL.md",
+      "title": "Shipping and Launch",
+      "description": "Prepares production launches. Use when preparing to deploy to production, or when asking what needs to be in place before shipping. Use when you need a pre-launch checklist, when setting up monitoring, when planning a staged rollout, or when you need a rollback strategy.",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills"
+      ],
+      "lines": 334,
+      "batch": 9
+    },
+    {
+      "name": "code-simplification",
+      "source": "addyosmani/agent-skills",
+      "source_dir": "addyosmani_agent-skills",
+      "upstream_path": "_sources/addyosmani_agent-skills/skills/code-simplification/SKILL.md",
+      "title": "Code Simplification",
+      "description": "Simplifies code for clarity. Use when refactoring code for clarity without changing behavior. Use when code works but is harder to read, maintain, or extend than it should be. Use when reviewing code that has accumulated unnecessary complexity. Use when asked to simplify, clean up, or reduce the nesting of a function or module that already works, even when the code is pasted inline and nothing else needs to change.",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills"
+      ],
+      "lines": 329,
+      "batch": 9
+    },
+    {
+      "name": "documentation-and-adrs",
+      "source": "addyosmani/agent-skills",
+      "source_dir": "addyosmani_agent-skills",
+      "upstream_path": "_sources/addyosmani_agent-skills/skills/documentation-and-adrs/SKILL.md",
+      "title": "Documentation and ADRs",
+      "description": "Records decisions and documentation, and detects when documentation has drifted from the code it describes. Use when you need to document an architecture decision (ADR) or the reasoning behind a design choice, when changing public APIs, shipping features, when docs may be stale or out of sync with the code they describe, when working out which module docs are still accurate, or when setting up a check so docs cannot silently go out of date again.",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills",
+        "documentation",
+        "adr"
+      ],
+      "lines": 318,
+      "batch": 8
+    },
+    {
+      "name": "browser-testing-with-devtools",
+      "source": "addyosmani/agent-skills",
+      "source_dir": "addyosmani_agent-skills",
+      "upstream_path": "_sources/addyosmani_agent-skills/skills/browser-testing-with-devtools/SKILL.md",
+      "title": "Browser Testing with DevTools",
+      "description": "Tests in real browsers via Chrome DevTools MCP. Use when building or debugging anything that runs in a browser. Use when you need to inspect the DOM, capture console errors, analyze network requests, profile performance, or verify visual output with real runtime data. Requires the chrome-devtools MCP server to be configured.",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills",
+        "testing",
+        "browser",
+        "devtools"
+      ],
+      "lines": 317,
+      "batch": 7
+    },
+    {
+      "name": "constraint-driven-development",
+      "source": "addyosmani/agent-skills",
+      "source_dir": "addyosmani_agent-skills",
+      "upstream_path": "_sources/addyosmani_agent-skills/skills/constraint-driven-development/SKILL.md",
+      "title": "Constraint-Driven Development",
+      "description": "Establishes a project's quality bar as a written contract and stops agents quietly lowering it. Interviews the user on which dimensions matter, supplies sane default thresholds when they have no number in mind, records everything in CONSTRAINTS.md, and watches the diff for a weakened bar \u2014 new @ts-ignore or eslint-disable suppressions, skipped or deleted tests, assertions stripped out, unimplemented stubs, thresholds edited down. Use when no quality bar is written down, when the user says \"set up constraints\" or \"define our standards\", when the user wants dimensions they care about \u2014 accessibility, web performance, coverage \u2014 set up as enforced constraints, when an agent keeps silencing checks or skipping tests to get to green, when you need a coverage or performance threshold and don't know what number to pick, or when an agent writes more code than anyone will read.",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills"
+      ],
+      "lines": 317,
+      "batch": 6
+    },
+    {
+      "name": "spec-driven-development",
+      "source": "addyosmani/agent-skills",
+      "source_dir": "addyosmani_agent-skills",
+      "upstream_path": "_sources/addyosmani_agent-skills/skills/spec-driven-development/SKILL.md",
+      "title": "Spec-Driven Development",
+      "description": "Creates specs before coding. Use when starting a new project, feature, or significant change and no specification exists yet. Use when drafting a PRD or requirements document with objectives and scope, or when requirements are unclear, ambiguous, or only exist as a vague idea. Use when a single requirement spans several independently testable capabilities and needs decomposing into a capability map of modules before specifying. Use when evolving a shipped spec \u2014 scoping a V1, deferring ideas to a V2 backlog, or writing a follow-up spec for a change to an existing feature.",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills"
+      ],
+      "lines": 305,
+      "batch": 5
+    },
+    {
+      "name": "loop-library",
+      "source": "Forward-Future/loopy",
+      "source_dir": "Forward-Future_loopy",
+      "upstream_path": "_sources/Forward-Future_loopy/skills/loop-library/SKILL.md",
+      "title": "Loop Library (legacy alias)",
+      "description": "Compatibility alias for Loopy. Use only when an existing installation or older instruction explicitly invokes loop-library; use Loopy for new installations and requests. Provides the same discovery, recommendation, audit, repair, adaptation, guided crafting, bounded execution, run debrief, project loop saving, and publication-preparation workflows.",
+      "tags": [
+        "agent-workflow",
+        "automation",
+        "loops"
+      ],
+      "lines": 303,
+      "batch": 4
+    },
+    {
+      "name": "loopy",
+      "source": "Forward-Future/loopy",
+      "source_dir": "Forward-Future_loopy",
+      "upstream_path": "_sources/Forward-Future_loopy/skills/loopy/SKILL.md",
+      "title": "Loopy",
+      "description": "Discover, find, compare, audit, repair, adapt, craft, run, debrief, save, and prepare repeatable AI-agent loops for publication. Use when a user asks to analyze code or coding threads for recurring work, find a published loop, interview them to turn a goal into a bounded loop, review a loop for weak checks or unsafe authority, execute a loop with an evidence receipt, learn from completed runs, save or reuse a project loop, or validate and submit a loop to Loop Library.",
+      "tags": [
+        "agent-workflow",
+        "automation",
+        "loops"
+      ],
+      "lines": 299,
+      "batch": 2
+    },
+    {
+      "name": "debugging-and-error-recovery",
+      "source": "addyosmani/agent-skills",
+      "source_dir": "addyosmani_agent-skills",
+      "upstream_path": "_sources/addyosmani_agent-skills/skills/debugging-and-error-recovery/SKILL.md",
+      "title": "Debugging and Error Recovery",
+      "description": "Guides systematic root-cause debugging. Use when tests fail, builds break, something that worked yesterday broke, behavior doesn't match expectations, or you encounter any unexpected error. Use when you need to figure out what broke and why \u2014 a systematic approach to finding and fixing the root cause rather than guessing. Use when asked what broke, why a test started failing, or why code throws, even when the diff, the function, or the stack trace is pasted inline and the cause looks obvious from reading it, so that the cause is named, the fix is minimal, and the reply says how to confirm it.",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills",
+        "debugging",
+        "reliability"
+      ],
+      "lines": 298,
+      "batch": 3
+    },
+    {
+      "name": "oke-gva-deployer",
+      "source": "oracle/skills",
+      "source_dir": "oracle_skills",
+      "upstream_path": "_sources/oracle_skills/oci/oke/skills/oke-gva-deployer/SKILL.md",
+      "title": "OKE Generic VNIC Attachment (GVA) Deployer",
+      "description": "Use this skill when the user asks to enable, deploy, or configure Generic VNIC Attachment (GVA) for OCI Kubernetes Engine (OKE), create node pools with secondary VNIC profiles, review update plans for existing GVA node pools, map Application Resources to workloads, or explain GVA functionality, constraints, and scheduling behavior. Do not use it for general OKE incident RCA or for deploying Multus test pods after a GVA node pool already exists; use oke-troubleshooter or oke-multihome-deployer for those surfaces.",
+      "tags": [
+        "oracle",
+        "oci",
+        "oke"
+      ],
+      "lines": 283,
+      "batch": 1
+    },
+    {
+      "name": "oci-functions-deploy",
+      "source": "oracle/skills",
+      "source_dir": "oracle_skills",
+      "upstream_path": "_sources/oracle_skills/oci/functions/oci-functions-deploy/SKILL.md",
+      "title": "OCI Functions Deploy",
+      "description": "Build, configure, scaffold, and deploy OCI Functions from a local machine using a dependency-first, Fn-context-guided flow with argv-safe mutation execution, nonce-scoped confirmations, and a canonical lowercase machine-readable contract. Use when asked to validate/install Fn, OCI CLI, and Docker, configure or create Fn contexts, validate OCI session and Docker registry auth from Fn context values, choose or create a Functions application, scaffold Java, Python, or Node functions, and deploy them. Network creation is supported only as an explicit advanced branch.",
+      "tags": [
+        "oracle",
+        "oci",
+        "functions"
+      ],
+      "lines": 273,
+      "batch": 8
+    },
+    {
+      "name": "planning-and-task-breakdown",
+      "source": "addyosmani/agent-skills",
+      "source_dir": "addyosmani_agent-skills",
+      "upstream_path": "_sources/addyosmani_agent-skills/skills/planning-and-task-breakdown/SKILL.md",
+      "title": "Planning and Task Breakdown",
+      "description": "Breaks work into ordered tasks. Use when you have a spec or clear requirements and need to break work into implementable tasks. Use when a task feels too large to start, when you need to estimate scope, or when parallel work is possible.",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills"
+      ],
+      "lines": 257,
+      "batch": 9
+    },
+    {
+      "name": "json-canvas",
+      "source": "obsidianmd/obsidian-skills",
+      "source_dir": "obsidianmd_obsidian-skills",
+      "upstream_path": "_sources/obsidianmd_obsidian-skills/plugins/obsidian/skills/json-canvas/SKILL.md",
+      "title": "JSON Canvas Skill",
+      "description": "Create and edit JSON Canvas files (.canvas) with nodes, edges, groups, and connections. Use when working with .canvas files, creating visual canvases, mind maps, flowcharts, or when the user mentions Canvas files in Obsidian.",
+      "tags": [
+        "note-taking",
+        "obsidian",
+        "productivity"
+      ],
+      "lines": 251,
+      "batch": 7
+    },
+    {
+      "name": "deprecation-and-migration",
+      "source": "addyosmani/agent-skills",
+      "source_dir": "addyosmani_agent-skills",
+      "upstream_path": "_sources/addyosmani_agent-skills/skills/deprecation-and-migration/SKILL.md",
+      "title": "Deprecation and Migration",
+      "description": "Manages deprecation and migration. Use when removing old systems, APIs, or features. Use when migrating users from one implementation to another. Use when migrating a database schema in production, such as renaming or dropping a column without downtime (expand/contract). Use when deciding whether to maintain or sunset existing code.",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills"
+      ],
+      "lines": 250,
+      "batch": 6
+    },
+    {
+      "name": "incremental-implementation",
+      "source": "addyosmani/agent-skills",
+      "source_dir": "addyosmani_agent-skills",
+      "upstream_path": "_sources/addyosmani_agent-skills/skills/incremental-implementation/SKILL.md",
+      "title": "Incremental Implementation",
+      "description": "Delivers changes incrementally in thin, verifiable slices. Use when implementing any feature or change that touches more than one file, or when picking up the next task from a plan. Use when rolling a change out behind a feature flag, when you're about to write a large amount of code at once, or when a task feels too big to land in one step.",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills"
+      ],
+      "lines": 247,
+      "batch": 5
+    },
+    {
+      "name": "doubt-driven-development",
+      "source": "addyosmani/agent-skills",
+      "source_dir": "addyosmani_agent-skills",
+      "upstream_path": "_sources/addyosmani_agent-skills/skills/doubt-driven-development/SKILL.md",
+      "title": "Doubt-Driven Development",
+      "description": "Subjects every non-trivial decision to a fresh-context adversarial review before it stands. Use when you want every assumption cross-examined before proceeding, when stress-testing a plan for hidden failure modes, when correctness matters more than speed, when working in unfamiliar code, when stakes are high (production auth, security-sensitive logic, a high-stakes migration, irreversible operations), or any time a confident output would be cheaper to verify now than to debug later.",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills"
+      ],
+      "lines": 243,
+      "batch": 4
+    },
+    {
+      "name": "observability-and-instrumentation",
+      "source": "addyosmani/agent-skills",
+      "source_dir": "addyosmani_agent-skills",
+      "upstream_path": "_sources/addyosmani_agent-skills/skills/observability-and-instrumentation/SKILL.md",
+      "title": "Observability and Instrumentation",
+      "description": "Instruments code so production behavior is visible and diagnosable. Use when adding logging, metrics, tracing, or alerting. Use when shipping any feature that runs in production and you need evidence it works. Use when production issues are reported but you can't tell what happened from the available data.",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills",
+        "observability",
+        "monitoring"
+      ],
+      "lines": 236,
+      "batch": 3
+    },
+    {
+      "name": "interview-me",
+      "source": "addyosmani/agent-skills",
+      "source_dir": "addyosmani_agent-skills",
+      "upstream_path": "_sources/addyosmani_agent-skills/skills/interview-me/SKILL.md",
+      "title": "Interview Me",
+      "description": "Extracts what the user actually wants instead of what they think they should want. Achieves this through one-question-at-a-time interview until ~95% confidence about the underlying intent. Use when an ask is underspecified (\"build me X\" without \"for whom\" or \"why now\"), when the user explicitly invokes (\"interview me\", \"grill me\", \"are we sure?\", \"stress-test my thinking\"), or when you catch yourself silently filling in ambiguous requirements before any plan, spec, or code exists.",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills"
+      ],
+      "lines": 233,
+      "batch": 2
+    },
+    {
+      "name": "source-driven-development",
+      "source": "addyosmani/agent-skills",
+      "source_dir": "addyosmani_agent-skills",
+      "upstream_path": "_sources/addyosmani_agent-skills/skills/source-driven-development/SKILL.md",
+      "title": "Source-Driven Development",
+      "description": "Grounds every implementation decision in official documentation. Use when you want to verify an approach against the official docs before implementing it, or when you want authoritative, source-cited code free from outdated patterns. Use when building with any framework or library where correctness matters.",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills"
+      ],
+      "lines": 215,
+      "batch": 0
+    },
+    {
+      "name": "security-and-hardening",
+      "source": "addyosmani/agent-skills",
+      "source_dir": "addyosmani_agent-skills",
+      "upstream_path": "_sources/addyosmani_agent-skills/skills/security-and-hardening/SKILL.md",
+      "title": "Security and Hardening",
+      "description": "Hardens code against vulnerabilities. Use when auditing an input handler for vulnerabilities, when handling user input, authentication, data storage, or external integrations, or when checking a login flow is safe against the OWASP Top Ten. Use when building any feature that accepts untrusted data, manages user sessions or session cookies, or interacts with third-party services. Use when auditing dependencies for known vulnerabilities, triaging package-manager audit findings, or assessing supply-chain risk in a new package. Use when personal data or privacy compliance (GDPR, CCPA) is involved.",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills",
+        "security",
+        "hardening"
+      ],
+      "lines": 214,
+      "batch": 1
+    },
+    {
+      "name": "obsidian-markdown",
+      "source": "obsidianmd/obsidian-skills",
+      "source_dir": "obsidianmd_obsidian-skills",
+      "upstream_path": "_sources/obsidianmd_obsidian-skills/plugins/obsidian/skills/obsidian-markdown/SKILL.md",
+      "title": "Obsidian Flavored Markdown Skill",
+      "description": "Create and edit Obsidian Flavored Markdown with wikilinks, embeds, callouts, properties, and other Obsidian-specific syntax. Use when working with .md files in Obsidian, or when the user mentions wikilinks, callouts, frontmatter, tags, embeds, or Obsidian notes.",
+      "tags": [
+        "note-taking",
+        "obsidian",
+        "productivity"
+      ],
+      "lines": 200,
+      "batch": 5
+    },
+    {
+      "name": "idea-refine",
+      "source": "addyosmani/agent-skills",
+      "source_dir": "addyosmani_agent-skills",
+      "upstream_path": "_sources/addyosmani_agent-skills/skills/idea-refine/SKILL.md",
+      "title": "Idea Refine",
+      "description": "Refines raw ideas into sharp, actionable concepts through structured divergent and convergent thinking. Use when an idea is still vague, when you need to stress-test assumptions before committing to a plan, or when you want to expand options before converging on one. Triggers on \"ideate\", \"refine this idea\", or \"stress-test my plan\".",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills"
+      ],
+      "lines": 193,
+      "batch": 7
+    },
+    {
+      "name": "using-agent-skills",
+      "source": "addyosmani/agent-skills",
+      "source_dir": "addyosmani_agent-skills",
+      "upstream_path": "_sources/addyosmani_agent-skills/skills/using-agent-skills/SKILL.md",
+      "title": "Using Agent Skills",
+      "description": "Discovers and invokes agent skills. Use when starting a session, or when you need to decide which skill or workflow applies to the piece of work at hand. This is the meta-skill that governs how all other skills are discovered and invoked.",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills",
+        "skills",
+        "meta"
+      ],
+      "lines": 190,
+      "batch": 6
+    },
+    {
+      "name": "security-audit",
+      "source": "cloudflare/security-audit-skill",
+      "source_dir": "cloudflare_security-audit-skill",
+      "upstream_path": "_sources/cloudflare_security-audit-skill/skills/security-audit/SKILL.md",
+      "title": "Security Audit",
+      "description": "Security guidance and vulnerability review for codebases, APIs, services, CLI tools, libraries, and daemons. Use for security questions, focused reviews, vulnerability research, security audits, or pen tests. Run the complete workflow only for explicit codebase audit or pen-test requests, full/comprehensive/end-to-end reviews, or requested report artifacts.",
+      "tags": [
+        "security",
+        "auditing",
+        "appsec",
+        "vulnerability-research",
+        "audit",
+        "pentest"
+      ],
+      "lines": 190,
+      "batch": 9
+    },
+    {
+      "name": "oke-cluster-generator",
+      "source": "oracle/skills",
+      "source_dir": "oracle_skills",
+      "upstream_path": "_sources/oracle_skills/oci/oke/skills/oke-cluster-generator/SKILL.md",
+      "title": "Oke Cluster Generator",
+      "description": "Use this skill when the user asks to build, generate, create, design, or scaffold an OKE (OCI Kubernetes Engine) Terraform stack, OCI Kubernetes infrastructure, ORM schema, or Resource Manager template. Trigger phrases include \"build an OKE stack\", \"create OKE Terraform\", \"generate ORM schema\", \"deploy OKE cluster\", \"OKE infrastructure\", \"terraform-oci-oke\", or any request to design OCI Kubernetes infrastructure with Terraform. Do not use it for active incident RCA, GVA secondary VNIC node-pool creation, or Multus pod manifest validation; use the troubleshooting, GVA, or multihome skills for those surfaces.",
+      "tags": [
+        "oracle",
+        "oci",
+        "oke"
+      ],
+      "lines": 170,
+      "batch": 2
+    },
+    {
+      "name": "oci-functions-troubleshoot",
+      "source": "oracle/skills",
+      "source_dir": "oracle_skills",
+      "upstream_path": "_sources/oracle_skills/oci/functions/oci-functions-troubleshoot/SKILL.md",
+      "title": "OCI Function Troubleshoot",
+      "description": "Diagnose OCI Functions setup, control-plane, deployment, invocation, and observability issues using a deterministic triage workflow. Use when asked to classify Fn CLI errors, deploy or invoke failures, OCIR auth and registry issues, app-limit symptoms, logs, tracing, metrics, or limits. Diagnose first, prefer read-only checks, and do not execute fixes unless the user explicitly asks.",
+      "tags": [
+        "oracle",
+        "oci",
+        "functions"
+      ],
+      "lines": 165,
+      "batch": 3
+    },
+    {
+      "name": "pr",
+      "source": "mattpocock/skills",
+      "source_dir": "mattpocock_skills",
+      "upstream_path": "_sources/mattpocock_skills/skills/engineering/pr/SKILL.md",
+      "title": "Pr",
+      "description": "Use when writing a PR body.",
+      "tags": [
+        "software-development",
+        "engineering"
+      ],
+      "lines": 162,
+      "batch": 8
+    },
+    {
+      "name": "obsidian-cli",
+      "source": "obsidianmd/obsidian-skills",
+      "source_dir": "obsidianmd_obsidian-skills",
+      "upstream_path": "_sources/obsidianmd_obsidian-skills/plugins/obsidian/skills/obsidian-cli/SKILL.md",
+      "title": "Obsidian CLI",
+      "description": "Interact with Obsidian vaults using the Obsidian CLI to read, create, search, and manage notes, tasks, properties, and more. Also supports plugin and theme development with commands to reload plugins, run JavaScript, capture errors, take screenshots, and inspect the DOM. Use when the user asks to interact with their Obsidian vault, manage notes, search vault content, perform vault operations from the command line, or develop and debug Obsidian plugins and themes.",
+      "tags": [
+        "note-taking",
+        "obsidian",
+        "productivity"
+      ],
+      "lines": 139,
+      "batch": 4
+    },
+    {
+      "name": "oke-multihome-deployer",
+      "source": "oracle/skills",
+      "source_dir": "oracle_skills",
+      "upstream_path": "_sources/oracle_skills/oci/oke/skills/oke-multihome-deployer/SKILL.md",
+      "title": "OKE Multihome Deployer",
+      "description": "Deploy and troubleshoot multihome networking on OCI Kubernetes Engine using existing GVA secondary VNIC node pools, Multus thick plugin, OCI CNI/IPAM, NetworkAttachmentDefinitions, and test pods. Use when the user asks to auto-discover OKE cluster subnets or node pools for multihome, create OKE multihome pod manifests, configure Multus NADs for secondary VNIC interfaces, validate multihomed pod connectivity, inspect OCI CNI IPAM allocation on OKE nodes, or package repeatable OKE GVA multihome deployment steps. Do not use it to create or update GVA node pools. For broad incident RCA, DPDK/SR-IOV failures, or non-Multus pod symptoms, use `oke-troubleshooter` first.",
+      "tags": [
+        "oracle",
+        "oci",
+        "oke"
+      ],
+      "lines": 137,
+      "batch": 0
+    },
+    {
+      "name": "knap",
+      "source": "obsidianmd/obsidian-skills",
+      "source_dir": "obsidianmd_obsidian-skills",
+      "upstream_path": "_sources/obsidianmd_obsidian-skills/plugins/obsidian/skills/knap/SKILL.md",
+      "title": "Knap",
+      "description": "Render Markdown from templates and structured data using Knap CLI. Use when the user asks to apply a Knap template, turn JSON or CSV data into notes, batch-generate Markdown files, or format Defuddle output into a note.",
+      "tags": [
+        "note-taking",
+        "obsidian",
+        "productivity"
+      ],
+      "lines": 100,
+      "batch": 4
+    },
+    {
+      "name": "oci-iot-platform",
+      "source": "oracle/skills",
+      "source_dir": "oracle_skills",
+      "upstream_path": "_sources/oracle_skills/oci/iot-platform/SKILL.md",
+      "title": "OCI IoT Platform",
+      "description": "Explore, create, and troubleshoot Oracle Cloud Infrastructure Internet of Things Platform resources, including domains, digital twin models, adapters, instances, relationships, and device publish flows. Use when requests involve OCI IoT bootstrap, digital twin inspection, safe lifecycle operations, or translating OCI IoT docs and samples into concrete commands.",
+      "tags": [
+        "oracle",
+        "oci"
+      ],
+      "lines": 98,
+      "batch": 1
+    },
+    {
+      "name": "software-factory",
+      "source": "mattpocock/skills",
+      "source_dir": "mattpocock_skills",
+      "upstream_path": "_sources/mattpocock_skills/skills/in-progress/software-factory/SKILL.md",
+      "title": "Software Factory",
+      "description": "Shared language for designing a software factory: the tasks it runs and the services it plugs into.",
+      "tags": [
+        "software-development",
+        "engineering",
+        "in-progress"
+      ],
+      "lines": 95,
+      "batch": 3
+    },
+    {
+      "name": "enterprise-ai",
+      "source": "oracle/skills",
+      "source_dir": "oracle_skills",
+      "upstream_path": "_sources/oracle_skills/oci/enterprise-ai/SKILL.md",
+      "title": "OCI Enterprise AI Skills",
+      "description": "Oracle Enterprise AI guidance for building, deploying, securing, estimating cost for, and integrating AI models, agents, RAG, Responses API workflows, custom or imported models, fine-tuning, model endpoints, private endpoints, vector stores, File Search, Code Interpreter, MCP tools, SQL Search, hosted agentic applications, and Oracle platform integrations. Use when the user asks for OCI Generative AI, Enterprise AI Models, Enterprise AI Agents, governed GenAI applications, agentic workflows, RAG on Oracle Cloud, OCI Generative AI pricing or cost estimator inputs, or a simplified path across OCI, Autonomous Database, APEX, and other Oracle services.",
+      "tags": [
+        "oracle",
+        "oci"
+      ],
+      "lines": 84,
+      "batch": 8
+    },
+    {
+      "name": "apexlang-generation",
+      "source": "oracle/skills",
+      "source_dir": "oracle_skills",
+      "upstream_path": "_sources/oracle_skills/apex/apexlang/26.1/apexlang-generation/SKILL.md",
+      "title": "Skill \u2014 APEXlang",
+      "description": "Public APEXlang router with deterministic local-context discovery and compact machine-readable contracts.",
+      "tags": [
+        "oracle",
+        "apex",
+        "apexlang"
+      ],
+      "lines": 80,
+      "batch": 2
+    },
+    {
+      "name": "writing-for-agents",
+      "source": "mattpocock/skills",
+      "source_dir": "mattpocock_skills",
+      "upstream_path": "_sources/mattpocock_skills/skills/productivity/writing-for-agents/SKILL.md",
+      "title": "Writing For Agents",
+      "description": "Writing documents for agents. Use when creating or editing skills, or modifying AGENTS.md or CLAUDE.md.",
+      "tags": [
+        "software-development",
+        "engineering",
+        "productivity"
+      ],
+      "lines": 79,
+      "batch": 6
+    },
+    {
+      "name": "obsidian-headless",
+      "source": "obsidianmd/obsidian-skills",
+      "source_dir": "obsidianmd_obsidian-skills",
+      "upstream_path": "_sources/obsidianmd_obsidian-skills/plugins/obsidian/skills/obsidian-headless/SKILL.md",
+      "title": "Obsidian Headless",
+      "description": "Sync and publish Obsidian vaults from the command line with Obsidian Headless (`ob`), without the desktop app. Use when the user wants to set up or run Obsidian Sync or Obsidian Publish on a server, in CI, or from a terminal, or change a vault's Sync or Publish settings.",
+      "tags": [
+        "note-taking",
+        "obsidian",
+        "productivity"
+      ],
+      "lines": 77,
+      "batch": 9
+    },
+    {
+      "name": "build-oci-iam-main-tf",
+      "source": "oracle/skills",
+      "source_dir": "oracle_skills",
+      "upstream_path": "_sources/oracle_skills/oci/oci-landing-zone-terraform-module/terraform-oci-modules-iam-skill/SKILL.md",
+      "title": "Build OCI IAM Terraform",
+      "description": "Generate or update safe Terraform root configurations for OCI IAM with the upstream `oci-landing-zones/terraform-oci-modules-iam` repository. Use for OCI compartments and hierarchy, classic IAM groups (including member assignment), dynamic groups, IAM policies, and OCI Identity Domains resources when the request must be mapped to a supported upstream module, inputs collected and validated, and `main.tf`, `variables.tf`, and `terraform.tfvars` produced. Also use to determine support: clearly report 'the Terraform module for the requested capability is not supported' for requests outside the repository's documented modules, including standalone classic users or memberships and Cloud Guard security zones.",
+      "tags": [
+        "oracle",
+        "oci",
+        "oci-landing-zone-terraform-module"
+      ],
+      "lines": 75,
+      "batch": 7
+    },
+    {
+      "name": "chief-of-staff",
+      "source": "mattpocock/skills",
+      "source_dir": "mattpocock_skills",
+      "upstream_path": "_sources/mattpocock_skills/skills/in-progress/chief-of-staff/SKILL.md",
+      "title": "Chief Of Staff",
+      "description": "Pursue a long-running goal in a single session by co-ordinating subagents.",
+      "tags": [
+        "software-development",
+        "engineering",
+        "in-progress"
+      ],
+      "lines": 72,
+      "batch": 5
+    },
+    {
+      "name": "oci-networking-landing-zones",
+      "source": "oracle/skills",
+      "source_dir": "oracle_skills",
+      "upstream_path": "_sources/oracle_skills/oci/oci-landing-zone-terraform-module/terraform-oci-modules-networking-skill/SKILL.md",
+      "title": "Build OCI Networking Landing Zones Terraform",
+      "description": "Generate or update safe OCI network Terraform configuration using only `oci-landing-zones/terraform-oci-modules-networking`. Use for VCNs, subnets, route tables, internet/NAT/service gateways, security lists and rules, NSGs and rules, and ZPR security-attribute assignments when inputs must be collected and validated through read-only OCI API MCP checks, then integrated without disrupting an existing Terraform pipeline or provider setup.",
+      "tags": [
+        "oracle",
+        "oci",
+        "oci-landing-zone-terraform-module"
+      ],
+      "lines": 62,
+      "batch": 0
+    },
+    {
+      "name": "build-oci-security-zones-main-tf",
+      "source": "oracle/skills",
+      "source_dir": "oracle_skills",
+      "upstream_path": "_sources/oracle_skills/oci/oci-landing-zone-terraform-module/terraform-oci-module-security-zone-skill/SKILL.md",
+      "title": "Build OCI Security Zones Terraform",
+      "description": "Generate or update Terraform configuration only for OCI Security Zones with the upstream `oci-landing-zones/terraform-oci-modules-security/tree/main/security-zones` folder. Use for Cloud Guard Security Zone recipes and Security Zones when requests must be mapped to the documented module, inputs collected and validated, and `main.tf`, `variables.tf`, and `terraform.tfvars` produced. Never deploy, run Terraform, or generate other security services, Cloud Guard targets, detectors, responders, IAM, or network resources.",
+      "tags": [
+        "oracle",
+        "oci",
+        "oci-landing-zone-terraform-module"
+      ],
+      "lines": 61,
+      "batch": 4
+    },
+    {
+      "name": "build-oci-exadata-database-main-tf",
+      "source": "oracle/skills",
+      "source_dir": "oracle_skills",
+      "upstream_path": "_sources/oracle_skills/oci/oci-landing-zone-terraform-module/terraform-oci-modules-exadata-database-skill/SKILL.md",
+      "title": "Build OCI Exadata Database Terraform",
+      "description": "Generate or update Terraform configuration only for OCI Exadata Database Service on Dedicated Infrastructure with the upstream `oci-landing-zones/terraform-oci-modules-oracle-database/tree/main/exadata-database` folder. Use for Cloud Exadata Infrastructure, Cloud VM Clusters, DB Homes, Container Databases, and Pluggable Databases. Validate only required and supplied inputs of the requested module objects through OCI MCP; never deploy, run Terraform, or gate configuration generation on operational deployment prerequisites. Explain relevant VCN, subnet, route, security-control, and Object Storage requirements as non-blocking deployment context only. Never create IAM or network prerequisite resources.",
+      "tags": [
+        "oracle",
+        "oci",
+        "oci-landing-zone-terraform-module"
+      ],
+      "lines": 60,
+      "batch": 2
+    },
+    {
+      "name": "graal",
+      "source": "oracle/skills",
+      "source_dir": "oracle_skills",
+      "upstream_path": "_sources/oracle_skills/graal/SKILL.md",
+      "title": "Oracle Graal Skills",
+      "description": "Build, configure, and troubleshoot GraalVM Native Image applications. Use this skill for native-image CLI builds, Maven or Gradle Native Build Tools, reachability metadata, and build or run time issue diagnosis.",
+      "tags": [
+        "oracle"
+      ],
+      "lines": 56,
+      "batch": 8
+    },
+    {
+      "name": "retro",
+      "source": "mattpocock/skills",
+      "source_dir": "mattpocock_skills",
+      "upstream_path": "_sources/mattpocock_skills/skills/engineering/retro/SKILL.md",
+      "title": "Retro",
+      "description": "Conduct a retrospective on a coding session.",
+      "tags": [
+        "software-development",
+        "engineering"
+      ],
+      "lines": 41,
+      "batch": 7
+    },
+    {
+      "name": "implement-spec",
+      "source": "mattpocock/skills",
+      "source_dir": "mattpocock_skills",
+      "upstream_path": "_sources/mattpocock_skills/skills/engineering/implement-spec/SKILL.md",
+      "title": "Implement Spec",
+      "description": "Implement the result of /to-spec and /to-tickets in code.",
+      "tags": [
+        "software-development",
+        "engineering"
+      ],
+      "lines": 39,
+      "batch": 9
+    },
+    {
+      "name": "defuddle",
+      "source": "obsidianmd/obsidian-skills",
+      "source_dir": "obsidianmd_obsidian-skills",
+      "upstream_path": "_sources/obsidianmd_obsidian-skills/plugins/obsidian/skills/defuddle/SKILL.md",
+      "title": "Defuddle",
+      "description": "Extract clean Markdown from HTML pages with Defuddle CLI.",
+      "tags": [
+        "note-taking",
+        "obsidian",
+        "productivity"
+      ],
+      "lines": 39,
+      "batch": 6
+    },
+    {
+      "name": "oracle-data-guard",
+      "source": "oracle/skills",
+      "source_dir": "oracle_skills",
+      "upstream_path": "_sources/oracle_skills/db/data-guard/SKILL.md",
+      "title": "Oracle Data Guard",
+      "description": "Provide operational guidance for Oracle Data Guard and SQLcl DG. Use when a user asks about SQLcl DG commands, Data Guard Broker fixed views, FSFO or observer state, transport or apply lag, ASYNC/SYNC/FASTSYNC performance, redo apply tuning, SIRA/MIRA, or runnable Data Guard diagnostic SQL.",
+      "tags": [
+        "oracle",
+        "db"
+      ],
+      "lines": 34,
+      "batch": 5
+    },
+    {
+      "name": "apexlang-example-applications",
+      "source": "oracle/skills",
+      "source_dir": "oracle_skills",
+      "upstream_path": "_sources/oracle_skills/apex/apexlang/26.2/apexlang-example-applications/SKILL.md",
+      "title": "Apexlang Example Applications",
+      "description": "Provides a list of APEXlang example applications with appropriate descriptions and access to the assets. Each example folder contains the complete APEXlang source tree of one real application for use as authoring evidence and composition reference.",
+      "tags": [
+        "oracle",
+        "apex",
+        "apexlang"
+      ],
+      "lines": 7,
+      "batch": 3
+    },
+    {
+      "name": "apexlang-compile",
+      "source": "oracle/skills",
+      "source_dir": "oracle_skills",
+      "upstream_path": "_sources/oracle_skills/apex/apexlang/26.2/apexlang-compile/SKILL.md",
+      "title": "Apexlang Compile",
+      "description": "Provides access to the APEXLang compiler to build and validate an application from a given file tree.",
+      "tags": [
+        "oracle",
+        "apex",
+        "apexlang"
+      ],
+      "lines": 4,
+      "batch": 1
+    },
+    {
+      "name": "apexlang-deploy",
+      "source": "oracle/skills",
+      "source_dir": "oracle_skills",
+      "upstream_path": "_sources/oracle_skills/apex/apexlang/26.2/apexlang-deploy/SKILL.md",
+      "title": "Apexlang Deploy",
+      "description": "Deploys the application specified in APEXLang to a provided database.",
+      "tags": [
+        "oracle",
+        "apex",
+        "apexlang"
+      ],
+      "lines": 4,
+      "batch": 1
+    },
+    {
+      "name": "wait-what",
+      "source": "mattpocock/skills",
+      "source_dir": "mattpocock_skills",
+      "upstream_path": "_sources/mattpocock_skills/skills/productivity/wait-what/SKILL.md",
+      "title": "Wait What",
+      "description": "Stop. That last message did not land: re-pitch it.",
+      "tags": [
+        "software-development",
+        "engineering",
+        "productivity"
+      ],
+      "lines": 4,
+      "batch": 3
+    }
+  ]
+}

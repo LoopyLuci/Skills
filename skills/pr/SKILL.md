@@ -1,19 +1,34 @@
 ---
 name: pr
 description: Use when writing a PR body.
-version: 1.0.0
+version: 2.0.0
 author: LoopyLuci Community
 license: MIT
 platforms: [any]
-metadata: 
-
 metadata:
   hermes:
     tags: [software-development, engineering]
     source: mattpocock/skills
+    adapted: true
 ---
 
-Use this template for writing the PR body:
+# Pr
+
+> **Adapted for the LoopyLuci Skills collection** from [mattpocock/skills](https://github.com/mattpocock/skills). The guidance below is rewritten and condensed for this repo; commands, paths, and reference tables are preserved.
+
+## Trigger
+
+- Writing a PR body
+
+## When NOT to Use
+
+- Outside the trigger above; keep the task in the skill that owns it.
+
+## Overview
+
+A pull request body should make one thing obvious at a glance: what changed, how you know it works, and how dangerous it is to merge. The fastest way to do that is a small visual beside a few lines of text, not paragraphs. This template keeps the three parts that carry weight — summary, evidence, merge danger — and drops everything else.
+
+Use this template for the PR body:
 
 ```markdown
 ## Summary
@@ -36,15 +51,26 @@ Use this template for writing the PR body:
 <optional: potential ramifications of merge>
 ```
 
-## Sections
+## Writing Rules
 
-Skip all preambles and keep prose brief. Use the user's domain language from `GLOSSARY.md`.
+Skip every preamble and keep prose short. Use the user's own domain language as defined in `GLOSSARY.md`.
 
-### Summary
+## Summary
 
-Pick the smallest view that makes the key point clear.
+Pick the smallest view that makes the key point clear, then place it next to the short text it supports.
 
-- Show logic or an algorithm as pseudocode:
+Match the visual form to what changed:
+
+- Logic or an algorithm → pseudocode
+- Runtime control flow → call tree
+- UI structure, state, module boundaries → component tree
+- File responsibilities or a broad refactor → shallow file tree
+- Component interaction, control flow, or data flow → Mermaid
+- What changed when the surrounding shape already exists → `diff`, with the diff shape matched to the topic
+
+Representative examples:
+
+Logic as pseudocode:
 
 ```text
 on(save)
@@ -54,17 +80,7 @@ on(save)
   return fresh result
 ```
 
-- Show runtime control flow as a call tree:
-
-```text
-submitForm
-  createSession
-    persistPrompt
-    launchAgent
-  navigateToSession
-```
-
-- Show UI structure as a component tree, including state and module boundaries that matter:
+UI structure as a component tree, including the state, paths, and module boundaries that matter:
 
 ```text
 <SessionPage> (apps/example/src/routes/session.tsx)
@@ -73,16 +89,7 @@ submitForm
     <RunSkillButton> (packages/ui)
 ```
 
-- Show file responsibility or a broad refactor as a shallow file tree:
-
-```text
-src/
-├── commands/       # parses user actions
-├── sessions/       # owns session state
-└── transport/      # sends API requests
-```
-
-- Show component interaction, control flow, or data flow with Mermaid:
+Interaction or data flow as Mermaid:
 
 ```mermaid
 sequenceDiagram
@@ -94,9 +101,7 @@ sequenceDiagram
     Daemon-->>UI: stream result
 ```
 
-- Use `diff` when the point is what changes and the surrounding shape already exists. Match the diff shape to the topic.
-
-For a component change:
+A component change as a scoped diff:
 
 ```diff
  <SessionPage>
@@ -107,44 +112,7 @@ For a component change:
 +    <SkillResultCard />
 ```
 
-For a file-layout change:
-
-```diff
- src/
- ├── commands/
-+│   └── show-me.ts       # expands the slash command
- ├── sessions/
--└── transport.ts
-+└── transport/
-+    ├── client.ts
-+    └── stream.ts
-```
-
-For a call-tree or call-stack change:
-
-```diff
- submitForm
-   createSession
-     persistPrompt
-+    expandSkillMention
-     launchAgent
--  navigateToSession
-+  navigateToSession
-+    subscribeToEvents
-```
-
-For a state or control-flow change:
-
-```diff
- on(save)
--  write content
-+  if content is unchanged
-+    return cached result
-+  write new content
-+  invalidate cache
-```
-
-- Show the whole block when most of it is new, when omitted context would hide ownership or order, or when the user needs a copyable target shape:
+Show the whole block when most of it is new, when omitted context would hide ownership or order, or when the reader needs a copyable target shape:
 
 ```ts
 function expandSkill(command: string): string {
@@ -153,22 +121,45 @@ function expandSkill(command: string): string {
 }
 ```
 
-#### Guidance
+Use one of these forms, several, or in rare cases all of them — but exercise judgement and do not bury the reader.
 
-Place each visual next to the short text it supports. Keep only the calls, files, props, states, and boundaries needed to answer the user's current question or the options to resolve the current discussion point.
+## Evidence
 
-You may use one of these, you may use several, it is unlikely you will use all of them. Use your judgement and don't overwhelm the user.
+Evidence proves the change works, ideally as a before/after pair. Screenshots are S-tier when the environment supports them and the change is visual. Execution-based evidence is A-tier: test results and console output, including the exact test that now fails and passes, shown as pseudocode.
 
-### Evidence
+## Merge Danger
 
-Concrete evidence that the change works. Show a before and after.
+State whether the door is one-way or two-way. Two-way doors can be walked back through; one-way doors cannot, so cheap-to-reverse PRs carry less risk. Destructive actions and hard-to-reverse decisions belong on the one-way side.
 
-Screenshots are S-tier - when the environment is set up for it and the change is visual.
+Blast radius describes the scope of potential impact — consider every possibility, including layout shifts, breakage for consumers, and mobile responsiveness.
 
-Execution-based evidence is A-tier. Test results, console output. Show the exact test that now fails and passes, using pseudocode.
+## Verification
 
-### Merge Danger
+- [ ] Summary contains exactly one visual, in the smallest form that carries the point
+- [ ] Visual sits next to the text it supports and uses only the calls, files, props, states, and boundaries the current question needs
+- [ ] Evidence shows both before and after (screenshot or execution output)
+- [ ] Merge Danger names the door type and the blast radius
+- [ ] Domain terms match `GLOSSARY.md`
+- [ ] No preamble; prose is brief
 
-Describe whether it's a one-way or two-way door. You can walk back through two-way doors, but not one-way doors. A PR that is cheap to roll back is lower risk. Changes that involve destructive actions or hard-to-reverse decisions are one-way doors.
+## Related Skills in This Repo
 
-The blast radius is the potential impact or scope of the changes introduced by this PR. Consider all possibilities. Examples are layout shift, breakages for consumers, mobile responsiveness, etc.
+- [software-factory](../software-factory/SKILL.md) — Use when working with shared language for designing a software factory: the tasks it runs ...
+- [writing-for-agents](../writing-for-agents/SKILL.md) — Use when creating or editing skills, or modifying AGENTS.md or CLAUDE.md.
+- [chief-of-staff](../chief-of-staff/SKILL.md) — Use when working with pursue a long-running goal in a single session by co-ordinating suba...
+- [retro](../retro/SKILL.md) — Use when conducting a retrospective on a coding session.
+
+## Adaptation Notes
+
+- Description rewritten into this repo's trigger form.
+- Trigger and When-NOT-to-Use sections derived from the upstream guidance.
+- Body condensed and restructured; commands, file paths, and tables preserved.
+- Related skills linked from this repo.
+- Upstream branding and attribution lines removed (attribution below).
+
+## Source & Attribution
+
+- Upstream: [mattpocock/skills](https://github.com/mattpocock/skills)
+- Path: `_sources/mattpocock_skills/skills/engineering/pr/SKILL.md`
+- License: MIT — Copyright (c) 2026 Matt Pocock
+- Retrieved: 2026-11-14; rewritten and condensed by LoopyLuci Community.

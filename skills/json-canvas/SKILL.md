@@ -1,7 +1,7 @@
 ---
 name: json-canvas
-description: Create and edit JSON Canvas files (.canvas) with nodes, edges, groups, and connections. Use when working with .canvas files, creating visual canvases, mind maps, flowcharts, or when the user mentions Canvas files in Obsidian.
-version: 1.0.0
+description: Use when working with .canvas files, creating visual canvases, mind maps, flowcharts, or when the user mentions Canvas files in Obsidian.
+version: 2.0.0
 author: LoopyLuci Community
 license: MIT
 platforms: [any]
@@ -9,13 +9,26 @@ metadata:
   hermes:
     tags: [note-taking, obsidian, productivity]
     source: obsidianmd/obsidian-skills
+    adapted: true
 ---
 
 # JSON Canvas Skill
 
-## File Structure
+> **Adapted for the LoopyLuci Skills collection** from [obsidianmd/obsidian-skills](https://github.com/obsidianmd/obsidian-skills). The guidance below is rewritten and condensed for this repo; commands, paths, and reference tables are preserved.
 
-A canvas file (`.canvas`) contains two top-level arrays following the [JSON Canvas Spec 1.0](https://jsoncanvas.org/spec/1.0/):
+## Trigger
+
+- Working with .canvas files, creating visual canvases, mind maps, flowcharts, or when the user mentions Canvas files in Obsidian
+
+## When NOT to Use
+
+- Outside the trigger above; keep the task in the skill that owns it.
+
+## Overview
+
+Create and edit JSON Canvas files (`.canvas`) with nodes, edges, groups, and connections, following the [JSON Canvas Spec 1.0](https://jsoncanvas.org/spec/1.0/).
+
+## File structure
 
 ```json
 {
@@ -24,143 +37,72 @@ A canvas file (`.canvas`) contains two top-level arrays following the [JSON Canv
 }
 ```
 
-- `nodes` (optional): Array of node objects
-- `edges` (optional): Array of edge objects connecting nodes
+`nodes` and `edges` are optional arrays. Array order sets z-index: the first node is the bottom layer, the last is the top.
 
-## Common Workflows
+## Workflows
 
-### 1. Create a New Canvas
+**Create a canvas.** Write the base structure, generate a unique 16-character hex ID per node, add nodes with `id`, `type`, `x`, `y`, `width`, `height`, add edges whose `fromNode`/`toNode` reference valid node IDs, then validate.
 
-1. Create a `.canvas` file with the base structure `{"nodes": [], "edges": []}`
-2. Generate unique 16-character hex IDs for each node (e.g., `"6f0ad84f44ce9c17"`)
-3. Add nodes with required fields: `id`, `type`, `x`, `y`, `width`, `height`
-4. Add edges referencing valid node IDs via `fromNode` and `toNode`
-5. **Validate**: Parse the JSON to confirm it is valid. Verify all `fromNode`/`toNode` values exist in the nodes array
+**Add a node.** Parse the existing file, generate an ID that collides with nothing, pick a position 50–100 px clear of existing nodes, append the node, optionally add edges, then validate.
 
-### 2. Add a Node to an Existing Canvas
+**Connect two nodes.** Generate a unique edge ID, set `fromNode`/`toNode`, optionally set `fromSide`/`toSide` and `label`, append, then validate.
 
-1. Read and parse the existing `.canvas` file
-2. Generate a unique ID that does not collide with existing node or edge IDs
-3. Choose position (`x`, `y`) that avoids overlapping existing nodes (leave 50-100px spacing)
-4. Append the new node object to the `nodes` array
-5. Optionally add edges connecting the new node to existing nodes
-6. **Validate**: Confirm all IDs are unique and all edge references resolve to existing nodes
-
-### 3. Connect Two Nodes
-
-1. Identify the source and target node IDs
-2. Generate a unique edge ID
-3. Set `fromNode` and `toNode` to the source and target IDs
-4. Optionally set `fromSide`/`toSide` (top, right, bottom, left) for anchor points
-5. Optionally set `label` for descriptive text on the edge
-6. Append the edge to the `edges` array
-7. **Validate**: Confirm both `fromNode` and `toNode` reference existing node IDs
-
-### 4. Edit an Existing Canvas
-
-1. Read and parse the `.canvas` file as JSON
-2. Locate the target node or edge by `id`
-3. Modify the desired attributes (text, position, color, etc.)
-4. Write the updated JSON back to the file
-5. **Validate**: Re-check all ID uniqueness and edge reference integrity after editing
+**Edit.** Parse, locate by `id`, change attributes, write back, then re-validate ID uniqueness and edge integrity.
 
 ## Nodes
 
-Nodes are objects placed on the canvas. Array order determines z-index: first node = bottom layer, last node = top layer.
-
-### Generic Node Attributes
+Generic attributes:
 
 | Attribute | Required | Type | Description |
-|-----------|----------|------|-------------|
+| --- | --- | --- | --- |
 | `id` | Yes | string | Unique 16-char hex identifier |
 | `type` | Yes | string | `text`, `file`, `link`, or `group` |
-| `x` | Yes | integer | X position in pixels |
-| `y` | Yes | integer | Y position in pixels |
-| `width` | Yes | integer | Width in pixels |
-| `height` | Yes | integer | Height in pixels |
-| `color` | No | canvasColor | Preset `"1"`-`"6"` or hex (e.g., `"#FF0000"`) |
+| `x`, `y` | Yes | integer | Top-left position in pixels |
+| `width`, `height` | Yes | integer | Size in pixels |
+| `color` | No | canvasColor | Preset `"1"`–`"6"` or hex |
 
-### Text Nodes
-
-| Attribute | Required | Type | Description |
-|-----------|----------|------|-------------|
-| `text` | Yes | string | Plain text with Markdown syntax |
+Text nodes add `text` (Markdown):
 
 ```json
 {
   "id": "6f0ad84f44ce9c17",
   "type": "text",
-  "x": 0,
-  "y": 0,
-  "width": 400,
-  "height": 200,
+  "x": 0, "y": 0, "width": 400, "height": 200,
   "text": "# Hello World\n\nThis is **Markdown** content."
 }
 ```
 
-**Newline pitfall**: Use `\n` for line breaks in JSON strings. Do **not** use the literal `\\n` -- Obsidian renders that as the characters `\` and `n`.
+Use `\n` for line breaks in JSON strings — never the literal `\\n`, which Obsidian renders as `\` and `n`. Escape inner double quotes as `\"`; unescaped quotes break the parse and the canvas fails to render. When generating canvas JSON programmatically, always use a JSON serializer rather than string concatenation. Write `.canvas` files directly — `obsidian create content=` turns every `\n` into a raw newline and breaks the JSON.
 
-**Quote escaping pitfall**: Double quotes inside `text` content must be escaped as `\"`. For example, the text `公司的"外交官"` must be stored as `"text": "公司的\"外交官\""`. Unescaped quotes break the JSON parse and the canvas will fail to render. When generating canvas JSON programmatically, always use a JSON serializer rather than manual string concatenation.
-
-Write `.canvas` files directly. Don't create them with `obsidian create content=`, which turns every `\n` into a raw newline and breaks the JSON.
-
-### File Nodes
-
-| Attribute | Required | Type | Description |
-|-----------|----------|------|-------------|
-| `file` | Yes | string | Path to file within the system |
-| `subpath` | No | string | Link to heading or block (starts with `#`) |
-
-**File path escaping**: If a file name contains double quotes, they must be escaped as `\"` in the JSON string. For example, a file named `My "Notes".md` should be referenced as `"file": "My \"Notes\".md"`.
+File nodes add `file` and optional `subpath` (starting with `#` for a heading or block):
 
 ```json
 {
   "id": "a1b2c3d4e5f67890",
   "type": "file",
-  "x": 500,
-  "y": 0,
-  "width": 400,
-  "height": 300,
+  "x": 500, "y": 0, "width": 400, "height": 300,
   "file": "Attachments/diagram.png"
 }
 ```
 
-### Link Nodes
-
-| Attribute | Required | Type | Description |
-|-----------|----------|------|-------------|
-| `url` | Yes | string | External URL |
+Link nodes add `url`:
 
 ```json
 {
   "id": "c3d4e5f678901234",
   "type": "link",
-  "x": 1000,
-  "y": 0,
-  "width": 400,
-  "height": 200,
+  "x": 1000, "y": 0, "width": 400, "height": 200,
   "url": "https://obsidian.md"
 }
 ```
 
-### Group Nodes
-
-Groups are visual containers for organizing other nodes. Position child nodes inside the group's bounds.
-
-| Attribute | Required | Type | Description |
-|-----------|----------|------|-------------|
-| `label` | No | string | Text label for the group |
-| `background` | No | string | Path to background image |
-| `backgroundStyle` | No | string | `cover`, `ratio`, or `repeat` |
+Group nodes are visual containers; place children inside their bounds and add optional `label`, `background`, and `backgroundStyle` (`cover`, `ratio`, `repeat`):
 
 ```json
 {
   "id": "d4e5f6789012345a",
   "type": "group",
-  "x": -50,
-  "y": -50,
-  "width": 1000,
-  "height": 600,
+  "x": -50, "y": -50, "width": 1000, "height": 600,
   "label": "Project Overview",
   "color": "4"
 }
@@ -168,19 +110,15 @@ Groups are visual containers for organizing other nodes. Position child nodes in
 
 ## Edges
 
-Edges connect nodes via `fromNode` and `toNode` IDs.
-
-| Attribute | Required | Type | Default | Description |
-|-----------|----------|------|---------|-------------|
-| `id` | Yes | string | - | Unique identifier |
-| `fromNode` | Yes | string | - | Source node ID |
-| `fromSide` | No | string | - | `top`, `right`, `bottom`, or `left` |
-| `fromEnd` | No | string | `none` | `none` or `arrow` |
-| `toNode` | Yes | string | - | Target node ID |
-| `toSide` | No | string | - | `top`, `right`, `bottom`, or `left` |
-| `toEnd` | No | string | `arrow` | `none` or `arrow` |
-| `color` | No | canvasColor | - | Line color |
-| `label` | No | string | - | Text label |
+| Attribute | Required | Default | Description |
+| --- | --- | --- | --- |
+| `id` | Yes | — | Unique identifier |
+| `fromNode`, `toNode` | Yes | — | Source and target node IDs |
+| `fromSide`, `toSide` | No | — | `top`, `right`, `bottom`, or `left` |
+| `fromEnd` | No | `none` | `none` or `arrow` |
+| `toEnd` | No | `arrow` | `none` or `arrow` |
+| `color` | No | — | Line color |
+| `label` | No | — | Text label |
 
 ```json
 {
@@ -196,10 +134,8 @@ Edges connect nodes via `fromNode` and `toNode` IDs.
 
 ## Colors
 
-The `canvasColor` type accepts either a hex string or a preset number:
-
 | Preset | Color |
-|--------|-------|
+| --- | --- |
 | `"1"` | Red |
 | `"2"` | Orange |
 | `"3"` | Yellow |
@@ -207,55 +143,63 @@ The `canvasColor` type accepts either a hex string or a preset number:
 | `"5"` | Cyan |
 | `"6"` | Purple |
 
-Preset color values are intentionally undefined -- applications use their own brand colors.
+Preset values are intentionally undefined — applications use their own brand colors. Hex strings are also accepted.
 
-## ID Generation
+## IDs and layout
 
-Generate 16-character lowercase hexadecimal strings (64-bit random value):
+IDs are 16-character lowercase hex strings (64-bit random), e.g. `6f0ad84f44ce9c17`. Coordinates may be negative (the canvas is infinite), `x` increases right and `y` increases down, and position is the top-left corner. Space nodes 50–100 px apart, leave 20–50 px padding inside groups, and align to a 10 or 20 px grid.
 
-```
-"6f0ad84f44ce9c17"
-"a3b2c1d0e9f8a7b6"
-```
+| Node type | Width | Height | CJK width (×1.5) |
+| --- | --- | --- | --- |
+| Small text | 200–300 | 80–150 | 300–450 |
+| Medium text | 300–450 | 150–300 | 450–675 |
+| Large text | 400–600 | 300–500 | 600–900 |
+| File preview | 300–500 | 200–400 | 450–750 |
+| Link preview | 250–400 | 100–200 | 375–600 |
 
-## Layout Guidelines
+CJK characters are wider than Latin; multiply the width by about 1.5× for primarily Chinese, Japanese, or Korean content to avoid cramped layouts.
 
-- Coordinates can be negative (canvas extends infinitely)
-- `x` increases right, `y` increases down; position is the top-left corner
-- Space nodes 50-100px apart; leave 20-50px padding inside groups
-- Align to grid (multiples of 10 or 20) for cleaner layouts
+## Validation checklist
 
-| Node Type | Suggested Width | Suggested Height | CJK Width (1.5x) |
-|-----------|-----------------|------------------|-------------------|
-| Small text | 200-300 | 80-150 | 300-450 |
-| Medium text | 300-450 | 150-300 | 450-675 |
-| Large text | 400-600 | 300-500 | 600-900 |
-| File preview | 300-500 | 200-400 | 450-750 |
-| Link preview | 250-400 | 100-200 | 375-600 |
+1. All `id` values unique across nodes and edges.
+2. Every `fromNode`/`toNode` references an existing node.
+3. Required per-type fields present (`text`, `file`, or `url`).
+4. `type` is `text`, `file`, `link`, or `group`.
+5. `fromSide`/`toSide` are `top`, `right`, `bottom`, or `left`.
+6. `fromEnd`/`toEnd` are `none` or `arrow`.
+7. Colors are `"1"`–`"6"` or valid hex.
+8. Double quotes in `text` and `file` are escaped as `\"`.
+9. JSON parses.
 
-**CJK text sizing**: CJK characters (Chinese, Japanese, Korean) are wider than Latin characters. For content primarily in CJK languages, multiply the suggested width by ~1.5× to avoid cramped layouts and awkward line breaks.
-
-## Validation Checklist
-
-After creating or editing a canvas file, verify:
-
-1. All `id` values are unique across both nodes and edges
-2. Every `fromNode` and `toNode` references an existing node ID
-3. Required fields are present for each node type (`text` for text nodes, `file` for file nodes, `url` for link nodes)
-4. `type` is one of: `text`, `file`, `link`, `group`
-5. `fromSide`/`toSide` values are one of: `top`, `right`, `bottom`, `left`
-6. `fromEnd`/`toEnd` values are one of: `none`, `arrow`
-7. Color presets are `"1"` through `"6"` or valid hex (e.g., `"#FF0000"`)
-8. Double quotes in `text` and `file` values are properly escaped as `\"`
-9. JSON is valid and parseable
-
-If validation fails, check for duplicate IDs, dangling edge references, or malformed JSON strings (especially unescaped newlines in text content).
-
-## Complete Examples
-
-See [references/EXAMPLES.md](references/EXAMPLES.md) for full canvas examples including mind maps, project boards, research canvases, and flowcharts.
+Failures usually mean duplicate IDs, dangling edge references, or malformed strings (especially unescaped newlines).
 
 ## References
 
 - [JSON Canvas Spec 1.0](https://jsoncanvas.org/spec/1.0/)
 - [JSON Canvas GitHub](https://github.com/obsidianmd/jsoncanvas)
+- `references/EXAMPLES.md` — full canvases: mind maps, project boards, research canvases, flowcharts.
+
+## Related Skills in This Repo
+
+- [obsidian-bases](../obsidian-bases/SKILL.md) — Use when working with .base files, creating database-like views of notes, or when the user...
+- [obsidian-markdown](../obsidian-markdown/SKILL.md) — Use when working with .md files in Obsidian, or when the user mentions wikilinks, callouts...
+- [obsidian-cli](../obsidian-cli/SKILL.md) — Use when the user asks to interact with their Obsidian vault, manage notes, search vault c...
+- [knap](../knap/SKILL.md) — Use when the user asks to apply a Knap template, turn JSON or CSV data into notes, batch-g...
+- [obsidian-vault](../obsidian-vault/SKILL.md) — Use when searching, creating, or managing notes in an Obsidian vault
+- [obsidian-note-taking-workflow](../obsidian-note-taking-workflow/SKILL.md) — Use when implementing Obsidian workflows.
+- [obsidian](../obsidian/SKILL.md) — Read, search, create, and edit notes in the Obsidian vault.
+
+## Adaptation Notes
+
+- Description rewritten into this repo's trigger form.
+- Trigger and When-NOT-to-Use sections derived from the upstream guidance.
+- Body condensed and restructured; commands, file paths, and tables preserved.
+- Related skills linked from this repo.
+- Upstream branding and attribution lines removed (attribution below).
+
+## Source & Attribution
+
+- Upstream: [obsidianmd/obsidian-skills](https://github.com/obsidianmd/obsidian-skills)
+- Path: `_sources/obsidianmd_obsidian-skills/plugins/obsidian/skills/json-canvas/SKILL.md`
+- License: MIT — Copyright (c) 2026 Steph Ango (@kepano)
+- Retrieved: 2026-11-14; rewritten and condensed by LoopyLuci Community.

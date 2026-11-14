@@ -1,53 +1,86 @@
 ---
 name: retro
-description: Conduct a retrospective on a coding session.
-version: 1.0.0
+description: Use when conducting a retrospective on a coding session.
+version: 2.0.0
 author: LoopyLuci Community
 license: MIT
 platforms: [any]
-disable-model-invocation: true
-
 metadata:
   hermes:
     tags: [software-development, engineering]
     source: mattpocock/skills
+    adapted: true
 ---
 
-The user has asked for a **retrospective**. You are suggesting improvements to the coding agent's **environment** to improve future runs.
+# Retro
+
+> **Adapted for the LoopyLuci Skills collection** from [mattpocock/skills](https://github.com/mattpocock/skills). The guidance below is rewritten and condensed for this repo; commands, paths, and reference tables are preserved.
+
+## Trigger
+
+- Conduct a retrospective on a coding session
+
+## When NOT to Use
+
+- Outside the trigger above; keep the task in the skill that owns it.
+
+## Overview
+
+Run a retrospective on a coding session and convert the findings into improvements to the agent's *environment* — the files, checks, and steering that shape future runs — rather than a critique of the person.
 
 ## Steps
 
-1. Call the Skill tool with `writing-for-agents` for the writing style guide.
+1. Load the writing guidance from the `writing-for-agents` skill.
+2. Read the primary sources for the session the user names; if none is named, use the current session. Session logs on this machine may need to be searched.
+3. Look for improvement candidates in the categories below.
+4. Present the candidates ordered by severity.
 
-2. Read the primary sources for the session the user specifies. This may mean searching through session logs on this machine. If the user doesn't specify a session, default to the current one.
+## Candidate categories
 
-3. Look for candidates for improvement in these categories.
+- **Navigation** — how hard was it to locate the right files? Are there hidden dependencies between files? Would a navigation pointer help? Applies when the session spent a long time finding information.
+- **Automated checks** — could a check have caught the mistake? Read the repo's own check command first (its `package.json` or build tool's `lint`/`check` scripts, its CI workflow). A check that exists but is unwired or silently broken is the finding, not a reinvention. A repo with no guardrail at all (no pre-commit hook and no CI job running lint/typecheck/test) is itself a finding: an un-linted repo is a standing missed opportunity, not a neutral default. Applies when the agent made a mistake a check could have caught, or when no guardrail exists.
+- **Coding standards** — should the reviewer agent gain a rule, or lose or clarify one? Classify the violation first. A *mechanical* violation (fixed syntactic pattern, banned API, import shape, file-location rule) gets a deterministic check, full stop: a custom linter rule, a pre-commit hook, or a CI job, whichever is cheapest for the repo's language and existing guardrails. Default to building the check rather than writing the rule. Reserve `CODING_STANDARDS.md` for genuine judgement calls (cross-file consistency, "matches the surrounding style", anything no guardrail could substitute for). Applies when the reviewer agent failed to catch a mistake.
+- **Global AGENTS.md** — are steering instructions that belong in coding standards or automated checks sitting in AGENTS.md instead? Applies when AGENTS.md is large, in the repo or in the user's global scope.
+- **Tool economy** — did the agent make expensive tool calls that could be streamlined? Is custom tooling (CLIs, MCP servers) token-inefficient? Applies when an expensive call was made.
+- **No-ops** — are there instructions in steering files that do not change the agent's behavior? Applies when steering files are large and unwieldy.
+- **Information access** — could the agent have better access to information (teeing dev-server logs, read-only access to third-party services)? Applies when a crucial piece of information was unavailable.
 
-- **Navigation**: how easy was it for the agent to find the right files? Are there hidden dependencies between files? Would a **navigation pointer** make it easier? _Use when_ the session took a long time to find a piece of information.
-- **Automated checks**: are there automated checks that could catch errors the agent made? Linting, typing, tests, filesystem linters? Read the repo's own check command first (its `package.json`/build-tool `lint`/`check` scripts, its CI workflow), so a check that already exists but sits unwired or silently broken is the finding, not a reinvention. A repo with no **guardrail** (no pre-commit hook and no CI job running its lint/typecheck/test command) is itself a finding: an un-linted repo is a standing missed opportunity, not a neutral default. _Use when_ the agent made a mistake an automated check could have caught, or the repo has no guardrail at all.
-- **Coding standards**: should the **reviewer agent** be given a new rule to enforce? Should an existing rule be removed or clarified? Classify the violation first: a **mechanical** one (a fixed syntactic pattern, a banned API, an import shape, a file-location rule) gets a deterministic check, full stop: a custom rule in the repo's own linter, a new pre-commit hook, or a new CI job, whichever the repo's language and existing guardrail make cheapest. Default to building the check over writing the rule. Reserve `CODING_STANDARDS.md` for genuine **judgement calls** (cross-file consistency, "matches the surrounding style," anything no guardrail could ever substitute for). _Use when_ the reviewer agent failed to catch a mistake.
-- **Global AGENTS.md**: are there any steering instructions that should be moved to coding standards (or automated checks) instead? _Use when_ the AGENTS.md file is particularly large - in the repo OR the user's global scope.
-- **Tool economy**: did the agent make expensive tool calls that could be streamlined? Is there any custom tooling (CLI's, MCP's) that is particularly token-inefficient? _Use when_ the agent made an expensive tool call.
-- **No-ops**: look for instructions in steering files that don't modify the agent's behavior. _Use when_ the steering files are large and unwieldy.
-- **Information access**: look for opportunities to increase the agent's access to information. Teeing dev server logs, readonly access to third-party services. _Use when_ a crucial piece of information was not available to the agent.
+## Implementation versus review
 
-4. Present these candidates to the user, in order of severity.
+All work passes through two stages. The implementation agent carries the most context pressure: exploration, writing code, debugging failures. The review agent carries the least — it receives a diff, needs no exploration, and often neither writes code nor debugs. Coding standards therefore belong to the review agent, not the implementation agent.
 
-## Reference
+## Files and their roles
 
-### Implementation vs Review
+- `AGENTS.md` (or `CLAUDE.md`) — loaded into every agent's context; use sparingly, mainly for navigation pointers.
+- `CODING_STANDARDS.md` — read during review, not implementation. Add navigation pointers to docs folders once it exceeds 1,000 lines.
+- Docs — reference material, pointed to by other files; look for existing docs before writing new ones.
+- Skills — hold documents whose description enters the agent's context, or back user-invoked commands. Follow `writing-for-agents`.
 
-Remember that all work goes through two stages: implementation and review. The implementation agent has the most **context pressure**. They are responsible for exploration, writing code, and debugging failures.
+## Verification
 
-The review agent has the least context pressure - it receives a diff, so no exploration needed. It often does not need to write code or debug.
+- [ ] Candidates are ordered by severity.
+- [ ] Each candidate names the evidence that produced it.
+- [ ] Mechanical violations are routed to a deterministic check, not a prose rule.
+- [ ] No new document duplicates an existing one.
 
-This means that the review agent should be responsible for imposing coding standards, not the implementation agent.
+## Related Skills in This Repo
 
-### Files
+- [pr](../pr/SKILL.md) — Use when writing a PR body.
+- [software-factory](../software-factory/SKILL.md) — Use when working with shared language for designing a software factory: the tasks it runs ...
+- [writing-for-agents](../writing-for-agents/SKILL.md) — Use when creating or editing skills, or modifying AGENTS.md or CLAUDE.md.
+- [chief-of-staff](../chief-of-staff/SKILL.md) — Use when working with pursue a long-running goal in a single session by co-ordinating suba...
 
-You have access to several files in the repo:
+## Adaptation Notes
 
-- `CLAUDE.md`/`AGENTS.md`: these files are pushed to the context window of any agent working in this repo. They should be used incredibly sparingly, usually only for **navigation pointers** to other files.
-- `CODING_STANDARDS.md`: this file is read during review, not implementation. Add **navigation pointers** to docs folders if the standards file gets more than 1,000 lines long.
-- Docs: use docs as references files, pointed to by other files. Look for existing docs before writing new ones.
-- Skills: use skills for docs (since their description goes into the agent's context window), or for user-invoked commands. Follow the advice in the `writing-for-agents` skill.
+- Description rewritten into this repo's trigger form.
+- Trigger and When-NOT-to-Use sections derived from the upstream guidance.
+- Body condensed and restructured; commands, file paths, and tables preserved.
+- Related skills linked from this repo.
+- Upstream branding and attribution lines removed (attribution below).
+
+## Source & Attribution
+
+- Upstream: [mattpocock/skills](https://github.com/mattpocock/skills)
+- Path: `_sources/mattpocock_skills/skills/engineering/retro/SKILL.md`
+- License: MIT — Copyright (c) 2026 Matt Pocock
+- Retrieved: 2026-11-14; rewritten and condensed by LoopyLuci Community.
