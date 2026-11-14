@@ -25,3 +25,6 @@ venv/
 .idea/
 .vscode/
 *.sublime-*
+
+# Upstream skill repos cloned for import (see scripts/import-upstream-skills.py)
+_sources/
