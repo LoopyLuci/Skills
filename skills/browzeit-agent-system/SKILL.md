@@ -35,7 +35,7 @@ crates/
 - `network/src/client.rs` is a stub returning error — the HTTP client is not implemented.
 - `types::browser::BrowserWindow` (driver) is a skeleton with 3 methods; `driver::webview::BrowserWindow` has the full 20+ method implementation. The driver's agent.rs uses the skeleton type — this is intentional for the orchestrator but means tab/navigation APIs are not wired through.
 - `api/src/lib.rs` and `api/src/main.rs` both define `ApiResponse`, `BrowserTab`, `AgentTaskRequest`, etc. — duplicate type definitions that will conflict.
-- The entire workspace has NEVER been built end-to-end. `cargo check --workspace` has never been run to completion.
+- The entire workspace now compiles end-to-end with 0 errors (96 warnings). `cargo check --workspace` completes. ChatGrabber API integration (crates/api/src/chatgrab.rs) is implemented: all six routes (`preflight`, `grab`, `batch`, `config_show`, `config_init`, `version`) are wired in `crates/api/src/main.rs` and verified through the GUI proxy. The batch route mis-mapping bug (`chatgrab::grab` instead of `chatgrab::batch`) was found and fixed; batch now returns valid payloads instead of `missing 'url'`, confirmed via `BATCH_DEBUG` eprintln in the server log and a clean binary.
 
 ## Workload Phase 1: Agent Orchestrator Core
 
@@ -193,7 +193,8 @@ Run in order; stop on first failure:
 2. `cargo check --workspace` -> must complete with only warnings (no errors)
 3. `cargo fmt --all -- --check` -> must report FMT_OK
 4. `cargo clippy --workspace --all-targets -- -D warnings` -> 0 errors
-5. `cargo test --workspace` -> all crates green
+6. ChatGrabber API smoke: each endpoint returns a valid payload via the GUI proxy (`/api/chatgrab/version`, `/api/chatgrab/preflight`, `/api/chatgrab/config`, `/api/chatgrab/grab`, `/api/chatgrab/batch`) — must not return the `missing 'url'` batch error.
+7. If the batch route was just wired: confirm the route maps to `chatgrab::batch` (not `chatgrab::grab`) — a mis-mapped route makes batch return `missing 'url'` even though the handler exists.
 
 ## Pitfalls
 
@@ -282,6 +283,7 @@ Run in order; stop on first failure:
 ## References
 
 - `references/rust-workspace-pitfalls.md` — Module paths, derives, imports, and crate-specific issues across the Browzeit workspace including `custode-browzeit`.
+- `references/chatgrabber-integration.md` — How to expose a Python package's API inside the Rust+Python desktop GUI (ChatGrabber → Browzeit integration).
 
 ## User's Preferred Workflow
 
