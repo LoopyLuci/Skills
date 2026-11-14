@@ -29,16 +29,6 @@ This skill covers the complete workflow for taking a folder of product photos an
 
 It also covers the fallback when AI vision APIs are rate-limited: programmatic image analysis with PIL/OpenCV/sklearn.
 
-## Overview
-
-This skill covers the complete workflow for taking a folder of product photos and producing:
-1. Photographs organized into item-specific folders with tags
-2. Deep research on each item (identity, features, condition, provenance)
-3. Per-item documentation (markdown)
-4. Platform-optimized product listings (Facebook Marketplace, Instagram, eBay, Etsy)
-
-It also covers the fallback when AI vision APIs are rate-limited: programmatic image analysis with PIL/OpenCV/sklearn.
-
 ### ModelMistress Integration (Recommended)
 
 **ModelMistress** is a local model hub written in Rust (`Z:\Projects\ModelMistress`). It serves an OpenAI-compatible API (`/v1`) and Ollama-compatible API (`/api`), with built-in:
@@ -149,7 +139,17 @@ Use the template (`FB_listing_template.md`) which includes: listing data, title 
 
 ## References
 
-- `references/platform_design.md` — full platform architecture document
-- `references/model_visibility_preferences.md` — model visibility rules (free first, paid hidden)
-- `references/hardware_notes.md` — local AI model configuration (Qwen3.5-9B on RX 7900 XTTX)
-- `references/image_analysis_template.py` — reusable programmatic image analysis script
+- `references/platform_design.md` — full platform architecture document (ItemForge architecture)
+- `references/modelmistress-endpoints.md` — ModelMistress direct API endpoint reference
+- `Z:\Projects\ModelMistress\README.md` — ModelMistress overview, quick start, API reference
+- `Z:\Projects\ModelMistress\DESIGN.md` — ModelMistress architecture
+- `Z:\Projects\ModelMistress\CLAUDE.md` — Notes for agents
+- `Z:\Projects\ModelMistress\itemforge\README.md` — ItemForge platform documentation
+- `Z:\Projects\ModelMistress\itemforge\docs\acp.md` — ACP protocol documentation
+- `Z:\Projects\ModelMistress\itemforge\docs\api.md` — API reference
+- `Z:\Projects\ModelMistress\src\mcp\` — MCP server implementation
+- `Z:\Projects\ModelMistress\src\protocol\` — Internal protocol and capability negotiation
+- `Z:\Projects\ModelMistress\src\hub\` — HTTP server implementation
+- `X:\Dev\hermes\skills\itemforge\SKILL.md` — ItemForge skill (all-in-one platform)
+
+
