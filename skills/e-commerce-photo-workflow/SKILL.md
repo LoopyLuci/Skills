@@ -2,10 +2,22 @@
 name: "e-commerce-photo-workflow"
 title: "Photograph Organization, Research & Listing Generation for E-Commerce"
 description: "Organize photos, research items, generate listings."
-tags: [e-commerce, photo-organization, image-analysis, listing-generation, facebook-marketplace]
+author: "Hermes Agent"
+license: MIT
+version: 2.0.0
+metadata:
+  hermes:
+    tags: [e-commerce, photo-organization, image-analysis, listing-generation, facebook-marketplace, modelmistress]
+    related_skills: [desktop-dashboard, python-ai-agent-platform, windows-python-shell-interop, model-mistress-desktop-dev]
 ---
 
-# E-Commerce Photo Organization & Listing Workflow
+# When to Use This Skill
+
+- You have a folder of product photos that need to become organized, cataloged listings
+- You need to identify what each photo shows (using vision AI, OCR, or programmatic analysis)
+- You need to create documentation for each product
+- You need Facebook Marketplace / Instagram / eBay / Etsy listing content
+- You need an all-in-one platform design for photo organization, research, and selling automation
 
 ## Overview
 
@@ -17,7 +29,46 @@ This skill covers the complete workflow for taking a folder of product photos an
 
 It also covers the fallback when AI vision APIs are rate-limited: programmatic image analysis with PIL/OpenCV/sklearn.
 
-## Procedure (Step-by-Step)
+## Overview
+
+This skill covers the complete workflow for taking a folder of product photos and producing:
+1. Photographs organized into item-specific folders with tags
+2. Deep research on each item (identity, features, condition, provenance)
+3. Per-item documentation (markdown)
+4. Platform-optimized product listings (Facebook Marketplace, Instagram, eBay, Etsy)
+
+It also covers the fallback when AI vision APIs are rate-limited: programmatic image analysis with PIL/OpenCV/sklearn.
+
+### ModelMistress Integration (Recommended)
+
+**ModelMistress** is a local model hub written in Rust (`Z:\Projects\ModelMistress`). It serves an OpenAI-compatible API (`/v1`) and Ollama-compatible API (`/api`), with built-in:
+- **Vision** (`/v1/vision/classify`, `/detect`, `/embed`) — auto-identify products in photos
+- **Text chat/completions** (`/v1/chat/completions`) — research, documentation, listing generation
+- **Embeddings/reranking** (`/v1/embeddings`, `/v1/rerank`) — catalog search, similarity matching
+- **Speech (STT/TTS)** (`/v1/audio/*`) — voice input and audio output
+- **Knowledge Modules** (`/v1/km/*`) — domain expertise (e-commerce, product categories)
+
+**Setup:**
+```bash
+# 1. Build ModelMistress
+cargo build --release -p model-mistress --features bundled-engine
+
+# 2. Serve
+model-mistress serve
+
+# 3. Pull models
+model-mistress pull hf.co/unsloth/Qwen3-8B-GGUF:Q4_K_M
+model-mistress pull hf.co/nomic-ai/nomic-embed-text-v1.5-Q5_0
+
+# 4. Install vision models (classification/detection)
+# Copy .onnx + .json sidecar into <home>/vision/
+```
+
+**Connection:** The platform connects to ModelMistress at `http://127.0.0.1:PORT/v1` with the token from `<home>/control.json`.
+
+See `Z:\Projects\ModelMistress\platform-design.md` for the full integration architecture.
+
+
 
 ### Step 1: Inventory the photos
 
