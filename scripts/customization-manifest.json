@@ -1,0 +1,297 @@
+{
+  "apexlang-inventory": {
+    "source": "oracle/skills",
+    "title": "APEXLang Component Catalog",
+    "description": "Use when working with provides an overview of APEX application components, APEXlang syntax, and application file layout, with links to detailed component properties and examples."
+  },
+  "obsidian-bases": {
+    "source": "obsidianmd/obsidian-skills",
+    "title": "Obsidian Bases Skill",
+    "description": "Use when working with .base files, creating database-like views of notes, or when the user mentions Bases, table views, card views, kanban boards, filters, or formulas in Obsidian."
+  },
+  "code-review-and-quality": {
+    "source": "addyosmani/agent-skills",
+    "title": "Code Review and Quality",
+    "description": "Use when reviewing code written by yourself, another agent, or a human; you need to assess code quality across multiple dimensions before it enters the main branch; asked to review a diff or a pull request, even when the diff is pasted inline and the review looks quick to do from reading it."
+  },
+  "oke-troubleshooter": {
+    "source": "oracle/skills",
+    "title": "Oke Troubleshooter",
+    "description": "Use when the user wants to diagnose or root-cause issues with an OCI Kubernetes Engine cluster or workload."
+  },
+  "ci-cd-and-automation": {
+    "source": "addyosmani/agent-skills",
+    "title": "CI/CD and Automation",
+    "description": "Use when setting up or modifying build and deployment pipelines; you need to automate quality gates, configure test runners in CI, or establish deployment strategies."
+  },
+  "api-and-interface-design": {
+    "source": "addyosmani/agent-skills",
+    "title": "API and Interface Design",
+    "description": "Use when designing APIs, module boundaries, or any public interface; creating REST or GraphQL endpoints, defining type contracts between modules, or establishing boundaries between frontend and backend."
+  },
+  "git-workflow-and-versioning": {
+    "source": "addyosmani/agent-skills",
+    "title": "Git Workflow and Versioning",
+    "description": "Use when making any code change; committing, branching, resolving conflicts, splitting uncommitted work in a messy working tree into clean atomic commits, opening or reviewing a pull request (PR), pushing to a remote, or when you need to organize work across multiple parallel streams; cutting a release, choosing a semantic version bump, tagging, or writing a changelog; asked to write a commit message or a changelog entry for a change, or to split a change into commits, even when the diff is pasted inline and the message seems easy to write from it."
+  },
+  "context-engineering": {
+    "source": "addyosmani/agent-skills",
+    "title": "Context Engineering",
+    "description": "Use when starting a new session, when agent output quality degrades, when switching between tasks, or when you need to configure rules files and context for a project."
+  },
+  "frontend-ui-engineering": {
+    "source": "addyosmani/agent-skills",
+    "title": "Frontend UI Engineering",
+    "description": "Use when building or modifying interfaces and pages, creating components, implementing layouts, meeting WCAG accessibility requirements, managing state, or when the output needs to look and feel production-quality rather than AI-generated."
+  },
+  "shipping-and-launch": {
+    "source": "addyosmani/agent-skills",
+    "title": "Shipping and Launch",
+    "description": "Use when preparing to deploy to production, or when asking what needs to be in place before shipping; you need a pre-launch checklist, when setting up monitoring, when planning a staged rollout, or when you need a rollback strategy."
+  },
+  "code-simplification": {
+    "source": "addyosmani/agent-skills",
+    "title": "Code Simplification",
+    "description": "Use when refactoring code for clarity without changing behavior; code works but is harder to read, maintain, or extend than it should be; reviewing code that has accumulated unnecessary complexity; asked to simplify, clean up, or reduce the nesting of a function or module that already works, even when the code is pasted inline and nothing else needs to change."
+  },
+  "documentation-and-adrs": {
+    "source": "addyosmani/agent-skills",
+    "title": "Documentation and ADRs",
+    "description": "Use when you need to document an architecture decision (ADR) or the reasoning behind a design choice, when changing public APIs, shipping features, when docs may be stale or out of sync with the code they describe, when working out which module docs are still accurate, or when setting up a check so docs cannot silently go out of date again."
+  },
+  "browser-testing-with-devtools": {
+    "source": "addyosmani/agent-skills",
+    "title": "Browser Testing with DevTools",
+    "description": "Use when building or debugging anything that runs in a browser; you need to inspect the DOM, capture console errors, analyze network requests, profile performance, or verify visual output with real runtime data."
+  },
+  "constraint-driven-development": {
+    "source": "addyosmani/agent-skills",
+    "title": "Constraint-Driven Development",
+    "description": "Use when no quality bar is written down, when the user says \"set up constraints\" or \"define our standards\", when the user wants dimensions they care about \u2014 accessibility, web performance, coverage \u2014 set up as enforced constraints, when an agent keeps silencing checks or skipping tests to get to green, when you need a coverage or performance threshold and don't know what number to pick, or when an agent writes more code than anyone will read."
+  },
+  "spec-driven-development": {
+    "source": "addyosmani/agent-skills",
+    "title": "Spec-Driven Development",
+    "description": "Use when starting a new project, feature, or significant change and no specification exists yet; drafting a PRD or requirements document with objectives and scope, or when requirements are unclear, ambiguous, or only exist as a vague idea; a single requirement spans several independently testable capabilities and needs decomposing into a capability map of modules before specifying; evolving a shipped spec \u2014 scoping a V1, deferring ideas to a V2 backlog, or writing a follow-up spec for a change to an existing feature."
+  },
+  "loop-library": {
+    "source": "Forward-Future/loopy",
+    "title": "Loop Library (legacy alias)",
+    "description": "Use when working with compatibility alias for Loopy."
+  },
+  "loopy": {
+    "source": "Forward-Future/loopy",
+    "title": "Loopy",
+    "description": "Use when a user asks to analyze code or coding threads for recurring work, find a published loop, interview them to turn a goal into a bounded loop, review a loop for weak checks or unsafe authority, execute a loop with an evidence receipt, learn from completed runs, save or reuse a project loop, or validate and submit a loop to Loop Library."
+  },
+  "debugging-and-error-recovery": {
+    "source": "addyosmani/agent-skills",
+    "title": "Debugging and Error Recovery",
+    "description": "Use when tests fail, builds break, something that worked yesterday broke, behavior doesn't match expectations, or you encounter any unexpected error; you need to figure out what broke and why \u2014 a systematic approach to finding and fixing the root cause rather than guessing; asked what broke, why a test started failing, or why code throws, even when the diff, the function, or the stack trace is pasted inline and the cause looks obvious from reading it, so that the cause is named, the fix is minimal, and the reply says how to confirm it."
+  },
+  "oke-gva-deployer": {
+    "source": "oracle/skills",
+    "title": "OKE Generic VNIC Attachment (GVA) Deployer",
+    "description": "Use when the user asks to enable, deploy, or configure Generic VNIC Attachment (GVA) for OCI Kubernetes Engine (OKE), create node pools with secondary VNIC profiles, review update plans for existing GVA node pools, map Application Resources to workloads, or explain GVA functionality, constraints, and scheduling behavior."
+  },
+  "oci-functions-deploy": {
+    "source": "oracle/skills",
+    "title": "OCI Functions Deploy",
+    "description": "Use when asked to validate/install Fn, OCI CLI, and Docker, configure or create Fn contexts, validate OCI session and Docker registry auth from Fn context values, choose or create a Functions application, scaffold Java, Python, or Node functions, and deploy them."
+  },
+  "planning-and-task-breakdown": {
+    "source": "addyosmani/agent-skills",
+    "title": "Planning and Task Breakdown",
+    "description": "Use when you have a spec or clear requirements and need to break work into implementable tasks; a task feels too large to start, when you need to estimate scope, or when parallel work is possible."
+  },
+  "json-canvas": {
+    "source": "obsidianmd/obsidian-skills",
+    "title": "JSON Canvas Skill",
+    "description": "Use when working with .canvas files, creating visual canvases, mind maps, flowcharts, or when the user mentions Canvas files in Obsidian."
+  },
+  "deprecation-and-migration": {
+    "source": "addyosmani/agent-skills",
+    "title": "Deprecation and Migration",
+    "description": "Use when removing old systems, APIs, or features; migrating users from one implementation to another; migrating a database schema in production, such as renaming or dropping a column without downtime (expand/contract); deciding whether to maintain or sunset existing code."
+  },
+  "incremental-implementation": {
+    "source": "addyosmani/agent-skills",
+    "title": "Incremental Implementation",
+    "description": "Use when implementing any feature or change that touches more than one file, or when picking up the next task from a plan; rolling a change out behind a feature flag, when you're about to write a large amount of code at once, or when a task feels too big to land in one step."
+  },
+  "doubt-driven-development": {
+    "source": "addyosmani/agent-skills",
+    "title": "Doubt-Driven Development",
+    "description": "Use when you want every assumption cross-examined before proceeding, when stress-testing a plan for hidden failure modes, when correctness matters more than speed, when working in unfamiliar code, when stakes are high (production auth, security-sensitive logic, a high-stakes migration, irreversible operations), or any time a confident output would be cheaper to verify now than to debug later."
+  },
+  "observability-and-instrumentation": {
+    "source": "addyosmani/agent-skills",
+    "title": "Observability and Instrumentation",
+    "description": "Use when adding logging, metrics, tracing, or alerting; shipping any feature that runs in production and you need evidence it works; production issues are reported but you can't tell what happened from the available data."
+  },
+  "interview-me": {
+    "source": "addyosmani/agent-skills",
+    "title": "Interview Me",
+    "description": "Use when an ask is underspecified (\"build me X\" without \"for whom\" or \"why now\"), when the user explicitly invokes (\"interview me\", \"grill me\", \"are we sure?\", \"stress-test my thinking\"), or when you catch yourself silently filling in ambiguous requirements before any plan, spec, or code exists."
+  },
+  "source-driven-development": {
+    "source": "addyosmani/agent-skills",
+    "title": "Source-Driven Development",
+    "description": "Use when you want to verify an approach against the official docs before implementing it, or when you want authoritative, source-cited code free from outdated patterns; building with any framework or library where correctness matters."
+  },
+  "security-and-hardening": {
+    "source": "addyosmani/agent-skills",
+    "title": "Security and Hardening",
+    "description": "Use when auditing an input handler for vulnerabilities, when handling user input, authentication, data storage, or external integrations, or when checking a login flow is safe against the OWASP Top Ten; building any feature that accepts untrusted data, manages user sessions or session cookies, or interacts with third-party services; auditing dependencies for known vulnerabilities, triaging package-manager audit findings, or assessing supply-chain risk in a new package; personal data or privacy compliance (GDPR, CCPA) is involved."
+  },
+  "obsidian-markdown": {
+    "source": "obsidianmd/obsidian-skills",
+    "title": "Obsidian Flavored Markdown Skill",
+    "description": "Use when working with .md files in Obsidian, or when the user mentions wikilinks, callouts, frontmatter, tags, embeds, or Obsidian notes."
+  },
+  "idea-refine": {
+    "source": "addyosmani/agent-skills",
+    "title": "Idea Refine",
+    "description": "Use when an idea is still vague, when you need to stress-test assumptions before committing to a plan, or when you want to expand options before converging on one."
+  },
+  "using-agent-skills": {
+    "source": "addyosmani/agent-skills",
+    "title": "Using Agent Skills",
+    "description": "Use when starting a session, or when you need to decide which skill or workflow applies to the piece of work at hand."
+  },
+  "security-audit": {
+    "source": "cloudflare/security-audit-skill",
+    "title": "Security Audit",
+    "description": "Use when security questions, focused reviews, vulnerability research, security audits, or pen tests."
+  },
+  "oke-cluster-generator": {
+    "source": "oracle/skills",
+    "title": "Oke Cluster Generator",
+    "description": "Use when the user asks to build, generate, create, design, or scaffold an OKE (OCI Kubernetes Engine) Terraform stack, OCI Kubernetes infrastructure, ORM schema, or Resource Manager template."
+  },
+  "oci-functions-troubleshoot": {
+    "source": "oracle/skills",
+    "title": "OCI Function Troubleshoot",
+    "description": "Use when asked to classify Fn CLI errors, deploy or invoke failures, OCIR auth and registry issues, app-limit symptoms, logs, tracing, metrics, or limits."
+  },
+  "pr": {
+    "source": "mattpocock/skills",
+    "title": "Pr",
+    "description": "Use when writing a PR body."
+  },
+  "obsidian-cli": {
+    "source": "obsidianmd/obsidian-skills",
+    "title": "Obsidian CLI",
+    "description": "Use when the user asks to interact with their Obsidian vault, manage notes, search vault content, perform vault operations from the command line, or develop and debug Obsidian plugins and themes."
+  },
+  "oke-multihome-deployer": {
+    "source": "oracle/skills",
+    "title": "OKE Multihome Deployer",
+    "description": "Use when the user asks to auto-discover OKE cluster subnets or node pools for multihome, create OKE multihome pod manifests, configure Multus NADs for secondary VNIC interfaces, validate multihomed pod connectivity, inspect OCI CNI IPAM allocation on OKE nodes, or package repeatable OKE GVA multihome deployment steps."
+  },
+  "knap": {
+    "source": "obsidianmd/obsidian-skills",
+    "title": "Knap",
+    "description": "Use when the user asks to apply a Knap template, turn JSON or CSV data into notes, batch-generate Markdown files, or format Defuddle output into a note."
+  },
+  "oci-iot-platform": {
+    "source": "oracle/skills",
+    "title": "OCI IoT Platform",
+    "description": "Use when requests involve OCI IoT bootstrap, digital twin inspection, safe lifecycle operations, or translating OCI IoT docs and samples into concrete commands."
+  },
+  "software-factory": {
+    "source": "mattpocock/skills",
+    "title": "Software Factory",
+    "description": "Use when working with shared language for designing a software factory: the tasks it runs and the services it plugs into."
+  },
+  "enterprise-ai": {
+    "source": "oracle/skills",
+    "title": "OCI Enterprise AI Skills",
+    "description": "Use when the user asks for OCI Generative AI, Enterprise AI Models, Enterprise AI Agents, governed GenAI applications, agentic workflows, RAG on Oracle Cloud, OCI Generative AI pricing or cost estimator inputs, or a simplified path across OCI, Autonomous Database, APEX, and other Oracle services."
+  },
+  "apexlang-generation": {
+    "source": "oracle/skills",
+    "title": "Skill \u2014 APEXlang",
+    "description": "Use when working with public APEXlang router with deterministic local-context discovery and compact machine-readable contracts."
+  },
+  "writing-for-agents": {
+    "source": "mattpocock/skills",
+    "title": "Writing For Agents",
+    "description": "Use when creating or editing skills, or modifying AGENTS.md or CLAUDE.md."
+  },
+  "obsidian-headless": {
+    "source": "obsidianmd/obsidian-skills",
+    "title": "Obsidian Headless",
+    "description": "Use when the user wants to set up or run Obsidian Sync or Obsidian Publish on a server, in CI, or from a terminal, or change a vault's Sync or Publish settings."
+  },
+  "build-oci-iam-main-tf": {
+    "source": "oracle/skills",
+    "title": "Build OCI IAM Terraform",
+    "description": "Use when oCI compartments and hierarchy, classic IAM groups (including member assignment), dynamic groups, IAM policies, and OCI Identity Domains resources when the request must be mapped to a supported upstream module, inputs collected and validated, and `main.tf`, `variables.tf`, and `terraform.tfvars` produced."
+  },
+  "chief-of-staff": {
+    "source": "mattpocock/skills",
+    "title": "Chief Of Staff",
+    "description": "Use when working with pursue a long-running goal in a single session by co-ordinating subagents."
+  },
+  "oci-networking-landing-zones": {
+    "source": "oracle/skills",
+    "title": "Build OCI Networking Landing Zones Terraform",
+    "description": "Use when vCNs, subnets, route tables, internet/NAT/service gateways, security lists and rules, NSGs and rules, and ZPR security-attribute assignments when inputs must be collected and validated through read-only OCI API MCP checks, then integrated without disrupting an existing Terraform pipeline or provider setup."
+  },
+  "build-oci-security-zones-main-tf": {
+    "source": "oracle/skills",
+    "title": "Build OCI Security Zones Terraform",
+    "description": "Use when cloud Guard Security Zone recipes and Security Zones when requests must be mapped to the documented module, inputs collected and validated, and `main.tf`, `variables.tf`, and `terraform.tfvars` produced."
+  },
+  "build-oci-exadata-database-main-tf": {
+    "source": "oracle/skills",
+    "title": "Build OCI Exadata Database Terraform",
+    "description": "Use when cloud Exadata Infrastructure, Cloud VM Clusters, DB Homes, Container Databases, and Pluggable Databases."
+  },
+  "graal": {
+    "source": "oracle/skills",
+    "title": "Oracle Graal Skills",
+    "description": "Use when native-image CLI builds, Maven or Gradle Native Build Tools, reachability metadata, and build or run time issue diagnosis."
+  },
+  "retro": {
+    "source": "mattpocock/skills",
+    "title": "Retro",
+    "description": "Use when conducting a retrospective on a coding session."
+  },
+  "implement-spec": {
+    "source": "mattpocock/skills",
+    "title": "Implement Spec",
+    "description": "Use when implementing the result of /to-spec and /to-tickets in code."
+  },
+  "defuddle": {
+    "source": "obsidianmd/obsidian-skills",
+    "title": "Defuddle",
+    "description": "Use when extracting clean Markdown from HTML pages with Defuddle CLI."
+  },
+  "oracle-data-guard": {
+    "source": "oracle/skills",
+    "title": "Oracle Data Guard",
+    "description": "Use when a user asks about SQLcl DG commands, Data Guard Broker fixed views, FSFO or observer state, transport or apply lag, ASYNC/SYNC/FASTSYNC performance, redo apply tuning, SIRA/MIRA, or runnable Data Guard diagnostic SQL."
+  },
+  "apexlang-example-applications": {
+    "source": "oracle/skills",
+    "title": "Apexlang Example Applications",
+    "description": "Use when working with provides a list of APEXlang example applications with appropriate descriptions and access to the assets."
+  },
+  "apexlang-compile": {
+    "source": "oracle/skills",
+    "title": "Apexlang Compile",
+    "description": "Use when working with provides access to the APEXLang compiler to build and validate an application from a given file tree."
+  },
+  "apexlang-deploy": {
+    "source": "oracle/skills",
+    "title": "Apexlang Deploy",
+    "description": "Use when working with deploys the application specified in APEXLang to a provided database."
+  },
+  "wait-what": {
+    "source": "mattpocock/skills",
+    "title": "Wait What",
+    "description": "Use when working with stop."
+  }
+}

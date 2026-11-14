@@ -1,0 +1,770 @@
+{
+  "addyosmani_agent-skills": [
+    {
+      "name": "api-and-interface-design",
+      "source": "addyosmani/agent-skills",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills"
+      ],
+      "support": []
+    },
+    {
+      "name": "browser-testing-with-devtools",
+      "source": "addyosmani/agent-skills",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills",
+        "testing",
+        "browser",
+        "devtools"
+      ],
+      "support": []
+    },
+    {
+      "name": "ci-cd-and-automation",
+      "source": "addyosmani/agent-skills",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills",
+        "devops",
+        "ci-cd",
+        "automation"
+      ],
+      "support": []
+    },
+    {
+      "name": "code-review-and-quality",
+      "source": "addyosmani/agent-skills",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills",
+        "code-review",
+        "quality"
+      ],
+      "support": []
+    },
+    {
+      "name": "code-simplification",
+      "source": "addyosmani/agent-skills",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills"
+      ],
+      "support": []
+    },
+    {
+      "name": "constraint-driven-development",
+      "source": "addyosmani/agent-skills",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills"
+      ],
+      "support": [
+        "references/",
+        "scripts/"
+      ]
+    },
+    {
+      "name": "context-engineering",
+      "source": "addyosmani/agent-skills",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills",
+        "ai-agents",
+        "context"
+      ],
+      "support": []
+    },
+    {
+      "name": "debugging-and-error-recovery",
+      "source": "addyosmani/agent-skills",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills",
+        "debugging",
+        "reliability"
+      ],
+      "support": []
+    },
+    {
+      "name": "deprecation-and-migration",
+      "source": "addyosmani/agent-skills",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills"
+      ],
+      "support": []
+    },
+    {
+      "name": "documentation-and-adrs",
+      "source": "addyosmani/agent-skills",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills",
+        "documentation",
+        "adr"
+      ],
+      "support": []
+    },
+    {
+      "name": "doubt-driven-development",
+      "source": "addyosmani/agent-skills",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills"
+      ],
+      "support": []
+    },
+    {
+      "name": "frontend-ui-engineering",
+      "source": "addyosmani/agent-skills",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills",
+        "frontend",
+        "ui",
+        "ux",
+        "accessibility"
+      ],
+      "support": []
+    },
+    {
+      "name": "git-workflow-and-versioning",
+      "source": "addyosmani/agent-skills",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills",
+        "git",
+        "version-control"
+      ],
+      "support": []
+    },
+    {
+      "name": "idea-refine",
+      "source": "addyosmani/agent-skills",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills"
+      ],
+      "support": [
+        "examples.md",
+        "frameworks.md",
+        "refinement-criteria.md",
+        "scripts/"
+      ]
+    },
+    {
+      "name": "incremental-implementation",
+      "source": "addyosmani/agent-skills",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills"
+      ],
+      "support": []
+    },
+    {
+      "name": "interview-me",
+      "source": "addyosmani/agent-skills",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills"
+      ],
+      "support": []
+    },
+    {
+      "name": "observability-and-instrumentation",
+      "source": "addyosmani/agent-skills",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills",
+        "observability",
+        "monitoring"
+      ],
+      "support": []
+    },
+    {
+      "name": "planning-and-task-breakdown",
+      "source": "addyosmani/agent-skills",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills"
+      ],
+      "support": []
+    },
+    {
+      "name": "security-and-hardening",
+      "source": "addyosmani/agent-skills",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills",
+        "security",
+        "hardening"
+      ],
+      "support": [
+        "references/"
+      ]
+    },
+    {
+      "name": "shipping-and-launch",
+      "source": "addyosmani/agent-skills",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills"
+      ],
+      "support": []
+    },
+    {
+      "name": "source-driven-development",
+      "source": "addyosmani/agent-skills",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills"
+      ],
+      "support": []
+    },
+    {
+      "name": "spec-driven-development",
+      "source": "addyosmani/agent-skills",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills"
+      ],
+      "support": []
+    },
+    {
+      "name": "using-agent-skills",
+      "source": "addyosmani/agent-skills",
+      "tags": [
+        "software-development",
+        "engineering",
+        "agent-skills",
+        "skills",
+        "meta"
+      ],
+      "support": []
+    }
+  ],
+  "oracle_skills": [
+    {
+      "name": "apexlang-compile",
+      "source": "oracle/skills",
+      "tags": [
+        "oracle",
+        "apex",
+        "apexlang"
+      ],
+      "support": [
+        "scripts/"
+      ]
+    },
+    {
+      "name": "apexlang-deploy",
+      "source": "oracle/skills",
+      "tags": [
+        "oracle",
+        "apex",
+        "apexlang"
+      ],
+      "support": [
+        "scripts/"
+      ]
+    },
+    {
+      "name": "apexlang-example-applications",
+      "source": "oracle/skills",
+      "tags": [
+        "oracle",
+        "apex",
+        "apexlang"
+      ],
+      "support": [
+        "assets/"
+      ]
+    },
+    {
+      "name": "apexlang-generation",
+      "source": "oracle/skills",
+      "tags": [
+        "oracle",
+        "apex",
+        "apexlang"
+      ],
+      "support": [
+        "agents/",
+        "APEXlang Skills and Workflows.md",
+        "assets/",
+        "manifest.json",
+        "README.md",
+        "references/",
+        "release-notes.html",
+        "release-notes.json",
+        "RELEASE-NOTES.md",
+        "runtime/",
+        "templates/",
+        "tools/"
+      ]
+    },
+    {
+      "name": "apexlang-inventory",
+      "source": "oracle/skills",
+      "tags": [
+        "oracle",
+        "apex",
+        "apexlang"
+      ],
+      "support": [
+        "assets/"
+      ]
+    },
+    {
+      "name": "build-oci-exadata-database-main-tf",
+      "source": "oracle/skills",
+      "tags": [
+        "oracle",
+        "oci",
+        "oci-landing-zone-terraform-module"
+      ],
+      "support": [
+        "agents/",
+        "README.txt",
+        "references/"
+      ]
+    },
+    {
+      "name": "build-oci-iam-main-tf",
+      "source": "oracle/skills",
+      "tags": [
+        "oracle",
+        "oci",
+        "oci-landing-zone-terraform-module"
+      ],
+      "support": [
+        "agents/",
+        "README.txt",
+        "references/"
+      ]
+    },
+    {
+      "name": "build-oci-security-zones-main-tf",
+      "source": "oracle/skills",
+      "tags": [
+        "oracle",
+        "oci",
+        "oci-landing-zone-terraform-module"
+      ],
+      "support": [
+        "agents/",
+        "README.txt",
+        "references/"
+      ]
+    },
+    {
+      "name": "enterprise-ai",
+      "source": "oracle/skills",
+      "tags": [
+        "oracle",
+        "oci"
+      ],
+      "support": [
+        "agent-workflows/",
+        "agents/",
+        "cost/",
+        "data/",
+        "governance/",
+        "integrations/",
+        "models/"
+      ]
+    },
+    {
+      "name": "graal",
+      "source": "oracle/skills",
+      "tags": [
+        "oracle"
+      ],
+      "support": [
+        "native-image/"
+      ]
+    },
+    {
+      "name": "oci-functions-deploy",
+      "source": "oracle/skills",
+      "tags": [
+        "oracle",
+        "oci",
+        "functions"
+      ],
+      "support": [
+        "agents/",
+        "references/",
+        "scripts/",
+        "tests/"
+      ]
+    },
+    {
+      "name": "oci-functions-troubleshoot",
+      "source": "oracle/skills",
+      "tags": [
+        "oracle",
+        "oci",
+        "functions"
+      ],
+      "support": [
+        "agents/",
+        "references/"
+      ]
+    },
+    {
+      "name": "oci-iot-platform",
+      "source": "oracle/skills",
+      "tags": [
+        "oracle",
+        "oci"
+      ],
+      "support": [
+        "agents/",
+        "references/",
+        "scripts/",
+        "templates/",
+        "tests/"
+      ]
+    },
+    {
+      "name": "oci-networking-landing-zones",
+      "source": "oracle/skills",
+      "tags": [
+        "oracle",
+        "oci",
+        "oci-landing-zone-terraform-module"
+      ],
+      "support": [
+        "agents/",
+        "README.txt",
+        "references/"
+      ]
+    },
+    {
+      "name": "oke-cluster-generator",
+      "source": "oracle/skills",
+      "tags": [
+        "oracle",
+        "oci",
+        "oke"
+      ],
+      "support": [
+        "agents/",
+        "output-templates/",
+        "reference.md",
+        "references/"
+      ]
+    },
+    {
+      "name": "oke-gva-deployer",
+      "source": "oracle/skills",
+      "tags": [
+        "oracle",
+        "oci",
+        "oke"
+      ],
+      "support": [
+        "agents/",
+        "references/",
+        "validation-report-template.md"
+      ]
+    },
+    {
+      "name": "oke-multihome-deployer",
+      "source": "oracle/skills",
+      "tags": [
+        "oracle",
+        "oci",
+        "oke"
+      ],
+      "support": [
+        "agents/",
+        "references/",
+        "scripts/",
+        "validation-report-template.md"
+      ]
+    },
+    {
+      "name": "oke-troubleshooter",
+      "source": "oracle/skills",
+      "tags": [
+        "oracle",
+        "oci",
+        "oke"
+      ],
+      "support": [
+        "agents/",
+        "evidence-collectors.md",
+        "final-report-template.md",
+        "symptom-triage.md"
+      ]
+    },
+    {
+      "name": "oracle-data-guard",
+      "source": "oracle/skills",
+      "tags": [
+        "oracle",
+        "db"
+      ],
+      "support": [
+        "agents/",
+        "references/"
+      ]
+    }
+  ],
+  "mattpocock_skills": [
+    {
+      "name": "chief-of-staff",
+      "source": "mattpocock/skills",
+      "tags": [
+        "software-development",
+        "engineering",
+        "in-progress"
+      ],
+      "support": [
+        "agents/"
+      ]
+    },
+    {
+      "name": "implement-spec",
+      "source": "mattpocock/skills",
+      "tags": [
+        "software-development",
+        "engineering"
+      ],
+      "support": [
+        "agents/"
+      ]
+    },
+    {
+      "name": "pr",
+      "source": "mattpocock/skills",
+      "tags": [
+        "software-development",
+        "engineering"
+      ],
+      "support": [
+        "agents/",
+        "CREDITS.md"
+      ]
+    },
+    {
+      "name": "retro",
+      "source": "mattpocock/skills",
+      "tags": [
+        "software-development",
+        "engineering"
+      ],
+      "support": [
+        "agents/"
+      ]
+    },
+    {
+      "name": "software-factory",
+      "source": "mattpocock/skills",
+      "tags": [
+        "software-development",
+        "engineering",
+        "in-progress"
+      ],
+      "support": [
+        "EXAMPLE-TASKS.md",
+        "GIT-HOSTS.md",
+        "OBSERVABILITY-PLATFORMS.md",
+        "RUNNERS.md",
+        "TICKET-TRACKERS.md"
+      ]
+    },
+    {
+      "name": "wait-what",
+      "source": "mattpocock/skills",
+      "tags": [
+        "software-development",
+        "engineering",
+        "productivity"
+      ],
+      "support": [
+        "agents/"
+      ]
+    },
+    {
+      "name": "writing-for-agents",
+      "source": "mattpocock/skills",
+      "tags": [
+        "software-development",
+        "engineering",
+        "productivity"
+      ],
+      "support": [
+        "agents/",
+        "SKILL-MECHANICS.md"
+      ]
+    }
+  ],
+  "obsidianmd_obsidian-skills": [
+    {
+      "name": "defuddle",
+      "source": "obsidianmd/obsidian-skills",
+      "tags": [
+        "note-taking",
+        "obsidian",
+        "productivity"
+      ],
+      "support": []
+    },
+    {
+      "name": "json-canvas",
+      "source": "obsidianmd/obsidian-skills",
+      "tags": [
+        "note-taking",
+        "obsidian",
+        "productivity"
+      ],
+      "support": [
+        "references/"
+      ]
+    },
+    {
+      "name": "knap",
+      "source": "obsidianmd/obsidian-skills",
+      "tags": [
+        "note-taking",
+        "obsidian",
+        "productivity"
+      ],
+      "support": []
+    },
+    {
+      "name": "obsidian-bases",
+      "source": "obsidianmd/obsidian-skills",
+      "tags": [
+        "note-taking",
+        "obsidian",
+        "productivity"
+      ],
+      "support": [
+        "references/"
+      ]
+    },
+    {
+      "name": "obsidian-cli",
+      "source": "obsidianmd/obsidian-skills",
+      "tags": [
+        "note-taking",
+        "obsidian",
+        "productivity"
+      ],
+      "support": []
+    },
+    {
+      "name": "obsidian-headless",
+      "source": "obsidianmd/obsidian-skills",
+      "tags": [
+        "note-taking",
+        "obsidian",
+        "productivity"
+      ],
+      "support": []
+    },
+    {
+      "name": "obsidian-markdown",
+      "source": "obsidianmd/obsidian-skills",
+      "tags": [
+        "note-taking",
+        "obsidian",
+        "productivity"
+      ],
+      "support": [
+        "references/"
+      ]
+    }
+  ],
+  "cloudflare_security-audit-skill": [
+    {
+      "name": "security-audit",
+      "source": "cloudflare/security-audit-skill",
+      "tags": [
+        "security",
+        "auditing",
+        "appsec",
+        "vulnerability-research",
+        "audit",
+        "pentest"
+      ],
+      "support": [
+        "AI-AND-LLM.md",
+        "ATTACK-CLASSES.md",
+        "CLIENT-SIDE.md",
+        "CLOUD-AND-DEPLOYMENT.md",
+        "DATA-ISOLATION-AND-LIFECYCLE.md",
+        "DESKTOP-MOBILE-AND-LOCAL-IPC.md",
+        "HUNTING.md",
+        "MEMORY-SAFETY-AND-BINARY.md",
+        "PROTOCOLS-RPC-AND-MESSAGING.md",
+        "RECONNAISSANCE.md",
+        "report-schema.json",
+        "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md",
+        "SUPPLY-CHAIN-AND-RELEASE.md",
+        "validate-coverage-ledger.cjs",
+        "validate-coverage-ledger.test.cjs",
+        "validate-findings.cjs",
+        "validate-findings.test.cjs",
+        "VALIDATION-AND-REPORTING.md",
+        "WEB-PROTOCOL-AND-AUTH.md"
+      ]
+    }
+  ],
+  "Forward-Future_loopy": [
+    {
+      "name": "loop-library",
+      "source": "Forward-Future/loopy",
+      "tags": [
+        "agent-workflow",
+        "automation",
+        "loops"
+      ],
+      "support": [
+        "agents/",
+        "references/"
+      ]
+    },
+    {
+      "name": "loopy",
+      "source": "Forward-Future/loopy",
+      "tags": [
+        "agent-workflow",
+        "automation",
+        "loops"
+      ],
+      "support": [
+        "agents/",
+        "references/"
+      ]
+    }
+  ]
+}

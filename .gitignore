@@ -25,3 +25,9 @@ venv/
 .idea/
 .vscode/
 *.sublime-*
+
+# Upstream skill repos cloned for import (see scripts/import-upstream-skills.py)
+_sources/
+
+# Intermediate rewritten bodies from the customization pass (see scripts/assemble-custom-skills.py)
+scripts/adapted_bodies/
