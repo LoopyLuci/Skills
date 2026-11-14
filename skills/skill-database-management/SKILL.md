@@ -21,6 +21,7 @@ Manage a Hermes Agent skill database repository — a GitHub repo of 10,000+ SKI
 - Bulk-generating hundreds of skills with proper frontmatter and domain-specific content
 - Validating a large skill repo for format compliance
 - Enriching boilerplate/template skills with real, domain-specific content
+- Importing skills from external/upstream GitHub repos into the canonical flat schema
 - Fixing malformed YAML, duplicate tags, name mismatches, and structural issues at scale
 - Syncing skills bidirectionally between Hermes local store and a GitHub repo
 
@@ -117,7 +118,32 @@ Detects boilerplate by marker patterns:
 
 Rewrites body with domain-specific content while preserving frontmatter.
 
-### 6. Issue Remediation
+### 6. Importing External Skill Repos
+
+Bring skills from third-party repos into the collection without vendoring them raw. Clone into a git-ignored vendor dir inside the project, then adapt each skill to the canonical schema.
+
+```bash
+cd <repo>
+mkdir -p _sources
+git clone --depth 1 https://github.com/<owner>/<repo>.git _sources/<owner>_<repo>
+# add `_sources/` to .gitignore BEFORE importing
+python scripts/import-upstream-skills.py --dry-run
+python scripts/import-upstream-skills.py
+```
+
+Import rules, in order:
+1. Discover every `SKILL.md` under the source, skipping `.git`.
+2. Drop **container skills**: any skill dir holding a child dir with its own `SKILL.md` (e.g. oracle's `apex`, `oci`, `db`, `apexlang/<version>` umbrellas). They are indexes, not skills.
+3. Drop **placeholders** (description reads "Placeholder for future ... skills").
+4. **Collapse version duplicates** by skill name, keeping the highest version segment in the path (`26.2` beats `26.1`).
+5. **Skip names already in `skills/`** — an existing customized skill always wins; never overwrite it.
+6. Normalize frontmatter to the canonical schema, derive tags, and set `metadata.hermes.source` to `<owner>/<repo>`.
+7. Copy every sibling file/dir except `SKILL.md` (`references/`, `scripts/`, `agents/`, `assets/`, `templates/`) so relative links resolve.
+8. Write a JSON manifest of what was imported, then verify.
+
+See `references/upstream-skill-import.md` for the algorithm, tag derivation, and canonical template.
+
+### 7. Issue Remediation
 
 Common issues and fixes:
 
@@ -145,6 +171,14 @@ Common issues and fixes:
 6. **Validator false positives.** Some curated skills intentionally have short bodies or use `## Overview`/`## When to Use` instead of `## Trigger`/`## Core Concepts`. A validator should treat both section sets as valid, not flag them as errors.
 
 7. **10,000+ file git operations.** `git add -a` on 10,000+ files is slow. Use `.gitignore` for generated artifacts and consider `git add skills/` only (not scripts/ or root).
+
+8. **Path tags leak the skill's own name.** Derive tags from parent segments only (`rel.parts[:-2]`), not `rel.parts[:-1]` — otherwise every imported skill gets itself as a tag. Also filter version-like segments (`\d+(\.\d+)?`), or `26.2` becomes a tag.
+
+9. **Native Windows git rejects MSYS paths.** `git -C /h/Projects/Skills ...` fails with "cannot change to '/h/Projects/Skills': No such file or directory". Pass a native path (`H:/Projects/Skills`) to git and other native binaries; only bash builtins accept `/h/...`.
+
+10. **Vendored repos are nested git repos.** Clone them into a git-ignored dir (`_sources/`); otherwise they appear as untracked and risk being committed as embedded repositories.
+
+11. **Changing the transform requires clearing prior output.** Importers skip existing skills, so after fixing a rule (tag derivation, frontmatter) delete the previously imported dirs before re-running — otherwise the fix silently never applies.
 
 ## Verification
 
