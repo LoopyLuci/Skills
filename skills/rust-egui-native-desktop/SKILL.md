@@ -8,6 +8,7 @@ metadata:
   hermes:
     tags: [rust, egui, eframe, native, desktop, cross-platform, gui]
     related_skills: [win32-gui-rendering]
+platforms: [any]
 ---
 
 # Native Cross-Platform Desktop Apps with egui/eframe

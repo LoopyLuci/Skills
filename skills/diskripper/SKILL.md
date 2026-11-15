@@ -8,6 +8,7 @@ metadata:
   hermes:
     tags: [rust, diskripper, media, backup, gui]
     related_skills: [rust-egui-native-desktop]
+platforms: [any]
 ---
 
 # DiskRipper Rust Workspace

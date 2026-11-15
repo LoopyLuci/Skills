@@ -14,6 +14,10 @@ related_skills:
   - tauri-gui-workflow
   - verification-first-development
   - windows-python-shell-interop
+platforms: [any]
+metadata:
+  hermes:
+    tags: [desktop, desktop-gui, build]
 ---
 
 

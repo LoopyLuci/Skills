@@ -8,6 +8,7 @@ metadata:
   hermes:
     tags: [verification, testing, android, instrumentation, end-to-end]
     related_skills: [systematic-debugging, test-driven-development]
+platforms: [any]
 ---
 
 # On-device runtime verification

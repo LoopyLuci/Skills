@@ -2,6 +2,12 @@
 name: polyglot-production-build
 description: "Build verified polyglot apps with graceful fallbacks."
 version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [polyglot, polyglot-production, build]
 ---
 
 # Polyglot Production Build

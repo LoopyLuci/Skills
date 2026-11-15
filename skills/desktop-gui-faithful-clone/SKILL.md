@@ -7,6 +7,13 @@ triggers:
   - "clone a reference desktop app into PyQt6"
   - "work from X: drive"
   - "no backend/offline wording in GUI status"
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [desktop, desktop-gui, faithful]
 ---
 
 # Desktop GUI Faithful Clone

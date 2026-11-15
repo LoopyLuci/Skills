@@ -10,7 +10,7 @@ metadata:
     tags: [e-commerce, photo-organization, item-listing, sales-automation, modelmistress, itemforge, local-ai]
     related_skills: [desktop-dashboard, python-ai-agent-platform, windows-python-shell-interop, model-mistress-desktop-dev]
     references: [itemforge-api.md, modelmistress-endpoints.md]
-
+platforms: [any]
 ---
 
 # ItemForge — All-in-One Item Listing & Sales Platform

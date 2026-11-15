@@ -8,6 +8,7 @@ metadata:
   hermes:
     tags: [ci-cd, pipeline, automation, devops]
     related_skills: [github-pr-workflow, verified-release-artifacts]
+platforms: [any]
 ---
 
 # Local On-Device CI/CD Pipeline

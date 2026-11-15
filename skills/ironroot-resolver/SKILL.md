@@ -7,6 +7,8 @@ metadata:
   hermes:
     tags: [dns, resolver, dnssec, bpf, xdp, rust]
     related_skills: []
+author: LoopyLuci Community
+platforms: [any]
 ---
 
 # Ironroot resolver

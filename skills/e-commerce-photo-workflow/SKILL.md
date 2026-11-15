@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [e-commerce, photo-organization, image-analysis, listing-generation, facebook-marketplace, modelmistress]
     related_skills: [desktop-dashboard, python-ai-agent-platform, windows-python-shell-interop, model-mistress-desktop-dev]
+platforms: [any]
 ---
 
 # When to Use This Skill

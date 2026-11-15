@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [agentic, rpc, rust]
     related_skills: [windows-rust-android-build-env]
+platforms: [any]
 ---
 
 # Agentic RPC framework

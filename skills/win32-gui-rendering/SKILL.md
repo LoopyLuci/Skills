@@ -8,6 +8,7 @@ metadata:
   hermes:
     tags: [windows, win32, gdi, rust, gui, rendering]
     related_skills: [windows-rust-android-build-env]
+platforms: [any]
 ---
 
 # Win32 GDI GUI in Rust
