@@ -16,6 +16,12 @@ SKIP_DIRS = {".git", "__pycache__", "node_modules"}
 SKIP_PREFIXES = ("ci" + "/", "dist" + "/")
 
 
+def _nested_value(raw: str, key: str) -> str:
+    """Read a value nested under metadata.hermes (or any indented key)."""
+    m = re.search(rf"^\s+{re.escape(key)}:\s*(\S+)", raw, re.M)
+    return m.group(1).strip().strip('"').strip("'") if m else ""
+
+
 def _index_one(payload: tuple[str, str]) -> tuple[str, dict]:
     skills_root, name = payload
     d = Path(skills_root) / name
@@ -29,7 +35,7 @@ def _index_one(payload: tuple[str, str]) -> tuple[str, dict]:
                                if ln.startswith("# ")), "")
         entry["description"] = fields.get("description", "")
         entry["license"] = fields.get("license", "")
-        entry["source"] = fields.get("source", "") or fields.get("metadata.source", "")
+        entry["source"] = fields.get("source", "") or _nested_value(raw, "source")
         entry["adapted"] = bool(re.search(r"^\s+adapted:\s*true", raw, re.M))
         m = re.search(r"tags:\s*\[([^\]]*)\]", raw)
         if m:
