@@ -1,6 +1,13 @@
 ---
 name: pinokio
 description: Discover, launch, and use apps and tools for the current task.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [pinokio]
 ---
 
 # Pinokio Runtime Skill (pterm-first)

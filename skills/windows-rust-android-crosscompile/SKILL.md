@@ -1,6 +1,13 @@
 ---
 name: windows-rust-android-crosscompile
 description: Cross-compile Rust for Android on Windows.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [windows, windows-rust, android]
 ---
 
 # Windows Rust Android cross-compilation

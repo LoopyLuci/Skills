@@ -8,6 +8,7 @@ metadata:
   hermes:
     tags: [rust, async, ai, resilience, retry, caching, rate-limiting, streaming]
     related_skills: [software-development/systematic-debugging]
+platforms: [any]
 ---
 
 # Rust AI Engine Resilience

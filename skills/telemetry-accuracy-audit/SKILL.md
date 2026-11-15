@@ -6,6 +6,7 @@ author: Hermes Agent
 license: MIT
 metadata:
   hermes:
+    tags: [telemetry, telemetry-accuracy, audit]
     tags:
       - software-development
       - verification
@@ -15,6 +16,7 @@ metadata:
       - software-development/verification-first-development
       - software-development/systematic-debugging
       - software-development/declared-vs-consumed-audit
+platforms: [any]
 ---
 
 ## When to Use

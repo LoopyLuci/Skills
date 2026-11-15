@@ -1,6 +1,13 @@
 ---
 name: windows-rust-android-build-env
 description: Fix odd Rust/Android build failures on this Windows host.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [windows, windows-rust, android]
 ---
 
 # Windows build-environment repairs (this host)

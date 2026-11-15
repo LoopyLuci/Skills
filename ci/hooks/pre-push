@@ -1,0 +1,8 @@
+#!/bin/sh
+# pre-push: full local pipeline (preflight, static, skills, tests) before push.
+set -e
+ROOT="$(git rev-parse --show-toplevel)"
+cd "$ROOT"
+PY=python3
+command -v python3 >/dev/null 2>&1 || PY=python
+"$PY" -m ci --fast

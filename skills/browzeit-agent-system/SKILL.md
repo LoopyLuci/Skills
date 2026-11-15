@@ -1,6 +1,13 @@
 ---
 name: browzeit-agent-system
 description: Build Browzeit agent system with MoE/MoA/subagents and GUI.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [browzeit, browzeit-agent, system]
 ---
 
 # Browzeit Agent System

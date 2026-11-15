@@ -359,7 +359,7 @@ def import_source(source_def, repo_name):
                                         with urlopen(file_url, timeout=15) as fresp:
                                             fcontent = fresp.read()
                                             (sub_target / entry["name"]).write_bytes(fcontent)
-                                    except:
+                                    except Exception:
                                         pass
                 except (HTTPError, URLError, json.JSONDecodeError):
                     pass  # No supporting files, that's fine

@@ -1,6 +1,13 @@
 ---
 name: declared-vs-consumed-audit
 description: Use when a feature looks done but may have no consumer.
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [declared, declared-vs, consumed]
 ---
 
 # Declared-versus-consumed audit

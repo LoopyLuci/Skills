@@ -31,3 +31,9 @@ _sources/
 
 # Intermediate rewritten bodies from the customization pass (see scripts/assemble-custom-skills.py)
 scripts/adapted_bodies/
+
+# Local CI/CD pipeline artifacts (see ci/README.md)
+ci/reports/
+ci/logs/
+ci/.pipeline.lock
+dist/

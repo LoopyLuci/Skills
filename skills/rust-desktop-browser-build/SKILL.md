@@ -2,6 +2,13 @@
 name: rust-desktop-browser-build
 description: "Rust desktop browser build on Windows: X: toolchain"
 category: software-development
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [rust, rust-desktop, browser]
 ---
 # Rust Desktop Browser Build
 

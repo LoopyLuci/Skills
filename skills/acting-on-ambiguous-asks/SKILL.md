@@ -8,6 +8,7 @@ metadata:
   hermes:
     tags: [workflow, communication, judgment, escalation]
     related_skills: [on-device-runtime-verification]
+platforms: [any]
 ---
 
 # Acting on ambiguous asks

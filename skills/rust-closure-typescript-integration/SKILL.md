@@ -1,6 +1,13 @@
 ---
 name: rust-closure-typescript-integration
 description: "Integrate Rust, Closure, WASM and TypeScript."
+version: 1.0.0
+author: LoopyLuci Community
+license: MIT
+platforms: [any]
+metadata:
+  hermes:
+    tags: [rust, rust-closure, typescript]
 ---
 
 # Rust + Closure + ClosureWASM + TypeScript Integration
