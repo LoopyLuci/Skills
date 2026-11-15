@@ -58,6 +58,7 @@ Use this skill whenever you are asked to (a) stand up a **new, fully custom, loc
 - `timeout_shell` handles bounded commands on Windows git-bash (which lacks GNU `timeout`): use a background-job + `sleep` + `kill` fallback, and prefer GNU `timeout` when present.
 - Always verify a file write landed before reading it back (the `write_file`/`read_file` stale-read tracking blocks `write_file`; re-read with `read_file` to refresh, then patch or write).
 - Always quote globs when passing multiple files to a command (`*.xml` expanded by the shell, not left quoted). Quoting a glob treats the literal directory as a file and produces TOTAL=0.
+- Backticks inside double quotes in a brace group `{ ... } > file` are parsed as command substitution, causing "unexpected EOF while looking for matching" errors. Escape backticks with backslash: `echo "\`\`\`")` to emit triple backticks. This is a real issue when generating a report file: a `{ ... }` block whose last lines use `echo "```"` for Markdown code fences will misparse the brace group, so escape backticks or use a non-backtick marker.
 
 ## Pitfalls learned (generalized)
 
