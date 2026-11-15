@@ -53,8 +53,24 @@ python -m ci.watch             # poll watcher: runs --fast when anything changes
 python -m ci.watch --once      # single run, useful for a scheduler
 ```
 
-A scheduled run can be registered with the Hermes cron tool pointing at
-`python -m ci.watch --once` (or `--fast`) in this directory.
+Scheduled Hermes cron jobs (all `no_agent`, delivering locally, so a green run is
+silent and a failure surfaces):
+
+| Job | Schedule | Scope |
+| --- | --- | --- |
+| `skills-ci-fast` (`2c9b5a08dbf2`) | every 60 m | fast pipeline |
+| `skills-ci-full-daily` (`8a6a1c097217`) | daily 03:00 | full pipeline incl. build/archive |
+| `skills-sync-hermes-repo` | every 30 m | Hermes ↔ repo synchronisation |
+
+The scheduled entry points live in `~/AppData/Local/hermes/scripts/`
+(`skills-ci.py`, `skills-ci-full.py`) and shell out to `python -m ci` in this
+directory.
+
+## Documentation generation
+
+`python -m ci --only build` writes `dist/skills-index.json`; feed it to
+`scripts/generate-docs-index.py` to regenerate `docs/skills-index.md` (every
+skill, grouped by category).
 
 ## Tests
 

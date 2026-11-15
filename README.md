@@ -1,8 +1,12 @@
 # LoopyLuci Skills
 
-A curated collection of **10,000+ AI agent skills** built for [Hermes Agent](https://hermes-agent.nousresearch.com/) and compatible with any agent that supports the [agentskills.io](https://agentskills.io/) open standard.
+A curated collection of **10,107 AI agent skills** built for [Hermes Agent](https://hermes-agent.nousresearch.com/) and compatible with any agent that supports the [agentskills.io](https://agentskills.io/) open standard.
 
-These skills cover every major domain: software development, data/AI, cybersecurity, cloud, business, science, creative, education, government, engineering, and more. Skills are loaded on-demand by AI agents.
+Skills cover every major domain — software development, data/AI, cybersecurity, cloud, business, science, healthcare, engineering, creative, education, government, and more — across **5,789 distinct tags**. The repository holds **12,800+ tracked files** (~60 MB of skill content) and loads skills on demand.
+
+> Counts on this page are read from the repository. The collection grows as skills
+> sync in from connected Hermes instances; regenerate the per-skill index with
+> `python -m ci --only build && python scripts/generate-docs-index.py`.
 
 ---
 
@@ -11,409 +15,324 @@ These skills cover every major domain: software development, data/AI, cybersecur
 ```bash
 # Clone the repo
 git clone https://github.com/LoopyLuci/Skills.git ~/LoopyLuci-skills
+cd ~/LoopyLuci-skills
 
-# Option A: External Directory (Hermes Agent - recommended)
+# Option A — external skills directory (recommended; read-only scan)
 # Add to ~/.hermes/config.yaml:
 #   skills:
 #     external_dirs:
 #       - ~/LoopyLuci-skills/skills
 
-# Option B: Skill Tap (hub-managed updates)
+# Option B — skill tap (hub-managed updates)
 hermes skills tap add LoopyLuci/Skills
-# Then edit ~/.hermes/.hub/taps.json: {"taps": [{"repo": "LoopyLuci/Skills", "path": "skills/"}]}
+hermes skills tap list
 
-# Option C: Direct URL install
+# Option C — install a single skill by URL
 hermes skills install https://raw.githubusercontent.com/LoopyLuci/Skills/main/skills/<skill-name>/SKILL.md
+
+# Option D — inspect installed skills and browse what is available
+hermes skills list
+hermes skills browse
 ```
 
-All skills are instantly available as slash commands. No per-skill install needed.
+No per-skill install is required for Options A and B: every skill is available
+immediately as a slash command.
 
 ---
 
-## How to Find a Skill
+## Repository Layout
 
-Skills are organized as flat directories. Find the right skill using:
-
-1. **By name**: `skills/<category>-<topic>/SKILL.md`
-2. **By tag**: Search frontmatter `metadata.hermes.tags`
-3. **By category**: Browse the index below
-4. **By search**: `hermes skills search <query>`
+```
+.
+├── skills/                      # 10,107 skill directories (flat)
+│   └── <skill-name>/
+│       ├── SKILL.md             # required — the skill itself
+│       ├── references/          # optional — supporting docs
+│       ├── scripts/             # optional — helper scripts
+│       ├── templates/           # optional — output templates
+│       ├── assets/              # optional — images, data
+│       ├── agents/              # optional — subagent definitions
+│       └── examples/            # optional — worked examples
+├── scripts/                     # tooling: generator, import, sync, docs
+│   ├── skill-generator/         # skill creation/validation/enrichment
+│   ├── import-upstream-skills.py# import skills from upstream repos
+│   ├── prep-customization.py    # build the customization work list
+│   ├── assemble-custom-skills.py# assemble rewritten skills
+│   ├── generate-docs-index.py   # regenerate docs/skills-index.md
+│   └── sync-*.py|.sh            # Hermes ↔ repo synchronisation
+├── ci/                          # local on-device CI/CD pipeline
+│   ├── stages/                  # preflight, static, skills, tests, build, smoke, deploy
+│   ├── hooks/                   # git pre-commit / pre-push
+│   ├── config.json              # thresholds, allowlists, patterns
+│   └── README.md                # pipeline documentation
+├── tests/                       # stdlib unittest suite for the pipeline
+├── docs/
+│   └── skills-index.md          # every skill, grouped by category
+├── _sources/                    # upstream clones used by the importer (git-ignored)
+└── dist/                        # index + release archive (git-ignored)
+```
 
 ---
 
-## Complete Category Index
+## Finding a Skill
 
-### Software Development & Engineering (1,781 skills)
-
-- **database** (299) — SQL, NoSQL, modeling, optimization, migrations
-- **backend** (261) — APIs, microservices, server architecture
-- **docker** (154) — Containers, Compose, registries, best practices
-- **embedded** (121) — Firmware, RTOS, Arduino, STM32, IoT devices
-- **android** (119) — Android development, Kotlin, Jetpack
-- **api** (82) — REST, GraphQL, gRPC, API design
-- **blockchain** (76) — Smart contracts, DeFi, Web3
-- **crypto** (45) — Cryptography, encryption, PKI
-- **container** (44) — Kubernetes, container orchestration
-- **ci** (38) — CI/CD, GitHub Actions, GitLab CI, Jenkins
-- **django** (35) — Django, Django REST, ORM
-- **angular** (33) — Angular, RxJS, NgRx
-- **datadog** (30) — Monitoring, APM, observability
-- **github** (28) — Git, GitHub Actions, API
-- **fastapi** (26) — FastAPI, async, OpenAPI
-- **expressjs** (26) — Express, middleware, Node.js
-- **python** (24) — Python idioms, packaging, tooling
-- **git** (24) — Version control, branching, workflows
-- **elasticsearch** (19) — Search, indexing, ELK stack
-- **windows** (18) — Windows development, Win32, COM
-- **powershell** (15) — PowerShell scripting, automation
-- **architecture** (15) — Software architecture, DDD, patterns
-- **react** (11) — React, hooks, state management
-- **rust** (8) — Rust, ownership, async
-- **nodejs** (8) — Node.js, event loop, streams
-- **kubernetes** (7) — K8s, Helm, operators
-- **security** (6) — Secure coding, OWASP
-- **javascript** (6) — ES6+, DOM, async
-- **devops** (6) — DevOps, SRE, infrastructure
-- **typescript** (5) — TypeScript, type system
-- **performance** (5) — Profiling, optimization, caching
-- **envoy** (5) — Service mesh, Envoy proxy
-- **encryption** (5) — Cryptographic implementations
-- **vscode** (4) — VS Code extensions, debugging
-- **linux** (4) — Linux kernel, sysadmin
-- **graphql** (4) — GraphQL schemas, resolvers
-- **cypress** (4) — E2E testing, Cypress
-- **consul** (4) — Service mesh, Consul
-- **terraform** (3) — IaC, Terraform
-- **sql** (3) — SQL queries, optimization
-- **kotlin** (3) — Kotlin, coroutines
-- **frontend** (3) — Frontend development
-- **flutter** (3) — Flutter, Dart
-- **firewall** (3) — Network security, iptables
-
-### Business, Product & Management (898 skills)
-
-- **email** (392) — Email marketing, deliverability, automation
-- **accounting** (145) — Bookkeeping, GAAP, financial reporting
-- **content** (90) — Content strategy, creation, management
-- **customer** (87) — Customer success, support, experience
-- **business** (83) — Strategy, operations, planning
-- **brand** (28) — Brand strategy, identity, management
-- **product** (15) — Product management, roadmapping
-- **crm** (10) — CRM systems, Salesforce, HubSpot
-- **finance** (8) — Corporate finance, FP&A
-- **marketing** (7) — Digital marketing, growth
-- **sales** (5) — Sales process, CRM
-- **conversion** (5) — CRO, A/B testing
-- **project** (3) — Project management, PMBOK
-- **saas** (2) — SaaS metrics, pricing
-- **logistics** (2) — Logistics, transportation
-- **legal** (2) — Business law, contracts
-- **lean** (2) — Lean, Six Sigma, Kaizen
-- **fundraising** (2) — Venture capital, fundraising
-
-### Cloud & Infrastructure (631 skills)
-
-- **aws** (383) — AWS services, architecture, best practices
-- **azure** (95) — Azure, Microsoft cloud
-- **ansible** (58) — Ansible, automation, playbooks
-- **cloud** (53) — Cloud architecture, multi-cloud
-- **gke** (24) — Google Kubernetes Engine
-- **dns** (6) — DNS, Route53, Cloudflare
-- **circleci** (5) — CircleCI, CI/CD
-- **gcp** (3) — Google Cloud Platform
-- **jenkins** (1) — Jenkins, CI/CD pipelines
-
-### Science, Research & Healthcare (626 skills)
-
-- **biotech** (258) — Biotechnology, pharma, life sciences
-- **bioinformatics** (76) — Computational biology, genomics
-- **crispr** (65) — Gene editing, CRISPR, molecular biology
-- **biomedical** (50) — Biomedical engineering, devices
-- **cardiology** (46) — Cardiology, cardiovascular
-- **clinical** (45) — Clinical research, trials
-- **dentistry** (25) — Dental practice, oral health
-- **epidemiology** (19) — Epidemiology, public health
-- **fda** (16) — FDA regulatory, submissions
-- **research** (5) — Research methodology, academic
-- **endocrinology** (5) — Endocrinology, hormones
-- **ema** (4) — EMA, European regulatory
-- **dermatology** (4) — Dermatology, skin
-- **physics** (2) — Physics, mechanics
-- **regulatory** (1) — Regulatory affairs
-- **psychology** (1) — Psychology, behavioral
-
-### Engineering & Manufacturing (624 skills)
-
-- **aviation** (190) — Aviation, aerospace, flight
-- **aerospace** (172) — Spacecraft, orbital mechanics
-- **automotive** (78) — Automotive engineering, EVs
-- **chemical** (68) — Chemical engineering, processes
-- **civil** (45) — Civil engineering, structural
-- **electrical** (41) — Electrical engineering, circuits
-- **quantum** (8) — Quantum computing, quantum info
-- **engineering** (5) — General engineering
-- **casting** (4) — Casting, foundry
-- **marine** (3) — Marine engineering, naval
-- **scada** (1) — SCADA, industrial control
-- **plc** (1) — PLC programming, automation
-- **mqtt** (1) — MQTT, IoT messaging
-- **mes** (1) — MES, manufacturing execution
-
-### Data Science, AI & Machine Learning (434 skills)
-
-- **data** (324) — Data engineering, pipelines, modeling
-- **ai** (55) — Artificial intelligence, agents
-- **embedding** (10) — Embeddings, vector search
-- **duckdb** (9) — DuckDB, analytical DB
-- **ml** (6) — Machine learning, training
-- **model** (5) — ML models, serving
-- **pytorch** (3) — PyTorch, deep learning
-- **llm** (3) — Large language models
-- **vector** (2) — Vector databases, similarity
-- **rag** (2) — RAG, retrieval augmented generation
-
-### Cybersecurity (106 skills)
-
-- **pentest** (30) — Penetration testing, offensive security
-- **vulnerability** (15) — Vulnerability management
-- **incident** (10) — Incident response, forensics
-- **threat** (8) — Threat intelligence, hunting
-- **crypto** (7) — Cryptography, encryption
-- **compliance** (7) — Compliance, audit, governance
-- **audit** (5) — Security audit, assessment
-- **malware** (4) — Malware analysis, reverse engineering
-- **hipaa** (2) — HIPAA compliance
-- **gdpr** (2) — GDPR, privacy
-- **soc** (2) — SOC operations
-
-### Creative, Design & Media (159 skills)
-
-- **design** (39) — UI/UX design, design systems
-- **animation** (18) — 2D/3D animation
-- **music** (15) — Music production, audio
-- **video** (13) — Video editing, production
-- **photo** (12) — Photography, editing
-- **creative** (12) — Creative direction, ideation
-- **graphic** (11) — Graphic design, visual
-- **illustration** (8) — Illustration, drawing
-- **typography** (6) — Typography, type design
-- **color** (6) — Color theory, palettes
-- **figma** (3) — Figma, prototyping
-- **sketch** (2) — Sketch, prototyping
-- **brand** (2) — Brand design
-
-### Education & Personal Development (11 skills)
-
-- **learning** (3) — Learning science, study skills
-- **meditation** (2) — Meditation, mindfulness
-- **yoga** (2) — Yoga, wellness
-- **writing** (2) — Writing, communication
-- **fitness** (1) — Fitness, training
-- **nutrition** (1) — Nutrition, diet
-
-### Government, Law & Public Policy (9 skills)
-
-- **government** (3) — Public administration, policy
-- **law** (2) — Legal research, practice
-- **policy** (2) — Public policy, regulation
-- **compliance** (1) — Regulatory compliance
-- **ethics** (1) — Ethics, governance
-
-### Other Notable Categories
-
-- **email** (392) — Email systems, SMTP, delivery
-- **climate** (230) — Climate science, sustainability
-- **energy** (59) — Energy, renewables, oil & gas
-- **agri** (138) — Agriculture, agritech
-- **aviation** (190) — Aviation, aerospace
-- **fashion** (179) — Fashion, apparel, design
-- **accounting** (145) — Accounting, bookkeeping
-- **beauty** (80) — Beauty, skincare, cosmetics
-- **automotive** (78) — Automotive, vehicles
-- **digital** (76) — Digital transformation
-- **blockchain** (76) — Blockchain, crypto, Web3
-- **chemical** (68) — Chemical engineering
-- **crispr** (65) — CRISPR, gene editing
-- **civil** (45) — Civil engineering
-- **construction** (41) — Construction, building
-- **carbon** (45) — Carbon, emissions, climate
-- **feature** (40) — Feature engineering
-- **desktop** (40) — Desktop applications
-- **drug** (39) — Drug discovery, pharma
-- **google** (35) — Google Cloud, APIs
-- **faith** (35) — Faith, religion, spirituality
-- **event** (30) — Event planning
-- **cell** (27) — Cell biology
-- **crop** (22) — Crop science
-- **demand** (21) — Demand planning
-- **edge** (20) — Edge computing
-- **color** (20) — Color theory
-- **autonomous** (20) — Autonomous systems
-- **application** (20) — Application development
-- **cognitive** (18) — Cognitive science
-- **computational** (18) — Computational methods
-- **battery** (17) — Battery technology
+1. **Complete index** — [docs/skills-index.md](docs/skills-index.md) lists all 10,107
+   skills with descriptions, grouped by category and linked to each `SKILL.md`.
+2. **Machine-readable** — `dist/skills-index.json` (built by `python -m ci --only build`)
+   carries name, title, description, tags, license, source, and file/byte counts.
+3. **By tag** — search frontmatter `metadata.hermes.tags`, e.g.
+   `grep -rl "tags:.*kubernetes" skills --include=SKILL.md`.
+4. **By name** — skills are flat: `skills/<name>/SKILL.md`.
+5. **Installed view** — `hermes skills list` and `hermes skills browse`.
 
 ---
 
 ## Skill Format Specification
 
-### Directory Structure
+### Directory structure
+
+Each skill is a directory named exactly like its frontmatter `name`:
 
 ```
-skills/<category>-<topic>/          # e.g., skills/python-web-scaffold/
-├── SKILL.md                        # Required — skill definition
-├── references/                     # Optional — additional docs
-│   └── <topic>.md
-├── templates/                      # Optional — output templates
-│   └── <template>.<ext>
-├── scripts/                        # Optional — helper scripts
-│   └── <script>.<ext>
-├── assets/                         # Optional — images, data
-│   └── <file>.<ext>
-└── examples/                       # Optional — example outputs
-    └── <example>.<ext>
+skills/<skill-name>/
+├── SKILL.md          # required
+├── references/       # optional
+├── scripts/          # optional
+├── templates/        # optional
+├── assets/           # optional
+├── agents/           # optional
+└── examples/         # optional
 ```
 
-### SKILL.md Frontmatter
+### `SKILL.md` frontmatter
 
 ```yaml
 ---
-name: skill-name              # Required — kebab-case, matches directory
-description: Brief description (≤120 chars)  # Required — one sentence
-version: 1.0.0                # Required — semver
-author: Name/Handle            # Required
-license: MIT                   # Required — SPDX identifier
-platforms: [any]               # Required — [linux, macos, windows, any]
+name: skill-name              # required — kebab-case, must match the directory
+description: Use when ...     # required — one sentence, ideally <= 120 chars
+version: 1.0.0                # required — semver
+author: LoopyLuci Community   # required
+license: MIT                  # required — SPDX identifier (see License below)
+platforms: [any]              # required — [linux, macos, windows, any]
 metadata:
   hermes:
-    tags: [tag1, tag2]         # Required — 2-5 lowercase tags
-    related_skills: [other]    # Optional — related skill names
+    tags: [tag1, tag2]        # required — 2-5 lowercase tags recommended
+    source: owner/repo        # required for adapted skills (attribution)
+    adapted: true             # marks a skill rewritten from an upstream source
 ---
 ```
 
-### Body Structure
+### Body structure
 
 ```markdown
 # Skill Title
 
-One-sentence summary of what this skill does.
+One-sentence summary of what the skill does.
+
+> Adapted notice (adapted skills only)
 
 ## Trigger
 - Conditions that activate this skill
-- User intent patterns
 
-## Core Concepts
-- Key terminology and domain vocabulary
-- Fundamental principles and mental models
+## When NOT to Use
+- Conditions that belong to another skill
 
-## Step-by-Step Workflow
-1. **Phase Name** — What happens, why, expected output
-2. **Phase Name** — What happens, why, expected output
+## Core Sections...
+### ...
 
-## Tools & Technologies
-- Specific tools, libraries, platforms
-- APIs and integrations
+## Related Skills in This Repo
+- [other-skill](../other-skill/SKILL.md) — description
 
-## Best Practices
-- Patterns that work (with rationale)
-- Common anti-patterns to avoid
+## Adaptation Notes          # adapted skills only
+- ...
 
-## Common Pitfalls
-- Mistake → consequence → fix
-
-## Related Skills
-- Cross-references to complementary skills
+## Source & Attribution      # adapted skills only
+- Upstream, path, license, retrieval date
 ```
 
-### Tag Guidelines
+### Tag guidelines
 
-- Use 2-5 tags per skill
-- Lowercase, kebab-case for multi-word: `machine-learning`, `data-engineering`
-- Be specific: `react` > `frontend`, `postgresql` > `database`
-- Reference existing tags for consistency
+- Lowercase, kebab-case for multi-word tags: `machine-learning`, `data-engineering`.
+- 2–5 tags is the norm (the repo median is 3; the CI check requires at least one).
+- Be specific: `postgresql` over `database`, `react` over `frontend`.
+- Reuse existing tags for consistency — the CI pipeline flags self-referential tags.
+
+---
+
+## Categories
+
+Counts below come from [docs/skills-index.md](docs/skills-index.md).
+
+| Category | Skills |
+| --- | --- |
+| Software Development & Engineering | 2,603 |
+| Science, Research & Healthcare | 1,639 |
+| Business, Product & Management | 1,536 |
+| General & Other | 1,441 |
+| Data Science, AI & Machine Learning | 852 |
+| Cloud & Infrastructure | 596 |
+| Engineering & Manufacturing | 597 |
+| Creative, Design & Media | 426 |
+| Cybersecurity | 264 |
+| Education & Personal Development | 129 |
+| Government, Law & Public Policy | 24 |
+| **Total** | **10,107** |
+
+The most common tags are `biotech` (574), `business` (443), `data` (388), `email`
+(388), `management` (355), `backend` (350), `cloud` (320), `engineering` (318),
+`security` (315), and `finance` (310).
+
+---
+
+## Local CI/CD Pipeline
+
+A fully custom, on-device pipeline — **stdlib-only, no third-party Python
+packages**. See [ci/README.md](ci/README.md) for the full reference.
+
+```bash
+python -m ci --full      # every stage
+python -m ci --fast      # preflight, static, skills, tests
+python -m ci --only skills tests
+python -m ci --list      # show the plan
+python -m ci --full --push
+```
+
+| Stage | What it does |
+| --- | --- |
+| `preflight` | Python version, git branch/commit/dirty state, remote, free disk, tool availability, config sanity |
+| `static` | `compileall`; `ruff`; secret, bare-`except`, oversize-file and JSON scans (working tree only) |
+| `skills` | Parallel validation of every `skills/*/SKILL.md` — frontmatter, name/dir match, license, tags, attribution, cross-links, support files, duplicates, upstream overlap |
+| `tests` | `unittest` discovery with hard timeout and flaky rerun |
+| `build` | `dist/skills-index.json` + release archive |
+| `smoke` | Artifact integrity: index parses, counts match, samples parse, archive verified |
+| `deploy` | Remote reachability + receipt; pushes only with `--push` on a clean tree |
+
+Typical runtime on this repository: **~21 s full**, **~9.5 s fast** across
+10,107 skills and ~12,800 working-tree files.
+
+Safety features: PID lock with stale takeover, per-command timeouts with
+process-tree kill, change-aware stage selection, JSON reports with history and
+pruning, and a flaky-test rerun that separates flakes from real failures.
+
+### Automation
+
+```bash
+python -m ci.install_hooks     # pre-commit (preflight+static) + pre-push (fast)
+python -m ci.watch             # poll watcher; runs --fast on change
+python -m ci.watch --once      # single run, for schedulers
+```
+
+Scheduled jobs (Hermes cron, delivering locally):
+
+- `skills-sync-hermes-repo` — every 30 m, Hermes ↔ repo sync.
+- `skills-ci-fast` — every 60 m, fast pipeline.
+- `skills-ci-full-daily` — daily at 03:00, full pipeline including build/archive.
+
+---
+
+## Upstream Import & Customization
+
+59 skills are adapted from six upstream community repositories rather than
+copied. The pipeline lives in `scripts/`; full details in
+[docs/IMPORTING.md](docs/IMPORTING.md).
+
+| Upstream | Skills |
+| --- | --- |
+| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 23 |
+| [oracle/skills](https://github.com/oracle/skills) | 19 |
+| [mattpocock/skills](https://github.com/mattpocock/skills) | 7 new (34 already present) |
+| [obsidianmd/obsidian-skills](https://github.com/obsidianmd/obsidian-skills) | 7 |
+| [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) | 1 |
+| [Forward-Future/loopy](https://github.com/Forward-Future/loopy) | 2 |
+
+Each adapted skill carries a rewritten description, derived Trigger and
+When-NOT-to-Use sections, a condensed/restructured body, real cross-links into
+this repo, adaptation notes, and license-correct attribution. The CI pipeline
+flags any adapted skill that drifts back toward verbatim upstream text.
+
+---
+
+## Automatic Sync
+
+The repository syncs bidirectionally with Hermes Agent instances on a schedule
+(currently every 30 minutes):
+
+```bash
+./scripts/sync-from-hermes.sh            # dry run
+./scripts/sync-from-hermes.sh --apply    # copy changes in
+./scripts/sync-from-hermes.sh --force    # sync, commit, and push
+```
+
+Other sync helpers: `scripts/sync-bidirectional.py`, `scripts/sync-skills-fast.py`,
+`scripts/sync-hermes-windows.py`, `scripts/sync-machine.py`.
+
+---
+
+## Tests
+
+`tests/` contains the stdlib `unittest` suite for the pipeline itself — validation
+rules and orchestration units. It runs as the `tests` stage:
+
+```bash
+python -m unittest discover -s tests -t . -v
+```
+
+27 tests cover frontmatter parsing, every skill rule, planning, change selection,
+locking, pruning, and the secret-scanning heuristics.
 
 ---
 
 ## Skill Generator Toolkit
 
-Tools for creating, validating, bulk-generating, and enriching skills.
-
-### Quick Commands
-
 ```bash
-# Generate a single skill
+# Generate one skill
 python scripts/skill-generator/generate_skill.py generate \
-  --name my-skill \
-  --description "Does X, Y, Z" \
-  --tags python,cli \
-  --apply
+  --name my-skill --description "Does X" --tags python,cli [--category CAT] --apply
 
-# Bulk generate from JSON
-python scripts/skill-generator/bulk_generate.py skills.json --apply
+# Bulk generate from a JSON file ([{"name","description","tags"}, ...])
+python scripts/skill-generator/generate_skill.py bulk skills.json --apply
 
-# Validate all skills
-python scripts/skill-generator/validate_skill.py
+# Validate one skill
+python scripts/skill-generator/generate_skill.py validate skills/my-skill
 
 # Enrich boilerplate skills with real content
 python scripts/skill-generator/generate_skill.py enrich --apply
 ```
 
-### Bulk JSON Format
-
-```json
-[
-  {"name": "my-skill", "description": "Does X", "tags": ["python", "cli"]},
-  {"name": "other-skill", "description": "Does Y", "tags": ["web", "react"]}
-]
-```
-
-### Bulk CSV Format
-
-```csv
-name,description,tags
-my-skill,Does X,"python, cli"
-other-skill,Does Y,"web, react"
-```
-
-### Category Detection
-
-The generator auto-detects categories from name keywords:
-- `python-*`, `react-*`, `api-*` → **software-development**
-- `security-*`, `pentest-*`, `crypto-*` → **security**
-- `aws-*`, `kubernetes-*`, `docker-*` → **cloud**
-- `data-*`, `sql-*`, `ml-*` → **data**
-- `ai-*`, `llm-*`, `model-*` → **ai**
-
-Each category uses a different content template with domain-specific workflow, tools, and pitfalls.
-
----
-
-## Automatic Updates
-
-This repository syncs bidirectionally with Hermes Agent instances via cron:
-
-```bash
-# Pull latest
-cd ~/LoopyLuci-skills && git pull
-
-# Push (automatic via sync script)
-./scripts/sync-from-hermes.sh --force
-```
-
-Sync runs hourly on connected machines. New skills added in Hermes are auto-committed and pushed to GitHub.
+`scripts/skill-generator/` also ships `README.md` and `SKILL-FORMAT.md`.
 
 ---
 
 ## Contributing
 
-1. **Add skills** — Use the generator or create manually following the format
-2. **Validate** — Run `validate_skill.py` to check format
-3. **Commit** — Skills are auto-synced; manual commits welcome
-4. **Push** — Sync script handles push; PRs accepted for bulk additions
+1. **Add a skill** — use the generator, or create `skills/<name>/SKILL.md` by hand
+   following the format above.
+2. **Validate** — run `python -m ci --fast` (or `python -m ci --only skills`).
+3. **Commit** — the pre-commit hook runs preflight + static automatically.
+4. **Push** — the pre-push hook runs the fast pipeline; it must be green.
+
+Bulk additions and upstream imports are welcome as pull requests.
 
 ---
 
-## License
+## License & Attribution
 
-MIT — free to use, share, and contribute.
+- **MIT** — 10,088 skills, including all adapted skills from MIT-licensed upstreams.
+- **UPL-1.0** — 19 skills derived from [oracle/skills](https://github.com/oracle/skills)
+  (Copyright (c) 2025 Oracle and/or its affiliates).
+
+Adapted skills retain their upstream license and credit the source repository,
+path, and copyright holder in a `Source & Attribution` section; the CI pipeline
+requires that attribution and flags missing or altered licenses.
+
+---
+
+## Documentation Map
+
+| Document | Contents |
+| --- | --- |
+| [docs/skills-index.md](docs/skills-index.md) | Every skill, grouped by category, with descriptions |
+| [ci/README.md](ci/README.md) | Pipeline stages, CLI, automation, configuration |
+| [docs/IMPORTING.md](docs/IMPORTING.md) | Upstream import and customization workflow |
+| [scripts/skill-generator/SKILL-FORMAT.md](scripts/skill-generator/SKILL-FORMAT.md) | Generator-specific format notes |
+| [Hermes Agent docs](https://hermes-agent.nousresearch.com/docs) | Host agent documentation |
