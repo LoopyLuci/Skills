@@ -19,7 +19,7 @@ metadata:
 
 **Core AI backend:** [ModelMistress](https://github.com/LoopyLuci/ModelMistress) — local model hub (OpenAI-compatible API + Ollama-compatible API + MCP + ACP)
 
-**Platform type:** Desktop-first (pywebview/WebView2 or Tauri shell + FastAPI backend). Not a browser dashboard.
+**Platform type:** Desktop-first (PySide6/Qt + FastAPI backend). Not a browser dashboard.
 
 **Guiding principles:**
 - Local-first: all processing on your machine (RX 7900 XTTX GPU, Windows 10)
@@ -28,7 +28,7 @@ metadata:
 - Production-grade: robust error handling, retry logic, logging, state persistence
 
 **User preferences (standing):**
-- Desktop GUI = pywebview/Tauri, never browser dashboard
+- Desktop GUI = PySide6/Qt (native) + FastAPI backend; never a browser dashboard. Verify first with `import webview._webview` — on Python 3.14 that C extension is absent, so pywebview is not a viable desktop stack.
 - Free models sorted to top; paid models hidden by default for Nous/OpenRouter
 - Multi-platform listing optimization (title formulas, description formats)
 - Full implementation, zero tolerance for bugs
@@ -46,7 +46,7 @@ metadata:
 | Need chat research | ModelMistress `/v1/chat/completions` |
 | Need embeddings | ModelMistress `/v1/embeddings` |
 | Need multi-platform posting | ItemForge listing generator |
-| Need desktop GUI | pywebview + FastAPI backend |
+|| Need desktop GUI | PySide6/Qt + FastAPI backend (native, never a browser dashboard) |
 
 ---
 
@@ -166,7 +166,53 @@ curl -X POST http://127.0.0.1:8000/v1/forge/listings/{listings_id}/publish \
 
 ---
 
-## ItemForge Project Structure
+## Desktop GUI (PySide6/Qt)
+
+**Trigger:** Use when building (or re-building) the ItemForge native desktop front-end. The FastAPI backend is already complete; this section wires the desktop GUI to that same backend.
+
+### 1. GUI toolkit decision
+- **Default stack:** PySide6 (Qt for Python) + FastAPI backend. This is the only working native-desktop stack on this host: Python 3.14 no longer ships pywebview's native `_webview` C extension, so pywebview is dead on 3.14 even though `import pywebview` itself succeeds.
+- **Verify before committing:** run `import webview._webview`; if it raises ImportError, pywebview's native extension is absent and the desktop GUI must be PySide6/Qt. pywebview's pure-Python `guilib.py` may still import, but the native extension is the requirement that fails — so pywebview cannot be the GUI stack on Python 3.14.
+
+### 2. GUI module layout (reusable pattern)
+| File | Role |
+|------|------|
+| `app/gui/forge_service.py` | Data-access layer wrapping `app.services` + `app.database`; a single `ForgeService` singleton; keeps the GUI decoupled from the backend HTTP layer. |
+| `app/gui/models.py` | Qt data model (e.g. `ItemsTableModel`) for `QStandardItemModel` display of items/listings. |
+| `app/gui/pages.py` | Page widgets (items list + detail, listings, status, settings), PySide6 widgets. |
+| `app/gui/forge_window.py` | `QMainWindow` with a fixed-width `QListWidget` sidebar (menu → stacked page) and a `QStackedWidget` content area. |
+| `app/gui/main.py` | Entry: build `QApplication`, `MainWindow`, `exec()`. |
+
+### 3. Threading for AI calls
+Long-running AI calls (research, docs, listings) must not block the UI thread. Run them on a background worker:
+```python
+class _Worker(QObject):
+    done = Signal(object)
+    def run(self):
+        try:
+            loop = asyncio.new_event_loop()
+            asyncio.set_event_loop(loop)
+            result = loop.run_until_complete(coro)
+            self.done.emit(result)
+        except Exception as e:
+            self.done.emit(e)
+QThreadPool.globalInstance().start(_Worker())
+```
+The `run_ai()` helper in `pages.py` wires an `asyncio` coroutine to this worker and returns the result on the main thread.
+
+### 4. Shared database path
+The backend chdirs to the repo root at startup, opening `<repo>/itemforge.db`. The GUI data layer must resolve the DB against the repo root as well — otherwise it opens an empty `<CWD>/itemforge.db` and shows nothing. In `forge_service.py`:
+```python
+import app.database
+from pathlib import Path
+_app_root = Path(__file__).resolve().parent.parent.parent
+app.database.DB_PATH = _app_root / "itemforge.db"
+```
+
+### 5. Verification
+- Import the whole GUI chain before running: `from app.gui import pages, forge_window, main`.
+- `py_compile` on GUI files can report false failures on embedded backslash paths — prefer an import check instead.
+- Boot the server on port 8000 with a clean `itemforge.db` (recreated by backend `lifespan.init_db`), then confirm the GUI data layer returns the same rows.
 
 ```text
 Z:\Projects\ModelMistress\
@@ -303,13 +349,14 @@ model-mistress km load ecommerce-best-practices  # Knowledge module
 | Quota exceeded | Reset via `model-mistress keys rotate` |
 | Rate limited | Use `model-mistress schedule` to queue requests |
 | CLI not found | Run `cargo build --release -p model-mistress --features bundle-engine` |
-| Vision API rate limit (429) | Wait 40-45 min, or use local AI fallback |
-
----
+|| Background server (uvicorn) dies before serving | `nohup`/`&` from this terminal tool kills the child before it binds. Launch a script that runs `subprocess.Popen([python, "-m", "uvicorn", "app.main:app", "--host", "127.0.0.1", "--port", "8000"])` and keep the parent alive with `.wait()`; if the shell exits, detach with `setsid nohup`. Verify with `curl -s http://127.0.0.1:8000/health`. |
+|| GUI data layer reads empty DB | The backend chdirs to the repo root, opening `<repo>/itemforge.db`. If the GUI opened an empty `<CWD>/itemforge.db`, the data layer resolved the path wrong — point `app.database.DB_PATH` at the repo-root SQLite file. |
+|| pywebview `guilib.py` corrupted (accidental overwrite) | Restore from the wheel: `pip download pywebview==X.Y.Z --no-deps --no-build-isolation`, extract `webview/guilib.py` with `zipfile`, write it back. Verify size and content before closing — genuine pywebview `guilib.py` starts with `from __future__ import annotations` and has no forge_service markers. |
+|
 
 ## User Preferences Embedded
 
-- **Desktop GUI = pywebview/Tauri, never browser dashboard**
+- **Desktop GUI = PySide6/Qt (native) + FastAPI backend; never a browser dashboard.** pywebview's `_webview` native C extension is absent on Python 3.14, so PySide6/Qt is the only working desktop stack.
 - **Free models sorted to top; paid models hidden by default** for Nous/OpenRouter
 - **Multi-platform listing optimization** (title formulas, description formats)
 - **Full implementation, zero tolerance for bugs**
@@ -322,6 +369,7 @@ model-mistress km load ecommerce-best-practices  # Knowledge module
 
 - `references/itemforge-api.md` — Condensed ItemForge API endpoint reference
 - `references/modelmistress-endpoints.md` — Full ModelMistress direct API endpoint reference
+- `references/desktop-gui.md` — Desktop GUI (PySide6/Qt) build, server boot, and file-restoration recipe
 - `Z:\Projects\ModelMistress\README.md` — ModelMistress overview, quick start, API reference
 - `Z:\Projects\ModelMistress\DESIGN.md` — ModelMistress architecture
 - `Z:\Projects\ModelMistress\CLAUDE.md` — Notes for agents
