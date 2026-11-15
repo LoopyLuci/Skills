@@ -259,6 +259,37 @@ Run in order; stop on first failure:
 
 - **Right-side file not written**: After a file write (cargo patch/terminal), verify with `cargo check` — changes may not land if the file was not properly flushed.
 
+- **Workspace dependency resolution with `workspace = true` requires explicit paths**: When a workspace member depends on another workspace member via `workspace = true` in its Cargo.toml, the root Cargo.toml MUST have that dependency listed under `[workspace.dependencies]` with an explicit `path = "..."`. Without the path, `cargo check` fails with `dependency specified without providing a local path, Git repository, version, or workspace dependency to use`. The fix is to add `path = "crates/<crate-name>"` for each internal dependency in the root workspace.dependencies section.
+
+- **Clippy warning fix patterns**: Systematic clippy warning reduction uses:
+  1. `cargo clippy --fix --lib -p <crate> --allow-no-vcs --` for auto-fixable warnings
+  2. Python script with targeted `str.replace()` for non-auto-fixable warnings (dead_code, unused_variables, unused_mut, too_many_arguments, unnecessary_operation, if_same_then_else)
+  3. Add `#[allow(dead_code)]` or `#[allow(clippy::...)]` attributes at the struct/enum/function level rather than per-field
+  4. Prefix unused variables with `_` (e.g., `let _unused = ...`)
+  5. Add `Default` derive/implementation for types that need it
+  6. Always re-run `cargo clippy --workspace --all-targets` after fixes to verify reduction
+
+- **Python script approach for systematic fixes**: When many files need similar clippy fixes, write a Python script that:
+  - Reads each target file
+  - Applies targeted string replacements for known warning patterns
+  - Writes the file back
+  - This is faster and more reliable than manual patching for repetitive changes
+
+- **CRLF line endings in repo files**: The Browzeit repo uses CRLF line endings. Always run `sed -i 's/\r$//' <file>` before using the `patch` tool, or use `write_file` which handles line endings correctly. The patch tool silently fails on CRLF files.
+
+- **Clippy warning categories encountered and fixed**:
+  - `dead_code` — unused structs, enums, fields, methods, functions → add `#[allow(dead_code)]` or prefix with `_`
+  - `unused_variables` / `unused_mut` — prefix with `_` or remove `mut`
+  - `too_many_arguments` — add `#[allow(clippy::too_many_arguments)]` on the function
+  - `unnecessary_operation` — add `#[allow(clippy::unnecessary_operation)]` on the expression
+  - `if_same_then_else` — collapse redundant if/else branches or add allow attribute
+  - `let_unit_value` — remove unnecessary `let` bindings to unit
+  - `manual_let_else` — use `let else` pattern where applicable
+  - `unused_imports` — remove the import
+  - `needless_return` / `unneeded_return` — remove explicit `return` at end of block
+  - `push_str` for single char — use `push(c)` instead
+  - `static_mut_refs` — add `#[allow(static_mut_refs)]` on the unsafe block
+
 ## Verification Checklist
 
 - [ ] `cargo check --workspace` -> exit 0

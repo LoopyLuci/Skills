@@ -99,3 +99,26 @@ clamp-versus-reject semantics before concluding the app is broken.
 uses. Tests calling a platform-only function fail to compile elsewhere, and
 `use x::{self, ...}` names `self` on every platform. Check non-Windows targets;
 a Windows-only dev loop cannot see these.
+
+## Cross-agent feed bridge
+
+A declared-but-unconsumed surface is a drift risk the moment a second agent starts emitting. Close the seam with a small, well-tested consumer module, never an exemption.
+
+1. **Verify the surface, do not trust a label.** Read the handler/route and confirm it is real (a responder, not a dead end). Classify live / read-only / inert before assuming it is wired.
+2. **Write the consumer module.** A thin layer turning the source agent's record shape into the target schema, one record per source model (`ModelMistressTrace -> InsightTraceRow`, `NlpcliDecision -> InsightDecisionStepRow`, `BusEvent -> InsightBusEventRow`). The target decides routing by **presence** (`trace_id` -> traces, `step_id` -> decisions, `event_id` -> events); never emit a type tag where the target assigns by presence.
+3. **Mirror the target's caps.** The target schema is the source of truth for field lengths. Assert every string field is <= the target's cap, and assert the module preserves (does not silently truncate) long values.
+4. **CLI + tests.** A CLI alias and a pytest set covering transforms, routing, and empty-drain. One assertion per contract.
+5. **Live-verify at the wire.** Start the counterparty daemon on SQLite (no ClickHouse), POST one feed containing every record type, then read the rows back from the SQLite insight tables. Record what returned accepted=N, errors=[] with the shard/port/commit. If the counterparty cannot be stood up, say so plainly in the as-built record, never paper over it.
+6. **Do not exempt.** The surface is live because the consumer exists. If drift is flagged later, wire the real call site; an allowlist entry names the consumer file, in the same commit.
+
+### Always-on rules (this user)
+
+- Full implementation, no stubs; verification-first with working artifacts. "Proceed with all" means every phase live-verified; zero tolerance for errors.
+- Cross-project identity normalization: on import normalize provider IDs through the shared mapping (nous -> nous_research, opencode-zen -> open_code_zen, opencode-go -> open_code_go, xai -> grok); export reads real state.
+- Desktop GUI convention: a "desktop GUI" is a native pywebview/WebView2 or Tauri shell around a backend — never a browser dashboard.
+- Generative UI convention: agents create, modify, and optimize UI components in real-time (add buttons, change layouts, generate themes).
+- Provider concurrency pattern: fetch provider APIs concurrently; include a circuit breaker (5 fails, 60s) and an LRU cache (50 entries, 5-minute TTL).
+
+## Probing, not just unit testing
+
+A unit test over a helper proves the helper works, not that it is called. For a feed bridge, assert the record reaches the target store through the real interface — start the daemon, POST the route, read the SQLite table. Expect the probe's own assumptions to be wrong first: correct wrong field names, envelope shapes and caps before concluding the bridge is broken. Do not exempt a new module to go green; wire the real call site.
