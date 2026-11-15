@@ -69,6 +69,44 @@ Use this skill whenever you are asked to (a) stand up a **new, fully custom, loc
 - Gradle writes test-results XML to `$PROJECT_ROOT/$APP_MODULE/app/build/test-results/testDebugUnitTest/` (inside the app module's build output), not under the CI `work/` directory. A wrong path silently yields TOTAL=0.
 - MSYS/windows path casing for native binaries. On git-bash (Windows), drive letters resolve to MSYS mount points (`C:\` → `/c/`, `H:\` → `/h/`). Native Windows executables (e.g. `adb.exe`, any `.exe` in `platform-tools/`) cannot `stat()` an MSYS-style path — they fail with "adb.exe: failed to stat ... No such file or directory". Convert with `cygpath -w` before passing to a native Windows binary. Use the MSYS-style path for gradle/Java commands (they follow symlinks) and the Windows-style path for `adb`/other `.exe` tools.
 
+## Build, run, and verify (making stages actually pass)
+
+The pipeline is only trustworthy if every stage is RUN and reports a real exit
+code. Do not author files that look right on paper:
+
+- Run `bash -n` on every `ci/*.sh` and `ci/preflight/**/*.sh` you add or edit
+  before first commit (syntax check, not behaviour).
+- After each change, run the pipeline end-to-end and capture the real output. A
+  failing stage means the pipeline reports the real command output and exit code;
+  trace the FIRST failure and change strategy instead of re-running the same
+  failing command in a loop.
+- Verify the APK exists and is non-empty before any stage installs, archives, or
+  reports the build as good.
+
+### Sourcing, ordering, and gate authoring
+
+- Run environment detection (`detect()` in `ci/config.sh`) BEFORE the preflight
+  gates read env. Gates run under `set -u`, and an unset variable aborts the
+  whole run: in the LumenSplat checkout the gates read `${GRADLE}` which `detect()`
+  populates, so reordering detect() ahead of preflight fixed it.
+- Populate every env var with a default (`: "${VAR:=default}"`) in a gate; do not
+  dereference `$VAR` when VAR may be unset.
+- `run_preflight.sh` must count FAILURES, not passes. A counter that increments
+  on the non-failing branch is inverted and reports passes as failures.
+- `run_preflight.sh` must `export FAILED` so `run_pipeline.sh` reads the count
+  instead of re-running the gates.
+- The preflight JSON summary must be a single valid JSON array (each gate emits a
+  one-line NDJSON record; the summary is derived). Never embed a multi-line JSON
+  file as a scalar field.
+- `gradlew` is executable (check `-x`); the Windows `gradlew.bat` has no execute
+  bit (check `-f`). A gate that only checks `-f` on gradlew passes a
+  non-executable script; a gate that only checks `-x` on gradlew.bat fails on
+  Windows.
+- Version-catalog keys are case-sensitive and spelling-exact: a
+  `version.ref` pointing at a `[versions]` key whose spelling differs (kebab-case
+  `tflite-support` vs camelCase `tfliteSupport`) fails with "version reference
+  '…' doesn't exist". Match the declared key spelling exactly.
+
 ## Supporting files
 
 - `references/android-ci-recipes.md` — concrete commands for each Android pipeline stage.
