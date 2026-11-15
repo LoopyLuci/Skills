@@ -67,7 +67,7 @@ Use this skill whenever you are asked to (a) stand up a **new, fully custom, loc
 - Android's `/system/bin` may lack `pidof`; use `ps -A | grep <package>` to confirm a process is alive.
 - Quoting a glob (`"*.xml"`) passes the literal directory path to a command; **unquote** it so the shell expands the files. A non-matching quoted glob produces `TOTAL=0`. Globs must expand before the command receives them.
 - Gradle writes test-results XML to `$PROJECT_ROOT/$APP_MODULE/app/build/test-results/testDebugUnitTest/` (inside the app module's build output), not under the CI `work/` directory. A wrong path silently yields TOTAL=0.
-- `write_file` refuses to overwrite a file the session has not fully read; re-read with `read_file` (every page) before a stale-write, or use `patch` for a targeted edit.
+- MSYS/windows path casing for native binaries. On git-bash (Windows), drive letters resolve to MSYS mount points (`C:\` → `/c/`, `H:\` → `/h/`). Native Windows executables (e.g. `adb.exe`, any `.exe` in `platform-tools/`) cannot `stat()` an MSYS-style path — they fail with "adb.exe: failed to stat ... No such file or directory". Convert with `cygpath -w` before passing to a native Windows binary. Use the MSYS-style path for gradle/Java commands (they follow symlinks) and the Windows-style path for `adb`/other `.exe` tools.
 
 ## Supporting files
 
