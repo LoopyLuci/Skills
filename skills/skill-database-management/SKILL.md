@@ -30,7 +30,7 @@ Don't use for: single-skill authoring (use `hermes-agent-skill-authoring`), pers
 ## Prerequisites
 
 - Hermes Agent installed with `skills.external_dirs` or `skills.tap` support
-- GitHub repo cloned locally (e.g., `Z:\Projects\Skills\LoopyLuci-skills`)
+- GitHub repo cloned locally (e.g., `H:\Projects\Skills`)
 - Python 3.11+ with stdlib only (no external deps)
 - Git + `gh` CLI authenticated
 
@@ -163,6 +163,27 @@ Common issues and fixes:
 | Stray directories | Remove (not skill directories) |
 | Duplicate `## Trigger` from enrichment | Remove appended sections, keep original |
 
+### 8. Local CI/CD Pipeline
+
+A stdlib-only pipeline lives in `ci/` — no third-party Python packages, so it runs on a
+bare interpreter. Full reference: `ci/README.md`; stage detail: `references/local-ci-pipeline.md`.
+
+```bash
+python -m ci --full      # every stage
+python -m ci --fast      # preflight, static, skills, tests
+python -m ci --only skills tests
+python -m ci --list      # show the plan
+python -m ci --full --push
+```
+
+Stages: `preflight`, `static`, `skills`, `tests`, `build`, `smoke`, `deploy`. On this
+repo the full run is ~21 s and the fast run ~9.5 s across 10,000+ skills.
+
+Automation: `python -m ci.install_hooks` (pre-commit = preflight+static, pre-push =
+fast), `python -m ci.watch` (poll watcher), and Hermes cron jobs for scheduled runs.
+The `build` stage writes `dist/skills-index.json`; feed it to
+`scripts/generate-docs-index.py` to regenerate `docs/skills-index.md`.
+
 ## Pitfalls
 
 1. **Parsing nested YAML with regex.** A regex-based YAML parser fails on nested structures like `metadata: {hermes: {tags: [...]}}`. Use a proper parser with an indent stack — track `(dict, indent_level)` and pop when indent decreases.
@@ -197,9 +218,23 @@ Common issues and fixes:
 
 16. **Delegated fan-outs can fail on provider rate limits.** Finish the remaining work directly in the main session instead of re-dispatching the same batch, and diff the output directory against the work list first — a failed child may still have written some files.
 
+17. **Per-item validation parallelises; cross-item checks do not.** Fan out one worker per skill directory with `ProcessPoolExecutor`, but do duplicate detection (body hash, title+description) in the parent after all workers report — worker-local sets never see each other's items, so duplicates slip through.
+
+18. **Secret scanners false-positive on prose and env-var names.** Scope the loose `password|token|api_key = "..."` pattern to code file extensions only, and drop matches whose value is an all-caps env constant or contains whitespace/`(`/`=`/`$` — those are sentinel constants, env-var names, and code, not credentials.
+
+19. **Tool output is not findings.** When parsing linter output, filter the success line (`ruff --output-format concise` prints `All checks passed!` on stdout) or every green run reads as a failure.
+
+20. **Change-aware selection must pull in dependent stages.** A content change implies rebuilding the derived artifacts: selecting `skills` also selects `build` and `smoke`; a code change also selects `tests`. Skipping dependents leaves a green run over stale artifacts.
+
+21. **No test dependencies? Use stdlib `unittest` in a subprocess.** `python -m unittest discover` gives the same hard timeout and process-tree kill as pytest-xdist without adding a dependency, which keeps the pipeline runnable on a bare interpreter.
+
 ## Verification
 
 ```bash
+# Full local pipeline (preflight, static, skills, tests, build, smoke, deploy)
+python -m ci --full
+# Expected: pipeline GREEN
+
 # Validate all skills pass
 python scripts/skill-generator/validate_skill.py
 # Expected: Valid: N, errors: 0
