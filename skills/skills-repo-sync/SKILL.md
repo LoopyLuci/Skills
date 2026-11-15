@@ -1,8 +1,8 @@
 ---
 name: skills-repo-sync
 description: "Sync skills between Hermes and a GitHub repo."
-version: 1.0.0
-author: agent
+version: 1.1.0
+author: Hermes Agent
 license: MIT
 platforms: [windows, linux, macos]
 metadata:
@@ -84,6 +84,19 @@ hermes gateway status
 
 The gateway auto-starts on Windows login via a startup shortcut.
 
+## Importing External Skill Repos
+
+Sync is Hermes <-> your repo. **Importing** is bringing someone else's skills
+repo into your collection as reformatted, first-class entries — clone into a
+git-ignored `_sources/`, dedupe versioned copies, skip container/index skills,
+adapt each skill to your canonical frontmatter plus Trigger / When-NOT-to-Use /
+Related Skills / Adaptation Notes / license-correct Source & Attribution, then
+verify structural integrity and verbatim-overlap against upstream.
+
+Full procedure, the differentiation bar, and the pitfalls (container skills,
+version-nested duplicates, nested metadata, per-source licenses, rate-limited
+rewrite fan-out) live in `references/importing-upstream-repos.md`.
+
 ## Pitfalls
 
 - **Hardcoded paths break cross-machine sync.** Existing repo scripts may be hardcoded to `D:\Projects\Skills` or `Z:\Projects\Skills\...` from other machines. Always use `Path(__file__).resolve()` and environment variables.
@@ -100,3 +113,7 @@ After setup, verify:
 2. `hermes gateway status` shows the gateway running
 3. Run the sync wrapper manually: `python ~/AppData/Local/hermes/scripts/sync-cron.py`
 4. Check GitHub for the commit with the sync message
+
+## References
+
+- `references/importing-upstream-repos.md` — Importing third-party skill repos: dedupe, container-skill detection, canonical adaptation, overlap verification, license attribution

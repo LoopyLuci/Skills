@@ -16,6 +16,7 @@ metadata:
 
 Use this skill when building, maintaining, or troubleshooting a local on-device CI/CD pipeline. This includes:
 - Setting up preflight checks, static analysis, test automation, smoke tests, build, and deploy stages
+- Pipelines for large **content/data repositories** (skill collections, markdown knowledge bases, catalogs) where the artefact is many documents rather than a package — see `references/content-repo-pipelines.md`
 - Configuring git hooks (pre-commit, pre-push) for automated pipeline execution
 - Troubleshooting pipeline failures (stale reports, historical diff ranges, Gradle error parsing)
 - Adding file watchers or scheduler triggers for continuous automation
@@ -57,6 +58,12 @@ A `@staticmethod` that references class attributes must use the class name direc
 ### Exception variable lambda capture
 Python 3 deletes the exception variable after the except block ends. If the exception is captured in a lambda (e.g., `QTimer.singleShot(0, lambda: ...)`), use a default argument: `lambda exc=exc: ...`.
 
+### Aggregate parallel work in the parent, not the workers
+When a stage validates thousands of items with a process pool, a worker-local `set`/`dict` (seen names, duplicate hashes, file indexes) is per-process and silently misses every cross-item match. Return `(findings, meta)` from each worker and build the global sets in the parent; pass read-only context in the payload.
+
+### One severity for everything drowns real errors in legacy noise
+Tier findings by path — `error` for the pipeline's own code and tests, `warning` for legacy/utility and vendored code, `info` for content conventions. A run fails only on `error`. A pipeline that is permanently red on pre-existing debt gets ignored, which is worse than no pipeline.
+
 ### Bare except
 Never use bare `except:` — it catches KeyboardInterrupt and SystemExit. Always use `except Exception:`.
 
@@ -90,4 +97,5 @@ Install with: `python ci/install_hooks.py`
 ## References
 
 - `references/pipeline-stages.md` — Detailed stage implementations and configuration
+- `references/content-repo-pipelines.md` — Adapting the pipeline to large content/data repos: stage mapping, parallel validation, severity tiers, secret-heuristic false positives, unittest-without-pytest
 - `references/troubleshooting.md` — Common failures and fixes
