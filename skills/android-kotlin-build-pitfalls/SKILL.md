@@ -81,6 +81,16 @@ Run `./gradlew clean` first if a compile error persists after fixing source.
 5. **Hilt Context injection requires `@ApplicationContext`**
    - `Context` injected into `@Provides` methods must use `@ApplicationContext`
 
+### Gradle Kotlin DSL script cache
+
+**`metadata.bin` loss after repeated `build.gradle.kts` edits.** When `gradlew <task>` fails with `Could not read workspace metadata from .../kotlin-dsl/scripts/<hash>/metadata.bin`, the kotlin-dsl script plugin's on-disk cache is stale, not the source. Kill the daemon and clear the script cache:
+
+- `./gradlew --stop`
+- `rm -rf ~/.gradle/caches/8.7/kotlin-dsl/scripts/<script-hash>/`
+- re-run `./gradlew <task>`
+
+Do not fix this by editing more build files; the stale cache, not the source, is the failure.
+
 ### Room + KSP + Room DAO
 
 6. **Room DAO must be in the same package as its `@Database` class**
