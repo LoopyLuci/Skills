@@ -26,7 +26,11 @@ Use when `./gradlew assembleDebug` or `./gradlew compileDebugKotlin` fails with 
    - The `is` keyword is for type checking, not enum entry matching
    - Fix: use `value == Enum.ENTRY` instead
 
-2. Box `contentAlignment` is not a valid parameter
+2. Enum properties named `name` shadow `Enum.name` and cause compile errors
+   - Fix: rename the property to `taxName` (or any non-reserved name)
+   - Pattern: `enum class TaxType(code: String, taxName: String, ...)`
+
+3. Box `contentAlignment` is not a valid parameter
    - Fix: Use nested Box with explicit sizing
 
 ### Activity result API
@@ -56,21 +60,42 @@ Run `./gradlew clean` first if a compile error persists after fixing source.
    - The `is` keyword is for type checking, not enum entry matching
    - Fix: use `value == Enum.ENTRY` instead
 
-2. **Activity result API needs ALL three dependencies**
+2. **Enum property named `name` shadows `Enum.name` and causes compile error**
+   - The Kotlin compiler rejects enum classes with a property named `name` because it shadows the `name` member of the `Enum` superinterface
+   - Fix: rename the property to `taxName` (or any non-reserved name)
+   - Example: `enum class TaxType(code: String, taxName: String, ...)`
+
+3. **Room DAO in separate package fails KSP validation against wrong schema**
+   - When a `@Dao` interface is in a separate package (e.g., `com.spendingsaver.tax`) from its `@Database` class, KSP validates the DAO queries against the main app's `AppDatabase` schema instead of the correct `@Database` class
+   - Result: `SQLITE_ERROR: no such table: tax_detail` despite the `@Database` annotations being correct
+   - Fix: (a) move the DAO into the main app's `com.spendingsaver.data` package, or (b) create a separate Android library module for the feature
+   - Detection: `./gradlew assembleDebug` fails with `SQLITE_ERROR: no such table` and `[ksp] MissingType` errors
+   - Alternative: use a dedicated module with its own `build.gradle.kts` and `settings.gradle.kts`
+
+4. **Activity result API needs ALL three dependencies**
    - `activity-compose`, `activity`, AND `activity-ktx` must all be present
    - Missing any one causes `rememberLauncherForActivityResult` to be unresolved
 
-3. **Hilt Context injection requires `@ApplicationContext`**
+5. **Hilt Context injection requires `@ApplicationContext`**
    - `Context` injected into `@Provides` methods must use `@ApplicationContext`
 
-4. **Duplicate top-level functions across files cause overload resolution ambiguity**
+6. **Duplicate top-level functions across files cause overload resolution ambiguity**
    - If two files define the same function name in the same package, Kotlin cannot resolve which to use
+   - Detection: `Conflicting declarations: val backgroundGradient` or similar
 
-5. **MSYS paths do not work with native Windows tools**
+7. **MSYS paths do not work with native Windows tools**
 
-6. **Kotlin source file must have `package` declaration**
+8. **Kotlin source file must have `package` declaration**
 
-7. **Gradle builds that fail can leave stale intermediate files**
+9. **Gradle builds that fail can leave stale intermediate files**
+   - After fixing source files, always run `./gradlew clean` to remove stale KSP and intermediate artifacts
+   - The `clean` task deletes the `build/` directory, which contains KSP-generated stubs and cached annotations
+
+10. **Build memory exhaustion**
+   - Kotlin compilation can fail with `Insufficient memory` or `malloc failed` for large projects
+   - Fix: increase JVM heap in `gradle.properties`: `org.gradle.jvmargs=-Xmx4096m`
+   - Also set `GRADLE_OPTS="-Xmx4096m -XX:MaxMetaspaceSize=512m"` in `ci/config.sh`
+   - Pattern: `Insufficient memory for the Java Runtime Environment to continue`
 
 ## References
 
