@@ -63,35 +63,46 @@ SpendingSaver App UI (Composables: chat, image description, voice, image gen)
 | SpendingSaverAndroid/app/src/main/java/com/spendingsaver/ui/screens/AIComponents.kt | UI components (Chat, Image description, Voice input) |
 | SpendingSaverAndroid/app/src/main/java/com/spendingsaver/ui/viewmodel/MainViewModel.kt | ViewModel with aiRepository StateFlow |
 
-## Build Requirements
+## Build & KSP Workflow (AI SDK)
 
-1. SpendingSaverAndroid/app/build.gradle.kts must include:
-   - implementation(com.squareup.okhttp3:okhttp:4.11.0)
-   - implementation(com.google.code.gson:gson:2.10.1)
-2. Use ./gradlew clean assembleDebug --console=plain --no-daemon — incremental builds mask compile errors.
-3. If assemblyDebug fails with KSP MissingType errors about Room tables, ensure the DAO is in the same package as its @Database class.
+### Build requirements
+
+1. `./gradlew clean assembleDebug --console=plain --no-daemon` — always run `clean` first.
+2. `org.gradle.jvmargs=-Xmx4096m` in `SpendingSaverAndroid/gradle.properties`.
+3. `GRADLE_OPTS="-Xmx4096m -XX:MaxMetaspaceSize=512m"` in `ci/config.sh`.
+4. `okhttp 4.11.0` + `kotlinx-serialization-json 1.5.1` in `app/build.gradle.kts`.
+
+### KSP & Room DAO pitfalls discovered during AI SDK integration
+
+1. **MOVE DAO, DATABASE, AND REPOSITORY INTO ONE PACKAGE** — All three files (`TaxDao.kt`, `TaxDatabase.kt`, `TaxRepository.kt`) must live in the same package as the entity types (`com.spendingsaver.tax`). If the `@Dao` is in a different package from the `@Database` class, KSP validates the DAO queries against the wrong schema and fails with `SQLITE_ERROR: no such table` or `[ksp] MissingType`.
+2. **REMOVE `insertAll(List<T>)` methods from DAOs** — KSP generates `insertAll(List<T>)` as a suspend function with a `$completion: Continuation<Unit>` parameter, causing `Conflicting declarations` or `Type mismatch` errors. Use individual `insert(item)` calls instead.
+3. **Remove orphaned annotations when deleting methods** — If a method is deleted from a DAO but its `@Insert`/`@Query` annotation is left behind, KSP fails with `An abstract DAO method must be annotated with one and only one of the following annotations`.
+4. **Use `collect { it.toList() }` (not `.first()` or `toList()`) on `Flow<List<T>>`** — In suspend functions, calling `.first()` or `.toList()` on a `Flow<List<T>>` receiver causes `Unresolved reference` or receiver type mismatch. Use `collect { list.addAll(it) }` inside a suspend function to materialize the list.
+5. **KSP cache invalidation** — After any DAO or `@Database` edit, run `./gradlew clean` before `assembleDebug`. The KSP cache holds stale bindings that incremental builds do not clear.
+6. **Do NOT duplicate `insertAll` in both DAO and Repository** — Only the DAO defines `insertAll(List<T>)`; the Repository only defines individual `insert(item)` methods. Cluttered the Repository with `insertAll` methods causes duplicate variable declarations.
+
+## Priority & scope (user preference)
+
+1. **Mobile app first, Nokia 7.2 test target** — Verify on `com.spendingsaver` process via `adb`.
+2. **No Kindle device/package** — Verify `pm list packages | grep -i kindle` returns empty.
+3. **CI/CD green gate is a precondition** — `./ci/run.sh all` must be green before shipping feature work.
+4. **Full AI/multimodal integration** — Host engine (Cactus + prism-ml + image-studio) → Android AI SDK (typed HTTP) → app.
+5. **Local AI engine** — Host Python 3.14.9+202**1021 venv has `cactus-compute` installed.
+6. **No NDK** — Native JNI/Cactus build is blocked; use HTTP SDK.
+7. **Exhaustive scope, not minimal** — Complete every roadmap item, do not trim.
+8. **Credential handling** — API keys, tokens, passwords, secrets must NEVER appear in summaries; replaced with `[REDACTED]`.
+9. **Gradle `GRADLE_OPTS` must supply ONLY JVM memory options** — `-Xmx4096m -XX:MaxMetaspaceSize=512m` — not CLI flags (`-x -no-daemon --console=plain --build-cache` crash JVM with `Unrecognized option: -x`).
+10. **Do not commit credentials, local configuration, private account data, generated build output, or local logs.**
 
 ## Testing
 
-1. Unit tests for the AI SDK (AiClientTest.kt, AiRepositoryTest.kt) run via ./gradlew :app:testDebugUnitTest.
-2. Integration tests: start the local Python AI engine host, then call the Android SDK endpoints via the device's network.
-3. Mock the OkHttpClient when testing the repository layer.
-
-## Pitfalls
-
-1. **No NDK in the Android SDK** – native libcactus.so/JNI bindings cannot be compiled. Use HTTP SDK instead.
-2. **Incremental builds mask compile errors** – always use ./gradlew clean before assembleDebug.
-3. **HttpUrl parsing requires a context** – HttpUrl.parse() returns null for malformed URLs; always guard with a null check or fallback.
-4. **Gson fromJson type mismatches** – ensure Kotlin types match JSON structure exactly.
-5. **Box contentAlignment is not a valid parameter** – use nested Box with explicit sizing.
-6. **Activity result API needs ALL three dependencies** – activity-compose, activity, AND activity-ktx must all be present.
-7. **Hilt Context injection requires @ApplicationContext** – Context injected into @Provides methods must use @ApplicationContext.
-8. **Enum property named name shadows Enum.name** – rename to taxName or similar non-reserved name.
-9. **Duplicate top-level functions across files cause overload resolution ambiguity** – avoid naming collisions.
-10. **Room DAO in separate package fails KSP validation against wrong schema** – DAO must be in the same package as its @Database class.
-11. **Build memory exhaustion** – Kotlin compilation can fail with Insufficient memory. Increase JVM heap: org.gradle.jvmargs=-Xmx4096m in gradle.properties.
+1. Unit tests for AI SDK (`AiClientTest.kt`, `AiRepositoryTest.kt`) run via `./gradlew :app:testDebugUnitTest`.
+2. Integration tests: start the local Python AI engine host, then call Android SDK endpoints via device network.
+3. Mock `OkHttpClient` when testing repository layer.
 
 ## References
 
-- ai-integration-procedure.md — detailed AI SDK implementation procedure.
-- android-kotlin-build-pitfalls — Kotlin language and build pitfalls.
+- `ai-integration-procedure.md` — detailed AI SDK implementation procedure (if exists)
+- `android-kotlin-build-pitfalls` — Kotlin language and build pitfalls
+- `ai-service/README.md` — AI SDK architecture
+- `ci/README.md` — CI/CD pipeline documentation

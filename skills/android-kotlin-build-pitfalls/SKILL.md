@@ -56,6 +56,8 @@ Run `./gradlew clean` first if a compile error persists after fixing source.
 
 ## Pitfalls
 
+### Kotlin language
+
 1. **`when (value) { is Enum.ENTRY -> ... }` is a Kotlin compile error**
    - The `is` keyword is for type checking, not enum entry matching
    - Fix: use `value == Enum.ENTRY` instead
@@ -65,33 +67,65 @@ Run `./gradlew clean` first if a compile error persists after fixing source.
    - Fix: rename the property to `taxName` (or any non-reserved name)
    - Example: `enum class TaxType(code: String, taxName: String, ...)`
 
-3. **Room DAO in separate package fails KSP validation against wrong schema**
-   - When a `@Dao` interface is in a separate package (e.g., `com.spendingsaver.tax`) from its `@Database` class, KSP validates the DAO queries against the main app's `AppDatabase` schema instead of the correct `@Database` class
-   - Result: `SQLITE_ERROR: no such table: tax_detail` despite the `@Database` annotations being correct
-   - Fix: (a) move the DAO into the main app's `com.spendingsaver.data` package, or (b) create a separate Android library module for the feature
-   - Detection: `./gradlew assembleDebug` fails with `SQLITE_ERROR: no such table` and `[ksp] MissingType` errors
-   - Alternative: use a dedicated module with its own `build.gradle.kts` and `settings.gradle.kts`
+3. **Box `contentAlignment` is not a valid parameter**
+   - Fix: Use nested Box with explicit sizing
+
+### Activity result API
 
 4. **Activity result API needs ALL three dependencies**
    - `activity-compose`, `activity`, AND `activity-ktx` must all be present
    - Missing any one causes `rememberLauncherForActivityResult` to be unresolved
 
+### Hilt DI
+
 5. **Hilt Context injection requires `@ApplicationContext`**
    - `Context` injected into `@Provides` methods must use `@ApplicationContext`
 
-6. **Duplicate top-level functions across files cause overload resolution ambiguity**
+### Room + KSP + Room DAO
+
+6. **Room DAO must be in the same package as its `@Database` class**
+   - When a `@Dao` interface is in a separate package (e.g., `com.spendingsaver.tax`) from its `@Database` class, KSP validates the DAO queries against the main app's `AppDatabase` schema instead of the correct `@Database` class
+   - Result: `SQLITE_ERROR: no such table: tax_detail` despite the `@Database` annotations being correct
+   - Fix: (a) move the DAO into the main app's `com.spendingsaver.data` package, or (b) create a separate Android library module for the feature, or (c) move BOTH the DAO AND the @Database class into the same package as the entity types
+   - Detection: `./gradlew assembleDebug` fails with `SQLITE_ERROR: no such table` and `[ksp] MissingType` errors
+   - Alternative: use a dedicated module with its own `build.gradle.kts` and `settings.gradle.kts`
+
+7. **KSP generates `insertAll(List<T>)` with a `$completion: Continuation<Unit>` parameter**
+   - When a DAO declares `insertAll(List<T>)`, KSP generates `insertAll(List<T>, Continuation<Unit>)` in the implementation class
+   - This causes `Conflicting declarations` or `Type mismatch` errors because the source interface declares a different signature
+   - Fix: Remove `insertAll(List<T>)` methods from the DAO; use individual `insert(item)` calls instead
+   - In the Repository, only define `insert(item)` methods; do NOT redefine `insertAll` in the Repository
+
+8. **Orphaned annotations cause KSP validation errors**
+   - If a method is deleted from a DAO but its `@Insert`/`@Query` annotation is left behind, KSP fails with `An abstract DAO method must be annotated with one and only one of the following annotations`
+   - Fix: After deleting a method, also delete the corresponding annotation line
+
+9. **`Flow<List<T>>` in suspend functions needs `collect` or `toList()`**
+   - Calling `.first()` or `.toList()` directly on a `Flow<List<T>>` receiver in a suspend function causes `Unresolved reference` or receiver type mismatch errors
+   - Fix: Use `collect { list.addAll(it) }` inside a suspend function to accumulate values into a local list
+   - Alternative: Materialize the flow upstream (e.g., `@Query` returning `List<T>` directly instead of `Flow<List<T>>`)
+
+10. **KSP cache invalidation**
+   - After any DAO or `@Database` edit, always run `./gradlew clean` to remove stale KSP and intermediate artifacts
+   - The `clean` task deletes the `build/` directory, which contains KSP-generated stubs and cached annotations
+   - Incremental builds DO NOT clear the KSP cache between builds
+
+### Hilt & dependency injection
+
+11. **Duplicate top-level functions across files cause overload resolution ambiguity**
    - If two files define the same function name in the same package, Kotlin cannot resolve which to use
    - Detection: `Conflicting declarations: val backgroundGradient` or similar
 
-7. **MSYS paths do not work with native Windows tools**
+### MSYS paths
 
-8. **Kotlin source file must have `package` declaration**
+12. **MSYS paths do not work with native Windows tools**
+   - When calling native Windows binaries from terminal, use forward-slash paths (`C:/path/to/file`), not MSYS paths (`/c/path/to/file`)
+   - The `terminal` tool runs through bash (git-bash/MSYS), but native tools like `gradlew` do not accept MSYS paths
 
-9. **Gradle builds that fail can leave stale intermediate files**
-   - After fixing source files, always run `./gradlew clean` to remove stale KSP and intermediate artifacts
-   - The `clean` task deletes the `build/` directory, which contains KSP-generated stubs and cached annotations
+13. **Kotlin source file must have `package` declaration**
+   - Every Kotlin file must declare a `package` at the top, or the build fails with `Package not found` or `Unresolved reference` errors
 
-10. **Build memory exhaustion**
+14. **Build memory exhaustion**
    - Kotlin compilation can fail with `Insufficient memory` or `malloc failed` for large projects
    - Fix: increase JVM heap in `gradle.properties`: `org.gradle.jvmargs=-Xmx4096m`
    - Also set `GRADLE_OPTS="-Xmx4096m -XX:MaxMetaspaceSize=512m"` in `ci/config.sh`
@@ -102,7 +136,5 @@ Run `./gradlew clean` first if a compile error persists after fixing source.
 - `build/gradle/gradle.properties` — project-wide Gradle options
 - `ci/README.md` — CI/CD pipeline documentation
 - `ai-service/README.md` — AI SDK architecture
-
-## How this skill was built
-
-This skill was created from a session that integrated a new AI SDK into the SpendingSaver Android app. The session hit repeated Kotlin compilation errors (Kotlin `when` expressions with `is` over enum entries, Box `contentAlignment`, duplicate function definitions, MSYS path resolution, Hilt DI binding issues). These errors were resolved through iterative build+fix cycles, and the successful pattern is encoded here as standing workflow rules for future sessions.
+- `ai-service/ai/backend` — Cactus engine server (Python 3.14)
+- `ai-service/ai/sdk` — Android AI SDK (typed HTTP)
