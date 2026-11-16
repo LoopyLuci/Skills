@@ -26,24 +26,24 @@ These four commands define a clean build. All must pass before claiming completi
 3. **cargo clippy** — `cargo clippy --workspace --all-targets` (0 errors, 0 warnings)
 4. **cargo test** — `cargo test --workspace` (0 failures)
 
-Run them after every edit batch so you catch regressions early.
+Run them after every edit batch so you catch regressions early. On first `cargo test --workspace`, third-party dependency crates can panic or stack-overflow under the active toolchain (rustc version skew) — that fails the gate even though the project's own crates are fine. When the workspace test gate fails this way, scope it to the project's own crates and diagnose the dependency separately, below. Record: errors count, warning count, and test results per project crate, not just the aggregate.
 
 ## Procedure
 
 ### 1. Baseline
-```
-
-### 1. Baseline
-```
+```bash
 export CARGO_HOME=/x/Dev/cargo
 export CARGO_TARGET_DIR=/x/cargo-target
 cargo check --workspace 2>&1 | tail -5
 cargo fmt --all --check 2>&1 | head -20
 cargo clippy --workspace --all-targets 2>&1 | grep -E "^error" | head -20
-cargo test --workspace 2>&1 | grep -E "test result" | tail -5
+cargo test -p nlpcli-core -p nlpcli-service -p nlp-cli 2>&1 | grep -E "test result" | tail -5
 ```
 
-Record: errors count, warning count, test results.
+Record: errors count, warning count, and test results per project crate, not just the aggregate.
+
+- Run `cargo check --workspace` (or `--all-targets`) first; it is the only gate that reliably crosses third-party crates.
+- Run `cargo test -p <project crates>` to isolate the project's own tests; the `--workspace` test gate can panic on third-party crates under the active toolchain.
 
 ### 2. Fix CRITICAL errors first
 - E0433, E0559, E0124 (duplicate fields), E0599 (method not found), E0425 (value not found)
@@ -67,10 +67,24 @@ Re-run the four gates. If errors return, stop and diagnose.
 - **Scripts can break builds.** If a Python/PowerShell fix script modifies source files, verify the build afterwards. The script may have removed fields that were still being constructed by other code.
 - **cargo clippy --fix does not work on files with broken structure.** Run it only after `cargo check` passes.
 - **Cargo.lock is large and must not be edited by hand.** If dependencies change, `cargo update` regenerates it.
+- **Scope the test gate to project crates.** `cargo test --workspace` can fail on third-party crates (rustc version skew) even when the project's own crates are fine; use `cargo test -p <project crates>` while diagnosing the dependency separately.
+
+## Diagnosing third-party crates by reading their real source
+
+When a compiler error points at a third-party crate and does not match the crate's published docs (method missing, wrong signature, wrong trait bound), do not patch from memory — the published docs are often stale relative to the exact version in the registry.
+
+1. Locate the crate in the cargo registry cache: `CARGO_HOME`/`registry`/`src`/`index.crates.io-...`/`<crate>-<version>/`.
+2. Read the module the error mentions (e.g. `src/response.rs` for ureq's `Response`).
+3. Read the real signatures of the methods named in the error and the trait bounds they carry.
+4. Patch against those signatures.
+
+Example — ureq 2's `Response`: the errors `no method named is_success`, `no method named read_string`, and `Vec<u8>` does not implement `Read` for `send` came from `.is_success()`, `.read_string()`, and `.send(&body)` on an `impl Read` value. The real API is `status()` (u16), `into_string()`, and `send(self, reader: impl Read)`. `Vec<u8>` satisfies `Read`, so `.send(body)` works; `std::io::Cursor<Vec<u8>>` always satisfies `Read`. The source is at `X:/Dev/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ureq-2.12.1/src/`.
+
+Record the real API so a later error on the same crate does not loop through four guesses. After a dependency fix, re-run `cargo check --workspace` and `cargo clippy`; only re-run the full test gate once `cargo check` is clean.
 
 ## Build environment
 
-```
+```bash
 export CARGO_HOME=/x/Dev/cargo
 export CARGO_TARGET_DIR=/x/cargo-target
 ```
