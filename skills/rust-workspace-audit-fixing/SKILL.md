@@ -17,6 +17,11 @@ Audit, fix warnings, and remediate bugs in a Rust workspace to a clean verificat
 
 Use this skill when an audit has been requested for a Rust workspace, when the user says "fix all warnings", or when a workspace is not building cleanly or passing tests. This is the standard workflow for code repair and verification in Rust projects.
 
+Standing preferences when working a Rust workspace:
+- Full implementation: complete, working, verified output; never a stub or a partial build.
+- Zero tolerance for errors and warnings: a clean gate emits no warnings.
+- Discover before editing: read the relevant docs and source files before making changes; trace a symbol to its definition and usages rather than guessing.
+
 ## Verification gates (run in order)
 
 These four commands define a clean build. All must pass before claiming completion:
