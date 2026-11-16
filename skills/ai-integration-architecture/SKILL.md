@@ -89,9 +89,29 @@ SpendingSaver App UI (Composables: chat, image description, voice, image gen)
 3. **Constructor access**: `AiRepository` takes `Context` in constructor; provide a mock `Context` with mocked `SharedPreferences`.
 4. **Test data**: `AiResponse` constructor requires `success: Boolean` (no default value) — always provide it.
 
+## Verification checklist (2026-11-16)
+
+1. `./gradlew clean assembleDebug --console=plain --no-daemon` → BUILD SUCCESSFUL (40 tasks, ~1m 40s)
+2. `./gradlew :app:testDebugUnitTest` → 12/12 tests passing
+3. APK built at `app/build/outputs/apk/debug/app-debug.apk` (~16.6 MB)
+4. Device: Nokia 7.2, `com.spendingsaver` process alive
+
 ## References
 
-- `ai-integration-procedure.md` — detailed AI SDK implementation procedure (if exists)
+- `ai-integration-procedure.md` — detailed AI SDK implementation procedure
 - `android-kotlin-build-pitfalls` — Kotlin language and build pitfalls
 - `ai-service/README.md` — AI SDK architecture
 - `ci/README.md` — CI/CD pipeline documentation
+
+## Phase 1.3-7 roadmap (not yet completed)
+
+- [ ] Phase 1.3: Tags (data class + DAO migration + CRUD)
+- [ ] Phase 1.4: FTS search (full-text search queries)
+- [ ] Phase 1.5: Attachments (receipt photos, PDFs)
+- [ ] Phase 1.6: Split transactions
+- [ ] Phase 1.7: Duplicate detection
+- [ ] Phase 1.8: SQLCipher encryption
+- [ ] Phase 2: Budgets, savings goals, cash-flow forecast, bill tracker
+- [ ] Phase 3: Dashboard charts, period comparisons, report export
+- [ ] Phase 4: ML auto-categorization, NLE, anomaly detection
+- [ ] Phase 7: a11y/i18n, instrumentation tests, release signing, GDPR

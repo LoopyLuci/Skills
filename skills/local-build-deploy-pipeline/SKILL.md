@@ -84,6 +84,28 @@ code. Do not author files that look right on paper:
 - Verify the APK exists and is non-empty before any stage installs, archives, or
   reports the build as good.
 
+### Diagnosing a failing native build
+
+When `assembleDebug` fails and the log reports `Cannot find source file` (CMake) or
+`AAPT: error: resource ... not found`, do not retry the same command. Trace the FIRST
+failure and change strategy.
+
+1. **Enumerate missing inputs.** Grep the build log for `Cannot find source file`
+   (CMake) or `AAPT: error: resource ... not found`. These are the files the native target
+   (`add_library`) declares but the checkout does not, or the drawables the adaptive-icon
+   XML references but AAPT cannot resolve.
+2. **Compare against the declarations.** Dump `app/src/main/cpp/CMakeLists.txt`
+   (`add_library(lumensplat ...)` sources) and the declared third-party inputs
+   (`third_party/eigen|ceres|glog|tflite|vma`, `assets/shaders/*.spv` compiled to SPIR-V).
+   Diff the declared paths against the checkout.
+3. **Confirm the class.** If the missing sources/deps are documented absent and are a
+   declared open product decision (restore/provision vs. narrow), the build is **blocked by
+   the product decision, not a pipeline defect**. Surface it as a hard gate failure; never
+   fabricate or stub inputs to force a green build.
+4. **Fix the resource layer first.** A resource-layout error (missing or misplaced drawables)
+   can masquerade as a native failure. Use the launcher-icon recipe below (in
+   `references/android-ci-recipes.md`) to make the resource layer link cleanly.
+
 ### Sourcing, ordering, and gate authoring
 
 - Run environment detection (`detect()` in `ci/config.sh`) BEFORE the preflight
@@ -107,6 +129,10 @@ code. Do not author files that look right on paper:
   `version.ref` pointing at a `[versions]` key whose spelling differs (kebab-case
   `tflite-support` vs camelCase `tfliteSupport`) fails with "version reference
   '…' doesn't exist". Match the declared key spelling exactly.
+- Diagnose before retrying. Grep the failing stage's log for `Cannot find source file`
+  (native) or `AAPT: error: resource ... not found`; diff the declared sources/drawables
+  against the checkout. A missing native source or a misplaced drawable is a product-decision
+  or layout issue, not a pipeline defect — repeated retries on it do not fix it.
 
 ## Supporting files
 

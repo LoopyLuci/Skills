@@ -129,4 +129,28 @@ EOF
 
 # Archive APK
 cp app/build/outputs/apk/debug/app-debug.apk $ARTIFACTS_DIR/app-debug.apk
+
+## Add launcher-icon drawable assets (clean-checkout resource linking)
+
+To give the app a clean-checkout, Android-8+ adaptive launcher icon that AAPT links without
+error:
+
+1. **Density PNGs.** Generate `ic_launcher.png` and `ic_launcher_round.png` at mdpi (48),
+hdpi (72), xhdpi (96), xxhdpi (144), and xxxhdpi (192) into
+`app/src/main/res/mipmap-*/`.
+2. **Adaptive-icon XML.** Create `mipmap-anydpi-v26/ic_launcher.xml` and
+`ic_launcher_round.xml`. Each must be an `<adaptive-icon>` with `<background>` and
+`<foreground>` drawables (the system blends them at runtime).
+3. **Background + foreground drawables.** Create `res/drawable/ic_launcher_background.xml`
+(a solid or gradient shape) and `res/drawable/ic_launcher_foreground.xml`. The vector
+foreground is a `<vector>`: do NOT use `android:width`/`android:height` (AAPT rejects
+percentages here); instead set `android:viewportWidth`/`android:viewportHeight` and
+describe the glyph with `<path>`.
+4. **Verify.** Run `assembleDebug`; AAPT must resolve `@drawable/ic_launcher_background` and
+`@drawable/ic_launcher_foreground` with no `resource ... not found` errors.
+
+Why: AAPT scans `mipmap-*` for mipmap drawables, not for `@drawable` references, so the
+adaptive-icon background/foreground must live in `res/drawable/`. The vector `<path>`
+glyph is the light halo (white ring on an indigo gradient), giving a consistent 'lumen' look
+across all screen densities.
 ```

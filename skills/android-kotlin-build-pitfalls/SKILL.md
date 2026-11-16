@@ -131,6 +131,18 @@ Run `./gradlew clean` first if a compile error persists after fixing source.
    - Also set `GRADLE_OPTS="-Xmx4096m -XX:MaxMetaspaceSize=512m"` in `ci/config.sh`
    - Pattern: `Insufficient memory for the Java Runtime Environment to continue`
 
+### New learnings (2026-11-16) — SpendingSaver session
+
+- **Clean build verification**: After any source change, run `./gradlew clean assembleDebug --console=plain --no-daemon` to catch incremental-build KSP cache staleness
+- **Dex merging failures**: `DexArchiveMergerException` is a KSP cache issue; always `./gradlew clean` first
+- **Kotlin compiler internal error**: Often a duplicate function in a DAO; grep for duplicate method names in the DAO file
+- **Room migration**: If schema changes, Room requires a migration; validate before shipping
+- **KSP version alignment**: `ksp` and `kotlin` versions must match exactly; mismatched versions cause internal compiler errors
+- **Hilt @Provides**: Context injection in `@Provides` methods requires `@ApplicationContext`
+- **Unit test verification**: Run `./gradlew :app:testDebugUnitTest` after `clean assembleDebug` — 12/12 tests passed in one session
+- **Phased rollout**: Implement feature, verify clean build, then verify unit tests — do not skip steps
+- **APK size**: Debug APK ~16.6 MB after AI SDK changes; clean-build APK path not yet confirmed
+
 ## References
 
 - `build/gradle/gradle.properties` — project-wide Gradle options

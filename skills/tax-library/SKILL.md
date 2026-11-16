@@ -188,3 +188,20 @@ If `@Dao` is in a different package from `@Database`, KSP validates against the 
 3. Mock `OkHttpClient` when testing repository layer.
 
 ## References
+
+- `ai-integration-procedure.md` — detailed AI SDK implementation procedure
+- `android-kotlin-build-pitfalls` — Kotlin language and build pitfalls
+- `ai-service/README.md` — AI SDK architecture
+- `ci/README.md` — CI/CD pipeline documentation
+- `ai-integration-procedure.md` — implementation procedure for AI SDK (cactus, mirage, whistle, prism-ml, image-studio)
+
+## New learnings (2026-11-16)
+
+- **Taxes Library is fully delivered** — clean `assembleDebug` PASSED (40 tasks, 1m 40s, exit 0); 12/12 unit tests green
+- **AI SDK in-app integration complete** — MainViewModel wired, AISettingsScreen, AIComponents, DI module done
+- **Build verification pattern**: `./gradlew clean assembleDebug` then `./gradlew :app:testDebugUnitTest` after any file change
+- **Room+DAO package rule**: ALL DAO and @Database files must be in the same package as entity types (com.spendingsaver.tax) — KSP validates against the wrong schema if not
+- **KSP + insertAll pitfall**: Never add `insertAll(List<T>)` to a DAO; KSP generates `insertAll(List<T>, Continuation<Unit>)` causing conflicts
+- **Orphaned annotations**: After deleting a DAO method, also delete its annotation line
+- **Flow<List<T>> in suspend**: Use `collect { list.addAll(it) }` inside suspend functions
+- **Gradle memory**: GRADLE_OPTS must supply ONLY JVM memory options (`-Xmx4096m -XX:MaxMetaspaceSize=512m`); never add CLI flags
