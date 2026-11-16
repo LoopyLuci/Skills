@@ -50,11 +50,16 @@ The Taxes Library must include:
 
 ## Room Setup
 
-### Package structure rule
+### Package structure rule (CRITICAL)
 
-**MOVE DAO, DATABASE, AND REPOSITORY INTO ONE PACKAGE.** All three files must live in the same package as the entity types (`com.spendingsaver.tax`).
+**ALL files must live in the SAME package as the entity types** (`com.spendingsaver.tax`).
+- `TaxLibrary.kt` (entities)
+- `TaxDao.kt` (Room DAO)
+- `TaxDatabase.kt` (@Database class)
+- `TaxRepository.kt` (Repository interface + impl)
 
-If the `@Dao` is in a different package from the `@Database` class, KSP validates the DAO queries against the wrong schema and fails with `SQLITE_ERROR: no such table` or `[ksp] MissingType`.
+If `@Dao` is in a different package from `@Database`, KSP validates against the wrong schema and fails with `SQLITE_ERROR: no such table` or `[ksp] MissingType`.
+- The generated `TaxDao_Impl.java` must be in the same package as the source files — KSP cache must be flushed with `./gradlew clean` before every build.
 
 ### DAO structure
 
@@ -70,7 +75,8 @@ If the `@Dao` is in a different package from the `@Database` class, KSP validate
 
 - **Orphaned `@Insert` annotations** — After deleting a method, also delete the corresponding annotation line. Orphaned annotations cause `An abstract DAO method must be annotated with one and only one of the following annotations`.
 - **Flow<List<T>> in suspend functions** — Calling `.first()` or `.toList()` on a `Flow<List<T>>` receiver in a suspend function causes `Unresolved reference` or receiver type mismatch. Use `collect { list.addAll(it) }` inside a suspend function.
-- **KSP cache** — After any DAO or `@Database` edit, run `./gradlew clean` before `assembleDebug`. Incremental builds do not clear the KSP cache.
+- **Class naming collision** — Do NOT name the Repository class `TaxRepository` — the compiler confuses a `class TaxRepository(private val dao: TaxDao)` with `interface TaxDao`. Name the impl `TaxRepositoryImpl`.
+- **KSP cache** — After any DAO or `@Database` edit, run `./gradlew clean` before `assembleDebug`. Incremental builds do NOT clear the KSP cache.
 
 ## Database
 
@@ -123,9 +129,16 @@ If the `@Dao` is in a different package from the `@Database` class, KSP validate
 - Add routes to `MainActivity` NavHost:
   - `tax-countries`
   - `tax-stats` (country detail)
-  - `tax-states` (state detail)
+  - `tax-states/{countryId}` (state detail — extract via `backStackEntry.arguments`)
   - `tax-towns` (town detail)
   - `tax-search`
+
+### Screen composable pitfalls
+
+- **Screen composable signature must match navigation argument extraction.** When using `{param}` routes, the composable lambda receives `backStackEntry` — extract params from `backStackEntry.arguments`, not as function parameters.
+- **Do NOT use `CenterAlignedTopAppBar`** — it is not a valid composable for a screen top bar. Use `TopAppBar` with a `title` lambda.
+- **Place composable invocations inside `@Composable` functions only.** A `Column { ... }` must not be placed outside a composable context (e.g., inside a `when` branch as a raw statement).
+- **Import `androidx.compose.foundation.background`** — the `.background()` modifier is NOT available from `androidx.compose.ui.Modifier` alone.
 
 ## Integration
 
@@ -146,11 +159,29 @@ If the `@Dao` is in a different package from the `@Database` class, KSP validate
 2. `./gradlew :app:testDebugUnitTest` to run all unit tests
 3. Verify `./gradlew clean assembleDebug` build succeeds
 
+## AI Engine Host Setup (updated from session learnings)
+
+- Use HermESC-managed Python 3.14.9+202**1021 venv at `/c/Users/Server/AppData/Local/hermes/tools/python-3.14.9+202**1021-win32-x64/python3`.
+- The venv has `cactus-compute` installed (cactus, Mirage, Whistle confirmed accessible via HTTP).
+- Default `HERMES_PYTHON` env override for alternative Python paths.
+
 ## Priority & scope (user preference)
 
-1. **Mobile app first, Nokia 7.2 test target** — verify via `adb`
-2. **CI/CD green gate is a precondition** — `./ci/run.sh all` must be green
-3. **Exhaustive scope, not minimal** — complete every roadmap item
-4. **Credential handling** — never include API keys, tokens, passwords, or secrets in summaries; replace with `[REDACTED]`
-5. **Build memory** — `org.gradle.jvmargs=-Xmx4096m` in gradle.properties; `GRADLE_OPTS="-Xmx4096m -XX:MaxMetaspaceSize=512m"` in ci/config.sh
-6. **Gradle GRADLE_OPTS only JVM memory options** — not CLI flags
+1. **Mobile app first, Nokia 7.2 test target** — Verify on `com.spendingsaver` process via `adb`.
+2. **No Kindle device/package** — Verify `pm list packages | grep -i kindle` returns empty.
+3. **CI/CD green gate is a precondition** — `./ci/run.sh all` must be green before shipping feature work.
+4. **Full AI/multimodal integration** — Host engine (Cactus + prism-ml + image-studio) → Android AI SDK (typed HTTP) → app.
+5. **Local AI engine** — Host Python 3.14.9+202**1021 venv has `cactus-compute` installed.
+6. **No NDK** — Native JNI/Cactus build is blocked; use HTTP SDK.
+7. **Exhaustive scope, not minimal** — Complete every roadmap item, do not trim.
+8. **Credential handling** — API keys, tokens, passwords, secrets must NEVER appear in summaries; replaced with `[REDACTED]`.
+9. **Gradle `GRADLE_OPTS` must supply ONLY JVM memory options** — `-Xmx4096m -XX:MaxMetaspaceSize=512m` — not CLI flags (`-x -no-daemon --console=plain --build-cache` crash JVM with `Unrecognized option: -x`).
+10. **Do not commit credentials, local configuration, private account data, generated build output, or local logs.**
+
+## Testing
+
+1. Unit tests for AI SDK (`AiClientTest.kt`, `AiRepositoryTest.kt`) run via `./gradlew :app:testDebugUnitTest`.
+2. Integration tests: start the local Python AI engine host, then call Android SDK endpoints via device network.
+3. Mock `OkHttpClient` when testing repository layer.
+
+## References

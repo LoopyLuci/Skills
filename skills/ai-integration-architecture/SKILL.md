@@ -63,23 +63,11 @@ SpendingSaver App UI (Composables: chat, image description, voice, image gen)
 | SpendingSaverAndroid/app/src/main/java/com/spendingsaver/ui/screens/AIComponents.kt | UI components (Chat, Image description, Voice input) |
 | SpendingSaverAndroid/app/src/main/java/com/spendingsaver/ui/viewmodel/MainViewModel.kt | ViewModel with aiRepository StateFlow |
 
-## Build & KSP Workflow (AI SDK)
+## AI Engine Host Setup
 
-### Build requirements
-
-1. `./gradlew clean assembleDebug --console=plain --no-daemon` — always run `clean` first.
-2. `org.gradle.jvmargs=-Xmx4096m` in `SpendingSaverAndroid/gradle.properties`.
-3. `GRADLE_OPTS="-Xmx4096m -XX:MaxMetaspaceSize=512m"` in `ci/config.sh`.
-4. `okhttp 4.11.0` + `kotlinx-serialization-json 1.5.1` in `app/build.gradle.kts`.
-
-### KSP & Room DAO pitfalls discovered during AI SDK integration
-
-1. **MOVE DAO, DATABASE, AND REPOSITORY INTO ONE PACKAGE** — All three files (`TaxDao.kt`, `TaxDatabase.kt`, `TaxRepository.kt`) must live in the same package as the entity types (`com.spendingsaver.tax`). If the `@Dao` is in a different package from the `@Database` class, KSP validates the DAO queries against the wrong schema and fails with `SQLITE_ERROR: no such table` or `[ksp] MissingType`.
-2. **REMOVE `insertAll(List<T>)` methods from DAOs** — KSP generates `insertAll(List<T>)` as a suspend function with a `$completion: Continuation<Unit>` parameter, causing `Conflicting declarations` or `Type mismatch` errors. Use individual `insert(item)` calls instead.
-3. **Remove orphaned annotations when deleting methods** — If a method is deleted from a DAO but its `@Insert`/`@Query` annotation is left behind, KSP fails with `An abstract DAO method must be annotated with one and only one of the following annotations`.
-4. **Use `collect { it.toList() }` (not `.first()` or `toList()`) on `Flow<List<T>>`** — In suspend functions, calling `.first()` or `.toList()` on a `Flow<List<T>>` receiver causes `Unresolved reference` or receiver type mismatch. Use `collect { list.addAll(it) }` inside a suspend function to materialize the list.
-5. **KSP cache invalidation** — After any DAO or `@Database` edit, run `./gradlew clean` before `assembleDebug`. The KSP cache holds stale bindings that incremental builds do not clear.
-6. **Do NOT duplicate `insertAll` in both DAO and Repository** — Only the DAO defines `insertAll(List<T>)`; the Repository only defines individual `insert(item)` methods. Cluttered the Repository with `insertAll` methods causes duplicate variable declarations.
+- Use HermESC-managed Python 3.14.9+202**1021 venv at `/c/Users/Server/AppData/Local/hermes/tools/python-3.14.9+202**1021-win32-x64/python3`.
+- The venv has `cactus-compute` installed (cactus, Mirage, Whistle confirmed accessible via HTTP).
+- Default `HERMES_PYTHON` env override for alternative Python paths.
 
 ## Priority & scope (user preference)
 
