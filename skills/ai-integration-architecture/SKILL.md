@@ -84,9 +84,10 @@ SpendingSaver App UI (Composables: chat, image description, voice, image gen)
 
 ## Testing
 
-1. Unit tests for AI SDK (`AiClientTest.kt`, `AiRepositoryTest.kt`) run via `./gradlew :app:testDebugUnitTest`.
-2. Integration tests: start the local Python AI engine host, then call Android SDK endpoints via device network.
-3. Mock `OkHttpClient` when testing repository layer.
+1. **Test dependencies**: Add `testImplementation("io.mockk:mockk:1.13.7")` to `app/build.gradle.kts`.
+2. **MockK setup**: Use `mockkObject(AiClient)` to mock the client, then `every { AiClient(any(), any(), any()) } returns mockClient` to inject the mock.
+3. **Constructor access**: `AiRepository` takes `Context` in constructor; provide a mock `Context` with mocked `SharedPreferences`.
+4. **Test data**: `AiResponse` constructor requires `success: Boolean` (no default value) — always provide it.
 
 ## References
 

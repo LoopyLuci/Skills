@@ -153,11 +153,14 @@ If `@Dao` is in a different package from `@Database`, KSP validates against the 
   - `provideAiClient(OkHttpClient): AiClient`
   - `provideAiRepository(AiClient): AiRepository`
 
-## Testing
+## Testing (unit tests for taxes)
 
-1. Unit tests for TaxRepository (in-memory DAO mock)
-2. `./gradlew :app:testDebugUnitTest` to run all unit tests
-3. Verify `./gradlew clean assembleDebug` build succeeds
+1. Unit tests run via `./gradlew :app:testDebugUnitTest` from `SpendingSaverAndroid`.
+2. **Test data**: `AiResponse` (in `AiIntent.kt`) requires `success: Boolean` — always provide it.
+3. **Test dependencies**: Ensure `app/build.gradle.kts` has `testImplementation("junit:junit:4.13.2")`, `testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4")`, and `testImplementation("io.mockk:mockk:1.13.7")`.
+4. **Test context**: If testing classes that need `Context`, provide a mock `Context` with mocked `SharedPreferences` (implement the full `Context` abstract class or use a stub).
+5. **Test assertions**: Use `assertEquals(expected, actual)` — order matters for error messages.
+6. **Run tests with `./gradlew clean :app:testDebugUnitTest`** after test file changes.
 
 ## AI Engine Host Setup (updated from session learnings)
 
