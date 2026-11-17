@@ -14,7 +14,10 @@ A Rust CLI that exposes every feature and setting to a terminal uses a `config`-
 ## Verify before behaviour testing
 
 - `cargo check --workspace` (EXIT=0, no warnings)
+- `cargo clippy --all-targets -- -D warnings` (0 errors, 0 warnings) — includes the CLI family
 - `cargo test -p nlpcli-core -p nlpcli-service -p nlp-cli` (all pass)
+
+Record per-crate test counts (core 106, service 39, cli 10 in this project) — aggregate only.
 
 ## Pitfalls
 

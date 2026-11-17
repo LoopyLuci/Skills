@@ -58,6 +58,8 @@ Record: errors count, warning count, and test results per project crate, not jus
 - These block the build — fix before touching warnings
 
 ### 3. Fix warnings in dependency order
+- `manual_range_contains` → use `range.contains(&x)` instead of chained comparisons, e.g. `!(200..=299).contains(&status)`
+- `cloned_ref_to_slice_refs` → use `std::slice::from_ref(&x)` instead of `&[x.clone()]`
 - Dead code / unused fields → remove or add `#[allow(dead_code)]`
 - `unused_mut`, `unused_variables`, `unused_imports` → clean up
 - `too_many_arguments` → refactor or `#[allow(clippy::too_many_arguments)]`
@@ -75,7 +77,7 @@ When a CLI must expose every feature and setting from a terminal:
 4. Wire each command into the dispatch table with the subcommand name as the key; add a dispatch entry for the command family itself.
 5. Update usage() so every command appears in the printed help.
 6. Add tests: one per command, plus a regression test that the schema lists every setting.
-Verify with `cargo check -p nlpcli-cli` before testing behaviour.
+7. Verify the whole family before behavioural tests: `cargo clippy --all-targets -- -D warnings` (0 errors, 0 warnings) and `cargo check -p nlpcli-cli`; then run the behavioural tests. Record per-crate test counts (core 106, service 39, cli 10 in this project) — aggregate only.
 
 ## Pitfalls
 
