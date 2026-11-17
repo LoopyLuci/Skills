@@ -1,6 +1,14 @@
 ---
 name: agents-sdk
 description: Build, debug, or review Cloudflare Agents SDK applications using the agents package.
+version: 1.0.0
+author: Cloudflare
+license: Apache-2.0
+platforms: [any]
+source: https://github.com/cloudflare/skills
+metadata:
+  hermes:
+    tags: [cloudflare, agents, sdk]
 ---
 
 # Cloudflare Agents SDK

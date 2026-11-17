@@ -1,6 +1,14 @@
 ---
 name: cloudflare-email-service
 description: Implement or troubleshoot Cloudflare Email Sending and Email Routing integrations and their delivery configuration.
+version: 1.0.0
+author: Cloudflare
+license: Apache-2.0
+platforms: [any]
+source: https://github.com/cloudflare/skills
+metadata:
+  hermes:
+    tags: [cloudflare, email, service]
 ---
 
 # Cloudflare Email Service
