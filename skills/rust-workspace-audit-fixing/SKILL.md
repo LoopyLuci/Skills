@@ -35,6 +35,9 @@ Run them after every edit batch so you catch regressions early. On first `cargo 
 
 ## Procedure
 
+### 1. Discovery before editing
+Read every relevant doc the user asked you to read (docs/*.md, spec/, packages/, the crate READMEs) and the crate source files. Understand the project structure, the crate layout, and the existing patterns before writing any code. Trace a symbol to its definition and usages rather than guessing. Only after the whole picture is established do you edit.
+
 ### 1. Baseline
 ```bash
 export CARGO_HOME=/x/Dev/cargo
@@ -64,6 +67,16 @@ Record: errors count, warning count, and test results per project crate, not jus
 ### 4. Verify after each batch
 Re-run the four gates. If errors return, stop and diagnose.
 
+### 5. CLI feature exposure (when commands surface settings to a terminal)
+When a CLI must expose every feature and setting from a terminal:
+1. Read the settings schema (settings_schema in the service crate) to enumerate every setting and its category.
+2. Write one command function per subcommand (show, set, import, export), each taking (args: &[String], project: &Path).
+3. Add split_project to parse an optional --project DIR before dispatch.
+4. Wire each command into the dispatch table with the subcommand name as the key; add a dispatch entry for the command family itself.
+5. Update usage() so every command appears in the printed help.
+6. Add tests: one per command, plus a regression test that the schema lists every setting.
+Verify with `cargo check -p nlpcli-cli` before testing behaviour.
+
 ## Pitfalls
 
 - **Patching corrupted files is dangerous.** A file that already has broken structure (duplicate code, mismatched braces) will break further when you patch it. When a `patch` reveals structural damage (wrong indentation, duplicate blocks, mismatched delimiters), STOP and rewrite the file from a clean source rather than patching it.
@@ -72,7 +85,9 @@ Re-run the four gates. If errors return, stop and diagnose.
 - **Scripts can break builds.** If a Python/PowerShell fix script modifies source files, verify the build afterwards. The script may have removed fields that were still being constructed by other code.
 - **cargo clippy --fix does not work on files with broken structure.** Run it only after `cargo check` passes.
 - **Cargo.lock is large and must not be edited by hand.** If dependencies change, `cargo update` regenerates it.
-- **Scope the test gate to project crates.** `cargo test --workspace` can fail on third-party crates (rustc version skew) even when the project's own crates are fine; use `cargo test -p <project crates>` while diagnosing the dependency separately.
+Scope the test gate to project crates. `cargo test --workspace` can fail on third-party crates (rustc version skew) even when the project's own crates are fine; use `cargo test -p <project crates>` while diagnosing the dependency separately.
+
+- **Verify the binary where CARGO_TARGET_DIR points.** The repository's target/ may hold stale hard links to older builds; the fresh build is at CARGO_TARGET_DIR/debug/<bin-name>. Check the binary's mtime before trusting a smoke test.
 
 ## Diagnosing third-party crates by reading their real source
 
