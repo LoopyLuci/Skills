@@ -1,0 +1,22 @@
+[
+ {"query": "this refactor touches the api package, the web app and the worker. can you split it up and farm the pieces out so they run at the same time? each one is pretty independent", "should_trigger": true},
+ {"query": "spin up a few agents to go through the 300 markdown posts in content/ and flag any that still link to /go/ slugs for programs that are paused in data/affiliates.yaml", "should_trigger": true},
+ {"query": "before you start on the migration plan, which model should handle each part? i don't want opus burning tokens on the boring stuff", "should_trigger": true},
+ {"query": "We're wiring up a document intake pipeline on the API: OCR text comes in, we extract 14 fields into a JSON schema, then a reviewer step flags anything that looks like a contract amendment. Which Claude model should each step use and how do we keep costs sane at 200k docs/month?", "should_trigger": true},
+ {"query": "kick off a separate session to do the eslint 9 migration on its own branch while we keep working on the auth bug here", "should_trigger": true},
+ {"query": "the test suite takes 25 min, run it in the background and meanwhile have something go dig through the CI logs from the last 10 failed runs to see if the flaky test is always the same one", "should_trigger": true},
+ {"query": "I keep paying for Opus on tasks like 'grep for this string' — set things up so you route cheap stuff to Haiku from now on", "should_trigger": true},
+ {"query": "plan the rollout: one agent writes the schema migration, one updates the ORM models, one writes the backfill script. make sure they don't step on each other's files", "should_trigger": true},
+ {"query": "use a subagent to review my diff for security issues before I push, the change touches the session token handling in auth/middleware.ts", "should_trigger": true},
+ {"query": "can you hand this off? the Stripe webhook retry logic needs rewriting but I'd rather you keep helping me with the pricing page copy", "should_trigger": true},
+ {"query": "what's the difference between claude haiku and sonnet in terms of context window and price per million tokens?", "should_trigger": false},
+ {"query": "rename the `cfg` variable to `config` in utils/load.py, it's used maybe 5 times", "should_trigger": false},
+ {"query": "write a python script that routes incoming webhook events to different handler functions based on the event type field", "should_trigger": false},
+ {"query": "my nginx reverse proxy isn't routing /api to the backend container on port 8080, here's the config", "should_trigger": false},
+ {"query": "set up a GitHub Actions workflow that runs the unit tests and the lint job in parallel on every PR", "should_trigger": false},
+ {"query": "switch this chat to sonnet please", "should_trigger": false},
+ {"query": "explain how Kubernetes schedules pods across nodes and what node affinity does", "should_trigger": false},
+ {"query": "orchestrate the data pipeline in Airflow so the extract, transform and load DAG tasks retry 3 times with exponential backoff", "should_trigger": false},
+ {"query": "fix the failing test in tests/test_dates.py — it's an off-by-one in the timezone conversion I think", "should_trigger": false},
+ {"query": "summarize this 40 page PDF on model distillation for me", "should_trigger": false}
+]

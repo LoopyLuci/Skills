@@ -1,0 +1,39 @@
+{
+  "skill_name": "claude-router",
+  "evals": [
+    {
+      "eval_name": "api-ticket-pipeline",
+      "prompt": "We're building a support pipeline on the Claude API: ~50k tickets/month. Step 1 tag each ticket into one of 12 fixed categories, step 2 draft a reply for each using our help center articles (same 30k-token article bundle every call), step 3 a final check that the reply doesn't promise refunds or legal outcomes before it's sent. Budget matters. Write your plan to plan.md: which model for each step and why, how to keep cost down, and how to catch bad outputs. Don't write the code yet.",
+      "assertions": [
+        "plan.md routes the 12-category tagging step to Haiku",
+        "plan.md routes the reply-drafting step to Sonnet",
+        "plan.md does not route the refund/legal compliance check to Haiku alone without escalation",
+        "plan.md uses prompt caching for the shared 30k-token article bundle",
+        "plan.md describes validating outputs and escalating failures to a higher tier",
+        "plan.md says to look up current model ids or prices rather than hard-coding them from memory"
+      ]
+    },
+    {
+      "eval_name": "mixed-release-week",
+      "prompt": "ok big week. i need: (1) the monorepo's SvelteKit site bumped from 2.x to 3.x because pnpm audit is failing on a high sev advisory, (2) a design for how our new plugin system should load third-party adapters safely (nobody's agreed on anything yet, theres a security angle), (3) every call to the old `fetchLegacy()` helper found across ~400 files so we know the blast radius, and (4) the CHANGELOG updated once the rest lands. Pre-commit hook takes ~8 min and gitleaks scans full history. Before doing anything, write your delegation plan to plan.md: each piece, where it runs (inline / subagent / separate session / background), which model and why, the order, and a short brief for every delegated piece. Don't start the work itself.",
+      "assertions": [
+        "plan.md assigns the SvelteKit 2 to 3 upgrade to Sonnet",
+        "plan.md assigns the plugin-loading security design to Opus",
+        "plan.md assigns the fetchLegacy() sweep to Haiku",
+        "plan.md runs the SvelteKit upgrade in a separate session or its own worktree rather than inline",
+        "plan.md orders the CHANGELOG update after the other pieces finish",
+        "Each delegated brief in plan.md states what done looks like (commands to pass or what to report)",
+        "At least one brief in plan.md tells the agent to commit in the background or warns about the slow pre-commit hook"
+      ]
+    },
+    {
+      "eval_name": "quick-fix-stays-inline",
+      "prompt": "in src/billing/invoice.py the variable `ttl_amt` should be renamed to `total_amount` everywhere in that file (it's only used in that one file, like 6 places). Before doing anything, write your delegation plan to plan.md: each piece, where it runs (inline / subagent / separate session / background), which model and why. Don't start the work itself.",
+      "assertions": [
+        "plan.md keeps the rename inline in the current session rather than delegating it",
+        "plan.md does not start a separate session or worktree for this task",
+        "plan.md gives a reason tied to the task being small or single-file"
+      ]
+    }
+  ]
+}
