@@ -7,6 +7,10 @@ author: hermes
 license: MIT
 tags: [ci-cd, pipeline, android, devops, on-device]
 related_skills: []
+platforms: [any]
+metadata:
+  hermes:
+    tags: [ci-cd, pipeline, android, devops, on-device]
 ---
 
 # Local build & deploy pipeline (on-device CI/CD)

@@ -1,6 +1,14 @@
 ---
 name: frameworks-on-cloudflare
 description: Build, migrate, and deploy web-framework applications on Cloudflare Workers. Use when a framework project such as Astro, SvelteKit, React Router, TanStack Start, Nuxt, Hono, or a React or Vue SPA targets Cloudflare, or when a framework repository contains Workers deployment configuration.
+version: 1.0.0
+author: Cloudflare
+license: Apache-2.0
+platforms: [any]
+source: https://github.com/cloudflare/skills
+metadata:
+  hermes:
+    tags: [cloudflare, frameworks]
 ---
 
 # Build with frameworks on Cloudflare

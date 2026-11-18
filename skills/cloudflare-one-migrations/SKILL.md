@@ -1,6 +1,14 @@
 ---
 name: cloudflare-one-migrations
 description: Assess and plan migrations from existing VPN, SWG, or SASE platforms to Cloudflare One, including policy mapping, parity gaps, and rollout.
+version: 1.0.0
+author: Cloudflare
+license: Apache-2.0
+platforms: [any]
+source: https://github.com/cloudflare/skills
+metadata:
+  hermes:
+    tags: [cloudflare, one, migrations]
 ---
 
 # Cloudflare One Migrations

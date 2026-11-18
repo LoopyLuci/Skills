@@ -7,6 +7,10 @@ author: Hermes Agent
 license: MIT
 tags: [rust, audit, clippy, verification]
 related_skills: []
+platforms: [any]
+metadata:
+  hermes:
+    tags: [rust, audit, clippy, verification]
 ---
 
 # Rust Workspace Audit & Fix

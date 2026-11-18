@@ -1,6 +1,14 @@
 ---
 name: workers-profiling
 description: Profile or debug CPU usage and memory allocation in deployed Cloudflare Workers and Durable Objects. Then use this information to optimize your code.
+version: 1.0.0
+author: Cloudflare
+license: Apache-2.0
+platforms: [any]
+source: https://github.com/cloudflare/skills
+metadata:
+  hermes:
+    tags: [cloudflare, workers, profiling]
 ---
 
 # Workers profiling

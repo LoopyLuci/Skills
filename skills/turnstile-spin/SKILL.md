@@ -1,6 +1,14 @@
 ---
 name: turnstile-spin
 description: Set up, repair, or migrate to Cloudflare Turnstile bot verification in an existing frontend and backend, including server-side Siteverify.
+version: 1.0.0
+author: Cloudflare
+license: Apache-2.0
+platforms: [any]
+source: https://github.com/cloudflare/skills
+metadata:
+  hermes:
+    tags: [cloudflare, turnstile, spin]
 ---
 
 # Turnstile Spin skill
