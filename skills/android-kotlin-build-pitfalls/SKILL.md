@@ -153,10 +153,44 @@ Do not fix this by editing more build files; the stale cache, not the source, is
 - **Phased rollout**: Implement feature, verify clean build, then verify unit tests — do not skip steps
 - **APK size**: Debug APK ~16.6 MB after AI SDK changes; clean-build APK path not yet confirmed
 
+
+### On-device CI/CD pipeline development
+
+**Device detection with ADB.** When a pre-set `ADB` path points to the adb binary but `command -v adb` fails (ADB not on PATH), the device detection must check `[[ -n "${ADB}" ]]` rather than `command -v adb`. This is the failure mode that blocked device targeting in the LumenSplat pipeline: `detect()` used `command -v adb` which returned empty because adb lived at `$ANDROID_HOME/platform-tools/adb` (not on PATH). Fix: test the pre-set ADB variable first.
+
+**Preflight check for AndroidManifest.xml.** When a manifest attribute spans multiple lines, a single-line `grep -q` pattern fails. Use `grep -oE 'pattern[^<]*'` to capture the feature declaration and then check for the attribute in the captured line. Or use line-break-agnostic `grep -qPz` on the whole file.
+
+**FOSS license allowlist key matching.** The 06_licenses check extracts catalog IDs from `app/build.gradle.kts` by replacing dots with hyphens. `libs.androidx.navigationCompose` becomes `androidx-navigationCompose` (the `Compose` suffix is preserved). The ALLOWED map must contain the exact extracted key — `“androidx-navigation-compose”` (hyphenated Compose token) will NOT match `androidx-navigationCompose` (no hyphen). Always run the check twice: once to see the missing keys, once to confirm they are added correctly.
+
+**Preflight results file format.** `ci/audits/preflight_results.json` is NDJSON (one JSON object per line), not a JSON array. Each line is a separate object. When parsing with Python, do not use `json.load()` on the whole file — read line by line:
+
+```python
+import json, sys
+with open('ci/audits/preflight_results.json') as f:
+    for line in f:
+        if line.strip():
+            d = json.loads(line)
+            print(d.get('name'), d.get('status'))
+```
+
+**Patch tool exact-string mismatches.** The `patch` tool can fail with “Could not find a match for old_string” when the file content differs from the intended patch target (whitespace, tabs vs spaces, line endings). When this happens, read the exact file content with `read_file` (or `cat`), then use a Python one-liner with precise string replacement instead of `patch`:
+
+```bash
+python3 -c "
+import sys
+p = 'path/to/file'
+s = open(p).read()
+s = s.replace(old_string, new_string)
+open(p, 'w').write(s)
+"
+```
+
+Then verify with `bash -n` for shell scripts or a build command.
+
 ## References
 
-- `build/gradle/gradle.properties` — project-wide Gradle options
-- `ci/README.md` — CI/CD pipeline documentation
-- `ai-service/README.md` — AI SDK architecture
-- `ai-service/ai/backend` — Cactus engine server (Python 3.14)
-- `ai-service/ai/sdk` — Android AI SDK (typed HTTP)
+- `ci/README.md` — local on-device CI/CD pipeline documentation
+- `ci/preflight/checks/` — preflight check scripts (00_toolchain, 01_gradle_wrapper, 02_version_catalog, 03_manifest, 04_native_sources, 05_shaders, 06_licenses, 07_device, 99_notary)
+- `ci/scripts/run_pipeline.sh` — pipeline orchestrator
+- `ci/config.sh` — device detection and toolchain config
+- `ci/matrix/device-matrix.md` — supported device matrix
