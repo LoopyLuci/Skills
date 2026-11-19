@@ -12,32 +12,31 @@ Android AI SDK (Kotlin: AiClient, AiRepository, model classes)
 SpendingSaver App UI (Composables: AIChatScreen, AIImageDescriptionScreen, AITranscribeScreen)
 ```
 
-## Key Files
+## Verified Build Configuration (2026-11-19)
 
-| File | Purpose |
-|------|---------|
-| `SpendingSaverAndroid/app/src/main/java/com/spendingsaver/ai/AiCapabilities.kt` | Capability registry with typed endpoints |
-| `SpendingSaverAndroid/app/src/main/java/com/spendingsaver/ai/AiIntent.kt` | Typed sealed-intent hierarchy |
-| `SpendingSaverAndroid/app/src/main/java/com/spendingsaver/ai/AiClient.kt` | OkHttp 4.11.0 + Gson HTTP client |
-| `SpendingSaverAndroid/app/src/main/java/com/spendingsaver/ai/AiRepository.kt` | Repository with ping/generateText/describeImage/transcribeAudio/generateImage |
-| `SpendingSaverAndroid/app/src/main/java/com/spendingsaver/ai/AiHiltModule.kt` | DI module |
-| `SpendingSaverAndroid/app/src/main/java/com/spendingsaver/di/AppModule.kt` | Hilt DI: @Provides for OkHttpClient, AiClient, AiRepository |
-| `SpendingSaverAndroid/app/src/main/java/com/spendingsaver/ui/screens/AISettingsScreen.kt` | Settings screen with service URL configuration |
-| `SpendingSaverAndroid/app/src/main/java/com/spendingsaver/ui/screens/AIComponents.kt` | UI components (Chat, Image description, Voice input) |
-| `SpendingSaverAndroid/app/src/main/java/com/spendingsaver/ui/viewmodel/MainViewModel.kt` | ViewModel with aiRepository StateFlow |
+- **Kotlin**: 1.8.22
+- **KSP**: 1.8.22-1.0.11
+- **Hilt**: 2.51.1 (KSP, NOT kapt)
+- **Android Gradle Plugin**: 8.1.0 (compileSdk 34)
+- **Gradle**: 8.2 (system Gradle fallback; Hermes wrapper had CRLF issues)
+- **Gradle memory**: `org.gradle.jvmargs=-Xmx4096m` in `gradle.properties`
+- **Dependencies**: `androidx.room:room-runtime:2.5.2`, `com.google.gson:gson:2.10.1`, `com.squareup.okhttp3:okhttp:4.11.0`
 
-## Capability Mapping
+## Build Commands
 
-| Capability | Source |
-|-------------|--------|
-| Text generation / tool use | Cactus engine (cactus) |
-| Vision / image-to-text / OCR | Cactus Mirage |
-| Speech recognition (ASR) | Cactus Whistle |
-| Text-to-speech | Not in Cactus stack (TODO — Jetpack TextToSpeech) |
-| Image generation | prism-ml bonsai-image + image-studio/FLUX.2 klein |
+```bash
+cd SpendingSaverAndroid
+export GRADLE_HOME=/tmp/gradle-8.2/gradle-8.2
+export PATH=$GRADLE_HOME/bin:$PATH
+gradle clean assembleDebug --console=plain --no-daemon
+```
 
-## Known Limitations
+Fallback: use system Gradle 8.2 at `/tmp/gradle-8.2` if the Hermes wrapper gradlew has CRLF or `DEFAULT_JVM_OPTS` quoting issues.
 
-- **No NDK in Android SDK**: Native JNI integration of Cactus engine is not possible. Viable path is host engine + HTTP SDK.
-- **Voice input is a simulated placeholder**: No real MediaRecorder/AudioRecord yet. UI has a recording dialog.
-- **AI features not yet wired into existing app screens**: Chat/Image/Voice screens exist but not integrated into main app navigation yet.
+## Known Issues (Fixed)
+
+- **Kotlin 1.8.22 EnumClassLowering**: Converting enum classes with default parameters and multiple entries causes `AssertionError: No such value argument slot`. Fix: convert enum to data class + object registry.
+- **Dagger duplicate bindings**: Duplicate `@Provides @Singleton` for the same type in different modules causes build failure. Remove the duplicate.
+- **Hilt stale stub**: After Hilt version changes, `rm -rf app/build/tmp/kapt3/stubs` may be needed, but KAPT is not used with Hilt 2.51.1 (KSP).
+- **MediaType.parse extension**: In OkHttp 4.11.0, `MediaType.parse` is an extension function. Use `"application/json".parse()` or the full signature `RequestBody.create(content, null)`.
+- **Room 2.5.2 DAO annotations**: `@Upsert`/`@Delete` not supported on DAO methods. Use `@Insert(onConflict = OnConflictStrategy.REPLACE)` + explicit `@Query("DELETE FROM ...")`.

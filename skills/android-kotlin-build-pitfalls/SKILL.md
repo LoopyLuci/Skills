@@ -122,9 +122,20 @@ Do not fix this by editing more build files; the stale cache, not the source, is
 
 ### Hilt & dependency injection
 
-11. **Duplicate top-level functions across files cause overload resolution ambiguity**
-   - If two files define the same function name in the same package, Kotlin cannot resolve which to use
-   - Detection: `Conflicting declarations: val backgroundGradient` or similar
+11. **Hilt version alignment**: Hilt 2.51.1 requires KSP (not kapt) — `com.google.devtools.ksp` must be applied with `ksp` for `hilt-compiler`. Correct import is `import dagger.hilt.InstallIn` (NOT `dagger.hilt.components.InstallIn`). Detected when KAPT/KSP mixes cause: `@InstallIn` cannot resolve symbols, or `dagger.hilt.compile-only-searcher is not a recognized Hilt option`.
+
+12. **Dagger duplicate bindings**: If two `@Module` objects provide the same type via `@Provides @Singleton`, Dagger fails with `Dagger/DuplicateBindings`. Fix: remove the duplicate `@Provides` method from one of the modules (usually AppModule) and inject the provided dependency into every consumer.
+
+### Kotlin 1.8.22 compiler bug (EnumClassLowering)
+13. **Enum classes with default parameters cause compiler crash**: Kotlin 1.8.22's `EnumClassLowering` phase throws `AssertionError: No such value argument slot: N` when compiling enum classes with default parameters and multiple entries. Fix: convert the enum class to a `data class` + `object` for the registry:
+   - `enum class AiStatus` → `data class AiStatus(val label: String, ...)`
+   - `object AiCapabilities` → `class AiCapabilities(private val context: Context) { val ALL = listOf(...) }`
+   - Do NOT use default parameters on enum entries
+   - Detection: `AssertionError: No such value argument slot` during `compileDebugKotlin`
+
+### Kotlin stdlib API changes (2026-11-19)
+14. **`MediaType.parse` is an extension function, not a static method**: In OkHttp 4.11.0, `MediaType.parse` is an extension function and cannot be called as `okhttp3.MediaType.parse(...)`. Fix: use `...parse()` as an extension or use the full signature `RequestBody.create(content, null)`.
+15. **`RequestBody.create` signature**: All overloads require a `MediaType?` as the first parameter. Detection: `None of the following functions can be called with the arguments supplied`. Fix: pass all parameters explicitly, including the `MediaType?` (even null).
 
 ### MSYS paths
 
@@ -141,17 +152,22 @@ Do not fix this by editing more build files; the stale cache, not the source, is
    - Also set `GRADLE_OPTS="-Xmx4096m -XX:MaxMetaspaceSize=512m"` in `ci/config.sh`
    - Pattern: `Insufficient memory for the Java Runtime Environment to continue`
 
-### New learnings (2026-11-16) — SpendingSaver session
+### New learnings (2026-11-16 through 2026-11-19) — SpendingSaver session
 
 - **Clean build verification**: After any source change, run `./gradlew clean assembleDebug --console=plain --no-daemon` to catch incremental-build KSP cache staleness
 - **Dex merging failures**: `DexArchiveMergerException` is a KSP cache issue; always `./gradlew clean` first
-- **Kotlin compiler internal error**: Often a duplicate function in a DAO; grep for duplicate method names in the DAO file
+- **Room DAO in separate package**: When a `@Dao` is in a different package from its `@Database`, KSP validates against the main app's schema — result `SQLITE_ERROR: no such table`. Fix: move DAO into the same package as `@Database`, or use a separate Android library module
+- **KSP cache invalidation**: After any DAO or `@Database` edit, always run `./gradlew clean` — incremental builds DO NOT clear the KSP cache between builds
+- **Kotlin 1.8.22 EnumClassLowering bug**: Converting enum classes with default parameters and multiple entries causes `AssertionError: No such value argument slot` during `compileDebugKotlin`. Fix: convert enum to data class + object registry
+- **Hilt 2.51.1 requires KSP**: Hilt 2.51.1 (ksp) needs `com.google.devtools.ksp` applied with `ksp` for `hilt-compiler`. Correct import is `import dagger.hilt.InstallIn` (NOT `dagger.hilt.components.InstallIn`)
+- **Dagger duplicate bindings**: Duplicate `@Provides @Singleton` for the same type in different modules causes `Dagger/DuplicateBindings` build failure. Remove the duplicate `@Provides` from one module
 - **Room migration**: If schema changes, Room requires a migration; validate before shipping
-- **KSP version alignment**: `ksp` and `kotlin` versions must match exactly; mismatched versions cause internal compiler errors
-- **Hilt @Provides**: Context injection in `@Provides` methods requires `@ApplicationContext`
+- **Room 2.5.2 DAO annotations**: `@Upsert`/`@Delete` on DAO methods is not supported. Use `@Insert(onConflict = OnConflictStrategy.REPLACE)` + explicit `@Query("DELETE FROM ...")` instead
 - **Unit test verification**: Run `./gradlew :app:testDebugUnitTest` after `clean assembleDebug` — 12/12 tests passed in one session
 - **Phased rollout**: Implement feature, verify clean build, then verify unit tests — do not skip steps
-- **APK size**: Debug APK ~16.6 MB after AI SDK changes; clean-build APK path not yet confirmed
+- **AI SDK integration**: Host machine Python engine (Cactus + prism-ml + image-studio) via typed HTTP API. No NDK in Android SDK. Hilt 2.51.1 + KSP 1.8.22-1.0.11 + Kotlin 1.8.22 is the verified combination
+- **APK size**: Debug APK ~16.6 MB after AI SDK changes; clean-build APK path is the CI verification gate
+- **MediaType.parse extension function**: In OkHttp 4.11.0, `MediaType.parse` is an extension function. Fix: use `"application/json".parse()` extension syntax
 
 
 ### On-device CI/CD pipeline development
