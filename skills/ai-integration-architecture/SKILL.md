@@ -99,7 +99,7 @@ SpendingSaver App UI (Composables: chat, image description, voice, image gen)
 ## References
 
 - `ai-integration-procedure.md` — detailed AI SDK implementation procedure
-- `android-kotlin-build-pitfalls` — Kotlin language and build pitfalls
+- `android-kotlin-build-pitfalls` — Kotlin language and build pitfalls (including new Hilt KAPT / `SingletonComponent` issues from 2026-11-16 session)
 - `ai-service/README.md` — AI SDK architecture
 - `ci/README.md` — CI/CD pipeline documentation
 
