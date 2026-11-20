@@ -220,6 +220,56 @@ open(p, 'w').write(s)
 
 Then verify with `bash -n` for shell scripts or a build command.
 
+## Unit test verification (Room + MockK + JUnit 5)
+
+1. **Run tests**: `./gradlew :app:testDebugUnitTest` from `SpendingSaverAndroid`.
+2. **Test template for Room DAO tests**:
+
+   ```kotlin
+   internal class TaxRepositoryTest {
+       @Test
+       fun testName() = runTest {
+           // IMPORTANT: coEvery must be INSIDE each test method, never top-level.
+           // Top-level coEvery causes: "Expecting a top level declaration" compile error.
+           coEvery { TaxDatabase.getInstance(any()) } returns mockk<TaxDatabase>()
+
+           val dao = mockk<TaxDao>(relaxed = true)
+           every { dao.someMethod() } returns flowOf(...)   // non-suspend: use `every`
+           // coEvery is for suspend functions only; use `every` for non-suspend
+
+           val context = mockk<android.content.Context>(relaxed = true)
+           val repository = TaxRepository(context, dao)
+
+           // assertions
+       }
+   }
+   ```
+
+3. **Missing imports that cause `Unresolved reference` errors:**
+   - `import kotlinx.coroutines.test.runTest` — `runTest { }` block
+   - `import androidx.annotation.RuntimeEnvironment` — `RuntimeEnvironment.application` for a real Context (Room needs a non-null Context)
+   - `import io.mockk.every` — `every { ... }` for non-suspend DAO method stubs
+   - `import io.mockk.coEvery`, `import io.mockk.coVerify` — coroutine-aware stubs for suspend functions
+
+4. **Gradle `clean` deadlock workaround**: `gradle clean` can fail with `New files were found` / \"New files were found\" (locked build files). Workaround: run `gradle clean` alone until it succeeds, then run `gradle assembleDebug` fresh.
+
+5. **Read test results for failure diagnostics**: Check `app/build/test-results/testDebugUnitTest/TEST-*.xml` for detailed failure messages and stack traces.
+
+6. **Seed data consistency**: `coVerify(exactly = N)` counts must match the actual seed data insertions. After changing `seedTaxData()`, review every `coVerify(exactly = N)` and recount the insertions:
+   - 1 `insertCountry` call → 1 `coVerify(exactly = 1) { taxDao.insertCountry(any()) }`
+   - `insertState` calls accumulate all states (each call is one state)
+   - `insertTown` calls accumulate all towns
+   - `insertDetails` (bulk) → 1 call → 1 `coVerify(exactly = 1) { taxDao.insertDetails(any()) }`
+   - `insertRecord` calls accumulate records
+   - `insertFiling` calls accumulate filings
+   - `insertAudit` calls accumulate audits
+
+7. **`insertDetails` (bulk) vs `insertDetail` (single)**: The `TaxRepository` uses `insertDetails(details: List<TaxDetail>)` which calls `taxDao.insertDetails(details)` — NOT `insertDetail` called repeatedly. When verifying, expect `coVerify(exactly = 1) { taxDao.insertDetails(any()) }` for bulk inserts, not `coVerify(exactly = N) { taxDao.insertDetail(any()) }`.
+
+8. **`TaxTown` constructor has NO `country_code` parameter** — only `state_id`, `town_code`, `town_name`, `county`, `is_city`, `is_town`, `id`. Do NOT pass `country_code` to `TaxTown`.
+
+9. **`TaxRepository` constructor**: `@Inject constructor(private val context: Context, private val taxDao: TaxDao)` — a field `private val taxDatabase = TaxDatabase.getInstance(context)` in the constructor is NOT used by repository methods (all methods use `taxDao`). For unit tests, intercept `TaxDatabase.getInstance(any())` with `coEvery { TaxDatabase.getInstance(any()) } returns mockk<TaxDatabase>()` so the constructor does not create a real database.
+
 ## References
 
 - `ci/README.md` — local on-device CI/CD pipeline documentation
