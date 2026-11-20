@@ -89,12 +89,16 @@ SpendingSaver App UI (Composables: chat, image description, voice, image gen)
 3. **Constructor access**: `AiRepository` takes `Context` in constructor; provide a mock `Context` with mocked `SharedPreferences`.
 4. **Test data**: `AiResponse` constructor requires `success: Boolean` (no default value) — always provide it.
 
-## Verification checklist (2026-11-16)
+## Verification checklist
 
-1. `./gradlew clean assembleDebug --console=plain --no-daemon` → BUILD SUCCESSFUL (40 tasks, ~1m 40s)
-2. `./gradlew :app:testDebugUnitTest` → 12/12 tests passing
-3. APK built at `app/build/outputs/apk/debug/app-debug.apk` (~16.6 MB)
-4. Device: Nokia 7.2, `com.spendingsaver` process alive
+- Clean build green: `gradle clean assembleDebug` → BUILD SUCCESSFUL
+- Unit tests: `gradle :app:testDebugUnitTest` — no test suite present yet; add one before the AI feature ships
+- CI/CD: `./ci/run.sh all` → Build/Test/Verify/Overall all PASSED
+- APK: `app/build/outputs/apk/debug/app-debug.apk` produced (~16.7 MB)
+
+### Library API constraints
+
+- **OkHttp 4.11.0 `MediaType`**: `MediaType.parse`/`get` are deprecated extension functions ("moved to extension function", ERROR level). Use `"application/json".toMediaType()` (extension on String, in `okhttp3.MediaType.Companion`), or `RequestBody.create(content, null)`.
 
 ## References
 

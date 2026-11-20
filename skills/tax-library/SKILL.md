@@ -197,7 +197,7 @@ If `@Dao` is in a different package from `@Database`, KSP validates against the 
 
 ## New learnings (2026-11-16)
 
-- **Taxes Library is fully delivered** — clean `assembleDebug` PASSED (40 tasks, 1m 40s, exit 0); 12/12 unit tests green
+- **Taxes Library clean build is GREEN; data population is a skeleton** — country/state/town tax-breakdown data not yet populated (out of this session's scope)
 - **AI SDK in-app integration complete** — MainViewModel wired, AISettingsScreen, AIComponents, DI module done
 - **Build verification pattern**: `./gradlew clean assembleDebug` then `./gradlew :app:testDebugUnitTest` after any file change
 - **Room+DAO package rule**: ALL DAO and @Database files must be in the same package as entity types (com.spendingsaver.tax) — KSP validates against the wrong schema if not

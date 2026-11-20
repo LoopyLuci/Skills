@@ -54,6 +54,23 @@ cd SpendingSaverAndroid
 
 Run `./gradlew clean` first if a compile error persists after fixing source.
 
+## Project build & CI environment
+
+### Gradle build path
+- System Gradle 8.2 at /tmp/gradle-8.2/gradle-8.2 is the reliable build path for this project.
+- Fallback only: use ./gradlew if the Hermes wrapper gradlew works (distributionUrl=https://services.gradle.org/distributions/gradle-8.2-bin.zip); the wrapper jar was missing/corrupted and had CRLF issues.
+- CI uses $GRADLE_CMD (system Gradle) instead of ./gradlew.
+
+### Gradle memory
+- GRADLE_OPTS must supply ONLY JVM memory options (e.g. -Xmx4096m -XX:MaxMetaspaceSize=512m), never CLI flags like -x/-no-daemon.
+- org.gradle.jvmargs=-Xmax4096m in gradle.properties.
+- Verify $JAVA_HOME/bin/java -version first; JAVA_HOME must be a valid JDK install dir (not /).
+
+### CI/CD pipeline
+- Driver: ci/run.sh all|preflight|test|build|verify|report (set -u; sources config.sh + lib.sh).
+- Report: ci/reports/summary.txt with Build/Test/Verify/Overall PASSED.
+- Run ./ci/run.sh all after any source change; all stages green = CI passed.
+
 ## Pitfalls
 
 ### Kotlin language
