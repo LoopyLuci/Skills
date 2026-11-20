@@ -156,52 +156,42 @@ If `@Dao` is in a different package from `@Database`, KSP validates against the 
 ## Testing (unit tests for taxes)
 
 1. Unit tests run via `./gradlew :app:testDebugUnitTest` from `SpendingSaverAndroid`.
-2. **Test data**: `AiResponse` (in `AiIntent.kt`) requires `success: Boolean` — always provide it.
-3. **Test dependencies**: Ensure `app/build.gradle.kts` has `testImplementation("junit:junit:4.13.2")`, `testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4")`, and `testImplementation("io.mockk:mockk:1.13.7")`.
-4. **Test context**: If testing classes that need `Context`, provide a mock `Context` with mocked `SharedPreferences` (implement the full `Context` abstract class or use a stub).
-5. **Test assertions**: Use `assertEquals(expected, actual)` — order matters for error messages.
-6. **Run tests with `./gradlew clean :app:testDebugUnitTest`** after test file changes.
+2. **Test template for Room + MockK + JUnit 5** (use for all repository DAO tests):
 
-## AI Engine Host Setup (updated from session learnings)
+   ```kotlin
+   internal class TaxRepositoryTest {
+       @Test
+       fun testName() = runTest {
+           // IMPORTANT: coEvery must be INSIDE each test method, never top-level
+           coEvery { TaxDatabase.getInstance(any()) } returns mockk<TaxDatabase>()
+           
+           val dao = mockk<TaxDao>(relaxed = true)
+           every { dao.someMethod() } returns flowOf(...)   // non-suspend, use `every`
+           // coEvery is for suspend functions only; use `every` for non-suspend
+           
+           val context = mockk<android.content.Context>(relaxed = true)
+           val repository = TaxRepository(context, dao)
+           
+           // assertions
+       }
+   }
+   ```
 
-- Use HermESC-managed Python 3.14.9+202**1021 venv at `/c/Users/Server/AppData/Local/hermes/tools/python-3.14.9+202**1021-win32-x64/python3`.
-- The venv has `cactus-compute` installed (cactus, Mirage, Whistle confirmed accessible via HTTP).
-- Default `HERMES_PYTHON` env override for alternative Python paths.
+3. **Missing imports that cause `Unresolved reference` errors:**
+   - `import kotlinx.coroutines.test.runTest` — `runTest { }` block
+   - `import androidx.annotation.RuntimeEnvironment` — `RuntimeEnvironment.application` for a real Context (Room needs a non-null Context)
+   - `import io.mockk.every` — `every { ... }` for non-suspend DAO method stubs
+   - `import io.mockk.coEvery`, `import io.mockk.coVerify` — coroutine-aware stubs for suspend functions
 
-## Priority & scope (user preference)
-
-1. **Mobile app first, Nokia 7.2 test target** — Verify on `com.spendingsaver` process via `adb`.
-2. **No Kindle device/package** — Verify `pm list packages | grep -i kindle` returns empty.
-3. **CI/CD green gate is a precondition** — `./ci/run.sh all` must be green before shipping feature work.
-4. **Full AI/multimodal integration** — Host engine (Cactus + prism-ml + image-studio) → Android AI SDK (typed HTTP) → app.
-5. **Local AI engine** — Host Python 3.14.9+202**1021 venv has `cactus-compute` installed.
-6. **No NDK** — Native JNI/Cactus build is blocked; use HTTP SDK.
-7. **Exhaustive scope, not minimal** — Complete every roadmap item, do not trim.
-8. **Credential handling** — API keys, tokens, passwords, secrets must NEVER appear in summaries; replaced with `[REDACTED]`.
-9. **Gradle `GRADLE_OPTS` must supply ONLY JVM memory options** — `-Xmx4096m -XX:MaxMetaspaceSize=512m` — not CLI flags (`-x -no-daemon --console=plain --build-cache` crash JVM with `Unrecognized option: -x`).
-10. **Do not commit credentials, local configuration, private account data, generated build output, or local logs.**
-
-## Testing
-
-1. Unit tests for AI SDK (`AiClientTest.kt`, `AiRepositoryTest.kt`) run via `./gradlew :app:testDebugUnitTest`.
-2. Integration tests: start the local Python AI engine host, then call Android SDK endpoints via device network.
-3. Mock `OkHttpClient` when testing repository layer.
-
-## References
-
-- `ai-integration-procedure.md` — detailed AI SDK implementation procedure
-- `android-kotlin-build-pitfalls` — Kotlin language and build pitfalls
-- `ai-service/README.md` — AI SDK architecture
-- `ci/README.md` — CI/CD pipeline documentation
-- `ai-integration-procedure.md` — implementation procedure for AI SDK (cactus, mirage, whistle, prism-ml, image-studio)
-
-## New learnings (2026-11-16)
-
-- **Taxes Library clean build is GREEN; data population is a skeleton** — country/state/town tax-breakdown data not yet populated (out of this session's scope)
-- **AI SDK in-app integration complete** — MainViewModel wired, AISettingsScreen, AIComponents, DI module done
-- **Build verification pattern**: `./gradlew clean assembleDebug` then `./gradlew :app:testDebugUnitTest` after any file change
-- **Room+DAO package rule**: ALL DAO and @Database files must be in the same package as entity types (com.spendingsaver.tax) — KSP validates against the wrong schema if not
-- **KSP + insertAll pitfall**: Never add `insertAll(List<T>)` to a DAO; KSP generates `insertAll(List<T>, Continuation<Unit>)` causing conflicts
-- **Orphaned annotations**: After deleting a DAO method, also delete its annotation line
-- **Flow<List<T>> in suspend**: Use `collect { list.addAll(it) }` inside suspend functions
-- **Gradle memory**: GRADLE_OPTS must supply ONLY JVM memory options (`-Xmx4096m -XX:MaxMetaspaceSize=512m`); never add CLI flags
+4. **Gradle `clean` deadlock workaround**: `gradle clean` can fail with `New files were found` / "New files were found" (locked build files). Workaround: run `gradle clean` alone until it succeeds, then run `gradle assembleDebug` fresh.
+5. **Read test results for failure diagnostics**: Check `app/build/test-results/testDebugUnitTest/TEST-*.xml` for detailed failure messages and stack traces.
+6. **Seed data consistency**: `coVerify(exactly = N)` counts must match the actual seed data insertions. After changing `seedTaxData()`, review every `coVerify(exactly = N)` and recount the insertions:
+   - 1 `insertCountry` call → 1 `coVerify(exactly = 1) { taxDao.insertCountry(any()) }`
+   - `insertState` calls accumulate all states (each call is one state)
+   - `insertTown` calls accumulate all towns
+   - `insertDetails` (bulk) → 1 call → 1 `coVerify(exactly = 1) { taxDao.insertDetails(any()) }`
+   - `insertRecord` calls accumulate records
+   - `insertFiling` calls accumulate filings
+   - `insertAudit` calls accumulate audits
+7. **`TaxTown` constructor has NO `country_code` parameter** — only `state_id`, `town_code`, `town_name`, `county`, `is_city`, `is_town`, `id`. Do NOT pass `country_code` to `TaxTown`.
+8. **`TaxRepository` constructor**: `@Inject constructor(private val context: Context, private val taxDao: TaxDao)` — a field `private val taxDatabase = TaxDatabase.getInstance(context)` in the constructor is NOT used by repository methods (all methods use `taxDao`). For unit tests, intercept `TaxDatabase.getInstance(any())` with `coEvery { TaxDatabase.getInstance(any()) } returns mockk<TaxDatabase>()` so the constructor does not create a real database.
