@@ -160,7 +160,63 @@ covers the class of work where the GUI is a *second client* to a running daemon.
    tedious to live with. Wrap reads so a corrupt value falls back to its default
    instead of raising at construction time.
 
+Serving-plane residency + back-pressure eviction
+
+The serving plane owns the expert cache and enforces a resident budget. The resident set is the subset of cached shards the serving layer deliberately keeps hot (so the inference plane never re-warms a known-good shard on every decode).
+
+Definitions:
+- `ExpertCacheManager.entries` - keyed {expert_group}:{sub_domain}
+- `CacheEntry.resident` - whether the shard is held resident
+- `CacheEntry.module_id` - the resident module owning the shard
+- `ExpertCacheManager.resident_modules` - set of resident module ids
+- `ExpertCacheManager.residency_budget` - target fraction of shards resident (default 0.4)
+
+mark_resident(module_id, expert_group, sub_domain) warms the shard, records the module_id, adds the module to resident_modules, then runs ensure_resident_budget().
+
+ensure_resident_budget() demotes the least-recently-used resident shards (oldest last_access, fewest hit_count) until resident_ratio is within residency_budget, keeping at least one resident shard alive (never evict a cache of size <= 1):
+
+    target = max(1, int(len(entries) * residency_budget))
+    residents = sorted([e for e in entries.values() if e.resident], key=lambda e: (e.last_access, e.hit_count))
+    while len(residents) > target:
+        victim = residents.pop(0)
+        victim.resident = False
+        if victim.module_id: resident_modules.discard(victim.module_id)
+
+resident_ratio is a float in [0,1] counting resident shards.
+
+v1.1.0 cross-app profile exchange
+
+Cross-app profile exchange moves a resident module's specialization state between the KotMoE app and the Agentic Workbench app, so the serving plane can re-import it. Provider IDs are normalized on import per app: nous<->nous_research, opencode-zen<->open_code_zen, opencode-go<->open_code_go, xai<->grok.
+
+- SubstrateProfile (module_id, group, expert_id, expert_entropy, routing_report, health_score) carries the portable state; to_dict/from_dict are the JSON shape.
+- _export_share(profile, source_app) produces the v1.1.0 share: {profile_format_version: "1.1.0", source_app, target_app, organism_profile, provider}
+- _import_share(share) restores the SubstrateProfile from the share.
+
+Serving-plane HTTP gateway
+
+Expose the resident cache as a JSON service (FastAPI, framework/gateway.py): /health, /v1/mark_resident, /v1/is_resident/{module_id}, /v1/resident_ratio, /v1/client_share, /v1/client_import. Wire-test with FastAPI's TestClient (in-process); the serving plane is a pure class, so a real listen is not needed to prove the gateway body.
+
+Verification-first (no stubs, working artifacts, zero tolerance)
+
+- Single-file-module test before mock-heavy test. Run the full suite green before claiming done. Verify the live service headless (no mocks) and report measured values, not that it seems solid.
+
 ## Always-on rules
+
+- This user's expectation for a console like this is a **measured audit pass, not
+  a green test run**. "It works" is the starting line. Once the happy path passes,
+  go looking for the next class of defect deliberately: time every query, feed
+  the readers deliberately malformed input, uncheck every filter, empty every
+  table, point the app at a missing install, and reopen it to check what persisted.
+  Report what you measured, not that it "seems solid".
+- **Desktop GUI = scaffold pywebview/Tauri, NEVER a browser dashboard.** The agent's UI
+  is a first-class architectural feature — "UI as data, not static HTML."
+- **Generative UI = agents create, modify, and optimize components in real time**
+  (add buttons, change layouts, generate themes). When in doubt, ask: is the UI
+  reducible to data the agent can rewrite?
+- **Full implementation, no stubs; verification-first; zero tolerance for errors.**
+  Run the full suite green, then go looking for the next class of defect deliberately.
+- **Provider ID normalization on import** is mandatory for cross-app exchange
+  (nous<->nous_research, opencode-zen<->open_code_zen, opencode-go<->open_code_go, xai<->grok).
 
 - This user's expectation for a console like this is a **measured audit pass, not
   a green test run**. "It works" is the starting line. Once the happy path passes,

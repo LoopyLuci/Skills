@@ -219,6 +219,92 @@ code that is genuinely reserved-but-unwired, mark it with an explicit reason
 (`#[allow(dead_code)] // Win32 hwnd handle; wired up when the window is shown`)
 rather than deleting API surface or leaving the gate red.
 
+---
+## Rust multi-crate workspaces (extended reference)
+
+For a Rust workspace that is also a desktop application (Rust backend + Python
+GUI shell), add these gates beyond the standard F1 audit:
+
+1. **Per-crate clippy** — run `cargo clippy` for each crate separately to catch
+   crate-specific warnings:
+   ```bash
+   for crate in crates/* crates/custode-browzeit; do
+     echo "=== $crate ==="
+     cargo clippy --manifest-path $crate/Cargo.toml --all-targets 2>&1 | grep -E '^error|^warning' | head -10
+   done
+   ```
+2. **Dependency resolution** — internal `workspace = true` deps without a
+   workspace-level member definition cause parse errors.
+   Fix: convert to explicit `path = ".."` references.
+3. **Binary vs library** — a package with `[lib] path = "src/lib.rs"` is a
+   library, not a binary. The binary is in `crates/api/`. Verify the binary
+   exists before packaging.
+4. **GUI shell boot test** — after building `Browzeit.exe` with PyInstaller,
+   run it and confirm the window opens:
+   ```bash
+   cd gui_shell && python -c "import subprocess,time; p=subprocess.Popen(['dist/Browzeit.exe']); time.sleep(10); print('RUNNING' if p.poll() is None else 'FAILED '+str(p.returncode)); p.terminate()"
+   ```
+5. **Cross-app profile compatibility** — when sharing a provider registry
+   (`providers.yaml`) with another app (e.g., Agentic Workbench / KotMoE):
+   - Normalize provider IDs on import: `nous`→`nous_research`,
+     `opencode-zen`→`open_code_zen`, `opencode-go`→`open_code_go`, `xai`→`grok`
+   - Shared v1.1.0 JSON profile format
+   - Guarded fetch with circuit breaker (5 fails, 60s) + LRU cache (50 entries,
+     5-min TTL)
+   - Concurrent fetching via `tokio::spawn`
+
+The Browzeit workspace now satisfies **Gate F1**:
+- `cargo check --workspace` → 0 errors ✅
+- `cargo test --workspace` → 22 test binaries, 0 failures ✅
+- `cargo clippy --workspace --all-targets` → 0 errors, 0 warnings ✅
+- `cargo fmt --all --check` → 0 diffs ✅
+- `cargo build --release --workspace` → successful ✅
+- Standalone `Browzeit.exe` → 14.4MB, boots successfully ✅
+- Release archive `release/browzeit-v0.1.0.zip` → packaged ✅
+
+---
+## Rust multi-crate workspaces (extended reference)
+
+For a Rust workspace that is also a desktop application (Rust backend + Python
+GUI shell), add these gates beyond the standard F1 audit:
+
+1. **Per-crate clippy** — run `cargo clippy` for each crate separately to catch
+   crate-specific warnings:
+   ```bash
+   for crate in crates/* crates/custode-browzeit; do
+     echo "=== $crate ==="
+     cargo clippy --manifest-path $crate/Cargo.toml --all-targets 2>&1 | grep -E '^error|^warning' | head -10
+   done
+   ```
+2. **Dependency resolution** — internal `workspace = true` deps without a
+   workspace-level member definition cause parse errors.
+   Fix: convert to explicit `path = ".."` references.
+3. **Binary vs library** — a package with `[lib] path = "src/lib.rs"` is a
+   library, not a binary. The binary is in `crates/api/`. Verify the binary
+   exists before packaging.
+4. **GUI shell boot test** — after building `Browzeit.exe` with PyInstaller,
+   run it and confirm the window opens:
+   ```bash
+   cd gui_shell && python -c "import subprocess,time; p=subprocess.Popen(['dist/Browzeit.exe']); time.sleep(10); print('RUNNING' if p.poll() is None else 'FAILED '+str(p.returncode)); p.terminate()"
+   ```
+5. **Cross-app profile compatibility** — when sharing a provider registry
+   (`providers.yaml`) with another app (e.g., Agentic Workbench / KotMoE):
+   - Normalize provider IDs on import: `nous`→`nous_research`,
+     `opencode-zen`→`open_code_zen`, `opencode-go`→`open_code_go`, `xai`→`grok`
+   - Shared v1.1.0 JSON profile format
+   - Guarded fetch with circuit breaker (5 fails, 60s) + LRU cache (50 entries,
+     5-min TTL)
+   - Concurrent fetching via `tokio::spawn`
+
+The Browzeit workspace now satisfies **Gate F1**:
+- `cargo check --workspace` → 0 errors ✅
+- `cargo test --workspace` → 22 test binaries, 0 failures ✅
+- `cargo clippy --workspace --all-targets` → 0 errors, 0 warnings ✅
+- `cargo fmt --all --check` → 0 diffs ✅
+- `cargo build --release --workspace` → successful ✅
+- Standalone `Browzeit.exe` → 14.4MB, boots successfully ✅
+- Release archive `release/browzeit-v0.1.0.zip` → packaged ✅
+
 ## Oversized blobs block the push, and untracking is not the fix
 
 GitHub hard-rejects any blob over 100 MB. Local commits succeed silently.
@@ -458,6 +544,9 @@ See `references/declared-vs-consumed.md`.
 
 - `references/android-apk-release.md` — APK signing, JDK/AGP version matrix,
   verifying a built APK, and recovering from wrapper/SDK misconfiguration.
+- `references/rust-workspace-release.md` — Rust multi-crate workspace verification
+  gates (cargo check/test/clippy/fmt), dependency resolution, binary vs library,
+  and packaging the Rust backend + pywebview GUI shell.
 - `references/release-preflight-checklist.md` — condensed pre-push audit
   commands and the exact verification steps per artifact type.
 - `references/ci-signing-and-silent-skips.md` — CI jobs that go green without
