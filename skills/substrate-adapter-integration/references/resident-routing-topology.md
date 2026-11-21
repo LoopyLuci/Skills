@@ -1,31 +1,44 @@
-# Resident routing topology
+# Resident Routing Topology
 
-A resident module rides the substrate's routing topology instead of the plain
-`embed`. The adapter exposes a vector view shaped to match the substrate's
-`embed` output so the substrate can route over the resident without touching
-the organims SDK.
+An Organism resident is routed through the substrate exactly like a Qwen3 expert
+does. `route_resident(adapter, problem)` is the single entry point; it runs through
+the same topology that routes expert experts, so the resident's trace stays
+attributable and the fine router can gate it alongside Qwen3 experts.
 
 ## Topology
 
-1. **Coarse group router** — selects the expert group (e.g. `systems_and_infra`).
-2. **OT-Route fine router** — addresses the exact expert inside the group.
-3. **GaP-MoE** (gating by parameter) — the final expert activation for the problem.
+1. **Identity.** `adapter.resident_embedding(problem)` returns a deterministic
+   `(EXPERT_OUT_DIM,)` float32 tensor. Same module + problem → same vector.
+   Implemented as `sha256(f"{module_id}|{problem}")`, so routing traces stay
+   attributable and the fine router gates the resident in expert weight space.
+2. **Coarse group router.** `coarse_group_router(problem, groups, device, seed)`
+   runs a selective Sinkhorn over expert groups. It takes the problem string and
+   the group list, and returns a soft top-2 distribution over groups.
+3. **OT-Route fine router.** `fine_router_gating(hidden, num_experts, eps=0.05)`
+   runs an entropy-regularised optimal transport assignment over experts, then
+   Sinkhorn-balances to enforce load balance. Returns a routing distribution over
+   `num_experts`.
+4. **Adaptive recurrence depth.** `adaptive_compute_depth(fine_entropy,
+   recurrence, min_depth=1)`. High fine-router entropy (unfamiliar input)
+   requests deeper recurrence; low entropy stays at min depth.
+5. **GaP-MoE.** The shared gradient-level orthogonalisation specialist keeps
+eXperts from collapsing. Leader's gradient only updates the buffer; followers
+are projected off the leader's subspace (not chained).
 
-`resident_embedding(problem)` returns a deterministic routing vector of shape
-`(EXPERT_OUT_DIM,)`. `route_resident(adapter, problem)` composes the coarse
-group assignment + OT-Route fine routing + GaP-MoE to produce the resident's
-routing trace (artifact id, group assignments, fine entropy, recurrence depth).
-
-## Verification gate contract
+## Verify gate contract (Tier-1, SPEC 4.1)
 
 `Verifier.resident_routing(trace, module_id, max_entropy=4.0, max_depth=8,
-min_depth=1)` — the Tier-1 executable audit of a resident routing trace.
+min_depth=1)` returns `{'verdict':'pass'|'fail'|'PASS_WITH_TELEGRAM',
+'confidence':0.9|0.4, 'message':..., 'audited':{'artifact_id',
+'group_assignments','fine_entropy','recurrence_depth'}}`.
 
-The verdict passes when, and only when, all of: the trace's `artifact_id`
-matches the resident module_id, at least one group assignment is present,
-`fine_entropy` is finite and within `[0, max_entropy]`, and
-`recurrence_depth` is within `[min_depth, max_depth]`.
+Rules the audited trace must satisfy:
+- `artifact_id` matches the module_id of the resident.
+- `group_assignments` has exactly 2 keys (the two top groups the resident was
+  routed to).
+- `fine_entropy` falls in `[0.0, 4.0]` (the max_entropy gate).
+- `recurrence_depth` is in `[min_depth, max_depth]`.
 
-Returns `{'verdict': 'pass'|'fail'|'PASS_WITH_TELEGRAM', 'confidence': 0.9|0.4,
-'message': '...', 'audited': {'artifact_id','group_assignments','fine_entropy',
-'recurrence_depth'}}`.
+Passed traces stay attributable: the substrate's audit trace records the
+resident's payload, module id, and problem so a re-import restores exactly what
+was traced.

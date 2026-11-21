@@ -1,20 +1,13 @@
-# v1.1.0 organizer profile exchange
+# v1.1.0 Cross-App Profile Exchange
 
-Cross-app sharing of an organizer's specialization between the agentic-workbench
-(FastAPI) runtime and the KotMoE (Rust) runtime. The substrate exporter
-instrument the organizer's specialization (a `SubstrateProfile`) into a
-transportable JSON chunk; the importer restores the live object.
-
-## Provider ID mapping (normalize on import)
-
-| kotmoe (provided) | agentic-workbench (normalized) |
-|---|---|
-| nous | nous_research |
-| opencode-zen | open_code_zen |
-| opencode-go | open_code_go |
-| xai | grok |
+Cross-app profile exchange (organizer ↔ workbench) is the product of the
+`framework.integrations.organism` adapter. It carries a substrate resident's
+specialization state across two runtimes so a resident's masks, routing behaviour
+and health settle in rather than being re-learned from scratch on every launch.
 
 ## Share format
+
+The encoded share is a JSON dict:
 
 ```json
 {
@@ -24,34 +17,65 @@ transportable JSON chunk; the importer restores the live object.
   "organism_profile": {
     "module_id": "deterministic_engine",
     "group": "systems_and_infra",
-    "expert_id": 3,
-    "expert_entropy": 2.37,
-    "routing_report": {"artifact_id": "d2847a", "fine_entropy": 1.84},
-    "health_score": 0.93
+    "expert_id": 0,
+    "expert_entropy": 0.0,
+    "routing_report": {},
+    "health_score": 1.0
   },
   "provider": {
-    "provided_id": "opencode-zen",
-    "normalized_id": "open_code_zen"
+    "provided_id": "nous",
+    "normalized_id": "nous_research"
   }
 }
 ```
 
-## Functions on SubstrateProfile
+The `organism_profile` is the `SubstrateProfile.to_dict()` output. The whole
+share is a normal JSON dict; serialise to bytes with `json.dumps(...,
+sort_keys=True)` for wire transfer.
 
-- `to_share(source_app, provider_id=None)` — export the organizer profile as a
-  transportable v1.1.0 chunk.
-- `from_share(d)` — restore a `SubstrateProfile` from a v1.1.0 chunk; normalizes
-  the provider id on import. If a share arrives without `organism_profile`,
-  fall back to treating the whole dict as the profile.
+## Provider normalisation
 
-## Testing the exchange end-to-end
+Provider IDs map bidirectionally between the two apps. The map lives in
+`framework.integrations.organism._PROVIDER_ID_MAP` (and the duplicate
+`_build_provider_registry()`):
 
-1. Build a `SubstrateProfile` (module_id, group, expert_id, expert_entropy,
-   routing_report, health_score).
-2. Export with `to_share(source_app="kotmoe", provider_id="opencode-zen")`;
-   assert `profile_format_version == "1.1.0"`.
-3. Import with `from_share(share)`; assert module_id, group, expert_id,
-   expert_entropy, health_score round-trip exactly.
-4. Drive the exchange over the live HTTP gateway with `fastapi.testclient.TestClient`
-   (`client_share` → `client_import`); assert the round-trip survives the wire,
-   and re-attest it with `Verifier.resident_routing`.
+| provided_id (raw) | normalized_id (local canonical) |
+|---|---|
+| `nous` | `nous_research` |
+| `nous_research` | `nous` |
+| `opencode-zen` | `open_code_zen` |
+| `open_code_zen` | `opencode-zen` |
+| `opencode-go` | `open_code_go` |
+| `open_code_go` | `open_code_go` |
+| `xai` | `grok` |
+| `grok` | `xai` |
+
+`normalize_provider_id()` applies the map on import; unknown IDs pass through
+unchanged. All of these belong inside the provider registry, not scattered as
+hardcoded strings.
+
+## Import / restore path
+
+`_import_profile(d)` reconstructs a `SubstrateProfile` from a share dict:
+
+```python
+profile = SubstrateProfile.from_dict(d.get("organism_profile", d))
+```
+
+Rules:
+- The importer MUST normalise the provider id before constructing the restored
+  `SubstrateProfile`. Fall back to identity for unknown ids (safe).
+- Only `organism_profile` and `profile_format_version` are consumed. Anything else
+  in the share dict is ignored by the restore path.
+- Round-trip must be idempotent: `SubstrateProfile.from_dict(p.to_dict()) == p`.
+
+## Full exchange workflow
+
+1. Export: call `_export_share(profile, source_app="kotmoe", provider_id="nous")`
+   to build the share dict (include provider normalisation at export time).
+2. Wire transfer: `json.dumps(share, sort_keys=True).encode()` → bytes over the
+   wire, or inside an envelope.
+3. Import: `SubstrateProfile.from_dict(share["organism_profile"])` — the importer
+   normalises the provider id internally.
+4. Re-export: the restored profile is exactly representable (no floating-point
+   drift in stored fields; floats use `float()` so round-trip is exact).

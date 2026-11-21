@@ -43,13 +43,16 @@ This skill covers the procedure and standing preferences for the whole class of
 
 - **A failing full suite is not automatically a code regression.** Resource pressure (system paging file, memory pressure) produces `OSError`, `MemoryError`, and transient hangs that look exactly like code failures. When the suite reports failures, run each failing test in isolation (`pytest tests/<file>::<test> -v`) and in a quiet window before touching code. If it passes alone, the defect is the environment, not the change.
 
-- **Standing verifications after every edit.** Re-run the full suite with `pytest tests/ -q` after every edit. Claim done only when green, no warnings, no root-cause-fixing beyond the cause found. For wire claims (gateway, EXE, profile share), exercise the live API with real clients or `curl` — never assert "it worked" from a stub or an un-run path.
+- **Batch your runs. On a resource-constrained box a full `pytest tests/` invocation collapses the whole suite under OS paging pressure and reports phantom failures (e.g. `OSError: The paging file is too small`, errno 1455) even when every test passes in isolation. Detect by running `pytest tests/ -q` — if it crashes hard before completing, split it:**
 
-- **Organism real-module tests stay gated on the SDK.** `test_real_deterministic_engine_through_adapter` is skipped when `organism_sdk` is not importable. When Organism IS installed, those tests are real — no stubs, no shortcuts.
+  ```bash
+  # run per test file (each file is a bounded chunk)
+  for f in tests/test_xxx.py; do pytest "$f" -q --tb=short; done
+  # or run in two listed groups
+  pytest tests/group_a.py tests/group_b.py -q
+  ```
 
-## Diagnostic Rule
-
-- **A failing full suite is not automatically a code regression.** Resource pressure (system paging file, memory pressure) produces `OSError`, `MemoryError`, and transient hangs that look exactly like code failures. When the suite reports failures, run each failing test in isolation (`pytest tests/<file>::<test> -v`) and in a quiet window before touching code. If it passes alone, the defect is the environment, not the change.
+  If every file passes alone but `pytest tests/` still dies at the top level, the machine is out of virtual memory — check the paging file (`systeminfo | findstr /i "paging file"`), raise it, or run the batch on a machine with more RAM. Do not chase the phantom failure by editing code.
 
 - **Standing verifications after every edit.** Re-run the full suite with `pytest tests/ -q` after every edit. Claim done only when green, no warnings, no root-cause-fixing beyond the cause found. For wire claims (gateway, EXE, profile share), exercise the live API with real clients or `curl` — never assert "it worked" from a stub or an un-run path.
 
